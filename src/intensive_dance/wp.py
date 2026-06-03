@@ -39,6 +39,16 @@ def fetch_page(client: httpx.Client, slug: str, *, base: str) -> dict | None:
     return records[0] if records else None
 
 
+def fetch_children(client: httpx.Client, parent_id: int, *, base: str) -> list[dict]:
+    """Return the published child pages of `parent_id` (id, slug, link, title, content)."""
+    resp = client.get(
+        f"{base}/wp-json/wp/v2/pages",
+        params={"parent": parent_id, "per_page": 100, "_fields": "id,slug,link,title,content"},
+    )
+    resp.raise_for_status()
+    return resp.json()
+
+
 def button_links(rendered: str) -> dict[str, str]:
     """Map WPBakery `[vc_btn]` button titles to their (decoded) target URLs."""
     text = html.unescape(rendered)

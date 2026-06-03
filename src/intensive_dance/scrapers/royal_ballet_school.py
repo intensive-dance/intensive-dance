@@ -1,14 +1,19 @@
 """The Royal Ballet School — first scraper.
 
 API FIRST: RBS runs on WordPress and exposes a public REST API, so the core
-fields come straight from JSON — no HTML scraping of the live site. For each
-program we fetch its page record by slug from `/wp-json/wp/v2/pages`; the body
-is WPBakery shortcode markup, cleaned and sectioned by `intensive_dance.wp`.
+fields come straight from JSON — no HTML scraping of the live site. The body is
+WPBakery shortcode markup, cleaned and sectioned by `intensive_dance.wp`.
 
-RBS runs *many* intensives (UK Summer, Los Angeles, Thailand, Hong Kong, …), so
-this emits one `Offering` per program. Offering ids are
-`{providerSlug}/{pageSlug}-{season}` (e.g. `royal-ballet-school/uk-summer-intensive-2026`),
-which keeps year-over-year cycles distinct and diffable.
+DISCOVERY: RBS runs *many* intensives (UK Summer, Los Angeles, Livorno, Hong
+Kong, …) and re-dates the same WordPress pages each cycle. Rather than hardcode a
+list, we fetch the children of the "Intensive Courses" page and keep only the
+ones that are still **live** — dropping cancelled courses and cycles whose last
+course date is already in the past. So a newly-opened cycle (or a brand-new
+location) is picked up automatically, and last season's listings fall away.
+
+One `Offering` per live program. Offering ids are `{providerSlug}/{pageSlug}-{season}`
+(e.g. `royal-ballet-school/uk-summer-intensive-2026`), keeping year-over-year
+cycles distinct and diffable.
 
 Requirements are PHOTOS ONLY — RBS assesses on photo submissions, no video and
 no in-person audition. The required positions are published as age-banded
@@ -25,7 +30,6 @@ application fee and ancillary fees are inline on each program page.
 from __future__ import annotations
 
 import re
-from dataclasses import dataclass
 from datetime import date
 
 import httpx
@@ -34,6 +38,7 @@ from intensive_dance import wp
 from intensive_dance.models import (
     Application,
     Genre,
+    Kind,
     Level,
     Location,
     Offering,
@@ -48,49 +53,56 @@ from intensive_dance.models import (
 )
 
 BASE = "https://www.royalballetschool.org.uk"
+INTENSIVE_COURSES_SLUG = "intensive-courses"
 FEES_SLUG = "intensive-courses-fees"
 
 ORG = Organization(name="The Royal Ballet School", slug="royal-ballet-school", country="GB", city="London")
 
-
-@dataclass(frozen=True)
-class Program:
-    page_slug: str
-    city: str
-    country: str
-    fee_table: str | None = None  # heading on the fees page whose table holds course fees
-
-
-PROGRAMS = [
-    Program("uk-summer-intensive", city="London", country="GB", fee_table="Summer Intensive fees"),
-    Program("los-angeles-intensive", city="Los Angeles", country="US"),
-]
+# Programs whose course fees live on the shared fees page (heading → its table)
+# rather than inline on the program page. Most programs price inline.
+FEE_TABLES = {"uk-summer-intensive": "Summer Intensive fees"}
 
 
 def scrape(client: httpx.Client) -> list[Offering]:
+    root = wp.fetch_page(client, INTENSIVE_COURSES_SLUG, base=BASE)
+    if root is None:
+        return []
     fees_page = wp.fetch_page(client, FEES_SLUG, base=BASE)
     fees = wp.parse(fees_page["content"]["rendered"]) if fees_page else None
 
-    offerings: list[Offering] = []
-    for program in PROGRAMS:
-        record = wp.fetch_page(client, program.page_slug, base=BASE)
-        if record is None:
-            continue
-        offerings.append(_build_offering(record, program, fees))
+    today = date.today()
+    offerings = [
+        offering
+        for record in wp.fetch_children(client, root["id"], base=BASE)
+        if (offering := _build_offering(record, fees, today)) is not None
+    ]
+    offerings.sort(key=lambda o: o.id)
     return offerings
 
 
-def _build_offering(record: dict, program: Program, fees: wp.Content | None) -> Offering:
-    content = wp.parse(record["content"]["rendered"])
-    blob = " ".join(section.text() for section in content.sections)
+def _build_offering(record: dict, fees: wp.Content | None, today: date) -> Offering | None:
+    """Parse one program page into an Offering, or None if it isn't live.
 
+    Skips cancelled courses and cycles whose last course date is already past —
+    this is what keeps the committed store to currently-open programs as RBS
+    leaves prior cycles published.
+    """
+    slug = record["slug"]
+    base_title = record["title"]["rendered"].strip()
+    content = wp.parse(record["content"]["rendered"])
+
+    if "cancel" in slug.lower() or "cancel" in base_title.lower():
+        return None
+    last_date = _latest_course_date(content)
+    if last_date is not None and last_date < today:
+        return None
+
+    blob = " ".join(section.text() for section in content.sections)
     dates_text = content.text("Dates")
     start, end, season = _date_range(dates_text) if dates_text else (None, None, _year(blob))
-
-    base_title = record["title"]["rendered"].strip()
     title = f"{base_title} {season}".strip()
 
-    photo_url = content.link("photograph")
+    photo_url = _absolute(content.link("photograph"))
     requirement_notes = content.text("Requirements")
     photos = PhotosReq(
         specificity="defined-poses",
@@ -103,37 +115,39 @@ def _build_offering(record: dict, program: Program, fees: wp.Content | None) -> 
 
     application = _application(
         content.find_block("Application deadline", "Applications", "Bookings"),
-        url=content.link("apply", "book"),
+        url=_absolute(content.link("apply", "book")),
         requirements=[photos],
     )
 
     prices = _inline_prices(content.text("Fees"))
-    if program.fee_table and fees:
-        section = fees.find(program.fee_table)
+    fee_table = FEE_TABLES.get(slug)
+    if fee_table and fees:
+        section = fees.find(fee_table)
         if section and section.table() is not None:
             prices += _table_prices(section.table())
 
-    location_text = content.text("Location")
+    location_text = content.text("Location", "Venue")
+    city, country, timezone = _place(location_text)
 
     return Offering(
-        id=f"royal-ballet-school/{program.page_slug}-{season}",
+        id=f"royal-ballet-school/{slug}-{season}",
         source=Source(provider="royal-ballet-school", url=record["link"], scrapedAt=now_utc()),
         title=title,
         genres=_genres(blob),
-        kind="intensive",
+        kind=_kind(slug, base_title),
         level=_levels(blob),
         ageRange=_age_range(content.text("Eligibility")),
         organization=ORG,
         location=Location(
             venue=location_text.replace("\n", " · ") or None,
-            city=program.city,
-            country=program.country,
+            city=city,
+            country=country,
         ),
         schedule=Schedule(
             season=season,
             start=start,
             end=end,
-            timezone="Europe/London" if program.country == "GB" else None,
+            timezone=timezone,
             sessions=_sessions(content, season),
             notes=dates_text or None,
         ),
@@ -156,9 +170,24 @@ _MONTHALT = "|".join(_MONTHS)
 _DATE = re.compile(r"(\d{1,2})\s+(" + _MONTHALT + r")(?:\s+(\d{4}))?", re.IGNORECASE)
 # A short range like "21-25 July" or "6 – Friday 10 July" (shared month, year implied).
 _SHORT = re.compile(r"(\d{1,2})\s*[-–]\s*(?:[A-Za-z]+\s+)?(\d{1,2})\s+(" + _MONTHALT + r")", re.IGNORECASE)
-_MONEY = re.compile(r"£\s*([\d,]+(?:\.\d+)?)")
+# Money in either order: symbol-prefixed ("£48", "€390") or word-suffixed
+# ("390 euros"), since RBS prices its overseas programs in local currency.
+_MONEY = re.compile(
+    r"(?P<sym>[£€$])\s*(?P<sym_amt>[\d,]+(?:\.\d+)?)"
+    r"|(?P<word_amt>[\d,]+(?:\.\d+)?)\s*(?P<word>euros?|eur|pounds?|gbp|dollars?|usd)\b",
+    re.IGNORECASE,
+)
+_CURRENCY_SYMBOL = {"£": "GBP", "€": "EUR", "$": "USD"}
+_CURRENCY_WORD = {"euro": "EUR", "eur": "EUR", "pound": "GBP", "gbp": "GBP", "dollar": "USD", "usd": "USD"}
 _AGE = re.compile(r"aged\s+(\d{1,2})\s*(?:[-–]\s*(\d{1,2}))?", re.IGNORECASE)
 _YEAR = re.compile(r"\b(20\d{2})\b")
+
+
+def _money(match: re.Match) -> tuple[float, str]:
+    if match.group("sym"):
+        return float(match.group("sym_amt").replace(",", "")), _CURRENCY_SYMBOL[match.group("sym")]
+    word = match.group("word").lower().rstrip("s")
+    return float(match.group("word_amt").replace(",", "")), _CURRENCY_WORD[word]
 
 
 def _year(text: str) -> str:
@@ -192,6 +221,32 @@ def _deadline(text: str) -> date | None:
         return None
     start, end, _ = _date_range(match.group(1))
     return start
+
+
+# RBS reckons age "on 31 August <year>"; that cutoff must not count as a course
+# date, or every page would look current.
+_CUTOFF = re.compile(r"on \d{1,2}\s+[A-Za-z]+\s+\d{4}", re.IGNORECASE)
+
+
+def _latest_course_date(content: wp.Content) -> date | None:
+    """Latest concrete course date on the page — drives the live/ended gate.
+
+    Yearless day-month tokens inherit the latest year seen on the page, so a
+    multi-weekend program spanning into next year reads as live.
+    """
+    text = _CUTOFF.sub(" ", " ".join(section.text() for section in content.sections))
+    years = [int(y) for y in _YEAR.findall(text)]
+    year = max(years) if years else None
+    points: list[date] = []
+    for day, month, yr in _DATE.findall(text):
+        resolved = int(yr) if yr else year
+        if resolved and month.lower() in _MONTHS:
+            points.append(date(resolved, _MONTHS[month.lower()], int(day)))
+    if year:
+        for _, end_day, month in _SHORT.findall(text):
+            if month.lower() in _MONTHS:
+                points.append(date(year, _MONTHS[month.lower()], int(end_day)))
+    return max(points) if points else None
 
 
 _RELEVANT = re.compile(r"open|clos|deadline|appl|booking", re.IGNORECASE)
@@ -246,6 +301,53 @@ def _age_range(text: str) -> dict | None:
     return {"min": min(bounds), "max": max(bounds)}
 
 
+def _kind(slug: str, title: str) -> Kind:
+    return "masterclass" if "masterclass" in f"{slug} {title}".lower() else "intensive"
+
+
+# City + ISO country + IANA timezone, keyed by a place name in the venue address.
+# Reference data, not a program gate — discovery still decides which programs run;
+# an unlisted venue degrades to (None, derived-country, None).
+_PLACES: list[tuple[str, str, str, str]] = [
+    ("los angeles", "Los Angeles", "US", "America/Los_Angeles"),
+    ("covent garden", "London", "GB", "Europe/London"),
+    ("richmond", "London", "GB", "Europe/London"),
+    ("london", "London", "GB", "Europe/London"),
+    ("livorno", "Livorno", "IT", "Europe/Rome"),
+    ("bangkok", "Bangkok", "TH", "Asia/Bangkok"),
+    ("tokyo", "Tokyo", "JP", "Asia/Tokyo"),
+    ("hong kong", "Hong Kong", "HK", "Asia/Hong_Kong"),
+    ("singapore", "Singapore", "SG", "Asia/Singapore"),
+    ("madrid", "Madrid", "ES", "Europe/Madrid"),
+]
+_COUNTRY_NAMES = {
+    "united states": "US", "united kingdom": "GB", "thailand": "TH", "japan": "JP",
+    "hong kong": "HK", "singapore": "SG", "korea": "KR", "italy": "IT", "spain": "ES",
+}
+_UK_POSTCODE = re.compile(r"\b[A-Z]{1,2}\d[A-Z\d]?\s*\d[A-Z]{2}\b")
+_US_ZIP = re.compile(r"\b[A-Z]{2}\s+\d{5}\b")
+
+
+def _place(text: str) -> tuple[str | None, str | None, str | None]:
+    low = text.lower()
+    for needle, city, country, timezone in _PLACES:
+        if needle in low:
+            return city, country, timezone
+    return None, _country(text), None
+
+
+def _country(text: str) -> str | None:
+    low = text.lower()
+    for name, code in _COUNTRY_NAMES.items():
+        if name in low:
+            return code
+    if _US_ZIP.search(text):
+        return "US"
+    if _UK_POSTCODE.search(text):
+        return "GB"
+    return None
+
+
 _GENRE_KEYWORDS: list[tuple[Genre, tuple[str, ...]]] = [
     ("classical", ("classical", "ballet technique")),
     ("neoclassical", ("neoclassical",)),
@@ -281,7 +383,7 @@ def _levels(blob: str) -> list[Level]:
 
 def _amount(text: str) -> float | None:
     match = _MONEY.search(text)
-    return float(match.group(1).replace(",", "")) if match else None
+    return _money(match)[0] if match else None
 
 
 def _includes(text: str) -> list[PriceInclude]:
@@ -299,11 +401,13 @@ def _includes(text: str) -> list[PriceInclude]:
 def _inline_prices(text: str) -> list[Price]:
     """Fees written as prose on a program page.
 
-    A price's label is the text right before its `£` amount. When that's empty,
-    we fall back to the carried `context` — the trailing text after the previous
+    A price's label is the text right before its amount. When that's empty, we
+    fall back to the carried `context` — the trailing text after the previous
     amount, or a preceding price-less line. This untangles RBS markup that merges
     "Application fee: £48" and the next "Non-selective course …" label into one
-    paragraph ahead of a bare "£485 …" line.
+    paragraph ahead of a bare "£485 …" line, and keeps overseas programs that mix
+    currencies on one line (e.g. "Application fee: £50 Course fee: 390 euros")
+    correctly split.
     """
     prices: list[Price] = []
     context: str | None = None
@@ -318,9 +422,9 @@ def _inline_prices(text: str) -> list[Price]:
             start = matches[i - 1].end() if i else 0
             label = line[start : match.start()].strip(" :–-") or context or "Fee"
             context = None
-            amount = float(match.group(1).replace(",", ""))
+            amount, currency = _money(match)
             prices.append(
-                Price(amount=amount, currency="GBP", label=label, includes=_includes(label), notes=line)
+                Price(amount=amount, currency=currency, label=label, includes=_includes(label), notes=line)
             )
         context = line[matches[-1].end() :].strip(" :–-") or None
     return prices
@@ -350,6 +454,10 @@ def _table_prices(table) -> list[Price]:
 def _join(*parts: str | None) -> str | None:
     kept = [p.strip() for p in parts if p and p.strip()]
     return "\n\n".join(kept) or None
+
+
+def _absolute(url: str | None) -> str | None:
+    return f"{BASE}{url}" if url and url.startswith("/") else url
 
 
 # --- sessions: per-block dates, age range, and gender ---

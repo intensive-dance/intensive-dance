@@ -1,6 +1,191 @@
 [
   {
     "ageRange": {
+      "max": 15,
+      "min": 10
+    },
+    "application": {
+      "notes": "Applications are now closed.",
+      "requirements": [
+        {
+          "notes": "Required positions are published as age-banded diagrams on the photograph-requirements page: https://www.royalballetschool.org.uk/train/apply/photograph-requirements/",
+          "poses": [],
+          "specificity": "defined-poses",
+          "type": "photos"
+        }
+      ],
+      "status": "closed"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "royal-ballet-school/livorno-special-training-programme-2027",
+    "kind": "intensive",
+    "level": [],
+    "location": {
+      "city": "Livorno",
+      "country": "IT",
+      "online": false,
+      "venue": "AED Associazione Europea Danza via Masi 7 57121 – Livorno Italy"
+    },
+    "organization": {
+      "city": "London",
+      "country": "GB",
+      "name": "The Royal Ballet School",
+      "slug": "royal-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 50.0,
+        "currency": "GBP",
+        "includes": [],
+        "label": "Application fee",
+        "notes": "Application fee: £50 Course fee: 390 euros"
+      },
+      {
+        "amount": 390.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Course fee",
+        "notes": "Application fee: £50 Course fee: 390 euros"
+      }
+    ],
+    "schedule": {
+      "end": "2027-04-11",
+      "notes": "Students must be available to attend all 4 weekends:\n17-18 October 2026 12-13 December 2026 6-7 February 2027 10-11 April 2027",
+      "season": "2027",
+      "sessions": [],
+      "start": "2026-10-18",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:d7a03e5692ab811fa3502676435fc83e7e8e30324891948caf62ee8663fa6a75",
+      "provider": "royal-ballet-school",
+      "scrapedAt": "2026-06-03T19:26:06.546230Z",
+      "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/livorno-special-training-programme/"
+    },
+    "teachers": [],
+    "title": "Livorno Special Training Programme 2027"
+  },
+  {
+    "ageRange": {
+      "max": 19,
+      "min": 10
+    },
+    "application": {
+      "notes": "Applications are now closed.\nThursday 9 July 16.30-17.30Bookings close 5 June 2026.",
+      "requirements": [
+        {
+          "notes": "All applicants will need to submit photographs as part of their application.\n\nRequired positions are published as age-banded diagrams on the photograph-requirements page: https://www.royalballetschool.org.uk/train/apply/photograph-requirements/",
+          "poses": [],
+          "specificity": "defined-poses",
+          "type": "photos"
+        }
+      ],
+      "status": "closed",
+      "url": "https://eur.cvent.me/xqb2gm?RefId=Intensive+Courses+2025%2F26"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "repertoire",
+      "pointe"
+    ],
+    "id": "royal-ballet-school/los-angeles-intensive-2026",
+    "kind": "intensive",
+    "level": [],
+    "location": {
+      "city": "Los Angeles",
+      "country": "US",
+      "online": false,
+      "venue": "The Music Center 135 N. Grand Avenue Los Angeles, CA 90012 United States"
+    },
+    "organization": {
+      "city": "London",
+      "country": "GB",
+      "name": "The Royal Ballet School",
+      "slug": "royal-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 865.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Course fee",
+        "notes": "Course fee: £865 per week"
+      },
+      {
+        "amount": 48.0,
+        "currency": "GBP",
+        "includes": [],
+        "label": "Application fee",
+        "notes": "Application fee: £48"
+      },
+      {
+        "amount": 125.0,
+        "currency": "GBP",
+        "includes": [],
+        "label": "Additional coaching sessions",
+        "notes": "Additional coaching sessions: £125 per session (1 hour)"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-10",
+      "notes": "Students aged 10-13, one-week course: Monday 29 June – Friday 3 July 2026 OR Monday 6 – Friday 10 July 2026\nStudents aged 14-19, two-week course: Monday 29 June – Friday 10 July 2026 (no classes on Sunday)",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 13,
+            "min": 10
+          },
+          "end": "2026-07-03",
+          "gender": "both",
+          "label": "one-week course",
+          "notes": "Monday 29 June – Friday 3 July 2026",
+          "start": "2026-06-29"
+        },
+        {
+          "ageRange": {
+            "max": 13,
+            "min": 10
+          },
+          "end": "2026-07-10",
+          "gender": "both",
+          "label": "one-week course",
+          "notes": "Monday 6 – Friday 10 July 2026",
+          "start": "2026-07-06"
+        },
+        {
+          "ageRange": {
+            "max": 19,
+            "min": 14
+          },
+          "end": "2026-07-10",
+          "gender": "both",
+          "label": "two-week course",
+          "notes": "Monday 29 June – Friday 10 July 2026 (no classes on Sunday)",
+          "start": "2026-06-29"
+        }
+      ],
+      "start": "2026-06-29",
+      "timezone": "America/Los_Angeles"
+    },
+    "source": {
+      "hash": "sha256:a133d010270273b717e995b19d8657069e38f0fb43ca38fc7be4a989e1790165",
+      "provider": "royal-ballet-school",
+      "scrapedAt": "2026-06-03T19:23:54.989140Z",
+      "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/los-angeles-intensive/"
+    },
+    "teachers": [],
+    "title": "Los Angeles Intensive 2026"
+  },
+  {
+    "ageRange": {
       "max": 19,
       "min": 8
     },
@@ -360,119 +545,5 @@
     },
     "teachers": [],
     "title": "UK Summer Intensive 2026"
-  },
-  {
-    "ageRange": {
-      "max": 19,
-      "min": 10
-    },
-    "application": {
-      "notes": "Applications are now closed.\nThursday 9 July 16.30-17.30Bookings close 5 June 2026.",
-      "requirements": [
-        {
-          "notes": "All applicants will need to submit photographs as part of their application.\n\nRequired positions are published as age-banded diagrams on the photograph-requirements page: https://www.royalballetschool.org.uk/train/apply/photograph-requirements/",
-          "poses": [],
-          "specificity": "defined-poses",
-          "type": "photos"
-        }
-      ],
-      "status": "closed",
-      "url": "https://eur.cvent.me/xqb2gm?RefId=Intensive+Courses+2025%2F26"
-    },
-    "genres": [
-      "classical",
-      "contemporary",
-      "repertoire",
-      "pointe"
-    ],
-    "id": "royal-ballet-school/los-angeles-intensive-2026",
-    "kind": "intensive",
-    "level": [],
-    "location": {
-      "city": "Los Angeles",
-      "country": "US",
-      "online": false,
-      "venue": "The Music Center 135 N. Grand Avenue Los Angeles, CA 90012 United States"
-    },
-    "organization": {
-      "city": "London",
-      "country": "GB",
-      "name": "The Royal Ballet School",
-      "slug": "royal-ballet-school"
-    },
-    "prices": [
-      {
-        "amount": 865.0,
-        "currency": "GBP",
-        "includes": [
-          "tuition"
-        ],
-        "label": "Course fee",
-        "notes": "Course fee: £865 per week"
-      },
-      {
-        "amount": 48.0,
-        "currency": "GBP",
-        "includes": [],
-        "label": "Application fee",
-        "notes": "Application fee: £48"
-      },
-      {
-        "amount": 125.0,
-        "currency": "GBP",
-        "includes": [],
-        "label": "Additional coaching sessions",
-        "notes": "Additional coaching sessions: £125 per session (1 hour)"
-      }
-    ],
-    "schedule": {
-      "end": "2026-07-10",
-      "notes": "Students aged 10-13, one-week course: Monday 29 June – Friday 3 July 2026 OR Monday 6 – Friday 10 July 2026\nStudents aged 14-19, two-week course: Monday 29 June – Friday 10 July 2026 (no classes on Sunday)",
-      "season": "2026",
-      "sessions": [
-        {
-          "ageRange": {
-            "max": 13,
-            "min": 10
-          },
-          "end": "2026-07-03",
-          "gender": "both",
-          "label": "one-week course",
-          "notes": "Monday 29 June – Friday 3 July 2026",
-          "start": "2026-06-29"
-        },
-        {
-          "ageRange": {
-            "max": 13,
-            "min": 10
-          },
-          "end": "2026-07-10",
-          "gender": "both",
-          "label": "one-week course",
-          "notes": "Monday 6 – Friday 10 July 2026",
-          "start": "2026-07-06"
-        },
-        {
-          "ageRange": {
-            "max": 19,
-            "min": 14
-          },
-          "end": "2026-07-10",
-          "gender": "both",
-          "label": "two-week course",
-          "notes": "Monday 29 June – Friday 10 July 2026 (no classes on Sunday)",
-          "start": "2026-06-29"
-        }
-      ],
-      "start": "2026-06-29"
-    },
-    "source": {
-      "hash": "sha256:e056bb6db545f0f422ee3fdc79c98f5f500b74ed47963d8181ded7c6fbaba73c",
-      "provider": "royal-ballet-school",
-      "scrapedAt": "2026-06-03T19:07:05.565238Z",
-      "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/los-angeles-intensive/"
-    },
-    "teachers": [],
-    "title": "Los Angeles Intensive 2026"
   }
 ]
