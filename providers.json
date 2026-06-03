@@ -1,0 +1,67 @@
+{
+  "providers": [
+    {
+      "slug": "royal-ballet-school",
+      "name": "The Royal Ballet School",
+      "country": "GB",
+      "city": "London",
+      "url": "https://www.royalballetschool.org.uk/",
+      "tier": "marquee",
+      "status": "seed"
+    },
+    {
+      "slug": "john-cranko-schule",
+      "name": "John Cranko School",
+      "country": "DE",
+      "city": "Stuttgart",
+      "url": "https://www.john-cranko-schule.de/",
+      "tier": "marquee",
+      "status": "seed"
+    },
+    {
+      "slug": "abt-jko-school",
+      "name": "American Ballet Theatre — JKO School",
+      "country": "US",
+      "city": "New York",
+      "url": "https://www.abt.org/training/jko-school/",
+      "tier": "marquee",
+      "status": "seed"
+    },
+    {
+      "slug": "joffrey-ballet-school",
+      "name": "Joffrey Ballet School",
+      "country": "US",
+      "city": "New York",
+      "url": "https://joffreyballetschool.com/",
+      "tier": "marquee",
+      "status": "seed"
+    },
+    {
+      "slug": "ecole-danse-opera-paris",
+      "name": "École de Danse de l'Opéra national de Paris",
+      "country": "FR",
+      "city": "Paris",
+      "url": "https://www.operadeparis.fr/en/artists/ballet-school",
+      "tier": "marquee",
+      "status": "seed"
+    },
+    {
+      "slug": "english-national-ballet-school",
+      "name": "English National Ballet School",
+      "country": "GB",
+      "city": "London",
+      "url": "https://www.enbschool.org.uk/",
+      "tier": "marquee",
+      "status": "seed"
+    },
+    {
+      "slug": "bolshoi-ballet-academy",
+      "name": "Bolshoi Ballet Academy",
+      "country": "RU",
+      "city": "Moscow",
+      "url": "https://www.balletacademy.ru/en/",
+      "tier": "marquee",
+      "status": "seed"
+    }
+  ]
+}
