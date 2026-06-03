@@ -1,0 +1,756 @@
+{
+  "$defs": {
+    "Affiliation": {
+      "properties": {
+        "current": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Current"
+        },
+        "organization": {
+          "title": "Organization",
+          "type": "string"
+        },
+        "role": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Role"
+        },
+        "slug": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Slug"
+        }
+      },
+      "required": [
+        "organization"
+      ],
+      "title": "Affiliation",
+      "type": "object"
+    },
+    "Application": {
+      "properties": {
+        "deadline": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Deadline"
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Notes"
+        },
+        "opensAt": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Opensat"
+        },
+        "requirements": {
+          "items": {
+            "discriminator": {
+              "mapping": {
+                "cv": "#/$defs/CVReq",
+                "headshot": "#/$defs/HeadshotReq",
+                "none": "#/$defs/NoneReq",
+                "photos": "#/$defs/PhotosReq",
+                "video": "#/$defs/VideoReq"
+              },
+              "propertyName": "type"
+            },
+            "oneOf": [
+              {
+                "$ref": "#/$defs/NoneReq"
+              },
+              {
+                "$ref": "#/$defs/PhotosReq"
+              },
+              {
+                "$ref": "#/$defs/VideoReq"
+              },
+              {
+                "$ref": "#/$defs/CVReq"
+              },
+              {
+                "$ref": "#/$defs/HeadshotReq"
+              }
+            ]
+          },
+          "title": "Requirements",
+          "type": "array"
+        },
+        "status": {
+          "anyOf": [
+            {
+              "enum": [
+                "open",
+                "closed",
+                "upcoming"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Status"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Url"
+        }
+      },
+      "title": "Application",
+      "type": "object"
+    },
+    "CVReq": {
+      "properties": {
+        "type": {
+          "const": "cv",
+          "default": "cv",
+          "title": "Type",
+          "type": "string"
+        }
+      },
+      "title": "CVReq",
+      "type": "object"
+    },
+    "HeadshotReq": {
+      "description": "Headshot / portrait photo.",
+      "properties": {
+        "type": {
+          "const": "headshot",
+          "default": "headshot",
+          "title": "Type",
+          "type": "string"
+        }
+      },
+      "title": "HeadshotReq",
+      "type": "object"
+    },
+    "Location": {
+      "properties": {
+        "city": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "City"
+        },
+        "country": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Country"
+        },
+        "online": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Online"
+        },
+        "venue": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Venue"
+        }
+      },
+      "title": "Location",
+      "type": "object"
+    },
+    "NoneReq": {
+      "properties": {
+        "type": {
+          "const": "none",
+          "default": "none",
+          "title": "Type",
+          "type": "string"
+        }
+      },
+      "title": "NoneReq",
+      "type": "object"
+    },
+    "Organization": {
+      "properties": {
+        "city": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "City"
+        },
+        "country": {
+          "title": "Country",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "slug": {
+          "title": "Slug",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "slug",
+        "country"
+      ],
+      "title": "Organization",
+      "type": "object"
+    },
+    "PhotosReq": {
+      "properties": {
+        "notes": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Notes"
+        },
+        "poses": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Poses",
+          "type": "array"
+        },
+        "specificity": {
+          "enum": [
+            "defined-poses",
+            "freeform"
+          ],
+          "title": "Specificity",
+          "type": "string"
+        },
+        "type": {
+          "const": "photos",
+          "default": "photos",
+          "title": "Type",
+          "type": "string"
+        }
+      },
+      "required": [
+        "specificity"
+      ],
+      "title": "PhotosReq",
+      "type": "object"
+    },
+    "Price": {
+      "properties": {
+        "amount": {
+          "title": "Amount",
+          "type": "number"
+        },
+        "currency": {
+          "title": "Currency",
+          "type": "string"
+        },
+        "includes": {
+          "items": {
+            "enum": [
+              "tuition",
+              "accommodation",
+              "meals",
+              "materials",
+              "performance",
+              "studio"
+            ],
+            "type": "string"
+          },
+          "title": "Includes",
+          "type": "array"
+        },
+        "label": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Label"
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Notes"
+        }
+      },
+      "required": [
+        "amount",
+        "currency"
+      ],
+      "title": "Price",
+      "type": "object"
+    },
+    "Schedule": {
+      "properties": {
+        "end": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "End"
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Notes"
+        },
+        "season": {
+          "title": "Season",
+          "type": "string"
+        },
+        "sessions": {
+          "items": {
+            "$ref": "#/$defs/Session"
+          },
+          "title": "Sessions",
+          "type": "array"
+        },
+        "start": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Start"
+        },
+        "timezone": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Timezone"
+        }
+      },
+      "required": [
+        "season"
+      ],
+      "title": "Schedule",
+      "type": "object"
+    },
+    "Session": {
+      "properties": {
+        "ageRange": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Agerange"
+        },
+        "end": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "End"
+        },
+        "gender": {
+          "anyOf": [
+            {
+              "enum": [
+                "female",
+                "male",
+                "both"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Gender"
+        },
+        "label": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Label"
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Notes"
+        },
+        "start": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Start"
+        }
+      },
+      "title": "Session",
+      "type": "object"
+    },
+    "Source": {
+      "properties": {
+        "hash": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Hash"
+        },
+        "provider": {
+          "title": "Provider",
+          "type": "string"
+        },
+        "scrapedAt": {
+          "format": "date-time",
+          "title": "Scrapedat",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        }
+      },
+      "required": [
+        "provider",
+        "url",
+        "scrapedAt"
+      ],
+      "title": "Source",
+      "type": "object"
+    },
+    "Teacher": {
+      "properties": {
+        "affiliations": {
+          "items": {
+            "$ref": "#/$defs/Affiliation"
+          },
+          "title": "Affiliations",
+          "type": "array"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "role": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Role"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "title": "Teacher",
+      "type": "object"
+    },
+    "VideoReq": {
+      "properties": {
+        "description": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Description"
+        },
+        "specificity": {
+          "enum": [
+            "specific",
+            "unspecific"
+          ],
+          "title": "Specificity",
+          "type": "string"
+        },
+        "type": {
+          "const": "video",
+          "default": "video",
+          "title": "Type",
+          "type": "string"
+        }
+      },
+      "required": [
+        "specificity"
+      ],
+      "title": "VideoReq",
+      "type": "object"
+    }
+  },
+  "$id": "https://intensive.dance/schema/offering.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "ageRange": {
+      "anyOf": [
+        {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Agerange"
+    },
+    "application": {
+      "$ref": "#/$defs/Application"
+    },
+    "genres": {
+      "items": {
+        "enum": [
+          "classical",
+          "contemporary",
+          "neoclassical",
+          "character",
+          "repertoire",
+          "pointe"
+        ],
+        "type": "string"
+      },
+      "title": "Genres",
+      "type": "array"
+    },
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "kind": {
+      "enum": [
+        "intensive",
+        "masterclass",
+        "summer-school",
+        "workshop",
+        "audition-tour"
+      ],
+      "title": "Kind",
+      "type": "string"
+    },
+    "level": {
+      "items": {
+        "enum": [
+          "beginner",
+          "intermediate",
+          "advanced",
+          "pre-professional",
+          "professional",
+          "open"
+        ],
+        "type": "string"
+      },
+      "title": "Level",
+      "type": "array"
+    },
+    "location": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Location"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "organization": {
+      "$ref": "#/$defs/Organization"
+    },
+    "prices": {
+      "items": {
+        "$ref": "#/$defs/Price"
+      },
+      "title": "Prices",
+      "type": "array"
+    },
+    "schedule": {
+      "$ref": "#/$defs/Schedule"
+    },
+    "source": {
+      "$ref": "#/$defs/Source"
+    },
+    "teachers": {
+      "items": {
+        "$ref": "#/$defs/Teacher"
+      },
+      "title": "Teachers",
+      "type": "array"
+    },
+    "title": {
+      "title": "Title",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "source",
+    "title",
+    "kind",
+    "organization",
+    "schedule"
+  ],
+  "title": "Offering",
+  "type": "object"
+}

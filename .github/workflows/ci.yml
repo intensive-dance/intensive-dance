@@ -21,5 +21,11 @@ jobs:
       - name: Lint
         run: uv run ruff check .
 
+      - name: Test
+        run: uv run pytest -q
+
+      - name: Check schema is in sync with models
+        run: uv run python -m intensive_dance.schema
+
       - name: Validate committed data
         run: uv run python -m intensive_dance.validate
