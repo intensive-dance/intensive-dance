@@ -7,7 +7,7 @@
       "city": "London",
       "url": "https://www.royalballetschool.org.uk/",
       "tier": "marquee",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "john-cranko-schule",
@@ -34,7 +34,7 @@
       "city": "New York",
       "url": "https://joffreyballetschool.com/",
       "tier": "marquee",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "ecole-danse-opera-paris",

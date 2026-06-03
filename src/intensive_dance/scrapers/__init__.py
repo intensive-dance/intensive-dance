@@ -12,10 +12,11 @@ import httpx
 
 from intensive_dance.models import Offering
 
-from . import royal_ballet_school
+from . import joffrey_ballet_school, royal_ballet_school
 
 Scraper = Callable[[httpx.Client], list[Offering]]
 
 SCRAPERS: dict[str, Scraper] = {
     "royal-ballet-school": royal_ballet_school.scrape,
+    "joffrey-ballet-school": joffrey_ballet_school.scrape,
 }

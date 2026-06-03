@@ -67,4 +67,7 @@ Store is committed JSON (`data/`) for now — every scrape is a reviewable git d
 
 ## Status
 
-Phase 1 — data model and stack are scaffolded; the first live scraper (The Royal Ballet School) is a stub tracked in [issue #1](https://github.com/boredland/intensive-dance/issues/1).
+Two providers live:
+
+- **The Royal Ballet School** ([#1](https://github.com/boredland/intensive-dance/issues/1)) — WordPress REST + WPBakery; exercises the `photos` requirement.
+- **Joffrey Ballet School** — WordPress custom post types (`summer-intensives`, `workshops`) + taxonomy resolution; exercises the `video` requirement. Fees/teachers aren't published in its API, so those stay empty (documented in the scraper).
