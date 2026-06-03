@@ -24,7 +24,11 @@ jobs:
           FETCH_PROXY_TOKEN: ${{ secrets.FETCH_PROXY_TOKEN }}
         run: uv run python -m intensive_dance.run
 
+      # Always commit: a failing provider (non-zero Scrape exit) still leaves the
+      # other providers' fresh data on disk, and reds the job for visibility —
+      # but we don't want one flaky site to discard everyone else's scrape.
       - name: Commit changed data
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"

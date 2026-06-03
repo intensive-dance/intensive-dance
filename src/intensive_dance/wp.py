@@ -40,13 +40,28 @@ def fetch_page(client: httpx.Client, slug: str, *, base: str) -> dict | None:
 
 
 def fetch_children(client: httpx.Client, parent_id: int, *, base: str) -> list[dict]:
-    """Return the published child pages of `parent_id` (id, slug, link, title, content)."""
-    resp = client.get(
-        f"{base}/wp-json/wp/v2/pages",
-        params={"parent": parent_id, "per_page": 100, "_fields": "id,slug,link,title,content"},
-    )
-    resp.raise_for_status()
-    return resp.json()
+    """Return the published child pages of `parent_id` (id, slug, link, title, content).
+
+    Follows `X-WP-TotalPages` so a parent with more than one page of children
+    (per_page maxes at 100) isn't silently truncated.
+    """
+    records: list[dict] = []
+    page = 1
+    while True:
+        resp = client.get(
+            f"{base}/wp-json/wp/v2/pages",
+            params={
+                "parent": parent_id,
+                "per_page": 100,
+                "page": page,
+                "_fields": "id,slug,link,title,content",
+            },
+        )
+        resp.raise_for_status()
+        records += resp.json()
+        if page >= int(resp.headers.get("X-WP-TotalPages", 1)):
+            return records
+        page += 1
 
 
 def button_links(rendered: str) -> dict[str, str]:

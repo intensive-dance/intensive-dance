@@ -25,6 +25,12 @@ Joffrey / ABT to exercise the `video` branch of the requirements union.)
 Course fees live in a table on a shared fees page (the WooCommerce `wc/v3`
 namespace is enabled but does not expose these as products); the per-program
 application fee and ancillary fees are inline on each program page.
+
+TEACHERS: none emitted. RBS names no individual faculty on the intensive pages —
+they credit "the School's artistic faculty", "Artistic Director", and "guest
+teachers" generically, with nothing to attribute to a person. So `teachers` is
+left empty here; exercise the `Teacher`/`Affiliation` models with a house that
+publishes a named roster (e.g. Joffrey / ABT).
 """
 
 from __future__ import annotations
@@ -119,16 +125,16 @@ def _build_offering(record: dict, fees: wp.Content | None, today: date) -> Offer
         requirements=[photos],
     )
 
-    prices = _inline_prices(content.text("Fees"))
+    location_section = content.find("Location", "Venue")
+    location_text = location_section.text() if location_section else ""
+    city, country, timezone = _place(location_text)
+
+    prices = _inline_prices(content.text("Fees"), _dollar_currency(country))
     fee_table = FEE_TABLES.get(slug)
     if fee_table and fees:
         section = fees.find(fee_table)
         if section and section.table() is not None:
             prices += _table_prices(section.table())
-
-    location_section = content.find("Location", "Venue")
-    location_text = location_section.text() if location_section else ""
-    city, country, timezone = _place(location_text)
 
     return Offering(
         id=f"royal-ballet-school/{slug}-{season}",
@@ -179,15 +185,23 @@ _MONEY = re.compile(
     r"|(?P<word_amt>[\d,]+(?:\.\d+)?)\s*(?P<word>euros?|eur|pounds?|gbp|dollars?|usd)\b",
     re.IGNORECASE,
 )
-_CURRENCY_SYMBOL = {"£": "GBP", "€": "EUR", "$": "USD"}
+_CURRENCY_SYMBOL = {"£": "GBP", "€": "EUR"}
 _CURRENCY_WORD = {"euro": "EUR", "eur": "EUR", "pound": "GBP", "gbp": "GBP", "dollar": "USD", "usd": "USD"}
+# `$` is ambiguous — RBS prices overseas programs in local currency, so resolve it
+# from the program's country rather than assuming USD (Hong Kong → HKD, etc.).
+_DOLLAR_CURRENCY = {"US": "USD", "HK": "HKD", "SG": "SGD", "AU": "AUD", "CA": "CAD", "NZ": "NZD"}
 _AGE = re.compile(r"aged\s+(\d{1,2})\s*(?:[-–]\s*(\d{1,2}))?", re.IGNORECASE)
 _YEAR = re.compile(r"\b(20\d{2})\b")
 
 
-def _money(match: re.Match) -> tuple[float, str]:
-    if match.group("sym"):
-        return float(match.group("sym_amt").replace(",", "")), _CURRENCY_SYMBOL[match.group("sym")]
+def _dollar_currency(country: str | None) -> str:
+    return _DOLLAR_CURRENCY.get(country or "", "USD")
+
+
+def _money(match: re.Match, dollar_currency: str = "USD") -> tuple[float, str]:
+    if sym := match.group("sym"):
+        currency = dollar_currency if sym == "$" else _CURRENCY_SYMBOL[sym]
+        return float(match.group("sym_amt").replace(",", "")), currency
     word = match.group("word").lower().rstrip("s")
     return float(match.group("word_amt").replace(",", "")), _CURRENCY_WORD[word]
 
@@ -419,7 +433,7 @@ def _includes(text: str) -> list[PriceInclude]:
     return includes
 
 
-def _inline_prices(text: str) -> list[Price]:
+def _inline_prices(text: str, dollar_currency: str = "USD") -> list[Price]:
     """Fees written as prose on a program page.
 
     A price's label is the text right before its amount. When that's empty, we
@@ -443,7 +457,7 @@ def _inline_prices(text: str) -> list[Price]:
             start = matches[i - 1].end() if i else 0
             label = line[start : match.start()].strip(" :–-") or context or "Fee"
             context = None
-            amount, currency = _money(match)
+            amount, currency = _money(match, dollar_currency)
             prices.append(
                 Price(amount=amount, currency=currency, label=label, includes=_includes(label), notes=line)
             )

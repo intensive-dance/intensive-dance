@@ -32,12 +32,18 @@ Python, mirroring museumsufer's ethos (pure-function scrapers, a deterministic d
 
 ```
 src/intensive_dance/
-  models.py                 # Pydantic models == docs/data-model.md
+  models.py                 # Pydantic models == docs/data-model.md (source of truth)
   fetch.py                  # httpx client (UA + optional proxy)
   scrapers/                 # one pure fn per provider: scrape(client) -> list[Offering]
-  run.py                    # run -> validate -> write data/<slug>.json
+  run.py                    # scrape -> hash -> write data/<slug>.json
+  validate.py               # offline check: committed data parses + hashes match
+  schema.py                 # derive/verify schema/offering.schema.json from the models
 data/<slug>.json            # the store: committed JSON, one file per provider
+schema/offering.schema.json # published JSON Schema for one Offering (CI guards drift)
+tests/                      # pytest: pins the regex-heavy parsing, no network
 ```
+
+Validation is enforced at model construction (Pydantic) when a scraper builds an `Offering`; `validate.py` re-checks the committed store offline in CI.
 
 ### Scraping approach — API first
 
