@@ -39,6 +39,17 @@ src/intensive_dance/
 data/<slug>.json            # the store: committed JSON, one file per provider
 ```
 
+### Scraping approach — API first
+
+For each provider, try structured sources **before** parsing HTML. Order of preference:
+
+1. **Official / site-powering JSON API** — e.g. a WordPress REST API (`/wp-json/wp/v2/`), a store API, or any documented endpoint
+2. **Structured data embedded in the page** — `<script type="application/ld+json">` (schema.org `Event`/`Course`), or an embedded state blob (`__NEXT_DATA__`, etc.)
+3. **Machine-readable feeds** — iCal (`.ics`), RSS/Atom
+4. **HTML parsing** (`selectolax`) — last resort
+
+Record which source a scraper uses in a comment, so the next person knows whether to look for an API before touching markup.
+
 Run it:
 
 ```bash
