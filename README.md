@@ -21,6 +21,33 @@ We maintain a register of providers to scrape, weighted toward the marquee names
 
 See [`providers.json`](./providers.json) for the seed list and [`docs/data-model.md`](./docs/data-model.md) for the record shape.
 
+## Stack
+
+Python, mirroring museumsufer's ethos (pure-function scrapers, a deterministic data file committed to git, a cron → single-commit workflow) but stripped to a single page.
+
+- **`uv`** — deps + venv
+- **`httpx`** — fetching, with an optional pass-through proxy (`FETCH_PROXY_URL` / `FETCH_PROXY_TOKEN`)
+- **`selectolax`** — HTML parsing
+- **`pydantic`** v2 — the [data model](./docs/data-model.md) as validated models; the `application.requirements` discriminated union is enforced at parse time
+
+```
+src/intensive_dance/
+  models.py                 # Pydantic models == docs/data-model.md
+  fetch.py                  # httpx client (UA + optional proxy)
+  scrapers/                 # one pure fn per provider: scrape(client) -> list[Offering]
+  run.py                    # run -> validate -> write data/<slug>.json
+data/<slug>.json            # the store: committed JSON, one file per provider
+```
+
+Run it:
+
+```bash
+uv run python -m intensive_dance.run                    # all providers
+uv run python -m intensive_dance.run royal-ballet-school # one provider
+```
+
+Store is committed JSON (`data/`) for now — every scrape is a reviewable git diff. Pydantic serializes unchanged if we later swap in SQLite/Postgres.
+
 ## Status
 
-Phase 1 — define the data model and land the first scraper (The Royal Ballet School). See the open issues.
+Phase 1 — data model and stack are scaffolded; the first live scraper (The Royal Ballet School) is a stub tracked in [issue #1](https://github.com/boredland/intensive-dance/issues/1).
