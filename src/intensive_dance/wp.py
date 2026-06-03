@@ -39,29 +39,45 @@ def fetch_page(client: httpx.Client, slug: str, *, base: str) -> dict | None:
     return records[0] if records else None
 
 
-def fetch_children(client: httpx.Client, parent_id: int, *, base: str) -> list[dict]:
-    """Return the published child pages of `parent_id` (id, slug, link, title, content).
+def fetch_all(client: httpx.Client, rest_base: str, *, base: str, params: dict | None = None) -> list[dict]:
+    """Every record from a WP REST collection, following `X-WP-TotalPages`.
 
-    Follows `X-WP-TotalPages` so a parent with more than one page of children
-    (per_page maxes at 100) isn't silently truncated.
+    `rest_base` is the endpoint segment — a post type (`pages`, `summer-intensives`)
+    or a taxonomy (`dance_style`). Paginating here means a collection larger than
+    the per_page cap of 100 isn't silently truncated.
     """
     records: list[dict] = []
     page = 1
     while True:
         resp = client.get(
-            f"{base}/wp-json/wp/v2/pages",
-            params={
-                "parent": parent_id,
-                "per_page": 100,
-                "page": page,
-                "_fields": "id,slug,link,title,content",
-            },
+            f"{base}/wp-json/wp/v2/{rest_base}",
+            params={"per_page": 100, "page": page, **(params or {})},
         )
         resp.raise_for_status()
         records += resp.json()
         if page >= int(resp.headers.get("X-WP-TotalPages", 1)):
             return records
         page += 1
+
+
+def fetch_children(client: httpx.Client, parent_id: int, *, base: str) -> list[dict]:
+    """Return the published child pages of `parent_id` (id, slug, link, title, content)."""
+    return fetch_all(
+        client,
+        "pages",
+        base=base,
+        params={"parent": parent_id, "_fields": "id,slug,link,title,content"},
+    )
+
+
+def fetch_terms(client: httpx.Client, taxonomy: str, *, base: str) -> dict[int, str]:
+    """Map a taxonomy's term ids to their (decoded) names, e.g. {70: "Ballet"}.
+
+    Post records reference taxonomy terms by id only; this resolves the labels
+    so a scraper can map them onto our enums.
+    """
+    terms = fetch_all(client, taxonomy, base=base, params={"_fields": "id,name"})
+    return {term["id"]: html.unescape(term["name"]) for term in terms}
 
 
 def button_links(rendered: str) -> dict[str, str]:
@@ -159,6 +175,16 @@ def parse(rendered: str) -> Content:
         elif current is not None:
             current.nodes.append(node)
     return Content(sections, button_links(rendered))
+
+
+def plain_text(rendered: str) -> str:
+    """Whole rendered body as collapsed plain text — for prose-shaped CPTs.
+
+    Unlike `parse`, which keys content by heading, this is for post types whose
+    body is flowing paragraphs (no section headings to anchor on).
+    """
+    text = HTMLParser(rendered).text(separator=" ")
+    return re.sub(r"\s+", " ", _SHORTCODE.sub("", text)).strip()
 
 
 _BR = re.compile(r"<br\s*/?>", re.IGNORECASE)
