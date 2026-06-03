@@ -126,7 +126,8 @@ def _build_offering(record: dict, fees: wp.Content | None, today: date) -> Offer
         if section and section.table() is not None:
             prices += _table_prices(section.table())
 
-    location_text = content.text("Location", "Venue")
+    location_section = content.find("Location", "Venue")
+    location_text = location_section.text() if location_section else ""
     city, country, timezone = _place(location_text)
 
     return Offering(
@@ -139,7 +140,7 @@ def _build_offering(record: dict, fees: wp.Content | None, today: date) -> Offer
         ageRange=_age_range(content.text("Eligibility")),
         organization=ORG,
         location=Location(
-            venue=location_text.replace("\n", " · ") or None,
+            venue=_venue(location_section),
             city=city,
             country=country,
         ),
@@ -336,6 +337,25 @@ def _place(text: str) -> tuple[str | None, str | None, str | None]:
     return None, _country(text), None
 
 
+def _venue(section: wp.Section | None) -> str | None:
+    """A tidy one-line venue: address lines joined by commas, venues by ` · `.
+
+    Recovers `<br>`-separated address lines (collapsed by plain `.text()`) and
+    drops the stray spaces WPBakery leaves before punctuation around links.
+    """
+    if section is None:
+        return None
+    blocks = [
+        ", ".join(_tidy(line) for line in wp.node_lines(node) if _tidy(line))
+        for node in section.nodes
+    ]
+    return " · ".join(block for block in blocks if block) or None
+
+
+def _tidy(text: str) -> str:
+    return re.sub(r"\s{2,}", " ", re.sub(r"\s+([,.])", r"\1", text)).strip(" ,")
+
+
 def _country(text: str) -> str | None:
     low = text.lower()
     for name, code in _COUNTRY_NAMES.items():
@@ -528,6 +548,36 @@ def _sessions(content: wp.Content, season: str) -> list[Session]:
             sessions += _short_sessions(section, year)
 
     sessions += _student_sessions(" ".join(s.text() for s in content.sections), year)
+
+    # Fallback for programs that just list dated blocks (e.g. Livorno's four
+    # weekends, "17-18 October 2026 … 10-11 April 2027") rather than age/gender
+    # course tables.
+    if not sessions:
+        dates = content.find("Dates")
+        if dates:
+            sessions += _weekend_sessions(dates.text())
+    return sessions
+
+
+_WEEKEND = re.compile(r"(\d{1,2})\s*[-–]\s*(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})")
+
+
+def _weekend_sessions(text: str) -> list[Session]:
+    sessions: list[Session] = []
+    for d1, d2, month, year in _WEEKEND.findall(text):
+        if month.lower() not in _MONTHS:
+            continue
+        month_num, yr = _MONTHS[month.lower()], int(year)
+        label = f"{d1}-{d2} {month} {year}"
+        sessions.append(
+            Session(
+                label=label,
+                start=date(yr, month_num, int(d1)),
+                end=date(yr, month_num, int(d2)),
+                gender="both",
+                notes=label,
+            )
+        )
     return sessions
 
 

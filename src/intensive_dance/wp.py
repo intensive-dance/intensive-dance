@@ -146,6 +146,19 @@ def parse(rendered: str) -> Content:
     return Content(sections, button_links(rendered))
 
 
+_BR = re.compile(r"<br\s*/?>", re.IGNORECASE)
+
+
+def node_lines(node: Node) -> list[str]:
+    """Text of a node split into lines on `<br>`, which `.text()` would collapse.
+
+    Lets callers recover line structure that WPBakery encodes with `<br>` — most
+    usefully multi-line addresses.
+    """
+    text = HTMLParser(_BR.sub("\n", node.html or "")).text(separator=" ")
+    return [line.strip() for line in text.split("\n") if line.strip()]
+
+
 def table_rows(table: Node) -> list[list[str]]:
     """Return a table's rows as lists of trimmed cell text."""
     rows: list[list[str]] = []
