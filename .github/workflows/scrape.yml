@@ -8,6 +8,13 @@ on:
 permissions:
   contents: write
 
+# Never let two scrapes run at once: both commit & push to main, so overlapping
+# runs would race the push. Queue a new trigger behind the running one rather
+# than cancelling it (don't interrupt an in-flight commit/push).
+concurrency:
+  group: scrape
+  cancel-in-progress: false
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
