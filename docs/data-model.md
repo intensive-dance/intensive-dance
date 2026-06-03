@@ -33,7 +33,7 @@ Stored as JSON. The interesting part is `application.requirements`, which is a *
     "venue": "White Lodge, Richmond Park",
     "city": "London",
     "country": "GB",
-    "online": false
+    "online": true                                      // present only for online programs; omitted otherwise
   },
 
   "schedule": {

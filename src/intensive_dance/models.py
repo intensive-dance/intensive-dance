@@ -85,7 +85,7 @@ class Location(BaseModel):
     venue: str | None = None
     city: str | None = None
     country: str | None = None
-    online: bool = False
+    online: bool | None = None  # set True only for online programs; omitted otherwise
 
 
 class Session(BaseModel):

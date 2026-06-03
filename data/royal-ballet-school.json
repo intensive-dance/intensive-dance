@@ -25,7 +25,6 @@
     "location": {
       "city": "Livorno",
       "country": "IT",
-      "online": false,
       "venue": "AED, Associazione Europea Danza, via Masi 7, 57121 – Livorno, Italy"
     },
     "organization": {
@@ -90,9 +89,9 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "hash": "sha256:90d7034493a37eb6e07aea4523365421dcb74144bfc54cb1b35b460b3f3c8afc",
+      "hash": "sha256:6332420a828d87424a635a27f27180e9a504af08aa610bd2e19fda4d83227e24",
       "provider": "royal-ballet-school",
-      "scrapedAt": "2026-06-03T19:30:29.978453Z",
+      "scrapedAt": "2026-06-03T19:46:06.399516Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/livorno-special-training-programme/"
     },
     "teachers": [],
@@ -128,7 +127,6 @@
     "location": {
       "city": "Los Angeles",
       "country": "US",
-      "online": false,
       "venue": "The Music Center, 135 N. Grand Avenue, Los Angeles, CA 90012, United States"
     },
     "organization": {
@@ -205,9 +203,9 @@
       "timezone": "America/Los_Angeles"
     },
     "source": {
-      "hash": "sha256:0c7c91dd9e611d222960b8bdd530eae746557ecf9df8dafd2aeb9c1da0d5d528",
+      "hash": "sha256:d8737e5c04cdecfb91ff424a9c37612fe5785209721dedd4559dc56092a7f68c",
       "provider": "royal-ballet-school",
-      "scrapedAt": "2026-06-03T19:30:29.975713Z",
+      "scrapedAt": "2026-06-03T19:46:06.397390Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/los-angeles-intensive/"
     },
     "teachers": [],
@@ -243,7 +241,6 @@
     "location": {
       "city": "London",
       "country": "GB",
-      "online": false,
       "venue": "Upper School, 46 Floral Street, Covent Garden, London, WC2E 9DA · White Lodge, Richmond Park, Richmond, Surrey, TW10 5HR"
     },
     "organization": {
@@ -567,9 +564,9 @@
       "timezone": "Europe/London"
     },
     "source": {
-      "hash": "sha256:b8be3fe9b4697582d2f5b409e2c52fe5e12733841dc84b9f6d19fed065882386",
+      "hash": "sha256:51c611ed22257a6fdd0b76be43b85178dff9f1b49c215b2b501166391c363cd8",
       "provider": "royal-ballet-school",
-      "scrapedAt": "2026-06-03T19:30:29.984995Z",
+      "scrapedAt": "2026-06-03T19:46:06.404985Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/uk-summer-intensive/"
     },
     "teachers": [],

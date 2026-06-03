@@ -143,6 +143,7 @@ def _build_offering(record: dict, fees: wp.Content | None, today: date) -> Offer
             venue=_venue(location_section),
             city=city,
             country=country,
+            online=True if "online" in f"{slug} {base_title} {location_text}".lower() else None,
         ),
         schedule=Schedule(
             season=season,
