@@ -18,6 +18,12 @@ Genre = Literal["classical", "contemporary", "neoclassical", "character", "reper
 Kind = Literal["intensive", "masterclass", "summer-school", "workshop", "audition-tour"]
 Level = Literal["beginner", "intermediate", "advanced", "pre-professional", "professional", "open"]
 PriceInclude = Literal["tuition", "accommodation", "meals", "materials", "performance", "studio"]
+# Application cycle state. `closed` covers a cycle still listed but no longer
+# accepting applications; `upcoming` = announced but not yet open.
+ApplicationStatus = Literal["open", "closed", "upcoming"]
+# `both` == offered to female and male dancers (also the default when the source
+# is silent on gender).
+Gender = Literal["female", "male", "both"]
 
 
 # --- application.requirements: tagged union on `type` ---
@@ -86,6 +92,11 @@ class Session(BaseModel):
     label: str | None = None
     start: date | None = None
     end: date | None = None
+    age_range: dict | None = Field(default=None, alias="ageRange")  # null bound = open-ended
+    gender: Gender | None = None
+    notes: str | None = None  # raw source text for this block (ages/gender normalized)
+
+    model_config = {"populate_by_name": True}
 
 
 class Schedule(BaseModel):
@@ -94,6 +105,7 @@ class Schedule(BaseModel):
     end: date | None = None
     timezone: str | None = None
     sessions: list[Session] = Field(default_factory=list)
+    notes: str | None = None  # raw dates text, kept because dates are normalized to ISO
 
 
 class Affiliation(BaseModel):
@@ -118,11 +130,13 @@ class Price(BaseModel):
 
 
 class Application(BaseModel):
+    status: ApplicationStatus | None = None  # None == not stated
     opens_at: date | None = Field(default=None, alias="opensAt")
     deadline: date | None = None
     url: str | None = None
     # [] == unknown/not stated; [NoneReq] == explicitly nothing required.
     requirements: list[Requirement] = Field(default_factory=list)
+    notes: str | None = None  # raw deadline/booking text (e.g. "Applications are now closed.")
 
     model_config = {"populate_by_name": True}
 

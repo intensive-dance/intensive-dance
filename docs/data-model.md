@@ -41,9 +41,16 @@ Stored as JSON. The interesting part is `application.requirements`, which is a *
     "start": "2026-07-20",                              // ISO date; null if announced-but-undated
     "end": "2026-08-07",
     "timezone": "Europe/London",
-    "sessions": [                                        // optional: multi-block intensives
-      { "label": "Week 1", "start": "2026-07-20", "end": "2026-07-24" }
-    ]
+    "sessions": [                                        // optional: per-block dates + who it's for
+      {
+        "label": "White Lodge — Week one",
+        "start": "2026-07-21", "end": "2026-07-25",
+        "ageRange": { "min": 10, "max": 11 },            // null bound = open-ended
+        "gender": "both",                                // female | male | both (both = default / unrestricted)
+        "notes": "aged 10 and 11 female and male training"
+      }
+    ],
+    "notes": "21 July – 21 August 2026"                  // raw dates text, since start/end are normalized to ISO
   },
 
   "teachers": [
@@ -68,6 +75,7 @@ Stored as JSON. The interesting part is `application.requirements`, which is a *
   ],
 
   "application": {
+    "status": "closed",                                 // open | closed | upcoming; null = not stated
     "opensAt": "2025-11-01",                            // nullable
     "deadline": "2026-03-01",                           // nullable
     "url": "https://…/apply",
@@ -79,7 +87,8 @@ Stored as JSON. The interesting part is `application.requirements`, which is a *
       { "type": "video",    "specificity": "unspecific", "description": "A solo of the applicant's choice." },
       { "type": "cv" },
       { "type": "headshot" }                            // === portrait
-    ]
+    ],
+    "notes": "Applications are now closed."             // raw deadline/booking text when normalized to null
   }
 }
 ```

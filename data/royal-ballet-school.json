@@ -1,0 +1,478 @@
+[
+  {
+    "ageRange": {
+      "max": 19,
+      "min": 8
+    },
+    "application": {
+      "notes": "Applications are now closed.\nBookings are now closed.",
+      "requirements": [
+        {
+          "notes": "Required positions are published as age-banded diagrams on the photograph-requirements page: https://www.royalballetschool.org.uk/train/apply/photograph-requirements/",
+          "poses": [],
+          "specificity": "defined-poses",
+          "type": "photos"
+        }
+      ],
+      "status": "closed"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "character",
+      "repertoire",
+      "pointe"
+    ],
+    "id": "royal-ballet-school/uk-summer-intensive-2026",
+    "kind": "intensive",
+    "level": [],
+    "location": {
+      "city": "London",
+      "country": "GB",
+      "online": false,
+      "venue": "Upper School , 46 Floral Street, Covent Garden, London, WC2E 9DA · White Lodge , Richmond Park, Richmond, Surrey, TW10 5HR"
+    },
+    "organization": {
+      "city": "London",
+      "country": "GB",
+      "name": "The Royal Ballet School",
+      "slug": "royal-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 48.0,
+        "currency": "GBP",
+        "includes": [],
+        "label": "Application fee",
+        "notes": "Application fee: £48 Non-selective course (students aged 8-9 years)"
+      },
+      {
+        "amount": 485.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Non-selective course (students aged 8-9 years)",
+        "notes": "£485 per 3 day week. You can book as many weeks as you wish."
+      },
+      {
+        "amount": 1730.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Ages 16-19 (non-residential) (2 weeks)",
+        "notes": "Ages 16-19 (non-residential) | Upper School, Covent Garden | 2 weeks | £1,730"
+      },
+      {
+        "amount": 2970.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition",
+          "accommodation",
+          "meals"
+        ],
+        "label": "Ages 16-19 (residential-catering) (2 weeks)",
+        "notes": "Ages 16-19 (residential-catering) | Upper School, Covent Garden | 2 weeks | £2,970"
+      },
+      {
+        "amount": 2595.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Ages 16-19 (non-residential) (3 weeks)",
+        "notes": "Ages 16-19 (non-residential) | Upper School, Covent Garden | 3 weeks | £2,595"
+      },
+      {
+        "amount": 4455.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition",
+          "accommodation",
+          "meals"
+        ],
+        "label": "Ages 16-19 (residential-catering) (3 weeks)",
+        "notes": "Ages 16-19 (residential-catering) | Upper School, Covent Garden | 3 weeks | £4,455"
+      },
+      {
+        "amount": 4325.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Ages 16-19 (non-residential) (5 weeks)",
+        "notes": "Ages 16-19 (non-residential) | Upper School, Covent Garden | 5 weeks | £4,325"
+      },
+      {
+        "amount": 7425.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition",
+          "accommodation",
+          "meals"
+        ],
+        "label": "Ages 16-19 (residential-catering) (5 weeks)",
+        "notes": "Ages 16-19 (residential-catering) | Upper School, Covent Garden | 5 weeks | £7,425"
+      },
+      {
+        "amount": 865.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Ages 10-15 (non-residential) (1 week)",
+        "notes": "Ages 10-15 (non-residential) | White Lodge, Richmond | 1 week | £865"
+      },
+      {
+        "amount": 1485.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition",
+          "accommodation",
+          "meals"
+        ],
+        "label": "Ages 10-15 (residential-catering) (1 week)",
+        "notes": "Ages 10-15 (residential-catering) | White Lodge, Richmond | 1 week | £1,485"
+      },
+      {
+        "amount": 1730.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Ages 13-15 (non-residential) (2 weeks)",
+        "notes": "Ages 13-15 (non-residential) | White Lodge, Richmond | 2 weeks | £1,730"
+      },
+      {
+        "amount": 2970.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition",
+          "accommodation",
+          "meals"
+        ],
+        "label": "Ages 13-15 (residential-catering) (2 weeks)",
+        "notes": "Ages 13-15 (residential-catering) | White Lodge, Richmond | 2 weeks | £2,970"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-21",
+      "notes": "Selective course\n21 July – 21 August 2026\nNon-selective course at Upper School (only for students aged 8-9)\n4- 6 August 11-13 August 18-20 August",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 11,
+            "min": 10
+          },
+          "end": "2026-07-25",
+          "gender": "both",
+          "label": "White Lodge — Week one",
+          "notes": "aged 10 and 11 female and male training",
+          "start": "2026-07-21"
+        },
+        {
+          "ageRange": {
+            "max": 13,
+            "min": 12
+          },
+          "end": "2026-07-31",
+          "gender": "both",
+          "label": "White Lodge — Week two",
+          "notes": "aged 12 and 13 female and male training",
+          "start": "2026-07-27"
+        },
+        {
+          "ageRange": {
+            "max": 11,
+            "min": 10
+          },
+          "end": "2026-08-07",
+          "gender": "both",
+          "label": "White Lodge — Week three",
+          "notes": "aged 10 and 11 female and male training",
+          "start": "2026-08-03"
+        },
+        {
+          "ageRange": {
+            "max": 15,
+            "min": 14
+          },
+          "end": "2026-08-07",
+          "gender": "male",
+          "label": "White Lodge — Week three",
+          "notes": "aged 14 and 15 male training",
+          "start": "2026-08-03"
+        },
+        {
+          "ageRange": {
+            "max": 13,
+            "min": 10
+          },
+          "end": "2026-08-14",
+          "gender": "female",
+          "label": "White Lodge — Week four",
+          "notes": "aged 10 and 11, aged 12 and 13 female training",
+          "start": "2026-08-10"
+        },
+        {
+          "ageRange": {
+            "max": 15,
+            "min": 10
+          },
+          "end": "2026-08-21",
+          "gender": "female",
+          "label": "White Lodge — Week five",
+          "notes": "aged 10 and 11, aged 12 and 13, aged 14, aged 14 and 15 female training",
+          "start": "2026-08-17"
+        },
+        {
+          "ageRange": {
+            "max": 14,
+            "min": 14
+          },
+          "end": "2026-07-31",
+          "gender": "female",
+          "label": "White Lodge — Week one to two",
+          "notes": "aged 14 female training",
+          "start": "2026-07-21"
+        },
+        {
+          "ageRange": {
+            "max": 15,
+            "min": 14
+          },
+          "end": "2026-07-31",
+          "gender": "both",
+          "label": "White Lodge — Week one to two",
+          "notes": "aged 14 and 15 female and male training",
+          "start": "2026-07-21"
+        },
+        {
+          "ageRange": {
+            "max": 15,
+            "min": 14
+          },
+          "end": "2026-08-14",
+          "gender": "female",
+          "label": "White Lodge — Week three to four",
+          "notes": "aged 14, aged 14 and 15 female training",
+          "start": "2026-08-03"
+        },
+        {
+          "ageRange": {
+            "max": 13,
+            "min": 13
+          },
+          "end": "2026-08-21",
+          "gender": "female",
+          "label": "White Lodge — Week four to five",
+          "notes": "aged 13 female training",
+          "start": "2026-08-10"
+        },
+        {
+          "ageRange": {
+            "max": 19,
+            "min": 16
+          },
+          "end": "2026-07-31",
+          "gender": "female",
+          "label": "Upper School — Week one to two",
+          "notes": "aged 16, aged 17, aged 18 and 19 female training",
+          "start": "2026-07-21"
+        },
+        {
+          "ageRange": {
+            "max": 19,
+            "min": 16
+          },
+          "end": "2026-07-31",
+          "gender": "male",
+          "label": "Upper School — Week one to two",
+          "notes": "aged 16 and 17, aged 18 and 19 male training",
+          "start": "2026-07-21"
+        },
+        {
+          "ageRange": {
+            "max": 19,
+            "min": 16
+          },
+          "end": "2026-08-21",
+          "gender": "female",
+          "label": "Upper School — Week three to five",
+          "notes": "aged 16, aged 17, aged 16 and 17, aged 18 and 19 female training",
+          "start": "2026-08-03"
+        },
+        {
+          "ageRange": {
+            "max": 19,
+            "min": 16
+          },
+          "end": "2026-08-21",
+          "gender": "male",
+          "label": "Upper School — Week three to five",
+          "notes": "aged 16 and 17, aged 18 and 19 male training",
+          "start": "2026-08-03"
+        },
+        {
+          "ageRange": {
+            "max": 9,
+            "min": 8
+          },
+          "end": "2026-08-06",
+          "gender": "both",
+          "label": "Non-selective 4-6 August",
+          "notes": "4-6 August",
+          "start": "2026-08-04"
+        },
+        {
+          "ageRange": {
+            "max": 9,
+            "min": 8
+          },
+          "end": "2026-08-13",
+          "gender": "both",
+          "label": "Non-selective 11-13 August",
+          "notes": "11-13 August",
+          "start": "2026-08-11"
+        },
+        {
+          "ageRange": {
+            "max": 9,
+            "min": 8
+          },
+          "end": "2026-08-20",
+          "gender": "both",
+          "label": "Non-selective 18-20 August",
+          "notes": "18-20 August",
+          "start": "2026-08-18"
+        }
+      ],
+      "start": "2026-07-21",
+      "timezone": "Europe/London"
+    },
+    "source": {
+      "hash": "sha256:24bb92b4d2b7f285393fab5b386f7f33cefc2917848281ab2e29d08404c3ca65",
+      "provider": "royal-ballet-school",
+      "scrapedAt": "2026-06-03T19:08:50.866691Z",
+      "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/uk-summer-intensive/"
+    },
+    "teachers": [],
+    "title": "UK Summer Intensive 2026"
+  },
+  {
+    "ageRange": {
+      "max": 19,
+      "min": 10
+    },
+    "application": {
+      "notes": "Applications are now closed.\nThursday 9 July 16.30-17.30Bookings close 5 June 2026.",
+      "requirements": [
+        {
+          "notes": "All applicants will need to submit photographs as part of their application.\n\nRequired positions are published as age-banded diagrams on the photograph-requirements page: https://www.royalballetschool.org.uk/train/apply/photograph-requirements/",
+          "poses": [],
+          "specificity": "defined-poses",
+          "type": "photos"
+        }
+      ],
+      "status": "closed",
+      "url": "https://eur.cvent.me/xqb2gm?RefId=Intensive+Courses+2025%2F26"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "repertoire",
+      "pointe"
+    ],
+    "id": "royal-ballet-school/los-angeles-intensive-2026",
+    "kind": "intensive",
+    "level": [],
+    "location": {
+      "city": "Los Angeles",
+      "country": "US",
+      "online": false,
+      "venue": "The Music Center 135 N. Grand Avenue Los Angeles, CA 90012 United States"
+    },
+    "organization": {
+      "city": "London",
+      "country": "GB",
+      "name": "The Royal Ballet School",
+      "slug": "royal-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 865.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Course fee",
+        "notes": "Course fee: £865 per week"
+      },
+      {
+        "amount": 48.0,
+        "currency": "GBP",
+        "includes": [],
+        "label": "Application fee",
+        "notes": "Application fee: £48"
+      },
+      {
+        "amount": 125.0,
+        "currency": "GBP",
+        "includes": [],
+        "label": "Additional coaching sessions",
+        "notes": "Additional coaching sessions: £125 per session (1 hour)"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-10",
+      "notes": "Students aged 10-13, one-week course: Monday 29 June – Friday 3 July 2026 OR Monday 6 – Friday 10 July 2026\nStudents aged 14-19, two-week course: Monday 29 June – Friday 10 July 2026 (no classes on Sunday)",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 13,
+            "min": 10
+          },
+          "end": "2026-07-03",
+          "gender": "both",
+          "label": "one-week course",
+          "notes": "Monday 29 June – Friday 3 July 2026",
+          "start": "2026-06-29"
+        },
+        {
+          "ageRange": {
+            "max": 13,
+            "min": 10
+          },
+          "end": "2026-07-10",
+          "gender": "both",
+          "label": "one-week course",
+          "notes": "Monday 6 – Friday 10 July 2026",
+          "start": "2026-07-06"
+        },
+        {
+          "ageRange": {
+            "max": 19,
+            "min": 14
+          },
+          "end": "2026-07-10",
+          "gender": "both",
+          "label": "two-week course",
+          "notes": "Monday 29 June – Friday 10 July 2026 (no classes on Sunday)",
+          "start": "2026-06-29"
+        }
+      ],
+      "start": "2026-06-29"
+    },
+    "source": {
+      "hash": "sha256:e056bb6db545f0f422ee3fdc79c98f5f500b74ed47963d8181ded7c6fbaba73c",
+      "provider": "royal-ballet-school",
+      "scrapedAt": "2026-06-03T19:07:05.565238Z",
+      "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/los-angeles-intensive/"
+    },
+    "teachers": [],
+    "title": "Los Angeles Intensive 2026"
+  }
+]

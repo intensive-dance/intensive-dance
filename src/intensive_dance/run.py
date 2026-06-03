@@ -12,12 +12,34 @@ from __future__ import annotations
 
 import json
 import sys
+from datetime import datetime
 from pathlib import Path
 
 from intensive_dance.fetch import make_client
 from intensive_dance.scrapers import SCRAPERS
 
 DATA_DIR = Path(__file__).resolve().parents[2] / "data"
+
+
+def carry_unchanged_timestamps(slug: str, offerings: list) -> None:
+    """Keep the stored `scrapedAt` for offerings whose content hash is unchanged.
+
+    `content_hash` excludes `source`, so an unchanged offering re-hashes
+    identically; reusing its prior timestamp means a no-op scrape produces no git
+    diff — the whole point of committing the data. Expects `source.hash` already
+    set to the current content hash.
+    """
+    path = DATA_DIR / f"{slug}.json"
+    if not path.exists():
+        return
+    try:
+        stored = {o["id"]: o.get("source", {}) for o in json.loads(path.read_text())}
+    except (json.JSONDecodeError, OSError, KeyError):
+        return
+    for offering in offerings:
+        prior = stored.get(offering.id)
+        if prior and prior.get("hash") == offering.source.hash and prior.get("scrapedAt"):
+            offering.source.scraped_at = datetime.fromisoformat(prior["scrapedAt"])
 
 
 def write_provider(slug: str, offerings: list) -> Path:
@@ -53,6 +75,7 @@ def main(argv: list[str]) -> int:
                 continue
             for offering in offerings:
                 offering.source.hash = offering.content_hash()
+            carry_unchanged_timestamps(slug, offerings)
             path = write_provider(slug, offerings)
             print(f"ok {slug}: {len(offerings)} offering(s) -> {path}")
     finally:
