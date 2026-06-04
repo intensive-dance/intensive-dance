@@ -62,6 +62,15 @@
       "url": "https://www.balletacademy.ru/en/",
       "tier": "marquee",
       "status": "seed"
+    },
+    {
+      "slug": "russian-masters-ballet",
+      "name": "Russian Masters Ballet",
+      "country": "ES",
+      "city": "Alicante",
+      "url": "https://russianmastersballet.com/",
+      "tier": "secondary",
+      "status": "live"
     }
   ]
 }
