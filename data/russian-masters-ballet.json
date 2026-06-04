@@ -310,9 +310,9 @@
       "timezone": "Europe/Madrid"
     },
     "source": {
-      "hash": "sha256:d17b2540ddf17210332047611febcb329044c01d4c1a3a73195a0b96f5899848",
+      "hash": "sha256:0d16537731b4fc1bdb3bb5ada3cb3c7d532e738664e9137b51cff82e76f2725a",
       "provider": "russian-masters-ballet",
-      "scrapedAt": "2026-06-04T11:24:15.316138Z",
+      "scrapedAt": "2026-06-04T22:07:43.567120Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/alicante/#open-professional"
     },
     "teachers": [
@@ -407,6 +407,18 @@
         ],
         "name": "Yury Demakov",
         "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Mikhailovsky Theatre"
+          },
+          {
+            "organization": "Deutsche Oper am Rhein"
+          }
+        ],
+        "name": "Svetlana Bednenko",
+        "role": "guest"
       }
     ],
     "title": "RMB Summer Intensive Alicante — Open Professional 2026"
@@ -470,9 +482,9 @@
       "timezone": "Europe/Madrid"
     },
     "source": {
-      "hash": "sha256:ebf51a5ad6469f59672fa4c7a3f1f9c00f25457522fd967d83dc0ff64ff4b5da",
+      "hash": "sha256:2559695952198b99f0def392414e57797653a18033e08dd32c0d9a580f3895cf",
       "provider": "russian-masters-ballet",
-      "scrapedAt": "2026-06-04T11:24:15.313983Z",
+      "scrapedAt": "2026-06-04T22:07:43.564781Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/alicante/#professional"
     },
     "teachers": [
@@ -605,6 +617,18 @@
         ],
         "name": "Anton Valdbauer",
         "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Mikhailovsky Theatre"
+          },
+          {
+            "organization": "Deutsche Oper am Rhein"
+          }
+        ],
+        "name": "Svetlana Bednenko",
+        "role": "guest"
       }
     ],
     "title": "RMB Summer Intensive Alicante — Professional 2026"
@@ -830,9 +854,9 @@
       "timezone": "Europe/Sofia"
     },
     "source": {
-      "hash": "sha256:602a7b266fc42e0b1131f981bfb12d771b0156ef6e5638bba6696c9e4a296bb8",
+      "hash": "sha256:f0ce4d8d0f9585785b43c4c1380ed1b479149be868c89c19f0519d76c9cb1eb2",
       "provider": "russian-masters-ballet",
-      "scrapedAt": "2026-06-04T11:24:16.022847Z",
+      "scrapedAt": "2026-06-04T22:07:43.994043Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/burgas/#pre-professional"
     },
     "teachers": [
@@ -939,6 +963,18 @@
         ],
         "name": "Roman Petukhov",
         "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Mikhailovsky Theatre"
+          },
+          {
+            "organization": "Deutsche Oper am Rhein"
+          }
+        ],
+        "name": "Svetlana Bednenko",
+        "role": "guest"
       }
     ],
     "title": "RMB Summer Intensive Burgas — Pre-Professional 2026"
@@ -1002,9 +1038,9 @@
       "timezone": "Europe/Sofia"
     },
     "source": {
-      "hash": "sha256:04f7152c1e16854ebab48552af77b27be417958c02a6e27985432455c1a6bb78",
+      "hash": "sha256:ca74b3acb403d65568b92ab933515c5d13752d92088cdea265e9b976f586bf2f",
       "provider": "russian-masters-ballet",
-      "scrapedAt": "2026-06-04T11:24:16.021710Z",
+      "scrapedAt": "2026-06-04T22:07:43.992166Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/burgas/#professional"
     },
     "teachers": [
@@ -1110,6 +1146,18 @@
         ],
         "name": "Roman Petukhov",
         "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Mikhailovsky Theatre"
+          },
+          {
+            "organization": "Deutsche Oper am Rhein"
+          }
+        ],
+        "name": "Svetlana Bednenko",
+        "role": "guest"
       }
     ],
     "title": "RMB Summer Intensive Burgas — Professional 2026"
@@ -1161,9 +1209,9 @@
       "timezone": "Europe/Madrid"
     },
     "source": {
-      "hash": "sha256:67fed22760fa038b717f284adab9c8722868212001ec7ed6bc8df875b26f9e19",
+      "hash": "sha256:66d2597a2ca8a740510b3c3b58cab4acffae0a46f46508df2bc6e2d8f4d72b2c",
       "provider": "russian-masters-ballet",
-      "scrapedAt": "2026-06-04T11:28:39.184754Z",
+      "scrapedAt": "2026-06-04T22:07:59.205077Z",
       "url": "https://russianmastersballet.com/courses/ballet-experience/madrid/#program"
     },
     "teachers": [
@@ -1235,6 +1283,11 @@
         ],
         "name": "Larissa Lezhnina",
         "role": "teacher"
+      },
+      {
+        "affiliations": [],
+        "name": "Aida Gómez",
+        "role": "guest"
       }
     ],
     "title": "RMB Winter Intensive Madrid — Program 2026"
@@ -1517,9 +1570,9 @@
       "timezone": "Europe/Moscow"
     },
     "source": {
-      "hash": "sha256:cbcbc8548800db389fa2862726c0aebc7bf5bf4305abc89045829bf4f000145f",
+      "hash": "sha256:38e16efec3e14e24e3f78bd808d53ff260642ef16bd7d8155a54b483f576d575",
       "provider": "russian-masters-ballet",
-      "scrapedAt": "2026-06-04T11:24:16.811426Z",
+      "scrapedAt": "2026-06-04T22:09:30.976082Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/st-petersburg/#professional-2-weeks"
     },
     "teachers": [
@@ -1657,6 +1710,37 @@
         ],
         "name": "Natalia Permyakova",
         "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Mikhailovsky Theatre",
+            "role": "principal"
+          }
+        ],
+        "name": "Ivan Zaytsev",
+        "role": "guest"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Mikhailovsky Theatre",
+            "role": "soloist"
+          }
+        ],
+        "name": "Veronika Markova",
+        "role": "guest"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Boris Eifman Dance Academy",
+            "role": "teacher"
+          }
+        ],
+        "name": "Sergey Laletin",
+        "role": "guest"
       }
     ],
     "title": "RMB Summer Intensive St. Petersburg — Professional (2 weeks) 2026"
@@ -1720,9 +1804,9 @@
       "timezone": "Europe/Moscow"
     },
     "source": {
-      "hash": "sha256:49432e5a52cde08a14436d13f723afd7008cf2713cac055649ca4144b0602d34",
+      "hash": "sha256:48bf6254dcefd11d5f14c63611f8ada5714534f7423b7524563a85371e3f4bf2",
       "provider": "russian-masters-ballet",
-      "scrapedAt": "2026-06-04T11:24:16.810724Z",
+      "scrapedAt": "2026-06-04T22:09:30.973502Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/st-petersburg/#professional"
     },
     "teachers": [
@@ -1856,6 +1940,47 @@
         ],
         "name": "Natalia Permyakova",
         "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Mikhailovsky Theatre",
+            "role": "principal"
+          }
+        ],
+        "name": "Ivan Zaytsev",
+        "role": "guest"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Mariinsky Theatre",
+            "role": "soloist"
+          }
+        ],
+        "name": "Maria Khoreva",
+        "role": "guest"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Mikhailovsky Theatre",
+            "role": "soloist"
+          }
+        ],
+        "name": "Veronika Markova",
+        "role": "guest"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Boris Eifman Dance Academy",
+            "role": "teacher"
+          }
+        ],
+        "name": "Sergey Laletin",
+        "role": "guest"
       }
     ],
     "title": "RMB Summer Intensive St. Petersburg — Professional (3 weeks) 2026"

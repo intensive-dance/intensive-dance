@@ -410,11 +410,13 @@ def _prices(fee_text: str) -> list[Price]:
 
 # --- teachers + affiliations --------------------------------------------------
 #
-# Each teacher is an anchor to /faculty/teachers/<slug>/ followed by a prose
-# description ("current teacher of Vaganova Academy"). We walk the article in
-# document order — not by DOM siblings — because the first names are nested in
-# wrapper <span>s, so a sibling walk overruns into the next teacher. Known
-# institutions in the description become `affiliations`.
+# Resident faculty are anchors to /faculty/teachers/<slug>/; featured guests are
+# anchors to /faculty/artists/ (or /faculty/guests/) in the "Special guests"
+# block. Both are followed by a prose description ("current teacher of Vaganova
+# Academy"). We walk the article in document order — not by DOM siblings —
+# because the first names are nested in wrapper <span>s, so a sibling walk
+# overruns into the next teacher. Known institutions in the description become
+# `affiliations`; guests are emitted as ordinary teachers tagged role="guest".
 
 # Description substring → (canonical organization, slug | None).
 _INSTITUTIONS: list[tuple[str, str, str | None]] = [
@@ -441,30 +443,64 @@ _ROLES = [
 
 def _teachers(article: Node) -> list[Teacher]:
     teachers: dict[str, Teacher] = {}
-    for name, desc in _teacher_entries(article):
+    for name, desc, role in _teacher_entries(article):
         if not name or name.lower() in {"teachers", "teacher"}:
             continue
-        teacher = Teacher(name=name, role="teacher", affiliations=_affiliations(desc))
+        teacher = Teacher(name=name, role=role, affiliations=_affiliations(desc))
         prior = teachers.get(name)
-        if prior is None or (not prior.affiliations and teacher.affiliations):
+        if prior is None or _prefer(teacher, prior):
             teachers[name] = teacher
     return list(teachers.values())
 
 
-def _teacher_entries(article: Node) -> list[tuple[str, str]]:
-    """(name, description) per /faculty/teachers/ anchor, in document order."""
-    entries: list[list[str]] = []  # [name, desc] accumulators
+def _prefer(new: Teacher, prior: Teacher) -> bool:
+    """Whether `new` should replace an already-seen entry for the same person.
+
+    Resident faculty (role "teacher") wins over a "guest" listing of the same
+    person; within one role, a description carrying affiliations beats a bare name.
+    """
+    if new.role != prior.role:
+        return new.role == "teacher"
+    return not prior.affiliations and bool(new.affiliations)
+
+
+# Faculty link path → the role the listed person takes in this intensive.
+_FACULTY_ROLES = (
+    ("/faculty/teachers/", "teacher"),
+    ("/faculty/artists/", "guest"),
+    ("/faculty/guests/", "guest"),
+)
+
+
+def _faculty_role(href: str) -> str | None:
+    return next((role for path, role in _FACULTY_ROLES if path in href), None)
+
+
+def _teacher_entries(article: Node) -> list[tuple[str, str, str]]:
+    """(name, description, role) per faculty anchor, in document order.
+
+    Captures resident faculty (`/faculty/teachers/`) and featured guests
+    (`/faculty/artists/`, `/faculty/guests/`); the description runs to the next
+    faculty anchor or line break.
+    """
+    entries: list[list[str]] = []  # [name, desc, role] accumulators
     current: list[str] | None = None
 
     def walk(node: Node) -> None:
         nonlocal current
         for child in node.iter(include_text=True):
             tag = child.tag
-            if tag == "a" and "/faculty/teachers/" in (child.attributes.get("href") or ""):
-                current = [_text(child), ""]
-                entries.append(current)
-            elif tag == "a" and "/faculty/" in (child.attributes.get("href") or ""):
-                current = None  # a guest/artist link closes the open teacher
+            href = (child.attributes.get("href") or "") if tag == "a" else ""
+            if tag == "a" and (role := _faculty_role(href)):
+                if current is not None and role == current[2] and not current[1].strip():
+                    # a name split across adjacent faculty links (only whitespace
+                    # between them, no description yet) — same person, one entry
+                    current[0] = f"{current[0]} {_text(child)}".strip()
+                else:
+                    current = [_text(child), "", role]
+                    entries.append(current)
+            elif tag == "a" and "/faculty/" in href:
+                current = None  # an unrelated faculty link (index/team) closes the entry
             elif tag == "br":
                 current = None  # the description ends at the line break
             elif tag == "-text":
@@ -474,7 +510,7 @@ def _teacher_entries(article: Node) -> list[tuple[str, str]]:
                 walk(child)
 
     walk(article)
-    return [(name, _clean_desc(desc)) for name, desc in entries]
+    return [(name, _clean_desc(desc), role) for name, desc, role in entries]
 
 
 def _clean_desc(desc: str) -> str:

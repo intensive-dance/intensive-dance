@@ -151,10 +151,39 @@ def test_teacher_former_affiliation_is_not_current():
     assert (aff.organization, aff.role, aff.current) == ("Royal Swedish Ballet", "soloist", False)
 
 
-def test_teacher_guest_link_does_not_capture_a_teacher():
-    # Guests link under /faculty/artists/ (or /guests/), not /faculty/teachers/.
-    html = "<a href='/faculty/artists/svetlana/'><b><u>Svetlana Bednenko</u></b></a> - ex dancer<br>"
-    assert rmb._teachers(_article(html)) == []
+def test_guest_artist_link_captured_as_guest():
+    # Special guests link under /faculty/artists/ — emitted as ordinary teachers
+    # tagged role="guest", with affiliations parsed like anyone else.
+    html = (
+        "<a href='/faculty/artists/svetlana/'><b><u>Svetlana Bednenko</u></b></a>"
+        " - ex dancer of Deutsche Oper am Rhein and ex first soloist of the Mikhailovsky Theatre<br>"
+    )
+    (guest,) = rmb._teachers(_article(html))
+    assert (guest.name, guest.role) == ("Svetlana Bednenko", "guest")
+    assert [a.organization for a in guest.affiliations] == ["Mikhailovsky Theatre", "Deutsche Oper am Rhein"]
+
+
+def test_split_name_across_two_anchors_is_merged():
+    # Some names are split across two adjacent faculty links (whitespace between,
+    # no description) — they're one person, not two.
+    html = (
+        "<a href='/faculty/artists/sergey-laletin/'><b><u>Sergey</u></b></a> "
+        "<a href='/faculty/artists/sergey-laletin/'><b><u>Laletin</u></b></a>"
+        " - teacher at the Boris Eifman Dance Academy<br>"
+    )
+    (guest,) = rmb._teachers(_article(html))
+    assert guest.name == "Sergey Laletin"
+    assert [a.organization for a in guest.affiliations] == ["Boris Eifman Dance Academy"]
+
+
+def test_same_person_as_faculty_and_guest_keeps_teacher_role():
+    # If someone is listed both as resident faculty and as a guest in one track,
+    # dedupe to a single entry and keep role="teacher" — regardless of order.
+    faculty = "<a href='/faculty/teachers/x/'><b><u>Alexey Ilyin</u></b></a> - current teacher of Vaganova Academy<br>"
+    guest = "<a href='/faculty/artists/x/'><b><u>Alexey Ilyin</u></b></a> - guest star<br>"
+    for html in (faculty + guest, guest + faculty):
+        (teacher,) = rmb._teachers(_article(html))
+        assert (teacher.name, teacher.role) == ("Alexey Ilyin", "teacher")
 
 
 def test_teacher_multiple_institutions_kept_org_only():
