@@ -21,8 +21,6 @@ lists the one-day intensives (One Day Ballet Intensive 11-13 / 14-16, Dance Days
 …); as of 2026-06-05 every one of those has already happened, so under the
 drop-ended rule none are emitted and we don't read that page.
 
-`kind`: International Summer → `summer-school`; Autumn / Spring → `intensive`.
-
 WHAT THIS SCRAPER EXERCISES (verified live 2026-06-05):
   - REQUIREMENTS = PHOTOS, defined-poses. Application asks for five named poses
     (demi plié 1st, tendu devant effacé, tendu à la seconde, first arabesque,
@@ -51,7 +49,6 @@ from intensive_dance import parse
 from intensive_dance.models import (
     Application,
     Genre,
-    Kind,
     Location,
     Offering,
     Organization,
@@ -163,9 +160,9 @@ def _offering_from_block(block: _Block, today: date) -> list[Offering]:
     if "summer" in head:
         return _summer_offerings(block, today)
     if "autumn" in head:
-        return _single_offering(block, "autumn-audition-preparation", "intensive", today)
+        return _single_offering(block, "autumn-audition-preparation", today)
     if "spring" in head:
-        return _single_offering(block, "spring-course", "intensive", today)
+        return _single_offering(block, "spring-course", today)
     return []
 
 
@@ -196,7 +193,6 @@ def _summer_offerings(block: _Block, today: date) -> list[Offering]:
             _make_offering(
                 slug=suffix,
                 title=f"International Summer Course — {label}",
-                kind="summer-school",
                 outline=outline,
                 entry=entry,
                 photos=photos,
@@ -210,7 +206,7 @@ def _summer_offerings(block: _Block, today: date) -> list[Offering]:
     return offerings
 
 
-def _single_offering(block: _Block, slug: str, kind: Kind, today: date) -> list[Offering]:
+def _single_offering(block: _Block, slug: str, today: date) -> list[Offering]:
     dates_text = block.field("Course Date")
     start, end = _date_range(dates_text)
     if _ended(end, today):
@@ -220,7 +216,6 @@ def _single_offering(block: _Block, slug: str, kind: Kind, today: date) -> list[
         _make_offering(
             slug=slug,
             title=block.heading,
-            kind=kind,
             outline=block.field("Course Outline"),
             entry=block.field("Entry Requirements"),
             photos=block.field("Application Photos"),
@@ -237,7 +232,6 @@ def _make_offering(
     *,
     slug: str,
     title: str,
-    kind: Kind,
     outline: str,
     entry: str,
     photos: str,
@@ -253,7 +247,6 @@ def _make_offering(
         source=Source(provider="central-school-of-ballet", url=PAGE_URL, scrapedAt=now_utc()),
         title=title,
         genres=_genres(outline),
-        kind=kind,
         level=["pre-professional"] if _has_grade_prereq(entry) else [],
         ageRange=_age_range(f"{title}\n{entry}"),
         organization=ORG,

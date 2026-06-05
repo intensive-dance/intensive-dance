@@ -115,7 +115,6 @@ def test_emits_one_per_track_and_drops_past_one_day():
 
 def test_summer_week_one_dates_age_price():
     o = _by_id(csb._build_offerings(_HTML, TODAY), "summer-week-one")
-    assert o.kind == "summer-school"
     assert o.schedule.start == date(2026, 7, 27)
     assert o.schedule.end == date(2026, 8, 1)
     assert o.age_range == {"min": 14, "max": 16}
@@ -143,7 +142,6 @@ def test_summer_two_week_span_and_higher_fee():
 
 def test_autumn_intensive_dates_and_no_tba_price():
     o = _by_id(csb._build_offerings(_HTML, TODAY), "autumn-audition-preparation")
-    assert o.kind == "intensive"
     assert o.schedule.start == date(2026, 10, 27)
     assert o.schedule.end == date(2026, 10, 29)
     assert o.prices == []  # "To be announced" → no Price

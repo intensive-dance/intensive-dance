@@ -14,7 +14,6 @@
       "pointe"
     ],
     "id": "central-school-of-ballet/autumn-audition-preparation",
-    "kind": "intensive",
     "level": [
       "pre-professional"
     ],
@@ -38,7 +37,7 @@
       "start": "2026-10-27"
     },
     "source": {
-      "hash": "sha256:1e814ec7dee888b813be33131dea0806caa44306dbce7f580eba29debbdd9570",
+      "hash": "sha256:bbaf4f9f6d40a1957f5c937b353d778a6145caa48c484656ebbc26cf8a40264b",
       "provider": "central-school-of-ballet",
       "scrapedAt": "2026-06-05T18:58:27.855203Z",
       "url": "https://www.centralschoolofballet.co.uk/dance-classes-courses/short-courses/ballet-intensives/"
@@ -75,7 +74,6 @@
       "pointe"
     ],
     "id": "central-school-of-ballet/spring-course",
-    "kind": "intensive",
     "level": [
       "pre-professional"
     ],
@@ -97,7 +95,7 @@
       "sessions": []
     },
     "source": {
-      "hash": "sha256:21225722ea2262c999defc0e4a7e9aa6c4e4d1da867e1d59284fdb6fe4de9e05",
+      "hash": "sha256:d97d008fa7954193a4c2870f1a48df3a6ce531f549a09d40572d3f38b1b53b04",
       "provider": "central-school-of-ballet",
       "scrapedAt": "2026-06-05T18:57:44.970864Z",
       "url": "https://www.centralschoolofballet.co.uk/dance-classes-courses/short-courses/ballet-intensives/"
@@ -135,7 +133,6 @@
       "pointe"
     ],
     "id": "central-school-of-ballet/summer-two-week",
-    "kind": "summer-school",
     "level": [
       "pre-professional"
     ],
@@ -169,7 +166,7 @@
       "start": "2026-07-27"
     },
     "source": {
-      "hash": "sha256:1ef27014bbf0bb346984198cc44426f08d37435c52f7b48e10caa5a049c083cb",
+      "hash": "sha256:75ef113c7180d16e850af3a759bc203b5744885ab527a5db88d26497dc234b4d",
       "provider": "central-school-of-ballet",
       "scrapedAt": "2026-06-05T18:58:27.854412Z",
       "url": "https://www.centralschoolofballet.co.uk/dance-classes-courses/short-courses/ballet-intensives/"
@@ -207,7 +204,6 @@
       "pointe"
     ],
     "id": "central-school-of-ballet/summer-week-one",
-    "kind": "summer-school",
     "level": [
       "pre-professional"
     ],
@@ -241,7 +237,7 @@
       "start": "2026-07-27"
     },
     "source": {
-      "hash": "sha256:f96bb1b014648f95c06cf1d0ca65353bc349de71bd7f1bbb1e862176b39301e3",
+      "hash": "sha256:ba06f7b16bc323c209837fa1d1223830643a3ddc82dca42fc4ef7a88b1586114",
       "provider": "central-school-of-ballet",
       "scrapedAt": "2026-06-05T18:58:27.853677Z",
       "url": "https://www.centralschoolofballet.co.uk/dance-classes-courses/short-courses/ballet-intensives/"
@@ -279,7 +275,6 @@
       "pointe"
     ],
     "id": "central-school-of-ballet/summer-week-two",
-    "kind": "summer-school",
     "level": [
       "pre-professional"
     ],
@@ -313,7 +308,7 @@
       "start": "2026-08-03"
     },
     "source": {
-      "hash": "sha256:c3af9d7d120498607f094f865c6bbc5bb764866e3e177855782265c05b6698cc",
+      "hash": "sha256:b05d7d6ff92cd77527b315cde6d4b0031dbf24b55f42b56e99ce2c2814c62a19",
       "provider": "central-school-of-ballet",
       "scrapedAt": "2026-06-05T18:58:27.854204Z",
       "url": "https://www.centralschoolofballet.co.uk/dance-classes-courses/short-courses/ballet-intensives/"
