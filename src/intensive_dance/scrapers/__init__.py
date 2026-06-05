@@ -28,6 +28,7 @@ from . import (
     idc_berlin,
     john_cranko_school,
     joffrey_ballet_school,
+    masters_of_ballet_academy,
     mosa_ballet_school,
     norwegian_national_ballet,
     royal_ballet_school,
@@ -62,4 +63,5 @@ SCRAPERS: dict[str, Scraper] = {
     "accademia-teatro-alla-scala": accademia_teatro_alla_scala.scrape,
     "hong-kong-academy-of-ballet": hong_kong_academy_of_ballet.scrape,
     "royal-danish-ballet-summer-school": royal_danish_ballet_summer_school.scrape,
+    "masters-of-ballet-academy": masters_of_ballet_academy.scrape,
 }
