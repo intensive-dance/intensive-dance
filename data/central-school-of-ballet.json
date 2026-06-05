@@ -1,0 +1,324 @@
+[
+  {
+    "ageRange": {
+      "max": 16,
+      "min": 14
+    },
+    "application": {
+      "notes": "Applications open Monday 17 August 2026 Applications close Monday 21 September 2026\nOffers will be sent Friday 25 September 2026",
+      "requirements": [],
+      "url": "https://www.centralschoolofballet.co.uk/applications/summer-course-application-form/"
+    },
+    "genres": [
+      "contemporary",
+      "pointe"
+    ],
+    "id": "central-school-of-ballet/autumn-audition-preparation",
+    "kind": "intensive",
+    "level": [
+      "pre-professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "London",
+      "country": "GB"
+    },
+    "organization": {
+      "city": "London",
+      "country": "GB",
+      "name": "Central School of Ballet",
+      "slug": "central-school-of-ballet"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-10-29",
+      "notes": "Tuesday 27 October – Thursday 29 October 2026",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-10-27"
+    },
+    "source": {
+      "hash": "sha256:1e814ec7dee888b813be33131dea0806caa44306dbce7f580eba29debbdd9570",
+      "provider": "central-school-of-ballet",
+      "scrapedAt": "2026-06-05T18:58:27.855203Z",
+      "url": "https://www.centralschoolofballet.co.uk/dance-classes-courses/short-courses/ballet-intensives/"
+    },
+    "teachers": [],
+    "title": "Autumn Audition Preparation Course (14-16 years)"
+  },
+  {
+    "ageRange": {
+      "max": 16,
+      "min": 11
+    },
+    "application": {
+      "requirements": [
+        {
+          "notes": "In your application, please submit the following photos: •Demi plié in first position, arms in 2nd •Tendu devant efface (open position), arms in 2nd •Tendu à la seconde arms in 2nd •First arabesque, en l’air (facing side) •Fourth croisé on pointe, arms in 5th",
+          "poses": [
+            "Demi plié in first position, arms in 2nd",
+            "Tendu devant efface (open position), arms in 2nd",
+            "Tendu à la seconde arms in 2nd",
+            "First arabesque, en l'air (facing side)",
+            "Fourth croisé on pointe, arms in 5th"
+          ],
+          "specificity": "defined-poses",
+          "type": "photos"
+        }
+      ],
+      "url": "https://www.centralschoolofballet.co.uk/applications/summer-course-application-form/"
+    },
+    "genres": [
+      "contemporary",
+      "repertoire",
+      "character",
+      "pointe"
+    ],
+    "id": "central-school-of-ballet/spring-course",
+    "kind": "intensive",
+    "level": [
+      "pre-professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "London",
+      "country": "GB"
+    },
+    "organization": {
+      "city": "London",
+      "country": "GB",
+      "name": "Central School of Ballet",
+      "slug": "central-school-of-ballet"
+    },
+    "prices": [],
+    "schedule": {
+      "notes": "To be announced",
+      "season": "unknown",
+      "sessions": []
+    },
+    "source": {
+      "hash": "sha256:21225722ea2262c999defc0e4a7e9aa6c4e4d1da867e1d59284fdb6fe4de9e05",
+      "provider": "central-school-of-ballet",
+      "scrapedAt": "2026-06-05T18:57:44.970864Z",
+      "url": "https://www.centralschoolofballet.co.uk/dance-classes-courses/short-courses/ballet-intensives/"
+    },
+    "teachers": [],
+    "title": "Spring Course (11-16 years)"
+  },
+  {
+    "ageRange": {
+      "max": 16,
+      "min": 11
+    },
+    "application": {
+      "notes": "Limited places remaining. Please submit your application below and we will be in touch with you.",
+      "requirements": [
+        {
+          "notes": "In your application, please submit the following photos: •Demi plié in first position, arms in 2nd •Tendu devant efface (open position), arms in 2nd •Tendu à la seconde arms in 2nd •First arabesque, en l’air (facing side) •Fourth croisé on pointe, arms in 5th",
+          "poses": [
+            "Demi plié in first position, arms in 2nd",
+            "Tendu devant efface (open position), arms in 2nd",
+            "Tendu à la seconde arms in 2nd",
+            "First arabesque, en l'air (facing side)",
+            "Fourth croisé on pointe, arms in 5th"
+          ],
+          "specificity": "defined-poses",
+          "type": "photos"
+        }
+      ],
+      "url": "https://www.centralschoolofballet.co.uk/applications/summer-course-application-form/"
+    },
+    "genres": [
+      "contemporary",
+      "repertoire",
+      "character",
+      "pointe"
+    ],
+    "id": "central-school-of-ballet/summer-two-week",
+    "kind": "summer-school",
+    "level": [
+      "pre-professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "London",
+      "country": "GB"
+    },
+    "organization": {
+      "city": "London",
+      "country": "GB",
+      "name": "Central School of Ballet",
+      "slug": "central-school-of-ballet"
+    },
+    "prices": [
+      {
+        "amount": 820.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Two week course (11-16 years)",
+        "notes": "Accommodation and meals are not provided."
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-08",
+      "notes": "One week courses: Week one (14-16 years) – Monday 27 July – Saturday 1 August 2026 Week two (11-13 years) – Monday 3 August – Saturday 8 August 2026\nTwo week courses: Monday 27 July – Saturday 8 August 2026 (11-16 years)",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-27"
+    },
+    "source": {
+      "hash": "sha256:1ef27014bbf0bb346984198cc44426f08d37435c52f7b48e10caa5a049c083cb",
+      "provider": "central-school-of-ballet",
+      "scrapedAt": "2026-06-05T18:58:27.854412Z",
+      "url": "https://www.centralschoolofballet.co.uk/dance-classes-courses/short-courses/ballet-intensives/"
+    },
+    "teachers": [],
+    "title": "International Summer Course — Two week course (11-16 years)"
+  },
+  {
+    "ageRange": {
+      "max": 16,
+      "min": 14
+    },
+    "application": {
+      "notes": "Limited places remaining. Please submit your application below and we will be in touch with you.",
+      "requirements": [
+        {
+          "notes": "In your application, please submit the following photos: •Demi plié in first position, arms in 2nd •Tendu devant efface (open position), arms in 2nd •Tendu à la seconde arms in 2nd •First arabesque, en l’air (facing side) •Fourth croisé on pointe, arms in 5th",
+          "poses": [
+            "Demi plié in first position, arms in 2nd",
+            "Tendu devant efface (open position), arms in 2nd",
+            "Tendu à la seconde arms in 2nd",
+            "First arabesque, en l'air (facing side)",
+            "Fourth croisé on pointe, arms in 5th"
+          ],
+          "specificity": "defined-poses",
+          "type": "photos"
+        }
+      ],
+      "url": "https://www.centralschoolofballet.co.uk/applications/summer-course-application-form/"
+    },
+    "genres": [
+      "contemporary",
+      "repertoire",
+      "character",
+      "pointe"
+    ],
+    "id": "central-school-of-ballet/summer-week-one",
+    "kind": "summer-school",
+    "level": [
+      "pre-professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "London",
+      "country": "GB"
+    },
+    "organization": {
+      "city": "London",
+      "country": "GB",
+      "name": "Central School of Ballet",
+      "slug": "central-school-of-ballet"
+    },
+    "prices": [
+      {
+        "amount": 525.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "One week course (14-16 years)",
+        "notes": "Accommodation and meals are not provided."
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-01",
+      "notes": "One week courses: Week one (14-16 years) – Monday 27 July – Saturday 1 August 2026 Week two (11-13 years) – Monday 3 August – Saturday 8 August 2026\nTwo week courses: Monday 27 July – Saturday 8 August 2026 (11-16 years)",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-27"
+    },
+    "source": {
+      "hash": "sha256:f96bb1b014648f95c06cf1d0ca65353bc349de71bd7f1bbb1e862176b39301e3",
+      "provider": "central-school-of-ballet",
+      "scrapedAt": "2026-06-05T18:58:27.853677Z",
+      "url": "https://www.centralschoolofballet.co.uk/dance-classes-courses/short-courses/ballet-intensives/"
+    },
+    "teachers": [],
+    "title": "International Summer Course — One week course (14-16 years)"
+  },
+  {
+    "ageRange": {
+      "max": 13,
+      "min": 11
+    },
+    "application": {
+      "notes": "Limited places remaining. Please submit your application below and we will be in touch with you.",
+      "requirements": [
+        {
+          "notes": "In your application, please submit the following photos: •Demi plié in first position, arms in 2nd •Tendu devant efface (open position), arms in 2nd •Tendu à la seconde arms in 2nd •First arabesque, en l’air (facing side) •Fourth croisé on pointe, arms in 5th",
+          "poses": [
+            "Demi plié in first position, arms in 2nd",
+            "Tendu devant efface (open position), arms in 2nd",
+            "Tendu à la seconde arms in 2nd",
+            "First arabesque, en l'air (facing side)",
+            "Fourth croisé on pointe, arms in 5th"
+          ],
+          "specificity": "defined-poses",
+          "type": "photos"
+        }
+      ],
+      "url": "https://www.centralschoolofballet.co.uk/applications/summer-course-application-form/"
+    },
+    "genres": [
+      "contemporary",
+      "repertoire",
+      "character",
+      "pointe"
+    ],
+    "id": "central-school-of-ballet/summer-week-two",
+    "kind": "summer-school",
+    "level": [
+      "pre-professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "London",
+      "country": "GB"
+    },
+    "organization": {
+      "city": "London",
+      "country": "GB",
+      "name": "Central School of Ballet",
+      "slug": "central-school-of-ballet"
+    },
+    "prices": [
+      {
+        "amount": 525.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "One week course (11-13 years)",
+        "notes": "Accommodation and meals are not provided."
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-08",
+      "notes": "One week courses: Week one (14-16 years) – Monday 27 July – Saturday 1 August 2026 Week two (11-13 years) – Monday 3 August – Saturday 8 August 2026\nTwo week courses: Monday 27 July – Saturday 8 August 2026 (11-16 years)",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-03"
+    },
+    "source": {
+      "hash": "sha256:c3af9d7d120498607f094f865c6bbc5bb764866e3e177855782265c05b6698cc",
+      "provider": "central-school-of-ballet",
+      "scrapedAt": "2026-06-05T18:58:27.854204Z",
+      "url": "https://www.centralschoolofballet.co.uk/dance-classes-courses/short-courses/ballet-intensives/"
+    },
+    "teachers": [],
+    "title": "International Summer Course — One week course (11-13 years)"
+  }
+]

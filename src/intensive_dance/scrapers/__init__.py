@@ -16,6 +16,7 @@ from . import (
     abt_jko_school,
     academie_princesse_grace,
     brussels_international_ballet,
+    central_school_of_ballet,
     dutch_national_ballet_academy,
     ecole_danse_opera_paris,
     english_national_ballet_school,
@@ -50,4 +51,5 @@ SCRAPERS: dict[str, Scraper] = {
     "school-of-american-ballet": school_of_american_ballet.scrape,
     "young-stars-ballet": young_stars_ballet.scrape,
     "idc-berlin": idc_berlin.scrape,
+    "central-school-of-ballet": central_school_of_ballet.scrape,
 }
