@@ -130,7 +130,7 @@
       "slug": "m-i-ballet-school",
       "name": "M.I. Ballet School",
       "country": "DE",
-      "city": "München",
+      "city": "Munich",
       "url": "https://mi-balletschool.com/",
       "tier": "secondary",
       "status": "seed"
@@ -139,7 +139,7 @@
       "slug": "munich-ballet-intensive",
       "name": "Munich Ballet Intensive (Dance Arts Academy)",
       "country": "DE",
-      "city": "München",
+      "city": "Munich",
       "url": "https://danceartsacademy.de/",
       "tier": "secondary",
       "status": "seed"
@@ -157,7 +157,7 @@
       "slug": "tanzwerkstatt-europa",
       "name": "Tanzwerkstatt Europa",
       "country": "DE",
-      "city": "München",
+      "city": "Munich",
       "url": "https://jointadventures.net/",
       "tier": "secondary",
       "status": "seed"
@@ -211,7 +211,7 @@
       "slug": "northern-ballet-academy",
       "name": "Northern Ballet Academy",
       "country": "GB",
-      "city": "London",
+      "city": "Leeds",
       "url": "https://northernballet.com/",
       "tier": "secondary",
       "status": "seed"
@@ -247,7 +247,7 @@
       "slug": "accademia-teatro-alla-scala",
       "name": "Accademia Teatro alla Scala",
       "country": "IT",
-      "city": "Mailand",
+      "city": "Milan",
       "url": "https://accademialascala.it/",
       "tier": "marquee",
       "status": "seed"
@@ -265,7 +265,7 @@
       "slug": "attitude-ballet-studios",
       "name": "Attitude Ballet Studios – Vienna Ballet Intensive",
       "country": "AT",
-      "city": "Wien",
+      "city": "Vienna",
       "url": "https://attitudestudios.at/",
       "tier": "secondary",
       "status": "seed"
@@ -274,7 +274,7 @@
       "slug": "international-ballet-masterclasses-prague",
       "name": "International Ballet Masterclasses Prague",
       "country": "CZ",
-      "city": "Prag",
+      "city": "Prague",
       "url": "https://balletmasterclass.com/",
       "tier": "secondary",
       "status": "seed"
@@ -299,9 +299,9 @@
     },
     {
       "slug": "royal-danish-ballet-summer-school",
-      "name": "Royal Danish Ballet Summer School (mit Tanz Akademie Zürich)",
+      "name": "Royal Danish Ballet Summer School (Tanz Akademie Zürich)",
       "country": "DK",
-      "city": "Kopenhagen",
+      "city": "Copenhagen",
       "url": "https://kglteater.dk/",
       "tier": "marquee",
       "status": "seed"
@@ -335,7 +335,7 @@
     },
     {
       "slug": "finland-international-summer-ballet-school",
-      "name": "Finland International Summer Ballet School (privat)",
+      "name": "Finland International Summer Ballet School",
       "country": "FI",
       "city": "Helsinki",
       "url": "https://finsummerdance.com/",
@@ -382,7 +382,7 @@
       "slug": "hong-kong-academy-of-ballet",
       "name": "Hong Kong Academy of Ballet (Hong Kong Ballet)",
       "country": "HK",
-      "city": "Hongkong",
+      "city": "Hong Kong",
       "url": "https://hkballet.com/",
       "tier": "marquee",
       "status": "seed"
