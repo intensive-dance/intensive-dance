@@ -17,6 +17,16 @@ Source-of-truth docs to keep open: [`docs/data-model.md`](./docs/data-model.md)
 
 ---
 
+## Scope & coordination (read first)
+
+- **We say "scraper", not "crawler"** — these modules *extract* from known pages; they don't crawl/discover the open web.
+- **In scope:** short-term **student intensives** (summer schools, intensives, short courses, master classes) — one `Offering` per dated edition.
+- **Stub, don't fake:** if a provider is a **full-time vocational school / long-term _Ausbildung_ only** (no public short-term intensive), do NOT invent an offering — leave it `seed`, relabel its issue `phase-2`, defer to **IDR-9 (#12)** (e.g. Elmhurst #79).
+- **Competitions are OUT OF SCOPE (icebox).** Prix de Lausanne, YAGP, Tanzolymp, HIBC, … are parked in epic **#80 (IDR-40)** — idea-collection OK, **no implementation**. About to build one? Stop — it's parked on purpose; reopen the discussion first.
+- **Coordinate — people work in parallel.** Always `git fetch` + check `gh pr list` / `gh issue list` first. Before building a provider, **create its issue and self-assign** so two people don't build the same one.
+
+---
+
 ## TL;DR — adding a provider
 
 1. Pick a provider that's `"status": "seed"` in [`providers.json`](./providers.json).
