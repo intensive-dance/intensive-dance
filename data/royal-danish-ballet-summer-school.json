@@ -24,7 +24,6 @@
       "character"
     ],
     "id": "royal-danish-ballet-summer-school/summer-school-2026",
-    "kind": "summer-school",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -73,7 +72,7 @@
       "timezone": "Europe/Copenhagen"
     },
     "source": {
-      "hash": "sha256:43655be71cf3c05372a4b4ba41960c74fbc1dc25c5f4ea956f470b325dbb7b8e",
+      "hash": "sha256:5050a5c9fafae9a9a96535cd493f49a0f5dda0b1e2bd4a0e03a11c6fa087f5ed",
       "provider": "royal-danish-ballet-summer-school",
       "scrapedAt": "2026-06-05T18:57:32.335753Z",
       "url": "https://www.kglteater.dk/en/about-the-royal-danish-theatre/summerschool/"

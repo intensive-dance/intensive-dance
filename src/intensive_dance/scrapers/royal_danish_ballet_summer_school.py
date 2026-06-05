@@ -16,7 +16,7 @@ note the two programmes rather than emitting near-duplicate records. A separate
 Offering to emit.
 
 WHAT THIS SCRAPER EXERCISES (verified live 2026-06-05):
-  - kind `summer-school`; two-week course 20 Jul – 1 Aug 2026.
+  - a two-week summer course running 20 Jul – 1 Aug 2026.
   - AGE band 12–21 (both bounds), `level` left empty — "Advanced"/"Elite" name the
     two internal programmes, not an admission level the source pins to the course.
   - GENRES from the curriculum list (classical ballet, Bournonville → character,
@@ -88,7 +88,6 @@ def _build_offering(html: str, today: date) -> Offering | None:
         source=Source(provider="royal-danish-ballet-summer-school", url=PAGE, scrapedAt=now_utc()),
         title=f"Royal Danish Ballet Summer School {season}".strip(),
         genres=_genres(text),
-        kind="summer-school",
         ageRange=_age_range(text),
         organization=ORG,
         location=Location(

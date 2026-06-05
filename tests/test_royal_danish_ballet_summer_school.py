@@ -28,7 +28,6 @@ def test_build_offering_full():
     o = rdb._build_offering(HTML, date(2026, 6, 5))
     assert o is not None
     assert o.id == "royal-danish-ballet-summer-school/summer-school-2026"
-    assert o.kind == "summer-school"
     assert o.lifecycle == "scheduled"
     assert o.schedule.start == date(2026, 7, 20)
     assert o.schedule.end == date(2026, 8, 1)
