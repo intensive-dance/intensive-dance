@@ -8,6 +8,13 @@ the traps that aren't obvious from one file.
 Source-of-truth docs to keep open: [`docs/data-model.md`](./docs/data-model.md)
 (record shape) and [`README.md`](./README.md) (project ethos + API-first order).
 
+> **Keep this file current.** This doc is only useful if it stays true. In
+> **every PR**, if you learned something significant (a new source shape, a trap,
+> a better pattern) or noticed something here is now **outdated, wrong, or
+> redundant**, update `AGENTS.md` in the same PR. Prefer correcting/condensing an
+> existing line over appending a new one — fight bloat. Treat it as part of the
+> change, not a follow-up.
+
 ---
 
 ## TL;DR — adding a provider
@@ -202,4 +209,5 @@ when a second provider genuinely needs the identical thing.
 - [ ] `data/<slug>.json` generated and looks right (spot-check dates/prices/location)
 - [ ] `ruff check .` · `ruff format .` · `ty check` · `pytest -q` · `schema` · `validate` all green
 - [ ] Module docstring: API-FIRST + DISCOVERY + WHAT IT EXERCISES (verified date)
+- [ ] `AGENTS.md` updated if you learned something / found something stale (see top)
 - [ ] Branch → push → PR
