@@ -109,6 +109,14 @@ the request through the fetch proxy instead of giving up. It's a last resort
 (slower, rate-limited), so reach for it only after the API-first tree and a plain
 fetch have failed, and say in the scraper docstring *why* it was needed.
 
+Two interfaces, one service. `make_client()` (`src/intensive_dance/fetch.py`)
+already routes every scraper through this proxy as a transparent **forward
+proxy** when `FETCH_PROXY_URL`/`FETCH_PROXY_TOKEN` are set — you just fetch the
+real URL (auth rides on `Proxy-Authorization`), no query params. The **REST
+endpoint** below (`?url=…&render=1`, `Authorization: Bearer`) is the manual
+render/JS-escalation tier; there's no helper for it yet, so call it by hand when
+a plain fetch through `make_client()` still comes back blocked.
+
 **One endpoint** (`/`, GET — or POST to forward the request body + Content-Type
 upstream for form POSTs). The base does a plain Chrome-UA fetch with TLS
 verification off (covers datacenter-IP blocks and broken certs); query params
@@ -131,7 +139,7 @@ except `url`):
 | `format=md` | Convert the HTML to Markdown via Readability main-content extraction (nav/ads dropped, links absolutized). Omit for raw HTML. |
 | `block=0` | Ad/cookie/tracker blocking (uBO-style filter lists) is **on by default** for rendered pages; set `0` to disable it for this request. |
 
-Full spec: `$FETCH_PROXY_URL`docs (Scalar UI; raw at `/docs/json`).
+Full spec: `$FETCH_PROXY_URL/docs` (Scalar UI; raw at `/docs/json`).
 
 **Config — `FETCH_PROXY_URL` + `FETCH_PROXY_TOKEN`.** Both are stored in GitHub
 two ways: as **Actions variables** (read in **development**) and as **Actions
