@@ -16,7 +16,6 @@
       "repertoire"
     ],
     "id": "russian-masters-ballet/alicante-observation-2026",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -49,7 +48,7 @@
       "timezone": "Europe/Madrid"
     },
     "source": {
-      "hash": "sha256:0af043665f469a10ebf53e0c2a0b78c911a0974e7065499abef256320e807890",
+      "hash": "sha256:ca103296a47509be248fba1c8de6c325a53789e2eba86660f03c04cfa3acdbc2",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-05T10:05:05.887070Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/alicante/#observation"
@@ -257,7 +256,6 @@
       "pointe"
     ],
     "id": "russian-masters-ballet/alicante-open-professional-2026",
-    "kind": "intensive",
     "level": [
       "professional",
       "open"
@@ -312,7 +310,7 @@
       "timezone": "Europe/Madrid"
     },
     "source": {
-      "hash": "sha256:9d23b8841124abfc359efb0ff7fb37d4556ca02efb435550a5ff13e1679de0f1",
+      "hash": "sha256:06a5f0817432416f24ed99a90bb7df8312a4f7bc22cdf1d338b479706470af8d",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-05T10:05:05.886497Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/alicante/#open-professional"
@@ -449,7 +447,6 @@
       "pointe"
     ],
     "id": "russian-masters-ballet/alicante-professional-2026",
-    "kind": "intensive",
     "level": [
       "professional"
     ],
@@ -485,7 +482,7 @@
       "timezone": "Europe/Madrid"
     },
     "source": {
-      "hash": "sha256:63d928a3126ac9c6a677d9511008f8c05da7656d634f3bad55d061f961e3d055",
+      "hash": "sha256:e9d9ab1b1b1179d40a446526ac6f6d672a8d1155a867fef245c0f5a60c0c66dd",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-05T10:05:05.885275Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/alicante/#professional"
@@ -653,7 +650,6 @@
       "repertoire"
     ],
     "id": "russian-masters-ballet/burgas-observation-2026",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -686,7 +682,7 @@
       "timezone": "Europe/Sofia"
     },
     "source": {
-      "hash": "sha256:fab1e60f4db096518ae39bcec634e17f99e2e848a1487116c0f6c747217b1ae4",
+      "hash": "sha256:846ff32b45d179f8729d965c7a8b3d4eb89b6f26aa371b729416b81a9e45de60",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-05T10:05:06.337039Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/burgas/#observation"
@@ -823,7 +819,6 @@
       "pointe"
     ],
     "id": "russian-masters-ballet/burgas-pre-professional-2026",
-    "kind": "intensive",
     "level": [
       "pre-professional"
     ],
@@ -859,7 +854,7 @@
       "timezone": "Europe/Sofia"
     },
     "source": {
-      "hash": "sha256:8599d35d54342dace45c4fd97ba4169b57cbbcb37c4204f1a06a240f97a644b9",
+      "hash": "sha256:df0daba48d5d6c002404f79b342befb29eaa099a2cf4334a97ba2da9c12cebe6",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-05T10:05:06.336612Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/burgas/#pre-professional"
@@ -1008,7 +1003,6 @@
       "pointe"
     ],
     "id": "russian-masters-ballet/burgas-professional-2026",
-    "kind": "intensive",
     "level": [
       "professional"
     ],
@@ -1044,7 +1038,7 @@
       "timezone": "Europe/Sofia"
     },
     "source": {
-      "hash": "sha256:f2eb6e691c0dcd7e8a99debffb656a8282ab9ecef0e21a0e4f125ae70d3e3f23",
+      "hash": "sha256:cb0a4ee373e4856fff365cf67f8a3166433061ee07c9b06a11e6a80f352c4d5c",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-05T10:05:06.335961Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/burgas/#professional"
@@ -1192,7 +1186,6 @@
       "pointe"
     ],
     "id": "russian-masters-ballet/madrid-program-2026",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -1216,7 +1209,7 @@
       "timezone": "Europe/Madrid"
     },
     "source": {
-      "hash": "sha256:1f3bb157cc1330e84ee4ca5ba956d2f6f16f31419969b1e63ad19b7bc1b1db2f",
+      "hash": "sha256:c2382bc9ddba5b9dbc6388de5ad8a9b8a0d49e56dd04ae4e94cd1cf9d442b05e",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-05T10:05:08.161487Z",
       "url": "https://russianmastersballet.com/courses/ballet-experience/madrid/#program"
@@ -1316,7 +1309,6 @@
       "repertoire"
     ],
     "id": "russian-masters-ballet/perth-observation-unknown",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "cancelled",
     "lifecycleNote": "This RMB location has been cancelled.",
@@ -1338,7 +1330,7 @@
       "timezone": "Australia/Perth"
     },
     "source": {
-      "hash": "sha256:f3dfbe004dad42692930e3ce79ebf1c4afe5374d3238fddb65524bd03b8bdad6",
+      "hash": "sha256:ca1d9ac70d4028fc6098334355b074f5cbb002a2dfda7db488176afd18127acd",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-05T10:05:09.099375Z",
       "url": "https://russianmastersballet.com/courses/ballet-experience/perth/#observation"
@@ -1370,7 +1362,6 @@
       "pointe"
     ],
     "id": "russian-masters-ballet/perth-professional-unknown",
-    "kind": "intensive",
     "level": [
       "professional"
     ],
@@ -1394,7 +1385,7 @@
       "timezone": "Australia/Perth"
     },
     "source": {
-      "hash": "sha256:65b1cbd6a6f03d52671494dc9544928f754cb2a8a7b7b92e84f46dedf9579efb",
+      "hash": "sha256:777690e29183dbe99a7e90ee5de99dbedb84dca0881de259658eadbe0caae116",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-05T10:05:09.099139Z",
       "url": "https://russianmastersballet.com/courses/ballet-experience/perth/#professional"
@@ -1425,7 +1416,6 @@
       "pointe"
     ],
     "id": "russian-masters-ballet/shanghai-china-professional-2026",
-    "kind": "intensive",
     "level": [
       "professional"
     ],
@@ -1470,7 +1460,7 @@
       "timezone": "Asia/Shanghai"
     },
     "source": {
-      "hash": "sha256:a22c0196a9ca6b436fb107cda9fb6b87606d26d9774ef254092d4b601e0d725a",
+      "hash": "sha256:d8472f631ad18cf18dfb4027cd73d499a6805c0399c37b17e381916c923eff86",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-05T10:05:09.808058Z",
       "url": "https://russianmastersballet.com/courses/ballet-experience/shanghai-china/#professional"
@@ -1551,7 +1541,6 @@
       "repertoire"
     ],
     "id": "russian-masters-ballet/st-petersburg-observation-2026",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -1575,7 +1564,7 @@
       "timezone": "Europe/Moscow"
     },
     "source": {
-      "hash": "sha256:cb5a64afdbeae0964bb2b6aa723e99cb7641341e6573385cf46c0357fae926dc",
+      "hash": "sha256:b3f5989d6e318a6948709c597e0069c08ef324d1c9d2f5b1d69088c4d3ae6b84",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-05T10:05:06.828660Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/st-petersburg/#observation"
@@ -1779,7 +1768,6 @@
       "pointe"
     ],
     "id": "russian-masters-ballet/st-petersburg-professional-2-weeks-2026",
-    "kind": "intensive",
     "level": [
       "professional"
     ],
@@ -1815,7 +1803,7 @@
       "timezone": "Europe/Moscow"
     },
     "source": {
-      "hash": "sha256:2239518a2fa969ec6d7d9a9c9030687b953077a2cacf96545575abe3e46f106a",
+      "hash": "sha256:b49ea330140b0b777c85f1431bc3780cfd3571a0c39ba7860898e8261444dd26",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-05T10:05:06.827947Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/st-petersburg/#professional-2-weeks"
@@ -2014,7 +2002,6 @@
       "pointe"
     ],
     "id": "russian-masters-ballet/st-petersburg-professional-2026",
-    "kind": "intensive",
     "level": [
       "professional"
     ],
@@ -2050,7 +2037,7 @@
       "timezone": "Europe/Moscow"
     },
     "source": {
-      "hash": "sha256:a53e96516e64a9540a81b0a411d7df9320e95d51ce65ab84542c5ee24e5a42f4",
+      "hash": "sha256:98d8694f7ec6a2d9cac246981cad96a4f369e9d15baca760df971861a28a0ea1",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-05T10:05:06.826820Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/st-petersburg/#professional"

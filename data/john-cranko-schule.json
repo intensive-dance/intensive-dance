@@ -25,7 +25,6 @@
       "pointe"
     ],
     "id": "john-cranko-schule/summer-school-2026",
-    "kind": "summer-school",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -58,7 +57,7 @@
       "timezone": "Europe/Berlin"
     },
     "source": {
-      "hash": "sha256:3a8d9b50a0684cd3e9f0b0a82753ec3e95381b97fb2c742a98b809e5d8e0f432",
+      "hash": "sha256:7bd85b06c7c094f9ef0b62b4709ddaaa63038177844a6dcb7d004d84771f1369",
       "provider": "john-cranko-schule",
       "scrapedAt": "2026-06-05T10:05:19.982356Z",
       "url": "https://www.john-cranko-schule.de/summer_school/"

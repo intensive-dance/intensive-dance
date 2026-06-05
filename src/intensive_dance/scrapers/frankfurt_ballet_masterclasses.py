@@ -77,7 +77,6 @@ def _build_offering(html: str, today: date) -> Offering | None:
         ),
         title=f"Frankfurt Ballet Masterclasses {season}",
         genres=_genres(text),
-        kind="masterclass",
         ageRange=_age_range(text),
         organization=ORG,
         location=Location(venue=VENUE, city="Frankfurt am Main", country="DE"),

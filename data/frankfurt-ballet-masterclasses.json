@@ -18,7 +18,6 @@
       "contemporary"
     ],
     "id": "frankfurt-ballet-masterclasses/2026",
-    "kind": "masterclass",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -41,7 +40,7 @@
       "timezone": "Europe/Berlin"
     },
     "source": {
-      "hash": "sha256:5cea7fd934ec29c77418c7d0fddf2a52b825cdeb0b5ce7f9b8150d77d4ac44f0",
+      "hash": "sha256:f04a7da0dde5cd0262c8faf6d7d72ed7d3adf65b503a6ff5a9b933e98ac430a0",
       "provider": "frankfurt-ballet-masterclasses",
       "scrapedAt": "2026-06-05T11:07:53.279110Z",
       "url": "https://masterclass.balletcompetition.net/"

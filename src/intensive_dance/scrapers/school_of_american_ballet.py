@@ -103,7 +103,6 @@ def _build_offering(html: str, url: str, slug: str, today: date) -> Offering | N
         source=Source(provider="school-of-american-ballet", url=url, scrapedAt=now_utc()),
         title=title,
         genres=_genres(headings),
-        kind="summer-school",
         level=_levels(text),
         ageRange=_age_range(text),
         organization=ORG,
