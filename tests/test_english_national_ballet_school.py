@@ -74,10 +74,10 @@ def test_prices_course_and_application_fee():
     assert (app.amount, app.currency) == (30.0, "GBP")
 
 
-def test_build_offering_drops_finished_cycle():
-    course = _course("1")
-    assert enbs._build_offering(course, SAMPLE, date(2026, 12, 1)) is None
-    live = enbs._build_offering(course, SAMPLE, date(2026, 6, 1))
-    assert live is not None
-    assert live.id == "english-national-ballet-school/summer-intensive-2026-course-1"
-    assert live.application.status == "open"
+def test_build_offering_keeps_cycle_as_scheduled():
+    # Per IDR-24 the scraper no longer date-drops; offerings stay `scheduled`
+    # and past/cancelled handling is left to the model.
+    offering = enbs._build_offering(_course("1"), SAMPLE)
+    assert offering.id == "english-national-ballet-school/summer-intensive-2026-course-1"
+    assert offering.lifecycle == "scheduled"
+    assert offering.application.status == "open"

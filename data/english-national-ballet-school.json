@@ -25,6 +25,7 @@
     "level": [
       "intermediate"
     ],
+    "lifecycle": "scheduled",
     "location": {
       "city": "London",
       "country": "GB",
@@ -62,9 +63,9 @@
       "timezone": "Europe/London"
     },
     "source": {
-      "hash": "sha256:89842904457c1c0bcc56dae999fb8ac488b8439c664eea68412513caf2f894e5",
+      "hash": "sha256:4e00e0b62ecce9e20be9acc8249122424af3bfa2f6b0d53b4300ea308b6a3e51",
       "provider": "english-national-ballet-school",
-      "scrapedAt": "2026-06-05T09:55:50.550142Z",
+      "scrapedAt": "2026-06-05T10:22:03.364242Z",
       "url": "https://www.enbschool.org.uk/intensives/summer/"
     },
     "teachers": [],
@@ -96,6 +97,7 @@
     "level": [
       "intermediate"
     ],
+    "lifecycle": "scheduled",
     "location": {
       "city": "London",
       "country": "GB",
@@ -133,9 +135,9 @@
       "timezone": "Europe/London"
     },
     "source": {
-      "hash": "sha256:d2f459da6c5bf6f51695436f265aca906464941b48d198a10ae4383f0fc692fb",
+      "hash": "sha256:cf9625268b642a932695cafded9c3549cf76b184e5af33a74f3ee4109a19eb0c",
       "provider": "english-national-ballet-school",
-      "scrapedAt": "2026-06-05T09:56:38.342870Z",
+      "scrapedAt": "2026-06-05T10:22:03.364767Z",
       "url": "https://www.enbschool.org.uk/intensives/summer/"
     },
     "teachers": [],
@@ -168,6 +170,7 @@
       "pre-professional",
       "professional"
     ],
+    "lifecycle": "scheduled",
     "location": {
       "city": "London",
       "country": "GB",
@@ -205,9 +208,9 @@
       "timezone": "Europe/London"
     },
     "source": {
-      "hash": "sha256:d47dc759b4220fd7f24adafddd1d73a243ef615a9c4ad60ebbea79b802271d2b",
+      "hash": "sha256:7569a38c59111cdde59c907356cb841b93080ef74c8cfbd897b4092d8d1a2435",
       "provider": "english-national-ballet-school",
-      "scrapedAt": "2026-06-05T09:56:38.343196Z",
+      "scrapedAt": "2026-06-05T10:22:03.365243Z",
       "url": "https://www.enbschool.org.uk/intensives/summer/"
     },
     "teachers": [],
