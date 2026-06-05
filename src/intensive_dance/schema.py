@@ -46,7 +46,10 @@ def main(argv: list[str]) -> int:
         return 0
 
     if not SCHEMA_PATH.exists():
-        print(f"missing {SCHEMA_PATH} — run: uv run python -m intensive_dance.schema --write", file=sys.stderr)
+        print(
+            f"missing {SCHEMA_PATH} — run: uv run python -m intensive_dance.schema --write",
+            file=sys.stderr,
+        )
         return 1
     if json.loads(SCHEMA_PATH.read_text()) != schema:
         print(

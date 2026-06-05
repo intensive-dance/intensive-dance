@@ -174,7 +174,9 @@ def test_parse_sections_by_heading():
 
 
 def test_parse_strips_wpbakery_shortcodes():
-    content = wp.parse("[vc_row][vc_column_text]<h2>Location</h2><p>London</p>[/vc_column_text][/vc_row]")
+    content = wp.parse(
+        "[vc_row][vc_column_text]<h2>Location</h2><p>London</p>[/vc_column_text][/vc_row]"
+    )
     assert content.text("Location") == "London"
 
 

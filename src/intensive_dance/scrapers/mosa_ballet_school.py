@@ -55,14 +55,48 @@ _SM_NS = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
 ORG = Organization(name="MOSA Ballet School", slug="mosa-ballet-school", country="BE", city="Liège")
 
 # An event is in scope when its slug names a training format …
-_KEEP = ("intensive", "signature", "immersion", "immersive", "exploring-ballet", "discovering-mosa", "masterclass")
+_KEEP = (
+    "intensive",
+    "signature",
+    "immersion",
+    "immersive",
+    "exploring-ballet",
+    "discovering-mosa",
+    "masterclass",
+)
 # … and is not one of MOSA's many non-training event types.
 _DROP = (
-    "audition", "admission-test", "gala", "recital", "performance", "information-session",
-    "online-information", "info-session", "symposium", "conference", "open-doors", "visit-of",
-    "christmas", "afterwork", "annual", "workshop", "parkinson", "ageing", "aging", "cancer",
-    "inclusive", "adapted", "cyclo", "formation-en", "moovement", "dance-with-mosa-teachers",
-    "let-s-dance-for-life", "la-procure", "dance-for-pd", "health-and", "secundary-school",
+    "audition",
+    "admission-test",
+    "gala",
+    "recital",
+    "performance",
+    "information-session",
+    "online-information",
+    "info-session",
+    "symposium",
+    "conference",
+    "open-doors",
+    "visit-of",
+    "christmas",
+    "afterwork",
+    "annual",
+    "workshop",
+    "parkinson",
+    "ageing",
+    "aging",
+    "cancer",
+    "inclusive",
+    "adapted",
+    "cyclo",
+    "formation-en",
+    "moovement",
+    "dance-with-mosa-teachers",
+    "let-s-dance-for-life",
+    "la-procure",
+    "dance-for-pd",
+    "health-and",
+    "secundary-school",
 )
 _AUDITION_NOTE = (
     "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) "
@@ -134,7 +168,9 @@ def _build_offering(client: httpx.Client, url: str, today: date) -> Offering | N
         application=Application(
             status=_status(body),
             url=url,
-            requirements=[VideoReq(specificity="unspecific", description=_AUDITION_NOTE)] if pre_selection else [],
+            requirements=[VideoReq(specificity="unspecific", description=_AUDITION_NOTE)]
+            if pre_selection
+            else [],
             notes=_AUDITION_NOTE if pre_selection else None,
         ),
     )
@@ -218,7 +254,7 @@ def _prices(text: str) -> list[Price]:
         amount = parse.parse_amount(match.group(1) or match.group(2))
         if amount is None or amount < 50 or amount in seen:
             continue
-        context = text[max(0, match.start() - 55):match.start()].lower()
+        context = text[max(0, match.start() - 55) : match.start()].lower()
         duration = _DURATION.search(context)
         # MOSA states course fees as "<N> days (<n> classes per day) with lunch";
         # requiring both the duration and "lunch" cleanly excludes accommodation,
@@ -227,7 +263,14 @@ def _prices(text: str) -> list[Price]:
             continue
         seen.add(amount)
         label = f"{duration.group(0)} with lunch"
-        prices.append(Price(amount=amount, currency="EUR", label=parse.clean(label).capitalize(), includes=["tuition"]))
+        prices.append(
+            Price(
+                amount=amount,
+                currency="EUR",
+                label=parse.clean(label).capitalize(),
+                includes=["tuition"],
+            )
+        )
     return prices
 
 

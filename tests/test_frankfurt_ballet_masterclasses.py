@@ -8,7 +8,10 @@ from intensive_dance.scrapers import frankfurt_ballet_masterclasses as fbm
 
 
 def test_date_range_dash_and_slash():
-    assert fbm._date_range("August 22 - 23, 2026 | Frankfurt") == (date(2026, 8, 22), date(2026, 8, 23))
+    assert fbm._date_range("August 22 - 23, 2026 | Frankfurt") == (
+        date(2026, 8, 22),
+        date(2026, 8, 23),
+    )
     assert fbm._date_range("August 22/23, 2026") == (date(2026, 8, 22), date(2026, 8, 23))
 
 
@@ -22,11 +25,17 @@ def test_age_range():
 
 
 def test_genres():
-    assert fbm._genres("refine classical and contemporary dance technique") == ["classical", "contemporary"]
+    assert fbm._genres("refine classical and contemporary dance technique") == [
+        "classical",
+        "contemporary",
+    ]
 
 
 def test_requirements_open_by_default():
-    assert fbm._requirements("Application requirements: open to all, no audition. Cancellation Policy") == []
+    assert (
+        fbm._requirements("Application requirements: open to all, no audition. Cancellation Policy")
+        == []
+    )
 
 
 def test_requirements_video_when_stated():

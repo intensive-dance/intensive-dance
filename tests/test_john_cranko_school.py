@@ -22,11 +22,17 @@ def test_age_range():
 
 
 def test_genres_from_german_disciplines():
-    text = "Klassisches Ballett, Spitzenschuhe, Contemporary, Repertoire, Pas de deux, Spanischer Tanz"
+    text = (
+        "Klassisches Ballett, Spitzenschuhe, Contemporary, Repertoire, Pas de deux, Spanischer Tanz"
+    )
     assert jcs._genres(text) == ["classical", "contemporary", "repertoire", "character", "pointe"]
 
 
 def test_price_includes_performance():
     text = "Die Kosten für 6 Tage Unterricht und die Aufführung betragen insgesamt 650,00 €."
     (price,) = jcs._prices(text)
-    assert (price.amount, price.currency, price.includes) == (650.0, "EUR", ["tuition", "performance"])
+    assert (price.amount, price.currency, price.includes) == (
+        650.0,
+        "EUR",
+        ["tuition", "performance"],
+    )

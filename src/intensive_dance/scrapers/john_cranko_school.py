@@ -36,7 +36,9 @@ from intensive_dance.models import (
 BASE = "https://www.john-cranko-schule.de"
 SUMMER_SCHOOL = f"{BASE}/summer_school/"
 
-ORG = Organization(name="John Cranko School", slug="john-cranko-schule", country="DE", city="Stuttgart")
+ORG = Organization(
+    name="John Cranko School", slug="john-cranko-schule", country="DE", city="Stuttgart"
+)
 
 # The video brief stated on the page (≈15–20 min: barre / centre / jumps).
 _VIDEO_BRIEF = (
@@ -75,7 +77,9 @@ def _build_offering(html: str, today: date) -> Offering | None:
         ageRange=_age_range(blob),
         organization=ORG,
         location=Location(city="Stuttgart", country="DE"),
-        schedule=Schedule(season=season, start=start, end=end, timezone="Europe/Berlin", notes=_dates_note(blob)),
+        schedule=Schedule(
+            season=season, start=start, end=end, timezone="Europe/Berlin", notes=_dates_note(blob)
+        ),
         prices=_prices(blob),
         application=Application(
             status="closed" if (deadline and deadline < today) else None,
@@ -93,15 +97,29 @@ def _build_offering(html: str, today: date) -> Offering | None:
 # regex-building (`parse.months_alt`) and language-agnostic helpers are shared.
 
 _MONTHS = {
-    "januar": 1, "februar": 2, "märz": 3, "april": 4, "mai": 5, "juni": 6,
-    "juli": 7, "august": 8, "september": 9, "oktober": 10, "november": 11, "dezember": 12,
+    "januar": 1,
+    "februar": 2,
+    "märz": 3,
+    "april": 4,
+    "mai": 5,
+    "juni": 6,
+    "juli": 7,
+    "august": 8,
+    "september": 9,
+    "oktober": 10,
+    "november": 11,
+    "dezember": 12,
 }
 _MONTHALT = parse.months_alt(_MONTHS)
 # "1. Juni 2026" — German day-month-year.
 _DATE = re.compile(r"(\d{1,2})\.\s*(" + _MONTHALT + r")\s+(\d{4})", re.IGNORECASE)
 # The course span: "… 1. Juni 2026 bis Samstag, 6. Juni 2026".
 _RANGE = re.compile(
-    r"(\d{1,2})\.\s*(" + _MONTHALT + r")\s+(\d{4})\s+bis\s+(?:\w+,?\s+)?(\d{1,2})\.\s*(" + _MONTHALT + r")\s+(\d{4})",
+    r"(\d{1,2})\.\s*("
+    + _MONTHALT
+    + r")\s+(\d{4})\s+bis\s+(?:\w+,?\s+)?(\d{1,2})\.\s*("
+    + _MONTHALT
+    + r")\s+(\d{4})",
     re.IGNORECASE,
 )
 _AGE = re.compile(r"Alter\s+(\d{1,2})\s*[-–]\s*(\d{1,2})", re.IGNORECASE)
@@ -133,7 +151,9 @@ def _year(text: str) -> str:
 
 
 def _deadline(text: str) -> date | None:
-    match = re.search(r"Einsendeschluss[^.]*?(\d{1,2})\.\s*(" + _MONTHALT + r")\s+(\d{4})", text, re.IGNORECASE)
+    match = re.search(
+        r"Einsendeschluss[^.]*?(\d{1,2})\.\s*(" + _MONTHALT + r")\s+(\d{4})", text, re.IGNORECASE
+    )
     return _date(*match.groups()) if match else None
 
 
@@ -165,4 +185,11 @@ def _prices(text: str) -> list[Price]:
     includes: list[PriceInclude] = ["tuition"]
     if "aufführung" in text.lower() or "vorstellung" in text.lower():
         includes.append("performance")
-    return [Price(amount=amount, currency="EUR", label="Tuition (6 days incl. performance)", includes=includes)]
+    return [
+        Price(
+            amount=amount,
+            currency="EUR",
+            label="Tuition (6 days incl. performance)",
+            includes=includes,
+        )
+    ]

@@ -39,7 +39,9 @@ def fetch_page(client: httpx.Client, slug: str, *, base: str) -> dict | None:
     return records[0] if records else None
 
 
-def fetch_all(client: httpx.Client, rest_base: str, *, base: str, params: dict | None = None) -> list[dict]:
+def fetch_all(
+    client: httpx.Client, rest_base: str, *, base: str, params: dict | None = None
+) -> list[dict]:
     """Every record from a WP REST collection, following `X-WP-TotalPages`.
 
     `rest_base` is the endpoint segment — a post type (`pages`, `summer-intensives`)

@@ -23,8 +23,20 @@ from typing import TypeVar
 MONTHS: dict[str, int] = {
     m: i
     for i, m in enumerate(
-        ["january", "february", "march", "april", "may", "june", "july",
-         "august", "september", "october", "november", "december"],
+        [
+            "january",
+            "february",
+            "march",
+            "april",
+            "may",
+            "june",
+            "july",
+            "august",
+            "september",
+            "october",
+            "november",
+            "december",
+        ],
         start=1,
     )
 }
@@ -53,7 +65,11 @@ def parse_amount(raw: str) -> float | None:
     """
     s = raw.strip().rstrip(".,").replace(" ", "")
     if "," in s and "." in s:
-        s = s.replace(".", "").replace(",", ".") if s.rfind(",") > s.rfind(".") else s.replace(",", "")
+        s = (
+            s.replace(".", "").replace(",", ".")
+            if s.rfind(",") > s.rfind(".")
+            else s.replace(",", "")
+        )
     elif "," in s:
         s = s.replace(",", "") if re.search(r",\d{3}\b", s) else s.replace(",", ".")
     elif "." in s:
@@ -67,7 +83,9 @@ def parse_amount(raw: str) -> float | None:
 G = TypeVar("G")
 
 
-def match_genres(text: str, table: Sequence[tuple[G, Sequence[str]]], *, default: Sequence[G] = ()) -> list[G]:
+def match_genres(
+    text: str, table: Sequence[tuple[G, Sequence[str]]], *, default: Sequence[G] = ()
+) -> list[G]:
     """Genres whose keyword set appears in `text` (case-insensitive).
 
     `table` is the scraper's local `(genre, keywords)` list. `default` is returned
