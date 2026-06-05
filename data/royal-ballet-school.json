@@ -20,7 +20,6 @@
       "repertoire"
     ],
     "id": "royal-ballet-school/autumn-intensives-2025",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {},
@@ -46,7 +45,7 @@
       "sessions": []
     },
     "source": {
-      "hash": "sha256:3bee8bd29b93f3f623807b02c86b75dcf1126fbd29f650bf16b71c3f77437ee5",
+      "hash": "sha256:980bc98a2843313cec6ff0218ac114c6065edef33fd94d80cb08b89efc32b531",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-05T11:07:43.939121Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/autumn-intensives/"
@@ -78,7 +77,6 @@
       "repertoire"
     ],
     "id": "royal-ballet-school/hong-kong-intensive-2026",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -157,7 +155,7 @@
       "timezone": "Asia/Hong_Kong"
     },
     "source": {
-      "hash": "sha256:3afc64fa4e9d168acb465c3b1eadefbbd0be83011c45f11582249b0a76daf9b0",
+      "hash": "sha256:dffc3a489031f18862e145f5a7314d9414dd9fc1fdca930fa674719b3642fbda",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-05T10:04:59.244925Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/hong-kong-intensive/"
@@ -188,7 +186,6 @@
       "pointe"
     ],
     "id": "royal-ballet-school/japan-intensive-2025",
-    "kind": "intensive",
     "level": [
       "professional"
     ],
@@ -264,7 +261,7 @@
       "timezone": "Asia/Tokyo"
     },
     "source": {
-      "hash": "sha256:2593c44d5536fd1a5ed4f6e2f61e5979a71db68cc2c85f73704d29757a294330",
+      "hash": "sha256:8890e2bae466dedba8c25b4b0b8cd0775b72327182e9cb226b194d0cc6ff6652",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-05T10:04:59.250633Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/japan-intensive/"
@@ -284,7 +281,6 @@
     },
     "genres": [],
     "id": "royal-ballet-school/korea-intensive-cancelled-2022",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "cancelled",
     "lifecycleNote": "Korea Intensive cancelled",
@@ -301,7 +297,7 @@
       "sessions": []
     },
     "source": {
-      "hash": "sha256:a13c55b5e30f28bc0162354cec39e6452dc4372dca91e21e641bf06672b38e93",
+      "hash": "sha256:c5f77cfd624eee1bd1dc75850e5d55c04cd37c5cce601f0deec016045d400a72",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-05T10:04:59.249815Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/korea-intensive-cancelled/"
@@ -327,7 +323,6 @@
     },
     "genres": [],
     "id": "royal-ballet-school/livorno-masterclasses-2025",
-    "kind": "masterclass",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -361,7 +356,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "hash": "sha256:b5ea222091a11c57e3e90c4ec036667748123b06728a1b59a98a7c3f7b488b29",
+      "hash": "sha256:a6297fca68c7e6b1062e97d2178e71da484c903d6a5a6ba4b4346c809006ffe0",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-05T10:04:59.240779Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/livorno-masterclasses/"
@@ -390,7 +385,6 @@
       "classical"
     ],
     "id": "royal-ballet-school/livorno-special-training-programme-2027",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -460,7 +454,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "hash": "sha256:7ec6127556b2bf5ac381bdb6979fbd1460c809d1a6d37deedbe762880abce973",
+      "hash": "sha256:bd3af4bcdaf9c7ed3c427ded0607592309b91942aab1d394a163556dfeb740dc",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-05T10:04:59.241367Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/livorno-special-training-programme/"
@@ -493,7 +487,6 @@
       "pointe"
     ],
     "id": "royal-ballet-school/los-angeles-intensive-2026",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -575,7 +568,7 @@
       "timezone": "America/Los_Angeles"
     },
     "source": {
-      "hash": "sha256:91daabe910bac0886794ad8ab7beaebedae7a7b95ec2c25a7f59544de5c6fb2a",
+      "hash": "sha256:5e415032c40a493c3bec861861136cb07853d4c587e2f4129e0a12774b297eca",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-05T10:04:59.238599Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/los-angeles-intensive/"
@@ -601,7 +594,6 @@
       "pointe"
     ],
     "id": "royal-ballet-school/online-spring-intensive-2022",
-    "kind": "intensive",
     "level": [
       "beginner",
       "intermediate",
@@ -699,7 +691,7 @@
       "start": "2022-04-08"
     },
     "source": {
-      "hash": "sha256:7cdac55a44c9bbf105c24c06f6168e2cf42b16a9afdb7088249ee28737759691",
+      "hash": "sha256:796097fac3a98d7b13ef939b71a2f89030d22c99d1813f59f6ad5b95365ce0c4",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-05T10:04:59.248786Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/online-spring-intensive/"
@@ -728,7 +720,6 @@
       "repertoire"
     ],
     "id": "royal-ballet-school/singapore-intensive-2026",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -777,7 +768,7 @@
       "timezone": "Asia/Singapore"
     },
     "source": {
-      "hash": "sha256:7e0ddca953ca59e5ded9fefc61c63c2dfcdc89ef1fa61a630aa96803d01bb68d",
+      "hash": "sha256:a8d80a711122e1f88322792287348a38d05a808d4dcc497466588da5af8d5bbb",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-05T10:04:59.246650Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/singapore-intensive/"
@@ -801,7 +792,6 @@
     },
     "genres": [],
     "id": "royal-ballet-school/spain-masterclasses-2023",
-    "kind": "masterclass",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -835,7 +825,7 @@
       "timezone": "Europe/Madrid"
     },
     "source": {
-      "hash": "sha256:1aeb649c3efbdc9e0e33516577dfd0584c5f05a3d154546173e58e673426ae69",
+      "hash": "sha256:7030a3ed04a20a61adee56f15fe6f32a88216ba44062c976bf07766269022234",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-05T11:07:43.935577Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/spain-masterclasses/"
@@ -864,7 +854,6 @@
       "classical"
     ],
     "id": "royal-ballet-school/thailand-intensive-2025",
-    "kind": "intensive",
     "level": [
       "advanced"
     ],
@@ -908,7 +897,7 @@
       "timezone": "Asia/Bangkok"
     },
     "source": {
-      "hash": "sha256:a15595925a6271339eab603bd5235465a20c293b34829aa0dba191b5713690e6",
+      "hash": "sha256:8790211456dada22e0227f76139eb503d002818207ae908cfabde32c01cc6a35",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-05T10:04:59.240093Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/thailand-intensive/"
@@ -940,7 +929,6 @@
       "repertoire"
     ],
     "id": "royal-ballet-school/uk-spring-intensive-2026",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -972,7 +960,7 @@
       "timezone": "Europe/London"
     },
     "source": {
-      "hash": "sha256:0d114b3d70698756237fa6bab0317de3ad26a88aab63895d136ee9f2234181ba",
+      "hash": "sha256:56bac86cb6810fce3430b15e971b1ed524b1c0981fb066db7fd17bfa3e1ce00e",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-05T10:04:59.250148Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/uk-spring-intensive/"
@@ -1005,7 +993,6 @@
       "pointe"
     ],
     "id": "royal-ballet-school/uk-summer-intensive-2026",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -1334,7 +1321,7 @@
       "timezone": "Europe/London"
     },
     "source": {
-      "hash": "sha256:95519c1e661e467e115542b22536c038bea78c56c7877d78dc67017fd3c707d6",
+      "hash": "sha256:3439643ad3b7e0700cf1ec52bbfebd08ed31d27e34c2e603784bf105b0ff29b0",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-05T10:04:59.247313Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/uk-summer-intensive/"
@@ -1364,7 +1351,6 @@
       "repertoire"
     ],
     "id": "royal-ballet-school/winter-intensive-2026",
-    "kind": "intensive",
     "level": [
       "open"
     ],
@@ -1400,7 +1386,7 @@
       "timezone": "Europe/London"
     },
     "source": {
-      "hash": "sha256:1d6c45ccb5723401c341b7aee26bcde314b43f280bb7956a29b475cc71ddf635",
+      "hash": "sha256:ff0a879863b420fe61f71c65baf029957aea53c9e0c8dfc7c3665d049a26dfac",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-05T10:04:59.243732Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/winter-intensive/"

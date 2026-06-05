@@ -68,7 +68,6 @@ def _build_offering(text: str, today: date) -> Offering | None:
         source=Source(provider="ecole-danse-opera-paris", url=SUMMER, scrapedAt=now_utc()),
         title=f"Paris Opera Ballet School — Summer School {season}",
         genres=_genres(text),
-        kind="summer-school",
         ageRange=_age_range(text),
         organization=ORG,
         location=Location(venue=VENUE, city="Paris", country="FR"),

@@ -2,7 +2,7 @@
 
 These pin the discovery filter (which sitemap events are real training offerings)
 and the regex-heavy parsing of the event pages — dates, ages (title vs noisy
-body), kind, prices (course fee vs accommodation/audition noise), status, and the
+body), prices (course fee vs accommodation/audition noise), status, and the
 European money formats. Inline strings, no network.
 """
 
@@ -33,12 +33,6 @@ def test_in_scope_drops_non_training_events():
         "open-doors-april-2026-by-registration-only-245",
     ]:
         assert not mosa._in_scope(slug), slug
-
-
-def test_kind_from_slug():
-    assert mosa._kind("august-signature-intensive-course-2026") == "intensive"
-    assert mosa._kind("exploring-ballet-other-dances-age-8-12") == "workshop"
-    assert mosa._kind("masterclass-charleston-222") == "masterclass"
 
 
 # --- dates --------------------------------------------------------------------

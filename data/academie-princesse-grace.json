@@ -36,7 +36,6 @@
       "pointe"
     ],
     "id": "academie-princesse-grace/summer-courses-2026",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -97,7 +96,7 @@
       "timezone": "Europe/Monaco"
     },
     "source": {
-      "hash": "sha256:d522e5404f610da18f9120924ea2abc6cd64618cc6ba47aae054721c5dd529d2",
+      "hash": "sha256:c951530b81e3aa7c15fc76a6f040b80444d9784e7729aac77c66d218a641cd1e",
       "provider": "academie-princesse-grace",
       "scrapedAt": "2026-06-05T11:28:41.767835Z",
       "url": "https://www.balletsdemontecarlo.com/en/princess-grace-academy/admission-short-courses"
