@@ -108,21 +108,22 @@ challenge/empty page, not the real markup — route the request through the rend
 proxy instead of giving up:
 
 ```
-https://fetch-proxy.jonas-strassel.de/?url=<url-encoded>&render=1&wait=8000&format=md
+$FETCH_PROXY_URL?url=<url-encoded>&render=1&wait=8000&format=md
 ```
 
-with `Authorization: Bearer <token>`. `render=1` runs a headless browser,
-`wait=<ms>` lets the challenge settle, `format=md` returns Markdown (drop it for
-raw HTML). It's a last resort — slower and rate-limited — so reach for it only
-after the API-first tree and a plain fetch have failed, and say in the scraper
-docstring *why* the proxy was needed.
+with `Authorization: Bearer $FETCH_PROXY_TOKEN`. `render=1` runs a headless
+browser, `wait=<ms>` lets the challenge settle, `format=md` returns Markdown
+(drop it for raw HTML). It's a last resort — slower and rate-limited — so reach
+for it only after the API-first tree and a plain fetch have failed, and say in
+the scraper docstring *why* the proxy was needed.
 
-**Token — `FETCH_PROXY_TOKEN`.** Stored in GitHub two ways: as an **Actions
-variable** (read in **development**) and as an **Actions secret** (read in
-**CI**). Locally, hydrate it from the variable — `export
+**Config — `FETCH_PROXY_URL` + `FETCH_PROXY_TOKEN`.** Both are stored in GitHub
+two ways: as **Actions variables** (read in **development**) and as **Actions
+secrets** (read in **CI**). Locally, hydrate from the variables — `export
+FETCH_PROXY_URL=$(gh variable get FETCH_PROXY_URL)` and `export
 FETCH_PROXY_TOKEN=$(gh variable get FETCH_PROXY_TOKEN)`; the `scrape.yml`
-workflow injects `${{ secrets.FETCH_PROXY_TOKEN }}`. Never hardcode the bearer
-in source.
+workflow injects the `${{ secrets.* }}` equivalents. Never hardcode the proxy
+URL or bearer in source.
 
 ---
 
