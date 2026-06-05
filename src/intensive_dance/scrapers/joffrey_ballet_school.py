@@ -143,7 +143,11 @@ def _build_offering(
     audition_url: str,
     today: date,
 ) -> Offering | None:
-    """One program record → an Offering, or None if out of scope / already ended."""
+    """One program record → an Offering, or None if out of scope (no in-scope genre).
+
+    Ended cycles are kept, not dropped — "past" is derived from `schedule.end <
+    today`, not stored (the IDR-24 convention; see AGENTS.md).
+    """
     title = wp.plain_text(record["title"]["rendered"])
     text = wp.plain_text(record["content"]["rendered"])
     genres = _genres(record.get("dance_style", []), styles, title, text)

@@ -197,6 +197,16 @@ that — it's how the next agent knows the source's shape without re-crawling.
   `application.status`/`deadline`; `None` means "not stated". Leave `start/end`
   null and `season` `"unknown"` rather than guessing. Discovery (what's listed),
   not date-parsing, decides what's emitted.
+- **Keep ended cycles — don't filter on dates.** A cycle whose `schedule.end`
+  is in the past stays in the store; **"past" is derived consumer-side** from
+  `schedule.end < today`, never stored (it's not a `lifecycle` value either —
+  that enum is `scheduled`/`cancelled`/`postponed`). Families still find a course
+  that already ran, and a no-op re-scrape keeps yielding no diff. This is the
+  deliberate IDR-24 design (see `fondazione_monreart`, `royal_ballet_school`,
+  `russian_masters_ballet`); it **overrides any per-issue AC that says "drop
+  already-ended cycles."** Cancelled cycles are likewise kept, tagged
+  `lifecycle="cancelled"`, not dropped. (Out-of-scope *genres* and rows the source
+  itself removed are still dropped — that's discovery, not a date cut.)
 - **Prices** carry a `currency` (ISO 4217) in the **local** currency and an
   `includes` list (`tuition`/`accommodation`/`meals`/…). A provider can have
   several `Price`s per Offering (e.g. tuition + room & board).
