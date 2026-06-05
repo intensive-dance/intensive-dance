@@ -8,7 +8,6 @@
       "notes": "Booking is now closed\nCourse fee: £160 Want to hear more about our Intensives?",
       "requirements": [
         {
-          "notes": "The Autumn Intensive is eligible for students aged 9-14 on the day of the course. These courses are non-selective. Places are limited and offered on a first come, first served basis. Book early to avoid disappointment.",
           "poses": [],
           "specificity": "defined-poses",
           "type": "photos"
@@ -47,9 +46,9 @@
       "sessions": []
     },
     "source": {
-      "hash": "sha256:05290450bd44b6cc3d77afe638b12acd542329f55f2e218f630a4aae7333b59c",
+      "hash": "sha256:3bee8bd29b93f3f623807b02c86b75dcf1126fbd29f650bf16b71c3f77437ee5",
       "provider": "royal-ballet-school",
-      "scrapedAt": "2026-06-05T10:04:59.246136Z",
+      "scrapedAt": "2026-06-05T11:07:43.939121Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/autumn-intensives/"
     },
     "teachers": [],
@@ -794,7 +793,6 @@
     "application": {
       "requirements": [
         {
-          "notes": "Places are offered on a first-come, first-served basis. Book early to avoid disappointment.",
           "poses": [],
           "specificity": "defined-poses",
           "type": "photos"
@@ -837,9 +835,9 @@
       "timezone": "Europe/Madrid"
     },
     "source": {
-      "hash": "sha256:6bc239abb966179842d6fe8126b9e1a22052ac6a459921ad2922e74f97d674d3",
+      "hash": "sha256:1aeb649c3efbdc9e0e33516577dfd0584c5f05a3d154546173e58e673426ae69",
       "provider": "royal-ballet-school",
-      "scrapedAt": "2026-06-05T10:04:59.241916Z",
+      "scrapedAt": "2026-06-05T11:07:43.935577Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/spain-masterclasses/"
     },
     "teachers": [],

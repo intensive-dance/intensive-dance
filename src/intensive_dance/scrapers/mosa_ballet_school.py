@@ -39,6 +39,7 @@ from intensive_dance.models import (
     Genre,
     Kind,
     Location,
+    NoneReq,
     Offering,
     Organization,
     Price,
@@ -170,7 +171,7 @@ def _build_offering(client: httpx.Client, url: str, today: date) -> Offering | N
             url=url,
             requirements=[VideoReq(specificity="unspecific", description=_AUDITION_NOTE)]
             if pre_selection
-            else [],
+            else [NoneReq()],  # open-enrolment taster: explicitly nothing required
             notes=_AUDITION_NOTE if pre_selection else None,
         ),
     )

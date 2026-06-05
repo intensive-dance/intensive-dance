@@ -23,6 +23,7 @@ from intensive_dance.models import (
     Application,
     Genre,
     Location,
+    NoneReq,
     Offering,
     Organization,
     PhotosReq,
@@ -141,4 +142,6 @@ def _requirements(text: str):
         return [VideoReq(specificity="unspecific", description=parse.clean(section)[:300] or None)]
     if re.search(r"\bphoto|picture|headshot", low):
         return [PhotosReq(specificity="freeform", notes=parse.clean(section)[:300] or None)]
-    return []
+    # Open registration (beginners welcome) — `none` is an explicit statement that
+    # nothing is required, distinct from `[]` ("requirements not stated").
+    return [NoneReq()]
