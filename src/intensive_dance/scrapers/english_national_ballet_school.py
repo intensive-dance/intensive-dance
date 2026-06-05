@@ -13,10 +13,12 @@ per-track text-splitting `russian_masters_ballet` uses) and read each course's
 date range, age band and level from its chunk; the £1250 course fee and £30
 non-refundable application fee are shared across all three.
 
-We emit one `Offering` per course and drop any whose end date is past — so the
-Spring, Boys' Workshop and Introduction to 4Pointe intensives (all earlier 2026
-or 2025 cycles) fall away on their own once parsed, and only the live summer
-courses remain.
+We emit one `Offering` per course. The page lists only the current Summer
+Intensives (the Spring, Boys' Workshop and Introduction to 4Pointe intensives
+live on their own pages we don't scrape), so all three are scheduled and
+future; we keep them as-is rather than date-filtering, leaving `lifecycle` at
+its `scheduled` default (past/cancelled handling is the model's concern, per
+IDR-24).
 
 Teachers are named in prose per course but sit in the shared detail block where
 they can't be reliably attributed to one course, so they're left empty (same
@@ -72,14 +74,12 @@ def scrape(client: httpx.Client) -> list[Offering]:
         return []
     rendered = page["content"]["rendered"]
     text = _plain(rendered)
-    today = date.today()
     # Fees and applicant guidance live in a shared block after the third course;
     # split courses from the region before it so its "RAD intermediate level"
     # prose doesn't bleed into Course Three's own level/age.
     shared = _SHARED.search(text)
     course_region = text[: shared.start()] if shared else text
-    offerings = [_build_offering(course, text, today) for course in _courses(course_region)]
-    return [o for o in offerings if o is not None]
+    return [_build_offering(course, text) for course in _courses(course_region)]
 
 
 def _plain(rendered: str) -> str:
@@ -199,11 +199,9 @@ def _prices(text: str) -> list[Price]:
     return prices
 
 
-def _build_offering(course: tuple[str, str, str], text: str, today: date) -> Offering | None:
+def _build_offering(course: tuple[str, str, str], text: str) -> Offering:
     numeral, title, chunk = course
     start, end = _date_range(chunk)
-    if end is not None and end < today:
-        return None  # this course's cycle has finished
     anchor = end or start
     season = str(anchor.year) if anchor else "unknown"
     return Offering(
