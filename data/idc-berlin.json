@@ -1,0 +1,96 @@
+[
+  {
+    "ageRange": {
+      "min": 7
+    },
+    "application": {
+      "notes": "Both 2026 parts are full; the registration form is a waitlist sign-up. Registration is not an audition and does not affect acceptance — a video may be sent optionally for group placement only. Boys may apply for a scholarship.",
+      "requirements": [],
+      "status": "closed",
+      "url": "https://www.idc-dance.com/register-for-summer-intensive"
+    },
+    "genres": [
+      "classical",
+      "repertoire",
+      "contemporary"
+    ],
+    "id": "idc-berlin/summer-intensive-2026",
+    "kind": "intensive",
+    "level": [
+      "open"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Berlin",
+      "country": "DE"
+    },
+    "organization": {
+      "city": "Berlin",
+      "country": "DE",
+      "name": "IDC Berlin",
+      "slug": "idc-berlin"
+    },
+    "prices": [
+      {
+        "amount": 360.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "One Intensive — Violet"
+      },
+      {
+        "amount": 485.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "One Intensive — Indigo/ Aqua"
+      },
+      {
+        "amount": 650.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Both Intensives — Violet"
+      },
+      {
+        "amount": 890.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Both Intensives — Indigo/ Aqua"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-15",
+      "season": "2026",
+      "sessions": [
+        {
+          "end": "2026-07-18",
+          "label": "Part 1",
+          "notes": "Studios of the Staatsballett Berlin in the Deutsche Oper (Richard Wagner St. 10 10585 Berlin); Showcase 18 July at 4pm",
+          "start": "2026-07-13"
+        },
+        {
+          "end": "2026-08-15",
+          "label": "Part 2",
+          "notes": "Berlin Dance Institute (Egelingzeile 6 12103 Berlin); Showcase 15 August at 4pm",
+          "start": "2026-08-10"
+        }
+      ],
+      "start": "2026-07-13",
+      "timezone": "Europe/Berlin"
+    },
+    "source": {
+      "hash": "sha256:4f12c2db6c8a9e1d8a01e9b5d3f9f3230b1a535bc9068c601fe77038a517e955",
+      "provider": "idc-berlin",
+      "scrapedAt": "2026-06-05T18:21:12.142686Z",
+      "url": "https://www.idc-dance.com/summer"
+    },
+    "teachers": [],
+    "title": "Summer Intensive 2026"
+  }
+]
