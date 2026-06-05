@@ -1,0 +1,44 @@
+[
+  {
+    "application": {
+      "notes": "Candidate registration for the next edition is not yet open on the official site.",
+      "requirements": []
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "prix-de-lausanne/2027",
+    "kind": "competition",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Lausanne",
+      "country": "CH",
+      "venue": "Beaulieu Lausanne"
+    },
+    "organization": {
+      "city": "Lausanne",
+      "country": "CH",
+      "name": "Prix de Lausanne",
+      "slug": "prix-de-lausanne"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2027-02-07",
+      "notes": "from 31 January to 7 February 2027",
+      "season": "2027",
+      "sessions": [],
+      "start": "2027-01-31",
+      "timezone": "Europe/Zurich"
+    },
+    "source": {
+      "hash": "sha256:9006b8259f967e6a7ac3846552206b1c3ae16b695d2fdc7573d7e87a960e8f37",
+      "provider": "prix-de-lausanne",
+      "scrapedAt": "2026-06-05T18:57:39.735663Z",
+      "url": "https://www.prixdelausanne.org/practical_information/"
+    },
+    "teachers": [],
+    "title": "Prix de Lausanne 2027"
+  }
+]
