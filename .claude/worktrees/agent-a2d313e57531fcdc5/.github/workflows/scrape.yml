@@ -1,0 +1,48 @@
+name: scrape
+
+on:
+  schedule:
+    - cron: "0 4 * * *" # daily, 04:00 UTC — intensives change slowly
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Never let two scrapes run at once: both commit & push to main, so overlapping
+# runs would race the push. Queue a new trigger behind the running one rather
+# than cancelling it (don't interrupt an in-flight commit/push).
+concurrency:
+  group: scrape
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: astral-sh/setup-uv@v8.2.0
+        with:
+          enable-cache: true
+
+      - name: Scrape
+        env:
+          FETCH_PROXY_URL: ${{ secrets.FETCH_PROXY_URL }}
+          FETCH_PROXY_TOKEN: ${{ secrets.FETCH_PROXY_TOKEN }}
+        run: uv run python -m intensive_dance.run
+
+      # Always commit: a failing provider (non-zero Scrape exit) still leaves the
+      # other providers' fresh data on disk, and reds the job for visibility —
+      # but we don't want one flaky site to discard everyone else's scrape.
+      - name: Commit changed data
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain data/)" ]; then
+            git add data/
+            git commit -m "data: scheduled scrape $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          else
+            echo "no data changes"
+          fi

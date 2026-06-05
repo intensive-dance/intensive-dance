@@ -1,0 +1,89 @@
+[
+  {
+    "ageRange": {
+      "max": 21,
+      "min": 13
+    },
+    "application": {
+      "requirements": [
+        {
+          "type": "headshot"
+        },
+        {
+          "notes": "Two to three full-body dance photos of the applicant's choice (examples suggested: arabesque, attitude, tendu, port de bras; contemporary poses welcome).",
+          "poses": [],
+          "specificity": "freeform",
+          "type": "photos"
+        },
+        {
+          "type": "cv"
+        }
+      ],
+      "status": "open",
+      "url": "https://www.youngstarsballet.com/apply-here"
+    },
+    "genres": [
+      "classical",
+      "repertoire",
+      "contemporary",
+      "pointe"
+    ],
+    "id": "young-stars-ballet/summer-intensive-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Berlin",
+      "country": "DE",
+      "venue": "Tanzraum Wedding, Oudenarder Str. 16-20, 13347 Berlin"
+    },
+    "organization": {
+      "city": "Berlin",
+      "country": "DE",
+      "name": "Young Stars Ballet",
+      "slug": "young-stars-ballet"
+    },
+    "prices": [
+      {
+        "amount": 740.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Per intensive (10 days)",
+        "notes": "15% discount for attending both editions (20 days) or for groups of 3+ from one school."
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-08",
+      "season": "2026",
+      "sessions": [
+        {
+          "end": "2026-07-26",
+          "label": "YSB 1",
+          "start": "2026-07-16"
+        },
+        {
+          "end": "2026-08-08",
+          "label": "YSB 2",
+          "start": "2026-07-29"
+        }
+      ],
+      "start": "2026-07-16",
+      "timezone": "Europe/Berlin"
+    },
+    "source": {
+      "hash": "sha256:801ad9019ac3e8a73a0ae89269ee313f0a85671f34363f368f372fd23ddee995",
+      "provider": "young-stars-ballet",
+      "scrapedAt": "2026-06-05T11:36:57.586435Z",
+      "url": "https://www.youngstarsballet.com/ysb-summer-intensive-2026"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Melike Demirtas",
+        "role": "Masterclass"
+      }
+    ],
+    "title": "Summer Intensive 2026"
+  }
+]

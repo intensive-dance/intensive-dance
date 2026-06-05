@@ -1,0 +1,2221 @@
+[
+  {
+    "application": {
+      "notes": "Observation is aimed at ballet teachers; access is by sending a CV to the course email.",
+      "requirements": [
+        {
+          "type": "cv"
+        }
+      ],
+      "url": "https://russianmastersballet.com/pages/registration-for-intensives/"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "character",
+      "repertoire"
+    ],
+    "id": "russian-masters-ballet/alicante-observation-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Alicante",
+      "country": "ES"
+    },
+    "organization": {
+      "city": "Alicante",
+      "country": "ES",
+      "name": "Russian Masters Ballet",
+      "slug": "russian-masters-ballet"
+    },
+    "prices": [
+      {
+        "amount": 200.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "6 days’ assistance",
+        "notes": "6 days’ assistance: 200 €"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-26",
+      "notes": "1, 2 or 3 weeks",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-05",
+      "timezone": "Europe/Madrid"
+    },
+    "source": {
+      "hash": "sha256:ca103296a47509be248fba1c8de6c325a53789e2eba86660f03c04cfa3acdbc2",
+      "provider": "russian-masters-ballet",
+      "scrapedAt": "2026-06-05T10:05:05.887070Z",
+      "url": "https://russianmastersballet.com/courses/summer-intensives/alicante/#observation"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Alexey Ilyin",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Yuliya Kasenkova",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Polina Rassadina",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Tatiana Sevostianova (Kvasova)",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Victoria Omelnitskaya",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Svetlana Efimova",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Russian Masters Ballet",
+            "role": "teacher",
+            "slug": "russian-masters-ballet"
+          }
+        ],
+        "name": "Anna Podlesnaya",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Boris Eifman Dance Academy",
+            "role": "teacher"
+          }
+        ],
+        "name": "Elena Kukseva",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Russian Masters Ballet",
+            "role": "teacher",
+            "slug": "russian-masters-ballet"
+          }
+        ],
+        "name": "Dmitry Shevtsov",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Marianna Krivenko",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "National Opera of Ukraine",
+            "role": "soloist"
+          }
+        ],
+        "name": "Natalia Lazebnikova",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Royal Swedish Ballet",
+            "role": "soloist"
+          }
+        ],
+        "name": "Anton Valdbauer",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Bolshoi Ballet Academy",
+            "role": "teacher",
+            "slug": "bolshoi-ballet-academy"
+          }
+        ],
+        "name": "Olga Pavlova",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Bristol Russian Ballet School",
+            "role": "principal"
+          }
+        ],
+        "name": "Chika Temma",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Bristol Russian Ballet School",
+            "role": "director"
+          }
+        ],
+        "name": "Yury Demakov",
+        "role": "teacher"
+      }
+    ],
+    "title": "RMB Summer Intensive Alicante — Observation 2026"
+  },
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 10
+    },
+    "application": {
+      "notes": "Applicants pass an audition — live group, online group, online individual, or by video. A video audition (8–12 min) must show: barre (tendu, fondu, grand battement); a centre adagio; a pirouette combination; small, medium and big jump combinations; two combinations on pointe; and an optional classical variation. Returning RMB students may be exempt.",
+      "requirements": [
+        {
+          "description": "Applicants pass an audition — live group, online group, online individual, or by video. A video audition (8–12 min) must show: barre (tendu, fondu, grand battement); a centre adagio; a pirouette combination; small, medium and big jump combinations; two combinations on pointe; and an optional classical variation. Returning RMB students may be exempt.",
+          "specificity": "specific",
+          "type": "video"
+        }
+      ],
+      "url": "https://russianmastersballet.com/pages/registration-for-intensives/"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "character",
+      "repertoire",
+      "pointe"
+    ],
+    "id": "russian-masters-ballet/alicante-open-professional-2026",
+    "level": [
+      "professional",
+      "open"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Alicante",
+      "country": "ES",
+      "venue": "International Dance School"
+    },
+    "organization": {
+      "city": "Alicante",
+      "country": "ES",
+      "name": "Russian Masters Ballet",
+      "slug": "russian-masters-ballet"
+    },
+    "prices": [
+      {
+        "amount": 550.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "1 week: 5 - 12 July",
+        "notes": "1 week: 5 - 12 July - 550 €"
+      },
+      {
+        "amount": 950.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "2 weeks: 12 - 26 July",
+        "notes": "2 weeks: 12 - 26 July - 950 €"
+      },
+      {
+        "amount": 1250.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "1+2 weeks: 5 - 26 July",
+        "notes": "1+2 weeks: 5 - 26 July - 1250 € - our special price! - please, note that those will be two separate programs, so a group and a teacher may be different."
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-26",
+      "notes": "1 week: 5 - 12 July 2 weeks: 12 - 26 July 3 weeks: 5 - 26 July",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-05",
+      "timezone": "Europe/Madrid"
+    },
+    "source": {
+      "hash": "sha256:06a5f0817432416f24ed99a90bb7df8312a4f7bc22cdf1d338b479706470af8d",
+      "provider": "russian-masters-ballet",
+      "scrapedAt": "2026-06-05T10:05:05.886497Z",
+      "url": "https://russianmastersballet.com/courses/summer-intensives/alicante/#open-professional"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Alexey Ilyin",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Bolshoi Ballet Academy",
+            "role": "teacher",
+            "slug": "bolshoi-ballet-academy"
+          }
+        ],
+        "name": "Olga Pavlova",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "National Opera of Ukraine",
+            "role": "soloist"
+          }
+        ],
+        "name": "Natalia Lazebnikova",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Russian Masters Ballet",
+            "role": "teacher",
+            "slug": "russian-masters-ballet"
+          }
+        ],
+        "name": "Dmitry Shevtsov",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Marianna Krivenko",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Royal Swedish Ballet",
+            "role": "soloist"
+          }
+        ],
+        "name": "Anton Valdbauer",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Bristol Russian Ballet School",
+            "role": "principal"
+          }
+        ],
+        "name": "Chika Temma",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Bristol Russian Ballet School",
+            "role": "director"
+          }
+        ],
+        "name": "Yury Demakov",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Mikhailovsky Theatre"
+          },
+          {
+            "organization": "Deutsche Oper am Rhein"
+          }
+        ],
+        "name": "Svetlana Bednenko",
+        "role": "guest"
+      }
+    ],
+    "title": "RMB Summer Intensive Alicante — Open Professional 2026"
+  },
+  {
+    "ageRange": {
+      "max": 19,
+      "min": 12
+    },
+    "application": {
+      "notes": "Applicants pass an audition — live group, online group, online individual, or by video. A video audition (8–12 min) must show: barre (tendu, fondu, grand battement); a centre adagio; a pirouette combination; small, medium and big jump combinations; two combinations on pointe; and an optional classical variation. Returning RMB students may be exempt.",
+      "requirements": [
+        {
+          "description": "Applicants pass an audition — live group, online group, online individual, or by video. A video audition (8–12 min) must show: barre (tendu, fondu, grand battement); a centre adagio; a pirouette combination; small, medium and big jump combinations; two combinations on pointe; and an optional classical variation. Returning RMB students may be exempt.",
+          "specificity": "specific",
+          "type": "video"
+        }
+      ],
+      "url": "https://russianmastersballet.com/pages/registration-for-intensives/"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "character",
+      "repertoire",
+      "pointe"
+    ],
+    "id": "russian-masters-ballet/alicante-professional-2026",
+    "level": [
+      "professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Alicante",
+      "country": "ES",
+      "venue": "Novelda Professional Dance Conservatoire"
+    },
+    "organization": {
+      "city": "Alicante",
+      "country": "ES",
+      "name": "Russian Masters Ballet",
+      "slug": "russian-masters-ballet"
+    },
+    "prices": [
+      {
+        "amount": 2050.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "3 weeks from 5 to 26 of July",
+        "notes": "3 weeks from 5 to 26 of July - 2050 €"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-26",
+      "notes": "3 weeks: 5 - 26 July",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-05",
+      "timezone": "Europe/Madrid"
+    },
+    "source": {
+      "hash": "sha256:e9d9ab1b1b1179d40a446526ac6f6d672a8d1155a867fef245c0f5a60c0c66dd",
+      "provider": "russian-masters-ballet",
+      "scrapedAt": "2026-06-05T10:05:05.885275Z",
+      "url": "https://russianmastersballet.com/courses/summer-intensives/alicante/#professional"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Yuliya Kasenkova",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Alexey Ilyin",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Polina Rassadina",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Victoria Omelnitskaya",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Tatiana Sevostianova (Kvasova)",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Russian Masters Ballet",
+            "role": "teacher",
+            "slug": "russian-masters-ballet"
+          }
+        ],
+        "name": "Anna Podlesnaya",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Boris Eifman Dance Academy",
+            "role": "teacher"
+          }
+        ],
+        "name": "Elena Kukseva",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Svetlana Efimova",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Russian Masters Ballet",
+            "role": "teacher",
+            "slug": "russian-masters-ballet"
+          }
+        ],
+        "name": "Dmitry Shevtsov",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Marianna Krivenko",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Royal Swedish Ballet",
+            "role": "soloist"
+          }
+        ],
+        "name": "Anton Valdbauer",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Mikhailovsky Theatre"
+          },
+          {
+            "organization": "Deutsche Oper am Rhein"
+          }
+        ],
+        "name": "Svetlana Bednenko",
+        "role": "guest"
+      }
+    ],
+    "title": "RMB Summer Intensive Alicante — Professional 2026"
+  },
+  {
+    "application": {
+      "notes": "Observation is aimed at ballet teachers; access is by sending a CV to the course email.",
+      "requirements": [
+        {
+          "type": "cv"
+        }
+      ],
+      "url": "https://russianmastersballet.com/pages/registration-for-intensives/"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "character",
+      "repertoire"
+    ],
+    "id": "russian-masters-ballet/burgas-observation-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Burgas",
+      "country": "BG"
+    },
+    "organization": {
+      "city": "Alicante",
+      "country": "ES",
+      "name": "Russian Masters Ballet",
+      "slug": "russian-masters-ballet"
+    },
+    "prices": [
+      {
+        "amount": 200.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "6 days’ assistance",
+        "notes": "6 days’ assistance: 200 €"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-17",
+      "notes": "1, 2 or 3 weeks",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-27",
+      "timezone": "Europe/Sofia"
+    },
+    "source": {
+      "hash": "sha256:846ff32b45d179f8729d965c7a8b3d4eb89b6f26aa371b729416b81a9e45de60",
+      "provider": "russian-masters-ballet",
+      "scrapedAt": "2026-06-05T10:05:06.337039Z",
+      "url": "https://russianmastersballet.com/courses/summer-intensives/burgas/#observation"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Yuliya Kasenkova",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Tatiana Sevostianova (Kvasova)",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Tatiana Cherkashina",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Sofia Gumerova",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "slug": "vaganova-ballet-academy"
+          },
+          {
+            "organization": "Russian Masters Ballet",
+            "slug": "russian-masters-ballet"
+          }
+        ],
+        "name": "Marianna Krivenko",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "slug": "vaganova-ballet-academy"
+          },
+          {
+            "organization": "Russian Masters Ballet",
+            "slug": "russian-masters-ballet"
+          }
+        ],
+        "name": "Anna Podlesnaya",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [],
+        "name": "Denis Untila",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "slug": "vaganova-ballet-academy"
+          },
+          {
+            "organization": "Mikhailovsky Theatre"
+          }
+        ],
+        "name": "Ivan Zaytsev",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Boris Eifman Dance Academy",
+            "role": "teacher"
+          }
+        ],
+        "name": "Roman Petukhov",
+        "role": "teacher"
+      }
+    ],
+    "title": "RMB Summer Intensive Burgas — Observation 2026"
+  },
+  {
+    "ageRange": {
+      "max": 12,
+      "min": 10
+    },
+    "application": {
+      "notes": "Applicants pass an audition — live group, online group, online individual, or by video. A video audition (8–12 min) must show: barre (tendu, fondu, grand battement); a centre adagio; a pirouette combination; small, medium and big jump combinations; two combinations on pointe; and an optional classical variation. Returning RMB students may be exempt.",
+      "requirements": [
+        {
+          "description": "Applicants pass an audition — live group, online group, online individual, or by video. A video audition (8–12 min) must show: barre (tendu, fondu, grand battement); a centre adagio; a pirouette combination; small, medium and big jump combinations; two combinations on pointe; and an optional classical variation. Returning RMB students may be exempt.",
+          "specificity": "specific",
+          "type": "video"
+        }
+      ],
+      "url": "https://russianmastersballet.com/pages/registration-for-intensives/"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "character",
+      "repertoire",
+      "pointe"
+    ],
+    "id": "russian-masters-ballet/burgas-pre-professional-2026",
+    "level": [
+      "pre-professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Burgas",
+      "country": "BG",
+      "venue": "Cultural House-NHK Youth Cultural Center"
+    },
+    "organization": {
+      "city": "Alicante",
+      "country": "ES",
+      "name": "Russian Masters Ballet",
+      "slug": "russian-masters-ballet"
+    },
+    "prices": [
+      {
+        "amount": 1150.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "3 weeks from 27 July to 17 of August",
+        "notes": "3 weeks from 27 July to 17 of August: 1150 €"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-17",
+      "notes": "3 weeks: 27 July - 17 August",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-27",
+      "timezone": "Europe/Sofia"
+    },
+    "source": {
+      "hash": "sha256:df0daba48d5d6c002404f79b342befb29eaa099a2cf4334a97ba2da9c12cebe6",
+      "provider": "russian-masters-ballet",
+      "scrapedAt": "2026-06-05T10:05:06.336612Z",
+      "url": "https://russianmastersballet.com/courses/summer-intensives/burgas/#pre-professional"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Yuliya Kasenkova",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Tatiana Sevostianova (Kvasova)",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Tatiana Cherkashina",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Sofia Gumerova",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "slug": "vaganova-ballet-academy"
+          },
+          {
+            "organization": "Russian Masters Ballet",
+            "slug": "russian-masters-ballet"
+          }
+        ],
+        "name": "Marianna Krivenko",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "slug": "vaganova-ballet-academy"
+          },
+          {
+            "organization": "Russian Masters Ballet",
+            "slug": "russian-masters-ballet"
+          }
+        ],
+        "name": "Anna Podlesnaya",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [],
+        "name": "Denis Untila",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "slug": "vaganova-ballet-academy"
+          },
+          {
+            "organization": "Mikhailovsky Theatre"
+          }
+        ],
+        "name": "Ivan Zaytsev",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Boris Eifman Dance Academy",
+            "role": "teacher"
+          }
+        ],
+        "name": "Roman Petukhov",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Mikhailovsky Theatre"
+          },
+          {
+            "organization": "Deutsche Oper am Rhein"
+          }
+        ],
+        "name": "Svetlana Bednenko",
+        "role": "guest"
+      }
+    ],
+    "title": "RMB Summer Intensive Burgas — Pre-Professional 2026"
+  },
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 12
+    },
+    "application": {
+      "notes": "Applicants pass an audition — live group, online group, online individual, or by video. A video audition (8–12 min) must show: barre (tendu, fondu, grand battement); a centre adagio; a pirouette combination; small, medium and big jump combinations; two combinations on pointe; and an optional classical variation. Returning RMB students may be exempt.",
+      "requirements": [
+        {
+          "description": "Applicants pass an audition — live group, online group, online individual, or by video. A video audition (8–12 min) must show: barre (tendu, fondu, grand battement); a centre adagio; a pirouette combination; small, medium and big jump combinations; two combinations on pointe; and an optional classical variation. Returning RMB students may be exempt.",
+          "specificity": "specific",
+          "type": "video"
+        }
+      ],
+      "url": "https://russianmastersballet.com/pages/registration-for-intensives/"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "character",
+      "repertoire",
+      "pointe"
+    ],
+    "id": "russian-masters-ballet/burgas-professional-2026",
+    "level": [
+      "professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Burgas",
+      "country": "BG",
+      "venue": "Cultural House-NHK Youth Cultural Center"
+    },
+    "organization": {
+      "city": "Alicante",
+      "country": "ES",
+      "name": "Russian Masters Ballet",
+      "slug": "russian-masters-ballet"
+    },
+    "prices": [
+      {
+        "amount": 1950.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "3 weeks from 27 July to 17 of August",
+        "notes": "3 weeks from 27 July to 17 of August: 1950 €"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-17",
+      "notes": "3 weeks: 27 July - 17 August",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-27",
+      "timezone": "Europe/Sofia"
+    },
+    "source": {
+      "hash": "sha256:cb0a4ee373e4856fff365cf67f8a3166433061ee07c9b06a11e6a80f352c4d5c",
+      "provider": "russian-masters-ballet",
+      "scrapedAt": "2026-06-05T10:05:06.335961Z",
+      "url": "https://russianmastersballet.com/courses/summer-intensives/burgas/#professional"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Yuliya Kasenkova",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Tatiana Sevostianova (Kvasova)",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Tatiana Cherkashina",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Boris Eifman Dance Academy",
+            "role": "teacher"
+          }
+        ],
+        "name": "Sofia Gumerova",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "slug": "vaganova-ballet-academy"
+          },
+          {
+            "organization": "Russian Masters Ballet",
+            "slug": "russian-masters-ballet"
+          }
+        ],
+        "name": "Marianna Krivenko",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "slug": "vaganova-ballet-academy"
+          },
+          {
+            "organization": "Russian Masters Ballet",
+            "slug": "russian-masters-ballet"
+          }
+        ],
+        "name": "Anna Podlesnaya",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [],
+        "name": "Denis Untila",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "slug": "vaganova-ballet-academy"
+          },
+          {
+            "organization": "Mikhailovsky Theatre"
+          }
+        ],
+        "name": "Ivan Zaytsev",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Boris Eifman Dance Academy",
+            "role": "teacher"
+          }
+        ],
+        "name": "Roman Petukhov",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Mikhailovsky Theatre"
+          },
+          {
+            "organization": "Deutsche Oper am Rhein"
+          }
+        ],
+        "name": "Svetlana Bednenko",
+        "role": "guest"
+      }
+    ],
+    "title": "RMB Summer Intensive Burgas — Professional 2026"
+  },
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 11
+    },
+    "application": {
+      "notes": "Applicants pass an audition — live group, online group, online individual, or by video. A video audition (8–12 min) must show: barre (tendu, fondu, grand battement); a centre adagio; a pirouette combination; small, medium and big jump combinations; two combinations on pointe; and an optional classical variation. Returning RMB students may be exempt.",
+      "requirements": [
+        {
+          "description": "Applicants pass an audition — live group, online group, online individual, or by video. A video audition (8–12 min) must show: barre (tendu, fondu, grand battement); a centre adagio; a pirouette combination; small, medium and big jump combinations; two combinations on pointe; and an optional classical variation. Returning RMB students may be exempt.",
+          "specificity": "specific",
+          "type": "video"
+        }
+      ],
+      "url": "https://russianmastersballet.com/pages/registration-for-intensives/"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "character",
+      "repertoire",
+      "pointe"
+    ],
+    "id": "russian-masters-ballet/madrid-program-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Madrid",
+      "country": "ES",
+      "venue": "Nacho Duato Academy, Calle Coslada 7, 28028 Madrid"
+    },
+    "organization": {
+      "city": "Alicante",
+      "country": "ES",
+      "name": "Russian Masters Ballet",
+      "slug": "russian-masters-ballet"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-12-31",
+      "notes": "Classes Only 26 December - 30 December, 2026 Madrid Ballet Experience Package 26 December - 31 December, 2026",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-12-26",
+      "timezone": "Europe/Madrid"
+    },
+    "source": {
+      "hash": "sha256:c2382bc9ddba5b9dbc6388de5ad8a9b8a0d49e56dd04ae4e94cd1cf9d442b05e",
+      "provider": "russian-masters-ballet",
+      "scrapedAt": "2026-06-05T10:05:08.161487Z",
+      "url": "https://russianmastersballet.com/courses/ballet-experience/madrid/#program"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "slug": "vaganova-ballet-academy"
+          },
+          {
+            "organization": "Russian Masters Ballet",
+            "slug": "russian-masters-ballet"
+          }
+        ],
+        "name": "Anna Podlesnaya",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "slug": "vaganova-ballet-academy"
+          },
+          {
+            "organization": "Russian Masters Ballet",
+            "slug": "russian-masters-ballet"
+          }
+        ],
+        "name": "Asiya Lukmanova",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Bolshoi Ballet Academy",
+            "slug": "bolshoi-ballet-academy"
+          },
+          {
+            "organization": "Russian Masters Ballet",
+            "slug": "russian-masters-ballet"
+          }
+        ],
+        "name": "Olga Pavlova",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Royal Swedish Ballet",
+            "role": "soloist"
+          }
+        ],
+        "name": "Anton Valdbauer",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "slug": "vaganova-ballet-academy"
+          },
+          {
+            "organization": "Mariinsky Theatre"
+          },
+          {
+            "organization": "Dutch National Ballet"
+          }
+        ],
+        "name": "Larissa Lezhnina",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [],
+        "name": "Aida Gómez",
+        "role": "guest"
+      }
+    ],
+    "title": "RMB Winter Intensive Madrid — Program 2026"
+  },
+  {
+    "application": {
+      "notes": "Observation is aimed at ballet teachers; access is by sending a CV to the course email.",
+      "requirements": [
+        {
+          "type": "cv"
+        }
+      ],
+      "url": "https://russianmastersballet.com/pages/registration-for-intensives/"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "character",
+      "repertoire"
+    ],
+    "id": "russian-masters-ballet/perth-observation-unknown",
+    "level": [],
+    "lifecycle": "cancelled",
+    "lifecycleNote": "This RMB location has been cancelled.",
+    "location": {
+      "city": "Perth",
+      "country": "AU"
+    },
+    "organization": {
+      "city": "Alicante",
+      "country": "ES",
+      "name": "Russian Masters Ballet",
+      "slug": "russian-masters-ballet"
+    },
+    "prices": [],
+    "schedule": {
+      "notes": "1 or 2 weeks",
+      "season": "unknown",
+      "sessions": [],
+      "timezone": "Australia/Perth"
+    },
+    "source": {
+      "hash": "sha256:ca1d9ac70d4028fc6098334355b074f5cbb002a2dfda7db488176afd18127acd",
+      "provider": "russian-masters-ballet",
+      "scrapedAt": "2026-06-05T10:05:09.099375Z",
+      "url": "https://russianmastersballet.com/courses/ballet-experience/perth/#observation"
+    },
+    "teachers": [],
+    "title": "RMB Intensive Perth — Observation unknown"
+  },
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 10
+    },
+    "application": {
+      "notes": "Applicants pass an audition — live group, online group, online individual, or by video. A video audition (8–12 min) must show: barre (tendu, fondu, grand battement); a centre adagio; a pirouette combination; small, medium and big jump combinations; two combinations on pointe; and an optional classical variation. Returning RMB students may be exempt.",
+      "requirements": [
+        {
+          "description": "Applicants pass an audition — live group, online group, online individual, or by video. A video audition (8–12 min) must show: barre (tendu, fondu, grand battement); a centre adagio; a pirouette combination; small, medium and big jump combinations; two combinations on pointe; and an optional classical variation. Returning RMB students may be exempt.",
+          "specificity": "specific",
+          "type": "video"
+        }
+      ],
+      "url": "https://russianmastersballet.com/pages/registration-for-intensives/"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "character",
+      "repertoire",
+      "pointe"
+    ],
+    "id": "russian-masters-ballet/perth-professional-unknown",
+    "level": [
+      "professional"
+    ],
+    "lifecycle": "cancelled",
+    "lifecycleNote": "This RMB location has been cancelled.",
+    "location": {
+      "city": "Perth",
+      "country": "AU"
+    },
+    "organization": {
+      "city": "Alicante",
+      "country": "ES",
+      "name": "Russian Masters Ballet",
+      "slug": "russian-masters-ballet"
+    },
+    "prices": [],
+    "schedule": {
+      "notes": "2 weeks: 07 January - 21 January",
+      "season": "unknown",
+      "sessions": [],
+      "timezone": "Australia/Perth"
+    },
+    "source": {
+      "hash": "sha256:777690e29183dbe99a7e90ee5de99dbedb84dca0881de259658eadbe0caae116",
+      "provider": "russian-masters-ballet",
+      "scrapedAt": "2026-06-05T10:05:09.099139Z",
+      "url": "https://russianmastersballet.com/courses/ballet-experience/perth/#professional"
+    },
+    "teachers": [],
+    "title": "RMB Intensive Perth — Professional unknown"
+  },
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 9
+    },
+    "application": {
+      "notes": "Applicants pass an audition — live group, online group, online individual, or by video. A video audition (8–12 min) must show: barre (tendu, fondu, grand battement); a centre adagio; a pirouette combination; small, medium and big jump combinations; two combinations on pointe; and an optional classical variation. Returning RMB students may be exempt.",
+      "requirements": [
+        {
+          "description": "Applicants pass an audition — live group, online group, online individual, or by video. A video audition (8–12 min) must show: barre (tendu, fondu, grand battement); a centre adagio; a pirouette combination; small, medium and big jump combinations; two combinations on pointe; and an optional classical variation. Returning RMB students may be exempt.",
+          "specificity": "specific",
+          "type": "video"
+        }
+      ],
+      "url": "https://russianmastersballet.com/pages/registration-for-intensives/"
+    },
+    "genres": [
+      "classical",
+      "character",
+      "repertoire",
+      "pointe"
+    ],
+    "id": "russian-masters-ballet/shanghai-china-professional-2026",
+    "level": [
+      "professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Shanghai",
+      "country": "CN",
+      "venue": "ONE Art Center"
+    },
+    "organization": {
+      "city": "Alicante",
+      "country": "ES",
+      "name": "Russian Masters Ballet",
+      "slug": "russian-masters-ballet"
+    },
+    "prices": [
+      {
+        "amount": 12800.0,
+        "currency": "CNY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Early Bird price",
+        "notes": "Early Bird price - 12,800 CNY (only until 1 January 2026)"
+      },
+      {
+        "amount": 15800.0,
+        "currency": "CNY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Regular price",
+        "notes": "Regular price - 15,800 CNY"
+      }
+    ],
+    "schedule": {
+      "end": "2026-02-07",
+      "notes": "1 week: 02 February - 07 February",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-02-02",
+      "timezone": "Asia/Shanghai"
+    },
+    "source": {
+      "hash": "sha256:d8472f631ad18cf18dfb4027cd73d499a6805c0399c37b17e381916c923eff86",
+      "provider": "russian-masters-ballet",
+      "scrapedAt": "2026-06-05T10:05:09.808058Z",
+      "url": "https://russianmastersballet.com/courses/ballet-experience/shanghai-china/#professional"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "slug": "vaganova-ballet-academy"
+          },
+          {
+            "organization": "Boris Eifman Dance Academy"
+          }
+        ],
+        "name": "Tatiana Sevostianova (Kvasova)",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "slug": "vaganova-ballet-academy"
+          },
+          {
+            "organization": "Boris Eifman Dance Academy"
+          },
+          {
+            "organization": "Mariinsky Theatre"
+          }
+        ],
+        "name": "Sofia Gumerova",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "slug": "vaganova-ballet-academy"
+          },
+          {
+            "organization": "Russian Masters Ballet",
+            "slug": "russian-masters-ballet"
+          }
+        ],
+        "name": "Asiya Lukmanova",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "slug": "vaganova-ballet-academy"
+          },
+          {
+            "organization": "Boris Eifman Dance Academy"
+          }
+        ],
+        "name": "Roman Petukhov",
+        "role": "teacher"
+      }
+    ],
+    "title": "RMB Intensive Shanghai — Professional 2026"
+  },
+  {
+    "application": {
+      "notes": "Observation is aimed at ballet teachers; access is by sending a CV to the course email.",
+      "requirements": [
+        {
+          "type": "cv"
+        }
+      ],
+      "url": "https://russianmastersballet.com/pages/registration-for-intensives/"
+    },
+    "genres": [
+      "classical",
+      "character",
+      "repertoire"
+    ],
+    "id": "russian-masters-ballet/st-petersburg-observation-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "St. Petersburg",
+      "country": "RU",
+      "venue": "Vaganova Academy"
+    },
+    "organization": {
+      "city": "Alicante",
+      "country": "ES",
+      "name": "Russian Masters Ballet",
+      "slug": "russian-masters-ballet"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-08-03",
+      "notes": "1, 2, 3, 4 or 5 weeks",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-06-28",
+      "timezone": "Europe/Moscow"
+    },
+    "source": {
+      "hash": "sha256:b3f5989d6e318a6948709c597e0069c08ef324d1c9d2f5b1d69088c4d3ae6b84",
+      "provider": "russian-masters-ballet",
+      "scrapedAt": "2026-06-05T10:05:06.828660Z",
+      "url": "https://russianmastersballet.com/courses/summer-intensives/st-petersburg/#observation"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Galina Enikeeva",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Elena Bobovnikova (Chmil)",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Vaganova Ballet Academy",
+            "role": "senior teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Ilya Novoseltsev",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Victoria Omelnitskaya",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Anastasia Sevostianova",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Angelina Alexandrova",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Aleksandra Lebedeva",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Kirill Radev",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Sofia Gumerova",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Boris Eifman Dance Academy",
+            "role": "teacher"
+          }
+        ],
+        "name": "Roman Petukhov",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Polina Rassadina",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Marina Nikolaeva",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [],
+        "name": "Evgeniia Chetverikova",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "role": "choreographer",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Kristina Chernova",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Natalia Permyakova",
+        "role": "teacher"
+      }
+    ],
+    "title": "RMB Summer Intensive St. Petersburg — Observation 2026"
+  },
+  {
+    "ageRange": {
+      "max": 19,
+      "min": 10
+    },
+    "application": {
+      "notes": "Applicants pass an audition — live group, online group, online individual, or by video. A video audition (8–12 min) must show: barre (tendu, fondu, grand battement); a centre adagio; a pirouette combination; small, medium and big jump combinations; two combinations on pointe; and an optional classical variation. Returning RMB students may be exempt.",
+      "requirements": [
+        {
+          "description": "Applicants pass an audition — live group, online group, online individual, or by video. A video audition (8–12 min) must show: barre (tendu, fondu, grand battement); a centre adagio; a pirouette combination; small, medium and big jump combinations; two combinations on pointe; and an optional classical variation. Returning RMB students may be exempt.",
+          "specificity": "specific",
+          "type": "video"
+        }
+      ],
+      "url": "https://russianmastersballet.com/pages/registration-for-intensives/"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "character",
+      "repertoire",
+      "pointe"
+    ],
+    "id": "russian-masters-ballet/st-petersburg-professional-2-weeks-2026",
+    "level": [
+      "professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "St. Petersburg",
+      "country": "RU",
+      "venue": "Vaganova Academy"
+    },
+    "organization": {
+      "city": "Alicante",
+      "country": "ES",
+      "name": "Russian Masters Ballet",
+      "slug": "russian-masters-ballet"
+    },
+    "prices": [
+      {
+        "amount": 1450.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "2 weeks: July 20 - August 03",
+        "notes": "2 weeks: July 20 - August 03 - 1450 €"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-03",
+      "notes": "2 weeks: 20 July - 3 August",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-20",
+      "timezone": "Europe/Moscow"
+    },
+    "source": {
+      "hash": "sha256:b49ea330140b0b777c85f1431bc3780cfd3571a0c39ba7860898e8261444dd26",
+      "provider": "russian-masters-ballet",
+      "scrapedAt": "2026-06-05T10:05:06.827947Z",
+      "url": "https://russianmastersballet.com/courses/summer-intensives/st-petersburg/#professional-2-weeks"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Elena Bobovnikova (Chmil)",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Vaganova Ballet Academy",
+            "role": "senior teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Ilya Novoseltsev",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Polina Rassadina",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Victoria Omelnitskaya",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Anastasia Sevostianova",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Angelina Alexandrova",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Sofia Gumerova",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Boris Eifman Dance Academy",
+            "role": "teacher"
+          }
+        ],
+        "name": "Roman Petukhov",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [],
+        "name": "Evgeniia Chetverikova",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Marina Nikolaeva",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "role": "choreographer",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Kristina Chernova",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Natalia Permyakova",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Mikhailovsky Theatre",
+            "role": "principal"
+          }
+        ],
+        "name": "Ivan Zaytsev",
+        "role": "guest"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Mikhailovsky Theatre",
+            "role": "soloist"
+          }
+        ],
+        "name": "Veronika Markova",
+        "role": "guest"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Boris Eifman Dance Academy",
+            "role": "teacher"
+          }
+        ],
+        "name": "Sergey Laletin",
+        "role": "guest"
+      }
+    ],
+    "title": "RMB Summer Intensive St. Petersburg — Professional (2 weeks) 2026"
+  },
+  {
+    "ageRange": {
+      "max": 19,
+      "min": 10
+    },
+    "application": {
+      "notes": "Applicants pass an audition — live group, online group, online individual, or by video. A video audition (8–12 min) must show: barre (tendu, fondu, grand battement); a centre adagio; a pirouette combination; small, medium and big jump combinations; two combinations on pointe; and an optional classical variation. Returning RMB students may be exempt.",
+      "requirements": [
+        {
+          "description": "Applicants pass an audition — live group, online group, online individual, or by video. A video audition (8–12 min) must show: barre (tendu, fondu, grand battement); a centre adagio; a pirouette combination; small, medium and big jump combinations; two combinations on pointe; and an optional classical variation. Returning RMB students may be exempt.",
+          "specificity": "specific",
+          "type": "video"
+        }
+      ],
+      "url": "https://russianmastersballet.com/pages/registration-for-intensives/"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "character",
+      "repertoire",
+      "pointe"
+    ],
+    "id": "russian-masters-ballet/st-petersburg-professional-2026",
+    "level": [
+      "professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "St. Petersburg",
+      "country": "RU",
+      "venue": "Vaganova Academy"
+    },
+    "organization": {
+      "city": "Alicante",
+      "country": "ES",
+      "name": "Russian Masters Ballet",
+      "slug": "russian-masters-ballet"
+    },
+    "prices": [
+      {
+        "amount": 1950.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "3 weeks: June 28 - July 19",
+        "notes": "3 weeks: June 28 - July 19 - 1950 €"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-19",
+      "notes": "3 weeks: 28 June - 19 July",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-06-28",
+      "timezone": "Europe/Moscow"
+    },
+    "source": {
+      "hash": "sha256:98d8694f7ec6a2d9cac246981cad96a4f369e9d15baca760df971861a28a0ea1",
+      "provider": "russian-masters-ballet",
+      "scrapedAt": "2026-06-05T10:05:06.826820Z",
+      "url": "https://russianmastersballet.com/courses/summer-intensives/st-petersburg/#professional"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Galina Enikeeva",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Elena Bobovnikova (Chmil)",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Victoria Omelnitskaya",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Vaganova Ballet Academy",
+            "role": "senior teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Ilya Novoseltsev",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Anastasia Sevostianova",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Aleksandra Lebedeva",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Kirill Radev",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Sofia Gumerova",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Boris Eifman Dance Academy",
+            "role": "teacher"
+          }
+        ],
+        "name": "Roman Petukhov",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Polina Rassadina",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Natalia Permyakova",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Mikhailovsky Theatre",
+            "role": "principal"
+          }
+        ],
+        "name": "Ivan Zaytsev",
+        "role": "guest"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Mariinsky Theatre",
+            "role": "soloist"
+          }
+        ],
+        "name": "Maria Khoreva",
+        "role": "guest"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Mikhailovsky Theatre",
+            "role": "soloist"
+          }
+        ],
+        "name": "Veronika Markova",
+        "role": "guest"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Boris Eifman Dance Academy",
+            "role": "teacher"
+          }
+        ],
+        "name": "Sergey Laletin",
+        "role": "guest"
+      }
+    ],
+    "title": "RMB Summer Intensive St. Petersburg — Professional (3 weeks) 2026"
+  }
+]

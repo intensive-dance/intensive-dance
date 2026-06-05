@@ -1,0 +1,1970 @@
+[
+  {
+    "ageRange": {
+      "max": 29,
+      "min": 12
+    },
+    "application": {
+      "notes": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+      "requirements": [
+        {
+          "description": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.mosaballetschool.eu/event/august-signature-intensive-course-12-29-2023-39"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "character"
+    ],
+    "id": "mosa-ballet-school/august-signature-intensive-course-12-29-2023-39",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 180.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "6 days with lunch"
+      }
+    ],
+    "schedule": {
+      "end": "2023-08-26",
+      "season": "2023",
+      "sessions": [],
+      "start": "2023-08-14",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:79d5e71774bd4cb8ccb1daddece7dc91639d10dd3b784dca9eec178d98a7a830",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T10:05:10.298999Z",
+      "url": "https://www.mosaballetschool.eu/event/august-signature-intensive-course-12-29-2023-39"
+    },
+    "teachers": [],
+    "title": "August Signature Intensive Course (12-29) (2023)"
+  },
+  {
+    "ageRange": {
+      "max": 29,
+      "min": 12
+    },
+    "application": {
+      "notes": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+      "requirements": [
+        {
+          "description": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.mosaballetschool.eu/event/august-signature-intensive-course-2024-12-29-115"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "mosa-ballet-school/august-signature-intensive-course-2024-12-29-115",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 749.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "6 days with lunch"
+      },
+      {
+        "amount": 1299.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "12 days with lunch"
+      }
+    ],
+    "schedule": {
+      "end": "2024-08-24",
+      "season": "2024",
+      "sessions": [],
+      "start": "2024-08-12",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:6ff4b0ced52f21584493f65014d0ed46ea503b5aa02e972bfd9d5115032e6ef2",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T10:05:10.811263Z",
+      "url": "https://www.mosaballetschool.eu/event/august-signature-intensive-course-2024-12-29-115"
+    },
+    "teachers": [],
+    "title": "August Signature Intensive Course 2024 (12-29)"
+  },
+  {
+    "ageRange": {
+      "max": 29,
+      "min": 12
+    },
+    "application": {
+      "notes": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+      "requirements": [
+        {
+          "description": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.mosaballetschool.eu/event/august-signature-intensive-course-2025-12-29-176"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "mosa-ballet-school/august-signature-intensive-course-2025-12-29-176",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 749.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "6 days with lunch"
+      },
+      {
+        "amount": 1299.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "12 days with lunch"
+      }
+    ],
+    "schedule": {
+      "end": "2025-08-23",
+      "season": "2025",
+      "sessions": [],
+      "start": "2025-08-11",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:7c511841feeb17ee5f5a8ee2d72f7f78afb985dd3c45fc58b49b859c57fa42b3",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T10:05:11.036552Z",
+      "url": "https://www.mosaballetschool.eu/event/august-signature-intensive-course-2025-12-29-176"
+    },
+    "teachers": [],
+    "title": "August Signature Intensive Course 2025 (12-29)"
+  },
+  {
+    "ageRange": {
+      "max": 29,
+      "min": 12
+    },
+    "application": {
+      "notes": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+      "requirements": [
+        {
+          "description": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "status": "open",
+      "url": "https://www.mosaballetschool.eu/event/august-signature-intensive-course-2026-age-12-29-231"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "mosa-ballet-school/august-signature-intensive-course-2026-age-12-29-231",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 749.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "6 days with lunch"
+      },
+      {
+        "amount": 1299.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "12 days with lunch"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-22",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-10",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:a07c25b08380cd29fb98514192c86cc6d265b65d4ab6e33ec026d6ca7c988871",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T10:05:11.279025Z",
+      "url": "https://www.mosaballetschool.eu/event/august-signature-intensive-course-2026-age-12-29-231"
+    },
+    "teachers": [],
+    "title": "August Signature Intensive Course 2026 (age 12-29)"
+  },
+  {
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.mosaballetschool.eu/event/ballet-pianists-summer-intensive-2024-from-18-yo-111"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "mosa-ballet-school/ballet-pianists-summer-intensive-2024-from-18-yo-111",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2024-08-24",
+      "season": "2024",
+      "sessions": [],
+      "start": "2024-08-19",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:eab38f2dfc589f82dd78054bffbb7a86e79a3eed90cda7b5eb9407201fd034b0",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T11:07:45.489440Z",
+      "url": "https://www.mosaballetschool.eu/event/ballet-pianists-summer-intensive-2024-from-18-yo-111"
+    },
+    "teachers": [],
+    "title": "Ballet Pianists Summer Intensive 2024 (from 18 yo)"
+  },
+  {
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.mosaballetschool.eu/event/ballet-pianists-summer-intensive-july-2023-53"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "mosa-ballet-school/ballet-pianists-summer-intensive-july-2023-53",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2023-07-20",
+      "season": "2023",
+      "sessions": [],
+      "start": "2023-07-16",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:6425360287bd5028b2a14e77b468cfba6ffa7460415757134ae9cf6891317f5d",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T11:07:45.697290Z",
+      "url": "https://www.mosaballetschool.eu/event/ballet-pianists-summer-intensive-july-2023-53"
+    },
+    "teachers": [],
+    "title": "Ballet Pianists Summer Intensive - July 2023"
+  },
+  {
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.mosaballetschool.eu/event/ballet-teachers-summer-intensive-2024-from-18-yo-112"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "mosa-ballet-school/ballet-teachers-summer-intensive-2024-from-18-yo-112",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2024-08-24",
+      "season": "2024",
+      "sessions": [],
+      "start": "2024-08-19",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:ea79b66cf2c3d7ed6132632d14c76df2acf17d2560e85b5fb45ac741e608ad3b",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T11:07:45.903694Z",
+      "url": "https://www.mosaballetschool.eu/event/ballet-teachers-summer-intensive-2024-from-18-yo-112"
+    },
+    "teachers": [],
+    "title": "Ballet Teachers Summer Intensive 2024 (from 18 yo)"
+  },
+  {
+    "ageRange": {
+      "max": 20,
+      "min": 15
+    },
+    "application": {
+      "notes": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+      "requirements": [
+        {
+          "description": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.mosaballetschool.eu/event/contemporary-immersion-ballet-fundamentals-age-15-20-autumn-2023-90"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "mosa-ballet-school/contemporary-immersion-ballet-fundamentals-age-15-20-autumn-2023-90",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 769.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "6 days with lunch"
+      }
+    ],
+    "schedule": {
+      "end": "2023-11-04",
+      "season": "2023",
+      "sessions": [],
+      "start": "2023-10-30",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:c821ec8ed601652b21675beb43b1cfe0ec6b1a7ddea8b381de6650c86c1d7a7b",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T10:05:12.360544Z",
+      "url": "https://www.mosaballetschool.eu/event/contemporary-immersion-ballet-fundamentals-age-15-20-autumn-2023-90"
+    },
+    "teachers": [],
+    "title": "Contemporary Immersion & Ballet Fundamentals (age 15-20) - Autumn 2023"
+  },
+  {
+    "ageRange": {
+      "max": 14,
+      "min": 13
+    },
+    "application": {
+      "notes": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+      "requirements": [
+        {
+          "description": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.mosaballetschool.eu/event/discovering-mosa-13-14-autumn-2025-215"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "mosa-ballet-school/discovering-mosa-13-14-autumn-2025-215",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 500.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "5 days with lunch"
+      }
+    ],
+    "schedule": {
+      "end": "2025-10-24",
+      "season": "2025",
+      "sessions": [],
+      "start": "2025-10-20",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:3542ef18d8cdbcadc86df344949adbf0f7ece7e58dc35561dbc986c0c3bd599e",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T10:05:12.590942Z",
+      "url": "https://www.mosaballetschool.eu/event/discovering-mosa-13-14-autumn-2025-215"
+    },
+    "teachers": [],
+    "title": "Discovering Mosa (13-14) - Autumn 2025"
+  },
+  {
+    "ageRange": {
+      "max": 14,
+      "min": 13
+    },
+    "application": {
+      "notes": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+      "requirements": [
+        {
+          "description": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.mosaballetschool.eu/event/discovering-mosa-ballet-school-13-14-autumn-2024-163"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "mosa-ballet-school/discovering-mosa-ballet-school-13-14-autumn-2024-163",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 500.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "5 days with lunch"
+      }
+    ],
+    "schedule": {
+      "end": "2024-10-25",
+      "season": "2024",
+      "sessions": [],
+      "start": "2024-10-21",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:20b6992e1b6c87c67e9c558847339b75fba1f1dc92ee896db3b1e8a35560f25d",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T10:05:12.888161Z",
+      "url": "https://www.mosaballetschool.eu/event/discovering-mosa-ballet-school-13-14-autumn-2024-163"
+    },
+    "teachers": [],
+    "title": "Discovering Mosa Ballet School (13-14) - Autumn 2024"
+  },
+  {
+    "ageRange": {
+      "max": 11,
+      "min": 8
+    },
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.mosaballetschool.eu/event/exploring-ballet-and-other-dances-8-11-years-summer-2023-56"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "mosa-ballet-school/exploring-ballet-and-other-dances-8-11-years-summer-2023-56",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 180.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "6 days with lunch"
+      }
+    ],
+    "schedule": {
+      "end": "2023-08-26",
+      "season": "2023",
+      "sessions": [],
+      "start": "2023-08-14",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:c5d2c36a291c40ade8495849df154aa9c9c91ca18c5f8c8d24d0a1b5688e79be",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T11:07:46.903343Z",
+      "url": "https://www.mosaballetschool.eu/event/exploring-ballet-and-other-dances-8-11-years-summer-2023-56"
+    },
+    "teachers": [],
+    "title": "Exploring ballet and other dances (8-11 years) - Summer 2023"
+  },
+  {
+    "ageRange": {
+      "max": 12,
+      "min": 8
+    },
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-8-12-autumn-2024-161"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "mosa-ballet-school/exploring-ballet-other-dances-8-12-autumn-2024-161",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 289.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "5 days with lunch"
+      }
+    ],
+    "schedule": {
+      "end": "2024-10-25",
+      "season": "2024",
+      "sessions": [],
+      "start": "2024-10-21",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:c2fa0dddd16f06032494d78bc3bc106c1a4f32eb44c5b5a6397adf3cd57c6a13",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T11:07:47.159483Z",
+      "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-8-12-autumn-2024-161"
+    },
+    "teachers": [],
+    "title": "Exploring Ballet & Other Dances (8-12) - Autumn 2024"
+  },
+  {
+    "ageRange": {
+      "max": 12,
+      "min": 8
+    },
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-8-12-autumn-2025-216"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "mosa-ballet-school/exploring-ballet-other-dances-8-12-autumn-2025-216",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 289.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "5 days with lunch"
+      }
+    ],
+    "schedule": {
+      "end": "2025-10-24",
+      "season": "2025",
+      "sessions": [],
+      "start": "2025-10-20",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:bf484ae29ccf1058ce31ff5decfaf95716495ef07f625de04fad6e12c2f9505a",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T11:07:47.420621Z",
+      "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-8-12-autumn-2025-216"
+    },
+    "teachers": [],
+    "title": "Exploring Ballet & Other Dances (8-12) - Autumn 2025"
+  },
+  {
+    "ageRange": {
+      "max": 12,
+      "min": 8
+    },
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-august-2025-180"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "mosa-ballet-school/exploring-ballet-other-dances-age-8-12-august-2025-180",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 349.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "6 days with lunch"
+      },
+      {
+        "amount": 599.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "12 days with lunch"
+      }
+    ],
+    "schedule": {
+      "end": "2025-08-23",
+      "season": "2025",
+      "sessions": [],
+      "start": "2025-08-11",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:4b53c65caed5ab9a432a992dbc0f696ee1a09b05a1dd293750d8520a848dd094",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T11:07:47.656424Z",
+      "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-august-2025-180"
+    },
+    "teachers": [],
+    "title": "Exploring Ballet & Other Dances (age 8-12) - August 2025"
+  },
+  {
+    "ageRange": {
+      "max": 12,
+      "min": 8
+    },
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "open",
+      "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-august-2026-232"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "mosa-ballet-school/exploring-ballet-other-dances-age-8-12-august-2026-232",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 460.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "6 days with lunch"
+      },
+      {
+        "amount": 780.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "12 days with lunch"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-22",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-10",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:13e64c87403ae7f0143af4c88bd974775b5a81ae6fefc4789a14a7237a131100",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T11:07:47.889710Z",
+      "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-august-2026-232"
+    },
+    "teachers": [],
+    "title": "Exploring Ballet & Other Dances (age 8-12) - August 2026"
+  },
+  {
+    "ageRange": {
+      "max": 12,
+      "min": 8
+    },
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-spring-2024-109"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "mosa-ballet-school/exploring-ballet-other-dances-age-8-12-spring-2024-109",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 289.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "5 days with lunch"
+      }
+    ],
+    "schedule": {
+      "end": "2024-05-03",
+      "season": "2024",
+      "sessions": [],
+      "start": "2024-04-29",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:0be1d42e0cba532a925ad5a57718f0a9f2af75395ad42888e73deaf8a1d0f9e3",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T11:07:48.160147Z",
+      "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-spring-2024-109"
+    },
+    "teachers": [],
+    "title": "Exploring Ballet & Other Dances (age 8-12) - Spring 2024"
+  },
+  {
+    "ageRange": {
+      "max": 12,
+      "min": 8
+    },
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-summer-2024-113"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "mosa-ballet-school/exploring-ballet-other-dances-age-8-12-summer-2024-113",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 349.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "6 days with lunch"
+      },
+      {
+        "amount": 599.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "12 days with lunch"
+      }
+    ],
+    "schedule": {
+      "end": "2024-08-24",
+      "season": "2024",
+      "sessions": [],
+      "start": "2024-08-12",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:63cc2489dcbdd47c104cf0c4d69721b05277bdbdce5d7e264287097bc413e2f1",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T11:07:48.598064Z",
+      "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-summer-2024-113"
+    },
+    "teachers": [],
+    "title": "Exploring Ballet & Other Dances (age 8-12) - Summer 2024"
+  },
+  {
+    "ageRange": {
+      "max": 12,
+      "min": 8
+    },
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-winter-2024-108"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "mosa-ballet-school/exploring-ballet-other-dances-age-8-12-winter-2024-108",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 289.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "5 days with lunch"
+      }
+    ],
+    "schedule": {
+      "end": "2024-03-01",
+      "season": "2024",
+      "sessions": [],
+      "start": "2024-02-26",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:814721e2b8b3a73898d1d8ed216b9c43119c34e227a3aa47e98289d766a75867",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T11:07:48.837485Z",
+      "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-winter-2024-108"
+    },
+    "teachers": [],
+    "title": "Exploring Ballet & Other Dances (age 8-12) - Winter 2024"
+  },
+  {
+    "ageRange": {
+      "max": 12,
+      "min": 8
+    },
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-winter-2025-178"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "mosa-ballet-school/exploring-ballet-other-dances-age-8-12-winter-2025-178",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 289.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "5 days with lunch"
+      }
+    ],
+    "schedule": {
+      "end": "2025-02-28",
+      "season": "2025",
+      "sessions": [],
+      "start": "2025-02-24",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:b477844161707335d07cec20d24b845302a23940ad2be86351c5cb3bcc697179",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T11:07:49.083374Z",
+      "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-winter-2025-178"
+    },
+    "teachers": [],
+    "title": "Exploring Ballet & Other Dances (age 8-12) - Winter 2025"
+  },
+  {
+    "ageRange": {
+      "max": 12,
+      "min": 8
+    },
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-winter-2026-218"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "mosa-ballet-school/exploring-ballet-other-dances-age-8-12-winter-2026-218",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 289.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "5 days with lunch"
+      }
+    ],
+    "schedule": {
+      "end": "2026-02-20",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-02-16",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:7978b54c706c754bbb5c70417d2d79523d1a60c3702a898a41fc288db6c5fd41",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T11:07:49.309413Z",
+      "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-winter-2026-218"
+    },
+    "teachers": [],
+    "title": "Exploring Ballet & Other Dances (age 8-12) - Winter 2026"
+  },
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 12
+    },
+    "application": {
+      "notes": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+      "requirements": [
+        {
+          "description": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.mosaballetschool.eu/event/french-immersion-and-ballet-august-2024-12-18-114"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "mosa-ballet-school/french-immersion-and-ballet-august-2024-12-18-114",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2024-08-24",
+      "season": "2024",
+      "sessions": [],
+      "start": "2024-08-12",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:568b3ed198a183ca6c2c831d65fc7eddef8961fdf9011f34bcfca69aff503e87",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T10:05:15.985785Z",
+      "url": "https://www.mosaballetschool.eu/event/french-immersion-and-ballet-august-2024-12-18-114"
+    },
+    "teachers": [],
+    "title": "French Immersion and Ballet August 2024 (12-18)"
+  },
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 12
+    },
+    "application": {
+      "notes": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+      "requirements": [
+        {
+          "description": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.mosaballetschool.eu/event/french-immersion-and-or-ballet-12-18-summer-2023-45"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "mosa-ballet-school/french-immersion-and-or-ballet-12-18-summer-2023-45",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 180.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "6 days with lunch"
+      }
+    ],
+    "schedule": {
+      "end": "2023-08-26",
+      "season": "2023",
+      "sessions": [],
+      "start": "2023-08-14",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:eddd4ddf43d0431a46cbc481ddf824cbcfb180838d618f49d31826f84c412553",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T10:05:16.263868Z",
+      "url": "https://www.mosaballetschool.eu/event/french-immersion-and-or-ballet-12-18-summer-2023-45"
+    },
+    "teachers": [],
+    "title": "French Immersion and/or Ballet (12-18) - Summer 2023"
+  },
+  {
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.mosaballetschool.eu/event/intensive-spring-course-april-2022-14"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "mosa-ballet-school/intensive-spring-course-april-2022-14",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2022-04-16",
+      "season": "2022",
+      "sessions": [],
+      "start": "2022-04-04",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:446d9d91be61ff75e8f7d81a8d5a5f0181e2be6ae17b2c5e07cc697b2bfacb59",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T11:07:50.210895Z",
+      "url": "https://www.mosaballetschool.eu/event/intensive-spring-course-april-2022-14"
+    },
+    "teachers": [],
+    "title": "Intensive Spring Course - April 2022"
+  },
+  {
+    "ageRange": {
+      "max": 21,
+      "min": 12
+    },
+    "application": {
+      "notes": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+      "requirements": [
+        {
+          "description": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "status": "open",
+      "url": "https://www.mosaballetschool.eu/event/july-mosa-intensive-2026-230"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "character"
+    ],
+    "id": "mosa-ballet-school/july-mosa-intensive-2026-230",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-07-18",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-07",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:96c1c94db4ad334cf6d440d28ce2110b3ba6ff533c663a68cccdeb91bf503804",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T10:05:16.749010Z",
+      "url": "https://www.mosaballetschool.eu/event/july-mosa-intensive-2026-230"
+    },
+    "teachers": [],
+    "title": "July Mosa Intensive 2026"
+  },
+  {
+    "ageRange": {
+      "max": 29,
+      "min": 10
+    },
+    "application": {
+      "notes": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+      "requirements": [
+        {
+          "description": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.mosaballetschool.eu/event/july-signature-intensive-course-10-29-2023-42"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "character"
+    ],
+    "id": "mosa-ballet-school/july-signature-intensive-course-10-29-2023-42",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2023-07-20",
+      "season": "2023",
+      "sessions": [],
+      "start": "2023-07-13",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:7f8cee5f11f0239c82b2ed9a8dc704c3bb0406cf90fc940fdcb0caa6e5d1239c",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T10:05:17.011089Z",
+      "url": "https://www.mosaballetschool.eu/event/july-signature-intensive-course-10-29-2023-42"
+    },
+    "teachers": [],
+    "title": "July Signature Intensive Course (10-29) (2023)"
+  },
+  {
+    "ageRange": {
+      "max": 29,
+      "min": 10
+    },
+    "application": {
+      "notes": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+      "requirements": [
+        {
+          "description": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.mosaballetschool.eu/event/july-signature-intensive-course-2024-age-10-29-110"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "character"
+    ],
+    "id": "mosa-ballet-school/july-signature-intensive-course-2024-age-10-29-110",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2024-07-19",
+      "season": "2024",
+      "sessions": [],
+      "start": "2024-07-12",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:100add3d56a68620c5b3c8eb727966584f2c777c0988df772148513a8b8c7a3b",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T10:05:17.260066Z",
+      "url": "https://www.mosaballetschool.eu/event/july-signature-intensive-course-2024-age-10-29-110"
+    },
+    "teachers": [],
+    "title": "July Signature Intensive Course 2024 (age 10-29)"
+  },
+  {
+    "ageRange": {
+      "max": 29,
+      "min": 10
+    },
+    "application": {
+      "notes": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+      "requirements": [
+        {
+          "description": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.mosaballetschool.eu/event/july-signature-intensive-course-2025-age-10-29-175"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "character"
+    ],
+    "id": "mosa-ballet-school/july-signature-intensive-course-2025-age-10-29-175",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 749.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "8 days with lunch"
+      }
+    ],
+    "schedule": {
+      "end": "2025-07-18",
+      "season": "2025",
+      "sessions": [],
+      "start": "2025-07-11",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:7764436f2ce4ff4ff9be91cf2d2ac7fbb8091f7470ad22891392006aabaa042d",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T10:05:17.579887Z",
+      "url": "https://www.mosaballetschool.eu/event/july-signature-intensive-course-2025-age-10-29-175"
+    },
+    "teachers": [],
+    "title": "July Signature Intensive Course 2025 (age 10-29)"
+  },
+  {
+    "ageRange": {
+      "max": 17,
+      "min": 15
+    },
+    "application": {
+      "notes": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+      "requirements": [
+        {
+          "description": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.mosaballetschool.eu/event/mosa-immersive-intensive-15-17-autumn-2024-162"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "mosa-ballet-school/mosa-immersive-intensive-15-17-autumn-2024-162",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 500.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "5 days with lunch"
+      }
+    ],
+    "schedule": {
+      "end": "2024-10-25",
+      "season": "2024",
+      "sessions": [],
+      "start": "2024-10-21",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:2ea75393d6799e435b793e8323566c0b43c8d2afd6099f736ce122b688849225",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T10:05:18.123387Z",
+      "url": "https://www.mosaballetschool.eu/event/mosa-immersive-intensive-15-17-autumn-2024-162"
+    },
+    "teachers": [],
+    "title": "Mosa Immersive Intensive (15-17) - Autumn 2024"
+  },
+  {
+    "ageRange": {
+      "max": 20,
+      "min": 15
+    },
+    "application": {
+      "notes": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+      "requirements": [
+        {
+          "description": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.mosaballetschool.eu/event/mosa-immersive-intensive-15-20-autumn-2025-214"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "mosa-ballet-school/mosa-immersive-intensive-15-20-autumn-2025-214",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 500.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "5 days with lunch"
+      }
+    ],
+    "schedule": {
+      "end": "2025-10-24",
+      "season": "2025",
+      "sessions": [],
+      "start": "2025-10-20",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:2f235c9271c5c0ab284b68ed849c24dcf60a6f448993f437234fd060ed7ff369",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T10:05:18.350297Z",
+      "url": "https://www.mosaballetschool.eu/event/mosa-immersive-intensive-15-20-autumn-2025-214"
+    },
+    "teachers": [],
+    "title": "Mosa Immersive Intensive (15-20) - Autumn 2025"
+  },
+  {
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.mosaballetschool.eu/event/new-year-intensive-course-2023-23"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "mosa-ballet-school/new-year-intensive-course-2023-23",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2023-01-06",
+      "season": "2023",
+      "sessions": [],
+      "start": "2023-01-02",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:6d7ef6927c7b672b7cd8e48de29764b1fa68189fc66d83884b39962ed4f626bf",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T11:07:52.134130Z",
+      "url": "https://www.mosaballetschool.eu/event/new-year-intensive-course-2023-23"
+    },
+    "teachers": [],
+    "title": "New Year Intensive Course (2023)"
+  },
+  {
+    "ageRange": {
+      "max": 20,
+      "min": 12
+    },
+    "application": {
+      "notes": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+      "requirements": [
+        {
+          "description": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.mosaballetschool.eu/event/winter-intensive-course-12-20-ans-2025-174"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "mosa-ballet-school/winter-intensive-course-12-20-ans-2025-174",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 500.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "5 days with lunch"
+      }
+    ],
+    "schedule": {
+      "end": "2025-02-28",
+      "season": "2025",
+      "sessions": [],
+      "start": "2025-02-24",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:d457c5ff99910c379e5cd5d263fdd585ed31fba5f58505f9a071e860f600cb60",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T10:05:18.822058Z",
+      "url": "https://www.mosaballetschool.eu/event/winter-intensive-course-12-20-ans-2025-174"
+    },
+    "teachers": [],
+    "title": "Winter Intensive Course (12-20 ans) - 2025"
+  },
+  {
+    "ageRange": {
+      "max": 20,
+      "min": 12
+    },
+    "application": {
+      "notes": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+      "requirements": [
+        {
+          "description": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.mosaballetschool.eu/event/winter-intensive-course-12-20-ans-2026-217"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "mosa-ballet-school/winter-intensive-course-12-20-ans-2026-217",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 500.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "5 days with lunch"
+      }
+    ],
+    "schedule": {
+      "end": "2026-02-20",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-02-16",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:bdbe575dfcc0b5dc563d5c9a61cfbe0620d76b56246ed61bb1186add49f38fbf",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T10:05:19.061561Z",
+      "url": "https://www.mosaballetschool.eu/event/winter-intensive-course-12-20-ans-2026-217"
+    },
+    "teachers": [],
+    "title": "Winter Intensive Course (12-20 ans) - 2026"
+  },
+  {
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.mosaballetschool.eu/event/winter-intensive-course-2023-28"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "mosa-ballet-school/winter-intensive-course-2023-28",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2023-03-03",
+      "season": "2023",
+      "sessions": [],
+      "start": "2023-02-27",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:a0b1c7f39a66bca85a3772a501c8704e299bd0cb57ac8eec4753932276089813",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T11:07:52.740918Z",
+      "url": "https://www.mosaballetschool.eu/event/winter-intensive-course-2023-28"
+    },
+    "teachers": [],
+    "title": "Winter Intensive Course (2023)"
+  },
+  {
+    "ageRange": {
+      "max": 20,
+      "min": 12
+    },
+    "application": {
+      "notes": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+      "requirements": [
+        {
+          "description": "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) before a place is confirmed.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.mosaballetschool.eu/event/winter-intensive-course-age-12-20-2024-107"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "mosa-ballet-school/winter-intensive-course-age-12-20-2024-107",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 639.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "5 days with lunch"
+      }
+    ],
+    "schedule": {
+      "end": "2024-03-01",
+      "season": "2024",
+      "sessions": [],
+      "start": "2024-02-26",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:a3c6b86b166631f3ce6d11b565f9ca750f639a9a201b5b694c1cf241d0127a3c",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T10:05:19.530685Z",
+      "url": "https://www.mosaballetschool.eu/event/winter-intensive-course-age-12-20-2024-107"
+    },
+    "teachers": [],
+    "title": "Winter Intensive Course (age 12-20) - 2024"
+  },
+  {
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.mosaballetschool.eu/event/winter-intensive-course-december-2021-3"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "mosa-ballet-school/winter-intensive-course-december-2021-3",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2021-12-30",
+      "season": "2021",
+      "sessions": [],
+      "start": "2021-12-26",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:63674b9559f16ead2ec0820aeabb023910360150ae3e205b1b294ac09b803dfe",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T11:07:53.193865Z",
+      "url": "https://www.mosaballetschool.eu/event/winter-intensive-course-december-2021-3"
+    },
+    "teachers": [],
+    "title": "Winter Intensive Course - December 2021"
+  }
+]
