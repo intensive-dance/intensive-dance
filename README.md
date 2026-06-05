@@ -67,7 +67,7 @@ Store is committed JSON (`data/`) for now — every scrape is a reviewable git d
 
 ## Status
 
-Eight providers live:
+Nine providers live:
 
 - **The Royal Ballet School** ([#1](https://github.com/boredland/intensive-dance/issues/1)) — WordPress REST + WPBakery; exercises the `photos` requirement.
 - **Joffrey Ballet School** — WordPress custom post types (`summer-intensives`, `workshops`) + taxonomy resolution; exercises the `video` requirement. Fees/teachers aren't published in its API, so those stay empty (documented in the scraper).
@@ -77,3 +77,4 @@ Eight providers live:
 - **Frankfurt Ballet Masterclasses** (Frankfurt, DE) — single-page masterclass listing; fetched over a `verify=False` client because the host serves an incomplete TLS certificate chain.
 - **Dutch National Ballet Academy** (Amsterdam, NL) — its Amsterdam International Summer School (Senior + Junior courses), from the AHK TYPO3 site; one offering per course with its own age band and fee.
 - **École de Danse de l'Opéra national de Paris** (Paris, FR) — its Summer School ("Stage d'été"), read off the large operadeparis.fr site; exercises a non-refundable application-fee note (graduated course fees left out rather than guessed).
+- **English National Ballet School** (London, GB) ([#19](https://github.com/boredland/intensive-dance/issues/19)) — its Summer Intensives, from a WordPress REST page whose WPBakery layout groups the course titles apart from their details, so the three courses are split out of the page text (one offering each, past cycles dropped); exercises a shared course fee + non-refundable application fee across sibling offerings.

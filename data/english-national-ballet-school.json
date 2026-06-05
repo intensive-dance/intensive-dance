@@ -1,0 +1,216 @@
+[
+  {
+    "ageRange": {
+      "max": 17,
+      "min": 14
+    },
+    "application": {
+      "notes": "Places are allocated first-come, first-served; applications close once a course reaches capacity.",
+      "requirements": [
+        {
+          "description": "Entry is by video submission; applicants follow the ENBS Video Requirements.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "status": "open",
+      "url": "https://www.enbschool.org.uk/intensives/summer-intensive-application/"
+    },
+    "genres": [
+      "classical",
+      "repertoire"
+    ],
+    "id": "english-national-ballet-school/summer-intensive-2026-course-1",
+    "kind": "intensive",
+    "level": [
+      "intermediate"
+    ],
+    "location": {
+      "city": "London",
+      "country": "GB",
+      "venue": "Carlyle Building, Hortensia Road, Chelsea, SW10 0QS"
+    },
+    "organization": {
+      "city": "London",
+      "country": "GB",
+      "name": "English National Ballet School",
+      "slug": "english-national-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 1250.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Course fee"
+      },
+      {
+        "amount": 30.0,
+        "currency": "GBP",
+        "includes": [],
+        "label": "Application fee (non-refundable)",
+        "notes": "Non-refundable; payable on every Summer Intensive application."
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-31",
+      "notes": "20 July – Friday 31 July 2026",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-20",
+      "timezone": "Europe/London"
+    },
+    "source": {
+      "hash": "sha256:89842904457c1c0bcc56dae999fb8ac488b8439c664eea68412513caf2f894e5",
+      "provider": "english-national-ballet-school",
+      "scrapedAt": "2026-06-05T09:55:50.550142Z",
+      "url": "https://www.enbschool.org.uk/intensives/summer/"
+    },
+    "teachers": [],
+    "title": "Summer Intensive 2026 — Course 1: High Technique & Artistry"
+  },
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 14
+    },
+    "application": {
+      "notes": "Places are allocated first-come, first-served; applications close once a course reaches capacity.",
+      "requirements": [
+        {
+          "description": "Entry is by video submission; applicants follow the ENBS Video Requirements.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "status": "open",
+      "url": "https://www.enbschool.org.uk/intensives/summer-intensive-application/"
+    },
+    "genres": [
+      "classical",
+      "repertoire"
+    ],
+    "id": "english-national-ballet-school/summer-intensive-2026-course-2",
+    "kind": "intensive",
+    "level": [
+      "intermediate"
+    ],
+    "location": {
+      "city": "London",
+      "country": "GB",
+      "venue": "Carlyle Building, Hortensia Road, Chelsea, SW10 0QS"
+    },
+    "organization": {
+      "city": "London",
+      "country": "GB",
+      "name": "English National Ballet School",
+      "slug": "english-national-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 1250.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Course fee"
+      },
+      {
+        "amount": 30.0,
+        "currency": "GBP",
+        "includes": [],
+        "label": "Application fee (non-refundable)",
+        "notes": "Non-refundable; payable on every Summer Intensive application."
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-15",
+      "notes": "3 August to Saturday 15 August 2026",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-03",
+      "timezone": "Europe/London"
+    },
+    "source": {
+      "hash": "sha256:d2f459da6c5bf6f51695436f265aca906464941b48d198a10ae4383f0fc692fb",
+      "provider": "english-national-ballet-school",
+      "scrapedAt": "2026-06-05T09:56:38.342870Z",
+      "url": "https://www.enbschool.org.uk/intensives/summer/"
+    },
+    "teachers": [],
+    "title": "Summer Intensive 2026 — Course 2: Bournonville and Ashton"
+  },
+  {
+    "ageRange": {
+      "max": 23,
+      "min": 18
+    },
+    "application": {
+      "notes": "Places are allocated first-come, first-served; applications close once a course reaches capacity.",
+      "requirements": [
+        {
+          "description": "Entry is by video submission; applicants follow the ENBS Video Requirements.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "status": "open",
+      "url": "https://www.enbschool.org.uk/intensives/summer-intensive-application/"
+    },
+    "genres": [
+      "classical",
+      "pointe"
+    ],
+    "id": "english-national-ballet-school/summer-intensive-2026-course-3",
+    "kind": "intensive",
+    "level": [
+      "pre-professional",
+      "professional"
+    ],
+    "location": {
+      "city": "London",
+      "country": "GB",
+      "venue": "Carlyle Building, Hortensia Road, Chelsea, SW10 0QS"
+    },
+    "organization": {
+      "city": "London",
+      "country": "GB",
+      "name": "English National Ballet School",
+      "slug": "english-national-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 1250.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Course fee"
+      },
+      {
+        "amount": 30.0,
+        "currency": "GBP",
+        "includes": [],
+        "label": "Application fee (non-refundable)",
+        "notes": "Non-refundable; payable on every Summer Intensive application."
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-31",
+      "notes": "20 July - Friday 31 July 2026",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-20",
+      "timezone": "Europe/London"
+    },
+    "source": {
+      "hash": "sha256:d47dc759b4220fd7f24adafddd1d73a243ef615a9c4ad60ebbea79b802271d2b",
+      "provider": "english-national-ballet-school",
+      "scrapedAt": "2026-06-05T09:56:38.343196Z",
+      "url": "https://www.enbschool.org.uk/intensives/summer/"
+    },
+    "teachers": [],
+    "title": "Summer Intensive 2026 — Course 3: Pre-Professional & Professional Ballet Intensive"
+  }
+]
