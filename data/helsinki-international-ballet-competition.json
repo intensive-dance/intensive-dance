@@ -1,0 +1,112 @@
+[
+  {
+    "ageRange": {
+      "max": 25,
+      "min": 15
+    },
+    "application": {
+      "deadline": "2026-01-31",
+      "notes": "Application period 1.11.2025–31.1.2026 (pre-selection by video).",
+      "opensAt": "2025-11-01",
+      "requirements": [
+        {
+          "description": "Qualification video for the pre-selection; the dancer must perform alone in the submitted video.",
+          "specificity": "specific",
+          "type": "video"
+        }
+      ],
+      "status": "closed",
+      "url": "https://ibchelsinki.fi/en/competition/saannot/"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "repertoire"
+    ],
+    "id": "helsinki-international-ballet-competition/2026",
+    "kind": "competition",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Helsinki",
+      "country": "FI",
+      "venue": "Finnish National Opera and Ballet"
+    },
+    "organization": {
+      "city": "Helsinki",
+      "country": "FI",
+      "name": "Helsinki International Ballet Competition",
+      "slug": "helsinki-international-ballet-competition"
+    },
+    "prices": [
+      {
+        "amount": 100.0,
+        "currency": "EUR",
+        "includes": [],
+        "label": "Video qualification (non-refundable)"
+      },
+      {
+        "amount": 250.0,
+        "currency": "EUR",
+        "includes": [
+          "accommodation"
+        ],
+        "label": "Participation — paid by competitors accepted from the video qualification",
+        "notes": "Free shared twin-room hotel accommodation provided for the competition."
+      }
+    ],
+    "schedule": {
+      "end": "2026-06-05",
+      "notes": "28.5.–5.6.2026",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 18,
+            "min": 15
+          },
+          "label": "Juniors",
+          "notes": "Juniors (ages 15 to 18)"
+        },
+        {
+          "ageRange": {
+            "max": 21,
+            "min": 19
+          },
+          "label": "Young Professionals",
+          "notes": "Young Professionals (ages 19 to 21)"
+        },
+        {
+          "ageRange": {
+            "max": 25,
+            "min": 22
+          },
+          "label": "Seniors",
+          "notes": "Seniors (ages 22 to 25)"
+        }
+      ],
+      "start": "2026-05-28",
+      "timezone": "Europe/Helsinki"
+    },
+    "source": {
+      "hash": "sha256:0af2a85ccadae3258d2443250b3ada3689a77eb589ac87d0537b40bd0d82e329",
+      "provider": "helsinki-international-ballet-competition",
+      "scrapedAt": "2026-06-05T18:57:17.409451Z",
+      "url": "https://ibchelsinki.fi/en/competition/info/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Finnish National Ballet",
+            "role": "Artistic Director"
+          }
+        ],
+        "name": "Javier Torres",
+        "role": "Jury President"
+      }
+    ],
+    "title": "10th Helsinki International Ballet Competition"
+  }
+]
