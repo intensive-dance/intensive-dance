@@ -59,7 +59,7 @@
       "name": "Bolshoi Ballet Academy",
       "country": "RU",
       "city": "Moscow",
-      "url": "https://www.balletacademy.ru/en/",
+      "url": "https://en.balletacademy.ru/",
       "tier": "marquee",
       "status": "seed"
     },
@@ -98,6 +98,330 @@
       "url": "https://www.atd.ahk.nl/en/dance-programmes/dutch-national-ballet-academy/",
       "tier": "marquee",
       "status": "live"
+    },
+    {
+      "slug": "idc-berlin",
+      "name": "IDC Berlin",
+      "country": "DE",
+      "city": "Berlin",
+      "url": "https://idc-dance.com/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "young-stars-ballet",
+      "name": "Young Stars Ballet",
+      "country": "DE",
+      "city": "Berlin",
+      "url": "https://youngstarsballet.com/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "rosenthal-ballett",
+      "name": "Rosenthal Ballett",
+      "country": "DE",
+      "city": "Düsseldorf",
+      "url": "https://rosenthal-ballett.de/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "m-i-ballet-school",
+      "name": "Munich International Ballet School",
+      "country": "DE",
+      "city": "Munich",
+      "url": "https://mi-ballet-school.de/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "munich-ballet-intensive",
+      "name": "Munich Ballet Intensive (Dance Arts Academy)",
+      "country": "DE",
+      "city": "Munich",
+      "url": "https://danceartsacademy.de/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "summer-sensation-intensive",
+      "name": "Summer Sensation Intensive (DART)",
+      "country": "DE",
+      "city": "Berlin",
+      "url": "https://dart.theater/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "tanzwerkstatt-europa",
+      "name": "Tanzwerkstatt Europa",
+      "country": "DE",
+      "city": "Munich",
+      "url": "https://www.jointadventures.net/en/tanzwerkstatt-europa",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "ballett-dortmund",
+      "name": "Ballett Dortmund",
+      "country": "DE",
+      "city": "Dortmund",
+      "url": "https://theaterdo.de/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "summer-intensive-gymnasium-essen",
+      "name": "Summer Intensive Gymnasium Essen-Werden",
+      "country": "DE",
+      "city": "Essen",
+      "url": "https://gymnasium-essen-werden.de/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "palucca-tanzwoche-sylt",
+      "name": "Palucca-Tanzwoche Sylt",
+      "country": "DE",
+      "city": "Sylt",
+      "url": "https://palucca.eu/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "central-school-of-ballet",
+      "name": "Central School of Ballet",
+      "country": "GB",
+      "city": "London",
+      "url": "https://centralschoolofballet.co.uk/",
+      "tier": "marquee",
+      "status": "seed"
+    },
+    {
+      "slug": "masters-of-ballet-academy",
+      "name": "Masters of Ballet Academy",
+      "country": "GB",
+      "city": "London",
+      "url": "https://mastersofballetacademy.com/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "northern-ballet-academy",
+      "name": "Northern Ballet Academy",
+      "country": "GB",
+      "city": "Leeds",
+      "url": "https://northernballet.com/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "elmhurst-ballet-school",
+      "name": "Elmhurst Ballet School",
+      "country": "GB",
+      "city": "Birmingham",
+      "url": "https://elmhurstballetschool.org/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "art-of-zurich",
+      "name": "ART of – Ballet Summer Course Zürich",
+      "country": "CH",
+      "city": "Zürich",
+      "url": "https://zurich.art-of.net/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "pnsd-rosella-hightower",
+      "name": "PNSD Rosella Hightower",
+      "country": "FR",
+      "city": "Cannes",
+      "url": "https://pnsd.fr/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "accademia-teatro-alla-scala",
+      "name": "Accademia Teatro alla Scala",
+      "country": "IT",
+      "city": "Milan",
+      "url": "https://accademialascala.it/",
+      "tier": "marquee",
+      "status": "seed"
+    },
+    {
+      "slug": "dance-and-fashion-cic",
+      "name": "Dance & Fashion CIC",
+      "country": "IT",
+      "city": "Rapallo",
+      "url": "https://danceandfashioncic.com/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "attitude-ballet-studios",
+      "name": "Attitude Ballet Studios – Vienna Ballet Intensive",
+      "country": "AT",
+      "city": "Vienna",
+      "url": "https://attitudestudios.at/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "international-ballet-masterclasses-prague",
+      "name": "International Ballet Masterclasses Prague",
+      "country": "CZ",
+      "city": "Prague",
+      "url": "https://balletmasterclass.com/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "hungarian-dance-university",
+      "name": "Hungarian Dance University",
+      "country": "HU",
+      "city": "Budapest",
+      "url": "https://mte.eu/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "ballet-summer-course-budapest",
+      "name": "Ballet Summer Course Budapest",
+      "country": "HU",
+      "city": "Budapest",
+      "url": "https://balletsummercoursebudapest.com/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "royal-danish-ballet-summer-school",
+      "name": "Royal Danish Ballet Summer School (Tanz Akademie Zürich)",
+      "country": "DK",
+      "city": "Copenhagen",
+      "url": "https://kglteater.dk/",
+      "tier": "marquee",
+      "status": "seed"
+    },
+    {
+      "slug": "norwegian-national-ballet",
+      "name": "Norwegian National Ballet",
+      "country": "NO",
+      "city": "Oslo",
+      "url": "https://operaen.no/",
+      "tier": "marquee",
+      "status": "seed"
+    },
+    {
+      "slug": "international-ballet-school-stockholm",
+      "name": "International Ballet School Stockholm",
+      "country": "SE",
+      "city": "Stockholm",
+      "url": null,
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "finnish-national-ballet",
+      "name": "Finnish National Ballet",
+      "country": "FI",
+      "city": "Helsinki",
+      "url": "https://oopperabaletti.fi/",
+      "tier": "marquee",
+      "status": "seed"
+    },
+    {
+      "slug": "finland-international-summer-ballet-school",
+      "name": "Finland International Summer Ballet School",
+      "country": "FI",
+      "city": "Helsinki",
+      "url": "https://finsummerdance.com/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "art-of-madrid",
+      "name": "ART of – Ballet Summer Course Madrid",
+      "country": "ES",
+      "city": "Madrid",
+      "url": "https://madrid.art-of.net/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "ballet-ruso-barcelona",
+      "name": "Ballet Ruso Barcelona",
+      "country": "ES",
+      "city": "Barcelona",
+      "url": "https://balletrusobarcelona.com/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "school-of-american-ballet",
+      "name": "School of American Ballet",
+      "country": "US",
+      "city": "New York",
+      "url": "https://sab.org/",
+      "tier": "marquee",
+      "status": "seed"
+    },
+    {
+      "slug": "alberta-ballet-school",
+      "name": "Alberta Ballet School",
+      "country": "CA",
+      "city": "Calgary",
+      "url": "https://albertaballetschool.com/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "hong-kong-academy-of-ballet",
+      "name": "Hong Kong Academy of Ballet (Hong Kong Ballet)",
+      "country": "HK",
+      "city": "Hong Kong",
+      "url": "https://hkballet.com/",
+      "tier": "marquee",
+      "status": "seed"
+    },
+    {
+      "slug": "prix-de-lausanne",
+      "name": "Prix de Lausanne",
+      "country": "CH",
+      "city": "Lausanne",
+      "url": "https://prixdelausanne.org/",
+      "tier": "marquee",
+      "status": "seed"
+    },
+    {
+      "slug": "helsinki-international-ballet-competition",
+      "name": "Helsinki International Ballet Competition (HIBC)",
+      "country": "FI",
+      "city": "Helsinki",
+      "url": "https://ibchelsinki.fi/",
+      "tier": "marquee",
+      "status": "seed"
+    },
+    {
+      "slug": "tanzolymp",
+      "name": "Tanzolymp",
+      "country": "DE",
+      "city": "Berlin",
+      "url": "https://tanzolymp.com/",
+      "tier": "marquee",
+      "status": "seed"
+    },
+    {
+      "slug": "youth-america-grand-prix",
+      "name": "Youth America Grand Prix (YAGP) – Europa-Semifinals",
+      "country": null,
+      "city": null,
+      "url": "https://yagp.org/",
+      "tier": "marquee",
+      "status": "seed"
     }
   ]
 }
