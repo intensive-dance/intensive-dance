@@ -99,7 +99,6 @@ def _build_offering(html: str) -> Offering | None:
         source=Source(provider="academie-princesse-grace", url=PAGE, scrapedAt=now_utc()),
         title=f"Summer Courses {season}",
         genres=_genres(text),
-        kind="intensive",
         ageRange=_age_range(text),
         organization=ORG,
         location=Location(city="Monaco", country="MC"),

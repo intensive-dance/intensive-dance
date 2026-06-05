@@ -162,7 +162,6 @@ def test_summer_course_offering():
     assert o is not None
     assert o.id == "school-of-american-ballet/summer-course-2026"
     assert o.title == "Summer Course in NYC"
-    assert o.kind == "summer-school"
     assert o.schedule.start == date(2026, 6, 29)
     assert o.schedule.end == date(2026, 7, 31)
     assert o.schedule.timezone == "America/New_York"

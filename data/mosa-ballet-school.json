@@ -22,7 +22,6 @@
       "character"
     ],
     "id": "mosa-ballet-school/august-signature-intensive-course-12-29-2023-39",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -53,7 +52,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:d249e6c4995a0c0712946153f68bbcc831badbe1ac765e5abd054511b8b63010",
+      "hash": "sha256:79d5e71774bd4cb8ccb1daddece7dc91639d10dd3b784dca9eec178d98a7a830",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T10:05:10.298999Z",
       "url": "https://www.mosaballetschool.eu/event/august-signature-intensive-course-12-29-2023-39"
@@ -83,7 +82,6 @@
       "contemporary"
     ],
     "id": "mosa-ballet-school/august-signature-intensive-course-2024-12-29-115",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -122,7 +120,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:7ca3aecccc47d0a5f3cea31caf5dd7c040457fbc8e2ecb7021c60442ad628e64",
+      "hash": "sha256:6ff4b0ced52f21584493f65014d0ed46ea503b5aa02e972bfd9d5115032e6ef2",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T10:05:10.811263Z",
       "url": "https://www.mosaballetschool.eu/event/august-signature-intensive-course-2024-12-29-115"
@@ -152,7 +150,6 @@
       "contemporary"
     ],
     "id": "mosa-ballet-school/august-signature-intensive-course-2025-12-29-176",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -191,7 +188,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:b6cc239612cc5ae5fb1f321eeab5f0c082dd9ebe4b2a4be5874cfac55f9436a3",
+      "hash": "sha256:7c511841feeb17ee5f5a8ee2d72f7f78afb985dd3c45fc58b49b859c57fa42b3",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T10:05:11.036552Z",
       "url": "https://www.mosaballetschool.eu/event/august-signature-intensive-course-2025-12-29-176"
@@ -221,7 +218,6 @@
       "contemporary"
     ],
     "id": "mosa-ballet-school/august-signature-intensive-course-2026-age-12-29-231",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -260,7 +256,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:6d1af6bf5030379476a63698f933548fbcbfbb1d13101b7a631179ec348f4f9d",
+      "hash": "sha256:a07c25b08380cd29fb98514192c86cc6d265b65d4ab6e33ec026d6ca7c988871",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T10:05:11.279025Z",
       "url": "https://www.mosaballetschool.eu/event/august-signature-intensive-course-2026-age-12-29-231"
@@ -282,7 +278,6 @@
       "classical"
     ],
     "id": "mosa-ballet-school/ballet-pianists-summer-intensive-2024-from-18-yo-111",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -304,7 +299,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:0699af1c61eab6fe38f83d944ba580cc386fca1f219ddcd809c65118073611e1",
+      "hash": "sha256:eab38f2dfc589f82dd78054bffbb7a86e79a3eed90cda7b5eb9407201fd034b0",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T11:07:45.489440Z",
       "url": "https://www.mosaballetschool.eu/event/ballet-pianists-summer-intensive-2024-from-18-yo-111"
@@ -326,7 +321,6 @@
       "classical"
     ],
     "id": "mosa-ballet-school/ballet-pianists-summer-intensive-july-2023-53",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -348,7 +342,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:0dfb235795c973c5735ffee66439916fc094708222e07e00ea2cced5509f7685",
+      "hash": "sha256:6425360287bd5028b2a14e77b468cfba6ffa7460415757134ae9cf6891317f5d",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T11:07:45.697290Z",
       "url": "https://www.mosaballetschool.eu/event/ballet-pianists-summer-intensive-july-2023-53"
@@ -370,7 +364,6 @@
       "classical"
     ],
     "id": "mosa-ballet-school/ballet-teachers-summer-intensive-2024-from-18-yo-112",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -392,7 +385,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:7332358129e1b496a5af619fcedb385a1d83eb816eac2c4c5750b7d2e8e9e702",
+      "hash": "sha256:ea79b66cf2c3d7ed6132632d14c76df2acf17d2560e85b5fb45ac741e608ad3b",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T11:07:45.903694Z",
       "url": "https://www.mosaballetschool.eu/event/ballet-teachers-summer-intensive-2024-from-18-yo-112"
@@ -422,7 +415,6 @@
       "contemporary"
     ],
     "id": "mosa-ballet-school/contemporary-immersion-ballet-fundamentals-age-15-20-autumn-2023-90",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -453,7 +445,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:91b1ee37a695e8c124364814ffe8d06df97b1c1c9831f2d43b31b302bfc6af72",
+      "hash": "sha256:c821ec8ed601652b21675beb43b1cfe0ec6b1a7ddea8b381de6650c86c1d7a7b",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T10:05:12.360544Z",
       "url": "https://www.mosaballetschool.eu/event/contemporary-immersion-ballet-fundamentals-age-15-20-autumn-2023-90"
@@ -483,7 +475,6 @@
       "contemporary"
     ],
     "id": "mosa-ballet-school/discovering-mosa-13-14-autumn-2025-215",
-    "kind": "workshop",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -514,7 +505,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:2220e17eeba52342872412f7dec889233b01aac224356151811d3f75eb860e91",
+      "hash": "sha256:3542ef18d8cdbcadc86df344949adbf0f7ece7e58dc35561dbc986c0c3bd599e",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T10:05:12.590942Z",
       "url": "https://www.mosaballetschool.eu/event/discovering-mosa-13-14-autumn-2025-215"
@@ -544,7 +535,6 @@
       "contemporary"
     ],
     "id": "mosa-ballet-school/discovering-mosa-ballet-school-13-14-autumn-2024-163",
-    "kind": "workshop",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -575,7 +565,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:4fe137bfb869f59b1535577ee5ada9ec7f2e85e43fba88161f65088849ebd015",
+      "hash": "sha256:20b6992e1b6c87c67e9c558847339b75fba1f1dc92ee896db3b1e8a35560f25d",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T10:05:12.888161Z",
       "url": "https://www.mosaballetschool.eu/event/discovering-mosa-ballet-school-13-14-autumn-2024-163"
@@ -602,7 +592,6 @@
       "contemporary"
     ],
     "id": "mosa-ballet-school/exploring-ballet-and-other-dances-8-11-years-summer-2023-56",
-    "kind": "workshop",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -633,7 +622,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:b70e9cd2eb753105f76ea4a043a6f9831ea0e9cc333641aa233a2b0a3dda88fa",
+      "hash": "sha256:c5d2c36a291c40ade8495849df154aa9c9c91ca18c5f8c8d24d0a1b5688e79be",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T11:07:46.903343Z",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-and-other-dances-8-11-years-summer-2023-56"
@@ -660,7 +649,6 @@
       "contemporary"
     ],
     "id": "mosa-ballet-school/exploring-ballet-other-dances-8-12-autumn-2024-161",
-    "kind": "workshop",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -691,7 +679,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:106ec60d44899174073149a9add8e214287f6034a931eeadb2ff70601ae63809",
+      "hash": "sha256:c2fa0dddd16f06032494d78bc3bc106c1a4f32eb44c5b5a6397adf3cd57c6a13",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T11:07:47.159483Z",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-8-12-autumn-2024-161"
@@ -718,7 +706,6 @@
       "contemporary"
     ],
     "id": "mosa-ballet-school/exploring-ballet-other-dances-8-12-autumn-2025-216",
-    "kind": "workshop",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -749,7 +736,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:6414768d62fb6a1784b47bc36e201c2e86e7af491701b64a51725dfa2592e22b",
+      "hash": "sha256:bf484ae29ccf1058ce31ff5decfaf95716495ef07f625de04fad6e12c2f9505a",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T11:07:47.420621Z",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-8-12-autumn-2025-216"
@@ -776,7 +763,6 @@
       "contemporary"
     ],
     "id": "mosa-ballet-school/exploring-ballet-other-dances-age-8-12-august-2025-180",
-    "kind": "workshop",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -815,7 +801,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:07ba2f8419790fb049a1493292427ce92ed0e608f99ce0e55426e83ba49b394a",
+      "hash": "sha256:4b53c65caed5ab9a432a992dbc0f696ee1a09b05a1dd293750d8520a848dd094",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T11:07:47.656424Z",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-august-2025-180"
@@ -842,7 +828,6 @@
       "contemporary"
     ],
     "id": "mosa-ballet-school/exploring-ballet-other-dances-age-8-12-august-2026-232",
-    "kind": "workshop",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -881,7 +866,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:76a10e6db95978a9dd8abf0224d1f527aee437513c09da0d3a3b237d039eb4e7",
+      "hash": "sha256:13e64c87403ae7f0143af4c88bd974775b5a81ae6fefc4789a14a7237a131100",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T11:07:47.889710Z",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-august-2026-232"
@@ -908,7 +893,6 @@
       "contemporary"
     ],
     "id": "mosa-ballet-school/exploring-ballet-other-dances-age-8-12-spring-2024-109",
-    "kind": "workshop",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -939,7 +923,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:329cee2871401a37d31f5cecc99ed4187e2cf6f1d68e833074a6dd57f292e797",
+      "hash": "sha256:0be1d42e0cba532a925ad5a57718f0a9f2af75395ad42888e73deaf8a1d0f9e3",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T11:07:48.160147Z",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-spring-2024-109"
@@ -966,7 +950,6 @@
       "contemporary"
     ],
     "id": "mosa-ballet-school/exploring-ballet-other-dances-age-8-12-summer-2024-113",
-    "kind": "workshop",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -1005,7 +988,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:04f84715d4a244825579294ffe1578565563c1a1f7b4404c0080e39c0b6ebd84",
+      "hash": "sha256:63cc2489dcbdd47c104cf0c4d69721b05277bdbdce5d7e264287097bc413e2f1",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T11:07:48.598064Z",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-summer-2024-113"
@@ -1032,7 +1015,6 @@
       "contemporary"
     ],
     "id": "mosa-ballet-school/exploring-ballet-other-dances-age-8-12-winter-2024-108",
-    "kind": "workshop",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -1063,7 +1045,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:8a37f31bf6ee08510744d35f582d00e6fd630336e5cbb49167f5e26556e64a0a",
+      "hash": "sha256:814721e2b8b3a73898d1d8ed216b9c43119c34e227a3aa47e98289d766a75867",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T11:07:48.837485Z",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-winter-2024-108"
@@ -1090,7 +1072,6 @@
       "contemporary"
     ],
     "id": "mosa-ballet-school/exploring-ballet-other-dances-age-8-12-winter-2025-178",
-    "kind": "workshop",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -1121,7 +1102,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:f734a51205f1ea0c745d91a62b119e25b341d210f915e8e6bcfdf0bb29ec7486",
+      "hash": "sha256:b477844161707335d07cec20d24b845302a23940ad2be86351c5cb3bcc697179",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T11:07:49.083374Z",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-winter-2025-178"
@@ -1148,7 +1129,6 @@
       "contemporary"
     ],
     "id": "mosa-ballet-school/exploring-ballet-other-dances-age-8-12-winter-2026-218",
-    "kind": "workshop",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -1179,7 +1159,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:c011839fd48a0f3e7688e34d8c280a8389e12243aed1d22be0fc1aab09f51ec3",
+      "hash": "sha256:7978b54c706c754bbb5c70417d2d79523d1a60c3702a898a41fc288db6c5fd41",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T11:07:49.309413Z",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-winter-2026-218"
@@ -1209,7 +1189,6 @@
       "contemporary"
     ],
     "id": "mosa-ballet-school/french-immersion-and-ballet-august-2024-12-18-114",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -1231,7 +1210,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:a2c59b8516f58eda1742c8714107468349929b3f3d3a0135779cff0dda5e0155",
+      "hash": "sha256:568b3ed198a183ca6c2c831d65fc7eddef8961fdf9011f34bcfca69aff503e87",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T10:05:15.985785Z",
       "url": "https://www.mosaballetschool.eu/event/french-immersion-and-ballet-august-2024-12-18-114"
@@ -1261,7 +1240,6 @@
       "contemporary"
     ],
     "id": "mosa-ballet-school/french-immersion-and-or-ballet-12-18-summer-2023-45",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -1292,7 +1270,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:f51a4993c9636f656c11903d5636aa9d0813b3658ddb0dc7a7338a8347fbe6f5",
+      "hash": "sha256:eddd4ddf43d0431a46cbc481ddf824cbcfb180838d618f49d31826f84c412553",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T10:05:16.263868Z",
       "url": "https://www.mosaballetschool.eu/event/french-immersion-and-or-ballet-12-18-summer-2023-45"
@@ -1314,7 +1292,6 @@
       "classical"
     ],
     "id": "mosa-ballet-school/intensive-spring-course-april-2022-14",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -1336,7 +1313,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:86e060c71c3ed5467f6b947c368e71d7649175677699532ac33f473f6b08da7b",
+      "hash": "sha256:446d9d91be61ff75e8f7d81a8d5a5f0181e2be6ae17b2c5e07cc697b2bfacb59",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T11:07:50.210895Z",
       "url": "https://www.mosaballetschool.eu/event/intensive-spring-course-april-2022-14"
@@ -1367,7 +1344,6 @@
       "character"
     ],
     "id": "mosa-ballet-school/july-mosa-intensive-2026-230",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -1389,7 +1365,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:f56dc3b9f8b99ef4d680b01d058ac8a1e9118873efd36a975b8c2b36df2233b7",
+      "hash": "sha256:96c1c94db4ad334cf6d440d28ce2110b3ba6ff533c663a68cccdeb91bf503804",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T10:05:16.749010Z",
       "url": "https://www.mosaballetschool.eu/event/july-mosa-intensive-2026-230"
@@ -1420,7 +1396,6 @@
       "character"
     ],
     "id": "mosa-ballet-school/july-signature-intensive-course-10-29-2023-42",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -1442,7 +1417,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:26758c2734ec90ccc061d3456ce0074a0872def36f6f8c524da749b4c1f3d0b0",
+      "hash": "sha256:7f8cee5f11f0239c82b2ed9a8dc704c3bb0406cf90fc940fdcb0caa6e5d1239c",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T10:05:17.011089Z",
       "url": "https://www.mosaballetschool.eu/event/july-signature-intensive-course-10-29-2023-42"
@@ -1473,7 +1448,6 @@
       "character"
     ],
     "id": "mosa-ballet-school/july-signature-intensive-course-2024-age-10-29-110",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -1495,7 +1469,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:fd0dda62bc98ea785e003b5b018c680b61294481be2d9d9b7e82e6c7f3bc491e",
+      "hash": "sha256:100add3d56a68620c5b3c8eb727966584f2c777c0988df772148513a8b8c7a3b",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T10:05:17.260066Z",
       "url": "https://www.mosaballetschool.eu/event/july-signature-intensive-course-2024-age-10-29-110"
@@ -1526,7 +1500,6 @@
       "character"
     ],
     "id": "mosa-ballet-school/july-signature-intensive-course-2025-age-10-29-175",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -1557,7 +1530,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:df4bb3b43a412486297d9f99c7fc95f6398825fc68c3f85b9dfd7d91736d3eed",
+      "hash": "sha256:7764436f2ce4ff4ff9be91cf2d2ac7fbb8091f7470ad22891392006aabaa042d",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T10:05:17.579887Z",
       "url": "https://www.mosaballetschool.eu/event/july-signature-intensive-course-2025-age-10-29-175"
@@ -1587,7 +1560,6 @@
       "contemporary"
     ],
     "id": "mosa-ballet-school/mosa-immersive-intensive-15-17-autumn-2024-162",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -1618,7 +1590,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:af7e26221e15bff264cd31cfcc36671534010704bc1cd47852d17862e19bffa3",
+      "hash": "sha256:2ea75393d6799e435b793e8323566c0b43c8d2afd6099f736ce122b688849225",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T10:05:18.123387Z",
       "url": "https://www.mosaballetschool.eu/event/mosa-immersive-intensive-15-17-autumn-2024-162"
@@ -1648,7 +1620,6 @@
       "contemporary"
     ],
     "id": "mosa-ballet-school/mosa-immersive-intensive-15-20-autumn-2025-214",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -1679,7 +1650,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:4f8a0037d47220ce4c91ea19a065b001fc260625906f7ab4691c1fc3edf9d5eb",
+      "hash": "sha256:2f235c9271c5c0ab284b68ed849c24dcf60a6f448993f437234fd060ed7ff369",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T10:05:18.350297Z",
       "url": "https://www.mosaballetschool.eu/event/mosa-immersive-intensive-15-20-autumn-2025-214"
@@ -1701,7 +1672,6 @@
       "classical"
     ],
     "id": "mosa-ballet-school/new-year-intensive-course-2023-23",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -1723,7 +1693,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:e8a62348509ce727111839712a07ec6eaa172ccd40dc03161d5c644be6042e0b",
+      "hash": "sha256:6d7ef6927c7b672b7cd8e48de29764b1fa68189fc66d83884b39962ed4f626bf",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T11:07:52.134130Z",
       "url": "https://www.mosaballetschool.eu/event/new-year-intensive-course-2023-23"
@@ -1753,7 +1723,6 @@
       "contemporary"
     ],
     "id": "mosa-ballet-school/winter-intensive-course-12-20-ans-2025-174",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -1784,7 +1753,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:6ce0c95bbb16f339227f6d17971ab9543c3ea46074f061aae54f3ec738027a7d",
+      "hash": "sha256:d457c5ff99910c379e5cd5d263fdd585ed31fba5f58505f9a071e860f600cb60",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T10:05:18.822058Z",
       "url": "https://www.mosaballetschool.eu/event/winter-intensive-course-12-20-ans-2025-174"
@@ -1814,7 +1783,6 @@
       "contemporary"
     ],
     "id": "mosa-ballet-school/winter-intensive-course-12-20-ans-2026-217",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -1845,7 +1813,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:94c6a753456deb4347e073356eef6331d1227695a6f482f956de357f963a2011",
+      "hash": "sha256:bdbe575dfcc0b5dc563d5c9a61cfbe0620d76b56246ed61bb1186add49f38fbf",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T10:05:19.061561Z",
       "url": "https://www.mosaballetschool.eu/event/winter-intensive-course-12-20-ans-2026-217"
@@ -1867,7 +1835,6 @@
       "classical"
     ],
     "id": "mosa-ballet-school/winter-intensive-course-2023-28",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -1889,7 +1856,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:b199e031eec40c4239fa5a2890b53d2e8033fca1027ff0ed2fc1d8e96eed1544",
+      "hash": "sha256:a0b1c7f39a66bca85a3772a501c8704e299bd0cb57ac8eec4753932276089813",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T11:07:52.740918Z",
       "url": "https://www.mosaballetschool.eu/event/winter-intensive-course-2023-28"
@@ -1919,7 +1886,6 @@
       "contemporary"
     ],
     "id": "mosa-ballet-school/winter-intensive-course-age-12-20-2024-107",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -1950,7 +1916,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:d0da2ce8439ee625492588983a7968c34a90c02cdeb38d089d98983dea5578a6",
+      "hash": "sha256:a3c6b86b166631f3ce6d11b565f9ca750f639a9a201b5b694c1cf241d0127a3c",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T10:05:19.530685Z",
       "url": "https://www.mosaballetschool.eu/event/winter-intensive-course-age-12-20-2024-107"
@@ -1972,7 +1938,6 @@
       "classical"
     ],
     "id": "mosa-ballet-school/winter-intensive-course-december-2021-3",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -1994,7 +1959,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:08cda969e7061cdf3ea502ccb1da8defb93f6451982e6e8854626350e4edcf76",
+      "hash": "sha256:63674b9559f16ead2ec0820aeabb023910360150ae3e205b1b294ac09b803dfe",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T11:07:53.193865Z",
       "url": "https://www.mosaballetschool.eu/event/winter-intensive-course-december-2021-3"

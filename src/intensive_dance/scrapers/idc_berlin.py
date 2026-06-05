@@ -96,7 +96,6 @@ def _build_offering(html: str) -> Offering | None:
         source=Source(provider="idc-berlin", url=PAGE, scrapedAt=now_utc()),
         title=f"Summer Intensive {season}",
         genres=_genres(text),
-        kind="intensive",
         level=_levels(text),
         ageRange=_age_range(text),
         organization=ORG,

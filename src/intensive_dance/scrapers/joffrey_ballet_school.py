@@ -38,7 +38,6 @@ from intensive_dance import parse, wp
 from intensive_dance.models import (
     Application,
     Genre,
-    Kind,
     Location,
     Offering,
     Organization,
@@ -55,12 +54,8 @@ ORG = Organization(
     name="Joffrey Ballet School", slug="joffrey-ballet-school", country="US", city="New York"
 )
 
-# Each program post type, and the `kind` an Offering from it takes.
-PROGRAM_TYPES: dict[str, Kind] = {
-    "summer-intensives": "intensive",
-    "workshops": "workshop",
-    "master-class": "masterclass",
-}
+# The program post types to walk (each is a WordPress REST base).
+PROGRAM_TYPES: tuple[str, ...] = ("summer-intensives", "workshops", "master-class")
 
 # dance_style term name → our genres. Styles absent here (Tap, Hip Hop, Cirque
 # Arts, Musical Theater) are out of scope for a ballet register, so a program
@@ -122,14 +117,14 @@ def scrape(client: httpx.Client) -> list[Offering]:
 
     today = date.today()
     offerings: list[Offering] = []
-    for rest_base, kind in PROGRAM_TYPES.items():
+    for rest_base in PROGRAM_TYPES:
         for record in wp.fetch_all(
             client,
             rest_base,
             base=BASE,
             params={"_fields": "id,slug,link,title,content,dance_style,intensive_location"},
         ):
-            offering = _build_offering(record, kind, styles, locations, audition_url, today)
+            offering = _build_offering(record, styles, locations, audition_url, today)
             if offering is not None:
                 offerings.append(offering)
     offerings.sort(key=lambda o: o.id)
@@ -143,7 +138,6 @@ def _auditions_url(client: httpx.Client) -> str:
 
 def _build_offering(
     record: dict,
-    kind: Kind,
     styles: dict[int, str],
     locations: dict[int, str],
     audition_url: str,
@@ -164,7 +158,6 @@ def _build_offering(
         source=Source(provider="joffrey-ballet-school", url=record["link"], scrapedAt=now_utc()),
         title=title,
         genres=genres,
-        kind=kind,
         organization=ORG,
         location=Location(city=city, country=country) if country else None,
         schedule=Schedule(season=season, start=start, end=end),

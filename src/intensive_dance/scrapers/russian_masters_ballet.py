@@ -214,7 +214,6 @@ def _build_offering(
         source=Source(provider="russian-masters-ballet", url=f"{url}#{track}", scrapedAt=now_utc()),
         title=title,
         genres=_genres(f"{track_name} {body}"),
-        kind="intensive",
         lifecycle="cancelled" if cancelled else "scheduled",
         lifecycleNote="This RMB location has been cancelled." if cancelled else None,
         level=_levels(track_name),
