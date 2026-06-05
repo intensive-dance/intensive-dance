@@ -38,7 +38,8 @@ FEES = f"{SUMMER}application-and-fees/"
 
 ORG = Organization(name="Dutch National Ballet Academy", slug="dutch-national-ballet-academy", country="NL", city="Amsterdam")
 
-# Course label as printed on the pages → (slug fragment, weeks of duration text).
+# Course labels as printed on the pages; each becomes its own Offering, with its
+# age band and fee read from the text by label (see _course_age / _course_fee).
 _COURSES = ("Senior Course", "Junior Course")
 
 
@@ -138,9 +139,28 @@ def _course_age(text: str, label: str) -> dict | None:
 
 def _course_fee(text: str, label: str) -> float | None:
     match = re.search(re.escape(label) + r":\s*€\s?([\d.,]+)", text, re.IGNORECASE)
-    if not match:
+    return _amount(match.group(1)) if match else None
+
+
+def _amount(raw: str) -> float | None:
+    """Parse a fee that may be written in European (1.400 / 1.299,00) or
+    Anglo (1,400 / 1,299.00) notation, plus the bare 1400 the site uses today.
+
+    With both separators present the rightmost is the decimal point; with one,
+    a separator immediately followed by exactly three digits is a thousands
+    grouping, otherwise a decimal point.
+    """
+    s = raw.strip().rstrip(".,").replace(" ", "")
+    if "," in s and "." in s:
+        s = s.replace(".", "").replace(",", ".") if s.rfind(",") > s.rfind(".") else s.replace(",", "")
+    elif "," in s:
+        s = s.replace(",", "") if re.search(r",\d{3}\b", s) else s.replace(",", ".")
+    elif "." in s:
+        s = s.replace(".", "") if re.search(r"\.\d{3}\b", s) else s
+    try:
+        return round(float(s), 2)
+    except ValueError:
         return None
-    return float(match.group(1).replace(".", "").replace(",", "."))
 
 
 _GENRE_KEYWORDS: list[tuple[Genre, tuple[str, ...]]] = [

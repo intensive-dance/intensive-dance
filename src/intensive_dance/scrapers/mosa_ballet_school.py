@@ -63,8 +63,10 @@ _DROP = (
     "let-s-dance-for-life", "la-procure", "dance-for-pd", "health-and", "secundary-school",
 )
 # Cycles from past seasons are dropped by date too, but skipping old-year slugs up
-# front saves fetching ~100 dead pages.
-_OLD_YEAR = re.compile(r"20(1\d|2[0-5])")
+# front saves fetching ~100 dead pages. The end-date filter is the real gate, so
+# this only has to be a cheap, safe pre-filter — derived from the run year rather
+# than a hardcoded ceiling so it doesn't silently go stale each January.
+_YEAR_TOKEN = re.compile(r"20\d\d")
 
 _AUDITION_NOTE = (
     "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) "
@@ -76,14 +78,14 @@ def scrape(client: httpx.Client) -> list[Offering]:
     today = date.today()
     offerings = [
         offering
-        for url in _event_urls(client)
+        for url in _event_urls(client, today)
         if (offering := _build_offering(client, url, today)) is not None
     ]
     offerings.sort(key=lambda o: o.id)
     return offerings
 
 
-def _event_urls(client: httpx.Client) -> list[str]:
+def _event_urls(client: httpx.Client, today: date) -> list[str]:
     """Live, in-scope `/event/` URLs from the sitemap (API-first discovery)."""
     resp = client.get(SITEMAP)
     resp.raise_for_status()
@@ -92,7 +94,7 @@ def _event_urls(client: httpx.Client) -> list[str]:
     for node in root.findall(f"{_SM_NS}url"):
         loc = node.findtext(f"{_SM_NS}loc") or ""
         slug = loc.rsplit("/event/", 1)[-1]
-        if "/event/" in loc and _in_scope(slug) and not _OLD_YEAR.search(slug):
+        if "/event/" in loc and _in_scope(slug) and not _is_past_year(slug, today):
             urls.append(loc)
     return sorted(set(urls))
 
@@ -102,6 +104,12 @@ def _in_scope(slug: str) -> bool:
     if any(k in low for k in _DROP):
         return False
     return any(k in low for k in _KEEP)
+
+
+def _is_past_year(slug: str, today: date) -> bool:
+    """Whether a slug names only season years before the current one."""
+    years = [int(y) for y in _YEAR_TOKEN.findall(slug)]
+    return bool(years) and max(years) < today.year
 
 
 def _build_offering(client: httpx.Client, url: str, today: date) -> Offering | None:

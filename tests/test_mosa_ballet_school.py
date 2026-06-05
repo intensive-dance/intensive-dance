@@ -41,6 +41,18 @@ def test_kind_from_slug():
     assert mosa._kind("masterclass-charleston-222") == "masterclass"
 
 
+def test_is_past_year_relative_to_run_year():
+    # The cutoff tracks the run year, so 2025 is "past" in 2026 but not in 2025;
+    # a slug with no year (or a coming year) is never pre-filtered out.
+    today = date(2026, 6, 1)
+    assert mosa._is_past_year("annual-gala-2023-at-15-00-85", today)
+    assert mosa._is_past_year("july-mosa-intensive-2025-200", today)
+    assert not mosa._is_past_year("july-mosa-intensive-2026-230", today)
+    assert not mosa._is_past_year("online-auditions-for-2026-2027-213", today)
+    assert not mosa._is_past_year("masterclass-charleston-222", today)
+    assert not mosa._is_past_year("july-mosa-intensive-2025-200", date(2025, 6, 1))
+
+
 # --- dates --------------------------------------------------------------------
 
 

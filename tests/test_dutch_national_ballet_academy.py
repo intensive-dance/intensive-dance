@@ -25,6 +25,17 @@ def test_course_fee_per_course_and_euro_format():
     assert dnba._course_fee(text, "Accommodation (optional)") == 1100.0
 
 
+def test_amount_handles_european_and_anglo_notation():
+    # European thousands ("1.100"), Anglo thousands ("1,400"), and either decimal
+    # form must all parse — a comma'd thousands must not collapse to 1.4.
+    assert dnba._amount("1400") == 1400.0
+    assert dnba._amount("1.100") == 1100.0
+    assert dnba._amount("1,400") == 1400.0
+    assert dnba._amount("1.299,00") == 1299.0
+    assert dnba._amount("1,299.00") == 1299.0
+    assert dnba._amount("12,50") == 12.5
+
+
 def test_date_range_or_none():
     assert dnba._date_range("classes run 6 - 17 July 2026", "2026") == (date(2026, 7, 6), date(2026, 7, 17))
     assert dnba._date_range("a two week course", "2026") == (None, None)
