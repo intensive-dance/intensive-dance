@@ -331,7 +331,7 @@
       "city": "Copenhagen",
       "url": "https://kglteater.dk/",
       "tier": "marquee",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "norwegian-national-ballet",
@@ -358,7 +358,7 @@
       "city": "Helsinki",
       "url": "https://oopperabaletti.fi/",
       "tier": "marquee",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "finland-international-summer-ballet-school",
@@ -412,7 +412,7 @@
       "city": "Hong Kong",
       "url": "https://hkballet.com/",
       "tier": "marquee",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "prix-de-lausanne",
