@@ -65,6 +65,13 @@ uv run python -m intensive_dance.run royal-ballet-school # one provider
 
 Store is committed JSON (`data/`) for now — every scrape is a reviewable git diff. Pydantic serializes unchanged if we later swap in SQLite/Postgres.
 
+Dev setup — enable the commit hook once per clone (formats + lints staged Python with the project's own ruff, the same check CI runs):
+
+```bash
+uv sync                      # installs dev tools, incl. pre-commit
+uv run pre-commit install    # ruff format + ruff check on every commit
+```
+
 ## Status
 
 Nine providers live:
