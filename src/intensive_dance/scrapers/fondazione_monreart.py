@@ -112,7 +112,6 @@ def _build_offering(client: httpx.Client, record: dict) -> Offering | None:
         source=Source(provider="fondazione-monreart", url=link, scrapedAt=now_utc()),
         title=f"{title} {season}",
         genres=_genres(text),
-        kind="intensive",
         lifecycle=lifecycle,
         lifecycleNote=note,
         ageRange=_age_range(text),
