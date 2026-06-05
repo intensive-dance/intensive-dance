@@ -1,0 +1,110 @@
+[
+  {
+    "ageRange": {
+      "max": 14,
+      "min": 12
+    },
+    "application": {
+      "deadline": "2026-03-01",
+      "requirements": [],
+      "status": "closed",
+      "url": "https://www.atd.ahk.nl/en/dance-programmes/dutch-national-ballet-academy/summer-school/"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "character",
+      "repertoire"
+    ],
+    "id": "dutch-national-ballet-academy/summer-school-junior-2026",
+    "kind": "summer-school",
+    "level": [],
+    "location": {
+      "city": "Amsterdam",
+      "country": "NL"
+    },
+    "organization": {
+      "city": "Amsterdam",
+      "country": "NL",
+      "name": "Dutch National Ballet Academy",
+      "slug": "dutch-national-ballet-academy"
+    },
+    "prices": [
+      {
+        "amount": 850.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Junior Course"
+      }
+    ],
+    "schedule": {
+      "season": "2026",
+      "sessions": [],
+      "timezone": "Europe/Amsterdam"
+    },
+    "source": {
+      "hash": "sha256:afffc92eb0023a7cab82bcfae337207a1cb2a93f17f0755463af5dc547c80bde",
+      "provider": "dutch-national-ballet-academy",
+      "scrapedAt": "2026-06-05T08:17:40.558880Z",
+      "url": "https://www.atd.ahk.nl/en/dance-programmes/dutch-national-ballet-academy/summer-school/"
+    },
+    "teachers": [],
+    "title": "Amsterdam International Summer School — Junior Course 2026"
+  },
+  {
+    "ageRange": {
+      "max": 21,
+      "min": 15
+    },
+    "application": {
+      "deadline": "2026-03-01",
+      "requirements": [],
+      "status": "closed",
+      "url": "https://www.atd.ahk.nl/en/dance-programmes/dutch-national-ballet-academy/summer-school/"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "character",
+      "repertoire"
+    ],
+    "id": "dutch-national-ballet-academy/summer-school-senior-2026",
+    "kind": "summer-school",
+    "level": [],
+    "location": {
+      "city": "Amsterdam",
+      "country": "NL"
+    },
+    "organization": {
+      "city": "Amsterdam",
+      "country": "NL",
+      "name": "Dutch National Ballet Academy",
+      "slug": "dutch-national-ballet-academy"
+    },
+    "prices": [
+      {
+        "amount": 1400.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Senior Course"
+      }
+    ],
+    "schedule": {
+      "season": "2026",
+      "sessions": [],
+      "timezone": "Europe/Amsterdam"
+    },
+    "source": {
+      "hash": "sha256:96235beebc5f3227b7e54793ef1baedb324175cef9eff6cbb22b2623a3ab788d",
+      "provider": "dutch-national-ballet-academy",
+      "scrapedAt": "2026-06-05T08:17:40.558353Z",
+      "url": "https://www.atd.ahk.nl/en/dance-programmes/dutch-national-ballet-academy/summer-school/"
+    },
+    "teachers": [],
+    "title": "Amsterdam International Summer School — Senior Course 2026"
+  }
+]

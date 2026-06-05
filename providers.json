@@ -43,7 +43,7 @@
       "city": "Paris",
       "url": "https://www.operadeparis.fr/en/artists/ballet-school",
       "tier": "marquee",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "english-national-ballet-school",
@@ -88,6 +88,15 @@
       "city": "Frankfurt am Main",
       "url": "https://masterclass.balletcompetition.net/",
       "tier": "secondary",
+      "status": "live"
+    },
+    {
+      "slug": "dutch-national-ballet-academy",
+      "name": "Dutch National Ballet Academy",
+      "country": "NL",
+      "city": "Amsterdam",
+      "url": "https://www.atd.ahk.nl/en/dance-programmes/dutch-national-ballet-academy/",
+      "tier": "marquee",
       "status": "live"
     }
   ]
