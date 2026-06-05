@@ -31,11 +31,12 @@ def test_genres():
     ]
 
 
-def test_requirements_open_by_default():
-    assert (
-        fbm._requirements("Application requirements: open to all, no audition. Cancellation Policy")
-        == []
+def test_requirements_none_when_open():
+    # Open registration → an explicit `none` requirement (not `[]`, which means "not stated").
+    reqs = fbm._requirements(
+        "Application requirements: open to all, no audition. Cancellation Policy"
     )
+    assert [r.type for r in reqs] == ["none"]
 
 
 def test_requirements_video_when_stated():

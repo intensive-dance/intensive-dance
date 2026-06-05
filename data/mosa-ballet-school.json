@@ -270,7 +270,11 @@
   },
   {
     "application": {
-      "requirements": [],
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
       "status": "closed",
       "url": "https://www.mosaballetschool.eu/event/ballet-pianists-summer-intensive-2024-from-18-yo-111"
     },
@@ -300,9 +304,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:a45bb161152b91c3f6862fe2f464a8f095abe17be91687ad337b47c6a6678c77",
+      "hash": "sha256:0699af1c61eab6fe38f83d944ba580cc386fca1f219ddcd809c65118073611e1",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T10:05:11.507632Z",
+      "scrapedAt": "2026-06-05T11:07:45.489440Z",
       "url": "https://www.mosaballetschool.eu/event/ballet-pianists-summer-intensive-2024-from-18-yo-111"
     },
     "teachers": [],
@@ -310,7 +314,11 @@
   },
   {
     "application": {
-      "requirements": [],
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
       "status": "closed",
       "url": "https://www.mosaballetschool.eu/event/ballet-pianists-summer-intensive-july-2023-53"
     },
@@ -340,9 +348,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:c3f1d1a8584d7d2346e0347fd99e27c4651711f889a18d82fcb7a24626f4f009",
+      "hash": "sha256:0dfb235795c973c5735ffee66439916fc094708222e07e00ea2cced5509f7685",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T10:05:11.810665Z",
+      "scrapedAt": "2026-06-05T11:07:45.697290Z",
       "url": "https://www.mosaballetschool.eu/event/ballet-pianists-summer-intensive-july-2023-53"
     },
     "teachers": [],
@@ -350,7 +358,11 @@
   },
   {
     "application": {
-      "requirements": [],
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
       "status": "closed",
       "url": "https://www.mosaballetschool.eu/event/ballet-teachers-summer-intensive-2024-from-18-yo-112"
     },
@@ -380,9 +392,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:4004d85e4d3a65d855e873b4106d371e34d81fee56c58942280a3291a7c052ca",
+      "hash": "sha256:7332358129e1b496a5af619fcedb385a1d83eb816eac2c4c5750b7d2e8e9e702",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T10:05:12.115762Z",
+      "scrapedAt": "2026-06-05T11:07:45.903694Z",
       "url": "https://www.mosaballetschool.eu/event/ballet-teachers-summer-intensive-2024-from-18-yo-112"
     },
     "teachers": [],
@@ -577,7 +589,11 @@
       "min": 8
     },
     "application": {
-      "requirements": [],
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
       "status": "closed",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-and-other-dances-8-11-years-summer-2023-56"
     },
@@ -617,9 +633,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:a362678a095fa1d4259f9ebd9ed1b85fb79f41ab656d553179d0734ff39d4907",
+      "hash": "sha256:b70e9cd2eb753105f76ea4a043a6f9831ea0e9cc333641aa233a2b0a3dda88fa",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T10:05:13.128258Z",
+      "scrapedAt": "2026-06-05T11:07:46.903343Z",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-and-other-dances-8-11-years-summer-2023-56"
     },
     "teachers": [],
@@ -631,7 +647,11 @@
       "min": 8
     },
     "application": {
-      "requirements": [],
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
       "status": "closed",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-8-12-autumn-2024-161"
     },
@@ -671,9 +691,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:7913a7361083eec32cf27d533783d3247155aeb27fc61478d310f01f173e94a3",
+      "hash": "sha256:106ec60d44899174073149a9add8e214287f6034a931eeadb2ff70601ae63809",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T10:05:13.391862Z",
+      "scrapedAt": "2026-06-05T11:07:47.159483Z",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-8-12-autumn-2024-161"
     },
     "teachers": [],
@@ -685,7 +705,11 @@
       "min": 8
     },
     "application": {
-      "requirements": [],
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
       "status": "closed",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-8-12-autumn-2025-216"
     },
@@ -725,9 +749,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:16f99314395b1851a7ebb0e8d572b622aacb2e437a0b58bb30ee5a50b11e8ba1",
+      "hash": "sha256:6414768d62fb6a1784b47bc36e201c2e86e7af491701b64a51725dfa2592e22b",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T10:05:13.622415Z",
+      "scrapedAt": "2026-06-05T11:07:47.420621Z",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-8-12-autumn-2025-216"
     },
     "teachers": [],
@@ -739,7 +763,11 @@
       "min": 8
     },
     "application": {
-      "requirements": [],
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
       "status": "closed",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-august-2025-180"
     },
@@ -787,9 +815,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:2b757b99a2461560e4eb93da9ae331c91518cc8f828a23a2a6d8228ec4dbc7f6",
+      "hash": "sha256:07ba2f8419790fb049a1493292427ce92ed0e608f99ce0e55426e83ba49b394a",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T10:05:13.856144Z",
+      "scrapedAt": "2026-06-05T11:07:47.656424Z",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-august-2025-180"
     },
     "teachers": [],
@@ -801,7 +829,11 @@
       "min": 8
     },
     "application": {
-      "requirements": [],
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
       "status": "open",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-august-2026-232"
     },
@@ -849,9 +881,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:cb171f2981db40e44248a137bb378e131e693e0eda6d7ff4c8d2c788e3ba2cbe",
+      "hash": "sha256:76a10e6db95978a9dd8abf0224d1f527aee437513c09da0d3a3b237d039eb4e7",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T10:05:14.089032Z",
+      "scrapedAt": "2026-06-05T11:07:47.889710Z",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-august-2026-232"
     },
     "teachers": [],
@@ -863,7 +895,11 @@
       "min": 8
     },
     "application": {
-      "requirements": [],
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
       "status": "closed",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-spring-2024-109"
     },
@@ -903,9 +939,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:fee8d999ff6a35f202121e7b4481fbb4dd3c5ceaeb93b8c9dbb137dd4a84ffbd",
+      "hash": "sha256:329cee2871401a37d31f5cecc99ed4187e2cf6f1d68e833074a6dd57f292e797",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T10:05:14.340965Z",
+      "scrapedAt": "2026-06-05T11:07:48.160147Z",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-spring-2024-109"
     },
     "teachers": [],
@@ -917,7 +953,11 @@
       "min": 8
     },
     "application": {
-      "requirements": [],
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
       "status": "closed",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-summer-2024-113"
     },
@@ -965,9 +1005,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:e5f42f858aac0a4feb5326cfb3b397a826b64db0f9e6b415b1e25e2fd83a28de",
+      "hash": "sha256:04f84715d4a244825579294ffe1578565563c1a1f7b4404c0080e39c0b6ebd84",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T10:05:14.752106Z",
+      "scrapedAt": "2026-06-05T11:07:48.598064Z",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-summer-2024-113"
     },
     "teachers": [],
@@ -979,7 +1019,11 @@
       "min": 8
     },
     "application": {
-      "requirements": [],
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
       "status": "closed",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-winter-2024-108"
     },
@@ -1019,9 +1063,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:f91c4201c32d7718f3961736521a4d11ac3a18508e3d765b651340d03e779ff6",
+      "hash": "sha256:8a37f31bf6ee08510744d35f582d00e6fd630336e5cbb49167f5e26556e64a0a",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T10:05:14.981868Z",
+      "scrapedAt": "2026-06-05T11:07:48.837485Z",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-winter-2024-108"
     },
     "teachers": [],
@@ -1033,7 +1077,11 @@
       "min": 8
     },
     "application": {
-      "requirements": [],
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
       "status": "closed",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-winter-2025-178"
     },
@@ -1073,9 +1121,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:9924c729440f44d79160095eb993c880f02105d65c3fd60be739e7bc638b642f",
+      "hash": "sha256:f734a51205f1ea0c745d91a62b119e25b341d210f915e8e6bcfdf0bb29ec7486",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T10:05:15.220658Z",
+      "scrapedAt": "2026-06-05T11:07:49.083374Z",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-winter-2025-178"
     },
     "teachers": [],
@@ -1087,7 +1135,11 @@
       "min": 8
     },
     "application": {
-      "requirements": [],
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
       "status": "closed",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-winter-2026-218"
     },
@@ -1127,9 +1179,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:06583a72d10c2b273b9ca267b7273ccb836a9dd052e2775f1c6622811a737032",
+      "hash": "sha256:c011839fd48a0f3e7688e34d8c280a8389e12243aed1d22be0fc1aab09f51ec3",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T10:05:15.488409Z",
+      "scrapedAt": "2026-06-05T11:07:49.309413Z",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-winter-2026-218"
     },
     "teachers": [],
@@ -1250,7 +1302,11 @@
   },
   {
     "application": {
-      "requirements": [],
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
       "status": "closed",
       "url": "https://www.mosaballetschool.eu/event/intensive-spring-course-april-2022-14"
     },
@@ -1280,9 +1336,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:c24349e2c756ce20258440e5da1f5dae60b5689f44891512fc74845a651cae20",
+      "hash": "sha256:86e060c71c3ed5467f6b947c368e71d7649175677699532ac33f473f6b08da7b",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T10:05:16.523162Z",
+      "scrapedAt": "2026-06-05T11:07:50.210895Z",
       "url": "https://www.mosaballetschool.eu/event/intensive-spring-course-april-2022-14"
     },
     "teachers": [],
@@ -1633,7 +1689,11 @@
   },
   {
     "application": {
-      "requirements": [],
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
       "status": "closed",
       "url": "https://www.mosaballetschool.eu/event/new-year-intensive-course-2023-23"
     },
@@ -1663,9 +1723,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:dd50358bf9d02d8a4b1d2a3fe123594819fa8d4f37e3deda2e241de866bbec70",
+      "hash": "sha256:e8a62348509ce727111839712a07ec6eaa172ccd40dc03161d5c644be6042e0b",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T10:05:18.593732Z",
+      "scrapedAt": "2026-06-05T11:07:52.134130Z",
       "url": "https://www.mosaballetschool.eu/event/new-year-intensive-course-2023-23"
     },
     "teachers": [],
@@ -1795,7 +1855,11 @@
   },
   {
     "application": {
-      "requirements": [],
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
       "status": "closed",
       "url": "https://www.mosaballetschool.eu/event/winter-intensive-course-2023-28"
     },
@@ -1825,9 +1889,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:ffa2f2e14a51ca8594ee5f7e8959fa9f55aeb24cb60e346afb990c962d5c4141",
+      "hash": "sha256:b199e031eec40c4239fa5a2890b53d2e8033fca1027ff0ed2fc1d8e96eed1544",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T10:05:19.311864Z",
+      "scrapedAt": "2026-06-05T11:07:52.740918Z",
       "url": "https://www.mosaballetschool.eu/event/winter-intensive-course-2023-28"
     },
     "teachers": [],
@@ -1896,7 +1960,11 @@
   },
   {
     "application": {
-      "requirements": [],
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
       "status": "closed",
       "url": "https://www.mosaballetschool.eu/event/winter-intensive-course-december-2021-3"
     },
@@ -1926,9 +1994,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:bbe43e0adb1254b562cac71c29f2586ef34de9aff2f243d8b9d304311426fb25",
+      "hash": "sha256:08cda969e7061cdf3ea502ccb1da8defb93f6451982e6e8854626350e4edcf76",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T10:05:19.769255Z",
+      "scrapedAt": "2026-06-05T11:07:53.193865Z",
       "url": "https://www.mosaballetschool.eu/event/winter-intensive-course-december-2021-3"
     },
     "teachers": [],

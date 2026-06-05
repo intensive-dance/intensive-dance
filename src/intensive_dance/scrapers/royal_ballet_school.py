@@ -108,6 +108,13 @@ def _build_offering(record: dict, fees: wp.Content | None, today: date) -> Offer
 
     photo_url = _absolute(content.link("photograph"))
     requirement_notes = content.text("Requirements")
+    # Keep the Requirements blurb only when it actually describes the photos (poses,
+    # positions, portrait). Otherwise it's generic application prose (deadlines,
+    # eligibility) that pollutes the PhotosReq notes — drop it.
+    if requirement_notes and not re.search(
+        r"photo|image|positio|pose|portrait|arabesque", requirement_notes, re.IGNORECASE
+    ):
+        requirement_notes = None
     photos = PhotosReq(
         specificity="defined-poses",
         notes=_join(
