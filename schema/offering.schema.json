@@ -678,18 +678,6 @@
       "title": "Id",
       "type": "string"
     },
-    "kind": {
-      "enum": [
-        "intensive",
-        "masterclass",
-        "summer-school",
-        "workshop",
-        "audition-tour",
-        "competition"
-      ],
-      "title": "Kind",
-      "type": "string"
-    },
     "level": {
       "items": {
         "enum": [
@@ -794,7 +782,6 @@
     "id",
     "source",
     "title",
-    "kind",
     "organization",
     "schedule"
   ],

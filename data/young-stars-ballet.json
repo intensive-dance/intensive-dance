@@ -29,7 +29,6 @@
       "pointe"
     ],
     "id": "young-stars-ballet/summer-intensive-2026",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -73,7 +72,7 @@
       "timezone": "Europe/Berlin"
     },
     "source": {
-      "hash": "sha256:d0e55ed693fb0c55b4a403ec0e36b3e6466f621a582f81bbaf28e8af8c8c3bab",
+      "hash": "sha256:801ad9019ac3e8a73a0ae89269ee313f0a85671f34363f368f372fd23ddee995",
       "provider": "young-stars-ballet",
       "scrapedAt": "2026-06-05T11:36:57.586435Z",
       "url": "https://www.youngstarsballet.com/ysb-summer-intensive-2026"

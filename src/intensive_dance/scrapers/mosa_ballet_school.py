@@ -37,7 +37,6 @@ from intensive_dance import parse
 from intensive_dance.models import (
     Application,
     Genre,
-    Kind,
     Location,
     NoneReq,
     Offering,
@@ -160,7 +159,6 @@ def _build_offering(client: httpx.Client, url: str, today: date) -> Offering | N
         source=Source(provider="mosa-ballet-school", url=url, scrapedAt=now_utc()),
         title=_clean_title(title),
         genres=_genres(f"{title} {body}"),
-        kind=_kind(slug),
         ageRange=_age_range(f"{title} {slug}", body),
         organization=ORG,
         location=Location(city="Liège", country="BE"),
@@ -209,15 +207,6 @@ def _age_range(primary: str, body: str = "") -> dict | None:
     if not bounds:
         return None
     return {"min": min(a for a, _ in bounds), "max": max(b for _, b in bounds)}
-
-
-def _kind(slug: str) -> Kind:
-    low = slug.lower()
-    if "masterclass" in low:
-        return "masterclass"
-    if "exploring-ballet" in low or "discovering" in low:
-        return "workshop"
-    return "intensive"
 
 
 _GENRE_KEYWORDS: list[tuple[Genre, tuple[str, ...]]] = [
