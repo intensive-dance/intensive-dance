@@ -18,7 +18,7 @@ Stored as JSON. The interesting part is `application.requirements`, which is a *
 
   "title": "Summer Intensive 2026",
   "genres": ["classical", "contemporary"],              // enum: classical | contemporary | neoclassical | character | repertoire | pointe
-  "kind": "intensive",                                  // enum: intensive | masterclass | summer-school | workshop | audition-tour
+  "kind": "intensive",                                  // enum: intensive | masterclass | summer-school | workshop | audition-tour | competition
   "lifecycle": "scheduled",                             // scheduled | cancelled | postponed — does the offering take place? (≠ application.status)
   "lifecycleNote": "Cancelled — full refund offered.",  // raw source text; present only when not scheduled
   "supersededBy": "monreart/cyprus-2026-aug",           // postponed → id of the new-date offering (omitted otherwise)

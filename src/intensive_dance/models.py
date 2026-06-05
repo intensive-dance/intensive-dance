@@ -15,7 +15,16 @@ from typing import Annotated, Literal
 from pydantic import BaseModel, Field
 
 Genre = Literal["classical", "contemporary", "neoclassical", "character", "repertoire", "pointe"]
-Kind = Literal["intensive", "masterclass", "summer-school", "workshop", "audition-tour"]
+# `competition` = an event judged for ranking/prizes (e.g. Prix de Lausanne,
+# YAGP) — distinct from `audition-tour`, which auditions dancers for admission.
+Kind = Literal[
+    "intensive",
+    "masterclass",
+    "summer-school",
+    "workshop",
+    "audition-tour",
+    "competition",
+]
 # Whether the offering itself takes place — separate from `application.status`
 # (which is about the booking window). "past" is NOT a value: it's derived from
 # `schedule.end < today` so it never goes stale. `postponed` keeps the original
