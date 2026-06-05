@@ -18,6 +18,7 @@ from datetime import date
 import httpx
 from selectolax.parser import HTMLParser
 
+from intensive_dance import parse
 from intensive_dance.models import (
     Application,
     Genre,
@@ -57,7 +58,7 @@ def _build_offering(html: str, today: date) -> Offering | None:
     for node in tree.css("script, style, noscript"):
         node.decompose()
     text = re.sub(r"[ \t]+", " ", tree.body.text(separator="\n")) if tree.body else ""
-    blob = _clean(text)
+    blob = parse.clean(text)
 
     start, end = _date_range(blob)
     if end is not None and end < today:
@@ -87,12 +88,15 @@ def _build_offering(html: str, today: date) -> Offering | None:
 
 
 # --- German parsing -----------------------------------------------------------
+#
+# The page is in German, so the month names are this scraper's own — only the
+# regex-building (`parse.months_alt`) and language-agnostic helpers are shared.
 
 _MONTHS = {
     "januar": 1, "februar": 2, "märz": 3, "april": 4, "mai": 5, "juni": 6,
     "juli": 7, "august": 8, "september": 9, "oktober": 10, "november": 11, "dezember": 12,
 }
-_MONTHALT = "|".join(_MONTHS)
+_MONTHALT = parse.months_alt(_MONTHS)
 # "1. Juni 2026" — German day-month-year.
 _DATE = re.compile(r"(\d{1,2})\.\s*(" + _MONTHALT + r")\s+(\d{4})", re.IGNORECASE)
 # The course span: "… 1. Juni 2026 bis Samstag, 6. Juni 2026".
@@ -120,7 +124,7 @@ def _date_range(text: str) -> tuple[date | None, date | None]:
 
 def _dates_note(text: str) -> str | None:
     match = _RANGE.search(text)
-    return _clean(match.group(0)) if match else None
+    return parse.clean(match.group(0)) if match else None
 
 
 def _year(text: str) -> str:
@@ -148,8 +152,7 @@ _GENRE_KEYWORDS: list[tuple[Genre, tuple[str, ...]]] = [
 
 
 def _genres(text: str) -> list[Genre]:
-    low = text.lower()
-    return [g for g, keys in _GENRE_KEYWORDS if any(k in low for k in keys)] or ["classical"]
+    return parse.match_genres(text, _GENRE_KEYWORDS, default=["classical"])
 
 
 def _prices(text: str) -> list[Price]:
@@ -163,7 +166,3 @@ def _prices(text: str) -> list[Price]:
     if "aufführung" in text.lower() or "vorstellung" in text.lower():
         includes.append("performance")
     return [Price(amount=amount, currency="EUR", label="Tuition (6 days incl. performance)", includes=includes)]
-
-
-def _clean(text: str) -> str:
-    return re.sub(r"\s+", " ", (text or "").replace("\xa0", " ")).strip()

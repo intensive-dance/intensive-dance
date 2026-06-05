@@ -21,6 +21,7 @@ from datetime import date
 import httpx
 from selectolax.parser import HTMLParser
 
+from intensive_dance import parse
 from intensive_dance.models import (
     Application,
     Genre,
@@ -75,20 +76,11 @@ def _build_offering(text: str, today: date) -> Offering | None:
 
 # --- parsing ------------------------------------------------------------------
 
-_MONTHS = {
-    m: i
-    for i, m in enumerate(
-        ["january", "february", "march", "april", "may", "june", "july",
-         "august", "september", "october", "november", "december"],
-        start=1,
-    )
-}
-_MONTHALT = "|".join(_MONTHS)
 _SEASON = re.compile(r"(20\d\d)\s+Summer School", re.IGNORECASE)
 # "from July 6th to 18th" — the page renders the ordinal as a separate token
 # ("July 6 th to 18 th"), so allow whitespace before st/nd/rd/th.
 _RANGE = re.compile(
-    r"(" + _MONTHALT + r")\s+(\d{1,2})\s*(?:st|nd|rd|th)?\s+to\s+(\d{1,2})\s*(?:st|nd|rd|th)?", re.IGNORECASE
+    r"(" + parse.MONTHALT + r")\s+(\d{1,2})\s*(?:st|nd|rd|th)?\s+to\s+(\d{1,2})\s*(?:st|nd|rd|th)?", re.IGNORECASE
 )
 _AGE = re.compile(r"age\s+(\d{1,2})\s+to\s+(\d{1,2})", re.IGNORECASE)
 _APP_FEE = re.compile(r"(\d{1,3})\s?€\s+of application fees", re.IGNORECASE)
@@ -104,7 +96,7 @@ def _date_range(text: str, season: str) -> tuple[date | None, date | None]:
     match = _RANGE.search(text)
     if not match or year is None:
         return None, None
-    num = _MONTHS[match.group(1).lower()]
+    num = parse.MONTHS[match.group(1).lower()]
     return date(year, num, int(match.group(2))), date(year, num, int(match.group(3)))
 
 
@@ -127,8 +119,7 @@ _GENRE_KEYWORDS: list[tuple[Genre, tuple[str, ...]]] = [
 
 
 def _genres(text: str) -> list[Genre]:
-    low = text.lower()
-    return [g for g, keys in _GENRE_KEYWORDS if any(k in low for k in keys)] or ["classical"]
+    return parse.match_genres(text, _GENRE_KEYWORDS, default=["classical"])
 
 
 def _text(client: httpx.Client, url: str) -> str:

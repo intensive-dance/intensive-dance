@@ -45,6 +45,7 @@ from urllib.parse import urlsplit
 import httpx
 from selectolax.parser import HTMLParser, Node
 
+from intensive_dance import parse
 from intensive_dance.models import (
     Affiliation,
     Application,
@@ -295,8 +296,7 @@ _GENRE_KEYWORDS: list[tuple[Genre, tuple[str, ...]]] = [
 
 
 def _genres(text: str) -> list[Genre]:
-    low = text.lower()
-    return [genre for genre, keys in _GENRE_KEYWORDS if any(k in low for k in keys)]
+    return parse.match_genres(text, _GENRE_KEYWORDS)
 
 
 def _levels(track_name: str) -> list[Level]:
@@ -325,18 +325,9 @@ def _age_range(text: str) -> dict | None:
 # 30 December, 2026"; the year is on the page header, so day-month tokens inherit
 # the cycle year. We take the earliest start and latest end across the text.
 
-_MONTHS = {
-    m: i
-    for i, m in enumerate(
-        ["january", "february", "march", "april", "may", "june", "july",
-         "august", "september", "october", "november", "december"],
-        start=1,
-    )
-}
-_MONTHALT = "|".join(_MONTHS)
-_DAYMON = re.compile(r"(\d{1,2})\s+(" + _MONTHALT + r")(?:,?\s*(20\d\d))?", re.IGNORECASE)
+_DAYMON = re.compile(r"(\d{1,2})\s+(" + parse.MONTHALT + r")(?:,?\s*(20\d\d))?", re.IGNORECASE)
 # A shared-month range with the day first, e.g. "5 - 26 July" or "5 - 12 July".
-_SHORT = re.compile(r"(\d{1,2})\s*[-–]\s*(\d{1,2})\s+(" + _MONTHALT + r")", re.IGNORECASE)
+_SHORT = re.compile(r"(\d{1,2})\s*[-–]\s*(\d{1,2})\s+(" + parse.MONTHALT + r")", re.IGNORECASE)
 _YEAR = re.compile(r"\b(20\d\d)\b")
 
 
@@ -353,9 +344,9 @@ def _dates(text: str, year: int | None) -> tuple[date | None, date | None]:
 
     tokens: list[tuple[int, int, int | None]] = []  # (month, day, explicit year)
     for day, month, yr in _DAYMON.findall(text):
-        tokens.append((_MONTHS[month.lower()], int(day), int(yr) if yr else None))
+        tokens.append((parse.MONTHS[month.lower()], int(day), int(yr) if yr else None))
     for d1, d2, month in _SHORT.findall(text):
-        month_num = _MONTHS[month.lower()]
+        month_num = parse.MONTHS[month.lower()]
         tokens += [(month_num, int(d1), None), (month_num, int(d2), None)]
     if not tokens:
         return None, None
@@ -532,8 +523,7 @@ def _teacher_entries(article: Node) -> list[tuple[str, str, str]]:
 
 
 def _clean_desc(desc: str) -> str:
-    desc = re.sub(r"\s+", " ", desc.replace("\xa0", " ")).strip()
-    desc = desc.split("*")[0]  # drop the trailing "*names may vary" disclaimer
+    desc = parse.clean(desc).split("*")[0]  # drop the trailing "*names may vary" disclaimer
     return desc.strip(" -–,")
 
 
@@ -560,4 +550,4 @@ def _affiliations(desc: str) -> list[Affiliation]:
 
 
 def _text(node: Node | None) -> str:
-    return re.sub(r"\s+", " ", node.text().replace("\xa0", " ")).strip() if node is not None else ""
+    return parse.clean(node.text()) if node is not None else ""

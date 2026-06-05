@@ -40,7 +40,7 @@ from datetime import date
 
 import httpx
 
-from intensive_dance import wp
+from intensive_dance import parse, wp
 from intensive_dance.models import (
     Application,
     Genre,
@@ -166,18 +166,9 @@ def _build_offering(record: dict, fees: wp.Content | None, today: date) -> Offer
 
 # --- parsing helpers ---
 
-_MONTHS = {
-    m: i
-    for i, m in enumerate(
-        ["january", "february", "march", "april", "may", "june", "july",
-         "august", "september", "october", "november", "december"],
-        start=1,
-    )
-}
-_MONTHALT = "|".join(_MONTHS)
-_DATE = re.compile(r"(\d{1,2})\s+(" + _MONTHALT + r")(?:\s+(\d{4}))?", re.IGNORECASE)
+_DATE = re.compile(r"(\d{1,2})\s+(" + parse.MONTHALT + r")(?:\s+(\d{4}))?", re.IGNORECASE)
 # A short range like "21-25 July" or "6 – Friday 10 July" (shared month, year implied).
-_SHORT = re.compile(r"(\d{1,2})\s*[-–]\s*(?:[A-Za-z]+\s+)?(\d{1,2})\s+(" + _MONTHALT + r")", re.IGNORECASE)
+_SHORT = re.compile(r"(\d{1,2})\s*[-–]\s*(?:[A-Za-z]+\s+)?(\d{1,2})\s+(" + parse.MONTHALT + r")", re.IGNORECASE)
 # Money in either order: symbol-prefixed ("£48", "€390") or word-suffixed
 # ("390 euros"), since RBS prices its overseas programs in local currency.
 _MONEY = re.compile(
@@ -227,7 +218,7 @@ def _date_range(text: str) -> tuple[date | None, date | None, str]:
     if year is None:
         return None, None, _year(text)
 
-    dates = [date(int(y) if y else year, _MONTHS[m.lower()], int(d)) for d, m, y in tokens]
+    dates = [date(int(y) if y else year, parse.MONTHS[m.lower()], int(d)) for d, m, y in tokens]
     return min(dates), max(dates), str(year)
 
 
@@ -256,12 +247,12 @@ def _latest_course_date(content: wp.Content) -> date | None:
     points: list[date] = []
     for day, month, yr in _DATE.findall(text):
         resolved = int(yr) if yr else year
-        if resolved and month.lower() in _MONTHS:
-            points.append(date(resolved, _MONTHS[month.lower()], int(day)))
+        if resolved and month.lower() in parse.MONTHS:
+            points.append(date(resolved, parse.MONTHS[month.lower()], int(day)))
     if year:
         for _, end_day, month in _SHORT.findall(text):
-            if month.lower() in _MONTHS:
-                points.append(date(year, _MONTHS[month.lower()], int(end_day)))
+            if month.lower() in parse.MONTHS:
+                points.append(date(year, parse.MONTHS[month.lower()], int(end_day)))
     return max(points) if points else None
 
 
@@ -394,8 +385,7 @@ _GENRE_KEYWORDS: list[tuple[Genre, tuple[str, ...]]] = [
 
 
 def _genres(blob: str) -> list[Genre]:
-    low = blob.lower()
-    return [genre for genre, keys in _GENRE_KEYWORDS if any(k in low for k in keys)]
+    return parse.match_genres(blob, _GENRE_KEYWORDS)
 
 
 # Level is only emitted when the page states it. RBS intensives are organized by
@@ -524,10 +514,10 @@ def _span(text: str, year: int | None) -> tuple[date | None, date | None]:
     for day, month, yr in _DATE.findall(text):
         resolved = int(yr) if yr else year
         if resolved:
-            points.append(date(resolved, _MONTHS[month.lower()], int(day)))
+            points.append(date(resolved, parse.MONTHS[month.lower()], int(day)))
     if year:
         for d1, d2, month in _SHORT.findall(text):
-            points += [date(year, _MONTHS[month.lower()], int(d)) for d in (d1, d2)]
+            points += [date(year, parse.MONTHS[month.lower()], int(d)) for d in (d1, d2)]
     return (min(points), max(points)) if points else (None, None)
 
 
@@ -580,9 +570,9 @@ _WEEKEND = re.compile(r"(\d{1,2})\s*[-–]\s*(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})")
 def _weekend_sessions(text: str) -> list[Session]:
     sessions: list[Session] = []
     for d1, d2, month, year in _WEEKEND.findall(text):
-        if month.lower() not in _MONTHS:
+        if month.lower() not in parse.MONTHS:
             continue
-        month_num, yr = _MONTHS[month.lower()], int(year)
+        month_num, yr = parse.MONTHS[month.lower()], int(year)
         label = f"{d1}-{d2} {month} {year}"
         sessions.append(
             Session(
@@ -627,8 +617,8 @@ def _short_sessions(section: wp.Section, year: int | None) -> list[Session]:
         sessions.append(
             Session(
                 label=f"Non-selective {d1}-{d2} {month}",
-                start=date(year, _MONTHS[month.lower()], int(d1)),
-                end=date(year, _MONTHS[month.lower()], int(d2)),
+                start=date(year, parse.MONTHS[month.lower()], int(d1)),
+                end=date(year, parse.MONTHS[month.lower()], int(d2)),
                 ageRange=ages,
                 gender="both",
                 notes=f"{d1}-{d2} {month}",

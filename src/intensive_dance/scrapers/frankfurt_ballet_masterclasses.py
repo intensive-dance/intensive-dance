@@ -17,6 +17,7 @@ from datetime import date
 import httpx
 from selectolax.parser import HTMLParser
 
+from intensive_dance import parse
 from intensive_dance.fetch import make_client
 from intensive_dance.models import (
     Application,
@@ -58,7 +59,7 @@ def _build_offering(html: str, today: date) -> Offering | None:
     tree = HTMLParser(html)
     for node in tree.css("script, style, noscript"):
         node.decompose()
-    text = _clean(tree.body.text(separator=" ")) if tree.body else ""
+    text = parse.clean(tree.body.text(separator=" ")) if tree.body else ""
 
     start, end = _date_range(text)
     if start is None and end is None:
@@ -87,18 +88,9 @@ def _build_offering(html: str, today: date) -> Offering | None:
 
 # --- parsing ------------------------------------------------------------------
 
-_MONTHS = {
-    m: i
-    for i, m in enumerate(
-        ["january", "february", "march", "april", "may", "june", "july",
-         "august", "september", "october", "november", "december"],
-        start=1,
-    )
-}
-_MONTHALT = "|".join(_MONTHS)
 # "August 22 - 23, 2026" or "August 22/23, 2026" (shared month).
 _RANGE = re.compile(
-    r"(" + _MONTHALT + r")\s+(\d{1,2})\s*[-/–]\s*(\d{1,2}),?\s*(\d{4})", re.IGNORECASE
+    r"(" + parse.MONTHALT + r")\s+(\d{1,2})\s*[-/–]\s*(\d{1,2}),?\s*(\d{4})", re.IGNORECASE
 )
 _AGE = re.compile(r"(?:ages?|aged)\s*(\d{1,2})\s*(?:[-–]|to)\s*(\d{1,2})", re.IGNORECASE)
 
@@ -108,7 +100,7 @@ def _date_range(text: str) -> tuple[date | None, date | None]:
     if not match:
         return None, None
     month, d1, d2, year = match.groups()
-    num = _MONTHS[month.lower()]
+    num = parse.MONTHS[month.lower()]
     return date(int(year), num, int(d1)), date(int(year), num, int(d2))
 
 
@@ -124,8 +116,7 @@ _GENRE_KEYWORDS: list[tuple[Genre, tuple[str, ...]]] = [
 
 
 def _genres(text: str) -> list[Genre]:
-    low = text.lower()
-    return [g for g, keys in _GENRE_KEYWORDS if any(k in low for k in keys)] or ["classical"]
+    return parse.match_genres(text, _GENRE_KEYWORDS, default=["classical"])
 
 
 def _requirements(text: str):
@@ -140,11 +131,7 @@ def _requirements(text: str):
         section = match.group(1)
     low = section.lower()
     if "video" in low:
-        return [VideoReq(specificity="unspecific", description=_clean(section)[:300] or None)]
+        return [VideoReq(specificity="unspecific", description=parse.clean(section)[:300] or None)]
     if re.search(r"\bphoto|picture|headshot", low):
-        return [PhotosReq(specificity="freeform", notes=_clean(section)[:300] or None)]
+        return [PhotosReq(specificity="freeform", notes=parse.clean(section)[:300] or None)]
     return []
-
-
-def _clean(text: str) -> str:
-    return re.sub(r"\s+", " ", (text or "").replace("\xa0", " ")).strip()
