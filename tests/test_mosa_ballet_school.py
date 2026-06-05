@@ -57,7 +57,10 @@ def test_dates_absent():
 
 
 def test_age_from_title():
-    assert mosa._age_range("August Signature Intensive Course 2026 (age 12-29)") == {"min": 12, "max": 29}
+    assert mosa._age_range("August Signature Intensive Course 2026 (age 12-29)") == {
+        "min": 12,
+        "max": 29,
+    }
 
 
 def test_age_body_fallback_requires_aged_cue():

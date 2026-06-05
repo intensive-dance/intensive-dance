@@ -67,7 +67,9 @@ from intensive_dance.models import (
 BASE = "https://russianmastersballet.com"
 REGISTER_URL = f"{BASE}/pages/registration-for-intensives/"
 
-ORG = Organization(name="Russian Masters Ballet", slug="russian-masters-ballet", country="ES", city="Alicante")
+ORG = Organization(
+    name="Russian Masters Ballet", slug="russian-masters-ballet", country="ES", city="Alicante"
+)
 
 # Course category → the season word used in titles. Summer intensives and the
 # winter "Ballet Experience" are the two listings; each links to its locations.
@@ -151,19 +153,40 @@ def _page_offerings(
             continue
         offerings.append(
             _build_offering(
-                prog, url, location, track, type_label, city, country,
-                season, base_year, fallback_start, fallback_end, cancelled,
+                prog,
+                url,
+                location,
+                track,
+                type_label,
+                city,
+                country,
+                season,
+                base_year,
+                fallback_start,
+                fallback_end,
+                cancelled,
             )
         )
     return offerings
 
 
 def _build_offering(
-    prog: Node, url: str, location: str, track: str, type_label: str,
-    city: str | None, country: str | None, season: str, base_year: int | None,
-    fallback_start: date | None, fallback_end: date | None, cancelled: bool = False,
+    prog: Node,
+    url: str,
+    location: str,
+    track: str,
+    type_label: str,
+    city: str | None,
+    country: str | None,
+    season: str,
+    base_year: int | None,
+    fallback_start: date | None,
+    fallback_end: date | None,
+    cancelled: bool = False,
 ) -> Offering:
-    track_name = _text(prog.css_first(".course-city-program-name")) or track.replace("-", " ").title()
+    track_name = (
+        _text(prog.css_first(".course-city-program-name")) or track.replace("-", " ").title()
+    )
     blocks = _blocks(prog)
     article = prog.css_first(".article-col-right-1.content-text")
     body = _br_text(article) if article is not None else ""
@@ -175,10 +198,16 @@ def _build_offering(
 
     is_observation = track == "observation" or "cv" in blocks.get("ACCESS", "").lower()
     requirements: list[Requirement] = (
-        [CVReq()] if is_observation else [VideoReq(specificity="specific", description=_AUDITION_NOTE)]
+        [CVReq()]
+        if is_observation
+        else [VideoReq(specificity="specific", description=_AUDITION_NOTE)]
     )
 
-    title = f"{type_label} {city} — {track_name} {season}".strip() if city else f"{type_label} — {track_name} {season}"
+    title = (
+        f"{type_label} {city} — {track_name} {season}".strip()
+        if city
+        else f"{type_label} — {track_name} {season}"
+    )
 
     return Offering(
         id=f"russian-masters-ballet/{location}-{track}-{season}",
@@ -191,7 +220,9 @@ def _build_offering(
         level=_levels(track_name),
         ageRange=_age_range(blocks.get("AIMED AT", "")),
         organization=ORG,
-        location=Location(venue=_venue(blocks.get("BALLET FACILITIES")), city=city, country=country),
+        location=Location(
+            venue=_venue(blocks.get("BALLET FACILITIES")), city=city, country=country
+        ),
         schedule=Schedule(
             season=season,
             start=start,
@@ -264,9 +295,17 @@ def _blocks(prog: Node) -> dict[str, str]:
 # the br-aware *text* and slice on the known uppercase labels instead of the DOM.
 
 _LABELS = [
-    "COURSE OBJECTIVE", "THE PROGRAM INCLUDE", "IN ADDITION", "TEACHERS",
-    "SPECIAL GUESTS", "PROGRAM FEE", "OFFICIAL ACCOMMODATION", "EXTRAS",
-    "CANCELATION", "ACCESS", "INSCRIPTION",
+    "COURSE OBJECTIVE",
+    "THE PROGRAM INCLUDE",
+    "IN ADDITION",
+    "TEACHERS",
+    "SPECIAL GUESTS",
+    "PROGRAM FEE",
+    "OFFICIAL ACCOMMODATION",
+    "EXTRAS",
+    "CANCELATION",
+    "ACCESS",
+    "INSCRIPTION",
 ]
 _BR = re.compile(r"<br\s*/?>", re.IGNORECASE)
 
@@ -317,7 +356,9 @@ def _levels(track_name: str) -> list[Level]:
     return levels
 
 
-_AGE = re.compile(r"(\d{1,2})\s*[-–]\s*(\d{1,2})\s*(?:y\.?\s?o\.?|years?\s*old|years?)", re.IGNORECASE)
+_AGE = re.compile(
+    r"(\d{1,2})\s*[-–]\s*(\d{1,2})\s*(?:y\.?\s?o\.?|years?\s*old|years?)", re.IGNORECASE
+)
 
 
 def _age_range(text: str) -> dict | None:
@@ -378,11 +419,17 @@ _MONEY = re.compile(
 )
 # Unambiguous tokens map straight to ISO 4217.
 _CURRENCY = {
-    "€": "EUR", "euro": "EUR", "euros": "EUR", "eur": "EUR",
+    "€": "EUR",
+    "euro": "EUR",
+    "euros": "EUR",
+    "eur": "EUR",
     "cny": "CNY",
-    "лв": "BGN", "bgn": "BGN",
-    "₽": "RUB", "rub": "RUB",
-    "aud": "AUD", "usd": "USD",
+    "лв": "BGN",
+    "bgn": "BGN",
+    "₽": "RUB",
+    "rub": "RUB",
+    "aud": "AUD",
+    "usd": "USD",
 }
 # Bare glyphs that name a different currency depending on where the course runs
 # ($ → USD/AUD, ¥ → CNY/JPY). RMB prices each location in its local currency, so
@@ -419,7 +466,9 @@ def _prices(fee_text: str, country: str | None) -> list[Price]:
             label = line[start : match.start()].strip(" :–-") or "Program fee"
             amount, currency = _money(match, country)
             prices.append(
-                Price(amount=amount, currency=currency, label=label, includes=["tuition"], notes=line)
+                Price(
+                    amount=amount, currency=currency, label=label, includes=["tuition"], notes=line
+                )
             )
     return prices
 
@@ -450,10 +499,27 @@ _INSTITUTIONS: list[tuple[str, str, str | None]] = [
     ("russian masters", "Russian Masters Ballet", "russian-masters-ballet"),
 ]
 _PAST = ("ex ", "ex-", "former", "graduate", "graduated", "retired")
-_PRESENT = ("current", "permanent", "principal", "senior", "director", "licensed", "general methodist")
+_PRESENT = (
+    "current",
+    "permanent",
+    "principal",
+    "senior",
+    "director",
+    "licensed",
+    "general methodist",
+)
 _ROLES = [
-    "principal dancer", "principal tutor", "principal", "soloist", "choreographer",
-    "director", "general methodist", "methodist", "senior teacher", "tutor", "teacher",
+    "principal dancer",
+    "principal tutor",
+    "principal",
+    "soloist",
+    "choreographer",
+    "director",
+    "general methodist",
+    "methodist",
+    "senior teacher",
+    "tutor",
+    "teacher",
 ]
 
 
@@ -553,7 +619,9 @@ def _affiliations(desc: str) -> list[Affiliation]:
             current = False
         elif any(p in low for p in _PRESENT):
             current = True
-    return [Affiliation(organization=org, slug=slug, role=role, current=current) for org, slug in orgs]
+    return [
+        Affiliation(organization=org, slug=slug, role=role, current=current) for org, slug in orgs
+    ]
 
 
 def _text(node: Node | None) -> str:

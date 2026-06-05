@@ -38,8 +38,10 @@ SUMMER = f"{BASE}/en/artists/ballet-school/summer-internship"
 PRACTICAL = f"{SUMMER}/practical-information"
 
 ORG = Organization(
-    name="École de Danse de l'Opéra national de Paris", slug="ecole-danse-opera-paris",
-    country="FR", city="Paris",
+    name="École de Danse de l'Opéra national de Paris",
+    slug="ecole-danse-opera-paris",
+    country="FR",
+    city="Paris",
 )
 VENUE = "École de Danse de l'Opéra national de Paris, Nanterre"
 
@@ -56,7 +58,11 @@ def _build_offering(text: str, today: date) -> Offering | None:
     season = _season(text)
     start, end = _date_range(text, season)
     app_fee = _application_fee(text)
-    notes = f"Non-refundable application fee of €{app_fee:g} (course fees graduated; see the school's site)." if app_fee else None
+    notes = (
+        f"Non-refundable application fee of €{app_fee:g} (course fees graduated; see the school's site)."
+        if app_fee
+        else None
+    )
     return Offering(
         id=f"ecole-danse-opera-paris/summer-school-{season}",
         source=Source(provider="ecole-danse-opera-paris", url=SUMMER, scrapedAt=now_utc()),
@@ -77,7 +83,8 @@ _SEASON = re.compile(r"(20\d\d)\s+Summer School", re.IGNORECASE)
 # "from July 6th to 18th" — the page renders the ordinal as a separate token
 # ("July 6 th to 18 th"), so allow whitespace before st/nd/rd/th.
 _RANGE = re.compile(
-    r"(" + parse.MONTHALT + r")\s+(\d{1,2})\s*(?:st|nd|rd|th)?\s+to\s+(\d{1,2})\s*(?:st|nd|rd|th)?", re.IGNORECASE
+    r"(" + parse.MONTHALT + r")\s+(\d{1,2})\s*(?:st|nd|rd|th)?\s+to\s+(\d{1,2})\s*(?:st|nd|rd|th)?",
+    re.IGNORECASE,
 )
 _AGE = re.compile(r"age\s+(\d{1,2})\s+to\s+(\d{1,2})", re.IGNORECASE)
 _APP_FEE = re.compile(r"(\d{1,3})\s?€\s+of application fees", re.IGNORECASE)

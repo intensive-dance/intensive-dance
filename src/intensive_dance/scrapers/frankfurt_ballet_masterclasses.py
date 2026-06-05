@@ -35,8 +35,10 @@ from intensive_dance.models import (
 BASE = "https://masterclass.balletcompetition.net"
 
 ORG = Organization(
-    name="Frankfurt Ballet Masterclasses", slug="frankfurt-ballet-masterclasses",
-    country="DE", city="Frankfurt am Main",
+    name="Frankfurt Ballet Masterclasses",
+    slug="frankfurt-ballet-masterclasses",
+    country="DE",
+    city="Frankfurt am Main",
 )
 VENUE = "Dr. Hoch's Konservatorium"
 
@@ -69,7 +71,9 @@ def _build_offering(html: str, today: date) -> Offering | None:
 
     return Offering(
         id=f"frankfurt-ballet-masterclasses/{season}",
-        source=Source(provider="frankfurt-ballet-masterclasses", url=f"{BASE}/", scrapedAt=now_utc()),
+        source=Source(
+            provider="frankfurt-ballet-masterclasses", url=f"{BASE}/", scrapedAt=now_utc()
+        ),
         title=f"Frankfurt Ballet Masterclasses {season}",
         genres=_genres(text),
         kind="masterclass",
@@ -78,7 +82,9 @@ def _build_offering(html: str, today: date) -> Offering | None:
         location=Location(venue=VENUE, city="Frankfurt am Main", country="DE"),
         schedule=Schedule(season=season, start=start, end=end, timezone="Europe/Berlin"),
         application=Application(
-            status="open" if re.search(r"register now|registration is open", text, re.IGNORECASE) else None,
+            status="open"
+            if re.search(r"register now|registration is open", text, re.IGNORECASE)
+            else None,
             url=f"{BASE}/",
             requirements=_requirements(text),
         ),
@@ -125,7 +131,9 @@ def _requirements(text: str):
     open registration; we only emit a requirement when the page states one.
     """
     section = text
-    match = re.search(r"application requirements?(.*?)(cancellation|contact|\Z)", text, re.IGNORECASE | re.DOTALL)
+    match = re.search(
+        r"application requirements?(.*?)(cancellation|contact|\Z)", text, re.IGNORECASE | re.DOTALL
+    )
     if match:
         section = match.group(1)
     low = section.lower()

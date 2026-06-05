@@ -58,7 +58,10 @@ _TABLE = [
 
 
 def test_match_genres_in_table_order_not_text_order():
-    assert parse.match_genres("Repertoire and classical ballet", _TABLE) == ["classical", "repertoire"]
+    assert parse.match_genres("Repertoire and classical ballet", _TABLE) == [
+        "classical",
+        "repertoire",
+    ]
 
 
 def test_match_genres_default_when_no_match():

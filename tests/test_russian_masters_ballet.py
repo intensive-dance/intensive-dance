@@ -29,7 +29,10 @@ def test_levels_from_track_name():
 
 
 def test_age_range_yo_and_years_old():
-    assert rmb._age_range("students 12-19 y.o. specializing in classical dance") == {"min": 12, "max": 19}
+    assert rmb._age_range("students 12-19 y.o. specializing in classical dance") == {
+        "min": 12,
+        "max": 19,
+    }
     assert rmb._age_range("students 10-18 years old with prior knowledge") == {"min": 10, "max": 18}
 
 
@@ -59,7 +62,10 @@ def test_dates_picks_earliest_start_latest_end():
 
 
 def test_dates_uses_trailing_year_token():
-    assert rmb._dates("26 December - 30 December, 2026", None) == (date(2026, 12, 26), date(2026, 12, 30))
+    assert rmb._dates("26 December - 30 December, 2026", None) == (
+        date(2026, 12, 26),
+        date(2026, 12, 30),
+    )
 
 
 def test_dates_wrap_across_new_year():
@@ -169,7 +175,10 @@ def test_guest_artist_link_captured_as_guest():
     )
     (guest,) = rmb._teachers(_article(html))
     assert (guest.name, guest.role) == ("Svetlana Bednenko", "guest")
-    assert [a.organization for a in guest.affiliations] == ["Mikhailovsky Theatre", "Deutsche Oper am Rhein"]
+    assert [a.organization for a in guest.affiliations] == [
+        "Mikhailovsky Theatre",
+        "Deutsche Oper am Rhein",
+    ]
 
 
 def test_split_name_across_two_anchors_is_merged():

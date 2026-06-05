@@ -26,7 +26,10 @@ def test_course_fee_per_course_and_euro_format():
 
 
 def test_date_range_or_none():
-    assert dnba._date_range("classes run 6 - 17 July 2026", "2026") == (date(2026, 7, 6), date(2026, 7, 17))
+    assert dnba._date_range("classes run 6 - 17 July 2026", "2026") == (
+        date(2026, 7, 6),
+        date(2026, 7, 17),
+    )
     assert dnba._date_range("a two week course", "2026") == (None, None)
 
 

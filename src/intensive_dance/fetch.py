@@ -29,6 +29,8 @@ def make_client(*, verify: bool = True) -> httpx.Client:
         token = os.environ.get("FETCH_PROXY_TOKEN")
         if token:
             headers["Proxy-Authorization"] = f"Bearer {token}"
-        return httpx.Client(headers=headers, proxy=proxy_url, timeout=30.0, follow_redirects=True, verify=verify)
+        return httpx.Client(
+            headers=headers, proxy=proxy_url, timeout=30.0, follow_redirects=True, verify=verify
+        )
 
     return httpx.Client(headers=headers, timeout=30.0, follow_redirects=True, verify=verify)

@@ -153,8 +153,12 @@ class Offering(BaseModel):
     genres: list[Genre] = Field(default_factory=list)
     kind: Kind
     lifecycle: Lifecycle = "scheduled"
-    lifecycle_note: str | None = Field(default=None, alias="lifecycleNote")  # raw source text, e.g. "Cancelled — full refund"
-    superseded_by: str | None = Field(default=None, alias="supersededBy")  # id of the replacement (postponed → new)
+    lifecycle_note: str | None = Field(
+        default=None, alias="lifecycleNote"
+    )  # raw source text, e.g. "Cancelled — full refund"
+    superseded_by: str | None = Field(
+        default=None, alias="supersededBy"
+    )  # id of the replacement (postponed → new)
     supersedes: str | None = None  # id of the original this replaces (new → postponed)
     level: list[Level] = Field(default_factory=list)
     age_range: dict | None = Field(default=None, alias="ageRange")

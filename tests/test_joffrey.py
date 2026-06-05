@@ -13,7 +13,12 @@ from datetime import date
 
 from intensive_dance.scrapers import joffrey_ballet_school as jbs
 
-STYLES = {70: "Ballet", 185: "Contemporary Ballet", 71: "Jazz & Contemporary", 77: "Musical Theater"}
+STYLES = {
+    70: "Ballet",
+    185: "Contemporary Ballet",
+    71: "Jazz & Contemporary",
+    77: "Musical Theater",
+}
 LOCATIONS = {86: "New York", 254: "Switzerland", 90: "Florida", 104: "All"}
 
 
@@ -47,7 +52,11 @@ def test_range_spanning_year_boundary():
 
 def test_lone_date_is_not_treated_as_a_span():
     # A single prose date (a performance, not the course) must not set start/end.
-    assert jbs._parse_dates("Perform at a theater on Friday, July 17, 2026.") == (None, None, "2026")
+    assert jbs._parse_dates("Perform at a theater on Friday, July 17, 2026.") == (
+        None,
+        None,
+        "2026",
+    )
 
 
 def test_no_dates_no_year():

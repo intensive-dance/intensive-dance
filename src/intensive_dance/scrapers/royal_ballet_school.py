@@ -63,7 +63,9 @@ BASE = "https://www.royalballetschool.org.uk"
 INTENSIVE_COURSES_SLUG = "intensive-courses"
 FEES_SLUG = "intensive-courses-fees"
 
-ORG = Organization(name="The Royal Ballet School", slug="royal-ballet-school", country="GB", city="London")
+ORG = Organization(
+    name="The Royal Ballet School", slug="royal-ballet-school", country="GB", city="London"
+)
 
 # Programs whose course fees live on the shared fees page (heading → its table)
 # rather than inline on the program page. Most programs price inline.
@@ -111,7 +113,9 @@ def _build_offering(record: dict, fees: wp.Content | None, today: date) -> Offer
         notes=_join(
             requirement_notes,
             "Required positions are published as age-banded diagrams "
-            f"on the photograph-requirements page: {photo_url}" if photo_url else None,
+            f"on the photograph-requirements page: {photo_url}"
+            if photo_url
+            else None,
         ),
     )
 
@@ -166,7 +170,9 @@ def _build_offering(record: dict, fees: wp.Content | None, today: date) -> Offer
 
 _DATE = re.compile(r"(\d{1,2})\s+(" + parse.MONTHALT + r")(?:\s+(\d{4}))?", re.IGNORECASE)
 # A short range like "21-25 July" or "6 – Friday 10 July" (shared month, year implied).
-_SHORT = re.compile(r"(\d{1,2})\s*[-–]\s*(?:[A-Za-z]+\s+)?(\d{1,2})\s+(" + parse.MONTHALT + r")", re.IGNORECASE)
+_SHORT = re.compile(
+    r"(\d{1,2})\s*[-–]\s*(?:[A-Za-z]+\s+)?(\d{1,2})\s+(" + parse.MONTHALT + r")", re.IGNORECASE
+)
 # Money in either order: symbol-prefixed ("£48", "€390") or word-suffixed
 # ("390 euros"), since RBS prices its overseas programs in local currency.
 _MONEY = re.compile(
@@ -175,7 +181,14 @@ _MONEY = re.compile(
     re.IGNORECASE,
 )
 _CURRENCY_SYMBOL = {"£": "GBP", "€": "EUR"}
-_CURRENCY_WORD = {"euro": "EUR", "eur": "EUR", "pound": "GBP", "gbp": "GBP", "dollar": "USD", "usd": "USD"}
+_CURRENCY_WORD = {
+    "euro": "EUR",
+    "eur": "EUR",
+    "pound": "GBP",
+    "gbp": "GBP",
+    "dollar": "USD",
+    "usd": "USD",
+}
 # `$` is ambiguous — RBS prices overseas programs in local currency, so resolve it
 # from the program's country rather than assuming USD (Hong Kong → HKD, etc.).
 _DOLLAR_CURRENCY = {"US": "USD", "HK": "HKD", "SG": "SGD", "AU": "AUD", "CA": "CAD", "NZ": "NZD"}
@@ -256,9 +269,7 @@ def _application(block, *, url, requirements) -> Application:
         section, subs = block
         primary_text = section.text()
         lines.append(primary_text)
-        lines += [
-            line for sub in subs for line in sub.text().split("\n") if _RELEVANT.search(line)
-        ]
+        lines += [line for sub in subs for line in sub.text().split("\n") if _RELEVANT.search(line)]
     notes = "\n".join(line for line in lines if line.strip()) or None
     return Application(
         status=_status(notes or ""),
@@ -300,8 +311,15 @@ _PLACES: list[tuple[str, str, str, str]] = [
     ("madrid", "Madrid", "ES", "Europe/Madrid"),
 ]
 _COUNTRY_NAMES = {
-    "united states": "US", "united kingdom": "GB", "thailand": "TH", "japan": "JP",
-    "hong kong": "HK", "singapore": "SG", "korea": "KR", "italy": "IT", "spain": "ES",
+    "united states": "US",
+    "united kingdom": "GB",
+    "thailand": "TH",
+    "japan": "JP",
+    "hong kong": "HK",
+    "singapore": "SG",
+    "korea": "KR",
+    "italy": "IT",
+    "spain": "ES",
 }
 _UK_POSTCODE = re.compile(r"\b[A-Z]{1,2}\d[A-Z\d]?\s*\d[A-Z]{2}\b")
 _US_ZIP = re.compile(r"\b[A-Z]{2}\s+\d{5}\b")
@@ -421,7 +439,13 @@ def _inline_prices(text: str, dollar_currency: str = "USD") -> list[Price]:
             context = None
             amount, currency = _money(match, dollar_currency)
             prices.append(
-                Price(amount=amount, currency=currency, label=label, includes=_includes(label), notes=line)
+                Price(
+                    amount=amount,
+                    currency=currency,
+                    label=label,
+                    includes=_includes(label),
+                    notes=line,
+                )
             )
         context = line[matches[-1].end() :].strip(" :–-") or None
     return prices

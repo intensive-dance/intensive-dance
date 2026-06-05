@@ -51,7 +51,9 @@ from intensive_dance.models import (
 BASE = "https://www.joffreyballetschool.com"
 AUDITIONS_SLUG = "auditions-2"
 
-ORG = Organization(name="Joffrey Ballet School", slug="joffrey-ballet-school", country="US", city="New York")
+ORG = Organization(
+    name="Joffrey Ballet School", slug="joffrey-ballet-school", country="US", city="New York"
+)
 
 # Each program post type, and the `kind` an Offering from it takes.
 PROGRAM_TYPES: dict[str, Kind] = {
@@ -75,7 +77,15 @@ _GENRES_BY_STYLE: dict[str, list[Genre]] = {
 # otherwise genres come from the title, falling back to the body for multi-genre
 # workshops that only name a city in the title. "contemporary"/"jazz" →
 # contemporary, "ballet" → classical.
-_OUT_OF_SCOPE = ("musical theater", "musical theatre", "hip hop", "hip-hop", "cirque", "circus", "tap")
+_OUT_OF_SCOPE = (
+    "musical theater",
+    "musical theatre",
+    "hip hop",
+    "hip-hop",
+    "cirque",
+    "circus",
+    "tap",
+)
 _GENRE_KEYWORDS: list[tuple[Genre, tuple[str, ...]]] = [
     ("contemporary", ("contemporary", "jazz")),
     ("classical", ("ballet",)),

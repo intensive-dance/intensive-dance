@@ -37,7 +37,12 @@ BASE = "https://www.atd.ahk.nl"
 SUMMER = f"{BASE}/en/dance-programmes/dutch-national-ballet-academy/summer-school/"
 FEES = f"{SUMMER}application-and-fees/"
 
-ORG = Organization(name="Dutch National Ballet Academy", slug="dutch-national-ballet-academy", country="NL", city="Amsterdam")
+ORG = Organization(
+    name="Dutch National Ballet Academy",
+    slug="dutch-national-ballet-academy",
+    country="NL",
+    city="Amsterdam",
+)
 
 # Course labels as printed on the pages; each becomes its own Offering, with its
 # age band and fee read from the text by label (see _course_age / _course_fee).
@@ -66,7 +71,9 @@ def scrape(client: httpx.Client) -> list[Offering]:
         offerings.append(
             Offering(
                 id=f"dutch-national-ballet-academy/summer-school-{slug}-{season}",
-                source=Source(provider="dutch-national-ballet-academy", url=SUMMER, scrapedAt=now_utc()),
+                source=Source(
+                    provider="dutch-national-ballet-academy", url=SUMMER, scrapedAt=now_utc()
+                ),
                 title=f"Amsterdam International Summer School — {label} {season}",
                 genres=genres,
                 kind="summer-school",
@@ -74,7 +81,9 @@ def scrape(client: httpx.Client) -> list[Offering]:
                 organization=ORG,
                 location=Location(city="Amsterdam", country="NL"),
                 schedule=Schedule(season=season, start=start, end=end, timezone="Europe/Amsterdam"),
-                prices=[Price(amount=fee, currency="EUR", label=label, includes=["tuition"])] if fee else [],
+                prices=[Price(amount=fee, currency="EUR", label=label, includes=["tuition"])]
+                if fee
+                else [],
                 application=Application(
                     status="closed" if (deadline and deadline < today) else None,
                     deadline=deadline,
@@ -91,10 +100,16 @@ def scrape(client: httpx.Client) -> list[Offering]:
 _YEAR = re.compile(r"Summer School\s+(20\d\d)", re.IGNORECASE)
 # "6 - 17 July 2026" or "July 6 to 17, 2026".
 _RANGE = re.compile(
-    r"(\d{1,2})\s*[-–to]+\s*(\d{1,2})\s+(" + parse.MONTHALT + r")|(" + parse.MONTHALT + r")\s+(\d{1,2})\s*(?:[-–]|to)\s*(\d{1,2})",
+    r"(\d{1,2})\s*[-–to]+\s*(\d{1,2})\s+("
+    + parse.MONTHALT
+    + r")|("
+    + parse.MONTHALT
+    + r")\s+(\d{1,2})\s*(?:[-–]|to)\s*(\d{1,2})",
     re.IGNORECASE,
 )
-_DEADLINE = re.compile(r"open until\s+(\d{1,2})\s+(" + parse.MONTHALT + r")\s+(20\d\d)", re.IGNORECASE)
+_DEADLINE = re.compile(
+    r"open until\s+(\d{1,2})\s+(" + parse.MONTHALT + r")\s+(20\d\d)", re.IGNORECASE
+)
 
 
 def _season(text: str) -> str:
@@ -119,11 +134,19 @@ def _date_range(text: str, season: str) -> tuple[date | None, date | None]:
 
 def _deadline(text: str) -> date | None:
     match = _DEADLINE.search(text)
-    return date(int(match.group(3)), parse.MONTHS[match.group(2).lower()], int(match.group(1))) if match else None
+    return (
+        date(int(match.group(3)), parse.MONTHS[match.group(2).lower()], int(match.group(1)))
+        if match
+        else None
+    )
 
 
 def _course_age(text: str, label: str) -> dict | None:
-    match = re.search(re.escape(label) + r"\s+is for ballet students aged\s+(\d{1,2})\s*[-–]\s*(\d{1,2})", text, re.IGNORECASE)
+    match = re.search(
+        re.escape(label) + r"\s+is for ballet students aged\s+(\d{1,2})\s*[-–]\s*(\d{1,2})",
+        text,
+        re.IGNORECASE,
+    )
     return {"min": int(match.group(1)), "max": int(match.group(2))} if match else None
 
 
