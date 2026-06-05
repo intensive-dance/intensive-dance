@@ -1,0 +1,135 @@
+[
+  {
+    "application": {
+      "notes": "There are no restrictions on participation, everyone can take part regardless of their dance experience.",
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "url": "https://mi-ballet-school.net/#registersummer"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "repertoire"
+    ],
+    "id": "m-i-ballet-school/summer-intensive-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Munich",
+      "country": "DE",
+      "venue": "Marsstraße 40"
+    },
+    "organization": {
+      "city": "Munich",
+      "country": "DE",
+      "name": "Munich International Ballet School",
+      "slug": "m-i-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 123.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "1 day"
+      },
+      {
+        "amount": 680.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "6 days in a row"
+      },
+      {
+        "amount": 1290.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "12 days in a row"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-22",
+      "season": "2026",
+      "sessions": [
+        {
+          "end": "2026-08-01",
+          "label": "Jiri Pokorny (Direktor des J.K. TyL Theatre Pilsen)",
+          "start": "2026-07-27"
+        },
+        {
+          "end": "2026-08-08",
+          "label": "Filip Barankiewicz (Direktor des Národní Divadlo Prag)",
+          "start": "2026-08-03"
+        },
+        {
+          "end": "2026-08-15",
+          "label": "Vitaliy Petrov (Direktor des Thüringer Staatsballett)",
+          "start": "2026-08-10"
+        },
+        {
+          "end": "2026-08-22",
+          "label": "Linnar Looris (Direktor des Estonian National Ballet)",
+          "start": "2026-08-17"
+        }
+      ],
+      "start": "2026-07-27",
+      "timezone": "Europe/Berlin"
+    },
+    "source": {
+      "hash": "sha256:f4daae5e96380b441b5ebbd28a66417f385764f0c2fd9967c9eed6a79e83dfcf",
+      "provider": "m-i-ballet-school",
+      "scrapedAt": "2026-06-05T21:13:42.703833Z",
+      "url": "https://mi-ballet-school.net/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "J.K. TyL Theatre Pilsen"
+          }
+        ],
+        "name": "Jiri Pokorny",
+        "role": "Guest director (weekly)"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Národní Divadlo Prag"
+          }
+        ],
+        "name": "Filip Barankiewicz",
+        "role": "Guest director (weekly)"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Thüringer Staatsballett"
+          }
+        ],
+        "name": "Vitaliy Petrov",
+        "role": "Guest director (weekly)"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Estonian National Ballet"
+          }
+        ],
+        "name": "Linnar Looris",
+        "role": "Guest director (weekly)"
+      }
+    ],
+    "title": "Ballet Summer Intensive 2026"
+  }
+]
