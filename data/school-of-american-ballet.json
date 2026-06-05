@@ -1,0 +1,171 @@
+[
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 12
+    },
+    "application": {
+      "requirements": [
+        {
+          "description": "Admission is by audition — attend an in-person audition or, if unable to attend, submit a video application.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "url": "https://sab.org/enrollment/summer-course/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "character",
+      "contemporary",
+      "repertoire"
+    ],
+    "id": "school-of-american-ballet/summer-course-2026",
+    "kind": "summer-school",
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "New York",
+      "country": "US",
+      "venue": "Lincoln Center"
+    },
+    "organization": {
+      "city": "New York",
+      "country": "US",
+      "name": "School of American Ballet",
+      "slug": "school-of-american-ballet"
+    },
+    "prices": [
+      {
+        "amount": 3870.0,
+        "currency": "USD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition (All Levels)"
+      },
+      {
+        "amount": 135.0,
+        "currency": "USD",
+        "includes": [],
+        "label": "Registration Fee"
+      },
+      {
+        "amount": 4170.0,
+        "currency": "USD",
+        "includes": [
+          "accommodation",
+          "meals"
+        ],
+        "label": "Room and Board"
+      },
+      {
+        "amount": 625.0,
+        "currency": "USD",
+        "includes": [],
+        "label": "Single Room Surcharge"
+      },
+      {
+        "amount": 170.0,
+        "currency": "USD",
+        "includes": [],
+        "label": "Activity Fee"
+      },
+      {
+        "amount": 20.0,
+        "currency": "USD",
+        "includes": [],
+        "label": "Laundry Fee"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-31",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-06-29",
+      "timezone": "America/New_York"
+    },
+    "source": {
+      "hash": "sha256:a22ef675bcf0640314c7093d5984b9e6234b8f0e90aa03fcf21f1cb71ae4d5a3",
+      "provider": "school-of-american-ballet",
+      "scrapedAt": "2026-06-05T11:31:57.507817Z",
+      "url": "https://sab.org/enrollment/summer-course/"
+    },
+    "teachers": [],
+    "title": "Summer Course in NYC"
+  },
+  {
+    "ageRange": {
+      "max": 12,
+      "min": 10
+    },
+    "application": {
+      "requirements": [
+        {
+          "description": "Admission is by audition — attend an in-person audition or, if unable to attend, submit a video application.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "url": "https://sab.org/enrollment/new-york-junior-session/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "character",
+      "repertoire"
+    ],
+    "id": "school-of-american-ballet/new-york-junior-session-2026",
+    "kind": "summer-school",
+    "level": [
+      "intermediate"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "New York",
+      "country": "US",
+      "venue": "Lincoln Center"
+    },
+    "organization": {
+      "city": "New York",
+      "country": "US",
+      "name": "School of American Ballet",
+      "slug": "school-of-american-ballet"
+    },
+    "prices": [
+      {
+        "amount": 990.0,
+        "currency": "USD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition"
+      },
+      {
+        "amount": 110.0,
+        "currency": "USD",
+        "includes": [],
+        "label": "Registration Fee"
+      }
+    ],
+    "schedule": {
+      "end": "2026-06-27",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-06-22",
+      "timezone": "America/New_York"
+    },
+    "source": {
+      "hash": "sha256:aaf59a2decef9498d6ee9d1ad1d1c2770edd4ae838cf864e7f1dd777d32cfb7e",
+      "provider": "school-of-american-ballet",
+      "scrapedAt": "2026-06-05T11:33:30.773483Z",
+      "url": "https://sab.org/enrollment/new-york-junior-session/"
+    },
+    "teachers": [],
+    "title": "New York Junior Session"
+  }
+]

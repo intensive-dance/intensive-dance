@@ -14,6 +14,7 @@ from intensive_dance.models import Offering
 
 from . import (
     abt_jko_school,
+    academie_princesse_grace,
     brussels_international_ballet,
     dutch_national_ballet_academy,
     ecole_danse_opera_paris,
@@ -25,6 +26,8 @@ from . import (
     mosa_ballet_school,
     royal_ballet_school,
     russian_masters_ballet,
+    school_of_american_ballet,
+    young_stars_ballet,
 )
 
 Scraper = Callable[[httpx.Client], list[Offering]]
@@ -42,4 +45,7 @@ SCRAPERS: dict[str, Scraper] = {
     "english-national-ballet-school": english_national_ballet_school.scrape,
     "brussels-international-ballet": brussels_international_ballet.scrape,
     "fondazione-monreart": fondazione_monreart.scrape,
+    "academie-princesse-grace": academie_princesse_grace.scrape,
+    "school-of-american-ballet": school_of_american_ballet.scrape,
+    "young-stars-ballet": young_stars_ballet.scrape,
 }
