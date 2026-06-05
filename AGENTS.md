@@ -100,22 +100,38 @@ module docstring so the next person doesn't re-investigate:
 
 ---
 
-## Fetch proxy (JS-rendered / bot-protected pages)
+## Fetch proxy (datacenter-IP / broken-TLS / bot-protected pages)
 
-When a host gates its content behind **Cloudflare Turnstile**, a JS challenge,
-or blocks the CI runner's datacenter IP — i.e. a direct httpx fetch returns a
-challenge/empty page, not the real markup — route the request through the render
-proxy instead of giving up:
+When a host blocks the CI runner's datacenter IP, serves a broken TLS chain, or
+gates content behind a **Cloudflare** challenge / **Turnstile** / JS render — a
+direct httpx fetch returns a challenge or empty page, not the real markup — route
+the request through the fetch proxy instead of giving up. It's a last resort
+(slower, rate-limited), so reach for it only after the API-first tree and a plain
+fetch have failed, and say in the scraper docstring *why* it was needed.
+
+**One endpoint** (`/`, GET — or POST to forward the request body + Content-Type
+upstream for form POSTs). The base does a plain Chrome-UA fetch with TLS
+verification off (covers datacenter-IP blocks and broken certs); query params
+escalate from there:
 
 ```
-$FETCH_PROXY_URL?url=<url-encoded>&render=1&wait=8000&format=md
+$FETCH_PROXY_URL?url=<url-encoded>&auto=1&format=md
 ```
 
-with `Authorization: Bearer $FETCH_PROXY_TOKEN`. `render=1` runs a headless
-browser, `wait=<ms>` lets the challenge settle, `format=md` returns Markdown
-(drop it for raw HTML). It's a last resort — slower and rate-limited — so reach
-for it only after the API-first tree and a plain fetch have failed, and say in
-the scraper docstring *why* the proxy was needed.
+with `Authorization: Bearer $FETCH_PROXY_TOKEN`. Query params (all optional
+except `url`):
+
+| param | effect |
+|-------|--------|
+| `url` | **Required.** Target URL to fetch (url-encoded). |
+| `auto=1` | Auto-escalate `plain → FlareSolverr → stealth render`, returning the first tier that isn't blocked. Prefer this over guessing a tier. `auto=0` opts out if the server defaults it on. |
+| `solve=1` | Force the **FlareSolverr** (Cloudflare-challenge solver) path even when the CF heuristic doesn't fire. |
+| `render=1` | Return the page rendered by a stealth headless Chromium (for JS/SPA content). |
+| `wait=<ms>` | With `render=1`, ms to let the SPA's XHR content settle. Default `6000`, max `30000`. |
+| `format=md` | Convert the HTML to Markdown via Readability main-content extraction (nav/ads dropped, links absolutized). Omit for raw HTML. |
+| `block=0` | Ad/cookie/tracker blocking (uBO-style filter lists) is **on by default** for rendered pages; set `0` to disable it for this request. |
+
+Full spec: `$FETCH_PROXY_URL`docs (Scalar UI; raw at `/docs/json`).
 
 **Config — `FETCH_PROXY_URL` + `FETCH_PROXY_TOKEN`.** Both are stored in GitHub
 two ways: as **Actions variables** (read in **development**) and as **Actions
