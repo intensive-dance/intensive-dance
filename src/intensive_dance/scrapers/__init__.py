@@ -25,6 +25,7 @@ from . import (
     mosa_ballet_school,
     royal_ballet_school,
     russian_masters_ballet,
+    school_of_american_ballet,
 )
 
 Scraper = Callable[[httpx.Client], list[Offering]]
@@ -42,4 +43,5 @@ SCRAPERS: dict[str, Scraper] = {
     "english-national-ballet-school": english_national_ballet_school.scrape,
     "brussels-international-ballet": brussels_international_ballet.scrape,
     "academie-princesse-grace": academie_princesse_grace.scrape,
+    "school-of-american-ballet": school_of_american_ballet.scrape,
 }

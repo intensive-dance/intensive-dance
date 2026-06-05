@@ -191,6 +191,12 @@ when a second provider genuinely needs the identical thing.
 - **Parse structurally.** Match table cells by **header text**, not column index;
   read venue/city from address `<p>` lines, not a collapsed string (collapsing
   glued a street number onto the city in the first ABT pass).
+- **Match genre keywords against the curriculum list, not loose prose.** A blurb
+  can mention "contemporary works" without a Contemporary *class* — keyword-match
+  the syllabus headings (SAB's `<h3>` curriculum list) so the description doesn't
+  leak a genre the program doesn't teach. Likewise scope level keywords to the
+  admission sentence so "the most advanced girls" doesn't read as an advanced
+  program. See `scrapers/school_of_american_ballet.py` (two pages, one template).
 - **Drop out-of-scope rows** (Tap/Hip-Hop/etc. for a *ballet* register) and
   cancelled cycles; don't emit empty-genre Offerings.
 - **Comments explain *why*, not *what*** (see the global commenting rules). The
