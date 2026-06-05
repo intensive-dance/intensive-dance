@@ -184,7 +184,10 @@ when a second provider genuinely needs the identical thing.
   `X | None` (e.g. `Offering.location: Location | None`) will fail
   `attr` access in a test — narrow it first: `assert o.location is not None`
   before `o.location.venue`. (Running `ty check` on one file hides this; always
-  run it bare.)
+  run it bare.) The `[tool.ty]` block in `pyproject.toml` makes it **strict**:
+  warnings are errors (`error-on-warning`) and a few latent-bug rules ty leaves
+  off (`possibly-missing-import`/`-attribute`, `possibly-unresolved-reference`)
+  are on — so a "maybe unbound / maybe missing" path fails the gate, not runtime.
 - **Tests never hit the network.** Feed `_build_offerings`/helpers inline HTML or
   JSON snippets covering the real structure (one happy site + one edge: extra
   fees, missing dates, out-of-scope genre…). See `tests/test_abt_jko_school.py`.
