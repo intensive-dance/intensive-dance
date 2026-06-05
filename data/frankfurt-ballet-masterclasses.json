@@ -1,0 +1,47 @@
+[
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 8
+    },
+    "application": {
+      "requirements": [],
+      "status": "open",
+      "url": "https://masterclass.balletcompetition.net/"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "frankfurt-ballet-masterclasses/2026",
+    "kind": "masterclass",
+    "level": [],
+    "location": {
+      "city": "Frankfurt am Main",
+      "country": "DE",
+      "venue": "Dr. Hoch's Konservatorium"
+    },
+    "organization": {
+      "city": "Frankfurt am Main",
+      "country": "DE",
+      "name": "Frankfurt Ballet Masterclasses",
+      "slug": "frankfurt-ballet-masterclasses"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-08-23",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-22",
+      "timezone": "Europe/Berlin"
+    },
+    "source": {
+      "hash": "sha256:3f11515982ef2dc02735642ed891401a9643116c59e1e57ee3292ebfc07e50dc",
+      "provider": "frankfurt-ballet-masterclasses",
+      "scrapedAt": "2026-06-05T08:07:21.245004Z",
+      "url": "https://masterclass.balletcompetition.net/"
+    },
+    "teachers": [],
+    "title": "Frankfurt Ballet Masterclasses 2026"
+  }
+]

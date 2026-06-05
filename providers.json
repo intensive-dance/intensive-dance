@@ -16,7 +16,7 @@
       "city": "Stuttgart",
       "url": "https://www.john-cranko-schule.de/",
       "tier": "marquee",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "abt-jko-school",
@@ -43,7 +43,7 @@
       "city": "Paris",
       "url": "https://www.operadeparis.fr/en/artists/ballet-school",
       "tier": "marquee",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "english-national-ballet-school",
@@ -70,6 +70,33 @@
       "city": "Alicante",
       "url": "https://russianmastersballet.com/",
       "tier": "secondary",
+      "status": "live"
+    },
+    {
+      "slug": "mosa-ballet-school",
+      "name": "MOSA Ballet School",
+      "country": "BE",
+      "city": "Liège",
+      "url": "https://www.mosaballetschool.eu/",
+      "tier": "secondary",
+      "status": "live"
+    },
+    {
+      "slug": "frankfurt-ballet-masterclasses",
+      "name": "Frankfurt Ballet Masterclasses",
+      "country": "DE",
+      "city": "Frankfurt am Main",
+      "url": "https://masterclass.balletcompetition.net/",
+      "tier": "secondary",
+      "status": "live"
+    },
+    {
+      "slug": "dutch-national-ballet-academy",
+      "name": "Dutch National Ballet Academy",
+      "country": "NL",
+      "city": "Amsterdam",
+      "url": "https://www.atd.ahk.nl/en/dance-programmes/dutch-national-ballet-academy/",
+      "tier": "marquee",
       "status": "live"
     }
   ]

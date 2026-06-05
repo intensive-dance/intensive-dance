@@ -67,8 +67,13 @@ Store is committed JSON (`data/`) for now — every scrape is a reviewable git d
 
 ## Status
 
-Three providers live:
+Eight providers live:
 
 - **The Royal Ballet School** ([#1](https://github.com/boredland/intensive-dance/issues/1)) — WordPress REST + WPBakery; exercises the `photos` requirement.
 - **Joffrey Ballet School** — WordPress custom post types (`summer-intensives`, `workshops`) + taxonomy resolution; exercises the `video` requirement. Fees/teachers aren't published in its API, so those stay empty (documented in the scraper).
 - **Russian Masters Ballet** — the first **pure-HTML** scrape (a Bitrix site, no API/feed/JSON-LD). Discovers its summer (Alicante, Burgas, St. Petersburg) and winter (Madrid, Perth, Shanghai) locations from the two course indexes and emits one offering per program track. First to exercise **teachers with affiliations** (a named per-track roster linked to Vaganova / Bolshoi / Mariinsky / …) and the `video`/`specific` + `cv` requirement branches.
+- **MOSA Ballet School** (Liège, BE) — first European provider; a Squarespace site scraped **sitemap-first** (the sitemap indexes every event; we keep only real intensives/masterclasses and drop past cycles). Exercises EUR course-fee parsing.
+- **John Cranko School** (Stuttgart, DE) — its Summer School, from one tidy German page; exercises a EUR fee (incl. performance), an application `deadline`, and a `video`/`specific` audition brief.
+- **Frankfurt Ballet Masterclasses** (Frankfurt, DE) — single-page masterclass listing; fetched over a `verify=False` client because the host serves an incomplete TLS certificate chain.
+- **Dutch National Ballet Academy** (Amsterdam, NL) — its Amsterdam International Summer School (Senior + Junior courses), from the AHK TYPO3 site; one offering per course with its own age band and fee.
+- **École de Danse de l'Opéra national de Paris** (Paris, FR) — its Summer School ("Stage d'été"), read off the large operadeparis.fr site; exercises a non-refundable application-fee note (graduated course fees left out rather than guessed).
