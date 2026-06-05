@@ -6,12 +6,12 @@ WPBakery shortcode markup, cleaned and sectioned by `intensive_dance.wp`.
 
 DISCOVERY: RBS runs *many* intensives (UK Summer, Los Angeles, Livorno, Hong
 Kong, …) and re-dates the same WordPress pages each cycle. Rather than hardcode a
-list, we fetch the children of the "Intensive Courses" page and keep only the
-ones that are still **live** — dropping cancelled courses and cycles whose last
-course date is already in the past. So a newly-opened cycle (or a brand-new
-location) is picked up automatically, and last season's listings fall away.
+list, we fetch the children of the "Intensive Courses" page. We keep them all:
+cancelled courses are tagged `lifecycle="cancelled"` (not dropped) so families
+still find them, and past cycles stay too (greyed in the UI, derived from dates).
+A newly-opened cycle or a brand-new location is picked up automatically.
 
-One `Offering` per live program. Offering ids are `{providerSlug}/{pageSlug}-{season}`
+One `Offering` per program. Offering ids are `{providerSlug}/{pageSlug}-{season}`
 (e.g. `royal-ballet-school/uk-summer-intensive-2026`), keeping year-over-year
 cycles distinct and diffable.
 
@@ -79,30 +79,25 @@ def scrape(client: httpx.Client) -> list[Offering]:
 
     today = date.today()
     offerings = [
-        offering
+        _build_offering(record, fees, today)
         for record in wp.fetch_children(client, root["id"], base=BASE)
-        if (offering := _build_offering(record, fees, today)) is not None
     ]
     offerings.sort(key=lambda o: o.id)
     return offerings
 
 
-def _build_offering(record: dict, fees: wp.Content | None, today: date) -> Offering | None:
-    """Parse one program page into an Offering, or None if it isn't live.
+def _build_offering(record: dict, fees: wp.Content | None, today: date) -> Offering:
+    """Parse one program page into an Offering.
 
-    Skips cancelled courses and cycles whose last course date is already past —
-    this is what keeps the committed store to currently-open programs as RBS
-    leaves prior cycles published.
+    A cancelled course is kept and tagged `lifecycle="cancelled"` (not dropped),
+    so families still find it; ended cycles are kept too — "past" is derived from
+    `schedule.end < today`, not stored.
     """
     slug = record["slug"]
     base_title = record["title"]["rendered"].strip()
     content = wp.parse(record["content"]["rendered"])
 
-    if "cancel" in slug.lower() or "cancel" in base_title.lower():
-        return None
-    last_date = _latest_course_date(content)
-    if last_date is not None and last_date < today:
-        return None
+    cancelled = "cancel" in slug.lower() or "cancel" in base_title.lower()
 
     blob = " ".join(section.text() for section in content.sections)
     dates_text = content.text("Dates")
@@ -143,6 +138,8 @@ def _build_offering(record: dict, fees: wp.Content | None, today: date) -> Offer
         title=title,
         genres=_genres(blob),
         kind=_kind(slug, base_title),
+        lifecycle="cancelled" if cancelled else "scheduled",
+        lifecycleNote=base_title if cancelled else None,
         level=_levels(blob),
         ageRange=_age_range(content.text("Eligibility")),
         organization=ORG,
@@ -229,32 +226,6 @@ def _deadline(text: str) -> date | None:
         return None
     start, end, _ = _date_range(match.group(1))
     return start
-
-
-# RBS reckons age "on 31 August <year>"; that cutoff must not count as a course
-# date, or every page would look current.
-_CUTOFF = re.compile(r"on \d{1,2}\s+[A-Za-z]+\s+\d{4}", re.IGNORECASE)
-
-
-def _latest_course_date(content: wp.Content) -> date | None:
-    """Latest concrete course date on the page — drives the live/ended gate.
-
-    Yearless day-month tokens inherit the latest year seen on the page, so a
-    multi-weekend program spanning into next year reads as live.
-    """
-    text = _CUTOFF.sub(" ", " ".join(section.text() for section in content.sections))
-    years = [int(y) for y in _YEAR.findall(text)]
-    year = max(years) if years else None
-    points: list[date] = []
-    for day, month, yr in _DATE.findall(text):
-        resolved = int(yr) if yr else year
-        if resolved and month.lower() in parse.MONTHS:
-            points.append(date(resolved, parse.MONTHS[month.lower()], int(day)))
-    if year:
-        for _, end_day, month in _SHORT.findall(text):
-            if month.lower() in parse.MONTHS:
-                points.append(date(year, parse.MONTHS[month.lower()], int(end_day)))
-    return max(points) if points else None
 
 
 _RELEVANT = re.compile(r"open|clos|deadline|appl|booking", re.IGNORECASE)

@@ -55,9 +55,6 @@ def scrape(client: httpx.Client) -> list[Offering]:
 def _build_offering(text: str, today: date) -> Offering | None:
     season = _season(text)
     start, end = _date_range(text, season)
-    if end is not None and end < today:
-        return None
-
     app_fee = _application_fee(text)
     notes = f"Non-refundable application fee of €{app_fee:g} (course fees graduated; see the school's site)." if app_fee else None
     return Offering(

@@ -704,6 +704,28 @@
       "title": "Level",
       "type": "array"
     },
+    "lifecycle": {
+      "default": "scheduled",
+      "enum": [
+        "scheduled",
+        "cancelled",
+        "postponed"
+      ],
+      "title": "Lifecycle",
+      "type": "string"
+    },
+    "lifecycleNote": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Lifecyclenote"
+    },
     "location": {
       "anyOf": [
         {
@@ -730,6 +752,30 @@
     },
     "source": {
       "$ref": "#/$defs/Source"
+    },
+    "supersededBy": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Supersededby"
+    },
+    "supersedes": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Supersedes"
     },
     "teachers": {
       "items": {

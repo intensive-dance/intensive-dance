@@ -18,6 +18,7 @@
     "id": "ecole-danse-opera-paris/summer-school-2026",
     "kind": "summer-school",
     "level": [],
+    "lifecycle": "scheduled",
     "location": {
       "city": "Paris",
       "country": "FR",
@@ -38,9 +39,9 @@
       "timezone": "Europe/Paris"
     },
     "source": {
-      "hash": "sha256:86265bac8870a80ddbb6db13d7fcc6a374c19fb224b81c2c86930c5f8d16cee6",
+      "hash": "sha256:9add399c408b079a22e0f26ba878c68c683455cd4ce6a27d5d9aa07c98aafb11",
       "provider": "ecole-danse-opera-paris",
-      "scrapedAt": "2026-06-05T08:19:27.032776Z",
+      "scrapedAt": "2026-06-05T10:05:21.684634Z",
       "url": "https://www.operadeparis.fr/en/artists/ballet-school/summer-internship"
     },
     "teachers": [],

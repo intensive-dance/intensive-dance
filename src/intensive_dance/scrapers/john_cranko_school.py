@@ -62,8 +62,6 @@ def _build_offering(html: str, today: date) -> Offering | None:
     blob = parse.clean(text)
 
     start, end = _date_range(blob)
-    if end is not None and end < today:
-        return None  # last cycle already finished
     anchor = start or end
     season = str(anchor.year) if anchor else _year(blob)
 

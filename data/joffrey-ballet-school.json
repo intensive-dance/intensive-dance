@@ -17,6 +17,7 @@
     "id": "joffrey-ballet-school/2024-nyc-jazz-contemporary-winter-workshop-spectrum",
     "kind": "workshop",
     "level": [],
+    "lifecycle": "scheduled",
     "organization": {
       "city": "New York",
       "country": "US",
@@ -31,9 +32,9 @@
       "start": "2026-12-18"
     },
     "source": {
-      "hash": "sha256:9f84aec9bb767ca2724d903cb264737f41d7361ee23cecdc3de3d8e5f6fc2e16",
+      "hash": "sha256:edb960099c9f876e678ff35aac3b9d808446e5226fcdb1176312cf661bf6c2cd",
       "provider": "joffrey-ballet-school",
-      "scrapedAt": "2026-06-03T20:22:30.603298Z",
+      "scrapedAt": "2026-06-05T10:05:03.948401Z",
       "url": "https://www.joffreyballetschool.com/workshops/summer-sampler/joffrey-ny-jazz-contemporary-winter-workshop/"
     },
     "teachers": [],
@@ -58,6 +59,7 @@
     "id": "joffrey-ballet-school/26-27-joffrey-ny-contemporary-ballet-winter-workshop",
     "kind": "workshop",
     "level": [],
+    "lifecycle": "scheduled",
     "organization": {
       "city": "New York",
       "country": "US",
@@ -72,9 +74,9 @@
       "start": "2026-12-28"
     },
     "source": {
-      "hash": "sha256:1c739bf69a0ad1f248e662c253a9d19b0893c31196765700ce866e19477a0d01",
+      "hash": "sha256:f519848ffda1efd0f7c54e6fd3d0feeb327f05a7b6d77703de53a9a6dd9f277d",
       "provider": "joffrey-ballet-school",
-      "scrapedAt": "2026-06-03T20:22:30.602821Z",
+      "scrapedAt": "2026-06-05T10:05:03.947267Z",
       "url": "https://www.joffreyballetschool.com/workshops/summer-sampler/joffrey-ny-contemporary-ballet-winter-workshop/"
     },
     "teachers": [],
@@ -98,6 +100,7 @@
     "id": "joffrey-ballet-school/jbs-x-ubc-miami-ballet",
     "kind": "intensive",
     "level": [],
+    "lifecycle": "scheduled",
     "location": {
       "country": "US"
     },
@@ -113,9 +116,9 @@
       "sessions": []
     },
     "source": {
-      "hash": "sha256:c585b075463196f24cf0165fb4f132bf1ea3e7f855de63c5090f345aaaf7b140",
+      "hash": "sha256:e7bbdc2a99f6407b14fc5213d1992242e3982d33f1d8b027268caef45a65ecb3",
       "provider": "joffrey-ballet-school",
-      "scrapedAt": "2026-06-03T20:20:24.999117Z",
+      "scrapedAt": "2026-06-05T10:05:02.964446Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/jbs-x-ubc-miami-ballet/"
     },
     "teachers": [],
@@ -139,6 +142,7 @@
     "id": "joffrey-ballet-school/jbs-x-ubc-midwest-pre-professional-ballet",
     "kind": "intensive",
     "level": [],
+    "lifecycle": "scheduled",
     "location": {
       "country": "US"
     },
@@ -156,9 +160,9 @@
       "start": "2027-07-19"
     },
     "source": {
-      "hash": "sha256:e7d816b16ed296ce72d3efc3d251f469b2e8790642e3f7d5d2e37954bbbe39f7",
+      "hash": "sha256:97bb8db2ef6d62029b12644a03c1d2e673ea03fafed97468274c3a1af7f17aa5",
       "provider": "joffrey-ballet-school",
-      "scrapedAt": "2026-06-03T20:20:24.999690Z",
+      "scrapedAt": "2026-06-05T10:05:02.965157Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/jbs-x-ubc-midwest-pre-professional-ballet/"
     },
     "teachers": [],
@@ -183,6 +187,7 @@
     "id": "joffrey-ballet-school/joffrey-akron",
     "kind": "intensive",
     "level": [],
+    "lifecycle": "scheduled",
     "location": {
       "country": "US"
     },
@@ -198,13 +203,97 @@
       "sessions": []
     },
     "source": {
-      "hash": "sha256:6c8a379d20584d6ce157bd169adee6973284643ca9b8218b1e5fe85d2b7384f0",
+      "hash": "sha256:fe2e7882e55c9ebe1c9b9e67537a0e2dffc3ec060995bd1e5b4b30c7be7e10de",
       "provider": "joffrey-ballet-school",
-      "scrapedAt": "2026-06-03T20:20:25.000663Z",
+      "scrapedAt": "2026-06-05T10:05:02.967219Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/joffrey-akron/"
     },
     "teachers": [],
     "title": "Joffrey Akron"
+  },
+  {
+    "application": {
+      "notes": "Joffrey runs a digital audition: dancers may audition in person, virtually via Zoom, or by submitting a video for consideration.",
+      "requirements": [
+        {
+          "description": "Joffrey runs a digital audition: dancers may audition in person, virtually via Zoom, or by submitting a video for consideration.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "url": "https://www.joffreyballetschool.com/auditions-2/"
+    },
+    "genres": [
+      "contemporary",
+      "classical"
+    ],
+    "id": "joffrey-ballet-school/joffrey-australia-workshop",
+    "kind": "workshop",
+    "level": [],
+    "lifecycle": "scheduled",
+    "organization": {
+      "city": "New York",
+      "country": "US",
+      "name": "Joffrey Ballet School",
+      "slug": "joffrey-ballet-school"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-04-17",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-04-15"
+    },
+    "source": {
+      "hash": "sha256:de9ae592b737a3c34bd056ee7c8247a0af52446477b832b55cc64a84c3f6f375",
+      "provider": "joffrey-ballet-school",
+      "scrapedAt": "2026-06-05T10:05:03.948747Z",
+      "url": "https://www.joffreyballetschool.com/workshops/special-feature-workshop/joffrey-australia-workshop/"
+    },
+    "teachers": [],
+    "title": "2026 Joffrey Australia Workshop"
+  },
+  {
+    "application": {
+      "notes": "Joffrey runs a digital audition: dancers may audition in person, virtually via Zoom, or by submitting a video for consideration.",
+      "requirements": [
+        {
+          "description": "Joffrey runs a digital audition: dancers may audition in person, virtually via Zoom, or by submitting a video for consideration.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "url": "https://www.joffreyballetschool.com/auditions-2/"
+    },
+    "genres": [
+      "contemporary",
+      "classical"
+    ],
+    "id": "joffrey-ballet-school/joffrey-canada-workshop",
+    "kind": "workshop",
+    "level": [],
+    "lifecycle": "scheduled",
+    "organization": {
+      "city": "New York",
+      "country": "US",
+      "name": "Joffrey Ballet School",
+      "slug": "joffrey-ballet-school"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-02-15",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-02-14"
+    },
+    "source": {
+      "hash": "sha256:f6d4d1b3db3308d99e8985d6346a1e91999b42e14d30d64f2d577c1c366535b3",
+      "provider": "joffrey-ballet-school",
+      "scrapedAt": "2026-06-05T10:05:03.948537Z",
+      "url": "https://www.joffreyballetschool.com/workshops/special-feature-workshop/joffrey-canada-workshop/"
+    },
+    "teachers": [],
+    "title": "2026 Joffrey Canada Workshop"
   },
   {
     "application": {
@@ -224,6 +313,7 @@
     "id": "joffrey-ballet-school/joffrey-colorado",
     "kind": "intensive",
     "level": [],
+    "lifecycle": "scheduled",
     "location": {
       "country": "US"
     },
@@ -239,9 +329,9 @@
       "sessions": []
     },
     "source": {
-      "hash": "sha256:c79887dfba4d0b312a2a6e789994aef365701b510a93b59a5e71af351abf7449",
+      "hash": "sha256:00b4bf56bfbd8ba31f282d03e0db76cd2cf02060a5a96ee8c338f58248a803a5",
       "provider": "joffrey-ballet-school",
-      "scrapedAt": "2026-06-03T20:20:25.003751Z",
+      "scrapedAt": "2026-06-05T10:05:02.973664Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/joffrey-colorado/"
     },
     "teachers": [],
@@ -266,6 +356,7 @@
     "id": "joffrey-ballet-school/joffrey-dallas",
     "kind": "intensive",
     "level": [],
+    "lifecycle": "scheduled",
     "location": {
       "country": "US"
     },
@@ -281,9 +372,9 @@
       "sessions": []
     },
     "source": {
-      "hash": "sha256:95013eb7982ccd7f4267879dbe7a21ed37ffc7e5356c01c81c4c66e66edbfb15",
+      "hash": "sha256:f893dabca7ece32a5b2cb033b6918bebf904bef80e1758643b7590b7dff66458",
       "provider": "joffrey-ballet-school",
-      "scrapedAt": "2026-06-03T20:20:25.002459Z",
+      "scrapedAt": "2026-06-05T10:05:02.970991Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/joffrey-dallas/"
     },
     "teachers": [],
@@ -308,6 +399,7 @@
     "id": "joffrey-ballet-school/joffrey-italy",
     "kind": "intensive",
     "level": [],
+    "lifecycle": "scheduled",
     "organization": {
       "city": "New York",
       "country": "US",
@@ -320,9 +412,9 @@
       "sessions": []
     },
     "source": {
-      "hash": "sha256:78d2f7b5622c2ef0f24fe85e55c544cca6a03e337abd9195c4d20ec1e981b64b",
+      "hash": "sha256:7df0d543d6a8b89836f69b63a2555eac319d4cca41a8adfea8370fae64203de7",
       "provider": "joffrey-ballet-school",
-      "scrapedAt": "2026-06-03T20:20:25.002333Z",
+      "scrapedAt": "2026-06-05T10:05:02.970686Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/joffrey-italy/"
     },
     "teachers": [],
@@ -346,6 +438,7 @@
     "id": "joffrey-ballet-school/joffrey-las-vegas-jazz-and-contemporary",
     "kind": "intensive",
     "level": [],
+    "lifecycle": "scheduled",
     "location": {
       "country": "US"
     },
@@ -361,9 +454,9 @@
       "sessions": []
     },
     "source": {
-      "hash": "sha256:bbbd0fd65ca2dab0d132c70d00c3936dea8570ec98d470c6b4010dae5cac9c81",
+      "hash": "sha256:b2e0f9eae2840ebe536bacca2b375e90a213f4ba65510f8a8df41beb21357b89",
       "provider": "joffrey-ballet-school",
-      "scrapedAt": "2026-06-03T20:20:25.003088Z",
+      "scrapedAt": "2026-06-05T10:05:02.972546Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/joffrey-las-vegas-jazz-and-contemporary/"
     },
     "teachers": [],
@@ -387,6 +480,7 @@
     "id": "joffrey-ballet-school/joffrey-miami-ballet-contemporary-intensive",
     "kind": "intensive",
     "level": [],
+    "lifecycle": "scheduled",
     "location": {
       "country": "US"
     },
@@ -402,9 +496,9 @@
       "sessions": []
     },
     "source": {
-      "hash": "sha256:668ccbcde9beefee9cc636921af75466010b1629ddf654d0e9c16797b4ad2e62",
+      "hash": "sha256:e7a8de1f673ed04a18697df62b6973aa58ee67ee0c6c7c46224819f90d09e3be",
       "provider": "joffrey-ballet-school",
-      "scrapedAt": "2026-06-03T20:20:25.002702Z",
+      "scrapedAt": "2026-06-05T10:05:02.972026Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/joffrey-miami-jazz-contemporary-intensive/"
     },
     "teachers": [],
@@ -428,6 +522,7 @@
     "id": "joffrey-ballet-school/joffrey-miami-ballet-intensive",
     "kind": "intensive",
     "level": [],
+    "lifecycle": "scheduled",
     "location": {
       "country": "US"
     },
@@ -443,9 +538,9 @@
       "sessions": []
     },
     "source": {
-      "hash": "sha256:aac00e1a258ff2613611a171b6369d29bf1203785b267f0430876a61d708956d",
+      "hash": "sha256:7c29717fc85573a14af734997f4d3610cfaf847602c327024b0930b9a3e32aa8",
       "provider": "joffrey-ballet-school",
-      "scrapedAt": "2026-06-03T20:20:25.004126Z",
+      "scrapedAt": "2026-06-05T10:05:02.974079Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/joffrey-miami-ballet-intensive/"
     },
     "teachers": [],
@@ -469,6 +564,7 @@
     "id": "joffrey-ballet-school/joffrey-midwest",
     "kind": "intensive",
     "level": [],
+    "lifecycle": "scheduled",
     "location": {
       "country": "US"
     },
@@ -484,9 +580,9 @@
       "sessions": []
     },
     "source": {
-      "hash": "sha256:3bdd8de7e28d41aefe99e0d7aa3762dc8dc06542797cf6707c8b3d8bc22e8c39",
+      "hash": "sha256:bf49a2fe87c56dd5391c8136dc4d90a8ba4598dece4232388f2133cf6cd5b40e",
       "provider": "joffrey-ballet-school",
-      "scrapedAt": "2026-06-03T20:20:25.001131Z",
+      "scrapedAt": "2026-06-05T10:05:02.968306Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/joffrey-midwest/"
     },
     "teachers": [],
@@ -510,6 +606,7 @@
     "id": "joffrey-ballet-school/joffrey-san-francisco",
     "kind": "intensive",
     "level": [],
+    "lifecycle": "scheduled",
     "location": {
       "country": "US"
     },
@@ -525,9 +622,9 @@
       "sessions": []
     },
     "source": {
-      "hash": "sha256:6a794770e24f206074b76e3f8c48a2d6f12a6f1f4eb79981e4a37cb641f2d854",
+      "hash": "sha256:36895d480869ee1c70b0fa1c68ebf6dbf63eee0be73f39a5368a25b90389ebc9",
       "provider": "joffrey-ballet-school",
-      "scrapedAt": "2026-06-03T20:20:25.002013Z",
+      "scrapedAt": "2026-06-05T10:05:02.970044Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/joffrey-san-francisco/"
     },
     "teachers": [],
@@ -551,6 +648,7 @@
     "id": "joffrey-ballet-school/joffrey-south-ballet-intensive",
     "kind": "intensive",
     "level": [],
+    "lifecycle": "scheduled",
     "location": {
       "country": "US"
     },
@@ -566,9 +664,9 @@
       "sessions": []
     },
     "source": {
-      "hash": "sha256:917a7b38ffc2209d2c97a1c46c5270caf579c7b427924ce13b2b4e1e298bd83f",
+      "hash": "sha256:53ad3519d46dd2451eeefe444f71834098bb1dce6b933280e8255eddaa813ea3",
       "provider": "joffrey-ballet-school",
-      "scrapedAt": "2026-06-03T20:20:25.003291Z",
+      "scrapedAt": "2026-06-05T10:05:02.973293Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/joffrey-south-ballet-intensive/"
     },
     "teachers": [],
@@ -592,6 +690,7 @@
     "id": "joffrey-ballet-school/joffrey-south-jazz-contemporary-intensive",
     "kind": "intensive",
     "level": [],
+    "lifecycle": "scheduled",
     "location": {
       "country": "US"
     },
@@ -607,9 +706,9 @@
       "sessions": []
     },
     "source": {
-      "hash": "sha256:bc13f7be1d0054fd2c99b59f5f553a6e6d2d45909248e4bb89b56eab55d13020",
+      "hash": "sha256:bb047220563c30277fae76277e189d8b3742a78662078d2e09760c09d8938c13",
       "provider": "joffrey-ballet-school",
-      "scrapedAt": "2026-06-03T20:20:25.002225Z",
+      "scrapedAt": "2026-06-05T10:05:02.970458Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/joffrey-south-jazz-contemporary-intensive/"
     },
     "teachers": [],
@@ -634,6 +733,7 @@
     "id": "joffrey-ballet-school/joffrey-west",
     "kind": "intensive",
     "level": [],
+    "lifecycle": "scheduled",
     "location": {
       "country": "US"
     },
@@ -649,9 +749,9 @@
       "sessions": []
     },
     "source": {
-      "hash": "sha256:9279e545c13f88dbe4188de888969aeefa77db9b648a83be748cff3ede07ea8e",
+      "hash": "sha256:18d1a2677c7f917ab3107d5d2b68a70ffda3a17b6b3acf7b1bf2571283277ff4",
       "provider": "joffrey-ballet-school",
-      "scrapedAt": "2026-06-03T20:20:25.004405Z",
+      "scrapedAt": "2026-06-05T10:05:02.974728Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/joffrey-west/"
     },
     "teachers": [],
@@ -675,6 +775,7 @@
     "id": "joffrey-ballet-school/joffreyred-contemporary-ballet",
     "kind": "intensive",
     "level": [],
+    "lifecycle": "scheduled",
     "location": {
       "country": "US"
     },
@@ -690,9 +791,9 @@
       "sessions": []
     },
     "source": {
-      "hash": "sha256:10f944e21bfcb02fdbe5d6be22c52053cffb414b10ccb4b764a6172a30ccc5af",
+      "hash": "sha256:890ea576ae0aab434826a6a63bb191a369de647249c012903d9e680de4a6631e",
       "provider": "joffrey-ballet-school",
-      "scrapedAt": "2026-06-03T20:20:25.004639Z",
+      "scrapedAt": "2026-06-05T10:05:02.975106Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/joffreyred-contemporary-ballet/"
     },
     "teachers": [],
@@ -716,6 +817,7 @@
     "id": "joffrey-ballet-school/new-york-city-ballet-summer-intensive",
     "kind": "intensive",
     "level": [],
+    "lifecycle": "scheduled",
     "location": {
       "city": "New York",
       "country": "US"
@@ -732,9 +834,9 @@
       "sessions": []
     },
     "source": {
-      "hash": "sha256:9fbb9efa6f29641029bace41ae029a3b4ffcf3f33f9036f47b0bfec4fa5869bd",
+      "hash": "sha256:112984de0884a14a7da933e21db5dab4305eb8bb63a48f0e8ba5677280771742",
       "provider": "joffrey-ballet-school",
-      "scrapedAt": "2026-06-03T20:22:29.936033Z",
+      "scrapedAt": "2026-06-05T10:05:02.976354Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/new-york-city-ballet-summer-intensive/"
     },
     "teachers": [],
@@ -758,6 +860,7 @@
     "id": "joffrey-ballet-school/new-york-city-pre-professional-contemporary",
     "kind": "intensive",
     "level": [],
+    "lifecycle": "scheduled",
     "location": {
       "city": "New York",
       "country": "US"
@@ -774,9 +877,9 @@
       "sessions": []
     },
     "source": {
-      "hash": "sha256:eb803aa9088e593a3d951b5dee46ea540ff755ba6c1a01a9c8bbc6aeba06784a",
+      "hash": "sha256:f56f6c91fadaf270035f4fcf30d2881526bdced335a2dd3ee53b89d025e5f87b",
       "provider": "joffrey-ballet-school",
-      "scrapedAt": "2026-06-03T20:20:25.001785Z",
+      "scrapedAt": "2026-06-05T10:05:02.969608Z",
       "url": "https://www.joffreyballetschool.com/new-york-city-pre-professional-contemporary/"
     },
     "teachers": [],
@@ -800,6 +903,7 @@
     "id": "joffrey-ballet-school/new-york-city-pre-professional-jazz-contemporary",
     "kind": "intensive",
     "level": [],
+    "lifecycle": "scheduled",
     "location": {
       "city": "New York",
       "country": "US"
@@ -816,9 +920,9 @@
       "sessions": []
     },
     "source": {
-      "hash": "sha256:40e445babfeb3f4b7cbfa95e5da5fe6ec17e3f4a49fcca5647c3f59440fb1935",
+      "hash": "sha256:d93db465b3d653f596d6bf3bbfe0ab4700faf10f17d02606f71576298aa3daa7",
       "provider": "joffrey-ballet-school",
-      "scrapedAt": "2026-06-03T20:20:25.004853Z",
+      "scrapedAt": "2026-06-05T10:05:02.975341Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/new-york-city-pre-professional-jazz-contemporary/"
     },
     "teachers": [],
@@ -842,6 +946,7 @@
     "id": "joffrey-ballet-school/nyc-ballet-winter-workshop",
     "kind": "workshop",
     "level": [],
+    "lifecycle": "scheduled",
     "organization": {
       "city": "New York",
       "country": "US",
@@ -856,9 +961,9 @@
       "start": "2027-01-02"
     },
     "source": {
-      "hash": "sha256:c5d1cfbd5dbdf1819b706f2679e74f94d0b9f5f8c915b1ba83bd9f978957e3c8",
+      "hash": "sha256:3035f8c148998382b8d110d37fdf2a4b58097b834111f388f48873de2775b993",
       "provider": "joffrey-ballet-school",
-      "scrapedAt": "2026-06-03T20:22:30.603143Z",
+      "scrapedAt": "2026-06-05T10:05:03.947809Z",
       "url": "https://www.joffreyballetschool.com/workshops/summer-sampler/joffrey-ny-ballet-winter-workshop/"
     },
     "teachers": [],
@@ -882,6 +987,7 @@
     "id": "joffrey-ballet-school/summer-intensives-joffrey-las-vegas-ballet",
     "kind": "intensive",
     "level": [],
+    "lifecycle": "scheduled",
     "location": {
       "country": "US"
     },
@@ -897,9 +1003,9 @@
       "sessions": []
     },
     "source": {
-      "hash": "sha256:428853f28a776c744acb861d0644de81d686c147e55e965011ab0b68489e6582",
+      "hash": "sha256:5eaa50c6adc83ce4635a8224ea1af5a70d3da91fd416c8fb16c8da7f58bed501",
       "provider": "joffrey-ballet-school",
-      "scrapedAt": "2026-06-03T20:20:25.001483Z",
+      "scrapedAt": "2026-06-05T10:05:02.969094Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/joffrey-las-vegas-ballet/"
     },
     "teachers": [],
@@ -923,6 +1029,7 @@
     "id": "joffrey-ballet-school/summer-intensives-joffrey-switzerland",
     "kind": "intensive",
     "level": [],
+    "lifecycle": "scheduled",
     "location": {
       "country": "CH"
     },
@@ -938,9 +1045,9 @@
       "sessions": []
     },
     "source": {
-      "hash": "sha256:2589a0f27e1f9f15da3f78bf91ac892fe9ede7fa803f173d43f17b22fde40f6d",
+      "hash": "sha256:de0dbb7ad6ea7775926abe3fe4e75002a0f949ec3a32bdd7a47832d67e05c04f",
       "provider": "joffrey-ballet-school",
-      "scrapedAt": "2026-06-03T20:20:25.000385Z",
+      "scrapedAt": "2026-06-05T10:05:02.966135Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/joffrey-switzerland/"
     },
     "teachers": [],
@@ -964,6 +1071,7 @@
     "id": "joffrey-ballet-school/summer-intensives-new-york-city-jazz-and-contemporary",
     "kind": "intensive",
     "level": [],
+    "lifecycle": "scheduled",
     "location": {
       "city": "New York",
       "country": "US"
@@ -982,9 +1090,9 @@
       "start": "2026-07-27"
     },
     "source": {
-      "hash": "sha256:bf8682a3e61435e1fb00efe989ea212deecd7c7146bdf2dbf758e9ded2b4ec3c",
+      "hash": "sha256:f6004b37cc2322b5ebf84afd35bb865d8b48c420763a3548fb073d751689605b",
       "provider": "joffrey-ballet-school",
-      "scrapedAt": "2026-06-03T20:20:25.005209Z",
+      "scrapedAt": "2026-06-05T10:05:02.975939Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/new-york-city-jazz-and-contemporary/"
     },
     "teachers": [],
@@ -1008,6 +1116,7 @@
     "id": "joffrey-ballet-school/summer-intensives-new-york-city-pre-professional-ballet",
     "kind": "intensive",
     "level": [],
+    "lifecycle": "scheduled",
     "location": {
       "city": "New York",
       "country": "US"
@@ -1024,9 +1133,9 @@
       "sessions": []
     },
     "source": {
-      "hash": "sha256:c692bd757bf08e3fefbe026c09b0c276956cde965e68cf6456bdff9e9fd04d39",
+      "hash": "sha256:f37603a35fa278fecc4498bb0e51a063efdee501fc157fbeb4b5833dc540d597",
       "provider": "joffrey-ballet-school",
-      "scrapedAt": "2026-06-03T20:20:25.005023Z",
+      "scrapedAt": "2026-06-05T10:05:02.975625Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/new-york-city-pre-professional-ballet/"
     },
     "teachers": [],
@@ -1051,6 +1160,7 @@
     "id": "joffrey-ballet-school/workshops-special-feature-workshop-2026-joffrey-japan-workshop",
     "kind": "workshop",
     "level": [],
+    "lifecycle": "scheduled",
     "organization": {
       "city": "New York",
       "country": "US",
@@ -1065,9 +1175,9 @@
       "start": "2026-08-12"
     },
     "source": {
-      "hash": "sha256:4de1fe9659e83851b123f62159532a65575f9c2d8a3f2d760b748517a1087bed",
+      "hash": "sha256:86768e88005f72b1c8786c3b3901a8cfabd364809d37f370fd11b60fdbf4357a",
       "provider": "joffrey-ballet-school",
-      "scrapedAt": "2026-06-03T20:22:30.603027Z",
+      "scrapedAt": "2026-06-05T10:05:03.947604Z",
       "url": "https://www.joffreyballetschool.com/workshops/special-feature-workshop/2026-joffrey-japan-workshop/"
     },
     "teachers": [],
