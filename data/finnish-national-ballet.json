@@ -38,7 +38,6 @@
       "neoclassical"
     ],
     "id": "finnish-national-ballet/international-summer-intensive-2026",
-    "kind": "summer-school",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -82,7 +81,7 @@
       "timezone": "Europe/Helsinki"
     },
     "source": {
-      "hash": "sha256:e2a57fc93984808c9bacba42282ba35adac167458dccbdecdd7fd3f7117c1b20",
+      "hash": "sha256:4a7b1682d79248126f6bd62ddd0f1a3e39b318e29ae0f32f3f1820de9f397621",
       "provider": "finnish-national-ballet",
       "scrapedAt": "2026-06-05T18:58:07.179921Z",
       "url": "https://oopperabaletti.fi/en/international-summer-intensive/"
@@ -150,7 +149,6 @@
       "character"
     ],
     "id": "finnish-national-ballet/ballet-in-bloom-2026",
-    "kind": "summer-school",
     "level": [
       "open"
     ],
@@ -194,7 +192,7 @@
       "timezone": "Europe/Helsinki"
     },
     "source": {
-      "hash": "sha256:72d10da40c59cd38d853a1b82c0f69fbe85d592619c09a9c10bfe58b3b8d8b0d",
+      "hash": "sha256:0942c5886fcb89981d05451dd3582b5564f00d9ba9c35c37ad086d732c46f1c1",
       "provider": "finnish-national-ballet",
       "scrapedAt": "2026-06-05T18:58:38.491970Z",
       "url": "https://oopperabaletti.fi/en/international-summer-intensive/"

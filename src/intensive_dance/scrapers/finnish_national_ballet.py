@@ -141,7 +141,6 @@ def _summer_intensive(
         source=Source(provider=ORG.slug, url=url, scrapedAt=now_utc()),
         title="International Summer Intensive of the Finnish National Ballet",
         genres=_genres(body),
-        kind="summer-school",
         ageRange=_age_range(body),
         organization=ORG,
         location=LOCATION,
@@ -176,7 +175,6 @@ def _ballet_in_bloom(
         source=Source(provider=ORG.slug, url=url, scrapedAt=now_utc()),
         title="Ballet in Bloom — Finnish National Ballet Summer Intensive",
         genres=_genres(body),
-        kind="summer-school",
         # Adult amateur track — no age band stated, open level by design.
         level=["open"],
         organization=ORG,

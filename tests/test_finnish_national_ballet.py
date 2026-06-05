@@ -96,7 +96,6 @@ def test_summer_intensive_dates_ages_genres() -> None:
         "contemporary",
         "neoclassical",
     ]
-    assert main.kind == "summer-school"
 
 
 def test_ballet_in_bloom_dates_level_genres() -> None:
