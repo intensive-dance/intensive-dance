@@ -64,6 +64,15 @@
       "status": "live"
     },
     {
+      "slug": "academie-princesse-grace",
+      "name": "Académie de Danse Princesse Grace",
+      "country": "MC",
+      "city": "Monaco",
+      "url": "https://www.balletsdemontecarlo.com/en/princess-grace-academy/training",
+      "tier": "marquee",
+      "status": "live"
+    },
+    {
       "slug": "bolshoi-ballet-academy",
       "name": "Bolshoi Ballet Academy",
       "country": "RU",
@@ -376,7 +385,7 @@
       "city": "New York",
       "url": "https://sab.org/",
       "tier": "marquee",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "alberta-ballet-school",
