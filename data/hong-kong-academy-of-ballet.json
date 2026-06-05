@@ -1,0 +1,506 @@
+[
+  {
+    "ageRange": {
+      "max": 6,
+      "min": 5
+    },
+    "application": {
+      "notes": "Starts on 9 February 2026. Enrollment based on a first-come, first-served basis.",
+      "opensAt": "2026-02-09",
+      "requirements": [],
+      "url": "https://forms.gle/fEzRBPRzk2zT8Lgz7"
+    },
+    "genres": [
+      "classical",
+      "repertoire"
+    ],
+    "id": "hong-kong-academy-of-ballet/summer-intensive-2026-class-a",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Hong Kong",
+      "country": "HK"
+    },
+    "organization": {
+      "city": "Hong Kong",
+      "country": "HK",
+      "name": "Hong Kong Academy of Ballet",
+      "slug": "hong-kong-academy-of-ballet"
+    },
+    "prices": [
+      {
+        "amount": 3850.0,
+        "currency": "HKD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Course fee — per week"
+      },
+      {
+        "amount": 6930.0,
+        "currency": "HKD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Course fee — 2 weeks"
+      },
+      {
+        "amount": 3500.0,
+        "currency": "HKD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Early bird — per week",
+        "notes": "by 9 March 2026"
+      },
+      {
+        "amount": 6300.0,
+        "currency": "HKD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Early bird — 2 weeks",
+        "notes": "by 9 March 2026"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-01",
+      "notes": "Rehearsal Studio, Grand Theatre Backstage, Hong Kong Cultural Centre (10 Salisbury Road, Tsim Sha Tsui)",
+      "season": "2026",
+      "sessions": [
+        {
+          "end": "2026-07-25",
+          "label": "Week 1",
+          "start": "2026-07-20"
+        },
+        {
+          "end": "2026-08-01",
+          "label": "Week 2",
+          "start": "2026-07-27"
+        }
+      ],
+      "start": "2026-07-20",
+      "timezone": "Asia/Hong_Kong"
+    },
+    "source": {
+      "hash": "sha256:8c4125c9b9a51bde150bf87c9ca944faf44ac75bbaef2d0a3ac90d07a816d735",
+      "provider": "hong-kong-academy-of-ballet",
+      "scrapedAt": "2026-06-05T18:57:23.072429Z",
+      "url": "https://www.hkballet.com/en/explore-and-engage/workshops-classes-programme/summerintensive2026"
+    },
+    "teachers": [],
+    "title": "Summer Intensive Programme 2026 — Class A (ages 5-6)"
+  },
+  {
+    "ageRange": {
+      "max": 9,
+      "min": 7
+    },
+    "application": {
+      "notes": "Starts on 9 February 2026. Enrollment based on a first-come, first-served basis.",
+      "opensAt": "2026-02-09",
+      "requirements": [],
+      "url": "https://forms.gle/fEzRBPRzk2zT8Lgz7"
+    },
+    "genres": [
+      "classical",
+      "repertoire"
+    ],
+    "id": "hong-kong-academy-of-ballet/summer-intensive-2026-class-b",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Hong Kong",
+      "country": "HK"
+    },
+    "organization": {
+      "city": "Hong Kong",
+      "country": "HK",
+      "name": "Hong Kong Academy of Ballet",
+      "slug": "hong-kong-academy-of-ballet"
+    },
+    "prices": [
+      {
+        "amount": 5500.0,
+        "currency": "HKD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Course fee — per week"
+      },
+      {
+        "amount": 9900.0,
+        "currency": "HKD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Course fee — 2 weeks"
+      },
+      {
+        "amount": 5000.0,
+        "currency": "HKD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Early bird — per week",
+        "notes": "by 9 March 2026"
+      },
+      {
+        "amount": 9000.0,
+        "currency": "HKD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Early bird — 2 weeks",
+        "notes": "by 9 March 2026"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-01",
+      "notes": "Rehearsal Studio, Grand Theatre Backstage, Hong Kong Cultural Centre (10 Salisbury Road, Tsim Sha Tsui)",
+      "season": "2026",
+      "sessions": [
+        {
+          "end": "2026-07-25",
+          "label": "Week 1",
+          "start": "2026-07-20"
+        },
+        {
+          "end": "2026-08-01",
+          "label": "Week 2",
+          "start": "2026-07-27"
+        }
+      ],
+      "start": "2026-07-20",
+      "timezone": "Asia/Hong_Kong"
+    },
+    "source": {
+      "hash": "sha256:0d1037045fdaddeae30d49c8c487c7fba698b01080665645c01f89156d3019d8",
+      "provider": "hong-kong-academy-of-ballet",
+      "scrapedAt": "2026-06-05T18:57:23.073294Z",
+      "url": "https://www.hkballet.com/en/explore-and-engage/workshops-classes-programme/summerintensive2026"
+    },
+    "teachers": [],
+    "title": "Summer Intensive Programme 2026 — Class B (ages 7-9)"
+  },
+  {
+    "ageRange": {
+      "max": 11,
+      "min": 10
+    },
+    "application": {
+      "notes": "Starts on 9 February 2026. Enrollment based on a first-come, first-served basis.",
+      "opensAt": "2026-02-09",
+      "requirements": [],
+      "url": "https://forms.gle/fEzRBPRzk2zT8Lgz7"
+    },
+    "genres": [
+      "classical",
+      "repertoire",
+      "contemporary"
+    ],
+    "id": "hong-kong-academy-of-ballet/summer-intensive-2026-class-c",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Hong Kong",
+      "country": "HK"
+    },
+    "organization": {
+      "city": "Hong Kong",
+      "country": "HK",
+      "name": "Hong Kong Academy of Ballet",
+      "slug": "hong-kong-academy-of-ballet"
+    },
+    "prices": [
+      {
+        "amount": 6380.0,
+        "currency": "HKD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Course fee — per week"
+      },
+      {
+        "amount": 11484.0,
+        "currency": "HKD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Course fee — 2 weeks"
+      },
+      {
+        "amount": 5800.0,
+        "currency": "HKD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Early bird — per week",
+        "notes": "by 24 March 2026"
+      },
+      {
+        "amount": 10440.0,
+        "currency": "HKD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Early bird — 2 weeks",
+        "notes": "by 24 March 2026"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-01",
+      "notes": "Rehearsal Studio, Grand Theatre Backstage, Hong Kong Cultural Centre (10 Salisbury Road, Tsim Sha Tsui)",
+      "season": "2026",
+      "sessions": [
+        {
+          "end": "2026-07-25",
+          "label": "Week 1",
+          "start": "2026-07-20"
+        },
+        {
+          "end": "2026-08-01",
+          "label": "Week 2",
+          "start": "2026-07-27"
+        }
+      ],
+      "start": "2026-07-20",
+      "timezone": "Asia/Hong_Kong"
+    },
+    "source": {
+      "hash": "sha256:05aeff0841250d2d2ec6a28f5429bd858d4acaadc6010d8fec4940aaabb2c702",
+      "provider": "hong-kong-academy-of-ballet",
+      "scrapedAt": "2026-06-05T18:57:23.073562Z",
+      "url": "https://www.hkballet.com/en/explore-and-engage/workshops-classes-programme/summerintensive2026"
+    },
+    "teachers": [],
+    "title": "Summer Intensive Programme 2026 — Class C (ages 10-11)"
+  },
+  {
+    "ageRange": {
+      "max": 13,
+      "min": 12
+    },
+    "application": {
+      "notes": "Applications will open on 9 February 2026 and applicants must submit photographs as part of their application. Successful candidates will receive confirmation by 30 May 2026 .",
+      "opensAt": "2026-02-09",
+      "requirements": [
+        {
+          "notes": "Photo submission required",
+          "poses": [],
+          "specificity": "defined-poses",
+          "type": "photos"
+        }
+      ],
+      "url": "https://forms.gle/fEzRBPRzk2zT8Lgz7"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "contemporary"
+    ],
+    "id": "hong-kong-academy-of-ballet/summer-intensive-2026-class-d",
+    "level": [
+      "pre-professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Hong Kong",
+      "country": "HK"
+    },
+    "organization": {
+      "city": "Hong Kong",
+      "country": "HK",
+      "name": "Hong Kong Academy of Ballet",
+      "slug": "hong-kong-academy-of-ballet"
+    },
+    "prices": [
+      {
+        "amount": 8400.0,
+        "currency": "HKD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Course fee — per week"
+      },
+      {
+        "amount": 15120.0,
+        "currency": "HKD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Course fee — 2 weeks"
+      },
+      {
+        "amount": 7600.0,
+        "currency": "HKD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Early bird — per week",
+        "notes": "by 24 March 2026"
+      },
+      {
+        "amount": 13680.0,
+        "currency": "HKD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Early bird — 2 weeks",
+        "notes": "by 24 March 2026"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-01",
+      "notes": "The Hong Kong Academy of Ballet Wong Chuk Hang Studio (Monday - Friday) (Room A, 6/F S22, 22 Heung Yip Road, Wong Chuk Hang) AND Rehearsal Studio, Grand Theatre Backstage, Hong Kong Cultural Centre (Saturday) (10 Salisbury Road, Tsim Sha Tsui)",
+      "season": "2026",
+      "sessions": [
+        {
+          "end": "2026-07-25",
+          "label": "Week 1",
+          "start": "2026-07-20"
+        },
+        {
+          "end": "2026-08-01",
+          "label": "Week 2",
+          "start": "2026-07-27"
+        }
+      ],
+      "start": "2026-07-20",
+      "timezone": "Asia/Hong_Kong"
+    },
+    "source": {
+      "hash": "sha256:3d8ca525a76ac78ae227767efc03f942b977596c9556ea2b7c3329f61a3ace32",
+      "provider": "hong-kong-academy-of-ballet",
+      "scrapedAt": "2026-06-05T18:57:23.073843Z",
+      "url": "https://www.hkballet.com/en/explore-and-engage/workshops-classes-programme/summerintensive2026"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Sarah Lamb",
+        "role": "Guest Teacher (Week 1) — Principal Dancer of The Royal Ballet"
+      },
+      {
+        "affiliations": [],
+        "name": "Claresta Alim",
+        "role": "Guest Teacher (Week 2) — Founder and Artistic Director of Indonesia Dance Company"
+      }
+    ],
+    "title": "Summer Intensive Programme 2026 — Class D (ages 12-13)"
+  },
+  {
+    "ageRange": {
+      "min": 14
+    },
+    "application": {
+      "notes": "Applications will open on 9 February 2026 and applicants must submit photographs as part of their application. Successful candidates will receive confirmation by 30 May 2026 .",
+      "opensAt": "2026-02-09",
+      "requirements": [
+        {
+          "notes": "Photo submission required",
+          "poses": [],
+          "specificity": "defined-poses",
+          "type": "photos"
+        }
+      ],
+      "url": "https://forms.gle/fEzRBPRzk2zT8Lgz7"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "contemporary"
+    ],
+    "id": "hong-kong-academy-of-ballet/summer-intensive-2026-class-e",
+    "level": [
+      "pre-professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Hong Kong",
+      "country": "HK"
+    },
+    "organization": {
+      "city": "Hong Kong",
+      "country": "HK",
+      "name": "Hong Kong Academy of Ballet",
+      "slug": "hong-kong-academy-of-ballet"
+    },
+    "prices": [
+      {
+        "amount": 8400.0,
+        "currency": "HKD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Course fee — per week"
+      },
+      {
+        "amount": 15120.0,
+        "currency": "HKD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Course fee — 2 weeks"
+      },
+      {
+        "amount": 7600.0,
+        "currency": "HKD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Early bird — per week",
+        "notes": "by 24 March 2026"
+      },
+      {
+        "amount": 13680.0,
+        "currency": "HKD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Early bird — 2 weeks",
+        "notes": "by 24 March 2026"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-01",
+      "notes": "The Hong Kong Academy of Ballet Wong Chuk Hang Studio (Monday - Friday) (Room A, 6/F S22, 22 Heung Yip Road, Wong Chuk Hang) AND Rehearsal Studio, Grand Theatre Backstage, Hong Kong Cultural Centre (Saturday) (10 Salisbury Road, Tsim Sha Tsui)",
+      "season": "2026",
+      "sessions": [
+        {
+          "end": "2026-07-25",
+          "label": "Week 1",
+          "start": "2026-07-20"
+        },
+        {
+          "end": "2026-08-01",
+          "label": "Week 2",
+          "start": "2026-07-27"
+        }
+      ],
+      "start": "2026-07-20",
+      "timezone": "Asia/Hong_Kong"
+    },
+    "source": {
+      "hash": "sha256:6c839b12309758ce6f3480d8b13173638b8733876a2c7fb4c8c829c251f0faa4",
+      "provider": "hong-kong-academy-of-ballet",
+      "scrapedAt": "2026-06-05T18:57:23.074365Z",
+      "url": "https://www.hkballet.com/en/explore-and-engage/workshops-classes-programme/summerintensive2026"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Sarah Lamb",
+        "role": "Guest Teacher (Week 1) — Principal Dancer of The Royal Ballet"
+      },
+      {
+        "affiliations": [],
+        "name": "Claresta Alim",
+        "role": "Guest Teacher (Week 2) — Founder and Artistic Director of Indonesia Dance Company"
+      }
+    ],
+    "title": "Summer Intensive Programme 2026 — Class E (ages 14+)"
+  }
+]

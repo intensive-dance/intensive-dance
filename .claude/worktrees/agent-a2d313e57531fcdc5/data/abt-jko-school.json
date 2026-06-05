@@ -1,0 +1,216 @@
+[
+  {
+    "ageRange": {
+      "max": 20,
+      "min": 12
+    },
+    "application": {
+      "opensAt": "2025-11-01",
+      "requirements": [
+        {
+          "description": "Audition in person on ABT's National Audition Tour or submit a video audition; online pre-registration required.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "url": "https://www.abt.org/training/dancer-training/summer-programs/audition-info/"
+    },
+    "genres": [
+      "classical",
+      "repertoire"
+    ],
+    "id": "abt-jko-school/new-york-2026",
+    "level": [
+      "advanced"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "New York",
+      "country": "US",
+      "venue": "American Ballet Theatre"
+    },
+    "organization": {
+      "city": "New York",
+      "country": "US",
+      "name": "American Ballet Theatre — JKO School",
+      "slug": "abt-jko-school"
+    },
+    "prices": [
+      {
+        "amount": 4350.0,
+        "currency": "USD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-24",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-06-22",
+      "timezone": "America/New_York"
+    },
+    "source": {
+      "hash": "sha256:6aa1739fe05db762dd9fabc712a248ca59fa7d74030d57a74db7a3785dbb3f59",
+      "provider": "abt-jko-school",
+      "scrapedAt": "2026-06-05T11:00:59.312710Z",
+      "url": "https://www.abt.org/training/dancer-training/summer-programs/summer-intensives/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "American Ballet Theatre",
+            "role": "Artistic Director",
+            "slug": "american-ballet-theatre"
+          }
+        ],
+        "name": "Susan Jaffe",
+        "role": "guest teacher"
+      }
+    ],
+    "title": "New York Summer Intensive"
+  },
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 12
+    },
+    "application": {
+      "opensAt": "2025-11-01",
+      "requirements": [
+        {
+          "description": "Audition in person on ABT's National Audition Tour or submit a video audition; online pre-registration required.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "url": "https://www.abt.org/training/dancer-training/summer-programs/audition-info/"
+    },
+    "genres": [
+      "classical",
+      "repertoire"
+    ],
+    "id": "abt-jko-school/florida-2026",
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Tampa",
+      "country": "US",
+      "venue": "University of South Florida"
+    },
+    "organization": {
+      "city": "New York",
+      "country": "US",
+      "name": "American Ballet Theatre — JKO School",
+      "slug": "abt-jko-school"
+    },
+    "prices": [
+      {
+        "amount": 2775.0,
+        "currency": "USD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition"
+      },
+      {
+        "amount": 1000.0,
+        "currency": "USD",
+        "includes": [],
+        "label": "Day Student Fee"
+      },
+      {
+        "amount": 3000.0,
+        "currency": "USD",
+        "includes": [
+          "accommodation",
+          "meals"
+        ],
+        "label": "Room and Board"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-31",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-13",
+      "timezone": "America/New_York"
+    },
+    "source": {
+      "hash": "sha256:a8b4bf6721ba62d21fdadd0b54b5a77d349be9be07eb52b56c81d1d243941ff3",
+      "provider": "abt-jko-school",
+      "scrapedAt": "2026-06-05T11:00:59.313316Z",
+      "url": "https://www.abt.org/training/dancer-training/summer-programs/summer-intensives/"
+    },
+    "teachers": [],
+    "title": "Florida Summer Intensive"
+  },
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 12
+    },
+    "application": {
+      "opensAt": "2025-11-01",
+      "requirements": [
+        {
+          "description": "Audition in person on ABT's National Audition Tour or submit a video audition; online pre-registration required.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "url": "https://www.abt.org/training/dancer-training/summer-programs/audition-info/"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "abt-jko-school/california-2026",
+    "level": [
+      "advanced"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Long Beach",
+      "country": "US",
+      "venue": "Cal State University, Long Beach"
+    },
+    "organization": {
+      "city": "New York",
+      "country": "US",
+      "name": "American Ballet Theatre — JKO School",
+      "slug": "abt-jko-school"
+    },
+    "prices": [
+      {
+        "amount": 2050.0,
+        "currency": "USD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition"
+      }
+    ],
+    "schedule": {
+      "end": "2026-06-26",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-06-15",
+      "timezone": "America/Los_Angeles"
+    },
+    "source": {
+      "hash": "sha256:cfcc46c86d406d1cae7ba980bd7fe8554ee39ea0e6f530ead915af0ee625cb66",
+      "provider": "abt-jko-school",
+      "scrapedAt": "2026-06-05T11:00:59.313604Z",
+      "url": "https://www.abt.org/training/dancer-training/summer-programs/summer-intensives/"
+    },
+    "teachers": [],
+    "title": "California Summer Intensive"
+  }
+]

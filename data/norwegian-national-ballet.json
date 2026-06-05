@@ -1,0 +1,67 @@
+[
+  {
+    "ageRange": {
+      "max": 19,
+      "min": 10
+    },
+    "application": {
+      "deadline": "2026-02-23",
+      "notes": "Applicants are evaluated by a jury and notified by 20.03.2026; places are allocated by skill level. A short video of set exercises is required, except for applicants from Wilhelmsen Akademiet, KHIO and Ballettskolen.",
+      "requirements": [
+        {
+          "description": "Short video: tendu & adagio in centre, pirouette, petit & grand allegro, and échappé/passé in centre for dancers already on pointe. Waived for applicants from Wilhelmsen Akademiet, KHIO and Ballettskolen.",
+          "specificity": "specific",
+          "type": "video"
+        }
+      ],
+      "url": "https://forms.office.com/e/tXASbXnU6t"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "repertoire"
+    ],
+    "id": "norwegian-national-ballet/summer-course-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Oslo",
+      "country": "NO",
+      "venue": "Oslo Opera House"
+    },
+    "organization": {
+      "city": "Oslo",
+      "country": "NO",
+      "name": "Norwegian National Ballet",
+      "slug": "norwegian-national-ballet"
+    },
+    "prices": [
+      {
+        "amount": 2600.0,
+        "currency": "NOK",
+        "includes": [
+          "tuition",
+          "meals"
+        ],
+        "label": "Course fee",
+        "notes": "Excludes accommodation and travel."
+      }
+    ],
+    "schedule": {
+      "end": "2026-06-27",
+      "notes": "22.06.26 – 27.06.26",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-06-22",
+      "timezone": "Europe/Oslo"
+    },
+    "source": {
+      "hash": "sha256:a23fed8e3f4bd7772f24294fef89d8068bde053149f148c9dbc95c5b25df77dc",
+      "provider": "norwegian-national-ballet",
+      "scrapedAt": "2026-06-05T18:57:50.399179Z",
+      "url": "https://www.operaen.no/en/articles/norwegian-national-ballets-summer-course-2026/"
+    },
+    "teachers": [],
+    "title": "Norwegian National Ballet's Summer Course 2026"
+  }
+]

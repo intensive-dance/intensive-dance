@@ -1,0 +1,261 @@
+[
+  {
+    "ageRange": {
+      "max": 19,
+      "min": 13
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.monreart.com/eventi/international-spring-school-italia/"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "fondazione-monreart/international-spring-school-italia-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Verona",
+      "country": "IT"
+    },
+    "organization": {
+      "city": "Volta Mantovana",
+      "country": "IT",
+      "name": "Fondazione Monreart",
+      "slug": "fondazione-monreart"
+    },
+    "prices": [
+      {
+        "amount": 400.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Total cost"
+      }
+    ],
+    "schedule": {
+      "end": "2026-04-04",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-04-02",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:091a0f4edbffa2b99385a56ef7e62f130d73c1ef0c60905ef21b0005567c0703",
+      "provider": "fondazione-monreart",
+      "scrapedAt": "2026-06-05T11:49:49.972566Z",
+      "url": "https://www.monreart.com/eventi/international-spring-school-italia/"
+    },
+    "teachers": [],
+    "title": "International Spring School 2026"
+  },
+  {
+    "ageRange": {
+      "max": 19,
+      "min": 9
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.monreart.com/eventi/international-summer-school-budapest/"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "fondazione-monreart/international-summer-school-budapest-2027",
+    "level": [],
+    "lifecycle": "postponed",
+    "lifecycleNote": "Postponed to 2027.",
+    "location": {
+      "city": "Budapest",
+      "country": "HU"
+    },
+    "organization": {
+      "city": "Volta Mantovana",
+      "country": "IT",
+      "name": "Fondazione Monreart",
+      "slug": "fondazione-monreart"
+    },
+    "prices": [
+      {
+        "amount": 750.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Total cost"
+      }
+    ],
+    "schedule": {
+      "end": "2027-07-11",
+      "season": "2027",
+      "sessions": [],
+      "start": "2027-07-05",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:471773035ae3aff0a877f9dbdec5673572a43f12195241e44b6caecf7a6267a3",
+      "provider": "fondazione-monreart",
+      "scrapedAt": "2026-06-05T11:49:48.397101Z",
+      "url": "https://www.monreart.com/eventi/international-summer-school-budapest/"
+    },
+    "teachers": [],
+    "title": "International Summer School Budapest 2027"
+  },
+  {
+    "ageRange": {
+      "max": 19,
+      "min": 9
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.monreart.com/eventi/international-summer-school-cyprus/"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "fondazione-monreart/international-summer-school-cyprus-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Limassol",
+      "country": "CY"
+    },
+    "organization": {
+      "city": "Volta Mantovana",
+      "country": "IT",
+      "name": "Fondazione Monreart",
+      "slug": "fondazione-monreart"
+    },
+    "prices": [
+      {
+        "amount": 450.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Total cost"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-25",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-20",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:09ad2c9117ef8ffe92bffc32b8b775d13334edb92808b88bc0ac5ce407042fbd",
+      "provider": "fondazione-monreart",
+      "scrapedAt": "2026-06-05T11:51:52.641327Z",
+      "url": "https://www.monreart.com/eventi/international-summer-school-cyprus/"
+    },
+    "teachers": [],
+    "title": "International Summer School Cyprus 2026"
+  },
+  {
+    "ageRange": {
+      "max": 21,
+      "min": 9
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.monreart.com/eventi/international-summer-school-volta-mantovana/"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "fondazione-monreart/international-summer-school-volta-mantovana-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Volta Mantovana",
+      "country": "IT"
+    },
+    "organization": {
+      "city": "Volta Mantovana",
+      "country": "IT",
+      "name": "Fondazione Monreart",
+      "slug": "fondazione-monreart"
+    },
+    "prices": [
+      {
+        "amount": 750.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Total cost"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-29",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-23",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:e099f7f02957bdb54f3be1d3c22be46d380afef9e2c12ce6a072fe47dacec7bf",
+      "provider": "fondazione-monreart",
+      "scrapedAt": "2026-06-05T11:49:53.577905Z",
+      "url": "https://www.monreart.com/eventi/international-summer-school-volta-mantovana/"
+    },
+    "teachers": [],
+    "title": "International Summer School Volta Mantovana 2026"
+  },
+  {
+    "ageRange": {
+      "max": 14,
+      "min": 11
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.monreart.com/eventi/international-winter-school-verona/"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "fondazione-monreart/international-winter-school-verona-2025",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Verona",
+      "country": "IT"
+    },
+    "organization": {
+      "city": "Volta Mantovana",
+      "country": "IT",
+      "name": "Fondazione Monreart",
+      "slug": "fondazione-monreart"
+    },
+    "prices": [
+      {
+        "amount": 500.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Total cost"
+      }
+    ],
+    "schedule": {
+      "end": "2025-12-31",
+      "season": "2025",
+      "sessions": [],
+      "start": "2025-12-27",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:157ca9703ab28259fbaa1bea6629003a5fbc44be5ec4c0ac2ba681ac766386e9",
+      "provider": "fondazione-monreart",
+      "scrapedAt": "2026-06-05T11:49:51.693953Z",
+      "url": "https://www.monreart.com/eventi/international-winter-school-verona/"
+    },
+    "teachers": [],
+    "title": "International Winter School Verona 2025"
+  }
+]
