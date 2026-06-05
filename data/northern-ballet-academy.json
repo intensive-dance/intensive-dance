@@ -1,0 +1,184 @@
+[
+  {
+    "ageRange": {
+      "max": 19,
+      "min": 16
+    },
+    "application": {
+      "deadline": "2026-05-29",
+      "notes": "Closing date for applications is Friday 29 May subject to availability.",
+      "requirements": [
+        {
+          "notes": "Photos uploaded with the application form; a studio is not required (a small space at home, camera or smartphone, is fine).",
+          "poses": [
+            "Facing the camera – Demi plié in first position, arms in bras bas",
+            "Facing the camera – Tendu á la seconde, arms in second position (either leg)",
+            "Facing the camera - Á la seconde en l’air, straight supporting leg, arms in second position",
+            "Profile to the camera – 1st Arabesque on a straight supporting leg"
+          ],
+          "specificity": "defined-poses",
+          "type": "photos"
+        },
+        {
+          "description": "On occasion applicants may be asked to submit a short video as part of their application.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "url": "https://northernballet.wufoo.com/forms/w1bbr10y0axntgm/"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "repertoire"
+    ],
+    "id": "northern-ballet-academy/summer-intensive-seniors-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Leeds",
+      "country": "GB",
+      "venue": "Northern Ballet"
+    },
+    "organization": {
+      "city": "Leeds",
+      "country": "GB",
+      "name": "Academy of Northern Ballet",
+      "slug": "northern-ballet-academy"
+    },
+    "prices": [
+      {
+        "amount": 410.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "One week"
+      },
+      {
+        "amount": 745.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Two weeks"
+      },
+      {
+        "amount": 48.0,
+        "currency": "GBP",
+        "includes": [
+          "accommodation"
+        ],
+        "label": "Accommodation (per person per night)",
+        "notes": "Optional — the course is non-residential."
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-07",
+      "season": "2026",
+      "sessions": [
+        {
+          "end": "2026-07-31",
+          "label": "Week 1",
+          "start": "2026-07-27"
+        },
+        {
+          "end": "2026-08-07",
+          "label": "Week 2",
+          "start": "2026-08-03"
+        }
+      ],
+      "start": "2026-07-27",
+      "timezone": "Europe/London"
+    },
+    "source": {
+      "hash": "sha256:303466fd322df818f870d2eeea70c5c4d6b016cb35a9f61cbfc0afdf8f7ebc64",
+      "provider": "northern-ballet-academy",
+      "scrapedAt": "2026-06-05T21:10:58.968792Z",
+      "url": "https://northernballet.com/academy/workshops-events/international-summer-intensives/seniors"
+    },
+    "teachers": [],
+    "title": "International Summer Intensive: Seniors 2026"
+  },
+  {
+    "ageRange": {
+      "max": 16,
+      "min": 12
+    },
+    "application": {
+      "deadline": "2026-06-11",
+      "notes": "Closing date for applications is Thursday 11 June.",
+      "requirements": [
+        {
+          "notes": "Photos uploaded with the application form; a studio is not required (a small space at home, camera or smartphone, is fine).",
+          "poses": [
+            "Facing the camera – Demi plié in first position, arms in bras bas",
+            "Facing the camera – Tendu á la seconde, arms in second position (either leg)",
+            "Profile to the camera – 1st Arabesque on a straight supporting leg"
+          ],
+          "specificity": "defined-poses",
+          "type": "photos"
+        },
+        {
+          "description": "On occasion applicants may be asked to submit a short video as part of their application.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "url": "https://northernballet.wufoo.com/forms/w1pmtqdi0nkfhj8/"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "repertoire",
+      "pointe"
+    ],
+    "id": "northern-ballet-academy/summer-intensive-intermediates-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Leeds",
+      "country": "GB",
+      "venue": "Northern Ballet"
+    },
+    "organization": {
+      "city": "Leeds",
+      "country": "GB",
+      "name": "Academy of Northern Ballet",
+      "slug": "northern-ballet-academy"
+    },
+    "prices": [
+      {
+        "amount": 375.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ]
+      },
+      {
+        "amount": 48.0,
+        "currency": "GBP",
+        "includes": [
+          "accommodation"
+        ],
+        "label": "Accommodation (per person per night)",
+        "notes": "Optional — the course is non-residential."
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-31",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-27",
+      "timezone": "Europe/London"
+    },
+    "source": {
+      "hash": "sha256:4374c047e289df5ea373d6fc099cbb885fe7c50896367c7e186411eb1cfd3f83",
+      "provider": "northern-ballet-academy",
+      "scrapedAt": "2026-06-05T21:10:59.008006Z",
+      "url": "https://northernballet.com/academy/workshops-events/international-summer-intensives/intermediates"
+    },
+    "teachers": [],
+    "title": "International Summer Intensive: Intermediates 2026"
+  }
+]
