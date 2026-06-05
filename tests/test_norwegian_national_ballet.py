@@ -70,7 +70,6 @@ def test_build_offering_happy_path():
     )
     assert offering is not None
     assert offering.id == "norwegian-national-ballet/summer-course-2026"
-    assert offering.kind == "summer-school"
     assert offering.schedule.season == "2026"
     assert offering.location is not None
     assert offering.location.venue == "Oslo Opera House"

@@ -22,7 +22,6 @@
       "repertoire"
     ],
     "id": "norwegian-national-ballet/summer-course-2026",
-    "kind": "summer-school",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -57,7 +56,7 @@
       "timezone": "Europe/Oslo"
     },
     "source": {
-      "hash": "sha256:4d3dbcb9f1952592d99d00213edc4ff52200d37456009367154000684b00e137",
+      "hash": "sha256:a23fed8e3f4bd7772f24294fef89d8068bde053149f148c9dbc95c5b25df77dc",
       "provider": "norwegian-national-ballet",
       "scrapedAt": "2026-06-05T18:57:50.399179Z",
       "url": "https://www.operaen.no/en/articles/norwegian-national-ballets-summer-course-2026/"
