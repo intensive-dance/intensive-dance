@@ -15,7 +15,6 @@
       "repertoire"
     ],
     "id": "hong-kong-academy-of-ballet/summer-intensive-2026-class-a",
-    "kind": "summer-school",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -84,7 +83,7 @@
       "timezone": "Asia/Hong_Kong"
     },
     "source": {
-      "hash": "sha256:52be811d067dc48586b6ea4141deacf7894d103149e6d558ef4a1ddae539861a",
+      "hash": "sha256:8c4125c9b9a51bde150bf87c9ca944faf44ac75bbaef2d0a3ac90d07a816d735",
       "provider": "hong-kong-academy-of-ballet",
       "scrapedAt": "2026-06-05T18:57:23.072429Z",
       "url": "https://www.hkballet.com/en/explore-and-engage/workshops-classes-programme/summerintensive2026"
@@ -108,7 +107,6 @@
       "repertoire"
     ],
     "id": "hong-kong-academy-of-ballet/summer-intensive-2026-class-b",
-    "kind": "summer-school",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -177,7 +175,7 @@
       "timezone": "Asia/Hong_Kong"
     },
     "source": {
-      "hash": "sha256:05c9a8ae5b2dabe8984fb04b3ed2d9901ee0a63f2fbabebefb52c3132f5f6e29",
+      "hash": "sha256:0d1037045fdaddeae30d49c8c487c7fba698b01080665645c01f89156d3019d8",
       "provider": "hong-kong-academy-of-ballet",
       "scrapedAt": "2026-06-05T18:57:23.073294Z",
       "url": "https://www.hkballet.com/en/explore-and-engage/workshops-classes-programme/summerintensive2026"
@@ -202,7 +200,6 @@
       "contemporary"
     ],
     "id": "hong-kong-academy-of-ballet/summer-intensive-2026-class-c",
-    "kind": "summer-school",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -271,7 +268,7 @@
       "timezone": "Asia/Hong_Kong"
     },
     "source": {
-      "hash": "sha256:90cbe7f93f936b774aff07b9e8304d995ec306c2c870c964bdbfd2ec7977987b",
+      "hash": "sha256:05aeff0841250d2d2ec6a28f5429bd858d4acaadc6010d8fec4940aaabb2c702",
       "provider": "hong-kong-academy-of-ballet",
       "scrapedAt": "2026-06-05T18:57:23.073562Z",
       "url": "https://www.hkballet.com/en/explore-and-engage/workshops-classes-programme/summerintensive2026"
@@ -304,7 +301,6 @@
       "contemporary"
     ],
     "id": "hong-kong-academy-of-ballet/summer-intensive-2026-class-d",
-    "kind": "summer-school",
     "level": [
       "pre-professional"
     ],
@@ -375,7 +371,7 @@
       "timezone": "Asia/Hong_Kong"
     },
     "source": {
-      "hash": "sha256:091d5fdcce1a00c8228ce42c4f05a2c324921a40d9a60b53b85956535c1acbca",
+      "hash": "sha256:3d8ca525a76ac78ae227767efc03f942b977596c9556ea2b7c3329f61a3ace32",
       "provider": "hong-kong-academy-of-ballet",
       "scrapedAt": "2026-06-05T18:57:23.073843Z",
       "url": "https://www.hkballet.com/en/explore-and-engage/workshops-classes-programme/summerintensive2026"
@@ -418,7 +414,6 @@
       "contemporary"
     ],
     "id": "hong-kong-academy-of-ballet/summer-intensive-2026-class-e",
-    "kind": "summer-school",
     "level": [
       "pre-professional"
     ],
@@ -489,7 +484,7 @@
       "timezone": "Asia/Hong_Kong"
     },
     "source": {
-      "hash": "sha256:d66bd01eff54d058ad0d0ca438241e9c011ad0446d781b0b8856c61be74c2665",
+      "hash": "sha256:6c839b12309758ce6f3480d8b13173638b8733876a2c7fb4c8c829c251f0faa4",
       "provider": "hong-kong-academy-of-ballet",
       "scrapedAt": "2026-06-05T18:57:23.074365Z",
       "url": "https://www.hkballet.com/en/explore-and-engage/workshops-classes-programme/summerintensive2026"

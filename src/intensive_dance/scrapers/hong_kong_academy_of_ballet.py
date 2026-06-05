@@ -115,7 +115,6 @@ def _build_offerings(html: str, url: str, today: date) -> list[Offering]:
                 source=Source(provider="hong-kong-academy-of-ballet", url=url, scrapedAt=now_utc()),
                 title=f"Summer Intensive Programme {season} — Class {klass.letter} (ages {klass.ages_label})",
                 genres=klass.genres,
-                kind="summer-school",
                 level=klass.level,
                 ageRange=klass.age_range,
                 organization=ORG,

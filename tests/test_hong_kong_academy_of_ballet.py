@@ -72,7 +72,6 @@ def test_one_offering_per_class():
         "hong-kong-academy-of-ballet/summer-intensive-2026-class-a",
         "hong-kong-academy-of-ballet/summer-intensive-2026-class-d",
     ]
-    assert all(o.kind == "summer-school" for o in offs)
     assert all(len(o.schedule.sessions) == 2 for o in offs)
 
 
