@@ -125,11 +125,12 @@ def _build_offering(client: httpx.Client, url: str, today: date) -> Offering | N
     body = _body_text(tree)
 
     start, end = _dates(body)
-    if start is None and end is None:
+    anchor = start or end
+    if anchor is None:
         return None  # no parseable dates — can't place it in time (likely a stale one-off)
     if end is not None and end < today:
         return None  # a past cycle still in the sitemap
-    season = str((start or end).year)
+    season = str(anchor.year)
 
     pre_selection = "pre-selection" in body.lower() or "preselection" in body.lower()
     return Offering(

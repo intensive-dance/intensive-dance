@@ -56,6 +56,7 @@ from intensive_dance.models import (
     Offering,
     Organization,
     Price,
+    Requirement,
     Schedule,
     Source,
     Teacher,
@@ -172,7 +173,9 @@ def _build_offering(
         start, end = fallback_start, fallback_end
 
     is_observation = track == "observation" or "cv" in blocks.get("ACCESS", "").lower()
-    requirements = [CVReq()] if is_observation else [VideoReq(specificity="specific", description=_AUDITION_NOTE)]
+    requirements: list[Requirement] = (
+        [CVReq()] if is_observation else [VideoReq(specificity="specific", description=_AUDITION_NOTE)]
+    )
 
     title = f"{type_label} {city} — {track_name} {season}".strip() if city else f"{type_label} — {track_name} {season}"
 
@@ -355,11 +358,12 @@ def _dates(text: str, year: int | None) -> tuple[date | None, date | None]:
     # 4 January): the early-month tail belongs to the next year.
     months = [m for m, _, _ in tokens]
     wraps = max(months) >= 9 and min(months) <= 6
-    points = [
-        date(yr if yr is not None else base + (1 if wraps and month <= 6 else 0), month, day)
-        for month, day, yr in tokens
-        if yr is not None or base is not None
-    ]
+    points: list[date] = []
+    for month, day, yr in tokens:
+        if yr is not None:
+            points.append(date(yr, month, day))
+        elif base is not None:
+            points.append(date(base + (1 if wraps and month <= 6 else 0), month, day))
     return (min(points), max(points)) if points else (None, None)
 
 

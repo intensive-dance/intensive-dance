@@ -43,6 +43,7 @@ import httpx
 from intensive_dance import parse, wp
 from intensive_dance.models import (
     Application,
+    Gender,
     Genre,
     Kind,
     Level,
@@ -521,7 +522,7 @@ def _span(text: str, year: int | None) -> tuple[date | None, date | None]:
     return (min(points), max(points)) if points else (None, None)
 
 
-def _session_gender(text: str) -> str:
+def _session_gender(text: str) -> Gender:
     female = re.search(r"\bfemale\b", text, re.IGNORECASE)
     male = re.search(r"\bmale\b", text, re.IGNORECASE)
     if female and male:
