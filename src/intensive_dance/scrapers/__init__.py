@@ -14,6 +14,7 @@ from intensive_dance.models import Offering
 
 from . import (
     abt_jko_school,
+    academie_princesse_grace,
     brussels_international_ballet,
     dutch_national_ballet_academy,
     ecole_danse_opera_paris,
@@ -40,4 +41,5 @@ SCRAPERS: dict[str, Scraper] = {
     "ecole-danse-opera-paris": ecole_danse_opera_paris.scrape,
     "english-national-ballet-school": english_national_ballet_school.scrape,
     "brussels-international-ballet": brussels_international_ballet.scrape,
+    "academie-princesse-grace": academie_princesse_grace.scrape,
 }
