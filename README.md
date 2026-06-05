@@ -67,7 +67,8 @@ Store is committed JSON (`data/`) for now — every scrape is a reviewable git d
 
 ## Status
 
-Two providers live:
+Three providers live:
 
 - **The Royal Ballet School** ([#1](https://github.com/boredland/intensive-dance/issues/1)) — WordPress REST + WPBakery; exercises the `photos` requirement.
 - **Joffrey Ballet School** — WordPress custom post types (`summer-intensives`, `workshops`) + taxonomy resolution; exercises the `video` requirement. Fees/teachers aren't published in its API, so those stay empty (documented in the scraper).
+- **Russian Masters Ballet** — the first **pure-HTML** scrape (a Bitrix site, no API/feed/JSON-LD). Discovers its summer (Alicante, Burgas, St. Petersburg) and winter (Madrid, Perth, Shanghai) locations from the two course indexes and emits one offering per program track. First to exercise **teachers with affiliations** (a named per-track roster linked to Vaganova / Bolshoi / Mariinsky / …) and the `video`/`specific` + `cv` requirement branches.
