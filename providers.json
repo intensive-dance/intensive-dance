@@ -16,7 +16,7 @@
       "city": "Stuttgart",
       "url": "https://www.john-cranko-schule.de/",
       "tier": "marquee",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "abt-jko-school",
@@ -78,6 +78,15 @@
       "country": "BE",
       "city": "Liège",
       "url": "https://www.mosaballetschool.eu/",
+      "tier": "secondary",
+      "status": "live"
+    },
+    {
+      "slug": "frankfurt-ballet-masterclasses",
+      "name": "Frankfurt Ballet Masterclasses",
+      "country": "DE",
+      "city": "Frankfurt am Main",
+      "url": "https://masterclass.balletcompetition.net/",
       "tier": "secondary",
       "status": "live"
     }

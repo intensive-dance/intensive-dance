@@ -13,6 +13,8 @@ import httpx
 from intensive_dance.models import Offering
 
 from . import (
+    frankfurt_ballet_masterclasses,
+    john_cranko_school,
     joffrey_ballet_school,
     mosa_ballet_school,
     royal_ballet_school,
@@ -26,4 +28,6 @@ SCRAPERS: dict[str, Scraper] = {
     "joffrey-ballet-school": joffrey_ballet_school.scrape,
     "russian-masters-ballet": russian_masters_ballet.scrape,
     "mosa-ballet-school": mosa_ballet_school.scrape,
+    "john-cranko-schule": john_cranko_school.scrape,
+    "frankfurt-ballet-masterclasses": frankfurt_ballet_masterclasses.scrape,
 }
