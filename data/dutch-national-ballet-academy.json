@@ -17,7 +17,6 @@
       "repertoire"
     ],
     "id": "dutch-national-ballet-academy/summer-school-junior-2026",
-    "kind": "summer-school",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -46,7 +45,7 @@
       "timezone": "Europe/Amsterdam"
     },
     "source": {
-      "hash": "sha256:f2f47c7e78e53fbe291a473b9fc523b8e714c994249ca900d24a4afcdb34bd05",
+      "hash": "sha256:fbcd53aee22038d51f2f59df4628f7d115f5f2b62b1450338a3fbd4794da7c22",
       "provider": "dutch-national-ballet-academy",
       "scrapedAt": "2026-06-05T10:05:21.549224Z",
       "url": "https://www.atd.ahk.nl/en/dance-programmes/dutch-national-ballet-academy/summer-school/"
@@ -72,7 +71,6 @@
       "repertoire"
     ],
     "id": "dutch-national-ballet-academy/summer-school-senior-2026",
-    "kind": "summer-school",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -101,7 +99,7 @@
       "timezone": "Europe/Amsterdam"
     },
     "source": {
-      "hash": "sha256:d99d4ef18e19332faad38854416b5112a653249ca52aa42a3e0024299f705487",
+      "hash": "sha256:ff852231182d09be8482ef145713ef9348f9b12e8435e6a8af57670fd95b5e24",
       "provider": "dutch-national-ballet-academy",
       "scrapedAt": "2026-06-05T10:05:21.549079Z",
       "url": "https://www.atd.ahk.nl/en/dance-programmes/dutch-national-ballet-academy/summer-school/"

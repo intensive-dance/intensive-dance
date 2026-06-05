@@ -90,7 +90,6 @@ def _build_offering(html: str) -> Offering | None:
         source=Source(provider="brussels-international-ballet", url=PAGE, scrapedAt=now_utc()),
         title=f"Summer Intensive {season}",
         genres=_genres(text),
-        kind="intensive",
         ageRange=_age_range(text),
         organization=ORG,
         location=Location(city="Brussels", country="BE"),

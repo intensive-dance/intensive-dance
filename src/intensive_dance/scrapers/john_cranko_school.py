@@ -73,7 +73,6 @@ def _build_offering(html: str, today: date) -> Offering | None:
         source=Source(provider="john-cranko-schule", url=SUMMER_SCHOOL, scrapedAt=now_utc()),
         title=f"John Cranko School Summer School {season}".strip(),
         genres=_genres(blob),
-        kind="summer-school",
         ageRange=_age_range(blob),
         organization=ORG,
         location=Location(city="Stuttgart", country="DE"),

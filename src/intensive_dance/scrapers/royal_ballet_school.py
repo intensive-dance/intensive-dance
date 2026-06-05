@@ -45,7 +45,6 @@ from intensive_dance.models import (
     Application,
     Gender,
     Genre,
-    Kind,
     Level,
     Location,
     Offering,
@@ -148,7 +147,6 @@ def _build_offering(record: dict, fees: wp.Content | None, today: date) -> Offer
         source=Source(provider="royal-ballet-school", url=record["link"], scrapedAt=now_utc()),
         title=title,
         genres=_genres(blob),
-        kind=_kind(slug, base_title),
         lifecycle="cancelled" if cancelled else "scheduled",
         lifecycleNote=base_title if cancelled else None,
         level=_levels(blob),
@@ -296,10 +294,6 @@ def _age_range(text: str) -> dict | None:
     if not bounds:
         return None
     return {"min": min(bounds), "max": max(bounds)}
-
-
-def _kind(slug: str, title: str) -> Kind:
-    return "masterclass" if "masterclass" in f"{slug} {title}".lower() else "intensive"
 
 
 # City + ISO country + IANA timezone, keyed by a place name in the venue address.

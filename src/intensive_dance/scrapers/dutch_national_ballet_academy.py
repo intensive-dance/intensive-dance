@@ -76,7 +76,6 @@ def scrape(client: httpx.Client) -> list[Offering]:
                 ),
                 title=f"Amsterdam International Summer School — {label} {season}",
                 genres=genres,
-                kind="summer-school",
                 ageRange=ages,
                 organization=ORG,
                 location=Location(city="Amsterdam", country="NL"),

@@ -213,7 +213,6 @@ def _build_offering(course: tuple[str, str, str], text: str) -> Offering:
         ),
         title=f"Summer Intensive {season} — Course {numeral}: {title}",
         genres=_genres(chunk),
-        kind="intensive",
         level=_levels(chunk),
         ageRange=_age_range(chunk),
         organization=ORG,
