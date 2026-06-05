@@ -1,42 +1,39 @@
-"""MOSA Ballet School (Liège, BE) — fourth scraper, first European round-1 provider.
+"""MOSA Ballet School (Liège, BE) — sitemap discovery + Odoo event pages.
 
-API FIRST: MOSA runs on **Squarespace**. There is no JSON API we may use (the
-`?format=json` view is disallowed by robots on `/event` paths), but the
-**sitemap** is a clean machine-readable index of every event, and each event
-lives at a server-rendered `/event/<slug>-<id>` page — so discovery is
-sitemap-driven and we parse the (static) event pages, no JS needed.
+API FIRST: MOSA replatformed from Squarespace onto **Odoo** (website-events). The
+**sitemap** is unchanged — a clean machine index whose `/event/<slug>-<id>` URLs
+keep the same slugs — so discovery stays sitemap-driven. The event pages are now
+Odoo, which is a *gift* for parsing: dates come from ISO `<time datetime=…
+data-oe-expression="event.date_begin|date_end">` attributes and prices from
+schema.org `Offer` microdata (`itemprop="name|price|priceCurrency"`), both
+language-independent. We never parse the localized UI chrome.
 
-STATUS 2026-06-05 — **disabled, needs a rewrite.** MOSA replatformed off
-Squarespace onto **Odoo** (website-events): event pages now carry Odoo markup
-(`o_wevent_*`, `<time data-oe-expression="event.date_begin">`) instead of the old
-"Starts … Ends …" text, and the site now 403s non-browser fetches. The
-sitemap-driven discovery and page parsing below no longer match the live site, so
-`scrape` raises `NotImplementedError` (run.py skips it and keeps the committed
-data) until the scraper is rewritten for the Odoo structure. The helpers/tests
-below describe the *old* Squarespace shape — keep them as a reference point.
+FETCH: MOSA 403s every non-browser client (its own datacenter-IP block plus a
+client fingerprint check) on `/sitemap.xml` and `/event/*`. The fetch-proxy gets
+through by auto-escalating the 403 to a stealth Chromium render, so we use the
+normal shared `client` (the proxy renders each page). We pin `Accept-Language: en`
+(`_LANG`) on every request: Odoo serves a German `og:title` for the handful of
+events that have a German translation, and the proxy's default render locale is
+`de-DE` — without this the title (a field we *do* read) leaks German into an
+English register. The rest of what we read is ISO attributes and microdata.
 
 DISCOVERY: the sitemap lists ~120 events of every kind — intensives, auditions,
 galas, recitals, performances, info sessions, symposiums, CPD workshops. We keep
-only the actual short-term *training* offerings (intensive / immersion /
-signature course / masterclass / "exploring ballet" taster) and drop the rest,
-and drop the rest. Past editions are kept (the sitemap lists years of them), so a
-course's history stays findable — greyed in the UI from its dates. One `Offering`
-per kept event, keyed by its event slug.
+only the short-term *training* offerings (intensive / immersion / signature
+course / masterclass / "exploring ballet" taster) and drop the rest. Past editions
+are kept (the sitemap lists years of them) so a course's history stays findable.
+One `Offering` per kept event, keyed by its event slug.
 
-WHAT THE PAGES GIVE US (verified live 2026-06):
-  - DATES: each event renders "Starts <d Month yyyy> … Ends <d Month yyyy>".
-  - AGES: in the title / excerpt ("(12-29)", "age 8-12", "15-20").
-  - PRICES in EUR, parsed from the body (course fee, plus accommodation/audition
-    fees kept with their labels).
-  - REQUIREMENTS: MOSA pre-selects dancers by audition ("with pre-selection") —
-    online or in person — so pre-selected courses get a `video` requirement;
-    open-enrolment tasters get none.
+WHAT THIS SCRAPER EXERCISES (verified live 2026-06-05): a provider behind a render
+proxy; ISO-attribute dates; multi-`Price` Offerings from Offer microdata with a
+`meals` include ("Lunch Included"); `age_range` from the title; a `video`
+requirement for pre-selected courses vs `NoneReq` for open-enrolment tasters;
+`application.status` open/closed read from the Odoo registration widget.
 """
 
 from __future__ import annotations
 
 import re
-import xml.etree.ElementTree as ET
 from datetime import date
 
 import httpx
@@ -51,6 +48,7 @@ from intensive_dance.models import (
     Offering,
     Organization,
     Price,
+    PriceInclude,
     Schedule,
     Source,
     VideoReq,
@@ -59,9 +57,13 @@ from intensive_dance.models import (
 
 BASE = "https://www.mosaballetschool.eu"
 SITEMAP = f"{BASE}/sitemap.xml"
-_SM_NS = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
+_EVENT_URL = re.compile(rf"{re.escape(BASE)}/event/[A-Za-z0-9\-]+")
 
 ORG = Organization(name="MOSA Ballet School", slug="mosa-ballet-school", country="BE", city="Liège")
+
+# Pin the proxy's render locale to English (Odoo localizes og:title where a German
+# translation exists, and the proxy renders de-DE by default).
+_LANG = {"Accept-Language": "en"}
 
 # An event is in scope when its slug names a training format …
 _KEEP = (
@@ -113,25 +115,34 @@ _AUDITION_NOTE = (
 )
 
 
-def scrape(client: httpx.Client) -> list[Offering]:  # noqa: ARG001 — disabled until rewrite
-    raise NotImplementedError(
-        "MOSA replatformed Squarespace -> Odoo; scraper needs a rewrite for the new "
-        "event pages (run.py skips this provider and keeps the committed data)"
-    )
+def scrape(client: httpx.Client) -> list[Offering]:
+    today = date.today()
+    offerings = [
+        offering
+        for url in _event_urls(client)
+        if (offering := _build_offering(client, url, today)) is not None
+    ]
+    offerings.sort(key=lambda o: o.id)
+    return offerings
 
 
-def _event_urls(client: httpx.Client, today: date) -> list[str]:
-    """Live, in-scope `/event/` URLs from the sitemap (API-first discovery)."""
-    resp = client.get(SITEMAP)
+def _event_urls(client: httpx.Client) -> list[str]:
+    """In-scope `/event/` URLs from the sitemap (API-first discovery).
+
+    The proxy 403s on `/sitemap.xml` and escalates to a Chromium render, which
+    wraps the XML in the browser's XML-viewer HTML — so we can't ET-parse it. The
+    `/event/` URLs survive verbatim in both forms (raw XML on a direct fetch, the
+    rendered wrapper through the proxy), so we regex them out of either.
+    """
+    resp = client.get(SITEMAP, headers=_LANG)
     resp.raise_for_status()
-    root = ET.fromstring(resp.content)
-    urls = []
-    for node in root.findall(f"{_SM_NS}url"):
-        loc = node.findtext(f"{_SM_NS}loc") or ""
-        slug = loc.rsplit("/event/", 1)[-1]
-        if "/event/" in loc and _in_scope(slug):
-            urls.append(loc)
-    return sorted(set(urls))
+    return _parse_event_urls(resp.text)
+
+
+def _parse_event_urls(sitemap: str) -> list[str]:
+    """In-scope `/event/` URLs found in the sitemap — raw XML or rendered wrapper."""
+    urls = {u for u in _EVENT_URL.findall(sitemap) if _in_scope(u.rsplit("/event/", 1)[-1])}
+    return sorted(urls)
 
 
 def _in_scope(slug: str) -> bool:
@@ -142,7 +153,7 @@ def _in_scope(slug: str) -> bool:
 
 
 def _build_offering(client: httpx.Client, url: str, today: date) -> Offering | None:
-    resp = client.get(url)
+    resp = client.get(url, headers=_LANG)
     if resp.status_code == 404:
         return None
     resp.raise_for_status()
@@ -152,10 +163,10 @@ def _build_offering(client: httpx.Client, url: str, today: date) -> Offering | N
     title = _meta(tree, "og:title") or _text(tree.css_first("h1")) or slug.replace("-", " ").title()
     body = _body_text(tree)
 
-    start, end = _dates(body)
+    start, end = _dates(tree)
     anchor = start or end
     if anchor is None:
-        return None  # no parseable dates — can't place it in time (likely a stale one-off)
+        return None  # no parseable dates — can't place it in time
     season = str(anchor.year)
 
     pre_selection = "pre-selection" in body.lower() or "preselection" in body.lower()
@@ -168,9 +179,9 @@ def _build_offering(client: httpx.Client, url: str, today: date) -> Offering | N
         organization=ORG,
         location=Location(city="Liège", country="BE"),
         schedule=Schedule(season=season, start=start, end=end, timezone="Europe/Brussels"),
-        prices=_prices(body),
+        prices=_prices(tree),
         application=Application(
-            status=_status(body),
+            status=_status(tree),
             url=url,
             requirements=[VideoReq(specificity="unspecific", description=_AUDITION_NOTE)]
             if pre_selection
@@ -182,27 +193,26 @@ def _build_offering(client: httpx.Client, url: str, today: date) -> Offering | N
 
 # --- parsing helpers ----------------------------------------------------------
 
-_STARTS = re.compile(r"Starts\s+(\d{1,2})\s+(" + parse.MONTHALT + r")\s+(\d{4})", re.IGNORECASE)
-_ENDS = re.compile(r"Ends\s+(\d{1,2})\s+(" + parse.MONTHALT + r")\s+(\d{4})", re.IGNORECASE)
 # Age band: read from the (clean) title/slug as "12-29"/"8-12"/"12-20 ans"; the
 # body is too noisy ("3 to 6 people" rooms), so there we require an "aged" cue.
 _AGE = re.compile(r"\b(\d{1,2})\s*(?:[-–]|to)\s*(\d{1,2})\b")
 _AGED = re.compile(r"(?:aged?|ages)\s*(\d{1,2})\s*(?:to|[-–])\s*(\d{1,2})", re.IGNORECASE)
-_MONEY = re.compile(r"(?:€\s*(\d[\d.,]*)|(\d[\d.,]*)\s*(?:€|eur|euros?))", re.IGNORECASE)
-# A course-tuition cue near a price ("6 days", "2 weeks") — distinguishes the
-# course fee from accommodation/audition/ticket-widget amounts.
-_DURATION = re.compile(r"\b\d+\s*(?:days?|weeks?)\b", re.IGNORECASE)
+# Registration-closed banner, matched in both English and the de-DE render locale.
+_CLOSED = re.compile(
+    r"registration[s]?\s*(?:are\s*)?closed|anmeldungen\s+geschlossen", re.IGNORECASE
+)
 
 
-def _one(match: re.Match | None) -> date | None:
-    if not match:
-        return None
-    day, month, year = match.groups()
-    return date(int(year), parse.MONTHS[month.lower()], int(day))
+def _dates(tree: HTMLParser) -> tuple[date | None, date | None]:
+    """Start/end from Odoo's ISO `<time data-oe-expression="event.date_*">` nodes."""
+    return _oe_date(tree, "event.date_begin"), _oe_date(tree, "event.date_end")
 
 
-def _dates(text: str) -> tuple[date | None, date | None]:
-    return _one(_STARTS.search(text)), _one(_ENDS.search(text))
+def _oe_date(tree: HTMLParser, expr: str) -> date | None:
+    node = tree.css_first(f'time[data-oe-expression="{expr}"]')
+    iso = node.attributes.get("datetime") if node else None
+    match = re.match(r"(\d{4})-(\d{2})-(\d{2})", iso or "")
+    return date(int(match[1]), int(match[2]), int(match[3])) if match else None
 
 
 def _age_range(primary: str, body: str = "") -> dict | None:
@@ -225,47 +235,43 @@ def _genres(text: str) -> list[Genre]:
     return parse.match_genres(text, _GENRE_KEYWORDS, default=["classical"])
 
 
-def _status(text: str):
-    low = text.lower()
-    if re.search(r"registrations?\s+closed|registration\s+closed", low):
-        return "closed"
-    if re.search(r"registrations?\s+open|register now|registration.*open", low):
+def _status(tree: HTMLParser):
+    """Read the Odoo registration widget: purchasable tickets == open, the
+    closed banner == closed, otherwise unknown (don't invent one)."""
+    if tree.css_first(".o_wevent_ticket_selector") is not None:
         return "open"
+    if _CLOSED.search(tree.body.text() if tree.body else ""):
+        return "closed"
     return None
 
 
-def _prices(text: str) -> list[Price]:
-    """Course-tuition fees in EUR.
+def _prices(tree: HTMLParser) -> list[Price]:
+    """One `Price` per Odoo ticket, from its schema.org `Offer` microdata.
 
-    MOSA's Squarespace pages mix the course fee with accommodation, audition and
-    a "Tickets From … to …" widget, so we keep only amounts sitting next to a
-    duration cue ("6 days", "2 weeks") / "lunch" and *not* next to an
-    accommodation/audition word, deduped by amount. Other fee formats are skipped
-    rather than risk mislabelling.
+    Each `.o_wevent_ticket_selector` row carries `itemprop="name"` (the program /
+    duration label), `itemprop="price"` (a machine float) and `priceCurrency`.
+    "Lunch Included" in the name adds a `meals` include alongside tuition.
     """
     prices: list[Price] = []
-    seen: set[float] = set()
-    for match in _MONEY.finditer(text):
-        amount = parse.parse_amount(match.group(1) or match.group(2))
-        if amount is None or amount < 50 or amount in seen:
+    seen: set[tuple[str, float]] = set()
+    for row in tree.css(".o_wevent_ticket_selector"):
+        price_node = row.css_first('[itemprop="price"]')
+        if price_node is None:
             continue
-        context = text[max(0, match.start() - 55) : match.start()].lower()
-        duration = _DURATION.search(context)
-        # MOSA states course fees as "<N> days (<n> classes per day) with lunch";
-        # requiring both the duration and "lunch" cleanly excludes accommodation,
-        # audition and the "Tickets From … to …" widget amounts.
-        if not (duration and "lunch" in context):
+        try:
+            amount = float(price_node.text(strip=True))
+        except ValueError:
             continue
-        seen.add(amount)
-        label = f"{duration.group(0)} with lunch"
-        prices.append(
-            Price(
-                amount=amount,
-                currency="EUR",
-                label=parse.clean(label).capitalize(),
-                includes=["tuition"],
-            )
-        )
+        label = _text(row.css_first('[itemprop="name"]')) or None
+        key = (label or "", amount)
+        if key in seen:
+            continue
+        seen.add(key)
+        currency = _text(row.css_first('[itemprop="priceCurrency"]')) or "EUR"
+        includes: list[PriceInclude] = ["tuition"]
+        if label and "lunch" in label.lower():
+            includes.append("meals")
+        prices.append(Price(amount=amount, currency=currency, label=label, includes=includes))
     return prices
 
 
@@ -284,7 +290,6 @@ def _body_text(tree: HTMLParser) -> str:
 
 
 def _clean_title(title: str) -> str:
-    # Squarespace og:title often appends " — Mosa Ballet School"
     return re.sub(r"\s*[—–|]\s*Mosa Ballet School\s*$", "", parse.clean(title), flags=re.IGNORECASE)
 
 
