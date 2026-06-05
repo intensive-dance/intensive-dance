@@ -260,6 +260,12 @@ when a second provider genuinely needs the identical thing.
   to the next heading) and **letter-space** inline form labels ("a rabesque").
   Strip the zero-width chars and detect requirement *keywords* rather than scrape
   the garbled tokens (see `brussels_international_ballet`, `young_stars_ballet`).
+- **Elementor pages can hide structured data in a JS var.** When WordPress REST
+  `content.rendered` is empty (a custom Elementor/ACF module built the body),
+  check the raw HTML for a per-item `var <name> = {...};` JSON blob before
+  parsing the visible (often duplicated) markup — it's cleaner embedded data.
+  YAGP emits one `javascript_array` per competition stop; we dedupe by stop name
+  and country-filter to Europe (see `youth_america_grand_prix`).
 - **Multilingual sites can flip language by cache.** Monreart's `/en/` pages
   serve EN or IT depending on the Varnish cache (even `Accept-Language` doesn't
   pin it), so a naive parse is non-deterministic. Parse **language-agnostically**:

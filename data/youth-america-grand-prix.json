@@ -1,0 +1,190 @@
+[
+  {
+    "application": {
+      "requirements": [],
+      "url": "https://yagp.org/registration-notice/"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "youth-america-grand-prix/paris-2026-27",
+    "kind": "competition",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Paris",
+      "country": "FR"
+    },
+    "organization": {
+      "country": "US",
+      "name": "Youth America Grand Prix",
+      "slug": "youth-america-grand-prix"
+    },
+    "prices": [
+      {
+        "amount": 125.0,
+        "currency": "USD",
+        "includes": [],
+        "label": "Registration fee",
+        "notes": "Non-refundable registration fee, the same at every location."
+      }
+    ],
+    "schedule": {
+      "end": "2026-11-01",
+      "notes": "October 29 - November 1, 2026",
+      "season": "2026-27",
+      "sessions": [],
+      "start": "2026-10-29"
+    },
+    "source": {
+      "hash": "sha256:b73b513f93cce8e6ffce148c4da14bf16146d07276e8d585b0fc443e3c2f8ced",
+      "provider": "youth-america-grand-prix",
+      "scrapedAt": "2026-06-05T19:07:11.578410Z",
+      "url": "https://yagp.org/competition/yagp-2026-2027-international-locations-dates/"
+    },
+    "teachers": [],
+    "title": "YAGP Paris, France"
+  },
+  {
+    "application": {
+      "requirements": [],
+      "url": "https://yagp.org/registration-notice/"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "youth-america-grand-prix/barcelona-2026-27",
+    "kind": "competition",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Barcelona",
+      "country": "ES"
+    },
+    "organization": {
+      "country": "US",
+      "name": "Youth America Grand Prix",
+      "slug": "youth-america-grand-prix"
+    },
+    "prices": [
+      {
+        "amount": 125.0,
+        "currency": "USD",
+        "includes": [],
+        "label": "Registration fee",
+        "notes": "Non-refundable registration fee, the same at every location."
+      }
+    ],
+    "schedule": {
+      "end": "2026-12-06",
+      "notes": "December 1 - 6, 2026",
+      "season": "2026-27",
+      "sessions": [],
+      "start": "2026-12-01"
+    },
+    "source": {
+      "hash": "sha256:4f859de74f3496de26ddf729cc9e9312501a9a2e11da8166bdfbc5562daa244c",
+      "provider": "youth-america-grand-prix",
+      "scrapedAt": "2026-06-05T19:07:11.578653Z",
+      "url": "https://yagp.org/competition/yagp-2026-2027-international-locations-dates/"
+    },
+    "teachers": [],
+    "title": "YAGP Barcelona, Spain"
+  },
+  {
+    "application": {
+      "requirements": [],
+      "url": "https://yagp.org/registration-notice/"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "youth-america-grand-prix/genoa-2026-27",
+    "kind": "competition",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Genoa",
+      "country": "IT"
+    },
+    "organization": {
+      "country": "US",
+      "name": "Youth America Grand Prix",
+      "slug": "youth-america-grand-prix"
+    },
+    "prices": [
+      {
+        "amount": 125.0,
+        "currency": "USD",
+        "includes": [],
+        "label": "Registration fee",
+        "notes": "Non-refundable registration fee, the same at every location."
+      }
+    ],
+    "schedule": {
+      "end": "2026-12-18",
+      "notes": "December 14 - 18, 2026",
+      "season": "2026-27",
+      "sessions": [],
+      "start": "2026-12-14"
+    },
+    "source": {
+      "hash": "sha256:a48550416333759110c4b48b2b0beefcdf3241155cee3fadae7d24132afd86f4",
+      "provider": "youth-america-grand-prix",
+      "scrapedAt": "2026-06-05T19:07:11.578699Z",
+      "url": "https://yagp.org/competition/yagp-2026-2027-international-locations-dates/"
+    },
+    "teachers": [],
+    "title": "YAGP Genoa, Italy"
+  },
+  {
+    "application": {
+      "requirements": [],
+      "url": "https://yagp.org/registration-notice/"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "youth-america-grand-prix/lagoa-2026-27",
+    "kind": "competition",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Lagoa",
+      "country": "PT"
+    },
+    "organization": {
+      "country": "US",
+      "name": "Youth America Grand Prix",
+      "slug": "youth-america-grand-prix"
+    },
+    "prices": [
+      {
+        "amount": 125.0,
+        "currency": "USD",
+        "includes": [],
+        "label": "Registration fee",
+        "notes": "Non-refundable registration fee, the same at every location."
+      }
+    ],
+    "schedule": {
+      "end": "2027-02-21",
+      "notes": "February 15 - 21, 2027",
+      "season": "2026-27",
+      "sessions": [],
+      "start": "2027-02-15"
+    },
+    "source": {
+      "hash": "sha256:1ee5e14b902dd293792f241a727ac7ba4dddfe64fdd1d8d0d454ac40f2dc1971",
+      "provider": "youth-america-grand-prix",
+      "scrapedAt": "2026-06-05T19:07:11.578735Z",
+      "url": "https://yagp.org/competition/yagp-2026-2027-international-locations-dates/"
+    },
+    "teachers": [],
+    "title": "YAGP Lagoa, Portugal"
+  }
+]
