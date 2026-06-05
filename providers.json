@@ -128,10 +128,10 @@
     },
     {
       "slug": "m-i-ballet-school",
-      "name": "M.I. Ballet School",
+      "name": "Munich International Ballet School",
       "country": "DE",
       "city": "Munich",
-      "url": "https://mi-balletschool.com/",
+      "url": "https://mi-ballet-school.de/",
       "tier": "secondary",
       "status": "seed"
     },
@@ -158,7 +158,7 @@
       "name": "Tanzwerkstatt Europa",
       "country": "DE",
       "city": "Munich",
-      "url": "https://jointadventures.net/",
+      "url": "https://www.jointadventures.net/en/tanzwerkstatt-europa",
       "tier": "secondary",
       "status": "seed"
     },
@@ -221,7 +221,7 @@
       "name": "Elmhurst Ballet School",
       "country": "GB",
       "city": "Birmingham",
-      "url": "https://elmhurstdance.co.uk/",
+      "url": "https://elmhurstballetschool.org/",
       "tier": "secondary",
       "status": "seed"
     },
@@ -293,7 +293,7 @@
       "name": "Ballet Summer Course Budapest",
       "country": "HU",
       "city": "Budapest",
-      "url": "https://balletsummercourse.com/",
+      "url": "https://balletsummercoursebudapest.com/",
       "tier": "secondary",
       "status": "seed"
     },
