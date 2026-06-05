@@ -1,0 +1,246 @@
+[
+  {
+    "ageRange": {
+      "max": 22,
+      "min": 12
+    },
+    "application": {
+      "deadline": "2026-04-30",
+      "opensAt": "2025-12-15",
+      "requirements": [
+        {
+          "notes": "Headshot photo and a picture in 1st arabesque, required of all applicants.",
+          "poses": [
+            "headshot",
+            "1st arabesque"
+          ],
+          "specificity": "defined-poses",
+          "type": "photos"
+        },
+        {
+          "description": "Private-school applicants submit a video link (YouTube or Vimeo): 3-5 min barre, 3-5 min centre (adagio, pirouettes, allegro), some pointe work for women, optional classical variation.",
+          "specificity": "unspecific",
+          "type": "video"
+        },
+        {
+          "type": "cv"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.lyyti.fi/reg/International_Summer_Intensive_2026_3322"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "character",
+      "contemporary",
+      "neoclassical"
+    ],
+    "id": "finnish-national-ballet/international-summer-intensive-2026",
+    "kind": "summer-school",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Helsinki",
+      "country": "FI",
+      "venue": "Finnish National Opera and Ballet"
+    },
+    "organization": {
+      "city": "Helsinki",
+      "country": "FI",
+      "name": "Finnish National Ballet",
+      "slug": "finnish-national-ballet"
+    },
+    "prices": [
+      {
+        "amount": 900.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition",
+          "meals"
+        ],
+        "label": "Tuition",
+        "notes": "VAT included"
+      },
+      {
+        "amount": 800.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition",
+          "meals"
+        ],
+        "label": "Early bird",
+        "notes": "VAT included"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-25",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-20",
+      "timezone": "Europe/Helsinki"
+    },
+    "source": {
+      "hash": "sha256:e2a57fc93984808c9bacba42282ba35adac167458dccbdecdd7fd3f7117c1b20",
+      "provider": "finnish-national-ballet",
+      "scrapedAt": "2026-06-05T18:58:07.179921Z",
+      "url": "https://oopperabaletti.fi/en/international-summer-intensive/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Akim Bakhtaoui",
+        "role": "Street Dance"
+      },
+      {
+        "affiliations": [],
+        "name": "Henrik Burman",
+        "role": "Body Conditioning, Acting"
+      },
+      {
+        "affiliations": [],
+        "name": "Giovanni Di Palma",
+        "role": "Classical technique, Repertoire"
+      },
+      {
+        "affiliations": [],
+        "name": "Rebecca King",
+        "role": "Classical technique, Repertoire"
+      },
+      {
+        "affiliations": [],
+        "name": "Jutta Mustakallio Ruusunen",
+        "role": "Character dance"
+      },
+      {
+        "affiliations": [],
+        "name": "Juliette Rahon",
+        "role": "Contemporary, Choreographer’s workshop"
+      },
+      {
+        "affiliations": [],
+        "name": "Ophélie Rodighiero",
+        "role": "Classical ballet, Repertoire"
+      },
+      {
+        "affiliations": [],
+        "name": "Nicholas Ziegler",
+        "role": "Repertoire"
+      }
+    ],
+    "title": "International Summer Intensive of the Finnish National Ballet"
+  },
+  {
+    "application": {
+      "deadline": "2026-04-30",
+      "notes": "A minimum of five years of prior ballet training is recommended.",
+      "opensAt": "2025-12-15",
+      "requirements": [
+        {
+          "type": "headshot"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.lyyti.fi/reg/International_Summer_Intensive_2026_3322"
+    },
+    "genres": [
+      "classical",
+      "repertoire",
+      "character"
+    ],
+    "id": "finnish-national-ballet/ballet-in-bloom-2026",
+    "kind": "summer-school",
+    "level": [
+      "open"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Helsinki",
+      "country": "FI",
+      "venue": "Finnish National Opera and Ballet"
+    },
+    "organization": {
+      "city": "Helsinki",
+      "country": "FI",
+      "name": "Finnish National Ballet",
+      "slug": "finnish-national-ballet"
+    },
+    "prices": [
+      {
+        "amount": 450.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition",
+        "notes": "VAT included"
+      },
+      {
+        "amount": 375.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Early bird",
+        "notes": "VAT included"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-24",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-20",
+      "timezone": "Europe/Helsinki"
+    },
+    "source": {
+      "hash": "sha256:72d10da40c59cd38d853a1b82c0f69fbe85d592619c09a9c10bfe58b3b8d8b0d",
+      "provider": "finnish-national-ballet",
+      "scrapedAt": "2026-06-05T18:58:38.491970Z",
+      "url": "https://oopperabaletti.fi/en/international-summer-intensive/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Akim Bakhtaoui",
+        "role": "Street Dance"
+      },
+      {
+        "affiliations": [],
+        "name": "Henrik Burman",
+        "role": "Body Conditioning, Acting"
+      },
+      {
+        "affiliations": [],
+        "name": "Giovanni Di Palma",
+        "role": "Classical technique, Repertoire"
+      },
+      {
+        "affiliations": [],
+        "name": "Rebecca King",
+        "role": "Classical technique, Repertoire"
+      },
+      {
+        "affiliations": [],
+        "name": "Jutta Mustakallio Ruusunen",
+        "role": "Character dance"
+      },
+      {
+        "affiliations": [],
+        "name": "Juliette Rahon",
+        "role": "Contemporary, Choreographer’s workshop"
+      },
+      {
+        "affiliations": [],
+        "name": "Ophélie Rodighiero",
+        "role": "Classical ballet, Repertoire"
+      },
+      {
+        "affiliations": [],
+        "name": "Nicholas Ziegler",
+        "role": "Repertoire"
+      }
+    ],
+    "title": "Ballet in Bloom — Finnish National Ballet Summer Intensive"
+  }
+]
