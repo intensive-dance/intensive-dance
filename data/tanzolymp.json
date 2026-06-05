@@ -1,0 +1,124 @@
+[
+  {
+    "ageRange": {
+      "max": 25,
+      "min": 8
+    },
+    "application": {
+      "deadline": "2025-12-10",
+      "notes": "Fees are calculated individually by TANZOLYMP (participation + a compulsory 4-night stay at the Park Inn Hotel Alexanderplatz). No fixed price is published.",
+      "requirements": [
+        {
+          "description": "Every participant / group must submit a link to an online video of the performance (YouTube or other website) on the application form.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "status": "closed",
+      "url": "https://tanzolymp.com/registration"
+    },
+    "genres": [
+      "classical",
+      "neoclassical",
+      "contemporary",
+      "character"
+    ],
+    "id": "tanzolymp/2026",
+    "kind": "competition",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Berlin",
+      "country": "DE",
+      "venue": "Fontane Haus"
+    },
+    "organization": {
+      "city": "Berlin",
+      "country": "DE",
+      "name": "TANZOLYMP",
+      "slug": "tanzolymp"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-02-17",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 12,
+            "min": 8
+          },
+          "label": "Age group 1"
+        },
+        {
+          "ageRange": {
+            "max": 15,
+            "min": 13
+          },
+          "label": "Age group 2"
+        },
+        {
+          "ageRange": {
+            "max": 18,
+            "min": 16
+          },
+          "label": "Age group 3"
+        },
+        {
+          "ageRange": {
+            "max": 25,
+            "min": 19
+          },
+          "label": "Age group 4"
+        }
+      ],
+      "start": "2026-02-12",
+      "timezone": "Europe/Berlin"
+    },
+    "source": {
+      "hash": "sha256:8c884fb1c3a1ee2c5dba4c91f8ab5191522144ee7d76406eb024d150078ba2cc",
+      "provider": "tanzolymp",
+      "scrapedAt": "2026-06-05T19:07:30.933866Z",
+      "url": "https://tanzolymp.com/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Nina Ananiashvili"
+      },
+      {
+        "affiliations": [],
+        "name": "José Antonio Checa"
+      },
+      {
+        "affiliations": [],
+        "name": "Kelvin O. Hardy"
+      },
+      {
+        "affiliations": [],
+        "name": "Agnès Letestu"
+      },
+      {
+        "affiliations": [],
+        "name": "Kirill Melnikov"
+      },
+      {
+        "affiliations": [],
+        "name": "Jorge Nozal"
+      },
+      {
+        "affiliations": [],
+        "name": "Iana Salenko"
+      },
+      {
+        "affiliations": [],
+        "name": "Yannick Sempey"
+      },
+      {
+        "affiliations": [],
+        "name": "Clotilde Vayer"
+      }
+    ],
+    "title": "TANZOLYMP XXIII — International Dance Festival"
+  }
+]

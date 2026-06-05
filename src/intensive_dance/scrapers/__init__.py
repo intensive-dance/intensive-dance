@@ -28,6 +28,7 @@ from . import (
     royal_ballet_school,
     russian_masters_ballet,
     school_of_american_ballet,
+    tanzolymp,
     young_stars_ballet,
 )
 
@@ -50,4 +51,5 @@ SCRAPERS: dict[str, Scraper] = {
     "school-of-american-ballet": school_of_american_ballet.scrape,
     "young-stars-ballet": young_stars_ballet.scrape,
     "idc-berlin": idc_berlin.scrape,
+    "tanzolymp": tanzolymp.scrape,
 }
