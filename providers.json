@@ -64,6 +64,15 @@
       "status": "live"
     },
     {
+      "slug": "fondazione-monreart",
+      "name": "Fondazione Monreart",
+      "country": "IT",
+      "city": "Volta Mantovana",
+      "url": "https://www.monreart.com/en/",
+      "tier": "secondary",
+      "status": "live"
+    },
+    {
       "slug": "academie-princesse-grace",
       "name": "Académie de Danse Princesse Grace",
       "country": "MC",
