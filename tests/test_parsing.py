@@ -16,7 +16,9 @@ from intensive_dance.scrapers import royal_ballet_school as rbs
 
 
 def money(text: str, dollar_currency: str = "USD") -> tuple[float, str]:
-    return rbs._money(rbs._MONEY.search(text), dollar_currency)
+    match = rbs._MONEY.search(text)
+    assert match is not None
+    return rbs._money(match, dollar_currency)
 
 
 # --- money & currency ---------------------------------------------------------
@@ -178,13 +180,18 @@ def test_parse_strips_wpbakery_shortcodes():
 
 def test_node_lines_recovers_br_separated_lines():
     content = wp.parse("<h2>Venue</h2><p>White Lodge<br>Richmond Park</p>")
-    (node,) = content.find("Venue").nodes
+    section = content.find("Venue")
+    assert section is not None
+    (node,) = section.nodes
     assert wp.node_lines(node) == ["White Lodge", "Richmond Park"]
 
 
 def test_table_rows():
-    table = wp.parse(
+    section = wp.parse(
         "<h2>Fees</h2><table><tr><th>Course</th><th>Fee</th></tr>"
         "<tr><td>Summer</td><td>£485</td></tr></table>"
-    ).find("Fees").table()
+    ).find("Fees")
+    assert section is not None
+    table = section.table()
+    assert table is not None
     assert wp.table_rows(table) == [["Course", "Fee"], ["Summer", "£485"]]

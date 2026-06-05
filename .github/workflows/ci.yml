@@ -21,11 +21,8 @@ jobs:
       - name: Lint
         run: uv run ruff check .
 
-      # ty is still preview-quality, so this surfaces type findings without
-      # gating merges. Drop continue-on-error once the codebase is ty-clean.
       - name: Type check
         run: uv run ty check
-        continue-on-error: true
 
       - name: Test
         run: uv run pytest -q

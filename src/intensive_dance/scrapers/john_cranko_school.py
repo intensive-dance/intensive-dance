@@ -25,6 +25,7 @@ from intensive_dance.models import (
     Offering,
     Organization,
     Price,
+    PriceInclude,
     Schedule,
     Source,
     VideoReq,
@@ -62,7 +63,8 @@ def _build_offering(html: str, today: date) -> Offering | None:
     start, end = _date_range(blob)
     if end is not None and end < today:
         return None  # last cycle already finished
-    season = str((start or end).year) if (start or end) else _year(blob)
+    anchor = start or end
+    season = str(anchor.year) if anchor else _year(blob)
 
     deadline = _deadline(blob)
     return Offering(
@@ -159,7 +161,7 @@ def _prices(text: str) -> list[Price]:
     amount = float(f"{match.group(1).replace('.', '')}.{match.group(2)}")
     # The page states the fee covers tuition + the closing performance, excluding
     # accommodation and meals.
-    includes = ["tuition"]
+    includes: list[PriceInclude] = ["tuition"]
     if "aufführung" in text.lower() or "vorstellung" in text.lower():
         includes.append("performance")
     return [Price(amount=amount, currency="EUR", label="Tuition (6 days incl. performance)", includes=includes)]

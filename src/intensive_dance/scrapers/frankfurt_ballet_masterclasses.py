@@ -61,11 +61,12 @@ def _build_offering(html: str, today: date) -> Offering | None:
     text = _clean(tree.body.text(separator=" ")) if tree.body else ""
 
     start, end = _date_range(text)
-    if start is None and end is None:
+    anchor = start or end
+    if anchor is None:
         return None  # no dated edition announced
     if end is not None and end < today:
         return None  # the announced edition is over
-    season = str((start or end).year)
+    season = str(anchor.year)
 
     return Offering(
         id=f"frankfurt-ballet-masterclasses/{season}",
