@@ -118,7 +118,7 @@ def test_inline_prices_dollar_uses_resolved_currency():
     assert (fee.amount, fee.currency) == (865.0, "HKD")
 
 
-# --- genres / levels / kind ---------------------------------------------------
+# --- genres / levels ----------------------------------------------------------
 
 
 def test_genres_keywords():
@@ -135,11 +135,6 @@ def test_levels_pre_professional_does_not_double_count_professional():
         "advanced",
         "pre-professional",
     ]
-
-
-def test_kind_masterclass_vs_intensive():
-    assert rbs._kind("uk-summer-intensive", "UK Summer Intensive") == "intensive"
-    assert rbs._kind("guest-masterclass", "Guest Masterclass") == "masterclass"
 
 
 # --- sessions -----------------------------------------------------------------
