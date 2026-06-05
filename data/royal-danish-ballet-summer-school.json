@@ -1,0 +1,84 @@
+[
+  {
+    "ageRange": {
+      "max": 21,
+      "min": 12
+    },
+    "application": {
+      "deadline": "2026-03-20",
+      "notes": "All applicants must upload a link to an audition video.",
+      "requirements": [
+        {
+          "description": "All applicants must upload a link to an audition video.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.kglteater.dk/en/about-the-royal-danish-theatre/summerschool/"
+    },
+    "genres": [
+      "classical",
+      "repertoire",
+      "contemporary",
+      "character"
+    ],
+    "id": "royal-danish-ballet-summer-school/summer-school-2026",
+    "kind": "summer-school",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Copenhagen",
+      "country": "DK",
+      "venue": "The Royal Danish Theatre (Tordenskjoldsgade 8)"
+    },
+    "organization": {
+      "city": "Copenhagen",
+      "country": "DK",
+      "name": "The Royal Danish Theatre",
+      "slug": "royal-danish-ballet-summer-school"
+    },
+    "prices": [
+      {
+        "amount": 12500.0,
+        "currency": "DKK",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition (both weeks, incl. VAT)"
+      },
+      {
+        "amount": 500.0,
+        "currency": "DKK",
+        "includes": [
+          "meals"
+        ],
+        "label": "Lunch (per week, optional)"
+      },
+      {
+        "amount": 5995.0,
+        "currency": "DKK",
+        "includes": [
+          "accommodation"
+        ],
+        "label": "Accommodation at Suhrs Højskole (per week, ages 15+, optional)"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-01",
+      "notes": "Dates: 20 July – 1 August 2026",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-20",
+      "timezone": "Europe/Copenhagen"
+    },
+    "source": {
+      "hash": "sha256:43655be71cf3c05372a4b4ba41960c74fbc1dc25c5f4ea956f470b325dbb7b8e",
+      "provider": "royal-danish-ballet-summer-school",
+      "scrapedAt": "2026-06-05T18:57:32.335753Z",
+      "url": "https://www.kglteater.dk/en/about-the-royal-danish-theatre/summerschool/"
+    },
+    "teachers": [],
+    "title": "Royal Danish Ballet Summer School 2026"
+  }
+]
