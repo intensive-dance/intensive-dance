@@ -6,10 +6,14 @@ API FIRST: MOSA runs on **Squarespace**. There is no JSON API we may use (the
 lives at a server-rendered `/event/<slug>-<id>` page — so discovery is
 sitemap-driven and we parse the (static) event pages, no JS needed.
 
-This provider **bypasses the fetch-proxy** (`make_client(use_proxy=False)`): MOSA
-path-scopes bot protection to `/sitemap.xml` and `/event/*` and is
-fingerprint-sensitive — the proxy's plain fetch is 403'd there (forcing a slow
-per-page browser render), while a direct httpx request is served normally.
+STATUS 2026-06-05 — **disabled, needs a rewrite.** MOSA replatformed off
+Squarespace onto **Odoo** (website-events): event pages now carry Odoo markup
+(`o_wevent_*`, `<time data-oe-expression="event.date_begin">`) instead of the old
+"Starts … Ends …" text, and the site now 403s non-browser fetches. The
+sitemap-driven discovery and page parsing below no longer match the live site, so
+`scrape` raises `NotImplementedError` (run.py skips it and keeps the committed
+data) until the scraper is rewritten for the Odoo structure. The helpers/tests
+below describe the *old* Squarespace shape — keep them as a reference point.
 
 DISCOVERY: the sitemap lists ~120 events of every kind — intensives, auditions,
 galas, recitals, performances, info sessions, symposiums, CPD workshops. We keep
@@ -39,7 +43,6 @@ import httpx
 from selectolax.parser import HTMLParser
 
 from intensive_dance import parse
-from intensive_dance.fetch import make_client
 from intensive_dance.models import (
     Application,
     Genre,
@@ -110,20 +113,11 @@ _AUDITION_NOTE = (
 )
 
 
-def scrape(client: httpx.Client) -> list[Offering]:  # noqa: ARG001 — provider needs a direct client
-    today = date.today()
-    # MOSA path-scopes bot protection to /sitemap.xml and /event/* and is
-    # fingerprint-sensitive: the fetch-proxy's plain fetch gets 403 there (forcing
-    # a slow per-page browser render), while a plain httpx request is accepted.
-    # So we bypass the proxy for this provider — the shared `client` is unused.
-    with make_client(use_proxy=False) as direct:
-        offerings = [
-            offering
-            for url in _event_urls(direct, today)
-            if (offering := _build_offering(direct, url, today)) is not None
-        ]
-    offerings.sort(key=lambda o: o.id)
-    return offerings
+def scrape(client: httpx.Client) -> list[Offering]:  # noqa: ARG001 — disabled until rewrite
+    raise NotImplementedError(
+        "MOSA replatformed Squarespace -> Odoo; scraper needs a rewrite for the new "
+        "event pages (run.py skips this provider and keeps the committed data)"
+    )
 
 
 def _event_urls(client: httpx.Client, today: date) -> list[str]:
