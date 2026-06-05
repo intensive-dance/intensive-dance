@@ -415,6 +415,15 @@
       "status": "live"
     },
     {
+      "slug": "new-national-theatre-ballet-school",
+      "name": "New National Theatre Ballet School",
+      "country": "JP",
+      "city": "Tokyo",
+      "url": "https://www.nntt.jac.go.jp/ballet/training/",
+      "tier": "marquee",
+      "status": "live"
+    },
+    {
       "slug": "prix-de-lausanne",
       "name": "Prix de Lausanne",
       "country": "CH",

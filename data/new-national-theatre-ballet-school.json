@@ -1,0 +1,172 @@
+[
+  {
+    "ageRange": {
+      "max": 14,
+      "min": 13
+    },
+    "application": {
+      "deadline": "2026-06-19",
+      "requirements": [
+        {
+          "notes": "応募には「ポーズ写真貼付用紙」に指定の要領で撮影したポーズ写真を貼付して提出（具体的なポーズは応募要項PDFに記載）。",
+          "poses": [],
+          "specificity": "defined-poses",
+          "type": "photos"
+        }
+      ],
+      "url": "https://nntt.form.kintoneapp.com/public/summerschool2026"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "new-national-theatre-ballet-school/summer-special-a-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Tokyo",
+      "country": "JP",
+      "venue": "新国立劇場リハーサル室"
+    },
+    "organization": {
+      "city": "Tokyo",
+      "country": "JP",
+      "name": "New National Theatre Ballet School",
+      "slug": "new-national-theatre-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 28000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "受講料（3日間・税込）"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-22",
+      "notes": "・8月20日（木）10:50-12:30 クラスレッスン ・8月21日（金）10:50-12:30 クラスレッスン ・8月22日（土）10:50-12:30 クラスレッスン／13:20-14:20 説明会 ★タイムテーブル（A1クラス）（PDF）",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-20",
+      "timezone": "Asia/Tokyo"
+    },
+    "source": {
+      "hash": "sha256:4d684d2de154b9882d071a81cac09d24475be9196ba6dc9a55aeb90071f766b5",
+      "provider": "new-national-theatre-ballet-school",
+      "scrapedAt": "2026-06-05T22:19:04.366796Z",
+      "url": "https://www.nntt.jac.go.jp/ballet/training/news/detail/27_031194.html"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "イルギス・ガリムーリン",
+        "role": "予定講師（変更の可能性あり）"
+      },
+      {
+        "affiliations": [],
+        "name": "西山裕子",
+        "role": "予定講師（変更の可能性あり）"
+      },
+      {
+        "affiliations": [],
+        "name": "八幡顕光",
+        "role": "予定講師（変更の可能性あり）"
+      },
+      {
+        "affiliations": [],
+        "name": "本島美和",
+        "role": "予定講師（変更の可能性あり）"
+      },
+      {
+        "affiliations": [],
+        "name": "小嶋直也",
+        "role": "予定講師（変更の可能性あり）"
+      }
+    ],
+    "title": "夏の特別バレエレッスン Aクラス 2026"
+  },
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 15
+    },
+    "application": {
+      "deadline": "2026-06-19",
+      "requirements": [
+        {
+          "notes": "応募には「ポーズ写真貼付用紙」に指定の要領で撮影したポーズ写真を貼付して提出（具体的なポーズは応募要項PDFに記載）。",
+          "poses": [],
+          "specificity": "defined-poses",
+          "type": "photos"
+        }
+      ],
+      "url": "https://nntt.form.kintoneapp.com/public/summerschool2026"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "new-national-theatre-ballet-school/summer-special-b-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Tokyo",
+      "country": "JP",
+      "venue": "新国立劇場リハーサル室"
+    },
+    "organization": {
+      "city": "Tokyo",
+      "country": "JP",
+      "name": "New National Theatre Ballet School",
+      "slug": "new-national-theatre-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 39000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "受講料（3日間・税込）"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-22",
+      "notes": "・8月20日（木）11:00-12:30 クラスレッスン／13:15-14:45 コンテンポラリーダンスクラス ・8月21日（金）11:00-12:30 クラスレッスン／13:15-14:45 コンテンポラリーダンスクラス ・8月22日（土）11:00-12:30 クラスレッスン／13:20-14:20 説明会／14:50-16:10 コンテンポラリーダンスクラス ★タイムテーブル（Bクラス）（PDF）",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-20",
+      "timezone": "Asia/Tokyo"
+    },
+    "source": {
+      "hash": "sha256:2aa3f128cfcd00486c4bb625bcb958c4fc7df7959f1fd31edc8445289772697c",
+      "provider": "new-national-theatre-ballet-school",
+      "scrapedAt": "2026-06-05T22:19:04.367039Z",
+      "url": "https://www.nntt.jac.go.jp/ballet/training/news/detail/27_031194.html"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "小嶋直也",
+        "role": "予定講師（変更の可能性あり）"
+      },
+      {
+        "affiliations": [],
+        "name": "西山裕子",
+        "role": "予定講師（変更の可能性あり）"
+      },
+      {
+        "affiliations": [],
+        "name": "八幡顕光",
+        "role": "予定講師（変更の可能性あり）"
+      },
+      {
+        "affiliations": [],
+        "name": "新井美紀子",
+        "role": "予定講師（変更の可能性あり）"
+      }
+    ],
+    "title": "夏の特別バレエレッスン Bクラス 2026"
+  }
+]
