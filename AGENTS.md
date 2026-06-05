@@ -195,6 +195,17 @@ when a second provider genuinely needs the identical thing.
   cancelled cycles; don't emit empty-genre Offerings.
 - **Comments explain *why*, not *what*** (see the global commenting rules). The
   scraper docstrings carry the source-shape reasoning.
+- **Wix sites are server-rendered** (content is in the static HTML, no JS) but
+  pepper the markup with **zero-width spaces** (splitting "€740", gluing a name
+  to the next heading) and **letter-space** inline form labels ("a rabesque").
+  Strip the zero-width chars and detect requirement *keywords* rather than scrape
+  the garbled tokens (see `brussels_international_ballet`, `young_stars_ballet`).
+- **Multilingual sites can flip language by cache.** Monreart's `/en/` pages
+  serve EN or IT depending on the Varnish cache (even `Accept-Language` doesn't
+  pin it), so a naive parse is non-deterministic. Parse **language-agnostically**:
+  numeric dates (EN+IT month map), enum genres, numeric ages/prices, title from
+  the API, and emit only canonical-English free text — verify EN==IT, never rely
+  on one render (see `fondazione_monreart`).
 - **Git:** work on a branch; commit + push; open a PR with `gh`. **No
   `Co-Authored-By`/attribution lines** in commit messages. Use the DeepL MCP for
   any translation, never translate inline.

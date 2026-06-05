@@ -18,6 +18,7 @@ from . import (
     dutch_national_ballet_academy,
     ecole_danse_opera_paris,
     english_national_ballet_school,
+    fondazione_monreart,
     frankfurt_ballet_masterclasses,
     john_cranko_school,
     joffrey_ballet_school,
@@ -40,4 +41,5 @@ SCRAPERS: dict[str, Scraper] = {
     "ecole-danse-opera-paris": ecole_danse_opera_paris.scrape,
     "english-national-ballet-school": english_national_ballet_school.scrape,
     "brussels-international-ballet": brussels_international_ballet.scrape,
+    "fondazione-monreart": fondazione_monreart.scrape,
 }
