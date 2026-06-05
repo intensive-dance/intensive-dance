@@ -27,3 +27,27 @@ packages = ["src/intensive_dance"]
 
 [tool.ruff]
 line-length = 100
+
+# ty (Astral's type checker) config — keep what's enforced explicit and stable,
+# so a future `ty` bump can't silently change it. CI, the pre-commit hook and a
+# local `uv run ty check` all read this same block.
+[tool.ty.environment]
+# Assume the project's minimum Python, not whatever the local `.venv` happens to
+# be (it's newer) — so type results are identical locally and in CI.
+python-version = "3.12"
+
+[tool.ty.terminal]
+# Treat warnings as errors (like `-Werror`): no soft diagnostics slip past the
+# gate, and a `ty` upgrade that adds a new warning-level rule fails loudly here
+# rather than scrolling by. The committed `uv.lock` pins `ty`, so upgrades are
+# deliberate.
+error-on-warning = true
+
+[tool.ty.rules]
+# ty is gradual by default and leaves these latent-bug checks OFF. They pass
+# today, so turn them on: a code path that might use an unbound name, an import
+# that might not resolve, or an attribute that might not exist now fails the
+# build instead of only surfacing at runtime.
+possibly-unresolved-reference = "error"
+possibly-missing-import = "error"
+possibly-missing-attribute = "error"
