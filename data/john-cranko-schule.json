@@ -27,6 +27,7 @@
     "id": "john-cranko-schule/summer-school-2026",
     "kind": "summer-school",
     "level": [],
+    "lifecycle": "scheduled",
     "location": {
       "city": "Stuttgart",
       "country": "DE"
@@ -57,9 +58,9 @@
       "timezone": "Europe/Berlin"
     },
     "source": {
-      "hash": "sha256:6b062d005ce6f17e1a8fdb79553ce783bfdbe02e6ef7691cde5bccce6fd6c172",
+      "hash": "sha256:3a8d9b50a0684cd3e9f0b0a82753ec3e95381b97fb2c742a98b809e5d8e0f432",
       "provider": "john-cranko-schule",
-      "scrapedAt": "2026-06-05T08:07:21.193982Z",
+      "scrapedAt": "2026-06-05T10:05:19.982356Z",
       "url": "https://www.john-cranko-schule.de/summer_school/"
     },
     "teachers": [],

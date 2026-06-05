@@ -10,8 +10,9 @@ DISCOVERY: the sitemap lists ~120 events of every kind — intensives, auditions
 galas, recitals, performances, info sessions, symposiums, CPD workshops. We keep
 only the actual short-term *training* offerings (intensive / immersion /
 signature course / masterclass / "exploring ballet" taster) and drop the rest,
-then drop cycles whose end date is already past — same "keep only live" rule as
-the other scrapers. One `Offering` per kept event, keyed by its event slug.
+and drop the rest. Past editions are kept (the sitemap lists years of them), so a
+course's history stays findable — greyed in the UI from its dates. One `Offering`
+per kept event, keyed by its event slug.
 
 WHAT THE PAGES GIVE US (verified live 2026-06):
   - DATES: each event renders "Starts <d Month yyyy> … Ends <d Month yyyy>".
@@ -63,12 +64,6 @@ _DROP = (
     "inclusive", "adapted", "cyclo", "formation-en", "moovement", "dance-with-mosa-teachers",
     "let-s-dance-for-life", "la-procure", "dance-for-pd", "health-and", "secundary-school",
 )
-# Cycles from past seasons are dropped by date too, but skipping old-year slugs up
-# front saves fetching ~100 dead pages. The end-date filter is the real gate, so
-# this only has to be a cheap, safe pre-filter — derived from the run year rather
-# than a hardcoded ceiling so it doesn't silently go stale each January.
-_YEAR_TOKEN = re.compile(r"20\d\d")
-
 _AUDITION_NOTE = (
     "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) "
     "before a place is confirmed."
@@ -95,7 +90,7 @@ def _event_urls(client: httpx.Client, today: date) -> list[str]:
     for node in root.findall(f"{_SM_NS}url"):
         loc = node.findtext(f"{_SM_NS}loc") or ""
         slug = loc.rsplit("/event/", 1)[-1]
-        if "/event/" in loc and _in_scope(slug) and not _is_past_year(slug, today):
+        if "/event/" in loc and _in_scope(slug):
             urls.append(loc)
     return sorted(set(urls))
 
@@ -105,12 +100,6 @@ def _in_scope(slug: str) -> bool:
     if any(k in low for k in _DROP):
         return False
     return any(k in low for k in _KEEP)
-
-
-def _is_past_year(slug: str, today: date) -> bool:
-    """Whether a slug names only season years before the current one."""
-    years = [int(y) for y in _YEAR_TOKEN.findall(slug)]
-    return bool(years) and max(years) < today.year
 
 
 def _build_offering(client: httpx.Client, url: str, today: date) -> Offering | None:
@@ -128,8 +117,6 @@ def _build_offering(client: httpx.Client, url: str, today: date) -> Offering | N
     anchor = start or end
     if anchor is None:
         return None  # no parseable dates — can't place it in time (likely a stale one-off)
-    if end is not None and end < today:
-        return None  # a past cycle still in the sitemap
     season = str(anchor.year)
 
     pre_selection = "pre-selection" in body.lower() or "preselection" in body.lower()

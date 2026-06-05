@@ -53,8 +53,6 @@ def scrape(client: httpx.Client) -> list[Offering]:
     today = date.today()
     season = _season(summary)
     start, end = _date_range(summary, season)
-    if end is not None and end < today:
-        return []  # this year's school is over
 
     deadline = _deadline(summary)
     genres = _genres(summary)

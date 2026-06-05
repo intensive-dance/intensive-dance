@@ -65,8 +65,6 @@ def _build_offering(html: str, today: date) -> Offering | None:
     anchor = start or end
     if anchor is None:
         return None  # no dated edition announced
-    if end is not None and end < today:
-        return None  # the announced edition is over
     season = str(anchor.year)
 
     return Offering(

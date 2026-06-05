@@ -1,6 +1,377 @@
 [
   {
     "ageRange": {
+      "max": 14,
+      "min": 9
+    },
+    "application": {
+      "notes": "Booking is now closed\nCourse fee: £160 Want to hear more about our Intensives?",
+      "requirements": [
+        {
+          "notes": "The Autumn Intensive is eligible for students aged 9-14 on the day of the course. These courses are non-selective. Places are limited and offered on a first come, first served basis. Book early to avoid disappointment.",
+          "poses": [],
+          "specificity": "defined-poses",
+          "type": "photos"
+        }
+      ],
+      "status": "closed"
+    },
+    "genres": [
+      "classical",
+      "repertoire"
+    ],
+    "id": "royal-ballet-school/autumn-intensives-2025",
+    "kind": "intensive",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {},
+    "organization": {
+      "city": "London",
+      "country": "GB",
+      "name": "The Royal Ballet School",
+      "slug": "royal-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 160.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Course fee",
+        "notes": "Course fee: £160 Want to hear more about our Intensives?"
+      }
+    ],
+    "schedule": {
+      "season": "2025",
+      "sessions": []
+    },
+    "source": {
+      "hash": "sha256:05290450bd44b6cc3d77afe638b12acd542329f55f2e218f630a4aae7333b59c",
+      "provider": "royal-ballet-school",
+      "scrapedAt": "2026-06-05T10:04:59.246136Z",
+      "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/autumn-intensives/"
+    },
+    "teachers": [],
+    "title": "Autumn Intensives 2025"
+  },
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 7
+    },
+    "application": {
+      "notes": "Applications are now closed.",
+      "requirements": [
+        {
+          "notes": "All applicants aged 9-18 will need to submit photographs as part of their application.\n\nRequired positions are published as age-banded diagrams on the photograph-requirements page: https://www.royalballetschool.org.uk/train/apply/photograph-requirements/",
+          "poses": [],
+          "specificity": "defined-poses",
+          "type": "photos"
+        }
+      ],
+      "status": "closed",
+      "url": "https://eur.cvent.me/NVgRMx?RefId=Intensive+Courses+2025%2F26"
+    },
+    "genres": [
+      "classical",
+      "character",
+      "repertoire"
+    ],
+    "id": "royal-ballet-school/hong-kong-intensive-2026",
+    "kind": "intensive",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Hong Kong",
+      "country": "HK",
+      "venue": "Hong Kong Academy of Performing Arts (HKAPA) · 1 Gloucester Road, Wanchai, Hong Kong"
+    },
+    "organization": {
+      "city": "London",
+      "country": "GB",
+      "name": "The Royal Ballet School",
+      "slug": "royal-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 396.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Three half-days, non-selective (7-8 years)",
+        "notes": "Three half-days, non-selective (7-8 years): £396"
+      },
+      {
+        "amount": 1220.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Five full-days, selective (9-18 years)",
+        "notes": "Five full-days, selective (9-18 years): £1220"
+      },
+      {
+        "amount": 48.0,
+        "currency": "GBP",
+        "includes": [],
+        "label": "Application fee: ",
+        "notes": "Application fee: £48 (only required for selective course, 9-18 years)"
+      },
+      {
+        "amount": 125.0,
+        "currency": "GBP",
+        "includes": [],
+        "label": "Additional coaching sessions",
+        "notes": "Additional coaching sessions: £125 per session (1.25 hours)"
+      }
+    ],
+    "schedule": {
+      "end": "2026-04-07",
+      "notes": "Intensive: 3-7 April 2026\nNon- selective course (students aged 7-8 years): 4 – 6 April 2026\nCoaching sessions: 4 – 6 April 2026",
+      "season": "2026",
+      "sessions": [
+        {
+          "end": "2026-04-07",
+          "gender": "both",
+          "label": "3-7 April 2026",
+          "notes": "3-7 April 2026",
+          "start": "2026-04-03"
+        },
+        {
+          "end": "2026-04-06",
+          "gender": "both",
+          "label": "4-6 April 2026",
+          "notes": "4-6 April 2026",
+          "start": "2026-04-04"
+        },
+        {
+          "end": "2026-04-06",
+          "gender": "both",
+          "label": "4-6 April 2026",
+          "notes": "4-6 April 2026",
+          "start": "2026-04-04"
+        }
+      ],
+      "start": "2026-04-06",
+      "timezone": "Asia/Hong_Kong"
+    },
+    "source": {
+      "hash": "sha256:3afc64fa4e9d168acb465c3b1eadefbbd0be83011c45f11582249b0a76daf9b0",
+      "provider": "royal-ballet-school",
+      "scrapedAt": "2026-06-05T10:04:59.244925Z",
+      "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/hong-kong-intensive/"
+    },
+    "teachers": [],
+    "title": "Hong Kong Intensive 2026"
+  },
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 7
+    },
+    "application": {
+      "notes": "Applications are now closed.\nBookings are now closed.",
+      "requirements": [
+        {
+          "notes": "All applicants aged 9-18 will need to submit photographs as part of their application.\nAll photographs must be uploaded to the online application forms for auditions and Intensive Courses. Photographs emailed are not accepted.\nYou do not need to use a professional photographer for these images.\nPlease use current images and do not use any photos you have used in a previous year’s Royal Ballet School application.\nPhotographs should be sized correctly and displayed the right way up, with the dancer filling the entire frame.\nPlease use jpg, jpeg or png file formats and make sure that the images do not exceed 10MB.",
+          "poses": [],
+          "specificity": "defined-poses",
+          "type": "photos"
+        }
+      ],
+      "status": "closed"
+    },
+    "genres": [
+      "classical",
+      "repertoire",
+      "pointe"
+    ],
+    "id": "royal-ballet-school/japan-intensive-2025",
+    "kind": "intensive",
+    "level": [
+      "professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Tokyo",
+      "country": "JP",
+      "venue": "The Tokyo Ballet School, 4-25-4 Meguro, Meguro-ku, Tokyo, 153-0063"
+    },
+    "organization": {
+      "city": "London",
+      "country": "GB",
+      "name": "The Royal Ballet School",
+      "slug": "royal-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 660.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "9-18 years (three full-days, selective)",
+        "notes": "9-18 years (three full-days, selective): £660"
+      },
+      {
+        "amount": 125.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "18+ adult classes (non-selective)",
+        "notes": "18+ adult classes (non-selective): £125 per class OR £225 two class bundle"
+      },
+      {
+        "amount": 225.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "per class OR",
+        "notes": "18+ adult classes (non-selective): £125 per class OR £225 two class bundle"
+      },
+      {
+        "amount": 48.0,
+        "currency": "GBP",
+        "includes": [],
+        "label": "Application fee",
+        "notes": "Application fee: £48 (only required for selective course, 9-18 years)"
+      },
+      {
+        "amount": 125.0,
+        "currency": "GBP",
+        "includes": [],
+        "label": "Additional coaching (11-18 years, non-selective)",
+        "notes": "Additional coaching (11-18 years, non-selective): £125 per session (1.25 hours) – you do not have to attend the Intensive to sign up to these coaching sessions"
+      }
+    ],
+    "schedule": {
+      "end": "2025-12-21",
+      "notes": "9-18 years: 19-21 December 2025\nAdult classes: 20 and 21 December (14.30-16.30)\nAdditional coaching: 20 December (16.45-18.00)\nAuditions for full-time training: 21 December 2025",
+      "season": "2025",
+      "sessions": [
+        {
+          "end": "2025-12-21",
+          "gender": "both",
+          "label": "19-21 December 2025",
+          "notes": "19-21 December 2025",
+          "start": "2025-12-19"
+        }
+      ],
+      "start": "2025-12-20",
+      "timezone": "Asia/Tokyo"
+    },
+    "source": {
+      "hash": "sha256:2593c44d5536fd1a5ed4f6e2f61e5979a71db68cc2c85f73704d29757a294330",
+      "provider": "royal-ballet-school",
+      "scrapedAt": "2026-06-05T10:04:59.250633Z",
+      "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/japan-intensive/"
+    },
+    "teachers": [],
+    "title": "Japan Intensive 2025"
+  },
+  {
+    "application": {
+      "requirements": [
+        {
+          "poses": [],
+          "specificity": "defined-poses",
+          "type": "photos"
+        }
+      ]
+    },
+    "genres": [],
+    "id": "royal-ballet-school/korea-intensive-cancelled-2022",
+    "kind": "intensive",
+    "level": [],
+    "lifecycle": "cancelled",
+    "lifecycleNote": "Korea Intensive cancelled",
+    "location": {},
+    "organization": {
+      "city": "London",
+      "country": "GB",
+      "name": "The Royal Ballet School",
+      "slug": "royal-ballet-school"
+    },
+    "prices": [],
+    "schedule": {
+      "season": "2022",
+      "sessions": []
+    },
+    "source": {
+      "hash": "sha256:a13c55b5e30f28bc0162354cec39e6452dc4372dca91e21e641bf06672b38e93",
+      "provider": "royal-ballet-school",
+      "scrapedAt": "2026-06-05T10:04:59.249815Z",
+      "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/korea-intensive-cancelled/"
+    },
+    "teachers": [],
+    "title": "Korea Intensive cancelled 2022"
+  },
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 11
+    },
+    "application": {
+      "notes": "Bookings for this masterclass are now closed as we have reach capacity.This is a non-selective course.",
+      "requirements": [
+        {
+          "poses": [],
+          "specificity": "defined-poses",
+          "type": "photos"
+        }
+      ],
+      "status": "closed"
+    },
+    "genres": [],
+    "id": "royal-ballet-school/livorno-masterclasses-2025",
+    "kind": "masterclass",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Livorno",
+      "country": "IT",
+      "venue": "AED European Dance Association, Via Glauco Masi, 7, 57121 Livorno LI, Italy"
+    },
+    "organization": {
+      "city": "London",
+      "country": "GB",
+      "name": "The Royal Ballet School",
+      "slug": "royal-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 75.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Fee",
+        "notes": "£75 for the two-day masterclass – no application fee"
+      }
+    ],
+    "schedule": {
+      "end": "2025-11-16",
+      "notes": "Saturday 15 and Sunday 16 November 2025",
+      "season": "2025",
+      "sessions": [],
+      "start": "2025-11-16",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:b5ea222091a11c57e3e90c4ec036667748123b06728a1b59a98a7c3f7b488b29",
+      "provider": "royal-ballet-school",
+      "scrapedAt": "2026-06-05T10:04:59.240779Z",
+      "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/livorno-masterclasses/"
+    },
+    "teachers": [],
+    "title": "Livorno masterclasses 2025"
+  },
+  {
+    "ageRange": {
       "max": 15,
       "min": 10
     },
@@ -22,6 +393,7 @@
     "id": "royal-ballet-school/livorno-special-training-programme-2027",
     "kind": "intensive",
     "level": [],
+    "lifecycle": "scheduled",
     "location": {
       "city": "Livorno",
       "country": "IT",
@@ -89,9 +461,9 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "hash": "sha256:6332420a828d87424a635a27f27180e9a504af08aa610bd2e19fda4d83227e24",
+      "hash": "sha256:7ec6127556b2bf5ac381bdb6979fbd1460c809d1a6d37deedbe762880abce973",
       "provider": "royal-ballet-school",
-      "scrapedAt": "2026-06-03T19:46:06.399516Z",
+      "scrapedAt": "2026-06-05T10:04:59.241367Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/livorno-special-training-programme/"
     },
     "teachers": [],
@@ -124,6 +496,7 @@
     "id": "royal-ballet-school/los-angeles-intensive-2026",
     "kind": "intensive",
     "level": [],
+    "lifecycle": "scheduled",
     "location": {
       "city": "Los Angeles",
       "country": "US",
@@ -203,13 +576,411 @@
       "timezone": "America/Los_Angeles"
     },
     "source": {
-      "hash": "sha256:d8737e5c04cdecfb91ff424a9c37612fe5785209721dedd4559dc56092a7f68c",
+      "hash": "sha256:91daabe910bac0886794ad8ab7beaebedae7a7b95ec2c25a7f59544de5c6fb2a",
       "provider": "royal-ballet-school",
-      "scrapedAt": "2026-06-03T19:46:06.397390Z",
+      "scrapedAt": "2026-06-05T10:04:59.238599Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/los-angeles-intensive/"
     },
     "teachers": [],
     "title": "Los Angeles Intensive 2026"
+  },
+  {
+    "application": {
+      "notes": "Bookings open 5 January.\nBookings close for individual classes at midnight BST, the morning of the class.",
+      "requirements": [
+        {
+          "poses": [],
+          "specificity": "defined-poses",
+          "type": "photos"
+        }
+      ],
+      "url": "https://eur.cvent.me/gnXK9?RefId=intensives-apply. "
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "pointe"
+    ],
+    "id": "royal-ballet-school/online-spring-intensive-2022",
+    "kind": "intensive",
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced",
+      "professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "online": true
+    },
+    "organization": {
+      "city": "London",
+      "country": "GB",
+      "name": "The Royal Ballet School",
+      "slug": "royal-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 60.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Age 10- 12 years",
+        "notes": "Age 10- 12 years: £60  Age 13- 15 years: £60"
+      },
+      {
+        "amount": 60.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Age 13- 15 years",
+        "notes": "Age 10- 12 years: £60  Age 13- 15 years: £60"
+      },
+      {
+        "amount": 14.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Focus/Pilates class (45 minutes)",
+        "notes": "Focus/Pilates class (45 minutes): £14  Contemporary (1 hour): £16  Ballet class/Adult Ballet class (1 hour 15 minutes): £18  Private group class: £40 (limited to 20 registrants per class)  Q&As and Pre-Recorded Video’s: £5"
+      },
+      {
+        "amount": 16.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Contemporary (1 hour)",
+        "notes": "Focus/Pilates class (45 minutes): £14  Contemporary (1 hour): £16  Ballet class/Adult Ballet class (1 hour 15 minutes): £18  Private group class: £40 (limited to 20 registrants per class)  Q&As and Pre-Recorded Video’s: £5"
+      },
+      {
+        "amount": 18.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Ballet class/Adult Ballet class (1 hour 15 minutes)",
+        "notes": "Focus/Pilates class (45 minutes): £14  Contemporary (1 hour): £16  Ballet class/Adult Ballet class (1 hour 15 minutes): £18  Private group class: £40 (limited to 20 registrants per class)  Q&As and Pre-Recorded Video’s: £5"
+      },
+      {
+        "amount": 40.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Private group class",
+        "notes": "Focus/Pilates class (45 minutes): £14  Contemporary (1 hour): £16  Ballet class/Adult Ballet class (1 hour 15 minutes): £18  Private group class: £40 (limited to 20 registrants per class)  Q&As and Pre-Recorded Video’s: £5"
+      },
+      {
+        "amount": 5.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "(limited to 20 registrants per class)  Q&As and Pre-Recorded Video’s",
+        "notes": "Focus/Pilates class (45 minutes): £14  Contemporary (1 hour): £16  Ballet class/Adult Ballet class (1 hour 15 minutes): £18  Private group class: £40 (limited to 20 registrants per class)  Q&As and Pre-Recorded Video’s: £5"
+      }
+    ],
+    "schedule": {
+      "end": "2022-04-08",
+      "notes": "4-8 April 2022",
+      "season": "2022",
+      "sessions": [
+        {
+          "end": "2022-04-08",
+          "gender": "both",
+          "label": "4-8 April 2022",
+          "notes": "4-8 April 2022",
+          "start": "2022-04-04"
+        }
+      ],
+      "start": "2022-04-08"
+    },
+    "source": {
+      "hash": "sha256:7cdac55a44c9bbf105c24c06f6168e2cf42b16a9afdb7088249ee28737759691",
+      "provider": "royal-ballet-school",
+      "scrapedAt": "2026-06-05T10:04:59.248786Z",
+      "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/online-spring-intensive/"
+    },
+    "teachers": [],
+    "title": "Online Spring Intensive 2022 2022"
+  },
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 7
+    },
+    "application": {
+      "notes": "Booking is now closed.",
+      "requirements": [
+        {
+          "poses": [],
+          "specificity": "defined-poses",
+          "type": "photos"
+        }
+      ],
+      "status": "closed"
+    },
+    "genres": [
+      "classical",
+      "repertoire"
+    ],
+    "id": "royal-ballet-school/singapore-intensive-2026",
+    "kind": "intensive",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Singapore",
+      "country": "SG",
+      "venue": "Singapore Ballet Studios, 201 Victoria Street, #07 -02/03 Burgis+, Singapore, 188067"
+    },
+    "organization": {
+      "city": "London",
+      "country": "GB",
+      "name": "The Royal Ballet School",
+      "slug": "royal-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 396.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Course",
+        "notes": "Course: £396"
+      },
+      {
+        "amount": 100.0,
+        "currency": "GBP",
+        "includes": [],
+        "label": "Additional coaching",
+        "notes": "Additional coaching: £100 per session (1 hour)"
+      }
+    ],
+    "schedule": {
+      "end": "2026-04-12",
+      "notes": "10-12 April 2026",
+      "season": "2026",
+      "sessions": [
+        {
+          "end": "2026-04-12",
+          "gender": "both",
+          "label": "10-12 April 2026",
+          "notes": "10-12 April 2026",
+          "start": "2026-04-10"
+        }
+      ],
+      "start": "2026-04-12",
+      "timezone": "Asia/Singapore"
+    },
+    "source": {
+      "hash": "sha256:7e0ddca953ca59e5ded9fefc61c63c2dfcdc89ef1fa61a630aa96803d01bb68d",
+      "provider": "royal-ballet-school",
+      "scrapedAt": "2026-06-05T10:04:59.246650Z",
+      "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/singapore-intensive/"
+    },
+    "teachers": [],
+    "title": "Singapore Intensive 2026"
+  },
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 12
+    },
+    "application": {
+      "requirements": [
+        {
+          "notes": "Places are offered on a first-come, first-served basis. Book early to avoid disappointment.",
+          "poses": [],
+          "specificity": "defined-poses",
+          "type": "photos"
+        }
+      ]
+    },
+    "genres": [],
+    "id": "royal-ballet-school/spain-masterclasses-2023",
+    "kind": "masterclass",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Madrid",
+      "country": "ES",
+      "venue": "Madrid · Real Conservatorio Profesional de Danza, Calle Padre Amigó, 5, 28025 Madrid · Barcelona · Institute of the Arts, Carrer Ramon de Dalmases, 18, 08870 Sitges, Barcelona, Spain"
+    },
+    "organization": {
+      "city": "London",
+      "country": "GB",
+      "name": "The Royal Ballet School",
+      "slug": "royal-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 55.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Fee",
+        "notes": "£55"
+      }
+    ],
+    "schedule": {
+      "end": "2023-12-06",
+      "notes": "Barcelona\n2 December 2023\nMadrid\n6 December 2023",
+      "season": "2023",
+      "sessions": [],
+      "start": "2023-12-02",
+      "timezone": "Europe/Madrid"
+    },
+    "source": {
+      "hash": "sha256:6bc239abb966179842d6fe8126b9e1a22052ac6a459921ad2922e74f97d674d3",
+      "provider": "royal-ballet-school",
+      "scrapedAt": "2026-06-05T10:04:59.241916Z",
+      "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/spain-masterclasses/"
+    },
+    "teachers": [],
+    "title": "Spain masterclasses 2023"
+  },
+  {
+    "ageRange": {
+      "max": 14,
+      "min": 11
+    },
+    "application": {
+      "notes": "Booking is now closed.This course is non-selective. Places are limited and offered on a first-come-first-served basis. Book early to avoid disappointment.Please note:\nIf we do not reach the minimum number of students and teachers we will not be able to deliver the course. Our terms and conditions allow us to cancel a course up to one month before it commences.",
+      "requirements": [
+        {
+          "poses": [],
+          "specificity": "defined-poses",
+          "type": "photos"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.royalballetschool.org.uk/train/dancer-training/dance-teacher-training/inspire/series-1/"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "royal-ballet-school/thailand-intensive-2025",
+    "kind": "intensive",
+    "level": [
+      "advanced"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Bangkok",
+      "country": "TH",
+      "venue": "Hostbkk Arts Center, 4th floor, Chandrphen Restaurant, 1030/1 Rama 4 Road, Thung Maha Mek, Sathon, Bangkok, 10120 Thailand"
+    },
+    "organization": {
+      "city": "London",
+      "country": "GB",
+      "name": "The Royal Ballet School",
+      "slug": "royal-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 438.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Fee",
+        "notes": "£438"
+      }
+    ],
+    "schedule": {
+      "end": "2025-04-26",
+      "notes": "24-26 April 2025",
+      "season": "2025",
+      "sessions": [
+        {
+          "end": "2025-04-26",
+          "gender": "both",
+          "label": "24-26 April 2025",
+          "notes": "24-26 April 2025",
+          "start": "2025-04-24"
+        }
+      ],
+      "start": "2025-04-26",
+      "timezone": "Asia/Bangkok"
+    },
+    "source": {
+      "hash": "sha256:a15595925a6271339eab603bd5235465a20c293b34829aa0dba191b5713690e6",
+      "provider": "royal-ballet-school",
+      "scrapedAt": "2026-06-05T10:04:59.240093Z",
+      "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/thailand-intensive/"
+    },
+    "teachers": [],
+    "title": "Thailand Intensive 2025"
+  },
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 8
+    },
+    "application": {
+      "notes": "Applications are now closed.\nBookings close 2 March 2025 or when places are filled. Book early to avoid disappointment.",
+      "requirements": [
+        {
+          "notes": "All applicants must submit photographs as part of their application.\n\nRequired positions are published as age-banded diagrams on the photograph-requirements page: https://www.royalballetschool.org.uk/train/apply/photograph-requirements/",
+          "poses": [],
+          "specificity": "defined-poses",
+          "type": "photos"
+        }
+      ],
+      "status": "closed"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "character",
+      "repertoire"
+    ],
+    "id": "royal-ballet-school/uk-spring-intensive-2026",
+    "kind": "intensive",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "London",
+      "country": "GB",
+      "venue": "White Lodge, Richmond Park, Richmond, Surrey, TW10 5HR · Upper School, 46 Floral Street, Covent Garden, London, WC2E 9DA"
+    },
+    "organization": {
+      "city": "London",
+      "country": "GB",
+      "name": "The Royal Ballet School",
+      "slug": "royal-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 48.0,
+        "currency": "GBP",
+        "includes": [],
+        "label": "Application fee",
+        "notes": "Application fee: £48"
+      }
+    ],
+    "schedule": {
+      "end": "2026-04-02",
+      "notes": "White Lodge 29 March – 2 April 2026 Residential and non-residential course option\nUpper School 30 March – 1 April 2026 Non-residential course",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-03-29",
+      "timezone": "Europe/London"
+    },
+    "source": {
+      "hash": "sha256:0d114b3d70698756237fa6bab0317de3ad26a88aab63895d136ee9f2234181ba",
+      "provider": "royal-ballet-school",
+      "scrapedAt": "2026-06-05T10:04:59.250148Z",
+      "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/uk-spring-intensive/"
+    },
+    "teachers": [],
+    "title": "UK Spring Intensive 2026"
   },
   {
     "ageRange": {
@@ -238,6 +1009,7 @@
     "id": "royal-ballet-school/uk-summer-intensive-2026",
     "kind": "intensive",
     "level": [],
+    "lifecycle": "scheduled",
     "location": {
       "city": "London",
       "country": "GB",
@@ -564,12 +1336,78 @@
       "timezone": "Europe/London"
     },
     "source": {
-      "hash": "sha256:51c611ed22257a6fdd0b76be43b85178dff9f1b49c215b2b501166391c363cd8",
+      "hash": "sha256:95519c1e661e467e115542b22536c038bea78c56c7877d78dc67017fd3c707d6",
       "provider": "royal-ballet-school",
-      "scrapedAt": "2026-06-03T19:46:06.404985Z",
+      "scrapedAt": "2026-06-05T10:04:59.247313Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/uk-summer-intensive/"
     },
     "teachers": [],
     "title": "UK Summer Intensive 2026"
+  },
+  {
+    "ageRange": {
+      "max": 14,
+      "min": 9
+    },
+    "application": {
+      "notes": "Bookings are now closed.",
+      "requirements": [
+        {
+          "notes": "This course is non-selective and is designed to help young dancers of all levels develop their skills in a supportive and inspiring environment. No photos or videos are required to book.",
+          "poses": [],
+          "specificity": "defined-poses",
+          "type": "photos"
+        }
+      ],
+      "status": "closed"
+    },
+    "genres": [
+      "classical",
+      "repertoire"
+    ],
+    "id": "royal-ballet-school/winter-intensive-2026",
+    "kind": "intensive",
+    "level": [
+      "open"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "London",
+      "country": "GB",
+      "venue": "London · The Royal Ballet School, Upper School, 46 Floral Street, Covent Garden, London, WC2E 9DA Edinburgh · Dance Base, 14-16 Grassmarket, Edinburgh, EH1 2JU Manchester · Shockout Studios, Shockout Arts, Brian Statham Way, Manchester, M16 0PU"
+    },
+    "organization": {
+      "city": "London",
+      "country": "GB",
+      "name": "The Royal Ballet School",
+      "slug": "royal-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 160.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Course fee",
+        "notes": "Course fee: £160"
+      }
+    ],
+    "schedule": {
+      "end": "2026-02-20",
+      "notes": "Thursday 19 and Friday 20 February 2026",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-02-20",
+      "timezone": "Europe/London"
+    },
+    "source": {
+      "hash": "sha256:1d6c45ccb5723401c341b7aee26bcde314b43f280bb7956a29b475cc71ddf635",
+      "provider": "royal-ballet-school",
+      "scrapedAt": "2026-06-05T10:04:59.243732Z",
+      "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/winter-intensive/"
+    },
+    "teachers": [],
+    "title": "Winter Intensives 2026"
   }
 ]

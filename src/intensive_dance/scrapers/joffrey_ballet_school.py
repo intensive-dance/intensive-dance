@@ -147,9 +147,6 @@ def _build_offering(
         return None  # no in-scope ballet/contemporary style → not for this register
 
     start, end, season = _parse_dates(text)
-    if end is not None and end < today:
-        return None  # a dated cycle that has already finished
-
     city, country = _location(record.get("intensive_location", []), locations)
 
     return Offering(

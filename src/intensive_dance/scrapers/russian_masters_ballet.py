@@ -136,8 +136,9 @@ def _page_offerings(
     type_label = _text(tree.css_first(".course-city-type")) or f"RMB {season_word} Intensive"
     dates_text = _text(tree.css_first(".course-city-programs-header-page-title-date"))
 
-    if "cancel" in dates_text.lower():
-        return []  # e.g. "THE BALLET COURSE HAS BEEN CANCELLED" — drop the location
+    # A cancelled location ("…CANCELLED") is kept and marked, not dropped; ended
+    # cycles are kept too ("past" is derived from the dates, not stored).
+    cancelled = "cancel" in dates_text.lower()
 
     season = _year(dates_text)
     base_year = int(season) if season.isdigit() else None
@@ -148,20 +149,20 @@ def _page_offerings(
         track = prog.attributes.get("id")
         if not track:
             continue
-        offering = _build_offering(
-            prog, url, location, track, type_label, city, country,
-            season, base_year, fallback_start, fallback_end,
+        offerings.append(
+            _build_offering(
+                prog, url, location, track, type_label, city, country,
+                season, base_year, fallback_start, fallback_end, cancelled,
+            )
         )
-        if offering is not None and not (offering.schedule.end and offering.schedule.end < today):
-            offerings.append(offering)
     return offerings
 
 
 def _build_offering(
     prog: Node, url: str, location: str, track: str, type_label: str,
     city: str | None, country: str | None, season: str, base_year: int | None,
-    fallback_start: date | None, fallback_end: date | None,
-) -> Offering | None:
+    fallback_start: date | None, fallback_end: date | None, cancelled: bool = False,
+) -> Offering:
     track_name = _text(prog.css_first(".course-city-program-name")) or track.replace("-", " ").title()
     blocks = _blocks(prog)
     article = prog.css_first(".article-col-right-1.content-text")
@@ -185,6 +186,8 @@ def _build_offering(
         title=title,
         genres=_genres(f"{track_name} {body}"),
         kind="intensive",
+        lifecycle="cancelled" if cancelled else "scheduled",
+        lifecycleNote="This RMB location has been cancelled." if cancelled else None,
         level=_levels(track_name),
         ageRange=_age_range(blocks.get("AIMED AT", "")),
         organization=ORG,

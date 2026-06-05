@@ -16,6 +16,11 @@ from pydantic import BaseModel, Field
 
 Genre = Literal["classical", "contemporary", "neoclassical", "character", "repertoire", "pointe"]
 Kind = Literal["intensive", "masterclass", "summer-school", "workshop", "audition-tour"]
+# Whether the offering itself takes place — separate from `application.status`
+# (which is about the booking window). "past" is NOT a value: it's derived from
+# `schedule.end < today` so it never goes stale. `postponed` keeps the original
+# record (with `supersededBy`) alongside a new-date one (with `supersedes`).
+Lifecycle = Literal["scheduled", "cancelled", "postponed"]
 Level = Literal["beginner", "intermediate", "advanced", "pre-professional", "professional", "open"]
 PriceInclude = Literal["tuition", "accommodation", "meals", "materials", "performance", "studio"]
 # Application cycle state. `closed` covers a cycle still listed but no longer
@@ -147,6 +152,10 @@ class Offering(BaseModel):
     title: str
     genres: list[Genre] = Field(default_factory=list)
     kind: Kind
+    lifecycle: Lifecycle = "scheduled"
+    lifecycle_note: str | None = Field(default=None, alias="lifecycleNote")  # raw source text, e.g. "Cancelled — full refund"
+    superseded_by: str | None = Field(default=None, alias="supersededBy")  # id of the replacement (postponed → new)
+    supersedes: str | None = None  # id of the original this replaces (new → postponed)
     level: list[Level] = Field(default_factory=list)
     age_range: dict | None = Field(default=None, alias="ageRange")
     organization: Organization

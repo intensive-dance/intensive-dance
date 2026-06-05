@@ -18,6 +18,7 @@
     "id": "russian-masters-ballet/alicante-observation-2026",
     "kind": "intensive",
     "level": [],
+    "lifecycle": "scheduled",
     "location": {
       "city": "Alicante",
       "country": "ES"
@@ -48,9 +49,9 @@
       "timezone": "Europe/Madrid"
     },
     "source": {
-      "hash": "sha256:811da96e096bf3495538d5062bc04f9c4132fd04b7bdb317dcf368aea2e2ac20",
+      "hash": "sha256:0af043665f469a10ebf53e0c2a0b78c911a0974e7065499abef256320e807890",
       "provider": "russian-masters-ballet",
-      "scrapedAt": "2026-06-04T11:24:15.316959Z",
+      "scrapedAt": "2026-06-05T10:05:05.887070Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/alicante/#observation"
     },
     "teachers": [
@@ -261,6 +262,7 @@
       "professional",
       "open"
     ],
+    "lifecycle": "scheduled",
     "location": {
       "city": "Alicante",
       "country": "ES",
@@ -310,9 +312,9 @@
       "timezone": "Europe/Madrid"
     },
     "source": {
-      "hash": "sha256:0d16537731b4fc1bdb3bb5ada3cb3c7d532e738664e9137b51cff82e76f2725a",
+      "hash": "sha256:9d23b8841124abfc359efb0ff7fb37d4556ca02efb435550a5ff13e1679de0f1",
       "provider": "russian-masters-ballet",
-      "scrapedAt": "2026-06-04T22:07:43.567120Z",
+      "scrapedAt": "2026-06-05T10:05:05.886497Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/alicante/#open-professional"
     },
     "teachers": [
@@ -451,6 +453,7 @@
     "level": [
       "professional"
     ],
+    "lifecycle": "scheduled",
     "location": {
       "city": "Alicante",
       "country": "ES",
@@ -482,9 +485,9 @@
       "timezone": "Europe/Madrid"
     },
     "source": {
-      "hash": "sha256:2559695952198b99f0def392414e57797653a18033e08dd32c0d9a580f3895cf",
+      "hash": "sha256:63d928a3126ac9c6a677d9511008f8c05da7656d634f3bad55d061f961e3d055",
       "provider": "russian-masters-ballet",
-      "scrapedAt": "2026-06-04T22:07:43.564781Z",
+      "scrapedAt": "2026-06-05T10:05:05.885275Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/alicante/#professional"
     },
     "teachers": [
@@ -652,6 +655,7 @@
     "id": "russian-masters-ballet/burgas-observation-2026",
     "kind": "intensive",
     "level": [],
+    "lifecycle": "scheduled",
     "location": {
       "city": "Burgas",
       "country": "BG"
@@ -682,9 +686,9 @@
       "timezone": "Europe/Sofia"
     },
     "source": {
-      "hash": "sha256:0b7de257fdb6812ccfb469a7c7aff9e37855535f84377bbdec5080f19610f252",
+      "hash": "sha256:fab1e60f4db096518ae39bcec634e17f99e2e848a1487116c0f6c747217b1ae4",
       "provider": "russian-masters-ballet",
-      "scrapedAt": "2026-06-04T11:24:16.023939Z",
+      "scrapedAt": "2026-06-05T10:05:06.337039Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/burgas/#observation"
     },
     "teachers": [
@@ -823,6 +827,7 @@
     "level": [
       "pre-professional"
     ],
+    "lifecycle": "scheduled",
     "location": {
       "city": "Burgas",
       "country": "BG",
@@ -854,9 +859,9 @@
       "timezone": "Europe/Sofia"
     },
     "source": {
-      "hash": "sha256:f0ce4d8d0f9585785b43c4c1380ed1b479149be868c89c19f0519d76c9cb1eb2",
+      "hash": "sha256:8599d35d54342dace45c4fd97ba4169b57cbbcb37c4204f1a06a240f97a644b9",
       "provider": "russian-masters-ballet",
-      "scrapedAt": "2026-06-04T22:07:43.994043Z",
+      "scrapedAt": "2026-06-05T10:05:06.336612Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/burgas/#pre-professional"
     },
     "teachers": [
@@ -1007,6 +1012,7 @@
     "level": [
       "professional"
     ],
+    "lifecycle": "scheduled",
     "location": {
       "city": "Burgas",
       "country": "BG",
@@ -1038,9 +1044,9 @@
       "timezone": "Europe/Sofia"
     },
     "source": {
-      "hash": "sha256:ca74b3acb403d65568b92ab933515c5d13752d92088cdea265e9b976f586bf2f",
+      "hash": "sha256:f2eb6e691c0dcd7e8a99debffb656a8282ab9ecef0e21a0e4f125ae70d3e3f23",
       "provider": "russian-masters-ballet",
-      "scrapedAt": "2026-06-04T22:07:43.992166Z",
+      "scrapedAt": "2026-06-05T10:05:06.335961Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/burgas/#professional"
     },
     "teachers": [
@@ -1188,6 +1194,7 @@
     "id": "russian-masters-ballet/madrid-program-2026",
     "kind": "intensive",
     "level": [],
+    "lifecycle": "scheduled",
     "location": {
       "city": "Madrid",
       "country": "ES",
@@ -1209,9 +1216,9 @@
       "timezone": "Europe/Madrid"
     },
     "source": {
-      "hash": "sha256:66d2597a2ca8a740510b3c3b58cab4acffae0a46f46508df2bc6e2d8f4d72b2c",
+      "hash": "sha256:1f3bb157cc1330e84ee4ca5ba956d2f6f16f31419969b1e63ad19b7bc1b1db2f",
       "provider": "russian-masters-ballet",
-      "scrapedAt": "2026-06-04T22:07:59.205077Z",
+      "scrapedAt": "2026-06-05T10:05:08.161487Z",
       "url": "https://russianmastersballet.com/courses/ballet-experience/madrid/#program"
     },
     "teachers": [
@@ -1304,12 +1311,249 @@
     },
     "genres": [
       "classical",
+      "contemporary",
+      "character",
+      "repertoire"
+    ],
+    "id": "russian-masters-ballet/perth-observation-unknown",
+    "kind": "intensive",
+    "level": [],
+    "lifecycle": "cancelled",
+    "lifecycleNote": "This RMB location has been cancelled.",
+    "location": {
+      "city": "Perth",
+      "country": "AU"
+    },
+    "organization": {
+      "city": "Alicante",
+      "country": "ES",
+      "name": "Russian Masters Ballet",
+      "slug": "russian-masters-ballet"
+    },
+    "prices": [],
+    "schedule": {
+      "notes": "1 or 2 weeks",
+      "season": "unknown",
+      "sessions": [],
+      "timezone": "Australia/Perth"
+    },
+    "source": {
+      "hash": "sha256:f3dfbe004dad42692930e3ce79ebf1c4afe5374d3238fddb65524bd03b8bdad6",
+      "provider": "russian-masters-ballet",
+      "scrapedAt": "2026-06-05T10:05:09.099375Z",
+      "url": "https://russianmastersballet.com/courses/ballet-experience/perth/#observation"
+    },
+    "teachers": [],
+    "title": "RMB Intensive Perth — Observation unknown"
+  },
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 10
+    },
+    "application": {
+      "notes": "Applicants pass an audition — live group, online group, online individual, or by video. A video audition (8–12 min) must show: barre (tendu, fondu, grand battement); a centre adagio; a pirouette combination; small, medium and big jump combinations; two combinations on pointe; and an optional classical variation. Returning RMB students may be exempt.",
+      "requirements": [
+        {
+          "description": "Applicants pass an audition — live group, online group, online individual, or by video. A video audition (8–12 min) must show: barre (tendu, fondu, grand battement); a centre adagio; a pirouette combination; small, medium and big jump combinations; two combinations on pointe; and an optional classical variation. Returning RMB students may be exempt.",
+          "specificity": "specific",
+          "type": "video"
+        }
+      ],
+      "url": "https://russianmastersballet.com/pages/registration-for-intensives/"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "character",
+      "repertoire",
+      "pointe"
+    ],
+    "id": "russian-masters-ballet/perth-professional-unknown",
+    "kind": "intensive",
+    "level": [
+      "professional"
+    ],
+    "lifecycle": "cancelled",
+    "lifecycleNote": "This RMB location has been cancelled.",
+    "location": {
+      "city": "Perth",
+      "country": "AU"
+    },
+    "organization": {
+      "city": "Alicante",
+      "country": "ES",
+      "name": "Russian Masters Ballet",
+      "slug": "russian-masters-ballet"
+    },
+    "prices": [],
+    "schedule": {
+      "notes": "2 weeks: 07 January - 21 January",
+      "season": "unknown",
+      "sessions": [],
+      "timezone": "Australia/Perth"
+    },
+    "source": {
+      "hash": "sha256:65b1cbd6a6f03d52671494dc9544928f754cb2a8a7b7b92e84f46dedf9579efb",
+      "provider": "russian-masters-ballet",
+      "scrapedAt": "2026-06-05T10:05:09.099139Z",
+      "url": "https://russianmastersballet.com/courses/ballet-experience/perth/#professional"
+    },
+    "teachers": [],
+    "title": "RMB Intensive Perth — Professional unknown"
+  },
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 9
+    },
+    "application": {
+      "notes": "Applicants pass an audition — live group, online group, online individual, or by video. A video audition (8–12 min) must show: barre (tendu, fondu, grand battement); a centre adagio; a pirouette combination; small, medium and big jump combinations; two combinations on pointe; and an optional classical variation. Returning RMB students may be exempt.",
+      "requirements": [
+        {
+          "description": "Applicants pass an audition — live group, online group, online individual, or by video. A video audition (8–12 min) must show: barre (tendu, fondu, grand battement); a centre adagio; a pirouette combination; small, medium and big jump combinations; two combinations on pointe; and an optional classical variation. Returning RMB students may be exempt.",
+          "specificity": "specific",
+          "type": "video"
+        }
+      ],
+      "url": "https://russianmastersballet.com/pages/registration-for-intensives/"
+    },
+    "genres": [
+      "classical",
+      "character",
+      "repertoire",
+      "pointe"
+    ],
+    "id": "russian-masters-ballet/shanghai-china-professional-2026",
+    "kind": "intensive",
+    "level": [
+      "professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Shanghai",
+      "country": "CN",
+      "venue": "ONE Art Center"
+    },
+    "organization": {
+      "city": "Alicante",
+      "country": "ES",
+      "name": "Russian Masters Ballet",
+      "slug": "russian-masters-ballet"
+    },
+    "prices": [
+      {
+        "amount": 12800.0,
+        "currency": "CNY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Early Bird price",
+        "notes": "Early Bird price - 12,800 CNY (only until 1 January 2026)"
+      },
+      {
+        "amount": 15800.0,
+        "currency": "CNY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Regular price",
+        "notes": "Regular price - 15,800 CNY"
+      }
+    ],
+    "schedule": {
+      "end": "2026-02-07",
+      "notes": "1 week: 02 February - 07 February",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-02-02",
+      "timezone": "Asia/Shanghai"
+    },
+    "source": {
+      "hash": "sha256:a22c0196a9ca6b436fb107cda9fb6b87606d26d9774ef254092d4b601e0d725a",
+      "provider": "russian-masters-ballet",
+      "scrapedAt": "2026-06-05T10:05:09.808058Z",
+      "url": "https://russianmastersballet.com/courses/ballet-experience/shanghai-china/#professional"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "slug": "vaganova-ballet-academy"
+          },
+          {
+            "organization": "Boris Eifman Dance Academy"
+          }
+        ],
+        "name": "Tatiana Sevostianova (Kvasova)",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "slug": "vaganova-ballet-academy"
+          },
+          {
+            "organization": "Boris Eifman Dance Academy"
+          },
+          {
+            "organization": "Mariinsky Theatre"
+          }
+        ],
+        "name": "Sofia Gumerova",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "slug": "vaganova-ballet-academy"
+          },
+          {
+            "organization": "Russian Masters Ballet",
+            "slug": "russian-masters-ballet"
+          }
+        ],
+        "name": "Asiya Lukmanova",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "slug": "vaganova-ballet-academy"
+          },
+          {
+            "organization": "Boris Eifman Dance Academy"
+          }
+        ],
+        "name": "Roman Petukhov",
+        "role": "teacher"
+      }
+    ],
+    "title": "RMB Intensive Shanghai — Professional 2026"
+  },
+  {
+    "application": {
+      "notes": "Observation is aimed at ballet teachers; access is by sending a CV to the course email.",
+      "requirements": [
+        {
+          "type": "cv"
+        }
+      ],
+      "url": "https://russianmastersballet.com/pages/registration-for-intensives/"
+    },
+    "genres": [
+      "classical",
       "character",
       "repertoire"
     ],
     "id": "russian-masters-ballet/st-petersburg-observation-2026",
     "kind": "intensive",
     "level": [],
+    "lifecycle": "scheduled",
     "location": {
       "city": "St. Petersburg",
       "country": "RU",
@@ -1331,9 +1575,9 @@
       "timezone": "Europe/Moscow"
     },
     "source": {
-      "hash": "sha256:44969a2ec4d9d072e3f230d009609742392bd57c12f2308d1623348e5267a0e7",
+      "hash": "sha256:cb5a64afdbeae0964bb2b6aa723e99cb7641341e6573385cf46c0357fae926dc",
       "provider": "russian-masters-ballet",
-      "scrapedAt": "2026-06-04T11:24:16.811942Z",
+      "scrapedAt": "2026-06-05T10:05:06.828660Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/st-petersburg/#observation"
     },
     "teachers": [
@@ -1539,6 +1783,7 @@
     "level": [
       "professional"
     ],
+    "lifecycle": "scheduled",
     "location": {
       "city": "St. Petersburg",
       "country": "RU",
@@ -1570,9 +1815,9 @@
       "timezone": "Europe/Moscow"
     },
     "source": {
-      "hash": "sha256:38e16efec3e14e24e3f78bd808d53ff260642ef16bd7d8155a54b483f576d575",
+      "hash": "sha256:2239518a2fa969ec6d7d9a9c9030687b953077a2cacf96545575abe3e46f106a",
       "provider": "russian-masters-ballet",
-      "scrapedAt": "2026-06-04T22:09:30.976082Z",
+      "scrapedAt": "2026-06-05T10:05:06.827947Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/st-petersburg/#professional-2-weeks"
     },
     "teachers": [
@@ -1773,6 +2018,7 @@
     "level": [
       "professional"
     ],
+    "lifecycle": "scheduled",
     "location": {
       "city": "St. Petersburg",
       "country": "RU",
@@ -1804,9 +2050,9 @@
       "timezone": "Europe/Moscow"
     },
     "source": {
-      "hash": "sha256:48bf6254dcefd11d5f14c63611f8ada5714534f7423b7524563a85371e3f4bf2",
+      "hash": "sha256:a53e96516e64a9540a81b0a411d7df9320e95d51ce65ab84542c5ee24e5a42f4",
       "provider": "russian-masters-ballet",
-      "scrapedAt": "2026-06-04T22:09:30.973502Z",
+      "scrapedAt": "2026-06-05T10:05:06.826820Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/st-petersburg/#professional"
     },
     "teachers": [

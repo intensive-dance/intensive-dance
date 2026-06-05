@@ -16,6 +16,7 @@
     "id": "frankfurt-ballet-masterclasses/2026",
     "kind": "masterclass",
     "level": [],
+    "lifecycle": "scheduled",
     "location": {
       "city": "Frankfurt am Main",
       "country": "DE",
@@ -36,9 +37,9 @@
       "timezone": "Europe/Berlin"
     },
     "source": {
-      "hash": "sha256:3f11515982ef2dc02735642ed891401a9643116c59e1e57ee3292ebfc07e50dc",
+      "hash": "sha256:e1e89a8ee3d1eb24f07d638fdec9c26eedba68d4b59a03e9a0995554856ee4f1",
       "provider": "frankfurt-ballet-masterclasses",
-      "scrapedAt": "2026-06-05T08:07:21.245004Z",
+      "scrapedAt": "2026-06-05T10:05:20.105476Z",
       "url": "https://masterclass.balletcompetition.net/"
     },
     "teachers": [],
