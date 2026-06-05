@@ -167,6 +167,7 @@ def test_build_offerings_new_york_fields():
     assert ny.schedule.timezone == "America/New_York"
     assert ny.age_range == {"min": 12, "max": 20}
     assert ny.level == ["advanced"]
+    assert ny.location is not None
     assert ny.location.venue == "American Ballet Theatre"
     assert ny.location.city == "New York"
     assert [p.amount for p in ny.prices] == [4350.0]
@@ -176,6 +177,7 @@ def test_build_offerings_new_york_fields():
 
 def test_build_offerings_florida_venue_city_and_fees():
     fl = abt._build_offerings(_HTML, date(2026, 1, 1))[1]
+    assert fl.location is not None
     assert fl.location.venue == "University of South Florida"
     assert fl.location.city == "Tampa"
     assert [p.label for p in fl.prices] == ["Tuition", "Day Student Fee", "Room and Board"]
