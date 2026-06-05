@@ -1,8 +1,8 @@
 # Enable once per clone:  uv run pre-commit install
 #
-# Hooks call the project's own ruff (via uv) rather than a separately pinned
-# mirror, so formatting/linting on commit matches `uv run ruff` locally and in
-# CI exactly — one ruff version, no drift.
+# Hooks call the project's own ruff/ty (via uv) rather than separately pinned
+# mirrors, so formatting/linting/type-checking on commit matches `uv run` locally
+# and in CI exactly — one tool version each, no drift.
 repos:
   - repo: local
     hooks:
@@ -17,4 +17,13 @@ repos:
         entry: uv run ruff check --fix
         language: system
         types_or: [python, pyi]
+        require_serial: true
+      - id: ty
+        name: ty
+        entry: uv run ty check
+        language: system
+        types_or: [python, pyi]
+        # Type errors cross files (editing B can break A), so check the whole
+        # project rather than just the staged paths.
+        pass_filenames: false
         require_serial: true
