@@ -100,6 +100,32 @@ module docstring so the next person doesn't re-investigate:
 
 ---
 
+## Fetch proxy (JS-rendered / bot-protected pages)
+
+When a host gates its content behind **Cloudflare Turnstile**, a JS challenge,
+or blocks the CI runner's datacenter IP — i.e. a direct httpx fetch returns a
+challenge/empty page, not the real markup — route the request through the render
+proxy instead of giving up:
+
+```
+https://fetch-proxy.jonas-strassel.de/?url=<url-encoded>&render=1&wait=8000&format=md
+```
+
+with `Authorization: Bearer <token>`. `render=1` runs a headless browser,
+`wait=<ms>` lets the challenge settle, `format=md` returns Markdown (drop it for
+raw HTML). It's a last resort — slower and rate-limited — so reach for it only
+after the API-first tree and a plain fetch have failed, and say in the scraper
+docstring *why* the proxy was needed.
+
+**Token — `FETCH_PROXY_TOKEN`.** Stored in GitHub two ways: as an **Actions
+variable** (read in **development**) and as an **Actions secret** (read in
+**CI**). Locally, hydrate it from the variable — `export
+FETCH_PROXY_TOKEN=$(gh variable get FETCH_PROXY_TOKEN)`; the `scrape.yml`
+workflow injects `${{ secrets.FETCH_PROXY_TOKEN }}`. Never hardcode the bearer
+in source.
+
+---
+
 ## Scraper anatomy (mirror an existing one)
 
 - **WordPress-API example:** `scrapers/joffrey_ballet_school.py`
