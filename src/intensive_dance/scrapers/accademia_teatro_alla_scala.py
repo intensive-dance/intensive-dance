@@ -126,7 +126,6 @@ def _build_summer_stage(text: str, url: str) -> Offering | None:
         source=Source(provider="accademia-teatro-alla-scala", url=url, scrapedAt=now_utc()),
         title=f"Stage estivi di danza {season}",
         genres=_genres(text),
-        kind="summer-school",
         level=_levels(text),
         ageRange=_age_range(text),
         organization=ORG,
@@ -162,7 +161,6 @@ def _build_propedeutica(text: str, url: str) -> Offering | None:
         title=f"Stage di propedeutica alla danza {season}",
         # Pre-academic classical preparation only — no contemporary class listed.
         genres=["classical"],
-        kind="summer-school",
         ageRange=_age_range(text),
         organization=ORG,
         location=Location(venue=VENUE, city="Milan", country="IT"),

@@ -20,7 +20,6 @@
       "pointe"
     ],
     "id": "accademia-teatro-alla-scala/stage-estivi-di-danza-2026",
-    "kind": "summer-school",
     "level": [
       "professional",
       "pre-professional"
@@ -67,7 +66,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "hash": "sha256:b044bf48cbca8ece4720e3e71c8119480ba56565c3b065b1229640c7094ebca1",
+      "hash": "sha256:d051a8fd2b3ad2225ff026494878b5ef2294e34e5b8187f1b80b0bea6e93cb80",
       "provider": "accademia-teatro-alla-scala",
       "scrapedAt": "2026-06-05T18:57:45.297370Z",
       "url": "https://www.accademialascala.it/danza/stage-estivi-di-danza"
@@ -93,7 +92,6 @@
       "classical"
     ],
     "id": "accademia-teatro-alla-scala/stage-di-propedeutica-alla-danza-2026",
-    "kind": "summer-school",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -146,7 +144,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "hash": "sha256:31d9f3c30c134206c8df0118692d55817cf358306dbe1e1aab9c36a74e15364d",
+      "hash": "sha256:260fd2e2e8fd199cc3c5d72e5b427e8a55222f0dadfaec8b51c8bae893a1d17f",
       "provider": "accademia-teatro-alla-scala",
       "scrapedAt": "2026-06-05T18:57:46.110339Z",
       "url": "https://www.accademialascala.it/danza/stage-di-propedeutica-alla-danza"

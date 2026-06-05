@@ -105,7 +105,6 @@ def test_build_summer_offering():
     offering = scala._build_summer_stage(_SUMMER, scala.SUMMER_STAGE)
     assert offering is not None
     assert offering.id == "accademia-teatro-alla-scala/stage-estivi-di-danza-2026"
-    assert offering.kind == "summer-school"
     assert offering.schedule.start == date(2026, 6, 29)
     assert offering.schedule.end == date(2026, 7, 10)
     assert offering.schedule.season == "2026"
