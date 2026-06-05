@@ -32,6 +32,7 @@ from datetime import date
 import httpx
 from selectolax.parser import HTMLParser
 
+from intensive_dance import parse
 from intensive_dance.models import (
     Application,
     Genre,
@@ -153,17 +154,8 @@ def _build_offering(client: httpx.Client, url: str, today: date) -> Offering | N
 
 # --- parsing helpers ----------------------------------------------------------
 
-_MONTHS = {
-    m: i
-    for i, m in enumerate(
-        ["january", "february", "march", "april", "may", "june", "july",
-         "august", "september", "october", "november", "december"],
-        start=1,
-    )
-}
-_MONTHALT = "|".join(_MONTHS)
-_STARTS = re.compile(r"Starts\s+(\d{1,2})\s+(" + _MONTHALT + r")\s+(\d{4})", re.IGNORECASE)
-_ENDS = re.compile(r"Ends\s+(\d{1,2})\s+(" + _MONTHALT + r")\s+(\d{4})", re.IGNORECASE)
+_STARTS = re.compile(r"Starts\s+(\d{1,2})\s+(" + parse.MONTHALT + r")\s+(\d{4})", re.IGNORECASE)
+_ENDS = re.compile(r"Ends\s+(\d{1,2})\s+(" + parse.MONTHALT + r")\s+(\d{4})", re.IGNORECASE)
 # Age band: read from the (clean) title/slug as "12-29"/"8-12"/"12-20 ans"; the
 # body is too noisy ("3 to 6 people" rooms), so there we require an "aged" cue.
 _AGE = re.compile(r"\b(\d{1,2})\s*(?:[-–]|to)\s*(\d{1,2})\b")
@@ -178,7 +170,7 @@ def _one(match: re.Match | None) -> date | None:
     if not match:
         return None
     day, month, year = match.groups()
-    return date(int(year), _MONTHS[month.lower()], int(day))
+    return date(int(year), parse.MONTHS[month.lower()], int(day))
 
 
 def _dates(text: str) -> tuple[date | None, date | None]:
@@ -211,9 +203,7 @@ _GENRE_KEYWORDS: list[tuple[Genre, tuple[str, ...]]] = [
 
 
 def _genres(text: str) -> list[Genre]:
-    low = text.lower()
-    found = [g for g, keys in _GENRE_KEYWORDS if any(k in low for k in keys)]
-    return found or ["classical"]
+    return parse.match_genres(text, _GENRE_KEYWORDS, default=["classical"])
 
 
 def _status(text: str):
@@ -237,7 +227,7 @@ def _prices(text: str) -> list[Price]:
     prices: list[Price] = []
     seen: set[float] = set()
     for match in _MONEY.finditer(text):
-        amount = _amount(match.group(1) or match.group(2))
+        amount = parse.parse_amount(match.group(1) or match.group(2))
         if amount is None or amount < 50 or amount in seen:
             continue
         context = text[max(0, match.start() - 55):match.start()].lower()
@@ -249,21 +239,8 @@ def _prices(text: str) -> list[Price]:
             continue
         seen.add(amount)
         label = f"{duration.group(0)} with lunch"
-        prices.append(Price(amount=amount, currency="EUR", label=_clean(label).capitalize(), includes=["tuition"]))
+        prices.append(Price(amount=amount, currency="EUR", label=parse.clean(label).capitalize(), includes=["tuition"]))
     return prices
-
-
-def _amount(raw: str) -> float | None:
-    # European formatting: "1.299,00" or "1,299.00" or "1299" → 1299.0
-    s = raw.strip().rstrip(".,")
-    if "," in s and "." in s:
-        s = s.replace(".", "").replace(",", ".") if s.rfind(",") > s.rfind(".") else s.replace(",", "")
-    else:
-        s = s.replace(",", "") if re.search(r",\d{3}\b", s) else s.replace(",", ".")
-    try:
-        return round(float(s), 2)
-    except ValueError:
-        return None
 
 
 # --- small DOM helpers --------------------------------------------------------
@@ -271,7 +248,7 @@ def _amount(raw: str) -> float | None:
 
 def _meta(tree: HTMLParser, prop: str) -> str | None:
     node = tree.css_first(f'meta[property="{prop}"]') or tree.css_first(f'meta[name="{prop}"]')
-    return _clean(node.attributes.get("content") or "") or None if node else None
+    return parse.clean(node.attributes.get("content") or "") or None if node else None
 
 
 def _body_text(tree: HTMLParser) -> str:
@@ -282,12 +259,8 @@ def _body_text(tree: HTMLParser) -> str:
 
 def _clean_title(title: str) -> str:
     # Squarespace og:title often appends " — Mosa Ballet School"
-    return re.sub(r"\s*[—–|]\s*Mosa Ballet School\s*$", "", _clean(title), flags=re.IGNORECASE)
+    return re.sub(r"\s*[—–|]\s*Mosa Ballet School\s*$", "", parse.clean(title), flags=re.IGNORECASE)
 
 
 def _text(node) -> str:
-    return _clean(node.text()) if node is not None else ""
-
-
-def _clean(text: str) -> str:
-    return re.sub(r"\s+", " ", (text or "").replace("\xa0", " ")).strip()
+    return parse.clean(node.text()) if node is not None else ""

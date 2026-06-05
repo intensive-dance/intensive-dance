@@ -20,6 +20,7 @@ from datetime import date
 import httpx
 from selectolax.parser import HTMLParser
 
+from intensive_dance import parse
 from intensive_dance.models import (
     Application,
     Genre,
@@ -89,22 +90,13 @@ def scrape(client: httpx.Client) -> list[Offering]:
 
 # --- parsing ------------------------------------------------------------------
 
-_MONTHS = {
-    m: i
-    for i, m in enumerate(
-        ["january", "february", "march", "april", "may", "june", "july",
-         "august", "september", "october", "november", "december"],
-        start=1,
-    )
-}
-_MONTHALT = "|".join(_MONTHS)
 _YEAR = re.compile(r"Summer School\s+(20\d\d)", re.IGNORECASE)
 # "6 - 17 July 2026" or "July 6 to 17, 2026".
 _RANGE = re.compile(
-    r"(\d{1,2})\s*[-–to]+\s*(\d{1,2})\s+(" + _MONTHALT + r")|(" + _MONTHALT + r")\s+(\d{1,2})\s*(?:[-–]|to)\s*(\d{1,2})",
+    r"(\d{1,2})\s*[-–to]+\s*(\d{1,2})\s+(" + parse.MONTHALT + r")|(" + parse.MONTHALT + r")\s+(\d{1,2})\s*(?:[-–]|to)\s*(\d{1,2})",
     re.IGNORECASE,
 )
-_DEADLINE = re.compile(r"open until\s+(\d{1,2})\s+(" + _MONTHALT + r")\s+(20\d\d)", re.IGNORECASE)
+_DEADLINE = re.compile(r"open until\s+(\d{1,2})\s+(" + parse.MONTHALT + r")\s+(20\d\d)", re.IGNORECASE)
 
 
 def _season(text: str) -> str:
@@ -123,13 +115,13 @@ def _date_range(text: str, season: str) -> tuple[date | None, date | None]:
         d1, d2, month = match.group(1), match.group(2), match.group(3)
     else:  # "<Month> <d1> to <d2>"
         month, d1, d2 = match.group(4), match.group(5), match.group(6)
-    num = _MONTHS[month.lower()]
+    num = parse.MONTHS[month.lower()]
     return date(year, num, int(d1)), date(year, num, int(d2))
 
 
 def _deadline(text: str) -> date | None:
     match = _DEADLINE.search(text)
-    return date(int(match.group(3)), _MONTHS[match.group(2).lower()], int(match.group(1))) if match else None
+    return date(int(match.group(3)), parse.MONTHS[match.group(2).lower()], int(match.group(1))) if match else None
 
 
 def _course_age(text: str, label: str) -> dict | None:
@@ -139,28 +131,7 @@ def _course_age(text: str, label: str) -> dict | None:
 
 def _course_fee(text: str, label: str) -> float | None:
     match = re.search(re.escape(label) + r":\s*€\s?([\d.,]+)", text, re.IGNORECASE)
-    return _amount(match.group(1)) if match else None
-
-
-def _amount(raw: str) -> float | None:
-    """Parse a fee that may be written in European (1.400 / 1.299,00) or
-    Anglo (1,400 / 1,299.00) notation, plus the bare 1400 the site uses today.
-
-    With both separators present the rightmost is the decimal point; with one,
-    a separator immediately followed by exactly three digits is a thousands
-    grouping, otherwise a decimal point.
-    """
-    s = raw.strip().rstrip(".,").replace(" ", "")
-    if "," in s and "." in s:
-        s = s.replace(".", "").replace(",", ".") if s.rfind(",") > s.rfind(".") else s.replace(",", "")
-    elif "," in s:
-        s = s.replace(",", "") if re.search(r",\d{3}\b", s) else s.replace(",", ".")
-    elif "." in s:
-        s = s.replace(".", "") if re.search(r"\.\d{3}\b", s) else s
-    try:
-        return round(float(s), 2)
-    except ValueError:
-        return None
+    return parse.parse_amount(match.group(1)) if match else None
 
 
 _GENRE_KEYWORDS: list[tuple[Genre, tuple[str, ...]]] = [
@@ -172,8 +143,7 @@ _GENRE_KEYWORDS: list[tuple[Genre, tuple[str, ...]]] = [
 
 
 def _genres(text: str) -> list[Genre]:
-    low = text.lower()
-    return [g for g, keys in _GENRE_KEYWORDS if any(k in low for k in keys)] or ["classical"]
+    return parse.match_genres(text, _GENRE_KEYWORDS, default=["classical"])
 
 
 def _content(client: httpx.Client, url: str) -> str:

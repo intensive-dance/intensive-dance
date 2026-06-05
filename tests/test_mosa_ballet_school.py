@@ -99,13 +99,6 @@ def test_prices_drop_accommodation_and_audition():
     assert mosa._prices("Audition at Mosa: 120 EUR for 6 days") == []
 
 
-def test_amount_european_formats():
-    assert mosa._amount("1,299.00") == 1299.0
-    assert mosa._amount("1.299,00") == 1299.0
-    assert mosa._amount("749") == 749.0
-    assert mosa._amount("1,299") == 1299.0
-
-
 # --- status -------------------------------------------------------------------
 
 

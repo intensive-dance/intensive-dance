@@ -34,7 +34,7 @@ from datetime import date
 
 import httpx
 
-from intensive_dance import wp
+from intensive_dance import parse, wp
 from intensive_dance.models import (
     Application,
     Genre,
@@ -183,8 +183,7 @@ def _genres(term_ids: list[int], styles: dict[int, str], title: str, body: str) 
 
 
 def _genres_from_text(text: str) -> list[Genre]:
-    low = text.lower()
-    return [genre for genre, keys in _GENRE_KEYWORDS if any(k in low for k in keys)]
+    return parse.match_genres(text, _GENRE_KEYWORDS)
 
 
 def _location(term_ids: list[int], locations: dict[int, str]) -> tuple[str | None, str | None]:
@@ -204,17 +203,8 @@ def _location(term_ids: list[int], locations: dict[int, str]) -> tuple[str | Non
 # stated elsewhere in the body; with no year anywhere, dates stay null and the
 # season reads "unknown".
 
-_MONTHS = {
-    m: i
-    for i, m in enumerate(
-        ["january", "february", "march", "april", "may", "june", "july",
-         "august", "september", "october", "november", "december"],
-        start=1,
-    )
-}
-_MONTHALT = "|".join(_MONTHS)
 _RANGE = re.compile(
-    r"(" + _MONTHALT + r")\s+(\d{1,2})\s*[–-]\s*(?:(" + _MONTHALT + r")\s+)?(\d{1,2})"
+    r"(" + parse.MONTHALT + r")\s+(\d{1,2})\s*[–-]\s*(?:(" + parse.MONTHALT + r")\s+)?(\d{1,2})"
     r"(?:,?\s*(20\d\d))?",
     re.IGNORECASE,
 )
@@ -230,7 +220,7 @@ def _parse_dates(text: str) -> tuple[date | None, date | None, str]:
         m1, d1, m2, d2, year = match.groups()
         resolved = int(year) if year else year_fallback
         if resolved is not None:
-            start_month, end_month = _MONTHS[m1.lower()], _MONTHS[(m2 or m1).lower()]
+            start_month, end_month = parse.MONTHS[m1.lower()], parse.MONTHS[(m2 or m1).lower()]
             start = date(resolved, start_month, int(d1))
             # A range that runs backwards across the year boundary (e.g. Dec → Jan).
             end_year = resolved + 1 if end_month < start_month else resolved
