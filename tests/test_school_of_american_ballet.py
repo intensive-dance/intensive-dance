@@ -116,6 +116,11 @@ def test_levels_coordinated_phrase():
     assert sab._levels("is for intermediate and advanced students") == ["intermediate", "advanced"]
 
 
+def test_levels_comma_separated_list():
+    text = "for intermediate, advanced, and pre-professional students"
+    assert sab._levels(text) == ["intermediate", "advanced", "pre-professional"]
+
+
 def test_levels_ignores_loose_prose():
     text = "training at the intermediate level. the most advanced girls participate"
     assert sab._levels(text) == ["intermediate"]

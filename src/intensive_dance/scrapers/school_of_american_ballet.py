@@ -168,7 +168,8 @@ _LEVEL_WORDS = "|".join(_LEVELS_ORDER)
 # Anchor on the noun ("intermediate and advanced students" / "intermediate
 # level") so descriptive prose ("the most advanced girls") doesn't count.
 _LEVEL_PHRASE = re.compile(
-    rf"((?:{_LEVEL_WORDS})(?:\s+(?:and|or|to|,)\s*(?:{_LEVEL_WORDS}))*)"
+    rf"((?:{_LEVEL_WORDS})"
+    rf"(?:(?:\s*,\s*(?:(?:and|or|to)\s+)?|\s+(?:and|or|to)\s+)(?:{_LEVEL_WORDS}))*)"
     r"\s+(?:students|dancers|level)\b",
     re.IGNORECASE,
 )
