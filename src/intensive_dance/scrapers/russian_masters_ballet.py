@@ -40,6 +40,7 @@ from __future__ import annotations
 
 import re
 from datetime import date
+from urllib.parse import urlsplit
 
 import httpx
 from selectolax.parser import HTMLParser, Node
@@ -115,8 +116,11 @@ def _locations(client: httpx.Client, category: str) -> list[str]:
     pattern = re.compile(rf"^/courses/{re.escape(category)}/([a-z0-9][a-z0-9-]*)/?$")
     found: list[str] = []
     for anchor in tree.css("a"):
-        href = (anchor.attributes.get("href") or "").split("?")[0].split("#")[0].replace("//", "/")
-        match = pattern.match(href)
+        # urlsplit().path handles relative, absolute, and protocol-relative hrefs
+        # alike and drops the query/fragment — the pattern's ^/courses/ anchor then
+        # keeps the match to same-category location links.
+        path = urlsplit(anchor.attributes.get("href") or "").path
+        match = pattern.match(path)
         if match and match.group(1) not in found:
             found.append(match.group(1))
     return sorted(found)
@@ -189,7 +193,7 @@ def _build_offering(
             notes=duration or None,
         ),
         teachers=_teachers(article) if article is not None else [],
-        prices=_prices(_section(body, "PROGRAM FEE")),
+        prices=_prices(_section(body, "PROGRAM FEE"), country),
         application=Application(
             url=REGISTER_URL,
             requirements=requirements,
@@ -374,25 +378,39 @@ _MONEY = re.compile(
     r"(?P<amt>\d[\d., ]*\d|\d)\s*(?P<cur>€|euros?|eur|cny|¥|лв|bgn|₽|rub|aud|usd|\$)",
     re.IGNORECASE,
 )
+# Unambiguous tokens map straight to ISO 4217.
 _CURRENCY = {
     "€": "EUR", "euro": "EUR", "euros": "EUR", "eur": "EUR",
-    "cny": "CNY", "¥": "CNY",
+    "cny": "CNY",
     "лв": "BGN", "bgn": "BGN",
     "₽": "RUB", "rub": "RUB",
-    "aud": "AUD", "usd": "USD", "$": "USD",
+    "aud": "AUD", "usd": "USD",
+}
+# Bare glyphs that name a different currency depending on where the course runs
+# ($ → USD/AUD, ¥ → CNY/JPY). RMB prices each location in its local currency, so
+# we resolve the glyph against the offering's country and fall back to the most
+# common reading (key None) when the country is unknown.
+_SYMBOL_BY_COUNTRY: dict[str, dict[str | None, str]] = {
+    "$": {"AU": "AUD", "US": "USD", None: "USD"},
+    "¥": {"CN": "CNY", "JP": "JPY", None: "CNY"},
 }
 
 
-def _money(match: re.Match) -> tuple[float, str]:
+def _money(match: re.Match, country: str | None) -> tuple[float, str]:
     amount = float(re.sub(r"[, ]", "", match.group("amt")))
-    return amount, _CURRENCY[match.group("cur").lower()]
+    token = match.group("cur")
+    by_country = _SYMBOL_BY_COUNTRY.get(token)
+    if by_country is not None:
+        return amount, by_country.get(country, by_country[None])
+    return amount, _CURRENCY[token.lower()]
 
 
-def _prices(fee_text: str) -> list[Price]:
+def _prices(fee_text: str, country: str | None) -> list[Price]:
     """Fees written as prose, one option per line: '2 weeks: … - 950 €'.
 
     The label is the text just before the amount (after the last ':' or '-');
     the whole line is kept in `notes`. Lines without a money token are skipped.
+    `country` disambiguates bare currency glyphs (see _SYMBOL_BY_COUNTRY).
     """
     prices: list[Price] = []
     for raw in fee_text.split("\n"):
@@ -401,7 +419,7 @@ def _prices(fee_text: str) -> list[Price]:
         for i, match in enumerate(matches):
             start = matches[i - 1].end() if i else 0
             label = line[start : match.start()].strip(" :–-") or "Program fee"
-            amount, currency = _money(match)
+            amount, currency = _money(match, country)
             prices.append(
                 Price(amount=amount, currency=currency, label=label, includes=["tuition"], notes=line)
             )
@@ -520,6 +538,9 @@ def _clean_desc(desc: str) -> str:
 
 
 def _affiliations(desc: str) -> list[Affiliation]:
+    # Emitted in _INSTITUTIONS table order, not the order the institutions appear
+    # in the bio — so the order is stable across scrapes but carries no "primary
+    # affiliation" meaning. Don't read affiliations[0] as the person's main house.
     low = desc.lower()
     orgs: list[tuple[str, str | None]] = []
     for needle, org, slug in _INSTITUTIONS:

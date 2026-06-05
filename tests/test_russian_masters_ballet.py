@@ -76,7 +76,7 @@ def test_dates_none_without_day_month():
 
 def test_prices_euro_per_line():
     fee = "1 week: 5 - 12 July - 550 €\n2 weeks: 12 - 26 July - 950 €"
-    assert [(p.amount, p.currency, p.label) for p in rmb._prices(fee)] == [
+    assert [(p.amount, p.currency, p.label) for p in rmb._prices(fee, "ES")] == [
         (550.0, "EUR", "1 week: 5 - 12 July"),
         (950.0, "EUR", "2 weeks: 12 - 26 July"),
     ]
@@ -84,14 +84,23 @@ def test_prices_euro_per_line():
 
 def test_prices_cny_with_thousands_separator():
     fee = "Early Bird price - 12,800 CNY\nRegular price - 15,800 CNY"
-    assert [(p.amount, p.currency, p.label) for p in rmb._prices(fee)] == [
+    assert [(p.amount, p.currency, p.label) for p in rmb._prices(fee, "CN")] == [
         (12800.0, "CNY", "Early Bird price"),
         (15800.0, "CNY", "Regular price"),
     ]
 
 
+def test_prices_ambiguous_symbol_resolved_by_country():
+    # A bare "$" means AUD in Australia, USD in the States; "¥" means CNY in China.
+    # The glyph is resolved against the offering's country, not hardcoded.
+    assert rmb._prices("3 weeks: 2500 $", "AU")[0].currency == "AUD"
+    assert rmb._prices("3 weeks: 2500 $", "US")[0].currency == "USD"
+    assert rmb._prices("3 weeks: 2500 $", None)[0].currency == "USD"
+    assert rmb._prices("3 weeks: 12800 ¥", "CN")[0].currency == "CNY"
+
+
 def test_prices_includes_tuition():
-    (price,) = rmb._prices("3 weeks: 1950 €")
+    (price,) = rmb._prices("3 weeks: 1950 €", "ES")
     assert price.includes == ["tuition"]
 
 
