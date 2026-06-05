@@ -39,6 +39,7 @@ from intensive_dance.models import (
     Genre,
     Kind,
     Location,
+    NoneReq,
     Offering,
     Organization,
     Price,
@@ -134,7 +135,9 @@ def _build_offering(client: httpx.Client, url: str, today: date) -> Offering | N
         application=Application(
             status=_status(body),
             url=url,
-            requirements=[VideoReq(specificity="unspecific", description=_AUDITION_NOTE)] if pre_selection else [],
+            requirements=(
+                [VideoReq(specificity="unspecific", description=_AUDITION_NOTE)] if pre_selection else [NoneReq()]
+            ),
             notes=_AUDITION_NOTE if pre_selection else None,
         ),
     )

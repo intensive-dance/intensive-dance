@@ -106,6 +106,8 @@ def _build_offering(record: dict, fees: wp.Content | None, today: date) -> Offer
 
     photo_url = _absolute(content.link("photograph"))
     requirement_notes = content.text("Requirements")
+    if requirement_notes and not re.search(r"photo|image|positio|pose|portrait", requirement_notes, re.IGNORECASE):
+        requirement_notes = None  # this page's "Requirements" heading is eligibility/booking, not photo guidance
     photos = PhotosReq(
         specificity="defined-poses",
         notes=_join(

@@ -5,7 +5,11 @@
       "min": 8
     },
     "application": {
-      "requirements": [],
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
       "status": "open",
       "url": "https://masterclass.balletcompetition.net/"
     },
@@ -37,9 +41,9 @@
       "timezone": "Europe/Berlin"
     },
     "source": {
-      "hash": "sha256:e1e89a8ee3d1eb24f07d638fdec9c26eedba68d4b59a03e9a0995554856ee4f1",
+      "hash": "sha256:5cea7fd934ec29c77418c7d0fddf2a52b825cdeb0b5ce7f9b8150d77d4ac44f0",
       "provider": "frankfurt-ballet-masterclasses",
-      "scrapedAt": "2026-06-05T10:05:20.105476Z",
+      "scrapedAt": "2026-06-05T10:50:30.862901Z",
       "url": "https://masterclass.balletcompetition.net/"
     },
     "teachers": [],
