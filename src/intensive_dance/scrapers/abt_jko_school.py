@@ -117,7 +117,6 @@ def _build_offerings(html: str, today: date) -> list[Offering]:  # noqa: ARG001 
                 source=Source(provider="abt-jko-school", url=PAGE, scrapedAt=now_utc()),
                 title=title,
                 genres=_genres(prose),
-                kind="intensive",
                 level=_levels(prose),
                 ageRange=_age_range(_cell_text(cells.get("age"))),
                 organization=ORG,

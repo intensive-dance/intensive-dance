@@ -16,7 +16,6 @@
       "contemporary"
     ],
     "id": "brussels-international-ballet/summer-intensive-2026",
-    "kind": "intensive",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -39,7 +38,7 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:823fe264e3fd3e5a1b4179a45368b1f1609e2e6d62da873af93f805f3be6eb72",
+      "hash": "sha256:33eb4d2195e73745fd5c91c6b897f57e42fa9b0fc768aedb87aebcee40abeeb7",
       "provider": "brussels-international-ballet",
       "scrapedAt": "2026-06-05T11:14:47.051686Z",
       "url": "https://www.brusselsintballet.org/summer-intensive-2026"

@@ -111,7 +111,6 @@ def _build_offering(summer: str, summer_url: str, apply_text: str) -> Offering |
         source=Source(provider="young-stars-ballet", url=summer_url, scrapedAt=now_utc()),
         title=f"Summer Intensive {season}",
         genres=_genres(summer),
-        kind="intensive",
         ageRange=_age_range(summer),
         organization=ORG,
         location=VENUE,

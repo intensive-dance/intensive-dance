@@ -22,7 +22,6 @@
       "repertoire"
     ],
     "id": "school-of-american-ballet/summer-course-2026",
-    "kind": "summer-school",
     "level": [
       "intermediate",
       "advanced"
@@ -90,7 +89,7 @@
       "timezone": "America/New_York"
     },
     "source": {
-      "hash": "sha256:a22ef675bcf0640314c7093d5984b9e6234b8f0e90aa03fcf21f1cb71ae4d5a3",
+      "hash": "sha256:14758ed0b60e9d1cd42a7739cce76c0fb458eddb60f994555612c548d7bd8fb4",
       "provider": "school-of-american-ballet",
       "scrapedAt": "2026-06-05T11:31:57.507817Z",
       "url": "https://sab.org/enrollment/summer-course/"
@@ -120,7 +119,6 @@
       "repertoire"
     ],
     "id": "school-of-american-ballet/new-york-junior-session-2026",
-    "kind": "summer-school",
     "level": [
       "intermediate"
     ],
@@ -160,7 +158,7 @@
       "timezone": "America/New_York"
     },
     "source": {
-      "hash": "sha256:aaf59a2decef9498d6ee9d1ad1d1c2770edd4ae838cf864e7f1dd777d32cfb7e",
+      "hash": "sha256:c30a8812aa1263f214509be15cec8d29cc746536e84b20b834fdcbd39ce66f8f",
       "provider": "school-of-american-ballet",
       "scrapedAt": "2026-06-05T11:33:30.773483Z",
       "url": "https://sab.org/enrollment/new-york-junior-session/"
