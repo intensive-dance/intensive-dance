@@ -16,6 +16,7 @@ from . import (
     abt_jko_school,
     academie_princesse_grace,
     accademia_teatro_alla_scala,
+    art_of_ballet_summer_course,
     ballet_ruso_barcelona,
     brussels_international_ballet,
     central_school_of_ballet,
@@ -27,6 +28,7 @@ from . import (
     frankfurt_ballet_masterclasses,
     hong_kong_academy_of_ballet,
     idc_berlin,
+    international_ballet_masterclasses_prague,
     john_cranko_school,
     joffrey_ballet_school,
     m_i_ballet_school,
@@ -40,6 +42,7 @@ from . import (
     royal_danish_ballet_summer_school,
     russian_masters_ballet,
     school_of_american_ballet,
+    summer_sensation_intensive,
     young_stars_ballet,
 )
 
@@ -63,6 +66,7 @@ SCRAPERS: dict[str, Scraper] = {
     "school-of-american-ballet": school_of_american_ballet.scrape,
     "young-stars-ballet": young_stars_ballet.scrape,
     "idc-berlin": idc_berlin.scrape,
+    "international-ballet-masterclasses-prague": international_ballet_masterclasses_prague.scrape,
     "central-school-of-ballet": central_school_of_ballet.scrape,
     "northern-ballet-academy": northern_ballet_academy.scrape,
     "norwegian-national-ballet": norwegian_national_ballet.scrape,
@@ -73,5 +77,7 @@ SCRAPERS: dict[str, Scraper] = {
     "masters-of-ballet-academy": masters_of_ballet_academy.scrape,
     "m-i-ballet-school": m_i_ballet_school.scrape,
     "new-national-theatre-ballet-school": new_national_theatre_ballet_school.scrape,
+    "summer-sensation-intensive": summer_sensation_intensive.scrape,
+    "art-of-zurich": art_of_ballet_summer_course.scrape,
     "ballet-ruso-barcelona": ballet_ruso_barcelona.scrape,
 }

@@ -178,7 +178,7 @@
       "city": "Berlin",
       "url": "https://dart.theater/",
       "tier": "secondary",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "tanzwerkstatt-europa",
@@ -259,7 +259,7 @@
       "city": "Zürich",
       "url": "https://zurich.art-of.net/",
       "tier": "secondary",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "pnsd-rosella-hightower",
@@ -304,7 +304,7 @@
       "city": "Prague",
       "url": "https://balletmasterclass.com/",
       "tier": "secondary",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "hungarian-dance-university",
@@ -347,7 +347,7 @@
       "name": "International Ballet School Stockholm",
       "country": "SE",
       "city": "Stockholm",
-      "url": null,
+      "url": "https://www.internationalballet.se/",
       "tier": "secondary",
       "status": "seed"
     },
@@ -366,15 +366,6 @@
       "country": "FI",
       "city": "Helsinki",
       "url": "https://finsummerdance.com/",
-      "tier": "secondary",
-      "status": "seed"
-    },
-    {
-      "slug": "art-of-madrid",
-      "name": "ART of – Ballet Summer Course Madrid",
-      "country": "ES",
-      "city": "Madrid",
-      "url": "https://madrid.art-of.net/",
       "tier": "secondary",
       "status": "seed"
     },
@@ -457,6 +448,51 @@
       "city": null,
       "url": "https://yagp.org/",
       "tier": "marquee",
+      "status": "seed"
+    },
+    {
+      "slug": "k-ballet-school",
+      "name": "K-Ballet School",
+      "country": "JP",
+      "city": "Tokyo",
+      "url": "https://www.k-ballet.co.jp/school/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "tokyo-ballet-school",
+      "name": "The Tokyo Ballet School",
+      "country": "JP",
+      "city": "Tokyo",
+      "url": "https://www.thetokyoballetschool.com/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "japan-ballet-intensives",
+      "name": "Japan Ballet Intensives (JBI)",
+      "country": "JP",
+      "city": "Osaka",
+      "url": "https://www.jbi-japanballetintensives.com/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "ibsi-incheon",
+      "name": "International Ballet Summer Intensive Incheon (IBSI)",
+      "country": "KR",
+      "city": "Incheon",
+      "url": "https://www.dance.utah.edu/ibsi-2019",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "universal-ballet-academy",
+      "name": "Universal Ballet Academy",
+      "country": "KR",
+      "city": "Seoul",
+      "url": "https://www.universalballet.com/",
+      "tier": "secondary",
       "status": "seed"
     }
   ]
