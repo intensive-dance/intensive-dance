@@ -27,6 +27,7 @@ from intensive_dance.models import (
     Offering,
     Organization,
     PhotosReq,
+    Price,
     Schedule,
     Source,
     VideoReq,
@@ -81,6 +82,7 @@ def _build_offering(html: str, today: date) -> Offering | None:
         organization=ORG,
         location=Location(venue=VENUE, city="Frankfurt am Main", country="DE"),
         schedule=Schedule(season=season, start=start, end=end, timezone="Europe/Berlin"),
+        prices=_prices(text),
         application=Application(
             status="open"
             if re.search(r"register now|registration is open", text, re.IGNORECASE)
@@ -111,6 +113,30 @@ def _date_range(text: str) -> tuple[date | None, date | None]:
 
 def _age_range(text: str) -> dict | None:
     return parse.extract_age_range(text, _AGE)
+
+
+# "Participation Fee - EUR 265", "Registration Fee - EUR 25" (currency before amount).
+_FEE = re.compile(r"(participation|registration)\s+fee\s*[-–:]\s*EUR\s*([\d.,]+)", re.IGNORECASE)
+
+
+def _prices(text: str) -> list[Price]:
+    prices: list[Price] = []
+    for kind, raw in _FEE.findall(text):
+        amount = parse.parse_amount(raw)
+        if amount is None:
+            continue
+        kind = kind.lower()
+        prices.append(
+            Price(
+                amount=amount,
+                currency="EUR",
+                label=f"{kind.capitalize()} fee",
+                # The participation fee is the masterclass tuition; the
+                # registration fee is the (non-refundable) application fee.
+                includes=["tuition"] if kind == "participation" else [],
+            )
+        )
+    return prices
 
 
 _GENRE_KEYWORDS: list[tuple[Genre, tuple[str, ...]]] = [
