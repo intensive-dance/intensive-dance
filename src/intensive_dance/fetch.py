@@ -39,6 +39,10 @@ class _RestProxyTransport(httpx.BaseTransport):
         headers = httpx.Headers({"User-Agent": USER_AGENT})
         if self._token:
             headers["Authorization"] = f"Bearer {self._token}"
+        # Forward Accept-Language so a scraper can pin the proxy's render locale
+        # (the proxy serves the page in this language); default unchanged otherwise.
+        if accept_language := request.headers.get("accept-language"):
+            headers["Accept-Language"] = accept_language
         content = request.read()
         if content and (content_type := request.headers.get("content-type")):
             headers["content-type"] = content_type
