@@ -15,7 +15,8 @@ from past years in admin notes), so we anchor strictly on the structured
 overview/fee blocks (`<h3>開催日</h3>` etc.) and never the loose prose.
 
 DISCOVERY: one dated edition — スペシャルワークショップ2026, a 5-day short course
-(Aug 2–6 2026) at the company's 大島スタジオ ("Oshima Studio") in Koto-ku, Tokyo.
+(Aug 2–6 2026) at the company's 東京シティ・バレエ団スタジオ in Koto-ku, Tokyo (near
+「大島」 station — 大島 is the station, not the studio's name).
 The overview splits enrolment into four **class types** that differ by age band
 and (for the Special class) fee/genre — Classical, the new Special "become
 Swanilda" repertoire class, Pilates&Classical, and Contemporary. Fee/dates are
@@ -87,7 +88,7 @@ ORG = Organization(
 # The source title stem (kept faithfully in Japanese; not translated inline). The
 # live title is "スペシャルワークショップ<year>".
 TITLE_STEM = "スペシャルワークショップ"
-VENUE_JA = "東京シティ・バレエ団 大島スタジオ"
+VENUE_JA = "東京シティ・バレエ団スタジオ"
 
 # Registration is by an online form, then payment; entry closes per class as it
 # fills (no dated deadline). Kept verbatim as an application note.

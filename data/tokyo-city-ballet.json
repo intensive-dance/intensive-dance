@@ -22,7 +22,7 @@
     "location": {
       "city": "Tokyo",
       "country": "JP",
-      "venue": "東京シティ・バレエ団 大島スタジオ"
+      "venue": "東京シティ・バレエ団スタジオ"
     },
     "organization": {
       "city": "Tokyo",
@@ -86,7 +86,7 @@
       "timezone": "Asia/Tokyo"
     },
     "source": {
-      "hash": "sha256:683926eee78d9b4de88065cf6b4549438206455d771c5e3887a20025e4a7ae0d",
+      "hash": "sha256:b823f31ad3e772a5bfaea1a77d344626b4707e7ef228e364d996053293051805",
       "provider": "tokyo-city-ballet",
       "scrapedAt": "2026-06-06T07:36:51.488781Z",
       "url": "https://tokyocityballetcompetition.com/workshop.html"

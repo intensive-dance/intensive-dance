@@ -1,0 +1,242 @@
+[
+  {
+    "ageRange": {
+      "max": null,
+      "min": 12
+    },
+    "application": {
+      "deadline": "2026-06-20",
+      "notes": "ヨーロッパ名門バレエ学校への短期スカラシップ留学権、国際コンクール参加権、 就職活動を目指す方にはバレエ団合同オーディションである グランドオーディション参加権 などの様々なチャンスを皆さんにお届けいたします。",
+      "requirements": [],
+      "url": "https://www.dd-balletjapan.com/18th-tokyo"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire"
+    ],
+    "id": "dd-masterclass-japan/18th-tokyo-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Tokyo",
+      "country": "JP",
+      "venue": "Studio H （アッシュ）"
+    },
+    "organization": {
+      "country": "JP",
+      "name": "D&D Masterclass Japan",
+      "slug": "dd-masterclass-japan"
+    },
+    "prices": [
+      {
+        "amount": 92000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "早割料金（全日程・税込）"
+      },
+      {
+        "amount": 97000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "通常料金（全日程・税込）"
+      },
+      {
+        "amount": 30000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "1日受講（税込）"
+      },
+      {
+        "amount": 15000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "プライベートレッスン（15分・税込）"
+      },
+      {
+        "amount": 87000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "第16・17回受講者割引（全日程・税込）"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-27",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 15,
+            "min": 12
+          },
+          "label": "Group A",
+          "notes": "Group A 12歳から15歳（4年以上のバレエ経験者）"
+        },
+        {
+          "ageRange": {
+            "max": null,
+            "min": 16
+          },
+          "label": "Group B",
+          "notes": "Group B 16歳から（上限なし）"
+        }
+      ],
+      "start": "2026-07-24",
+      "timezone": "Asia/Tokyo"
+    },
+    "source": {
+      "hash": "sha256:3bbf797b614ced05d22453be7cd38a0ece9e64c2f3a9f707698cbf7d8601ea74",
+      "provider": "dd-masterclass-japan",
+      "scrapedAt": "2026-06-06T07:35:24.256022Z",
+      "url": "https://www.dd-balletjapan.com/18th-tokyo"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "David Makhateli",
+        "role": "主催（D&D Art Productions 創設者）"
+      },
+      {
+        "affiliations": [],
+        "name": "Valeri Hristov",
+        "role": "特別講師（The Royal Ballet School）"
+      },
+      {
+        "affiliations": [],
+        "name": "Katsumi Etoh",
+        "role": "ピアニスト"
+      }
+    ],
+    "title": "18th D&D Masterclass 東京 2026"
+  },
+  {
+    "ageRange": {
+      "max": null,
+      "min": 12
+    },
+    "application": {
+      "deadline": "2026-06-20",
+      "notes": "ヨーロッパ名門バレエ学校への短期スカラシップ留学権、国際コンクール参加権、 就職活動を目指す方にはバレエ団合同オーディションである グランドオーディション参加権 などの様々なチャンスを皆さんにお届けいたします。",
+      "requirements": [],
+      "url": "https://www.dd-balletjapan.com/18th-osaka"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire"
+    ],
+    "id": "dd-masterclass-japan/18th-osaka-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Osaka",
+      "country": "JP",
+      "venue": "Garage Art Space"
+    },
+    "organization": {
+      "country": "JP",
+      "name": "D&D Masterclass Japan",
+      "slug": "dd-masterclass-japan"
+    },
+    "prices": [
+      {
+        "amount": 67000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "早割料金（全日程・税込）"
+      },
+      {
+        "amount": 72000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "通常料金（全日程・税込）"
+      },
+      {
+        "amount": 30000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "1日受講（税込）"
+      },
+      {
+        "amount": 15000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "プライベートレッスン（15分・税込）"
+      },
+      {
+        "amount": 62000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "第16・17回受講者割引（全日程・税込）"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-30",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 15,
+            "min": 12
+          },
+          "label": "Group A",
+          "notes": "Group A 12歳から15歳（4年以上のバレエ経験者）"
+        },
+        {
+          "ageRange": {
+            "max": null,
+            "min": 16
+          },
+          "label": "Group B",
+          "notes": "Group B 16歳から（上限なし）"
+        }
+      ],
+      "start": "2026-07-28",
+      "timezone": "Asia/Tokyo"
+    },
+    "source": {
+      "hash": "sha256:476695ea0284d6188f35f68d676843737e6c41e9ca610e0122a9bb7db86886d3",
+      "provider": "dd-masterclass-japan",
+      "scrapedAt": "2026-06-06T07:35:24.367414Z",
+      "url": "https://www.dd-balletjapan.com/18th-osaka"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "David Makhateli",
+        "role": "主催（D&D Art Productions 創設者）"
+      },
+      {
+        "affiliations": [],
+        "name": "Valeri Hristov",
+        "role": "特別講師（The Royal Ballet School）"
+      },
+      {
+        "affiliations": [],
+        "name": "Noriko Yamamoto",
+        "role": "ピアニスト"
+      }
+    ],
+    "title": "18th D&D Masterclass 大阪 2026"
+  }
+]

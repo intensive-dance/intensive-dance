@@ -72,7 +72,10 @@ Requirement = Annotated[
 class Source(BaseModel):
     provider: str  # FK into providers.json
     url: str
-    scraped_at: datetime = Field(alias="scrapedAt")
+    scraped_at: datetime = Field(alias="scrapedAt")  # last time content changed
+    attempted_at: datetime | None = Field(
+        default=None, alias="attemptedAt"
+    )  # last fetch attempt (rotation cursor)
     hash: str | None = None
 
     model_config = {"populate_by_name": True}

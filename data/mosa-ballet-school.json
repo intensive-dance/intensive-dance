@@ -34,16 +34,7 @@
       "name": "MOSA Ballet School",
       "slug": "mosa-ballet-school"
     },
-    "prices": [
-      {
-        "amount": 180.0,
-        "currency": "EUR",
-        "includes": [
-          "tuition"
-        ],
-        "label": "6 days with lunch"
-      }
-    ],
+    "prices": [],
     "schedule": {
       "end": "2023-08-26",
       "season": "2023",
@@ -52,9 +43,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:79d5e71774bd4cb8ccb1daddece7dc91639d10dd3b784dca9eec178d98a7a830",
+      "hash": "sha256:6c13310afa841b2be6f3c5429b41d70fbfb937120e644dad8c52e52ee68accbb",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T10:05:10.298999Z",
+      "scrapedAt": "2026-06-05T21:52:11.168641Z",
       "url": "https://www.mosaballetschool.eu/event/august-signature-intensive-course-12-29-2023-39"
     },
     "teachers": [],
@@ -94,24 +85,7 @@
       "name": "MOSA Ballet School",
       "slug": "mosa-ballet-school"
     },
-    "prices": [
-      {
-        "amount": 749.0,
-        "currency": "EUR",
-        "includes": [
-          "tuition"
-        ],
-        "label": "6 days with lunch"
-      },
-      {
-        "amount": 1299.0,
-        "currency": "EUR",
-        "includes": [
-          "tuition"
-        ],
-        "label": "12 days with lunch"
-      }
-    ],
+    "prices": [],
     "schedule": {
       "end": "2024-08-24",
       "season": "2024",
@@ -120,9 +94,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:6ff4b0ced52f21584493f65014d0ed46ea503b5aa02e972bfd9d5115032e6ef2",
+      "hash": "sha256:3dc0db723fb198dc2a7c99e6ec46f24328f9b050b5faf3e67271efd532ba9ab8",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T10:05:10.811263Z",
+      "scrapedAt": "2026-06-05T21:52:14.871942Z",
       "url": "https://www.mosaballetschool.eu/event/august-signature-intensive-course-2024-12-29-115"
     },
     "teachers": [],
@@ -162,24 +136,7 @@
       "name": "MOSA Ballet School",
       "slug": "mosa-ballet-school"
     },
-    "prices": [
-      {
-        "amount": 749.0,
-        "currency": "EUR",
-        "includes": [
-          "tuition"
-        ],
-        "label": "6 days with lunch"
-      },
-      {
-        "amount": 1299.0,
-        "currency": "EUR",
-        "includes": [
-          "tuition"
-        ],
-        "label": "12 days with lunch"
-      }
-    ],
+    "prices": [],
     "schedule": {
       "end": "2025-08-23",
       "season": "2025",
@@ -188,9 +145,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:7c511841feeb17ee5f5a8ee2d72f7f78afb985dd3c45fc58b49b859c57fa42b3",
+      "hash": "sha256:8cbecce59ab3b1079b2cd91c2bb76c27d4d1538a27111100caf78260e936e106",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T10:05:11.036552Z",
+      "scrapedAt": "2026-06-05T21:23:53.937353Z",
       "url": "https://www.mosaballetschool.eu/event/august-signature-intensive-course-2025-12-29-176"
     },
     "teachers": [],
@@ -235,17 +192,28 @@
         "amount": 749.0,
         "currency": "EUR",
         "includes": [
-          "tuition"
+          "tuition",
+          "meals"
         ],
-        "label": "6 days with lunch"
+        "label": "6-DAY PROGRAM August Signature 2026 - Lunch Included (10/08-15/08)"
+      },
+      {
+        "amount": 749.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition",
+          "meals"
+        ],
+        "label": "6-DAY PROGRAM August Signature 2026 - Lunch Included (17/08-22/08)"
       },
       {
         "amount": 1299.0,
         "currency": "EUR",
         "includes": [
-          "tuition"
+          "tuition",
+          "meals"
         ],
-        "label": "12 days with lunch"
+        "label": "12-DAY PROGRAM August Signature 2026 - Lunch Included (10/08-22/08)"
       }
     ],
     "schedule": {
@@ -256,9 +224,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:a07c25b08380cd29fb98514192c86cc6d265b65d4ab6e33ec026d6ca7c988871",
+      "hash": "sha256:eeac70439b0ef90d5a84399fa851c3fecb95e04241d680a301f4bc197d27531a",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T10:05:11.279025Z",
+      "scrapedAt": "2026-06-05T21:24:01.160988Z",
       "url": "https://www.mosaballetschool.eu/event/august-signature-intensive-course-2026-age-12-29-231"
     },
     "teachers": [],
@@ -344,7 +312,7 @@
     "source": {
       "hash": "sha256:6425360287bd5028b2a14e77b468cfba6ffa7460415757134ae9cf6891317f5d",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T11:07:45.697290Z",
+      "scrapedAt": "2026-06-05T21:52:27.753760Z",
       "url": "https://www.mosaballetschool.eu/event/ballet-pianists-summer-intensive-july-2023-53"
     },
     "teachers": [],
@@ -427,16 +395,7 @@
       "name": "MOSA Ballet School",
       "slug": "mosa-ballet-school"
     },
-    "prices": [
-      {
-        "amount": 769.0,
-        "currency": "EUR",
-        "includes": [
-          "tuition"
-        ],
-        "label": "6 days with lunch"
-      }
-    ],
+    "prices": [],
     "schedule": {
       "end": "2023-11-04",
       "season": "2023",
@@ -445,9 +404,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:c821ec8ed601652b21675beb43b1cfe0ec6b1a7ddea8b381de6650c86c1d7a7b",
+      "hash": "sha256:22d366b7762288e957f507575cccd1d57400eefb66adfd51325a2c5d0dc67529",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T10:05:12.360544Z",
+      "scrapedAt": "2026-06-05T21:52:34.190309Z",
       "url": "https://www.mosaballetschool.eu/event/contemporary-immersion-ballet-fundamentals-age-15-20-autumn-2023-90"
     },
     "teachers": [],
@@ -487,16 +446,7 @@
       "name": "MOSA Ballet School",
       "slug": "mosa-ballet-school"
     },
-    "prices": [
-      {
-        "amount": 500.0,
-        "currency": "EUR",
-        "includes": [
-          "tuition"
-        ],
-        "label": "5 days with lunch"
-      }
-    ],
+    "prices": [],
     "schedule": {
       "end": "2025-10-24",
       "season": "2025",
@@ -505,9 +455,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:3542ef18d8cdbcadc86df344949adbf0f7ece7e58dc35561dbc986c0c3bd599e",
+      "hash": "sha256:b3b32d339b89ecadbccff104a2ad3b593c4aba75da17bf328c9752a80f5f415b",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T10:05:12.590942Z",
+      "scrapedAt": "2026-06-05T21:24:39.168191Z",
       "url": "https://www.mosaballetschool.eu/event/discovering-mosa-13-14-autumn-2025-215"
     },
     "teachers": [],
@@ -547,16 +497,7 @@
       "name": "MOSA Ballet School",
       "slug": "mosa-ballet-school"
     },
-    "prices": [
-      {
-        "amount": 500.0,
-        "currency": "EUR",
-        "includes": [
-          "tuition"
-        ],
-        "label": "5 days with lunch"
-      }
-    ],
+    "prices": [],
     "schedule": {
       "end": "2024-10-25",
       "season": "2024",
@@ -565,9 +506,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:20b6992e1b6c87c67e9c558847339b75fba1f1dc92ee896db3b1e8a35560f25d",
+      "hash": "sha256:57965c9b01f46f480c76f6db27db17b01eb0c2137bb7f73bb614b6af63f4e5fe",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T10:05:12.888161Z",
+      "scrapedAt": "2026-06-05T21:24:46.346603Z",
       "url": "https://www.mosaballetschool.eu/event/discovering-mosa-ballet-school-13-14-autumn-2024-163"
     },
     "teachers": [],
@@ -604,16 +545,7 @@
       "name": "MOSA Ballet School",
       "slug": "mosa-ballet-school"
     },
-    "prices": [
-      {
-        "amount": 180.0,
-        "currency": "EUR",
-        "includes": [
-          "tuition"
-        ],
-        "label": "6 days with lunch"
-      }
-    ],
+    "prices": [],
     "schedule": {
       "end": "2023-08-26",
       "season": "2023",
@@ -622,9 +554,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:c5d2c36a291c40ade8495849df154aa9c9c91ca18c5f8c8d24d0a1b5688e79be",
+      "hash": "sha256:3ab9e9f173412e602307aa70da6fa84a4e4243fe2bbb3daa0cf61ebb45e7fb85",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T11:07:46.903343Z",
+      "scrapedAt": "2026-06-05T21:52:43.503112Z",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-and-other-dances-8-11-years-summer-2023-56"
     },
     "teachers": [],
@@ -661,16 +593,7 @@
       "name": "MOSA Ballet School",
       "slug": "mosa-ballet-school"
     },
-    "prices": [
-      {
-        "amount": 289.0,
-        "currency": "EUR",
-        "includes": [
-          "tuition"
-        ],
-        "label": "5 days with lunch"
-      }
-    ],
+    "prices": [],
     "schedule": {
       "end": "2024-10-25",
       "season": "2024",
@@ -679,9 +602,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:c2fa0dddd16f06032494d78bc3bc106c1a4f32eb44c5b5a6397adf3cd57c6a13",
+      "hash": "sha256:6be93c2c5e457889bfd9847292bfc8716eab2e75e76fb4db62d65bce87e7016b",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T11:07:47.159483Z",
+      "scrapedAt": "2026-06-05T21:52:46.795536Z",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-8-12-autumn-2024-161"
     },
     "teachers": [],
@@ -718,16 +641,7 @@
       "name": "MOSA Ballet School",
       "slug": "mosa-ballet-school"
     },
-    "prices": [
-      {
-        "amount": 289.0,
-        "currency": "EUR",
-        "includes": [
-          "tuition"
-        ],
-        "label": "5 days with lunch"
-      }
-    ],
+    "prices": [],
     "schedule": {
       "end": "2025-10-24",
       "season": "2025",
@@ -736,9 +650,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:bf484ae29ccf1058ce31ff5decfaf95716495ef07f625de04fad6e12c2f9505a",
+      "hash": "sha256:7fb6202921c07d9348f42048a888478007b039be5f9139d6b26a148b76240600",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T11:07:47.420621Z",
+      "scrapedAt": "2026-06-05T21:25:11.449011Z",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-8-12-autumn-2025-216"
     },
     "teachers": [],
@@ -775,24 +689,7 @@
       "name": "MOSA Ballet School",
       "slug": "mosa-ballet-school"
     },
-    "prices": [
-      {
-        "amount": 349.0,
-        "currency": "EUR",
-        "includes": [
-          "tuition"
-        ],
-        "label": "6 days with lunch"
-      },
-      {
-        "amount": 599.0,
-        "currency": "EUR",
-        "includes": [
-          "tuition"
-        ],
-        "label": "12 days with lunch"
-      }
-    ],
+    "prices": [],
     "schedule": {
       "end": "2025-08-23",
       "season": "2025",
@@ -801,9 +698,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:4b53c65caed5ab9a432a992dbc0f696ee1a09b05a1dd293750d8520a848dd094",
+      "hash": "sha256:9325cc2069ac83aad42287b8a7112b9e2875c28925b419cfc8ce66ebe0d4c338",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T11:07:47.656424Z",
+      "scrapedAt": "2026-06-05T21:25:19.211941Z",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-august-2025-180"
     },
     "teachers": [],
@@ -845,17 +742,28 @@
         "amount": 460.0,
         "currency": "EUR",
         "includes": [
-          "tuition"
+          "tuition",
+          "meals"
         ],
-        "label": "6 days with lunch"
+        "label": "6-DAY PROGRAM Exploring Ballet August 2026 - Lunch Included (10/08-15/08)"
+      },
+      {
+        "amount": 460.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition",
+          "meals"
+        ],
+        "label": "6-DAY PROGRAM Exploring Ballet August 2026 - Lunch Included (17/08-22/08)"
       },
       {
         "amount": 780.0,
         "currency": "EUR",
         "includes": [
-          "tuition"
+          "tuition",
+          "meals"
         ],
-        "label": "12 days with lunch"
+        "label": "12-DAY PROGRAM Exploring Ballet August 2026 - Lunch Included (10/08-22/08)"
       }
     ],
     "schedule": {
@@ -866,9 +774,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:13e64c87403ae7f0143af4c88bd974775b5a81ae6fefc4789a14a7237a131100",
+      "hash": "sha256:ce8ebac927698b4e22831f2e281dc7520275af566fdf770c5eb5d41b6f48e904",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T11:07:47.889710Z",
+      "scrapedAt": "2026-06-05T21:25:26.619167Z",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-august-2026-232"
     },
     "teachers": [],
@@ -905,16 +813,7 @@
       "name": "MOSA Ballet School",
       "slug": "mosa-ballet-school"
     },
-    "prices": [
-      {
-        "amount": 289.0,
-        "currency": "EUR",
-        "includes": [
-          "tuition"
-        ],
-        "label": "5 days with lunch"
-      }
-    ],
+    "prices": [],
     "schedule": {
       "end": "2024-05-03",
       "season": "2024",
@@ -923,9 +822,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:0be1d42e0cba532a925ad5a57718f0a9f2af75395ad42888e73deaf8a1d0f9e3",
+      "hash": "sha256:9edc4714851628663ec4847bf22126a60e213e0e15d1284a2353733aa7dcecc5",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T11:07:48.160147Z",
+      "scrapedAt": "2026-06-05T21:25:33.769785Z",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-spring-2024-109"
     },
     "teachers": [],
@@ -962,24 +861,7 @@
       "name": "MOSA Ballet School",
       "slug": "mosa-ballet-school"
     },
-    "prices": [
-      {
-        "amount": 349.0,
-        "currency": "EUR",
-        "includes": [
-          "tuition"
-        ],
-        "label": "6 days with lunch"
-      },
-      {
-        "amount": 599.0,
-        "currency": "EUR",
-        "includes": [
-          "tuition"
-        ],
-        "label": "12 days with lunch"
-      }
-    ],
+    "prices": [],
     "schedule": {
       "end": "2024-08-24",
       "season": "2024",
@@ -988,9 +870,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:63cc2489dcbdd47c104cf0c4d69721b05277bdbdce5d7e264287097bc413e2f1",
+      "hash": "sha256:c6d436b4d5c20bb25c4552dbdd9dc98da81d91536130bcfc8c029d4851c7443e",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T11:07:48.598064Z",
+      "scrapedAt": "2026-06-05T21:25:41.138101Z",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-summer-2024-113"
     },
     "teachers": [],
@@ -1027,16 +909,7 @@
       "name": "MOSA Ballet School",
       "slug": "mosa-ballet-school"
     },
-    "prices": [
-      {
-        "amount": 289.0,
-        "currency": "EUR",
-        "includes": [
-          "tuition"
-        ],
-        "label": "5 days with lunch"
-      }
-    ],
+    "prices": [],
     "schedule": {
       "end": "2024-03-01",
       "season": "2024",
@@ -1045,9 +918,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:814721e2b8b3a73898d1d8ed216b9c43119c34e227a3aa47e98289d766a75867",
+      "hash": "sha256:b649ec96fef3f5ad8496cc342ecbd33799c25e67ea4eb3f3c76ac009c34b0d22",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T11:07:48.837485Z",
+      "scrapedAt": "2026-06-05T21:25:48.229845Z",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-winter-2024-108"
     },
     "teachers": [],
@@ -1084,16 +957,7 @@
       "name": "MOSA Ballet School",
       "slug": "mosa-ballet-school"
     },
-    "prices": [
-      {
-        "amount": 289.0,
-        "currency": "EUR",
-        "includes": [
-          "tuition"
-        ],
-        "label": "5 days with lunch"
-      }
-    ],
+    "prices": [],
     "schedule": {
       "end": "2025-02-28",
       "season": "2025",
@@ -1102,9 +966,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:b477844161707335d07cec20d24b845302a23940ad2be86351c5cb3bcc697179",
+      "hash": "sha256:f3572e5fe7c7de276b3c2da3c20d4753fc8b056db4f6ac7a49ea923cad67c095",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T11:07:49.083374Z",
+      "scrapedAt": "2026-06-05T21:25:55.997898Z",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-winter-2025-178"
     },
     "teachers": [],
@@ -1141,16 +1005,7 @@
       "name": "MOSA Ballet School",
       "slug": "mosa-ballet-school"
     },
-    "prices": [
-      {
-        "amount": 289.0,
-        "currency": "EUR",
-        "includes": [
-          "tuition"
-        ],
-        "label": "5 days with lunch"
-      }
-    ],
+    "prices": [],
     "schedule": {
       "end": "2026-02-20",
       "season": "2026",
@@ -1159,9 +1014,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:7978b54c706c754bbb5c70417d2d79523d1a60c3702a898a41fc288db6c5fd41",
+      "hash": "sha256:b1c89210e98e49ad7f402001584ee46852eaab348a52c252e7eec2747eacaa2c",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T11:07:49.309413Z",
+      "scrapedAt": "2026-06-05T21:26:03.115885Z",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-winter-2026-218"
     },
     "teachers": [],
@@ -1212,7 +1067,7 @@
     "source": {
       "hash": "sha256:568b3ed198a183ca6c2c831d65fc7eddef8961fdf9011f34bcfca69aff503e87",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T10:05:15.985785Z",
+      "scrapedAt": "2026-06-05T21:53:17.204344Z",
       "url": "https://www.mosaballetschool.eu/event/french-immersion-and-ballet-august-2024-12-18-114"
     },
     "teachers": [],
@@ -1252,16 +1107,7 @@
       "name": "MOSA Ballet School",
       "slug": "mosa-ballet-school"
     },
-    "prices": [
-      {
-        "amount": 180.0,
-        "currency": "EUR",
-        "includes": [
-          "tuition"
-        ],
-        "label": "6 days with lunch"
-      }
-    ],
+    "prices": [],
     "schedule": {
       "end": "2023-08-26",
       "season": "2023",
@@ -1270,9 +1116,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:eddd4ddf43d0431a46cbc481ddf824cbcfb180838d618f49d31826f84c412553",
+      "hash": "sha256:2c5f67772fdc3fb14ed2bf7615f7f9c2390e378a1a296f60518e280013cec2cd",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T10:05:16.263868Z",
+      "scrapedAt": "2026-06-05T21:53:20.551045Z",
       "url": "https://www.mosaballetschool.eu/event/french-immersion-and-or-ballet-12-18-summer-2023-45"
     },
     "teachers": [],
@@ -1315,7 +1161,7 @@
     "source": {
       "hash": "sha256:446d9d91be61ff75e8f7d81a8d5a5f0181e2be6ae17b2c5e07cc697b2bfacb59",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T11:07:50.210895Z",
+      "scrapedAt": "2026-06-05T21:53:23.622562Z",
       "url": "https://www.mosaballetschool.eu/event/intensive-spring-course-april-2022-14"
     },
     "teachers": [],
@@ -1335,7 +1181,6 @@
           "type": "video"
         }
       ],
-      "status": "open",
       "url": "https://www.mosaballetschool.eu/event/july-mosa-intensive-2026-230"
     },
     "genres": [
@@ -1365,9 +1210,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:96c1c94db4ad334cf6d440d28ce2110b3ba6ff533c663a68cccdeb91bf503804",
+      "hash": "sha256:cbf633ea7277de95ad3299e4f517301b3b82897c986b029571841d6581613903",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T10:05:16.749010Z",
+      "scrapedAt": "2026-06-05T21:26:35.065270Z",
       "url": "https://www.mosaballetschool.eu/event/july-mosa-intensive-2026-230"
     },
     "teachers": [],
@@ -1419,7 +1264,7 @@
     "source": {
       "hash": "sha256:7f8cee5f11f0239c82b2ed9a8dc704c3bb0406cf90fc940fdcb0caa6e5d1239c",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T10:05:17.011089Z",
+      "scrapedAt": "2026-06-05T21:53:30.139618Z",
       "url": "https://www.mosaballetschool.eu/event/july-signature-intensive-course-10-29-2023-42"
     },
     "teachers": [],
@@ -1471,7 +1316,7 @@
     "source": {
       "hash": "sha256:100add3d56a68620c5b3c8eb727966584f2c777c0988df772148513a8b8c7a3b",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T10:05:17.260066Z",
+      "scrapedAt": "2026-06-05T21:53:33.321724Z",
       "url": "https://www.mosaballetschool.eu/event/july-signature-intensive-course-2024-age-10-29-110"
     },
     "teachers": [],
@@ -1512,16 +1357,7 @@
       "name": "MOSA Ballet School",
       "slug": "mosa-ballet-school"
     },
-    "prices": [
-      {
-        "amount": 749.0,
-        "currency": "EUR",
-        "includes": [
-          "tuition"
-        ],
-        "label": "8 days with lunch"
-      }
-    ],
+    "prices": [],
     "schedule": {
       "end": "2025-07-18",
       "season": "2025",
@@ -1530,13 +1366,56 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:7764436f2ce4ff4ff9be91cf2d2ac7fbb8091f7470ad22891392006aabaa042d",
+      "hash": "sha256:d8467d53e1a9022e8c5c1da93d9d0f440dca6f5ab7f21a46edc4c10774d3338a",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T10:05:17.579887Z",
+      "scrapedAt": "2026-06-05T21:26:57.267138Z",
       "url": "https://www.mosaballetschool.eu/event/july-signature-intensive-course-2025-age-10-29-175"
     },
     "teachers": [],
     "title": "July Signature Intensive Course 2025 (age 10-29)"
+  },
+  {
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.mosaballetschool.eu/event/masterclass-charleston-222"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "mosa-ballet-school/masterclass-charleston-222",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Liège",
+      "country": "BE"
+    },
+    "organization": {
+      "city": "Liège",
+      "country": "BE",
+      "name": "MOSA Ballet School",
+      "slug": "mosa-ballet-school"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2025-10-18",
+      "season": "2025",
+      "sessions": [],
+      "start": "2025-10-18",
+      "timezone": "Europe/Brussels"
+    },
+    "source": {
+      "hash": "sha256:52ac0e1cee3079ed9637aac3b6999525339db86aead198f48d34ae0b6401e6ed",
+      "provider": "mosa-ballet-school",
+      "scrapedAt": "2026-06-05T21:27:04.406042Z",
+      "url": "https://www.mosaballetschool.eu/event/masterclass-charleston-222"
+    },
+    "teachers": [],
+    "title": "Masterclass Charleston"
   },
   {
     "ageRange": {
@@ -1572,16 +1451,7 @@
       "name": "MOSA Ballet School",
       "slug": "mosa-ballet-school"
     },
-    "prices": [
-      {
-        "amount": 500.0,
-        "currency": "EUR",
-        "includes": [
-          "tuition"
-        ],
-        "label": "5 days with lunch"
-      }
-    ],
+    "prices": [],
     "schedule": {
       "end": "2024-10-25",
       "season": "2024",
@@ -1590,9 +1460,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:2ea75393d6799e435b793e8323566c0b43c8d2afd6099f736ce122b688849225",
+      "hash": "sha256:e948f198fa7eaf55166be49ec94088f24f8b54f663cb0c030d52f498d80316a0",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T10:05:18.123387Z",
+      "scrapedAt": "2026-06-05T21:53:43.299747Z",
       "url": "https://www.mosaballetschool.eu/event/mosa-immersive-intensive-15-17-autumn-2024-162"
     },
     "teachers": [],
@@ -1632,16 +1502,7 @@
       "name": "MOSA Ballet School",
       "slug": "mosa-ballet-school"
     },
-    "prices": [
-      {
-        "amount": 500.0,
-        "currency": "EUR",
-        "includes": [
-          "tuition"
-        ],
-        "label": "5 days with lunch"
-      }
-    ],
+    "prices": [],
     "schedule": {
       "end": "2025-10-24",
       "season": "2025",
@@ -1650,9 +1511,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:2f235c9271c5c0ab284b68ed849c24dcf60a6f448993f437234fd060ed7ff369",
+      "hash": "sha256:82d8876df23b0c42a0157cb2ad607c5732d158014ab6878bb631018e773c9393",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T10:05:18.350297Z",
+      "scrapedAt": "2026-06-05T21:27:18.796829Z",
       "url": "https://www.mosaballetschool.eu/event/mosa-immersive-intensive-15-20-autumn-2025-214"
     },
     "teachers": [],
@@ -1695,7 +1556,7 @@
     "source": {
       "hash": "sha256:6d7ef6927c7b672b7cd8e48de29764b1fa68189fc66d83884b39962ed4f626bf",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T11:07:52.134130Z",
+      "scrapedAt": "2026-06-05T21:53:50.098503Z",
       "url": "https://www.mosaballetschool.eu/event/new-year-intensive-course-2023-23"
     },
     "teachers": [],
@@ -1735,16 +1596,7 @@
       "name": "MOSA Ballet School",
       "slug": "mosa-ballet-school"
     },
-    "prices": [
-      {
-        "amount": 500.0,
-        "currency": "EUR",
-        "includes": [
-          "tuition"
-        ],
-        "label": "5 days with lunch"
-      }
-    ],
+    "prices": [],
     "schedule": {
       "end": "2025-02-28",
       "season": "2025",
@@ -1753,9 +1605,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:d457c5ff99910c379e5cd5d263fdd585ed31fba5f58505f9a071e860f600cb60",
+      "hash": "sha256:09d9ed68eacefeb5c078d8d4b6bd87e5a38af8f1fed4f85943f884eb16f61270",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T10:05:18.822058Z",
+      "scrapedAt": "2026-06-05T21:27:33.264344Z",
       "url": "https://www.mosaballetschool.eu/event/winter-intensive-course-12-20-ans-2025-174"
     },
     "teachers": [],
@@ -1795,16 +1647,7 @@
       "name": "MOSA Ballet School",
       "slug": "mosa-ballet-school"
     },
-    "prices": [
-      {
-        "amount": 500.0,
-        "currency": "EUR",
-        "includes": [
-          "tuition"
-        ],
-        "label": "5 days with lunch"
-      }
-    ],
+    "prices": [],
     "schedule": {
       "end": "2026-02-20",
       "season": "2026",
@@ -1813,9 +1656,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:bdbe575dfcc0b5dc563d5c9a61cfbe0620d76b56246ed61bb1186add49f38fbf",
+      "hash": "sha256:1d04328653c07409f82d63a8de53126db0663c3476fbf97dac4d85626905c1c8",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T10:05:19.061561Z",
+      "scrapedAt": "2026-06-05T21:27:40.458035Z",
       "url": "https://www.mosaballetschool.eu/event/winter-intensive-course-12-20-ans-2026-217"
     },
     "teachers": [],
@@ -1858,7 +1701,7 @@
     "source": {
       "hash": "sha256:a0b1c7f39a66bca85a3772a501c8704e299bd0cb57ac8eec4753932276089813",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T11:07:52.740918Z",
+      "scrapedAt": "2026-06-05T21:53:59.686787Z",
       "url": "https://www.mosaballetschool.eu/event/winter-intensive-course-2023-28"
     },
     "teachers": [],
@@ -1898,16 +1741,7 @@
       "name": "MOSA Ballet School",
       "slug": "mosa-ballet-school"
     },
-    "prices": [
-      {
-        "amount": 639.0,
-        "currency": "EUR",
-        "includes": [
-          "tuition"
-        ],
-        "label": "5 days with lunch"
-      }
-    ],
+    "prices": [],
     "schedule": {
       "end": "2024-03-01",
       "season": "2024",
@@ -1916,9 +1750,9 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "hash": "sha256:a3c6b86b166631f3ce6d11b565f9ca750f639a9a201b5b694c1cf241d0127a3c",
+      "hash": "sha256:b9341023436b82810000a334e06f87eddfe085d9bd168ebede6dea1c33622886",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T10:05:19.530685Z",
+      "scrapedAt": "2026-06-05T21:54:02.966711Z",
       "url": "https://www.mosaballetschool.eu/event/winter-intensive-course-age-12-20-2024-107"
     },
     "teachers": [],
@@ -1961,7 +1795,7 @@
     "source": {
       "hash": "sha256:63674b9559f16ead2ec0820aeabb023910360150ae3e205b1b294ac09b803dfe",
       "provider": "mosa-ballet-school",
-      "scrapedAt": "2026-06-05T11:07:53.193865Z",
+      "scrapedAt": "2026-06-05T21:54:05.943633Z",
       "url": "https://www.mosaballetschool.eu/event/winter-intensive-course-december-2021-3"
     },
     "teachers": [],

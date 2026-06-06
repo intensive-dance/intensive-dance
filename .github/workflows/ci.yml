@@ -3,6 +3,7 @@ name: ci
 on:
   push:
     branches: [main]
+    paths-ignore: ["data/**"] # hourly scrape commits only bump attemptedAt; PRs still run the gate
   pull_request:
 
 jobs:
@@ -32,6 +33,9 @@ jobs:
 
       - name: Check schema is in sync with models
         run: uv run python -m intensive_dance.schema
+
+      - name: Check ERD is in sync with models
+        run: uv run python -m intensive_dance.erd
 
       - name: Validate committed data
         run: uv run python -m intensive_dance.validate

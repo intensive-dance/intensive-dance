@@ -137,7 +137,7 @@ def test_build_offering_full():
     assert len(offering.schedule.sessions) == 4
     assert offering.age_range == {"min": 8}
     assert offering.location is not None
-    assert offering.location.venue == "東京シティ・バレエ団 大島スタジオ"
+    assert offering.location.venue == "東京シティ・バレエ団スタジオ"
     assert offering.location.country == "JP"
     # Registration opened; no dated deadline (classes fill then close).
     assert offering.application.status == "open"
