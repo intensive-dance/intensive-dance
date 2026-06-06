@@ -27,7 +27,23 @@
       "name": "PNSD Rosella Hightower",
       "slug": "pnsd-rosella-hightower"
     },
-    "prices": [],
+    "prices": [
+      {
+        "amount": 491.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Forfait stage (tarif normal)",
+        "notes": "Moins de 13 ans : 446 €"
+      },
+      {
+        "amount": 35.0,
+        "currency": "EUR",
+        "includes": [],
+        "label": "Adhésion annuelle obligatoire"
+      }
+    ],
     "schedule": {
       "end": "2026-07-02",
       "season": "2026",
@@ -37,9 +53,9 @@
     },
     "source": {
       "attemptedAt": "2026-06-06T15:24:52.045297Z",
-      "hash": "sha256:c5403ac773c86a33917c3d9d748da5cf0a2c3c5e47fe51c1c50d8f31d776efe1",
+      "hash": "sha256:beb7ed7ec1cb6cc63b78066d521528d4efe91617baae2c3de2b15eddb681acb7",
       "provider": "pnsd-rosella-hightower",
-      "scrapedAt": "2026-06-05T21:11:33.456252Z",
+      "scrapedAt": "2026-06-06T17:00:15.924785Z",
       "url": "https://www.pnsd.fr/stages"
     },
     "teachers": [
@@ -104,7 +120,23 @@
       "name": "PNSD Rosella Hightower",
       "slug": "pnsd-rosella-hightower"
     },
-    "prices": [],
+    "prices": [
+      {
+        "amount": 560.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Forfait stage (tarif normal)",
+        "notes": "Moins de 13 ans : 491 €"
+      },
+      {
+        "amount": 35.0,
+        "currency": "EUR",
+        "includes": [],
+        "label": "Adhésion annuelle obligatoire"
+      }
+    ],
     "schedule": {
       "end": "2026-07-14",
       "notes": "Portes ouvertes le dernier jour du stage",
@@ -115,9 +147,9 @@
     },
     "source": {
       "attemptedAt": "2026-06-06T15:24:52.045297Z",
-      "hash": "sha256:50693a2d4881d04fe7a23dffbd12a1ee8497d7660901a86e0ac41afed2565870",
+      "hash": "sha256:27eae434c20c3f2be7246e3e1940d333633ed3e4d11ef3ca48e8c7531d54f8e0",
       "provider": "pnsd-rosella-hightower",
-      "scrapedAt": "2026-06-05T21:12:23.481945Z",
+      "scrapedAt": "2026-06-06T17:00:15.924976Z",
       "url": "https://www.pnsd.fr/stages"
     },
     "teachers": [
@@ -177,7 +209,23 @@
       "name": "PNSD Rosella Hightower",
       "slug": "pnsd-rosella-hightower"
     },
-    "prices": [],
+    "prices": [
+      {
+        "amount": 560.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Forfait stage (tarif normal)",
+        "notes": "Moins de 13 ans : 491 €"
+      },
+      {
+        "amount": 35.0,
+        "currency": "EUR",
+        "includes": [],
+        "label": "Adhésion annuelle obligatoire"
+      }
+    ],
     "schedule": {
       "end": "2026-07-23",
       "notes": "Portes ouvertes le dernier jour du stage",
@@ -188,9 +236,9 @@
     },
     "source": {
       "attemptedAt": "2026-06-06T15:24:52.045297Z",
-      "hash": "sha256:ec5bb2de17a63bc8ac258e3881f37c6aa6588b7839951951ad7ccfeb25cf84de",
+      "hash": "sha256:c894d90dd8d25cdeb13e9140581ea79801c590313998be0a8d3e7cd4230a06d2",
       "provider": "pnsd-rosella-hightower",
-      "scrapedAt": "2026-06-05T21:12:23.482019Z",
+      "scrapedAt": "2026-06-06T17:00:15.925037Z",
       "url": "https://www.pnsd.fr/stages"
     },
     "teachers": [
@@ -250,7 +298,23 @@
       "name": "PNSD Rosella Hightower",
       "slug": "pnsd-rosella-hightower"
     },
-    "prices": [],
+    "prices": [
+      {
+        "amount": 560.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Forfait stage (tarif normal)",
+        "notes": "Moins de 13 ans : 491 €"
+      },
+      {
+        "amount": 35.0,
+        "currency": "EUR",
+        "includes": [],
+        "label": "Adhésion annuelle obligatoire"
+      }
+    ],
     "schedule": {
       "end": "2026-08-26",
       "notes": "Portes ouvertes le dernier jour du stage",
@@ -261,9 +325,9 @@
     },
     "source": {
       "attemptedAt": "2026-06-06T15:24:52.045297Z",
-      "hash": "sha256:ab66ea5fc94075a8db0682373a560cb1c1906ee84b28051518e26f7fbc811e8b",
+      "hash": "sha256:71954c7f1fdcc93a7baf6e3dad69c35e55d9a2577f5c34814ceafc4e3b870d3a",
       "provider": "pnsd-rosella-hightower",
-      "scrapedAt": "2026-06-05T21:12:23.482076Z",
+      "scrapedAt": "2026-06-06T17:00:15.925102Z",
       "url": "https://www.pnsd.fr/stages"
     },
     "teachers": [

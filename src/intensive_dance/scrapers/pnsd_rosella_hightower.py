@@ -26,17 +26,24 @@ WHAT THE PAGE GIVES US (verified live 2026-06):
     genre in the register) and dropped; every edition still teaches ballet.
   - FACULTY: a per-edition roster split by discipline (CLASSIQUE / CONTEMPORAIN /
     JAZZ). We keep the classical + contemporary teachers (jazz-only names dropped).
-  - PRICES: none published on the page (they live in the registration contract
-    PDF), so none are emitted.
+  - PRICES: nothing is priced inline; the per-stage fee grid lives in the summer
+    registration contract PDF (linked as "Formulaire d'inscription"). We fetch and
+    read it (pypdf), emitting the public "tarif normal" tuition per stage (STAGE
+    N°1 6-day vs STAGE N°2-3-4 7-day) with the under-13 rate in the note, plus the
+    obligatory annual membership. Fail-open: a PDF fetch/parse failure leaves
+    prices empty rather than erroring. The multi-stage forfait discounts and the
+    accommodation/meal grids are not folded in (cross-offering / optional tiers).
   - ACCOMMODATION / "portes ouvertes": noted on the schedule, not priced.
 """
 
 from __future__ import annotations
 
+import io
 import re
 from datetime import date
 
 import httpx
+from pypdf import PdfReader
 from selectolax.parser import HTMLParser
 
 from intensive_dance import parse
@@ -46,6 +53,7 @@ from intensive_dance.models import (
     Location,
     Offering,
     Organization,
+    Price,
     Schedule,
     Source,
     Teacher,
@@ -87,10 +95,10 @@ _MONTHALT = parse.months_alt(_MONTHS)
 def scrape(client: httpx.Client) -> list[Offering]:
     resp = client.get(PAGE)
     resp.raise_for_status()
-    return _build_offerings(resp.text)
+    return _build_offerings(resp.text, _fetch_contract_text(client, resp.text))
 
 
-def _build_offerings(html: str) -> list[Offering]:
+def _build_offerings(html: str, contract_text: str = "") -> list[Offering]:
     tree = HTMLParser(html)
     for node in tree.css("script, style, noscript"):
         node.decompose()
@@ -101,12 +109,86 @@ def _build_offerings(html: str) -> list[Offering]:
         return []
 
     curriculum = _curriculum(text)
+    fees = _stage_fees(contract_text)
+    membership = _membership(contract_text)
     offerings: list[Offering] = []
     for label, body in _stages(summer):
-        offering = _build_offering(label, body, curriculum)
+        offering = _build_offering(label, body, curriculum, fees, membership)
         if offering is not None:
             offerings.append(offering)
     return offerings
+
+
+# --- prices: read off the summer registration contract PDF --------------------
+#
+# The /stages page prices nothing inline; the per-stage fee grid lives in the
+# "Formulaire d'inscription" contract PDF (`…contrat-ete<year>.pdf`). We fetch and
+# read it, mapping STAGE N°1 (6-day) and STAGE N°2-3-4 (7-day) to their offerings.
+# Fail-open: any fetch/parse failure just leaves prices empty (never crashes).
+
+
+def _fetch_contract_text(client: httpx.Client, html: str) -> str:
+    tree = HTMLParser(html)
+    href = next(
+        (
+            a.attributes.get("href") or ""
+            for a in tree.css("a[href]")
+            if "contrat-ete" in (a.attributes.get("href") or "").lower()
+        ),
+        "",
+    )
+    if not href:
+        return ""
+    url = href if href.startswith("http") else f"{BASE}{href}"
+    try:
+        resp = client.get(url)
+        resp.raise_for_status()
+        return _pdf_text(resp.content)
+    except Exception:
+        return ""
+
+
+def _pdf_text(data: bytes) -> str:
+    return "\n".join(page.extract_text() for page in PdfReader(io.BytesIO(data)).pages)
+
+
+# Euro amounts in the contract read top-down per fee block as the rate rows
+# (tarif normal, moins de 13 ans, élève PNSD …); we keep the first two — the
+# public rate and the under-13 rate. Amounts are integers; digits-only avoids a
+# "date+amount" run (e.g. "2026 35") bridging across a space into one number.
+_EURO = re.compile(r"(\d+)\s*€")
+# The annual membership sits on a dated line; skip past the dates to its amount.
+_MEMBERSHIP = re.compile(r"adh[éè]sion annuelle obligatoire[^€]*?(\d+)\s*€", re.IGNORECASE)
+
+
+def _euros(segment: str) -> list[float]:
+    return [float(m) for m in _EURO.findall(segment)]
+
+
+def _stage_fees(contract_text: str) -> dict[str, tuple[float, float | None]]:
+    """Per-block (tarif normal, moins de 13 ans), keyed '1' and '234'.
+
+    STAGE N°1 (6-day) is priced on its own; STAGE N°2-3-4 (7-day) share a grid
+    whose first column ("Un stage") is a single edition's fee.
+    """
+    fees: dict[str, tuple[float, float | None]] = {}
+    for key, start, end in (
+        ("1", "STAGE N°1", "STAGE N°2"),
+        ("234", "STAGE N°2", "Cours au ticket"),
+    ):
+        i = contract_text.find(start)
+        if i < 0:
+            continue
+        j = contract_text.find(end, i + len(start))
+        amounts = _euros(contract_text[i : j if j > i else len(contract_text)])
+        if amounts:
+            fees[key] = (amounts[0], amounts[1] if len(amounts) > 1 else None)
+    return fees
+
+
+def _membership(contract_text: str) -> float | None:
+    m = _MEMBERSHIP.search(contract_text)
+    return float(m.group(1)) if m else None
 
 
 # --- segmentation -------------------------------------------------------------
@@ -147,7 +229,13 @@ def _stages(summer: str) -> list[tuple[str, str]]:
 # --- one edition --------------------------------------------------------------
 
 
-def _build_offering(label: str, body: str, curriculum: str) -> Offering | None:
+def _build_offering(
+    label: str,
+    body: str,
+    curriculum: str,
+    fees: dict[str, tuple[float, float | None]],
+    membership: float | None,
+) -> Offering | None:
     start, end = _date_range(body)
     anchor = end or start
     if anchor is None:
@@ -171,8 +259,38 @@ def _build_offering(label: str, body: str, curriculum: str) -> Offering | None:
             notes=_schedule_note(body),
         ),
         teachers=_teachers(body),
+        prices=_prices(stage_no, fees, membership),
         application=Application(url=PAGE, notes=_APPLY_NOTE),
     )
+
+
+# STAGE N°1 is the 6-day edition (the first); STAGE N°2-3-4 share the 7-day grid.
+def _prices(
+    stage_no: str, fees: dict[str, tuple[float, float | None]], membership: float | None
+) -> list[Price]:
+    prices: list[Price] = []
+    fee = fees.get("1" if stage_no == "1" else "234")
+    if fee is not None:
+        normal, under_13 = fee
+        prices.append(
+            Price(
+                amount=normal,
+                currency="EUR",
+                label="Forfait stage (tarif normal)",
+                includes=["tuition"],
+                notes=f"Moins de 13 ans : {under_13:g} €" if under_13 is not None else None,
+            )
+        )
+    if membership is not None:
+        prices.append(
+            Price(
+                amount=membership,
+                currency="EUR",
+                label="Adhésion annuelle obligatoire",
+                includes=[],
+            )
+        )
+    return prices
 
 
 # --- dates --------------------------------------------------------------------

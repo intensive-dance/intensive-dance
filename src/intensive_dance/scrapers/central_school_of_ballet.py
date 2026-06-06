@@ -265,8 +265,12 @@ def _make_offering(
 
 
 def _genres(outline: str) -> list[Genre]:
-    # Ballet is the spine of every course, so classical is the default.
-    return parse.match_genres(outline, _GENRE_KEYWORDS, default=["classical"]) or ["classical"]
+    # Ballet ("daily ballet") is the spine of every course, so classical is
+    # always present — not just a fallback. match_genres' `default` fires only
+    # when nothing matches, which dropped classical whenever a secondary style
+    # (contemporary/pointe/…) was found alongside it.
+    extras = parse.match_genres(outline, _GENRE_KEYWORDS, default=[])
+    return ["classical", *(g for g in extras if g != "classical")]
 
 
 _GRADE = re.compile(r"\bRAD\b", re.IGNORECASE)

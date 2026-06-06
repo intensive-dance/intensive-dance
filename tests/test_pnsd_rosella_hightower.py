@@ -148,3 +148,43 @@ def test_open_house_note_does_not_leak_faculty():
 
 def test_no_summer_block_yields_nothing():
     assert p._build_offerings("<html><body><p>Pas de stages annoncés.</p></body></html>") == []
+
+
+# Mirrors the contract PDF text (pypdf flattens the grid to label rows then the
+# per-column amounts): membership, STAGE N°1 single block, STAGE N°2-3-4 grid.
+_CONTRACT = (
+    "Frais d'adhésion annuelle obligatoire, valable du 01/09/2025 au 31/08/2026 35 € "
+    "STAGE N°1 (6 jours) Tarif normal Moins de 13 ans Elève du PNSD "
+    "491 € 446 € 268 € "
+    "STAGE N°2 - 3 - 4 (7 jours) Un stage Deux stages Trois stages "
+    "Tarif normal Moins de 13 ans Elève du PNSD "
+    "560 € 491 € 308 € 971 € 857 € 548 € 1 428 € 1 177 € 731 € "
+    "Cours au ticket 28,50 € par cours"
+)
+
+
+def test_stage_fees_split_stage1_from_stages234():
+    fees = p._stage_fees(_CONTRACT)
+    assert fees == {"1": (491.0, 446.0), "234": (560.0, 491.0)}
+
+
+def test_membership_amount_not_swallowed_by_dates():
+    assert p._membership(_CONTRACT) == 35.0
+    assert p._membership("no membership line here") is None
+
+
+def test_prices_map_stage1_and_others_with_membership():
+    offerings = p._build_offerings(_HTML, _CONTRACT)
+    by_id = {o.id: o for o in offerings}
+    stage1 = by_id["pnsd-rosella-hightower/stage-ete-2026-1"].prices
+    stage2 = by_id["pnsd-rosella-hightower/stage-ete-2026-2"].prices
+    assert (stage1[0].amount, stage1[0].includes) == (491.0, ["tuition"])
+    assert stage1[0].notes == "Moins de 13 ans : 446 €"
+    assert stage2[0].amount == 560.0  # STAGE N°2-3-4 single-stage rate
+    # Both carry the obligatory annual membership as a separate, non-tuition fee.
+    assert all(any((pr.label or "").startswith("Adhésion") for pr in o.prices) for o in offerings)
+
+
+def test_prices_empty_without_contract_text():
+    # Fail-open: no PDF text (fetch failed) → no prices, no crash.
+    assert all(o.prices == [] for o in p._build_offerings(_HTML))

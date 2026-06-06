@@ -39,9 +39,11 @@ WHAT THIS SCRAPER EXERCISES (verified live 2026-06-06):
   - Contemporary genre on the Intermediate course only (its A curriculum adds
     コンテンポラリー), matched against that course's own program block; the others
     stay classical.
-  - Grade-banded cohorts the source states as Japanese school grades, not numeric
-    ages — kept faithfully as session/schedule text, with `ageRange` left null
-    rather than inventing a grade→age mapping.
+  - Grade-banded cohorts the source states as Japanese school grades, mapped to
+    `ageRange` by the statutory April-entry schedule (AGENTS.md), the same as the
+    sibling JP scrapers. The raw band stays verbatim in the title label. Three
+    band shapes: 小学N～M年生 (grade range), 中学生以上 (open-topped), and 年中～年長
+    (kindergarten — named, not graded, so mapped locally not via the shared helper).
 """
 
 from __future__ import annotations
@@ -150,6 +152,7 @@ def _build_offering(
         source=Source(provider="k-ballet-school", url=PAGE, scrapedAt=now_utc()),
         title=f"{TITLE_JA} {course.label} {season}",
         genres=_genres(block),
+        ageRange=_age_range(course.heading),
         organization=ORG,
         location=_location(block),
         schedule=Schedule(
@@ -185,6 +188,36 @@ def _course_block(text: str, course: _Course) -> str | None:
     if 0 <= apply_pos < end:
         end = apply_pos
     return text[start:end]
+
+
+# --- ages: grade bands → numeric range ----------------------------------------
+#
+# Each course states a Japanese school-grade band, mapped to ages by the
+# statutory April-entry schedule (AGENTS.md), the upper bound being the end of
+# the top grade's year (one past its start age). Three shapes appear:
+#   "小学1～3年生" / "小学4～6年生" — level + grade range (shared 小/中 helper)
+#   "中学生以上"                    — level, open-topped (min only)
+#   "年中～年長"                    — kindergarten (年少/年中/年長), named not graded
+# Kindergarten levels don't fit the (level, grade) helper, so they map locally.
+_KINDERGARTEN_AGES = {"年少": 3, "年中": 4, "年長": 5}
+_GRADE_BAND = re.compile(r"(小学|中学|高校)\s*(\d)(?:\s*[～~\-–]\s*(\d))?")
+_LEVEL_PLUS = re.compile(r"(小学|中学|高校)生?\s*以上")
+_KINDER_BAND = re.compile(r"(年少|年中|年長)(?:\s*[～~\-–・]\s*(年少|年中|年長))?")
+
+
+def _age_range(band: str) -> dict | None:
+    if m := _GRADE_BAND.search(band):
+        level, low_grade, high_grade = m.group(1), int(m.group(2)), m.group(3)
+        low = parse.japanese_grade_to_age(level, low_grade)
+        top = int(high_grade) if high_grade else low_grade
+        return {"min": low, "max": parse.japanese_grade_to_age(level, top) + 1}
+    if m := _LEVEL_PLUS.search(band):
+        return {"min": parse.japanese_grade_to_age(m.group(1), 1), "max": None}
+    if m := _KINDER_BAND.search(band):
+        low = _KINDERGARTEN_AGES[m.group(1)]
+        high = _KINDERGARTEN_AGES[m.group(2)] if m.group(2) else low
+        return {"min": low, "max": high + 1}
+    return None
 
 
 # --- dates --------------------------------------------------------------------
