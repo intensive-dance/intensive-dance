@@ -42,6 +42,7 @@ from intensive_dance.models import (
     CVReq,
     Genre,
     HeadshotReq,
+    Level,
     Location,
     Offering,
     Organization,
@@ -99,6 +100,7 @@ def _build_offering(html: str) -> Offering | None:
         source=Source(provider="academie-princesse-grace", url=PAGE, scrapedAt=now_utc()),
         title=f"Summer Courses {season}",
         genres=_genres(text),
+        level=_level(text),
         ageRange=_age_range(text),
         organization=ORG,
         location=Location(city="Monaco", country="MC"),
@@ -145,6 +147,15 @@ def _age_range(text: str) -> dict | None:
     return {"min": int(m.group(1)), "max": int(m.group(2))} if m else None
 
 
+def _level(text: str) -> list[Level]:
+    low = text.lower()
+    return (
+        ["pre-professional"]
+        if re.search(r"\b(selected|selection)\b", low) and "audition" in low
+        else []
+    )
+
+
 # --- prices: "1200€/week (tuition + accommodation)", "700€/week (…)" -----------
 
 _PRICE = re.compile(r"(\d[\d.,]*)\s*€\s*/\s*week\s*\(([^)]*)\)", re.IGNORECASE)
@@ -157,6 +168,10 @@ def _prices(text: str) -> list[Price]:
         if amount is None:
             continue
         label = parse.clean(m.group(2))
+        notes = None
+        if re.search(r"optional meals available", label, re.IGNORECASE):
+            notes = "Optional meals available."
+            label = parse.clean(re.sub(r";?\s*optional meals available", "", label, flags=re.IGNORECASE))
         includes: list[PriceInclude] = ["tuition"]
         if re.search(r"\+\s*accommodation|accommodation\s+included", label, re.IGNORECASE):
             includes.append("accommodation")
@@ -166,6 +181,7 @@ def _prices(text: str) -> list[Price]:
                 currency="EUR",
                 label=f"Per week ({label})",
                 includes=includes,
+                notes=notes,
             )
         )
     return prices
