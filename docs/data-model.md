@@ -4,6 +4,8 @@ One scraped record = **one offering** of an intensive or master class (i.e. a sp
 
 Stored as JSON. The interesting part is `application.requirements`, which is a **tagged union** so we can capture "photos in defined poses" vs. "open-brief video" without losing structure.
 
+See [`erd.md`](./erd.md) for the entity-relationship diagram (auto-generated from the models, rendered by GitHub).
+
 ## Shape
 
 ```jsonc
