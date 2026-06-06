@@ -55,6 +55,19 @@ def test_scrape_emits_one_offering_per_present_course():
     assert all(o.schedule.season == "2026" for o in offerings)
 
 
+def test_age_range_maps_grade_bands():
+    # Grade range, open-topped level, and kindergarten — mapped per the statutory
+    # April-entry schedule (the upper bound is one past the top grade's start age).
+    assert k._age_range("ファウンデーション：小学1～3年生対象") == {"min": 6, "max": 9}
+    assert k._age_range("エレメンタリー：小学4～6年生対象") == {"min": 9, "max": 12}
+    assert k._age_range("インターメディエイト：中学生以上対象") == {"min": 12, "max": None}
+    assert k._age_range("キッズ：年中～年長対象") == {"min": 4, "max": 6}
+
+
+def test_age_range_none_when_no_band():
+    assert k._age_range("対象の記載なし") is None
+
+
 def test_year_from_page_header():
     assert k._year("開催日程 2026. 8/2(日)～8/9(日)") == 2026
     assert k._year("no dated edition announced yet") is None
