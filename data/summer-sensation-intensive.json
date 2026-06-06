@@ -1,0 +1,127 @@
+[
+  {
+    "application": {
+      "notes": "Apply by email to dartdanceworkshop@gmail.com (CV plus the two YouTube videos) or via the Google Form. Places are limited; payment instructions follow acceptance.",
+      "requirements": [
+        {
+          "type": "cv"
+        },
+        {
+          "description": "Apply with a CV, a maximum five-minute improvisation video and a maximum ten-minute ballet video with four short centre exercises (tendus, pirouettes, petit allegro and grand allegro). Both videos must be uploaded to YouTube without a password.",
+          "specificity": "specific",
+          "type": "video"
+        }
+      ],
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSeioTEztqjHiEIPUK7RcZ6GUeOX1VRXEidZGYv3VEAEMyI-Mg/viewform"
+    },
+    "genres": [
+      "contemporary",
+      "repertoire"
+    ],
+    "id": "dart-dance-company/summer-sensation-intensive-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Berlin",
+      "country": "DE",
+      "venue": "DART Studios, Motzener Strasse 5, 12277 Marienfelde, Berlin"
+    },
+    "organization": {
+      "city": "Berlin",
+      "country": "DE",
+      "name": "DART Dance Company",
+      "slug": "dart-dance-company"
+    },
+    "prices": [
+      {
+        "amount": 595.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "1 week",
+        "notes": "Includes the registration cost."
+      },
+      {
+        "amount": 995.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "2 weeks",
+        "notes": "Includes the registration cost."
+      },
+      {
+        "amount": 1395.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "3 weeks",
+        "notes": "Includes the registration cost."
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-21",
+      "notes": "The source dates the later weeks 2025 (an apparent typo); all three weeks run consecutively in August 2026.",
+      "season": "2026",
+      "sessions": [
+        {
+          "end": "2026-08-07",
+          "label": "Week 1",
+          "start": "2026-08-03"
+        },
+        {
+          "end": "2026-08-14",
+          "label": "Week 2",
+          "start": "2026-08-10"
+        },
+        {
+          "end": "2026-08-21",
+          "label": "Week 3",
+          "start": "2026-08-17"
+        }
+      ],
+      "start": "2026-08-03",
+      "timezone": "Europe/Berlin"
+    },
+    "source": {
+      "hash": "sha256:2ec2cccbadff8651cb280d3140dc37b31b5e9208129bcdcc10aa725d96b0e136",
+      "provider": "summer-sensation-intensive",
+      "scrapedAt": "2026-06-06T06:04:26.283563Z",
+      "url": "https://www.dart.theater/summer-intensive-berlin"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Olivier Coëffard"
+      },
+      {
+        "affiliations": [],
+        "name": "Anton Valdbauer"
+      },
+      {
+        "affiliations": [],
+        "name": "Quentin Roger"
+      },
+      {
+        "affiliations": [],
+        "name": "Kinga Varga",
+        "role": "Artistic Director"
+      },
+      {
+        "affiliations": [],
+        "name": "Zoran Markovic"
+      },
+      {
+        "affiliations": [],
+        "name": "Luis Martin Oya"
+      },
+      {
+        "affiliations": [],
+        "name": "Alessandra La Bella"
+      }
+    ],
+    "title": "Summer Sensation Intensive Berlin 2026"
+  }
+]
