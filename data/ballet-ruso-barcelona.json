@@ -1,0 +1,280 @@
+[
+  {
+    "ageRange": {
+      "max": null,
+      "min": 10
+    },
+    "application": {
+      "requirements": [
+        {
+          "description": "Admission audition for the pre-professional program, in person (€30) or online (€15); results within two weeks.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "url": "https://balletrusobarcelona.playoffinformatica.com/actividad/59/Summer-Intensive-2026/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "contemporary",
+      "character",
+      "repertoire"
+    ],
+    "id": "ballet-ruso-barcelona/summer-intensive-2026-pre-professional",
+    "level": [
+      "pre-professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Barcelona",
+      "country": "ES",
+      "venue": "Josep Tarradellas 42"
+    },
+    "organization": {
+      "city": "Barcelona",
+      "country": "ES",
+      "name": "Ballet Ruso Barcelona",
+      "slug": "ballet-ruso-barcelona"
+    },
+    "prices": [
+      {
+        "amount": 537.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "1 week"
+      },
+      {
+        "amount": 975.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "2 weeks"
+      },
+      {
+        "amount": 1296.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "3 weeks"
+      },
+      {
+        "amount": 1495.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "4 weeks"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-24",
+      "season": "2026",
+      "sessions": [
+        {
+          "end": "2026-07-03",
+          "label": "Week #1",
+          "start": "2026-06-29"
+        },
+        {
+          "end": "2026-07-10",
+          "label": "Week #2",
+          "start": "2026-07-06"
+        },
+        {
+          "end": "2026-07-17",
+          "label": "Week #3",
+          "start": "2026-07-13"
+        },
+        {
+          "end": "2026-07-24",
+          "label": "Week #4",
+          "start": "2026-07-20"
+        }
+      ],
+      "start": "2026-06-29",
+      "timezone": "Europe/Madrid"
+    },
+    "source": {
+      "hash": "sha256:190b2ba20f896821edbf4193edd7fd4c3d135679a8e5fe5e450476eeceeae260",
+      "provider": "ballet-ruso-barcelona",
+      "scrapedAt": "2026-06-06T06:02:53.542148Z",
+      "url": "https://balletrusobarcelona.com/summerprogram"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Mariinsky Theatre",
+            "role": "Soloist"
+          },
+          {
+            "current": false,
+            "organization": "Mikhailovsky Theatre",
+            "role": "Principal"
+          }
+        ],
+        "name": "Boris Shepelev",
+        "role": "Artistic Director"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Vaganova Ballet Academy",
+            "role": "Vaganova-method graduate"
+          }
+        ],
+        "name": "Blanca Hartmann",
+        "role": "Artistic Director"
+      }
+    ],
+    "title": "Summer Intensive 2026 — Pre-professional Program"
+  },
+  {
+    "ageRange": {
+      "max": null,
+      "min": 3
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://balletrusobarcelona.playoffinformatica.com/actividad/59/Summer-Intensive-2026/"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "ballet-ruso-barcelona/summer-intensive-2026-young-artist-camp",
+    "level": [
+      "beginner"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Barcelona",
+      "country": "ES",
+      "venue": "Josep Tarradellas 42"
+    },
+    "organization": {
+      "city": "Barcelona",
+      "country": "ES",
+      "name": "Ballet Ruso Barcelona",
+      "slug": "ballet-ruso-barcelona"
+    },
+    "prices": [
+      {
+        "amount": 356.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "1 week"
+      },
+      {
+        "amount": 637.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "2 weeks"
+      },
+      {
+        "amount": 844.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "3 weeks"
+      },
+      {
+        "amount": 975.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "4 weeks"
+      },
+      {
+        "amount": 1100.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "5 weeks"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-24",
+      "season": "2026",
+      "sessions": [
+        {
+          "end": "2026-06-26",
+          "label": "Week #0",
+          "start": "2026-06-22"
+        },
+        {
+          "end": "2026-07-03",
+          "label": "Week #1",
+          "start": "2026-06-29"
+        },
+        {
+          "end": "2026-07-10",
+          "label": "Week #2",
+          "start": "2026-07-06"
+        },
+        {
+          "end": "2026-07-17",
+          "label": "Week #3",
+          "start": "2026-07-13"
+        },
+        {
+          "end": "2026-07-24",
+          "label": "Week #4",
+          "start": "2026-07-20"
+        }
+      ],
+      "start": "2026-06-22",
+      "timezone": "Europe/Madrid"
+    },
+    "source": {
+      "hash": "sha256:bdad8c65f70f8e3fa0b2f4878e2686e9025795e49fd1db149dc05d0e220bb6b1",
+      "provider": "ballet-ruso-barcelona",
+      "scrapedAt": "2026-06-06T06:02:53.542689Z",
+      "url": "https://balletrusobarcelona.com/summerprogram"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Mariinsky Theatre",
+            "role": "Soloist"
+          },
+          {
+            "current": false,
+            "organization": "Mikhailovsky Theatre",
+            "role": "Principal"
+          }
+        ],
+        "name": "Boris Shepelev",
+        "role": "Artistic Director"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Vaganova Ballet Academy",
+            "role": "Vaganova-method graduate"
+          }
+        ],
+        "name": "Blanca Hartmann",
+        "role": "Artistic Director"
+      }
+    ],
+    "title": "Summer Intensive 2026 — Young Artist Camp"
+  }
+]
