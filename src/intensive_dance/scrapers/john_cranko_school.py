@@ -25,6 +25,7 @@ from intensive_dance.models import (
     Location,
     Offering,
     Organization,
+    PhotosReq,
     Price,
     PriceInclude,
     Schedule,
@@ -45,6 +46,9 @@ _VIDEO_BRIEF = (
     "Apply by video (~15–20 min) showing excerpts from barre, centre and jumps "
     "(plus a variation if available)."
 )
+# Alongside the video the page asks for one full-body photo in a leotard
+# ("Machen Sie ein Ganzkörperfoto im Trikot") — no named poses, so freeform.
+_PHOTO_BRIEF = "One full-body photo in a leotard (Ganzkörperfoto im Trikot)."
 
 
 def scrape(client: httpx.Client) -> list[Offering]:
@@ -84,7 +88,10 @@ def _build_offering(html: str, today: date) -> Offering | None:
             status="closed" if (deadline and deadline < today) else None,
             deadline=deadline,
             url=SUMMER_SCHOOL,
-            requirements=[VideoReq(specificity="specific", description=_VIDEO_BRIEF)],
+            requirements=[
+                VideoReq(specificity="specific", description=_VIDEO_BRIEF),
+                PhotosReq(specificity="freeform", notes=_PHOTO_BRIEF),
+            ],
             notes=_VIDEO_BRIEF,
         ),
     )
