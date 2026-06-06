@@ -174,9 +174,13 @@ def _build_offering(record: dict, fees: wp.Content | None, today: date) -> Offer
 # --- parsing helpers ---
 
 _DATE = re.compile(r"(\d{1,2})\s+(" + parse.MONTHALT + r")(?:\s+(\d{4}))?", re.IGNORECASE)
-# A short range like "21-25 July" or "6 – Friday 10 July" (shared month, year implied).
+# A short range like "21-25 July", "6 – Friday 10 July" or "15 and 16 November"
+# (shared month; year explicit or inherited). The leading day omits the month —
+# _DATE only sees the trailing `DD Month`, so callers add d1 back from here.
 _SHORT = re.compile(
-    r"(\d{1,2})\s*[-–]\s*(?:[A-Za-z]+\s+)?(\d{1,2})\s+(" + parse.MONTHALT + r")", re.IGNORECASE
+    r"(\d{1,2})\s*(?:[-–]|and|&)\s*(?:[A-Za-z]+\s+)?(\d{1,2})\s+(" + parse.MONTHALT + r")"
+    r"(?:\s+(\d{4}))?",
+    re.IGNORECASE,
 )
 # Money in either order: symbol-prefixed ("£48", "€390") or word-suffixed
 # ("390 euros"), since RBS prices its overseas programs in local currency.
@@ -235,6 +239,10 @@ def _date_range(text: str) -> tuple[date | None, date | None, str]:
         return None, None, _year(text)
 
     dates = [date(int(y) if y else year, parse.MONTHS[m.lower()], int(d)) for d, m, y in tokens]
+    # A range's leading day shares the trailing token's month ("3-7 April",
+    # "15 and 16 November"); _DATE saw only the trailing day, so add d1 back.
+    for d1, _d2, m, y in _SHORT.findall(text):
+        dates.append(date(int(y) if y else year, parse.MONTHS[m.lower()], int(d1)))
     return min(dates), max(dates), str(year)
 
 
@@ -505,9 +513,10 @@ def _span(text: str, year: int | None) -> tuple[date | None, date | None]:
         resolved = int(yr) if yr else year
         if resolved:
             points.append(date(resolved, parse.MONTHS[month.lower()], int(day)))
-    if year:
-        for d1, d2, month in _SHORT.findall(text):
-            points += [date(year, parse.MONTHS[month.lower()], int(d)) for d in (d1, d2)]
+    for d1, d2, month, yr in _SHORT.findall(text):
+        resolved = int(yr) if yr else year
+        if resolved:
+            points += [date(resolved, parse.MONTHS[month.lower()], int(d)) for d in (d1, d2)]
     return (min(points), max(points)) if points else (None, None)
 
 
@@ -601,14 +610,15 @@ def _week_sessions(text: str, year: int | None, venue: str | None) -> list[Sessi
 def _short_sessions(section: wp.Section, year: int | None) -> list[Session]:
     ages = _age_range(section.heading) or _age_range(section.text())
     sessions: list[Session] = []
-    for d1, d2, month in _SHORT.findall(section.text()):
-        if not year:
+    for d1, d2, month, yr in _SHORT.findall(section.text()):
+        resolved = int(yr) if yr else year
+        if not resolved:
             continue
         sessions.append(
             Session(
                 label=f"Non-selective {d1}-{d2} {month}",
-                start=date(year, parse.MONTHS[month.lower()], int(d1)),
-                end=date(year, parse.MONTHS[month.lower()], int(d2)),
+                start=date(resolved, parse.MONTHS[month.lower()], int(d1)),
+                end=date(resolved, parse.MONTHS[month.lower()], int(d2)),
                 ageRange=ages,
                 gender="both",
                 notes=f"{d1}-{d2} {month}",
