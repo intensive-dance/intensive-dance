@@ -3,6 +3,7 @@ name: ci
 on:
   push:
     branches: [main]
+    paths-ignore: ["data/**"] # hourly scrape commits only bump attemptedAt; PRs still run the gate
   pull_request:
 
 jobs:
