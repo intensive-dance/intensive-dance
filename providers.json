@@ -1,6 +1,15 @@
 {
   "providers": [
     {
+      "slug": "academie-danse-biarritz",
+      "name": "Académie Internationale de Danse de Biarritz",
+      "country": "FR",
+      "city": "Biarritz",
+      "url": "https://biarritz-academie-danse.com/",
+      "tier": "secondary",
+      "status": "live"
+    },
+    {
       "slug": "royal-ballet-school",
       "name": "The Royal Ballet School",
       "country": "GB",
