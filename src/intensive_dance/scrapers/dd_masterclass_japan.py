@@ -214,7 +214,8 @@ def _sessions(text: str) -> list[Session]:
     sessions: list[Session] = []
     a = _GROUP_A.search(text)
     if a:
-        note = "Group A 12歳から15歳" + (parse.clean(a.group(3)) if a.group(3) else "")
+        eligibility = parse.clean(a.group(3)) if a.group(3) else ""
+        note = f"Group A {a.group(1)}歳から{a.group(2)}歳" + eligibility
         sessions.append(
             Session(
                 label="Group A",
@@ -228,7 +229,7 @@ def _sessions(text: str) -> list[Session]:
             Session(
                 label="Group B",
                 ageRange={"min": int(b.group(1)), "max": None},
-                notes="Group B 16歳から（上限なし）",
+                notes=f"Group B {b.group(1)}歳から（上限なし）",
             )
         )
     return sessions

@@ -36,7 +36,9 @@
       "pointe"
     ],
     "id": "academie-princesse-grace/summer-courses-2026",
-    "level": [],
+    "level": [
+      "pre-professional"
+    ],
     "lifecycle": "scheduled",
     "location": {
       "city": "Monaco",
@@ -64,7 +66,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Per week (accommodation not included; optional meals available)"
+        "label": "Per week (accommodation not included)",
+        "notes": "Optional meals available."
       }
     ],
     "schedule": {
@@ -96,7 +99,7 @@
       "timezone": "Europe/Monaco"
     },
     "source": {
-      "hash": "sha256:c951530b81e3aa7c15fc76a6f040b80444d9784e7729aac77c66d218a641cd1e",
+      "hash": "sha256:bed32d471d1ceef773d891f886029d6f8163e5e7fccb4109dd8d900b025a45bc",
       "provider": "academie-princesse-grace",
       "scrapedAt": "2026-06-05T11:28:41.767835Z",
       "url": "https://www.balletsdemontecarlo.com/en/princess-grace-academy/admission-short-courses"

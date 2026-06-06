@@ -1,0 +1,83 @@
+[
+  {
+    "application": {
+      "deadline": "2026-07-17",
+      "notes": "お申込みはリンク先または参加要項記載のQRコードより。所定の参加費用を指定口座へ振込み、入金確認をもって申込み確定。定員に達し次第、受付期間中でも受付終了。",
+      "opensAt": "2026-04-17",
+      "requirements": [],
+      "url": "https://forms.gle/acRDx7p6czqoUjqm9"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "character",
+      "contemporary"
+    ],
+    "id": "japan-ballet-association/summer-course-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "山ノ内町",
+      "country": "JP",
+      "venue": "長野県志賀高原 ホテル一乃瀬"
+    },
+    "organization": {
+      "city": "Tokyo",
+      "country": "JP",
+      "name": "Japan Ballet Association",
+      "slug": "japan-ballet-association"
+    },
+    "prices": [
+      {
+        "amount": 44000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "受講料（税込）"
+      },
+      {
+        "amount": 40000.0,
+        "currency": "JPY",
+        "includes": [
+          "accommodation",
+          "meals"
+        ],
+        "label": "宿泊料（税込）",
+        "notes": "宿泊費には1日3食の食事代が含まれます。"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-09",
+      "notes": "4泊5日",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-05",
+      "timezone": "Asia/Tokyo"
+    },
+    "source": {
+      "hash": "sha256:f5758ae5146850e53b44b7547fe519364da47570d2267298b83aac1e64cd85cb",
+      "provider": "japan-ballet-association",
+      "scrapedAt": "2026-06-06T07:33:42.128883Z",
+      "url": "http://www.j-b-a.or.jp/classes/2026summercours/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "フィオーナ・トンキン",
+        "role": "クラシック・バレエ担当"
+      },
+      {
+        "affiliations": [],
+        "name": "マイレン・トレウバエフ",
+        "role": "キャラクター＆ヒストリカル・ダンス担当"
+      },
+      {
+        "affiliations": [],
+        "name": "滝井 真樹子",
+        "role": "コンテンポラリー担当"
+      }
+    ],
+    "title": "2026年度 サマー・コース"
+  }
+]

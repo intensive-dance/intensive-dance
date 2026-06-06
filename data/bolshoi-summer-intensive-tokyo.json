@@ -1,0 +1,91 @@
+[
+  {
+    "ageRange": {
+      "min": 9
+    },
+    "application": {
+      "notes": "Entry is by audition only: fill out the video-audition form or audition in person, pay the audition fee, then submit your video; accepted dancers receive an official acceptance letter with registration details.",
+      "requirements": [
+        {
+          "description": "Audition required (in person or by video); no pose or clip brief is published.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "url": "https://www.russianballetinternational.com/auditions/video-auditions/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "character"
+    ],
+    "id": "bolshoi-summer-intensive-tokyo/summer-intensive-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Tokyo",
+      "country": "JP"
+    },
+    "organization": {
+      "city": "Tokyo",
+      "country": "JP",
+      "name": "Russian Ballet International",
+      "slug": "russian-ballet-international"
+    },
+    "prices": [
+      {
+        "amount": 125.0,
+        "currency": "USD",
+        "includes": [],
+        "label": "Registration fee",
+        "notes": "Non-refundable; due upon registration, before the audition form."
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-22",
+      "notes": "Taught by full-time teachers of the Bolshoi Ballet Academy (visiting faculty).",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 13,
+            "min": 9
+          },
+          "label": "Ages 9–13",
+          "notes": "09/13"
+        },
+        {
+          "ageRange": {
+            "min": 14
+          },
+          "label": "Ages 14–19+",
+          "notes": "14/19+"
+        }
+      ],
+      "start": "2026-08-17",
+      "timezone": "Asia/Tokyo"
+    },
+    "source": {
+      "hash": "sha256:c0e62446cb2212802a53c0e11de92177660469a19f0c343b17877b3c3dfe3ec4",
+      "provider": "bolshoi-summer-intensive-tokyo",
+      "scrapedAt": "2026-06-06T07:32:44.307570Z",
+      "url": "https://www.russianballetinternational.com/tokyo-program/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Bolshoi Ballet Academy",
+            "role": "Full-time faculty",
+            "slug": "bolshoi-ballet-academy"
+          }
+        ],
+        "name": "Bolshoi Ballet Academy faculty",
+        "role": "Full-time teachers of the Bolshoi Ballet Academy (visiting faculty)"
+      }
+    ],
+    "title": "Bolshoi Academy Tokyo Summer Intensive 2026"
+  }
+]

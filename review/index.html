@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>INTENSIVE.DANCE — Data Review</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,700;1,6..96,400;1,6..96,500&family=Archivo:wght@400;500;600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --paper:#F3EEE3;
+    --paper-2:#EAE3D4;
+    --paper-3:#E2D9C6;
+    --ink:#16130D;
+    --ink-soft:rgba(22,19,13,.58);
+    --ink-faint:rgba(22,19,13,.34);
+    --line:rgba(22,19,13,.16);
+    --line-2:rgba(22,19,13,.30);
+    --red:#C53A22;
+    --red-deep:#8C2412;
+    --blush:#E7C8BC;
+    --gold:#9A7B33;
+    --flag:#C53A22;
+    --flag-wash:rgba(197,58,34,.08);
+    --display:"Bodoni Moda",serif;
+    --ui:"Archivo",-apple-system,system-ui,sans-serif;
+    --mono:"Space Mono",ui-monospace,monospace;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  body{background:var(--paper);color:var(--ink);font-family:var(--ui);font-size:15px;line-height:1.5}
+  ::selection{background:var(--red);color:var(--paper)}
+  a{color:inherit;text-decoration:none}
+  button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+
+  body::before{
+    content:"";position:fixed;inset:0;z-index:9000;pointer-events:none;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    mix-blend-mode:multiply;opacity:.9;
+  }
+
+  /* ===== MASTHEAD ===== */
+  .masthead{position:sticky;top:0;z-index:600;background:var(--paper);border-bottom:1px solid var(--ink)}
+  .masthead::after{content:"";display:block;height:3px;border-top:1px solid var(--ink);margin-top:2px}
+  .mast-row{display:flex;align-items:center;justify-content:space-between;height:46px;max-width:1480px;margin:0 auto;padding:0 28px}
+  .mast-mark{font-family:var(--mono);font-weight:700;font-size:13px;letter-spacing:.2em;display:flex;align-items:center;gap:.55em}
+  .mast-mark .star{color:var(--red);font-size:11px}
+  .mast-mark .sub{color:var(--ink-soft);letter-spacing:.28em;font-weight:400;font-size:10px}
+  .mast-actions{display:flex;gap:8px;align-items:center}
+
+  .btn{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border:1px solid var(--line-2);border-radius:3px;color:var(--ink-soft);transition:all .16s}
+  .btn:hover{border-color:var(--ink);color:var(--ink)}
+  .btn.warn:hover{border-color:var(--red);color:var(--red)}
+
+  /* ===== LAYOUT ===== */
+  .shell{display:grid;grid-template-columns:268px 1fr;max-width:1480px;margin:0 auto;align-items:start}
+  .rail{position:sticky;top:51px;align-self:start;height:calc(100vh - 51px);overflow-y:auto;border-right:1px solid var(--ink);padding:22px 18px 60px}
+  .main{padding:24px 28px 120px;min-width:0}
+  @media(max-width:920px){
+    .shell{grid-template-columns:1fr}
+    .rail{position:static;height:auto;border-right:none;border-bottom:1px solid var(--ink)}
+  }
+
+  /* ledger */
+  .ledger{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--ink);margin-bottom:22px}
+  .ledger .cell{background:var(--paper);padding:12px 14px}
+  .ledger .num{font-family:var(--display);font-weight:500;font-size:30px;line-height:1}
+  .ledger .num.hot{color:var(--red)}
+  .ledger .lab{font-family:var(--mono);font-size:8.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);margin-top:6px}
+
+  .rail-h{font-family:var(--mono);font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 10px;display:flex;justify-content:space-between}
+  .src-link{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:7px 8px;border-radius:3px;font-size:13px;color:var(--ink-soft);transition:background .15s,color .15s;cursor:pointer}
+  .src-link:hover{background:var(--paper-2);color:var(--ink)}
+  .src-link .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .src-link .ct{font-family:var(--mono);font-size:10px;color:var(--ink-faint);flex:0 0 auto}
+  .badge{font-family:var(--mono);font-size:9.5px;background:var(--red);color:var(--paper);border-radius:100px;padding:1px 7px;flex:0 0 auto}
+  .seedlist{margin-top:22px}
+  .seedlist .seed{font-size:12px;color:var(--ink-faint);padding:5px 8px;font-style:italic;font-family:var(--display)}
+
+  /* ===== CONTROLS ===== */
+  .controls{position:sticky;top:51px;z-index:500;background:var(--paper);border-bottom:1px solid var(--ink);padding:14px 0;margin-bottom:8px}
+  .search-line{display:flex;align-items:baseline;gap:14px;border-bottom:1px solid var(--ink);padding-bottom:12px}
+  .search-line .q{font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--ink-soft);text-transform:uppercase}
+  .search-line input{flex:1;border:none;background:none;font-family:var(--display);font-style:italic;font-size:26px;color:var(--ink);outline:none}
+  .search-line input::placeholder{color:var(--ink-faint)}
+  .search-count{font-family:var(--mono);font-size:11px;color:var(--ink-soft);white-space:nowrap}
+  .search-count b{color:var(--red)}
+  .ctl-row{display:flex;gap:18px;align-items:center;padding-top:12px;flex-wrap:wrap}
+  .swatch{display:flex;align-items:center;gap:9px;font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft)}
+  .swatch .box{width:30px;height:16px;border:1px solid var(--ink);border-radius:100px;position:relative;transition:background .2s}
+  .swatch .box::after{content:"";position:absolute;top:1px;left:1px;width:12px;height:12px;border-radius:50%;background:var(--ink);transition:transform .2s,background .2s}
+  .swatch.on .box{background:var(--red);border-color:var(--red)}
+  .swatch.on .box::after{transform:translateX(14px);background:var(--paper)}
+
+  .loading{padding:80px 12px;text-align:center;font-family:var(--display);font-style:italic;font-size:26px;color:var(--ink-soft)}
+  .loaderr{padding:40px 12px;font-family:var(--mono);font-size:12px;color:var(--red);white-space:pre-wrap;line-height:1.7}
+
+  /* ===== PROVIDER SECTION ===== */
+  .provider{margin:30px 0 0;scroll-margin-top:120px}
+  .prov-head{display:flex;align-items:baseline;gap:14px;border-bottom:2px solid var(--ink);padding-bottom:12px;flex-wrap:wrap}
+  .prov-head h2{font-family:var(--display);font-weight:500;font-size:30px;line-height:1;letter-spacing:-.01em}
+  .prov-head .meta{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;color:var(--ink-soft);text-transform:uppercase}
+  .prov-head .cc{font-family:var(--mono);font-size:10px;background:var(--paper-3);padding:2px 7px;border-radius:3px}
+  .prov-head .spacer{flex:1}
+  .prov-head .url{font-family:var(--mono);font-size:11px;color:var(--ink-soft);border-bottom:1px solid var(--line-2)}
+  .prov-head .url:hover{color:var(--red);border-color:var(--red)}
+  .issue-btn{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;padding:8px 14px;border-radius:3px;background:var(--ink);color:var(--paper);transition:background .18s;display:inline-flex;align-items:center;gap:8px}
+  .issue-btn[disabled]{background:transparent;color:var(--ink-faint);border:1px solid var(--line);cursor:not-allowed}
+  .issue-btn:not([disabled]):hover{background:var(--red)}
+  .issue-btn .ct{background:var(--red);color:var(--paper);border-radius:100px;font-size:9px;padding:1px 7px}
+  .issue-btn[disabled] .ct{display:none}
+
+  /* ===== OFFERING CARD ===== */
+  .card{border:1px solid var(--line);border-radius:5px;margin-top:16px;background:var(--paper);overflow:hidden}
+  .card.flagged{border-color:var(--flag);box-shadow:inset 3px 0 0 var(--flag)}
+  .card-top{display:flex;align-items:flex-start;gap:14px;padding:18px 20px 14px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+  .card-title{font-family:var(--display);font-weight:500;font-size:22px;line-height:1.05;letter-spacing:-.01em;flex:1;min-width:240px}
+  .card-id{font-family:var(--mono);font-size:10.5px;color:var(--ink-faint);margin-top:6px;letter-spacing:.02em}
+  .lifebadge{font-family:var(--mono);font-size:9px;letter-spacing:.12em;text-transform:uppercase;padding:3px 8px;border-radius:100px;border:1px solid var(--line-2);color:var(--ink-soft);align-self:center}
+  .lifebadge.cancelled{color:var(--red);border-color:var(--red)}
+  .lifebadge.postponed{color:var(--gold);border-color:rgba(154,123,51,.5)}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1px;background:var(--line)}
+  .field{background:var(--paper);padding:13px 18px;position:relative;transition:background .15s}
+  .field.flagged{background:var(--flag-wash)}
+  .field-head{display:flex;align-items:center;gap:8px;margin-bottom:7px}
+  .field-lab{font-family:var(--mono);font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-faint)}
+  .flag-btn{margin-left:auto;font-size:13px;line-height:1;color:var(--ink-faint);border:1px solid transparent;border-radius:3px;padding:2px 6px;transition:all .15s;opacity:.5}
+  .field:hover .flag-btn{opacity:1}
+  .flag-btn:hover{color:var(--flag);border-color:var(--line-2)}
+  .field.flagged .flag-btn{color:var(--flag);opacity:1;border-color:var(--flag)}
+  .field-val{font-size:13.5px;color:var(--ink);line-height:1.55;word-break:break-word}
+  .field-val .muted{color:var(--ink-faint);font-style:italic;font-family:var(--display);font-size:15px}
+  .field-val a{color:var(--ink-soft);border-bottom:1px solid var(--line-2)}
+  .field-val a:hover{color:var(--red);border-color:var(--red)}
+  .tag{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:.04em;background:var(--paper-3);padding:2px 8px;border-radius:3px;margin:0 4px 4px 0}
+  .kv{display:flex;gap:8px;margin-top:2px}
+  .kv .k{font-family:var(--mono);font-size:10px;color:var(--ink-faint);min-width:62px;flex:0 0 auto;padding-top:1px}
+  .sess{padding:6px 0;border-top:1px dotted var(--line)}
+  .sess:first-child{border-top:none}
+  .sess .sl{font-family:var(--mono);font-size:11px}
+  .sess .sm{font-size:11.5px;color:var(--ink-soft);margin-top:2px}
+  .fee{display:flex;justify-content:space-between;gap:10px;padding:5px 0;border-top:1px dotted var(--line)}
+  .fee:first-child{border-top:none}
+  .fee .fl{font-size:12.5px;color:var(--ink-soft)}
+  .fee .fa{font-family:var(--display);font-size:17px;font-weight:500;white-space:nowrap}
+  .fee .fa .cur{font-family:var(--mono);font-size:10px;color:var(--ink-soft);margin-right:3px}
+  .inc{font-family:var(--mono);font-size:9px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.08em}
+
+  .note-row{display:flex;align-items:stretch;gap:0;border-top:1px solid var(--line);background:var(--paper-2)}
+  .note-row .nlab{font-family:var(--mono);font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint);padding:14px 0 0 20px;flex:0 0 auto}
+  .note-row textarea{flex:1;border:none;background:none;resize:vertical;min-height:42px;font-family:var(--ui);font-size:13px;color:var(--ink);outline:none;padding:13px 18px;line-height:1.5}
+  .note-row textarea::placeholder{color:var(--ink-faint)}
+
+  /* ===== MODAL ===== */
+  .scrim{position:fixed;inset:0;background:rgba(22,19,13,.42);z-index:700;opacity:0;pointer-events:none;transition:opacity .3s;backdrop-filter:blur(2px)}
+  .scrim.show{opacity:1;pointer-events:auto}
+  .modal{position:fixed;top:50%;left:50%;transform:translate(-50%,-48%) scale(.98);width:min(720px,94vw);max-height:88vh;background:var(--paper);z-index:800;border:1px solid var(--ink);border-radius:6px;box-shadow:0 30px 80px rgba(22,19,13,.32);opacity:0;pointer-events:none;transition:all .3s cubic-bezier(.22,.78,.3,1);display:flex;flex-direction:column}
+  .modal.show{opacity:1;pointer-events:auto;transform:translate(-50%,-50%) scale(1)}
+  .modal-top{display:flex;justify-content:space-between;align-items:center;padding:20px 24px;border-bottom:1px solid var(--ink)}
+  .modal-top .t{font-family:var(--display);font-size:22px;font-weight:500}
+  .modal-body{padding:18px 24px;overflow-y:auto}
+  .notice{font-family:var(--mono);font-size:11px;color:var(--gold);background:rgba(154,123,51,.1);border:1px solid rgba(154,123,51,.4);border-radius:4px;padding:9px 12px;margin-bottom:14px;line-height:1.6}
+  .issue-title{font-family:var(--mono);font-size:11px;color:var(--ink-soft);margin-bottom:6px;letter-spacing:.04em}
+  .issue-title b{color:var(--ink)}
+  .modal-body textarea{width:100%;min-height:320px;font-family:var(--mono);font-size:11.5px;line-height:1.6;color:var(--ink);background:var(--paper-2);border:1px solid var(--line);border-radius:4px;padding:14px;resize:vertical}
+  .modal-foot{display:flex;gap:10px;padding:16px 24px;border-top:1px solid var(--ink);flex-wrap:wrap}
+  .modal-foot .grow{flex:1}
+  .act{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:11px 18px;border-radius:3px;transition:all .16s;display:inline-flex;align-items:center;gap:8px}
+  .act.primary{background:var(--red);color:var(--paper)}
+  .act.primary:hover{background:var(--red-deep)}
+  .act.ghost{border:1px solid var(--line-2);color:var(--ink-soft)}
+  .act.ghost:hover{border-color:var(--ink);color:var(--ink)}
+
+  .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--ink);color:var(--paper);font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:12px 20px;border-radius:4px;z-index:900;opacity:0;pointer-events:none;transition:all .25s}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="mast-row">
+    <div class="mast-mark"><span class="star">✦</span>INTENSIVE.DANCE<span class="sub">DATA REVIEW</span></div>
+    <div class="mast-actions">
+      <button class="btn" id="exportBtn">Export</button>
+      <button class="btn" id="importBtn">Import</button>
+      <button class="btn warn" id="clearBtn">Clear all</button>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="rail">
+    <div class="ledger" id="ledger"></div>
+    <div class="rail-h"><span>Sources</span><span id="railHint"></span></div>
+    <nav id="rail"></nav>
+    <div class="seedlist" id="seedlist"></div>
+  </aside>
+
+  <main class="main">
+    <div class="controls">
+      <div class="search-line">
+        <span class="q">Find</span>
+        <input id="search" type="text" placeholder="a school, an offering, a city…" autocomplete="off" />
+        <span class="search-count"><b id="nShown">0</b> / <span id="nTotal">0</span> offerings</span>
+      </div>
+      <div class="ctl-row">
+        <button class="swatch" id="flaggedToggle"><span class="box"></span>Flagged only</button>
+      </div>
+    </div>
+    <div id="content"><div class="loading">Loading the register…</div></div>
+  </main>
+</div>
+
+<div class="scrim" id="scrim"></div>
+<div class="modal" id="modal">
+  <div class="modal-top">
+    <span class="t" id="modalTitle">GitHub issue</span>
+    <button class="btn" id="modalClose">Close ✕</button>
+  </div>
+  <div class="modal-body">
+    <div id="modalNotice"></div>
+    <div class="issue-title" id="modalIssueTitle"></div>
+    <textarea id="modalBody" spellcheck="false"></textarea>
+  </div>
+  <div class="modal-foot">
+    <a class="act primary" id="modalOpen" target="_blank" rel="noopener">Open prefilled issue ↗</a>
+    <button class="act ghost" id="modalCopy">Copy body</button>
+    <span class="grow"></span>
+    <button class="act ghost" id="modalCopyUrl">Copy issue URL</button>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<input type="file" id="fileInput" accept="application/json" style="display:none" />
+
+<script>
+const REPO = "boredland/intensive-dance";
+// Copilot can't be assigned via the URL (the assignees field is User-only and
+// Copilot is a Bot actor). We prefill this label instead; the assign-copilot.yml
+// workflow does the real GraphQL assignment, gated on code-owner authorship.
+const ASSIGN_LABEL = "assign-copilot";
+const STORE_KEY = "idr-review:v1";
+const URL_LIMIT = 7500;                 // GitHub rejects new-issue URLs beyond ~8KB
+const TODAY = new Date().toISOString().slice(0, 10);
+
+// ---- review state (persisted) ----
+let STATE = {};
+try { STATE = JSON.parse(localStorage.getItem(STORE_KEY) || "{}"); } catch (e) { STATE = {}; }
+function save() { localStorage.setItem(STORE_KEY, JSON.stringify(STATE)); }
+function entry(id) { return STATE[id] || (STATE[id] = { flags: {}, note: "" }); }
+function isFlagged(id) {
+  const e = STATE[id];
+  if (!e) return false;
+  return Object.values(e.flags).some(Boolean) || (e.note && e.note.trim().length > 0);
+}
+function flagKeys(id) {
+  const e = STATE[id];
+  if (!e) return [];
+  return Object.keys(e.flags).filter(k => e.flags[k]);
+}
+function prune(id) {
+  const e = STATE[id];
+  if (!e) return;
+  for (const k of Object.keys(e.flags)) if (!e.flags[k]) delete e.flags[k];
+  if (Object.keys(e.flags).length === 0 && (!e.note || !e.note.trim())) delete STATE[id];
+}
+
+// ---- formatting helpers ----
+const REGION = (() => { try { return new Intl.DisplayNames(["en"], { type: "region" }); } catch (e) { return null; } })();
+function country(cc) { if (!cc) return ""; try { return REGION ? REGION.of(cc) : cc; } catch (e) { return cc; } }
+const CUR = { GBP: "£", EUR: "€", USD: "$", CHF: "CHF ", JPY: "¥", HKD: "HK$", NOK: "kr ", DKK: "kr ", SEK: "kr " };
+function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
+function fmtDate(d) { if (!d) return null; const dt = new Date(d + "T00:00:00"); if (isNaN(dt)) return d; return dt.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" }); }
+function fmtAge(a) {
+  if (!a || (a.min == null && a.max == null)) return null;
+  if (a.min != null && a.max != null) return `${a.min}–${a.max}`;
+  if (a.min != null) return `${a.min}+`;
+  return `up to ${a.max}`;
+}
+function cap(s) { return s ? s[0].toUpperCase() + s.slice(1) : s; }
+function dash(html) { return html && html.length ? html : `<span class="muted">— not stated</span>`; }
+
+// ---- field definitions: label + value renderer (HTML) + plain-text summary (for issue body) ----
+function reqText(r) {
+  switch (r.type) {
+    case "none": return "explicitly none";
+    case "cv": return "CV / résumé";
+    case "headshot": return "headshot";
+    case "photos": return `photos (${r.specificity})${r.poses && r.poses.length ? `: ${r.poses.join("; ")}` : ""}`;
+    case "video": return `video (${r.specificity})${r.description ? `: ${r.description}` : ""}`;
+    default: return r.type || "?";
+  }
+}
+function priceText(p) {
+  const cur = (CUR[p.currency] || p.currency + " ").trim();
+  const inc = p.includes && p.includes.length ? ` [${p.includes.join("/")}]` : "";
+  return `${p.label || "Fee"}: ${cur}${p.amount != null ? p.amount.toLocaleString() : "—"}${inc}${p.notes ? ` (${p.notes})` : ""}`;
+}
+function sessText(s) {
+  const span = [fmtDate(s.start), fmtDate(s.end)].filter(Boolean).join(" → ");
+  const bits = [s.label, span, s.gender && s.gender !== "both" ? `${s.gender} only` : null, fmtAge(s.ageRange) ? `age ${fmtAge(s.ageRange)}` : null, s.notes].filter(Boolean);
+  return bits.join(" · ");
+}
+
+const FIELDS = [
+  { key: "title", lab: "Title & ID",
+    html: o => `<div>${esc(o.title)}</div><div class="card-id">${esc(o.id)}</div>`,
+    txt: o => `${o.title} (${o.id})` },
+  { key: "genres", lab: "Genres",
+    html: o => dash((o.genres || []).map(g => `<span class="tag">${esc(g)}</span>`).join("")),
+    txt: o => (o.genres || []).join(", ") || "—" },
+  { key: "level", lab: "Level",
+    html: o => dash((o.level || []).map(l => `<span class="tag">${esc(l)}</span>`).join("")),
+    txt: o => (o.level || []).join(", ") || "—" },
+  { key: "ageRange", lab: "Age range",
+    html: o => dash(fmtAge(o.ageRange) ? `<b>${fmtAge(o.ageRange)}</b> years` : ""),
+    txt: o => fmtAge(o.ageRange) || "—" },
+  { key: "location", lab: "Location",
+    html: o => {
+      const l = o.location; if (!l) return dash("");
+      const parts = [l.venue, l.city, country(l.country)].filter(Boolean).map(esc);
+      const on = l.online ? `<span class="tag">online</span>` : "";
+      return dash(parts.join(", ") + (on ? "<br>" + on : ""));
+    },
+    txt: o => { const l = o.location; if (!l) return "—"; return [l.venue, l.city, l.country, l.online ? "online" : null].filter(Boolean).join(", "); } },
+  { key: "schedule", lab: "Schedule",
+    html: o => {
+      const s = o.schedule || {};
+      const span = [fmtDate(s.start), fmtDate(s.end)].filter(Boolean).join(' <span style="color:var(--red)">→</span> ');
+      let h = "";
+      if (s.season) h += `<div class="kv"><span class="k">season</span><span>${esc(s.season)}</span></div>`;
+      h += `<div class="kv"><span class="k">dates</span><span>${span || '<span class="muted">— not stated</span>'}</span></div>`;
+      if (s.timezone) h += `<div class="kv"><span class="k">tz</span><span>${esc(s.timezone)}</span></div>`;
+      if (s.notes) h += `<div class="kv"><span class="k">notes</span><span style="color:var(--ink-soft)">${esc(s.notes)}</span></div>`;
+      return h;
+    },
+    txt: o => { const s = o.schedule || {}; return [`season=${s.season || "—"}`, `${s.start || "—"}→${s.end || "—"}`, s.timezone ? `tz=${s.timezone}` : null, s.notes ? `notes="${s.notes}"` : null].filter(Boolean).join("; "); } },
+  { key: "schedule.sessions", lab: "Sessions",
+    html: o => { const ss = (o.schedule && o.schedule.sessions) || []; if (!ss.length) return dash(""); return ss.map(s => `<div class="sess"><div class="sl">${esc(s.label || fmtDate(s.start) || "session")}</div><div class="sm">${esc([fmtDate(s.start), fmtDate(s.end)].filter(Boolean).join(" → ") + (s.gender && s.gender !== "both" ? ` · ${s.gender} only` : "") + (fmtAge(s.ageRange) ? ` · age ${fmtAge(s.ageRange)}` : "") + (s.notes ? ` · ${s.notes}` : ""))}</div></div>`).join(""); },
+    txt: o => { const ss = (o.schedule && o.schedule.sessions) || []; return ss.length ? ss.map(sessText).join(" | ") : "(none)"; },
+    skip: o => !(o.schedule && o.schedule.sessions && o.schedule.sessions.length) },
+  { key: "prices", lab: "Prices",
+    html: o => { const ps = o.prices || []; if (!ps.length) return dash(""); return ps.map(p => `<div class="fee"><span class="fl">${esc(p.label || "Fee")}${p.includes && p.includes.length ? `<br><span class="inc">${esc(p.includes.join(" · "))}</span>` : ""}${p.notes ? `<br><span class="inc" style="text-transform:none">${esc(p.notes)}</span>` : ""}</span><span class="fa"><span class="cur">${esc((CUR[p.currency] || p.currency))}</span>${p.amount != null ? p.amount.toLocaleString() : "—"}</span></div>`).join(""); },
+    txt: o => { const ps = o.prices || []; return ps.length ? ps.map(priceText).join(" | ") : "(none)"; } },
+  { key: "teachers", lab: "Teachers",
+    html: o => { const ts = o.teachers || []; if (!ts.length) return dash(""); return ts.map(t => { const aff = (t.affiliations || []).map(a => [a.organization, a.role].filter(Boolean).join(" — ")).filter(Boolean).join("; "); return `<div class="kv"><span class="k">${esc(t.role || "teacher")}</span><span><b>${esc(t.name)}</b>${aff ? `<br><span style="color:var(--ink-soft);font-size:12px">${esc(aff)}</span>` : ""}</span></div>`; }).join(""); },
+    txt: o => { const ts = o.teachers || []; return ts.length ? ts.map(t => t.name + (t.role ? ` (${t.role})` : "")).join(", ") : "(none)"; },
+    skip: o => !(o.teachers && o.teachers.length) },
+  { key: "application", lab: "Application",
+    html: o => {
+      const a = o.application || {}; let h = "";
+      if (a.status) h += `<div class="kv"><span class="k">status</span><span>${esc(a.status)}</span></div>`;
+      if (a.opensAt) h += `<div class="kv"><span class="k">opens</span><span>${esc(fmtDate(a.opensAt))}</span></div>`;
+      if (a.deadline) h += `<div class="kv"><span class="k">deadline</span><span>${esc(fmtDate(a.deadline))}</span></div>`;
+      if (a.url) h += `<div class="kv"><span class="k">url</span><span><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.url.replace(/^https?:\/\//, ""))}</a></span></div>`;
+      if (a.notes) h += `<div class="kv"><span class="k">notes</span><span style="color:var(--ink-soft)">${esc(a.notes)}</span></div>`;
+      return dash(h);
+    },
+    txt: o => { const a = o.application || {}; return [a.status ? `status=${a.status}` : null, a.opensAt ? `opens=${a.opensAt}` : null, a.deadline ? `deadline=${a.deadline}` : null, a.url ? `url=${a.url}` : null, a.notes ? `notes="${a.notes}"` : null].filter(Boolean).join("; ") || "—"; } },
+  { key: "application.requirements", lab: "Requirements",
+    html: o => { const rs = (o.application && o.application.requirements) || []; if (!rs.length) return dash(`<span class="muted">— [] (unknown / not stated)</span>`); return rs.map(r => `<div class="kv"><span class="k">${esc(r.type)}</span><span>${esc(reqText(r).replace(/^[a-z]+ ?/, ""))}</span></div>`).join(""); },
+    txt: o => { const rs = (o.application && o.application.requirements) || []; return rs.length ? rs.map(reqText).join(" | ") : "[] (unknown)"; } },
+  { key: "source.url", lab: "Source URL",
+    html: o => { const u = o.source && o.source.url; return u ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\//, ""))}</a>` : dash(""); },
+    txt: o => (o.source && o.source.url) || "—" },
+];
+
+// ---- data load (path-resilient: ./ first, then ../) ----
+let BASE = "./";
+let PROVIDERS = [];
+let OFFERINGS = [];            // flat list
+const BY_PROVIDER = {};        // slug -> { provider, offerings: [] }
+const OFFERING_PROVIDER = {};  // offeringId -> slug
+
+async function resolveBase() {
+  for (const base of ["./", "../"]) {
+    try {
+      const r = await fetch(base + "providers.json", { cache: "no-store" });
+      if (r.ok) { BASE = base; return await r.json(); }
+    } catch (e) { /* try next */ }
+  }
+  throw new Error(`Could not load providers.json from ./ or ../\nServe the repo root (python3 -m http.server) and open /review/`);
+}
+
+async function load() {
+  let pj;
+  try { pj = await resolveBase(); } catch (e) {
+    document.getElementById("content").innerHTML = `<div class="loaderr">${esc(e.message)}</div>`;
+    return;
+  }
+  PROVIDERS = (pj.providers || []).slice().sort((a, b) => a.name.localeCompare(b.name));
+  const seeds = [];
+  await Promise.all(PROVIDERS.map(async p => {
+    try {
+      const r = await fetch(`${BASE}data/${p.slug}.json`, { cache: "no-store" });
+      if (!r.ok) { seeds.push(p); return; }
+      const arr = await r.json();
+      BY_PROVIDER[p.slug] = { provider: p, offerings: arr };
+      for (const o of arr) { OFFERINGS.push(o); OFFERING_PROVIDER[o.id] = p.slug; }
+    } catch (e) { seeds.push(p); }
+  }));
+  render(seeds);
+}
+
+// ---- render ----
+function offeringCard(o) {
+  const e = STATE[o.id] || { flags: {}, note: "" };
+  const life = o.lifecycle && o.lifecycle !== "scheduled" ? `<span class="lifebadge ${esc(o.lifecycle)}">${esc(o.lifecycle)}${o.lifecycleNote ? " · " + esc(o.lifecycleNote) : ""}</span>` : "";
+  const hay = `${o.title} ${o.id} ${(o.location && (o.location.city + " " + o.location.country)) || ""} ${(o.organization && o.organization.name) || ""}`.toLowerCase();
+
+  const fieldsHtml = FIELDS.filter(f => !(f.skip && f.skip(o))).map(f => {
+    const on = e.flags[f.key] ? " flagged" : "";
+    const isTitle = f.key === "title";
+    if (isTitle) return ""; // title rendered in card-top
+    return `<div class="field${on}" data-id="${esc(o.id)}" data-key="${esc(f.key)}">
+      <div class="field-head"><span class="field-lab">${esc(f.lab)}</span>
+        <button class="flag-btn" title="Flag as broken">⚑</button></div>
+      <div class="field-val">${f.html(o)}</div>
+    </div>`;
+  }).join("");
+
+  const titleOn = e.flags["title"] ? " flagged" : "";
+  return `<div class="card${isFlagged(o.id) ? " flagged" : ""}" data-id="${esc(o.id)}" data-hay="${esc(hay)}">
+    <div class="card-top field${titleOn}" data-id="${esc(o.id)}" data-key="title">
+      <div class="card-title">${esc(o.title)}<div class="card-id">${esc(o.id)}</div></div>
+      ${life}
+      <button class="flag-btn" title="Flag title/id as broken">⚑</button>
+    </div>
+    <div class="grid">${fieldsHtml}</div>
+    <div class="note-row">
+      <span class="nlab">Note</span>
+      <textarea data-id="${esc(o.id)}" placeholder="What's wrong here? (free text — included in the issue)">${esc(e.note || "")}</textarea>
+    </div>
+  </div>`;
+}
+
+function providerSection(slug) {
+  const { provider: p, offerings } = BY_PROVIDER[slug];
+  const cc = p.country ? `<span class="cc">${esc(p.country)}</span>` : "";
+  const loc = [p.city, country(p.country)].filter(Boolean).map(esc).join(", ");
+  return `<section class="provider" id="prov-${esc(slug)}" data-slug="${esc(slug)}">
+    <div class="prov-head">
+      <h2>${esc(p.name)}</h2>
+      ${cc}<span class="meta">${esc(loc)} · ${offerings.length} offering${offerings.length === 1 ? "" : "s"}</span>
+      <span class="spacer"></span>
+      <a class="url" href="${esc(p.url)}" target="_blank" rel="noopener">${esc((p.url || "").replace(/^https?:\/\//, "").replace(/\/$/, ""))}</a>
+      <button class="issue-btn" data-slug="${esc(slug)}" disabled>Create GitHub issue <span class="ct">0</span></button>
+    </div>
+    ${offerings.map(offeringCard).join("")}
+  </section>`;
+}
+
+function render(seeds) {
+  const slugs = Object.keys(BY_PROVIDER).sort((a, b) => BY_PROVIDER[a].provider.name.localeCompare(BY_PROVIDER[b].provider.name));
+  document.getElementById("content").innerHTML = slugs.map(providerSection).join("") || `<div class="loaderr">No data files found.</div>`;
+
+  // rail
+  document.getElementById("rail").innerHTML = slugs.map(s => {
+    const { provider: p, offerings } = BY_PROVIDER[s];
+    return `<a class="src-link" data-jump="prov-${esc(s)}"><span class="nm">${esc(p.name)}</span><span class="ct" data-railct="${esc(s)}">${offerings.length}</span></a>`;
+  }).join("");
+  document.getElementById("railHint").textContent = `${slugs.length} live`;
+  if (seeds.length) {
+    document.getElementById("seedlist").innerHTML = `<div class="rail-h"><span>No data yet</span><span>${seeds.length}</span></div>` +
+      seeds.map(s => `<div class="seed">${esc(s.name)}</div>`).join("");
+  }
+
+  document.getElementById("nTotal").textContent = OFFERINGS.length;
+  wire();
+  refreshCounts();
+  applyFilters();
+}
+
+// ---- interaction ----
+function wire() {
+  // flag toggles (delegated)
+  document.getElementById("content").addEventListener("click", ev => {
+    const btn = ev.target.closest(".flag-btn");
+    if (!btn) return;
+    const field = btn.closest(".field");
+    const id = field.dataset.id, key = field.dataset.key;
+    const e = entry(id);
+    e.flags[key] = !e.flags[key];
+    field.classList.toggle("flagged", e.flags[key]);
+    prune(id); save();
+    field.closest(".card").classList.toggle("flagged", isFlagged(id));
+    refreshCounts();
+    if (flaggedOnly) applyFilters();
+  });
+  // notes (delegated input)
+  document.getElementById("content").addEventListener("input", ev => {
+    const ta = ev.target.closest("textarea[data-id]");
+    if (!ta) return;
+    const id = ta.dataset.id;
+    entry(id).note = ta.value;
+    prune(id); save();
+    ta.closest(".card").classList.toggle("flagged", isFlagged(id));
+    refreshCounts();
+  });
+  // issue buttons (delegated)
+  document.getElementById("content").addEventListener("click", ev => {
+    const ib = ev.target.closest(".issue-btn");
+    if (!ib || ib.disabled) return;
+    openIssue(ib.dataset.slug);
+  });
+  // rail jumps
+  document.getElementById("rail").addEventListener("click", ev => {
+    const a = ev.target.closest("[data-jump]");
+    if (!a) return;
+    const el = document.getElementById(a.dataset.jump);
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+}
+
+function refreshCounts() {
+  let flaggedOff = 0, provWithFlags = 0;
+  for (const slug of Object.keys(BY_PROVIDER)) {
+    const { offerings } = BY_PROVIDER[slug];
+    const n = offerings.filter(o => isFlagged(o.id)).length;
+    flaggedOff += n;
+    if (n) provWithFlags++;
+    // provider issue button
+    const ib = document.querySelector(`.issue-btn[data-slug="${CSS.escape(slug)}"]`);
+    if (ib) { ib.disabled = n === 0; ib.querySelector(".ct").textContent = n; }
+    // rail badge (select by stable data attr — class flips between ct/badge)
+    const ct = document.querySelector(`[data-railct="${CSS.escape(slug)}"]`);
+    if (ct) {
+      if (n) { ct.className = "badge"; ct.textContent = n; }
+      else { ct.className = "ct"; ct.textContent = offerings.length; }
+    }
+  }
+  document.getElementById("ledger").innerHTML = [
+    [Object.keys(BY_PROVIDER).length, "Sources", false],
+    [OFFERINGS.length, "Offerings", false],
+    [flaggedOff, "Flagged", true],
+    [provWithFlags, "Sources w/ flags", true],
+  ].map(([n, l, hot]) => `<div class="cell"><div class="num${hot && n ? " hot" : ""}">${n}</div><div class="lab">${l}</div></div>`).join("");
+}
+
+// ---- filtering ----
+let flaggedOnly = false, query = "";
+function applyFilters() {
+  let shown = 0;
+  for (const card of document.querySelectorAll(".card")) {
+    const id = card.dataset.id;
+    const okFlag = !flaggedOnly || isFlagged(id);
+    const okQ = !query || card.dataset.hay.includes(query);
+    const vis = okFlag && okQ;
+    card.style.display = vis ? "" : "none";
+    if (vis) shown++;
+  }
+  // hide empty provider sections
+  for (const sec of document.querySelectorAll(".provider")) {
+    const any = sec.querySelector('.card:not([style*="display: none"])');
+    sec.style.display = any ? "" : "none";
+  }
+  document.getElementById("nShown").textContent = shown;
+}
+document.getElementById("flaggedToggle").addEventListener("click", function () {
+  flaggedOnly = !flaggedOnly; this.classList.toggle("on"); applyFilters();
+});
+document.getElementById("search").addEventListener("input", e => { query = e.target.value.toLowerCase().trim(); applyFilters(); });
+
+// ---- issue assembly ----
+function buildBody(slug, includeValues) {
+  const { provider: p, offerings } = BY_PROVIDER[slug];
+  const flagged = offerings.filter(o => isFlagged(o.id));
+  const lines = [];
+  lines.push(`Data review for **${p.name}** (\`${slug}\`) — ${flagged.length} offering(s) flagged.`);
+  lines.push("");
+  lines.push(`Source site: ${p.url}`);
+  lines.push("");
+  for (const o of flagged) {
+    lines.push(`### ${o.title}`);
+    lines.push(`- **id:** \`${o.id}\``);
+    if (o.source && o.source.url) lines.push(`- **source:** ${o.source.url}`);
+    const keys = flagKeys(o.id);
+    if (keys.length) {
+      lines.push(`- **flagged fields:**`);
+      for (const k of keys) {
+        const f = FIELDS.find(x => x.key === k);
+        const lab = f ? f.lab : k;
+        if (includeValues && f) lines.push(`  - [ ] \`${k}\` (${lab}) — current: ${f.txt(o)}`);
+        else lines.push(`  - [ ] \`${k}\` (${lab})`);
+      }
+    }
+    const note = STATE[o.id] && STATE[o.id].note && STATE[o.id].note.trim();
+    if (note) { lines.push(`- **note:** ${note.replace(/\n/g, "\n    ")}`); }
+    lines.push("");
+  }
+  lines.push("---");
+  lines.push(`_Generated by the data-review UI on ${TODAY}._`);
+  return lines.join("\n");
+}
+
+function makeUrl(title, body) {
+  let u = `https://github.com/${REPO}/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
+  if (ASSIGN_LABEL) u += `&labels=${encodeURIComponent(ASSIGN_LABEL)}`;
+  return u;
+}
+
+let CURRENT_URL = "";
+function openIssue(slug) {
+  const { provider: p, offerings } = BY_PROVIDER[slug];
+  const n = offerings.filter(o => isFlagged(o.id)).length;
+  const title = `data review: ${p.name} — ${n} offering(s) flagged`;
+
+  const fullBody = buildBody(slug, true);
+  let body = fullBody, url = makeUrl(title, body), notice = "";
+  if (url.length > URL_LIMIT) {
+    body = buildBody(slug, false);
+    url = makeUrl(title, body);
+    notice = "Field values omitted from the link to stay within GitHub's URL length limit. The full body (with current values) is shown below — use “Copy body” and paste it if you want the detail.";
+    if (url.length > URL_LIMIT) {
+      const over = url.length - URL_LIMIT;
+      body = body.slice(0, Math.max(0, body.length - over - 120)) + "\n\n…(truncated — use “Copy body” for the full text)";
+      url = makeUrl(title, body);
+      notice = "This rollup is large. The prefilled link is truncated — use “Copy body” below for the complete issue text.";
+    }
+  }
+
+  CURRENT_URL = url;
+  document.getElementById("modalTitle").textContent = "GitHub issue · " + p.name;
+  document.getElementById("modalIssueTitle").innerHTML = `<b>Title:</b> ${esc(title)} &nbsp;·&nbsp; <b>label:</b> ${esc(ASSIGN_LABEL)} <span style="color:var(--ink-faint)">→ Copilot auto-assigned by workflow</span>`;
+  document.getElementById("modalNotice").innerHTML = notice ? `<div class="notice">${esc(notice)}</div>` : "";
+  document.getElementById("modalBody").value = fullBody;   // always show full body for copy
+  document.getElementById("modalOpen").href = url;
+  showModal();
+}
+
+// ---- modal + toast ----
+const scrim = document.getElementById("scrim"), modal = document.getElementById("modal");
+function showModal() { scrim.classList.add("show"); modal.classList.add("show"); }
+function hideModal() { scrim.classList.remove("show"); modal.classList.remove("show"); }
+scrim.addEventListener("click", hideModal);
+document.getElementById("modalClose").addEventListener("click", hideModal);
+document.addEventListener("keydown", e => { if (e.key === "Escape") hideModal(); });
+document.getElementById("modalOpen").addEventListener("click", hideModal);
+
+let toastTimer;
+function toast(msg) {
+  const t = document.getElementById("toast");
+  t.textContent = msg; t.classList.add("show");
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => t.classList.remove("show"), 2200);
+}
+async function copy(text, label) {
+  try { await navigator.clipboard.writeText(text); toast(label + " copied"); }
+  catch (e) { const ta = document.getElementById("modalBody"); ta.focus(); ta.select(); toast("Press ⌘/Ctrl+C to copy"); }
+}
+document.getElementById("modalCopy").addEventListener("click", () => copy(document.getElementById("modalBody").value, "Issue body"));
+document.getElementById("modalCopyUrl").addEventListener("click", () => copy(CURRENT_URL, "Issue URL"));
+
+// ---- export / import / clear ----
+document.getElementById("exportBtn").addEventListener("click", () => {
+  const blob = new Blob([JSON.stringify(STATE, null, 2)], { type: "application/json" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = `intensive-dance-review-${TODAY}.json`;
+  a.click(); URL.revokeObjectURL(a.href);
+});
+const fileInput = document.getElementById("fileInput");
+document.getElementById("importBtn").addEventListener("click", () => fileInput.click());
+fileInput.addEventListener("change", () => {
+  const f = fileInput.files[0]; if (!f) return;
+  const reader = new FileReader();
+  reader.onload = () => {
+    try {
+      const incoming = JSON.parse(reader.result);
+      if (typeof incoming !== "object" || incoming == null) throw new Error("not an object");
+      Object.assign(STATE, incoming); save();
+      // re-render to reflect imported flags/notes
+      OFFERINGS.length = 0; for (const s of Object.keys(BY_PROVIDER)) for (const o of BY_PROVIDER[s].offerings) OFFERINGS.push(o);
+      const seeds = PROVIDERS.filter(p => !BY_PROVIDER[p.slug]);
+      render(seeds);
+      toast("Review imported");
+    } catch (e) { toast("Import failed: bad JSON"); }
+    fileInput.value = "";
+  };
+  reader.readAsText(f);
+});
+document.getElementById("clearBtn").addEventListener("click", () => {
+  if (!confirm("Clear ALL flags and notes? This cannot be undone.")) return;
+  STATE = {}; save();
+  for (const card of document.querySelectorAll(".card")) card.classList.remove("flagged");
+  for (const f of document.querySelectorAll(".field.flagged")) f.classList.remove("flagged");
+  for (const ta of document.querySelectorAll("textarea[data-id]")) ta.value = "";
+  refreshCounts(); applyFilters();
+  toast("Cleared");
+});
+
+load();
+</script>
+</body>
+</html>
