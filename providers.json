@@ -674,6 +674,15 @@
       "url": "https://www.ballet.or.kr/",
       "tier": "secondary",
       "status": "seed"
+    },
+    {
+      "slug": "prix-de-lausanne-summer-intensive",
+      "name": "Prix de Lausanne — Summer Intensive",
+      "country": "CH",
+      "city": "Lausanne",
+      "url": "https://www.prixdelausanne.org/summer-intensive/",
+      "tier": "marquee",
+      "status": "live"
     }
   ]
 }
