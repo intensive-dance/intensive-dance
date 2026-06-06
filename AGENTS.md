@@ -56,6 +56,7 @@ uv run ruff format .                            # format (CI checks with --check
 uv run ty check                                 # type-check — WHOLE REPO, incl. tests
 uv run pytest -q                                # tests (no network)
 uv run python -m intensive_dance.schema         # schema in sync with models?
+uv run python -m intensive_dance.erd            # ERD (docs/erd.md) in sync with models?
 uv run python -m intensive_dance.validate       # committed data parses + hashes match
 ```
 
@@ -79,6 +80,7 @@ src/intensive_dance/
   run.py           # scrape -> hash -> write data/<slug>.json (deterministic)
   validate.py      # offline: every data/*.json parses + source.hash matches
   schema.py        # derive/drift-check schema/offering.schema.json from models
+  erd.py           # derive/drift-check docs/erd.md (Mermaid ERD) from models
 data/<slug>.json   # the store — committed, one file per provider
 providers.json     # the register; each has status seed|live
 tests/             # pytest, inline HTML/JSON snippets, no network
@@ -238,8 +240,9 @@ that — it's how the next agent knows the source's shape without re-crawling.
   `source.hash = content_hash()` (which **excludes** `source`), and reuses the
   prior `scrapedAt` when the hash is unchanged — so a no-op re-scrape yields **no
   git diff**. Don't put volatile data in fields; that's the whole point.
-- If you change `models.py`, regenerate the schema:
-  `uv run python -m intensive_dance.schema --write` (CI fails on drift).
+- If you change `models.py`, regenerate **both** derived artifacts (CI fails on drift):
+  `uv run python -m intensive_dance.schema --write` and
+  `uv run python -m intensive_dance.erd --write` (the Mermaid ERD in `docs/erd.md`).
 
 ---
 
