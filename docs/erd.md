@@ -19,6 +19,7 @@ erDiagram
         string provider
         string url
         datetime scrapedAt
+        datetime attemptedAt
         string hash
     }
     Organization {
