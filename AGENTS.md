@@ -50,17 +50,25 @@ uv run pre-commit install                       # optional: run the gate on comm
 
 uv run python -m intensive_dance.run <slug>     # scrape one provider → data/<slug>.json
 uv run python -m intensive_dance.run            # all providers
+uv run python -m intensive_dance.run --touch <slug>   # + stamp source.attemptedAt (rotation; see below)
+uv run python -m intensive_dance.rotation 10    # JSON: 10 least-recently-attempted slugs
 
 uv run ruff check .                             # lint
 uv run ruff format .                            # format (CI checks with --check)
 uv run ty check                                 # type-check — WHOLE REPO, incl. tests
 uv run pytest -q                                # tests (no network)
 uv run python -m intensive_dance.schema         # schema in sync with models?
+uv run python -m intensive_dance.erd            # ERD (docs/erd.md) in sync with models?
 uv run python -m intensive_dance.validate       # committed data parses + hashes match
 ```
 
-CI (`.github/workflows/ci.yml`) runs exactly these. A daily cron
-(`scrape.yml`) re-runs all scrapers and commits the data diff.
+CI (`.github/workflows/ci.yml`) runs exactly these (it skips `data/**`-only
+pushes — the hourly scrape commits). An **hourly** cron (`scrape.yml`) picks the
+10 least-recently-attempted scrapers (`rotation.select_stale`), runs each as an
+independent, `continue-on-error` matrix job (`--touch`), then a single `commit`
+job (`if: always()`) collects their artifacts and commits — so one flaky site
+never blocks the rest, and a commit always lands (every picked provider's
+`attemptedAt` is bumped).
 
 Always use `uv` (never bare `pip`/`python`). `ruff` line-length is **100**.
 
@@ -79,6 +87,7 @@ src/intensive_dance/
   run.py           # scrape -> hash -> write data/<slug>.json (deterministic)
   validate.py      # offline: every data/*.json parses + source.hash matches
   schema.py        # derive/drift-check schema/offering.schema.json from models
+  erd.py           # derive/drift-check docs/erd.md (Mermaid ERD) from models
 data/<slug>.json   # the store — committed, one file per provider
 providers.json     # the register; each has status seed|live
 tests/             # pytest, inline HTML/JSON snippets, no network
@@ -119,13 +128,26 @@ the request through the fetch proxy instead of giving up. It's a last resort
 (slower, rate-limited), so reach for it only after the API-first tree and a plain
 fetch have failed, and say in the scraper docstring *why* it was needed.
 
-Two interfaces, one service. `make_client()` (`src/intensive_dance/fetch.py`)
-already routes every scraper through this proxy as a transparent **forward
-proxy** when `FETCH_PROXY_URL`/`FETCH_PROXY_TOKEN` are set — you just fetch the
-real URL (auth rides on `Proxy-Authorization`), no query params. The **REST
-endpoint** below (`?url=…&render=1`, `Authorization: Bearer`) is the manual
-render/JS-escalation tier; there's no helper for it yet, so call it by hand when
-a plain fetch through `make_client()` still comes back blocked.
+One service, reached through its **REST `?url=` interface**. `make_client()`
+(`src/intensive_dance/fetch.py`) routes every scraper through it via a small
+transport when `FETCH_PROXY_URL`/`FETCH_PROXY_TOKEN` are set — you still call
+`client.get(real_url)`; the transport rewrites it to `{base}?url=<real>` with
+`Authorization: Bearer` and the proxy fetches it server-side (auto-escalating a
+block to a stealth Chromium render). It forwards `Accept-Language`, so a scraper
+can **pin the render locale** by passing `headers={"Accept-Language": "en"}` —
+needed when a localized site serves a translated `og:title`/text under the
+proxy's default `de-DE` render (see `mosa_ballet_school`). The query params below
+(`render=1`, `wait=…`, `format=md`, …) are the manual escalation tier; there's no
+helper, so call the endpoint by hand when a plain proxied fetch comes back blocked.
+
+> **Trap:** a `*.xml` (e.g. a `sitemap.xml` the proxy had to escalate) can come
+> back wrapped in Chromium's **XML-viewer HTML**, so `ET.fromstring` chokes. The
+> stealth-render tier now returns the *raw* body for non-HTML content-types, so
+> this only bites when the escalation goes through the **FlareSolverr/CF-challenge
+> tier** (which hands back the rendered DOM) — depends on how the host blocks. The
+> URLs survive verbatim either way, so regex them out of the text rather than
+> XML-parsing (robust to raw XML *and* the wrapper; see
+> `mosa_ballet_school._parse_event_urls`).
 
 **One endpoint** (`/`, GET — or POST to forward the request body + Content-Type
 upstream for form POSTs). The base does a plain Chrome-UA fetch with TLS
@@ -225,8 +247,18 @@ that — it's how the next agent knows the source's shape without re-crawling.
   `source.hash = content_hash()` (which **excludes** `source`), and reuses the
   prior `scrapedAt` when the hash is unchanged — so a no-op re-scrape yields **no
   git diff**. Don't put volatile data in fields; that's the whole point.
-- If you change `models.py`, regenerate the schema:
-  `uv run python -m intensive_dance.schema --write` (CI fails on drift).
+- **`source.attemptedAt` — the rotation cursor, the one deliberate exception.**
+  `scrapedAt` = last content change (no-diff above). `attemptedAt` = last fetch
+  *attempt*, and it's **volatile by design**: only `run.py --touch` writes it
+  (success *and* failure, via `stamp_attempt`), so plain/dev runs stay no-diff
+  (they carry the prior value). It exists because the hourly CI rotation
+  (`scrape.yml`) orders providers by it — see `rotation.select_stale`. So a
+  `--touch` re-scrape *does* produce an `attemptedAt`-only diff every hour; that
+  churn is intentional and overrides the "no-op = no diff" rule **for that field
+  only**. Excluded from `content_hash`, so `validate` is unaffected.
+- If you change `models.py`, regenerate **both** derived artifacts (CI fails on drift):
+  `uv run python -m intensive_dance.schema --write` and
+  `uv run python -m intensive_dance.erd --write` (the Mermaid ERD in `docs/erd.md`).
 
 ---
 
@@ -291,9 +323,21 @@ when a second provider genuinely needs the identical thing.
   from the title stamp ("夏休み特別講習会2026") and apply it to the month/day span and
   the deadline. Ages are stated as **school grades**, not numbers: map them by the
   statutory April-entry schedule (小N年→age 6+N…7+N, 中N年→12+N…13+N, 高N年→15+N…16+N)
-  and keep the raw grade band verbatim in the session `notes`. Classes that differ
-  only by age/gender (not dates/fee) are **one Offering with one `Session` per
-  class** (gender only exists on `Session`) — see `tokyo_ballet_school`.
+  and keep the raw grade band verbatim in the session `notes`. An open-ended band
+  ("小学3年生～") keeps a **null upper bound**; an Offering spanning such a class
+  stays open-topped too. Classes that differ only by age/gender (not dates/fee)
+  are **one Offering with one `Session` per class** (gender only exists on
+  `Session`) — see `tokyo_ballet_school`, `tokyo_city_ballet`. JP pages also love
+  **full-width digits** ("７月２４日") — `str.translate` them to ASCII once up front
+  so one date/price regex works; and the year can hide on a *deadline* row
+  ("2026年6月20日申請分まで") when the dateline is year-less, while a separate "open
+  day" line runs a day past the "から" range close — read both (see
+  `dd_masterclass_japan`). A company's short-term workshop can live on a
+  **competition microsite** while its school site has no workshop page — scrape
+  the dedicated workshop page there, but anchor on its structured 開催概要/受講料
+  blocks: such pages keep **stale prior-edition prose** (commented-out 中止 lines,
+  past-year admin dates) that loose-text parsing would catch (see
+  `tokyo_city_ballet`).
 - **One org, several city editions = one scraper, many Offerings.** A provider
   can run the same course as separate per-city subdomains (ART of's
   `zurich.`/`madrid.art-of.net`, same director). Build **one** scraper filed

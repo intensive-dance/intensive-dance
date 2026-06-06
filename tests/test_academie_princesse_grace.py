@@ -39,12 +39,23 @@ def test_age_range():
     assert pg._age_range("For students between 11 and 19 years old.") == {"min": 11, "max": 19}
 
 
+def test_level_pre_professional_when_selection_and_audition_required():
+    text = "The courses are accessible after selection. Access is possible after audition."
+    assert pg._level(text) == ["pre-professional"]
+
+
 def test_prices_two_tiers_with_includes():
     text = "Prices: 1200€/week (tuition + accommodation), 700€/week (accommodation not included; optional meals available)"
     prices = pg._prices(text)
-    assert [(p.amount, p.currency, p.includes) for p in prices] == [
-        (1200.0, "EUR", ["tuition", "accommodation"]),
-        (700.0, "EUR", ["tuition"]),
+    assert [(p.amount, p.currency, p.includes, p.label, p.notes) for p in prices] == [
+        (1200.0, "EUR", ["tuition", "accommodation"], "Per week (tuition + accommodation)", None),
+        (
+            700.0,
+            "EUR",
+            ["tuition"],
+            "Per week (accommodation not included)",
+            "Optional meals available.",
+        ),
     ]
 
 
