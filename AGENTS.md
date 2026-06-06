@@ -323,14 +323,21 @@ when a second provider genuinely needs the identical thing.
   from the title stamp ("夏休み特別講習会2026") and apply it to the month/day span and
   the deadline. Ages are stated as **school grades**, not numbers: map them by the
   statutory April-entry schedule (小N年→age 6+N…7+N, 中N年→12+N…13+N, 高N年→15+N…16+N)
-  and keep the raw grade band verbatim in the session `notes`. Classes that differ
-  only by age/gender (not dates/fee) are **one Offering with one `Session` per
-  class** (gender only exists on `Session`) — see `tokyo_ballet_school`. JP pages
-  also love **full-width digits** ("７月２４日") — `str.translate` them to ASCII once
-  up front so one date/price regex works; and the year can hide on a *deadline*
-  row ("2026年6月20日申請分まで") when the dateline is year-less, while a separate
-  "open day" line runs a day past the "から" range close — read both (see
-  `dd_masterclass_japan`).
+  and keep the raw grade band verbatim in the session `notes`. An open-ended band
+  ("小学3年生～") keeps a **null upper bound**; an Offering spanning such a class
+  stays open-topped too. Classes that differ only by age/gender (not dates/fee)
+  are **one Offering with one `Session` per class** (gender only exists on
+  `Session`) — see `tokyo_ballet_school`, `tokyo_city_ballet`. JP pages also love
+  **full-width digits** ("７月２４日") — `str.translate` them to ASCII once up front
+  so one date/price regex works; and the year can hide on a *deadline* row
+  ("2026年6月20日申請分まで") when the dateline is year-less, while a separate "open
+  day" line runs a day past the "から" range close — read both (see
+  `dd_masterclass_japan`). A company's short-term workshop can live on a
+  **competition microsite** while its school site has no workshop page — scrape
+  the dedicated workshop page there, but anchor on its structured 開催概要/受講料
+  blocks: such pages keep **stale prior-edition prose** (commented-out 中止 lines,
+  past-year admin dates) that loose-text parsing would catch (see
+  `tokyo_city_ballet`).
 - **One org, several city editions = one scraper, many Offerings.** A provider
   can run the same course as separate per-city subdomains (ART of's
   `zurich.`/`madrid.art-of.net`, same director). Build **one** scraper filed
