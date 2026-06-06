@@ -52,6 +52,25 @@ def test_date_range_no_dates_falls_back_to_year():
     assert rbs._date_range("Summer 2027 cohort") == (None, None, "2027")
 
 
+def test_date_range_keeps_leading_day_of_same_month_range():
+    # "3-7 April" — the leading day omits the month, so _DATE alone saw only
+    # the 7th and reported start == end. The range must span 3 → 7.
+    start, end, season = rbs._date_range("Intensive: 3-7 April 2026")
+    assert (start, end, season) == (date(2026, 4, 3), date(2026, 4, 7), "2026")
+
+
+def test_date_range_keeps_leading_day_of_and_separated_range():
+    start, end, _ = rbs._date_range("Thursday 19 and Friday 20 February 2026")
+    assert (start, end) == (date(2026, 2, 19), date(2026, 2, 20))
+
+
+def test_date_range_leading_day_inherits_own_year_across_cycles():
+    # Multi-year weekend list: the October leading day must take 2026, not the
+    # global max (2027), so it cannot leak across the cycle boundary.
+    start, end, _ = rbs._date_range("17-18 October 2026 and 10-11 April 2027")
+    assert (start, end) == (date(2026, 10, 17), date(2027, 4, 11))
+
+
 def test_deadline_extracts_close_date():
     assert rbs._deadline("Applications close 1 March 2026.") == date(2026, 3, 1)
     assert rbs._deadline("No deadline stated") is None

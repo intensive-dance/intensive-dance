@@ -151,13 +151,13 @@
           "start": "2026-04-04"
         }
       ],
-      "start": "2026-04-06",
+      "start": "2026-04-03",
       "timezone": "Asia/Hong_Kong"
     },
     "source": {
-      "hash": "sha256:dffc3a489031f18862e145f5a7314d9414dd9fc1fdca930fa674719b3642fbda",
+      "hash": "sha256:5814711f26eee8d4f29deb605c15cb96d16f7bd05bbe764f2d55678b7459400b",
       "provider": "royal-ballet-school",
-      "scrapedAt": "2026-06-05T10:04:59.244925Z",
+      "scrapedAt": "2026-06-06T16:04:03.485568Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/hong-kong-intensive/"
     },
     "teachers": [],
@@ -257,13 +257,13 @@
           "start": "2025-12-19"
         }
       ],
-      "start": "2025-12-20",
+      "start": "2025-12-19",
       "timezone": "Asia/Tokyo"
     },
     "source": {
-      "hash": "sha256:8890e2bae466dedba8c25b4b0b8cd0775b72327182e9cb226b194d0cc6ff6652",
+      "hash": "sha256:147f6511899f3df4c348211f7f9160ed7a80ec36a0300c60e97f864f427f0f8d",
       "provider": "royal-ballet-school",
-      "scrapedAt": "2026-06-05T10:04:59.250633Z",
+      "scrapedAt": "2026-06-06T16:04:03.496453Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/japan-intensive/"
     },
     "teachers": [],
@@ -352,13 +352,13 @@
       "notes": "Saturday 15 and Sunday 16 November 2025",
       "season": "2025",
       "sessions": [],
-      "start": "2025-11-16",
+      "start": "2025-11-15",
       "timezone": "Europe/Rome"
     },
     "source": {
-      "hash": "sha256:a6297fca68c7e6b1062e97d2178e71da484c903d6a5a6ba4b4346c809006ffe0",
+      "hash": "sha256:ce96b80b9c1bbbc0d854059adc6ef08562e35e867a746501de95529232d32ac6",
       "provider": "royal-ballet-school",
-      "scrapedAt": "2026-06-05T10:04:59.240779Z",
+      "scrapedAt": "2026-06-06T16:04:03.481457Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/livorno-masterclasses/"
     },
     "teachers": [],
@@ -450,13 +450,13 @@
           "start": "2027-04-10"
         }
       ],
-      "start": "2026-10-18",
+      "start": "2026-10-17",
       "timezone": "Europe/Rome"
     },
     "source": {
-      "hash": "sha256:bd3af4bcdaf9c7ed3c427ded0607592309b91942aab1d394a163556dfeb740dc",
+      "hash": "sha256:89722cdea7e2cb8e76a28cc96880cae5339ed33999202bdc2bceca68cfdc2cf1",
       "provider": "royal-ballet-school",
-      "scrapedAt": "2026-06-05T10:04:59.241367Z",
+      "scrapedAt": "2026-06-06T16:04:03.482045Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/livorno-special-training-programme/"
     },
     "teachers": [],
@@ -688,12 +688,12 @@
           "start": "2022-04-04"
         }
       ],
-      "start": "2022-04-08"
+      "start": "2022-04-04"
     },
     "source": {
-      "hash": "sha256:796097fac3a98d7b13ef939b71a2f89030d22c99d1813f59f6ad5b95365ce0c4",
+      "hash": "sha256:db1351501556792b93b60b626e61e63a5c0a7bca819ff53ad06f0d3ab1bcd10b",
       "provider": "royal-ballet-school",
-      "scrapedAt": "2026-06-05T10:04:59.248786Z",
+      "scrapedAt": "2026-06-06T16:04:03.492653Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/online-spring-intensive/"
     },
     "teachers": [],
@@ -764,13 +764,13 @@
           "start": "2026-04-10"
         }
       ],
-      "start": "2026-04-12",
+      "start": "2026-04-10",
       "timezone": "Asia/Singapore"
     },
     "source": {
-      "hash": "sha256:a8d80a711122e1f88322792287348a38d05a808d4dcc497466588da5af8d5bbb",
+      "hash": "sha256:fa72f9afb79de8786c74da2e543f8673e81f133deb911f3b7fa0ba4b5dd4bee7",
       "provider": "royal-ballet-school",
-      "scrapedAt": "2026-06-05T10:04:59.246650Z",
+      "scrapedAt": "2026-06-06T16:04:03.488258Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/singapore-intensive/"
     },
     "teachers": [],
@@ -893,13 +893,13 @@
           "start": "2025-04-24"
         }
       ],
-      "start": "2025-04-26",
+      "start": "2025-04-24",
       "timezone": "Asia/Bangkok"
     },
     "source": {
-      "hash": "sha256:8790211456dada22e0227f76139eb503d002818207ae908cfabde32c01cc6a35",
+      "hash": "sha256:d4b4c648622e9919e54e4b472293155a5948d616283de44f4c9574a0a3fcd065",
       "provider": "royal-ballet-school",
-      "scrapedAt": "2026-06-05T10:04:59.240093Z",
+      "scrapedAt": "2026-06-06T16:04:03.480679Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/thailand-intensive/"
     },
     "teachers": [],
@@ -1382,13 +1382,13 @@
       "notes": "Thursday 19 and Friday 20 February 2026",
       "season": "2026",
       "sessions": [],
-      "start": "2026-02-20",
+      "start": "2026-02-19",
       "timezone": "Europe/London"
     },
     "source": {
-      "hash": "sha256:ff0a879863b420fe61f71c65baf029957aea53c9e0c8dfc7c3665d049a26dfac",
+      "hash": "sha256:e607b6cc4d02c3d16f3057ffe1c66a82aec49451e42badac3c4dcf6213533e9a",
       "provider": "royal-ballet-school",
-      "scrapedAt": "2026-06-05T10:04:59.243732Z",
+      "scrapedAt": "2026-06-06T16:04:03.484180Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/winter-intensive/"
     },
     "teachers": [],
