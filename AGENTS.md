@@ -119,13 +119,26 @@ the request through the fetch proxy instead of giving up. It's a last resort
 (slower, rate-limited), so reach for it only after the API-first tree and a plain
 fetch have failed, and say in the scraper docstring *why* it was needed.
 
-Two interfaces, one service. `make_client()` (`src/intensive_dance/fetch.py`)
-already routes every scraper through this proxy as a transparent **forward
-proxy** when `FETCH_PROXY_URL`/`FETCH_PROXY_TOKEN` are set — you just fetch the
-real URL (auth rides on `Proxy-Authorization`), no query params. The **REST
-endpoint** below (`?url=…&render=1`, `Authorization: Bearer`) is the manual
-render/JS-escalation tier; there's no helper for it yet, so call it by hand when
-a plain fetch through `make_client()` still comes back blocked.
+One service, reached through its **REST `?url=` interface**. `make_client()`
+(`src/intensive_dance/fetch.py`) routes every scraper through it via a small
+transport when `FETCH_PROXY_URL`/`FETCH_PROXY_TOKEN` are set — you still call
+`client.get(real_url)`; the transport rewrites it to `{base}?url=<real>` with
+`Authorization: Bearer` and the proxy fetches it server-side (auto-escalating a
+block to a stealth Chromium render). It forwards `Accept-Language`, so a scraper
+can **pin the render locale** by passing `headers={"Accept-Language": "en"}` —
+needed when a localized site serves a translated `og:title`/text under the
+proxy's default `de-DE` render (see `mosa_ballet_school`). The query params below
+(`render=1`, `wait=…`, `format=md`, …) are the manual escalation tier; there's no
+helper, so call the endpoint by hand when a plain proxied fetch comes back blocked.
+
+> **Trap:** a `*.xml` (e.g. a `sitemap.xml` the proxy had to escalate) can come
+> back wrapped in Chromium's **XML-viewer HTML**, so `ET.fromstring` chokes. The
+> stealth-render tier now returns the *raw* body for non-HTML content-types, so
+> this only bites when the escalation goes through the **FlareSolverr/CF-challenge
+> tier** (which hands back the rendered DOM) — depends on how the host blocks. The
+> URLs survive verbatim either way, so regex them out of the text rather than
+> XML-parsing (robust to raw XML *and* the wrapper; see
+> `mosa_ballet_school._parse_event_urls`).
 
 **One endpoint** (`/`, GET — or POST to forward the request body + Content-Type
 upstream for form POSTs). The base does a plain Chrome-UA fetch with TLS
