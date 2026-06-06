@@ -1,5 +1,9 @@
 [
   {
+    "ageRange": {
+      "max": 6,
+      "min": 4
+    },
     "application": {
       "requirements": [],
       "url": "https://docs.google.com/forms/d/e/1FAIpQLScUXFlBN7rd6TJCXwTgZBj88TNZNGrQojJKzT3KUjpa05WnQQ/viewform"
@@ -42,15 +46,19 @@
     },
     "source": {
       "attemptedAt": "2026-06-06T15:24:48.780085Z",
-      "hash": "sha256:71be138ca52b589b2b77e53b7e1349c3984ca4079464a3718c1b9a2c13d4fad8",
+      "hash": "sha256:38b1d8451a4626314245b1bc4161b87e8db3a0bf6700bb39eae6d094fe7984d8",
       "provider": "k-ballet-school",
-      "scrapedAt": "2026-06-06T06:50:32.796244Z",
+      "scrapedAt": "2026-06-06T16:48:36.488087Z",
       "url": "https://www.k-ballet.co.jp/school/event/2026summerintensive.html"
     },
     "teachers": [],
     "title": "サマーインテンシブ（夏期特別講習会） キッズ〈年中・年長〉 2026"
   },
   {
+    "ageRange": {
+      "max": 9,
+      "min": 6
+    },
     "application": {
       "requirements": [],
       "url": "https://docs.google.com/forms/d/e/1FAIpQLScUXFlBN7rd6TJCXwTgZBj88TNZNGrQojJKzT3KUjpa05WnQQ/viewform"
@@ -109,15 +117,19 @@
     },
     "source": {
       "attemptedAt": "2026-06-06T15:24:48.780085Z",
-      "hash": "sha256:775d5668a9349bc9780182bc29276352e279d56c1e94a62f8b947af4d03f7072",
+      "hash": "sha256:376f193844c40ff37950166d6923dea7e999800e7f42c56346b4550aa3adb124",
       "provider": "k-ballet-school",
-      "scrapedAt": "2026-06-06T06:50:32.796471Z",
+      "scrapedAt": "2026-06-06T16:48:36.488600Z",
       "url": "https://www.k-ballet.co.jp/school/event/2026summerintensive.html"
     },
     "teachers": [],
     "title": "サマーインテンシブ（夏期特別講習会） ファウンデーション〈小学1～3年生〉 2026"
   },
   {
+    "ageRange": {
+      "max": 12,
+      "min": 9
+    },
     "application": {
       "requirements": [],
       "url": "https://docs.google.com/forms/d/e/1FAIpQLScUXFlBN7rd6TJCXwTgZBj88TNZNGrQojJKzT3KUjpa05WnQQ/viewform"
@@ -179,15 +191,19 @@
     },
     "source": {
       "attemptedAt": "2026-06-06T15:24:48.780085Z",
-      "hash": "sha256:817fb94095a51e22f1d4164a201634169862b3085eefa6ab321716902c3f024f",
+      "hash": "sha256:56fa3ea3a5bff58c6d301324644f74cb8abacd4bbcbab52dba276ca53bf439b0",
       "provider": "k-ballet-school",
-      "scrapedAt": "2026-06-06T06:50:32.796537Z",
+      "scrapedAt": "2026-06-06T16:48:36.488729Z",
       "url": "https://www.k-ballet.co.jp/school/event/2026summerintensive.html"
     },
     "teachers": [],
     "title": "サマーインテンシブ（夏期特別講習会） エレメンタリー〈小学4～6年生〉 2026"
   },
   {
+    "ageRange": {
+      "max": null,
+      "min": 12
+    },
     "application": {
       "requirements": [],
       "url": "https://docs.google.com/forms/d/e/1FAIpQLScUXFlBN7rd6TJCXwTgZBj88TNZNGrQojJKzT3KUjpa05WnQQ/viewform"
@@ -250,9 +266,9 @@
     },
     "source": {
       "attemptedAt": "2026-06-06T15:24:48.780085Z",
-      "hash": "sha256:09c09ecc180b67131aff821d5827511bb0d245f3cdd840b287461938b198515e",
+      "hash": "sha256:3d5694c107bb2aaf0849f6f956d3ea342702569d4ebf7feaed7260cb2cecc81a",
       "provider": "k-ballet-school",
-      "scrapedAt": "2026-06-06T06:50:32.796592Z",
+      "scrapedAt": "2026-06-06T16:48:36.488831Z",
       "url": "https://www.k-ballet.co.jp/school/event/2026summerintensive.html"
     },
     "teachers": [],
