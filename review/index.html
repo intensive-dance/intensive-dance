@@ -237,7 +237,10 @@
 
 <script>
 const REPO = "boredland/intensive-dance";
-const ASSIGNEE = "copilot-swe-agent";   // Copilot coding-agent login; see verification note
+// Copilot can't be assigned via the URL (the assignees field is User-only and
+// Copilot is a Bot actor). We prefill this label instead; the assign-copilot.yml
+// workflow does the real GraphQL assignment, gated on code-owner authorship.
+const ASSIGN_LABEL = "assign-copilot";
 const STORE_KEY = "idr-review:v1";
 const URL_LIMIT = 7500;                 // GitHub rejects new-issue URLs beyond ~8KB
 const TODAY = new Date().toISOString().slice(0, 10);
@@ -594,7 +597,7 @@ function buildBody(slug, includeValues) {
 
 function makeUrl(title, body) {
   let u = `https://github.com/${REPO}/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
-  if (ASSIGNEE) u += `&assignees=${encodeURIComponent(ASSIGNEE)}`;
+  if (ASSIGN_LABEL) u += `&labels=${encodeURIComponent(ASSIGN_LABEL)}`;
   return u;
 }
 
@@ -620,7 +623,7 @@ function openIssue(slug) {
 
   CURRENT_URL = url;
   document.getElementById("modalTitle").textContent = "GitHub issue · " + p.name;
-  document.getElementById("modalIssueTitle").innerHTML = `<b>Title:</b> ${esc(title)} &nbsp;·&nbsp; <b>assignee:</b> ${esc(ASSIGNEE)}`;
+  document.getElementById("modalIssueTitle").innerHTML = `<b>Title:</b> ${esc(title)} &nbsp;·&nbsp; <b>label:</b> ${esc(ASSIGN_LABEL)} <span style="color:var(--ink-faint)">→ Copilot auto-assigned by workflow</span>`;
   document.getElementById("modalNotice").innerHTML = notice ? `<div class="notice">${esc(notice)}</div>` : "";
   document.getElementById("modalBody").value = fullBody;   // always show full body for copy
   document.getElementById("modalOpen").href = url;
