@@ -1,0 +1,123 @@
+[
+  {
+    "ageRange": {
+      "min": 8
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://danse.academie-internationale-ete-nice.org/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "contemporary"
+    ],
+    "id": "academie-ete-nice/summer-dance-stage-2026",
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Nice",
+      "country": "FR"
+    },
+    "organization": {
+      "city": "Nice",
+      "country": "FR",
+      "name": "Académie Internationale d'Été de Nice",
+      "slug": "academie-ete-nice"
+    },
+    "prices": [
+      {
+        "amount": 220.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Per week — 1 cours par jour (incl. 20€ membership)"
+      },
+      {
+        "amount": 391.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Per week — 2 cours par jour (incl. 20€ membership)"
+      },
+      {
+        "amount": 570.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Per week — 3 cours par jour (incl. 20€ membership)"
+      },
+      {
+        "amount": 655.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Per week — Cours illimités (incl. 20€ membership)"
+      },
+      {
+        "amount": 79.0,
+        "currency": "EUR",
+        "includes": [
+          "meals"
+        ],
+        "label": "Canteen lunch (per week)"
+      },
+      {
+        "amount": 370.0,
+        "currency": "EUR",
+        "includes": [
+          "accommodation",
+          "meals"
+        ],
+        "label": "Residence Clairvallon (per week, half-board)",
+        "notes": "Recommended for minors; Sunday-to-Sunday."
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-01",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-27",
+      "timezone": "Europe/Paris"
+    },
+    "source": {
+      "hash": "sha256:a7a8a1351c0aab3afb6e04e1db00c666b40a6a49962071732f2602e5ea206764",
+      "provider": "academie-ete-nice",
+      "scrapedAt": "2026-06-06T19:43:30.148791Z",
+      "url": "https://danse.academie-internationale-ete-nice.org/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Charles Jude",
+        "role": "Artistic director"
+      },
+      {
+        "affiliations": [],
+        "name": "Stéphanie Roublot"
+      },
+      {
+        "affiliations": [],
+        "name": "Monique Loudières"
+      },
+      {
+        "affiliations": [],
+        "name": "Thomas Klein"
+      },
+      {
+        "affiliations": [],
+        "name": "Igor Yebra"
+      }
+    ],
+    "title": "Stage International de Danse 2026"
+  }
+]

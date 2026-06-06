@@ -1,0 +1,181 @@
+[
+  {
+    "ageRange": {
+      "min": 9
+    },
+    "application": {
+      "notes": "Open enrolment via HelloAsso: each dancer buys a class card (6 / 12 / 18 or unlimited classes) and selects classes by level. No beginners — a minimum of two years of dance is required. An optional class with the Malandain Ballet Biarritz company is open to pre-professional/professional dancers aged 17+, by selection on application (CV + a ~3-minute video).",
+      "requirements": [],
+      "url": "https://biarritz-academie-danse.com/inscription/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "contemporary"
+    ],
+    "id": "academie-danse-biarritz/academy-2026",
+    "level": [
+      "intermediate",
+      "advanced",
+      "pre-professional",
+      "professional",
+      "open"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Biarritz",
+      "country": "FR",
+      "venue": "Lycée hôtelier Biarritz Atlantique"
+    },
+    "organization": {
+      "city": "Biarritz",
+      "country": "FR",
+      "name": "Académie Internationale de Danse de Biarritz",
+      "slug": "academie-danse-biarritz"
+    },
+    "prices": [
+      {
+        "amount": 240.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Carte « 6 cours (1 cours/jour) » (tarif plein)",
+        "notes": "Reduced: grandes écoles/eurocités 220 €."
+      },
+      {
+        "amount": 380.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Carte « 12 cours (2 cours/jour) » (tarif plein)",
+        "notes": "Reduced: grandes écoles/eurocités 340 €."
+      },
+      {
+        "amount": 480.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Carte « 18 cours (3 cours/jour) » (tarif plein)",
+        "notes": "Reduced: grandes écoles/eurocités 430 €."
+      },
+      {
+        "amount": 520.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Carte « cours illimités » (tarif plein)",
+        "notes": "Reduced: grandes écoles/eurocités 480 €; professionnels 300 €."
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-07",
+      "notes": "Une démonstration publique des stagiaires aura lieu le mardi 4 août 2026 à 21h au théâtre de la Gare du Midi de Biarritz.",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-02",
+      "timezone": "Europe/Paris"
+    },
+    "source": {
+      "hash": "sha256:f5ef106016a78ac9acdc5fc2b5c3db1617168fd80ddd4dab50dc9f6615b95176",
+      "provider": "academie-danse-biarritz",
+      "scrapedAt": "2026-06-06T19:47:34.914090Z",
+      "url": "https://biarritz-academie-danse.com/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "organization": "Opéra national de Paris"
+          }
+        ],
+        "name": "Carole Arbo"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Directeur de l’Académie de danse de Zurich & Directeur de la danse à l’Université des Arts de Zurich"
+          }
+        ],
+        "name": "Jason Beechey"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Conservatoire National Supérieur de Musique et de Danse de Paris"
+          }
+        ],
+        "name": "Bertrand Belem"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Ballet national de Cuba"
+          }
+        ],
+        "name": "Lienz Chang Oliva"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Opéra National de Bordeaux"
+          }
+        ],
+        "name": "Eric Quilleré"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "École Nationale de Danse de Marseille"
+          }
+        ],
+        "name": "Isabel Hernandez"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Conservatoires de Paris"
+          }
+        ],
+        "name": "Béatrice Legendre-Choukroun"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Opéra national de Paris"
+          }
+        ],
+        "name": "Delphine Moussin"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Professeur Studios Parisiens"
+          }
+        ],
+        "name": "Wayne Byars"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Atelier Thierry Malandain"
+          }
+        ],
+        "name": "Ione Miren Aguirre"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Atelier Johan Inger"
+          }
+        ],
+        "name": "Javier Rodriguez"
+      }
+    ],
+    "title": "Académie Internationale de Danse de Biarritz 2026"
+  }
+]

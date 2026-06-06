@@ -1,0 +1,151 @@
+[
+  {
+    "ageRange": {
+      "min": 8
+    },
+    "application": {
+      "notes": "Pour valider la pré-inscription, 50% du montant total est à régler (non remboursable) ; le solde est dû sur place le dimanche 5 juillet (1ère semaine) ou le dimanche 12 juillet (2ème semaine).",
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "url": "https://stagedansecj.com/inscription"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "pointe"
+    ],
+    "id": "stage-charles-jude/summer-stage-2026",
+    "level": [
+      "open"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Marseille",
+      "country": "FR",
+      "venue": "École Nationale de Danse de Marseille"
+    },
+    "organization": {
+      "city": "Marseille",
+      "country": "FR",
+      "name": "Stage International de Danse Charles Jude",
+      "slug": "stage-charles-jude"
+    },
+    "prices": [
+      {
+        "amount": 210.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "1 semaine — 1 cours/jour"
+      },
+      {
+        "amount": 350.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "1 semaine — 2 cours/jour"
+      },
+      {
+        "amount": 490.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "1 semaine — 3 cours/jour"
+      },
+      {
+        "amount": 700.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "1 semaine — cours illimités"
+      },
+      {
+        "amount": 40.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "1 semaine — cours à l’unité"
+      },
+      {
+        "amount": 400.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "2 semaines — 1 cours/jour"
+      },
+      {
+        "amount": 680.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "2 semaines — 2 cours/jour"
+      },
+      {
+        "amount": 950.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "2 semaines — 3 cours/jour"
+      },
+      {
+        "amount": 1350.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "2 semaines — cours illimités"
+      },
+      {
+        "amount": 40.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "2 semaines — cours à l’unité"
+      },
+      {
+        "amount": 15.0,
+        "currency": "EUR",
+        "includes": [],
+        "label": "Adhésion",
+        "notes": "Adhésion à ajouter à chaque tarif."
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-18",
+      "notes": "6-18 Juillet 2026",
+      "season": "2026",
+      "sessions": [
+        {
+          "label": "Semaine 1",
+          "notes": "Solde dû sur place le dimanche 5 juillet (17h–19h)."
+        },
+        {
+          "label": "Semaine 2",
+          "notes": "Solde dû sur place le dimanche 12 juillet (17h–19h)."
+        }
+      ],
+      "start": "2026-07-06",
+      "timezone": "Europe/Paris"
+    },
+    "source": {
+      "hash": "sha256:fa43c811a0993de6a35c7b599a9d3e89edf476649bd92204d65f135ef3588a46",
+      "provider": "stage-charles-jude",
+      "scrapedAt": "2026-06-06T19:42:38.485743Z",
+      "url": "https://stagedansecj.com/"
+    },
+    "teachers": [],
+    "title": "Stage International de Danse Charles Jude 2026"
+  }
+]

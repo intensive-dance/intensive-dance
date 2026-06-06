@@ -1,0 +1,131 @@
+[
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 9
+    },
+    "application": {
+      "deadline": "2026-06-09",
+      "notes": "Entry is via the online registration form; the student is assigned to the appropriate age and experience group from the form. Discounts do not stack.",
+      "requirements": [],
+      "url": "https://www.balletworkshops.com/registrationsbsc"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "contemporary"
+    ],
+    "id": "ballet-workshops-bucharest/summer-camp-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Bucharest",
+      "country": "RO",
+      "venue": "Casa de Balet, Bucharest (Final Showcase Gala at the National Opera Bucharest)"
+    },
+    "organization": {
+      "city": "Bucharest",
+      "country": "RO",
+      "name": "Ballet Workshops Bucharest",
+      "slug": "ballet-workshops-bucharest"
+    },
+    "prices": [
+      {
+        "amount": 1100.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition",
+          "performance"
+        ],
+        "label": "Full workshop and Final Showcase Gala"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-19",
+      "notes": "Accommodation assistance is offered close to the venue with breakfast included (not part of the participation fee); airport transfers provided.",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 11,
+            "min": 9
+          },
+          "label": "9-11 years",
+          "notes": "9-11 years"
+        },
+        {
+          "ageRange": {
+            "max": 14,
+            "min": 12
+          },
+          "label": "12-14 years",
+          "notes": "12-14 years"
+        },
+        {
+          "ageRange": {
+            "min": 15
+          },
+          "label": "15+ years",
+          "notes": "15+ years"
+        }
+      ],
+      "start": "2026-07-09",
+      "timezone": "Europe/Bucharest"
+    },
+    "source": {
+      "hash": "sha256:7ca1d4a43544f0b7cb02cd71bb4a1a2003e935701626c09c3b7cb8e879cfebc7",
+      "provider": "ballet-workshops-bucharest",
+      "scrapedAt": "2026-06-06T19:41:56.064815Z",
+      "url": "https://www.balletworkshops.com/balletsummercamp"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Alejandro Parente",
+        "role": "International Guest Ballet Teacher"
+      },
+      {
+        "affiliations": [],
+        "name": "Siner Boquin",
+        "role": "International Ballet Teacher Artistic Director of Classical Ballet Camp Izmir"
+      },
+      {
+        "affiliations": [],
+        "name": "Davidson Farias",
+        "role": "International Guest Ballet Teacher & Choreographer"
+      },
+      {
+        "affiliations": [],
+        "name": "Yannick Boquin",
+        "role": "International Guest Ballet Teacher"
+      },
+      {
+        "affiliations": [],
+        "name": "Marina Minoiu",
+        "role": "Ballet Coordinator at the National Musical and Operetta Theater „Ion Dacian” Ballet Teacher at Casa de Balet Professional Trainee Program"
+      },
+      {
+        "affiliations": [],
+        "name": "Valentin Stoica",
+        "role": "First Dancer at the National Opera in Bucharest Ballet Teacher at Casa de Balet Professional Training Program"
+      },
+      {
+        "affiliations": [],
+        "name": "Michael Fuscaldo",
+        "role": "Choreographer Founder and artistic director of NAC Ballet and MGR Events"
+      },
+      {
+        "affiliations": [],
+        "name": "Daria Stănciulescu",
+        "role": "First Artist with Birmingham Royal Ballet"
+      },
+      {
+        "affiliations": [],
+        "name": "Christiana Stefanou",
+        "role": "International Guest Teacher and Ballet Mistress"
+      }
+    ],
+    "title": "Ballet Summer Camp 2026"
+  }
+]

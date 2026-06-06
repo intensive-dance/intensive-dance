@@ -1,0 +1,192 @@
+[
+  {
+    "ageRange": {
+      "max": 30,
+      "min": 10
+    },
+    "application": {
+      "deadline": "2026-06-20",
+      "notes": "The chosen variation's title, video and music must be submitted one month before the start of the intensive (by 12 June). A non-refundable EUR 400 deposit secures a place once accepted; the balance is due within 60 days.",
+      "requirements": [
+        {
+          "description": "A YouTube link to a video of a variation or performance, filmed no earlier than 2025.",
+          "specificity": "specific",
+          "type": "video"
+        },
+        {
+          "type": "headshot"
+        },
+        {
+          "notes": "One portrait photo and one photo in arabesque.",
+          "poses": [
+            "arabesque"
+          ],
+          "specificity": "defined-poses",
+          "type": "photos"
+        }
+      ],
+      "status": "open",
+      "url": "https://www.balletstage.com/summerintensiveapplicationform2026"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "contemporary"
+    ],
+    "id": "balletstage/summer-intensive-2026",
+    "level": [
+      "pre-professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Ljubljana",
+      "country": "SI",
+      "venue": "Conservatory of Music and Ballet Ljubljana (KGBL)"
+    },
+    "organization": {
+      "city": "Ljubljana",
+      "country": "SI",
+      "name": "BalletStage",
+      "slug": "balletstage"
+    },
+    "prices": [
+      {
+        "amount": 1370.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition",
+          "meals"
+        ],
+        "label": "1 Week MasterClass Admission Includes Daily Lunches",
+        "notes": "Includes applicable taxes."
+      },
+      {
+        "amount": 2370.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition",
+          "meals"
+        ],
+        "label": "2 Weeks MasterClass Admission Includes Daily Lunches",
+        "notes": "Includes applicable taxes."
+      },
+      {
+        "amount": 1960.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition",
+          "accommodation",
+          "meals"
+        ],
+        "label": "1 Week Camp and MasterClass Admission Includes Accommodation & Meals",
+        "notes": "Includes applicable taxes."
+      },
+      {
+        "amount": 3460.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition",
+          "accommodation",
+          "meals"
+        ],
+        "label": "2 Weeks Camp and MasterClass Admission Includes Accommodation & Meals",
+        "notes": "Includes applicable taxes."
+      },
+      {
+        "amount": 270.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "1 Week Contemporary Admission (For 2nd Week Only)",
+        "notes": "Includes applicable taxes."
+      },
+      {
+        "amount": 860.0,
+        "currency": "EUR",
+        "includes": [
+          "accommodation",
+          "meals"
+        ],
+        "label": "1 Week \"Camp Only\" Add-on Option Includes Accommodation & Meals Does not include Masterclass admission",
+        "notes": "Includes applicable taxes."
+      },
+      {
+        "amount": 1580.0,
+        "currency": "EUR",
+        "includes": [
+          "accommodation",
+          "meals"
+        ],
+        "label": "2 Weeks \"Camp Only\" Add-on Option Includes Accommodation & Meals Does not include Masterclass admission",
+        "notes": "Includes applicable taxes."
+      },
+      {
+        "amount": 200.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Olga Smirnova class (per day)",
+        "notes": "For participants without general masterclass admission (21–24 July)."
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-25",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 13,
+            "min": 10
+          },
+          "end": "2026-07-25",
+          "label": "Group A",
+          "notes": "No Pointe Shoes or 1 year on Pointe",
+          "start": "2026-07-13"
+        },
+        {
+          "ageRange": {
+            "max": 14,
+            "min": 13
+          },
+          "end": "2026-07-25",
+          "label": "Group B",
+          "notes": "More than 2 years on Pointe",
+          "start": "2026-07-13"
+        },
+        {
+          "ageRange": {
+            "max": 17,
+            "min": 15
+          },
+          "end": "2026-07-25",
+          "label": "Group C",
+          "notes": "More than 4 years on Pointe",
+          "start": "2026-07-13"
+        },
+        {
+          "ageRange": {
+            "max": 30,
+            "min": 18
+          },
+          "end": "2026-07-25",
+          "label": "Group D",
+          "notes": "More than 8 years on Pointe",
+          "start": "2026-07-13"
+        }
+      ],
+      "start": "2026-07-13",
+      "timezone": "Europe/Ljubljana"
+    },
+    "source": {
+      "hash": "sha256:1525afeeccaf79efff0e6205230d1258ff639424b481269c0c2d3b11a0ef06a3",
+      "provider": "balletstage",
+      "scrapedAt": "2026-06-06T19:44:28.247630Z",
+      "url": "https://www.balletstage.com/summerintensive2026"
+    },
+    "teachers": [],
+    "title": "Summer Intensive MasterClass 2026"
+  }
+]

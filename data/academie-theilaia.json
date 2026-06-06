@@ -1,0 +1,83 @@
+[
+  {
+    "ageRange": {
+      "min": 9
+    },
+    "application": {
+      "notes": "Inscription en ligne (places limitées). Tarif réduit pour toute inscription avant le 30 mars 2026.",
+      "opensAt": "2026-01-12",
+      "requirements": [],
+      "status": "open",
+      "url": "https://www.academie-ballet.fr/theilaia-24e-stage-international-du-13-au-17-juillet-2026/"
+    },
+    "genres": [
+      "classical",
+      "repertoire",
+      "character"
+    ],
+    "id": "academie-theilaia/stage-international-2026",
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced",
+      "pre-professional",
+      "professional",
+      "open"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Lyon",
+      "country": "FR",
+      "venue": "Conservatoire National Supérieur Musique et Danse de Lyon (CNSMD)"
+    },
+    "organization": {
+      "city": "Lyon",
+      "country": "FR",
+      "name": "Académie de Ballet Nini Theilade",
+      "slug": "academie-theilaia"
+    },
+    "prices": [
+      {
+        "amount": 525.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Forfait (4 à 6 cours par jour) — tarif réduit",
+        "notes": "Tarif réduit pour toute inscription avant le 30 mars 2026."
+      },
+      {
+        "amount": 150.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Carte de 4 cours adulte en soirée"
+      },
+      {
+        "amount": 525.0,
+        "currency": "EUR",
+        "includes": [
+          "accommodation",
+          "meals"
+        ],
+        "label": "Hébergement en internat surveillé (pension complète)"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-17",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-13",
+      "timezone": "Europe/Paris"
+    },
+    "source": {
+      "hash": "sha256:f3433366463ead3a726d38230eec55affaa18420d85c2d9b0bae2bf41156cdb8",
+      "provider": "academie-theilaia",
+      "scrapedAt": "2026-06-06T19:44:28.716891Z",
+      "url": "https://www.academie-ballet.fr/theilaia-24e-stage-international-du-13-au-17-juillet-2026/"
+    },
+    "teachers": [],
+    "title": "Theilaïa — Stage International 2026 (24e edition)"
+  }
+]

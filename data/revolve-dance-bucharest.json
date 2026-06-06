@@ -1,0 +1,892 @@
+[
+  {
+    "ageRange": {
+      "max": 11,
+      "min": 9
+    },
+    "application": {
+      "notes": "Enrolment is open to students from public or private dance schools in Romania and abroad; groups are formed by level of preparation, and ages are completed by 1 January 2026. Apply via the online form with a video link (YouTube/Vimeo) and two photos. Gala-choreography places (Paquita, Duato, Béjart) are cast by audition during the first week of the course.",
+      "requirements": [
+        {
+          "description": "A video link (YouTube/Vimeo).",
+          "specificity": "unspecific",
+          "type": "video"
+        },
+        {
+          "notes": "Two photos (JPG).",
+          "poses": [],
+          "specificity": "freeform",
+          "type": "photos"
+        }
+      ],
+      "url": "https://revolvedance.ro/en/schedule/summer-intensive-2026/"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "character",
+      "repertoire"
+    ],
+    "id": "revolve-dance-bucharest/children-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Bucharest",
+      "country": "RO"
+    },
+    "organization": {
+      "city": "Bucharest",
+      "country": "RO",
+      "name": "Revolve Dance Festival",
+      "slug": "revolve-dance-bucharest"
+    },
+    "prices": [
+      {
+        "amount": 1090.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ]
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-23",
+      "notes": "Stars Gala on 23 August 2026 at the Bucharest National Opera.",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-10",
+      "timezone": "Europe/Bucharest"
+    },
+    "source": {
+      "hash": "sha256:b373b5c2abcb7c80ae335befc6727ea650865aa5d1cc1eb55a1f513ce6f47e10",
+      "provider": "revolve-dance-bucharest",
+      "scrapedAt": "2026-06-06T19:46:31.566012Z",
+      "url": "https://revolvedance.ro/en/schedule/summer-intensive-2026/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "organization": "Compañía Nacional de Danza"
+          }
+        ],
+        "name": "Nacho Duato",
+        "role": "International choreographer"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Bayerisches Junior Ballett München"
+          }
+        ],
+        "name": "Ivan Liška",
+        "role": "Director, Bayerisches Junior Ballett München and Heinz-Bosl-Stiftung"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Nina Ivanovich",
+        "role": "Professor of historical, character and classical dance"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Boris Eifman Dance Academy"
+          },
+          {
+            "organization": "Mariinsky Theatre"
+          }
+        ],
+        "name": "Andrey Ivanov",
+        "role": "Head of professional selection and teacher; former Principal at the Mariinsky Theatre"
+      },
+      {
+        "affiliations": [],
+        "name": "Anne-Cécile Morelle",
+        "role": "Former soloist for Maurice Béjart and Roland Petit; State Diploma jury member"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Béjart Ballet Lausanne"
+          }
+        ],
+        "name": "Domenico Levré",
+        "role": "Répétiteur of the Béjart Ballet Lausanne"
+      }
+    ],
+    "title": "Summer Intensive 2026 — Children (9–11)"
+  },
+  {
+    "ageRange": {
+      "max": 14,
+      "min": 12
+    },
+    "application": {
+      "notes": "Enrolment is open to students from public or private dance schools in Romania and abroad; groups are formed by level of preparation, and ages are completed by 1 January 2026. Apply via the online form with a video link (YouTube/Vimeo) and two photos. Gala-choreography places (Paquita, Duato, Béjart) are cast by audition during the first week of the course.",
+      "requirements": [
+        {
+          "description": "A video link (YouTube/Vimeo).",
+          "specificity": "unspecific",
+          "type": "video"
+        },
+        {
+          "notes": "Two photos (JPG).",
+          "poses": [],
+          "specificity": "freeform",
+          "type": "photos"
+        }
+      ],
+      "url": "https://revolvedance.ro/en/schedule/summer-intensive-2026/"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "character",
+      "repertoire",
+      "pointe"
+    ],
+    "id": "revolve-dance-bucharest/junior-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Bucharest",
+      "country": "RO"
+    },
+    "organization": {
+      "city": "Bucharest",
+      "country": "RO",
+      "name": "Revolve Dance Festival",
+      "slug": "revolve-dance-bucharest"
+    },
+    "prices": [
+      {
+        "amount": 1090.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ]
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-23",
+      "notes": "Stars Gala on 23 August 2026 at the Bucharest National Opera.",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-10",
+      "timezone": "Europe/Bucharest"
+    },
+    "source": {
+      "hash": "sha256:10a36e61f405bb2c518dabe25faaad00c9d0181f505deea81bb31e2cc0b2ed05",
+      "provider": "revolve-dance-bucharest",
+      "scrapedAt": "2026-06-06T19:46:31.566680Z",
+      "url": "https://revolvedance.ro/en/schedule/summer-intensive-2026/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "organization": "Compañía Nacional de Danza"
+          }
+        ],
+        "name": "Nacho Duato",
+        "role": "International choreographer"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Bayerisches Junior Ballett München"
+          }
+        ],
+        "name": "Ivan Liška",
+        "role": "Director, Bayerisches Junior Ballett München and Heinz-Bosl-Stiftung"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Nina Ivanovich",
+        "role": "Professor of historical, character and classical dance"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Boris Eifman Dance Academy"
+          },
+          {
+            "organization": "Mariinsky Theatre"
+          }
+        ],
+        "name": "Andrey Ivanov",
+        "role": "Head of professional selection and teacher; former Principal at the Mariinsky Theatre"
+      },
+      {
+        "affiliations": [],
+        "name": "Anne-Cécile Morelle",
+        "role": "Former soloist for Maurice Béjart and Roland Petit; State Diploma jury member"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Béjart Ballet Lausanne"
+          }
+        ],
+        "name": "Domenico Levré",
+        "role": "Répétiteur of the Béjart Ballet Lausanne"
+      }
+    ],
+    "title": "Summer Intensive 2026 — Junior (12–14)"
+  },
+  {
+    "ageRange": {
+      "max": 15,
+      "min": 13
+    },
+    "application": {
+      "notes": "Enrolment is open to students from public or private dance schools in Romania and abroad; groups are formed by level of preparation, and ages are completed by 1 January 2026. Apply via the online form with a video link (YouTube/Vimeo) and two photos. Gala-choreography places (Paquita, Duato, Béjart) are cast by audition during the first week of the course.",
+      "requirements": [
+        {
+          "description": "A video link (YouTube/Vimeo).",
+          "specificity": "unspecific",
+          "type": "video"
+        },
+        {
+          "notes": "Two photos (JPG).",
+          "poses": [],
+          "specificity": "freeform",
+          "type": "photos"
+        }
+      ],
+      "url": "https://revolvedance.ro/en/schedule/summer-intensive-2026/"
+    },
+    "genres": [
+      "classical",
+      "neoclassical",
+      "contemporary",
+      "character",
+      "repertoire",
+      "pointe"
+    ],
+    "id": "revolve-dance-bucharest/junior-pro-2026",
+    "level": [
+      "pre-professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Bucharest",
+      "country": "RO"
+    },
+    "organization": {
+      "city": "Bucharest",
+      "country": "RO",
+      "name": "Revolve Dance Festival",
+      "slug": "revolve-dance-bucharest"
+    },
+    "prices": [
+      {
+        "amount": 1190.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ]
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-23",
+      "notes": "Stars Gala on 23 August 2026 at the Bucharest National Opera.",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-10",
+      "timezone": "Europe/Bucharest"
+    },
+    "source": {
+      "hash": "sha256:acbd55214bcd2d590e440c7114fe0378e0b16c1a5ae44156d379fc0a05f52356",
+      "provider": "revolve-dance-bucharest",
+      "scrapedAt": "2026-06-06T19:46:31.566844Z",
+      "url": "https://revolvedance.ro/en/schedule/summer-intensive-2026/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "organization": "Compañía Nacional de Danza"
+          }
+        ],
+        "name": "Nacho Duato",
+        "role": "International choreographer"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Bayerisches Junior Ballett München"
+          }
+        ],
+        "name": "Ivan Liška",
+        "role": "Director, Bayerisches Junior Ballett München and Heinz-Bosl-Stiftung"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Nina Ivanovich",
+        "role": "Professor of historical, character and classical dance"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Boris Eifman Dance Academy"
+          },
+          {
+            "organization": "Mariinsky Theatre"
+          }
+        ],
+        "name": "Andrey Ivanov",
+        "role": "Head of professional selection and teacher; former Principal at the Mariinsky Theatre"
+      },
+      {
+        "affiliations": [],
+        "name": "Anne-Cécile Morelle",
+        "role": "Former soloist for Maurice Béjart and Roland Petit; State Diploma jury member"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Béjart Ballet Lausanne"
+          }
+        ],
+        "name": "Domenico Levré",
+        "role": "Répétiteur of the Béjart Ballet Lausanne"
+      }
+    ],
+    "title": "Summer Intensive 2026 — Junior Pro (13–15)"
+  },
+  {
+    "ageRange": {
+      "max": 20,
+      "min": 16
+    },
+    "application": {
+      "notes": "Enrolment is open to students from public or private dance schools in Romania and abroad; groups are formed by level of preparation, and ages are completed by 1 January 2026. Apply via the online form with a video link (YouTube/Vimeo) and two photos. Gala-choreography places (Paquita, Duato, Béjart) are cast by audition during the first week of the course.",
+      "requirements": [
+        {
+          "description": "A video link (YouTube/Vimeo).",
+          "specificity": "unspecific",
+          "type": "video"
+        },
+        {
+          "notes": "Two photos (JPG).",
+          "poses": [],
+          "specificity": "freeform",
+          "type": "photos"
+        }
+      ],
+      "url": "https://revolvedance.ro/en/schedule/summer-intensive-2026/"
+    },
+    "genres": [
+      "classical",
+      "neoclassical",
+      "contemporary",
+      "character",
+      "repertoire"
+    ],
+    "id": "revolve-dance-bucharest/senior-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Bucharest",
+      "country": "RO"
+    },
+    "organization": {
+      "city": "Bucharest",
+      "country": "RO",
+      "name": "Revolve Dance Festival",
+      "slug": "revolve-dance-bucharest"
+    },
+    "prices": [
+      {
+        "amount": 1190.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ]
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-23",
+      "notes": "Stars Gala on 23 August 2026 at the Bucharest National Opera.",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-10",
+      "timezone": "Europe/Bucharest"
+    },
+    "source": {
+      "hash": "sha256:4073f381a91fc86921287a66efd3d555eed658eb2395bcd9eb412018210bde93",
+      "provider": "revolve-dance-bucharest",
+      "scrapedAt": "2026-06-06T19:46:31.566981Z",
+      "url": "https://revolvedance.ro/en/schedule/summer-intensive-2026/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "organization": "Compañía Nacional de Danza"
+          }
+        ],
+        "name": "Nacho Duato",
+        "role": "International choreographer"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Bayerisches Junior Ballett München"
+          }
+        ],
+        "name": "Ivan Liška",
+        "role": "Director, Bayerisches Junior Ballett München and Heinz-Bosl-Stiftung"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Nina Ivanovich",
+        "role": "Professor of historical, character and classical dance"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Boris Eifman Dance Academy"
+          },
+          {
+            "organization": "Mariinsky Theatre"
+          }
+        ],
+        "name": "Andrey Ivanov",
+        "role": "Head of professional selection and teacher; former Principal at the Mariinsky Theatre"
+      },
+      {
+        "affiliations": [],
+        "name": "Anne-Cécile Morelle",
+        "role": "Former soloist for Maurice Béjart and Roland Petit; State Diploma jury member"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Béjart Ballet Lausanne"
+          }
+        ],
+        "name": "Domenico Levré",
+        "role": "Répétiteur of the Béjart Ballet Lausanne"
+      }
+    ],
+    "title": "Summer Intensive 2026 — Senior (16–20)"
+  },
+  {
+    "ageRange": {
+      "max": 25,
+      "min": 18
+    },
+    "application": {
+      "notes": "Enrolment is open to students from public or private dance schools in Romania and abroad; groups are formed by level of preparation, and ages are completed by 1 January 2026. Apply via the online form with a video link (YouTube/Vimeo) and two photos. Gala-choreography places (Paquita, Duato, Béjart) are cast by audition during the first week of the course.",
+      "requirements": [
+        {
+          "description": "A video link (YouTube/Vimeo).",
+          "specificity": "unspecific",
+          "type": "video"
+        },
+        {
+          "notes": "Two photos (JPG).",
+          "poses": [],
+          "specificity": "freeform",
+          "type": "photos"
+        }
+      ],
+      "url": "https://revolvedance.ro/en/schedule/summer-intensive-2026/"
+    },
+    "genres": [
+      "classical",
+      "neoclassical",
+      "contemporary",
+      "repertoire"
+    ],
+    "id": "revolve-dance-bucharest/senior-pro-2026",
+    "level": [
+      "pre-professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Bucharest",
+      "country": "RO"
+    },
+    "organization": {
+      "city": "Bucharest",
+      "country": "RO",
+      "name": "Revolve Dance Festival",
+      "slug": "revolve-dance-bucharest"
+    },
+    "prices": [
+      {
+        "amount": 700.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Week 1"
+      },
+      {
+        "amount": 800.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Week 2"
+      },
+      {
+        "amount": 1300.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Both weeks (package)"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-23",
+      "notes": "Stars Gala on 23 August 2026 at the Bucharest National Opera.",
+      "season": "2026",
+      "sessions": [
+        {
+          "end": "2026-08-15",
+          "label": "Week 1",
+          "start": "2026-08-10"
+        },
+        {
+          "end": "2026-08-23",
+          "label": "Week 2",
+          "start": "2026-08-17"
+        }
+      ],
+      "start": "2026-08-10",
+      "timezone": "Europe/Bucharest"
+    },
+    "source": {
+      "hash": "sha256:84e05311d262dcda8ac3d07c0a3bae684d52d4e5e2e3cffcd07ea3c10356c521",
+      "provider": "revolve-dance-bucharest",
+      "scrapedAt": "2026-06-06T19:46:31.567123Z",
+      "url": "https://revolvedance.ro/en/schedule/summer-intensive-2026/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "organization": "Compañía Nacional de Danza"
+          }
+        ],
+        "name": "Nacho Duato",
+        "role": "International choreographer"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Bayerisches Junior Ballett München"
+          }
+        ],
+        "name": "Ivan Liška",
+        "role": "Director, Bayerisches Junior Ballett München and Heinz-Bosl-Stiftung"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Nina Ivanovich",
+        "role": "Professor of historical, character and classical dance"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Boris Eifman Dance Academy"
+          },
+          {
+            "organization": "Mariinsky Theatre"
+          }
+        ],
+        "name": "Andrey Ivanov",
+        "role": "Head of professional selection and teacher; former Principal at the Mariinsky Theatre"
+      },
+      {
+        "affiliations": [],
+        "name": "Anne-Cécile Morelle",
+        "role": "Former soloist for Maurice Béjart and Roland Petit; State Diploma jury member"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Béjart Ballet Lausanne"
+          }
+        ],
+        "name": "Domenico Levré",
+        "role": "Répétiteur of the Béjart Ballet Lausanne"
+      }
+    ],
+    "title": "Summer Intensive 2026 — Senior Pro (18–25)"
+  },
+  {
+    "ageRange": {
+      "max": 25,
+      "min": 18
+    },
+    "application": {
+      "notes": "Enrolment is open to students from public or private dance schools in Romania and abroad; groups are formed by level of preparation, and ages are completed by 1 January 2026. Apply via the online form with a video link (YouTube/Vimeo) and two photos. Gala-choreography places (Paquita, Duato, Béjart) are cast by audition during the first week of the course.",
+      "requirements": [
+        {
+          "description": "A video link (YouTube/Vimeo).",
+          "specificity": "unspecific",
+          "type": "video"
+        },
+        {
+          "notes": "Two photos (JPG).",
+          "poses": [],
+          "specificity": "freeform",
+          "type": "photos"
+        }
+      ],
+      "url": "https://revolvedance.ro/en/schedule/summer-intensive-2026/"
+    },
+    "genres": [
+      "contemporary",
+      "repertoire"
+    ],
+    "id": "revolve-dance-bucharest/special-nacho-duato-2026",
+    "level": [
+      "pre-professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Bucharest",
+      "country": "RO"
+    },
+    "organization": {
+      "city": "Bucharest",
+      "country": "RO",
+      "name": "Revolve Dance Festival",
+      "slug": "revolve-dance-bucharest"
+    },
+    "prices": [
+      {
+        "amount": 200.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ]
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-23",
+      "notes": "Stars Gala on 23 August 2026 at the Bucharest National Opera.",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-17",
+      "timezone": "Europe/Bucharest"
+    },
+    "source": {
+      "hash": "sha256:283e82724c1f67b9a145b100a6d2c0e5a731b82c9377b016d1cf072be625adf1",
+      "provider": "revolve-dance-bucharest",
+      "scrapedAt": "2026-06-06T19:46:31.567336Z",
+      "url": "https://revolvedance.ro/en/schedule/summer-intensive-2026/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "organization": "Compañía Nacional de Danza"
+          }
+        ],
+        "name": "Nacho Duato",
+        "role": "International choreographer"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Bayerisches Junior Ballett München"
+          }
+        ],
+        "name": "Ivan Liška",
+        "role": "Director, Bayerisches Junior Ballett München and Heinz-Bosl-Stiftung"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Nina Ivanovich",
+        "role": "Professor of historical, character and classical dance"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Boris Eifman Dance Academy"
+          },
+          {
+            "organization": "Mariinsky Theatre"
+          }
+        ],
+        "name": "Andrey Ivanov",
+        "role": "Head of professional selection and teacher; former Principal at the Mariinsky Theatre"
+      },
+      {
+        "affiliations": [],
+        "name": "Anne-Cécile Morelle",
+        "role": "Former soloist for Maurice Béjart and Roland Petit; State Diploma jury member"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Béjart Ballet Lausanne"
+          }
+        ],
+        "name": "Domenico Levré",
+        "role": "Répétiteur of the Béjart Ballet Lausanne"
+      }
+    ],
+    "title": "Summer Intensive 2026 — Special Group — Nacho Duato"
+  },
+  {
+    "ageRange": {
+      "max": 25,
+      "min": 18
+    },
+    "application": {
+      "notes": "Enrolment is open to students from public or private dance schools in Romania and abroad; groups are formed by level of preparation, and ages are completed by 1 January 2026. Apply via the online form with a video link (YouTube/Vimeo) and two photos. Gala-choreography places (Paquita, Duato, Béjart) are cast by audition during the first week of the course.",
+      "requirements": [
+        {
+          "description": "A video link (YouTube/Vimeo).",
+          "specificity": "unspecific",
+          "type": "video"
+        },
+        {
+          "notes": "Two photos (JPG).",
+          "poses": [],
+          "specificity": "freeform",
+          "type": "photos"
+        }
+      ],
+      "url": "https://revolvedance.ro/en/schedule/summer-intensive-2026/"
+    },
+    "genres": [
+      "neoclassical",
+      "repertoire"
+    ],
+    "id": "revolve-dance-bucharest/special-maurice-bejart-2026",
+    "level": [
+      "pre-professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Bucharest",
+      "country": "RO"
+    },
+    "organization": {
+      "city": "Bucharest",
+      "country": "RO",
+      "name": "Revolve Dance Festival",
+      "slug": "revolve-dance-bucharest"
+    },
+    "prices": [
+      {
+        "amount": 200.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ]
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-23",
+      "notes": "Stars Gala on 23 August 2026 at the Bucharest National Opera.",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-17",
+      "timezone": "Europe/Bucharest"
+    },
+    "source": {
+      "hash": "sha256:2f6c5f37e5e27b181a87eddb82b54df9027a5c97ba00c2eb50057f40c14979d9",
+      "provider": "revolve-dance-bucharest",
+      "scrapedAt": "2026-06-06T19:46:31.567476Z",
+      "url": "https://revolvedance.ro/en/schedule/summer-intensive-2026/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "organization": "Compañía Nacional de Danza"
+          }
+        ],
+        "name": "Nacho Duato",
+        "role": "International choreographer"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Bayerisches Junior Ballett München"
+          }
+        ],
+        "name": "Ivan Liška",
+        "role": "Director, Bayerisches Junior Ballett München and Heinz-Bosl-Stiftung"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Nina Ivanovich",
+        "role": "Professor of historical, character and classical dance"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Boris Eifman Dance Academy"
+          },
+          {
+            "organization": "Mariinsky Theatre"
+          }
+        ],
+        "name": "Andrey Ivanov",
+        "role": "Head of professional selection and teacher; former Principal at the Mariinsky Theatre"
+      },
+      {
+        "affiliations": [],
+        "name": "Anne-Cécile Morelle",
+        "role": "Former soloist for Maurice Béjart and Roland Petit; State Diploma jury member"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Béjart Ballet Lausanne"
+          }
+        ],
+        "name": "Domenico Levré",
+        "role": "Répétiteur of the Béjart Ballet Lausanne"
+      }
+    ],
+    "title": "Summer Intensive 2026 — Special Group — Maurice Béjart"
+  }
+]
