@@ -171,7 +171,9 @@ def _prices(text: str) -> list[Price]:
         notes = None
         if re.search(r"optional meals available", label, re.IGNORECASE):
             notes = "Optional meals available."
-            label = parse.clean(re.sub(r";?\s*optional meals available", "", label, flags=re.IGNORECASE))
+            label = parse.clean(
+                re.sub(r";?\s*optional meals available", "", label, flags=re.IGNORECASE)
+            )
         includes: list[PriceInclude] = ["tuition"]
         if re.search(r"\+\s*accommodation|accommodation\s+included", label, re.IGNORECASE):
             includes.append("accommodation")
