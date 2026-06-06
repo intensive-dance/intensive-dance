@@ -1,0 +1,308 @@
+[
+  {
+    "ageRange": {
+      "min": 16
+    },
+    "application": {
+      "deadline": "2026-07-14",
+      "notes": "A non-returnable deposit of £250 (pounds sterling) or €300 (Euro) will be required, but not until you have received confirmation that you have been accepted on to the course. The fee for the course option of your choice must be paid in full by June 1st 2026 or it will be assumed that you will not be attending, and your place may be offered to another candidate.",
+      "requirements": [
+        {
+          "notes": "A photograph in a normal ballet position (first arabesque preferred).",
+          "poses": [
+            "first arabesque"
+          ],
+          "specificity": "defined-poses",
+          "type": "photos"
+        }
+      ],
+      "url": "https://www.balletmasterclass.com/pages/how-to-apply/"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "international-ballet-masterclasses-prague/summer-masterclasses-2026",
+    "level": [
+      "professional",
+      "pre-professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Prague",
+      "country": "CZ",
+      "venue": "Czech National Ballet studios (National Theatre Prague), Anenské náměstí 2"
+    },
+    "organization": {
+      "city": "Prague",
+      "country": "CZ",
+      "name": "International Ballet Masterclasses",
+      "slug": "international-ballet-masterclasses-prague"
+    },
+    "prices": [
+      {
+        "amount": 2000.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition",
+          "accommodation"
+        ],
+        "label": "One-week course — package, incl. accommodation"
+      },
+      {
+        "amount": 1720.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition",
+          "accommodation"
+        ],
+        "label": "One-week course — package, incl. accommodation"
+      },
+      {
+        "amount": 1300.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "One-week course — course only"
+      },
+      {
+        "amount": 1100.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "One-week course — course only"
+      },
+      {
+        "amount": 3220.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition",
+          "accommodation"
+        ],
+        "label": "Two-week course — package, incl. accommodation"
+      },
+      {
+        "amount": 2750.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition",
+          "accommodation"
+        ],
+        "label": "Two-week course — package, incl. accommodation"
+      },
+      {
+        "amount": 2300.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Two-week course — course only"
+      },
+      {
+        "amount": 1950.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Two-week course — course only"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-01",
+      "season": "2026",
+      "sessions": [
+        {
+          "end": "2026-07-25",
+          "label": "Week 1",
+          "start": "2026-07-20"
+        },
+        {
+          "end": "2026-08-01",
+          "label": "Week 2",
+          "start": "2026-07-27"
+        }
+      ],
+      "start": "2026-07-20",
+      "timezone": "Europe/Prague"
+    },
+    "source": {
+      "hash": "sha256:33f640684539c17c4c582f499e7e38e3758a6f9c2ecae28ab186971b9da3e2db",
+      "provider": "international-ballet-masterclasses-prague",
+      "scrapedAt": "2026-06-06T06:07:59.734920Z",
+      "url": "https://www.balletmasterclass.com/pages/options-fees/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Daria Klimentová",
+        "role": "Guest Teacher (Week One)"
+      },
+      {
+        "affiliations": [],
+        "name": "Laurretta Summerscales",
+        "role": "Guest Teacher (Week One)"
+      },
+      {
+        "affiliations": [],
+        "name": "Jakob Feyferlik",
+        "role": "Guest Teacher (Week One)"
+      },
+      {
+        "affiliations": [],
+        "name": "Ayaka Fuji",
+        "role": "Guest Teacher (Week One)"
+      },
+      {
+        "affiliations": [],
+        "name": "Mario Radacovsky",
+        "role": "Guest Teacher (Week One)"
+      },
+      {
+        "affiliations": [],
+        "name": "Christopher Powney",
+        "role": "Guest Teacher (Week One)"
+      },
+      {
+        "affiliations": [],
+        "name": "Ondrej Vinklat",
+        "role": "Guest Teacher (Week One)"
+      },
+      {
+        "affiliations": [],
+        "name": "Daria Klimentová",
+        "role": "Guest Teacher (Week Two)"
+      },
+      {
+        "affiliations": [],
+        "name": "Liudmila Konovalova",
+        "role": "Guest Teacher (Week Two)"
+      },
+      {
+        "affiliations": [],
+        "name": "Daichi Ikarashi",
+        "role": "Guest Teacher (Week Two)"
+      },
+      {
+        "affiliations": [],
+        "name": "Tamas Solymosi",
+        "role": "Guest Teacher (Week Two)"
+      },
+      {
+        "affiliations": [],
+        "name": "Christopher Hampson",
+        "role": "Guest Teacher (Week Two)"
+      },
+      {
+        "affiliations": [],
+        "name": "Tereza Podarilová",
+        "role": "Guest Teacher (Week Two)"
+      },
+      {
+        "affiliations": [],
+        "name": "Jan Kodet",
+        "role": "Guest Teacher (Week Two)"
+      }
+    ],
+    "title": "Summer Masterclasses 2026"
+  },
+  {
+    "ageRange": {
+      "max": 15,
+      "min": 13
+    },
+    "application": {
+      "requirements": [
+        {
+          "notes": "A photograph in a normal ballet position (first arabesque preferred).",
+          "poses": [
+            "first arabesque"
+          ],
+          "specificity": "defined-poses",
+          "type": "photos"
+        }
+      ],
+      "url": "https://www.balletmasterclass.com/pages/new-junior-masterclasses/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "contemporary"
+    ],
+    "id": "international-ballet-masterclasses-prague/junior-masterclasses-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Prague",
+      "country": "CZ",
+      "venue": "Czech National Ballet studios (National Theatre Prague), Anenské náměstí 2"
+    },
+    "organization": {
+      "city": "Prague",
+      "country": "CZ",
+      "name": "International Ballet Masterclasses",
+      "slug": "international-ballet-masterclasses-prague"
+    },
+    "prices": [
+      {
+        "amount": 900.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Course fee"
+      },
+      {
+        "amount": 750.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Course fee"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-07",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-03",
+      "timezone": "Europe/Prague"
+    },
+    "source": {
+      "hash": "sha256:e9be365afd7d507fb48c818cee7d0070a9b0e80e7b9cda9dc33ff6289c6f6f74",
+      "provider": "international-ballet-masterclasses-prague",
+      "scrapedAt": "2026-06-06T06:03:12.537552Z",
+      "url": "https://www.balletmasterclass.com/pages/new-junior-masterclasses/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Daria Klimentová",
+        "role": "Lead Teacher"
+      },
+      {
+        "affiliations": [],
+        "name": "Simona Ferrazza",
+        "role": "Guest Teacher"
+      },
+      {
+        "affiliations": [],
+        "name": "Tim Almaas",
+        "role": "Guest Teacher"
+      },
+      {
+        "affiliations": [],
+        "name": "Ioanna Avraam",
+        "role": "Guest Teacher"
+      },
+      {
+        "affiliations": [],
+        "name": "Denilson Almeida",
+        "role": "Guest Teacher"
+      }
+    ],
+    "title": "Junior Masterclasses 2026"
+  }
+]
