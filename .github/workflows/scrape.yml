@@ -57,7 +57,7 @@ jobs:
       # --touch stamps attemptedAt even on failure, so there's always a file to upload.
       - name: Upload data
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: data-${{ matrix.slug }}
           path: data/${{ matrix.slug }}.json
@@ -75,7 +75,7 @@ jobs:
       # is the bare <slug>.json — download into data/ to land them at data/<slug>.json
       # (path: . would drop them at the repo root, where the commit check never looks).
       - name: Download scraped data
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           pattern: data-*
           path: data
