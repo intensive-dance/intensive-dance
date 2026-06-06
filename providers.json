@@ -496,6 +496,15 @@
       "status": "seed"
     },
     {
+      "slug": "bolshoi-summer-intensive-tokyo",
+      "name": "Bolshoi Ballet Academy Summer Intensive Tokyo",
+      "country": "JP",
+      "city": "Tokyo",
+      "url": "https://www.russianballetinternational.com/tokyo-program/",
+      "tier": "secondary",
+      "status": "live"
+    },
+    {
       "slug": "korea-national-ballet-academy",
       "name": "Korea National Ballet Academy",
       "country": "KR",
