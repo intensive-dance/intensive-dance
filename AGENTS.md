@@ -111,6 +111,13 @@ module docstring so the next person doesn't re-investigate:
      module/ACF page builder may render *nothing* into `content.rendered` and
      expose only module *names*. Confirm the body is actually present before
      committing to API-first; otherwise fall through to HTML.
+   - **Trap (PBI):** a site the candidate notes call "Wix/JS" can actually be
+     plain WordPress (check `/wp-json/`) with clean `content.rendered` bodies and
+     **no JS/proxy needed**. But the *dated edition* may live only in the WP site
+     description (the home `<title>`, e.g. "… Summer 2026, August 10th – 22nd")
+     while the home page's own content block is theme-rendered empty — fetch the
+     home HTML for that one string, the API for the rest (see
+     `prague_ballet_intensive`).
 2. **Embedded structured data** — `<script type="application/ld+json">`
    (schema.org `Event`/`Course`), or a state blob (`__NEXT_DATA__`).
 3. **Feeds** — iCal `.ics`, RSS/Atom.
