@@ -40,6 +40,7 @@
       "timezone": "Europe/Berlin"
     },
     "source": {
+      "attemptedAt": "2026-06-06T14:29:16.349774Z",
       "hash": "sha256:f04a7da0dde5cd0262c8faf6d7d72ed7d3adf65b503a6ff5a9b933e98ac430a0",
       "provider": "frankfurt-ballet-masterclasses",
       "scrapedAt": "2026-06-05T11:07:53.279110Z",
