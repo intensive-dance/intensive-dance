@@ -469,6 +469,15 @@
       "status": "live"
     },
     {
+      "slug": "tokyo-city-ballet",
+      "name": "Tokyo City Ballet — Special Workshop",
+      "country": "JP",
+      "city": "Tokyo",
+      "url": "https://www.tokyocityballet.org/",
+      "tier": "secondary",
+      "status": "live"
+    },
+    {
       "slug": "japan-ballet-intensives",
       "name": "Japan Ballet Intensives (JBI)",
       "country": "JP",

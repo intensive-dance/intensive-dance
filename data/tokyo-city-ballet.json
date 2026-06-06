@@ -1,0 +1,103 @@
+[
+  {
+    "ageRange": {
+      "min": 8
+    },
+    "application": {
+      "notes": "受講お申し込みフォームよりお申し込み（各クラス定員になり次第締め切り）。受講料はクラスごと・税込で、お申し込みより1週間以内に銀行振込。お問い合わせはworkshop@tokyocityballet.org。",
+      "opensAt": "2026-04-24",
+      "requirements": [],
+      "status": "open",
+      "url": "https://tokyocityballetcompetition.com/workshop.html"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "contemporary"
+    ],
+    "id": "tokyo-city-ballet/special-workshop-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Tokyo",
+      "country": "JP",
+      "venue": "東京シティ・バレエ団 大島スタジオ"
+    },
+    "organization": {
+      "city": "Tokyo",
+      "country": "JP",
+      "name": "Tokyo City Ballet",
+      "slug": "tokyo-city-ballet"
+    },
+    "prices": [
+      {
+        "amount": 5000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "クラシック・クラス（1クラス・税込）"
+      },
+      {
+        "amount": 6000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "スペシャル・クラス～スワニルダになりきろう～（1クラス・税込）"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-06",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "min": 8
+          },
+          "label": "クラシック・クラス",
+          "notes": "小学3年生～"
+        },
+        {
+          "ageRange": {
+            "max": 15,
+            "min": 8
+          },
+          "label": "スペシャル・クラス～スワニルダになりきろう～",
+          "notes": "小学3年生～中学3年生"
+        },
+        {
+          "ageRange": {
+            "min": 12
+          },
+          "label": "ピラティス＆クラシック・クラス",
+          "notes": "中学1年生～"
+        },
+        {
+          "ageRange": {
+            "min": 8
+          },
+          "label": "コンテンポラリー・クラス",
+          "notes": "小学3年生～"
+        }
+      ],
+      "start": "2026-08-02",
+      "timezone": "Asia/Tokyo"
+    },
+    "source": {
+      "hash": "sha256:683926eee78d9b4de88065cf6b4549438206455d771c5e3887a20025e4a7ae0d",
+      "provider": "tokyo-city-ballet",
+      "scrapedAt": "2026-06-06T07:36:51.488781Z",
+      "url": "https://tokyocityballetcompetition.com/workshop.html"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "安達悦子",
+        "role": "東京シティ・バレエ団芸術監督/理事長"
+      }
+    ],
+    "title": "スペシャルワークショップ2026"
+  }
+]
