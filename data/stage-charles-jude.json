@@ -140,6 +140,7 @@
       "timezone": "Europe/Paris"
     },
     "source": {
+      "attemptedAt": "2026-06-06T20:22:09.150627Z",
       "hash": "sha256:fa43c811a0993de6a35c7b599a9d3e89edf476649bd92204d65f135ef3588a46",
       "provider": "stage-charles-jude",
       "scrapedAt": "2026-06-06T19:42:38.485743Z",
