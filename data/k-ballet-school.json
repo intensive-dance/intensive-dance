@@ -1,0 +1,257 @@
+[
+  {
+    "application": {
+      "requirements": [],
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLScUXFlBN7rd6TJCXwTgZBj88TNZNGrQojJKzT3KUjpa05WnQQ/viewform"
+    },
+    "genres": [
+      "classical",
+      "repertoire"
+    ],
+    "id": "k-ballet-school/summer-intensive-kids-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Tokyo",
+      "country": "JP",
+      "venue": "Kバレエ スクール 恵比寿"
+    },
+    "organization": {
+      "city": "Tokyo",
+      "country": "JP",
+      "name": "K-Ballet School",
+      "slug": "k-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 34000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "受講料（税込）"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-04",
+      "notes": "8/2(日)～8/4(火) 3日間",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-02",
+      "timezone": "Asia/Tokyo"
+    },
+    "source": {
+      "hash": "sha256:71be138ca52b589b2b77e53b7e1349c3984ca4079464a3718c1b9a2c13d4fad8",
+      "provider": "k-ballet-school",
+      "scrapedAt": "2026-06-06T06:50:32.796244Z",
+      "url": "https://www.k-ballet.co.jp/school/event/2026summerintensive.html"
+    },
+    "teachers": [],
+    "title": "サマーインテンシブ（夏期特別講習会） キッズ〈年中・年長〉 2026"
+  },
+  {
+    "application": {
+      "requirements": [],
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLScUXFlBN7rd6TJCXwTgZBj88TNZNGrQojJKzT3KUjpa05WnQQ/viewform"
+    },
+    "genres": [
+      "classical",
+      "repertoire"
+    ],
+    "id": "k-ballet-school/summer-intensive-foundation-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Tokyo",
+      "country": "JP",
+      "venue": "Kバレエ スクール 後楽園"
+    },
+    "organization": {
+      "city": "Tokyo",
+      "country": "JP",
+      "name": "K-Ballet School",
+      "slug": "k-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 46500.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "受講料 Aコース（税込）"
+      },
+      {
+        "amount": 62000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "受講料 Bコース（税込）"
+      },
+      {
+        "amount": 102000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "受講料 Cコース（税込）"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-09",
+      "notes": "Aコース：8/2(日)～8/4(火) Bコース：8/6(木)～8/9(日) Cコース：8/2(日)～8/9(日) ※8/5(水)は休講",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-02",
+      "timezone": "Asia/Tokyo"
+    },
+    "source": {
+      "hash": "sha256:775d5668a9349bc9780182bc29276352e279d56c1e94a62f8b947af4d03f7072",
+      "provider": "k-ballet-school",
+      "scrapedAt": "2026-06-06T06:50:32.796471Z",
+      "url": "https://www.k-ballet.co.jp/school/event/2026summerintensive.html"
+    },
+    "teachers": [],
+    "title": "サマーインテンシブ（夏期特別講習会） ファウンデーション〈小学1～3年生〉 2026"
+  },
+  {
+    "application": {
+      "requirements": [],
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLScUXFlBN7rd6TJCXwTgZBj88TNZNGrQojJKzT3KUjpa05WnQQ/viewform"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire"
+    ],
+    "id": "k-ballet-school/summer-intensive-elementary-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Tokyo",
+      "country": "JP",
+      "venue": "Kバレエ スクール 吉祥寺"
+    },
+    "organization": {
+      "city": "Tokyo",
+      "country": "JP",
+      "name": "K-Ballet School",
+      "slug": "k-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 148500.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "受講料 Aコースのみ（税込）"
+      },
+      {
+        "amount": 186000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition",
+          "performance"
+        ],
+        "label": "受講料 Aコース＋ソロアッセンブリー参加（税込）"
+      },
+      {
+        "amount": 141000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition",
+          "performance"
+        ],
+        "label": "受講料 Bコース＋ソロアッセンブリー参加（税込）"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-09",
+      "notes": "8/2(日)～8/9(日) ※8/5(水)は休講",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-02",
+      "timezone": "Asia/Tokyo"
+    },
+    "source": {
+      "hash": "sha256:817fb94095a51e22f1d4164a201634169862b3085eefa6ab321716902c3f024f",
+      "provider": "k-ballet-school",
+      "scrapedAt": "2026-06-06T06:50:32.796537Z",
+      "url": "https://www.k-ballet.co.jp/school/event/2026summerintensive.html"
+    },
+    "teachers": [],
+    "title": "サマーインテンシブ（夏期特別講習会） エレメンタリー〈小学4～6年生〉 2026"
+  },
+  {
+    "application": {
+      "requirements": [],
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLScUXFlBN7rd6TJCXwTgZBj88TNZNGrQojJKzT3KUjpa05WnQQ/viewform"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "contemporary"
+    ],
+    "id": "k-ballet-school/summer-intensive-intermediate-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Tokyo",
+      "country": "JP",
+      "venue": "Kバレエ スクール 恵比寿"
+    },
+    "organization": {
+      "city": "Tokyo",
+      "country": "JP",
+      "name": "K-Ballet School",
+      "slug": "k-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 163000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "受講料 Aコースのみ（税込）"
+      },
+      {
+        "amount": 200000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition",
+          "performance"
+        ],
+        "label": "受講料 Aコース＋ソロアッセンブリー参加（税込）"
+      },
+      {
+        "amount": 145000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition",
+          "performance"
+        ],
+        "label": "受講料 Bコース＋ソロアッセンブリー参加（税込）"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-09",
+      "notes": "8/2(日)～8/9(日) ※8/5(水)は休講",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-02",
+      "timezone": "Asia/Tokyo"
+    },
+    "source": {
+      "hash": "sha256:09c09ecc180b67131aff821d5827511bb0d245f3cdd840b287461938b198515e",
+      "provider": "k-ballet-school",
+      "scrapedAt": "2026-06-06T06:50:32.796592Z",
+      "url": "https://www.k-ballet.co.jp/school/event/2026summerintensive.html"
+    },
+    "teachers": [],
+    "title": "サマーインテンシブ（夏期特別講習会） インターメディエイト〈中学生以上〉 2026"
+  }
+]
