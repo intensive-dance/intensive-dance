@@ -11,8 +11,13 @@ API FIRST: the host runs **WordPress** (`/wp-json/` is live), and the program
 page is also reachable as a page via `wp/v2/pages?slug=tokyo-program`. But its
 body is WPBakery shortcode soup (`[vc_row]…`) wrapping the same copy that the
 page already renders into static, server-side HTML — the full text (dates, ages,
-fee, classes, faculty line) sits in the markup with no JS render or proxy needed.
-So we read the rendered page text directly (selectolax), the cleaner source.
+fee, classes, faculty line) sits in the markup. So we read the rendered page text
+directly (selectolax), the cleaner source.
+
+PROXY: the host sits behind a **Cloudflare challenge** that blocks the CI runner's
+datacenter IP (403) and which the proxy's auto/render tiers don't clear — only the
+FlareSolverr `solve=1` tier does. So we force it via the `x-fetch-proxy-params`
+header (inert on a direct fetch, e.g. local dev where the IP isn't blocked).
 
 DISCOVERY: one dated edition — the AUGUST 17-22, 2026 Tokyo intensive. The page
 lists two age groups (09/13 and 14/19+) that share the same dates, registration
@@ -49,6 +54,7 @@ import httpx
 from selectolax.parser import HTMLParser
 
 from intensive_dance import parse
+from intensive_dance.fetch import PROXY_PARAMS_HEADER
 from intensive_dance.models import (
     Affiliation,
     Application,
@@ -90,7 +96,7 @@ _FACULTY_NOTE = "Taught by full-time teachers of the Bolshoi Ballet Academy (vis
 
 
 def scrape(client: httpx.Client) -> list[Offering]:
-    resp = client.get(PAGE, follow_redirects=True)
+    resp = client.get(PAGE, follow_redirects=True, headers={PROXY_PARAMS_HEADER: "solve=1"})
     if resp.status_code == 404:
         return []
     resp.raise_for_status()

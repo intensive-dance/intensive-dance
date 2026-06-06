@@ -137,8 +137,14 @@ block to a stealth Chromium render). It forwards `Accept-Language`, so a scraper
 can **pin the render locale** by passing `headers={"Accept-Language": "en"}` —
 needed when a localized site serves a translated `og:title`/text under the
 proxy's default `de-DE` render (see `mosa_ballet_school`). The query params below
-(`render=1`, `wait=…`, `format=md`, …) are the manual escalation tier; there's no
-helper, so call the endpoint by hand when a plain proxied fetch comes back blocked.
+(`render=1`, `wait=…`, `format=md`, `solve=1`, …) are the manual escalation tier:
+pass them per-request via the `PROXY_PARAMS_HEADER` (`fetch.py`) header —
+`client.get(url, headers={PROXY_PARAMS_HEADER: "solve=1"})` — and the transport
+merges them into the proxy query string (the header is stripped, never forwarded
+upstream, and inert on a direct fetch). Needed when the proxy's auto-escalation
+doesn't clear a block: a **Cloudflare challenge** can 403 the plain *and* the
+`render`/`auto` tiers while only the FlareSolverr `solve=1` tier returns 200 (see
+`bolshoi_summer_intensive_tokyo`, which forces `solve=1`).
 
 > **Trap:** a `*.xml` (e.g. a `sitemap.xml` the proxy had to escalate) can come
 > back wrapped in Chromium's **XML-viewer HTML**, so `ET.fromstring` chokes. The

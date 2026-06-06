@@ -14,10 +14,19 @@ the usual httpx surface with a small transport so scrapers keep calling
 from __future__ import annotations
 
 import os
+from urllib.parse import parse_qsl
 
 import httpx
 
 USER_AGENT = "intensive.dance scraper (+https://github.com/boredland/intensive-dance)"
+
+# A scraper sets this request header (e.g. "solve=1") to force a proxy escalation
+# tier per-request — the transport strips it and merges it into the proxy query
+# string. Needed for hosts whose block the proxy's auto-heuristic doesn't catch
+# (e.g. a Cloudflare challenge that only the FlareSolverr `solve=1` tier defeats —
+# see bolshoi_summer_intensive_tokyo). Inert when no proxy is configured (it's
+# just an unknown header on a direct fetch).
+PROXY_PARAMS_HEADER = "x-fetch-proxy-params"
 
 
 class _RestProxyTransport(httpx.BaseTransport):
@@ -29,13 +38,18 @@ class _RestProxyTransport(httpx.BaseTransport):
     cert); the odd provider with a broken chain is handled server-side.
     """
 
-    def __init__(self, base_url: str, token: str | None) -> None:
+    def __init__(
+        self, base_url: str, token: str | None, inner: httpx.BaseTransport | None = None
+    ) -> None:
         self._base = httpx.URL(base_url)
         self._token = token
-        self._inner = httpx.HTTPTransport()
+        self._inner = inner or httpx.HTTPTransport()
 
     def handle_request(self, request: httpx.Request) -> httpx.Response:
-        proxied_url = self._base.copy_merge_params({"url": str(request.url)})
+        params = {"url": str(request.url)}
+        if extra := request.headers.get(PROXY_PARAMS_HEADER):
+            params.update(dict(parse_qsl(extra)))
+        proxied_url = self._base.copy_merge_params(params)
         headers = httpx.Headers({"User-Agent": USER_AGENT})
         if self._token:
             headers["Authorization"] = f"Bearer {self._token}"
