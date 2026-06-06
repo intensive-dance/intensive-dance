@@ -210,11 +210,11 @@ def _title(box, season: str) -> str:
 # Per-course date lines are year-less, so the headline edition stamp anchors the
 # whole page. Digits there are full-width (２０２６); normalise then read the year.
 
-_FULLWIDTH = str.maketrans("０１２３４５６７８９", "0123456789")
-
 
 def _year(tree: HTMLParser) -> int | None:
-    text = (tree.body.text(separator=" ") if tree.body else "").translate(_FULLWIDTH)
+    text = (tree.body.text(separator=" ") if tree.body else "").translate(
+        parse.FULLWIDTH_DIGITS_TRANS
+    )
     # "2026年8月、第31回インターナショナル・サマースクール" — year directly precedes 年.
     m = re.search(r"(20\d\d)\s*年\s*\d{1,2}\s*月[^。]*?サマースクール", text)
     if m:
@@ -273,11 +273,11 @@ def _age_range(block: str) -> dict | None:
     if m:
         low_grade = int(m.group(1))
         high_grade = int(m.group(2)) if m.group(2) else low_grade
-        low = 6 + (low_grade - 1)
+        low = parse.japanese_grade_to_age("小学", low_grade)
         num = _AGE_NUM.search(block)  # explicit upper age (e.g. "20歳") wins
         if num:
             return {"min": low, "max": int(num.group(1))}
-        high = 6 + (high_grade - 1) + 1  # end of the top grade's year
+        high = parse.japanese_grade_to_age("小学", high_grade) + 1  # end of the top grade's year
         return {"min": low, "max": high}
     presch = [v for k, v in _PRESCHOOL.items() if k in block]
     if presch:
@@ -338,7 +338,9 @@ _OPENS = re.compile(r"(20\d\d)\s*年\s*(\d{1,2})\s*月\s*(\d{1,2})\s*日[^。]*?
 
 
 def _opens_at(tree: HTMLParser, year: int) -> date | None:
-    text = (tree.body.text(separator=" ") if tree.body else "").translate(_FULLWIDTH)
+    text = (tree.body.text(separator=" ") if tree.body else "").translate(
+        parse.FULLWIDTH_DIGITS_TRANS
+    )
     m = _OPENS.search(text)
     if not m:
         return None

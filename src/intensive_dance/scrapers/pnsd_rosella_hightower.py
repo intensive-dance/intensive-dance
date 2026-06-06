@@ -216,8 +216,7 @@ _AGE = re.compile(r"à partir de\s+(\d{1,2})\s+ans", re.IGNORECASE)
 
 
 def _age_range(text: str) -> dict | None:
-    m = _AGE.search(text)
-    return {"min": int(m.group(1))} if m else None
+    return parse.extract_age_range(text, _AGE)
 
 
 # --- genres -------------------------------------------------------------------

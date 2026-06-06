@@ -130,16 +130,7 @@ _RANGE = re.compile(
 
 
 def _dates(text: str) -> tuple[date | None, date | None]:
-    match = _RANGE.search(text)
-    if not match:
-        return None, None
-    m1, d1, y1, m2, d2, y2 = match.groups()
-    year2 = int(y2)
-    year1 = int(y1) if y1 else year2
-    return (
-        date(year1, parse.MONTHS[m1.lower()], int(d1)),
-        date(year2, parse.MONTHS[m2.lower()], int(d2)),
-    )
+    return parse.parse_multi_month_range(text, _RANGE)
 
 
 # --- ages --------------------------------------------------------------------
@@ -150,8 +141,7 @@ _AGE = re.compile(r"no younger than (\d{1,2}).*?no older than (\d{1,2})", re.IGN
 
 
 def _age_range(text: str) -> dict | None:
-    match = _AGE.search(text)
-    return {"min": int(match.group(1)), "max": int(match.group(2))} if match else None
+    return parse.extract_age_range(text, _AGE)
 
 
 # --- levels ------------------------------------------------------------------

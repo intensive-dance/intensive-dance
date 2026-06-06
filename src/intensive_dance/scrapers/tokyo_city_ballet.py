@@ -205,14 +205,8 @@ _CLASS_TYPES = [
 
 # School-grade tokens: 小学N年(生) / 中学N年(生) / 高校N年(生).
 _GRADE = re.compile(r"(小学|中学|高校)\s*(\d)\s*年")
-# Statutory age at the START of each grade level (April entry): 小1→6, 中1→12, 高1→15.
-_GRADE_BASE = {"小学": 6, "中学": 12, "高校": 15}
 # An open-ended band ("…～" with no closing grade), e.g. "小学3年生～".
 _OPEN_END = re.compile(r"年生?\s*[～~]\s*$")
-
-
-def _grade_age(level: str, grade: int) -> int:
-    return _GRADE_BASE[level] + (grade - 1)
 
 
 def _class_band(text: str, ct: _ClassType) -> str | None:
@@ -231,12 +225,12 @@ def _band_age_range(band: str) -> dict | None:
     if not grades:
         return None
     low_level, low_grade = grades[0]
-    low = _grade_age(low_level, int(low_grade))
+    low = parse.japanese_grade_to_age(low_level, int(low_grade))
     if len(grades) == 1 and _OPEN_END.search(band):
         return {"min": low}  # "小学3年生～" — open-ended upper bound
     high_level, high_grade = grades[-1]
     # Upper bound is the END of the top grade's year (one year past its start age).
-    high = _grade_age(high_level, int(high_grade)) + 1
+    high = parse.japanese_grade_to_age(high_level, int(high_grade)) + 1
     return {"min": low, "max": high}
 
 

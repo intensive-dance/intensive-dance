@@ -280,10 +280,7 @@ _AGE = re.compile(r"(\d{1,2})\s*[-–]\s*(\d{1,2})\s*years?", re.IGNORECASE)
 
 
 def _age_range(text: str) -> dict | None:
-    match = _AGE.search(text)
-    if not match:
-        return None
-    return {"min": int(match.group(1)), "max": int(match.group(2))}
+    return parse.extract_age_range(text, _AGE)
 
 
 def _requirements(photos: str) -> list[Requirement]:
@@ -357,8 +354,7 @@ _RANGE = re.compile(
 
 
 def _date_range(text: str) -> tuple[date | None, date | None]:
-    match = _RANGE.search(text)
-    return _range_from_match(match)
+    return parse.parse_multi_month_range(text, _RANGE)
 
 
 def _track_dates(text: str, date_key: str) -> tuple[date | None, date | None]:
@@ -367,17 +363,7 @@ def _track_dates(text: str, date_key: str) -> tuple[date | None, date | None]:
     idx = low.find(date_key.lower())
     if idx == -1:
         return None, None
-    return _range_from_match(_RANGE.search(text, idx))
-
-
-def _range_from_match(match: re.Match[str] | None) -> tuple[date | None, date | None]:
-    if not match:
-        return None, None
-    d1, m1, d2, m2, year = match.groups()
-    yr = int(year)
-    start = date(yr, parse.MONTHS[m1.lower()], int(d1))
-    end = date(yr, parse.MONTHS[m2.lower()], int(d2))
-    return start, end
+    return parse.parse_multi_month_range(text[idx:], _RANGE)
 
 
 def _ended(end: date | None, today: date) -> bool:

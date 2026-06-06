@@ -214,14 +214,9 @@ _RANGE_SAME_MONTH = re.compile(
 
 
 def _date_range(text: str) -> tuple[date | None, date | None]:
-    cross = _RANGE_CROSS_MONTH.search(text)
-    if cross:
-        d1, m1, d2, m2, year = cross.groups()
-        yr = int(year)
-        return (
-            date(yr, parse.MONTHS[m1.lower()], int(d1)),
-            date(yr, parse.MONTHS[m2.lower()], int(d2)),
-        )
+    start, end = parse.parse_multi_month_range(text, _RANGE_CROSS_MONTH)
+    if start and end:
+        return start, end
     same = _RANGE_SAME_MONTH.search(text)
     if same:
         d1, d2, month, year = same.groups()
@@ -235,10 +230,7 @@ _AGE = re.compile(r"aged?\s+(\d{1,2})\s*[-–]\s*(\d{1,2})", re.IGNORECASE)
 
 
 def _age_range(text: str) -> dict | None:
-    match = _AGE.search(text)
-    if not match:
-        return None
-    return {"min": int(match.group(1)), "max": int(match.group(2))}
+    return parse.extract_age_range(text, _AGE)
 
 
 def _location(ed: _Edition) -> Location:

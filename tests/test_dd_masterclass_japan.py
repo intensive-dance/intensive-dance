@@ -11,6 +11,7 @@ from __future__ import annotations
 
 from datetime import date
 
+from intensive_dance import parse
 from intensive_dance.scrapers import dd_masterclass_japan as d
 
 # A faithful, condensed slice of the live Tokyo page (full-width digits kept, as
@@ -60,7 +61,7 @@ OSAKA = (
 def _fw(text: str) -> str:
     # The builder normalizes full-width digits up front; the unit-helper tests
     # call helpers directly, so we normalize the fixture the same way here.
-    return text.translate(d._FW)
+    return text.translate(parse.FULLWIDTH_DIGITS_TRANS)
 
 
 def test_year_read_from_deadline_rows_not_the_dateline():

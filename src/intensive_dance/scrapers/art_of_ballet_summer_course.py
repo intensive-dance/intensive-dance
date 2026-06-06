@@ -208,8 +208,7 @@ _AGE_MIN = re.compile(r"minimum age[^.]*?\bis\s+(\d{1,2})\s+years", re.IGNORECAS
 
 
 def _age_range(text: str) -> dict | None:
-    m = _AGE_MIN.search(text)
-    return {"min": int(m.group(1))} if m else None
+    return parse.extract_age_range(text, _AGE_MIN)
 
 
 # --- venue: the "Course location <venue> <address>" line -----------------------

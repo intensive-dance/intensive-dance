@@ -141,12 +141,11 @@ def _deadline(text: str) -> date | None:
 
 
 def _course_age(text: str, label: str) -> dict | None:
-    match = re.search(
+    pattern = re.compile(
         re.escape(label) + r"\s+is for ballet students aged\s+(\d{1,2})\s*[-–]\s*(\d{1,2})",
-        text,
         re.IGNORECASE,
     )
-    return {"min": int(match.group(1)), "max": int(match.group(2))} if match else None
+    return parse.extract_age_range(text, pattern)
 
 
 def _course_fee(text: str, label: str) -> float | None:

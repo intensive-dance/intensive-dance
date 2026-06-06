@@ -186,15 +186,10 @@ _TWO_WEEK = re.compile(
 
 
 def _two_week_span(text: str) -> tuple[date, date] | None:
-    m = _TWO_WEEK.search(text)
-    if not m:
-        return None
-    d1, m1, d2, m2, year = m.groups()
-    y = int(year)
-    return (
-        date(y, parse.MONTHS[m1.lower()], int(d1)),
-        date(y, parse.MONTHS[m2.lower()], int(d2)),
-    )
+    start, end = parse.parse_multi_month_range(text, _TWO_WEEK)
+    if start and end:
+        return start, end
+    return None
 
 
 def _senior_sessions(text: str) -> list[Session]:
@@ -223,8 +218,7 @@ _AGE_MIN = re.compile(r"minimum age is\s*(\d{1,2})", re.IGNORECASE)
 
 
 def _senior_age(text: str) -> dict | None:
-    m = _AGE_MIN.search(text)
-    return {"min": int(m.group(1))} if m else None  # null upper bound — open-ended
+    return parse.extract_age_range(text, _AGE_MIN)
 
 
 def _senior_level(text: str) -> list[Level]:
@@ -375,8 +369,7 @@ _JUNIOR_AGE = re.compile(r"aged\s*(\d{1,2})\s*[-–—]\s*(\d{1,2})\s*years", re
 
 
 def _junior_age(text: str) -> dict | None:
-    m = _JUNIOR_AGE.search(text)
-    return {"min": int(m.group(1)), "max": int(m.group(2))} if m else None
+    return parse.extract_age_range(text, _JUNIOR_AGE)
 
 
 # Junior faculty: "led by ... Daria Klimentová. Joining her in 2026 will be A
