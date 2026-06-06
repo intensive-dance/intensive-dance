@@ -307,6 +307,15 @@
       "status": "live"
     },
     {
+      "slug": "prague-ballet-intensive",
+      "name": "Prague Ballet Intensive",
+      "country": "CZ",
+      "city": "Prague",
+      "url": "https://www.pragueballetintensive.com/",
+      "tier": "secondary",
+      "status": "live"
+    },
+    {
       "slug": "hungarian-dance-university",
       "name": "Hungarian Dance University",
       "country": "HU",

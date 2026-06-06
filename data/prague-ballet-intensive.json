@@ -1,0 +1,84 @@
+[
+  {
+    "ageRange": {
+      "max": 35,
+      "min": 15
+    },
+    "application": {
+      "notes": "Apply via the form on the PBI website; the course doubles as the audition. A 200 EUR non-refundable deposit is due after acceptance and is deducted from the invoice. To attend a single week, state which week in the application. Places are limited. Accommodation is not included: PBI participants get a discounted rate at the nearby KDM hostel (~1 minute walk; ~36 EUR/night single, ~26 EUR/bed/night double, plus ~2 EUR/night city tax), booked directly with the hostel.",
+      "requirements": [
+        {
+          "type": "cv"
+        },
+        {
+          "type": "headshot"
+        },
+        {
+          "notes": "Plus one ballet photo of the applicant's own choice (freeform).",
+          "poses": [
+            "first arabesque"
+          ],
+          "specificity": "defined-poses",
+          "type": "photos"
+        }
+      ],
+      "url": "https://www.pragueballetintensive.com/apply/"
+    },
+    "genres": [
+      "classical",
+      "repertoire",
+      "contemporary"
+    ],
+    "id": "prague-ballet-intensive/summer-intensive-2026",
+    "level": [
+      "pre-professional",
+      "professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Prague",
+      "country": "CZ",
+      "venue": "National House of Vinohrady"
+    },
+    "organization": {
+      "city": "Prague",
+      "country": "CZ",
+      "name": "Prague Ballet Intensive",
+      "slug": "prague-ballet-intensive"
+    },
+    "prices": [
+      {
+        "amount": 1660.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Full course tuition (two weeks)",
+        "notes": "Payable in two installments; the second is due by July 31st."
+      },
+      {
+        "amount": 860.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "One week tuition"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-22",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-10",
+      "timezone": "Europe/Prague"
+    },
+    "source": {
+      "hash": "sha256:98706ba2ab1f139519d498a49e321f7895831e2b5abc1460e01e287ad00f8845",
+      "provider": "prague-ballet-intensive",
+      "scrapedAt": "2026-06-06T19:42:35.188110Z",
+      "url": "https://www.pragueballetintensive.com/"
+    },
+    "teachers": [],
+    "title": "Summer Intensive 2026"
+  }
+]
