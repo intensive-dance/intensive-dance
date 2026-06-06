@@ -496,6 +496,15 @@
       "status": "seed"
     },
     {
+      "slug": "japan-ballet-association",
+      "name": "Japan Ballet Association",
+      "country": "JP",
+      "city": "Tokyo",
+      "url": "http://www.j-b-a.or.jp/classes/2026summercours/",
+      "tier": "marquee",
+      "status": "live"
+    },
+    {
       "slug": "bolshoi-summer-intensive-tokyo",
       "name": "Bolshoi Ballet Academy Summer Intensive Tokyo",
       "country": "JP",
