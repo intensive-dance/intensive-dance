@@ -1,10 +1,10 @@
 """Unit tests for the Ballet Ruso Barcelona scraper (Tilda summer page).
 
 These pin the parsing of the one Summer Program page: the year lifted from the
-header, the per-program weekly `DD.MM - DD.MM` sessions (year from the header,
-the camp's extra "Week #0"), the open-ended age band, the tuition tiers, the
-per-track genre matching (the camp has no Pointe), and the dual live/online
-audition mapping to a `VideoReq`. Inline strings shaped like the live HTML text,
+header, the pre-professional weekly `DD.MM - DD.MM` sessions, the open-ended age
+band, the tuition tiers, the genre matching, and the dual live/online audition
+mapping to a `VideoReq`. They also pin that the recreational Young Artist Camp
+(age 3+) is deliberately skipped. Inline strings shaped like the live HTML text,
 no network.
 """
 
@@ -51,16 +51,14 @@ def test_year_from_header():
     assert brb._year(_PAGE) == 2026
 
 
-def test_emits_two_offerings_one_per_program():
+def test_emits_pre_professional_only_camp_skipped():
+    # The Young Artist Camp (age 3+, recreational) is deliberately not emitted.
     offerings = _build()
-    assert [o.title for o in offerings] == [
-        "Summer Intensive 2026 — Pre-professional Program",
-        "Summer Intensive 2026 — Young Artist Camp",
-    ]
+    assert [o.title for o in offerings] == ["Summer Intensive 2026 — Pre-professional Program"]
     assert [o.id for o in offerings] == [
         "ballet-ruso-barcelona/summer-intensive-2026-pre-professional",
-        "ballet-ruso-barcelona/summer-intensive-2026-young-artist-camp",
     ]
+    assert all("young-artist-camp" not in o.id for o in offerings)
 
 
 def test_pre_professional_sessions_four_weeks():
@@ -75,43 +73,26 @@ def test_pre_professional_sessions_four_weeks():
     assert pre.schedule.end == date(2026, 7, 24)
 
 
-def test_camp_has_an_extra_week_zero():
-    camp = _build()[1]
-    labels = [s.label for s in camp.schedule.sessions]
-    assert labels == ["Week #0", "Week #1", "Week #2", "Week #3", "Week #4"]
-    assert camp.schedule.start == date(2026, 6, 22)  # week #0 pulls the start earlier
-
-
 def test_age_range_open_upper_bound():
-    pre, camp = _build()
+    (pre,) = _build()
     assert pre.age_range == {"min": 10, "max": None}
-    assert camp.age_range == {"min": 3, "max": None}
 
 
-def test_prices_tuition_tiers_per_program():
-    pre, camp = _build()
+def test_prices_tuition_tiers():
+    (pre,) = _build()
     assert [(p.label, p.amount, p.includes) for p in pre.prices] == [
         ("1 week", 537.0, ["tuition"]),
         ("2 weeks", 975.0, ["tuition"]),
         ("3 weeks", 1296.0, ["tuition"]),
         ("4 weeks", 1495.0, ["tuition"]),
     ]
-    assert [(p.label, p.amount) for p in camp.prices] == [
-        ("1 week", 356.0),
-        ("2 weeks", 637.0),
-        ("3 weeks", 844.0),
-        ("4 weeks", 975.0),
-        ("5 weeks", 1100.0),
-    ]
 
 
-def test_genres_scoped_per_program():
-    pre, camp = _build()
-    # The pre-professional curriculum names Pointe and Character; the camp doesn't.
+def test_genres_from_pre_professional_curriculum():
+    (pre,) = _build()
+    # The pre-professional slice's own curriculum names Pointe and Character.
     assert "pointe" in pre.genres
     assert "character" in pre.genres
-    assert "pointe" not in camp.genres
-    assert camp.genres == ["classical", "contemporary"]
 
 
 def test_pre_professional_audition_video_unspecific():
@@ -122,11 +103,6 @@ def test_pre_professional_audition_video_unspecific():
     assert isinstance(video, VideoReq)
     assert video.specificity == "unspecific"
     assert "€30" in (video.description or "") and "€15" in (video.description or "")
-
-
-def test_camp_requirements_unknown():
-    camp = _build()[1]
-    assert camp.application.requirements == []
 
 
 def test_directors_named_with_lineage():

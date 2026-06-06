@@ -16,23 +16,21 @@ Intensive 2026"). We parse those numerics language-agnostically and lift the yea
 from the header; the genre/requirement keywords are matched against the page's
 own curriculum lists, not loose prose.
 
-DISCOVERY: the one page describes **two parallel programs**, each with its own
-age band, weekly schedule and tuition table — `Pre-professional Program` (from
-age 10, four weeks) and `Young Artist Camp` (from age 3, five weeks incl. a
-"Week #0"). Per the register's one-Offering-per-track rule we emit **one Offering
-per program** (folding would lose the distinct ages / fees / curricula), each
-with its weeks as `schedule.sessions`, season-keyed from the parsed year.
+DISCOVERY: the one page describes **two parallel programs** — the
+`Pre-professional Program` (from age 10) and a `Young Artist Camp` (from age 3,
+mixing in singing / drama / musical theatre). We emit **only the Pre-professional
+Program**: the camp is recreational early-years and outside the register's
+ambitious / pre-professional scope, so we deliberately skip it (its `_CAMP_HEAD`
+header is still used as the slice boundary, just not emitted).
 
 WHAT THIS SCRAPER EXERCISES (verified live 2026-06-06):
-  - Multi-track split on one page → two Offerings with shared org/location.
+  - One in-scope program sliced out of a two-program page (early-years camp skipped).
   - `schedule.sessions` from `DD.MM - DD.MM` week ranges, year from the header.
   - `age_range` with an open upper bound ("from N years old" → max null).
-  - Several `Price` tiers per Offering (one per week-count), tuition-only.
-  - Per-track genre matching from each program's own curriculum list (the camp
-    has no Pointe; the pre-professional does).
-  - Requirements: the pre-professional doubles as an audition that accepts an
-    **in-person or online** submission → `VideoReq`/`unspecific`; the camp states
-    no audition → `[]` (unknown).
+  - Several `Price` tiers (one per week-count), tuition-only.
+  - Genre matching from the program's own curriculum list (incl. Pointe).
+  - Requirements: the pre-professional doubles as an audition accepting an
+    **in-person or online** submission → `VideoReq`/`unspecific`.
   - Named artistic directors (Mariinsky / Vaganova lineage) as `Teacher`s.
 """
 
@@ -76,13 +74,12 @@ ORG = Organization(
 )
 LOCATION = Location(venue="Josep Tarradellas 42", city="Barcelona", country="ES")
 
-# The header text that opens each program's data block (and the marker that
-# closes the second one). We slice the page text between these so each program's
-# ages/dates/fees and its curriculum are read in isolation — that scoping is what
-# keeps the camp's "modern dance" from leaking the pre-professional's Pointe.
+# `_PREPRO_HEAD` opens the pre-professional program's data block; `_CAMP_HEAD`
+# (the header of the skipped Young Artist Camp) is the end marker, so the
+# pre-professional slice (ages/dates/fees/curriculum) is read in isolation —
+# that scoping keeps the camp's "modern dance" out of the pre-professional's Pointe.
 _PREPRO_HEAD = "PRE-PROFESSIONAL program Age"
 _CAMP_HEAD = "YOUNG ARTIST camp Age"
-_BLOCK_END = "Terms and conditions"
 
 
 def scrape(client: httpx.Client) -> list[Offering]:  # noqa: ARG001 — see TLS NOTE
@@ -123,20 +120,9 @@ def _build_offerings(html: str, today: date) -> list[Offering]:  # noqa: ARG001
             )
         )
 
-    camp = _slice(text, _CAMP_HEAD, _BLOCK_END)
-    if camp:
-        offerings.append(
-            _offering(
-                slug=f"summer-intensive-{year}-young-artist-camp",
-                title=f"Summer Intensive {year} — Young Artist Camp",
-                block=camp,
-                year=year,
-                # The camp's curriculum is described in prose above the block.
-                curriculum=_slice(text, "teaching philosophy for this age", _PREPRO_HEAD),
-                requirements=[],  # no audition stated for the camp → unknown
-                level=["beginner"],
-            )
-        )
+    # The Young Artist Camp (from age 3, with singing/drama/musical theatre) is
+    # recreational early-years — out of the register's pre-professional scope, so
+    # we deliberately do not emit it.
 
     return offerings
 
