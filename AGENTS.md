@@ -286,6 +286,14 @@ when a second provider genuinely needs the identical thing.
   numeric dates (EN+IT month map), enum genres, numeric ages/prices, title from
   the API, and emit only canonical-English free text — verify EN==IT, never rely
   on one render (see `fondazione_monreart`).
+- **Japanese pages: year-less date lines + school-grade ages.** A JP listing
+  often gives the course span with no year ("8月6日(木)、…、9日(日)") — read the year
+  from the title stamp ("夏休み特別講習会2026") and apply it to the month/day span and
+  the deadline. Ages are stated as **school grades**, not numbers: map them by the
+  statutory April-entry schedule (小N年→age 6+N…7+N, 中N年→12+N…13+N, 高N年→15+N…16+N)
+  and keep the raw grade band verbatim in the session `notes`. Classes that differ
+  only by age/gender (not dates/fee) are **one Offering with one `Session` per
+  class** (gender only exists on `Session`) — see `tokyo_ballet_school`.
 - **One org, several city editions = one scraper, many Offerings.** A provider
   can run the same course as separate per-city subdomains (ART of's
   `zurich.`/`madrid.art-of.net`, same director). Build **one** scraper filed
