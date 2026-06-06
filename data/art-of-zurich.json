@@ -1,0 +1,225 @@
+[
+  {
+    "ageRange": {
+      "min": 14
+    },
+    "application": {
+      "deadline": "2026-07-03",
+      "notes": "Application is by photo audition: the completed form, a portrait photo and two full-body shots in dance attire. The course takes place with the kind support of William Forsythe.",
+      "requirements": [
+        {
+          "type": "headshot"
+        },
+        {
+          "notes": "Two full-body photos in dance attire in a dance position, plus a portrait photo.",
+          "poses": [
+            "1st arabesque 90°",
+            "sauté - 2nd feet position"
+          ],
+          "specificity": "defined-poses",
+          "type": "photos"
+        }
+      ],
+      "url": "https://madrid.art-of.net/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "neoclassical",
+      "contemporary"
+    ],
+    "id": "art-of-zurich/madrid-summer-course-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Madrid",
+      "country": "ES",
+      "venue": "Conservatorio Superior de Danza \"María de Ávila\""
+    },
+    "organization": {
+      "city": "Zürich",
+      "country": "CH",
+      "name": "ART of – Ballet Summer Course",
+      "slug": "art-of-zurich"
+    },
+    "prices": [
+      {
+        "amount": 700.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Complete Course — one week"
+      },
+      {
+        "amount": 1200.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Complete Course — two weeks"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-25",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-13",
+      "timezone": "Europe/Madrid"
+    },
+    "source": {
+      "hash": "sha256:c5843c6c831a23a9aa763e02efd5c9f789e0aaedc29b814b62bdf33c4accb277",
+      "provider": "art-of-zurich",
+      "scrapedAt": "2026-06-06T06:05:03.644118Z",
+      "url": "https://madrid.art-of.net/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Anna Urban",
+        "role": "Former Principal Dancer & Ballet Teacher at School of Hamburg Ballet"
+      },
+      {
+        "affiliations": [],
+        "name": "Aki Saito",
+        "role": "Former Principal Dancer of Royal Ballet Flanders & Jury Member of Prix de Lausanne"
+      },
+      {
+        "affiliations": [],
+        "name": "Wim Vanlessen",
+        "role": "Artistic Director of Time To Dance & Former Principal Dancer of Royal Ballet of Flanders"
+      },
+      {
+        "affiliations": [],
+        "name": "Jon Vallejo",
+        "role": "Principal Dancer at Semperoper Ballett Dresden"
+      },
+      {
+        "affiliations": [],
+        "name": "Juliette Rahon",
+        "role": "Artistic Director of Juliette Rahon & Co and Stager for Kinsun Chan ballets"
+      }
+    ],
+    "title": "ART of – Ballet Summer Course Madrid 2026"
+  },
+  {
+    "ageRange": {
+      "min": 10
+    },
+    "application": {
+      "deadline": "2026-07-28",
+      "notes": "Application is by photo audition: the completed form, a portrait photo and two full-body shots in dance attire. The course takes place with the kind support of William Forsythe.",
+      "requirements": [
+        {
+          "type": "headshot"
+        },
+        {
+          "notes": "Two full-body photos in dance attire in a dance position, plus a portrait photo.",
+          "poses": [
+            "1st arabesque 90°",
+            "sauté - 2nd feet position"
+          ],
+          "specificity": "defined-poses",
+          "type": "photos"
+        }
+      ],
+      "url": "https://zurich.art-of.net/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "neoclassical",
+      "contemporary"
+    ],
+    "id": "art-of-zurich/zurich-summer-course-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Zürich",
+      "country": "CH",
+      "venue": "TANZWERK 101"
+    },
+    "organization": {
+      "city": "Zürich",
+      "country": "CH",
+      "name": "ART of – Ballet Summer Course",
+      "slug": "art-of-zurich"
+    },
+    "prices": [
+      {
+        "amount": 700.0,
+        "currency": "CHF",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Complete Course — one week"
+      },
+      {
+        "amount": 1200.0,
+        "currency": "CHF",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Complete Course — two weeks"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-15",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-03",
+      "timezone": "Europe/Zurich"
+    },
+    "source": {
+      "hash": "sha256:504c3dff673b916c0ba570dad1238d9799f66501596635a69040da0c300ea57c",
+      "provider": "art-of-zurich",
+      "scrapedAt": "2026-06-06T06:06:56.959608Z",
+      "url": "https://zurich.art-of.net/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Leanne Benjamin",
+        "role": "Former Artistic Director of Queensland Ballet & Former Principal Dancer of the Royal Ballet"
+      },
+      {
+        "affiliations": [],
+        "name": "Anna Urban",
+        "role": "Former Principal Dancer & Ballet Teacher at School of Hamburg Ballet"
+      },
+      {
+        "affiliations": [],
+        "name": "Allison Brown",
+        "role": "Teacher & Coach for William Forsythe ballets"
+      },
+      {
+        "affiliations": [],
+        "name": "Ana Presta",
+        "role": "Guest Ballet Teacher"
+      },
+      {
+        "affiliations": [],
+        "name": "Daniel Mulligan",
+        "role": "Ballet Dancer & Ballet Teacher"
+      },
+      {
+        "affiliations": [],
+        "name": "Jeannette Chandrika Füzesi",
+        "role": "Ballet Teacher, Yoga Nidra and Yoga PMA Instructor"
+      },
+      {
+        "affiliations": [],
+        "name": "Sean Kulashe-Bates",
+        "role": "Ballet Dancer with Ballett Zurich and Guest Teacher"
+      },
+      {
+        "affiliations": [],
+        "name": "Oleg Klymyuk",
+        "role": "Ballet Teacher & Director of ART of"
+      }
+    ],
+    "title": "ART of – Ballet Summer Course Zürich 2026"
+  }
+]

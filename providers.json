@@ -259,7 +259,7 @@
       "city": "Zürich",
       "url": "https://zurich.art-of.net/",
       "tier": "secondary",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "pnsd-rosella-hightower",
@@ -366,15 +366,6 @@
       "country": "FI",
       "city": "Helsinki",
       "url": "https://finsummerdance.com/",
-      "tier": "secondary",
-      "status": "seed"
-    },
-    {
-      "slug": "art-of-madrid",
-      "name": "ART of – Ballet Summer Course Madrid",
-      "country": "ES",
-      "city": "Madrid",
-      "url": "https://madrid.art-of.net/",
       "tier": "secondary",
       "status": "seed"
     },

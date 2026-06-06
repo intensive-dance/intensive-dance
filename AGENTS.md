@@ -286,6 +286,17 @@ when a second provider genuinely needs the identical thing.
   numeric dates (EN+IT month map), enum genres, numeric ages/prices, title from
   the API, and emit only canonical-English free text — verify EN==IT, never rely
   on one render (see `fondazione_monreart`).
+- **One org, several city editions = one scraper, many Offerings.** A provider
+  can run the same course as separate per-city subdomains (ART of's
+  `zurich.`/`madrid.art-of.net`, same director). Build **one** scraper filed
+  under one slug that emits one Offering per city (distinct dates/ages/venue/
+  currency), and collapse the duplicate `providers.json` rows — remove the
+  redundant `seed` entries so nobody double-builds (see
+  `art_of_ballet_summer_course`).
+- **Suppress unverified marquee claims.** Don't launder a provider's marketing
+  into the data if you can't verify it — e.g. ART of's "partner of the Prix de
+  Lausanne" line is false, so it's omitted entirely (a teacher's own verifiable
+  bio credential, by contrast, stays). Faithful ≠ credulous.
 - **Git:** work on a branch; commit + push; open a PR with `gh`. **No
   `Co-Authored-By`/attribution lines** in commit messages. Use the DeepL MCP for
   any translation, never translate inline.
