@@ -1,0 +1,79 @@
+name: assign-copilot
+
+# The review UI prefills new issues with the `assign-copilot` label (it cannot
+# assign Copilot directly — the new-issue URL / REST `assignees` field only
+# accepts User logins, and Copilot is a Bot actor). This workflow does the real
+# assignment via the GraphQL `replaceActorsForAssignable` mutation, but only when
+# the issue was opened by a code owner — so a stray label from anyone else is a
+# no-op.
+
+on:
+  issues:
+    types: [opened, labeled]
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  assign:
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.labels.*.name, 'assign-copilot')
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Gate on code-owner authorship
+        id: gate
+        env:
+          AUTHOR: ${{ github.event.issue.user.login }}
+        run: |
+          owners=$(grep -oE '@[A-Za-z0-9-]+' .github/CODEOWNERS | tr -d '@' | sort -u)
+          echo "Code owners: $(echo "$owners" | tr '\n' ' ')"
+          if echo "$owners" | grep -qix "$AUTHOR"; then
+            echo "Issue author @$AUTHOR is a code owner — will assign Copilot."
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::notice::Issue author @$AUTHOR is not a code owner; skipping Copilot assignment."
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Assign Copilot
+        if: steps.gate.outputs.ok == 'true'
+        env:
+          # Falls back to the default token; swap in a PAT secret if the default
+          # token ever lacks permission to assign the coding agent.
+          GH_TOKEN: ${{ secrets.COPILOT_ASSIGN_TOKEN || github.token }}
+          OWNER: ${{ github.repository_owner }}
+          REPO: ${{ github.event.repository.name }}
+          ISSUE_ID: ${{ github.event.issue.node_id }}
+          BOT_LOGIN: copilot-swe-agent
+        run: |
+          bot_id=$(gh api graphql -f query='
+            query($owner:String!, $name:String!) {
+              repository(owner:$owner, name:$name) {
+                suggestedActors(capabilities:[CAN_BE_ASSIGNED], first:100) {
+                  nodes { login __typename ... on Bot { id } }
+                }
+              }
+            }' -F owner="$OWNER" -F name="$REPO" \
+            --jq ".data.repository.suggestedActors.nodes[] | select(.login==\"$BOT_LOGIN\") | .id")
+
+          if [ -z "$bot_id" ]; then
+            echo "::warning::'$BOT_LOGIN' is not assignable in this repo. Is the Copilot coding agent enabled? Skipping."
+            exit 0
+          fi
+
+          # Preserve any existing assignees; replaceActorsForAssignable is the only
+          # mutation that accepts a Bot actor, and it replaces the whole set.
+          existing=$(gh api graphql -f query='
+            query($id:ID!) { node(id:$id) { ... on Issue { assignees(first:20) { nodes { id } } } } }' \
+            -F id="$ISSUE_ID" --jq '.data.node.assignees.nodes[].id')
+
+          actors=$(printf '"%s",' $existing "$bot_id" | sed 's/,$//')
+          gh api graphql -f query="
+            mutation {
+              replaceActorsForAssignable(input:{assignableId:\"$ISSUE_ID\", actorIds:[$actors]}) {
+                assignable { ... on Issue { number } }
+              }
+            }"
+          echo "Assigned $BOT_LOGIN to issue #${{ github.event.issue.number }}."

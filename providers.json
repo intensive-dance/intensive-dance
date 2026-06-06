@@ -503,6 +503,132 @@
       "url": "https://www.korean-national-ballet.kr/ko/academy/lecture",
       "tier": "marquee",
       "status": "live"
+    },
+    {
+      "slug": "nba-ballet-company",
+      "name": "NBA Ballet Company Summer School",
+      "country": "JP",
+      "city": "Saitama",
+      "url": "https://nbaballet.org/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "inoue-ballet",
+      "name": "Inoue Ballet Summer Seminar",
+      "country": "JP",
+      "city": "Tokyo",
+      "url": "https://inoueballet.net/school/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "star-dancers-ballet-school",
+      "name": "Star Dancers Ballet School",
+      "country": "JP",
+      "city": "Tokyo",
+      "url": "https://www.sdballet.com/school/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "tachibana-ballet-school",
+      "name": "Tachibana Ballet School (Asami Maki Ballet)",
+      "country": "JP",
+      "city": "Tokyo",
+      "url": "https://www.tb-school.jp/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "matsuyama-ballet-school",
+      "name": "Matsuyama Ballet School",
+      "country": "JP",
+      "city": "Tokyo",
+      "url": "https://www.matsuyama-ballet.com/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "tani-momoko-ballet-academy",
+      "name": "Tani Momoko Ballet Academy",
+      "country": "JP",
+      "city": "Tokyo",
+      "url": "https://www.tanimomoko-ballet.or.jp/academy/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "homura-tomoi-ballet-school",
+      "name": "Homura Tomoi Ballet School",
+      "country": "JP",
+      "city": "Osaka",
+      "url": "https://www.homuratomoi.com/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "sadamatsu-hamada-ballet",
+      "name": "Sadamatsu-Hamada Ballet",
+      "country": "JP",
+      "city": "Kobe",
+      "url": "https://sadamatsu-hamada.fem.jp/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "ochi-international-ballet",
+      "name": "Ochi International Ballet",
+      "country": "JP",
+      "city": "Nagoya",
+      "url": "http://www.ochiballet.com/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "international-ballet-academia",
+      "name": "International Ballet Academia",
+      "country": "JP",
+      "city": "Tokyo",
+      "url": "http://www.academia-ballet.jp/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "studio-architanz",
+      "name": "Studio Architanz (ATP)",
+      "country": "JP",
+      "city": "Tokyo",
+      "url": "https://atp.a-tanz.com/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "temps-lie-ballet-workshop-japan",
+      "name": "Temps Lié Ballet Workshop Japan",
+      "country": "JP",
+      "city": "Tokyo",
+      "url": "https://www.le-temps-lie.org/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "julia-ballet-academy",
+      "name": "Julia Ballet Academy",
+      "country": "KR",
+      "city": "Seoul",
+      "url": "https://www.juliaballet.co.kr/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "seoul-ballet-theatre",
+      "name": "Seoul Ballet Theatre (Ballet Edu)",
+      "country": "KR",
+      "city": "Seoul",
+      "url": "https://www.ballet.or.kr/",
+      "tier": "secondary",
+      "status": "seed"
     }
   ]
 }
