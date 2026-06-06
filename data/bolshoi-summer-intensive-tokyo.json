@@ -67,6 +67,7 @@
       "timezone": "Asia/Tokyo"
     },
     "source": {
+      "attemptedAt": "2026-06-06T13:48:08.398323Z",
       "hash": "sha256:c0e62446cb2212802a53c0e11de92177660469a19f0c343b17877b3c3dfe3ec4",
       "provider": "bolshoi-summer-intensive-tokyo",
       "scrapedAt": "2026-06-06T07:32:44.307570Z",
