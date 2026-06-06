@@ -14,7 +14,8 @@ See [`erd.md`](./erd.md) for the entity-relationship diagram (auto-generated fro
   "source": {
     "provider": "royal-ballet-school",                  // FK into providers.json
     "url": "https://www.royalballetschool.org.uk/...",  // canonical page scraped
-    "scrapedAt": "2026-06-03T10:00:00Z",
+    "scrapedAt": "2026-06-03T10:00:00Z",                 // last time content changed (reused on no-op scrapes)
+    "attemptedAt": "2026-06-06T07:00:00Z",               // last fetch attempt; drives the hourly rotation (omitted until first --touch)
     "hash": "sha256:…"                                   // of the meaningful fields, for change detection
   },
 

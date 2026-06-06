@@ -50,6 +50,8 @@ uv run pre-commit install                       # optional: run the gate on comm
 
 uv run python -m intensive_dance.run <slug>     # scrape one provider → data/<slug>.json
 uv run python -m intensive_dance.run            # all providers
+uv run python -m intensive_dance.run --touch <slug>   # + stamp source.attemptedAt (rotation; see below)
+uv run python -m intensive_dance.rotation 10    # JSON: 10 least-recently-attempted slugs
 
 uv run ruff check .                             # lint
 uv run ruff format .                            # format (CI checks with --check)
@@ -60,8 +62,13 @@ uv run python -m intensive_dance.erd            # ERD (docs/erd.md) in sync with
 uv run python -m intensive_dance.validate       # committed data parses + hashes match
 ```
 
-CI (`.github/workflows/ci.yml`) runs exactly these. A daily cron
-(`scrape.yml`) re-runs all scrapers and commits the data diff.
+CI (`.github/workflows/ci.yml`) runs exactly these (it skips `data/**`-only
+pushes — the hourly scrape commits). An **hourly** cron (`scrape.yml`) picks the
+10 least-recently-attempted scrapers (`rotation.select_stale`), runs each as an
+independent, `continue-on-error` matrix job (`--touch`), then a single `commit`
+job (`if: always()`) collects their artifacts and commits — so one flaky site
+never blocks the rest, and a commit always lands (every picked provider's
+`attemptedAt` is bumped).
 
 Always use `uv` (never bare `pip`/`python`). `ruff` line-length is **100**.
 
@@ -240,6 +247,15 @@ that — it's how the next agent knows the source's shape without re-crawling.
   `source.hash = content_hash()` (which **excludes** `source`), and reuses the
   prior `scrapedAt` when the hash is unchanged — so a no-op re-scrape yields **no
   git diff**. Don't put volatile data in fields; that's the whole point.
+- **`source.attemptedAt` — the rotation cursor, the one deliberate exception.**
+  `scrapedAt` = last content change (no-diff above). `attemptedAt` = last fetch
+  *attempt*, and it's **volatile by design**: only `run.py --touch` writes it
+  (success *and* failure, via `stamp_attempt`), so plain/dev runs stay no-diff
+  (they carry the prior value). It exists because the hourly CI rotation
+  (`scrape.yml`) orders providers by it — see `rotation.select_stale`. So a
+  `--touch` re-scrape *does* produce an `attemptedAt`-only diff every hour; that
+  churn is intentional and overrides the "no-op = no diff" rule **for that field
+  only**. Excluded from `content_hash`, so `validate` is unaffected.
 - If you change `models.py`, regenerate **both** derived artifacts (CI fails on drift):
   `uv run python -m intensive_dance.schema --write` and
   `uv run python -m intensive_dance.erd --write` (the Mermaid ERD in `docs/erd.md`).

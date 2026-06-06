@@ -2,22 +2,24 @@ name: scrape
 
 on:
   schedule:
-    - cron: "0 4 * * *" # daily, 04:00 UTC — intensives change slowly
+    - cron: "0 * * * *" # hourly — rotate through the 10 least-recently-attempted scrapers
   workflow_dispatch:
 
 permissions:
   contents: write
 
-# Never let two scrapes run at once: both commit & push to main, so overlapping
-# runs would race the push. Queue a new trigger behind the running one rather
-# than cancelling it (don't interrupt an in-flight commit/push).
+# Never let two scrapes run at once: the commit job pushes to main, so overlapping
+# runs would race the push. Queue a new trigger behind the running one rather than
+# cancelling it (don't interrupt an in-flight commit/push).
 concurrency:
   group: scrape
   cancel-in-progress: false
 
 jobs:
-  scrape:
+  select:
     runs-on: ubuntu-latest
+    outputs:
+      slugs: ${{ steps.pick.outputs.slugs }}
     steps:
       - uses: actions/checkout@v6
 
@@ -25,23 +27,67 @@ jobs:
         with:
           enable-cache: true
 
-      - name: Scrape
+      # The 10 providers whose source.attemptedAt is oldest (never-attempted first).
+      - id: pick
+        run: echo "slugs=$(uv run python -m intensive_dance.rotation 10)" >> "$GITHUB_OUTPUT"
+
+  scrape:
+    needs: select
+    runs-on: ubuntu-latest
+    # fail-fast off + continue-on-error: one flaky site must not abort the others,
+    # and the commit job below must still run.
+    strategy:
+      fail-fast: false
+      matrix:
+        slug: ${{ fromJson(needs.select.outputs.slugs) }}
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: astral-sh/setup-uv@v8.2.0
+        with:
+          enable-cache: true
+
+      - name: Scrape ${{ matrix.slug }}
+        continue-on-error: true
         env:
           FETCH_PROXY_URL: ${{ secrets.FETCH_PROXY_URL }}
           FETCH_PROXY_TOKEN: ${{ secrets.FETCH_PROXY_TOKEN }}
-        run: uv run python -m intensive_dance.run
+        run: uv run python -m intensive_dance.run --touch ${{ matrix.slug }}
 
-      # Always commit: a failing provider (non-zero Scrape exit) still leaves the
-      # other providers' fresh data on disk, and reds the job for visibility —
-      # but we don't want one flaky site to discard everyone else's scrape.
-      - name: Commit changed data
+      # --touch stamps attemptedAt even on failure, so there's always a file to upload.
+      - name: Upload data
         if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: data-${{ matrix.slug }}
+          path: data/${{ matrix.slug }}.json
+          if-no-files-found: ignore
+          retention-days: 1
+
+  commit:
+    needs: [select, scrape]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      # path: . so files land back at data/<slug>.json, not data/data/<slug>.json.
+      - name: Download scraped data
+        uses: actions/download-artifact@v4
+        with:
+          pattern: data-*
+          path: .
+          merge-multiple: true
+
+      # Every selected provider's attemptedAt is bumped, so there is always a diff
+      # to commit — a flaky site never blocks the others' fresh data.
+      - name: Commit changed data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           if [ -n "$(git status --porcelain data/)" ]; then
             git add data/
-            git commit -m "data: scheduled scrape $(date -u +%Y-%m-%dT%H:%MZ)"
+            git commit -m "data: hourly scrape $(date -u +%Y-%m-%dT%H:%MZ)"
             git push
           else
             echo "no data changes"
