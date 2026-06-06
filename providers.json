@@ -469,6 +469,15 @@
       "status": "live"
     },
     {
+      "slug": "dd-masterclass-japan",
+      "name": "D&D Masterclass Japan",
+      "country": "JP",
+      "city": "Tokyo",
+      "url": "https://www.dd-balletjapan.com/",
+      "tier": "secondary",
+      "status": "live"
+    },
+    {
       "slug": "japan-ballet-intensives",
       "name": "Japan Ballet Intensives (JBI)",
       "country": "JP",
