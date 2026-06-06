@@ -8,8 +8,9 @@ main content (`.container.content`) to keep the site-wide nav out.
 
 DISCOVERY: the summer school offers a **Senior** course (aged 15-21, two weeks)
 and a **Junior** course (aged 12-14, one week). We emit one `Offering` per
-course, reading each course's age band and fee from the pages, with the shared
-season dates, deadline and disciplines. Dropped once the season's end is past.
+course, reading each course's own dates (from its section heading), age band and
+fee from the pages, with the shared deadline and disciplines. The two courses
+run on different dates, so dates are per-course. Dropped once its end is past.
 """
 
 from __future__ import annotations
