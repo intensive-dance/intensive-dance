@@ -674,6 +674,15 @@
       "url": "https://www.ballet.or.kr/",
       "tier": "secondary",
       "status": "seed"
+    },
+    {
+      "slug": "stage-danse-arcachon",
+      "name": "Stage International de Danse d'Arcachon",
+      "country": "FR",
+      "city": "Arcachon",
+      "url": "https://www.stagedansearcachon.com/",
+      "tier": "secondary",
+      "status": "seed"
     }
   ]
 }
