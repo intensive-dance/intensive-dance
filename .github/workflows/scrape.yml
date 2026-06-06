@@ -71,12 +71,14 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      # path: . so files land back at data/<slug>.json, not data/data/<slug>.json.
+      # upload-artifact@v4 strips the common leading dir, so each artifact's root
+      # is the bare <slug>.json — download into data/ to land them at data/<slug>.json
+      # (path: . would drop them at the repo root, where the commit check never looks).
       - name: Download scraped data
         uses: actions/download-artifact@v4
         with:
           pattern: data-*
-          path: .
+          path: data
           merge-multiple: true
 
       # Every selected provider's attemptedAt is bumped, so there is always a diff
