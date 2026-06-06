@@ -18,6 +18,7 @@ from . import (
     accademia_teatro_alla_scala,
     art_of_ballet_summer_course,
     ballet_ruso_barcelona,
+    balletstage,
     bolshoi_summer_intensive_tokyo,
     brussels_international_ballet,
     central_school_of_ballet,
@@ -96,4 +97,5 @@ SCRAPERS: dict[str, Scraper] = {
     "japan-ballet-association": japan_ballet_association.scrape,
     "bolshoi-summer-intensive-tokyo": bolshoi_summer_intensive_tokyo.scrape,
     "korea-national-ballet-academy": korea_national_ballet_academy.scrape,
+    "balletstage": balletstage.scrape,
 }
