@@ -31,6 +31,20 @@ def test_genres():
     ]
 
 
+def test_prices_participation_and_registration_fees():
+    # Currency precedes the amount ("EUR 265"); participation = tuition,
+    # registration = non-refundable application fee.
+    prices = fbm._prices("Masterclass Fees Participation Fee - EUR 265, Registration Fee - EUR 25,")
+    assert [(p.amount, p.currency, p.label, p.includes) for p in prices] == [
+        (265.0, "EUR", "Participation fee", ["tuition"]),
+        (25.0, "EUR", "Registration fee", []),
+    ]
+
+
+def test_prices_absent_when_no_fee_line():
+    assert fbm._prices("No fees mentioned here.") == []
+
+
 def test_requirements_none_when_open():
     # Open registration → an explicit `none` requirement (not `[]`, which means "not stated").
     reqs = fbm._requirements(

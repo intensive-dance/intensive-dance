@@ -31,7 +31,22 @@
       "name": "Frankfurt Ballet Masterclasses",
       "slug": "frankfurt-ballet-masterclasses"
     },
-    "prices": [],
+    "prices": [
+      {
+        "amount": 265.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Participation fee"
+      },
+      {
+        "amount": 25.0,
+        "currency": "EUR",
+        "includes": [],
+        "label": "Registration fee"
+      }
+    ],
     "schedule": {
       "end": "2026-08-23",
       "season": "2026",
@@ -41,9 +56,9 @@
     },
     "source": {
       "attemptedAt": "2026-06-06T14:29:16.349774Z",
-      "hash": "sha256:f04a7da0dde5cd0262c8faf6d7d72ed7d3adf65b503a6ff5a9b933e98ac430a0",
+      "hash": "sha256:499398a9d51cf58d923e13dec3b21267f20bacbac7116b255370096d5000d3a5",
       "provider": "frankfurt-ballet-masterclasses",
-      "scrapedAt": "2026-06-05T11:07:53.279110Z",
+      "scrapedAt": "2026-06-06T16:36:40.066415Z",
       "url": "https://masterclass.balletcompetition.net/"
     },
     "teachers": [],
