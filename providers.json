@@ -674,6 +674,15 @@
       "url": "https://www.ballet.or.kr/",
       "tier": "secondary",
       "status": "seed"
+    },
+    {
+      "slug": "ballet-workshops-bucharest",
+      "name": "Ballet Workshops Bucharest (Casa de Balet)",
+      "country": "RO",
+      "city": "Bucharest",
+      "url": "https://www.balletworkshops.com/",
+      "tier": "secondary",
+      "status": "live"
     }
   ]
 }
