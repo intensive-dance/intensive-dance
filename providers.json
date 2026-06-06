@@ -82,6 +82,15 @@
       "status": "live"
     },
     {
+      "slug": "academie-theilaia",
+      "name": "Académie de Ballet Nini Theilade (Théilaïa)",
+      "country": "FR",
+      "city": "Lyon",
+      "url": "https://www.academie-ballet.fr/",
+      "tier": "secondary",
+      "status": "live"
+    },
+    {
       "slug": "bolshoi-ballet-academy",
       "name": "Bolshoi Ballet Academy",
       "country": "RU",

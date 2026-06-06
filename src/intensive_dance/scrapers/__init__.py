@@ -15,6 +15,7 @@ from intensive_dance.models import Offering
 from . import (
     abt_jko_school,
     academie_princesse_grace,
+    academie_theilaia,
     accademia_teatro_alla_scala,
     art_of_ballet_summer_course,
     ballet_ruso_barcelona,
@@ -71,6 +72,7 @@ SCRAPERS: dict[str, Scraper] = {
     "brussels-international-ballet": brussels_international_ballet.scrape,
     "fondazione-monreart": fondazione_monreart.scrape,
     "academie-princesse-grace": academie_princesse_grace.scrape,
+    "academie-theilaia": academie_theilaia.scrape,
     "school-of-american-ballet": school_of_american_ballet.scrape,
     "young-stars-ballet": young_stars_ballet.scrape,
     "idc-berlin": idc_berlin.scrape,
