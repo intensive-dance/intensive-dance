@@ -179,9 +179,17 @@ def test_level_pre_professional_from_rad_grade():
     assert csb._has_grade_prereq("open to all children") is False
 
 
-def test_genres_match_curriculum_outline():
+def test_genres_always_include_classical_alongside_secondary_styles():
+    # "Daily ballet" is the spine of every course, so classical must appear even
+    # when secondary styles also match (it was previously dropped).
     outline = "Ballet class every day, additional pointe work, Contemporary, Repertoire, Character"
-    assert csb._genres(outline) == ["contemporary", "repertoire", "character", "pointe"]
+    assert csb._genres(outline) == [
+        "classical",
+        "contemporary",
+        "repertoire",
+        "character",
+        "pointe",
+    ]
 
 
 def test_genres_default_classical_when_outline_silent():
