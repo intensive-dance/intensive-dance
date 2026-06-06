@@ -325,7 +325,12 @@ when a second provider genuinely needs the identical thing.
   statutory April-entry schedule (小N年→age 6+N…7+N, 中N年→12+N…13+N, 高N年→15+N…16+N)
   and keep the raw grade band verbatim in the session `notes`. Classes that differ
   only by age/gender (not dates/fee) are **one Offering with one `Session` per
-  class** (gender only exists on `Session`) — see `tokyo_ballet_school`.
+  class** (gender only exists on `Session`) — see `tokyo_ballet_school`. JP pages
+  also love **full-width digits** ("７月２４日") — `str.translate` them to ASCII once
+  up front so one date/price regex works; and the year can hide on a *deadline*
+  row ("2026年6月20日申請分まで") when the dateline is year-less, while a separate
+  "open day" line runs a day past the "から" range close — read both (see
+  `dd_masterclass_japan`).
 - **One org, several city editions = one scraper, many Offerings.** A provider
   can run the same course as separate per-city subdomains (ART of's
   `zurich.`/`madrid.art-of.net`, same director). Build **one** scraper filed
