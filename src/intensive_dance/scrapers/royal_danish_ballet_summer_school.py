@@ -136,15 +136,7 @@ _RANGE = re.compile(
 
 
 def _date_range(text: str) -> tuple[date | None, date | None]:
-    m = _RANGE.search(text)
-    if not m:
-        return None, None
-    d1, m1, d2, m2, year = m.groups()
-    y = int(year)
-    return (
-        date(y, parse.MONTHS[m1.lower()], int(d1)),
-        date(y, parse.MONTHS[m2.lower()], int(d2)),
-    )
+    return parse.parse_multi_month_range(text, _RANGE)
 
 
 def _dates_note(text: str) -> str | None:
@@ -158,8 +150,7 @@ _AGE = re.compile(r"aged\s+(\d{1,2})\s*[-–—]\s*(\d{1,2})", re.IGNORECASE)
 
 
 def _age_range(text: str) -> dict | None:
-    m = _AGE.search(text)
-    return {"min": int(m.group(1)), "max": int(m.group(2))} if m else None
+    return parse.extract_age_range(text, _AGE)
 
 
 # --- genres: keyed off the stated curriculum, not loose prose ------------------

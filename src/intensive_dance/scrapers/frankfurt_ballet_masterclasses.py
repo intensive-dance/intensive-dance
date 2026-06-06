@@ -110,8 +110,7 @@ def _date_range(text: str) -> tuple[date | None, date | None]:
 
 
 def _age_range(text: str) -> dict | None:
-    match = _AGE.search(text)
-    return {"min": int(match.group(1)), "max": int(match.group(2))} if match else None
+    return parse.extract_age_range(text, _AGE)
 
 
 _GENRE_KEYWORDS: list[tuple[Genre, tuple[str, ...]]] = [

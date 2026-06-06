@@ -198,8 +198,7 @@ _AGE = re.compile(r"Dancers ages\s*(\d{1,2})\s*\+", re.IGNORECASE)
 
 
 def _age_range(text: str) -> dict | None:
-    m = _AGE.search(text)
-    return {"min": int(m.group(1))} if m else None  # "7+" is open-ended
+    return parse.extract_age_range(text, _AGE)
 
 
 def _levels(text: str) -> list[Level]:

@@ -205,8 +205,10 @@ _AGE = re.compile(r"from\s+(\d{1,2})\s+years\s+old", re.IGNORECASE)
 
 
 def _age_range(block: str) -> dict | None:
-    m = _AGE.search(block)
-    return {"min": int(m.group(1)), "max": None} if m else None
+    res = parse.extract_age_range(block, _AGE)
+    if res:
+        res["max"] = None
+    return res
 
 
 # --- prices: "N week(s): NNN€" tuition tiers ----------------------------------

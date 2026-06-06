@@ -186,20 +186,11 @@ _GUEST = re.compile(r"Artistic Director ([A-Z][a-z]+(?: [A-Z][a-z]+)+)")
 
 
 def _dates(text: str) -> tuple[date | None, date | None]:
-    match = _RANGE.search(text)
-    if not match:
-        return None, None
-    m1, d1, m2, d2, year = match.groups()
-    y = int(year)
-    return (
-        date(y, parse.MONTHS[m1.lower()], int(d1)),
-        date(y, parse.MONTHS[m2.lower()], int(d2)),
-    )
+    return parse.parse_multi_month_range(text, _RANGE)
 
 
 def _age_range(text: str) -> dict | None:
-    match = _AGE.search(text)
-    return {"min": int(match.group(1)), "max": int(match.group(2))} if match else None
+    return parse.extract_age_range(text, _AGE)
 
 
 _LEVELS: list[tuple[Level, tuple[str, ...]]] = [

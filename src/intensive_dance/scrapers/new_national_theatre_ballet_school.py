@@ -230,8 +230,7 @@ _AGE = re.compile(r"(\d{1,2})\s*[－–\-]\s*(\d{1,2})\s*歳")
 
 
 def _age_range(block: str) -> dict | None:
-    m = _AGE.search(block)
-    return {"min": int(m.group(1)), "max": int(m.group(2))} if m else None
+    return parse.extract_age_range(block, _AGE)
 
 
 # --- prices: "28,000円（税込）" — JPY, tax-inclusive (税込) ----------------------

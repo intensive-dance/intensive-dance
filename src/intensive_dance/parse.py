@@ -13,6 +13,7 @@ surrounding date-range regexes (whose shapes diverge too much to share cleanly).
 
 from __future__ import annotations
 
+from datetime import date
 import re
 from collections.abc import Iterable, Sequence
 from typing import TypeVar
@@ -95,3 +96,70 @@ def match_genres(
     low = text.lower()
     found = [genre for genre, keys in table if any(k in low for k in keys)]
     return found or list(default)
+
+
+FULLWIDTH_DIGITS_TRANS = str.maketrans("０１２３４５６７８９", "0123456789")
+
+_JAPANESE_GRADE_BASES: dict[str, int] = {
+    "小学": 6,
+    "中学": 12,
+    "高校": 15,
+}
+
+
+def extract_age_range(text: str, pattern: re.Pattern) -> dict | None:
+    """Extract age range from text using a compiled regex pattern.
+
+    Supports patterns capturing 1 group (min age only) or 2 groups (min and max age).
+    """
+    match = pattern.search(text)
+    if not match:
+        return None
+    g = match.groups()
+    if len(g) >= 2:
+        v1 = int(g[0]) if g[0] is not None else None
+        v2 = int(g[1]) if g[1] is not None else None
+        return {"min": v1, "max": v2}
+    elif len(g) == 1:
+        v1 = int(g[0]) if g[0] is not None else None
+        return {"min": v1}
+    return None
+
+
+def parse_multi_month_range(text: str, pattern: re.Pattern) -> tuple[date | None, date | None]:
+    """Parse a multi-month range from text using a compiled regex.
+
+    Supports the following group patterns:
+    - 5 groups: (Month, Day, Month, Day, Year) or (Day, Month, Day, Month, Year)
+    - 6 groups: (Month, Day, Year1, Month, Day, Year2) where Year1 is optional
+    """
+    match = pattern.search(text)
+    if not match:
+        return None, None
+    g = match.groups()
+    if len(g) == 5:
+        if g[0] and g[0].lower() in MONTHS:
+            m1, d1, m2, d2, year = g
+        else:
+            d1, m1, d2, m2, year = g
+
+        y = int(year)
+        start = date(y, MONTHS[m1.lower()], int(d1))
+        end = date(y, MONTHS[m2.lower()], int(d2))
+        return start, end
+    elif len(g) == 6:
+        m1, d1, y1, m2, d2, y2 = g
+        year2 = int(y2)
+        year1 = int(y1) if y1 else year2
+        start = date(year1, MONTHS[m1.lower()], int(d1))
+        end = date(year2, MONTHS[m2.lower()], int(d2))
+        return start, end
+    return None, None
+
+
+def japanese_grade_to_age(level: str, grade: int) -> int:
+    """Map a Japanese school grade level (小学/中学/高校) and number (1-6) to start age."""
+    base = _JAPANESE_GRADE_BASES.get(level)
+    if base is None:
+        raise ValueError(f"Unknown Japanese grade level: {level}")
+    return base + (grade - 1)

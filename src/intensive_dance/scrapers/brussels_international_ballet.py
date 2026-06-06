@@ -129,13 +129,7 @@ _RESIDENTIAL = re.compile(
 
 
 def _date_range(text: str) -> tuple[date | None, date | None]:
-    match = _RANGE.search(text)
-    if not match:
-        return None, None
-    d1, m1, d2, m2, year = match.groups()
-    start = date(int(year), parse.MONTHS[m1.lower()], int(d1))
-    end = date(int(year), parse.MONTHS[m2.lower()], int(d2))
-    return start, end
+    return parse.parse_multi_month_range(text, _RANGE)
 
 
 def _schedule_note(text: str) -> str | None:

@@ -210,3 +210,15 @@ def table_rows(table: Node) -> list[list[str]]:
         if any(cells):
             rows.append(cells)
     return rows
+
+
+def clean_node_lines(node: Node) -> list[str]:
+    """Tidy each line in node_lines by collapsing spaces, removing spaces before
+    punctuation, and dropping empty entries.
+    """
+    cleaned: list[str] = []
+    for line in node_lines(node):
+        tidied = re.sub(r"\s{2,}", " ", re.sub(r"\s+([,.])", r"\1", line)).strip(" ,")
+        if tidied:
+            cleaned.append(tidied)
+    return cleaned

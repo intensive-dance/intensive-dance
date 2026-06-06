@@ -342,15 +342,8 @@ def _venue(section: wp.Section | None) -> str | None:
     """
     if section is None:
         return None
-    blocks = [
-        ", ".join(_tidy(line) for line in wp.node_lines(node) if _tidy(line))
-        for node in section.nodes
-    ]
+    blocks = [", ".join(wp.clean_node_lines(node)) for node in section.nodes]
     return " · ".join(block for block in blocks if block) or None
-
-
-def _tidy(text: str) -> str:
-    return re.sub(r"\s{2,}", " ", re.sub(r"\s+([,.])", r"\1", text)).strip(" ,")
 
 
 def _country(text: str) -> str | None:

@@ -163,8 +163,7 @@ _AGE = re.compile(r"ages?\s*(\d{1,2})\s*[-–—]\s*(\d{1,2})\s*years?", re.IGNO
 
 
 def _age_range(text: str) -> dict | None:
-    m = _AGE.search(text)
-    return {"min": int(m.group(1)), "max": int(m.group(2))} if m else None
+    return parse.extract_age_range(text, _AGE)
 
 
 # --- prices: "One week £410", "Two weeks £745", "£375", "£48 per person per night"

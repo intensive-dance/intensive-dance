@@ -246,8 +246,7 @@ _AGE = re.compile(r"aged\s+(\d{1,2})\s*[–-]\s*(\d{1,2})")
 
 
 def _age_range(text: str) -> dict | None:
-    match = _AGE.search(text)
-    return {"min": int(match.group(1)), "max": int(match.group(2))} if match else None
+    return parse.extract_age_range(text, _AGE)
 
 
 # --- application window ------------------------------------------------------
@@ -356,7 +355,7 @@ def _teachers(content: wp.Content) -> list[Teacher]:
     for section in subs:
         if section.level != 3 or not section.nodes:
             continue
-        lines = wp.node_lines(section.nodes[0])
+        lines = wp.clean_node_lines(section.nodes[0])
         role = parse.clean(lines[2]) if len(lines) >= 3 else None
         teachers.append(Teacher(name=parse.clean(section.heading), role=role))
     return teachers

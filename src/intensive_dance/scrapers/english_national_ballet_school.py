@@ -144,8 +144,7 @@ def _to_date(token: tuple[str, str, str]) -> date | None:
 
 
 def _age_range(chunk: str) -> dict | None:
-    match = _AGE.search(chunk)
-    return {"min": int(match.group(1)), "max": int(match.group(2))} if match else None
+    return parse.extract_age_range(chunk, _AGE)
 
 
 def _levels(chunk: str) -> list[Level]:

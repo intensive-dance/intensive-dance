@@ -143,8 +143,7 @@ _AGE = re.compile(r"between\s+(\d{1,2})\s+and\s+(\d{1,2})\s+years", re.IGNORECAS
 
 
 def _age_range(text: str) -> dict | None:
-    m = _AGE.search(text)
-    return {"min": int(m.group(1)), "max": int(m.group(2))} if m else None
+    return parse.extract_age_range(text, _AGE)
 
 
 def _level(text: str) -> list[Level]:

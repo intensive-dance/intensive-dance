@@ -89,9 +89,6 @@ _CITIES = [
     _City("osaka", "18th-osaka", "大阪", "Asia/Tokyo"),
 ]
 
-# Full-width → ASCII digits, so the year-less date line parses with one regex.
-_FW = str.maketrans("０１２３４５６７８９", "0123456789")
-
 
 def scrape(client: httpx.Client) -> list[Offering]:
     offerings: list[Offering] = []
@@ -110,7 +107,9 @@ def _build_offering(html: str, city: _City) -> Offering | None:
     tree = HTMLParser(html)
     for node in tree.css("script, style, noscript"):
         node.decompose()
-    text = (parse.clean(tree.body.text(separator=" ")) if tree.body else "").translate(_FW)
+    text = (parse.clean(tree.body.text(separator=" ")) if tree.body else "").translate(
+        parse.FULLWIDTH_DIGITS_TRANS
+    )
 
     year = _year(text)
     if year is None:

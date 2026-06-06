@@ -237,9 +237,9 @@ _AGE_MAX = re.compile(r"fino\s+ai\s+(\d{1,2})\s+anni", re.IGNORECASE)
 
 
 def _age_range(text: str) -> dict | None:
-    band = _AGE_BAND.search(text)
+    band = parse.extract_age_range(text, _AGE_BAND)
     if band:
-        return {"min": int(band.group(1)), "max": int(band.group(2))}
+        return band
     upper = _AGE_MAX.search(text)
     if upper:
         return {"max": int(upper.group(1))}  # open-ended below
