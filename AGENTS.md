@@ -131,10 +131,14 @@ proxy's default `de-DE` render (see `mosa_ballet_school`). The query params belo
 (`render=1`, `wait=…`, `format=md`, …) are the manual escalation tier; there's no
 helper, so call the endpoint by hand when a plain proxied fetch comes back blocked.
 
-> **Trap:** the proxy renders `*.xml` (e.g. a `sitemap.xml` it had to escalate)
-> inside Chromium's **XML-viewer HTML wrapper**, so `ET.fromstring` chokes. The
-> URLs survive verbatim, so regex them out of the text rather than XML-parsing
-> (see `mosa_ballet_school._parse_event_urls`).
+> **Trap:** a `*.xml` (e.g. a `sitemap.xml` the proxy had to escalate) can come
+> back wrapped in Chromium's **XML-viewer HTML**, so `ET.fromstring` chokes. The
+> stealth-render tier now returns the *raw* body for non-HTML content-types, so
+> this only bites when the escalation goes through the **FlareSolverr/CF-challenge
+> tier** (which hands back the rendered DOM) — depends on how the host blocks. The
+> URLs survive verbatim either way, so regex them out of the text rather than
+> XML-parsing (robust to raw XML *and* the wrapper; see
+> `mosa_ballet_school._parse_event_urls`).
 
 **One endpoint** (`/`, GET — or POST to forward the request body + Content-Type
 upstream for form POSTs). The base does a plain Chrome-UA fetch with TLS

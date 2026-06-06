@@ -29,6 +29,12 @@ proxy; ISO-attribute dates; multi-`Price` Offerings from Offer microdata with a
 `meals` include ("Lunch Included"); `age_range` from the title; a `video`
 requirement for pre-selected courses vs `NoneReq` for open-enrolment tasters;
 `application.status` open/closed read from the Odoo registration widget.
+
+Note: status is derived *solely* from the ticket widget — a `.o_wevent_ticket_selector`
+means open, the closed banner means closed, otherwise `None`. So an
+application-based course (pre-selection, no public ticket sale) reports `None`
+even while its applications are open: faithful to "don't invent a status", but a
+shift from the old prose-scrape that could read "registration open" from the body.
 """
 
 from __future__ import annotations
@@ -129,10 +135,12 @@ def scrape(client: httpx.Client) -> list[Offering]:
 def _event_urls(client: httpx.Client) -> list[str]:
     """In-scope `/event/` URLs from the sitemap (API-first discovery).
 
-    The proxy 403s on `/sitemap.xml` and escalates to a Chromium render, which
-    wraps the XML in the browser's XML-viewer HTML — so we can't ET-parse it. The
-    `/event/` URLs survive verbatim in both forms (raw XML on a direct fetch, the
-    rendered wrapper through the proxy), so we regex them out of either.
+    The proxy 403s on `/sitemap.xml` and escalates. Its stealth-render tier
+    returns the raw XML body for non-HTML, but the FlareSolverr/CF-challenge tier
+    hands back the rendered DOM — the XML wrapped in the browser's XML-viewer HTML,
+    which `ET.fromstring` can't parse. The `/event/` URLs survive verbatim in both
+    forms, so we regex them out of either rather than betting on which tier served
+    the request.
     """
     resp = client.get(SITEMAP, headers=_LANG)
     resp.raise_for_status()
