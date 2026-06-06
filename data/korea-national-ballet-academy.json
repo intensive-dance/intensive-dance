@@ -1,0 +1,82 @@
+[
+  {
+    "application": {
+      "notes": "선착순 모집 (재수강생 우선 등록 후 신규생 접수)",
+      "requirements": []
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "korea-national-ballet-academy/summer-intensive-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Seoul",
+      "country": "KR",
+      "venue": "예술의전당 N studio"
+    },
+    "organization": {
+      "city": "Seoul",
+      "country": "KR",
+      "name": "국립발레단 부설 발레아카데미",
+      "slug": "korea-national-ballet-academy"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-08-03",
+      "notes": "2026년 7월 27일(월) ~ 8월 3일(월) (1주)",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-27",
+      "timezone": "Asia/Seoul"
+    },
+    "source": {
+      "hash": "sha256:9b386a48cdc42d8594620a31f3b5e366766c7dd44c5faa75e8360bd7c5da42a3",
+      "provider": "korea-national-ballet-academy",
+      "scrapedAt": "2026-06-06T07:32:34.111003Z",
+      "url": "https://www.korean-national-ballet.kr/ko/academy/lecture"
+    },
+    "teachers": [],
+    "title": "국립발레단 발레아카데미 여름방학 특강 2026"
+  },
+  {
+    "application": {
+      "notes": "선착순 모집 (재수강생 우선 등록 후 신규생 접수)",
+      "requirements": []
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "korea-national-ballet-academy/winter-intensive-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Seoul",
+      "country": "KR",
+      "venue": "예술의전당 N studio"
+    },
+    "organization": {
+      "city": "Seoul",
+      "country": "KR",
+      "name": "국립발레단 부설 발레아카데미",
+      "slug": "korea-national-ballet-academy"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2027-01-10",
+      "notes": "2026년 12월 14일(월) ~ 2027년 1월 10일(일) (4주)",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-12-14",
+      "timezone": "Asia/Seoul"
+    },
+    "source": {
+      "hash": "sha256:c53a6d237e3005afb0791bc6fd938b4a0cf72131ca9e547e9ce4ea3c6ec402a3",
+      "provider": "korea-national-ballet-academy",
+      "scrapedAt": "2026-06-06T07:32:34.111238Z",
+      "url": "https://www.korean-national-ballet.kr/ko/academy/lecture"
+    },
+    "teachers": [],
+    "title": "국립발레단 발레아카데미 겨울방학 특강 2026"
+  }
+]

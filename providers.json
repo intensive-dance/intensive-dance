@@ -496,6 +496,15 @@
       "status": "seed"
     },
     {
+      "slug": "korea-national-ballet-academy",
+      "name": "Korea National Ballet Academy",
+      "country": "KR",
+      "city": "Seoul",
+      "url": "https://www.korean-national-ballet.kr/ko/academy/lecture",
+      "tier": "marquee",
+      "status": "live"
+    },
+    {
       "slug": "nba-ballet-company",
       "name": "NBA Ballet Company Summer School",
       "country": "JP",
