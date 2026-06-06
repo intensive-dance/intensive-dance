@@ -494,6 +494,15 @@
       "url": "https://www.universalballet.com/",
       "tier": "secondary",
       "status": "seed"
+    },
+    {
+      "slug": "japan-ballet-association",
+      "name": "Japan Ballet Association",
+      "country": "JP",
+      "city": "Tokyo",
+      "url": "http://www.j-b-a.or.jp/classes/2026summercours/",
+      "tier": "marquee",
+      "status": "live"
     }
   ]
 }

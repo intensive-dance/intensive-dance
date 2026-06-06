@@ -29,6 +29,7 @@ from . import (
     hong_kong_academy_of_ballet,
     idc_berlin,
     international_ballet_masterclasses_prague,
+    japan_ballet_association,
     john_cranko_school,
     joffrey_ballet_school,
     k_ballet_school,
@@ -84,4 +85,5 @@ SCRAPERS: dict[str, Scraper] = {
     "ballet-ruso-barcelona": ballet_ruso_barcelona.scrape,
     "tokyo-ballet-school": tokyo_ballet_school.scrape,
     "k-ballet-school": k_ballet_school.scrape,
+    "japan-ballet-association": japan_ballet_association.scrape,
 }
