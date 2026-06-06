@@ -1,6 +1,15 @@
 {
   "providers": [
     {
+      "slug": "stage-charles-jude",
+      "name": "Stage International de Danse Charles Jude",
+      "country": "FR",
+      "city": "Marseille",
+      "url": "https://www.stagedansecj.com/",
+      "tier": "secondary",
+      "status": "live"
+    },
+    {
       "slug": "royal-ballet-school",
       "name": "The Royal Ballet School",
       "country": "GB",
