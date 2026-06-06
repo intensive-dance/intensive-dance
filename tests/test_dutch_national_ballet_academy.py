@@ -25,12 +25,22 @@ def test_course_fee_per_course_and_euro_format():
     assert dnba._course_fee(text, "Accommodation (optional)") == 1100.0
 
 
-def test_date_range_or_none():
-    assert dnba._date_range("classes run 6 - 17 July 2026", "2026") == (
+def test_course_dates_read_per_course_from_heading():
+    # Each course heading carries its own span; the two courses differ, so a
+    # single shared range (the old behaviour) was wrong.
+    text = "06 - 17 July 2026 - Senior Course … 13 - 17 July 2026 - Junior Course …"
+    assert dnba._course_dates(text, "Senior Course", "2026") == (
         date(2026, 7, 6),
         date(2026, 7, 17),
     )
-    assert dnba._date_range("a two week course", "2026") == (None, None)
+    assert dnba._course_dates(text, "Junior Course", "2026") == (
+        date(2026, 7, 13),
+        date(2026, 7, 17),
+    )
+
+
+def test_course_dates_none_when_label_absent():
+    assert dnba._course_dates("a two week course", "Senior Course", "2026") == (None, None)
 
 
 def test_genres():

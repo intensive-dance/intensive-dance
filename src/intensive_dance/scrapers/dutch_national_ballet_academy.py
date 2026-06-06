@@ -8,8 +8,9 @@ main content (`.container.content`) to keep the site-wide nav out.
 
 DISCOVERY: the summer school offers a **Senior** course (aged 15-21, two weeks)
 and a **Junior** course (aged 12-14, one week). We emit one `Offering` per
-course, reading each course's age band and fee from the pages, with the shared
-season dates, deadline and disciplines. Dropped once the season's end is past.
+course, reading each course's own dates (from its section heading), age band and
+fee from the pages, with the shared deadline and disciplines. The two courses
+run on different dates, so dates are per-course. Dropped once its end is past.
 """
 
 from __future__ import annotations
@@ -57,7 +58,6 @@ def scrape(client: httpx.Client) -> list[Offering]:
 
     today = date.today()
     season = _season(summary)
-    start, end = _date_range(summary, season)
 
     deadline = _deadline(summary)
     genres = _genres(summary)
@@ -67,6 +67,7 @@ def scrape(client: httpx.Client) -> list[Offering]:
         fee = _course_fee(fees, label)
         if ages is None and fee is None:
             continue
+        start, end = _course_dates(summary, label, season)
         slug = label.lower().replace(" course", "").strip()
         offerings.append(
             Offering(
@@ -97,15 +98,9 @@ def scrape(client: httpx.Client) -> list[Offering]:
 # --- parsing ------------------------------------------------------------------
 
 _YEAR = re.compile(r"Summer School\s+(20\d\d)", re.IGNORECASE)
-# "6 - 17 July 2026" or "July 6 to 17, 2026".
-_RANGE = re.compile(
-    r"(\d{1,2})\s*[-–to]+\s*(\d{1,2})\s+("
-    + parse.MONTHALT
-    + r")|("
-    + parse.MONTHALT
-    + r")\s+(\d{1,2})\s*(?:[-–]|to)\s*(\d{1,2})",
-    re.IGNORECASE,
-)
+# Each course heading prints its own span before the label, e.g.
+# "06 - 17 July 2026 - Senior Course" / "13 - 17 July 2026 - Junior Course",
+# so dates are read per-course (the courses don't share one span).
 _DEADLINE = re.compile(
     r"open until\s+(\d{1,2})\s+(" + parse.MONTHALT + r")\s+(20\d\d)", re.IGNORECASE
 )
@@ -116,19 +111,20 @@ def _season(text: str) -> str:
     return match.group(1) if match else "unknown"
 
 
-def _date_range(text: str, season: str) -> tuple[date | None, date | None]:
-    year = int(season) if season.isdigit() else None
-    if year is None:
-        return None, None
-    match = _RANGE.search(text)
+def _course_dates(text: str, label: str, season: str) -> tuple[date | None, date | None]:
+    """Read the span from this course's own heading ("06 - 17 July 2026 - Senior Course")."""
+    match = re.search(
+        r"(\d{1,2})\s*[-–]\s*(\d{1,2})\s+("
+        + parse.MONTHALT
+        + r")\s+(\d{4})\s*[-–]\s*"
+        + re.escape(label),
+        text,
+        re.IGNORECASE,
+    )
     if not match:
         return None, None
-    if match.group(3):  # "<d1> - <d2> <Month>"
-        d1, d2, month = match.group(1), match.group(2), match.group(3)
-    else:  # "<Month> <d1> to <d2>"
-        month, d1, d2 = match.group(4), match.group(5), match.group(6)
-    num = parse.MONTHS[month.lower()]
-    return date(year, num, int(d1)), date(year, num, int(d2))
+    year, num = int(match.group(4)), parse.MONTHS[match.group(3).lower()]
+    return date(year, num, int(match.group(1))), date(year, num, int(match.group(2)))
 
 
 def _deadline(text: str) -> date | None:
@@ -171,7 +167,10 @@ def _content(client: httpx.Client, url: str) -> str:
         return ""
     resp.raise_for_status()
     tree = HTMLParser(resp.text)
-    for node in tree.css("script, style, noscript, nav, header, footer"):
+    # Keep <header>: each course's dates sit in its section header
+    # ("06 - 17 July 2026 - Senior Course"). The .container.content scope below
+    # already excludes the site's nav/header chrome.
+    for node in tree.css("script, style, noscript, nav, footer"):
         node.decompose()
     main = tree.css_first(".container.content") or tree.body
     return re.sub(r"\s+", " ", main.text(separator=" ")) if main else ""
