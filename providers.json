@@ -469,6 +469,15 @@
       "status": "live"
     },
     {
+      "slug": "rad-japan-summer-school",
+      "name": "RAD Japan — International Summer School (Royal Academy of Dance)",
+      "country": "JP",
+      "city": "Tokyo",
+      "url": "https://www.radjapan.org/summerschool.html",
+      "tier": "secondary",
+      "status": "live"
+    },
+    {
       "slug": "japan-ballet-intensives",
       "name": "Japan Ballet Intensives (JBI)",
       "country": "JP",
