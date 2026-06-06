@@ -674,6 +674,15 @@
       "url": "https://www.ballet.or.kr/",
       "tier": "secondary",
       "status": "seed"
+    },
+    {
+      "slug": "revolve-dance-bucharest",
+      "name": "Revolve Dance Festival",
+      "country": "RO",
+      "city": "Bucharest",
+      "url": "https://revolvedance.ro/",
+      "tier": "secondary",
+      "status": "live"
     }
   ]
 }
