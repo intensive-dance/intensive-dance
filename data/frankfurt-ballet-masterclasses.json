@@ -73,10 +73,9 @@
       "timezone": "Europe/Berlin"
     },
     "source": {
-      "attemptedAt": "2026-06-07T00:20:28.059776Z",
       "hash": "sha256:a15de015fee71294400e9dc079195fc592af9eb52a9268a6169fa200c5442088",
       "provider": "frankfurt-ballet-masterclasses",
-      "scrapedAt": "2026-06-07T08:10:00.246337Z",
+      "scrapedAt": "2026-06-07T12:10:52.448906Z",
       "url": "https://masterclass.balletcompetition.net/"
     },
     "teachers": [
