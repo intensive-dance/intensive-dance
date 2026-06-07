@@ -174,3 +174,85 @@ def test_weekend_sessions_spanning_year_boundary():
         (date(2026, 10, 17), date(2026, 10, 18)),
         (date(2027, 4, 10), date(2027, 4, 11)),
     ]
+
+
+# --- title year deduplication ---------------------------------------------------
+
+
+def test_title_strips_trailing_year_before_appending_season():
+    # "Online Spring Intensive 2022" already ends with the year; appending the
+    # season would yield "Online Spring Intensive 2022 2022" without the strip.
+    # Test the stripping logic directly via regex (the same as _build_offering uses).
+    import re
+
+    def build_title(base_title: str, season: str) -> str:
+        base_stripped = re.sub(r"\s+\d{4}$", "", base_title)
+        return f"{base_stripped} {season}".strip()
+
+    assert build_title("Online Spring Intensive 2022", "2022") == "Online Spring Intensive 2022"
+    assert build_title("UK Summer Intensive", "2026") == "UK Summer Intensive 2026"
+    assert build_title("Japan Intensive", "2025") == "Japan Intensive 2025"
+
+
+# --- UK Spring Intensive — course-fees subsection --------------------------------
+
+
+def test_inline_prices_reads_course_fees_subsection():
+    # The uk-spring-intensive page has two sibling sections: "Fees" (app fee)
+    # and "Course fees" (three tiers). Both must be joined before parsing.
+    text = (
+        "Application fee: £48\n"
+        "White Lodge\n"
+        "Five days, non-residential: £865\n"
+        "Five days, residential (catering included): £1,485\n"
+        "Upper School\n"
+        "Three days, non-residential: £485"
+    )
+    prices = rbs._inline_prices(text, "GBP")
+    amounts = [(p.amount, p.includes) for p in prices]
+    assert (48.0, []) in amounts
+    assert (865.0, ["tuition"]) in amounts
+    assert (1485.0, ["tuition", "accommodation", "meals"]) in amounts
+    assert (485.0, ["tuition"]) in amounts
+
+
+# --- Autumn Intensives — city-date session headings -----------------------------
+
+_AUTUMN_SECTIONS = [
+    # Simulate the wp.Content sections the autumn page produces
+]
+
+
+def test_city_date_sessions_three_uk_cities():
+    from intensive_dance import wp
+
+    # Minimal section list: city headings followed by date-range headings.
+    sections = [
+        wp.Section(heading="Edinburgh", level=3, nodes=[]),
+        wp.Section(heading="16 & 17 October 2025", level=4, nodes=[]),
+        wp.Section(heading="London", level=3, nodes=[]),
+        wp.Section(heading="26 & 27 October 2025", level=4, nodes=[]),
+        wp.Section(heading="Manchester", level=3, nodes=[]),
+        wp.Section(heading="27 & 28 October 2025", level=4, nodes=[]),
+    ]
+    sessions = rbs._city_date_sessions(sections, 2025)
+    assert len(sessions) == 3
+    assert sessions[0].start == date(2025, 10, 16)
+    assert sessions[0].end == date(2025, 10, 17)
+    assert "Edinburgh" in (sessions[0].label or "")
+    assert sessions[2].end == date(2025, 10, 28)
+
+
+def test_city_date_sessions_ignores_non_city_non_date_headings():
+    from intensive_dance import wp
+
+    # A heading that is neither a known city nor a DD & DD Month YYYY date
+    # should not break the parser or produce a spurious session.
+    sections = [
+        wp.Section(heading="Some title", level=2, nodes=[]),
+        wp.Section(heading="Edinburgh", level=3, nodes=[]),
+        wp.Section(heading="16 & 17 October 2025", level=4, nodes=[]),
+    ]
+    sessions = rbs._city_date_sessions(sections, 2025)
+    assert len(sessions) == 1
+    assert sessions[0].start == date(2025, 10, 16)

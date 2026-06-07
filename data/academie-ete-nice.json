@@ -22,7 +22,8 @@
     "lifecycle": "scheduled",
     "location": {
       "city": "Nice",
-      "country": "FR"
+      "country": "FR",
+      "venue": "Conservatoire de Nice"
     },
     "organization": {
       "city": "Nice",
@@ -64,6 +65,46 @@
         "label": "Per week — Cours illimités (incl. 20€ membership)"
       },
       {
+        "amount": 120.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Day pass — 1 day(s), unlimited classes (incl. 20€ membership)"
+      },
+      {
+        "amount": 220.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Day pass — 2 day(s), unlimited classes (incl. 20€ membership)"
+      },
+      {
+        "amount": 320.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Day pass — 3 day(s), unlimited classes (incl. 20€ membership)"
+      },
+      {
+        "amount": 420.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Day pass — 4 day(s), unlimited classes (incl. 20€ membership)"
+      },
+      {
+        "amount": 520.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Day pass — 5 day(s), unlimited classes (incl. 20€ membership)"
+      },
+      {
         "amount": 79.0,
         "currency": "EUR",
         "includes": [
@@ -90,10 +131,10 @@
       "timezone": "Europe/Paris"
     },
     "source": {
-      "attemptedAt": "2026-06-07T12:25:47.301472Z",
-      "hash": "sha256:a7a8a1351c0aab3afb6e04e1db00c666b40a6a49962071732f2602e5ea206764",
+      "attemptedAt": "2026-06-07T01:40:34.775345Z",
+      "hash": "sha256:83a7c63faf733e8621f3ca4e246b877701b34bc85191af67f505dd00855cd511",
       "provider": "academie-ete-nice",
-      "scrapedAt": "2026-06-06T19:43:30.148791Z",
+      "scrapedAt": "2026-06-07T07:39:15.501290Z",
       "url": "https://danse.academie-internationale-ete-nice.org/"
     },
     "teachers": [

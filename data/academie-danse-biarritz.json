@@ -70,6 +70,16 @@
         ],
         "label": "Carte « cours illimités » (tarif plein)",
         "notes": "Reduced: grandes écoles/eurocités 480 €; professionnels 300 €."
+      },
+      {
+        "amount": 430.0,
+        "currency": "EUR",
+        "includes": [
+          "accommodation",
+          "meals"
+        ],
+        "label": "Forfait hébergement (7 nuits pension complète)",
+        "notes": "+50 € supplement for a private room."
       }
     ],
     "schedule": {
@@ -81,10 +91,10 @@
       "timezone": "Europe/Paris"
     },
     "source": {
-      "attemptedAt": "2026-06-07T09:59:12.889566Z",
-      "hash": "sha256:f5ef106016a78ac9acdc5fc2b5c3db1617168fd80ddd4dab50dc9f6615b95176",
+      "attemptedAt": "2026-06-07T01:40:37.451347Z",
+      "hash": "sha256:985aeebc81dd9c9475b5390f94699da77801fb467c224cf72c62c8526bef1afb",
       "provider": "academie-danse-biarritz",
-      "scrapedAt": "2026-06-06T19:47:34.914090Z",
+      "scrapedAt": "2026-06-07T07:38:57.446549Z",
       "url": "https://biarritz-academie-danse.com/"
     },
     "teachers": [

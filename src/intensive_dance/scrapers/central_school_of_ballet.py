@@ -184,11 +184,17 @@ def _summer_offerings(block: _Block, today: date) -> list[Offering]:
     photos = block.field("Application Photos")
     deadline_note = block.field("Application Deadline") or None
 
+    # The "Additional English Classes" line is a two-week-only optional add-on.
+    additional_english = _additional_english_price(cost_text)
+
     offerings: list[Offering] = []
     for suffix, label, date_key, cost_key in _SUMMER_TRACKS:
         start, end = _track_dates(dates_text, date_key)
         if _ended(end, today):
             continue
+        extras = (
+            [additional_english] if (suffix == "summer-two-week" and additional_english) else None
+        )
         offerings.append(
             _make_offering(
                 slug=suffix,
@@ -201,6 +207,7 @@ def _summer_offerings(block: _Block, today: date) -> list[Offering]:
                 dates_note=dates_text or None,
                 price=_track_price(cost_text, cost_key, label),
                 deadline_note=deadline_note,
+                extra_prices=extras,
             )
         )
     return offerings
@@ -240,8 +247,12 @@ def _make_offering(
     dates_note: str | None,
     price: Price | None,
     deadline_note: str | None,
+    extra_prices: list[Price] | None = None,
 ) -> Offering:
     season = str(start.year) if start else "unknown"
+    prices = [price] if price else []
+    if extra_prices:
+        prices += extra_prices
     return Offering(
         id=f"central-school-of-ballet/{slug}",
         source=Source(provider="central-school-of-ballet", url=PAGE_URL, scrapedAt=now_utc()),
@@ -252,7 +263,7 @@ def _make_offering(
         organization=ORG,
         location=LOCATION,
         schedule=Schedule(season=season, start=start, end=end, notes=dates_note),
-        prices=[price] if price else [],
+        prices=prices,
         application=Application(
             url=APPLY_URL,
             requirements=_requirements(photos),
@@ -296,6 +307,8 @@ def _requirements(photos: str) -> list[Requirement]:
 # --- prices -------------------------------------------------------------------
 
 _PRICE_LINE = re.compile(r"£\s?([\d,]+)")
+# "Additional English Classes £190 (available for dancers on the two week course)"
+_ADDITIONAL_ENGLISH = re.compile(r"Additional English Classes\s+£\s?([\d,]+)", re.IGNORECASE)
 
 
 def _single_price(cost_text: str) -> Price | None:
@@ -312,6 +325,23 @@ def _single_price(cost_text: str) -> Price | None:
         label="Course fee",
         includes=["tuition"],
         notes=_ACCOMMODATION_NOTE,
+    )
+
+
+def _additional_english_price(cost_text: str) -> Price | None:
+    """Parse the optional Additional English Classes fee from the Cost block."""
+    m = _ADDITIONAL_ENGLISH.search(cost_text)
+    if not m:
+        return None
+    amount = parse.parse_amount(m.group(1))
+    if amount is None:
+        return None
+    return Price(
+        amount=amount,
+        currency="GBP",
+        label="Additional English Classes",
+        includes=["tuition"],
+        notes="Optional; available for dancers on the two-week course.",
     )
 
 

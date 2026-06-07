@@ -7,10 +7,12 @@ of the page text. One `Offering` — the current Summer School — dropped once 
 end date is past.
 
 WHAT THE PAGE GIVES US (verified live 2026-06): season + dates ("the 2026 Summer
-School will take place from July 6th to 18th"), the 10-19 age range, and a
-non-refundable application fee (51 € for 2026). The graduated course fees are
-listed without clear labels, so they're left out (noted in `application.notes`)
-rather than guessed.
+School will take place from July 6th to 18th"), the 10-19 age range, a
+non-refundable application fee (51 € for 2026), and four course fee tiers from
+the practical-information page (1-week residential €1,200 / non-residential €876;
+2-week residential €2,208 / non-residential €1,560). Residential includes
+tuition + accommodation + meals (3 meals); non-residential includes tuition only
+(classes, lunch and snack). Venue is the school campus in Nanterre.
 """
 
 from __future__ import annotations
@@ -28,6 +30,8 @@ from intensive_dance.models import (
     Location,
     Offering,
     Organization,
+    Price,
+    PriceInclude,
     Schedule,
     Source,
     now_utc,
@@ -58,11 +62,7 @@ def _build_offering(text: str, today: date) -> Offering | None:
     season = _season(text)
     start, end = _date_range(text, season)
     app_fee = _application_fee(text)
-    notes = (
-        f"Non-refundable application fee of €{app_fee:g} (course fees graduated; see the school's site)."
-        if app_fee
-        else None
-    )
+    notes = f"Non-refundable application fee of €{app_fee:g}." if app_fee else None
     return Offering(
         id=f"ecole-danse-opera-paris/summer-school-{season}",
         source=Source(provider="ecole-danse-opera-paris", url=SUMMER, scrapedAt=now_utc()),
@@ -70,13 +70,21 @@ def _build_offering(text: str, today: date) -> Offering | None:
         genres=_genres(text),
         ageRange=_age_range(text),
         organization=ORG,
-        location=Location(venue=VENUE, city="Paris", country="FR"),
+        location=Location(venue=VENUE, city="Nanterre", country="FR"),
         schedule=Schedule(season=season, start=start, end=end, timezone="Europe/Paris"),
+        prices=_course_fees(text),
         application=Application(url=SUMMER, notes=notes),
     )
 
 
 # --- parsing ------------------------------------------------------------------
+
+# "Tuition for one week" / "Tuition for two weeks" block, then a pair of euro
+# amounts (residential, non-residential) on the "All levels" line.
+_FEE_BLOCK = re.compile(
+    r"Tuition for (one|two) week[s]?[^€]*€\s*([\d,]+)[^€]*€\s*([\d,]+)",
+    re.IGNORECASE,
+)
 
 _SEASON = re.compile(r"(20\d\d)\s+Summer School", re.IGNORECASE)
 # "from July 6th to 18th" — the page renders the ordinal as a separate token
@@ -112,11 +120,48 @@ def _application_fee(text: str) -> float | None:
     return float(match.group(1)) if match else None
 
 
+def _course_fees(text: str) -> list[Price]:
+    """Parse the four course-fee tiers from the practical-information page.
+
+    The page lists residential and non-residential fees for one-week and
+    two-week durations.  Residential includes tuition, accommodation and 3
+    meals; non-residential includes tuition only (classes, lunch and snack).
+    """
+    prices: list[Price] = []
+    for m in _FEE_BLOCK.finditer(text):
+        duration, res_raw, nonres_raw = m.groups()
+        label_stem = f"{'1 week' if duration.lower() == 'one' else '2 weeks'}"
+        res_amt = parse.parse_amount(res_raw)
+        nonres_amt = parse.parse_amount(nonres_raw)
+        res_includes: list[PriceInclude] = ["tuition", "accommodation", "meals"]
+        nonres_includes: list[PriceInclude] = ["tuition"]
+        if res_amt is not None:
+            prices.append(
+                Price(
+                    amount=res_amt,
+                    currency="EUR",
+                    label=f"Residential — {label_stem}",
+                    includes=res_includes,
+                )
+            )
+        if nonres_amt is not None:
+            prices.append(
+                Price(
+                    amount=nonres_amt,
+                    currency="EUR",
+                    label=f"Non-residential — {label_stem}",
+                    includes=nonres_includes,
+                )
+            )
+    return prices
+
+
 _GENRE_KEYWORDS: list[tuple[Genre, tuple[str, ...]]] = [
     ("classical", ("classical", "ballet")),
     ("contemporary", ("contemporary",)),
     ("character", ("character",)),
     ("repertoire", ("repertoire",)),
+    ("pointe", ("pointe shoes technique", "technique/pointes", "technique, pointes")),
 ]
 
 

@@ -33,8 +33,10 @@ WHAT THE PAGE GIVES US (verified live 2026-06-06):
     So `level` spans beginner→advanced and `age_range` is min 8 with an open top
     (adults welcome).
   - PRICES in EUR: weekly tuition tiers by classes/day (1/2/3/unlimited → 220 /
-    391 / 570 / 655 €, each incl. a 20€ membership), plus optional Clairvallon
-    accommodation (370 €/week, half-board) and canteen lunch (79 €/week).
+    391 / 570 / 655 €, each incl. a 20€ membership), daily-pass tiers (1–5 days
+    in unlimited classes → 120 / 220 / 320 / 420 / 520 €), plus optional
+    Clairvallon accommodation (370 €/week, half-board) and canteen lunch (79
+    €/week). Venue is the Conservatoire de Nice (stated in the page meta description).
   - DIRECTOR/FACULTY: Charles Jude (Opéra de Paris étoile, ex-Bordeaux dance
     director), with Stéphanie Roublot, Monique Loudières (étoile), Thomas Klein
     and Igor Yebra (étoile) named for the 2026 stage.
@@ -124,7 +126,7 @@ def _build_offering(html: str) -> Offering | None:
         level=_levels(text),
         ageRange=_age_range(text),
         organization=ORG,
-        location=Location(city="Nice", country="FR"),
+        location=Location(venue="Conservatoire de Nice", city="Nice", country="FR"),
         schedule=Schedule(
             season=season,
             start=start,
@@ -235,6 +237,12 @@ _WEEK_TIER = re.compile(
     r"Frais\s+pédagogique\s+\d[\d.,]*\s*€\s*Adhésion\s+\d[\d.,]*\s*€\s*(\d[\d.,]*)\s*€",
     re.IGNORECASE,
 )
+# "1 journée en illimité Frais pédagogique 100€ Adhésion 20€ 120€"
+_DAY_TIER = re.compile(
+    r"(\d+)\s+journées?\s+en\s+illimité\s*Frais\s+pédagogique\s+\d[\d.,]*\s*€"
+    r"\s*Adhésion\s+\d[\d.,]*\s*€\s*(\d[\d.,]*)\s*€",
+    re.IGNORECASE,
+)
 _ACCOMMODATION = re.compile(r"Tarif\s*:\s*(\d[\d.,]*)\s*€\s*la\s+semaine", re.IGNORECASE)
 _LUNCH = re.compile(r"Déjeuner\s+à\s+la\s+cantine\s+(\d[\d.,]*)\s*€\s*la\s+semaine", re.IGNORECASE)
 
@@ -253,6 +261,19 @@ def _prices(text: str) -> list[Price]:
                 currency="EUR",
                 label=f"Per week — {label} (incl. 20€ membership)",
                 includes=includes,
+            )
+        )
+    for m in _DAY_TIER.finditer(text):
+        amount = parse.parse_amount(m.group(2))
+        if amount is None:
+            continue
+        n_days = m.group(1)
+        prices.append(
+            Price(
+                amount=amount,
+                currency="EUR",
+                label=f"Day pass — {n_days} day(s), unlimited classes (incl. 20€ membership)",
+                includes=["tuition"],
             )
         )
     lunch = _LUNCH.search(text)

@@ -5,7 +5,7 @@
       "min": 10
     },
     "application": {
-      "notes": "Non-refundable application fee of €51 (course fees graduated; see the school's site).",
+      "notes": "Non-refundable application fee of €51.",
       "requirements": [],
       "url": "https://www.operadeparis.fr/en/artists/ballet-school/summer-internship"
     },
@@ -13,13 +13,14 @@
       "classical",
       "contemporary",
       "character",
-      "repertoire"
+      "repertoire",
+      "pointe"
     ],
     "id": "ecole-danse-opera-paris/summer-school-2026",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
-      "city": "Paris",
+      "city": "Nanterre",
       "country": "FR",
       "venue": "École de Danse de l'Opéra national de Paris, Nanterre"
     },
@@ -29,7 +30,44 @@
       "name": "École de Danse de l'Opéra national de Paris",
       "slug": "ecole-danse-opera-paris"
     },
-    "prices": [],
+    "prices": [
+      {
+        "amount": 1200.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition",
+          "accommodation",
+          "meals"
+        ],
+        "label": "Residential — 1 week"
+      },
+      {
+        "amount": 876.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Non-residential — 1 week"
+      },
+      {
+        "amount": 2208.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition",
+          "accommodation",
+          "meals"
+        ],
+        "label": "Residential — 2 weeks"
+      },
+      {
+        "amount": 1560.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Non-residential — 2 weeks"
+      }
+    ],
     "schedule": {
       "end": "2026-07-18",
       "season": "2026",
@@ -38,10 +76,10 @@
       "timezone": "Europe/Paris"
     },
     "source": {
-      "attemptedAt": "2026-06-07T08:09:19.956997Z",
-      "hash": "sha256:259ad87f2c858e890d26e0a19a855b47b420e11b9a94359e21115a099dcc7044",
+      "attemptedAt": "2026-06-07T00:20:29.932065Z",
+      "hash": "sha256:f2ae2d67a7bdf2d299220eaec76d65393a9a62eb7059a08bbb55757e95054ae8",
       "provider": "ecole-danse-opera-paris",
-      "scrapedAt": "2026-06-05T10:05:21.684634Z",
+      "scrapedAt": "2026-06-07T07:37:58.895036Z",
       "url": "https://www.operadeparis.fr/en/artists/ballet-school/summer-internship"
     },
     "teachers": [],

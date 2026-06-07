@@ -59,6 +59,12 @@
           "tuition"
         ],
         "label": "Complete Course — two weeks"
+      },
+      {
+        "amount": 40.0,
+        "currency": "EUR",
+        "includes": [],
+        "label": "Application fee"
       }
     ],
     "schedule": {
@@ -69,10 +75,10 @@
       "timezone": "Europe/Madrid"
     },
     "source": {
-      "attemptedAt": "2026-06-07T10:52:38.369042Z",
-      "hash": "sha256:c5843c6c831a23a9aa763e02efd5c9f789e0aaedc29b814b62bdf33c4accb277",
+      "attemptedAt": "2026-06-07T04:38:27.685021Z",
+      "hash": "sha256:e24005161fc38aa6a439e1ae271f0dce26e92a6859db0a134ceb35a7c8cd7231",
       "provider": "art-of-zurich",
-      "scrapedAt": "2026-06-06T06:05:03.644118Z",
+      "scrapedAt": "2026-06-07T07:38:27.801043Z",
       "url": "https://madrid.art-of.net/"
     },
     "teachers": [
@@ -80,6 +86,11 @@
         "affiliations": [],
         "name": "Anna Urban",
         "role": "Former Principal Dancer & Ballet Teacher at School of Hamburg Ballet"
+      },
+      {
+        "affiliations": [],
+        "name": "Ana Catalina Roman",
+        "role": "Coach for William Forsthe ballets"
       },
       {
         "affiliations": [],
@@ -93,13 +104,33 @@
       },
       {
         "affiliations": [],
+        "name": "Elena Vostrotina",
+        "role": "Principal Dancer of Zurich Ballet"
+      },
+      {
+        "affiliations": [],
         "name": "Jon Vallejo",
         "role": "Principal Dancer at Semperoper Ballett Dresden"
       },
       {
         "affiliations": [],
+        "name": "Amancio Gonzalez",
+        "role": "International Guest Ballet Master & Coach for William Forsythe ballets"
+      },
+      {
+        "affiliations": [],
+        "name": "Dr. Luis Gadea Mateos",
+        "role": "PhD in Dance Science"
+      },
+      {
+        "affiliations": [],
         "name": "Juliette Rahon",
         "role": "Artistic Director of Juliette Rahon & Co and Stager for Kinsun Chan ballets"
+      },
+      {
+        "affiliations": [],
+        "name": "Claudio Cangialosi",
+        "role": "Choreographer and Guest Artist"
       }
     ],
     "title": "ART of – Ballet Summer Course Madrid 2026"
@@ -164,6 +195,12 @@
           "tuition"
         ],
         "label": "Complete Course — two weeks"
+      },
+      {
+        "amount": 40.0,
+        "currency": "CHF",
+        "includes": [],
+        "label": "Application fee"
       }
     ],
     "schedule": {
@@ -174,10 +211,10 @@
       "timezone": "Europe/Zurich"
     },
     "source": {
-      "attemptedAt": "2026-06-07T10:52:38.369042Z",
-      "hash": "sha256:504c3dff673b916c0ba570dad1238d9799f66501596635a69040da0c300ea57c",
+      "attemptedAt": "2026-06-07T04:38:27.685021Z",
+      "hash": "sha256:aa39204708db255fe927cbd991d784a997f5b5c3f035c2ba1df10d3ad407bbb4",
       "provider": "art-of-zurich",
-      "scrapedAt": "2026-06-06T06:06:56.959608Z",
+      "scrapedAt": "2026-06-07T07:38:27.232701Z",
       "url": "https://zurich.art-of.net/"
     },
     "teachers": [
@@ -195,6 +232,11 @@
         "affiliations": [],
         "name": "Allison Brown",
         "role": "Teacher & Coach for William Forsythe ballets"
+      },
+      {
+        "affiliations": [],
+        "name": "Eva López Crevillén",
+        "role": "Director of the Conservatorio Superior de Danza María de Ávila"
       },
       {
         "affiliations": [],

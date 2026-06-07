@@ -33,7 +33,8 @@ WHAT THE PAGES GIVE US (verified live 2026-06):
     ateliers/workshops (Malandain, Kylian, Inger, Forsythe…) → contemporary.
   - PRICES in EUR: four class cards at the public tier (240/380/480/520 €);
     reduced "grandes écoles"/professional tiers kept as a price note. Accommodation
-    (internat, pension complète) is described but its forfait isn't a number here.
+    forfait (internat, pension complète) is 430 € per person for 7 nights full-board
+    (Saturday–Saturday), with an optional +50 € supplement for a private room.
   - TEACHERS: a confirmed 2026 faculty roster, each with their home company/school
     (Opéra de Paris, Bordeaux, Cuba, Zurich, Marseille…) — carried as affiliations.
 """
@@ -250,6 +251,10 @@ def _genres(presentation: str) -> list[Genre]:
 # Table: Carte | Pour tous | Grandes écoles et Eurocité (1) | Professionnels (2).
 
 _EURO = re.compile(r"(\d[\d\s.,]*)\s*€")
+# "Prix du forfait par personne 430 euros TTC" — accommodation forfait.
+_FORFAIT = re.compile(r"Prix du forfait par personne\s+(\d[\d.,]*)\s*euros?\s*TTC", re.IGNORECASE)
+# "+50 euros" or "supplément de 50 euros" for private room.
+_PRIVATE_ROOM = re.compile(r"suppl[eé]ment(?:\s+de)?\s+(\d+)\s*euros?", re.IGNORECASE)
 
 
 def _prices(infos_html: str) -> list[Price]:
@@ -257,29 +262,48 @@ def _prices(infos_html: str) -> list[Price]:
         return []
     tree = HTMLParser(infos_html)
     table = _price_table(tree)
-    if table is None:
-        return []
+    full_text = _text(infos_html)
     prices: list[Price] = []
-    for row in table.css("tr")[1:]:  # skip header row
-        cells = [parse.clean(c.text()) for c in row.css("th, td")]
-        if len(cells) < 2:
-            continue
-        card = cells[0]
-        public = _EURO.search(cells[1])
-        if not card or not public:
-            continue
-        amount = parse.parse_amount(public.group(1))
-        if amount is None:
-            continue
-        prices.append(
-            Price(
-                amount=amount,
-                currency="EUR",
-                label=f"Carte « {card} » (tarif plein)",
-                includes=["tuition"],
-                notes=_reduced_note(cells),
+    if table is not None:
+        for row in table.css("tr")[1:]:  # skip header row
+            cells = [parse.clean(c.text()) for c in row.css("th, td")]
+            if len(cells) < 2:
+                continue
+            card = cells[0]
+            public = _EURO.search(cells[1])
+            if not card or not public:
+                continue
+            amount = parse.parse_amount(public.group(1))
+            if amount is None:
+                continue
+            prices.append(
+                Price(
+                    amount=amount,
+                    currency="EUR",
+                    label=f"Carte « {card} » (tarif plein)",
+                    includes=["tuition"],
+                    notes=_reduced_note(cells),
+                )
             )
-        )
+    # Accommodation forfait: 7 nights full-board (Saturday–Saturday), +50 € for
+    # a private room (supplement stated separately on the same page).
+    forfait_m = _FORFAIT.search(full_text)
+    if forfait_m:
+        forfait_amt = parse.parse_amount(forfait_m.group(1))
+        if forfait_amt is not None:
+            private_note = None
+            priv_m = _PRIVATE_ROOM.search(full_text)
+            if priv_m:
+                private_note = f"+{priv_m.group(1)} € supplement for a private room."
+            prices.append(
+                Price(
+                    amount=forfait_amt,
+                    currency="EUR",
+                    label="Forfait hébergement (7 nuits pension complète)",
+                    includes=["accommodation", "meals"],
+                    notes=private_note,
+                )
+            )
     return prices
 
 

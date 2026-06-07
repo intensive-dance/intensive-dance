@@ -235,6 +235,11 @@ _FEE = re.compile(
     r"(One week|Two weeks)\s*:\s*(\d[\d.,]*)\s*(?:CHF|Euro|EUR|€)",
     re.IGNORECASE,
 )
+# "You can transfer the application fee of 40 CHF" / "application fee of 40 Euro"
+_APP_FEE = re.compile(
+    r"application fee of\s+(\d[\d.,]*)\s*(?:CHF|Euro|EUR|€)",
+    re.IGNORECASE,
+)
 
 
 def _prices(text: str, currency: str) -> list[Price]:
@@ -255,6 +260,19 @@ def _prices(text: str, currency: str) -> list[Price]:
                 includes=includes,
             )
         )
+    # Application fee: stated once on the general information page.
+    app_m = _APP_FEE.search(text)
+    if app_m:
+        app_amount = parse.parse_amount(app_m.group(1))
+        if app_amount is not None:
+            prices.append(
+                Price(
+                    amount=app_amount,
+                    currency=currency,
+                    label="Application fee",
+                    includes=[],
+                )
+            )
     return prices
 
 
@@ -330,11 +348,14 @@ def _requirements(text: str) -> list[Requirement]:
 
 # --- faculty: per-city "<strong>NAME</strong>" + "<em><strong>role</strong>" ---
 
-# Each teacher block is `<p><strong>NAME</strong></p>` followed by an italic
-# role line, on a stable per-city Teachers page.
+# Each teacher block is `<p><strong>NAME</strong></p>` followed by a role line.
+# Two markup variants appear across the city pages:
+#   em>strong:  `<p><em><strong>role</strong></em></p>`  (Zürich — original teachers)
+#   strong>em:  `<p><strong><em>role</em></strong></p>`  (Madrid + Zürich new teachers)
+# The alternation `(?:<em><strong>|<strong><em>)` and the matching close handle both.
 _TEACHER = re.compile(
     r"<strong>\s*([A-ZÁÉÍÓÚÜÑÖ][A-ZÁÉÍÓÚÜÑÖ \-'.]{2,40})\s*</strong>\s*</p>\s*"
-    r"<p>\s*<em>\s*<strong>\s*(.+?)\s*</strong>\s*</em>",
+    r"<p>\s*(?:<em><strong>|<strong><em>)\s*(.+?)\s*(?:</strong></em>|</em></strong>)",
     re.IGNORECASE,
 )
 _NOT_NAMES = {"en", "de", "es"}

@@ -137,6 +137,22 @@ def test_summer_two_week_span_and_higher_fee():
     assert o.prices[0].amount == 820.0
 
 
+def test_summer_two_week_has_additional_english_classes_price():
+    o = _by_id(csb._build_offerings(_HTML, TODAY), "summer-two-week")
+    extra = next((p for p in o.prices if "English" in p.label), None)
+    assert extra is not None, "Additional English Classes price not found"
+    assert extra.amount == 190.0
+    assert extra.currency == "GBP"
+    assert extra.includes == ["tuition"]
+    assert extra.notes is not None
+    assert "optional" in extra.notes.lower()
+
+
+def test_summer_week_one_has_no_additional_english_classes():
+    o = _by_id(csb._build_offerings(_HTML, TODAY), "summer-week-one")
+    assert not any("English" in p.label for p in o.prices)
+
+
 # --- single offerings ---------------------------------------------------------
 
 
