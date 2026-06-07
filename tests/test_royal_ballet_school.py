@@ -182,16 +182,9 @@ def test_weekend_sessions_spanning_year_boundary():
 def test_title_strips_trailing_year_before_appending_season():
     # "Online Spring Intensive 2022" already ends with the year; appending the
     # season would yield "Online Spring Intensive 2022 2022" without the strip.
-    # Test the stripping logic directly via regex (the same as _build_offering uses).
-    import re
-
-    def build_title(base_title: str, season: str) -> str:
-        base_stripped = re.sub(r"\s+\d{4}$", "", base_title)
-        return f"{base_stripped} {season}".strip()
-
-    assert build_title("Online Spring Intensive 2022", "2022") == "Online Spring Intensive 2022"
-    assert build_title("UK Summer Intensive", "2026") == "UK Summer Intensive 2026"
-    assert build_title("Japan Intensive", "2025") == "Japan Intensive 2025"
+    assert rbs._title("Online Spring Intensive 2022", "2022") == "Online Spring Intensive 2022"
+    assert rbs._title("UK Summer Intensive", "2026") == "UK Summer Intensive 2026"
+    assert rbs._title("Japan Intensive", "2025") == "Japan Intensive 2025"
 
 
 # --- UK Spring Intensive — course-fees subsection --------------------------------

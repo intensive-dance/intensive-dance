@@ -58,7 +58,7 @@ def _html(body: str) -> str:
 
 
 def _offerings():
-    return hkab._build_offerings(_html(_PAGE), "https://x", date(2026, 6, 5))
+    return hkab._build_offerings(_html(_PAGE), "https://x")
 
 
 def test_two_weeks_as_sessions():
@@ -155,5 +155,9 @@ def test_open_ended_top_band():
     assert cls[0].age_range == {"min": 14}
 
 
-def test_drops_edition_already_over():
-    assert hkab._build_offerings(_html(_PAGE), "https://x", date(2027, 1, 1)) == []
+def test_past_edition_still_emitted():
+    # IDR-24: an edition whose dates are entirely in the past is kept, not dropped
+    # ("past" is derived consumer-side from schedule.end).
+    offerings = hkab._build_offerings(_html(_PAGE), "https://x")
+    assert offerings
+    assert all(o.schedule.end == date(2026, 8, 1) for o in offerings if o.id.endswith("-b"))

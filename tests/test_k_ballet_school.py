@@ -288,8 +288,6 @@ def test_build_winter_offerings_four_courses():
 
 
 def test_discover_url_picks_latest_of_multiple_matches():
-    from selectolax.parser import HTMLParser
-
     listing_html = (
         "<html><body>"
         "<a href='/school/event/2026summerintensive.html'>2026夏</a>"
@@ -298,12 +296,7 @@ def test_discover_url_picks_latest_of_multiple_matches():
         "<a href='/school/event/2025winterassembly.html'>2025冬</a>"
         "</body></html>"
     )
-    tree = HTMLParser(listing_html)
-    keyword = "winterassembly"
-    matches = []
-    for a in tree.css("a[href]"):
-        href = a.attributes.get("href", "") or ""
-        if keyword in href:
-            matches.append(href if href.startswith("http") else f"{k.BASE}{href}")
-    result = max(matches) if matches else None
-    assert result == f"{k.BASE}/school/event/2025winterassembly.html"
+    assert (
+        k._select_url(listing_html, "winterassembly")
+        == f"{k.BASE}/school/event/2025winterassembly.html"
+    )

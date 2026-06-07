@@ -103,11 +103,7 @@ def _build_offering(record: dict, fees: wp.Content | None, today: date) -> Offer
     blob = " ".join(section.text() for section in content.sections)
     dates_text = content.text("Dates")
     start, end, season = _date_range(dates_text) if dates_text else (None, None, _year(blob))
-    # Strip a trailing 4-digit year from the base title before appending the
-    # season, so pages that already embed the year (e.g. "Online Spring
-    # Intensive 2022") don't produce "Online Spring Intensive 2022 2022".
-    base_title_stripped = re.sub(r"\s+\d{4}$", "", base_title)
-    title = f"{base_title_stripped} {season}".strip()
+    title = _title(base_title, season)
 
     photo_url = _absolute(content.link("photograph"))
     requirement_notes = content.text("Requirements")
@@ -236,6 +232,14 @@ def _money(match: re.Match, dollar_currency: str = "USD") -> tuple[float, str]:
 def _year(text: str) -> str:
     match = _YEAR.search(text)
     return match.group(1) if match else "unknown"
+
+
+def _title(base_title: str, season: str) -> str:
+    # Strip a trailing 4-digit year from the base title before appending the
+    # season, so pages that already embed the year (e.g. "Online Spring
+    # Intensive 2022") don't produce "Online Spring Intensive 2022 2022".
+    base_stripped = re.sub(r"\s+\d{4}$", "", base_title)
+    return f"{base_stripped} {season}".strip()
 
 
 def _date_range(text: str) -> tuple[date | None, date | None, str]:
