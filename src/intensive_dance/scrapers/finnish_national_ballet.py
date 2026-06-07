@@ -19,7 +19,7 @@ The slug is year-stamped because the body names the cycle ("6th edition", "New i
 2026"). EXCLUDED: the free, Finland-only, video-audition "Kesäakatemia" lives on a
 separate FI page and is out of scope for an international register.
 
-WHAT THIS SCRAPER EXERCISES (verified live 2026-06-05):
+WHAT THIS SCRAPER EXERCISES (verified live 2026-06-06):
   - REQUIREMENTS = mixed per offering. The youth intensive accepts three intake
     routes (pro-school: recommendation letter; company: CV; private school: video
     link) but *every* applicant attaches a headshot + a 1st-arabesque photo — so
@@ -33,6 +33,12 @@ WHAT THIS SCRAPER EXERCISES (verified live 2026-06-05):
   - DATES + APPLICATION window both stated explicitly ("20 to 25 July 2026",
     "Application dates are 15 December 2025 – 30 April 2026"), so application
     status is derived against today.
+  - GENRES: matched against the "Five daily lessons comprising …" curriculum
+    sentence only, not the full section body. Per-teacher bios name
+    "neoclassical and contemporary repertoire" for Di Palma — that's a bio
+    credential, not a curriculum line, so `neoclassical` must not be derived
+    from it. Contemporary IS correct (Juliette Rahon's teaching subject is
+    "Contemporary, Choreographer's workshop", confirmed in the faculty block).
 """
 
 from __future__ import annotations
@@ -140,7 +146,7 @@ def _summer_intensive(
         id="finnish-national-ballet/international-summer-intensive-2026",
         source=Source(provider=ORG.slug, url=url, scrapedAt=now_utc()),
         title="International Summer Intensive of the Finnish National Ballet",
-        genres=_genres(body),
+        genres=_genres(body, content),
         ageRange=_age_range(body),
         organization=ORG,
         location=LOCATION,
@@ -280,9 +286,17 @@ def _status(opens: date | None, deadline: date | None, today: date) -> Applicati
 
 # --- genres ------------------------------------------------------------------
 #
-# Matched against the curriculum sentence, not loose prose. Street / urban dance
-# is taught (Akim Bakhtaoui) but has no enum value in a ballet register, so it is
-# silently out of scope — only the mapped styles below are emitted.
+# Matched against the "Five daily lessons comprising …" curriculum sentence
+# only — not the full section body, which also contains per-teacher bios.
+# Di Palma's bio names "neoclassical and contemporary repertoire", but that is
+# his credential, not a class offered in this intensive. Street / urban dance
+# is taught (Akim Bakhtaoui) but has no enum value in a ballet register, so it
+# is silently out of scope. Contemporary IS correct — Juliette Rahon's teaching
+# subject in the faculty block is "Contemporary, Choreographer's workshop".
+
+_CURRICULUM = re.compile(
+    r"Five daily lessons comprising\s+(.*?)(?:\.|$)", re.IGNORECASE | re.DOTALL
+)
 
 _GENRE_KEYWORDS: list[tuple[Genre, tuple[str, ...]]] = [
     ("classical", ("classical", "ballet")),
@@ -294,8 +308,39 @@ _GENRE_KEYWORDS: list[tuple[Genre, tuple[str, ...]]] = [
 ]
 
 
-def _genres(text: str) -> list[Genre]:
-    return parse.match_genres(text, _GENRE_KEYWORDS, default=["classical"])
+def _teacher_roles(content: wp.Content) -> str:
+    """Teaching subjects from faculty `<h3>` blocks (line 3 of each `<p>`).
+
+    These are the class names each teacher delivers at this intensive
+    (e.g. "Contemporary, Choreographer's workshop") — distinct from the bio
+    prose that follows. Used to supplement curriculum-sentence genre matching.
+    """
+    block = content.find_block("faculty")
+    if block is None:
+        return ""
+    _, subs = block
+    roles = []
+    for section in subs:
+        if section.level != 3 or not section.nodes:
+            continue
+        lines = wp.clean_node_lines(section.nodes[0])
+        if len(lines) >= 3:
+            roles.append(lines[2])
+    return " ".join(roles)
+
+
+def _genres(text: str, content: wp.Content | None = None) -> list[Genre]:
+    curriculum_match = _CURRICULUM.search(text)
+    # Summer intensive: match only the "Five daily lessons…" sentence + teacher roles.
+    # Ballet in Bloom: no structured curriculum sentence — match the section body
+    # directly (it states classes verbatim: "ballet classes, repertoire training, …").
+    curriculum_text = curriculum_match.group(1) if curriculum_match else text
+    # Teaching subjects from the faculty block are authoritative class names
+    # (e.g. "Contemporary, Choreographer's workshop" for Juliette Rahon) and
+    # supplement the curriculum sentence without touching the bio prose.
+    teacher_roles = _teacher_roles(content) if content is not None else ""
+    genre_source = f"{curriculum_text} {teacher_roles}"
+    return parse.match_genres(genre_source, _GENRE_KEYWORDS, default=["classical"])
 
 
 # --- prices ------------------------------------------------------------------

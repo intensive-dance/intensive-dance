@@ -32,8 +32,11 @@ WHAT THIS SCRAPER EXERCISES (verified live 2026-06-06):
   - PRICES in EUR: the per-day-count ladder for each duration (1-week 210/350/
     490/700, 2-week 400/680/950/1350, plus a 40€ drop-in and a 15€ membership),
     each `includes=["tuition"]`.
-  - GENRES: classical + contemporary + pointe, keyword-matched against the
-    dress-code/curriculum wording (classique / contemporain / pointes).
+  - GENRES: classical + contemporary, keyword-matched against the dress-code
+    paragraph on /inscription (classique / contemporain). "pointes" appears
+    only in Laure Muret's teacher bio ("Elle donne des cours de techniques, de
+    pointes…") and must NOT trigger the pointe genre — the dress-code never
+    names pointes as a class.
   - REQUIREMENTS: `[NoneReq]` — open-access, the page describes no audition; only
     a non-refundable 50% deposit to pre-register, kept as an application note.
   - TEACHERS: the faculty are étoiles/anciens of the Opéra national de Paris
@@ -113,11 +116,15 @@ def scrape(client: httpx.Client) -> list[Offering]:
     page = wp.fetch_page(client, SLUG, base=BASE)
     if page is None:
         return []
-    offering = _build_offering(page["content"]["rendered"])
+    inscription = wp.fetch_page(client, "inscription", base=BASE)
+    inscription_text = (
+        wp.plain_text(inscription["content"]["rendered"]) if inscription is not None else ""
+    )
+    offering = _build_offering(page["content"]["rendered"], inscription_text)
     return [offering] if offering is not None else []
 
 
-def _build_offering(rendered: str) -> Offering | None:
+def _build_offering(rendered: str, inscription_text: str = "") -> Offering | None:
     text = wp.plain_text(rendered)
 
     start, end = _date_range(text)
@@ -130,7 +137,7 @@ def _build_offering(rendered: str) -> Offering | None:
         id=f"stage-charles-jude/summer-stage-{season}",
         source=Source(provider="stage-charles-jude", url=PAGE_URL, scrapedAt=now_utc()),
         title=f"Stage International de Danse Charles Jude {season}",
-        genres=_genres(text),
+        genres=_genres(inscription_text),
         level=_level(text),
         ageRange=_age_range(text),
         organization=ORG,
@@ -277,8 +284,15 @@ def _ladder_prices(segment: str, duration: str) -> list[Price]:
 
 # --- genres -------------------------------------------------------------------
 #
-# Matched against the dress-code / curriculum wording, which names the disciplines
-# actually taught (collant rose pour le classique, … pour le contemporain; pointes).
+# Matched against the dress-code sentence only, which names the disciplines
+# actually taught (collant rose pour le classique / collant noir pour le
+# contemporain). "pointes" appears only in Laure Muret's bio elsewhere in the
+# page and must not reach genre matching.
+
+_DRESS_CODE = re.compile(
+    r"collant\s+\w+\s+pour\s+le\s+classique[^.]*\.",
+    re.IGNORECASE,
+)
 
 _GENRE_KEYWORDS: list[tuple[Genre, tuple[str, ...]]] = [
     ("classical", ("classique", "danse classique")),
@@ -288,4 +302,8 @@ _GENRE_KEYWORDS: list[tuple[Genre, tuple[str, ...]]] = [
 
 
 def _genres(text: str) -> list[Genre]:
-    return parse.match_genres(text, _GENRE_KEYWORDS, default=["classical"])
+    dress_match = _DRESS_CODE.search(text)
+    # Scope to the single dress-code sentence ("collant … pour le classique …")
+    # so teacher bio text like "cours de pointes" never reaches genre matching.
+    dress_text = dress_match.group(0) if dress_match else ""
+    return parse.match_genres(dress_text, _GENRE_KEYWORDS, default=["classical"])

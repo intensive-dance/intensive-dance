@@ -23,8 +23,8 @@ text only, so the stale body line never reaches the date parser.
 
 REQUIREMENTS: the application form for each edition states selection is by
 uploaded photos in named positions (jpeg, ≤5mb) — a *defined-poses* photo
-requirement. The form lists two position sets (a non-pointe set and a pointe
-set); we emit their de-duplicated union as the poses. The youngest Juniors
+requirement. The form lists two position sets (age-banded: 11–13 and 14+);
+we emit their de-duplicated union as the poses. The youngest Juniors
 (8–10) are exempt from the photo upload (course page), kept as a requirement note.
 
 WHAT THIS SCRAPER EXERCISES (verified live 2026-06-05):
@@ -32,8 +32,10 @@ WHAT THIS SCRAPER EXERCISES (verified live 2026-06-05):
     £750 Seniors/Pre-Pro); Tbilisi quotes 900 EUR (a £800 figure is shown in
     parentheses but EUR is the headline/local currency for a Georgia course).
   - AGE ranges from "aged 8-19" / "aged 11-19".
-  - GENRES keyword-matched against the syllabus (Ballet, Character, Pas de Deux,
-    Neo-Classical/Contemporary, Pointe, Solos), not loose prose.
+  - GENRES keyword-matched against the syllabus the course page names:
+    London "Ballet, Character, Pas de Deux, Neo-Classical/ Contemporary"
+    (no repertoire/solos/pointe); Tbilisi "Ballet, Pointe, Solos, Character,
+    Neo Classical and Pas de Deux" (no contemporary).
   - REQUIREMENTS = PHOTOS, defined-poses, with the form's named positions.
   - TEACHERS: none emitted — the roster mixes confirmed guests with "to be
     announced" and legacy bios, so naming them would over-claim (same call the
@@ -62,6 +64,7 @@ from intensive_dance.models import (
     Requirement,
     Schedule,
     Source,
+    Teacher,
     now_utc,
 )
 
@@ -84,12 +87,33 @@ class _Edition:
     venue_city: str
     venue_country: str  # ISO 3166-1 alpha-2
     timezone: str
+    venue_name: str | None = None  # named theatre/venue where the course is held
+    # True when the page has a confirmed, complete "FULL FACULTY:" roster;
+    # False when the roster mixes confirmed guests with TBA announcements and
+    # emitting partial names would over-claim.
+    emit_teachers: bool = False
 
 
 # The two short-term editions the nav lists for 2026.
 _EDITIONS = (
-    _Edition(11, "summer-intensive-london", "London", "GB", "Europe/London"),
-    _Edition(10, "summer-intensive-tbilisi", "Tbilisi", "GE", "Asia/Tbilisi"),
+    _Edition(
+        11,
+        "summer-intensive-london",
+        "London",
+        "GB",
+        "Europe/London",
+        "Sadler's Wells",
+        emit_teachers=False,
+    ),
+    _Edition(
+        10,
+        "summer-intensive-tbilisi",
+        "Tbilisi",
+        "GE",
+        "Asia/Tbilisi",
+        "Tbilisi Opera and Ballet State Theatre",
+        emit_teachers=True,
+    ),
 )
 
 
@@ -142,6 +166,7 @@ def _build_offering(
             end=end,
             timezone=ed.timezone,
         ),
+        teachers=_teachers(course_html) if ed.emit_teachers else [],
         prices=_prices(text),
         application=Application(
             url=apply_url,
@@ -149,6 +174,54 @@ def _build_offering(
             notes=_requirement_note(text),
         ),
     )
+
+
+# --- teachers: named faculty from the "FULL FACULTY:" section ----------------
+#
+# The page lists confirmed faculty under a "FULL FACULTY:" heading as bold
+# `<h2>` or `<strong>` entries, each followed by a bio. Entries that say
+# "to be announced" are skipped. London's roster mixes confirmed guests with
+# unannounced ones, so we emit whoever has a full name here — the gate is
+# whether a name is present, not presence on either specific course.
+
+
+_FULL_FACULTY = re.compile(r"FULL FACULTY\s*:", re.IGNORECASE)
+_TBA = re.compile(r"to be announced|TBA", re.IGNORECASE)
+
+
+def _teachers(course_html: str) -> list[Teacher]:
+    """Named confirmed faculty after the 'FULL FACULTY:' heading."""
+    tree = HTMLParser(course_html)
+    body = tree.body
+    if body is None:
+        return []
+    # Collect all heading text (h2/strong) from the full-faculty block.
+    full_text = body.text(separator="\n")
+    m = _FULL_FACULTY.search(full_text)
+    if m is None:
+        return []
+    faculty_block = full_text[m.end() :]
+    teachers: list[Teacher] = []
+    seen: set[str] = set()
+    for h in tree.css("h2, strong"):
+        text = parse.clean(h.text())
+        if not text or _TBA.search(text):
+            continue
+        # Only consider headings that appear after "FULL FACULTY:" in the page
+        # and look like a name (two+ words, no sentence punctuation).
+        if text not in faculty_block:
+            continue
+        if len(text.split()) < 2 or any(c in text for c in ".,;?!:"):
+            continue
+        # Faculty names on this site are ALL CAPS (e.g. "ELENA GLURJIDZE"); title-case
+        # or mixed-case text is an org name or heading, not a person — skip it.
+        if text != text.upper():
+            continue
+        if text in seen:
+            continue
+        seen.add(text)
+        teachers.append(Teacher(name=text))
+    return teachers
 
 
 # --- helpers ------------------------------------------------------------------
@@ -234,7 +307,7 @@ def _age_range(text: str) -> dict | None:
 
 
 def _location(ed: _Edition) -> Location:
-    return Location(city=ed.venue_city, country=ed.venue_country)
+    return Location(venue=ed.venue_name, city=ed.venue_city, country=ed.venue_country)
 
 
 # Genres keyword-matched against the syllabus the course pages name.
@@ -247,9 +320,25 @@ _GENRE_KEYWORDS: list[tuple[Genre, tuple[str, ...]]] = [
     ("pointe", ("pointe",)),
 ]
 
+# Both course page shapes state the class list in a single sentence:
+# London: "Each N-hour day consists of …"
+# Tbilisi: "timetable will include … curriculum, including …"
+# Scoping to this sentence prevents teacher bios (e.g. "classical ballet
+# repertoire" / "contemporary choreographer") from leaking genre keywords.
+_SYLLABUS_SENTENCE = re.compile(
+    r"(?:consists of|curriculum,\s*including)\s+([^.]+\.)",
+    re.IGNORECASE,
+)
+
+
+def _syllabus_text(body: str) -> str:
+    """The class-list sentence from the Syllabus or timetable section."""
+    m = _SYLLABUS_SENTENCE.search(body)
+    return m.group(0) if m else ""
+
 
 def _genres(text: str) -> list[Genre]:
-    return parse.match_genres(text, _GENRE_KEYWORDS, default=["classical"])
+    return parse.match_genres(_syllabus_text(text), _GENRE_KEYWORDS, default=["classical"])
 
 
 # Prices: GBP tiers "JUNIORS ... - £250", "SENIORS ... - £750"; or "900 Euros".

@@ -14,8 +14,7 @@
     },
     "genres": [
       "classical",
-      "contemporary",
-      "pointe"
+      "contemporary"
     ],
     "id": "stage-charles-jude/summer-stage-2026",
     "level": [
@@ -140,10 +139,10 @@
       "timezone": "Europe/Paris"
     },
     "source": {
-      "attemptedAt": "2026-06-07T12:25:46.697257Z",
-      "hash": "sha256:fa43c811a0993de6a35c7b599a9d3e89edf476649bd92204d65f135ef3588a46",
+      "attemptedAt": "2026-06-07T06:28:39.047993Z",
+      "hash": "sha256:056e31a57a6e4393e3a65df3ef53a5471dbc0d4d5dc0a49bcbd8c32e69bc1134",
       "provider": "stage-charles-jude",
-      "scrapedAt": "2026-06-06T19:42:38.485743Z",
+      "scrapedAt": "2026-06-07T07:17:56.172768Z",
       "url": "https://stagedansecj.com/"
     },
     "teachers": [],

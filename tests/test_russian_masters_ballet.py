@@ -125,9 +125,61 @@ def test_section_missing_label_is_empty():
 # --- genres -------------------------------------------------------------------
 
 
+def test_genres_from_curriculum_not_bio():
+    # The curriculum text (ACCESS / THE PROGRAM INCLUDE sections) drives genres.
+    # Teacher bios mentioning "contemporary choreographer" must NOT leak into genres.
+    observation_body = (
+        "ACCESS to all program classes: Ballet Classes, Male Technique, Repertoire, "
+        "Character Dance, Acting, Pas de deux, Stretching\n"
+        "TEACHERS\n"
+        "Anton Valdbauer - contemporary choreographer, ex soloist of the Royal Swedish Ballet\n"
+        "PROGRAM FEE\n"
+        "1-week: 200 €"
+    )
+    curriculum = rmb._curriculum_text(observation_body)
+    genres = rmb._genres(f"Observation {curriculum}")
+    assert "contemporary" not in genres
+    assert "classical" in genres
+    assert "character" in genres
+    assert "repertoire" in genres
+
+
 def test_genres_from_program_text():
     body = "Ballet Classes Points / Male technique Classical Repertoire Character Pas de Deux Contemporary"
     assert rmb._genres(body) == ["classical", "contemporary", "character", "repertoire", "pointe"]
+
+
+def test_curriculum_text_extracts_access_section():
+    body = (
+        "COURSE OBJECTIVE overview\n"
+        "THE PROGRAM INCLUDE\n"
+        "Ballet, Contemporary\n"
+        "TEACHERS\n"
+        "Jane Doe - teacher\n"
+        "PROGRAM FEE\n"
+        "3 weeks: 1950 €"
+    )
+    curriculum = rmb._curriculum_text(body)
+    assert "Ballet" in curriculum
+    assert "Contemporary" in curriculum
+    assert "Jane Doe" not in curriculum
+
+
+def test_st_petersburg_observation_course_fee():
+    # St Petersburg observation uses "COURSE FEE" not "PROGRAM FEE".
+    body = (
+        "ACCESS to all program classes: Ballet Classes, Male Technique, Repertoire, "
+        "Character Dance, Acting, Gymnastics\n"
+        "COURSE FEE\n"
+        "1-week program assistance: 200 €\n"
+        "CANCELATION"
+    )
+    prices = rmb._prices(
+        rmb._section(body, "PROGRAM FEE") or rmb._section(body, "COURSE FEE"), "RU"
+    )
+    assert len(prices) == 1
+    assert prices[0].amount == 200.0
+    assert prices[0].currency == "EUR"
 
 
 # --- teachers & affiliations --------------------------------------------------

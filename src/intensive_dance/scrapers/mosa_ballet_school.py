@@ -31,10 +31,13 @@ requirement for pre-selected courses vs `NoneReq` for open-enrolment tasters;
 `application.status` open/closed read from the Odoo registration widget.
 
 Note: status is derived *solely* from the ticket widget — a `.o_wevent_ticket_selector`
-means open, the closed banner means closed, otherwise `None`. So an
+(multi-ticket) or `.o_wevent_registration_single` (single-ticket, e.g. July MOSA
+Intensive 2026) means open, the closed banner means closed, otherwise `None`. So an
 application-based course (pre-selection, no public ticket sale) reports `None`
 even while its applications are open: faithful to "don't invent a status", but a
 shift from the old prose-scrape that could read "registration open" from the body.
+The Charleston masterclass (`masterclass-charleston-222`) is a 1920s social dance
+event and is out of scope for a ballet register — excluded via `_DROP`.
 """
 
 from __future__ import annotations
@@ -114,6 +117,8 @@ _DROP = (
     "dance-for-pd",
     "health-and",
     "secundary-school",
+    # The Charleston is a 1920s social dance, not a ballet class — out of scope.
+    "charleston",
 )
 _AUDITION_NOTE = (
     "Admission is by pre-selection: MOSA auditions dancers in person or online (by video) "
@@ -245,8 +250,16 @@ def _genres(text: str) -> list[Genre]:
 
 def _status(tree: HTMLParser):
     """Read the Odoo registration widget: purchasable tickets == open, the
-    closed banner == closed, otherwise unknown (don't invent one)."""
-    if tree.css_first(".o_wevent_ticket_selector") is not None:
+    closed banner == closed, otherwise unknown (don't invent one).
+
+    Two widget shapes exist: multi-ticket events use `.o_wevent_ticket_selector`
+    rows; single-ticket events use `.o_wevent_registration_single` instead.
+    Both indicate an open registration; either alone is sufficient.
+    """
+    if (
+        tree.css_first(".o_wevent_ticket_selector") is not None
+        or tree.css_first(".o_wevent_registration_single") is not None
+    ):
         return "open"
     if _CLOSED.search(tree.body.text() if tree.body else ""):
         return "closed"
@@ -256,13 +269,17 @@ def _status(tree: HTMLParser):
 def _prices(tree: HTMLParser) -> list[Price]:
     """One `Price` per Odoo ticket, from its schema.org `Offer` microdata.
 
-    Each `.o_wevent_ticket_selector` row carries `itemprop="name"` (the program /
-    duration label), `itemprop="price"` (a machine float) and `priceCurrency`.
+    Two widget shapes:
+    - Multi-ticket: `.o_wevent_ticket_selector` rows, each with `itemprop="name"`,
+      `itemprop="price"`, and `itemprop="priceCurrency"`.
+    - Single-ticket: `.o_wevent_registration_single` widget with the same
+      `itemprop` attributes directly inside it.
+
     "Lunch Included" in the name adds a `meals` include alongside tuition.
     """
     prices: list[Price] = []
     seen: set[tuple[str, float]] = set()
-    for row in tree.css(".o_wevent_ticket_selector"):
+    for row in tree.css(".o_wevent_ticket_selector, .o_wevent_registration_single"):
         price_node = row.css_first('[itemprop="price"]')
         if price_node is None:
             continue

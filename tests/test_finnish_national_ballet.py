@@ -32,8 +32,10 @@ _RENDERED = """
 20 to 25 July 2026.</p>
 <p>We thoroughly designed the program around participants aged 12&#8211;22.</p>
 <p>Five daily lessons comprising classical ballet, pointe technique, repertoire,
-character classes, as well as body conditioning, plus neoclassical and
-contemporary repertoire and street styles.</p>
+character classes, as well as body conditioning.</p>
+<p>Refine your classical technique under Giovanni di Palma, former Leipzig Ballet
+principal and renowned coach, bringing unmatched expertise in neoclassical and
+contemporary repertoire to elevate precision and artistry.</p>
 
 <h3>New in 2026: Ballet in Bloom</h3>
 <p>Participants will enjoy ballet classes, repertoire training, character dance,
@@ -46,6 +48,8 @@ from 17:00 to 21:00.</p>
 <h2 id="faculty">faculty</h2>
 <h3>Giovanni Di Palma</h3>
 <p>Italy<br>Former principal dancer &#8211; Leipzig Ballet<br>Classical technique, Repertoire<br><a href="https://oopperabaletti.fi/cv.pdf">Read more (PDF)</a></p>
+<h3>Juliette Rahon</h3>
+<p>France<br>Rehearsal director &#8211; Ballet du Grand Th&#233;&#226;tre de Gen&#232;ve<br>Contemporary, Choreographer&#8217;s workshop<br><a href="https://oopperabaletti.fi/cv3.pdf">Read more (PDF)</a></p>
 <h3>Jutta Mustakallio Ruusunen</h3>
 <p>Finland<br>Character Dance Teacher<br>Character dance<br><a href="https://oopperabaletti.fi/cv2.pdf">Read more (PDF)</a></p>
 
@@ -87,15 +91,26 @@ def test_summer_intensive_dates_ages_genres() -> None:
     assert main.schedule.end == date(2026, 7, 25)
     assert main.schedule.season == "2026"
     assert main.age_range == {"min": 12, "max": 22}
-    # Street / urban dance is taught but has no enum value, so it is dropped.
+    # Genres come from the curriculum sentence + teacher roles, NOT teacher bios.
+    # Di Palma's bio mentions "neoclassical and contemporary repertoire" but that
+    # is his credential, not a class — neoclassical must not be derived from it.
+    # Contemporary IS correct: Juliette Rahon's role is "Contemporary, …".
     assert main.genres == [
         "classical",
         "pointe",
         "repertoire",
         "character",
         "contemporary",
-        "neoclassical",
     ]
+
+
+def test_neoclassical_not_derived_from_teacher_bio() -> None:
+    # The summer intensive body contains Di Palma's bio phrase
+    # "neoclassical and contemporary repertoire" — this must not trigger
+    # the neoclassical genre; only the "Five daily lessons…" curriculum line
+    # and teacher role subjects are authoritative for genre matching.
+    main = _offerings()[0]
+    assert "neoclassical" not in main.genres
 
 
 def test_ballet_in_bloom_dates_level_genres() -> None:
@@ -156,6 +171,7 @@ def test_faculty_roles_from_teaching_subject() -> None:
     roles = {t.name: t.role for t in main.teachers}
     assert roles == {
         "Giovanni Di Palma": "Classical technique, Repertoire",
+        "Juliette Rahon": "Contemporary, Choreographer’s workshop",
         "Jutta Mustakallio Ruusunen": "Character dance",
     }
 

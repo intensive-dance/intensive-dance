@@ -10,9 +10,7 @@
       "url": "https://mi-ballet-school.net/#registersummer"
     },
     "genres": [
-      "classical",
-      "contemporary",
-      "repertoire"
+      "classical"
     ],
     "id": "m-i-ballet-school/summer-intensive-2026",
     "level": [],
@@ -83,10 +81,10 @@
       "timezone": "Europe/Berlin"
     },
     "source": {
-      "attemptedAt": "2026-06-07T10:52:38.203858Z",
-      "hash": "sha256:f4daae5e96380b441b5ebbd28a66417f385764f0c2fd9967c9eed6a79e83dfcf",
+      "attemptedAt": "2026-06-07T03:00:12.721455Z",
+      "hash": "sha256:db9b7fb060bb4a23b53b4bea9a614201e53a65d284be9c63f80ec0c7ff3ca7f9",
       "provider": "m-i-ballet-school",
-      "scrapedAt": "2026-06-05T21:13:42.703833Z",
+      "scrapedAt": "2026-06-07T07:10:15.450111Z",
       "url": "https://mi-ballet-school.net/"
     },
     "teachers": [

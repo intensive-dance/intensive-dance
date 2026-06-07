@@ -34,8 +34,7 @@
       "pointe",
       "repertoire",
       "character",
-      "contemporary",
-      "neoclassical"
+      "contemporary"
     ],
     "id": "finnish-national-ballet/international-summer-intensive-2026",
     "level": [],
@@ -81,10 +80,10 @@
       "timezone": "Europe/Helsinki"
     },
     "source": {
-      "attemptedAt": "2026-06-07T11:31:35.936771Z",
-      "hash": "sha256:4a7b1682d79248126f6bd62ddd0f1a3e39b318e29ae0f32f3f1820de9f397621",
+      "attemptedAt": "2026-06-07T04:38:27.760109Z",
+      "hash": "sha256:b729f1b884843d3d2cac2311f353e1e263d209de2b42b96ac2953e4c1e8ad15a",
       "provider": "finnish-national-ballet",
-      "scrapedAt": "2026-06-05T18:58:07.179921Z",
+      "scrapedAt": "2026-06-07T07:10:09.898179Z",
       "url": "https://oopperabaletti.fi/en/international-summer-intensive/"
     },
     "teachers": [
@@ -193,7 +192,7 @@
       "timezone": "Europe/Helsinki"
     },
     "source": {
-      "attemptedAt": "2026-06-07T11:31:35.936771Z",
+      "attemptedAt": "2026-06-07T04:38:27.760109Z",
       "hash": "sha256:0942c5886fcb89981d05451dd3582b5564f00d9ba9c35c37ad086d732c46f1c1",
       "provider": "finnish-national-ballet",
       "scrapedAt": "2026-06-05T18:58:38.491970Z",

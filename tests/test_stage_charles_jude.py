@@ -26,8 +26,6 @@ _RENDERED = """
 20 bd de Gabes Marseille [/vc_column_text]
 [vc_column_text]Ce stage est accessible aux enfants et adultes amateurs ou
 professionnels désirant profiter de l’excellence des professeurs.[/vc_column_text]
-[vc_column_text]collant rose pour le classique / collant noir sans pied pour le
-contemporain. Les filles travaillent les pointes.[/vc_column_text]
 [vc_tta_section title= »1 semaine »][vc_column_text]
 1 cours/jour 210€ 2 cours/jour 350€ 3 cours/jour 490€ cours illimités 700€
 cours à l’unité 40€ (+ 15€ en adhésion sur chaque somme)[/vc_column_text][/vc_tta_section]
@@ -42,9 +40,21 @@ entre 17h et 19h pour la 1ere semaine ou le dimanche 12 juillet entre 17h et 19h
 pour la 2eme semaine à l’Ecole Nationale de Danse de Marseille.[/vc_column_text]</p>
 """
 
+# Mirrors the /inscription page body (scraper’s second fetch): the dress-code
+# paragraph that drives genre matching. Genres come from this page, not the main
+# body, because only /inscription names the actual class types (classique /
+# contemporain) without bio prose that leaks "pointes".
+_INSCRIPTION = (
+    "Pour les filles – collant rose pour le classique / "
+    "collant noir sans pied pour le contemporain. "
+    "Les filles travaillent les pointes. "
+    "Laure Muret effectue sa formation de danse classique. "
+    "Elle donne des cours de techniques, de pointes et de transmission."
+)
+
 
 def test_build_offering_happy_path() -> None:
-    offering = scj._build_offering(_RENDERED)
+    offering = scj._build_offering(_RENDERED, _INSCRIPTION)
     assert offering is not None
 
     assert offering.id == "stage-charles-jude/summer-stage-2026"
@@ -62,7 +72,7 @@ def test_build_offering_happy_path() -> None:
 
 
 def test_open_access_level_and_open_topped_age() -> None:
-    offering = scj._build_offering(_RENDERED)
+    offering = scj._build_offering(_RENDERED, _INSCRIPTION)
     assert offering is not None
     # Open-access stage: `open` level, no audition.
     assert offering.level == ["open"]
@@ -71,7 +81,7 @@ def test_open_access_level_and_open_topped_age() -> None:
 
 
 def test_requirements_are_none_req() -> None:
-    offering = scj._build_offering(_RENDERED)
+    offering = scj._build_offering(_RENDERED, _INSCRIPTION)
     assert offering is not None
     reqs = offering.application.requirements
     assert len(reqs) == 1
@@ -82,13 +92,32 @@ def test_requirements_are_none_req() -> None:
 
 
 def test_genres_from_dress_code_wording() -> None:
-    offering = scj._build_offering(_RENDERED)
+    offering = scj._build_offering(_RENDERED, _INSCRIPTION)
     assert offering is not None
-    assert offering.genres == ["classical", "contemporary", "pointe"]
+    # Dress-code line "collant rose pour le classique / collant noir pour le
+    # contemporain" drives genre matching. "pointes" appears only in Laure
+    # Muret's bio and must NOT be derived from it.
+    assert offering.genres == ["classical", "contemporary"]
+
+
+def test_pointe_not_derived_from_teacher_bio() -> None:
+    # Laure Muret's bio contains "cours de techniques, de pointes et de
+    # transmission" — this must not trigger the pointe genre.
+    # The dress-code line (classique/contemporain) must be present to ensure
+    # the correct genres are still derived, while the bio "pointes" is ignored.
+    text = (
+        "collant rose pour le classique / collant noir sans pied pour le contemporain. "
+        "Laure Muret effectue sa formation de danse classique. "
+        "Elle donne des cours de techniques, de pointes et de transmission."
+    )
+    genres = scj._genres(text)
+    assert "pointe" not in genres
+    assert "classical" in genres
+    assert "contemporary" in genres
 
 
 def test_two_weekly_sessions() -> None:
-    offering = scj._build_offering(_RENDERED)
+    offering = scj._build_offering(_RENDERED, _INSCRIPTION)
     assert offering is not None
     sessions = offering.schedule.sessions
     assert [s.label for s in sessions] == ["Semaine 1", "Semaine 2"]
@@ -99,7 +128,7 @@ def test_two_weekly_sessions() -> None:
 
 
 def test_price_ladders_by_duration_plus_membership() -> None:
-    offering = scj._build_offering(_RENDERED)
+    offering = scj._build_offering(_RENDERED, _INSCRIPTION)
     assert offering is not None
     by_label = {p.label: p for p in offering.prices}
 

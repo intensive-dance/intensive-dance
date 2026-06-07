@@ -22,8 +22,12 @@ from intensive_dance.scrapers import mosa_ballet_school as mosa
 def test_in_scope_keeps_training_events():
     assert mosa._in_scope("august-signature-intensive-course-2026-age-12-29-231")
     assert mosa._in_scope("exploring-ballet-other-dances-age-8-12-august-2026-232")
-    assert mosa._in_scope("masterclass-charleston-222")
     assert mosa._in_scope("july-mosa-intensive-2026-230")
+
+
+def test_charleston_masterclass_is_out_of_scope():
+    # The Charleston is a 1920s social dance event — not a ballet training offering.
+    assert not mosa._in_scope("masterclass-charleston-222")
 
 
 def test_in_scope_drops_non_training_events():
@@ -131,6 +135,28 @@ def test_prices_none_when_no_tickets():
     assert mosa._prices(HTMLParser("<div>Anmeldungen geschlossen</div>")) == []
 
 
+_SINGLE_TICKET = """
+<div class="o_wevent_registration_single">
+  <h5 itemprop="name" class="my-0 pe-3 o_wevent_single_ticket_name">
+    July Mosa Intensive 2026
+  </h5>
+  <span class="badge text-bg-secondary fs-6">
+    <span class="oe_currency_value">1,000.00</span>&nbsp;€
+  </span>
+  <span itemprop="price" class="d-none">1000.0</span>
+  <span itemprop="priceCurrency" class="d-none">EUR</span>
+</div>
+"""
+
+
+def test_prices_from_single_ticket_widget():
+    prices = mosa._prices(HTMLParser(_SINGLE_TICKET))
+    assert len(prices) == 1
+    assert prices[0].amount == 1000.0
+    assert prices[0].currency == "EUR"
+    assert "tuition" in prices[0].includes
+
+
 # --- status: read from the Odoo registration widget ---------------------------
 
 
@@ -151,3 +177,9 @@ def test_status_closed_banner_en_and_de():
 
 def test_status_none_when_unstated():
     assert mosa._status(HTMLParser("<body><p>An intensive course.</p></body>")) is None
+
+
+def test_status_open_when_single_ticket_widget_present():
+    # The July MOSA Intensive uses a single-ticket widget instead of the
+    # multi-ticket selector — both must be detected as "open".
+    assert mosa._status(HTMLParser(_SINGLE_TICKET)) == "open"

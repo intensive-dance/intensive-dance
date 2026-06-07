@@ -116,10 +116,29 @@ def test_age_range_from_aged_phrase():
 
 
 def test_genres_match_syllabus():
-    london = moba._genres("Ballet, Character, Pas de Deux, and Neo-Classical/ Contemporary")
+    # London: "Each 6-hour day consists of Ballet, Character, Pas de Deux,
+    # and Neo-Classical/ Contemporary classes." — no repertoire (no solos/variations),
+    # no standalone pointe. Teacher bios mention "contemporary choreographer" and
+    # "classical ballet repertoire" but must NOT contribute to genre matching.
+    london_body = (
+        "Each 6-hour day consists of Ballet, Character, Pas de Deux, "
+        "and Neo-Classical/ Contemporary classes. "
+        "Denis Matvienko danced all the principal roles of the classical ballet repertoire. "
+        "Vivian Triantafyllopolou Contemporary Teacher."
+    )
+    london = moba._genres(london_body)
     assert london == ["classical", "contemporary", "neoclassical", "character"]
-    tbilisi = moba._genres("Ballet, Pointe, Solos, Character, Neo Classical and Pas de Deux")
+    assert "repertoire" not in london
+    # Tbilisi: "timetable will include … curriculum, including Ballet, Pointe, Solos,
+    # Character, Neo Classical and Pas de Deux." — no contemporary.
+    tbilisi_body = (
+        "The timetable will include 7 full days of curriculum, including Ballet, Pointe, "
+        "Solos, Character, Neo Classical and Pas de Deux. "
+        "Elena Glurjidze is also available for contemporary coaching."
+    )
+    tbilisi = moba._genres(tbilisi_body)
     assert tbilisi == ["classical", "neoclassical", "character", "repertoire", "pointe"]
+    assert "contemporary" not in tbilisi
 
 
 # --- prices -------------------------------------------------------------------
@@ -184,14 +203,20 @@ def test_build_offering_london():
     assert o.age_range == {"min": 8, "max": 19}
     assert o.location is not None
     assert (o.location.city, o.location.country) == ("London", "GB")
+    assert o.location.venue == "Sadler's Wells"
+    # London syllabus has no repertoire (solos/variations) class.
+    assert "repertoire" not in o.genres
     assert [(p.amount, p.currency) for p in o.prices] == [(250.0, "GBP"), (750.0, "GBP")]
     assert o.application.url == "https://mastersofballetacademy.com/forms.php?f=17"
     (req,) = o.application.requirements
     assert req.type == "photos"
+    # London has no confirmed-only faculty roster (TBA mixes in); teachers not emitted.
+    assert o.teachers == []
 
 
 def test_build_offering_tbilisi_ignores_stale_2025():
     url = "https://mastersofballetacademy.com/courses.php?course=10"
+    # Tbilisi test HTML doesn't include the FULL FACULTY block, so teachers=[].
     o = moba._build_offering(TBILISI, url, _TBILISI_COURSE, _FORM)
     assert o is not None
     # The good heading range (2026) wins over the stale body "Date: ...2025".
@@ -202,6 +227,45 @@ def test_build_offering_tbilisi_ignores_stale_2025():
     assert o.schedule.timezone == "Asia/Tbilisi"
     assert o.location is not None
     assert (o.location.city, o.location.country) == ("Tbilisi", "GE")
+    assert o.location.venue == "Tbilisi Opera and Ballet State Theatre"
     assert [(p.amount, p.currency) for p in o.prices] == [(900.0, "EUR")]
+    # Tbilisi syllabus has pointe but no contemporary.
     assert "pointe" in o.genres
+    assert "contemporary" not in o.genres
     assert o.application.url == "https://mastersofballetacademy.com/forms.php?f=19"
+
+
+_TBILISI_FULL_FACULTY = """
+<body>
+  <nav><a href="forms.php?f=1">How to Apply</a></nav>
+  <h1>SUMMER INTENSIVE COURSE 2026 - TBILISI, Georgia</h1>
+  <a href="forms.php?f=19">Click here to apply for this course</a>
+  <h2>Masters of Ballet Summer Intensive Course - TBILISI 19th - 25th July 2026</h2>
+  <p>Welcoming talented young dancers aged 11-19 from around the world.</p>
+  <p>The timetable will include 7 full days of curriculum, including Ballet,
+  Pointe, Solos, Character, Neo Classical and Pas de Deux.</p>
+  <p>Date: 19th July to 25th July 2025 PRICE: 7 Day Course - 900 Euros (£800)</p>
+  <h2><strong>FULL FACULTY:</strong></h2>
+  <h2><strong>ELENA GLURJIDZE</strong></h2>
+  <p>Elena Glurdjidze was born in Tbilisi...</p>
+  <h2><strong>OLGA SEMENOVA</strong></h2>
+  <p>Olga trained as a professional ballet dancer...</p>
+  <strong>STANISLAV FECO</strong>
+  <p>Stanislav graduated from the Prague Ballet Conservatory...</p>
+  <strong>SARA KNIGHT</strong>
+  <p>Sara Knight is a graduate of England&#39;s Royal Ballet School...</p>
+  <strong>VLADA KOTTER</strong>
+  <p>Vlada trained at The Royal Ballet School...</p>
+  <strong>VIVIAN TRIANTAFYLLOPOULOU</strong>
+  <p>Vivian is an award winning freelance dance artist...</p>
+</body>
+"""
+
+
+def test_tbilisi_teachers_populated_from_full_faculty():
+    url = "https://mastersofballetacademy.com/courses.php?course=10"
+    o = moba._build_offering(TBILISI, url, _TBILISI_FULL_FACULTY, _FORM)
+    assert o is not None
+    names = [t.name for t in o.teachers]
+    assert "ELENA GLURJIDZE" in names or "Elena Glurjidze" in names
+    assert len(o.teachers) >= 4
