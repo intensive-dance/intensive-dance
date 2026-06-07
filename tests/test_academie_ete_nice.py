@@ -84,6 +84,26 @@ def test_prices_weekly_tiers_meals_accommodation():
     assert all(p.currency == "EUR" for p in prices)
 
 
+def test_prices_daily_pass_tiers():
+    text = (
+        "1 journée en illimité Frais pédagogique 100€ Adhésion 20€ 120€ "
+        "2 journées en illimité Frais pédagogique 200€ Adhésion 20€ 220€ "
+        "3 journées en illimité Frais pédagogique 300€ Adhésion 20€ 320€ "
+        "4 journées en illimité Frais pédagogique 400€ Adhésion 20€ 420€ "
+        "5 journées en illimité Frais pédagogique 500€ Adhésion 20€ 520€"
+    )
+    prices = nice._prices(text)
+    day_passes = [p for p in prices if "Day pass" in (p.label or "")]
+    assert len(day_passes) == 5
+    amounts = [p.amount for p in day_passes]
+    assert amounts == [120.0, 220.0, 320.0, 420.0, 520.0]
+    assert all(p.includes == ["tuition"] for p in day_passes)
+    assert all(p.currency == "EUR" for p in day_passes)
+    # Labels should identify the number of days
+    assert "1 day" in (day_passes[0].label or "")
+    assert "5 day" in (day_passes[4].label or "")
+
+
 def test_build_offering_end_to_end():
     html = (
         "<html><body>"
@@ -104,6 +124,7 @@ def test_build_offering_end_to_end():
     assert offering.age_range == {"min": 8}
     assert offering.location is not None
     assert offering.location.city == "Nice"
+    assert offering.location.venue == "Conservatoire de Nice"
     assert {t.name for t in offering.teachers} == {
         "Charles Jude",
         "Stéphanie Roublot",

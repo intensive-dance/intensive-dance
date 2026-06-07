@@ -14,8 +14,9 @@ from datetime import date
 
 from intensive_dance.scrapers import academie_danse_biarritz as b
 
-# A faithful slice of the infos-pratiques page: the two year-less course-day lines
-# and the price table (Carte | Pour tous | Grandes écoles | Professionnels).
+# A faithful slice of the infos-pratiques page: the two year-less course-day lines,
+# the price table (Carte | Pour tous | Grandes écoles | Professionnels), and the
+# accommodation forfait (7 nights full-board) with its private-room supplement.
 _INFOS_HTML = """
 <div>
   <p>Début des cours : dimanche 2 août</p>
@@ -28,6 +29,8 @@ _INFOS_HTML = """
     <tr><td>12 cours (2 cours/jour)</td><td>380 €</td><td>340 €</td><td>–</td></tr>
     <tr><td>cours illimités</td><td>520 €</td><td>480 €</td><td>300 €</td></tr>
   </table>
+  <p>Prix du forfait par personne 430 euros TTC. De même, si vous souhaitez
+  occuper une chambre particulière un supplément de 50 euros vous sera facturé.</p>
 </div>
 """
 
@@ -111,15 +114,30 @@ def test_genres_default_classical():
 
 def test_prices_public_tier_with_reduced_note():
     prices = b._prices(_INFOS_HTML)
-    assert [(p.amount, p.currency, p.includes) for p in prices] == [
-        (240.0, "EUR", ["tuition"]),
-        (380.0, "EUR", ["tuition"]),
-        (520.0, "EUR", ["tuition"]),
+    tuition_prices = [p for p in prices if p.includes == ["tuition"]]
+    assert [(p.amount, p.currency) for p in tuition_prices] == [
+        (240.0, "EUR"),
+        (380.0, "EUR"),
+        (520.0, "EUR"),
     ]
-    assert prices[0].label == "Carte « 6 cours (1 cours/jour) » (tarif plein)"
-    assert prices[0].notes == "Reduced: grandes écoles/eurocités 220 €."
+    assert tuition_prices[0].label == "Carte « 6 cours (1 cours/jour) » (tarif plein)"
+    assert tuition_prices[0].notes == "Reduced: grandes écoles/eurocités 220 €."
     # The illimités row carries the only professional tier.
-    assert prices[2].notes == "Reduced: grandes écoles/eurocités 480 €; professionnels 300 €."
+    assert (
+        tuition_prices[2].notes == "Reduced: grandes écoles/eurocités 480 €; professionnels 300 €."
+    )
+
+
+def test_prices_accommodation_forfait():
+    prices = b._prices(_INFOS_HTML)
+    forfait = next((p for p in prices if p.label and "forfait" in p.label.lower()), None)
+    assert forfait is not None
+    assert forfait.amount == 430.0
+    assert forfait.currency == "EUR"
+    assert "accommodation" in forfait.includes
+    assert "meals" in forfait.includes
+    assert forfait.notes is not None
+    assert "50" in forfait.notes
 
 
 def test_teachers_pair_positionally_share_affiliation_drop_pianists():
@@ -159,7 +177,7 @@ def test_build_offering_end_to_end():
     assert offering.location is not None
     assert offering.location.venue == "Lycée hôtelier Biarritz Atlantique"
     assert offering.location.country == "FR"
-    assert len(offering.prices) == 3
+    assert len(offering.prices) == 4  # 3 tuition tiers + 1 accommodation forfait
     assert len(offering.teachers) == 4
     # Open enrolment: no audition requirements stated.
     assert offering.application.requirements == []

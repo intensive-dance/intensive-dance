@@ -103,7 +103,11 @@ def _build_offering(record: dict, fees: wp.Content | None, today: date) -> Offer
     blob = " ".join(section.text() for section in content.sections)
     dates_text = content.text("Dates")
     start, end, season = _date_range(dates_text) if dates_text else (None, None, _year(blob))
-    title = f"{base_title} {season}".strip()
+    # Strip a trailing 4-digit year from the base title before appending the
+    # season, so pages that already embed the year (e.g. "Online Spring
+    # Intensive 2022") don't produce "Online Spring Intensive 2022 2022".
+    base_title_stripped = re.sub(r"\s+\d{4}$", "", base_title)
+    title = f"{base_title_stripped} {season}".strip()
 
     photo_url = _absolute(content.link("photograph"))
     requirement_notes = content.text("Requirements")
@@ -135,12 +139,24 @@ def _build_offering(record: dict, fees: wp.Content | None, today: date) -> Offer
     location_text = location_section.text() if location_section else ""
     city, country, timezone = _place(location_text)
 
-    prices = _inline_prices(content.text("Fees"), _dollar_currency(country))
+    # "Fees" holds the application fee; course tiers may be in a sibling
+    # "Course fees" subsection (e.g. uk-spring-intensive has both).
+    fees_text = "\n".join(filter(None, [content.text("Fees"), content.text("Course fees")]))
+    prices = _inline_prices(fees_text, _dollar_currency(country))
     fee_table = FEE_TABLES.get(slug)
     if fee_table and fees:
         section = fees.find(fee_table)
         if section and section.table() is not None:
             prices += _table_prices(section.table())
+
+    sessions = _sessions(content, season)
+    # When no "Dates" section is present (e.g. Autumn Intensives, which uses
+    # city-heading / date-heading pairs), derive the overall span from sessions.
+    if start is None and sessions:
+        dated = [s for s in sessions if s.start and s.end]
+        if dated:
+            start = min(s.start for s in dated)
+            end = max(s.end for s in dated)
 
     return Offering(
         id=f"royal-ballet-school/{slug}-{season}",
@@ -163,7 +179,7 @@ def _build_offering(record: dict, fees: wp.Content | None, today: date) -> Offer
             start=start,
             end=end,
             timezone=timezone,
-            sessions=_sessions(content, season),
+            sessions=sessions,
             notes=dates_text or None,
         ),
         application=application,
@@ -560,6 +576,12 @@ def _sessions(content: wp.Content, season: str) -> list[Session]:
         dates = content.find("Dates")
         if dates:
             sessions += _weekend_sessions(dates.text())
+
+    # Fallback for programs (e.g. Autumn Intensives) where each city edition has
+    # its own heading (e.g. "Edinburgh") followed by a date-range heading (e.g.
+    # "16 & 17 October 2025") and the venue text as body — no "Dates" section.
+    if not sessions:
+        sessions += _city_date_sessions(content.sections, year)
     return sessions
 
 
@@ -582,6 +604,69 @@ def _weekend_sessions(text: str) -> list[Session]:
                 notes=label,
             )
         )
+    return sessions
+
+
+# The Autumn Intensives page groups dates by city: a city heading ("Edinburgh")
+# is immediately followed by a date-range heading ("16 & 17 October 2025"); the
+# date heading's body is the venue address.  We extract one Session per
+# city+date pair from that flat heading sequence.
+_KNOWN_CITIES = {
+    "edinburgh",
+    "london",
+    "manchester",
+    "birmingham",
+    "bristol",
+    "glasgow",
+    "leeds",
+    "liverpool",
+    "newcastle",
+    "oxford",
+    "bath",
+    "brighton",
+}
+# "DD & DD Month YYYY" or "DD and DD Month YYYY" heading: both days in the same month.
+_CITY_DATE = re.compile(
+    r"(\d{1,2})\s*(?:&|and)\s*(\d{1,2})\s+(" + parse.MONTHALT + r")\s+(\d{4})",
+    re.IGNORECASE,
+)
+
+
+def _city_date_sessions(sections: list[wp.Section], year: int | None) -> list[Session]:
+    """Sessions from the city-heading / date-heading / venue-body structure.
+
+    Walks the flat section list; a city heading sets the current city label; the
+    next heading that parses as a date range (DD & DD Month YYYY) yields one
+    Session, with the section body used as venue notes.  Stops tracking after
+    the first non-city, non-date heading so deeper timetable subsections
+    (e.g. 'Students aged 9-11 years') don't produce spurious sessions.
+    """
+    sessions: list[Session] = []
+    city: str | None = None
+    for section in sections:
+        heading = section.heading.strip()
+        heading_low = heading.lower()
+        if heading_low in _KNOWN_CITIES:
+            city = heading
+            continue
+        m = _CITY_DATE.match(heading)
+        if m and city:
+            d1, d2, month, yr = m.groups()
+            if month.lower() not in parse.MONTHS:
+                continue
+            mo = parse.MONTHS[month.lower()]
+            yr_int = int(yr)
+            label = f"{city} — {heading}"
+            sessions.append(
+                Session(
+                    label=label,
+                    start=date(yr_int, mo, int(d1)),
+                    end=date(yr_int, mo, int(d2)),
+                    gender="both",
+                    notes=section.text() or heading,
+                )
+            )
+            city = None  # consumed
     return sessions
 
 

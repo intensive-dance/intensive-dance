@@ -159,6 +159,62 @@ def test_teachers_empty_when_no_blocks():
     assert art._teachers("<p>just some prose, no teacher blocks</p>") == []
 
 
+# The Madrid / newer-Zürich teachers use <strong><em> instead of <em><strong>.
+_TEACHERS_HTML_STRONG_EM = (
+    "<p><strong>ANA CATALINA ROMAN</strong></p>"
+    "<p><strong><em>Coach for William Forsythe ballets</em></strong></p>"
+    "<p>Bio paragraph.</p>"
+    "<p><strong>ELENA VOSTROTINA</strong></p>"
+    "<p><strong><em>Principal Dancer of Zurich Ballet</em></strong></p>"
+)
+
+
+def test_teachers_matches_strong_em_variant():
+    teachers = art._teachers(_TEACHERS_HTML_STRONG_EM)
+    assert [(t.name, t.role) for t in teachers] == [
+        ("Ana Catalina Roman", "Coach for William Forsythe ballets"),
+        ("Elena Vostrotina", "Principal Dancer of Zurich Ballet"),
+    ]
+
+
+def test_teachers_matches_both_em_strong_and_strong_em():
+    # Zürich has a mix of both markup variants; all teachers must be captured.
+    mixed = _TEACHERS_HTML + _TEACHERS_HTML_STRONG_EM
+    teachers = art._teachers(mixed)
+    names = {t.name for t in teachers}
+    assert "Leanne Benjamin" in names
+    assert "Ana Catalina Roman" in names
+    assert "Elena Vostrotina" in names
+
+
+# --- application fee -----------------------------------------------------------
+
+
+def test_prices_includes_application_fee_chf():
+    text = (
+        "COMPLETE COURSE One week: 700 CHF Two weeks: 1200 CHF "
+        "You can transfer the application fee of 40 CHF into our bank account."
+    )
+    prices = art._prices(text, "CHF")
+    app_fee = next((p for p in prices if p.label == "Application fee"), None)
+    assert app_fee is not None
+    assert app_fee.amount == 40.0
+    assert app_fee.currency == "CHF"
+    assert app_fee.includes == []
+
+
+def test_prices_includes_application_fee_eur():
+    text = (
+        "COMPLETE COURSE One week: 700 Euro Two weeks: 1200 Euro "
+        "You can transfer the application fee of 40 Euro into our bank account."
+    )
+    prices = art._prices(text, "EUR")
+    app_fee = next((p for p in prices if p.label == "Application fee"), None)
+    assert app_fee is not None
+    assert app_fee.amount == 40.0
+    assert app_fee.currency == "EUR"
+
+
 def test_build_offering_zurich_end_to_end():
     landing = "ZURICH SUMMER 3rd - 15th August 2026"
     general = (

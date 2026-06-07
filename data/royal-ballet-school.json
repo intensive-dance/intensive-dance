@@ -41,14 +41,38 @@
       }
     ],
     "schedule": {
+      "end": "2025-10-28",
       "season": "2025",
-      "sessions": []
+      "sessions": [
+        {
+          "end": "2025-10-17",
+          "gender": "both",
+          "label": "Edinburgh — 16 & 17 October 2025",
+          "notes": "Dance Base Edinburgh 14-16 Grassmarket Edinburgh EH1 2JU",
+          "start": "2025-10-16"
+        },
+        {
+          "end": "2025-10-27",
+          "gender": "both",
+          "label": "London — 26 & 27 October 2025",
+          "notes": "The Royal Ballet School 46 Floral Street Covent Garden London WC2E 9DA",
+          "start": "2025-10-26"
+        },
+        {
+          "end": "2025-10-28",
+          "gender": "both",
+          "label": "Manchester — 27 & 28 October 2025",
+          "notes": "Shockout Studios Brian Statham Way Old Trafford Stretford Manchester M16 0PU",
+          "start": "2025-10-27"
+        }
+      ],
+      "start": "2025-10-16"
     },
     "source": {
-      "attemptedAt": "2026-06-07T11:31:39.421659Z",
-      "hash": "sha256:980bc98a2843313cec6ff0218ac114c6065edef33fd94d80cb08b89efc32b531",
+      "attemptedAt": "2026-06-07T04:38:30.783700Z",
+      "hash": "sha256:7c1af8c0a63c76725f36fa2946772d7841ecd63ba622ea0827c4e9e0ed909dfd",
       "provider": "royal-ballet-school",
-      "scrapedAt": "2026-06-05T11:07:43.939121Z",
+      "scrapedAt": "2026-06-07T07:37:39.032660Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/autumn-intensives/"
     },
     "teachers": [],
@@ -156,7 +180,7 @@
       "timezone": "Asia/Hong_Kong"
     },
     "source": {
-      "attemptedAt": "2026-06-07T11:31:39.421659Z",
+      "attemptedAt": "2026-06-07T04:38:30.783700Z",
       "hash": "sha256:5814711f26eee8d4f29deb605c15cb96d16f7bd05bbe764f2d55678b7459400b",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-06T18:50:10.783004Z",
@@ -263,7 +287,7 @@
       "timezone": "Asia/Tokyo"
     },
     "source": {
-      "attemptedAt": "2026-06-07T11:31:39.421659Z",
+      "attemptedAt": "2026-06-07T04:38:30.783700Z",
       "hash": "sha256:147f6511899f3df4c348211f7f9160ed7a80ec36a0300c60e97f864f427f0f8d",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-06T18:50:10.793263Z",
@@ -300,7 +324,7 @@
       "sessions": []
     },
     "source": {
-      "attemptedAt": "2026-06-07T11:31:39.421659Z",
+      "attemptedAt": "2026-06-07T04:38:30.783700Z",
       "hash": "sha256:c5f77cfd624eee1bd1dc75850e5d55c04cd37c5cce601f0deec016045d400a72",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-05T10:04:59.249815Z",
@@ -360,7 +384,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "attemptedAt": "2026-06-07T11:31:39.421659Z",
+      "attemptedAt": "2026-06-07T04:38:30.783700Z",
       "hash": "sha256:ce96b80b9c1bbbc0d854059adc6ef08562e35e867a746501de95529232d32ac6",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-06T18:50:10.778885Z",
@@ -459,7 +483,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "attemptedAt": "2026-06-07T11:31:39.421659Z",
+      "attemptedAt": "2026-06-07T04:38:30.783700Z",
       "hash": "sha256:89722cdea7e2cb8e76a28cc96880cae5339ed33999202bdc2bceca68cfdc2cf1",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-06T18:50:10.779495Z",
@@ -574,7 +598,7 @@
       "timezone": "America/Los_Angeles"
     },
     "source": {
-      "attemptedAt": "2026-06-07T11:31:39.421659Z",
+      "attemptedAt": "2026-06-07T04:38:30.783700Z",
       "hash": "sha256:5e415032c40a493c3bec861861136cb07853d4c587e2f4129e0a12774b297eca",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-05T10:04:59.238599Z",
@@ -698,14 +722,14 @@
       "start": "2022-04-04"
     },
     "source": {
-      "attemptedAt": "2026-06-07T11:31:39.421659Z",
-      "hash": "sha256:db1351501556792b93b60b626e61e63a5c0a7bca819ff53ad06f0d3ab1bcd10b",
+      "attemptedAt": "2026-06-07T04:38:30.783700Z",
+      "hash": "sha256:0dc3283eb577ede24ce40cd3adb4e2334d900df9aa89c19390ea6b26bdfc5757",
       "provider": "royal-ballet-school",
-      "scrapedAt": "2026-06-06T18:50:10.789597Z",
+      "scrapedAt": "2026-06-07T07:37:39.037527Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/online-spring-intensive/"
     },
     "teachers": [],
-    "title": "Online Spring Intensive 2022 2022"
+    "title": "Online Spring Intensive 2022"
   },
   {
     "ageRange": {
@@ -776,7 +800,7 @@
       "timezone": "Asia/Singapore"
     },
     "source": {
-      "attemptedAt": "2026-06-07T11:31:39.421659Z",
+      "attemptedAt": "2026-06-07T04:38:30.783700Z",
       "hash": "sha256:fa72f9afb79de8786c74da2e543f8673e81f133deb911f3b7fa0ba4b5dd4bee7",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-06T18:50:10.785612Z",
@@ -834,7 +858,7 @@
       "timezone": "Europe/Madrid"
     },
     "source": {
-      "attemptedAt": "2026-06-07T11:31:39.421659Z",
+      "attemptedAt": "2026-06-07T04:38:30.783700Z",
       "hash": "sha256:7030a3ed04a20a61adee56f15fe6f32a88216ba44062c976bf07766269022234",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-05T11:07:43.935577Z",
@@ -907,7 +931,7 @@
       "timezone": "Asia/Bangkok"
     },
     "source": {
-      "attemptedAt": "2026-06-07T11:31:39.421659Z",
+      "attemptedAt": "2026-06-07T04:38:30.783700Z",
       "hash": "sha256:d4b4c648622e9919e54e4b472293155a5948d616283de44f4c9574a0a3fcd065",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-06T18:50:10.778153Z",
@@ -960,6 +984,35 @@
         "includes": [],
         "label": "Application fee",
         "notes": "Application fee: £48"
+      },
+      {
+        "amount": 865.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Five days, non-residential",
+        "notes": "Five days, non-residential: £865"
+      },
+      {
+        "amount": 1485.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition",
+          "accommodation",
+          "meals"
+        ],
+        "label": "Five days, residential (catering included)",
+        "notes": "Five days, residential (catering included): £1,485 Upper School"
+      },
+      {
+        "amount": 485.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Three days, non-residential",
+        "notes": "Three days, non-residential: £485"
       }
     ],
     "schedule": {
@@ -971,10 +1024,10 @@
       "timezone": "Europe/London"
     },
     "source": {
-      "attemptedAt": "2026-06-07T11:31:39.421659Z",
-      "hash": "sha256:56bac86cb6810fce3430b15e971b1ed524b1c0981fb066db7fd17bfa3e1ce00e",
+      "attemptedAt": "2026-06-07T04:38:30.783700Z",
+      "hash": "sha256:bba7fbe9038c58f4bef27fb2814d5d1b85388c96428ef5b9449af4e05f857d60",
       "provider": "royal-ballet-school",
-      "scrapedAt": "2026-06-05T10:04:59.250148Z",
+      "scrapedAt": "2026-06-07T07:37:39.039413Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/uk-spring-intensive/"
     },
     "teachers": [],
@@ -1333,7 +1386,7 @@
       "timezone": "Europe/London"
     },
     "source": {
-      "attemptedAt": "2026-06-07T11:31:39.421659Z",
+      "attemptedAt": "2026-06-07T04:38:30.783700Z",
       "hash": "sha256:3439643ad3b7e0700cf1ec52bbfebd08ed31d27e34c2e603784bf105b0ff29b0",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-05T10:04:59.247313Z",
@@ -1399,7 +1452,7 @@
       "timezone": "Europe/London"
     },
     "source": {
-      "attemptedAt": "2026-06-07T11:31:39.421659Z",
+      "attemptedAt": "2026-06-07T04:38:30.783700Z",
       "hash": "sha256:e607b6cc4d02c3d16f3057ffe1c66a82aec49451e42badac3c4dcf6213533e9a",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-06T18:50:10.781641Z",
