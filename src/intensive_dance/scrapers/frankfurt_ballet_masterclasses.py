@@ -7,6 +7,14 @@ TLS NOTE: the host serves an incomplete certificate chain, so the shared client
 can't reach it; we fetch with our own `verify=False` client (read-only public
 page — see `fetch.make_client`). Application deadline lives on a separate
 `/contact-terms-conditions.html` page which we also fetch in `scrape()`.
+
+FACULTY: the class teachers live in the "#ourTeachers" Bootstrap cards (name +
+discipline), each opening a modal whose bio names the teacher's training/company
+institutions. We parse the cards (skipping the organizer/founder card) and mine
+each modal bio for the institutions in `_INSTITUTIONS` → `Teacher.affiliations`.
+Parsing the DOM (not hardcoding names) keeps A1 (faculty pedigree) correct when a
+future edition swaps its faculty — e.g. Olga Melnikova → Mariinsky/Semperoper/
+Palucca, Denis Untila → Aalto/Ballett Kiel/Vienna (verified live 2026-06-07).
 """
 
 from __future__ import annotations
@@ -88,7 +96,7 @@ def _build_offering(html: str, terms_html: str, today: date) -> Offering | None:
         organization=ORG,
         location=Location(venue=VENUE, city="Frankfurt am Main", country="DE"),
         schedule=Schedule(season=season, start=start, end=end, timezone="Europe/Berlin"),
-        teachers=_teachers(text),
+        teachers=_teachers(tree),
         prices=_prices(text),
         application=Application(
             status="open"
@@ -169,30 +177,71 @@ def _genres(text: str) -> list[Genre]:
 # --- teachers: "Our Teachers" section of the main page ------------------------
 
 
-def _teachers(text: str) -> list[Teacher]:
-    """Parse the "Our Teachers" section — two named teachers with labelled disciplines."""
+# Faculty live in the "#ourTeachers" section as Bootstrap cards: an <h4> name + two
+# <span class="small"> (role-type "Teacher"/"Organizer", then the discipline), each linking
+# to a modal whose body carries the career bio. We keep the class teachers (skip the
+# organizer/founder card) and mine each bio for the institutions below → Affiliations
+# (faithful: each org is stated in the teacher's own bio). DOM-based so a faculty change in
+# a future edition is picked up automatically, not silently dropped.
+_NOT_TEACHER = {"organizer", "organiser", "founder"}
+
+# Notable training/company institutions, matched case-insensitively in a teacher's bio.
+# (needle, canonical organization); aliases (kirov→Mariinsky) dedupe to one Affiliation.
+_INSTITUTIONS: list[tuple[str, str]] = [
+    ("vaganova", "Vaganova Ballet Academy"),
+    ("mariinsky", "Mariinsky Theatre"),
+    ("kirov", "Mariinsky Theatre"),
+    ("bolshoi", "Bolshoi Ballet"),
+    ("semperoper", "Semperoper Ballett Dresden"),
+    ("palucca", "Palucca Hochschule für Tanz Dresden"),
+    ("aalto", "Aalto Ballett Essen"),
+    ("ballet kiel", "Ballett Kiel"),
+    ("conservatory of vienna", "Conservatory of Vienna"),
+    ("vienna conservat", "Conservatory of Vienna"),
+    ("paris opera", "Paris Opera Ballet"),
+    ("opéra de paris", "Paris Opera Ballet"),
+    ("royal ballet", "The Royal Ballet"),
+    ("la scala", "Teatro alla Scala Ballet"),
+    ("stuttgart ballet", "Stuttgart Ballet"),
+    ("hamburg ballet", "Hamburg Ballett"),
+    ("nederlands dans", "Nederlands Dans Theater"),
+]
+
+
+def _teachers(tree: HTMLParser) -> list[Teacher]:
+    """Parse the "#ourTeachers" cards — class teachers with disciplines + mined affiliations."""
+    section = tree.css_first("#ourTeachers")
+    if section is None:
+        return []
     teachers: list[Teacher] = []
-    if "Olga Melnikova" in text:
-        teachers.append(
-            Teacher(
-                name="Olga Melnikova",
-                role="Teacher (Classical Ballet)",
-                affiliations=[
-                    Affiliation(
-                        organization="Palucca University of Dance Dresden",
-                        role="Professor",
-                    )
-                ],
-            )
-        )
-    if "Denis Untila" in text:
-        teachers.append(
-            Teacher(
-                name="Denis Untila",
-                role="Teacher (Contemporary & Stretching)",
-            )
-        )
+    for card in section.css("div.col a[data-bs-target]"):
+        name_node = card.css_first("h4")
+        if name_node is None:
+            continue
+        name = parse.clean(name_node.text())
+        if not name:
+            continue
+        spans = [parse.clean(s.text()) for s in card.css("span.small")]
+        role_type = spans[0].lower() if spans else ""
+        if role_type in _NOT_TEACHER:
+            continue  # the FBM organizer/founder card, not a class teacher
+        role = f"{spans[0]} ({spans[1]})" if len(spans) > 1 else (spans[0] if spans else None)
+        modal_id = (card.attributes.get("data-bs-target") or "").lstrip("#")
+        modal = tree.css_first(f"#{modal_id}") if modal_id else None
+        affiliations = _affiliations(modal) if modal is not None else []
+        teachers.append(Teacher(name=name, role=role, affiliations=affiliations))
     return teachers
+
+
+def _affiliations(modal) -> list[Affiliation]:
+    bio = parse.clean(modal.text(separator=" ")).lower()
+    affs: list[Affiliation] = []
+    seen: set[str] = set()
+    for needle, org in _INSTITUTIONS:
+        if needle in bio and org not in seen:
+            affs.append(Affiliation(organization=org))
+            seen.add(org)
+    return affs
 
 
 # --- application deadline: from /contact-terms-conditions.html ----------------

@@ -74,24 +74,42 @@
     },
     "source": {
       "attemptedAt": "2026-06-07T18:21:23.587794Z",
-      "hash": "sha256:a15de015fee71294400e9dc079195fc592af9eb52a9268a6169fa200c5442088",
+      "hash": "sha256:bdf77679def3754383bd7ffbbbc5aff7f6863a2dbcc21ebef734b119bf6f8eec",
       "provider": "frankfurt-ballet-masterclasses",
-      "scrapedAt": "2026-06-07T12:10:52.448906Z",
+      "scrapedAt": "2026-06-07T21:21:24.819635Z",
       "url": "https://masterclass.balletcompetition.net/"
     },
     "teachers": [
       {
         "affiliations": [
           {
-            "organization": "Palucca University of Dance Dresden",
-            "role": "Professor"
+            "organization": "Vaganova Ballet Academy"
+          },
+          {
+            "organization": "Mariinsky Theatre"
+          },
+          {
+            "organization": "Semperoper Ballett Dresden"
+          },
+          {
+            "organization": "Palucca Hochschule für Tanz Dresden"
           }
         ],
         "name": "Olga Melnikova",
         "role": "Teacher (Classical Ballet)"
       },
       {
-        "affiliations": [],
+        "affiliations": [
+          {
+            "organization": "Aalto Ballett Essen"
+          },
+          {
+            "organization": "Ballett Kiel"
+          },
+          {
+            "organization": "Conservatory of Vienna"
+          }
+        ],
         "name": "Denis Untila",
         "role": "Teacher (Contemporary & Stretching)"
       }
