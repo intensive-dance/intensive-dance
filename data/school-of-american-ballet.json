@@ -91,7 +91,7 @@
       "timezone": "America/New_York"
     },
     "source": {
-      "attemptedAt": "2026-06-07T04:38:31.048203Z",
+      "attemptedAt": "2026-06-07T15:27:33.018659Z",
       "hash": "sha256:61c3993e0483b28e9ee0a4dbee2777a76f9bef649b20d2610d4c84c9c4e21f7d",
       "provider": "school-of-american-ballet",
       "scrapedAt": "2026-06-07T08:34:21.061473Z",
@@ -163,7 +163,7 @@
       "timezone": "America/New_York"
     },
     "source": {
-      "attemptedAt": "2026-06-07T04:38:31.048203Z",
+      "attemptedAt": "2026-06-07T15:27:33.018659Z",
       "hash": "sha256:b1e7fc0c5799436a54fb88d839d1ba50846ed05f41444e6c987eaef27422f66f",
       "provider": "school-of-american-ballet",
       "scrapedAt": "2026-06-07T08:34:21.686296Z",
