@@ -30,17 +30,21 @@ neoclassical and pas de deux; the Duato/Béjart special groups are
 contemporary/neoclassical repertory. We do **not** force classical onto a track
 whose curriculum is contemporary.
 
-WHAT THIS SCRAPER EXERCISES (verified live 2026-06-06):
+WHAT THIS SCRAPER EXERCISES (verified live 2026-06-07):
   - One provider → several Offerings, one per track (distinct ages/fees/genres).
   - PRICES in EUR, tuition-only; the SENIOR PRO track carries three (per-week +
     package), parsed from its own prose.
-  - A confirmed named GUEST faculty roster (Nacho Duato, Ivan Liška, Nina
-    Ivanovich/Vaganova, Andrey Ivanov/Eifman, Anne-Cécile Morelle, Domenico
-    Levré) shared across the festival, with affiliations for the verifiable
-    institutions.
+  - A confirmed named GUEST faculty roster (Nacho Duato/Nacho Duato Company,
+    Ivan Liška, Nina Ivanovich/Vaganova, Andrey Ivanov/Eifman, Anne-Cécile
+    Morelle, Domenico Levré/Béjart Ballet Lausanne) shared across the festival,
+    with affiliations for the verifiable institutions. Nacho Duato's current
+    affiliation is his own company ("Nacho Duato Company, Madrid"), not the
+    former Compañía Nacional de Danza — corrected to match live page.
   - REQUIREMENTS = video + two photos: the application form asks for a video
     link and two JPG photos (freeform, no named poses) → `video`/`unspecific`
     plus `photos`/`freeform`.
+  - APPLICATION STATUS from the intro paragraph: "Enrollment … is open" →
+    status="open" (shared across all tracks, read once from the intro).
   - AGES via `{min, max}`; the "20+" intro is open-ended but every track states a
     closed band, so each Offering carries its own bounded range.
 """
@@ -57,6 +61,7 @@ from intensive_dance import parse
 from intensive_dance.models import (
     Affiliation,
     Application,
+    ApplicationStatus,
     Genre,
     Level,
     Location,
@@ -134,6 +139,7 @@ def _build_offerings(html: str) -> list[Offering]:
     intro = _intro(text)
     festival_start, festival_end = _festival_dates(intro)
     season = str(festival_end.year) if festival_end else "2026"
+    status = _enrollment_status(intro)
     teachers = _teachers(text)
 
     offerings: list[Offering] = []
@@ -150,6 +156,7 @@ def _build_offerings(html: str) -> list[Offering]:
                 festival_start if default_dates else None,
                 festival_end if default_dates else None,
                 teachers,
+                status,
             )
         )
     return offerings
@@ -163,6 +170,7 @@ def _build_offering(
     default_start: date | None,
     default_end: date | None,
     teachers: list[Teacher],
+    status: ApplicationStatus | None = None,
 ) -> Offering:
     start, end = _track_dates(block)
     if start is None and end is None:
@@ -188,6 +196,7 @@ def _build_offering(
         teachers=teachers,
         prices=_prices(block),
         application=Application(
+            status=status,
             url=PAGE,
             requirements=_requirements(),
             notes=_APPLY_NOTE,
@@ -208,6 +217,17 @@ def _intro(text: str) -> str:
     if start < 0:
         start = 0
     return text[start:first] if first is not None else text[start:]
+
+
+# "Enrollment for Revolve Dance – Summer Intensive 2026 is open" — stated in the
+# intro paragraph when enrolment is actively accepting applications.
+_ENROLLMENT_OPEN = re.compile(
+    r"enrollment\s+for\s+Revolve\s+Dance\b.*?\bis\s+open\b", re.IGNORECASE
+)
+
+
+def _enrollment_status(intro: str) -> ApplicationStatus | None:
+    return "open" if _ENROLLMENT_OPEN.search(intro) else None
 
 
 def _slice(text: str, heading: str) -> str | None:
@@ -391,7 +411,7 @@ def _requirements() -> list[Requirement]:
 
 # (name, role-line, [(organization, slug|None)])
 _ROSTER: list[tuple[str, str, list[tuple[str, str | None]]]] = [
-    ("Nacho Duato", "International choreographer", [("Compañía Nacional de Danza", None)]),
+    ("Nacho Duato", "Owner of Nacho Duato Company, Madrid", [("Nacho Duato Company", None)]),
     (
         "Ivan Liška",
         "Director, Bayerisches Junior Ballett München and Heinz-Bosl-Stiftung",

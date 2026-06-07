@@ -5,6 +5,7 @@
       "min": 12
     },
     "application": {
+      "deadline": "2026-02-15",
       "requirements": [
         {
           "description": "Admission is by audition — attend an in-person audition or, if unable to attend, submit a video application.",
@@ -12,6 +13,7 @@
           "type": "video"
         }
       ],
+      "status": "closed",
       "url": "https://sab.org/enrollment/summer-course/"
     },
     "genres": [
@@ -89,10 +91,10 @@
       "timezone": "America/New_York"
     },
     "source": {
-      "attemptedAt": "2026-06-07T11:31:37.883427Z",
-      "hash": "sha256:14758ed0b60e9d1cd42a7739cce76c0fb458eddb60f994555612c548d7bd8fb4",
+      "attemptedAt": "2026-06-07T04:38:31.048203Z",
+      "hash": "sha256:61c3993e0483b28e9ee0a4dbee2777a76f9bef649b20d2610d4c84c9c4e21f7d",
       "provider": "school-of-american-ballet",
-      "scrapedAt": "2026-06-05T11:31:57.507817Z",
+      "scrapedAt": "2026-06-07T08:34:21.061473Z",
       "url": "https://sab.org/enrollment/summer-course/"
     },
     "teachers": [],
@@ -104,6 +106,7 @@
       "min": 10
     },
     "application": {
+      "deadline": "2026-02-15",
       "requirements": [
         {
           "description": "Admission is by audition — attend an in-person audition or, if unable to attend, submit a video application.",
@@ -111,6 +114,7 @@
           "type": "video"
         }
       ],
+      "status": "closed",
       "url": "https://sab.org/enrollment/new-york-junior-session/"
     },
     "genres": [
@@ -159,10 +163,10 @@
       "timezone": "America/New_York"
     },
     "source": {
-      "attemptedAt": "2026-06-07T11:31:37.883427Z",
-      "hash": "sha256:c30a8812aa1263f214509be15cec8d29cc746536e84b20b834fdcbd39ce66f8f",
+      "attemptedAt": "2026-06-07T04:38:31.048203Z",
+      "hash": "sha256:b1e7fc0c5799436a54fb88d839d1ba50846ed05f41444e6c987eaef27422f66f",
       "provider": "school-of-american-ballet",
-      "scrapedAt": "2026-06-05T11:33:30.773483Z",
+      "scrapedAt": "2026-06-07T08:34:21.686296Z",
       "url": "https://sab.org/enrollment/new-york-junior-session/"
     },
     "teachers": [],

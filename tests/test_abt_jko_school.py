@@ -3,15 +3,17 @@
 ABT is an HTML scrape of one page whose three sites live in an `.accordion-wrap`
 of `.accordion-item`s, each carrying an Age Group · Cost · Location · Housing
 table. These pin the judgement calls a hash check can't catch: the cross-month
-date range, the multi-fee Cost cell, the venue/city split out of the address
-lines, level/genre keyword mapping, and the audition→video requirement. Inline
-HTML snippets, no network.
+date range, the multi-fee Cost cell, the venue/city split + building sub-name
+out of the address lines, level/genre keyword mapping, the audition→video
+requirement (+ headshot + defined-pose photo), closed-status detection from the
+audition-info page, and the Florida full venue name. Inline HTML snippets, no network.
 """
 
 from __future__ import annotations
 
 from datetime import date
 
+from intensive_dance.models import HeadshotReq, PhotosReq
 from intensive_dance.scrapers import abt_jko_school as abt
 
 # Two sites: New York (one Tuition fee, names a guest teacher) and Florida (three
@@ -52,6 +54,7 @@ _HTML = """
           <td>Tuition:<p>$2,775 USD</p>Day Student Fee:<p>$1,000 USD</p>
               Room and Board:<p>$3,000 USD</p></td>
           <td><p>University of South Florida</p><p>School of Theatre and Dance</p>
+              <p>4202 East Fowler Avenue, TAR 230</p>
               <p>Tampa, FL 33620</p></td>
           <td>Housing is available.</td>
         </tr>
@@ -141,12 +144,41 @@ def test_opens_at_absent():
 
 
 def test_requirements_video_when_audition_stated():
-    (req,) = abt._requirements("Dancers may submit a video audition.")
-    assert (req.type, req.specificity) == ("video", "unspecific")
+    reqs = abt._requirements("Dancers may submit a video audition.")
+    types = [r.type for r in reqs]
+    assert types == ["video", "headshot", "photos"]
+    from intensive_dance.models import VideoReq
+
+    video = reqs[0]
+    assert isinstance(video, VideoReq)
+    assert video.specificity == "unspecific"
+
+
+def test_requirements_includes_headshot_and_arabesque_photo():
+    reqs = abt._requirements("Dancers may submit a video audition.")
+    headshot = next(r for r in reqs if isinstance(r, HeadshotReq))
+    photo = next(r for r in reqs if isinstance(r, PhotosReq))
+    assert headshot is not None
+    assert photo.specificity == "defined-poses"
+    assert photo.poses == ["first arabesque"]
 
 
 def test_requirements_none_when_silent():
     assert abt._requirements("Classes are held Monday to Friday.") == []
+
+
+def test_audition_status_closed_from_audition_page():
+    html = "<body>The 2026 ABT National Audition Tour has now concluded and ABT is no longer accepting auditions.</body>"
+    assert abt._audition_status(html) == "closed"
+
+
+def test_audition_status_none_when_open():
+    html = "<body>Pre-registration will open on November 1, 2025.</body>"
+    assert abt._audition_status(html) is None
+
+
+def test_audition_status_none_when_empty():
+    assert abt._audition_status("") is None
 
 
 # --- end-to-end over the accordion structure ----------------------------------
@@ -172,13 +204,13 @@ def test_build_offerings_new_york_fields():
     assert ny.location.city == "New York"
     assert [p.amount for p in ny.prices] == [4350.0]
     assert ny.application.opens_at == date(2025, 11, 1)
-    assert ny.application.requirements[0].type == "video"
+    assert [r.type for r in ny.application.requirements] == ["video", "headshot", "photos"]
 
 
 def test_build_offerings_florida_venue_city_and_fees():
     fl = abt._build_offerings(_HTML, date(2026, 1, 1))[1]
     assert fl.location is not None
-    assert fl.location.venue == "University of South Florida"
+    assert fl.location.venue == "University of South Florida School of Theatre and Dance"
     assert fl.location.city == "Tampa"
     assert [p.label for p in fl.prices] == ["Tuition", "Day Student Fee", "Room and Board"]
     assert fl.level == ["intermediate", "advanced"]

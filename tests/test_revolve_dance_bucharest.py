@@ -184,6 +184,18 @@ def test_no_faculty_section_means_no_teachers():
     assert all(o.teachers == [] for o in offs)
 
 
+def test_application_status_open_from_intro():
+    offs = rev._build_offerings(SAMPLE_HTML)
+    assert all(o.application.status == "open" for o in offs)
+
+
+def test_nacho_duato_affiliation_is_own_company():
+    children = _by_slug(rev._build_offerings(SAMPLE_HTML))["children-2026"]
+    duato = next(t for t in children.teachers if t.name == "Nacho Duato")
+    assert any(a.organization == "Nacho Duato Company" for a in duato.affiliations)
+    assert not any(a.organization == "Compañía Nacional de Danza" for a in duato.affiliations)
+
+
 def test_titles_and_org():
     children = _by_slug(rev._build_offerings(SAMPLE_HTML))["children-2026"]
     assert children.title == "Summer Intensive 2026 — Children (9–11)"

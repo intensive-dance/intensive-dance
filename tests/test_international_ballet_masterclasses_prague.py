@@ -15,7 +15,7 @@ from __future__ import annotations
 
 from datetime import date
 
-from intensive_dance.models import PhotosReq
+from intensive_dance.models import CVReq, PhotosReq
 from intensive_dance.scrapers import international_ballet_masterclasses_prague as p
 
 # --- inline snippets mirroring the live page bodies ---------------------------
@@ -149,6 +149,21 @@ def test_senior_requirements_photo_with_defined_pose():
     assert photo.poses == ["first arabesque"]
 
 
+def test_senior_requirements_includes_teacher_reference():
+    # _APPLY contains "attach a reference from your teacher (if a student)"
+    reqs = p._senior_requirements(_APPLY)
+    types = {r.type for r in reqs}
+    assert "cv" in types
+    cv_req = next(r for r in reqs if isinstance(r, CVReq))
+    assert cv_req is not None
+
+
+def test_senior_requirements_no_cv_without_reference_text():
+    text = "Photograph of yourself in 1st arabesque is best."
+    reqs = p._senior_requirements(text)
+    assert not any(isinstance(r, CVReq) for r in reqs)
+
+
 def test_senior_genres():
     assert p._genres(_CLASSES) == ["classical", "contemporary"]
 
@@ -213,6 +228,10 @@ def test_build_offerings_two_programmes():
     assert junior.schedule.start == date(2026, 8, 3)
     assert junior.age_range == {"min": 13, "max": 15}
     assert junior.application.requirements[0].type == "photos"
+    # Senior requirements include both photos and teacher reference (cv).
+    senior_req_types = {r.type for r in senior.application.requirements}
+    assert "photos" in senior_req_types
+    assert "cv" in senior_req_types
 
 
 def test_build_offerings_skips_undated_senior():

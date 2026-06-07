@@ -32,13 +32,15 @@ BILINGUAL (EN + JP): parsed language-agnostically — the date span ("AUGUST 17-
 "14/19+" tokens, classes/requirements off keyword matches that fire in either
 language. Source free text is kept faithfully, never translated inline.
 
-WHAT THIS SCRAPER EXERCISES (verified live 2026-06-06):
+WHAT THIS SCRAPER EXERCISES (verified live 2026-06-07):
   - One Offering, two `Session`s (per-age-band split) with distinct ageRange;
     the open-ended "19+" band records only a min bound.
   - A USD registration fee ($125, non-refundable) — a registration/audition fee,
     not tuition, so emitted with no `includes` and the non-refundable terms noted.
-  - A `video`/`unspecific` audition requirement: entry is "by audition only" via a
-    video form OR in person, with no defined pose/clip brief stated.
+  - A `video`/`specific` audition requirement: the audition-info page publishes
+    a defined movement brief per age band (9-12: plié/tendu/frappe/adagio at
+    barre + adagio/petit allegro at centre; 13-19: classical variation OR
+    tendu/frappé/adagio/pirouettes/grand allegro). Deadline: July 1, 2026.
   - The Bolshoi-faculty affiliation captured as a collective `Teacher` (no
     individual names are published) with an `Affiliation` to the Bolshoi Academy.
   - Genres matched against the published class list: classical, pointe,
@@ -100,11 +102,19 @@ def scrape(client: httpx.Client) -> list[Offering]:
     if resp.status_code == 404:
         return []
     resp.raise_for_status()
-    offering = _build_offering(resp.text)
+    # Fetch the audition-info page to read the per-band movement brief and deadline —
+    # the main page says "by audition only" but the brief lives on this separate page.
+    # It sits behind the same Cloudflare challenge as the main page, so force solve=1.
+    try:
+        audition_resp = client.get(AUDITION_URL, headers={PROXY_PARAMS_HEADER: "solve=1"})
+        audition_text = audition_resp.text if audition_resp.status_code == 200 else ""
+    except Exception:
+        audition_text = ""
+    offering = _build_offering(resp.text, audition_text)
     return [offering] if offering is not None else []
 
 
-def _build_offering(html: str) -> Offering | None:
+def _build_offering(html: str, audition_html: str = "") -> Offering | None:
     tree = HTMLParser(html)
     for node in tree.css("script, style, noscript"):
         node.decompose()
@@ -136,8 +146,9 @@ def _build_offering(html: str) -> Offering | None:
         teachers=_teachers(text),
         prices=_prices(text),
         application=Application(
+            deadline=_audition_deadline(audition_html),
             url=AUDITION_URL,
-            requirements=_requirements(text),
+            requirements=_requirements(text, audition_html),
             notes=_APPLY_NOTE,
         ),
     )
@@ -277,18 +288,57 @@ def _teachers(text: str) -> list[Teacher]:
 
 
 # --- requirements: "by audition only" — video form OR in person ----------------
+#
+# The audition-info page (AUDITION_URL) publishes a per-band movement brief:
+#   Ages 9-12: plié, tendu, frappe, adagio at barre + adagio & petit allegro centre.
+#   Ages 13-19: classical variation (flat or pointe) OR tendu/frappé/adagio/
+#              pirouettes + grand allegro centre.
+# When that page is available we set specificity="specific" with a description;
+# without it we fall back to "unspecific" so a fetch failure doesn't lose the req.
+
+_BRIEF_MARKER = re.compile(r"Ages\s+9-12\s+y\.o\.", re.IGNORECASE)
+
+_BRIEF_DESCRIPTION = (
+    "Ages 9–12: video of plié, tendu, frappe, adagio at the barre, and adagio "
+    "and petit allegro at the centre. "
+    "Ages 13–19: video of a classical variation (flat or pointe) OR "
+    "tendu, frappé, adagio, pirouettes, and grand allegro at the centre."
+)
+
+# "Video audition submission deadline: July 1, 2026 (for Tokyo Summer Intensive)"
+_DEADLINE_RE = re.compile(
+    r"video audition submission deadline:\s*("
+    + parse.MONTHALT
+    + r")\s+(\d{1,2}),?\s*(\d{4})\s*\(for Tokyo",
+    re.IGNORECASE,
+)
 
 
-def _requirements(text: str) -> list[Requirement]:
+def _audition_deadline(audition_html: str) -> date | None:
+    if not audition_html:
+        return None
+    tree = HTMLParser(audition_html)
+    text = parse.clean(tree.body.text(separator=" ")) if tree.body else ""
+    m = _DEADLINE_RE.search(text)
+    if not m:
+        return None
+    month, day, year = m.groups()
+    return date(int(year), parse.MONTHS[month.lower()], int(day))
+
+
+def _requirements(text: str, audition_html: str = "") -> list[Requirement]:
     low = text.lower()
-    if "audition only" in low or "video audition" in low:
-        # In-person OR video accepted, no defined pose/clip brief → unspecific.
-        return [
-            VideoReq(
-                specificity="unspecific",
-                description=(
-                    "Audition required (in person or by video); no pose or clip brief is published."
-                ),
-            )
-        ]
-    return []
+    if "audition only" not in low and "video audition" not in low:
+        return []
+    # Check whether the audition page publishes a per-band brief (specific) or not.
+    if audition_html:
+        tree = HTMLParser(audition_html)
+        audition_text = parse.clean(tree.body.text(separator=" ")) if tree.body else ""
+        if _BRIEF_MARKER.search(audition_text):
+            return [VideoReq(specificity="specific", description=_BRIEF_DESCRIPTION)]
+    return [
+        VideoReq(
+            specificity="unspecific",
+            description="Audition required (in person or by video).",
+        )
+    ]

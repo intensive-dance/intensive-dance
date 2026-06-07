@@ -4,11 +4,12 @@
       "min": 9
     },
     "application": {
+      "deadline": "2026-07-01",
       "notes": "Entry is by audition only: fill out the video-audition form or audition in person, pay the audition fee, then submit your video; accepted dancers receive an official acceptance letter with registration details.",
       "requirements": [
         {
-          "description": "Audition required (in person or by video); no pose or clip brief is published.",
-          "specificity": "unspecific",
+          "description": "Ages 9–12: video of plié, tendu, frappe, adagio at the barre, and adagio and petit allegro at the centre. Ages 13–19: video of a classical variation (flat or pointe) OR tendu, frappé, adagio, pirouettes, and grand allegro at the centre.",
+          "specificity": "specific",
           "type": "video"
         }
       ],
@@ -67,10 +68,10 @@
       "timezone": "Asia/Tokyo"
     },
     "source": {
-      "attemptedAt": "2026-06-07T12:25:50.711875Z",
-      "hash": "sha256:c0e62446cb2212802a53c0e11de92177660469a19f0c343b17877b3c3dfe3ec4",
+      "attemptedAt": "2026-06-07T06:28:42.416115Z",
+      "hash": "sha256:c73126c5a6f8940c7ae22859dbd7566eea27a3781eb519b23f489800931ea227",
       "provider": "bolshoi-summer-intensive-tokyo",
-      "scrapedAt": "2026-06-06T07:32:44.307570Z",
+      "scrapedAt": "2026-06-07T08:41:01.579611Z",
       "url": "https://www.russianballetinternational.com/tokyo-program/"
     },
     "teachers": [

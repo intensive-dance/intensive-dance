@@ -13,6 +13,19 @@ from datetime import date
 from intensive_dance.models import VideoReq
 from intensive_dance.scrapers import bolshoi_summer_intensive_tokyo as bolshoi
 
+# Simulated audition-info page content with the per-band brief and Tokyo deadline.
+_AUDITION_PAGE = (
+    "<body>"
+    "<h2>Ages 9-12 y.o.</h2>"
+    "<p>Submit a video of the student performing a plié, tendu, frappe, adagio at the barre, "
+    "and an adagio and a petit allegro at the centre.</p>"
+    "<h2>Ages 13-19 y.o.</h2>"
+    "<p>Submit a video of the student performing a classical variation (on flat or pointe) OR "
+    "tendu, frappé, adagio, pirouettes and a grand allegro at the centre.</p>"
+    "<p>Video audition submission deadline: July 1, 2026 (for Tokyo Summer Intensive)</p>"
+    "</body>"
+)
+
 # A faithful, condensed slice of the live page (JP kept verbatim).
 PAGE = (
     "HOW TO JOIN OUR SUMMER INTENSIVE PROGRAMS: "
@@ -86,10 +99,25 @@ def test_teachers_bolshoi_faculty_affiliation():
     assert aff.current is True
 
 
-def test_requirements_video_unspecific():
+def test_requirements_video_unspecific_without_audition_page():
     (req,) = bolshoi._requirements(PAGE)
     assert isinstance(req, VideoReq)
     assert req.specificity == "unspecific"
+
+
+def test_requirements_video_specific_with_audition_page():
+    (req,) = bolshoi._requirements(PAGE, _AUDITION_PAGE)
+    assert isinstance(req, VideoReq)
+    assert req.specificity == "specific"
+    assert "plié" in (req.description or "") or "pli" in (req.description or "").lower()
+
+
+def test_audition_deadline_from_audition_page():
+    assert bolshoi._audition_deadline(_AUDITION_PAGE) == date(2026, 7, 1)
+
+
+def test_audition_deadline_none_without_page():
+    assert bolshoi._audition_deadline("") is None
 
 
 def test_build_offering_full():
@@ -113,6 +141,10 @@ def test_build_offering_full():
     assert offering.genres == ["classical", "pointe", "repertoire", "character"]
     assert [p.amount for p in offering.prices] == [125.0]
     assert [r.type for r in offering.application.requirements] == ["video"]
+    # Without audition page the requirement stays unspecific.
+    req = offering.application.requirements[0]
+    assert isinstance(req, VideoReq)
+    assert req.specificity == "unspecific"
     assert "Bolshoi" in (offering.schedule.notes or "")
 
 
