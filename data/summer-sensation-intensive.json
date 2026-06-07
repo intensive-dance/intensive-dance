@@ -86,7 +86,7 @@
       "timezone": "Europe/Berlin"
     },
     "source": {
-      "attemptedAt": "2026-06-07T16:26:23.337754Z",
+      "attemptedAt": "2026-06-07T21:24:05.666153Z",
       "hash": "sha256:2ec2cccbadff8651cb280d3140dc37b31b5e9208129bcdcc10aa725d96b0e136",
       "provider": "summer-sensation-intensive",
       "scrapedAt": "2026-06-06T06:04:26.283563Z",
@@ -176,7 +176,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "attemptedAt": "2026-06-07T16:26:23.337754Z",
+      "attemptedAt": "2026-06-07T21:24:05.666153Z",
       "hash": "sha256:7234d2bde53df3035b03a7575bccf64f6960d63158ca471eed06c30d8d214e4e",
       "provider": "summer-sensation-intensive",
       "scrapedAt": "2026-06-07T11:43:15.191857Z",
