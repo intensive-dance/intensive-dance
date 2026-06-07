@@ -273,5 +273,216 @@
     },
     "teachers": [],
     "title": "サマーインテンシブ（夏期特別講習会） インターメディエイト〈中学生以上〉 2026"
+  },
+  {
+    "ageRange": {
+      "max": 6,
+      "min": 4
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLScUXFlBN7rd6TJCXwTgZBj88TNZNGrQojJKzT3KUjpa05WnQQ/viewform"
+    },
+    "genres": [
+      "classical",
+      "repertoire"
+    ],
+    "id": "k-ballet-school/winter-intensive-kids-2025",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Tokyo",
+      "country": "JP",
+      "venue": "Kバレエ スクール 武蔵小杉"
+    },
+    "organization": {
+      "city": "Tokyo",
+      "country": "JP",
+      "name": "K-Ballet School",
+      "slug": "k-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 22000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "受講料（税込）"
+      }
+    ],
+    "schedule": {
+      "end": "2025-12-27",
+      "season": "2025",
+      "sessions": [],
+      "start": "2025-12-26",
+      "timezone": "Asia/Tokyo"
+    },
+    "source": {
+      "hash": "sha256:2672bc1786e672f5318f88e50cfda5df598b00bcbfb12054e7bf97c5675a0bf3",
+      "provider": "k-ballet-school",
+      "scrapedAt": "2026-06-07T11:44:31.896940Z",
+      "url": "https://www.k-ballet.co.jp/school/event/2025winterassembly.html"
+    },
+    "teachers": [],
+    "title": "ウインター インテンシブ（冬期特別講習会） キッズ〈年中・年長〉 2025"
+  },
+  {
+    "ageRange": {
+      "max": 9,
+      "min": 6
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLScUXFlBN7rd6TJCXwTgZBj88TNZNGrQojJKzT3KUjpa05WnQQ/viewform"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "k-ballet-school/winter-intensive-foundation-2025",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Tokyo",
+      "country": "JP",
+      "venue": "Kバレエ スクール 武蔵小杉"
+    },
+    "organization": {
+      "city": "Tokyo",
+      "country": "JP",
+      "name": "K-Ballet School",
+      "slug": "k-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 25000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "受講料（税込）"
+      }
+    ],
+    "schedule": {
+      "end": "2025-12-27",
+      "season": "2025",
+      "sessions": [],
+      "start": "2025-12-26",
+      "timezone": "Asia/Tokyo"
+    },
+    "source": {
+      "hash": "sha256:2500dc29f90431e865495c4491fccc567826c9a647ad86e69a2d8341d44cd92c",
+      "provider": "k-ballet-school",
+      "scrapedAt": "2026-06-07T11:44:31.897264Z",
+      "url": "https://www.k-ballet.co.jp/school/event/2025winterassembly.html"
+    },
+    "teachers": [],
+    "title": "ウインター インテンシブ（冬期特別講習会） ファウンデーション〈小学1～3年生〉 2025"
+  },
+  {
+    "ageRange": {
+      "max": 12,
+      "min": 9
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLScUXFlBN7rd6TJCXwTgZBj88TNZNGrQojJKzT3KUjpa05WnQQ/viewform"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "k-ballet-school/winter-intensive-elementary-2025",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Tokyo",
+      "country": "JP",
+      "venue": "Kバレエ アカデミー"
+    },
+    "organization": {
+      "city": "Tokyo",
+      "country": "JP",
+      "name": "K-Ballet School",
+      "slug": "k-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 48000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "受講料（税込）"
+      }
+    ],
+    "schedule": {
+      "end": "2025-12-27",
+      "season": "2025",
+      "sessions": [],
+      "start": "2025-12-26",
+      "timezone": "Asia/Tokyo"
+    },
+    "source": {
+      "hash": "sha256:255373bbb1d6626d3472c7876997100916b48bcc55971ebb48d4d41a5fb4f2b5",
+      "provider": "k-ballet-school",
+      "scrapedAt": "2026-06-07T11:44:31.897401Z",
+      "url": "https://www.k-ballet.co.jp/school/event/2025winterassembly.html"
+    },
+    "teachers": [],
+    "title": "ウインター インテンシブ（冬期特別講習会） エレメンタリー〈小学4～6年生〉 2025"
+  },
+  {
+    "ageRange": {
+      "max": null,
+      "min": 12
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLScUXFlBN7rd6TJCXwTgZBj88TNZNGrQojJKzT3KUjpa05WnQQ/viewform"
+    },
+    "genres": [
+      "classical",
+      "repertoire",
+      "contemporary"
+    ],
+    "id": "k-ballet-school/winter-intensive-intermediate-2025",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Tokyo",
+      "country": "JP",
+      "venue": "Kバレエ スクール 武蔵小杉"
+    },
+    "organization": {
+      "city": "Tokyo",
+      "country": "JP",
+      "name": "K-Ballet School",
+      "slug": "k-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 98000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "受講料（税込）"
+      }
+    ],
+    "schedule": {
+      "end": "2025-12-29",
+      "season": "2025",
+      "sessions": [],
+      "start": "2025-12-26",
+      "timezone": "Asia/Tokyo"
+    },
+    "source": {
+      "hash": "sha256:5781b467ed0a54a2b5a841dda3ab6968a63e9f5b8827c965325f2503e68538bf",
+      "provider": "k-ballet-school",
+      "scrapedAt": "2026-06-07T11:44:31.897524Z",
+      "url": "https://www.k-ballet.co.jp/school/event/2025winterassembly.html"
+    },
+    "teachers": [],
+    "title": "ウインター インテンシブ（冬期特別講習会） インターメディエイト〈中学生以上〉 2025"
   }
 ]

@@ -1,49 +1,48 @@
-"""K-Ballet School (Kバレエ スクール), Tokyo (JP) — its Summer Intensive (夏期特別講習会).
+"""K-Ballet School (Kバレエ スクール), Tokyo (JP) — its Summer Intensive and
+Winter Intensive (夏期特別講習会 / 冬期特別講習会).
 
 API FIRST: none. The K-Ballet site (Apache, no public JSON API) serves its event
-pages as plain server-rendered HTML under `/school/event/`; the current edition's
+pages as plain server-rendered HTML under `/school/event/`; the current editions'
 full text — dates, venues, courses, fees, faculty — is in the static markup, no JS
-render needed. The dated edition lives at `/school/event/<year>summerintensive.html`,
-found from the `/school/event/` listing.
+render needed. Summer lives at `/school/event/<year>summerintensive.html`; winter
+at `/school/event/<year>winterassembly.html`. Both are discovered by scanning
+the `/school/event/` listing for the relevant URL-keyword patterns.
 
-DISCOVERY: the page announces one short-term student intensive — the school's
-annual "Summer Intensive 〈夏期特別講習会〉", run by K-Ballet School (the open school
-of K-Ballet Tokyo; founder Tetsuya Kumakawa, ex-Royal Ballet principal). The
-source splits it into **four age-banded courses**, each at its own venue, with
-its own dates and fee schedule, so we emit **one Offering per course** (per the
+DISCOVERY: each intensive announces the same four age-banded courses, each at its
+own venue, with its own dates and fee schedule — one Offering per course (per the
 model's one-Offering-per-track rule — folding would lose the date/venue/fee/genre
 split):
-  - キッズ (Kids) — preschool 〈年中・年長〉, Ebisu, a 3-day course.
-  - ファウンデーション (Foundation) — primary grades 1–3, Korakuen; A/B/C sub-courses
-    span different parts of the week.
-  - エレメンタリー (Elementary) — primary grades 4–6, Kichijoji; A (comprehensive) /
-    B (solo) sub-courses, with an optional Solo Assembly performance fee.
-  - インターメディエイト (Intermediate) — junior-high and up, Ebisu; A/B sub-courses,
-    the A curriculum adding contemporary, pas de deux, mime and drama.
-The slug is year-stamped so the id rolls forward when a new edition is posted.
+  - キッズ (Kids) — preschool 〈年中・年長〉.
+  - ファウンデーション (Foundation) — primary grades 1–3.
+  - エレメンタリー (Elementary) — primary grades 4–6.
+  - インターメディエイト (Intermediate) — junior-high and up.
+The slug is year-stamped; "summer" and "winter" are separate slug stems so the
+eight Offerings never collide.
 
-JAPANESE SOURCE: parsed language-agnostically. Per-course `【日程】` lines give the
-span as `M/D(曜)～M/D(曜)` with the **year only in the page-level header**
-(`開催日程 2026. 8/2(日)～8/9(日)`); we read the year there and the earliest start /
-latest end across each block's ranges (Foundation lists A/B/C windows, so the span
-brackets them). Fees are ASCII `34,000円(税込)` (tax-inclusive). Source free text
-(course title, grade band, faculty names, raw date/fee notes) is kept faithfully
-in Japanese, never translated inline.
+JAPANESE SOURCE: parsed language-agnostically. Summer: per-course `【日程】` blocks,
+`【会場】` venue label, `【受講料】` fee section, year from `開催日程 YYYY.` header.
+Winter: a table-layout page — `クラス {Name}` / `コース日程` / `会場` / `受講料` field
+labels (without `【】` brackets). In both cases the year lives in the
+`開催日程 YYYY.` page header and the M/D ranges in per-course blocks; the
+`_date_range` regex `M/D(曜)` safely ignores the
+YYYY. prefix in the winter course-detail rows (verified: the 2025 winter page
+has `会場 2026.12/26(金)～12/27(土)` in detail rows but `開催日程 2025.` in the
+overview — a data-entry error; we read the year from the overview, not the rows).
+Source free text is kept faithfully in Japanese.
 
-WHAT THIS SCRAPER EXERCISES (verified live 2026-06-06):
-  - Four Offerings from one page (per-course split), distinct venue + prices.
-  - JPY prices (tax-inclusive 税込), several per course — the A/B/C sub-courses and
-    the optional Solo-Assembly performance fee carry a `performance` include.
-  - Year-from-header / day-month-from-block date assembly, full-width `～` ranges,
-    a mid-week 休講 (no-class day) kept as a schedule note.
-  - Contemporary genre on the Intermediate course only (its A curriculum adds
-    コンテンポラリー), matched against that course's own program block; the others
-    stay classical.
-  - Grade-banded cohorts the source states as Japanese school grades, mapped to
-    `ageRange` by the statutory April-entry schedule (AGENTS.md), the same as the
-    sibling JP scrapers. The raw band stays verbatim in the title label. Three
-    band shapes: 小学N～M年生 (grade range), 中学生以上 (open-topped), and 年中～年長
-    (kindergarten — named, not graded, so mapped locally not via the shared helper).
+WHAT THIS SCRAPER EXERCISES (verified live 2026-06-06 summer; 2025-12 winter via
+archived page):
+  - Eight Offerings total (four summer + four winter), distinct venue + prices.
+  - JPY prices (税込), several per course (A/B/C sub-courses, optional Solo
+    Assembly performance fee).
+  - Two page-layout modes: summer (`【label】` blocks) vs winter (plain label rows).
+  - Contemporary genre on Intermediate only (both seasons).
+  - Grade-banded age ranges via the statutory April-entry schedule.
+
+Discovery strategy: the `/school/event/` listing is scanned for links whose href
+contains the keyword "summerintensive" or "winterassembly"; the most recently
+listed matching link is used. If discovery finds no winter URL, we fall back to
+the explicit latest-known URL rather than silently dropping the edition.
 """
 
 from __future__ import annotations
@@ -68,7 +67,11 @@ from intensive_dance.models import (
 )
 
 BASE = "https://www.k-ballet.co.jp"
-PAGE = f"{BASE}/school/event/2026summerintensive.html"
+LISTING_URL = f"{BASE}/school/event/"
+PAGE_SUMMER = f"{BASE}/school/event/2026summerintensive.html"
+# Latest-known winter URL used as a fallback if discovery fails (IDR-24: keep past
+# editions; the listing may lag behind newly posted pages).
+PAGE_WINTER_FALLBACK = f"{BASE}/school/event/2025winterassembly.html"
 # Application is by an external Google Form linked from the page ("申込はこちら").
 APPLY_URL = (
     "https://docs.google.com/forms/d/e/"
@@ -82,8 +85,9 @@ ORG = Organization(
     city="Tokyo",
 )
 
-# The source title (kept faithfully in Japanese; not translated inline).
-TITLE_JA = "サマーインテンシブ（夏期特別講習会）"
+# Source titles (kept faithfully in Japanese; not translated inline).
+TITLE_SUMMER_JA = "サマーインテンシブ（夏期特別講習会）"
+TITLE_WINTER_JA = "ウインター インテンシブ（冬期特別講習会）"
 
 
 class _Course:
@@ -93,8 +97,9 @@ class _Course:
         self.label = label  # the cohort label kept in the title (faithful JA)
 
 
-# Order matches the page; `heading` is the program-detail <h3> text we slice on.
-_COURSES = [
+# Order matches the summer page; `heading` is the program-detail <h3> text we
+# slice on for the summer layout (【日程】 / 【会場】 / 【受講料】 blocks).
+_COURSES_SUMMER = [
     _Course("kids", "キッズ：年中～年長対象", "キッズ〈年中・年長〉"),
     _Course(
         "foundation", "ファウンデーション：小学1～3年生対象", "ファウンデーション〈小学1～3年生〉"
@@ -105,16 +110,55 @@ _COURSES = [
     ),
 ]
 
+# Winter page uses a table layout; course blocks are keyed on "クラス {Name}".
+# The heading field here is the クラス-row label; label is the title label.
+_COURSES_WINTER = [
+    _Course("kids", "クラス キッズ", "キッズ〈年中・年長〉"),
+    _Course("foundation", "クラス ファウンデーション", "ファウンデーション〈小学1～3年生〉"),
+    _Course("elementary", "クラス エレメンタリー", "エレメンタリー〈小学4～6年生〉"),
+    _Course("intermediate", "クラス インターメディエイト", "インターメディエイト〈中学生以上〉"),
+]
+
 # The program-detail section ends here (the 申込方法 / faculty bios follow).
 _BLOCKS_END = "お申込方法"
+# Winter: after the last course block comes the course-description section.
+_WINTER_BLOCKS_END = "クラス内容紹介"
 
 
 def scrape(client: httpx.Client) -> list[Offering]:
-    resp = client.get(PAGE, follow_redirects=True)
-    if resp.status_code == 404:
-        return []
-    resp.raise_for_status()
-    return _build_offerings(resp.text)
+    offerings: list[Offering] = []
+
+    resp_summer = client.get(PAGE_SUMMER, follow_redirects=True)
+    if resp_summer.status_code != 404:
+        resp_summer.raise_for_status()
+        offerings.extend(_build_offerings(resp_summer.text))
+
+    winter_url = _discover_url(client, "winterassembly") or PAGE_WINTER_FALLBACK
+    resp_winter = client.get(winter_url, follow_redirects=True)
+    if resp_winter.status_code != 404:
+        resp_winter.raise_for_status()
+        offerings.extend(_build_winter_offerings(resp_winter.text, winter_url))
+
+    return offerings
+
+
+def _discover_url(client: httpx.Client, keyword: str) -> str | None:
+    """Scan the /school/event/ listing for the latest link whose href contains `keyword`.
+
+    The listing may contain multiple editions (e.g. 2024winterassembly before 2025winterassembly).
+    We collect all matches and return the lexicographically greatest href — year-prefixed URLs
+    sort correctly by year, so max() picks the most recently announced edition.
+    """
+    resp = client.get(LISTING_URL, follow_redirects=True)
+    if not resp.is_success:
+        return None
+    tree = HTMLParser(resp.text)
+    matches: list[str] = []
+    for a in tree.css("a[href]"):
+        href = a.attributes.get("href", "") or ""
+        if keyword in href:
+            matches.append(href if href.startswith("http") else f"{BASE}{href}")
+    return max(matches) if matches else None
 
 
 def _build_offerings(html: str) -> list[Offering]:
@@ -129,7 +173,7 @@ def _build_offerings(html: str) -> list[Offering]:
     season = str(year)
 
     offerings: list[Offering] = []
-    for course in _COURSES:
+    for course in _COURSES_SUMMER:
         block = _course_block(text, course)
         if block is None:
             continue
@@ -149,8 +193,8 @@ def _build_offering(
 ) -> Offering:
     return Offering(
         id=f"k-ballet-school/summer-intensive-{course.key}-{season}",
-        source=Source(provider="k-ballet-school", url=PAGE, scrapedAt=now_utc()),
-        title=f"{TITLE_JA} {course.label} {season}",
+        source=Source(provider="k-ballet-school", url=PAGE_SUMMER, scrapedAt=now_utc()),
+        title=f"{TITLE_SUMMER_JA} {course.label} {season}",
         genres=_genres(block),
         ageRange=_age_range(course.heading),
         organization=ORG,
@@ -167,6 +211,109 @@ def _build_offering(
     )
 
 
+# --- winter intensive ---------------------------------------------------------
+#
+# The winter page uses a table/grid layout instead of the summer's 【label】 block
+# style. Course blocks are keyed on "クラス {Name}" rows, and fields are labelled
+# with plain text (コース日程 / 会場 / 対象学年 / 受講料) without 【】 brackets.
+#
+# The 2025 winter page also contains a data-entry error: the detail rows show
+# e.g. "2026.12/26(金)～12/27(土)" while the overview header reads "2025. 12/26".
+# The year is correctly read from the overview header; the _date_range regex
+# (matching (\d{1,2})/(\d{1,2})) safely ignores the "2026." prefix in those rows.
+
+
+def _build_winter_offerings(html: str, url: str) -> list[Offering]:
+    tree = HTMLParser(html)
+    for node in tree.css("script, style, noscript"):
+        node.decompose()
+    text = parse.clean(tree.body.text(separator=" ")) if tree.body else ""
+
+    year = _year(text)
+    if year is None:
+        return []
+    season = str(year)
+
+    offerings: list[Offering] = []
+    for course in _COURSES_WINTER:
+        block = _winter_course_block(text, course)
+        if block is None:
+            continue
+        start, end = _date_range(block, year)
+        if start is None and end is None:
+            continue
+        age = _winter_age_range(block)
+        offerings.append(
+            Offering(
+                id=f"k-ballet-school/winter-intensive-{course.key}-{season}",
+                source=Source(provider="k-ballet-school", url=url, scrapedAt=now_utc()),
+                title=f"{TITLE_WINTER_JA} {course.label} {season}",
+                genres=_genres(block),
+                ageRange=age,
+                organization=ORG,
+                location=_winter_location(block),
+                schedule=Schedule(
+                    season=season,
+                    start=start,
+                    end=end,
+                    timezone="Asia/Tokyo",
+                ),
+                prices=_winter_prices(block),
+                application=Application(url=APPLY_URL),
+            )
+        )
+    return offerings
+
+
+def _winter_course_block(text: str, course: _Course) -> str | None:
+    """Slice from this course's "クラス {Name}" row to the next course row."""
+    start = text.find(course.heading)
+    if start < 0:
+        return None
+    end = len(text)
+    for other in _COURSES_WINTER:
+        pos = text.find(other.heading, start + len(course.heading))
+        if 0 <= pos < end:
+            end = pos
+    end_marker = text.find(_WINTER_BLOCKS_END, start)
+    if 0 <= end_marker < end:
+        end = end_marker
+    return text[start:end]
+
+
+# Winter venue: "会場 Kバレエ スクール 武蔵小杉 〒..." or "会場 Kバレエ アカデミー 〒..."
+_WINTER_VENUE = re.compile(r"会場\s+(Kバレエ\s+\S+(?:\s+\S+)??)(?:\s+〒|\s+\d{3})")
+
+
+def _winter_location(block: str) -> Location:
+    m = _WINTER_VENUE.search(block)
+    venue = parse.clean(m.group(1)) if m else None
+    return Location(venue=venue, city="Tokyo", country="JP")
+
+
+# Winter age range: "対象学年 年中・年長" / "対象学年 小学1～3年生" / "対象学年 中学生以上"
+_WINTER_AGE_LABEL = re.compile(r"対象学年\s+([^\s外内部]+)")
+
+
+def _winter_age_range(block: str) -> dict | None:
+    m = _WINTER_AGE_LABEL.search(block)
+    return _age_range(m.group(1)) if m else None
+
+
+# Winter price: plain "受講料 22,000円(税込)" (no 【受講料】 bracket)
+_WINTER_FEE = re.compile(r"受講料\s+([\d,]+)\s*円\s*[（(]税込[)）]")
+
+
+def _winter_prices(block: str) -> list[Price]:
+    m = _WINTER_FEE.search(block)
+    if not m:
+        return []
+    amount = parse.parse_amount(m.group(1))
+    if amount is None:
+        return []
+    return [Price(amount=amount, currency="JPY", label="受講料（税込）", includes=["tuition"])]
+
+
 # --- course split -------------------------------------------------------------
 #
 # The program detail lists each course under its own <h3>, e.g. "キッズ：年中～年長
@@ -180,7 +327,7 @@ def _course_block(text: str, course: _Course) -> str | None:
         return None
     # End at the next course heading, or the post-course 申込方法 section.
     end = len(text)
-    for other in _COURSES:
+    for other in _COURSES_SUMMER:
         pos = text.find(other.heading, start + len(course.heading))
         if 0 <= pos < end:
             end = pos
