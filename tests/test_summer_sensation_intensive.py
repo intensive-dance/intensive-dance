@@ -147,10 +147,14 @@ _MILAN_HTML = (
     "<p>ITALY SUMMER MASTER INTENSIVE 2026</p>"
     "<p>Join us for an extraordinary opportunity to challenge your limits. "
     "Under the guidance of Kinga Varga, participants will delve into the DART "
-    "Dance Company REPERTOIRE. Clyde Emmanuel Archer will lead sessions on "
-    "S-E-D SHARON EYAL contemporary repertoire, while Alessandra La Bella will "
-    "introduce dancers to MARCO GOECKE's work.</p>"
-    "<p>SCHEDULE 15th to 17th June 2026: contemporary and repertoire classes.</p>"
+    "Dance Company REPERTOIRE and moving ballet technique. Clyde Emmanuel Archer "
+    "will lead sessions on the powerful and distinctive repertoire of S-E-D "
+    "SHARON EYAL, while Alessandra La Bella will introduce dancers to the raw, "
+    "dynamic intensity of MARCO GOECKE's work.</p>"
+    "<p>SCHEDULE 15th to 17th June 2026: 10:00 - 11:00 Ballet in Motion with "
+    "Kinga Varga; 11:15 - 13:15 S-E-D SHARON EYAL Repertoire with Clyde Emmanuel "
+    "Archer; 13:45 - 15:45 DART Repertoire with Kinga Varga; 16:00 - 18:00 MARCO "
+    "GOECKE Repertoire with Alessandra La Bella</p>"
     "<p>Workshop price: 468 EUR</p>"
     "<p>TO APPLY: Please send your CV and a five-minute maximum improvisation "
     "video uploaded on YouTube NO PASSWORD to dartdanceworkshop@gmail.com</p>"
@@ -179,6 +183,17 @@ def test_milan_prices_single_tier():
     assert prices[0].amount == 468.0
     assert prices[0].currency == "EUR"
     assert prices[0].includes == ["tuition"]
+
+
+def test_milan_genres_repertoire_only():
+    # Verified live 2026-06: the Milan page teaches repertoire (DART / Sharon Eyal /
+    # Marco Goecke) and "moving ballet technique" but never uses the word
+    # "contemporary"; per "fail open, only set what the source states" we don't
+    # infer it from the (contemporary) choreographers named. The sister Berlin page
+    # does say "contemporary", hence its extra genre.
+    genres = dart._genres(_MILAN_TEXT)
+    assert "repertoire" in genres
+    assert "contemporary" not in genres
 
 
 def test_milan_teachers_three_names():
