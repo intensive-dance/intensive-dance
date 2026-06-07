@@ -65,6 +65,8 @@ Ranked by tier then confidence. These are the recommended next builds.
 - **A/B** Accademia Bozzolini / Balletto di Toscana SI (IT · Florence) — 2025 ran 7–19 Jul; 2026 TBA
 - **B** Tallinn Summer Ballet (EE) · Ballet Summer Workshop Estonia (EE) · Balletto di Verona (IT) · Opus Ballet (IT · Florence) — annual, 2026 dates pending
 - GB verify-before-build: Moorland Int'l Ballet · Ballet Boost · The Hammond · Ballet West — exist annually, no live 2026 dates found (don't assert)
+- **B/C** cordsdance — Intensive Ballet Workshops (PL · Wrocław, AST-Halle) — 5th ed., classical + contemporary; **20–25 Jun + 20–25 Jul 2026 announced on Instagram (@cordsdance)**, but the site's 2026 page isn't up yet (only 2023–25 exist) — cordsdance.com. Local studio, faculty unnamed → low tier. *(Instagram-sourced.)*
+- **B** Summer Intensive Gymnasium Essen-Werden (DE · Essen) — **already a `seed`** in providers.json; school-based summer intensive, faculty incl. Paula Archangelo-Cakir (ex-Aalto Ballett Theater Essen / dance medicine). *(Instagram-sourced @gymnasium_essen_werden_tanz; recorded here for the score read.)*
 
 ## ⏸️ Defer → IDR-9 (`deferred`) — full-time / long-term only, no short course
 - **S** School of the Hamburg Ballet (DE) · **A** Ballettakademie der Wiener Staatsoper (AT) · Royal Swedish Ballet School (SE) · Greek National Opera Dance School (GR) · Teatro di San Carlo Ballet School (IT · Naples) · Ginasiano (PT) · Čiurlionis School (LT) · Floria Capsali (RO) · CPD Sevilla (ES)
