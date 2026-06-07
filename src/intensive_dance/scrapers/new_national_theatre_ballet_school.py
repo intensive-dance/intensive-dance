@@ -201,9 +201,13 @@ def _date_range(text: str) -> tuple[date | None, date | None]:
 
 
 def _dates_note(block: str) -> str | None:
-    # Keep this track's own per-day schedule line ("8月20日（木）10:50-12:30 …").
-    m = re.search(r"【日程詳細[^】]*】\s*([^【]+)", block)
-    return parse.clean(m.group(1)) if m else None
+    # Keep per-day schedule lines from ALL 【日程詳細…】 blocks in this track.
+    # The A class splits into A1 (morning) and A2 (afternoon) sub-tracks, each
+    # with its own block; a single-match regex silently drops A2. We concatenate
+    # all blocks so both time-slots are preserved.
+    parts = [m.group(1) for m in re.finditer(r"【日程詳細[^】]*】\s*([^【]+)", block)]
+    combined = " ".join(parse.clean(p) for p in parts if p.strip())
+    return combined if combined else None
 
 
 # 申込開始期間】2026年5月25日（月）～6月19日（金）必着 — the closing 必着 date is the

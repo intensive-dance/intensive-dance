@@ -45,17 +45,17 @@
     ],
     "schedule": {
       "end": "2026-08-22",
-      "notes": "・8月20日（木）10:50-12:30 クラスレッスン ・8月21日（金）10:50-12:30 クラスレッスン ・8月22日（土）10:50-12:30 クラスレッスン／13:20-14:20 説明会 ★タイムテーブル（A1クラス）（PDF）",
+      "notes": "・8月20日（木）10:50-12:30 クラスレッスン ・8月21日（金）10:50-12:30 クラスレッスン ・8月22日（土）10:50-12:30 クラスレッスン／13:20-14:20 説明会 ★タイムテーブル（A1クラス）（PDF） ・8月20日（木）13:30-15:10 クラスレッスン ・8月21日（金）13:30-15:10 クラスレッスン ・8月22日（土）13:20-14:20 説明会／14:50-16:30 クラスレッスン ★タイムテーブル（A2クラス）（PDF）",
       "season": "2026",
       "sessions": [],
       "start": "2026-08-20",
       "timezone": "Asia/Tokyo"
     },
     "source": {
-      "attemptedAt": "2026-06-07T10:52:39.331661Z",
-      "hash": "sha256:4d684d2de154b9882d071a81cac09d24475be9196ba6dc9a55aeb90071f766b5",
+      "attemptedAt": "2026-06-07T03:00:13.605822Z",
+      "hash": "sha256:e77637337f1fdd55caea936af756f9bb6da8b3f1635df0893b5e536d781e387c",
       "provider": "new-national-theatre-ballet-school",
-      "scrapedAt": "2026-06-05T22:19:04.366796Z",
+      "scrapedAt": "2026-06-07T08:51:57.853139Z",
       "url": "https://www.nntt.jac.go.jp/ballet/training/news/detail/27_031194.html"
     },
     "teachers": [
@@ -141,7 +141,7 @@
       "timezone": "Asia/Tokyo"
     },
     "source": {
-      "attemptedAt": "2026-06-07T10:52:39.331661Z",
+      "attemptedAt": "2026-06-07T03:00:13.605822Z",
       "hash": "sha256:2aa3f128cfcd00486c4bb625bcb958c4fc7df7959f1fd31edc8445289772697c",
       "provider": "new-national-theatre-ballet-school",
       "scrapedAt": "2026-06-05T22:19:04.367039Z",

@@ -64,18 +64,20 @@
       }
     ],
     "schedule": {
-      "end": "2026-08-01",
+      "end": "2026-07-31",
       "notes": "Rehearsal Studio, Grand Theatre Backstage, Hong Kong Cultural Centre (10 Salisbury Road, Tsim Sha Tsui)",
       "season": "2026",
       "sessions": [
         {
-          "end": "2026-07-25",
+          "end": "2026-07-24",
           "label": "Week 1",
+          "notes": "20–21 & 23–24 July (Mon–Tue, Thu–Fri; Wed excluded)",
           "start": "2026-07-20"
         },
         {
-          "end": "2026-08-01",
+          "end": "2026-07-31",
           "label": "Week 2",
+          "notes": "27–28 & 30–31 July (Mon–Tue, Thu–Fri; Wed excluded)",
           "start": "2026-07-27"
         }
       ],
@@ -83,10 +85,10 @@
       "timezone": "Asia/Hong_Kong"
     },
     "source": {
-      "attemptedAt": "2026-06-07T12:25:46.849239Z",
-      "hash": "sha256:8c4125c9b9a51bde150bf87c9ca944faf44ac75bbaef2d0a3ac90d07a816d735",
+      "attemptedAt": "2026-06-07T06:28:42.269628Z",
+      "hash": "sha256:b29806ea99a04801a169d05c60b54057e4ccce6549c58ba434d7d941d851e152",
       "provider": "hong-kong-academy-of-ballet",
-      "scrapedAt": "2026-06-05T18:57:23.072429Z",
+      "scrapedAt": "2026-06-07T08:53:58.895732Z",
       "url": "https://www.hkballet.com/en/explore-and-engage/workshops-classes-programme/summerintensive2026"
     },
     "teachers": [],
@@ -176,7 +178,7 @@
       "timezone": "Asia/Hong_Kong"
     },
     "source": {
-      "attemptedAt": "2026-06-07T12:25:46.849239Z",
+      "attemptedAt": "2026-06-07T06:28:42.269628Z",
       "hash": "sha256:0d1037045fdaddeae30d49c8c487c7fba698b01080665645c01f89156d3019d8",
       "provider": "hong-kong-academy-of-ballet",
       "scrapedAt": "2026-06-05T18:57:23.073294Z",
@@ -270,7 +272,7 @@
       "timezone": "Asia/Hong_Kong"
     },
     "source": {
-      "attemptedAt": "2026-06-07T12:25:46.849239Z",
+      "attemptedAt": "2026-06-07T06:28:42.269628Z",
       "hash": "sha256:05aeff0841250d2d2ec6a28f5429bd858d4acaadc6010d8fec4940aaabb2c702",
       "provider": "hong-kong-academy-of-ballet",
       "scrapedAt": "2026-06-05T18:57:23.073562Z",
@@ -374,7 +376,7 @@
       "timezone": "Asia/Hong_Kong"
     },
     "source": {
-      "attemptedAt": "2026-06-07T12:25:46.849239Z",
+      "attemptedAt": "2026-06-07T06:28:42.269628Z",
       "hash": "sha256:3d8ca525a76ac78ae227767efc03f942b977596c9556ea2b7c3329f61a3ace32",
       "provider": "hong-kong-academy-of-ballet",
       "scrapedAt": "2026-06-05T18:57:23.073843Z",
@@ -488,7 +490,7 @@
       "timezone": "Asia/Hong_Kong"
     },
     "source": {
-      "attemptedAt": "2026-06-07T12:25:46.849239Z",
+      "attemptedAt": "2026-06-07T06:28:42.269628Z",
       "hash": "sha256:6c839b12309758ce6f3480d8b13173638b8733876a2c7fb4c8c829c251f0faa4",
       "provider": "hong-kong-academy-of-ballet",
       "scrapedAt": "2026-06-05T18:57:23.074365Z",

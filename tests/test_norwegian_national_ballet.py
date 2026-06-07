@@ -3,8 +3,9 @@
 These pin the prose parsing of the operaen.no article: the DD.MM.YY date range,
 the bounded age range, curriculum-scoped genres, the NOK course fee (tuition +
 meals, accommodation/travel excluded), the application deadline, and the
-`specific` video requirement. They also pin the two discovery guards — the
-heading must be the summer course, and an already-finished edition is dropped.
+`specific` video requirement. They also pin the discovery guard — the heading
+must be the summer course — and verify that a past-dated edition is still emitted
+(IDR-24: ended cycles are retained, not dropped; "past" is consumer-side only).
 Inline strings, no network.
 """
 
@@ -65,9 +66,7 @@ def test_video_requirement_is_specific():
 
 
 def test_build_offering_happy_path():
-    offering = nnb._build_offering(
-        _html(), nnb.ARTICLE.format(base=nnb.BASE, year=2026), date(2026, 6, 1)
-    )
+    offering = nnb._build_offering(_html(), nnb.ARTICLE.format(base=nnb.BASE, year=2026))
     assert offering is not None
     assert offering.id == "norwegian-national-ballet/summer-course-2026"
     assert offering.schedule.season == "2026"
@@ -78,9 +77,13 @@ def test_build_offering_happy_path():
 
 def test_non_summer_course_article_rejected():
     html = _html(title="Norwegian National Ballet's Autumn Gala 2026")
-    assert nnb._build_offering(html, "https://x/", date(2026, 6, 1)) is None
+    assert nnb._build_offering(html, "https://x/") is None
 
 
-def test_finished_edition_dropped():
-    # end (27.06.26) < today → drop, even though the page still resolves.
-    assert nnb._build_offering(_html(), "https://x/", date(2026, 7, 1)) is None
+def test_past_dated_edition_still_emitted():
+    # IDR-24: ended cycles must be retained — "past" is derived consumer-side.
+    # Even when end (27.06.26) is before today, the offering is still emitted.
+    offering = nnb._build_offering(_html(), "https://x/")
+    assert offering is not None
+    assert offering.id == "norwegian-national-ballet/summer-course-2026"
+    assert offering.lifecycle == "scheduled"
