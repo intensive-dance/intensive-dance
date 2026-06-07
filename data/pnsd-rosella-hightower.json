@@ -18,11 +18,11 @@
     "level": [],
     "lifecycle": "scheduled",
     "location": {
-      "city": "Cannes",
+      "city": "Mougins",
       "country": "FR"
     },
     "organization": {
-      "city": "Cannes",
+      "city": "Mougins",
       "country": "FR",
       "name": "PNSD Rosella Hightower",
       "slug": "pnsd-rosella-hightower"
@@ -52,10 +52,10 @@
       "timezone": "Europe/Paris"
     },
     "source": {
-      "attemptedAt": "2026-06-07T09:59:14.944964Z",
-      "hash": "sha256:beb7ed7ec1cb6cc63b78066d521528d4efe91617baae2c3de2b15eddb681acb7",
+      "attemptedAt": "2026-06-07T01:40:38.024659Z",
+      "hash": "sha256:bc784305ad64c3999715dc524f5891efd454f12a7081bda49c2174cebe1781f6",
       "provider": "pnsd-rosella-hightower",
-      "scrapedAt": "2026-06-06T17:00:15.924785Z",
+      "scrapedAt": "2026-06-07T08:35:40.830637Z",
       "url": "https://www.pnsd.fr/stages"
     },
     "teachers": [
@@ -111,11 +111,11 @@
     "level": [],
     "lifecycle": "scheduled",
     "location": {
-      "city": "Cannes",
+      "city": "Mougins",
       "country": "FR"
     },
     "organization": {
-      "city": "Cannes",
+      "city": "Mougins",
       "country": "FR",
       "name": "PNSD Rosella Hightower",
       "slug": "pnsd-rosella-hightower"
@@ -146,10 +146,10 @@
       "timezone": "Europe/Paris"
     },
     "source": {
-      "attemptedAt": "2026-06-07T09:59:14.944964Z",
-      "hash": "sha256:27eae434c20c3f2be7246e3e1940d333633ed3e4d11ef3ca48e8c7531d54f8e0",
+      "attemptedAt": "2026-06-07T01:40:38.024659Z",
+      "hash": "sha256:9c05642cfcb3585324860ce795636cbe6aeab281d734849bfcd8b9bbb3344442",
       "provider": "pnsd-rosella-hightower",
-      "scrapedAt": "2026-06-06T17:00:15.924976Z",
+      "scrapedAt": "2026-06-07T08:35:40.830876Z",
       "url": "https://www.pnsd.fr/stages"
     },
     "teachers": [
@@ -200,11 +200,11 @@
     "level": [],
     "lifecycle": "scheduled",
     "location": {
-      "city": "Cannes",
+      "city": "Mougins",
       "country": "FR"
     },
     "organization": {
-      "city": "Cannes",
+      "city": "Mougins",
       "country": "FR",
       "name": "PNSD Rosella Hightower",
       "slug": "pnsd-rosella-hightower"
@@ -235,10 +235,10 @@
       "timezone": "Europe/Paris"
     },
     "source": {
-      "attemptedAt": "2026-06-07T09:59:14.944964Z",
-      "hash": "sha256:c894d90dd8d25cdeb13e9140581ea79801c590313998be0a8d3e7cd4230a06d2",
+      "attemptedAt": "2026-06-07T01:40:38.024659Z",
+      "hash": "sha256:bc4077100f523f1735d54162ea3e81f3295badddcb8a4d5a5dbc207cbe557e21",
       "provider": "pnsd-rosella-hightower",
-      "scrapedAt": "2026-06-06T17:00:15.925037Z",
+      "scrapedAt": "2026-06-07T08:35:40.830979Z",
       "url": "https://www.pnsd.fr/stages"
     },
     "teachers": [
@@ -289,11 +289,11 @@
     "level": [],
     "lifecycle": "scheduled",
     "location": {
-      "city": "Cannes",
+      "city": "Mougins",
       "country": "FR"
     },
     "organization": {
-      "city": "Cannes",
+      "city": "Mougins",
       "country": "FR",
       "name": "PNSD Rosella Hightower",
       "slug": "pnsd-rosella-hightower"
@@ -324,10 +324,10 @@
       "timezone": "Europe/Paris"
     },
     "source": {
-      "attemptedAt": "2026-06-07T09:59:14.944964Z",
-      "hash": "sha256:71954c7f1fdcc93a7baf6e3dad69c35e55d9a2577f5c34814ceafc4e3b870d3a",
+      "attemptedAt": "2026-06-07T01:40:38.024659Z",
+      "hash": "sha256:b76b1b7ba6f6f75a1d4c3d845ce6eef73695e30ec49a6a53a934999bd4b6a9b4",
       "provider": "pnsd-rosella-hightower",
-      "scrapedAt": "2026-06-06T17:00:15.925102Z",
+      "scrapedAt": "2026-06-07T08:35:40.831062Z",
       "url": "https://www.pnsd.fr/stages"
     },
     "teachers": [

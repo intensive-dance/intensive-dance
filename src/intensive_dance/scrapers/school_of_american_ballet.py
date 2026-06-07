@@ -14,7 +14,7 @@ in dates, ages and fees:
   - New York Junior Session — one week, ages 10-12, an introductory program.
 Both are year-stamped (the page headings name the cycle, e.g. "2026 …").
 
-WHAT THIS SCRAPER EXERCISES (verified live 2026-06-05):
+WHAT THIS SCRAPER EXERCISES (verified live 2026-06-07):
   - PRICES in USD, multiple per offering from the fee table — "Tuition" →
     tuition, "Room and Board" → accommodation+meals, the rest (Registration /
     Activity / Laundry fees, Single Room Surcharge) carry no inclusion.
@@ -27,6 +27,10 @@ WHAT THIS SCRAPER EXERCISES (verified live 2026-06-05):
   - LEVELS read from the admission sentence only ("intermediate and advanced
     students" / "training at the intermediate level"), not loose prose — so
     "the most advanced girls" in the Junior Session blurb doesn't leak in.
+  - APPLICATION STATUS + DEADLINE. When auditions have passed the page states
+    it with a bold italic notice ("All auditions for our 2026 programs have now
+    passed") → status="closed". The video-application deadline ("through February
+    15", no year) is stamped with the program year from the schedule start date.
 """
 
 from __future__ import annotations
@@ -40,6 +44,7 @@ from selectolax.parser import HTMLParser, Node
 from intensive_dance import parse
 from intensive_dance.models import (
     Application,
+    ApplicationStatus,
     Genre,
     Level,
     Location,
@@ -109,7 +114,12 @@ def _build_offering(html: str, url: str, slug: str, today: date) -> Offering | N
         location=_location(text),
         schedule=Schedule(season=season, start=start, end=end, timezone=TZ),
         prices=_prices(tree),
-        application=Application(url=url, requirements=_requirements(text)),
+        application=Application(
+            status=_status(text),
+            deadline=_deadline(text, start.year if start else None),
+            url=url,
+            requirements=_requirements(text),
+        ),
     )
 
 
@@ -131,6 +141,30 @@ _RANGE = re.compile(
 
 def _dates(text: str) -> tuple[date | None, date | None]:
     return parse.parse_multi_month_range(text, _RANGE)
+
+
+# --- application status & deadline -------------------------------------------
+
+# "All auditions for our 2026 programs have now passed." — bold italic notice.
+_CLOSED = re.compile(r"auditions.*?have now passed", re.IGNORECASE)
+# "We will also accept video applications through February 15" — no year stated,
+# so we apply the program's own year.
+_DEADLINE = re.compile(
+    r"video applications? through (" + parse.MONTHALT + r")\s+(\d{1,2})",
+    re.IGNORECASE,
+)
+
+
+def _status(text: str) -> ApplicationStatus | None:
+    return "closed" if _CLOSED.search(text) else None
+
+
+def _deadline(text: str, year: int | None) -> date | None:
+    m = _DEADLINE.search(text)
+    if not m or year is None:
+        return None
+    month, day = m.groups()
+    return date(year, parse.MONTHS[month.lower()], int(day))
 
 
 # --- ages --------------------------------------------------------------------

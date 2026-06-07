@@ -18,7 +18,12 @@ AGENTS.md). Dates are parsed language-agnostically with a local French month map
 bound and the start day may omit its month when it shares the end's (STAGE 2:
 "du Mercredi 8 au Mardi 14 Juillet"). Faculty names are kept verbatim.
 
-WHAT THE PAGE GIVES US (verified live 2026-06):
+CITY: the stages run at the school's **Mougins** campus ("140 allée Rosella
+Hightower 06250 MOUGINS", per the registration contract + site JSON-LD). The
+school's informal shorthand is "Cannes-Mougins" but the postal commune is Mougins
+(06250), not Cannes; both organization.city and location.city are set to "Mougins".
+
+WHAT THE PAGE GIVES US (verified live 2026-06-07):
   - DATES: "du <weekday?> <d> <Month?> au <weekday?> <d> <Month> <year>" per stage.
   - AGES: "Stages à partir de 10 ans" — open-ended upper bound, so min only.
   - GENRES: classical + contemporary per edition (the shared curriculum also lists
@@ -67,7 +72,7 @@ ORG = Organization(
     name="PNSD Rosella Hightower",
     slug="pnsd-rosella-hightower",
     country="FR",
-    city="Cannes",
+    city="Mougins",
 )
 
 # French month names → number, kept local like the German map in john_cranko_school
@@ -250,7 +255,7 @@ def _build_offering(
         genres=_genres(f"{body} {curriculum}"),
         ageRange=_age_range(curriculum),
         organization=ORG,
-        location=Location(city="Cannes", country="FR"),
+        location=Location(city="Mougins", country="FR"),
         schedule=Schedule(
             season=season,
             start=start,

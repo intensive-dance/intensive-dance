@@ -3,14 +3,18 @@
 The pages flip between English and Italian (Varnish cache), so these pin that the
 language-agnostic parsing gives the *same* result either way — dates (EN/IT month
 names), ages ("between 9 and 19" vs "tra i 9 e i 19 anni"), the headline price,
-and genres. They also pin the postponed-edition lifecycle (IDR-24) and that the
-refund boilerplate is not mistaken for a cancellation. Inline strings, no network.
+and genres. They also pin the postponed-edition lifecycle (IDR-24), that the
+refund boilerplate is not mistaken for a cancellation, the open-ended senior age
+band (Winter School: "da 15 anni in su"), requirements parsing (NoneReq for no
+selection, PhotosReq for "attaching photos"), and the registration deadline.
+Inline strings, no network.
 """
 
 from __future__ import annotations
 
 from datetime import date
 
+from intensive_dance.models import NoneReq, PhotosReq
 from intensive_dance.scrapers import fondazione_monreart as mon
 
 
@@ -37,6 +41,23 @@ def test_ages_bare_junior_senior_bands():
         "min": 11,
         "max": 19,
     }
+
+
+def test_ages_open_ended_senior_band():
+    # Winter School live page: Junior 11-14 + Senior "da 15 anni in su" (open-ended).
+    text = "Junior course: 11-14 years old Senior course: 15 years and older"
+    result = mon._age_range(text)
+    assert result is not None
+    assert result["min"] == 11
+    assert "max" not in result or result.get("max") is None
+
+
+def test_ages_italian_open_ended():
+    text = "Junior: 11-14 anni Senior: da 15 anni in su"
+    result = mon._age_range(text)
+    assert result is not None
+    assert result["min"] == 11
+    assert result.get("max") is None
 
 
 def test_lifecycle_postponed_banner():
@@ -75,3 +96,34 @@ def test_place_table():
     assert mon._PLACE["international-summer-school-cyprus"] == ("Limassol", "CY")
     assert mon._PLACE["international-spring-school-italia"] == ("Verona", "IT")
     assert mon._PLACE.get("brand-new-unmapped-event", (None, None)) == (None, None)
+
+
+def test_requirements_none_req_for_no_selection():
+    text = "Selection: no photographic selection required."
+    (req,) = mon._requirements(text)
+    assert isinstance(req, NoneReq)
+
+
+def test_requirements_photos_req_for_attaching_photos():
+    text = "Submit application via online form attaching photos."
+    (req,) = mon._requirements(text)
+    assert isinstance(req, PhotosReq)
+    assert req.specificity == "freeform"
+
+
+def test_requirements_empty_when_not_stated():
+    assert mon._requirements("No information available about requirements.") == []
+
+
+def test_deadline_from_italian_text():
+    text = "Le iscrizioni sono aperte fino al 31 luglio 2026."
+    assert mon._deadline(text, 2026) == date(2026, 7, 31)
+
+
+def test_deadline_from_english_text():
+    text = "Registration is open until July 31, 2026."
+    assert mon._deadline(text, 2026) == date(2026, 7, 31)
+
+
+def test_deadline_absent():
+    assert mon._deadline("Apply at any time.", 2026) is None

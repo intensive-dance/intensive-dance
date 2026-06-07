@@ -11,18 +11,19 @@ year. The page advertises two 10-day editions — "YSB 1" and "YSB 2" — that a
 dancer may take singly or back-to-back, so we emit one `Offering` for the summer
 intensive with the two editions as `schedule.sessions`.
 
-WHAT THE PAGES GIVE US (verified live 2026-06):
+WHAT THE PAGES GIVE US (verified live 2026-06-07):
   - DATES: "YSB 1 | 16 July - 26 July 2026", "YSB2 | 29 July - 8 August 2026".
   - PRICE: €740 per intensive (10 days, 7 h/day); group/both-week discounts noted.
   - AGES: 13–21. GENRES from the curriculum (ballet, repertoire, modern, pointe).
   - TEACHER: a named guest masterclass (e.g. Melike Demirtas) — the register's
     first emitted `Teacher`.
   - REQUIREMENTS from the application form: a headshot, 2–3 full-body dance
-    photos (applicant's choice, examples suggested), and a CV/letter — no video.
-    Wix renders inline form labels with letter-spacing that garbles words mid-
-    token ("a rabesque"), so we detect the requirement *keywords* (which render
-    cleanly) and describe them in normalized prose rather than scrape the
-    garbled example list verbatim.
+    photos (applicant's choice, examples suggested), a CV/letter, and a mandatory
+    "Video URL *" field (classwork/classical variations/modern choreography, no
+    specific brief) → VideoReq(unspecific). Wix renders inline form labels with
+    letter-spacing that garbles words mid-token ("a rabesque"), so we detect the
+    requirement *keywords* (which render cleanly) and describe them in normalized
+    prose rather than scrape the garbled example list verbatim.
 """
 
 from __future__ import annotations
@@ -49,6 +50,7 @@ from intensive_dance.models import (
     Session,
     Source,
     Teacher,
+    VideoReq,
     now_utc,
 )
 
@@ -223,4 +225,17 @@ def _requirements(apply_text: str) -> list[Requirement]:
         )
     if re.search(r"\bcv\b|letter detailing", low):
         reqs.append(CVReq())
+    # The application form has a mandatory "Video URL *" field requesting a link
+    # to classwork, classical variations, and/or modern choreography — no defined
+    # movement brief, so the requirement is unspecific.
+    if "video url" in low:
+        reqs.append(
+            VideoReq(
+                specificity="unspecific",
+                description=(
+                    "A video link showing classwork, classical variations and/or "
+                    "modern choreography (required field on the application form)."
+                ),
+            )
+        )
     return reqs

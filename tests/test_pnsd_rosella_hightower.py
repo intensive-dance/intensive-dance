@@ -150,6 +150,14 @@ def test_no_summer_block_yields_nothing():
     assert p._build_offerings("<html><body><p>Pas de stages annoncés.</p></body></html>") == []
 
 
+def test_location_and_org_city_are_mougins():
+    # The stages run at the school's Mougins campus (postal code 06250 = Mougins,
+    # not Cannes); both organization.city and location.city must reflect this.
+    offerings = p._build_offerings(_HTML)
+    assert all(o.organization.city == "Mougins" for o in offerings)
+    assert all(o.location is not None and o.location.city == "Mougins" for o in offerings)
+
+
 # Mirrors the contract PDF text (pypdf flattens the grid to label rows then the
 # per-column amounts): membership, STAGE N°1 single block, STAGE N°2-3-4 grid.
 _CONTRACT = (

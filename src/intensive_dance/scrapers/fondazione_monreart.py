@@ -16,6 +16,17 @@ LIFECYCLE (IDR-24): one school — Budapest — carries a "postponed to 2027" ba
 we keep it with `lifecycle="postponed"` (showing the new date) rather than
 dropping it. Past editions (e.g. the December 2025 Winter School) are kept too;
 "past" is derived from dates, not stored. The motivating case for IDR-24.
+
+AGE RANGE: the Winter School (Verona) lists Junior 11-14 AND Senior "da 15 anni
+in su" (open-ended); the combined ageRange is {min:11} (null max). The `_AGE_OPEN`
+regex catches the open "da N anni in su" / "from N years and older" forms; when any
+open-ended band is present the max is left null rather than capping at 14.
+
+REQUIREMENTS + DEADLINE (verified live 2026-06-07):
+  - Winter School Verona: "no photographic selection required" → [NoneReq].
+  - Volta Mantovana / Cyprus / Budapest: "Submit application … attaching photos"
+    → [PhotosReq(freeform)].
+  - Volta Mantovana deadline: "open until July 31, 2026" → deadline=2026-07-31.
 """
 
 from __future__ import annotations
@@ -32,9 +43,12 @@ from intensive_dance.models import (
     Genre,
     Lifecycle,
     Location,
+    NoneReq,
     Offering,
     Organization,
+    PhotosReq,
     Price,
+    Requirement,
     Schedule,
     Source,
     now_utc,
@@ -119,7 +133,11 @@ def _build_offering(client: httpx.Client, record: dict) -> Offering | None:
         location=Location(city=city, country=country),
         schedule=Schedule(season=season, start=start, end=end, timezone="Europe/Rome"),
         prices=_prices(text),
-        application=Application(url=link),
+        application=Application(
+            deadline=_deadline(text, int(season)),
+            url=link,
+            requirements=_requirements(text),
+        ),
     )
 
 
@@ -170,6 +188,13 @@ _AGE_CUE = re.compile(
 )
 # Bare form with an explicit unit: "Junior: 11-14 anni", "15-19 years".
 _AGE_BARE = re.compile(r"(\d{1,2})\s*[-–]\s*(\d{1,2})\s*(?:anni|years)", re.IGNORECASE)
+# Open-ended lower-bound form: "da 15 anni in su", "15 years and older",
+# "from 15 years", "15 years old and older". When this matches, the upper bound
+# is null (open-ended senior band).
+_AGE_OPEN = re.compile(
+    r"(?:da\s+)?(\d{1,2})\s+(?:anni\s+in\s+su|years?\s+(?:and\s+)?older|and\s+older)",
+    re.IGNORECASE,
+)
 
 
 def _age_range(text: str) -> dict | None:
@@ -178,9 +203,15 @@ def _age_range(text: str) -> dict | None:
         for a, b in _AGE_CUE.findall(text) + _AGE_BARE.findall(text)
         if 5 <= int(a) <= int(b) <= 30
     ]
-    if not pairs:
+    open_mins = [int(m.group(1)) for m in _AGE_OPEN.finditer(text) if 5 <= int(m.group(1)) <= 30]
+    if not pairs and not open_mins:
         return None
-    return {"min": min(a for a, _ in pairs), "max": max(b for _, b in pairs)}
+    all_mins = [a for a, _ in pairs] + open_mins
+    # Upper bound is null when any open-ended band is present (no finite max can
+    # be inferred from "da N anni in su").
+    if open_mins:
+        return {"min": min(all_mins)}
+    return {"min": min(all_mins), "max": max(b for _, b in pairs)}
 
 
 # --- prices: the headline cost (€/euro, either side), near a cost cue ----------
@@ -198,6 +229,50 @@ def _prices(text: str) -> list[Price]:
     if amount is None or amount < 50:
         return []
     return [Price(amount=amount, currency="EUR", label="Total cost", includes=["tuition"])]
+
+
+# --- application deadline & requirements -------------------------------------
+
+# "Le iscrizioni sono aperte fino al 31 luglio 2026" (IT: day month year)
+# "Registration is open until July 31, 2026." (EN: month day year)
+# Two patterns handle both word orders; both are language-agnostic.
+_DEADLINE_DMY = re.compile(
+    r"(?:fino al|entro il)\s+(\d{1,2})\s+(" + _MONTHALT + r")\s+(\d{4})",
+    re.IGNORECASE,
+)
+_DEADLINE_MDY = re.compile(
+    r"(?:open until|until)\s+(" + _MONTHALT + r")\s+(\d{1,2}),?\s*(\d{4})",
+    re.IGNORECASE,
+)
+
+
+def _deadline(text: str, season: int) -> date | None:  # noqa: ARG001 — season reserved
+    m = _DEADLINE_DMY.search(text)
+    if m:
+        day, month, year = m.groups()
+        return date(int(year), _MONTHS[month.lower()], int(day))
+    m = _DEADLINE_MDY.search(text)
+    if m:
+        month, day, year = m.groups()
+        return date(int(year), _MONTHS[month.lower()], int(day))
+    return None
+
+
+# "non è richiesta selezione fotografica / no photographic selection required" →
+# NoneReq. "Submit application via online form attaching photos" → PhotosReq freeform.
+_NO_SELECTION = re.compile(
+    r"no photographic selection required|non.*?richiesta\s+selezi\w*\s+fotografic",
+    re.IGNORECASE,
+)
+_PHOTOS_REQUIRED = re.compile(r"attaching photos|allegando\s+foto", re.IGNORECASE)
+
+
+def _requirements(text: str) -> list[Requirement]:
+    if _NO_SELECTION.search(text):
+        return [NoneReq()]
+    if _PHOTOS_REQUIRED.search(text):
+        return [PhotosReq(specificity="freeform", notes="Application form with photos.")]
+    return []
 
 
 # --- genres -------------------------------------------------------------------

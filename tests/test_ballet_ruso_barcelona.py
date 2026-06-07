@@ -117,3 +117,10 @@ def test_no_year_no_offerings():
     assert (
         brb._build_offerings("<html><body>nothing dated here</body></html>", date(2026, 1, 1)) == []
     )
+
+
+def test_apply_url_is_audition_page():
+    # The HOW TO APPLY section on the live page links to actividad/60 (the audition
+    # form), not actividad/59 (a camp registration page).
+    assert "actividad/60" in brb.APPLY_URL
+    assert "Audition" in brb.APPLY_URL

@@ -11,7 +11,7 @@ from __future__ import annotations
 
 from datetime import date
 
-from intensive_dance.models import PhotosReq
+from intensive_dance.models import PhotosReq, VideoReq
 from intensive_dance.scrapers import young_stars_ballet as ysb
 
 
@@ -60,6 +60,14 @@ def test_requirements_headshot_poses_cv_no_video():
     assert {r.type for r in reqs} == {"headshot", "photos", "cv"}
     photos = next(r for r in reqs if isinstance(r, PhotosReq))
     assert photos.specificity == "freeform"
+
+
+def test_requirements_includes_video_url_field():
+    apply_text = "Headshot * dance poses * CV or letter * Video URL * Please select Required"
+    reqs = ysb._requirements(apply_text)
+    assert {r.type for r in reqs} == {"headshot", "photos", "cv", "video"}
+    video = next(r for r in reqs if isinstance(r, VideoReq))
+    assert video.specificity == "unspecific"
 
 
 def test_zero_width_regex_strips():

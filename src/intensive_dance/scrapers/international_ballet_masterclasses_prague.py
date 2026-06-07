@@ -54,6 +54,7 @@ from selectolax.parser import HTMLParser
 from intensive_dance import parse
 from intensive_dance.models import (
     Application,
+    CVReq,
     Genre,
     Level,
     Location,
@@ -437,8 +438,15 @@ def _photo_req(text: str) -> Requirement:
     )
 
 
+_TEACHER_REF = re.compile(r"attach a reference from your teacher", re.IGNORECASE)
+
+
 def _senior_requirements(text: str) -> list[Requirement]:
     reqs: list[Requirement] = [_photo_req(text)]
+    # The application form page states "Please attach a reference from your teacher
+    # (if a student)" — an "UPLOAD YOUR REFERENCE" field is present in the form.
+    if _TEACHER_REF.search(text):
+        reqs.append(CVReq())
     return reqs
 
 

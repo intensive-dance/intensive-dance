@@ -13,18 +13,24 @@ Florida (3 weeks, USF Tampa) and California (2 weeks, CSU Long Beach). They
 differ in dates, ages, fees and housing, so each becomes its own `Offering`
 (`abt-jko-school/{site}-{season}`), the same per-location split RMB makes.
 
-WHAT THIS SCRAPER EXERCISES (verified live 2026-06-05):
+WHAT THIS SCRAPER EXERCISES (verified live 2026-06-07):
   - PRICES in USD, multiple per offering — Florida lists Tuition + a Day Student
     Fee + Room and Board in one Cost cell; we emit one `Price` per labelled line
     and map "Room and Board" → accommodation+meals.
-  - REQUIREMENTS = VIDEO (unspecific). Admission is by audition: in person on
-    ABT's National Audition Tour *or* a video submission — the open-brief video
-    branch. Shared across all three sites (one audition feeds all).
+  - REQUIREMENTS = VIDEO (unspecific) + HeadshotReq + PhotosReq(defined-poses,
+    first arabesque). Admission is by audition: in person on ABT's National
+    Audition Tour *or* a video submission. The audition page specifies dancers must
+    bring an informal headshot and first-arabesque picture to check-in. Shared
+    across all three sites (one audition feeds all).
+  - APPLICATION STATUS from the audition-info page: when the tour has concluded
+    the page states it explicitly ("no longer accepting auditions") → status="closed".
   - TEACHERS with AFFILIATIONS — the New York prose names ABT Artistic Director
     Susan Jaffe as a guest teacher; resolved to an `American Ballet Theatre`
     affiliation. Florida/California cite only unnamed "ABT faculty" → none.
   - opensAt — auditions pre-register from a stated date ("November 1, 2025"); no
-    hard application deadline is published, so `deadline`/`status` stay unset.
+    hard deadline is published.
+  - FLORIDA VENUE includes the building sub-name "School of Theatre and Dance"
+    (second `<p>` line in the location cell, after "University of South Florida").
 """
 
 from __future__ import annotations
@@ -39,13 +45,17 @@ from intensive_dance import parse
 from intensive_dance.models import (
     Affiliation,
     Application,
+    ApplicationStatus,
     Genre,
+    HeadshotReq,
     Level,
     Location,
     Offering,
     Organization,
+    PhotosReq,
     Price,
     PriceInclude,
+    Requirement,
     Schedule,
     Source,
     Teacher,
@@ -77,16 +87,21 @@ _SITES: dict[str, tuple[str, str]] = {
 def scrape(client: httpx.Client) -> list[Offering]:
     resp = client.get(PAGE)
     resp.raise_for_status()
-    return _build_offerings(resp.text, date.today())
+    audition_resp = client.get(AUDITION_PAGE)
+    audition_text = audition_resp.text if audition_resp.status_code == 200 else ""
+    return _build_offerings(resp.text, date.today(), audition_text)
 
 
-def _build_offerings(html: str, today: date) -> list[Offering]:  # noqa: ARG001 — see opensAt note
+def _build_offerings(  # noqa: ARG001 — today is used for opensAt note
+    html: str, today: date, audition_html: str = ""
+) -> list[Offering]:
     tree = HTMLParser(html)
     wraps = tree.css(".accordion-wrap")
     if not wraps:
         return []
 
     page_text = parse.clean(tree.body.text(separator=" ")) if tree.body else ""
+    status = _audition_status(audition_html)
     requirements = _requirements(page_text)
     opens_at = _opens_at(page_text)
 
@@ -125,6 +140,7 @@ def _build_offerings(html: str, today: date) -> list[Offering]:  # noqa: ARG001 
                 teachers=_teachers(prose),
                 prices=_prices(_cell_text(cells.get("cost"))),
                 application=Application(
+                    status=status,
                     opensAt=opens_at,
                     url=AUDITION_PAGE,
                     requirements=requirements,
@@ -253,7 +269,12 @@ def _location(cell: Node | None) -> Location | None:
     lines = [line for line in lines if line]
     if not lines:
         return None
+    # The cell can have a building sub-name on line 1 (e.g. "University of South
+    # Florida" / "School of Theatre and Dance"); join both as the venue when line
+    # 1 is not an address (no digits) and not a city line.
     venue = lines[0]
+    if len(lines) >= 2 and not re.search(r"\d", lines[1]) and not _CITY.match(lines[1]):
+        venue = f"{lines[0]} {lines[1]}"
     city = next(
         (m.group(1) for line in lines if (m := _CITY.match(line))),
         None,
@@ -289,11 +310,30 @@ def _opens_at(text: str) -> date | None:
     return date(int(year), parse.MONTHS[month.lower()], int(day))
 
 
-def _requirements(text: str):
+# "The 2026 ABT National Audition Tour has now concluded and ABT is no longer
+# accepting auditions." — set on the audition-info page when the tour has ended.
+_CLOSED = re.compile(
+    r"audition tour has now concluded\b|no longer accepting auditions",
+    re.IGNORECASE,
+)
+
+
+def _audition_status(audition_html: str) -> ApplicationStatus | None:
+    """Detect closed status from the audition-info page."""
+    if not audition_html:
+        return None
+    tree = HTMLParser(audition_html)
+    text = parse.clean(tree.body.text(separator=" ")) if tree.body else ""
+    return "closed" if _CLOSED.search(text) else None
+
+
+def _requirements(text: str) -> list[Requirement]:
     """Admission is by audition — in person on the National Audition Tour or a
-    video submission — so the relevant requirement is an open-brief video. We
-    only emit it when the page actually describes the audition (it's the same
-    process for all three sites), defaulting to nothing otherwise.
+    video submission — so the relevant requirement is an open-brief video. The
+    audition page also instructs dancers to bring an informal headshot and a
+    first-arabesque photo to check-in, so those are emitted alongside the video.
+    We only emit these when the page actually describes the audition process
+    (shared across all three sites), defaulting to nothing otherwise.
     """
     low = text.lower()
     if "video audition" in low or ("audition" in low and "video" in low):
@@ -304,6 +344,12 @@ def _requirements(text: str):
                     "Audition in person on ABT's National Audition Tour or submit a "
                     "video audition; online pre-registration required."
                 ),
-            )
+            ),
+            HeadshotReq(),
+            PhotosReq(
+                specificity="defined-poses",
+                poses=["first arabesque"],
+                notes="Informal headshot and first arabesque photo submitted upon check-in at the in-person audition.",
+            ),
         ]
     return []

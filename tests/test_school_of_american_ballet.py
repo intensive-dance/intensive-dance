@@ -4,8 +4,9 @@ SAB is an HTML scrape of two program pages sharing one template: an `<h1>`, date
 prose, and a single two-column fee table. These pin the judgement calls a hash
 check can't catch: the two date phrasings (dashed vs "through" with weekday
 prefixes), the floor/ceiling age sentence, level extraction that ignores loose
-prose, the fee-table inclusions, and the audition→video requirement. Inline HTML
-snippets, no network.
+prose, the fee-table inclusions, the audition→video requirement, and the
+status/deadline detection from the "auditions have passed" notice.
+Inline HTML snippets, no network.
 """
 
 from __future__ import annotations
@@ -30,6 +31,7 @@ _SC_HTML = """
   <p>The Summer Course is highly selective. All students must audition. We will
   also accept video applications through February 15 for any applicant who cannot
   attend and audition in person.</p>
+  <p><em><strong>All auditions for our 2026 programs have now passed.</strong></em></p>
   <h3>Technique</h3><h3>Pointe</h3><h3>Character</h3><h3>Variations</h3><h3>Contemporary</h3>
   <h4>2026 Summer Course Tuition Rates</h4>
   <table><tbody>
@@ -152,6 +154,32 @@ def test_requirements_none_when_silent():
     assert sab._requirements("Classes run Monday to Friday.") == []
 
 
+# --- application status & deadline -------------------------------------------
+
+
+def test_status_closed_when_auditions_passed():
+    text = "All auditions for our 2026 programs have now passed."
+    assert sab._status(text) == "closed"
+
+
+def test_status_none_when_not_stated():
+    assert sab._status("Auditions open every January.") is None
+
+
+def test_deadline_from_video_application_sentence():
+    text = "We will also accept video applications through February 15 for any applicant."
+    assert sab._deadline(text, 2026) == date(2026, 2, 15)
+
+
+def test_deadline_none_when_absent():
+    assert sab._deadline("All students must audition.", 2026) is None
+
+
+def test_deadline_none_when_no_year():
+    text = "We will also accept video applications through February 15 for any applicant."
+    assert sab._deadline(text, None) is None
+
+
 # --- end-to-end ---------------------------------------------------------------
 
 
@@ -183,6 +211,8 @@ def test_summer_course_offering():
         ("Laundry Fee", 20.0, []),
     ]
     assert o.application.requirements[0].type == "video"
+    assert o.application.status == "closed"
+    assert o.application.deadline == date(2026, 2, 15)
 
 
 def test_junior_session_offering():

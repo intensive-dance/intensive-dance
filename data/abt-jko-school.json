@@ -11,8 +11,20 @@
           "description": "Audition in person on ABT's National Audition Tour or submit a video audition; online pre-registration required.",
           "specificity": "unspecific",
           "type": "video"
+        },
+        {
+          "type": "headshot"
+        },
+        {
+          "notes": "Informal headshot and first arabesque photo submitted upon check-in at the in-person audition.",
+          "poses": [
+            "first arabesque"
+          ],
+          "specificity": "defined-poses",
+          "type": "photos"
         }
       ],
+      "status": "closed",
       "url": "https://www.abt.org/training/dancer-training/summer-programs/audition-info/"
     },
     "genres": [
@@ -53,10 +65,10 @@
       "timezone": "America/New_York"
     },
     "source": {
-      "attemptedAt": "2026-06-07T11:31:37.290159Z",
-      "hash": "sha256:6aa1739fe05db762dd9fabc712a248ca59fa7d74030d57a74db7a3785dbb3f59",
+      "attemptedAt": "2026-06-07T06:28:38.747641Z",
+      "hash": "sha256:a7a05b035efee1e23a13bc6e9bf018852e3dab9040f65caeaa5ebb6ddc7ceaf9",
       "provider": "abt-jko-school",
-      "scrapedAt": "2026-06-05T11:00:59.312710Z",
+      "scrapedAt": "2026-06-07T08:34:39.423011Z",
       "url": "https://www.abt.org/training/dancer-training/summer-programs/summer-intensives/"
     },
     "teachers": [
@@ -87,8 +99,20 @@
           "description": "Audition in person on ABT's National Audition Tour or submit a video audition; online pre-registration required.",
           "specificity": "unspecific",
           "type": "video"
+        },
+        {
+          "type": "headshot"
+        },
+        {
+          "notes": "Informal headshot and first arabesque photo submitted upon check-in at the in-person audition.",
+          "poses": [
+            "first arabesque"
+          ],
+          "specificity": "defined-poses",
+          "type": "photos"
         }
       ],
+      "status": "closed",
       "url": "https://www.abt.org/training/dancer-training/summer-programs/audition-info/"
     },
     "genres": [
@@ -104,7 +128,7 @@
     "location": {
       "city": "Tampa",
       "country": "US",
-      "venue": "University of South Florida"
+      "venue": "University of South Florida School of Theatre and Dance"
     },
     "organization": {
       "city": "New York",
@@ -145,10 +169,10 @@
       "timezone": "America/New_York"
     },
     "source": {
-      "attemptedAt": "2026-06-07T11:31:37.290159Z",
-      "hash": "sha256:a8b4bf6721ba62d21fdadd0b54b5a77d349be9be07eb52b56c81d1d243941ff3",
+      "attemptedAt": "2026-06-07T06:28:38.747641Z",
+      "hash": "sha256:236d37e157d13607a7f9de6da49ba6248948694169a0d5e6ed6c4bd00845b885",
       "provider": "abt-jko-school",
-      "scrapedAt": "2026-06-05T11:00:59.313316Z",
+      "scrapedAt": "2026-06-07T08:34:39.423752Z",
       "url": "https://www.abt.org/training/dancer-training/summer-programs/summer-intensives/"
     },
     "teachers": [],
@@ -166,8 +190,20 @@
           "description": "Audition in person on ABT's National Audition Tour or submit a video audition; online pre-registration required.",
           "specificity": "unspecific",
           "type": "video"
+        },
+        {
+          "type": "headshot"
+        },
+        {
+          "notes": "Informal headshot and first arabesque photo submitted upon check-in at the in-person audition.",
+          "poses": [
+            "first arabesque"
+          ],
+          "specificity": "defined-poses",
+          "type": "photos"
         }
       ],
+      "status": "closed",
       "url": "https://www.abt.org/training/dancer-training/summer-programs/audition-info/"
     },
     "genres": [
@@ -181,7 +217,7 @@
     "location": {
       "city": "Long Beach",
       "country": "US",
-      "venue": "Cal State University, Long Beach"
+      "venue": "Cal State University, Long Beach Dance Department"
     },
     "organization": {
       "city": "New York",
@@ -207,10 +243,10 @@
       "timezone": "America/Los_Angeles"
     },
     "source": {
-      "attemptedAt": "2026-06-07T11:31:37.290159Z",
-      "hash": "sha256:cfcc46c86d406d1cae7ba980bd7fe8554ee39ea0e6f530ead915af0ee625cb66",
+      "attemptedAt": "2026-06-07T06:28:38.747641Z",
+      "hash": "sha256:a5866249a6d03a1933f1be2f095dbfd02d9d1d1acde2a1c3593be678c7b0635d",
       "provider": "abt-jko-school",
-      "scrapedAt": "2026-06-05T11:00:59.313604Z",
+      "scrapedAt": "2026-06-07T08:34:39.424031Z",
       "url": "https://www.abt.org/training/dancer-training/summer-programs/summer-intensives/"
     },
     "teachers": [],

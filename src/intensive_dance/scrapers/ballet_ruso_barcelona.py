@@ -23,7 +23,7 @@ Program**: the camp is recreational early-years and outside the register's
 ambitious / pre-professional scope, so we deliberately skip it (its `_CAMP_HEAD`
 header is still used as the slice boundary, just not emitted).
 
-WHAT THIS SCRAPER EXERCISES (verified live 2026-06-06):
+WHAT THIS SCRAPER EXERCISES (verified live 2026-06-07):
   - One in-scope program sliced out of a two-program page (early-years camp skipped).
   - `schedule.sessions` from `DD.MM - DD.MM` week ranges, year from the header.
   - `age_range` with an open upper bound ("from N years old" → max null).
@@ -64,7 +64,7 @@ from intensive_dance.models import (
 
 BASE = "https://balletrusobarcelona.com"
 PAGE = f"{BASE}/summerprogram"
-APPLY_URL = "https://balletrusobarcelona.playoffinformatica.com/actividad/59/Summer-Intensive-2026/"
+APPLY_URL = "https://balletrusobarcelona.playoffinformatica.com/actividad/60/Audition-Ballet-Ruso-Barcelona-2026/"
 
 ORG = Organization(
     name="Ballet Ruso Barcelona",
