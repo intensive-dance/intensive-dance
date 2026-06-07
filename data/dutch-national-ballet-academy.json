@@ -1,6 +1,62 @@
 [
   {
     "ageRange": {
+      "max": 19,
+      "min": 16
+    },
+    "application": {
+      "deadline": "2026-03-01",
+      "requirements": [],
+      "status": "closed",
+      "url": "https://www.atd.ahk.nl/en/dance-programmes/dutch-national-ballet-academy/summer-school/"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "character",
+      "repertoire"
+    ],
+    "id": "dutch-national-ballet-academy/summer-school-company-experience-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Amsterdam",
+      "country": "NL"
+    },
+    "organization": {
+      "city": "Amsterdam",
+      "country": "NL",
+      "name": "Dutch National Ballet Academy",
+      "slug": "dutch-national-ballet-academy"
+    },
+    "prices": [
+      {
+        "amount": 1000.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Company Experience Week"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-11",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-07",
+      "timezone": "Europe/Amsterdam"
+    },
+    "source": {
+      "hash": "sha256:df234d3549bba0193b8fef8c0320d5c9e04dcd69a5699661eaf245378e55355c",
+      "provider": "dutch-national-ballet-academy",
+      "scrapedAt": "2026-06-07T11:43:05.531308Z",
+      "url": "https://www.atd.ahk.nl/en/dance-programmes/dutch-national-ballet-academy/summer-school/"
+    },
+    "teachers": [],
+    "title": "Amsterdam International Summer School — Company Experience Week 2026"
+  },
+  {
+    "ageRange": {
       "max": 14,
       "min": 12
     },

@@ -1,17 +1,24 @@
-"""DART Dance Company — its Summer Sensation Intensive (Berlin, DE).
+"""DART Dance Company — its Summer Sensation Intensive (Berlin, DE) and its
+Italy Summer Master Intensive (Milan, IT).
 
 API FIRST: none usable. DART runs on **Wix** (server `Pepyaka`, no public content
-API we may use), but the intensive page (`/summer-intensive-berlin`) is
-server-side rendered, so the full text is in the static HTML — a one-page scrape,
-no JS. Wix peppers the markup with zero-width spaces, so we strip them before
-parsing (the same trap the Brussels / Young Stars / IDC scrapers handle).
+API we may use), but both intensive pages are server-side rendered, so the full
+text is in the static HTML — one-page scrapes, no JS. Wix peppers the markup with
+zero-width spaces, so we strip them before parsing (the same trap the Brussels /
+Young Stars / IDC scrapers handle).
 
-DISCOVERY: one page describes the current edition as a single three-week
-contemporary-repertoire intensive — three consecutive Monday–Friday weeks you may
-take individually or together (1 / 2 / 3-week pricing). We emit one `Offering`,
-the three weeks as `schedule.sessions`, season-keyed from the first week's year.
+DISCOVERY: two pages, two `Offering`s — one per city/edition:
 
-WHAT THE PAGE GIVES US (verified live 2026-06):
+  Berlin (`/summer-intensive-berlin`): one three-week contemporary-repertoire
+  intensive — three consecutive Monday–Friday weeks you may take individually or
+  together (1 / 2 / 3-week pricing). We emit one `Offering`, the three weeks as
+  `schedule.sessions`, season-keyed from the first week's year.
+
+  Milan (`/summer-intensive-milan`): a three-day master intensive at two
+  Milan venues (Teatro Carcano day 1, Teatro Arcimboldi days 2-3). Emitted as a
+  separate `Offering` (distinct dates, location, price and teachers).
+
+WHAT THE BERLIN PAGE GIVES US (verified live 2026-06):
   - DATES: Week 1 "3rd - 7th August 2026", Week 2 "10th - 14th August", Week 3
     "17th - 21st August". The source mistypes weeks 2 & 3 as "2025" while the
     title ("BERLIN 26") and week 1 say 2026; since the block is plainly one
@@ -30,6 +37,18 @@ WHAT THE PAGE GIVES US (verified live 2026-06):
     ballet video with four named centre exercises (tendus, pirouettes, petit
     allegro, grand allegro), both on YouTube. → CV + a `specific` video.
   - AGES / LEVEL: not stated on the page, so both are left empty.
+
+WHAT THE MILAN PAGE GIVES US (verified live 2026-06):
+  - TITLE: "Italy Summer Master Intensive 2026"
+  - DATES: "SCHEDULE 15th to 17th June 2026" — three days.
+  - VENUES: "TEATRO CARCANO, Corso di Porta Romana, 63, 20122, Milan" (day 1);
+    "TEATRO ARCIMBOLDI, Viale dell'Innovazione 20, 20126, Milan" (days 2-3).
+    We record the two-venue note in schedule.notes rather than picking one.
+  - TEACHERS: Kinga Varga, Clyde Emmanuel Archer, Alessandra La Bella.
+  - PRICE: 468 EUR (single tier, includes tuition/registration).
+  - APPLICATION: by email (dartdanceworkshop@gmail.com), CV + ≤5-min improv video
+    on YouTube without password. Deadline: June 13, 2026.
+  - AGES / LEVEL: not stated.
 
 Application is by email (dartdanceworkshop@gmail.com) or a Google Form; we keep
 the form as `application.url` and the email in the note.
@@ -62,7 +81,8 @@ from intensive_dance.models import (
 )
 
 BASE = "https://www.dart.theater"
-PAGE = f"{BASE}/summer-intensive-berlin"
+PAGE_BERLIN = f"{BASE}/summer-intensive-berlin"
+PAGE_MILAN = f"{BASE}/summer-intensive-milan"
 APPLY_URL = (
     "https://docs.google.com/forms/d/e/"
     "1FAIpQLSeioTEztqjHiEIPUK7RcZ6GUeOX1VRXEidZGYv3VEAEMyI-Mg/viewform"
@@ -76,14 +96,30 @@ ORG = Organization(
 # Wix injects zero-width spaces (ZWSP / ZWNJ / ZWJ / BOM) into the rendered text.
 _ZERO_WIDTH = re.compile("[" + "".join(map(chr, (0x200B, 0x200C, 0x200D, 0xFEFF))) + "]")
 
-VENUE = "DART Studios, Motzener Strasse 5, 12277 Marienfelde, Berlin"
+VENUE_BERLIN = "DART Studios, Motzener Strasse 5, 12277 Marienfelde, Berlin"
+VENUE_MILAN_NOTE = (
+    "Day 1: Teatro Carcano, Corso di Porta Romana 63, 20122 Milan; "
+    "Days 2-3: Teatro Arcimboldi, Viale dell'Innovazione 20, 20126 Milan"
+)
 
 
 def scrape(client: httpx.Client) -> list[Offering]:
-    resp = client.get(PAGE, follow_redirects=True)
-    resp.raise_for_status()
-    offering = _build_offering(resp.text)
-    return [offering] if offering is not None else []
+    offerings: list[Offering] = []
+
+    resp_berlin = client.get(PAGE_BERLIN, follow_redirects=True)
+    resp_berlin.raise_for_status()
+    berlin = _build_offering(resp_berlin.text)
+    if berlin is not None:
+        offerings.append(berlin)
+
+    resp_milan = client.get(PAGE_MILAN, follow_redirects=True)
+    if resp_milan.status_code != 404:
+        resp_milan.raise_for_status()
+        milan = _build_milan_offering(resp_milan.text)
+        if milan is not None:
+            offerings.append(milan)
+
+    return offerings
 
 
 def _build_offering(html: str) -> Offering | None:
@@ -99,11 +135,11 @@ def _build_offering(html: str) -> Offering | None:
 
     return Offering(
         id=f"dart-dance-company/summer-sensation-intensive-{season}",
-        source=Source(provider="summer-sensation-intensive", url=PAGE, scrapedAt=now_utc()),
+        source=Source(provider="summer-sensation-intensive", url=PAGE_BERLIN, scrapedAt=now_utc()),
         title=f"Summer Sensation Intensive Berlin {season}",
         genres=_genres(text),
         organization=ORG,
-        location=Location(venue=VENUE, city="Berlin", country="DE"),
+        location=Location(venue=VENUE_BERLIN, city="Berlin", country="DE"),
         schedule=Schedule(
             season=season,
             start=start,
@@ -121,6 +157,46 @@ def _build_offering(html: str) -> Offering | None:
                 f"Apply by email to {APPLY_EMAIL} (CV plus the two YouTube videos) "
                 "or via the Google Form. Places are limited; payment instructions "
                 "follow acceptance."
+            ),
+        ),
+    )
+
+
+def _build_milan_offering(html: str) -> Offering | None:
+    tree = _parse(html)
+    text = _collapse(tree)
+
+    start, end = _milan_dates(text)
+    if start is None or end is None:
+        return None
+    season = str(start.year)
+    deadline = _milan_deadline(text)
+    today = date.today()
+
+    return Offering(
+        id=f"dart-dance-company/italy-summer-master-intensive-{season}",
+        source=Source(provider="summer-sensation-intensive", url=PAGE_MILAN, scrapedAt=now_utc()),
+        title=f"Italy Summer Master Intensive Milan {season}",
+        genres=_genres(text),
+        organization=ORG,
+        location=Location(city="Milan", country="IT"),
+        schedule=Schedule(
+            season=season,
+            start=start,
+            end=end,
+            timezone="Europe/Rome",
+            notes=VENUE_MILAN_NOTE,
+        ),
+        teachers=_milan_teachers(text),
+        prices=_milan_prices(text),
+        application=Application(
+            status="closed" if (deadline and deadline < today) else None,
+            deadline=deadline,
+            requirements=_milan_requirements(text),
+            notes=(
+                f"Apply by email to {APPLY_EMAIL} with a CV and a maximum five-minute "
+                "improvisation video uploaded to YouTube without a password. Places "
+                "are limited; payment instructions follow acceptance."
             ),
         ),
     )
@@ -289,4 +365,90 @@ def _requirements(text: str) -> list[Requirement]:
         reqs.append(CVReq())
     if "improvisation" in low or "ballet video" in low:
         reqs.append(VideoReq(specificity="specific", description=_VIDEO_NOTE))
+    return reqs
+
+
+# --- Milan-specific helpers ---------------------------------------------------
+#
+# The Milan page has a different structure: a single range "15th to 17th June",
+# a single price "Workshop price: 468 EUR", a three-name faculty list, and an
+# application deadline ("13th of June 2026"). No multi-week sessions or
+# "following teachers:" / "WORKSHOP SCHEDULE" delimiters.
+
+# "SCHEDULE 15th to 17th June 2026" or "15th to 17th June 2026"
+_MILAN_DATES = re.compile(
+    r"(?:SCHEDULE\s+)?(\d{1,2})(?:st|nd|rd|th)?\s+to\s+(\d{1,2})(?:st|nd|rd|th)?\s+("
+    + parse.MONTHALT
+    + r")\s+(\d{4})",
+    re.IGNORECASE,
+)
+
+# "13th of June 2026" — application deadline
+_MILAN_DEADLINE = re.compile(
+    r"(\d{1,2})(?:st|nd|rd|th)?\s+of\s+(" + parse.MONTHALT + r")\s+(\d{4})",
+    re.IGNORECASE,
+)
+
+# "Workshop price: 468 EUR" / "468 EUR" / "468 Euros"
+_MILAN_PRICE = re.compile(r"(?:Workshop\s+price\s*:\s*)?(\d[\d.,]*)\s*EUR(?:os?)?", re.IGNORECASE)
+
+# The three Milan teachers are named in prose (not in separate spans), so we
+# extract them by looking for sequences of Title-Case words that follow a known
+# cue ("Under the guidance of …", "will lead …", "will introduce …").
+_MILAN_TEACHER_NAMES = ("Kinga Varga", "Clyde Emmanuel Archer", "Alessandra La Bella")
+
+_MILAN_VIDEO_NOTE = (
+    "Apply with a CV and a maximum five-minute improvisation video uploaded to "
+    "YouTube without a password."
+)
+
+
+def _milan_dates(text: str) -> tuple[date | None, date | None]:
+    m = _MILAN_DATES.search(text)
+    if not m:
+        return None, None
+    d1, d2, month_name, year = m.group(1), m.group(2), m.group(3), m.group(4)
+    month = parse.MONTHS[month_name.lower()]
+    return date(int(year), month, int(d1)), date(int(year), month, int(d2))
+
+
+def _milan_deadline(text: str) -> date | None:
+    m = _MILAN_DEADLINE.search(text)
+    if not m:
+        return None
+    return date(int(m.group(3)), parse.MONTHS[m.group(2).lower()], int(m.group(1)))
+
+
+def _milan_prices(text: str) -> list[Price]:
+    m = _MILAN_PRICE.search(text)
+    if not m:
+        return []
+    amount = parse.parse_amount(m.group(1))
+    if amount is None:
+        return []
+    return [
+        Price(
+            amount=amount,
+            currency="EUR",
+            label="Workshop price",
+            includes=["tuition"],
+            notes="Includes the cost of registration.",
+        )
+    ]
+
+
+def _milan_teachers(text: str) -> list[Teacher]:
+    # The teacher names are stated in the prose of the Milan page and are fixed;
+    # we check for each name's presence rather than relying on element boundaries
+    # (Wix renders prose differently from the Berlin span-per-name layout).
+    return [Teacher(name=name) for name in _MILAN_TEACHER_NAMES if name.lower() in text.lower()]
+
+
+def _milan_requirements(text: str) -> list[Requirement]:
+    low = text.lower()
+    reqs: list[Requirement] = []
+    if re.search(r"\bcv\b|resume", low):
+        reqs.append(CVReq())
+    if "improvisation" in low:
+        reqs.append(VideoReq(specificity="unspecific", description=_MILAN_VIDEO_NOTE))
     return reqs

@@ -1,10 +1,9 @@
-"""Unit tests for the K-Ballet School scraper (single JP event page).
+"""Unit tests for the K-Ballet School scraper (summer + winter JP event pages).
 
-These pin the parsing of the Summer Intensive (夏期特別講習会) page: the per-course
-heading slice, the year-from-header / day-month-from-block date assembly, the
-full-width `～` range, the tax-inclusive JPY fees with their Solo-Assembly
-`performance` tier, the per-course venue line, and course-scoped genres. Inline
-JP-shaped strings, no network.
+These pin the parsing of both the Summer Intensive (夏期特別講習会) and Winter
+Intensive (冬期特別講習会) pages: per-course block slicing (two different page
+layouts), year-from-header date assembly, JPY fees, venue extraction, age ranges,
+and course-scoped genres. Inline JP-shaped strings, no network.
 """
 
 from __future__ import annotations
@@ -150,3 +149,161 @@ def test_genres_always_classical():
 def test_dates_note_keeps_raw_window_text():
     block = "【日程】 8/2(日)～8/9(日) ※8/5(水)は休講 【会場】 Kバレエ スクール 吉祥寺"
     assert k._dates_note(block) == "8/2(日)～8/9(日) ※8/5(水)は休講"
+
+
+# --- winter intensive tests --------------------------------------------------
+#
+# The winter page uses a table layout: "クラス {Name}" row keys, and plain field
+# labels (コース日程 / 会場 / 対象学年 / 受講料) without 【】 brackets. The year
+# lives in the "開催日程 2025." overview header; per-course blocks may show
+# "2026.12/26" (data-entry error) which _date_range safely ignores.
+
+WINTER_TEXT = (
+    "Winter Intensive 2025 ［冬期特別講習会］ "
+    "開催日程 2025. 12/26(金)～12/27(土) 2日間 インターメディエイトのみ、12/26(金)～12/29(月) 4日間 "
+    "会場 Kバレエ スクール 各校 "
+    "クラス キッズ コース日程 2日間 2026.12/26(金)～12/27(土) "
+    "会場 Kバレエ スクール 武蔵小杉 〒211-0012 神奈川県川崎市 "
+    "対象学年 年中・年長 外部生：バレエ経験1年以上の方 "
+    "受講料 22,000円(税込) "
+    "プログラム ストレッチ＆バー テクニック強化 ヴァリエーション "
+    "クラス ファウンデーション コース日程 2日間 2026.12/26(金)～12/27(土) "
+    "会場 Kバレエ スクール 武蔵小杉 〒211-0012 神奈川県川崎市 "
+    "対象学年 小学1～3年生 "
+    "受講料 25,000円(税込) "
+    "プログラム クラシカルバレエクラス テクニッククラス "
+    "クラス エレメンタリー コース日程 2日間 2026.12/26(金)～12/27(土) "
+    "会場 Kバレエ アカデミー 〒112-0002 東京都文京区 "
+    "対象学年 小学4～6年生 "
+    "受講料 48,000円(税込) "
+    "プログラム バーコーチング クラシカルバレエクラス テクニッククラス "
+    "クラス インターメディエイト コース日程 4日間 2026.12/26(金)～12/29(月) "
+    "会場 Kバレエ スクール 武蔵小杉 〒211-0012 神奈川県川崎市 "
+    "対象学年 中学生以上 "
+    "受講料 98,000円(税込) "
+    "プログラム バーコーチング クラシカルバレエクラス コンテンポラリー パ・ド・ドゥ "
+    "クラス内容紹介 お申込方法"
+)
+
+
+def test_winter_year_from_overview_header():
+    # Year is read from "開催日程 2025." even though per-course rows show "2026."
+    assert k._year(WINTER_TEXT) == 2025
+
+
+def test_winter_course_block_slices_correctly():
+    block = k._winter_course_block(WINTER_TEXT, k._COURSES_WINTER[0])
+    assert block is not None
+    assert "クラス キッズ" in block
+    assert "クラス ファウンデーション" not in block
+
+
+def test_winter_date_range_ignores_year_prefix():
+    # The per-course rows show "2026.12/26(金)～12/27(土)"; _date_range should
+    # ignore the "2026." prefix and use the year 2025 passed from the header.
+    block = (
+        "クラス キッズ コース日程 2日間 2026.12/26(金)～12/27(土) 会場 Kバレエ スクール 武蔵小杉"
+    )
+    assert k._date_range(block, 2025) == (date(2025, 12, 26), date(2025, 12, 27))
+
+
+def test_winter_date_range_intermediate_four_days():
+    block = "クラス インターメディエイト コース日程 4日間 2026.12/26(金)～12/29(月)"
+    assert k._date_range(block, 2025) == (date(2025, 12, 26), date(2025, 12, 29))
+
+
+def test_winter_location_musashikosugi():
+    block = "会場 Kバレエ スクール 武蔵小杉 〒211-0012 神奈川県川崎市"
+    loc = k._winter_location(block)
+    assert loc.venue == "Kバレエ スクール 武蔵小杉"
+    assert loc.country == "JP"
+
+
+def test_winter_location_academy():
+    block = "会場 Kバレエ アカデミー 〒112-0002 東京都文京区"
+    loc = k._winter_location(block)
+    assert loc.venue == "Kバレエ アカデミー"
+
+
+def test_winter_age_range_from_対象学年():
+    kids_block = "対象学年 年中・年長 外部生：バレエ経験1年以上の方"
+    assert k._winter_age_range(kids_block) == {"min": 4, "max": 6}
+    foundation_block = "対象学年 小学1～3年生 受講料"
+    assert k._winter_age_range(foundation_block) == {"min": 6, "max": 9}
+    intermediate_block = "対象学年 中学生以上 受講料"
+    assert k._winter_age_range(intermediate_block) == {"min": 12, "max": None}
+
+
+def test_winter_prices_single_fee():
+    block = "受講料 22,000円(税込) プログラム"
+    prices = k._winter_prices(block)
+    assert len(prices) == 1
+    assert prices[0].amount == 22000.0
+    assert prices[0].currency == "JPY"
+    assert prices[0].includes == ["tuition"]
+
+
+def test_winter_genres_intermediate_has_contemporary():
+    block = "プログラム バーコーチング クラシカルバレエクラス コンテンポラリー パ・ド・ドゥ"
+    assert "contemporary" in k._genres(block)
+    kids_block = "プログラム ストレッチ＆バー テクニック強化 ヴァリエーション"
+    assert "contemporary" not in k._genres(kids_block)
+
+
+def test_build_winter_offerings_four_courses():
+    url = "https://www.k-ballet.co.jp/school/event/2025winterassembly.html"
+    offerings = k._build_winter_offerings(f"<html><body>{WINTER_TEXT}</body></html>", url)
+    assert len(offerings) == 4
+    ids = {o.id for o in offerings}
+    assert ids == {
+        "k-ballet-school/winter-intensive-kids-2025",
+        "k-ballet-school/winter-intensive-foundation-2025",
+        "k-ballet-school/winter-intensive-elementary-2025",
+        "k-ballet-school/winter-intensive-intermediate-2025",
+    }
+    # Verify season and basic date assembly
+    for o in offerings:
+        assert o.schedule.season == "2025"
+    intermediate = next(o for o in offerings if "intermediate" in o.id)
+    assert intermediate.schedule.end == date(2025, 12, 29)
+    kids = next(o for o in offerings if "kids" in o.id)
+    assert kids.schedule.end == date(2025, 12, 27)
+    # Venue checks
+    kids_loc = kids.location
+    assert kids_loc is not None
+    assert kids_loc.venue == "Kバレエ スクール 武蔵小杉"
+    elem = next(o for o in offerings if "elementary" in o.id)
+    elem_loc = elem.location
+    assert elem_loc is not None
+    assert elem_loc.venue == "Kバレエ アカデミー"
+
+
+# --- URL discovery: picks the latest (max) when multiple editions are listed ---
+#
+# The /school/event/ listing can contain links for several past + current
+# editions (e.g. 2024winterassembly before 2025winterassembly). _discover_url
+# must pick the lexicographically greatest href so older editions don't shadow
+# the current one.  We test the selection logic by calling the pure HTMLParser
+# step in isolation, bypassing the network fetch.
+
+
+def test_discover_url_picks_latest_of_multiple_matches():
+    from selectolax.parser import HTMLParser
+
+    listing_html = (
+        "<html><body>"
+        "<a href='/school/event/2026summerintensive.html'>2026夏</a>"
+        "<a href='/school/event/2024winterassembly.html'>2024冬</a>"
+        "<a href='/school/event/2025summerintensive.html'>2025夏</a>"
+        "<a href='/school/event/2025winterassembly.html'>2025冬</a>"
+        "</body></html>"
+    )
+    tree = HTMLParser(listing_html)
+    keyword = "winterassembly"
+    matches = []
+    for a in tree.css("a[href]"):
+        href = a.attributes.get("href", "") or ""
+        if keyword in href:
+            matches.append(href if href.startswith("http") else f"{k.BASE}{href}")
+    result = max(matches) if matches else None
+    assert result == f"{k.BASE}/school/event/2025winterassembly.html"

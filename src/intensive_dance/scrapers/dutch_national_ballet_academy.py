@@ -6,11 +6,12 @@ whose site runs on TYPO3 with no usable API — but the Summer School and its fe
 live on two tidy, server-rendered pages, so this is an HTML scrape scoped to the
 main content (`.container.content`) to keep the site-wide nav out.
 
-DISCOVERY: the summer school offers a **Senior** course (aged 15-21, two weeks)
-and a **Junior** course (aged 12-14, one week). We emit one `Offering` per
-course, reading each course's own dates (from its section heading), age band and
-fee from the pages, with the shared deadline and disciplines. The two courses
-run on different dates, so dates are per-course. Dropped once its end is past.
+DISCOVERY: the summer school offers three courses — **Senior** (aged 15-21, two
+weeks), **Junior** (aged 12-14, one week), and **Company Experience Week** (aged
+16-19, one week). We emit one `Offering` per course, reading each course's own
+dates (from its section heading), age band and fee from the pages, with the
+shared deadline and disciplines. All courses use distinct dates, so dates are
+per-course. Per IDR-24, ended cycles are kept.
 """
 
 from __future__ import annotations
@@ -47,7 +48,7 @@ ORG = Organization(
 
 # Course labels as printed on the pages; each becomes its own Offering, with its
 # age band and fee read from the text by label (see _course_age / _course_fee).
-_COURSES = ("Senior Course", "Junior Course")
+_COURSES = ("Senior Course", "Junior Course", "Company Experience Week")
 
 
 def scrape(client: httpx.Client) -> list[Offering]:
@@ -68,7 +69,9 @@ def scrape(client: httpx.Client) -> list[Offering]:
         if ages is None and fee is None:
             continue
         start, end = _course_dates(summary, label, season)
-        slug = label.lower().replace(" course", "").strip()
+        slug = (
+            label.lower().replace(" course", "").replace(" week", "").replace(" ", "-").strip("-")
+        )
         offerings.append(
             Offering(
                 id=f"dutch-national-ballet-academy/summer-school-{slug}-{season}",
@@ -116,7 +119,7 @@ def _course_dates(text: str, label: str, season: str) -> tuple[date | None, date
     match = re.search(
         r"(\d{1,2})\s*[-–]\s*(\d{1,2})\s+("
         + parse.MONTHALT
-        + r")\s+(\d{4})\s*[-–]\s*"
+        + r")\s+(\d{4})\s*[-–]\s*(?:The\s+)?"
         + re.escape(label),
         text,
         re.IGNORECASE,
@@ -137,11 +140,20 @@ def _deadline(text: str) -> date | None:
 
 
 def _course_age(text: str, label: str) -> dict | None:
-    pattern = re.compile(
-        re.escape(label) + r"\s+is for ballet students aged\s+(\d{1,2})\s*[-–]\s*(\d{1,2})",
-        re.IGNORECASE,
-    )
-    return parse.extract_age_range(text, pattern)
+    # "Senior/Junior Course is for ballet students aged X-Y"
+    # "Company Experience Week" uses "Pre-Professional students X-Y y.o." / "aged X-Y"
+    # in the subheading and prose. The two patterns are unified here.
+    for pattern_str in (
+        re.escape(label)
+        + r"\s+is for (?:ballet students|pre-professionals)\s+aged\s+(\d{1,2})\s*[-–]\s*(\d{1,2})",
+        re.escape(label)
+        + r"[^.]*?(?:students?|professionals?)\s+(\d{1,2})\s*[-–]\s*(\d{1,2})\s*y\.o\.",
+        re.escape(label) + r"[^.]*?aged\s+(\d{1,2})\s*[-–]\s*(\d{1,2})",
+    ):
+        result = parse.extract_age_range(text, re.compile(pattern_str, re.IGNORECASE))
+        if result is not None:
+            return result
+    return None
 
 
 def _course_fee(text: str, label: str) -> float | None:

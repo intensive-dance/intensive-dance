@@ -124,5 +124,77 @@
       }
     ],
     "title": "Summer Sensation Intensive Berlin 2026"
+  },
+  {
+    "application": {
+      "deadline": "2026-06-13",
+      "notes": "Apply by email to dartdanceworkshop@gmail.com with a CV and a maximum five-minute improvisation video uploaded to YouTube without a password. Places are limited; payment instructions follow acceptance.",
+      "requirements": [
+        {
+          "type": "cv"
+        },
+        {
+          "description": "Apply with a CV and a maximum five-minute improvisation video uploaded to YouTube without a password.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ]
+    },
+    "genres": [
+      "repertoire"
+    ],
+    "id": "dart-dance-company/italy-summer-master-intensive-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Milan",
+      "country": "IT"
+    },
+    "organization": {
+      "city": "Berlin",
+      "country": "DE",
+      "name": "DART Dance Company",
+      "slug": "dart-dance-company"
+    },
+    "prices": [
+      {
+        "amount": 468.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Workshop price",
+        "notes": "Includes the cost of registration."
+      }
+    ],
+    "schedule": {
+      "end": "2026-06-17",
+      "notes": "Day 1: Teatro Carcano, Corso di Porta Romana 63, 20122 Milan; Days 2-3: Teatro Arcimboldi, Viale dell'Innovazione 20, 20126 Milan",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-06-15",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:7234d2bde53df3035b03a7575bccf64f6960d63158ca471eed06c30d8d214e4e",
+      "provider": "summer-sensation-intensive",
+      "scrapedAt": "2026-06-07T11:43:15.191857Z",
+      "url": "https://www.dart.theater/summer-intensive-milan"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Kinga Varga"
+      },
+      {
+        "affiliations": [],
+        "name": "Clyde Emmanuel Archer"
+      },
+      {
+        "affiliations": [],
+        "name": "Alessandra La Bella"
+      }
+    ],
+    "title": "Italy Summer Master Intensive Milan 2026"
   }
 ]
