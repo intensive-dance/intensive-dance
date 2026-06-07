@@ -7,7 +7,8 @@ the `.net` site (`mi-ballet-school.net`) is a single page that holds the full
 Summer Intensive (dates, fees, faculty, prerequisites, registration form). The
 builder embeds the body in an HTML-encoded state blob, but it is fully
 server-rendered into the static markup — selectolax reads the DOM text directly,
-no JS render or fetch proxy needed.
+no JS render or fetch proxy needed. Note: the page `<title>` and JSON-LD carry
+stale 2025 metadata; the live content is in the HTML body as confirmed 2026 dates.
 
 DISCOVERY: one `Offering` — the "Ballet Summer Intensive – Preparation for the
 Company Entrance". The page advertises four consecutive one-week sessions, each
@@ -236,11 +237,15 @@ def _prices(text: str) -> list[Price]:
 
 
 # --- genres -------------------------------------------------------------------
+#
+# The page has no curriculum/class listing — only director bios that mention
+# "classical and contemporary repertoire" in career descriptions. Matching the
+# full page text against "contemporary"/"repertoire" keywords would derive genres
+# from bio prose rather than a syllabus. Since the course content is not stated
+# beyond "Ballet Summer Intensive", the defensible default is ["classical"].
 
 _GENRE_KEYWORDS: list[tuple[Genre, tuple[str, ...]]] = [
     ("classical", ("classical", "ballet", "ballett")),
-    ("contemporary", ("contemporary",)),
-    ("repertoire", ("repertoire",)),
 ]
 
 

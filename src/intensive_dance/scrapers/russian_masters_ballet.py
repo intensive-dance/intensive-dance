@@ -16,8 +16,9 @@ on each page. Tracks differ enough — level, ages, fee, and *requirements* — 
 folding them into one record would lose information: the dancer tracks
 (Professional / Open- / Pre-Professional) require an **audition** (a video being
 one accepted form), while the **Observation** track is for ballet teachers and
-asks for a **CV**. A location whose header date reads "…CANCELLED" is skipped
-whole (mirrors RBS dropping cancelled cycles).
+asks for a **CV**. A location whose header date reads "…CANCELLED" is kept and
+tagged `lifecycle="cancelled"`, not dropped — past cycles are always kept in
+the store (IDR-24); "past" is derived consumer-side, not stored.
 
 Offering ids are `russian-masters-ballet/{location}-{track}-{season}` (e.g.
 `russian-masters-ballet/alicante-professional-2026`), keeping locations, tracks,
@@ -213,7 +214,7 @@ def _build_offering(
         id=f"russian-masters-ballet/{location}-{track}-{season}",
         source=Source(provider="russian-masters-ballet", url=f"{url}#{track}", scrapedAt=now_utc()),
         title=title,
-        genres=_genres(f"{track_name} {body}"),
+        genres=_genres(f"{track_name} {_curriculum_text(body)}"),
         lifecycle="cancelled" if cancelled else "scheduled",
         lifecycleNote="This RMB location has been cancelled." if cancelled else None,
         level=_levels(track_name),
@@ -230,7 +231,7 @@ def _build_offering(
             notes=duration or None,
         ),
         teachers=_teachers(article) if article is not None else [],
-        prices=_prices(_section(body, "PROGRAM FEE"), country),
+        prices=_prices(_section(body, "PROGRAM FEE") or _section(body, "COURSE FEE"), country),
         application=Application(
             url=REGISTER_URL,
             requirements=requirements,
@@ -300,6 +301,7 @@ _LABELS = [
     "TEACHERS",
     "SPECIAL GUESTS",
     "PROGRAM FEE",
+    "COURSE FEE",
     "OFFICIAL ACCOMMODATION",
     "EXTRAS",
     "CANCELATION",
@@ -328,6 +330,17 @@ def _section(text: str, label: str) -> str:
 
 
 # --- genres / levels / ages ---------------------------------------------------
+#
+# Genres are matched against the curriculum text only (program-include and
+# access sections), not teacher bios. Bios contain phrases like "contemporary
+# choreographer" for teachers whose class is not contemporary — matching the
+# full body would leak their bio credentials into the offering's genres.
+
+
+def _curriculum_text(body: str) -> str:
+    """The 'THE PROGRAM INCLUDE' and 'ACCESS' sections — the class list."""
+    return " ".join(filter(None, [_section(body, "THE PROGRAM INCLUDE"), _section(body, "ACCESS")]))
+
 
 _GENRE_KEYWORDS: list[tuple[Genre, tuple[str, ...]]] = [
     ("classical", ("ballet", "classical", "vaganova", "pas de deux")),
