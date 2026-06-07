@@ -128,7 +128,7 @@
       "timezone": "Europe/Prague"
     },
     "source": {
-      "attemptedAt": "2026-06-07T00:20:28.348483Z",
+      "attemptedAt": "2026-06-07T08:09:19.234639Z",
       "hash": "sha256:33f640684539c17c4c582f499e7e38e3758a6f9c2ecae28ab186971b9da3e2db",
       "provider": "international-ballet-masterclasses-prague",
       "scrapedAt": "2026-06-06T06:07:59.734920Z",
@@ -272,7 +272,7 @@
       "timezone": "Europe/Prague"
     },
     "source": {
-      "attemptedAt": "2026-06-07T00:20:28.348483Z",
+      "attemptedAt": "2026-06-07T08:09:19.234639Z",
       "hash": "sha256:e9be365afd7d507fb48c818cee7d0070a9b0e80e7b9cda9dc33ff6289c6f6f74",
       "provider": "international-ballet-masterclasses-prague",
       "scrapedAt": "2026-06-06T06:03:12.537552Z",
