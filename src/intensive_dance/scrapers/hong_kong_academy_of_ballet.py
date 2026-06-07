@@ -94,24 +94,20 @@ def scrape(client: httpx.Client) -> list[Offering]:
         if resp.status_code == 404:
             continue
         resp.raise_for_status()
-        offerings = _build_offerings(resp.text, url, today)
+        offerings = _build_offerings(resp.text, url)
         if offerings:
             return offerings
     return []
 
 
-def _build_offerings(html: str, url: str, today: date) -> list[Offering]:
+def _build_offerings(html: str, url: str) -> list[Offering]:
     text = _text(html)
     # Full-week sessions shared by Classes B–E.
     shared_sessions = _sessions(text)
     if not shared_sessions:
         return []
-    # Use shared sessions to determine the overall edition span for the "already
-    # over" guard (Class A ends a day earlier, but the edition as a whole ends with
-    # Class B–E Week 2).
-    end_overall = max((s.end for s in shared_sessions if s.end), default=None)
-    if end_overall is not None and end_overall < today:  # whole edition already over
-        return []
+    # Ended editions are kept (IDR-24): "past" is derived consumer-side from
+    # schedule.end, never filtered here.
     season = str(max(s.end.year for s in shared_sessions if s.end))
 
     # Class A has non-consecutive 4-day weeks; all other classes use the full week.

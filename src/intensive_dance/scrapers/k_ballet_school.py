@@ -152,7 +152,11 @@ def _discover_url(client: httpx.Client, keyword: str) -> str | None:
     resp = client.get(LISTING_URL, follow_redirects=True)
     if not resp.is_success:
         return None
-    tree = HTMLParser(resp.text)
+    return _select_url(resp.text, keyword)
+
+
+def _select_url(listing_html: str, keyword: str) -> str | None:
+    tree = HTMLParser(listing_html)
     matches: list[str] = []
     for a in tree.css("a[href]"):
         href = a.attributes.get("href", "") or ""
