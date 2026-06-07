@@ -6,7 +6,7 @@
     },
     "application": {
       "deadline": "2026-06-20",
-      "notes": "The chosen variation's title, video and music must be submitted one month before the start of the intensive (by 12 June). A non-refundable EUR 400 deposit secures a place once accepted; the balance is due within 60 days.",
+      "notes": "The chosen variation's title, video and music must be submitted one month before the start of the intensive (by 12 June). Payment terms: a non-refundable EUR 400 deposit secures a place once accepted and must be paid within 7 days of the acceptance notification; the balance is due within 60 days of the deposit (but no later than 1 June for late applications).",
       "requirements": [
         {
           "description": "A YouTube link to a video of a variation or performance, filmed no earlier than 2025.",
@@ -181,13 +181,80 @@
       "timezone": "Europe/Ljubljana"
     },
     "source": {
-      "attemptedAt": "2026-06-07T09:59:16.761019Z",
-      "hash": "sha256:1525afeeccaf79efff0e6205230d1258ff639424b481269c0c2d3b11a0ef06a3",
+      "hash": "sha256:c2b407b1819ff272d0df930f30e9a4b295b2be618fc624e95c3f3ea766417abe",
       "provider": "balletstage",
-      "scrapedAt": "2026-06-06T19:44:28.247630Z",
+      "scrapedAt": "2026-06-07T12:10:56.584132Z",
       "url": "https://www.balletstage.com/summerintensive2026"
     },
-    "teachers": [],
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "organization": "Dutch National Ballet",
+            "role": "Principal"
+          }
+        ],
+        "name": "Olga Smirnova",
+        "role": "Special Guest"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "John Cranko School",
+            "role": "Ballet Master"
+          }
+        ],
+        "name": "Natalia Gasmaeva",
+        "role": "Ballet Master"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Paris Opéra Ballet",
+            "role": "former Premier Danseur"
+          }
+        ],
+        "name": "Stéphane Phavorin",
+        "role": "International Guest Ballet Master"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "BalletStage",
+            "role": "Co-Founder & Artistic Director"
+          }
+        ],
+        "name": "Denis Matvienko",
+        "role": "Co-Founder & Artistic Director"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "BalletStage",
+            "role": "Principal Guest Dancer & Co-Founder"
+          }
+        ],
+        "name": "Anastasia Matvienko",
+        "role": "Principal Guest Dancer & Co-Founder"
+      },
+      {
+        "affiliations": [],
+        "name": "Valeryia Vapniarskaya",
+        "role": "Ballet Master & Choreographer"
+      },
+      {
+        "affiliations": [],
+        "name": "Maša Kagao Knez",
+        "role": "Ballet Master"
+      },
+      {
+        "affiliations": [],
+        "name": "Tijuana Križman Khudernik",
+        "role": "Ballet Dancer & Contemporary Ballet Master"
+      }
+    ],
     "title": "Summer Intensive MasterClass 2026"
   }
 ]

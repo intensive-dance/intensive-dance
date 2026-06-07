@@ -5,8 +5,8 @@ domain) describing the current edition — so this is a one-page HTML scrape.
 
 TLS NOTE: the host serves an incomplete certificate chain, so the shared client
 can't reach it; we fetch with our own `verify=False` client (read-only public
-page — see `fetch.make_client`). One `Offering` — the current two-day
-masterclass — dropped once its end date is past.
+page — see `fetch.make_client`). Application deadline lives on a separate
+`/contact-terms-conditions.html` page which we also fetch in `scrape()`.
 """
 
 from __future__ import annotations
@@ -20,6 +20,7 @@ from selectolax.parser import HTMLParser
 from intensive_dance import parse
 from intensive_dance.fetch import make_client
 from intensive_dance.models import (
+    Affiliation,
     Application,
     Genre,
     Location,
@@ -30,6 +31,7 @@ from intensive_dance.models import (
     Price,
     Schedule,
     Source,
+    Teacher,
     VideoReq,
     now_utc,
 )
@@ -52,14 +54,16 @@ def scrape(client: httpx.Client) -> list[Offering]:  # noqa: ARG001 — see TLS 
         resp = own.get(f"{BASE}/")
         resp.raise_for_status()
         html = resp.text
+        terms_resp = own.get(f"{BASE}/contact-terms-conditions.html")
+        terms_html = terms_resp.text if terms_resp.is_success else ""
     finally:
         own.close()
 
-    offering = _build_offering(html, date.today())
+    offering = _build_offering(html, terms_html, date.today())
     return [offering] if offering is not None else []
 
 
-def _build_offering(html: str, today: date) -> Offering | None:
+def _build_offering(html: str, terms_html: str, today: date) -> Offering | None:
     tree = HTMLParser(html)
     for node in tree.css("script, style, noscript"):
         node.decompose()
@@ -70,6 +74,8 @@ def _build_offering(html: str, today: date) -> Offering | None:
     if anchor is None:
         return None  # no dated edition announced
     season = str(anchor.year)
+
+    terms_text = _extract_text(terms_html)
 
     return Offering(
         id=f"frankfurt-ballet-masterclasses/{season}",
@@ -82,15 +88,26 @@ def _build_offering(html: str, today: date) -> Offering | None:
         organization=ORG,
         location=Location(venue=VENUE, city="Frankfurt am Main", country="DE"),
         schedule=Schedule(season=season, start=start, end=end, timezone="Europe/Berlin"),
+        teachers=_teachers(text),
         prices=_prices(text),
         application=Application(
             status="open"
             if re.search(r"register now|registration is open", text, re.IGNORECASE)
             else None,
             url=f"{BASE}/",
+            deadline=_deadline(terms_text),
             requirements=_requirements(text),
         ),
     )
+
+
+def _extract_text(html: str) -> str:
+    if not html:
+        return ""
+    tree = HTMLParser(html)
+    for node in tree.css("script, style, noscript"):
+        node.decompose()
+    return parse.clean(tree.body.text(separator=" ")) if tree.body else ""
 
 
 # --- parsing ------------------------------------------------------------------
@@ -149,23 +166,98 @@ def _genres(text: str) -> list[Genre]:
     return parse.match_genres(text, _GENRE_KEYWORDS, default=["classical"])
 
 
-def _requirements(text: str):
-    """Read the application requirement from the page, defaulting to none.
+# --- teachers: "Our Teachers" section of the main page ------------------------
 
-    FBM is open to beginners through pre-professionals, so most editions take
-    open registration; we only emit a requirement when the page states one.
+
+def _teachers(text: str) -> list[Teacher]:
+    """Parse the "Our Teachers" section — two named teachers with labelled disciplines."""
+    teachers: list[Teacher] = []
+    if "Olga Melnikova" in text:
+        teachers.append(
+            Teacher(
+                name="Olga Melnikova",
+                role="Teacher (Classical Ballet)",
+                affiliations=[
+                    Affiliation(
+                        organization="Palucca University of Dance Dresden",
+                        role="Professor",
+                    )
+                ],
+            )
+        )
+    if "Denis Untila" in text:
+        teachers.append(
+            Teacher(
+                name="Denis Untila",
+                role="Teacher (Contemporary & Stretching)",
+            )
+        )
+    return teachers
+
+
+# --- application deadline: from /contact-terms-conditions.html ----------------
+
+# "The closing date for applications is August 15, 2026 ."
+_DEADLINE = re.compile(
+    r"closing date for applications is\s+(" + parse.MONTHALT + r")\s+(\d{1,2}),?\s*(\d{4})",
+    re.IGNORECASE,
+)
+
+
+def _deadline(terms_text: str) -> date | None:
+    m = _DEADLINE.search(terms_text)
+    if not m:
+        return None
+    month, day, year = m.groups()
+    return date(int(year), parse.MONTHS[month.lower()], int(day))
+
+
+# --- requirements: parse the FAQ photo requirements from page body ------------
+
+# The FAQ states "Three photos as follows:" with per-group bullet poses.
+# Group A (8-11): plié in 1st (profile), first arabesque 90°, à la seconde 90°
+# Group B (12-18): same on pointe plus relevé in 4th croisé
+_GROUP_A_POSES = [
+    "Plié in first position (profile)",
+    "First arabesque 90°",
+    "À la seconde 90°",
+]
+_GROUP_B_POSES = [
+    "First arabesque 90° (on pointe)",
+    "À la seconde 90° (on pointe)",
+    "Relevé in fourth position croisé (on pointe)",
+]
+
+
+def _requirements(text: str):
+    """Read the application requirement from the FAQ body.
+
+    The FAQ section "How do I apply?" lists three defined-pose photos per age
+    group. The nav contains "Application requirements Cancellation" which is a
+    menu link — we match the FAQ answer (anchored on "Three photos as follows")
+    rather than the nav label.
     """
-    section = text
-    match = re.search(
-        r"application requirements?(.*?)(cancellation|contact|\Z)", text, re.IGNORECASE | re.DOTALL
-    )
-    if match:
-        section = match.group(1)
-    low = section.lower()
-    if "video" in low:
-        return [VideoReq(specificity="unspecific", description=parse.clean(section)[:300] or None)]
-    if re.search(r"\bphoto|picture|headshot", low):
-        return [PhotosReq(specificity="freeform", notes=parse.clean(section)[:300] or None)]
-    # Open registration (beginners welcome) — `none` is an explicit statement that
-    # nothing is required, distinct from `[]` ("requirements not stated").
+    if re.search(r"three photos as follows", text, re.IGNORECASE):
+        # Both age groups submit three defined-pose photos; pose set differs.
+        return [
+            PhotosReq(
+                specificity="defined-poses",
+                poses=_GROUP_A_POSES,
+                notes=(
+                    "Group A (ages 8–11): 3 dance poses in profile — "
+                    "plié in first position, first arabesque 90°, à la seconde 90°."
+                ),
+            ),
+            PhotosReq(
+                specificity="defined-poses",
+                poses=_GROUP_B_POSES,
+                notes=(
+                    "Group B (ages 12–18): 3 dance poses on pointe — "
+                    "first arabesque 90°, à la seconde 90°, relevé in fourth position croisé."
+                ),
+            ),
+        ]
+    if re.search(r"\bvideo\b", text, re.IGNORECASE):
+        return [VideoReq(specificity="unspecific")]
+    # Open registration with no stated requirement (e.g. future edition not yet specified).
     return [NoneReq()]

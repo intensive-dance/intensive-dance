@@ -13,8 +13,17 @@ SAMPLE = (
     "Summer Intensives "
     "COURSE ONE - High Technique & Artistry Monday 20 July – Friday 31 July 2026 "
     "classical ballet through in-depth repertoire studies Age: 14-17 "
-    "Level: At least intermediate or RAD equivalent. Apply for Course One "
+    "Level: At least intermediate or RAD equivalent. "
+    "ENBS Faculty Sebnem Onal, Ibrahim Onal, Senri Kou, Michael Berkin, Nicola Simpson "
+    "Guest Teachers Principal Dancer and Actress Constance Devarnay and "
+    "Elmhurst Ballet School's Joshua Barwick. "
+    "Dates Monday 20 July – Friday 31 July 2026. Apply for Course One "
     "COURSE TWO - Bournonville and Ashton Monday 3 August – Saturday 15 August 2026 "
+    "Week One: Bournonville Train with exceptional artists including Olivier and Evening "
+    "Standard Award winner Peter Schaufuss, Knight of Denmark & Founder of English National "
+    "ballet School and, Dinna Bjørn, a leading world authority on the female Bournonville style. "
+    "Week Two: Ashton Work with leading Ashton specialists including Samara Downs, "
+    "Principal Dancer with Birmingham Royal Ballet. "
     "repertoire and mime, the interplay of music and character that define his ballets Age: 14-18 "
     "Level: At least Intermediate or RAD equivalent. Apply for Course Two "
     "COURSE THREE-Pre-Professional & Professional Ballet Intensive "
@@ -81,3 +90,43 @@ def test_build_offering_keeps_cycle_as_scheduled():
     assert offering.id == "english-national-ballet-school/summer-intensive-2026-course-1"
     assert offering.lifecycle == "scheduled"
     assert offering.application.status == "open"
+
+
+def test_teachers_course_one_enbs_faculty():
+    teachers = enbs._teachers("1", _course("1")[2])
+    names = [t.name for t in teachers]
+    assert "Sebnem Onal" in names
+    assert "Ibrahim Onal" in names
+    assert "Senri Kou" in names
+    assert "Michael Berkin" in names
+    assert "Nicola Simpson" in names
+    faculty = [t for t in teachers if t.role == "Faculty"]
+    assert len(faculty) == 5
+    assert all(
+        any(a.organization == "English National Ballet School" for a in t.affiliations)
+        for t in faculty
+    )
+
+
+def test_teachers_course_one_guest_teachers():
+    teachers = enbs._teachers("1", _course("1")[2])
+    guest_names = {t.name for t in teachers if t.role == "Guest Teacher"}
+    assert "Constance Devarnay" in guest_names
+    assert "Joshua Barwick" in guest_names
+    barwick = next(t for t in teachers if t.name == "Joshua Barwick")
+    assert any(a.organization == "Elmhurst Ballet School" for a in barwick.affiliations)
+
+
+def test_teachers_course_two_bournonville_and_ashton():
+    teachers = enbs._teachers("2", _course("2")[2])
+    names = [t.name for t in teachers]
+    assert "Peter Schaufuss" in names
+    assert "Dinna Bjørn" in names
+    assert "Samara Downs" in names
+    samara = next(t for t in teachers if t.name == "Samara Downs")
+    assert any(a.organization == "Birmingham Royal Ballet" for a in samara.affiliations)
+    assert "Week Two" in (samara.role or "")
+
+
+def test_teachers_course_three_empty():
+    assert enbs._teachers("3", _course("3")[2]) == []

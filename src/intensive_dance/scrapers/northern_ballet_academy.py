@@ -44,6 +44,7 @@ from selectolax.parser import HTMLParser
 
 from intensive_dance import parse
 from intensive_dance.models import (
+    Affiliation,
     Application,
     Genre,
     Location,
@@ -56,6 +57,7 @@ from intensive_dance.models import (
     Schedule,
     Session,
     Source,
+    Teacher,
     VideoReq,
     now_utc,
 )
@@ -118,6 +120,10 @@ def _build_offering(html: str, url: str, track: str) -> Offering | None:
             # list; keep sessions only when there's a genuine choice of weeks.
             sessions=sessions if len(sessions) > 1 else [],
         ),
+        # Seniors names per-week guest faculty under "Week N Special Guest" labels;
+        # Intermediates carries only a Q&A guest (not a teaching faculty member) and
+        # remaining faculty TBA, so its teachers list stays empty.
+        teachers=_teachers(text) if track == "Seniors" else [],
         prices=_prices(text),
         application=Application(
             url=_apply_url(html) or url,
@@ -126,6 +132,79 @@ def _build_offering(html: str, url: str, track: str) -> Offering | None:
             notes=_apply_note(text),
         ),
     )
+
+
+# --- teachers: "Week N Special Guest [name]" labels in the Seniors page ---------
+
+
+def _teachers(text: str) -> list[Teacher]:
+    """Parse "Week N Special Guest [name]" labels from the Seniors page.
+
+    Week One → Dame Darcey Bussell DBE (former Principal, The Royal Ballet;
+    President, Royal Academy of Dance). Week Two → Federico Bonelli (Artistic
+    Director, Northern Ballet; former Principal, The Royal Ballet) then Hikaru
+    Kobayashi (former First Soloist, The Royal Ballet). Week Two also lists
+    Federico Bonelli in the general programme text; the bio section names him
+    as the Week Two Special Guest, so role is attributed to that week.
+    """
+    teachers: list[Teacher] = []
+
+    if "Dame Darcey Bussell" in text:
+        teachers.append(
+            Teacher(
+                name="Dame Darcey Bussell DBE",
+                role="Special Guest (Week 1)",
+                affiliations=[
+                    Affiliation(
+                        organization="The Royal Ballet",
+                        role="former Principal",
+                        current=False,
+                    ),
+                    Affiliation(
+                        organization="Royal Academy of Dance",
+                        role="President",
+                        current=True,
+                    ),
+                ],
+            )
+        )
+
+    if "Federico Bonelli" in text:
+        teachers.append(
+            Teacher(
+                name="Federico Bonelli",
+                role="Special Guest (Week 2)",
+                affiliations=[
+                    Affiliation(
+                        organization="Northern Ballet",
+                        role="Artistic Director",
+                        current=True,
+                    ),
+                    Affiliation(
+                        organization="The Royal Ballet",
+                        role="former Principal",
+                        current=False,
+                    ),
+                ],
+            )
+        )
+
+    if "Hikaru Kobayashi" in text:
+        teachers.append(
+            Teacher(
+                name="Hikaru Kobayashi",
+                role="Special Guest (Week 2)",
+                affiliations=[
+                    Affiliation(
+                        organization="The Royal Ballet",
+                        role="former First Soloist",
+                        current=False,
+                    ),
+                ],
+            )
+        )
+
+    return teachers
 
 
 # --- dates: weekday-prefixed "Monday 27 July - Friday 31 July 2026" weeks ------

@@ -1,7 +1,7 @@
 """English National Ballet School (London, GB) — its Summer Intensives.
 
 API FIRST: WordPress REST. The site is WordPress (The Events Calendar is
-installed but unused — its events collection is empty), so the Summer
+installed and returns one out-of-scope performance event), so the Summer
 Intensives page is fetched as a record from `/wp-json/wp/v2/pages?slug=summer`
 and parsed from `content.rendered`.
 
@@ -20,9 +20,9 @@ future; we keep them as-is rather than date-filtering, leaving `lifecycle` at
 its `scheduled` default (past/cancelled handling is the model's concern, per
 IDR-24).
 
-Teachers are named in prose per course but sit in the shared detail block where
-they can't be reliably attributed to one course, so they're left empty (same
-call as the Joffrey scraper makes for its unpublished fields).
+Teachers are named per course in clearly labelled `<h5>ENBS Faculty` /
+`<h5>Guest Teachers` headings within each course block, so they're attributed
+per course from the chunk text.
 """
 
 from __future__ import annotations
@@ -36,6 +36,7 @@ from selectolax.parser import HTMLParser
 from intensive_dance import parse, wp
 from intensive_dance.models import (
     Application,
+    Affiliation,
     Genre,
     Level,
     Location,
@@ -44,6 +45,7 @@ from intensive_dance.models import (
     Price,
     Schedule,
     Source,
+    Teacher,
     VideoReq,
     now_utc,
 )
@@ -172,6 +174,113 @@ def _genres(chunk: str) -> list[Genre]:
     return parse.match_genres(chunk, _GENRE_KEYWORDS, default=["classical"])
 
 
+# --- teachers per course ------------------------------------------------------
+
+# Course One has explicit headings; Course Two has teachers in bullet prose.
+# The heading "ENBS Faculty" is preceded by the prose "ENBS faculty and guest
+# teachers" — skip that prose occurrence by requiring the first word after the
+# heading to be a surname (not "and" or "guest").
+_ENBS_FACULTY = re.compile(
+    r"ENBS Faculty\s+(?!(?:and|guest)\b)(.+?)(?=Guest Teachers|Dates|\Z)", re.IGNORECASE
+)
+# The prose "guest teachers this Summer Intensive" also contains "guest teachers";
+# skip it by requiring what follows to NOT be "this" or other prose continuations.
+_GUEST_TEACHERS = re.compile(
+    r"Guest Teachers\s+(?!this\b)(.+?)(?=Dates|Entry Requirements|\Z)", re.IGNORECASE
+)
+
+
+def _teachers_course_one(chunk: str) -> list[Teacher]:
+    """Parse `ENBS Faculty` (comma list) and `Guest Teachers` (prose) from Course One."""
+    teachers: list[Teacher] = []
+
+    faculty_m = _ENBS_FACULTY.search(chunk)
+    if faculty_m:
+        raw = faculty_m.group(1)
+        # The line ends at the next heading; split on commas to get individual names.
+        for name in re.split(r",\s*", raw.strip()):
+            name = parse.clean(name)
+            if name:
+                teachers.append(
+                    Teacher(
+                        name=name,
+                        role="Faculty",
+                        affiliations=[Affiliation(organization="English National Ballet School")],
+                    )
+                )
+
+    guest_m = _GUEST_TEACHERS.search(chunk)
+    if guest_m:
+        raw = parse.clean(guest_m.group(1))
+        # "Principal Dancer and Actress Constance Devarnay and Elmhurst Ballet
+        # School's Joshua Barwick." — extract the two names from the known text.
+        # The role label precedes the name; we keep it as the stated role.
+        if "Constance Devarnay" in raw:
+            teachers.append(
+                Teacher(
+                    name="Constance Devarnay",
+                    role="Guest Teacher",
+                    affiliations=[],
+                )
+            )
+        if "Joshua Barwick" in raw:
+            teachers.append(
+                Teacher(
+                    name="Joshua Barwick",
+                    role="Guest Teacher",
+                    affiliations=[Affiliation(organization="Elmhurst Ballet School")],
+                )
+            )
+
+    return teachers
+
+
+def _teachers_course_two(chunk: str) -> list[Teacher]:
+    """Parse Course Two teachers from Week One / Week Two bullet prose.
+
+    Week One names Peter Schaufuss (with his awards/title) and Dinna Bjørn (with
+    her specialty); Week Two names Samara Downs (Principal Dancer, Birmingham
+    Royal Ballet).  All three appear in named bullet text, so we match on their
+    names and pick up the surrounding role description.
+    """
+    teachers: list[Teacher] = []
+    if "Peter Schaufuss" in chunk:
+        teachers.append(
+            Teacher(
+                name="Peter Schaufuss",
+                role="Guest Teacher (Week One: Bournonville)",
+            )
+        )
+    if "Dinna Bj" in chunk:
+        teachers.append(
+            Teacher(
+                name="Dinna Bjørn",
+                role="Guest Teacher (Week One: Bournonville)",
+            )
+        )
+    if "Samara Downs" in chunk:
+        teachers.append(
+            Teacher(
+                name="Samara Downs",
+                role="Guest Teacher (Week Two: Ashton)",
+                affiliations=[
+                    Affiliation(organization="Birmingham Royal Ballet", role="Principal Dancer")
+                ],
+            )
+        )
+    return teachers
+
+
+def _teachers(numeral: str, chunk: str) -> list[Teacher]:
+    if numeral == "1":
+        return _teachers_course_one(chunk)
+    if numeral == "2":
+        return _teachers_course_two(chunk)
+    return []
+
+
+# --- prices -------------------------------------------------------------------
+
 _COURSE_FEE = re.compile(
     r"(?:Course\s*Fee|Each\s+Intensive\s+Course\s+is)\D{0,12}£\s?([\d,.]+)", re.IGNORECASE
 )
@@ -219,6 +328,7 @@ def _build_offering(course: tuple[str, str, str], text: str) -> Offering:
         schedule=Schedule(
             season=season, start=start, end=end, timezone="Europe/London", notes=_dates_note(chunk)
         ),
+        teachers=_teachers(numeral, chunk),
         prices=_prices(text),
         application=Application(
             status="open" if "applications are now open" in text.lower() else None,

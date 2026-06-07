@@ -44,6 +44,7 @@ from selectolax.parser import HTMLParser
 
 from intensive_dance import parse
 from intensive_dance.models import (
+    Affiliation,
     Application,
     Genre,
     HeadshotReq,
@@ -58,6 +59,7 @@ from intensive_dance.models import (
     Schedule,
     Session,
     Source,
+    Teacher,
     VideoReq,
     now_utc,
 )
@@ -77,8 +79,11 @@ VENUE = "Conservatory of Music and Ballet Ljubljana (KGBL)"
 
 _VARIATION_NOTE = (
     "The chosen variation's title, video and music must be submitted one month "
-    "before the start of the intensive (by 12 June). A non-refundable EUR 400 "
-    "deposit secures a place once accepted; the balance is due within 60 days."
+    "before the start of the intensive (by 12 June). "
+    "Payment terms: a non-refundable EUR 400 deposit secures a place once accepted "
+    "and must be paid within 7 days of the acceptance notification; "
+    "the balance is due within 60 days of the deposit (but no later than 1 June "
+    "for late applications)."
 )
 
 
@@ -117,6 +122,7 @@ def _build_offering(html: str) -> Offering | None:
             timezone="Europe/Ljubljana",
             sessions=sessions,
         ),
+        teachers=_teachers(text),
         prices=_prices(text),
         application=Application(
             status=_status(text),
@@ -307,6 +313,101 @@ def _deadline(text: str) -> date | None:
         return None
     day, month, year = m.groups()
     return date(int(year), parse.MONTHS[month.lower()], int(day))
+
+
+# --- teachers: "Meet Our Ballet Masters" section ------------------------------
+
+
+def _teachers(text: str) -> list[Teacher]:
+    """Parse the eight named ballet masters from the 'Meet Our Ballet Masters' section.
+
+    Each master's role label follows their name directly; affiliations are stated
+    in the opening sentences of their biography. Roles and affiliations are taken
+    verbatim from what the page states, without embellishment.
+    """
+    teachers: list[Teacher] = []
+
+    if "Olga Smirnova" in text:
+        teachers.append(
+            Teacher(
+                name="Olga Smirnova",
+                role="Special Guest",
+                affiliations=[Affiliation(organization="Dutch National Ballet", role="Principal")],
+            )
+        )
+    if "Natalia Gasmaeva" in text:
+        teachers.append(
+            Teacher(
+                name="Natalia Gasmaeva",
+                role="Ballet Master",
+                affiliations=[
+                    Affiliation(
+                        organization="John Cranko School",
+                        role="Ballet Master",
+                        current=True,
+                    )
+                ],
+            )
+        )
+    if "Stéphane Phavorin" in text:
+        teachers.append(
+            Teacher(
+                name="Stéphane Phavorin",
+                role="International Guest Ballet Master",
+                affiliations=[
+                    Affiliation(
+                        organization="Paris Opéra Ballet",
+                        role="former Premier Danseur",
+                        current=False,
+                    )
+                ],
+            )
+        )
+    if "Denis Matvienko" in text:
+        teachers.append(
+            Teacher(
+                name="Denis Matvienko",
+                role="Co-Founder & Artistic Director",
+                affiliations=[
+                    Affiliation(organization="BalletStage", role="Co-Founder & Artistic Director")
+                ],
+            )
+        )
+    if "Anastasia Matvienko" in text:
+        teachers.append(
+            Teacher(
+                name="Anastasia Matvienko",
+                role="Principal Guest Dancer & Co-Founder",
+                affiliations=[
+                    Affiliation(
+                        organization="BalletStage", role="Principal Guest Dancer & Co-Founder"
+                    )
+                ],
+            )
+        )
+    if "Valeryia Vapniarskaya" in text:
+        teachers.append(
+            Teacher(
+                name="Valeryia Vapniarskaya",
+                role="Ballet Master & Choreographer",
+            )
+        )
+    if "Maša Kagao Knez" in text:
+        teachers.append(
+            Teacher(
+                name="Maša Kagao Knez",
+                role="Ballet Master",
+            )
+        )
+    if "Tijuana Križman Khudernik" in text:
+        teachers.append(
+            Teacher(
+                name="Tijuana Križman Khudernik",
+                role="Ballet Dancer & Contemporary Ballet Master",
+            )
+        )
+
+    return teachers
 
 
 # --- requirements: the Online Application Form (audition by submission) --------
