@@ -4,13 +4,15 @@ API FIRST: none. The Korean National Ballet (KNB) site (a custom PHP CMS, no
 public JSON API) server-renders the academy's "강좌 및 등록안내" (courses &
 registration) page — the full text, including the year's term/vacation timetable,
 is in the static HTML. The vacation-intensive dates live in a popup `<table>`
-("2026년도 ... 수강료 납부기간 및 수강기간") that is present in the markup, so a single
-plain fetch is enough; no JS render.
+(titled "2026년도 성인취미반 수강료 납부기간 및 수강기간" — the adult hobby-class
+tuition-payment and attendance schedule) that is present in the markup, so a
+single plain fetch is enough; no JS render.
 
 TLS NOTE: the host serves an incomplete certificate chain, so the shared client
 can't validate it; we fetch with our own `verify=False` client (read-only public
 page — see `fetch.make_client`), the same call the Princess Grace / Frankfurt
-scrapers make. The EN subpages 404, so we read the Korean (`/ko/`) page.
+scrapers make. The EN subpages return HTTP 500 (not 404), so we read the Korean
+(`/ko/`) page.
 
 DISCOVERY: the academy runs two dated **vacation intensives** ("방학 특강", taught
 by current KNB dancers / ballet stars, certificate for all participants) on the
@@ -19,6 +21,10 @@ crosses the year boundary). They are separate dated editions with their own span
 so we emit **one Offering per edition** (folding would lose the distinct dates).
 The timetable's quarterly (분기) rows are the regular term, not intensives, and are
 skipped — discovery keeps only the two 방학 (vacation) rows.
+
+The dates live in a popup `<table>` titled "2026년도 성인취미반 수강료 납부기간 및
+수강기간" (adult hobby-class tuition-payment and attendance schedule), not a
+shared student table. We read it structurally by row (label cell → span cell).
 
 KOREAN SOURCE: parsed language-agnostically. The span is `YYYY년 M월 D일(요일) ~
 [YYYY년] M월 D일(요일) (N주)` — the start always carries the year; the end repeats it

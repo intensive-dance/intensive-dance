@@ -23,13 +23,15 @@ WHAT THE PAGE GIVES US (verified live 2026-06):
   - STATUS: both parts are "FULL"; the form is now a waitlist sign-up, so the
     application is `closed` (the edition still takes place — `lifecycle` stays
     `scheduled`).
-  - REQUIREMENTS: the page states "This is not an audition and does not affect
-    acceptance"; a video may be sent *optionally* for group placement. So we
-    record `none` (explicitly nothing required), with the nuance in the note.
+  - REQUIREMENTS: the registration page (`/register-for-summer-intensive`, not the
+    scraped `/summer` page) carries the "This is not an audition" phrase; the
+    `/summer` page we scrape lacks that trigger text, so `_requirements` returns
+    `[]` rather than `[NoneReq()]`. Requirements therefore stays empty — faithfully
+    reflecting what the scraped page states, with the nuance in the application note.
 
-Faculty: the page lists a guest-teacher roll but also says "2026 Teachers will
-be announced shortly", and the names run together in one un-delimited block, so
-teachers are left empty rather than over-claimed (same call as Brussels/Joffrey).
+Faculty: the page lists a guest-teacher roll and the full 2026 faculty is now
+published, but the names run together in one un-delimited block, so teachers are
+left empty rather than over-claimed (same call as Brussels/Joffrey).
 """
 
 from __future__ import annotations

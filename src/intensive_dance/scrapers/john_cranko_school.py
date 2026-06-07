@@ -6,8 +6,19 @@ server-rendered page (`/summer_school/`) — so this is a one-page HTML scrape.
 
 DISCOVERY: one `Offering` — the current Summer School. We read its dates, age
 band, fee, application deadline and the video-audition brief straight off the
-page, and drop the offering once its end date is past (same "keep only live"
-rule as the other scrapers). The page is in German.
+page. Ended editions are retained (IDR-24 — "past" is derived consumer-side from
+`schedule.end < today`, never stored). The page is in German.
+
+WHAT THIS SCRAPER EXERCISES (verified live 2026-06):
+  - DATES: German "1. Juni 2026 bis Samstag, 6. Juni 2026" date-range (DE months).
+  - AGES: "Alter 10–19" → bounded ageRange.
+  - GENRES: keyword-matched from the German syllabus (Ballett, Repertoire,
+    Spitzenschuh, Charakter, Contemporary) — defaults to classical.
+  - PRICE: "EUR x,xx" → one Price (tuition + performance); accommodation/meals
+    explicitly excluded.
+  - APPLICATION: deadline via "Einsendeschluss …"; status set to `closed` when
+    deadline has passed. Requirements: a ~15–20 min video (specific) plus one
+    full-body photo in a leotard (freeform).
 """
 
 from __future__ import annotations

@@ -103,6 +103,26 @@ def test_teachers_merge_unique_across_rosters():
     assert all(t.role == "予定講師（変更の可能性あり）" for t in nnt._teachers(a_block))
 
 
+def test_dates_note_captures_both_a1_and_a2_sub_tracks():
+    # The A class splits into A1 (morning 10:50-12:30) and A2 (afternoon 13:30-15:10).
+    # Both 【日程詳細 …】 blocks must appear in the note so neither time-slot is lost.
+    a_block = nnt._track_block(PAGE, nnt._TRACKS[0])
+    assert a_block is not None
+    note = nnt._dates_note(a_block)
+    assert note is not None
+    assert "10:50" in note  # A1 morning time
+    assert "13:30" in note  # A2 afternoon time
+
+
+def test_dates_note_b_track_single_block():
+    # The B class has one schedule block; the note must still be populated.
+    b_block = nnt._track_block(PAGE, nnt._TRACKS[1])
+    assert b_block is not None
+    note = nnt._dates_note(b_block)
+    assert note is not None
+    assert "11:00" in note
+
+
 def test_page_requirements_defined_poses():
     (req,) = nnt._page_requirements(PAGE)
     assert isinstance(req, PhotosReq)

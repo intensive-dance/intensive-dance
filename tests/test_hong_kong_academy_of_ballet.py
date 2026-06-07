@@ -1,11 +1,13 @@
 """Unit tests for the Hong Kong Academy of Ballet scraper (server-rendered HTML).
 
 These pin the per-class parsing of the Summer Intensive page: the two programme
-weeks as shared sessions, the five age-banded classes (A–E) split into one
-Offering each, the open-ended top band (Class E "ages 14+"), HKD course-fee and
-early-bird tiers (per-week + 2-week), syllabus-scoped genres, the D/E
-pre-professional level + photo requirement + week-tagged guest faculty, and the
-9 Feb application-open date. Inline strings, no network.
+weeks as shared sessions for Classes B–E, Class A's non-consecutive 4-day
+sessions (Mon-Tue, Thu-Fri; schedule.end 2026-07-31), the five age-banded
+classes (A–E) split into one Offering each, the open-ended top band (Class E
+"ages 14+"), HKD course-fee and early-bird tiers (per-week + 2-week),
+syllabus-scoped genres, the D/E pre-professional level + photo requirement +
+week-tagged guest faculty, and the 9 Feb application-open date. Inline strings,
+no network.
 """
 
 from __future__ import annotations
@@ -25,7 +27,8 @@ _PAGE = (
     "Class A (ages 5-6) Over the four-day camp young dancers explore movement. "
     "Programme includes: Ballet Technique Class Body Conditioning Creative & Repertories "
     "Music Appreciation Arts & Crafts "
-    "[Week 1] 20-21 July, 23-24 July 2026 [Week 2] 27 -28 July, 30 -31 July 2026 "
+    # The live page renders Week 2 as "[Week 2] ] 27 -28 …" (bold-markup artefact).
+    "[Week 1] 20-21 July, 23-24 July 2026 [Week 2] ] 27 -28 July, 30 -31 July 2026 "
     "Venue: Rehearsal Studio, Hong Kong Cultural Centre (10 Salisbury Road) "
     "Course Fee: HK$3,850 per week (4 days) HK$6,930 for 2 weeks (8 days) - 10% off! "
     "Early Bird Offer: For applications submitted on or before 9 March 2026 : "
@@ -73,6 +76,30 @@ def test_one_offering_per_class():
         "hong-kong-academy-of-ballet/summer-intensive-2026-class-d",
     ]
     assert all(len(o.schedule.sessions) == 2 for o in offs)
+
+
+def test_class_a_sessions_non_consecutive_4_day():
+    # Class A skips Wednesday: Week 1 is 20–21 & 23–24 Jul → session end Jul 24.
+    # Week 2 is 27–28 & 30–31 Jul → session end Jul 31. schedule.end = 2026-07-31.
+    class_a_sessions = hkab._class_a_sessions(_PAGE)
+    assert [(s.label, s.start, s.end) for s in class_a_sessions] == [
+        ("Week 1", date(2026, 7, 20), date(2026, 7, 24)),
+        ("Week 2", date(2026, 7, 27), date(2026, 7, 31)),
+    ]
+    # The non-consecutive days are recorded in the notes.
+    assert class_a_sessions[0].notes is not None
+    assert "23" in class_a_sessions[0].notes  # Thu of week 1
+
+
+def test_class_a_schedule_end_is_july_31():
+    offs = _offerings()
+    a = offs[0]
+    assert a.id.endswith("class-a")
+    assert a.schedule.end == date(2026, 7, 31)
+    assert a.schedule.start == date(2026, 7, 20)
+    # Class D still uses the full-week sessions (ends Aug 1).
+    d = offs[1]
+    assert d.schedule.end == date(2026, 8, 1)
 
 
 def test_class_a_ages_genres_no_level_or_requirement():

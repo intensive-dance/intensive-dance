@@ -27,7 +27,8 @@ WHAT THIS SCRAPER EXERCISES (verified live 2026-06-05):
     (kept in the note). Requirements: a `video` of specific exercises (tendu/adagio,
     pirouette, petit/grand allegro, échappé/passé) — `specific` — waived for
     applicants from Wilhelmsen, KHIO and Ballettskolen (noted, not modelled).
-  - LIFECYCLE: stays `scheduled`; we drop the edition once it has ended (end < today).
+  - LIFECYCLE: stays `scheduled`; ended editions are retained (IDR-24 — "past" is
+    derived consumer-side from `schedule.end < today`, never stored).
 """
 
 from __future__ import annotations
@@ -79,13 +80,13 @@ def scrape(client: httpx.Client) -> list[Offering]:
         if resp.status_code == 404:
             continue
         resp.raise_for_status()
-        offering = _build_offering(resp.text, url, today)
+        offering = _build_offering(resp.text, url)
         if offering is not None:
             return [offering]
     return []
 
 
-def _build_offering(html: str, url: str, today: date) -> Offering | None:
+def _build_offering(html: str, url: str) -> Offering | None:
     tree = HTMLParser(html)
     title = _title(tree)
     if title is None or "summer course" not in title.lower():
@@ -93,9 +94,6 @@ def _build_offering(html: str, url: str, today: date) -> Offering | None:
 
     text = _text(tree)
     start, end = _dates(text)
-    if end is not None and end < today:
-        return None  # this edition has already finished
-
     season = str(start.year) if start else _slug_year(url) or "unknown"
 
     return Offering(

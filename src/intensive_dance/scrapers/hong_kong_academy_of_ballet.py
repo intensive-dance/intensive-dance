@@ -15,9 +15,13 @@ per class** (slug `summer-intensive-{year}-class-{a..e}`), with the two weeks as
 `schedule.sessions`. Faculty differs per week, so each guest teacher is tagged
 to its week via `Teacher.role`.
 
-WHAT THIS SCRAPER EXERCISES (verified live 2026-06-05):
-  - SESSIONS: Week 1 (20–25 Jul 2026) and Week 2 (27 Jul – 1 Aug 2026); Class A
-    runs a shorter 4-day camp inside each week (dates kept in the session note).
+WHAT THIS SCRAPER EXERCISES (verified live 2026-06-05, re-verified 2026-06-07):
+  - SESSIONS: Week 1 (20–25 Jul 2026) and Week 2 (27 Jul – 1 Aug 2026) for
+    Classes B–E (continuous Mon–Sat). Class A runs a non-consecutive 4-day camp:
+    Week 1 Mon–Tue, Thu–Fri (20–21, 23–24 Jul → session end 2026-07-24) and
+    Week 2 Mon–Tue, Thu–Fri (27–28, 30–31 Jul → session end 2026-07-31); Class A
+    therefore has schedule.end 2026-07-31, not 2026-08-01. The non-consecutive
+    days are recorded in each session's notes field.
   - AGES: per-class `age_range` from the heading — Class E ("ages 14+") is
     open-ended (only a lower bound).
   - LEVEL: D/E are `pre-professional` (years of training + pointe, RAD
@@ -98,17 +102,30 @@ def scrape(client: httpx.Client) -> list[Offering]:
 
 def _build_offerings(html: str, url: str, today: date) -> list[Offering]:
     text = _text(html)
-    sessions = _sessions(text)
-    if not sessions:
+    # Full-week sessions shared by Classes B–E.
+    shared_sessions = _sessions(text)
+    if not shared_sessions:
         return []
-    season = str(max(s.end.year for s in sessions if s.end))
-    start = min((s.start for s in sessions if s.start), default=None)
-    end = max((s.end for s in sessions if s.end), default=None)
-    if end is not None and end < today:  # whole edition already over
+    # Use shared sessions to determine the overall edition span for the "already
+    # over" guard (Class A ends a day earlier, but the edition as a whole ends with
+    # Class B–E Week 2).
+    end_overall = max((s.end for s in shared_sessions if s.end), default=None)
+    if end_overall is not None and end_overall < today:  # whole edition already over
         return []
+    season = str(max(s.end.year for s in shared_sessions if s.end))
+
+    # Class A has non-consecutive 4-day weeks; all other classes use the full week.
+    class_a_sessions = _class_a_sessions(text)
 
     offerings: list[Offering] = []
     for klass in _classes(text):
+        # Pick the right session list for this class.
+        if klass.letter == "A" and class_a_sessions:
+            klass_sessions = class_a_sessions
+        else:
+            klass_sessions = shared_sessions
+        klass_start = min((s.start for s in klass_sessions if s.start), default=None)
+        klass_end = max((s.end for s in klass_sessions if s.end), default=None)
         offerings.append(
             Offering(
                 id=f"hong-kong-academy-of-ballet/summer-intensive-{season}-class-{klass.letter.lower()}",
@@ -121,10 +138,10 @@ def _build_offerings(html: str, url: str, today: date) -> list[Offering]:
                 location=LOCATION,
                 schedule=Schedule(
                     season=season,
-                    start=start,
-                    end=end,
+                    start=klass_start,
+                    end=klass_end,
                     timezone="Asia/Hong_Kong",
-                    sessions=sessions,
+                    sessions=klass_sessions,
                     notes=klass.schedule_note,
                 ),
                 teachers=klass.teachers,
@@ -152,10 +169,23 @@ def _text(html: str) -> str:
 
 # "[Week 1] 20-25 July, 2026" / "[Week 2] 27 July - 1 August, 2026" — the second
 # week spans two months, so each endpoint carries its own (optional) month.
+# Matches Class B–E's continuous day-ranges.
 _WEEK = re.compile(
     r"\[Week\s*(\d)\]\s*"
     r"(\d{1,2})\s*(?:(" + parse.MONTHALT + r"))?\s*[-–—]\s*"
     r"(\d{1,2})\s*(" + parse.MONTHALT + r"),?\s*(\d{4})",
+    re.IGNORECASE,
+)
+
+# Class A runs a 4-day camp skipping Wednesday: "[Week 1] 20-21 July, 23-24 July 2026".
+# The pattern is two d1-d2 ranges in the same month separated by a comma, with the
+# year trailing the second range (no year after the first).
+# Note: the page's HTML renders Week 2 as "[Week 2] ] 27 -28 July …" (an extra "]"
+# from the bold markup), so we allow an optional stray "]" after the closing bracket.
+_CLASS_A_WEEK = re.compile(
+    r"\[Week\s*(\d)\]\s*\]?\s*"
+    r"(\d{1,2})\s*[-–—]\s*(\d{1,2})\s+(" + parse.MONTHALT + r"),\s*"
+    r"(\d{1,2})\s*[-–—]\s*(\d{1,2})\s+(" + parse.MONTHALT + r")\s+(\d{4})",
     re.IGNORECASE,
 )
 
@@ -173,6 +203,30 @@ def _sessions(text: str) -> list[Session]:
             continue
         seen.add((start, end))
         out.append(Session(label=f"Week {wk}", start=start, end=end))
+    return out
+
+
+def _class_a_sessions(text: str) -> list[Session]:
+    """Parse Class A's non-consecutive 4-day weeks (Mon-Tue, Thu-Fri per week).
+
+    The page shows e.g. "[Week 1] 20-21 July, 23-24 July 2026" — two day-pairs
+    in the same month. We record the first day of each pair as session start and
+    the last day of each pair as session end, keeping the non-consecutive days in
+    a note so consumers can see the Wednesday gap.
+    """
+    seen: set[tuple[date, date]] = set()
+    out: list[Session] = []
+    for m in _CLASS_A_WEEK.finditer(text):
+        wk, d1a, d1b, mon1, d2a, d2b, mon2, year = m.groups()
+        start_month = parse.MONTHS[mon1.lower()]
+        end_month = parse.MONTHS[mon2.lower()]
+        start = date(int(year), start_month, int(d1a))
+        end = date(int(year), end_month, int(d2b))
+        if (start, end) in seen:
+            continue
+        seen.add((start, end))
+        days_note = f"{d1a}–{d1b} & {d2a}–{d2b} {mon2.title()} (Mon–Tue, Thu–Fri; Wed excluded)"
+        out.append(Session(label=f"Week {wk}", start=start, end=end, notes=days_note))
     return out
 
 

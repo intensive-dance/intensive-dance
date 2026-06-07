@@ -33,9 +33,9 @@ WHAT THE PAGES GIVE US (verified live 2026-06-06):
     current photo in first arabesque (a defined pose) and one ballet photo of the
     applicant's choice (freeform). The arabesque is the granular pose IDR-28 wants.
 
-Teachers are a marquee roster (Maria Eichwald, Jiří Jelínek — ex-Stuttgart
-principals) but listed as the standing faculty roll, not pinned to 2026 roles,
-so they're left empty rather than over-claimed (same call as Brussels/Joffrey).
+Teachers: the site names only pianists (Khidirova, Smoliarov) and org-level
+directors — no named ballet teaching faculty is pinned to the 2026 edition, so
+teachers are left empty rather than over-claimed (same call as Brussels/Joffrey).
 """
 
 from __future__ import annotations
