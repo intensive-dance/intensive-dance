@@ -181,6 +181,7 @@
       "timezone": "Europe/Ljubljana"
     },
     "source": {
+      "attemptedAt": "2026-06-07T13:30:02.445120Z",
       "hash": "sha256:c2b407b1819ff272d0df930f30e9a4b295b2be618fc624e95c3f3ea766417abe",
       "provider": "balletstage",
       "scrapedAt": "2026-06-07T12:10:56.584132Z",
