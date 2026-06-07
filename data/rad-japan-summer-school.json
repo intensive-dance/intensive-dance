@@ -45,7 +45,7 @@
       "timezone": "Asia/Tokyo"
     },
     "source": {
-      "attemptedAt": "2026-06-07T11:31:38.630275Z",
+      "attemptedAt": "2026-06-07T17:27:02.051879Z",
       "hash": "sha256:df5ca8d9815ee1dbb6df25bd8c52e022f92696a05caf9f77adcdc8762140f556",
       "provider": "rad-japan-summer-school",
       "scrapedAt": "2026-06-06T07:39:06.795747Z",
@@ -101,7 +101,7 @@
       "timezone": "Asia/Tokyo"
     },
     "source": {
-      "attemptedAt": "2026-06-07T11:31:38.630275Z",
+      "attemptedAt": "2026-06-07T17:27:02.051879Z",
       "hash": "sha256:f1930bd487dd6bf6e02433694fbebfa803ca350c62d389ccd72055160702d90d",
       "provider": "rad-japan-summer-school",
       "scrapedAt": "2026-06-06T07:39:06.796368Z",
@@ -157,7 +157,7 @@
       "timezone": "Asia/Tokyo"
     },
     "source": {
-      "attemptedAt": "2026-06-07T11:31:38.630275Z",
+      "attemptedAt": "2026-06-07T17:27:02.051879Z",
       "hash": "sha256:7f305cfbeb534c90264a31540243e5f7eb798387182d5ad1d889cad249f76ec4",
       "provider": "rad-japan-summer-school",
       "scrapedAt": "2026-06-06T07:39:06.796570Z",
@@ -214,7 +214,7 @@
       "timezone": "Asia/Tokyo"
     },
     "source": {
-      "attemptedAt": "2026-06-07T11:31:38.630275Z",
+      "attemptedAt": "2026-06-07T17:27:02.051879Z",
       "hash": "sha256:f3c7b39ce5c10ce70d3839b9f5b14d2da70b461f03253494a56af760e56fcd84",
       "provider": "rad-japan-summer-school",
       "scrapedAt": "2026-06-06T07:39:06.796756Z",
