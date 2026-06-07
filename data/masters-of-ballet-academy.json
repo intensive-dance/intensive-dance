@@ -69,7 +69,7 @@
       "timezone": "Europe/London"
     },
     "source": {
-      "attemptedAt": "2026-06-07T01:40:35.435266Z",
+      "attemptedAt": "2026-06-07T09:59:15.680448Z",
       "hash": "sha256:bdb2b75dcadc3bdf1d516117df315d45717dae518cb2e7f69452882ccf493a0e",
       "provider": "masters-of-ballet-academy",
       "scrapedAt": "2026-06-05T21:12:23.290468Z",
@@ -140,7 +140,7 @@
       "timezone": "Asia/Tbilisi"
     },
     "source": {
-      "attemptedAt": "2026-06-07T01:40:35.435266Z",
+      "attemptedAt": "2026-06-07T09:59:15.680448Z",
       "hash": "sha256:05ca08f3ab62a2816ef3c7fec19fcd1b34957a66280d575250d4fbb26fb51c6f",
       "provider": "masters-of-ballet-academy",
       "scrapedAt": "2026-06-05T21:12:23.503204Z",
