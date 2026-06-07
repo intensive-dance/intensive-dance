@@ -2,10 +2,11 @@
 
 These pin the regex parsing of the two intensive tracks: the Seniors page (two
 interchangeable weeks → a multi-session schedule, £410/£745 tuition, four named
-photo poses) and the Intermediates page (a single week, £375 plus optional
-£48/night accommodation, three named poses). Both carry an occasional-video
-requirement and a year-less closing date the parser only trusts when its weekday
-matches the course year. Inline strings, no network.
+photo poses, three named guest faculty) and the Intermediates page (a single
+week, £375 plus optional £48/night accommodation, three named poses, no teachers).
+Both carry an occasional-video requirement and a year-less closing date the
+parser only trusts when its weekday matches the course year. Inline strings, no
+network.
 """
 
 from __future__ import annotations
@@ -25,7 +26,9 @@ SENIORS = (
     "Price One week £410 Two weeks £745 "
     "Course Content Highlights Daily activation and Classical ballet classes "
     "followed by enhancement classes including: Contemporary Pas De Deux "
-    "Variations Pilates Repertoire Men's and women's coaching Observe Company class "
+    "Variations Pilates Repertoire Men’s and women’s coaching Observe Company class "
+    "The programme also offers the exciting opportunity to train with Artistic Director "
+    "and former Royal Ballet Principal Federico Bonelli. "
     "Application Process Applicants must complete the online application form, "
     "including uploading required photographs. On occasion applicants may be asked "
     "to submit a short video as part of their application. "
@@ -36,7 +39,16 @@ SENIORS = (
     "Facing the camera – Tendu á la seconde, arms in second position (either leg) "
     "Facing the camera - Á la seconde en l’air, straight supporting leg, arms in "
     "second position "
-    "Profile to the camera – 1st Arabesque on a straight supporting leg Apply Now"
+    "Profile to the camera – 1st Arabesque on a straight supporting leg Apply Now "
+    "Week One Special Guest Dame Darcey Bussell DBE Darcey Bussell is a former "
+    "Principal dancer with The Royal Ballet. Darcey is the President of the Royal "
+    "Academy of Dance. "
+    "Week Two Special Guest Federico Bonelli Federico Bonelli became Artistic Director "
+    "of Northern Ballet in May 2022, before this he was a Principal of The Royal Ballet. "
+    "Read Federico’s full biography "
+    "Week Two Special Guest Hikaru Kobayashi Hikaru was born in Tokyo, Japan. "
+    "In September 2003, Hikaru joined The Royal Ballet as a First Artist, was promoted "
+    "to Soloist in 2006, and became First Soloist in 2009."
 )
 
 INTERMEDIATES = (
@@ -168,3 +180,49 @@ def test_build_offering_intermediates_single_session_dropped():
     assert o.schedule.sessions == []
     assert o.schedule.start == date(2026, 7, 27)
     assert o.schedule.end == date(2026, 7, 31)
+
+
+def test_teachers_seniors_three_named_guests():
+    teachers = nba._teachers(SENIORS)
+    names = [t.name for t in teachers]
+    assert "Dame Darcey Bussell DBE" in names
+    assert "Federico Bonelli" in names
+    assert "Hikaru Kobayashi" in names
+
+
+def test_teachers_seniors_roles_and_affiliations():
+    teachers = nba._teachers(SENIORS)
+    darcey = next(t for t in teachers if "Darcey Bussell" in t.name)
+    assert "Week 1" in (darcey.role or "")
+    assert any(a.organization == "The Royal Ballet" for a in darcey.affiliations)
+    assert any(a.organization == "Royal Academy of Dance" for a in darcey.affiliations)
+
+    federico = next(t for t in teachers if t.name == "Federico Bonelli")
+    assert "Week 2" in (federico.role or "")
+    assert any(a.organization == "Northern Ballet" for a in federico.affiliations)
+
+    hikaru = next(t for t in teachers if t.name == "Hikaru Kobayashi")
+    assert "Week 2" in (hikaru.role or "")
+    assert any(a.organization == "The Royal Ballet" for a in hikaru.affiliations)
+
+
+def test_teachers_empty_when_no_names():
+    assert nba._teachers("no guest faculty named here") == []
+
+
+def test_build_offering_seniors_has_teachers():
+    html = (
+        f"<html><body>{SENIORS}"
+        '<a href="https://northernballet.wufoo.com/forms/w1bbr10y0axntgm/">Apply Now</a>'
+        "</body></html>"
+    )
+    o = nba._build_offering(html, nba.SENIORS, "Seniors")
+    assert o is not None
+    assert len(o.teachers) == 3
+
+
+def test_build_offering_intermediates_empty_teachers():
+    html = f"<html><body>{INTERMEDIATES}</body></html>"
+    o = nba._build_offering(html, nba.INTERMEDIATES, "Intermediates")
+    assert o is not None
+    assert o.teachers == []

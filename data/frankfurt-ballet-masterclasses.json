@@ -5,9 +5,27 @@
       "min": 8
     },
     "application": {
+      "deadline": "2026-08-15",
       "requirements": [
         {
-          "type": "none"
+          "notes": "Group A (ages 8–11): 3 dance poses in profile — plié in first position, first arabesque 90°, à la seconde 90°.",
+          "poses": [
+            "Plié in first position (profile)",
+            "First arabesque 90°",
+            "À la seconde 90°"
+          ],
+          "specificity": "defined-poses",
+          "type": "photos"
+        },
+        {
+          "notes": "Group B (ages 12–18): 3 dance poses on pointe — first arabesque 90°, à la seconde 90°, relevé in fourth position croisé.",
+          "poses": [
+            "First arabesque 90° (on pointe)",
+            "À la seconde 90° (on pointe)",
+            "Relevé in fourth position croisé (on pointe)"
+          ],
+          "specificity": "defined-poses",
+          "type": "photos"
         }
       ],
       "status": "open",
@@ -56,12 +74,28 @@
     },
     "source": {
       "attemptedAt": "2026-06-07T00:20:28.059776Z",
-      "hash": "sha256:499398a9d51cf58d923e13dec3b21267f20bacbac7116b255370096d5000d3a5",
+      "hash": "sha256:a15de015fee71294400e9dc079195fc592af9eb52a9268a6169fa200c5442088",
       "provider": "frankfurt-ballet-masterclasses",
-      "scrapedAt": "2026-06-06T16:36:40.066415Z",
+      "scrapedAt": "2026-06-07T08:10:00.246337Z",
       "url": "https://masterclass.balletcompetition.net/"
     },
-    "teachers": [],
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "organization": "Palucca University of Dance Dresden",
+            "role": "Professor"
+          }
+        ],
+        "name": "Olga Melnikova",
+        "role": "Teacher (Classical Ballet)"
+      },
+      {
+        "affiliations": [],
+        "name": "Denis Untila",
+        "role": "Teacher (Contemporary & Stretching)"
+      }
+    ],
     "title": "Frankfurt Ballet Masterclasses 2026"
   }
 ]

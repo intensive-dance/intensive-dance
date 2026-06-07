@@ -15,7 +15,7 @@ from datetime import date
 from intensive_dance.models import HeadshotReq, PhotosReq, VideoReq
 from intensive_dance.scrapers import balletstage as bs
 
-# A compact slice mirroring the live page's structure (groups + prices + terms).
+# A compact slice mirroring the live page's structure (groups + prices + terms + teachers).
 _PAGE_TEXT = (
     "Summer Intensive MasterClass 13 - 25 July 2026 Ljubljana - Slovenia Registrations Open "
     "Classical dance lesson, Pointe technique (Girls), Repertoire, Wave in Motion contemporary "
@@ -34,7 +34,20 @@ _PAGE_TEXT = (
     "Euro 200 per day (From 21-24 July) "
     "Participants who are professional, semi-professional, or have completed at least one year "
     "of full-time training for a career in dance and are 10 years or older are eligible to apply. "
-    "The deadline for applications is 20th June 2026 ."
+    "The deadline for applications is 20th June 2026 . "
+    "Meet Our Ballet Masters "
+    "Olga Smirnova (Special Guest) Principal of the Dutch National Ballet "
+    "Natalia Gasmaeva Ballet Master at the John Cranko School in Stuttgart, Germany since 2005. "
+    "Stéphane Phavorin Former First Dancer of The Paris Opera International Guest Ballet Master "
+    "Denis Matvienko Co-Founder & Artistic Director of BalletStage "
+    "Anastasia Matvienko Principal Guest Dancer & Co-Founder of BalletStage "
+    "Valeryia Vapniarskaya Ballet Master & Choreographer "
+    "Maša Kagao Knez Dancer, Choreographer & Dance Pedagogue "
+    "Tijuana Križman Khudernik Ballet Dancer & Contemporary Ballet Master "
+    "Payment Terms A non-refundable deposit of Euro 400 can be made. "
+    "This deposit must be paid within 7 days of the acceptance email notification. "
+    "The balance fee must be paid in full within 60 days from the deposit payment date "
+    "(But not later than 1st June for any late applications)"
 )
 
 
@@ -150,3 +163,51 @@ def test_build_offering_end_to_end():
 
 def test_build_offering_returns_none_without_dates():
     assert bs._build_offering("<html><body>no dates here</body></html>") is None
+
+
+def test_teachers_all_eight_named():
+    teachers = bs._teachers(_PAGE_TEXT)
+    names = [t.name for t in teachers]
+    assert "Olga Smirnova" in names
+    assert "Natalia Gasmaeva" in names
+    assert "Stéphane Phavorin" in names
+    assert "Denis Matvienko" in names
+    assert "Anastasia Matvienko" in names
+    assert "Valeryia Vapniarskaya" in names
+    assert "Maša Kagao Knez" in names
+    assert "Tijuana Križman Khudernik" in names
+    assert len(teachers) == 8
+
+
+def test_teachers_roles_and_affiliations():
+    teachers = bs._teachers(_PAGE_TEXT)
+
+    olga = next(t for t in teachers if t.name == "Olga Smirnova")
+    assert olga.role == "Special Guest"
+    assert any(a.organization == "Dutch National Ballet" for a in olga.affiliations)
+
+    gasmaeva = next(t for t in teachers if t.name == "Natalia Gasmaeva")
+    assert any("John Cranko School" in a.organization for a in gasmaeva.affiliations)
+
+    phavorin = next(t for t in teachers if t.name == "Stéphane Phavorin")
+    assert "International Guest Ballet Master" in (phavorin.role or "")
+    assert any("Paris Opéra Ballet" in a.organization for a in phavorin.affiliations)
+
+
+def test_teachers_empty_when_no_names():
+    assert bs._teachers("No ballet masters named here.") == []
+
+
+def test_build_offering_has_teachers():
+    offering = bs._build_offering(f"<html><body>{_PAGE_TEXT}</body></html>")
+    assert offering is not None
+    assert len(offering.teachers) == 8
+
+
+def test_application_notes_include_payment_terms():
+    offering = bs._build_offering(f"<html><body>{_PAGE_TEXT}</body></html>")
+    assert offering is not None
+    notes = offering.application.notes or ""
+    assert "7 days" in notes
+    assert "60 days" in notes
+    assert "1 June" in notes

@@ -93,12 +93,56 @@
     },
     "source": {
       "attemptedAt": "2026-06-07T03:00:10.591256Z",
-      "hash": "sha256:303466fd322df818f870d2eeea70c5c4d6b016cb35a9f61cbfc0afdf8f7ebc64",
+      "hash": "sha256:a8f77654e65ad5076b52263e7af0473b7b4335e15fb5c2d87dcc356ef28c53c9",
       "provider": "northern-ballet-academy",
-      "scrapedAt": "2026-06-05T21:10:58.968792Z",
+      "scrapedAt": "2026-06-07T08:09:50.952236Z",
       "url": "https://northernballet.com/academy/workshops-events/international-summer-intensives/seniors"
     },
-    "teachers": [],
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "The Royal Ballet",
+            "role": "former Principal"
+          },
+          {
+            "current": true,
+            "organization": "Royal Academy of Dance",
+            "role": "President"
+          }
+        ],
+        "name": "Dame Darcey Bussell DBE",
+        "role": "Special Guest (Week 1)"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Northern Ballet",
+            "role": "Artistic Director"
+          },
+          {
+            "current": false,
+            "organization": "The Royal Ballet",
+            "role": "former Principal"
+          }
+        ],
+        "name": "Federico Bonelli",
+        "role": "Special Guest (Week 2)"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "The Royal Ballet",
+            "role": "former First Soloist"
+          }
+        ],
+        "name": "Hikaru Kobayashi",
+        "role": "Special Guest (Week 2)"
+      }
+    ],
     "title": "International Summer Intensive: Seniors 2026"
   },
   {
