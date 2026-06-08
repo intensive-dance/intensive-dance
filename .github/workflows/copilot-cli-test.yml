@@ -15,7 +15,7 @@ jobs:
   ask-copilot:
     runs-on: ubuntu-latest
     steps:
-      - uses: austenstone/copilot-cli@v3
+      - uses: austenstone/copilot-cli@main
         id: copilot
         with:
           prompt: ${{ inputs.prompt }}
