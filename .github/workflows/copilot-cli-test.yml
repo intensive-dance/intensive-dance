@@ -15,18 +15,10 @@ jobs:
   ask-copilot:
     runs-on: ubuntu-latest
     steps:
-      - uses: austenstone/copilot-cli@main
-        id: copilot
+      - name: Install Copilot CLI
+        run: npm install -g @github/copilot
+
+      - name: Run Copilot CLI
         env:
           COPILOT_GITHUB_TOKEN: ${{ secrets.COPILOT_CLI_TOKEN }}
-        with:
-          prompt: ${{ inputs.prompt }}
-          silent: true
-          share: true
-
-      - name: Print the response
-        if: steps.copilot.outputs.session-path != ''
-        run: |
-          echo "::group::Copilot response"
-          cat "${{ steps.copilot.outputs.session-path }}"
-          echo "::endgroup::"
+        run: copilot -p "${{ inputs.prompt }}" --no-color
