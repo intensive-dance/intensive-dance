@@ -260,7 +260,9 @@ def _stub_offering(start: date | None, end: date | None) -> rbs.Offering:
 
     return rbs.Offering(
         id="royal-ballet-school/test-unknown",
-        source=Source(provider="royal-ballet-school", url="https://example.com", scrapedAt=rbs.now_utc()),
+        source=Source(
+            provider="royal-ballet-school", url="https://example.com", scrapedAt=rbs.now_utc()
+        ),
         title="Test",
         genres=[],
         lifecycle="scheduled",
