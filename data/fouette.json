@@ -1,0 +1,101 @@
+[
+  {
+    "application": {
+      "requirements": []
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "fouette/summer-camp-2021",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "country": "PL"
+    },
+    "organization": {
+      "city": "Poznań",
+      "country": "PL",
+      "name": "Szkoła Tańca i Baletu Fouetté",
+      "slug": "fouette"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2021-08-20",
+      "season": "2021",
+      "sessions": [],
+      "start": "2021-08-13",
+      "timezone": "Europe/Warsaw"
+    },
+    "source": {
+      "hash": "sha256:682fc71c01a2b0ee71026ee9bbbf651a77f88b827e1f509c72c40a83c474e6d6",
+      "provider": "fouette",
+      "scrapedAt": "2026-06-08T21:21:46.732533Z",
+      "url": "https://fouette.pl/13-20-08-2021-oboz-taneczny-fouette/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Fryderyk Chopin University of Music, Warsaw",
+            "role": "Professor (dr hab.)"
+          }
+        ],
+        "name": "Beata Książkiewicz",
+        "role": "Founder & Director"
+      }
+    ],
+    "title": "Fouetté Summer Camp 2021"
+  },
+  {
+    "application": {
+      "requirements": []
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "repertoire"
+    ],
+    "id": "fouette/winter-intensive-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "country": "PL"
+    },
+    "organization": {
+      "city": "Poznań",
+      "country": "PL",
+      "name": "Szkoła Tańca i Baletu Fouetté",
+      "slug": "fouette"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-02-27",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-02-23",
+      "timezone": "Europe/Warsaw"
+    },
+    "source": {
+      "hash": "sha256:65029f4df13d4b150c51f7fc50b26eee988e21de1a8b65127326c9ef3aa7dd37",
+      "provider": "fouette",
+      "scrapedAt": "2026-06-08T21:21:46.729665Z",
+      "url": "https://fouette.pl/taneczne-ferie-fouette-2/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Fryderyk Chopin University of Music, Warsaw",
+            "role": "Professor (dr hab.)"
+          }
+        ],
+        "name": "Beata Książkiewicz",
+        "role": "Founder & Director"
+      }
+    ],
+    "title": "Fouetté Winter Intensive 2026"
+  }
+]

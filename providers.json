@@ -988,7 +988,7 @@
       "city": "Mountain View",
       "url": "https://www.bayerballet.com/",
       "tier": "secondary",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "cords-dance",
@@ -997,16 +997,16 @@
       "city": "Wrocław",
       "url": "https://cordsdance.com/",
       "tier": "secondary",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "akademia-sztuki-baletowej",
       "name": "Akademia Sztuki Baletowej (ASB)",
       "country": "PL",
-      "city": "Gdańsk",
+      "city": "Sopot",
       "url": "https://asb-balet.pl/",
       "tier": "secondary",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "mlody-balet-polski",
@@ -1060,7 +1060,7 @@
       "city": "Poznań",
       "url": "https://fouette.pl/",
       "tier": "secondary",
-      "status": "seed"
+      "status": "live"
     }
   ]
 }
