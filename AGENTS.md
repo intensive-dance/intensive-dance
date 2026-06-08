@@ -225,9 +225,10 @@ token is **baked into the URL path**, so there's no bearer — `api_key` is unus
 (pass any placeholder; the SDK just requires a non-empty string). Locally: `export
 AI_PROXY_URL=$(gh variable get AI_PROXY_URL)`. Never hardcode the URL in source.
 Model catalog: `GET $AI_PROXY_URL/models` (the list is dynamic — `owned_by` is
-`github`/`gemini`/`mistral`; the `openai/*` Copilot models flake intermittently
-with a 502 `AiGatewayError`, so prefer Gemini/Mistral or retry). Smoke test:
-`.github/workflows/ai-proxy-test.yml` (`workflow_dispatch`, prints the reply).
+`github`/`gemini`/`mistral`). All three work; the `openai/*` Copilot models
+occasionally 502 (`AiGatewayError`), so **retry** (or prefer Gemini/Mistral if you
+need zero flakes). Smoke test: `.github/workflows/ai-proxy-test.yml`
+(`workflow_dispatch`, prints the reply).
 
 ---
 
