@@ -17,13 +17,15 @@ jobs:
     steps:
       - uses: austenstone/copilot-cli@main
         id: copilot
+        env:
+          COPILOT_GITHUB_TOKEN: ${{ secrets.COPILOT_CLI_TOKEN }}
         with:
           prompt: ${{ inputs.prompt }}
-          copilot-token: ${{ secrets.COPILOT_CLI_TOKEN }}
           silent: true
           share: true
 
       - name: Print the response
+        if: steps.copilot.outputs.session-path != ''
         run: |
           echo "::group::Copilot response"
           cat "${{ steps.copilot.outputs.session-path }}"
