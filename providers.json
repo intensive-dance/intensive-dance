@@ -352,6 +352,15 @@
       "status": "seed"
     },
     {
+      "slug": "royal-swedish-ballet-school",
+      "name": "Royal Swedish Ballet School (Kungliga Svenska balettskolan)",
+      "country": "SE",
+      "city": "Stockholm",
+      "url": "https://kungligasvenskabalettskolan.stockholm/en/",
+      "tier": "marquee",
+      "status": "seed"
+    },
+    {
       "slug": "finnish-national-ballet",
       "name": "Finnish National Ballet",
       "country": "FI",
