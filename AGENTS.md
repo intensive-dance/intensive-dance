@@ -227,7 +227,9 @@ AI_PROXY_URL=$(gh variable get AI_PROXY_URL)`. Never hardcode the URL in source.
 Model catalog: `GET $AI_PROXY_URL/models` (the list is dynamic — `owned_by` is
 `github`/`gemini`/`mistral`). All three work; the `openai/*` Copilot models
 occasionally 502 (`AiGatewayError`), so **retry** (or prefer Gemini/Mistral if you
-need zero flakes). Smoke test: `.github/workflows/ai-proxy-test.yml`
+need zero flakes). **For search grounding, prefer the Gemini flash / flash-lite
+models** (`gemini-flash-latest`, `gemini-flash-lite-latest`) — fast, cheap, and
+grounding-capable. Smoke test: `.github/workflows/ai-proxy-test.yml`
 (`workflow_dispatch`, prints the reply).
 
 ---
