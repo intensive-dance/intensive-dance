@@ -15,6 +15,18 @@ One `Offering` per program. Offering ids are `{providerSlug}/{pageSlug}-{season}
 (e.g. `royal-ballet-school/uk-summer-intensive-2026`), keeping year-over-year
 cycles distinct and diffable.
 
+SCOPE FILTER — long-term programmes: RBS occasionally lists multi-month
+programmes that span several weekends across 5–6 months (e.g. the Livorno
+Special Training Programme: four weekends spread from Oct 2026 to Apr 2027,
+schedule.start → schedule.end = 176 days). These are not short-term intensives
+and are out of scope per the project's scope definition. Any offering whose
+overall schedule span (end − start) exceeds MAX_SPAN_DAYS (45) is dropped.
+The threshold sits well above the longest genuine intensive (the UK Summer
+Intensive is ~31 days) and well below the shortest long-term programme seen so
+far (176 days), so there is ample headroom in both directions. The rule is
+applied after building the Offering so the full schedule is available; past
+short intensives are always kept (IDR-24 — "past" is a consumer concern).
+
 Requirements are PHOTOS ONLY — RBS assesses on photo submissions, no video and
 no in-person audition. The required positions are published as age-banded
 *diagrams* on the photograph-requirements page, not as named poses, so we emit
@@ -31,6 +43,12 @@ they credit "the School's artistic faculty", "Artistic Director", and "guest
 teachers" generically, with nothing to attribute to a person. So `teachers` is
 left empty here; exercise the `Teacher`/`Affiliation` models with a house that
 publishes a named roster (e.g. Joffrey / ABT).
+
+WHAT THIS SCRAPER EXERCISES: WordPress REST children fetch · WPBakery section
+parse · `photos`/`defined-poses` requirements · inline price parsing
+(mixed-currency, £/€/$) · table price parsing (FEE_TABLES) · per-country dollar
+resolution · session parsing (week/short/student/weekend/city-date shapes) ·
+`lifecycle="cancelled"` · long-term scope filter · verified live 2026-06-08.
 """
 
 from __future__ import annotations
@@ -62,6 +80,12 @@ BASE = "https://www.royalballetschool.org.uk"
 INTENSIVE_COURSES_SLUG = "intensive-courses"
 FEES_SLUG = "intensive-courses-fees"
 
+# Offerings whose overall schedule span (end − start) exceeds this threshold are
+# long-term programmes, not short-term intensives, and are out of scope.  The UK
+# Summer Intensive (~31 days) is the longest genuine intensive seen so far; the
+# shortest long-term programme seen is 176 days — so 45 days gives ample margin.
+MAX_SPAN_DAYS = 45
+
 ORG = Organization(
     name="The Royal Ballet School", slug="royal-ballet-school", country="GB", city="London"
 )
@@ -80,8 +104,10 @@ def scrape(client: httpx.Client) -> list[Offering]:
 
     today = date.today()
     offerings = [
-        _build_offering(record, fees, today)
+        o
         for record in wp.fetch_children(client, root["id"], base=BASE)
+        for o in [_build_offering(record, fees, today)]
+        if not _is_long_term(o)
     ]
     offerings.sort(key=lambda o: o.id)
     return offerings
@@ -181,6 +207,22 @@ def _build_offering(record: dict, fees: wp.Content | None, today: date) -> Offer
         application=application,
         prices=prices,
     )
+
+
+# --- scope filter ---
+
+
+def _is_long_term(offering: Offering) -> bool:
+    """True when the offering's schedule span exceeds MAX_SPAN_DAYS.
+
+    Uses schedule.start / schedule.end when both are set; returns False
+    (keep) when either is absent, since undated offerings can't be classified
+    as long-term by span alone.
+    """
+    sched = offering.schedule
+    if sched is None or sched.start is None or sched.end is None:
+        return False
+    return (sched.end - sched.start).days > MAX_SPAN_DAYS
 
 
 # --- parsing helpers ---

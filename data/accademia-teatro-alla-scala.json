@@ -66,7 +66,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "attemptedAt": "2026-06-07T17:26:58.581867Z",
+      "attemptedAt": "2026-06-08T03:00:11.781433Z",
       "hash": "sha256:d051a8fd2b3ad2225ff026494878b5ef2294e34e5b8187f1b80b0bea6e93cb80",
       "provider": "accademia-teatro-alla-scala",
       "scrapedAt": "2026-06-05T18:57:45.297370Z",
@@ -74,84 +74,5 @@
     },
     "teachers": [],
     "title": "Stage estivi di danza 2026"
-  },
-  {
-    "ageRange": {
-      "max": 11,
-      "min": 7
-    },
-    "application": {
-      "notes": "Entro il 22 maggio per le sessioni di giugno Entro il 10 luglio per la sessione di fine agosto",
-      "requirements": [
-        {
-          "type": "none"
-        }
-      ],
-      "url": "https://iscrizioni.accademialascala.it"
-    },
-    "genres": [
-      "classical"
-    ],
-    "id": "accademia-teatro-alla-scala/stage-di-propedeutica-alla-danza-2026",
-    "level": [],
-    "lifecycle": "scheduled",
-    "location": {
-      "city": "Milan",
-      "country": "IT",
-      "venue": "Via Campo Lodigiano, 2"
-    },
-    "organization": {
-      "city": "Milan",
-      "country": "IT",
-      "name": "Accademia Teatro alla Scala",
-      "slug": "accademia-teatro-alla-scala"
-    },
-    "prices": [
-      {
-        "amount": 390.0,
-        "currency": "EUR",
-        "includes": [
-          "tuition"
-        ],
-        "label": "Per week"
-      }
-    ],
-    "schedule": {
-      "end": "2026-09-04",
-      "season": "2026",
-      "sessions": [
-        {
-          "end": "2026-06-12",
-          "notes": "8–12 giugno 2026",
-          "start": "2026-06-08"
-        },
-        {
-          "end": "2026-06-19",
-          "notes": "15–19 giugno 2026",
-          "start": "2026-06-15"
-        },
-        {
-          "end": "2026-06-26",
-          "notes": "22–26 giugno 2026",
-          "start": "2026-06-22"
-        },
-        {
-          "end": "2026-09-04",
-          "notes": "31 agosto–4 settembre 2026",
-          "start": "2026-08-31"
-        }
-      ],
-      "start": "2026-06-08",
-      "timezone": "Europe/Rome"
-    },
-    "source": {
-      "attemptedAt": "2026-06-07T17:26:58.581867Z",
-      "hash": "sha256:260fd2e2e8fd199cc3c5d72e5b427e8a55222f0dadfaec8b51c8bae893a1d17f",
-      "provider": "accademia-teatro-alla-scala",
-      "scrapedAt": "2026-06-05T18:57:46.110339Z",
-      "url": "https://www.accademialascala.it/danza/stage-di-propedeutica-alla-danza"
-    },
-    "teachers": [],
-    "title": "Stage di propedeutica alla danza 2026"
   }
 ]
