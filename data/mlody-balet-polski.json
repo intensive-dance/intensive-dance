@@ -1,0 +1,68 @@
+[
+  {
+    "ageRange": {
+      "max": 19,
+      "min": 6
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://balet.info.pl/pl/informacje/aktualnosci/konkurs-fotograficzny-balerina-na-wakacjach_kopia_644928"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire"
+    ],
+    "id": "mlody-balet-polski/summer-intensive-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Warszawa",
+      "country": "PL",
+      "venue": "Pałac Kultury i Nauki, Plac Defilad 1, 6th floor"
+    },
+    "organization": {
+      "city": "Warszawa",
+      "country": "PL",
+      "name": "Młody Balet Polski",
+      "slug": "mlody-balet-polski"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-08-21",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 19,
+            "min": 11
+          },
+          "notes": "Wiek 11-19 godz. 9.00-15.00 Program: Balet / Pointy/ Pilates/ Stretching/ Repertuar"
+        },
+        {
+          "ageRange": {
+            "max": 10,
+            "min": 6
+          },
+          "notes": "Wiek 6-10 godz. 15.00-17.00 Program: Balet podstawy/ Gimnastyka"
+        }
+      ],
+      "start": "2026-08-10",
+      "timezone": "Europe/Warsaw"
+    },
+    "source": {
+      "hash": "sha256:44cbb5eadee3a4c31449acfbf487a5f5e7ba4a941001b44494c16e5c8d0225b6",
+      "provider": "mlody-balet-polski",
+      "scrapedAt": "2026-06-08T21:36:01.050355Z",
+      "url": "https://balet.info.pl/pl/informacje/aktualnosci/konkurs-fotograficzny-balerina-na-wakacjach_kopia_644928"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Anna Davies",
+        "role": "director"
+      }
+    ],
+    "title": "Summer Ballet Workshops 2026"
+  }
+]
