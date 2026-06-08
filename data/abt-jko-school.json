@@ -65,7 +65,7 @@
       "timezone": "America/New_York"
     },
     "source": {
-      "attemptedAt": "2026-06-08T01:42:56.281412Z",
+      "attemptedAt": "2026-06-08T08:32:22.851214Z",
       "hash": "sha256:a7a05b035efee1e23a13bc6e9bf018852e3dab9040f65caeaa5ebb6ddc7ceaf9",
       "provider": "abt-jko-school",
       "scrapedAt": "2026-06-07T08:34:39.423011Z",
@@ -169,7 +169,7 @@
       "timezone": "America/New_York"
     },
     "source": {
-      "attemptedAt": "2026-06-08T01:42:56.281412Z",
+      "attemptedAt": "2026-06-08T08:32:22.851214Z",
       "hash": "sha256:236d37e157d13607a7f9de6da49ba6248948694169a0d5e6ed6c4bd00845b885",
       "provider": "abt-jko-school",
       "scrapedAt": "2026-06-07T08:34:39.423752Z",
@@ -243,7 +243,7 @@
       "timezone": "America/Los_Angeles"
     },
     "source": {
-      "attemptedAt": "2026-06-08T01:42:56.281412Z",
+      "attemptedAt": "2026-06-08T08:32:22.851214Z",
       "hash": "sha256:a5866249a6d03a1933f1be2f095dbfd02d9d1d1acde2a1c3593be678c7b0635d",
       "provider": "abt-jko-school",
       "scrapedAt": "2026-06-07T08:34:39.424031Z",
