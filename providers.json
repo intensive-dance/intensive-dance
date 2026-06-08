@@ -280,6 +280,15 @@
       "status": "live"
     },
     {
+      "slug": "teatro-opera-roma-scuola-danza",
+      "name": "Scuola di Danza del Teatro dell'Opera di Roma",
+      "country": "IT",
+      "city": "Rome",
+      "url": "https://www.operaroma.it/opera-giovani/scuola-di-danza/",
+      "tier": "marquee",
+      "status": "seed"
+    },
+    {
       "slug": "dance-and-fashion-cic",
       "name": "Dance & Fashion CIC",
       "country": "IT",
