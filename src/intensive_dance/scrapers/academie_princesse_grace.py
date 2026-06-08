@@ -9,10 +9,10 @@ can't validate it; we fetch with our own `verify=False` client (read-only
 public page — see `fetch.make_client`), the same call the Frankfurt scraper makes.
 
 DISCOVERY: one page lists the summer course as four consecutive one-week
-sessions (e.g. 6–11 July, 13–18 July, …). They share one curriculum, age band
-and price and you may "follow one or more weeks", so we emit a single
-`Offering` for the summer course with the four weeks as `schedule.sessions`,
-season-keyed from the parsed year.
+sessions (e.g. 6–11 July, 13–18 July, …). Each week is independently bookable
+("Possibility to follow one or more weeks"), so we emit **one Offering per
+weekly session**, id-keyed `summer-course-<year>-w<n>`. All weeks share the
+same curriculum, age band, prices, and requirements.
 
 WHAT THE PAGE GIVES US (verified live 2026-06):
   - DATES: four "From <weekday> <Month>, <d> to <weekday> <Month>, <d> <year>"
@@ -51,7 +51,6 @@ from intensive_dance.models import (
     PriceInclude,
     Requirement,
     Schedule,
-    Session,
     Source,
     VideoReq,
     now_utc,
@@ -78,46 +77,55 @@ def scrape(client: httpx.Client) -> list[Offering]:  # noqa: ARG001 — see TLS 
         html = resp.text
     finally:
         own.close()
-    offering = _build_offering(html)
-    return [offering] if offering is not None else []
+    return _build_offerings(html)
 
 
-def _build_offering(html: str) -> Offering | None:
+def _build_offerings(html: str) -> list[Offering]:
     tree = HTMLParser(html)
     for node in tree.css("script, style, noscript"):
         node.decompose()
     text = parse.clean(tree.body.text(separator=" ")) if tree.body else ""
 
-    sessions = _sessions(text)
-    if not sessions:
-        return None  # no dated summer weeks announced
-    start = min(s.start for s in sessions if s.start)
-    end = max(s.end for s in sessions if s.end)
-    season = str(end.year)
+    week_dates = _week_dates(text)
+    if not week_dates:
+        return []  # no dated summer weeks announced
 
-    return Offering(
-        id=f"academie-princesse-grace/summer-courses-{season}",
-        source=Source(provider="academie-princesse-grace", url=PAGE, scrapedAt=now_utc()),
-        title=f"Summer Courses {season}",
-        genres=_genres(text),
-        level=_level(text),
-        ageRange=_age_range(text),
-        organization=ORG,
-        location=Location(city="Monaco", country="MC"),
-        schedule=Schedule(
-            season=season,
-            start=start,
-            end=end,
-            timezone="Europe/Monaco",
-            sessions=sessions,
-        ),
-        prices=_prices(text),
-        application=Application(
-            url=APPLY_URL,
-            requirements=_requirements(text),
-            notes=_audition_note(text),
-        ),
-    )
+    shared_genres = _genres(text)
+    shared_level = _level(text)
+    shared_age = _age_range(text)
+    shared_prices = _prices(text)
+    shared_reqs = _requirements(text)
+    shared_note = _audition_note(text)
+    scraped = now_utc()
+
+    offerings = []
+    for i, (start, end) in enumerate(week_dates, start=1):
+        season = str(end.year)
+        offerings.append(
+            Offering(
+                id=f"academie-princesse-grace/summer-course-{season}-w{i}",
+                source=Source(provider="academie-princesse-grace", url=PAGE, scrapedAt=scraped),
+                title=f"Summer Course {season} — Week {i}",
+                genres=shared_genres,
+                level=shared_level,
+                ageRange=shared_age,
+                organization=ORG,
+                location=Location(city="Monaco", country="MC"),
+                schedule=Schedule(
+                    season=season,
+                    start=start,
+                    end=end,
+                    timezone="Europe/Monaco",
+                ),
+                prices=shared_prices,
+                application=Application(
+                    url=APPLY_URL,
+                    requirements=shared_reqs,
+                    notes=shared_note,
+                ),
+            )
+        )
+    return offerings
 
 
 # --- dates: four "From <wd> <Month>, <d> to <wd> <Month>, <d> <year>" weeks ----
@@ -129,14 +137,15 @@ _WEEK = re.compile(
 )
 
 
-def _sessions(text: str) -> list[Session]:
-    sessions = []
-    for i, m in enumerate(_WEEK.finditer(text), start=1):
+def _week_dates(text: str) -> list[tuple[date, date]]:
+    """Return (start, end) pairs for each weekly session found in text."""
+    result = []
+    for m in _WEEK.finditer(text):
         m1, d1, m2, d2, year = m.groups()
         start = date(int(year), parse.MONTHS[m1.lower()], int(d1))
         end = date(int(year), parse.MONTHS[m2.lower()], int(d2))
-        sessions.append(Session(label=f"Week {i}", start=start, end=end))
-    return sessions
+        result.append((start, end))
+    return result
 
 
 _AGE = re.compile(r"between\s+(\d{1,2})\s+and\s+(\d{1,2})\s+years", re.IGNORECASE)

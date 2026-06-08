@@ -35,7 +35,268 @@
       "contemporary",
       "pointe"
     ],
-    "id": "academie-princesse-grace/summer-courses-2026",
+    "id": "academie-princesse-grace/summer-course-2026-w1",
+    "level": [
+      "pre-professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Monaco",
+      "country": "MC"
+    },
+    "organization": {
+      "city": "Monaco",
+      "country": "MC",
+      "name": "Académie de Danse Princesse Grace",
+      "slug": "academie-princesse-grace"
+    },
+    "prices": [
+      {
+        "amount": 1200.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition",
+          "accommodation"
+        ],
+        "label": "Per week (tuition + accommodation)"
+      },
+      {
+        "amount": 700.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Per week (accommodation not included)",
+        "notes": "Optional meals available."
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-11",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-06",
+      "timezone": "Europe/Monaco"
+    },
+    "source": {
+      "hash": "sha256:c41b74c8e236179580f7b14624fe42f702d44b28562534a6f1d229d569525a91",
+      "provider": "academie-princesse-grace",
+      "scrapedAt": "2026-06-08T11:47:47.332827Z",
+      "url": "https://www.balletsdemontecarlo.com/en/princess-grace-academy/admission-short-courses"
+    },
+    "teachers": [],
+    "title": "Summer Course 2026 — Week 1"
+  },
+  {
+    "ageRange": {
+      "max": 19,
+      "min": 11
+    },
+    "application": {
+      "notes": "Possible audition for season 2026-2027 (only for students aged 13 to 17, born between 2013 and 2009).",
+      "requirements": [
+        {
+          "type": "cv"
+        },
+        {
+          "type": "headshot"
+        },
+        {
+          "notes": "Two dance-outfit photos in the named poses, plus the ID photo.",
+          "poses": [
+            "arabesque",
+            "développé seconde"
+          ],
+          "specificity": "defined-poses",
+          "type": "photos"
+        },
+        {
+          "description": "Video audition: a classical extract (barre + centre exercises, adapted to level) and a contemporary extract; total video ≤ 15 minutes.",
+          "specificity": "specific",
+          "type": "video"
+        }
+      ],
+      "url": "https://academy.balletsdemontecarlo.com/en"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "pointe"
+    ],
+    "id": "academie-princesse-grace/summer-course-2026-w2",
+    "level": [
+      "pre-professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Monaco",
+      "country": "MC"
+    },
+    "organization": {
+      "city": "Monaco",
+      "country": "MC",
+      "name": "Académie de Danse Princesse Grace",
+      "slug": "academie-princesse-grace"
+    },
+    "prices": [
+      {
+        "amount": 1200.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition",
+          "accommodation"
+        ],
+        "label": "Per week (tuition + accommodation)"
+      },
+      {
+        "amount": 700.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Per week (accommodation not included)",
+        "notes": "Optional meals available."
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-18",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-13",
+      "timezone": "Europe/Monaco"
+    },
+    "source": {
+      "hash": "sha256:bcac2c5421884f86fb02a65a6c953b9bee271a0bd0f1334a12645d2dbca99d1e",
+      "provider": "academie-princesse-grace",
+      "scrapedAt": "2026-06-08T11:47:47.332827Z",
+      "url": "https://www.balletsdemontecarlo.com/en/princess-grace-academy/admission-short-courses"
+    },
+    "teachers": [],
+    "title": "Summer Course 2026 — Week 2"
+  },
+  {
+    "ageRange": {
+      "max": 19,
+      "min": 11
+    },
+    "application": {
+      "notes": "Possible audition for season 2026-2027 (only for students aged 13 to 17, born between 2013 and 2009).",
+      "requirements": [
+        {
+          "type": "cv"
+        },
+        {
+          "type": "headshot"
+        },
+        {
+          "notes": "Two dance-outfit photos in the named poses, plus the ID photo.",
+          "poses": [
+            "arabesque",
+            "développé seconde"
+          ],
+          "specificity": "defined-poses",
+          "type": "photos"
+        },
+        {
+          "description": "Video audition: a classical extract (barre + centre exercises, adapted to level) and a contemporary extract; total video ≤ 15 minutes.",
+          "specificity": "specific",
+          "type": "video"
+        }
+      ],
+      "url": "https://academy.balletsdemontecarlo.com/en"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "pointe"
+    ],
+    "id": "academie-princesse-grace/summer-course-2026-w3",
+    "level": [
+      "pre-professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Monaco",
+      "country": "MC"
+    },
+    "organization": {
+      "city": "Monaco",
+      "country": "MC",
+      "name": "Académie de Danse Princesse Grace",
+      "slug": "academie-princesse-grace"
+    },
+    "prices": [
+      {
+        "amount": 1200.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition",
+          "accommodation"
+        ],
+        "label": "Per week (tuition + accommodation)"
+      },
+      {
+        "amount": 700.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Per week (accommodation not included)",
+        "notes": "Optional meals available."
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-25",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-20",
+      "timezone": "Europe/Monaco"
+    },
+    "source": {
+      "hash": "sha256:4fefa8fad0adc4f98d340528fba322fd51e83d65fcffdd3947a89cae5840e66e",
+      "provider": "academie-princesse-grace",
+      "scrapedAt": "2026-06-08T11:47:47.332827Z",
+      "url": "https://www.balletsdemontecarlo.com/en/princess-grace-academy/admission-short-courses"
+    },
+    "teachers": [],
+    "title": "Summer Course 2026 — Week 3"
+  },
+  {
+    "ageRange": {
+      "max": 19,
+      "min": 11
+    },
+    "application": {
+      "notes": "Possible audition for season 2026-2027 (only for students aged 13 to 17, born between 2013 and 2009).",
+      "requirements": [
+        {
+          "type": "cv"
+        },
+        {
+          "type": "headshot"
+        },
+        {
+          "notes": "Two dance-outfit photos in the named poses, plus the ID photo.",
+          "poses": [
+            "arabesque",
+            "développé seconde"
+          ],
+          "specificity": "defined-poses",
+          "type": "photos"
+        },
+        {
+          "description": "Video audition: a classical extract (barre + centre exercises, adapted to level) and a contemporary extract; total video ≤ 15 minutes.",
+          "specificity": "specific",
+          "type": "video"
+        }
+      ],
+      "url": "https://academy.balletsdemontecarlo.com/en"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "pointe"
+    ],
+    "id": "academie-princesse-grace/summer-course-2026-w4",
     "level": [
       "pre-professional"
     ],
@@ -73,39 +334,17 @@
     "schedule": {
       "end": "2026-08-01",
       "season": "2026",
-      "sessions": [
-        {
-          "end": "2026-07-11",
-          "label": "Week 1",
-          "start": "2026-07-06"
-        },
-        {
-          "end": "2026-07-18",
-          "label": "Week 2",
-          "start": "2026-07-13"
-        },
-        {
-          "end": "2026-07-25",
-          "label": "Week 3",
-          "start": "2026-07-20"
-        },
-        {
-          "end": "2026-08-01",
-          "label": "Week 4",
-          "start": "2026-07-27"
-        }
-      ],
-      "start": "2026-07-06",
+      "sessions": [],
+      "start": "2026-07-27",
       "timezone": "Europe/Monaco"
     },
     "source": {
-      "attemptedAt": "2026-06-08T03:00:11.807093Z",
-      "hash": "sha256:bed32d471d1ceef773d891f886029d6f8163e5e7fccb4109dd8d900b025a45bc",
+      "hash": "sha256:7e7d40819edade0c9d224865f15216cdc1591cdc8694294e28bcf28170b0b96d",
       "provider": "academie-princesse-grace",
-      "scrapedAt": "2026-06-05T11:28:41.767835Z",
+      "scrapedAt": "2026-06-08T11:47:47.332827Z",
       "url": "https://www.balletsdemontecarlo.com/en/princess-grace-academy/admission-short-courses"
     },
     "teachers": [],
-    "title": "Summer Courses 2026"
+    "title": "Summer Course 2026 — Week 4"
   }
 ]
