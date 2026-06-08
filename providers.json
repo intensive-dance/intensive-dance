@@ -295,7 +295,7 @@
       "city": "Vienna",
       "url": "https://attitudestudios.at/",
       "tier": "secondary",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "international-ballet-masterclasses-prague",
@@ -871,6 +871,51 @@
       "city": "Rome",
       "url": "https://www.operaroma.it/opera-giovani/scuola-di-danza/",
       "tier": "marquee",
+      "status": "seed"
+    },
+    {
+      "slug": "boston-ballet-school",
+      "name": "Boston Ballet School",
+      "country": "US",
+      "city": "Boston",
+      "url": "https://www.bostonballet.org/education/summer-dance-program/",
+      "tier": "marquee",
+      "status": "live"
+    },
+    {
+      "slug": "ballet-ireland",
+      "name": "Ballet Ireland",
+      "country": "IE",
+      "city": "Dublin",
+      "url": "https://www.balletireland.ie/join-in/summer-intensive/",
+      "tier": "secondary",
+      "status": "live"
+    },
+    {
+      "slug": "balletto-di-roma",
+      "name": "Balletto di Roma",
+      "country": "IT",
+      "city": "Rome",
+      "url": "https://www.ballettodiroma.com/",
+      "tier": "secondary",
+      "status": "live"
+    },
+    {
+      "slug": "royal-winnipeg-ballet-school",
+      "name": "Royal Winnipeg Ballet School",
+      "country": "CA",
+      "city": "Winnipeg",
+      "url": "https://www.rwb.org/school/",
+      "tier": "marquee",
+      "status": "live"
+    },
+    {
+      "slug": "singapore-ballet",
+      "name": "Singapore Ballet",
+      "country": "SG",
+      "city": "Singapore",
+      "url": "https://singaporeballet.org/",
+      "tier": "secondary",
       "status": "seed"
     }
   ]

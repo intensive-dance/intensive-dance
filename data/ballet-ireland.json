@@ -1,0 +1,182 @@
+[
+  {
+    "ageRange": {
+      "max": null,
+      "min": 12
+    },
+    "application": {
+      "notes": "Week 1: Monday 27 July to Friday 31 July 2026 – Fully Booked",
+      "requirements": [],
+      "status": "closed",
+      "url": "https://www.balletireland.ie/join-in/summer-intensive/"
+    },
+    "genres": [
+      "classical",
+      "repertoire",
+      "pointe"
+    ],
+    "id": "ballet-ireland/summer-intensive-week-1-2026",
+    "level": [
+      "pre-professional",
+      "professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Dublin",
+      "country": "IE",
+      "venue": "DanceHouse, Foley Street, Dublin 1"
+    },
+    "organization": {
+      "city": "Dublin",
+      "country": "IE",
+      "name": "Ballet Ireland",
+      "slug": "ballet-ireland"
+    },
+    "prices": [
+      {
+        "amount": 300.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition per week",
+        "notes": "Per week; a student may book either week or both."
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-31",
+      "notes": "Week 1: Monday 27 July to Friday 31 July 2026 – Fully Booked",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-27"
+    },
+    "source": {
+      "hash": "sha256:f7161a27a5924d99d851ab473c9eaa6335aaa2ceee581f07617a3c8c90c623f6",
+      "provider": "ballet-ireland",
+      "scrapedAt": "2026-06-08T14:08:39.080817Z",
+      "url": "https://www.balletireland.ie/join-in/summer-intensive/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Anne Maher",
+        "role": "Ballet & Repertoire"
+      },
+      {
+        "affiliations": [],
+        "name": "Filipe Portugal",
+        "role": "Ballet & Repertoire"
+      },
+      {
+        "affiliations": [],
+        "name": "Fiona Brockway",
+        "role": "Ballet & Repertoire"
+      },
+      {
+        "affiliations": [],
+        "name": "Kate Lyons",
+        "role": "Ballet & Repertoire"
+      },
+      {
+        "affiliations": [],
+        "name": "Dominic Harrison",
+        "role": "Ballet & Repertoire"
+      },
+      {
+        "affiliations": [],
+        "name": "Hayley Cunningham",
+        "role": "Pilates"
+      }
+    ],
+    "title": "Summer Intensive — Week 1 2026"
+  },
+  {
+    "ageRange": {
+      "max": null,
+      "min": 12
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.balletireland.ie/join-in/summer-intensive/"
+    },
+    "genres": [
+      "classical",
+      "repertoire",
+      "pointe"
+    ],
+    "id": "ballet-ireland/summer-intensive-week-2-2026",
+    "level": [
+      "pre-professional",
+      "professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Dublin",
+      "country": "IE",
+      "venue": "DanceHouse, Foley Street, Dublin 1"
+    },
+    "organization": {
+      "city": "Dublin",
+      "country": "IE",
+      "name": "Ballet Ireland",
+      "slug": "ballet-ireland"
+    },
+    "prices": [
+      {
+        "amount": 300.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition per week",
+        "notes": "Per week; a student may book either week or both."
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-08",
+      "notes": "Week 2: Tuesday 4 August to Saturday 8 August 2026 DanceHouse, Foley Street, Dublin 1 9:45AM – 5PM FOR AGES: 12+ LEVEL: GRADE 4 to PROFESSIONAL PRICE: €300 per week Please complete the registration and payment forms below. Participation numbers for this course are limited. Please note that all students will require a pilates/yoga mat. Female students will require pointe shoes as well as flat shoes. ​To read our Terms & Conditions, please click here FACULTY 2026 /* */ #gform_wrapper_2 .gform-theme, {--gf-color-primary: #204ce5;--gf-color-primary-rgb: 32, 76, 229;--gf-color-primary-contrast: #fff;--gf-color-primary-contrast-rgb: 255, 255, 255;--gf-color-primary-darker: #001AB3;--gf-color-primary-lighter: #527EFF;--gf-color-secondary: #fff;--gf-color-secondary-rgb: 255, 255, 255;--gf-color-secondary-contrast: #112337;--gf-color-secondary-contrast-rgb: 17, 35, 55;--gf-color-secondary-darker: #F5F5F5;--gf-color-secondary-lighter: #FFFFFF;--gf-color-out-ctrl-light: rgba(17, 35, 55, 0.1);--gf-color-out-ctrl-light-rgb: 17, 35, 55;--gf-color-out-ctrl-light-darker: rgba(104, 110, 119, 0.35);--gf-color-out-ctrl-light-lighter: #F5F5F5;--gf-color-out-ctrl-dark: #585e6a;--gf-color-out-ctrl-dark-rgb: 88, 94, 106;--gf-color-out-ctrl-dark-darker: #112337;--gf-color-out-ctrl-dark-lighter: rgba(17, 35, 55, 0.65);--gf-color-in-ctrl: #fff;--gf-color-in-ctrl-rgb: 255, 255, 255;--gf-color-in-ctrl-contrast: #112337;--gf-color-in-ctrl-contrast-rgb: 17, 35, 55;--gf-color-in-ctrl-darker: #F5F5F5;--gf-color-in-ctrl-lighter: #FFFFFF;--gf-color-in-ctrl-primary: #204ce5;--gf-color-in-ctrl-primary-rgb: 32, 76, 229;--gf-color-in-ctrl-primary-contrast: #fff;--gf-color-in-ctrl-primary-contrast-rgb: 255, 255, 255;--gf-color-in-ctrl-primary-darker: #001AB3;--gf-color-in-ctrl-primary-lighter: #527EFF;--gf-color-in-ctrl-light: rgba(17, 35, 55, 0.1);--gf-color-in-ctrl-light-rgb: 17, 35, 55;--gf-color-in-ctrl-light-darker: rgba(104, 110, 119, 0.35);--gf-color-in-ctrl-light-lighter: #F5F5F5;--gf-color-in-ctrl-dark: #585e6a;--gf-color-in-ctrl-dark-rgb: 88, 94, 106;--gf-color-in-ctrl-dark-darker: #112337;--gf-color-in-ctrl-dark-lighter: rgba(17, 35, 55, 0.65);--gf-radius: 3px;--gf-font-size-secondary: 14px;--gf-font-size-tertiary: 13px;--gf-icon-ctrl-number: url(\"data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4 0C4.26522 5.96046e-08 4.51957 0.105357 4.70711 0.292893L7.70711 3.29289C8.09763 3.68342 8.09763 4.31658 7.70711 4.70711C7.31658 5.09763 6.68342 5.09763 6.29289 4.70711L4 2.41421L1.70711 4.70711C1.31658 5.09763 0.683417 5.09763 0.292893 4.70711C-0.0976311 4.31658 -0.097631 3.68342 0.292893 3.29289L3.29289 0.292893C3.48043 0.105357 3.73478 0 4 0ZM0.292893 9.29289C0.683417 8.90237 1.31658 8.90237 1.70711 9.29289L4 11.5858L6.29289 9.29289C6.68342 8.90237 7.31658 8.90237 7.70711 9.29289C8.09763 9.68342 8.09763 10.3166 7.70711 10.7071L4.70711 13.7071C4.31658 14.0976 3.68342 14.0976 3.29289 13.7071L0.292893 10.7071C-0.0976311 10.3166 -0.0976311 9.68342 0.292893 9.29289Z' fill='rgba(17, 35, 55, 0.65)'/%3E%3C/svg%3E\");--gf-icon-ctrl-select: url(\"data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.292893 0.292893C0.683417 -0.097631 1.31658 -0.097631 1.70711 0.292893L5 3.58579L8.29289 0.292893C8.68342 -0.0976311 9.31658 -0.0976311 9.70711 0.292893C10.0976 0.683417 10.0976 1.31658 9.70711 1.70711L5.70711 5.70711C5.31658 6.09763 4.68342 6.09763 4.29289 5.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z' fill='rgba(17, 35, 55, 0.65)'/%3E%3C/svg%3E\");--gf-icon-ctrl-search: url(\"data:image/svg+xml,%3Csvg width='640' height='640' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M256 128c-70.692 0-128 57.308-128 128 0 70.691 57.308 128 128 128 70.691 0 128-57.309 128-128 0-70.692-57.309-128-128-128zM64 256c0-106.039 85.961-192 192-192s192 85.961 192 192c0 41.466-13.146 79.863-35.498 111.248l154.125 154.125c12.496 12.496 12.496 32.758 0 45.254s-32.758 12.496-45.254 0L367.248 412.502C335.862 434.854 297.467 448 256 448c-106.039 0-192-85.962-192-192z' fill='rgba(17, 35, 55, 0.65)'/%3E%3C/svg%3E\");--gf-label-space-y-secondary: var(--gf-label-space-y-md-secondary);--gf-ctrl-border-color: #686e77;--gf-ctrl-size: var(--gf-ctrl-size-md);--gf-ctrl-label-color-primary: #112337;--gf-ctrl-label-color-secondary: #112337;--gf-ctrl-choice-size: var(--gf-ctrl-choice-size-md);--gf-ctrl-checkbox-check-size: var(--gf-ctrl-checkbox-check-size-md);--gf-ctrl-radio-check-size: var(--gf-ctrl-radio-check-size-md);--gf-ctrl-btn-font-size: var(--gf-ctrl-btn-font-size-md);--gf-ctrl-btn-padding-x: var(--gf-ctrl-btn-padding-x-md);--gf-ctrl-btn-size: var(--gf-ctrl-btn-size-md);--gf-ctrl-btn-border-color-secondary: #686e77;--gf-ctrl-file-btn-bg-color-hover: #EBEBEB;--gf-field-img-choice-size: var(--gf-field-img-choice-size-md);--gf-field-img-choice-card-space: var(--gf-field-img-choice-card-space-md);--gf-field-img-choice-check-ind-size: var(--gf-field-img-choice-check-ind-size-md);--gf-field-img-choice-check-ind-icon-size: var(--gf-field-img-choice-check-ind-icon-size-md);--gf-field-pg-steps-number-color: rgba(17, 35, 55, 0.8);} Summer Intensive Registration Form \" * \" indicates required fields Student's Name * First Last Student's Date of Birth * *Please note: students must be 12 years old or above on the first day of the course. DD slash MM slash YYYY Student's last exam syllabus * e.g. ISTD, RAD, IDTA. Student's last exam level * e.g. Grade 5, Intermediate, Advanced etc. Please note: students must have passed Grade 4 level or above on the first day of the course. Dance teacher's name Will the student be 18 years old or over at the start of the course? * Please select Yes No If the student will be under 18 years old on the first day of the course, the next section needs to be completed by a parent or legal guardian. Parent / Guardian's Name First Last Relationship to student Email address * Mobile number * Address * Street Address City State / Province / Region ZIP / Postal Code Country Afghanistan Albania Algeria American Samoa Andorra Angola Anguilla Antarctica Antigua and Barbuda Argentina Armenia Aruba Australia Austria Azerbaijan Bahamas Bahrain Bangladesh Barbados Belarus Belgium Belize Benin Bermuda Bhutan Bolivia Bonaire, Sint Eustatius and Saba Bosnia and Herzegovina Botswana Bouvet Island Brazil British Indian Ocean Territory Brunei Darussalam Bulgaria Burkina Faso Burundi Cabo Verde Cambodia Cameroon Canada Cayman Islands Central African Republic Chad Chile China Christmas Island Cocos Islands Colombia Comoros Congo Congo, Democratic Republic of the Cook Islands Costa Rica Croatia Cuba Curaçao Cyprus Czechia Côte d'Ivoire Denmark Djibouti Dominica Dominican Republic Ecuador Egypt El Salvador Equatorial Guinea Eritrea Estonia Eswatini Ethiopia Falkland Islands Faroe Islands Fiji Finland France French Guiana French Polynesia French Southern Territories Gabon Gambia Georgia Germany Ghana Gibraltar Greece Greenland Grenada Guadeloupe Guam Guatemala Guernsey Guinea Guinea-Bissau Guyana Haiti Heard Island and McDonald Islands Holy See Honduras Hong Kong Hungary Iceland India Indonesia Iran Iraq Ireland Isle of Man Israel Italy Jamaica Japan Jersey Jordan Kazakhstan Kenya Kiribati Korea, Democratic People's Republic of Korea, Republic of Kuwait Kyrgyzstan Lao People's Democratic Republic Latvia Lebanon Lesotho Liberia Libya Liechtenstein Lithuania Luxembourg Macao Madagascar Malawi Malaysia Maldives Mali Malta Marshall Islands Martinique Mauritania Mauritius Mayotte Mexico Micronesia Moldova Monaco Mongolia Montenegro Montserrat Morocco Mozambique Myanmar Namibia Nauru Nepal Netherlands New Caledonia New Zealand Nicaragua Niger Nigeria Niue Norfolk Island North Macedonia Northern Mariana Islands Norway Oman Pakistan Palau Palestine, State of Panama Papua New Guinea Paraguay Peru Philippines Pitcairn Poland Portugal Puerto Rico Qatar Romania Russian Federation Rwanda Réunion Saint Barthélemy Saint Helena, Ascension and Tristan da Cunha Saint Kitts and Nevis Saint Lucia Saint Martin Saint Pierre and Miquelon Saint Vincent and the Grenadines Samoa San Marino Sao Tome and Principe Saudi Arabia Senegal Serbia Seychelles Sierra Leone Singapore Sint Maarten Slovakia Slovenia Solomon Islands Somalia South Africa South Georgia and the South Sandwich Islands South Sudan Spain Sri Lanka Sudan Suriname Svalbard and Jan Mayen Sweden Switzerland Syria Arab Republic Taiwan Tajikistan Tanzania, the United Republic of Thailand Timor-Leste Togo Tokelau Tonga Trinidad and Tobago Tunisia Turkmenistan Turks and Caicos Islands Tuvalu Türkiye US Minor Outlying Islands Uganda Ukraine United Arab Emirates United Kingdom United States Uruguay Uzbekistan Vanuatu Venezuela Viet Nam Virgin Islands, British Virgin Islands, U.S. Wallis and Futuna Western Sahara Yemen Zambia Zimbabwe Åland Islands Injuries & Medical Information * Please use this box to tell us of any injuries or medical conditions that we should be aware of. If you do not have any, then please write 'None'. Do you give your consent to Photographic Release? * Ballet Ireland (BI) may wish to take photographs or videos of its enrolled students for the purpose of furthering the business via use on its website, additional marketing purposes or for direct sale to students or their guardians as the business deems appropriate. This may take the form of an organised photoshoot or during classes/workshops and/or performances. If you give consent to the photography release you are agreeing to the following: I grant BI, through its representatives and employees, permission to take images, in the form of photos and/or videos in connection with the course I am enrolling on. I authorise BI, its assignees and transferees, exclusive rights over the images thus obtained including permission to copyright, use and publish same material in print and/or electronically. I agree that BI may use such images of me with or without my name and for any lawful purpose, including but not limited to purposes such as publicity, illustration, advertising and web content. Yes No Privacy Policy * I agree to the Privacy Policy Privacy Policy ' class='gform_hidden' /> Terms & Conditions * I have read and accept the Terms & Conditions Terms & Conditions ' class='gform_hidden' /> Payment * Please select a week Second Week: Tuesday 4 August to Saturday 8 August 2026 Total Payment details will be taken on the next page /* { mutations.forEach( ( mutation ) => { if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) { debouncedTriggerPostRender(); observer.disconnect(); } }); }); observer.observe( document.body, { attributes: true, childList: false, subtree: true, attributeFilter: [ 'style', 'class' ], }); } else { triggerPostRender(); } } );} ); /* ]]> */ Summer Intensive – Video Summer Intensive – Image Gallery",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-04"
+    },
+    "source": {
+      "hash": "sha256:7dbba986acac37b3700c08db6ae85ef67b64d9b0997a63a91b2353a023cd592e",
+      "provider": "ballet-ireland",
+      "scrapedAt": "2026-06-08T14:08:39.080860Z",
+      "url": "https://www.balletireland.ie/join-in/summer-intensive/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Anne Maher",
+        "role": "Ballet & Repertoire"
+      },
+      {
+        "affiliations": [],
+        "name": "Filipe Portugal",
+        "role": "Ballet & Repertoire"
+      },
+      {
+        "affiliations": [],
+        "name": "Fiona Brockway",
+        "role": "Ballet & Repertoire"
+      },
+      {
+        "affiliations": [],
+        "name": "Kate Lyons",
+        "role": "Ballet & Repertoire"
+      },
+      {
+        "affiliations": [],
+        "name": "Dominic Harrison",
+        "role": "Ballet & Repertoire"
+      },
+      {
+        "affiliations": [],
+        "name": "Hayley Cunningham",
+        "role": "Pilates"
+      }
+    ],
+    "title": "Summer Intensive — Week 2 2026"
+  }
+]

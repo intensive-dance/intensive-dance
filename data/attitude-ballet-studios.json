@@ -1,0 +1,184 @@
+[
+  {
+    "ageRange": {
+      "min": 12
+    },
+    "application": {
+      "notes": "Apply via the form on the intensive page (a ballet-pose photo and a video link are required). A non-refundable €200 deposit is due on acceptance; the tuition balance is due by 01 April 2026 (01 May 2026 for later registrations). Housing is not included; an exception may be made for 11-year-olds with excellent technique.",
+      "requirements": [
+        {
+          "notes": "One ballet pose photo.",
+          "poses": [],
+          "specificity": "freeform",
+          "type": "photos"
+        },
+        {
+          "description": "Submit a video link featuring a classical variation, centre work, or barre work (a 20-second smartphone clip is accepted if no recording exists).",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "status": "open",
+      "url": "https://www.attitudestudios.at/vienna-ballet-intensive/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "contemporary",
+      "character",
+      "neoclassical"
+    ],
+    "id": "attitude-ballet-studios/vienna-ballet-intensive-2026",
+    "level": [
+      "pre-professional",
+      "professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Vienna",
+      "country": "AT",
+      "venue": "Attitude Ballet Studios Vienna (Pfeilgasse 14/1, 1080 Vienna, Josefstadt)"
+    },
+    "organization": {
+      "city": "Vienna",
+      "country": "AT",
+      "name": "Attitude Ballet Studios Vienna",
+      "slug": "attitude-ballet-studios"
+    },
+    "prices": [
+      {
+        "amount": 1350.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "2 weeks (full program)",
+        "notes": "A non-refundable €200 deposit reserves the spot; balance due 01 April 2026."
+      },
+      {
+        "amount": 750.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "1 week",
+        "notes": "A non-refundable €200 deposit reserves the spot; balance due 01 April 2026."
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-25",
+      "season": "2026",
+      "sessions": [
+        {
+          "end": "2026-07-25",
+          "notes": "Monday to Friday 10:00-16:30, Saturday 10:00-13:00; ends with a final presentation and signed certificates.",
+          "start": "2026-07-13"
+        }
+      ],
+      "start": "2026-07-13",
+      "timezone": "Europe/Vienna"
+    },
+    "source": {
+      "hash": "sha256:2515238f8758cecd502fe4e2ea6a92ed9f63882e7f55f0a02ea1838d9a20a147",
+      "provider": "attitude-ballet-studios",
+      "scrapedAt": "2026-06-08T14:08:38.420667Z",
+      "url": "https://www.attitudestudios.at/vienna-ballet-intensive/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Attitude Ballet Studios Vienna",
+            "role": "founder"
+          }
+        ],
+        "name": "Laura Cristinoiu",
+        "role": "Artistic Director"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Wiener Staatsballett",
+            "role": "Prima Ballerina / Principal Dancer"
+          }
+        ],
+        "name": "Liudmila Konovalova",
+        "role": "Special Master Ballet Teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Vienna State Ballet",
+            "role": "First Soloist"
+          }
+        ],
+        "name": "Roman Lazik",
+        "role": "Special Guest Master Teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Vienna State Opera Ballet",
+            "role": "Soloist"
+          }
+        ],
+        "name": "Natalya Kusch",
+        "role": "Special Guest Master Teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Staatsoper Ballett Akademie Vienna",
+            "role": "teacher"
+          }
+        ],
+        "name": "Annkathrin Dehn",
+        "role": "Special Guest Teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Wiener Staatsoper",
+            "role": "Demi Soloist"
+          }
+        ],
+        "name": "Alexandra Inculet",
+        "role": "Special Guest Teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Wiener Staatsoper",
+            "role": "Principal Dancer"
+          },
+          {
+            "current": true,
+            "organization": "Ballett Akademie of the Vienna State Opera",
+            "role": "teacher"
+          }
+        ],
+        "name": "Robert Gabdullin",
+        "role": "Special Guest Teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Bolshoi Ballet Academy",
+            "role": "graduate"
+          }
+        ],
+        "name": "Máire Elizabeth New",
+        "role": "Special Guest Teacher"
+      }
+    ],
+    "title": "Vienna Ballet Intensive 2026"
+  }
+]

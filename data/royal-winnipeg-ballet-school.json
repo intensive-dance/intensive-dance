@@ -1,0 +1,115 @@
+[
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 10
+    },
+    "application": {
+      "deadline": "2026-06-15",
+      "requirements": [
+        {
+          "notes": "Applicants upload two dance photos after applying; the photo brief is provided with the upload link.",
+          "poses": [],
+          "specificity": "freeform",
+          "type": "photos"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.rwb.org/school/programs-classes/dance-intensive/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "character",
+      "contemporary",
+      "repertoire"
+    ],
+    "id": "royal-winnipeg-ballet-school/dance-intensive-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Winnipeg",
+      "country": "CA",
+      "venue": "380 Graham Ave."
+    },
+    "organization": {
+      "city": "Winnipeg",
+      "country": "CA",
+      "name": "Royal Winnipeg Ballet School",
+      "slug": "royal-winnipeg-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 1150.0,
+        "currency": "CAD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-15",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-04",
+      "timezone": "America/Winnipeg"
+    },
+    "source": {
+      "hash": "sha256:4e1fb15a62245bd5a7c9e0986b23f81c7c4cad07d99e4f2bf77108d5f596e36f",
+      "provider": "royal-winnipeg-ballet-school",
+      "scrapedAt": "2026-06-08T14:08:43.022965Z",
+      "url": "https://www.rwb.org/school/programs-classes/dance-intensive/"
+    },
+    "teachers": [],
+    "title": "Dance Intensive"
+  },
+  {
+    "ageRange": {
+      "max": null,
+      "min": 10
+    },
+    "application": {
+      "requirements": [],
+      "status": "open",
+      "url": "https://www.rwb.org/school/programs-classes/summer-session/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "character",
+      "contemporary",
+      "repertoire"
+    ],
+    "id": "royal-winnipeg-ballet-school/summer-session-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Winnipeg",
+      "country": "CA",
+      "venue": "380 Graham Ave."
+    },
+    "organization": {
+      "city": "Winnipeg",
+      "country": "CA",
+      "name": "Royal Winnipeg Ballet School",
+      "slug": "royal-winnipeg-ballet-school"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-07-25",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-06",
+      "timezone": "America/Winnipeg"
+    },
+    "source": {
+      "hash": "sha256:2d9290fbcffbf0e9ac6e6cfda95b8390aaa67f93dfe5bd26a7118a2793847c20",
+      "provider": "royal-winnipeg-ballet-school",
+      "scrapedAt": "2026-06-08T14:08:43.023555Z",
+      "url": "https://www.rwb.org/school/programs-classes/summer-session/"
+    },
+    "teachers": [],
+    "title": "Summer Session"
+  }
+]

@@ -1,0 +1,94 @@
+[
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 6
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.ballettodiroma.com/it/landing/campus-estivo-balletto-di-roma-monterotondo/"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "balletto-di-roma/campus-estivo-monterotondo-2026",
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Monterotondo",
+      "country": "IT",
+      "venue": "Balletto di Roma — Monterotondo"
+    },
+    "organization": {
+      "city": "Rome",
+      "country": "IT",
+      "name": "Balletto di Roma",
+      "slug": "balletto-di-roma"
+    },
+    "prices": [],
+    "schedule": {
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-06",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:53873a0835de713bfb552fb714ccef3c987f7764d81b9a406ec30a6dd3d1c62f",
+      "provider": "balletto-di-roma",
+      "scrapedAt": "2026-06-08T14:08:42.133612Z",
+      "url": "https://www.ballettodiroma.com/it/landing/campus-estivo-balletto-di-roma-monterotondo/"
+    },
+    "teachers": [],
+    "title": "Campus Estivo Monterotondo 2026"
+  },
+  {
+    "ageRange": {
+      "min": 8
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.ballettodiroma.com/it/formazione-workshop/corsi-scuola-di-danza-summer-school/"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "balletto-di-roma/summer-school-2026",
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Rome",
+      "country": "IT"
+    },
+    "organization": {
+      "city": "Rome",
+      "country": "IT",
+      "name": "Balletto di Roma",
+      "slug": "balletto-di-roma"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-09-05",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-06",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:cce3e0e82f43669da6a5517174952677594f11f25894736475efb0f6afe0be5c",
+      "provider": "balletto-di-roma",
+      "scrapedAt": "2026-06-08T14:08:42.132970Z",
+      "url": "https://www.ballettodiroma.com/it/formazione-workshop/corsi-scuola-di-danza-summer-school/"
+    },
+    "teachers": [],
+    "title": "Summer School 2026"
+  }
+]
