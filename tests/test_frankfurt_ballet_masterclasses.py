@@ -4,8 +4,43 @@ from __future__ import annotations
 
 from datetime import date
 
+from selectolax.parser import HTMLParser
+
 from intensive_dance.models import PhotosReq
 from intensive_dance.scrapers import frankfurt_ballet_masterclasses as fbm
+
+# The "#ourTeachers" section: two class-teacher cards + the organizer card, each linking to a
+# modal whose bio names institutions (mirrors the real page so the DOM parse is exercised).
+_TEACHERS_HTML = """
+<section id="ourTeachers"><div class="row">
+  <div class="col"><a href="#" data-bs-toggle="modal" data-bs-target="#olgaModal">
+    <div class="card"><div class="card-body"><div class="mb-2">
+      <h4 class="h5">Olga Melnikova</h4>
+      <span class="small">Teacher</span><br><span class="small">Classical Ballet</span>
+    </div></div></div></a></div>
+  <div class="col"><a href="#" data-bs-toggle="modal" data-bs-target="#denisModal">
+    <div class="card"><div class="card-body"><div class="mb-2">
+      <h4 class="h5">Denis Untila</h4>
+      <span class="small">Teacher</span><br><span class="small">Contemporary &amp; Stretching</span>
+    </div></div></div></a></div>
+  <div class="col"><a href="#" data-bs-toggle="modal" data-bs-target="#ninaModal">
+    <div class="card"><div class="card-body"><div class="mb-2">
+      <h4 class="h5">Nina Bakhareva</h4>
+      <span class="small">Organizer</span><br><span class="small">FBM Founder</span>
+    </div></div></div></a></div>
+</div></section>
+<div class="modal" id="olgaModal"><div class="modal-body">
+  <span class="small">Professor for Classical Dance at Palucca University of Dance Dresden</span>
+  <ul><li>Educated at the Vaganova Ballet Academy.</li>
+  <li>Career at the Mariinsky Theatre (Kirov Ballet) 1989-2000, then Semperoper Ballett Dresden.</li>
+  </ul></div></div>
+<div class="modal" id="denisModal"><div class="modal-body">
+  <span class="small">Dancer and Choreographer</span>
+  <ul><li>Trained at the Conservatory of Vienna.</li>
+  <li>Soloist with Ballet Kiel (2001); from 2006 with Aalto Ballett Essen.</li></ul></div></div>
+<div class="modal" id="ninaModal"><div class="modal-body"><p>Vaganova graduate, FIBC founder.</p>
+  </div></div>
+"""
 
 # Inline snippet mirroring the main page structure (FAQ + Our Teachers + schedule).
 _MAIN_PAGE_TEXT = (
@@ -111,27 +146,39 @@ def test_deadline_absent():
     assert fbm._deadline("Terms and conditions, no deadline mentioned.") is None
 
 
-def test_teachers_olga_melnikova_and_denis_untila():
-    teachers = fbm._teachers(_MAIN_PAGE_TEXT)
-    names = [t.name for t in teachers]
-    assert "Olga Melnikova" in names
-    assert "Denis Untila" in names
-    olga = next(t for t in teachers if t.name == "Olga Melnikova")
-    assert "Classical Ballet" in (olga.role or "")
-    assert any("Palucca" in (a.organization or "") for a in olga.affiliations)
+def test_teachers_extracted_with_affiliations():
+    teachers = fbm._teachers(HTMLParser(_TEACHERS_HTML))
+    # the organizer card (Nina) is skipped; the two class teachers are kept in order
+    assert [t.name for t in teachers] == ["Olga Melnikova", "Denis Untila"]
+    olga, denis = teachers
+    assert olga.role == "Teacher (Classical Ballet)"
+    # affiliations mined from the modal bio (aliases like Kirov dedupe to Mariinsky)
+    assert [a.organization for a in olga.affiliations] == [
+        "Vaganova Ballet Academy",
+        "Mariinsky Theatre",
+        "Semperoper Ballett Dresden",
+        "Palucca Hochschule für Tanz Dresden",
+    ]
+    assert denis.role == "Teacher (Contemporary & Stretching)"
+    assert [a.organization for a in denis.affiliations] == [
+        "Aalto Ballett Essen",
+        "Ballett Kiel",
+        "Conservatory of Vienna",
+    ]
 
 
-def test_teachers_empty_when_no_names():
-    assert fbm._teachers("No teachers mentioned here.") == []
+def test_teachers_absent_section():
+    assert fbm._teachers(HTMLParser("<div>no teachers section here</div>")) == []
 
 
 def test_build_offering_includes_teachers_deadline_and_photos():
+    # The page carries both the text content (dates/prices/FAQ) and the teacher markup.
     offering = fbm._build_offering(
-        f"<html><body>{_MAIN_PAGE_TEXT}</body></html>",
+        f"<html><body>{_MAIN_PAGE_TEXT}{_TEACHERS_HTML}</body></html>",
         _TERMS_PAGE_TEXT,
         date.today(),
     )
     assert offering is not None
-    assert len(offering.teachers) == 2
+    assert [t.name for t in offering.teachers] == ["Olga Melnikova", "Denis Untila"]
     assert offering.application.deadline == date(2026, 8, 15)
     assert all(isinstance(r, PhotosReq) for r in offering.application.requirements)
