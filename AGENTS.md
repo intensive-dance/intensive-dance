@@ -202,24 +202,44 @@ URL or bearer in source.
 
 ---
 
-## Copilot CLI (manual CI smoke test)
+## LLM access (Copilot CLI + GitHub Models)
 
-`.github/workflows/copilot-cli-test.yml` is a `workflow_dispatch` job for poking
-**GitHub Copilot CLI** from Actions — type a prompt under **Actions → Copilot CLI
-test → Run workflow**, the reply prints to the step log. It installs
-`@github/copilot` and runs `copilot -p "<prompt>"` directly (the official
-recipe — *not* the `austenstone/copilot-cli` marketplace action, whose `v3` tag
-is broken and whose token wiring grabs the wrong token).
+Two ways to reach a model, each with its own smoke-test workflow. **Keep both out
+of the deterministic `scrape()` path** — an LLM call is non-deterministic and
+network-bound, so it breaks hashing (no-op re-scrape must yield no diff), offline
+tests, and the never-invent rule. Fine as a **hand-run dev/enrichment helper**
+whose output you review and commit as static data; never in the live scrape/hash
+path.
 
-**Auth — `COPILOT_CLI_TOKEN`, same storage pattern as the fetch proxy.** Stored
-both ways: an **Actions variable** (dev) and an **Actions secret** (CI). It's a
-**PAT** with the **Copilot Requests** account permission, on an account holding a
-Copilot license. The CLI reads it from the `COPILOT_GITHUB_TOKEN` env var — the
-workflow maps `secrets.COPILOT_CLI_TOKEN` onto it. The default Actions
-`GITHUB_TOKEN` does **not** work (it's a server-to-server token the Copilot API
-rejects); `copilot-requests: write` as a workflow permission is org-only and
-fails the validator on this personal repo. Locally: `export
-COPILOT_GITHUB_TOKEN=$(gh variable get COPILOT_CLI_TOKEN)`.
+**`COPILOT_CLI_TOKEN`** (the shared PAT, stored like the fetch proxy: an **Actions
+variable** for dev + an **Actions secret** for CI) carries **both** the **Copilot
+Requests** and **Models: read** account permissions, on an account with a Copilot
+license — so it works for either path below.
+
+**Python → GitHub Models (preferred for anything programmatic).** OpenAI-compatible
+endpoint, stock `openai` SDK, no Copilot CLI:
+
+```python
+client = OpenAI(base_url="https://models.github.ai/inference", api_key=token)
+client.chat.completions.create(model="openai/gpt-4o-mini", messages=[...])
+```
+
+Token needs **Models: read**. **In CI, skip the PAT** — give the job
+`permissions: models: read` and pass the default `${{ secrets.GITHUB_TOKEN }}`
+(this *does* work here, unlike the Copilot CLI). Locally: `export
+GITHUB_TOKEN=$(gh variable get COPILOT_CLI_TOKEN)`. Model catalog:
+`GET https://models.github.ai/catalog/models`. Smoke test:
+`.github/workflows/github-models-test.yml` (`workflow_dispatch`, prints the reply).
+
+**Node Copilot CLI.** `.github/workflows/copilot-cli-test.yml` installs
+`@github/copilot` and runs `copilot -p "<prompt>"` directly (the official recipe —
+*not* the `austenstone/copilot-cli` marketplace action, whose `v3` tag is broken
+and whose token wiring grabs the wrong token). The CLI reads the token from
+`COPILOT_GITHUB_TOKEN` (the workflow maps `secrets.COPILOT_CLI_TOKEN` onto it); it
+needs **Copilot Requests**. Here the default Actions `GITHUB_TOKEN` does **not**
+work (server-to-server token the Copilot API rejects), and `copilot-requests:
+write` as a workflow permission is org-only (fails the validator on this personal
+repo). Locally: `export COPILOT_GITHUB_TOKEN=$(gh variable get COPILOT_CLI_TOKEN)`.
 
 ---
 
