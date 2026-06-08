@@ -227,9 +227,20 @@ AI_PROXY_URL=$(gh variable get AI_PROXY_URL)`. Never hardcode the URL in source.
 Model catalog: `GET $AI_PROXY_URL/models` (the list is dynamic — `owned_by` is
 `github`/`gemini`/`mistral`). All three work; the `openai/*` Copilot models
 occasionally 502 (`AiGatewayError`), so **retry** (or prefer Gemini/Mistral if you
-need zero flakes). **For search grounding, prefer the Gemini flash / flash-lite
-models** (`gemini-flash-latest`, `gemini-flash-lite-latest`) — fast, cheap, and
-grounding-capable. Smoke test: `.github/workflows/ai-proxy-test.yml`
+need zero flakes). Smoke test: `.github/workflows/ai-proxy-test.yml`
+(`workflow_dispatch`, prints the reply).
+
+**Search grounding — native Gemini endpoint, not the OpenAI surface.** The
+OpenAI-compat `/chat/completions` **cannot** ground (every `google_search` tool
+shape 400s; an ungrounded flash model returns `null` rather than inventing).
+Grounding lives on the proxy's **native Gemini** path — `POST
+$AI_PROXY_URL/v1beta/models/<model>:generateContent` with `"tools":
+[{"google_search": {}}]`, Gemini-native request body (`contents`/`parts`). Prefer
+the **flash / flash-lite** models (`gemini-2.5-flash`, `gemini-flash-latest`,
+`gemini-flash-lite-latest`) — fast, cheap, grounding-capable. The response carries
+`candidates[0].groundingMetadata` (`webSearchQueries`, `groundingChunks` with
+source URLs) — use it to verify the answer is actually sourced, not hallucinated.
+Still a **dev/enrichment** tool, never the live `scrape()` path.
 (`workflow_dispatch`, prints the reply).
 
 ---
