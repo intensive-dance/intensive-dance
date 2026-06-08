@@ -1015,7 +1015,7 @@
       "city": "Warszawa",
       "url": "https://balet.info.pl/",
       "tier": "secondary",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "neoclassica",
@@ -1033,7 +1033,7 @@
       "city": "Gdynia",
       "url": "https://www.artballet.pl/",
       "tier": "secondary",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "centrum-sztuki-tanca",
@@ -1042,7 +1042,7 @@
       "city": "Kraków",
       "url": "https://centrumsztukitanca.pl/",
       "tier": "secondary",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "les-ballets-de-pologne",
@@ -1051,7 +1051,7 @@
       "city": "Warszawa",
       "url": "https://lesballets.pl/",
       "tier": "secondary",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "fouette",

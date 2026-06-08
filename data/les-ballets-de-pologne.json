@@ -1,0 +1,80 @@
+[
+  {
+    "application": {
+      "notes": "Places limited to 12 per group.",
+      "requirements": [],
+      "url": "https://lesballets.pl/warsztaty-wakacyjne/"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "les-ballets-de-pologne/warsztaty-wakacyjne-2023-07-03",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Warszawa",
+      "country": "PL"
+    },
+    "organization": {
+      "city": "Warszawa",
+      "country": "PL",
+      "name": "Les Ballets de Pologne",
+      "slug": "les-ballets-de-pologne"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2023-07-09",
+      "season": "2023",
+      "sessions": [],
+      "start": "2023-07-03",
+      "timezone": "Europe/Warsaw"
+    },
+    "source": {
+      "hash": "sha256:765cf234b4283bb6743d4f84bedbc927406ed2cbe31003e25fd0127dde0b7c38",
+      "provider": "les-ballets-de-pologne",
+      "scrapedAt": "2026-06-08T21:36:07.268632Z",
+      "url": "https://lesballets.pl/warsztaty-wakacyjne/"
+    },
+    "teachers": [],
+    "title": "Summer ballet workshop 2023"
+  },
+  {
+    "application": {
+      "notes": "Places limited to 12 per group.",
+      "requirements": [],
+      "url": "https://lesballets.pl/warsztaty-wakacyjne/"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "les-ballets-de-pologne/warsztaty-wakacyjne-2023-08-28",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Warszawa",
+      "country": "PL"
+    },
+    "organization": {
+      "city": "Warszawa",
+      "country": "PL",
+      "name": "Les Ballets de Pologne",
+      "slug": "les-ballets-de-pologne"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2023-09-02",
+      "season": "2023",
+      "sessions": [],
+      "start": "2023-08-28",
+      "timezone": "Europe/Warsaw"
+    },
+    "source": {
+      "hash": "sha256:4837f4b4681cc7197724c71cce7dfd2b309c0815d4eb58113422ae53dd3ac6cb",
+      "provider": "les-ballets-de-pologne",
+      "scrapedAt": "2026-06-08T21:36:07.268706Z",
+      "url": "https://lesballets.pl/warsztaty-wakacyjne/"
+    },
+    "teachers": [],
+    "title": "Summer ballet workshop 2023"
+  }
+]

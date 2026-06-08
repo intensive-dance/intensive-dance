@@ -1,0 +1,86 @@
+[
+  {
+    "application": {
+      "notes": "Places are limited. Includes preparation for the new competition season.",
+      "requirements": [],
+      "url": "https://www.artballet.pl/warsztaty"
+    },
+    "genres": [
+      "classical",
+      "repertoire",
+      "contemporary"
+    ],
+    "id": "art-ballet-gdynia/camp-golun-2026-07-07",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Wdzydze",
+      "country": "PL",
+      "venue": "Hotel Gołuń"
+    },
+    "organization": {
+      "city": "Gdynia",
+      "country": "PL",
+      "name": "ART Ballet",
+      "slug": "art-ballet-gdynia"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-07-16",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-07",
+      "timezone": "Europe/Warsaw"
+    },
+    "source": {
+      "hash": "sha256:be7a89ad1557aaa4703558b7dfc587d73f88dea59da0ede79767614d00dbf540",
+      "provider": "art-ballet-gdynia",
+      "scrapedAt": "2026-06-08T21:36:01.938305Z",
+      "url": "https://www.artballet.pl/warsztaty"
+    },
+    "teachers": [],
+    "title": "ART Ballet Camp — Gołuń 2026"
+  },
+  {
+    "application": {
+      "notes": "Places are limited. Includes preparation for the new competition season.",
+      "requirements": [],
+      "url": "https://www.artballet.pl/warsztaty"
+    },
+    "genres": [
+      "classical",
+      "repertoire",
+      "contemporary"
+    ],
+    "id": "art-ballet-gdynia/camp-golun-2026-08-15",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Wdzydze",
+      "country": "PL",
+      "venue": "Hotel Gołuń"
+    },
+    "organization": {
+      "city": "Gdynia",
+      "country": "PL",
+      "name": "ART Ballet",
+      "slug": "art-ballet-gdynia"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-08-22",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-15",
+      "timezone": "Europe/Warsaw"
+    },
+    "source": {
+      "hash": "sha256:5de39235047c36c0f425d0ac9a45e302c7afc71ae09a9c2ebf9d01fbf861abf4",
+      "provider": "art-ballet-gdynia",
+      "scrapedAt": "2026-06-08T21:36:01.938368Z",
+      "url": "https://www.artballet.pl/warsztaty"
+    },
+    "teachers": [],
+    "title": "ART Ballet Camp — Gołuń 2026"
+  }
+]

@@ -1,0 +1,173 @@
+[
+  {
+    "ageRange": {
+      "min": 14
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://centrumsztukitanca.pl/danceit-2026/"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "centrum-sztuki-tanca/danceit-2026-08-19",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Suche",
+      "country": "PL",
+      "venue": "Dom Wczasowy Jędrol"
+    },
+    "organization": {
+      "city": "Kraków",
+      "country": "PL",
+      "name": "Centrum Sztuki Tańca",
+      "slug": "centrum-sztuki-tanca"
+    },
+    "prices": [
+      {
+        "amount": 2600.0,
+        "currency": "PLN",
+        "includes": [
+          "tuition",
+          "accommodation",
+          "meals"
+        ],
+        "label": "Residential fee",
+        "notes": "Full board plus coach transfer from Kraków."
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-26",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-19",
+      "timezone": "Europe/Warsaw"
+    },
+    "source": {
+      "hash": "sha256:3648ea6f6e617e635efa07dd59a76a357fefd49d264ec990e0c7c1d660298dd3",
+      "provider": "centrum-sztuki-tanca",
+      "scrapedAt": "2026-06-08T21:36:05.405822Z",
+      "url": "https://centrumsztukitanca.pl/danceit-2026/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Polski Teatr Tańca",
+            "role": "dancer"
+          }
+        ],
+        "name": "Sandra Szatan",
+        "role": "guest"
+      }
+    ],
+    "title": "DANCEit — Suche 2026"
+  },
+  {
+    "application": {
+      "requirements": [],
+      "url": "https://centrumsztukitanca.pl/letnie-obozy-baletowe-2026/"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "centrum-sztuki-tanca/letnie-oboz-baletowy-2026-07-12",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Małe Ciche",
+      "country": "PL",
+      "venue": "Dom Wczasowy Oliwia"
+    },
+    "organization": {
+      "city": "Kraków",
+      "country": "PL",
+      "name": "Centrum Sztuki Tańca",
+      "slug": "centrum-sztuki-tanca"
+    },
+    "prices": [
+      {
+        "amount": 2400.0,
+        "currency": "PLN",
+        "includes": [
+          "tuition",
+          "accommodation",
+          "meals"
+        ],
+        "label": "Residential fee",
+        "notes": "Full board plus coach transfer from Kraków."
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-19",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-12",
+      "timezone": "Europe/Warsaw"
+    },
+    "source": {
+      "hash": "sha256:fa9c08eb86cf22df654a9b9e3df6d49b3dcafa7a4ca64783fb08864dd6af94a6",
+      "provider": "centrum-sztuki-tanca",
+      "scrapedAt": "2026-06-08T21:36:05.405733Z",
+      "url": "https://centrumsztukitanca.pl/letnie-obozy-baletowe-2026/"
+    },
+    "teachers": [],
+    "title": "Letni obóz baletowy — Małe Ciche 2026"
+  },
+  {
+    "application": {
+      "requirements": [],
+      "url": "https://centrumsztukitanca.pl/letnie-obozy-baletowe-2026/"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "centrum-sztuki-tanca/letnie-oboz-baletowy-2026-08-19",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Suche",
+      "country": "PL",
+      "venue": "Dom Wczasowy Jędrol"
+    },
+    "organization": {
+      "city": "Kraków",
+      "country": "PL",
+      "name": "Centrum Sztuki Tańca",
+      "slug": "centrum-sztuki-tanca"
+    },
+    "prices": [
+      {
+        "amount": 2400.0,
+        "currency": "PLN",
+        "includes": [
+          "tuition",
+          "accommodation",
+          "meals"
+        ],
+        "label": "Residential fee",
+        "notes": "Full board plus coach transfer from Kraków."
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-26",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-19",
+      "timezone": "Europe/Warsaw"
+    },
+    "source": {
+      "hash": "sha256:c2100e1a31631c0ccf94d231f0ffad57a49ca92a24eeb7971ee0e72c8709658a",
+      "provider": "centrum-sztuki-tanca",
+      "scrapedAt": "2026-06-08T21:36:05.405780Z",
+      "url": "https://centrumsztukitanca.pl/letnie-obozy-baletowe-2026/"
+    },
+    "teachers": [],
+    "title": "Letni obóz baletowy — Suche 2026"
+  }
+]
