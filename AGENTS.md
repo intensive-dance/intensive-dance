@@ -118,6 +118,11 @@ module docstring so the next person doesn't re-investigate:
      while the home page's own content block is theme-rendered empty — fetch the
      home HTML for that one string, the API for the rest (see
      `prague_ballet_intensive`).
+   - **Trap (SFB):** clean `content.rendered` over `/wp-json/` is *parsing*, not
+     *fetching* — a WAF can still 403 our scraper UA on the direct fetch (even of
+     `/wp-json/`). The fetch proxy clears it (server-side Chrome UA, **auto tier,
+     no render**) — so the proxy is needed for a no-JS API scrape (see
+     `san_francisco_ballet_school`).
 2. **Embedded structured data** — `<script type="application/ld+json">`
    (schema.org `Event`/`Course`), or a state blob (`__NEXT_DATA__`).
 3. **Feeds** — iCal `.ics`, RSS/Atom.
@@ -339,6 +344,15 @@ when a second provider genuinely needs the identical thing.
   numeric dates (EN+IT month map), enum genres, numeric ages/prices, title from
   the API, and emit only canonical-English free text — verify EN==IT, never rely
   on one render (see `fondazione_monreart`).
+- **A "full-time school" can still sell public short courses.** The Brazilian
+  Bolshoi branch is a free full-time vocational school, but it *also* sells dated,
+  open-enrollment paid short courses (Cursos de Inverno / Vivências / Workshops) —
+  build those, leave the full-time *Ausbildung* out. Booking apps split the
+  catalogue across `?tipo=` tabs whose bare default only shows one cohort, so
+  **union-crawl the tabs and dedupe on the course id**; read location *per course*
+  (pop-up workshops run in other cities), and treat a `min–100` age as
+  open-topped (100 = the form's "no max" sentinel). Skip the "para professores"
+  teacher-training editions — not student intensives (see `escola_bolshoi_brasil`).
 - **Japanese pages: year-less date lines + school-grade ages.** A JP listing
   often gives the course span with no year ("8月6日(木)、…、9日(日)") — read the year
   from the title stamp ("夏休み特別講習会2026") and apply it to the month/day span and

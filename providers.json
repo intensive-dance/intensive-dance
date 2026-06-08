@@ -818,6 +818,60 @@
       "url": "https://orsolina28.it/",
       "tier": "secondary",
       "status": "live"
+    },
+    {
+      "slug": "canadas-national-ballet-school",
+      "name": "Canada's National Ballet School",
+      "country": "CA",
+      "city": "Toronto",
+      "url": "https://www.nbs-enb.ca/",
+      "tier": "marquee",
+      "status": "live"
+    },
+    {
+      "slug": "san-francisco-ballet-school",
+      "name": "San Francisco Ballet School",
+      "country": "US",
+      "city": "San Francisco",
+      "url": "https://www.sfballet.org/the-school/san-francisco-ballet-school/",
+      "tier": "marquee",
+      "status": "live"
+    },
+    {
+      "slug": "australian-ballet-school",
+      "name": "The Australian Ballet School",
+      "country": "AU",
+      "city": "Melbourne",
+      "url": "https://www.australianballetschool.com.au/",
+      "tier": "marquee",
+      "status": "live"
+    },
+    {
+      "slug": "escola-bolshoi-brasil",
+      "name": "Escola do Teatro Bolshoi no Brasil",
+      "country": "BR",
+      "city": "Joinville",
+      "url": "https://escolabolshoi.com.br/cursos",
+      "tier": "secondary",
+      "status": "live"
+    },
+    {
+      "slug": "yorkshire-ballet-seminars",
+      "name": "Yorkshire Ballet Seminars",
+      "country": "GB",
+      "city": "Harrogate",
+      "url": "https://www.ybss.co.uk/",
+      "tier": "secondary",
+      "status": "live"
+    },
+    {
+      "slug": "teatro-opera-roma-scuola-danza",
+      "name": "Scuola di Danza del Teatro dell'Opera di Roma",
+      "country": "IT",
+      "city": "Rome",
+      "url": "https://www.operaroma.it/opera-giovani/scuola-di-danza/",
+      "tier": "marquee",
+      "status": "seed"
     }
   ]
 }

@@ -1,0 +1,146 @@
+[
+  {
+    "ageRange": {
+      "max": 15,
+      "min": 12
+    },
+    "application": {
+      "deadline": "2026-02-15",
+      "requirements": [
+        {
+          "description": "Admission is by audition or invitation from the artistic leadership. Dancers may attend a live audition on the audition tour, or — if unable to attend — apply by video via DanceApply. Registration requires an identity photo and proof of age.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "url": "https://www.sfballet.org/the-school/summer-programs/summer-auditions-audition-tour/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire"
+    ],
+    "id": "san-francisco-ballet-school/summer-session-1-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "San Francisco",
+      "country": "US",
+      "venue": "San Francisco Ballet"
+    },
+    "organization": {
+      "city": "San Francisco",
+      "country": "US",
+      "name": "San Francisco Ballet School",
+      "slug": "san-francisco-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 3495.0,
+        "currency": "USD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition"
+      },
+      {
+        "amount": 3495.0,
+        "currency": "USD",
+        "includes": [
+          "accommodation",
+          "meals"
+        ],
+        "label": "Supervised housing"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-10",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-06-15",
+      "timezone": "America/Los_Angeles"
+    },
+    "source": {
+      "hash": "sha256:9ad2795e8f0d54a9ce485f1294628b072faa6a1b9b7cb06882d731f8986ff0ef",
+      "provider": "san-francisco-ballet-school",
+      "scrapedAt": "2026-06-08T13:39:52.225179Z",
+      "url": "https://www.sfballet.org/the-school/summer-programs/summer-auditions-audition-tour/"
+    },
+    "teachers": [],
+    "title": "Summer Session I"
+  },
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 15
+    },
+    "application": {
+      "deadline": "2026-02-15",
+      "requirements": [
+        {
+          "description": "Admission is by audition or invitation from the artistic leadership. Dancers may attend a live audition on the audition tour, or — if unable to attend — apply by video via DanceApply. Registration requires an identity photo and proof of age.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "url": "https://www.sfballet.org/the-school/summer-programs/summer-auditions-audition-tour/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "contemporary",
+      "repertoire"
+    ],
+    "id": "san-francisco-ballet-school/summer-session-2-2026",
+    "level": [
+      "advanced",
+      "pre-professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "San Francisco",
+      "country": "US",
+      "venue": "San Francisco Ballet"
+    },
+    "organization": {
+      "city": "San Francisco",
+      "country": "US",
+      "name": "San Francisco Ballet School",
+      "slug": "san-francisco-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 3500.0,
+        "currency": "USD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition"
+      },
+      {
+        "amount": 3500.0,
+        "currency": "USD",
+        "includes": [
+          "accommodation",
+          "meals"
+        ],
+        "label": "Supervised housing"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-08",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-14",
+      "timezone": "America/Los_Angeles"
+    },
+    "source": {
+      "hash": "sha256:e26c58b13ed8099eaedea04a081f4101678ac88041ac9f1d0649d6c2e63e9757",
+      "provider": "san-francisco-ballet-school",
+      "scrapedAt": "2026-06-08T13:39:52.225564Z",
+      "url": "https://www.sfballet.org/the-school/summer-programs/summer-auditions-audition-tour/"
+    },
+    "teachers": [],
+    "title": "Summer Session II"
+  }
+]

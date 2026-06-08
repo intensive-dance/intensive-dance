@@ -1,0 +1,262 @@
+[
+  {
+    "ageRange": {
+      "max": 19,
+      "min": 9
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.ybss.co.uk/summerapply"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "contemporary",
+      "repertoire"
+    ],
+    "id": "yorkshire-ballet-seminars/summer-2026-week-1",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Harrogate",
+      "country": "GB",
+      "venue": "Ashville College, Green Lane, Harrogate HG2 9JP"
+    },
+    "organization": {
+      "city": "Harrogate",
+      "country": "GB",
+      "name": "Yorkshire Ballet Seminars",
+      "slug": "yorkshire-ballet-seminars"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-07-18",
+      "season": "2026",
+      "sessions": [
+        {
+          "end": "2026-07-18",
+          "label": "Week 1",
+          "start": "2026-07-12"
+        }
+      ],
+      "start": "2026-07-12",
+      "timezone": "Europe/London"
+    },
+    "source": {
+      "hash": "sha256:f697204aea0e5f36476b7116b165542a40695af99582bd7f7798f608216351a9",
+      "provider": "yorkshire-ballet-seminars",
+      "scrapedAt": "2026-06-08T13:40:08.599539Z",
+      "url": "https://www.ybss.co.uk/residentialscourses"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Yorkshire Ballet Seminars",
+            "role": "Artistic Director",
+            "slug": "yorkshire-ballet-seminars"
+          }
+        ],
+        "name": "Isabelle Brouwers",
+        "role": "Artistic Director"
+      }
+    ],
+    "title": "Summer Residential 2026 — Week 1 (12–18 July)"
+  },
+  {
+    "ageRange": {
+      "max": 19,
+      "min": 9
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.ybss.co.uk/summerapply"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "contemporary",
+      "repertoire"
+    ],
+    "id": "yorkshire-ballet-seminars/summer-2026-week-2",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Harrogate",
+      "country": "GB",
+      "venue": "Ashville College, Green Lane, Harrogate HG2 9JP"
+    },
+    "organization": {
+      "city": "Harrogate",
+      "country": "GB",
+      "name": "Yorkshire Ballet Seminars",
+      "slug": "yorkshire-ballet-seminars"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-07-25",
+      "season": "2026",
+      "sessions": [
+        {
+          "end": "2026-07-25",
+          "label": "Week 2",
+          "start": "2026-07-19"
+        }
+      ],
+      "start": "2026-07-19",
+      "timezone": "Europe/London"
+    },
+    "source": {
+      "hash": "sha256:e5e8f7150065ce2b1f53b7b7b66b4e885c22cb20a3bf84288d3f79f0bf216921",
+      "provider": "yorkshire-ballet-seminars",
+      "scrapedAt": "2026-06-08T13:40:08.599575Z",
+      "url": "https://www.ybss.co.uk/residentialscourses"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Yorkshire Ballet Seminars",
+            "role": "Artistic Director",
+            "slug": "yorkshire-ballet-seminars"
+          }
+        ],
+        "name": "Isabelle Brouwers",
+        "role": "Artistic Director"
+      }
+    ],
+    "title": "Summer Residential 2026 — Week 2 (19–25 July)"
+  },
+  {
+    "ageRange": {
+      "max": 19,
+      "min": 9
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.ybss.co.uk/summerapply"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "contemporary",
+      "repertoire"
+    ],
+    "id": "yorkshire-ballet-seminars/summer-2026-week-3",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Harrogate",
+      "country": "GB",
+      "venue": "Ashville College, Green Lane, Harrogate HG2 9JP"
+    },
+    "organization": {
+      "city": "Harrogate",
+      "country": "GB",
+      "name": "Yorkshire Ballet Seminars",
+      "slug": "yorkshire-ballet-seminars"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-08-01",
+      "season": "2026",
+      "sessions": [
+        {
+          "end": "2026-08-01",
+          "label": "Week 3",
+          "start": "2026-07-26"
+        }
+      ],
+      "start": "2026-07-26",
+      "timezone": "Europe/London"
+    },
+    "source": {
+      "hash": "sha256:08ebb7a015ab5cc2d4f921a36429fb23e38f726d5d4545d9f0235a307733126a",
+      "provider": "yorkshire-ballet-seminars",
+      "scrapedAt": "2026-06-08T13:40:08.599590Z",
+      "url": "https://www.ybss.co.uk/residentialscourses"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Yorkshire Ballet Seminars",
+            "role": "Artistic Director",
+            "slug": "yorkshire-ballet-seminars"
+          }
+        ],
+        "name": "Isabelle Brouwers",
+        "role": "Artistic Director"
+      }
+    ],
+    "title": "Summer Residential 2026 — Week 3 (26 July – 1 August)"
+  },
+  {
+    "ageRange": {
+      "max": 19,
+      "min": 9
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.ybss.co.uk/summerapply"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "contemporary",
+      "repertoire"
+    ],
+    "id": "yorkshire-ballet-seminars/summer-2026-week-4",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Harrogate",
+      "country": "GB",
+      "venue": "Ashville College, Green Lane, Harrogate HG2 9JP"
+    },
+    "organization": {
+      "city": "Harrogate",
+      "country": "GB",
+      "name": "Yorkshire Ballet Seminars",
+      "slug": "yorkshire-ballet-seminars"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-08-08",
+      "season": "2026",
+      "sessions": [
+        {
+          "end": "2026-08-08",
+          "label": "Week 4",
+          "start": "2026-08-02"
+        }
+      ],
+      "start": "2026-08-02",
+      "timezone": "Europe/London"
+    },
+    "source": {
+      "hash": "sha256:a95798a7a8152ccd3cb2f9a8c26a58876d9b12dc1a4d7c6369c8410d73967b52",
+      "provider": "yorkshire-ballet-seminars",
+      "scrapedAt": "2026-06-08T13:40:08.599600Z",
+      "url": "https://www.ybss.co.uk/residentialscourses"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Yorkshire Ballet Seminars",
+            "role": "Artistic Director",
+            "slug": "yorkshire-ballet-seminars"
+          }
+        ],
+        "name": "Isabelle Brouwers",
+        "role": "Artistic Director"
+      }
+    ],
+    "title": "Summer Residential 2026 — Week 4 (2–8 August)"
+  }
+]

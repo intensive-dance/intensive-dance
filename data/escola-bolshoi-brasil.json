@@ -1,0 +1,1198 @@
+[
+  {
+    "ageRange": {
+      "max": null,
+      "min": 14
+    },
+    "application": {
+      "notes": "Não há mais vagas para este curso.",
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "closed",
+      "url": "https://escolabolshoi.com.br/curso/806/workshop-coaching-de-variacao-paquita"
+    },
+    "genres": [
+      "classical",
+      "repertoire"
+    ],
+    "id": "escola-bolshoi-brasil/workshop-coaching-de-variacao-paquita",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Joinville",
+      "country": "BR",
+      "venue": "Escola do Teatro Bolshoi no Brasil"
+    },
+    "organization": {
+      "city": "Joinville",
+      "country": "BR",
+      "name": "Escola do Teatro Bolshoi no Brasil",
+      "slug": "escola-bolshoi-brasil"
+    },
+    "prices": [
+      {
+        "amount": 125.0,
+        "currency": "BRL",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Registration fee"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-20",
+      "notes": "20/07/2026 a 20/07/2026",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": null,
+            "min": 14
+          },
+          "end": "2026-07-20",
+          "gender": "female",
+          "label": "Workshop Coaching de Variação: Paquita",
+          "notes": "20/07/2026 a 20/07/2026",
+          "start": "2026-07-20"
+        }
+      ],
+      "start": "2026-07-20",
+      "timezone": "America/Sao_Paulo"
+    },
+    "source": {
+      "hash": "sha256:7a538e028328fa87ca74ecdd47fb59f7df1ca8c03045984a120fc57d666a9830",
+      "provider": "escola-bolshoi-brasil",
+      "scrapedAt": "2026-06-08T13:40:07.113938Z",
+      "url": "https://escolabolshoi.com.br/curso/806/workshop-coaching-de-variacao-paquita"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Ludmila Sinelnikova"
+      }
+    ],
+    "title": "Workshop Coaching de Variação: Paquita"
+  },
+  {
+    "ageRange": {
+      "max": null,
+      "min": 12
+    },
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "open",
+      "url": "https://escolabolshoi.com.br/curso/805/workshop-de-preparacao-fisica-para-bailarinos"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "escola-bolshoi-brasil/workshop-de-preparacao-fisica-para-bailarinos",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Joinville",
+      "country": "BR",
+      "venue": "Escola do Teatro Bolshoi no Brasil"
+    },
+    "organization": {
+      "city": "Joinville",
+      "country": "BR",
+      "name": "Escola do Teatro Bolshoi no Brasil",
+      "slug": "escola-bolshoi-brasil"
+    },
+    "prices": [
+      {
+        "amount": 125.0,
+        "currency": "BRL",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Registration fee"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-20",
+      "notes": "20/07/2026 a 20/07/2026",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": null,
+            "min": 12
+          },
+          "end": "2026-07-20",
+          "gender": "both",
+          "label": "Workshop de Preparação Física para Bailarinos",
+          "notes": "20/07/2026 a 20/07/2026",
+          "start": "2026-07-20"
+        }
+      ],
+      "start": "2026-07-20",
+      "timezone": "America/Sao_Paulo"
+    },
+    "source": {
+      "hash": "sha256:7b4c03b2ba2ac04d9108d09ca0d76b51e48df0c3104cf55dde11352261ef433a",
+      "provider": "escola-bolshoi-brasil",
+      "scrapedAt": "2026-06-08T13:40:06.734722Z",
+      "url": "https://escolabolshoi.com.br/curso/805/workshop-de-preparacao-fisica-para-bailarinos"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Marlon Tomaz"
+      }
+    ],
+    "title": "Workshop de Preparação Física para Bailarinos"
+  },
+  {
+    "ageRange": {
+      "max": null,
+      "min": 16
+    },
+    "application": {
+      "notes": "Não há mais vagas para este curso.",
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "closed",
+      "url": "https://escolabolshoi.com.br/curso/781/ballet-classico-bolshoi-brasil-adulto-iniciante-fm"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "escola-bolshoi-brasil/ballet-classico-bolshoi-brasil-adulto-iniciante-fm",
+    "level": [
+      "beginner",
+      "open"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Joinville",
+      "country": "BR",
+      "venue": "Escola do Teatro Bolshoi no Brasil"
+    },
+    "organization": {
+      "city": "Joinville",
+      "country": "BR",
+      "name": "Escola do Teatro Bolshoi no Brasil",
+      "slug": "escola-bolshoi-brasil"
+    },
+    "prices": [
+      {
+        "amount": 445.0,
+        "currency": "BRL",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Registration fee"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-24",
+      "notes": "21/07/2026 a 24/07/2026",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": null,
+            "min": 16
+          },
+          "end": "2026-07-24",
+          "gender": "both",
+          "label": "Ballet Clássico Bolshoi Brasil - Adulto Iniciante (F/M)",
+          "notes": "21/07/2026 a 24/07/2026",
+          "start": "2026-07-21"
+        }
+      ],
+      "start": "2026-07-21",
+      "timezone": "America/Sao_Paulo"
+    },
+    "source": {
+      "hash": "sha256:f49076dd9975b7672c9630221cda69dce6f3e34dd24340d546d1fc515d5ea4ae",
+      "provider": "escola-bolshoi-brasil",
+      "scrapedAt": "2026-06-08T13:40:04.801917Z",
+      "url": "https://escolabolshoi.com.br/curso/781/ballet-classico-bolshoi-brasil-adulto-iniciante-fm"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Victor Almeida"
+      }
+    ],
+    "title": "Ballet Clássico Bolshoi Brasil - Adulto Iniciante (F/M)"
+  },
+  {
+    "ageRange": {
+      "max": null,
+      "min": 14
+    },
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "open",
+      "url": "https://escolabolshoi.com.br/curso/780/ballet-classico-bolshoi-brasil-intermediarioavancado-fm"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "escola-bolshoi-brasil/ballet-classico-bolshoi-brasil-intermediarioavancado-fm",
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Joinville",
+      "country": "BR",
+      "venue": "Escola do Teatro Bolshoi no Brasil"
+    },
+    "organization": {
+      "city": "Joinville",
+      "country": "BR",
+      "name": "Escola do Teatro Bolshoi no Brasil",
+      "slug": "escola-bolshoi-brasil"
+    },
+    "prices": [
+      {
+        "amount": 445.0,
+        "currency": "BRL",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Registration fee"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-24",
+      "notes": "21/07/2026 a 24/07/2026",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": null,
+            "min": 14
+          },
+          "end": "2026-07-24",
+          "gender": "both",
+          "label": "Ballet Clássico Bolshoi Brasil - Intermediário/Avançado (F/M)",
+          "notes": "21/07/2026 a 24/07/2026",
+          "start": "2026-07-21"
+        }
+      ],
+      "start": "2026-07-21",
+      "timezone": "America/Sao_Paulo"
+    },
+    "source": {
+      "hash": "sha256:9c64cf72f962fd30022524db5d2976df61809dd52eaad1153fc4f0858542e9d0",
+      "provider": "escola-bolshoi-brasil",
+      "scrapedAt": "2026-06-08T13:40:04.385929Z",
+      "url": "https://escolabolshoi.com.br/curso/780/ballet-classico-bolshoi-brasil-intermediarioavancado-fm"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Denys Nevidomyy"
+      }
+    ],
+    "title": "Ballet Clássico Bolshoi Brasil - Intermediário/Avançado (F/M)"
+  },
+  {
+    "ageRange": {
+      "max": null,
+      "min": 14
+    },
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "open",
+      "url": "https://escolabolshoi.com.br/curso/778/danca-contemporanea-bolshoi-brasil-intermediario-avancado-fm"
+    },
+    "genres": [
+      "contemporary"
+    ],
+    "id": "escola-bolshoi-brasil/danca-contemporanea-bolshoi-brasil-intermediario-avancado-fm",
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Joinville",
+      "country": "BR",
+      "venue": "Escola do Teatro Bolshoi no Brasil"
+    },
+    "organization": {
+      "city": "Joinville",
+      "country": "BR",
+      "name": "Escola do Teatro Bolshoi no Brasil",
+      "slug": "escola-bolshoi-brasil"
+    },
+    "prices": [
+      {
+        "amount": 385.0,
+        "currency": "BRL",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Registration fee"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-24",
+      "notes": "21/07/2026 a 24/07/2026",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": null,
+            "min": 14
+          },
+          "end": "2026-07-24",
+          "gender": "both",
+          "label": "Dança Contemporânea Bolshoi Brasil - Intermediário / Avançado (F/M)",
+          "notes": "21/07/2026 a 24/07/2026",
+          "start": "2026-07-21"
+        }
+      ],
+      "start": "2026-07-21",
+      "timezone": "America/Sao_Paulo"
+    },
+    "source": {
+      "hash": "sha256:f8044643d3850f607de605060f2167ddd264ddcbaa02a02786b8862c86b11aa0",
+      "provider": "escola-bolshoi-brasil",
+      "scrapedAt": "2026-06-08T13:40:03.571841Z",
+      "url": "https://escolabolshoi.com.br/curso/778/danca-contemporanea-bolshoi-brasil-intermediario-avancado-fm"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "William de Almeida"
+      }
+    ],
+    "title": "Dança Contemporânea Bolshoi Brasil - Intermediário / Avançado (F/M)"
+  },
+  {
+    "ageRange": {
+      "max": 14,
+      "min": 11
+    },
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "open",
+      "url": "https://escolabolshoi.com.br/curso/776/ensaios-gala-bolshoi-brasil-iniciante-intermediario-fm"
+    },
+    "genres": [
+      "classical",
+      "repertoire"
+    ],
+    "id": "escola-bolshoi-brasil/ensaios-gala-bolshoi-brasil-iniciante-intermediario-fm",
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Joinville",
+      "country": "BR",
+      "venue": "Escola do Teatro Bolshoi no Brasil"
+    },
+    "organization": {
+      "city": "Joinville",
+      "country": "BR",
+      "name": "Escola do Teatro Bolshoi no Brasil",
+      "slug": "escola-bolshoi-brasil"
+    },
+    "prices": [
+      {
+        "amount": 795.0,
+        "currency": "BRL",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Registration fee"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-25",
+      "notes": "21/07/2026 a 25/07/2026",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 14,
+            "min": 11
+          },
+          "end": "2026-07-25",
+          "gender": "both",
+          "label": "Ensaios Gala Bolshoi Brasil - Iniciante / Intermediário (F/M)",
+          "notes": "21/07/2026 a 25/07/2026",
+          "start": "2026-07-21"
+        }
+      ],
+      "start": "2026-07-21",
+      "timezone": "America/Sao_Paulo"
+    },
+    "source": {
+      "hash": "sha256:6dbcedbb5c48fe93a0fe3bb851120967d858559b0a0c35d9ec61a7ddbd66c725",
+      "provider": "escola-bolshoi-brasil",
+      "scrapedAt": "2026-06-08T13:40:02.794706Z",
+      "url": "https://escolabolshoi.com.br/curso/776/ensaios-gala-bolshoi-brasil-iniciante-intermediario-fm"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Thaís Diógenes"
+      }
+    ],
+    "title": "Ensaios Gala Bolshoi Brasil - Iniciante / Intermediário (F/M)"
+  },
+  {
+    "ageRange": {
+      "max": null,
+      "min": 14
+    },
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "open",
+      "url": "https://escolabolshoi.com.br/curso/783/ensaios-gala-bolshoi-brasil-intermediario-avancado-fm"
+    },
+    "genres": [
+      "classical",
+      "repertoire"
+    ],
+    "id": "escola-bolshoi-brasil/ensaios-gala-bolshoi-brasil-intermediario-avancado-fm",
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Joinville",
+      "country": "BR",
+      "venue": "Escola do Teatro Bolshoi no Brasil"
+    },
+    "organization": {
+      "city": "Joinville",
+      "country": "BR",
+      "name": "Escola do Teatro Bolshoi no Brasil",
+      "slug": "escola-bolshoi-brasil"
+    },
+    "prices": [
+      {
+        "amount": 795.0,
+        "currency": "BRL",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Registration fee"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-25",
+      "notes": "21/07/2026 a 25/07/2026",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": null,
+            "min": 14
+          },
+          "end": "2026-07-25",
+          "gender": "both",
+          "label": "Ensaios Gala Bolshoi Brasil - Intermediário / Avançado (F/M)",
+          "notes": "21/07/2026 a 25/07/2026",
+          "start": "2026-07-21"
+        }
+      ],
+      "start": "2026-07-21",
+      "timezone": "America/Sao_Paulo"
+    },
+    "source": {
+      "hash": "sha256:f5d22d7fcbe4e93cd75f2b5f7697378588855398a5272a0f9b7f62b1118b4a2c",
+      "provider": "escola-bolshoi-brasil",
+      "scrapedAt": "2026-06-08T13:40:05.601652Z",
+      "url": "https://escolabolshoi.com.br/curso/783/ensaios-gala-bolshoi-brasil-intermediario-avancado-fm"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Maikon Golini"
+      }
+    ],
+    "title": "Ensaios Gala Bolshoi Brasil - Intermediário / Avançado (F/M)"
+  },
+  {
+    "ageRange": {
+      "max": null,
+      "min": 16
+    },
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "open",
+      "url": "https://escolabolshoi.com.br/curso/782/variacoes-de-repertorio-bolshoi-brasil-adulto-f"
+    },
+    "genres": [
+      "classical",
+      "repertoire"
+    ],
+    "id": "escola-bolshoi-brasil/variacoes-de-repertorio-bolshoi-brasil-adulto-f",
+    "level": [
+      "open"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Joinville",
+      "country": "BR",
+      "venue": "Escola do Teatro Bolshoi no Brasil"
+    },
+    "organization": {
+      "city": "Joinville",
+      "country": "BR",
+      "name": "Escola do Teatro Bolshoi no Brasil",
+      "slug": "escola-bolshoi-brasil"
+    },
+    "prices": [
+      {
+        "amount": 395.0,
+        "currency": "BRL",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Registration fee"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-24",
+      "notes": "21/07/2026 a 24/07/2026",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": null,
+            "min": 16
+          },
+          "end": "2026-07-24",
+          "gender": "female",
+          "label": "Variações de Repertório Bolshoi Brasil – Adulto (F)",
+          "notes": "21/07/2026 a 24/07/2026",
+          "start": "2026-07-21"
+        }
+      ],
+      "start": "2026-07-21",
+      "timezone": "America/Sao_Paulo"
+    },
+    "source": {
+      "hash": "sha256:d8ea1c355dc5360395adeefb9f29e884cf5aceebba56fb9c219a60ff7506f889",
+      "provider": "escola-bolshoi-brasil",
+      "scrapedAt": "2026-06-08T13:40:05.210691Z",
+      "url": "https://escolabolshoi.com.br/curso/782/variacoes-de-repertorio-bolshoi-brasil-adulto-f"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Nayla Ramos"
+      }
+    ],
+    "title": "Variações de Repertório Bolshoi Brasil – Adulto (F)"
+  },
+  {
+    "ageRange": {
+      "max": 14,
+      "min": 11
+    },
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "open",
+      "url": "https://escolabolshoi.com.br/curso/777/variacoes-de-repertorio-bolshoi-brasil-iniciante-intermediario-f"
+    },
+    "genres": [
+      "classical",
+      "repertoire"
+    ],
+    "id": "escola-bolshoi-brasil/variacoes-de-repertorio-bolshoi-brasil-iniciante-intermediario-f",
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Joinville",
+      "country": "BR",
+      "venue": "Escola do Teatro Bolshoi no Brasil"
+    },
+    "organization": {
+      "city": "Joinville",
+      "country": "BR",
+      "name": "Escola do Teatro Bolshoi no Brasil",
+      "slug": "escola-bolshoi-brasil"
+    },
+    "prices": [
+      {
+        "amount": 395.0,
+        "currency": "BRL",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Registration fee"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-24",
+      "notes": "21/07/2026 a 24/07/2026",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 14,
+            "min": 11
+          },
+          "end": "2026-07-24",
+          "gender": "female",
+          "label": "Variações de Repertório Bolshoi Brasil – Iniciante / Intermediário (F)",
+          "notes": "21/07/2026 a 24/07/2026",
+          "start": "2026-07-21"
+        }
+      ],
+      "start": "2026-07-21",
+      "timezone": "America/Sao_Paulo"
+    },
+    "source": {
+      "hash": "sha256:724ff029b5ea2f035ff9578ba436e81a6f5ff224b9af54e2cd0b35840f04d600",
+      "provider": "escola-bolshoi-brasil",
+      "scrapedAt": "2026-06-08T13:40:03.193302Z",
+      "url": "https://escolabolshoi.com.br/curso/777/variacoes-de-repertorio-bolshoi-brasil-iniciante-intermediario-f"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Ludmila Sinelnikova"
+      }
+    ],
+    "title": "Variações de Repertório Bolshoi Brasil – Iniciante / Intermediário (F)"
+  },
+  {
+    "ageRange": {
+      "max": null,
+      "min": 14
+    },
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "open",
+      "url": "https://escolabolshoi.com.br/curso/779/variacoes-de-repertorio-bolshoi-brasil-intermediarioavancado-f"
+    },
+    "genres": [
+      "classical",
+      "repertoire"
+    ],
+    "id": "escola-bolshoi-brasil/variacoes-de-repertorio-bolshoi-brasil-intermediarioavancado-f",
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Joinville",
+      "country": "BR",
+      "venue": "Escola do Teatro Bolshoi no Brasil"
+    },
+    "organization": {
+      "city": "Joinville",
+      "country": "BR",
+      "name": "Escola do Teatro Bolshoi no Brasil",
+      "slug": "escola-bolshoi-brasil"
+    },
+    "prices": [
+      {
+        "amount": 395.0,
+        "currency": "BRL",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Registration fee"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-24",
+      "notes": "21/07/2026 a 24/07/2026",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": null,
+            "min": 14
+          },
+          "end": "2026-07-24",
+          "gender": "female",
+          "label": "Variações de Repertório Bolshoi Brasil – Intermediário/Avançado (F)",
+          "notes": "21/07/2026 a 24/07/2026",
+          "start": "2026-07-21"
+        }
+      ],
+      "start": "2026-07-21",
+      "timezone": "America/Sao_Paulo"
+    },
+    "source": {
+      "hash": "sha256:a685219e8e6994f4952de691cc8ffc80d20ba42d89cedeb10478025ea4b89779",
+      "provider": "escola-bolshoi-brasil",
+      "scrapedAt": "2026-06-08T13:40:03.982757Z",
+      "url": "https://escolabolshoi.com.br/curso/779/variacoes-de-repertorio-bolshoi-brasil-intermediarioavancado-f"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Larissa de Araújo"
+      }
+    ],
+    "title": "Variações de Repertório Bolshoi Brasil – Intermediário/Avançado (F)"
+  },
+  {
+    "ageRange": {
+      "max": 14,
+      "min": 11
+    },
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "open",
+      "url": "https://escolabolshoi.com.br/curso/758/1-vivencia-iniciante-setembro"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "escola-bolshoi-brasil/1-vivencia-iniciante-setembro",
+    "level": [
+      "beginner"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Joinville",
+      "country": "BR",
+      "venue": "Escola do Teatro Bolshoi no Brasil"
+    },
+    "organization": {
+      "city": "Joinville",
+      "country": "BR",
+      "name": "Escola do Teatro Bolshoi no Brasil",
+      "slug": "escola-bolshoi-brasil"
+    },
+    "prices": [
+      {
+        "amount": 1390.0,
+        "currency": "BRL",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Registration fee"
+      }
+    ],
+    "schedule": {
+      "end": "2026-09-04",
+      "notes": "31/08/2026 a 04/09/2026",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 14,
+            "min": 11
+          },
+          "end": "2026-09-04",
+          "gender": "both",
+          "label": "1. Vivência - Iniciante | Setembro",
+          "notes": "31/08/2026 a 04/09/2026",
+          "start": "2026-08-31"
+        }
+      ],
+      "start": "2026-08-31",
+      "timezone": "America/Sao_Paulo"
+    },
+    "source": {
+      "hash": "sha256:6d5fcf3c5d2da76ce44e18cc1c79de670ca793f22c8ab5e2ab78e54e3ac58c5a",
+      "provider": "escola-bolshoi-brasil",
+      "scrapedAt": "2026-06-08T13:39:57.842624Z",
+      "url": "https://escolabolshoi.com.br/curso/758/1-vivencia-iniciante-setembro"
+    },
+    "teachers": [],
+    "title": "1. Vivência - Iniciante | Setembro"
+  },
+  {
+    "ageRange": {
+      "max": 17,
+      "min": 13
+    },
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "open",
+      "url": "https://escolabolshoi.com.br/curso/759/2-vivencia-intermediario-i-setembro"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "escola-bolshoi-brasil/2-vivencia-intermediario-i-setembro",
+    "level": [
+      "intermediate"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Joinville",
+      "country": "BR",
+      "venue": "Escola do Teatro Bolshoi no Brasil"
+    },
+    "organization": {
+      "city": "Joinville",
+      "country": "BR",
+      "name": "Escola do Teatro Bolshoi no Brasil",
+      "slug": "escola-bolshoi-brasil"
+    },
+    "prices": [
+      {
+        "amount": 1390.0,
+        "currency": "BRL",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Registration fee"
+      }
+    ],
+    "schedule": {
+      "end": "2026-09-04",
+      "notes": "31/08/2026 a 04/09/2026",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 17,
+            "min": 13
+          },
+          "end": "2026-09-04",
+          "gender": "both",
+          "label": "2. Vivência - Intermediário I| Setembro",
+          "notes": "31/08/2026 a 04/09/2026",
+          "start": "2026-08-31"
+        }
+      ],
+      "start": "2026-08-31",
+      "timezone": "America/Sao_Paulo"
+    },
+    "source": {
+      "hash": "sha256:d12361e9ec118c2a9e354e4664fdcb4e244f8d4b15aafd958e9074880815d02e",
+      "provider": "escola-bolshoi-brasil",
+      "scrapedAt": "2026-06-08T13:39:58.254638Z",
+      "url": "https://escolabolshoi.com.br/curso/759/2-vivencia-intermediario-i-setembro"
+    },
+    "teachers": [],
+    "title": "2. Vivência - Intermediário I| Setembro"
+  },
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 15
+    },
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "open",
+      "url": "https://escolabolshoi.com.br/curso/760/3-vivencia-intermediario-ii-setembro"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "escola-bolshoi-brasil/3-vivencia-intermediario-ii-setembro",
+    "level": [
+      "intermediate"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Joinville",
+      "country": "BR",
+      "venue": "Escola do Teatro Bolshoi no Brasil"
+    },
+    "organization": {
+      "city": "Joinville",
+      "country": "BR",
+      "name": "Escola do Teatro Bolshoi no Brasil",
+      "slug": "escola-bolshoi-brasil"
+    },
+    "prices": [
+      {
+        "amount": 1390.0,
+        "currency": "BRL",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Registration fee"
+      }
+    ],
+    "schedule": {
+      "end": "2026-09-04",
+      "notes": "31/08/2026 a 04/09/2026",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 18,
+            "min": 15
+          },
+          "end": "2026-09-04",
+          "gender": "both",
+          "label": "3. Vivência - Intermediário II | Setembro",
+          "notes": "31/08/2026 a 04/09/2026",
+          "start": "2026-08-31"
+        }
+      ],
+      "start": "2026-08-31",
+      "timezone": "America/Sao_Paulo"
+    },
+    "source": {
+      "hash": "sha256:1a03fbdb3beecf49a3de6f05565bdad8c467484af0b59936d4f4dc0d54cb372b",
+      "provider": "escola-bolshoi-brasil",
+      "scrapedAt": "2026-06-08T13:39:58.665238Z",
+      "url": "https://escolabolshoi.com.br/curso/760/3-vivencia-intermediario-ii-setembro"
+    },
+    "teachers": [],
+    "title": "3. Vivência - Intermediário II | Setembro"
+  },
+  {
+    "ageRange": {
+      "max": 25,
+      "min": 17
+    },
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "open",
+      "url": "https://escolabolshoi.com.br/curso/761/4-vivencia-avancado-setembro"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "escola-bolshoi-brasil/4-vivencia-avancado-setembro",
+    "level": [
+      "advanced"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Joinville",
+      "country": "BR",
+      "venue": "Escola do Teatro Bolshoi no Brasil"
+    },
+    "organization": {
+      "city": "Joinville",
+      "country": "BR",
+      "name": "Escola do Teatro Bolshoi no Brasil",
+      "slug": "escola-bolshoi-brasil"
+    },
+    "prices": [
+      {
+        "amount": 1390.0,
+        "currency": "BRL",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Registration fee"
+      }
+    ],
+    "schedule": {
+      "end": "2026-09-04",
+      "notes": "31/08/2026 a 04/09/2026",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 25,
+            "min": 17
+          },
+          "end": "2026-09-04",
+          "gender": "both",
+          "label": "4. Vivência - Avançado | Setembro",
+          "notes": "31/08/2026 a 04/09/2026",
+          "start": "2026-08-31"
+        }
+      ],
+      "start": "2026-08-31",
+      "timezone": "America/Sao_Paulo"
+    },
+    "source": {
+      "hash": "sha256:7fe59657ad14427193b30c58be2b65fddf71122674cd5f3d7aaef585be433cb9",
+      "provider": "escola-bolshoi-brasil",
+      "scrapedAt": "2026-06-08T13:39:59.166055Z",
+      "url": "https://escolabolshoi.com.br/curso/761/4-vivencia-avancado-setembro"
+    },
+    "teachers": [],
+    "title": "4. Vivência - Avançado | Setembro"
+  },
+  {
+    "ageRange": {
+      "max": 12,
+      "min": 9
+    },
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "open",
+      "url": "https://escolabolshoi.com.br/curso/816/workshop-ballet-classico-iniciante"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "escola-bolshoi-brasil/workshop-ballet-classico-iniciante",
+    "level": [
+      "beginner"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Belém",
+      "country": "BR",
+      "venue": "Theatro da Paz – Salão de Danças - Avenida da Paz, Praça da República, S/N - Campina, Belém/PA"
+    },
+    "organization": {
+      "city": "Joinville",
+      "country": "BR",
+      "name": "Escola do Teatro Bolshoi no Brasil",
+      "slug": "escola-bolshoi-brasil"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-09-02",
+      "notes": "02/09/2026 a 02/09/2026",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 12,
+            "min": 9
+          },
+          "end": "2026-09-02",
+          "gender": "both",
+          "label": "Workshop Ballet Clássico Iniciante",
+          "notes": "02/09/2026 a 02/09/2026",
+          "start": "2026-09-02"
+        }
+      ],
+      "start": "2026-09-02",
+      "timezone": "America/Sao_Paulo"
+    },
+    "source": {
+      "hash": "sha256:77d4c52541cdf79cbf116fc9a65755ede5487cb25a28895a5adefe82efd42b8b",
+      "provider": "escola-bolshoi-brasil",
+      "scrapedAt": "2026-06-08T13:40:07.499794Z",
+      "url": "https://escolabolshoi.com.br/curso/816/workshop-ballet-classico-iniciante"
+    },
+    "teachers": [],
+    "title": "Workshop Ballet Clássico Iniciante"
+  },
+  {
+    "ageRange": {
+      "max": 15,
+      "min": 11
+    },
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "open",
+      "url": "https://escolabolshoi.com.br/curso/817/workshop-ballet-classico-iniciante-intermediario"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "escola-bolshoi-brasil/workshop-ballet-classico-iniciante-intermediario",
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Belém",
+      "country": "BR",
+      "venue": "Theatro da Paz – Salão de Danças - Avenida da Paz, Praça da República, S/N - Campina, Belém/PA"
+    },
+    "organization": {
+      "city": "Joinville",
+      "country": "BR",
+      "name": "Escola do Teatro Bolshoi no Brasil",
+      "slug": "escola-bolshoi-brasil"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-09-02",
+      "notes": "02/09/2026 a 02/09/2026",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 15,
+            "min": 11
+          },
+          "end": "2026-09-02",
+          "gender": "both",
+          "label": "Workshop Ballet Clássico Iniciante / Intermediário",
+          "notes": "02/09/2026 a 02/09/2026",
+          "start": "2026-09-02"
+        }
+      ],
+      "start": "2026-09-02",
+      "timezone": "America/Sao_Paulo"
+    },
+    "source": {
+      "hash": "sha256:a8fa90084b6b1a4f67339912eb988161bed551a03a8a5eaef826b9ae17c0d791",
+      "provider": "escola-bolshoi-brasil",
+      "scrapedAt": "2026-06-08T13:40:07.893566Z",
+      "url": "https://escolabolshoi.com.br/curso/817/workshop-ballet-classico-iniciante-intermediario"
+    },
+    "teachers": [],
+    "title": "Workshop Ballet Clássico Iniciante / Intermediário"
+  }
+]

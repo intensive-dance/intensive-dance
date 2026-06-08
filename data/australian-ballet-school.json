@@ -1,0 +1,497 @@
+[
+  {
+    "ageRange": {
+      "max": 13,
+      "min": 10
+    },
+    "application": {
+      "deadline": "2025-12-16",
+      "notes": "No audition is required to enrol in the Summer School. The Pre-Professional Program additionally requires advanced-level ballet experience (ABS Level 5+, RAD Advanced I, Cecchetti Advanced I, or equivalent).",
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "url": "https://www.australianballetschool.com.au/products/summer-school-2026-boys-program"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "character"
+    ],
+    "id": "australian-ballet-school/summer-school-2026-boys-program-week-one",
+    "level": [
+      "open"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Melbourne",
+      "country": "AU",
+      "venue": "The Primrose Potter Australian Ballet Centre, 2 Kavanagh St, Southbank"
+    },
+    "organization": {
+      "city": "Melbourne",
+      "country": "AU",
+      "name": "The Australian Ballet School",
+      "slug": "australian-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 740.0,
+        "currency": "AUD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Standard fee"
+      },
+      {
+        "amount": 700.0,
+        "currency": "AUD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Early Bird fee",
+        "notes": "Early Bird pricing ends before the stated cut-off date."
+      }
+    ],
+    "schedule": {
+      "end": "2026-01-07",
+      "notes": "Week One",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 13,
+            "min": 10
+          },
+          "end": "2026-01-07",
+          "gender": "male",
+          "label": "Week One",
+          "start": "2026-01-03"
+        }
+      ],
+      "start": "2026-01-03",
+      "timezone": "Australia/Melbourne"
+    },
+    "source": {
+      "hash": "sha256:ed6bdb2158405c4331c493837896309df08add0aaf9e8c3998937d2b63e0961f",
+      "provider": "australian-ballet-school",
+      "scrapedAt": "2026-06-08T13:39:52.925085Z",
+      "url": "https://www.australianballetschool.com.au/products/summer-school-2026-boys-program"
+    },
+    "teachers": [],
+    "title": "Summer School 2026 - Boys Program — Week One"
+  },
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 8
+    },
+    "application": {
+      "deadline": "2025-12-16",
+      "notes": "No audition is required to enrol in the Summer School. The Pre-Professional Program additionally requires advanced-level ballet experience (ABS Level 5+, RAD Advanced I, Cecchetti Advanced I, or equivalent).",
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "url": "https://www.australianballetschool.com.au/products/summer-school-2026-open-program"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "character"
+    ],
+    "id": "australian-ballet-school/summer-school-2026-open-program-week-one",
+    "level": [
+      "open"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Melbourne",
+      "country": "AU",
+      "venue": "The Primrose Potter Australian Ballet Centre, 2 Kavanagh St, Southbank"
+    },
+    "organization": {
+      "city": "Melbourne",
+      "country": "AU",
+      "name": "The Australian Ballet School",
+      "slug": "australian-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 740.0,
+        "currency": "AUD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Standard fee"
+      },
+      {
+        "amount": 700.0,
+        "currency": "AUD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Early Bird fee",
+        "notes": "Early Bird pricing ends before the stated cut-off date."
+      }
+    ],
+    "schedule": {
+      "end": "2026-01-07",
+      "notes": "Week One",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 18,
+            "min": 8
+          },
+          "end": "2026-01-07",
+          "gender": "both",
+          "label": "Week One",
+          "start": "2026-01-03"
+        }
+      ],
+      "start": "2026-01-03",
+      "timezone": "Australia/Melbourne"
+    },
+    "source": {
+      "hash": "sha256:3198d797bb8d93b0bdab464fb93b79580f70080fb45f44b30398d939ccb2c86b",
+      "provider": "australian-ballet-school",
+      "scrapedAt": "2026-06-08T13:39:52.925869Z",
+      "url": "https://www.australianballetschool.com.au/products/summer-school-2026-open-program"
+    },
+    "teachers": [],
+    "title": "Summer School 2026 - Open Program — Week One"
+  },
+  {
+    "ageRange": {
+      "max": 21,
+      "min": 14
+    },
+    "application": {
+      "deadline": "2025-12-16",
+      "notes": "No audition is required to enrol in the Summer School. The Pre-Professional Program additionally requires advanced-level ballet experience (ABS Level 5+, RAD Advanced I, Cecchetti Advanced I, or equivalent).",
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "url": "https://www.australianballetschool.com.au/products/summer-school-2026-pre-professional-program"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "australian-ballet-school/summer-school-2026-pre-professional-program-week-one",
+    "level": [
+      "pre-professional",
+      "open"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Melbourne",
+      "country": "AU",
+      "venue": "The Primrose Potter Australian Ballet Centre, 2 Kavanagh St, Southbank"
+    },
+    "organization": {
+      "city": "Melbourne",
+      "country": "AU",
+      "name": "The Australian Ballet School",
+      "slug": "australian-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 740.0,
+        "currency": "AUD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Standard fee"
+      },
+      {
+        "amount": 700.0,
+        "currency": "AUD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Early Bird fee",
+        "notes": "Early Bird pricing ends before the stated cut-off date."
+      }
+    ],
+    "schedule": {
+      "end": "2026-01-07",
+      "notes": "Week One",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 21,
+            "min": 14
+          },
+          "end": "2026-01-07",
+          "gender": "both",
+          "label": "Week One",
+          "start": "2026-01-03"
+        }
+      ],
+      "start": "2026-01-03",
+      "timezone": "Australia/Melbourne"
+    },
+    "source": {
+      "hash": "sha256:f858407942910f8250347bdea00482d31fb6c55226a2f33a58158ad21a99f187",
+      "provider": "australian-ballet-school",
+      "scrapedAt": "2026-06-08T13:39:52.926173Z",
+      "url": "https://www.australianballetschool.com.au/products/summer-school-2026-pre-professional-program"
+    },
+    "teachers": [],
+    "title": "Summer School 2026 - Pre-Professional Program — Week One"
+  },
+  {
+    "ageRange": {
+      "max": 7,
+      "min": 6
+    },
+    "application": {
+      "deadline": "2025-12-16",
+      "notes": "No audition is required to enrol in the Summer School. The Pre-Professional Program additionally requires advanced-level ballet experience (ABS Level 5+, RAD Advanced I, Cecchetti Advanced I, or equivalent).",
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "url": "https://www.australianballetschool.com.au/products/summer-school-2026-creative-program"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "australian-ballet-school/summer-school-2026-creative-program-week-two",
+    "level": [
+      "open"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Melbourne",
+      "country": "AU",
+      "venue": "The Primrose Potter Australian Ballet Centre, 2 Kavanagh St, Southbank"
+    },
+    "organization": {
+      "city": "Melbourne",
+      "country": "AU",
+      "name": "The Australian Ballet School",
+      "slug": "australian-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 740.0,
+        "currency": "AUD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Standard fee"
+      },
+      {
+        "amount": 700.0,
+        "currency": "AUD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Early Bird fee",
+        "notes": "Early Bird pricing ends before the stated cut-off date."
+      }
+    ],
+    "schedule": {
+      "end": "2026-01-12",
+      "notes": "Week Two",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 7,
+            "min": 6
+          },
+          "end": "2026-01-12",
+          "gender": "both",
+          "label": "Week Two",
+          "start": "2026-01-08"
+        }
+      ],
+      "start": "2026-01-08",
+      "timezone": "Australia/Melbourne"
+    },
+    "source": {
+      "hash": "sha256:534ed941b58f0982cdbd7344b00729866639f9aa19f3e99094357bda6d392574",
+      "provider": "australian-ballet-school",
+      "scrapedAt": "2026-06-08T13:39:52.925535Z",
+      "url": "https://www.australianballetschool.com.au/products/summer-school-2026-creative-program"
+    },
+    "teachers": [],
+    "title": "Summer School 2026 - Creative Program — Week Two"
+  },
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 8
+    },
+    "application": {
+      "deadline": "2025-12-16",
+      "notes": "No audition is required to enrol in the Summer School. The Pre-Professional Program additionally requires advanced-level ballet experience (ABS Level 5+, RAD Advanced I, Cecchetti Advanced I, or equivalent).",
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "url": "https://www.australianballetschool.com.au/products/summer-school-2026-open-program"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "character"
+    ],
+    "id": "australian-ballet-school/summer-school-2026-open-program-week-two",
+    "level": [
+      "open"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Melbourne",
+      "country": "AU",
+      "venue": "The Primrose Potter Australian Ballet Centre, 2 Kavanagh St, Southbank"
+    },
+    "organization": {
+      "city": "Melbourne",
+      "country": "AU",
+      "name": "The Australian Ballet School",
+      "slug": "australian-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 740.0,
+        "currency": "AUD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Standard fee"
+      },
+      {
+        "amount": 700.0,
+        "currency": "AUD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Early Bird fee",
+        "notes": "Early Bird pricing ends before the stated cut-off date."
+      }
+    ],
+    "schedule": {
+      "end": "2026-01-12",
+      "notes": "Week Two",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 18,
+            "min": 8
+          },
+          "end": "2026-01-12",
+          "gender": "both",
+          "label": "Week Two",
+          "start": "2026-01-08"
+        }
+      ],
+      "start": "2026-01-08",
+      "timezone": "Australia/Melbourne"
+    },
+    "source": {
+      "hash": "sha256:fde75fcfa9c400e89bf2d8938d3001309611484530446f598ff80750e80a0f7f",
+      "provider": "australian-ballet-school",
+      "scrapedAt": "2026-06-08T13:39:52.925889Z",
+      "url": "https://www.australianballetschool.com.au/products/summer-school-2026-open-program"
+    },
+    "teachers": [],
+    "title": "Summer School 2026 - Open Program — Week Two"
+  },
+  {
+    "ageRange": {
+      "max": 21,
+      "min": 14
+    },
+    "application": {
+      "deadline": "2025-12-16",
+      "notes": "No audition is required to enrol in the Summer School. The Pre-Professional Program additionally requires advanced-level ballet experience (ABS Level 5+, RAD Advanced I, Cecchetti Advanced I, or equivalent).",
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "url": "https://www.australianballetschool.com.au/products/summer-school-2026-pre-professional-program"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "australian-ballet-school/summer-school-2026-pre-professional-program-week-two",
+    "level": [
+      "pre-professional",
+      "open"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Melbourne",
+      "country": "AU",
+      "venue": "The Primrose Potter Australian Ballet Centre, 2 Kavanagh St, Southbank"
+    },
+    "organization": {
+      "city": "Melbourne",
+      "country": "AU",
+      "name": "The Australian Ballet School",
+      "slug": "australian-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 740.0,
+        "currency": "AUD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Standard fee"
+      },
+      {
+        "amount": 700.0,
+        "currency": "AUD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Early Bird fee",
+        "notes": "Early Bird pricing ends before the stated cut-off date."
+      }
+    ],
+    "schedule": {
+      "end": "2026-01-12",
+      "notes": "Week Two",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 21,
+            "min": 14
+          },
+          "end": "2026-01-12",
+          "gender": "both",
+          "label": "Week Two",
+          "start": "2026-01-08"
+        }
+      ],
+      "start": "2026-01-08",
+      "timezone": "Australia/Melbourne"
+    },
+    "source": {
+      "hash": "sha256:fa06696e325fca4813a4fca32843f12b2c51d1e451a66674c678c57cbaac8a56",
+      "provider": "australian-ballet-school",
+      "scrapedAt": "2026-06-08T13:39:52.926190Z",
+      "url": "https://www.australianballetschool.com.au/products/summer-school-2026-pre-professional-program"
+    },
+    "teachers": [],
+    "title": "Summer School 2026 - Pre-Professional Program — Week Two"
+  }
+]
