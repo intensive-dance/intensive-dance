@@ -1,0 +1,366 @@
+[
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 12
+    },
+    "application": {
+      "deadline": "2026-03-15",
+      "requirements": [
+        {
+          "description": "Admission is by audition. Dancers attend an in-person audition on the audition tour or, if unable to attend, submit a pre-recorded video audition.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.bostonballet.org/education/summer-dance-program/audition-tour/"
+    },
+    "genres": [
+      "classical",
+      "character",
+      "contemporary"
+    ],
+    "id": "boston-ballet-school/summer-dance-program-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Boston",
+      "country": "US",
+      "venue": "Boston Ballet School"
+    },
+    "organization": {
+      "city": "Boston",
+      "country": "US",
+      "name": "Boston Ballet School",
+      "slug": "boston-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 3620.0,
+        "currency": "USD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition"
+      },
+      {
+        "amount": 100.0,
+        "currency": "USD",
+        "includes": [],
+        "label": "Registration fee"
+      },
+      {
+        "amount": 3570.0,
+        "currency": "USD",
+        "includes": [
+          "accommodation",
+          "meals"
+        ],
+        "label": "Food/Housing"
+      },
+      {
+        "amount": 320.0,
+        "currency": "USD",
+        "includes": [
+          "meals"
+        ],
+        "label": "Lunch Plan"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-25",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-06-28",
+      "timezone": "America/New_York"
+    },
+    "source": {
+      "hash": "sha256:596668cb8fac60e04829307d67d1a4efa94d3d11225bfbda1fed4ac58ed13f12",
+      "provider": "boston-ballet-school",
+      "scrapedAt": "2026-06-08T14:08:34.696257Z",
+      "url": "https://www.bostonballet.org/education/summer-dance-program/faq/"
+    },
+    "teachers": [],
+    "title": "Summer Dance Program"
+  },
+  {
+    "ageRange": {
+      "max": 12,
+      "min": 9
+    },
+    "application": {
+      "requirements": [
+        {
+          "notes": "Required of all applicants; a pointe pose for students en pointe this summer.",
+          "poses": [
+            "First position with preparatory arms",
+            "Tendu à la seconde (en face)",
+            "Relevé in first position (centre; barre if en pointe less than one year)"
+          ],
+          "specificity": "defined-poses",
+          "type": "photos"
+        },
+        {
+          "type": "headshot"
+        },
+        {
+          "type": "cv"
+        }
+      ],
+      "url": "https://www.bostonballet.org/education/junior-summer-intensive/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "character",
+      "contemporary"
+    ],
+    "id": "boston-ballet-school/junior-summer-intensive-s1-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Natick",
+      "country": "US",
+      "venue": "Walnut Hill School for the Arts"
+    },
+    "organization": {
+      "city": "Boston",
+      "country": "US",
+      "name": "Boston Ballet School",
+      "slug": "boston-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 2200.0,
+        "currency": "USD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition"
+      },
+      {
+        "amount": 70.0,
+        "currency": "USD",
+        "includes": [],
+        "label": "Registration fee"
+      },
+      {
+        "amount": 2500.0,
+        "currency": "USD",
+        "includes": [
+          "accommodation",
+          "meals"
+        ],
+        "label": "Residential Fees"
+      },
+      {
+        "amount": 200.0,
+        "currency": "USD",
+        "includes": [],
+        "label": "Activity fee"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-03",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-06-22",
+      "timezone": "America/New_York"
+    },
+    "source": {
+      "hash": "sha256:be333bed8d420e25c7bd6a2b911f429248b8d5aa9238cffbfd5ce790c1b56e58",
+      "provider": "boston-ballet-school",
+      "scrapedAt": "2026-06-08T14:08:34.697722Z",
+      "url": "https://www.bostonballet.org/education/junior-summer-intensive/"
+    },
+    "teachers": [],
+    "title": "Junior Summer Intensive — Session 1"
+  },
+  {
+    "ageRange": {
+      "max": 12,
+      "min": 9
+    },
+    "application": {
+      "requirements": [
+        {
+          "notes": "Required of all applicants; a pointe pose for students en pointe this summer.",
+          "poses": [
+            "First position with preparatory arms",
+            "Tendu à la seconde (en face)",
+            "Relevé in first position (centre; barre if en pointe less than one year)"
+          ],
+          "specificity": "defined-poses",
+          "type": "photos"
+        },
+        {
+          "type": "headshot"
+        },
+        {
+          "type": "cv"
+        }
+      ],
+      "url": "https://www.bostonballet.org/education/junior-summer-intensive/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "character",
+      "contemporary"
+    ],
+    "id": "boston-ballet-school/junior-summer-intensive-s2-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Natick",
+      "country": "US",
+      "venue": "Walnut Hill School for the Arts"
+    },
+    "organization": {
+      "city": "Boston",
+      "country": "US",
+      "name": "Boston Ballet School",
+      "slug": "boston-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 2200.0,
+        "currency": "USD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition"
+      },
+      {
+        "amount": 70.0,
+        "currency": "USD",
+        "includes": [],
+        "label": "Registration fee"
+      },
+      {
+        "amount": 2500.0,
+        "currency": "USD",
+        "includes": [
+          "accommodation",
+          "meals"
+        ],
+        "label": "Residential Fees"
+      },
+      {
+        "amount": 200.0,
+        "currency": "USD",
+        "includes": [],
+        "label": "Activity fee"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-17",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-06",
+      "timezone": "America/New_York"
+    },
+    "source": {
+      "hash": "sha256:2c70d688c08943647c57f8abe9f485e295a194fca6be84c3804a99c5f30b2d46",
+      "provider": "boston-ballet-school",
+      "scrapedAt": "2026-06-08T14:08:34.697822Z",
+      "url": "https://www.bostonballet.org/education/junior-summer-intensive/"
+    },
+    "teachers": [],
+    "title": "Junior Summer Intensive — Session 2"
+  },
+  {
+    "ageRange": {
+      "max": 12,
+      "min": 9
+    },
+    "application": {
+      "requirements": [
+        {
+          "notes": "Required of all applicants; a pointe pose for students en pointe this summer.",
+          "poses": [
+            "First position with preparatory arms",
+            "Tendu à la seconde (en face)",
+            "Relevé in first position (centre; barre if en pointe less than one year)"
+          ],
+          "specificity": "defined-poses",
+          "type": "photos"
+        },
+        {
+          "type": "headshot"
+        },
+        {
+          "type": "cv"
+        }
+      ],
+      "url": "https://www.bostonballet.org/education/junior-summer-intensive/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "character",
+      "contemporary"
+    ],
+    "id": "boston-ballet-school/junior-summer-intensive-s3-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Natick",
+      "country": "US",
+      "venue": "Walnut Hill School for the Arts"
+    },
+    "organization": {
+      "city": "Boston",
+      "country": "US",
+      "name": "Boston Ballet School",
+      "slug": "boston-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 2200.0,
+        "currency": "USD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition"
+      },
+      {
+        "amount": 70.0,
+        "currency": "USD",
+        "includes": [],
+        "label": "Registration fee"
+      },
+      {
+        "amount": 2500.0,
+        "currency": "USD",
+        "includes": [
+          "accommodation",
+          "meals"
+        ],
+        "label": "Residential Fees"
+      },
+      {
+        "amount": 200.0,
+        "currency": "USD",
+        "includes": [],
+        "label": "Activity fee"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-31",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-20",
+      "timezone": "America/New_York"
+    },
+    "source": {
+      "hash": "sha256:11c7a41579dca4953d7d686e8d23fa8d52aeaaabd947c211b26f9739762cd921",
+      "provider": "boston-ballet-school",
+      "scrapedAt": "2026-06-08T14:08:34.697843Z",
+      "url": "https://www.bostonballet.org/education/junior-summer-intensive/"
+    },
+    "teachers": [],
+    "title": "Junior Summer Intensive — Session 3"
+  }
+]
