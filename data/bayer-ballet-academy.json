@@ -1,0 +1,241 @@
+[
+  {
+    "ageRange": {
+      "max": 10,
+      "min": 8
+    },
+    "application": {
+      "notes": "Admission is by audition: in person at Bayer Ballet Studios (held most Saturdays) or by video submission. A $40 audition fee applies.",
+      "requirements": [
+        {
+          "description": "Admission is by audition — attend an in-person audition (held most Saturdays) or submit a video: a short introduction, barre and centre exercises, optional variation, and a photo in first arabesque.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "url": "https://www.bayerballet.com/summer-intensive"
+    },
+    "genres": [
+      "classical",
+      "character",
+      "repertoire"
+    ],
+    "id": "bayer-ballet-academy/junior-intensive-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Mountain View",
+      "country": "US",
+      "venue": "Bayer Ballet Studios"
+    },
+    "organization": {
+      "city": "Mountain View",
+      "country": "US",
+      "name": "Bayer Ballet Academy",
+      "slug": "bayer-ballet-academy"
+    },
+    "prices": [
+      {
+        "amount": 2000.0,
+        "currency": "USD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition"
+      },
+      {
+        "amount": 1800.0,
+        "currency": "USD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition (early bird, paid within 5 days of audition)"
+      }
+    ],
+    "schedule": {
+      "end": "2026-06-26",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-06-08",
+      "timezone": "America/Los_Angeles"
+    },
+    "source": {
+      "hash": "sha256:4908831121c259f3efccad654d369eeb7e0e36d094f61d8b56c2bccb8b9d94a7",
+      "provider": "bayer-ballet-academy",
+      "scrapedAt": "2026-06-08T21:21:47.496776Z",
+      "url": "https://www.bayerballet.com/summer-intensive"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "organization": "Bolshoi Ballet Academy",
+            "role": "trained"
+          }
+        ],
+        "name": "Inna Bayer",
+        "role": "Bayer Ballet Founder, Artistic Director & Instructor"
+      },
+      {
+        "affiliations": [],
+        "name": "Maiia Musaeva",
+        "role": "Instructor | Classical Ballet"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "role": "trained"
+          }
+        ],
+        "name": "Elena Nikolaeva",
+        "role": "Instructor | Classical Ballet"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "role": "trained"
+          }
+        ],
+        "name": "Sora Kim",
+        "role": "Instructor | Classical Ballet"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Academy of Russian Ballet",
+            "role": "trained"
+          }
+        ],
+        "name": "Olga Voloboueva",
+        "role": "Instructor | Classical Ballet"
+      }
+    ],
+    "title": "Junior Intensive — 3-Week Summer Intensive"
+  },
+  {
+    "ageRange": {
+      "min": 9
+    },
+    "application": {
+      "notes": "Admission is by audition: in person at Bayer Ballet Studios (held most Saturdays) or by video submission. A $40 audition fee applies.",
+      "requirements": [
+        {
+          "description": "Admission is by audition — attend an in-person audition (held most Saturdays) or submit a video: a short introduction, barre and centre exercises, optional variation, and a photo in first arabesque.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "url": "https://www.bayerballet.com/summer-intensive"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "character",
+      "contemporary",
+      "repertoire"
+    ],
+    "id": "bayer-ballet-academy/pre-professional-intensive-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Mountain View",
+      "country": "US",
+      "venue": "Bayer Ballet Studios"
+    },
+    "organization": {
+      "city": "Mountain View",
+      "country": "US",
+      "name": "Bayer Ballet Academy",
+      "slug": "bayer-ballet-academy"
+    },
+    "prices": [
+      {
+        "amount": 5450.0,
+        "currency": "USD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition"
+      },
+      {
+        "amount": 4950.0,
+        "currency": "USD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition (early bird, paid within 5 days of audition)"
+      },
+      {
+        "amount": 250.0,
+        "currency": "USD",
+        "includes": [
+          "performance"
+        ],
+        "label": "Performance fee"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-09",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-06-29",
+      "timezone": "America/Los_Angeles"
+    },
+    "source": {
+      "hash": "sha256:567a292f270723e3da1d27b970d1c7c52f02f2510a2e6f0490c4afce3d5e5383",
+      "provider": "bayer-ballet-academy",
+      "scrapedAt": "2026-06-08T21:21:47.496942Z",
+      "url": "https://www.bayerballet.com/summer-intensive"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "organization": "Bolshoi Ballet Academy",
+            "role": "trained"
+          }
+        ],
+        "name": "Inna Bayer",
+        "role": "Bayer Ballet Founder, Artistic Director & Instructor"
+      },
+      {
+        "affiliations": [],
+        "name": "Maiia Musaeva",
+        "role": "Instructor | Classical Ballet"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "role": "trained"
+          }
+        ],
+        "name": "Elena Nikolaeva",
+        "role": "Instructor | Classical Ballet"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "role": "trained"
+          }
+        ],
+        "name": "Sora Kim",
+        "role": "Instructor | Classical Ballet"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Academy of Russian Ballet",
+            "role": "trained"
+          }
+        ],
+        "name": "Olga Voloboueva",
+        "role": "Instructor | Classical Ballet"
+      }
+    ],
+    "title": "Pre–Professional Intensive — 6-Week Summer Intensive"
+  }
+]

@@ -1,0 +1,250 @@
+[
+  {
+    "application": {
+      "notes": "Places are limited.",
+      "requirements": [],
+      "url": "https://asb-balet.pl/warsztaty/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "contemporary",
+      "repertoire"
+    ],
+    "id": "akademia-sztuki-baletowej/summer-dance-project-golun-2026-06-27",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Wdzydze Tucholskie",
+      "country": "PL",
+      "venue": "Hotel Gołuń"
+    },
+    "organization": {
+      "city": "Sopot",
+      "country": "PL",
+      "name": "Akademia Sztuki Baletowej",
+      "slug": "akademia-sztuki-baletowej"
+    },
+    "prices": [
+      {
+        "amount": 3200.0,
+        "currency": "PLN",
+        "includes": [
+          "tuition",
+          "accommodation",
+          "meals"
+        ],
+        "label": "Residential fee",
+        "notes": "Full board (four meals a day)."
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-05",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-06-27",
+      "timezone": "Europe/Warsaw"
+    },
+    "source": {
+      "hash": "sha256:8fcfbac5f20059170a248972c81bfdbdebd9279a9a8692876e19a16a7bad8d79",
+      "provider": "akademia-sztuki-baletowej",
+      "scrapedAt": "2026-06-08T21:21:43.908707Z",
+      "url": "https://asb-balet.pl/warsztaty/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Teatro alla Scala"
+          },
+          {
+            "current": false,
+            "organization": "National Ballet of Canada"
+          },
+          {
+            "current": false,
+            "organization": "Semperoper Dresden"
+          }
+        ],
+        "name": "Guido Marni",
+        "role": "guest"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Akademia Sztuki Baletowej",
+            "role": "founder",
+            "slug": "akademia-sztuki-baletowej"
+          }
+        ],
+        "name": "Jacek Walasik",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Polish National Ballet",
+            "role": "dancer"
+          }
+        ],
+        "name": "Stella Walasik",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Gdańsk Ballet School",
+            "role": "teacher"
+          },
+          {
+            "current": false,
+            "organization": "Teatr Wielki w Łodzi",
+            "role": "principal dancer"
+          }
+        ],
+        "name": "Kazimierz Wrzosek",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Teatr Wielki w Warszawie",
+            "role": "soloist"
+          }
+        ],
+        "name": "Lidia Kowcz",
+        "role": "teacher"
+      }
+    ],
+    "title": "Summer Dance Project — Gołuń 2026"
+  },
+  {
+    "application": {
+      "notes": "Places are limited.",
+      "requirements": [],
+      "url": "https://asb-balet.pl/warsztaty/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "contemporary",
+      "repertoire"
+    ],
+    "id": "akademia-sztuki-baletowej/summer-dance-project-golun-2026-08-22",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Wdzydze Tucholskie",
+      "country": "PL",
+      "venue": "Hotel Gołuń"
+    },
+    "organization": {
+      "city": "Sopot",
+      "country": "PL",
+      "name": "Akademia Sztuki Baletowej",
+      "slug": "akademia-sztuki-baletowej"
+    },
+    "prices": [
+      {
+        "amount": 3200.0,
+        "currency": "PLN",
+        "includes": [
+          "tuition",
+          "accommodation",
+          "meals"
+        ],
+        "label": "Residential fee",
+        "notes": "Full board (four meals a day)."
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-31",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-22",
+      "timezone": "Europe/Warsaw"
+    },
+    "source": {
+      "hash": "sha256:0389a844a2d4d8ba5b3c70e3184b43fef3f89e08ca10f2df43ef684b7519442e",
+      "provider": "akademia-sztuki-baletowej",
+      "scrapedAt": "2026-06-08T21:21:43.908815Z",
+      "url": "https://asb-balet.pl/warsztaty/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Teatro alla Scala"
+          },
+          {
+            "current": false,
+            "organization": "National Ballet of Canada"
+          },
+          {
+            "current": false,
+            "organization": "Semperoper Dresden"
+          }
+        ],
+        "name": "Guido Marni",
+        "role": "guest"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Akademia Sztuki Baletowej",
+            "role": "founder",
+            "slug": "akademia-sztuki-baletowej"
+          }
+        ],
+        "name": "Jacek Walasik",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Polish National Ballet",
+            "role": "dancer"
+          }
+        ],
+        "name": "Stella Walasik",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Gdańsk Ballet School",
+            "role": "teacher"
+          },
+          {
+            "current": false,
+            "organization": "Teatr Wielki w Łodzi",
+            "role": "principal dancer"
+          }
+        ],
+        "name": "Kazimierz Wrzosek",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Teatr Wielki w Warszawie",
+            "role": "soloist"
+          }
+        ],
+        "name": "Lidia Kowcz",
+        "role": "teacher"
+      }
+    ],
+    "title": "Summer Dance Project — Gołuń 2026"
+  }
+]

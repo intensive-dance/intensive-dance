@@ -1,0 +1,252 @@
+[
+  {
+    "application": {
+      "deadline": "2025-07-15",
+      "notes": "Open enrolment via the Fitssey booking app: buy a class pass (per number of classes, or an all-access Golden Pass) and self-book classes from the grid; a non-refundable 30% deposit is due within 7 days. No audition. Early-bird discounts (15% / 10%) before the listed dates. Deadlines: do 13 czerwca, do 27 czerwca, do 15 lipca.",
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "url": "https://app.fitssey.com/cordsdance/frontoffice"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "neoclassical",
+      "pointe",
+      "repertoire"
+    ],
+    "id": "cords-dance/summer-intensive-2025",
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced",
+      "open"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Wrocław",
+      "country": "PL",
+      "venue": "Akademia Sztuk Teatralnych, ul. Braniborska 59"
+    },
+    "organization": {
+      "city": "Wrocław",
+      "country": "PL",
+      "name": "Cords Dance",
+      "slug": "cords-dance"
+    },
+    "prices": [
+      {
+        "amount": 90.0,
+        "currency": "PLN",
+        "includes": [
+          "tuition"
+        ],
+        "label": "1-class pass",
+        "notes": "1 - 90 PLN"
+      },
+      {
+        "amount": 170.0,
+        "currency": "PLN",
+        "includes": [
+          "tuition"
+        ],
+        "label": "2-class pass",
+        "notes": "2 - 170 PLN"
+      },
+      {
+        "amount": 340.0,
+        "currency": "PLN",
+        "includes": [
+          "tuition"
+        ],
+        "label": "4-class pass",
+        "notes": "4 - 340 PLN"
+      },
+      {
+        "amount": 500.0,
+        "currency": "PLN",
+        "includes": [
+          "tuition"
+        ],
+        "label": "6-class pass",
+        "notes": "6 - 500 PLN"
+      },
+      {
+        "amount": 650.0,
+        "currency": "PLN",
+        "includes": [
+          "tuition"
+        ],
+        "label": "8-class pass",
+        "notes": "8 - 650 PLN"
+      },
+      {
+        "amount": 780.0,
+        "currency": "PLN",
+        "includes": [
+          "tuition"
+        ],
+        "label": "10-class pass",
+        "notes": "10 - 780 PLN"
+      },
+      {
+        "amount": 900.0,
+        "currency": "PLN",
+        "includes": [
+          "tuition"
+        ],
+        "label": "12-class pass",
+        "notes": "12 - 900 PLN"
+      },
+      {
+        "amount": 1200.0,
+        "currency": "PLN",
+        "includes": [
+          "tuition"
+        ],
+        "label": "16-class pass",
+        "notes": "16 - 1200 PLN"
+      },
+      {
+        "amount": 1400.0,
+        "currency": "PLN",
+        "includes": [
+          "tuition"
+        ],
+        "label": "20-class pass",
+        "notes": "20 - 1400 PLN"
+      },
+      {
+        "amount": 1700.0,
+        "currency": "PLN",
+        "includes": [
+          "tuition"
+        ],
+        "label": "25-class pass",
+        "notes": "25 - 1700 PLN"
+      },
+      {
+        "amount": 1950.0,
+        "currency": "PLN",
+        "includes": [
+          "tuition"
+        ],
+        "label": "30-class pass",
+        "notes": "30 - 1950 PLN"
+      },
+      {
+        "amount": 2400.0,
+        "currency": "PLN",
+        "includes": [
+          "tuition"
+        ],
+        "label": "40-class pass",
+        "notes": "40 - 2400 PLN"
+      },
+      {
+        "amount": 3000.0,
+        "currency": "PLN",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Golden Pass (all classes)",
+        "notes": "Golden Pass — access to all classes."
+      }
+    ],
+    "schedule": {
+      "end": "2025-07-26",
+      "notes": "21 -26 lipca 2025",
+      "season": "2025",
+      "sessions": [],
+      "start": "2025-07-21",
+      "timezone": "Europe/Warsaw"
+    },
+    "source": {
+      "hash": "sha256:becf9c4b842739ce00862076cdd84e9e6d59b50d4a6e2f0f163b7ad0acd90ab7",
+      "provider": "cords-dance",
+      "scrapedAt": "2026-06-08T21:21:43.250246Z",
+      "url": "https://cordsdance.com/summer-intensive-2025/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Opera Wrocławska"
+          }
+        ],
+        "name": "Marta Kulikowska de Nałęcz"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "San Francisco Ballet"
+          },
+          {
+            "organization": "Oregon Ballet Theatre"
+          }
+        ],
+        "name": "Shannon Maynor"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Ballet de la Generalitat Valenciana"
+          }
+        ],
+        "name": "Marine Sanchez Egasse"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Opera Wrocławska"
+          },
+          {
+            "organization": "State Ballet School Berlin"
+          },
+          {
+            "organization": "Staatsballett Berlin"
+          }
+        ],
+        "name": "Mizuno Toma"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Opera Wrocławska"
+          },
+          {
+            "organization": "Vienna State Opera"
+          },
+          {
+            "organization": "John Cranko School",
+            "slug": "john-cranko-schule"
+          },
+          {
+            "organization": "Boris Eifman Ballet"
+          },
+          {
+            "organization": "Polish National Ballet"
+          }
+        ],
+        "name": "Anna Kowalska (Mendakiewicz)"
+      },
+      {
+        "affiliations": [],
+        "name": "Beata Nawrot"
+      },
+      {
+        "affiliations": [],
+        "name": "Regina Arenas"
+      },
+      {
+        "affiliations": [],
+        "name": "Marysia Sławuska"
+      }
+    ],
+    "title": "CORDS. Dance Summer Intensive 2025"
+  }
+]
