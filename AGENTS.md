@@ -202,14 +202,15 @@ URL or bearer in source.
 
 ---
 
-## LLM access (GitHub Models)
+## LLM access (AI proxy)
 
-Need a model from Python? Use **GitHub Models** — an OpenAI-compatible endpoint
-you hit with the stock `openai` SDK:
+Need a model from Python? Hit the **AI proxy** — one OpenAI-compatible endpoint
+fronting Copilot/GitHub (`openai/*`), Gemini, and Mistral models. Stock `openai`
+SDK:
 
 ```python
-client = OpenAI(base_url="https://models.github.ai/inference", api_key=token)
-client.chat.completions.create(model="openai/gpt-4o-mini", messages=[...])
+client = OpenAI(base_url=os.environ["AI_PROXY_URL"], api_key="unused")
+client.chat.completions.create(model="gemini-2.5-flash", messages=[...])
 ```
 
 **Keep it out of the deterministic `scrape()` path** — an LLM call is
@@ -218,14 +219,15 @@ yield no diff), offline tests, and the never-invent rule. Fine as a **hand-run
 dev/enrichment helper** whose output you review and commit as static data; never
 in the live scrape/hash path.
 
-**Auth.** Token needs the **Models: read** account permission. **In CI, skip the
-PAT** — give the job `permissions: models: read` and pass the default
-`${{ secrets.GITHUB_TOKEN }}`. Locally, use the shared `COPILOT_CLI_TOKEN` PAT
-(stored like the fetch proxy: an **Actions variable** for dev + an **Actions
-secret** for CI; it carries Models: read): `export
-GITHUB_TOKEN=$(gh variable get COPILOT_CLI_TOKEN)`. Model catalog:
-`GET https://models.github.ai/catalog/models`. Smoke test:
-`.github/workflows/github-models-test.yml` (`workflow_dispatch`, prints the reply).
+**Auth — `AI_PROXY_URL`, same storage pattern as the fetch proxy.** Stored both
+ways: an **Actions variable** (dev) and an **Actions secret** (CI). The access
+token is **baked into the URL path**, so there's no bearer — `api_key` is unused
+(pass any placeholder; the SDK just requires a non-empty string). Locally: `export
+AI_PROXY_URL=$(gh variable get AI_PROXY_URL)`. Never hardcode the URL in source.
+Model catalog: `GET $AI_PROXY_URL/models` (the list is dynamic — `owned_by` is
+`github`/`gemini`/`mistral`; the `openai/*` Copilot models flake intermittently
+with a 502 `AiGatewayError`, so prefer Gemini/Mistral or retry). Smoke test:
+`.github/workflows/ai-proxy-test.yml` (`workflow_dispatch`, prints the reply).
 
 ---
 

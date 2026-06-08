@@ -1,20 +1,19 @@
-name: GitHub Models test (Python)
+name: AI proxy test (Python)
 
 on:
   workflow_dispatch:
     inputs:
       prompt:
-        description: "Prompt to send to GitHub Models"
+        description: "Prompt to send to the AI proxy"
         required: true
         default: "Reply with exactly one short sentence: a fun fact about ballet."
       model:
-        description: "Model id from the catalog"
+        description: "Model id from the catalog (GET <proxy>/models)"
         required: true
-        default: "openai/gpt-4o-mini"
+        default: "gemini-2.5-flash"
 
 permissions:
   contents: read
-  models: read
 
 jobs:
   ask-model:
@@ -28,7 +27,7 @@ jobs:
 
       - name: Ask the model
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          AI_PROXY_URL: ${{ secrets.AI_PROXY_URL }}
           PROMPT: ${{ inputs.prompt }}
           MODEL: ${{ inputs.model }}
         run: |
@@ -36,10 +35,8 @@ jobs:
           import os
           from openai import OpenAI
 
-          client = OpenAI(
-              base_url="https://models.github.ai/inference",
-              api_key=os.environ["GITHUB_TOKEN"],
-          )
+          # Auth is the token baked into AI_PROXY_URL's path, so api_key is unused.
+          client = OpenAI(base_url=os.environ["AI_PROXY_URL"], api_key="unused")
           resp = client.chat.completions.create(
               model=os.environ["MODEL"],
               messages=[{"role": "user", "content": os.environ["PROMPT"]}],
