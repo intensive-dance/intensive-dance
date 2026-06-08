@@ -10,7 +10,6 @@ on:
 
 permissions:
   contents: read
-  copilot-requests: write
 
 jobs:
   ask-copilot:
@@ -20,6 +19,8 @@ jobs:
         id: copilot
         with:
           prompt: ${{ inputs.prompt }}
+          copilot-token: ${{ secrets.COPILOT_CLI_TOKEN }}
+          silent: true
           share: true
 
       - name: Print the response
