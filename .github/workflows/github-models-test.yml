@@ -1,0 +1,48 @@
+name: GitHub Models test (Python)
+
+on:
+  workflow_dispatch:
+    inputs:
+      prompt:
+        description: "Prompt to send to GitHub Models"
+        required: true
+        default: "Reply with exactly one short sentence: a fun fact about ballet."
+      model:
+        description: "Model id from the catalog"
+        required: true
+        default: "openai/gpt-4o-mini"
+
+permissions:
+  contents: read
+  models: read
+
+jobs:
+  ask-model:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install openai
+
+      - name: Ask the model
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROMPT: ${{ inputs.prompt }}
+          MODEL: ${{ inputs.model }}
+        run: |
+          python - <<'PY'
+          import os
+          from openai import OpenAI
+
+          client = OpenAI(
+              base_url="https://models.github.ai/inference",
+              api_key=os.environ["GITHUB_TOKEN"],
+          )
+          resp = client.chat.completions.create(
+              model=os.environ["MODEL"],
+              messages=[{"role": "user", "content": os.environ["PROMPT"]}],
+          )
+          print(resp.choices[0].message.content)
+          PY
