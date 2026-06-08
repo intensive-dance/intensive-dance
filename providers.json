@@ -1061,6 +1061,33 @@
       "url": "https://fouette.pl/",
       "tier": "secondary",
       "status": "live"
+    },
+    {
+      "slug": "vaganova-international-program",
+      "name": "Vaganova International Program",
+      "country": "US",
+      "city": "Las Vegas",
+      "url": "https://vaganovainternationalprogram.com/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "conservatorio-annarella",
+      "name": "Conservatório Internacional de Ballet e Dança Annarella",
+      "country": "PT",
+      "city": "Leiria",
+      "url": "https://conservatorioannarella.com/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "casa-de-balet",
+      "name": "Casa de Balet",
+      "country": "RO",
+      "city": "Bucharest",
+      "url": "https://casadebalet.ro/",
+      "tier": "secondary",
+      "status": "seed"
     }
   ]
 }
