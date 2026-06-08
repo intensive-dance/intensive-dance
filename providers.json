@@ -818,6 +818,15 @@
       "url": "https://orsolina28.it/",
       "tier": "secondary",
       "status": "live"
+    },
+    {
+      "slug": "singapore-ballet",
+      "name": "Singapore Ballet",
+      "country": "SG",
+      "city": "Singapore",
+      "url": "https://singaporeballet.org/",
+      "tier": "secondary",
+      "status": "seed"
     }
   ]
 }
