@@ -917,6 +917,69 @@
       "url": "https://singaporeballet.org/",
       "tier": "secondary",
       "status": "seed"
+    },
+    {
+      "slug": "houston-ballet-academy",
+      "name": "Houston Ballet Academy (Ben Stevenson Academy)",
+      "country": "US",
+      "city": "Houston",
+      "url": "https://www.houstonballet.org/about/academy/summer-intensive-program/",
+      "tier": "marquee",
+      "status": "live"
+    },
+    {
+      "slug": "pacific-northwest-ballet-school",
+      "name": "Pacific Northwest Ballet School",
+      "country": "US",
+      "city": "Seattle",
+      "url": "https://www.pnb.org/school/",
+      "tier": "marquee",
+      "status": "live"
+    },
+    {
+      "slug": "intodance-athens",
+      "name": "IntoDance",
+      "country": "GR",
+      "city": "Athens",
+      "url": "https://into-dance.com/",
+      "tier": "secondary",
+      "status": "live"
+    },
+    {
+      "slug": "new-zealand-school-of-dance",
+      "name": "New Zealand School of Dance",
+      "country": "NZ",
+      "city": "Wellington",
+      "url": "https://www.nzschoolofdance.ac.nz/",
+      "tier": "secondary",
+      "status": "live"
+    },
+    {
+      "slug": "teatro-san-carlo-scuola-ballo",
+      "name": "Scuola di Ballo del Teatro di San Carlo",
+      "country": "IT",
+      "city": "Naples",
+      "url": "https://www.teatrosancarlo.it/scuola-di-ballo/",
+      "tier": "marquee",
+      "status": "live"
+    },
+    {
+      "slug": "goh-ballet-academy",
+      "name": "Goh Ballet Academy",
+      "country": "CA",
+      "city": "Vancouver",
+      "url": "https://www.gohballet.com/",
+      "tier": "secondary",
+      "status": "live"
+    },
+    {
+      "slug": "royal-swedish-ballet-school",
+      "name": "Royal Swedish Ballet School (Kungliga Svenska balettskolan)",
+      "country": "SE",
+      "city": "Stockholm",
+      "url": "https://kungligasvenskabalettskolan.stockholm/en/",
+      "tier": "marquee",
+      "status": "seed"
     }
   ]
 }
