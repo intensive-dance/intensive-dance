@@ -1,0 +1,128 @@
+[
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 15
+    },
+    "application": {
+      "notes": "designed for dancers aged 15-18 who already have a foundation in contemporary dance and are curious about taking their training further.",
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "url": "https://www.nzschoolofdance.ac.nz/courses/contemporary-intensive-programme"
+    },
+    "genres": [
+      "contemporary"
+    ],
+    "id": "new-zealand-school-of-dance/contemporary-intensive-programme-2026",
+    "level": [
+      "open"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Wellington",
+      "country": "NZ",
+      "venue": "Te Whaea: National Dance and Drama Centre"
+    },
+    "organization": {
+      "city": "Wellington",
+      "country": "NZ",
+      "name": "New Zealand School of Dance",
+      "slug": "new-zealand-school-of-dance"
+    },
+    "prices": [
+      {
+        "amount": 200.0,
+        "currency": "NZD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Course fee"
+      },
+      {
+        "amount": 25.0,
+        "currency": "NZD",
+        "includes": [],
+        "label": "Registration fee"
+      }
+    ],
+    "schedule": {
+      "end": "2026-06-28",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 18,
+            "min": 15
+          },
+          "end": "2026-06-28",
+          "start": "2026-06-27"
+        }
+      ],
+      "start": "2026-06-27",
+      "timezone": "Pacific/Auckland"
+    },
+    "source": {
+      "hash": "sha256:38637b27ddf67eb0d6a790866a7147149d8295dfd25fd45eae411ba3cffc6468",
+      "provider": "new-zealand-school-of-dance",
+      "scrapedAt": "2026-06-08T14:35:11.464714Z",
+      "url": "https://www.nzschoolofdance.ac.nz/courses/contemporary-intensive-programme"
+    },
+    "teachers": [],
+    "title": "Contemporary Intensive Programme (CIP) 2026"
+  },
+  {
+    "application": {
+      "notes": "suitable for students working at the equivalent of RAD Grade 5 up to Solo Seal.",
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "url": "https://www.nzschoolofdance.ac.nz/courses/winter-school"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "new-zealand-school-of-dance/winter-school-2026",
+    "level": [
+      "open"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Wellington",
+      "country": "NZ",
+      "venue": "Te Whaea: National Dance and Drama Centre"
+    },
+    "organization": {
+      "city": "Wellington",
+      "country": "NZ",
+      "name": "New Zealand School of Dance",
+      "slug": "new-zealand-school-of-dance"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-07-09",
+      "season": "2026",
+      "sessions": [
+        {
+          "end": "2026-07-09",
+          "start": "2026-07-05"
+        }
+      ],
+      "start": "2026-07-05",
+      "timezone": "Pacific/Auckland"
+    },
+    "source": {
+      "hash": "sha256:be342b2078b20a9359dbedd144ca1d92407579a7d73179d257663d83486e75ea",
+      "provider": "new-zealand-school-of-dance",
+      "scrapedAt": "2026-06-08T14:35:11.469011Z",
+      "url": "https://www.nzschoolofdance.ac.nz/courses/winter-school"
+    },
+    "teachers": [],
+    "title": "Winter School 2026"
+  }
+]

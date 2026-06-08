@@ -338,6 +338,22 @@ when a second provider genuinely needs the identical thing.
   to the next heading) and **letter-space** inline form labels ("a rabesque").
   Strip the zero-width chars and detect requirement *keywords* rather than scrape
   the garbled tokens (see `brussels_international_ballet`, `young_stars_ballet`).
+- **Webflow sites are static HTML** (`data-wf-domain`/`cdn.prod.webflow`; no
+  `/wp-json/`, no `ld+json`). Course pages render the dated detail as a flat run
+  of `Label:` lines ("Dates:", "Where:", "Cost:") — read those, and take the
+  programme title from the `og:title` meta. A `Where:` value can carry an internal
+  colon (`Te Whaea: National Dance and Drama Centre`) and the labels are separated
+  by **zero-width joiners**, so don't stop a venue at the first `:`; bound it on
+  the next known label/sentence. Per-programme pages share one template, so an
+  *undated* edition still renders ("No items found", a future-year "contact us") —
+  emit nothing for it rather than borrow a date from the site calendar (see
+  `new_zealand_school_of_dance`).
+- **A bot-gated HTML site can still expose a PDF source.** A provider's HTML and
+  `/wp-json/` can sit behind an aggressive bot challenge the proxy's stealth/CF
+  tiers clear only intermittently, while a **PDF in its file store** (e.g. the
+  `bando`/announcement) fetches reliably through the proxy's plain `auto=1` tier
+  (the challenge gates HTML, not the PDF). When the PDF carries the structured
+  dates/fees/faculty, scrape *it* (see `teatro_san_carlo_scuola_ballo`).
 - **Multilingual sites can flip language by cache.** Monreart's `/en/` pages
   serve EN or IT depending on the Varnish cache (even `Accept-Language` doesn't
   pin it), so a naive parse is non-deterministic. Parse **language-agnostically**:

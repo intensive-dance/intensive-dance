@@ -1,0 +1,136 @@
+[
+  {
+    "ageRange": {
+      "max": null,
+      "min": 7
+    },
+    "application": {
+      "notes": "Enrollment into the Junior & Senior summer programs (ages 7+) requires an Evaluation Assessment — a complimentary in-person group audition. No submitted photo or video brief is stated.",
+      "requirements": [
+        {
+          "description": "Enrollment into the Junior & Senior summer programs (ages 7+) requires an Evaluation Assessment — a complimentary in-person group audition. No submitted photo or video brief is stated.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "url": "https://www.eventbrite.ca/e/vancouver-in-person-group-audition-assessment-tickets-1081293109799?aff=Website"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "contemporary",
+      "repertoire"
+    ],
+    "id": "goh-ballet-academy/ballet-beyond-july-2026",
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Vancouver",
+      "country": "CA",
+      "venue": "Goh Ballet Academy"
+    },
+    "organization": {
+      "city": "Vancouver",
+      "country": "CA",
+      "name": "Goh Ballet Academy",
+      "slug": "goh-ballet-academy"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-07-31",
+      "notes": "July 6–31, 2026",
+      "season": "2026",
+      "sessions": [
+        {
+          "end": "2026-07-17",
+          "label": "Session One – Competition Preparation and Performance Essentials",
+          "notes": "Session One – Competition Preparation and Performance Essentials: July 6–17, 2026 Train through the discerning eyes of an adjudicator. Learn what captures attention, what sustains it, and what leaves an impression long after the music ends. This session focuses on presentation, musical dynamics, and the technical clarity that distinguishes a memorable performer from a capable one. Through coaching and performance simulation, dancers gain the insight, confidence, and finesse to deliver artistry that speaks beyond the steps.",
+          "start": "2026-07-06"
+        },
+        {
+          "end": "2026-07-31",
+          "label": "Session Two – Choreography, Repertoire, and Beyond",
+          "notes": "Session Two – Choreography, Repertoire, and Beyond: July 20–31, 2026 Here, expression takes center stage. Explore masterworks and original creations while uncovering your unique voice through interpretation and creative process. This session encourages dancers to move beyond repetition into revelation, discover the freedom to move, imagine, and create in ways that express who you are as a dancer.",
+          "start": "2026-07-20"
+        }
+      ],
+      "start": "2026-07-06",
+      "timezone": "America/Vancouver"
+    },
+    "source": {
+      "hash": "sha256:80002946c943257e8a7aad153b4dc772474298c9a72afa314f2db4aedcd17fb2",
+      "provider": "goh-ballet-academy",
+      "scrapedAt": "2026-06-08T14:35:14.926621Z",
+      "url": "https://www.gohballet.com/program/summer-programs/"
+    },
+    "teachers": [],
+    "title": "Ballet & Beyond – July International Summer Intensive"
+  },
+  {
+    "ageRange": {
+      "max": null,
+      "min": 7
+    },
+    "application": {
+      "notes": "Enrollment into the Junior & Senior summer programs (ages 7+) requires an Evaluation Assessment — a complimentary in-person group audition. No submitted photo or video brief is stated.",
+      "requirements": [
+        {
+          "description": "Enrollment into the Junior & Senior summer programs (ages 7+) requires an Evaluation Assessment — a complimentary in-person group audition. No submitted photo or video brief is stated.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "url": "https://www.eventbrite.ca/e/vancouver-in-person-group-audition-assessment-tickets-1081293109799?aff=Website"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "contemporary",
+      "repertoire"
+    ],
+    "id": "goh-ballet-academy/passion-precision-august-2026",
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Vancouver",
+      "country": "CA",
+      "venue": "Goh Ballet Academy"
+    },
+    "organization": {
+      "city": "Vancouver",
+      "country": "CA",
+      "name": "Goh Ballet Academy",
+      "slug": "goh-ballet-academy"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-08-20",
+      "notes": "August 10–20, 2026",
+      "season": "2026",
+      "sessions": [
+        {
+          "end": "2026-08-20",
+          "start": "2026-08-10"
+        }
+      ],
+      "start": "2026-08-10",
+      "timezone": "America/Vancouver"
+    },
+    "source": {
+      "hash": "sha256:c1e449bbcd02924239ce7423d205d09d1c9e8d25c5d67a324d1438ad61e08622",
+      "provider": "goh-ballet-academy",
+      "scrapedAt": "2026-06-08T14:35:14.927288Z",
+      "url": "https://www.gohballet.com/program/summer-programs/"
+    },
+    "teachers": [],
+    "title": "Passion & Precision - August Summer Program"
+  }
+]

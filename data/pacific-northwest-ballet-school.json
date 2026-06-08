@@ -1,0 +1,74 @@
+[
+  {
+    "ageRange": {
+      "max": 19,
+      "min": 12
+    },
+    "application": {
+      "requirements": [
+        {
+          "description": "Admission is by audition — attend an in-person audition on PNB School's national audition tour or, if unable to attend, submit a video for consideration.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "url": "https://www.pnb.org/school/summer/summer-intensive/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "contemporary",
+      "character"
+    ],
+    "id": "pacific-northwest-ballet-school/summer-intensive-2026",
+    "level": [
+      "advanced"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Seattle",
+      "country": "US",
+      "venue": "The Phelps Center"
+    },
+    "organization": {
+      "city": "Seattle",
+      "country": "US",
+      "name": "Pacific Northwest Ballet School",
+      "slug": "pacific-northwest-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 2680.0,
+        "currency": "USD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition (Levels IV & V)"
+      },
+      {
+        "amount": 2990.0,
+        "currency": "USD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition (Levels VI–VIII & Advanced C)"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-07",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-06",
+      "timezone": "America/Los_Angeles"
+    },
+    "source": {
+      "hash": "sha256:c0e5b52b5b82f90c10e544fa2bcbf0cbfa30e90c252b5836f6c93ad34129beb8",
+      "provider": "pacific-northwest-ballet-school",
+      "scrapedAt": "2026-06-08T14:35:04.529862Z",
+      "url": "https://www.pnb.org/school/summer/summer-intensive/"
+    },
+    "teachers": [],
+    "title": "Summer Intensive"
+  }
+]

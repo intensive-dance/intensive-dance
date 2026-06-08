@@ -1,0 +1,41 @@
+[
+  {
+    "application": {
+      "requirements": [],
+      "url": "https://into-dance.com/events/"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "intodance-athens/summer-intensive-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Athens",
+      "country": "GR"
+    },
+    "organization": {
+      "city": "Athens",
+      "country": "GR",
+      "name": "IntoDance",
+      "slug": "intodance-athens"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-07-03",
+      "notes": "29 June - 3 july 2026",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-06-29",
+      "timezone": "Europe/Athens"
+    },
+    "source": {
+      "hash": "sha256:8f301d338275b9fbdfe0f4018c455f15620d8beb69f042d8ee67b73b6c737688",
+      "provider": "intodance-athens",
+      "scrapedAt": "2026-06-08T14:35:07.791388Z",
+      "url": "https://into-dance.com/events/"
+    },
+    "teachers": [],
+    "title": "Summer Intensive 2026"
+  }
+]

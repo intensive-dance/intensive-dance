@@ -1,0 +1,240 @@
+[
+  {
+    "ageRange": {
+      "max": null,
+      "min": 12
+    },
+    "application": {
+      "deadline": "2026-02-15",
+      "requirements": [
+        {
+          "description": "Admission is by audition. Dancers attend an in-person audition on the summer audition tour or, if unable to attend, submit a recorded video audition.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.houstonballet.org/about/academy/summer-intensive-program/sip-audition-tour2/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "contemporary",
+      "character"
+    ],
+    "id": "houston-ballet-academy/summer-intensive-program-2026",
+    "level": [
+      "intermediate",
+      "advanced",
+      "pre-professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Houston",
+      "country": "US",
+      "venue": "Margaret Alkek Williams Center for Dance"
+    },
+    "organization": {
+      "city": "Houston",
+      "country": "US",
+      "name": "Houston Ballet Academy",
+      "slug": "houston-ballet-academy"
+    },
+    "prices": [
+      {
+        "amount": 3000.0,
+        "currency": "USD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition"
+      },
+      {
+        "amount": 275.0,
+        "currency": "USD",
+        "includes": [],
+        "label": "Registration fee"
+      },
+      {
+        "amount": 125.0,
+        "currency": "USD",
+        "includes": [],
+        "label": "Health & Wellness fee"
+      },
+      {
+        "amount": 200.0,
+        "currency": "USD",
+        "includes": [],
+        "label": "Housing registration fee"
+      },
+      {
+        "amount": 3400.0,
+        "currency": "USD",
+        "includes": [
+          "accommodation"
+        ],
+        "label": "University of St. Thomas housing (optional)"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-24",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-06-20",
+      "timezone": "America/Chicago"
+    },
+    "source": {
+      "hash": "sha256:f6b08ae90fc542ed9a5aa027e5320e2d705eba61bda9d9df92919bfbfc92ef9c",
+      "provider": "houston-ballet-academy",
+      "scrapedAt": "2026-06-08T14:34:51.236232Z",
+      "url": "https://www.houstonballet.org/about/academy/summer-intensive-program/five-week-summer-intensive/"
+    },
+    "teachers": [],
+    "title": "Summer Intensive Program"
+  },
+  {
+    "ageRange": {
+      "max": null,
+      "min": 7
+    },
+    "application": {
+      "requirements": [
+        {
+          "description": "Admission is by audition. Dancers attend an in-person audition on the summer audition tour or, if unable to attend, submit a recorded video audition.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "url": "https://www.houstonballet.org/about/academy/summer-intensive-program/youth-summer-training-program/"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "houston-ballet-academy/youth-summer-training-s1-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Houston",
+      "country": "US",
+      "venue": "Margaret Alkek Williams Center for Dance"
+    },
+    "organization": {
+      "city": "Houston",
+      "country": "US",
+      "name": "Houston Ballet Academy",
+      "slug": "houston-ballet-academy"
+    },
+    "prices": [
+      {
+        "amount": 675.0,
+        "currency": "USD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition — Level 1/Level 2"
+      },
+      {
+        "amount": 1350.0,
+        "currency": "USD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition — Level 3/Level 4/Intermediate/Advanced"
+      },
+      {
+        "amount": 75.0,
+        "currency": "USD",
+        "includes": [],
+        "label": "Registration fee"
+      }
+    ],
+    "schedule": {
+      "end": "2026-06-18",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-06-08",
+      "timezone": "America/Chicago"
+    },
+    "source": {
+      "hash": "sha256:81badc3350f35b5dcf74d06fb28c141aad37a02b37c11a27ea2b2b236378560c",
+      "provider": "houston-ballet-academy",
+      "scrapedAt": "2026-06-08T14:34:51.238876Z",
+      "url": "https://www.houstonballet.org/about/academy/summer-intensive-program/youth-summer-training-program/"
+    },
+    "teachers": [],
+    "title": "Youth Summer Training Program — Session 1"
+  },
+  {
+    "ageRange": {
+      "max": null,
+      "min": 7
+    },
+    "application": {
+      "requirements": [
+        {
+          "description": "Admission is by audition. Dancers attend an in-person audition on the summer audition tour or, if unable to attend, submit a recorded video audition.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "url": "https://www.houstonballet.org/about/academy/summer-intensive-program/youth-summer-training-program/"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "houston-ballet-academy/youth-summer-training-s2-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Houston",
+      "country": "US",
+      "venue": "Margaret Alkek Williams Center for Dance"
+    },
+    "organization": {
+      "city": "Houston",
+      "country": "US",
+      "name": "Houston Ballet Academy",
+      "slug": "houston-ballet-academy"
+    },
+    "prices": [
+      {
+        "amount": 750.0,
+        "currency": "USD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition — Level 1/Level 2"
+      },
+      {
+        "amount": 1500.0,
+        "currency": "USD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition — Level 3/Level 4/Intermediate/Advanced"
+      },
+      {
+        "amount": 75.0,
+        "currency": "USD",
+        "includes": [],
+        "label": "Registration fee"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-07",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-27",
+      "timezone": "America/Chicago"
+    },
+    "source": {
+      "hash": "sha256:ec539d13b322489b43813a4a74fcabd363a78a0ac3c4f32f3b17c28b1aa66f89",
+      "provider": "houston-ballet-academy",
+      "scrapedAt": "2026-06-08T14:34:51.238921Z",
+      "url": "https://www.houstonballet.org/about/academy/summer-intensive-program/youth-summer-training-program/"
+    },
+    "teachers": [],
+    "title": "Youth Summer Training Program — Session 2"
+  }
+]

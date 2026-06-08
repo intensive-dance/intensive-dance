@@ -1,0 +1,118 @@
+[
+  {
+    "ageRange": {
+      "min": 9
+    },
+    "application": {
+      "deadline": "2024-07-01",
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "url": "https://www.teatrosancarlo.it/news/workshop-passi-destate-2024/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "contemporary"
+    ],
+    "id": "teatro-san-carlo-scuola-ballo/passi-d-estate-2024",
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Naples",
+      "country": "IT",
+      "venue": "Teatro di San Carlo, via San Carlo 100"
+    },
+    "organization": {
+      "city": "Naples",
+      "country": "IT",
+      "name": "Scuola di Ballo del Teatro di San Carlo",
+      "slug": "teatro-san-carlo-scuola-ballo"
+    },
+    "prices": [
+      {
+        "amount": 250.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "2 lezioni al giorno per un totale di 8 lezioni"
+      },
+      {
+        "amount": 250.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "3 lezioni al giorno per un totale di 6 lezioni"
+      },
+      {
+        "amount": 390.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "2 lezioni al giorno per un totale di 8 lezioni"
+      },
+      {
+        "amount": 130.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "1 lezione al giorno per 2 giorni"
+      },
+      {
+        "amount": 490.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Totale di 12 lezioni"
+      }
+    ],
+    "schedule": {
+      "end": "2024-07-13",
+      "season": "2024",
+      "sessions": [],
+      "start": "2024-07-10",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:2931e7ada6bde6cee1248f1bf5f2a58125dacd9d625eda6f09c399e0d418586b",
+      "provider": "teatro-san-carlo-scuola-ballo",
+      "scrapedAt": "2026-06-08T14:35:12.187646Z",
+      "url": "https://www.teatrosancarlo.it/news/workshop-passi-destate-2024/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Stéphane Fournial",
+        "role": "Direttore Scuola di Ballo"
+      },
+      {
+        "affiliations": [],
+        "name": "Rossella Lo Sapio",
+        "role": "Docente danza classica"
+      },
+      {
+        "affiliations": [],
+        "name": "Assunta Anatrella",
+        "role": "Docente danza classica"
+      },
+      {
+        "affiliations": [],
+        "name": "Emma Cianchi",
+        "role": "Docente danza contemporanea"
+      }
+    ],
+    "title": "Passi d'Estate in Teatro 2024"
+  }
+]
