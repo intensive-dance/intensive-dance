@@ -1,34 +1,34 @@
-"""Accademia Teatro alla Scala (La Scala Academy, Milan, IT) — its summer stages.
+"""Accademia Teatro alla Scala (La Scala Academy, Milan, IT) — its summer stage.
 
 API FIRST: none usable. The Academy is **not** WordPress (`/wp-json/` → 204) — it
 runs a custom CMS with no JSON-LD, feed, or state blob. Each programme lives on a
 tidy, fully server-rendered page (the text is in the static HTML, no JS), so this
-is an HTML scrape of two known programme URLs. The site root 301-redirects to
+is an HTML scrape of the known programme URL. The site root 301-redirects to
 `http` on `www`; `make_client`/`follow_redirects` lands us back on the real page.
 
-DISCOVERY: the Danza department lists two in-scope summer programmes (the rest of
-the catalogue is long-term triennio/biennio/perfezionamento, out of scope). We
-emit **one Offering per programme** — the professional/semi-professional "Stage
-estivi di danza" and the children's pre-academic "Stage di propedeutica alla
-danza". Each programme runs several one-week sessions, kept as
-`schedule.sessions`, season-keyed from the parsed year.
+DISCOVERY: the Danza department lists a professional/semi-professional "Stage
+estivi di danza" (the summer intensive, in scope) and a "Stage di propedeutica
+alla danza" (preparatory programme for children). The propedeutica is a long-term
+preparatory course: its sessions span from June through early September (89 days),
+it is labelled "propedeutica" (prep/preparatory foundation), and it is structured
+as a recurring year-round preparatory pathway rather than a self-contained
+short-term intensive. Long-term preparatory programmes are out of scope per
+AGENTS.md, so we emit **only the summer stage** — one Offering for the
+professional/semi-professional intensive (two one-week sessions).
 
 The page is in Italian: month names are this scraper's own map (the German-month
 pattern in `john_cranko_school`), and the genres key off the curriculum list
 ("Programma"), not loose prose, so we don't leak a genre the stage doesn't teach.
 
 WHAT THIS SCRAPER EXERCISES (verified live 2026-06-05):
-  - SESSIONS: multiple "<d> <month> – <d> <month> <year>" weekly blocks per
-    programme (the summer stage has two; propedeutica four).
-  - LEVEL: the summer stage states "livello professionale o semi-professionale"
-    → `professional` + `pre-professional`; propedeutica is for children with no
-    level stated → empty.
-  - AGES: grade-group prose ("fino ai 23 anni non compiuti"; "bambini tra i 7 e
-    gli 11 anni") → numeric `age_range`.
-  - GENRES: classical-academic + modern/contemporary + repertoire/pointe for the
-    summer stage; classical-only for propedeutica.
-  - PRICES in EUR (€820/week incl. one canteen meal/day; €390/session) — the
-    summer-stage fee exercises the `meals` include.
+  - SESSIONS: multiple "<d> <month> – <d> <month> <year>" weekly blocks (two for
+    the summer stage); year back-filled on the first block of an "e"-joined run.
+  - LEVEL: "livello professionale o semi-professionale" → `professional` +
+    `pre-professional`.
+  - AGES: grade-group prose ("fino ai 23 anni non compiuti") → numeric `age_range`.
+  - GENRES: classical-academic + modern/contemporary + repertoire/pointe — keyed
+    off the Programma curriculum list.
+  - PRICES in EUR (€820/week incl. one canteen meal/day) — exercises `meals`.
   - DEADLINE: "Entro il 7 giugno 2026" → `application.deadline`; the apply URL is
     the login-gated registration portal (stored, not followed).
   - REQUIREMENTS: registration only, no audition → `NoneReq`.
@@ -61,6 +61,8 @@ from intensive_dance.models import (
 
 BASE = "https://www.accademialascala.it"
 SUMMER_STAGE = f"{BASE}/danza/stage-estivi-di-danza"
+# The propedeutica page is tracked for reference but not scraped — long-term
+# preparatory programme, out of scope per AGENTS.md.
 PROPEDEUTICA = f"{BASE}/danza/stage-di-propedeutica-alla-danza"
 APPLY_URL = "https://iscrizioni.accademialascala.it"
 
@@ -94,16 +96,12 @@ _MONTHALT = parse.months_alt(_MONTHS)
 
 
 def scrape(client: httpx.Client) -> list[Offering]:
-    offerings: list[Offering] = []
-    for builder, url in ((_build_summer_stage, SUMMER_STAGE), (_build_propedeutica, PROPEDEUTICA)):
-        resp = client.get(url, follow_redirects=True)
-        if resp.status_code == 404:
-            continue
-        resp.raise_for_status()
-        offering = builder(_text(resp.text), url)
-        if offering is not None:
-            offerings.append(offering)
-    return offerings
+    resp = client.get(SUMMER_STAGE, follow_redirects=True)
+    if resp.status_code == 404:
+        return []
+    resp.raise_for_status()
+    offering = _build_summer_stage(_text(resp.text), SUMMER_STAGE)
+    return [offering] if offering is not None else []
 
 
 def _text(html: str) -> str:
@@ -127,40 +125,6 @@ def _build_summer_stage(text: str, url: str) -> Offering | None:
         title=f"Stage estivi di danza {season}",
         genres=_genres(text),
         level=_levels(text),
-        ageRange=_age_range(text),
-        organization=ORG,
-        location=Location(venue=VENUE, city="Milan", country="IT"),
-        schedule=Schedule(
-            season=season,
-            start=start,
-            end=end,
-            timezone="Europe/Rome",
-            sessions=sessions,
-        ),
-        prices=_prices(text),
-        application=Application(
-            deadline=_deadline(text),
-            url=APPLY_URL,
-            requirements=[NoneReq()],
-            notes=_deadline_note(text),
-        ),
-    )
-
-
-def _build_propedeutica(text: str, url: str) -> Offering | None:
-    sessions = _sessions(text)
-    if not sessions:
-        return None
-    start = min(s.start for s in sessions if s.start)
-    end = max(s.end for s in sessions if s.end)
-    season = str(end.year)
-
-    return Offering(
-        id=f"accademia-teatro-alla-scala/stage-di-propedeutica-alla-danza-{season}",
-        source=Source(provider="accademia-teatro-alla-scala", url=url, scrapedAt=now_utc()),
-        title=f"Stage di propedeutica alla danza {season}",
-        # Pre-academic classical preparation only — no contemporary class listed.
-        genres=["classical"],
         ageRange=_age_range(text),
         organization=ORG,
         location=Location(venue=VENUE, city="Milan", country="IT"),

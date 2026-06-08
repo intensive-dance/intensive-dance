@@ -1,11 +1,14 @@
 """Unit tests for the Accademia Teatro alla Scala scraper (custom CMS, IT).
 
-These pin the fragile Italian-language parsing of the two summer programmes:
+These pin the fragile Italian-language parsing of the summer stage programme:
 the one-week `schedule.sessions` (including the elided "dall'8" opener and the
 year stated only on the last block of an "e"-joined run), the grade-group ages,
 the prof/semi-prof level, the curriculum genres, the EUR fee with its canteen
 `meals` include, and the single-vs-multiple deadline rule. Inline strings, no
 network — `_build_*` and the helpers take text directly.
+
+The propedeutica text is kept as a helper-test fixture (Italian parsing) but
+`_build_propedeutica` is gone — that programme is long-term/out-of-scope.
 """
 
 from __future__ import annotations
@@ -115,13 +118,12 @@ def test_build_summer_offering():
     assert offering.application.requirements == [NoneReq()]
 
 
-def test_build_propedeutica_offering_classical_only():
-    offering = scala._build_propedeutica(_PROPEDEUTICA, scala.PROPEDEUTICA)
-    assert offering is not None
-    assert offering.id == "accademia-teatro-alla-scala/stage-di-propedeutica-alla-danza-2026"
-    assert offering.genres == ["classical"]
-    assert offering.level == []
-    assert len(offering.schedule.sessions) == 4
+def test_propedeutica_excluded_from_scope():
+    # The propedeutica is a long-term preparatory programme (sessions spanning
+    # June through September, 89 days total) — not a short-term intensive.
+    # `_build_summer_stage` only builds the in-scope summer stage; there is no
+    # `_build_propedeutica` builder in the scraper.
+    assert not hasattr(scala, "_build_propedeutica")
 
 
 def test_no_sessions_yields_no_offering():

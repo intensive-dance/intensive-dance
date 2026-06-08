@@ -249,3 +249,49 @@ def test_city_date_sessions_ignores_non_city_non_date_headings():
     sessions = rbs._city_date_sessions(sections, 2025)
     assert len(sessions) == 1
     assert sessions[0].start == date(2025, 10, 16)
+
+
+# --- long-term scope filter ------------------------------------------------
+
+
+def _stub_offering(start: date | None, end: date | None) -> rbs.Offering:
+    """Minimal Offering with only schedule set, enough for _is_long_term."""
+    from intensive_dance.models import Schedule, Source
+
+    return rbs.Offering(
+        id="royal-ballet-school/test-unknown",
+        source=Source(provider="royal-ballet-school", url="https://example.com", scrapedAt=rbs.now_utc()),
+        title="Test",
+        genres=[],
+        lifecycle="scheduled",
+        level=[],
+        location=rbs.Location(),
+        organization=rbs.ORG,
+        schedule=Schedule(season="2026", start=start, end=end, sessions=[]),
+        application=rbs.Application(requirements=[]),
+        prices=[],
+    )
+
+
+def test_is_long_term_drops_177_day_programme():
+    # The Livorno Special Training Programme: Oct 2026 – Apr 2027 = 176 days.
+    o = _stub_offering(date(2026, 10, 17), date(2027, 4, 11))
+    assert rbs._is_long_term(o) is True
+
+
+def test_is_long_term_keeps_31_day_summer_intensive():
+    # UK Summer Intensive 2026: 21 Jul – 21 Aug = 31 days — genuine intensive.
+    o = _stub_offering(date(2026, 7, 21), date(2026, 8, 21))
+    assert rbs._is_long_term(o) is False
+
+
+def test_is_long_term_keeps_past_short_intensive():
+    # IDR-24: past cycles must be kept — only the span decides out-of-scope.
+    o = _stub_offering(date(2022, 4, 4), date(2022, 4, 8))  # 4 days in 2022
+    assert rbs._is_long_term(o) is False
+
+
+def test_is_long_term_keeps_undated_offering():
+    # When start or end is absent we cannot classify by span → keep it.
+    assert rbs._is_long_term(_stub_offering(None, None)) is False
+    assert rbs._is_long_term(_stub_offering(date(2026, 1, 1), None)) is False
