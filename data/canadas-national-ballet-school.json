@@ -1,0 +1,208 @@
+[
+  {
+    "application": {
+      "requirements": []
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "canadas-national-ballet-school/adult-week-1-2026",
+    "level": [
+      "intermediate"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Toronto",
+      "country": "CA",
+      "venue": "Canada's National Ballet School"
+    },
+    "organization": {
+      "city": "Toronto",
+      "country": "CA",
+      "name": "Canada's National Ballet School",
+      "slug": "canadas-national-ballet-school"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-08-08",
+      "notes": "August 4-8, 2026",
+      "season": "2026",
+      "sessions": [
+        {
+          "end": "2026-08-08",
+          "label": "Adult Ballet Summer Intensive — Elementary & Intermediate",
+          "start": "2026-08-04"
+        }
+      ],
+      "start": "2026-08-04",
+      "timezone": "America/Toronto"
+    },
+    "source": {
+      "hash": "sha256:71c7a1dff4c40cb5eabc1cdb8c35761433963321a8d45617968de397df903b29",
+      "provider": "canadas-national-ballet-school",
+      "scrapedAt": "2026-06-08T13:39:49.807868Z",
+      "url": "https://www.nbs-enb.ca/events/adult-ballet-summer-intensive"
+    },
+    "teachers": [],
+    "title": "Adult Ballet Summer Intensive — Elementary & Intermediate"
+  },
+  {
+    "application": {
+      "notes": "Admission to the Intensive Ballet stream is by application only (submitted via the NBS online form). A placement class on the first day determines the dancer's level; a minimum of 3-4 years of dance training is expected.",
+      "requirements": [
+        {
+          "description": "Admission to the Intensive Ballet stream is by application only (submitted via the NBS online form). A placement class on the first day determines the dancer's level; a minimum of 3-4 years of dance training is expected.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "url": "https://nbsdm.ca1.qualtrics.com/jfe/form/SV_cIx3XF2KERoxOJg"
+    },
+    "genres": [
+      "classical",
+      "repertoire"
+    ],
+    "id": "canadas-national-ballet-school/intensive-ballet-2026",
+    "level": [
+      "pre-professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Toronto",
+      "country": "CA",
+      "venue": "Canada's National Ballet School"
+    },
+    "organization": {
+      "city": "Toronto",
+      "country": "CA",
+      "name": "Canada's National Ballet School",
+      "slug": "canadas-national-ballet-school"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-08-14",
+      "notes": "August 4-14, 2026",
+      "season": "2026",
+      "sessions": [
+        {
+          "end": "2026-08-14",
+          "label": "Summer Immersion — Intensive Ballet",
+          "start": "2026-08-04"
+        }
+      ],
+      "start": "2026-08-04",
+      "timezone": "America/Toronto"
+    },
+    "source": {
+      "hash": "sha256:f856e52c3167f347c67a7d6efb86efb0d6e40e899f4b284a8885a1725e28d1dd",
+      "provider": "canadas-national-ballet-school",
+      "scrapedAt": "2026-06-08T13:39:48.111328Z",
+      "url": "https://www.nbs-enb.ca/events/young-dancers-program-summer-immersion"
+    },
+    "teachers": [],
+    "title": "Summer Immersion — Intensive Ballet"
+  },
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 7
+    },
+    "application": {
+      "notes": "No application or audition is required.",
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "url": "https://app.amilia.com/store/en/nbs-enb/api/Program/Detail?programId=kMQeOqk&subCategoryIds=6476542"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "canadas-national-ballet-school/open-dance-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Toronto",
+      "country": "CA",
+      "venue": "Canada's National Ballet School"
+    },
+    "organization": {
+      "city": "Toronto",
+      "country": "CA",
+      "name": "Canada's National Ballet School",
+      "slug": "canadas-national-ballet-school"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-08-14",
+      "notes": "August 4-14, 2026",
+      "season": "2026",
+      "sessions": [
+        {
+          "end": "2026-08-14",
+          "label": "Summer Immersion — Open Dance",
+          "start": "2026-08-04"
+        }
+      ],
+      "start": "2026-08-04",
+      "timezone": "America/Toronto"
+    },
+    "source": {
+      "hash": "sha256:d4a23b0d9ecbab699ce1d1f373f278dd0ee147aca933f7864a44089b73af4c1d",
+      "provider": "canadas-national-ballet-school",
+      "scrapedAt": "2026-06-08T13:39:48.108258Z",
+      "url": "https://www.nbs-enb.ca/events/young-dancers-program-summer-immersion"
+    },
+    "teachers": [],
+    "title": "Summer Immersion — Open Dance"
+  },
+  {
+    "application": {
+      "requirements": []
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "canadas-national-ballet-school/adult-week-2-2026",
+    "level": [
+      "beginner"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Toronto",
+      "country": "CA",
+      "venue": "Canada's National Ballet School"
+    },
+    "organization": {
+      "city": "Toronto",
+      "country": "CA",
+      "name": "Canada's National Ballet School",
+      "slug": "canadas-national-ballet-school"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-08-15",
+      "notes": "August 11-15, 2026",
+      "season": "2026",
+      "sessions": [
+        {
+          "end": "2026-08-15",
+          "label": "Adult Ballet Summer Intensive — Beginner",
+          "start": "2026-08-11"
+        }
+      ],
+      "start": "2026-08-11",
+      "timezone": "America/Toronto"
+    },
+    "source": {
+      "hash": "sha256:7b631e8f402d9922a74c496c8b9d3dc5081213ef34a398f80174a4f9e1340723",
+      "provider": "canadas-national-ballet-school",
+      "scrapedAt": "2026-06-08T13:39:49.812002Z",
+      "url": "https://www.nbs-enb.ca/events/adult-ballet-summer-intensive"
+    },
+    "teachers": [],
+    "title": "Adult Ballet Summer Intensive — Beginner"
+  }
+]
