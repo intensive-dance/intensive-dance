@@ -1,0 +1,271 @@
+[
+  {
+    "application": {
+      "deadline": "2026-06-01",
+      "notes": "Deadline to submit audition material is June 1st. Registration closes once maximum participants is reached.",
+      "requirements": [
+        {
+          "description": "Send audition material by e-mail to secretary@nachoduatoacademy.com. Required elements: centre adage, battement tendu, jeté, pirouettes, petit allegro, grand allegro. Specify the course (Junior or Senior) when applying.",
+          "specificity": "specific",
+          "type": "video"
+        }
+      ],
+      "url": "https://nachoduatoacademy.com/en/summer-intensive-ballet-course-2/"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "character"
+    ],
+    "id": "nacho-duato-academy/summer-intensive-senior-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Madrid",
+      "country": "ES",
+      "venue": "Nacho Duato Academy"
+    },
+    "organization": {
+      "city": "Madrid",
+      "country": "ES",
+      "name": "Nacho Duato Academy",
+      "slug": "nacho-duato-academy"
+    },
+    "prices": [
+      {
+        "amount": 2500.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition",
+          "accommodation",
+          "meals"
+        ],
+        "label": "All-inclusive Senior (2 weeks)",
+        "notes": "Includes all classes, 14 nights lodging, breakfast and dinner."
+      },
+      {
+        "amount": 750.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Senior — 1 week (all classes)",
+        "notes": "Includes Sonia Dawkins special guest workshop."
+      },
+      {
+        "amount": 1400.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Senior — 2 weeks (all classes)",
+        "notes": "Includes Sonia Dawkins special guest workshop."
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-04",
+      "notes": "June 22 – July 4, 2026",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-06-22",
+      "timezone": "Europe/Madrid"
+    },
+    "source": {
+      "hash": "sha256:7d99f958f6c627953319fc50d69a4e8bb1883fb882193aa7852440a5d1bdd85f",
+      "provider": "nacho-duato-academy",
+      "scrapedAt": "2026-06-08T10:56:58.988609Z",
+      "url": "https://nachoduatoacademy.com/en/summer-intensive-ballet-course-2/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "organization": "Compañía Nacional de Danza",
+            "role": "Former Principal Dancer"
+          }
+        ],
+        "name": "Luis Martín Oya",
+        "role": "director"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Compañía Nacional de Danza",
+            "role": "Former Principal Dancer"
+          }
+        ],
+        "name": "Mar Baudesson",
+        "role": "ballet master"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Compañía Nacional de Danza",
+            "role": "Former Principal Dancer"
+          }
+        ],
+        "name": "Luisa María Arias",
+        "role": "ballet master"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Hamburg Ballet / Compañía Nacional de Danza",
+            "role": "Former Dancer"
+          }
+        ],
+        "name": "Emilia Jovanovich",
+        "role": "director"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Alberta Ballet / Ballet Florida",
+            "role": "Former Dancer"
+          }
+        ],
+        "name": "Lorena Jimenez",
+        "role": "director of NDA Conservatory"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Ballet Víctor Ullate",
+            "role": "Former Dancer"
+          }
+        ],
+        "name": "Marta Hernández",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Ballet Víctor Ullate",
+            "role": "Former Dancer"
+          }
+        ],
+        "name": "Ana Diez",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Alvin Ailey American Dance Theater",
+            "role": "Faculty / Director"
+          }
+        ],
+        "name": "Sonia Dawkins",
+        "role": "guest teacher"
+      }
+    ],
+    "title": "NDA Summer Intensive Ballet Course — Senior 2026"
+  },
+  {
+    "application": {
+      "deadline": "2026-06-01",
+      "notes": "Deadline to submit audition material is June 1st. Registration closes once maximum participants is reached.",
+      "requirements": [
+        {
+          "description": "Send audition material by e-mail to secretary@nachoduatoacademy.com. Required elements: centre adage, battement tendu, jeté, pirouettes, petit allegro, grand allegro. Specify the course (Junior or Senior) when applying.",
+          "specificity": "specific",
+          "type": "video"
+        }
+      ],
+      "url": "https://nachoduatoacademy.com/en/summer-intensive-ballet-course-2/"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "character"
+    ],
+    "id": "nacho-duato-academy/summer-intensive-junior-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Madrid",
+      "country": "ES",
+      "venue": "Nacho Duato Academy"
+    },
+    "organization": {
+      "city": "Madrid",
+      "country": "ES",
+      "name": "Nacho Duato Academy",
+      "slug": "nacho-duato-academy"
+    },
+    "prices": [
+      {
+        "amount": 450.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Junior — 1 week"
+      },
+      {
+        "amount": 800.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Junior — 2 weeks"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-04",
+      "notes": "June 22 – July 4, 2026",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-06-22",
+      "timezone": "Europe/Madrid"
+    },
+    "source": {
+      "hash": "sha256:d1a5392ff41725d4429428ced6b6da51686f0e383a23596ffa31a60f53a285ea",
+      "provider": "nacho-duato-academy",
+      "scrapedAt": "2026-06-08T10:56:58.989299Z",
+      "url": "https://nachoduatoacademy.com/en/summer-intensive-ballet-course-2/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "organization": "Nacho Duato Academy",
+            "role": "Faculty"
+          }
+        ],
+        "name": "Lara Gonzalez",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Ballet Víctor Ullate",
+            "role": "Former Dancer"
+          }
+        ],
+        "name": "Marta Hernández",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Ballet Víctor Ullate",
+            "role": "Former Dancer"
+          }
+        ],
+        "name": "Ana Diez",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Compañía Nacional de Danza",
+            "role": "Former Principal Dancer"
+          }
+        ],
+        "name": "Mar Baudesson",
+        "role": "teacher"
+      }
+    ],
+    "title": "NDA Summer Intensive Ballet Course — Junior 2026"
+  }
+]

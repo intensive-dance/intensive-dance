@@ -1,0 +1,78 @@
+[
+  {
+    "ageRange": {
+      "max": 25,
+      "min": 12
+    },
+    "application": {
+      "deadline": "2026-07-01",
+      "notes": "YouTube video link required (max 6 minutes): ballet and contemporary class material (centre work; no barre). Dancers applying for individual coaching also submit a second link (max 3 minutes) of a pre-rehearsed solo or variation.",
+      "requirements": [
+        {
+          "description": "YouTube video link required (max 6 minutes): ballet and contemporary class material (centre work; no barre). Dancers applying for individual coaching also submit a second link (max 3 minutes) of a pre-rehearsed solo or variation.",
+          "specificity": "specific",
+          "type": "video"
+        }
+      ],
+      "url": "https://www.koncon.nl/en/dance-intensive/programme-and-registration"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "royal-conservatoire-the-hague/international-dance-intensive-2026",
+    "level": [
+      "advanced",
+      "pre-professional",
+      "professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "The Hague",
+      "country": "NL",
+      "venue": "Royal Conservatoire The Hague"
+    },
+    "organization": {
+      "city": "The Hague",
+      "country": "NL",
+      "name": "Royal Conservatoire The Hague",
+      "slug": "royal-conservatoire-the-hague"
+    },
+    "prices": [
+      {
+        "amount": 550.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Advanced & Pre-professional Dance Intensive course fee",
+        "notes": "Includes all dance classes, workshops, and coaching. Accommodation and meals not included."
+      },
+      {
+        "amount": 350.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Royal Conservatoire student fee",
+        "notes": "Includes all dance classes, workshops, and coaching. Accommodation and meals not included."
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-29",
+      "notes": "24-29th August 2026",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-24",
+      "timezone": "Europe/Amsterdam"
+    },
+    "source": {
+      "hash": "sha256:78d5ba63ba91ed9b902d5a10fcf5d7d94323dcfc98aab474d182084d6b1a6bbe",
+      "provider": "royal-conservatoire-the-hague",
+      "scrapedAt": "2026-06-08T10:58:43.204219Z",
+      "url": "https://www.koncon.nl/en/dance-intensive"
+    },
+    "teachers": [],
+    "title": "International Dance Intensive 2026"
+  }
+]
