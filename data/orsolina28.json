@@ -76,6 +76,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
+      "attemptedAt": "2026-06-08T12:29:06.280526Z",
       "hash": "sha256:6ef2e5ffd4f3fb3e91d9ceb457f27e9530e90bfc18bc67ca4b71a4d128f4e288",
       "provider": "orsolina28",
       "scrapedAt": "2026-06-08T11:07:34.009393Z",
@@ -182,6 +183,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
+      "attemptedAt": "2026-06-08T12:29:06.280526Z",
       "hash": "sha256:cb8be159c97ce5199c16802c41feaac8115951384fa6bc21fa54fbf159133f4b",
       "provider": "orsolina28",
       "scrapedAt": "2026-06-08T11:07:34.958431Z",
@@ -288,6 +290,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
+      "attemptedAt": "2026-06-08T12:29:06.280526Z",
       "hash": "sha256:ee53790770784a7c1d18f5fc4d9d185458c01caf55cbe62f1197657bc805d412",
       "provider": "orsolina28",
       "scrapedAt": "2026-06-08T11:07:36.406618Z",
@@ -394,6 +397,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
+      "attemptedAt": "2026-06-08T12:29:06.280526Z",
       "hash": "sha256:18764b1d6a6867339f3d9d6eec8271d01185a3cf7c4cd3f7158a5ed4f8ca19c8",
       "provider": "orsolina28",
       "scrapedAt": "2026-06-08T11:07:36.028380Z",
@@ -504,6 +508,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
+      "attemptedAt": "2026-06-08T12:29:06.280526Z",
       "hash": "sha256:2ab76c4e94bbc519a83dc31f3d54940714a5203eb3bb888f0fb2d01453fa83b2",
       "provider": "orsolina28",
       "scrapedAt": "2026-06-08T11:07:33.677893Z",
@@ -611,6 +616,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
+      "attemptedAt": "2026-06-08T12:29:06.280526Z",
       "hash": "sha256:ef19c640e14385e0f8a090bef704e839022c132847ef83e43438825fc42b540a",
       "provider": "orsolina28",
       "scrapedAt": "2026-06-08T11:07:34.352224Z",
@@ -717,6 +723,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
+      "attemptedAt": "2026-06-08T12:29:06.280526Z",
       "hash": "sha256:ca9578c6875b5c3641a053f5092107f369a21059bd1a6e8acfadb90083e61efe",
       "provider": "orsolina28",
       "scrapedAt": "2026-06-08T11:07:35.689997Z",
@@ -828,6 +835,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
+      "attemptedAt": "2026-06-08T12:29:06.280526Z",
       "hash": "sha256:64bb8bf0d599305d35521312509ffce9ad4b086e19b230efef65836db19eed03",
       "provider": "orsolina28",
       "scrapedAt": "2026-06-08T11:07:35.317907Z",
@@ -929,6 +937,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
+      "attemptedAt": "2026-06-08T12:29:06.280526Z",
       "hash": "sha256:5e86264b1416136e8fce5b9ab018b33da0b417aaa2ddb47ceb9129edc75d32f2",
       "provider": "orsolina28",
       "scrapedAt": "2026-06-08T11:07:33.355408Z",
