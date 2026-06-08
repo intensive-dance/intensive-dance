@@ -989,6 +989,78 @@
       "url": "https://www.bayerballet.com/",
       "tier": "secondary",
       "status": "seed"
+    },
+    {
+      "slug": "cords-dance",
+      "name": "Cords Dance",
+      "country": "PL",
+      "city": "Wrocław",
+      "url": "https://cordsdance.com/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "akademia-sztuki-baletowej",
+      "name": "Akademia Sztuki Baletowej (ASB)",
+      "country": "PL",
+      "city": "Gdańsk",
+      "url": "https://asb-balet.pl/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "mlody-balet-polski",
+      "name": "Młody Balet Polski",
+      "country": "PL",
+      "city": "Warszawa",
+      "url": "https://balet.info.pl/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "neoclassica",
+      "name": "Centrum Baletowe Neoclassica",
+      "country": "PL",
+      "city": "Warszawa",
+      "url": "https://www.neoclassica.pl/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "art-ballet-gdynia",
+      "name": "ART Ballet",
+      "country": "PL",
+      "city": "Gdynia",
+      "url": "https://www.artballet.pl/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "centrum-sztuki-tanca",
+      "name": "Centrum Sztuki Tańca",
+      "country": "PL",
+      "city": "Kraków",
+      "url": "https://centrumsztukitanca.pl/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "les-ballets-de-pologne",
+      "name": "Les Ballets de Pologne",
+      "country": "PL",
+      "city": "Warszawa",
+      "url": "https://lesballets.pl/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "fouette",
+      "name": "Szkoła Tańca i Baletu Fouetté",
+      "country": "PL",
+      "city": "Poznań",
+      "url": "https://fouette.pl/",
+      "tier": "secondary",
+      "status": "seed"
     }
   ]
 }
