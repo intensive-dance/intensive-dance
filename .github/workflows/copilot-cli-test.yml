@@ -1,0 +1,29 @@
+name: Copilot CLI test
+
+on:
+  workflow_dispatch:
+    inputs:
+      prompt:
+        description: "Prompt to send to GitHub Copilot CLI"
+        required: true
+        default: "Say hello and tell me a fun fact about ballet."
+
+permissions:
+  contents: read
+  copilot-requests: write
+
+jobs:
+  ask-copilot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: austenstone/copilot-cli@v3
+        id: copilot
+        with:
+          prompt: ${{ inputs.prompt }}
+          share: true
+
+      - name: Print the response
+        run: |
+          echo "::group::Copilot response"
+          cat "${{ steps.copilot.outputs.session-path }}"
+          echo "::endgroup::"
