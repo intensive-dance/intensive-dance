@@ -1,0 +1,138 @@
+[
+  {
+    "application": {
+      "requirements": [
+        {
+          "notes": "Two photos in dance attire (leotard and tights): développé à la seconde and primer arabesque. Dancers under 13 in demi-pointe shoes.",
+          "poses": [
+            "Développé à la seconde",
+            "Primer Arabesque"
+          ],
+          "specificity": "defined-poses",
+          "type": "photos"
+        }
+      ],
+      "status": "open",
+      "url": "https://corellabarcelona.com/company-workshop-con-angel-corella/"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "repertoire"
+    ],
+    "id": "corella-dance-academy/angel-corella-workshop-2026",
+    "level": [
+      "pre-professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Barcelona",
+      "country": "ES",
+      "venue": "Masía Mas Berenguer, Parc Natural del Montseny"
+    },
+    "organization": {
+      "city": "Barcelona",
+      "country": "ES",
+      "name": "Corella Dance Academy",
+      "slug": "corella-dance-academy"
+    },
+    "prices": [
+      {
+        "amount": 1100.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Training",
+        "notes": "IVA included."
+      },
+      {
+        "amount": 770.0,
+        "currency": "EUR",
+        "includes": [
+          "accommodation",
+          "meals"
+        ],
+        "label": "Housing",
+        "notes": "IVA included."
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-11",
+      "notes": "Del 6 al 11 de julio de 2026",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-06",
+      "timezone": "Europe/Madrid"
+    },
+    "source": {
+      "hash": "sha256:eb2d29633b4299ba385f0953954ab8b5d8ef201f7ddefd2b96d14c973dba829e",
+      "provider": "corella-dance-academy",
+      "scrapedAt": "2026-06-08T10:57:04.710545Z",
+      "url": "https://corellabarcelona.com/company-workshop-con-angel-corella/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "American Ballet Theatre",
+            "role": "Former principal dancer"
+          },
+          {
+            "current": true,
+            "organization": "Corella Dance Academy",
+            "role": "Artistic Director"
+          }
+        ],
+        "name": "Ángel Corella",
+        "role": "Artistic Director"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Corella Dance Academy",
+            "role": "Director"
+          }
+        ],
+        "name": "Carmen Corella",
+        "role": "Director"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Corella Dance Academy",
+            "role": "Faculty"
+          }
+        ],
+        "name": "Dayron Vera",
+        "role": "Faculty"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Corella Dance Academy",
+            "role": "Faculty"
+          }
+        ],
+        "name": "Russell Ducker",
+        "role": "Faculty"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Corella Dance Academy",
+            "role": "Faculty"
+          }
+        ],
+        "name": "Andrea Rodriguez",
+        "role": "Faculty"
+      }
+    ],
+    "title": "Company Workshop con Ángel Corella 2026"
+  }
+]

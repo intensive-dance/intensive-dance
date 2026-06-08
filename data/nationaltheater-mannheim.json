@@ -1,0 +1,88 @@
+[
+  {
+    "ageRange": {
+      "max": null,
+      "min": 18
+    },
+    "application": {
+      "deadline": "2026-02-28",
+      "notes": "+++ Application is closed +++",
+      "requirements": [
+        {
+          "type": "headshot"
+        },
+        {
+          "description": "One video link (YouTube or Vimeo): Showreel (stage or studio) + 1 minute of improvisation, unedited, to original music. Total max 3 minutes.",
+          "specificity": "specific",
+          "type": "video"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.nationaltheater-mannheim.de/das-theater/tanz/summer-intensive/"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "nationaltheater-mannheim/summer-intensive-2026",
+    "level": [
+      "professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Mannheim",
+      "country": "DE",
+      "venue": "Tanzhaus Käfertal"
+    },
+    "organization": {
+      "city": "Mannheim",
+      "country": "DE",
+      "name": "Nationaltheater Mannheim",
+      "slug": "nationaltheater-mannheim"
+    },
+    "prices": [
+      {
+        "amount": 650.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition",
+          "meals"
+        ],
+        "label": "Tuition fee",
+        "notes": "Including daily lunch; accommodation excluded."
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-19",
+      "notes": "Monday, July 13th – Sunday, July 19th 2026",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-13",
+      "timezone": "Europe/Berlin"
+    },
+    "source": {
+      "hash": "sha256:96e63d3a4996965d8a13dae20621f202d0f1c0b1f20084785025abf745fc3a47",
+      "provider": "nationaltheater-mannheim",
+      "scrapedAt": "2026-06-08T10:58:56.934580Z",
+      "url": "https://www.nationaltheater-mannheim.de/das-theater/tanz/summer-intensive/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Stephan Thoss",
+        "role": "Artistic Director / Course Leader"
+      },
+      {
+        "affiliations": [],
+        "name": "Luis Tena Torres",
+        "role": "Choreographer (new creation)"
+      },
+      {
+        "affiliations": [],
+        "name": "Albert Galindo",
+        "role": "Choreographer (new creation)"
+      }
+    ],
+    "title": "NTM Tanz Summer Intensive 2026"
+  }
+]

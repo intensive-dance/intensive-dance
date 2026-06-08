@@ -755,6 +755,69 @@
       "url": "https://biarritz-academie-danse.com/",
       "tier": "secondary",
       "status": "live"
+    },
+    {
+      "slug": "ndt-summer-intensive",
+      "name": "NDT Summer Intensive",
+      "country": "NL",
+      "city": "The Hague",
+      "url": "https://www.ndt.nl/en/ndt-summer-intensive/",
+      "tier": "marquee",
+      "status": "live"
+    },
+    {
+      "slug": "royal-conservatoire-the-hague",
+      "name": "Royal Conservatoire The Hague",
+      "country": "NL",
+      "city": "The Hague",
+      "url": "https://www.koncon.nl/",
+      "tier": "marquee",
+      "status": "live"
+    },
+    {
+      "slug": "nacho-duato-academy",
+      "name": "Nacho Duato Academy",
+      "country": "ES",
+      "city": "Madrid",
+      "url": "https://nachoduatoacademy.com/",
+      "tier": "secondary",
+      "status": "live"
+    },
+    {
+      "slug": "corella-dance-academy",
+      "name": "Corella Dance Academy",
+      "country": "ES",
+      "city": "Barcelona",
+      "url": "https://www.corelladanceacademy.com/",
+      "tier": "secondary",
+      "status": "live"
+    },
+    {
+      "slug": "bubenicek-masterclasses",
+      "name": "Jiří Bubeníček Ballet Masterclasses",
+      "country": "CZ",
+      "city": "Prague",
+      "url": "https://bballetmasterclasses.com/",
+      "tier": "secondary",
+      "status": "live"
+    },
+    {
+      "slug": "nationaltheater-mannheim",
+      "name": "Nationaltheater Mannheim",
+      "country": "DE",
+      "city": "Mannheim",
+      "url": "https://www.nationaltheater-mannheim.de/",
+      "tier": "secondary",
+      "status": "live"
+    },
+    {
+      "slug": "orsolina28",
+      "name": "Orsolina28",
+      "country": "IT",
+      "city": "Moncalvo",
+      "url": "https://orsolina28.it/",
+      "tier": "secondary",
+      "status": "live"
     }
   ]
 }

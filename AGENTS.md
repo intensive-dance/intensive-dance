@@ -320,6 +320,14 @@ when a second provider genuinely needs the identical thing.
   cancelled cycles; don't emit empty-genre Offerings.
 - **Comments explain *why*, not *what*** (see the global commenting rules). The
   scraper docstrings carry the source-shape reasoning.
+- **`selectolax` `node.css(tag)` includes the node itself** when the node's
+  own tag matches — so `li.css("li")` always yields at least one element (the
+  `li` itself), making it useless as a "has child `<li>`" guard. Use
+  `li.css_first("ul")` (looks for a descendant `<ul>`) to detect a non-leaf
+  list item. Likewise, when a parent `<li>` nests a sub-list, its `.text()`
+  collapses all descendants — strip the nested block from the raw HTML
+  (`node.html.replace(child.html, "")`) to get just the parent's own text (see
+  `orsolina28._tab_prices`).
 - **Wix sites are server-rendered** (content is in the static HTML, no JS) but
   pepper the markup with **zero-width spaces** (splitting "€740", gluing a name
   to the next heading) and **letter-space** inline form labels ("a rabesque").
