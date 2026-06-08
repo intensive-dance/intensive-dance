@@ -28,6 +28,7 @@
       "timezone": "Europe/Warsaw"
     },
     "source": {
+      "attemptedAt": "2026-06-08T21:35:01.322013Z",
       "hash": "sha256:682fc71c01a2b0ee71026ee9bbbf651a77f88b827e1f509c72c40a83c474e6d6",
       "provider": "fouette",
       "scrapedAt": "2026-06-08T21:21:46.732533Z",
@@ -78,6 +79,7 @@
       "timezone": "Europe/Warsaw"
     },
     "source": {
+      "attemptedAt": "2026-06-08T21:35:01.322013Z",
       "hash": "sha256:65029f4df13d4b150c51f7fc50b26eee988e21de1a8b65127326c9ef3aa7dd37",
       "provider": "fouette",
       "scrapedAt": "2026-06-08T21:21:46.729665Z",
