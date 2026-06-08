@@ -980,6 +980,15 @@
       "url": "https://kungligasvenskabalettskolan.stockholm/en/",
       "tier": "marquee",
       "status": "seed"
+    },
+    {
+      "slug": "bayer-ballet-academy",
+      "name": "Bayer Ballet Academy",
+      "country": "US",
+      "city": "Mountain View",
+      "url": "https://www.bayerballet.com/",
+      "tier": "secondary",
+      "status": "seed"
     }
   ]
 }
