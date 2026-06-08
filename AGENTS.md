@@ -202,6 +202,27 @@ URL or bearer in source.
 
 ---
 
+## Copilot CLI (manual CI smoke test)
+
+`.github/workflows/copilot-cli-test.yml` is a `workflow_dispatch` job for poking
+**GitHub Copilot CLI** from Actions — type a prompt under **Actions → Copilot CLI
+test → Run workflow**, the reply prints to the step log. It installs
+`@github/copilot` and runs `copilot -p "<prompt>"` directly (the official
+recipe — *not* the `austenstone/copilot-cli` marketplace action, whose `v3` tag
+is broken and whose token wiring grabs the wrong token).
+
+**Auth — `COPILOT_CLI_TOKEN`, same storage pattern as the fetch proxy.** Stored
+both ways: an **Actions variable** (dev) and an **Actions secret** (CI). It's a
+**PAT** with the **Copilot Requests** account permission, on an account holding a
+Copilot license. The CLI reads it from the `COPILOT_GITHUB_TOKEN` env var — the
+workflow maps `secrets.COPILOT_CLI_TOKEN` onto it. The default Actions
+`GITHUB_TOKEN` does **not** work (it's a server-to-server token the Copilot API
+rejects); `copilot-requests: write` as a workflow permission is org-only and
+fails the validator on this personal repo. Locally: `export
+COPILOT_GITHUB_TOKEN=$(gh variable get COPILOT_CLI_TOKEN)`.
+
+---
+
 ## Scraper anatomy (mirror an existing one)
 
 - **WordPress-API example:** `scrapers/joffrey_ballet_school.py`
