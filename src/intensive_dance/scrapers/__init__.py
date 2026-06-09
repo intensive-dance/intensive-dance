@@ -64,6 +64,7 @@ from . import (
     masters_of_ballet_academy,
     mlody_balet_polski,
     mosa_ballet_school,
+    munich_ballet_intensive,
     nacho_duato_academy,
     nationaltheater_mannheim,
     ndt_summer_intensive,
@@ -88,6 +89,7 @@ from . import (
     stage_charles_jude,
     summer_sensation_intensive,
     teatro_san_carlo_scuola_ballo,
+    temps_lie_ballet_workshop_japan,
     tokyo_ballet_school,
     tokyo_city_ballet,
     yorkshire_ballet_seminars,
@@ -176,4 +178,6 @@ SCRAPERS: dict[str, Scraper] = {
     "art-ballet-gdynia": art_ballet_gdynia.scrape,
     "centrum-sztuki-tanca": centrum_sztuki_tanca.scrape,
     "les-ballets-de-pologne": les_ballets_de_pologne.scrape,
+    "munich-ballet-intensive": munich_ballet_intensive.scrape,
+    "temps-lie-ballet-workshop-japan": temps_lie_ballet_workshop_japan.scrape,
 }
