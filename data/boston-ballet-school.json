@@ -76,7 +76,7 @@
       "timezone": "America/New_York"
     },
     "source": {
-      "attemptedAt": "2026-06-09T00:18:26.977178Z",
+      "attemptedAt": "2026-06-09T17:37:15.783623Z",
       "hash": "sha256:596668cb8fac60e04829307d67d1a4efa94d3d11225bfbda1fed4ac58ed13f12",
       "provider": "boston-ballet-school",
       "scrapedAt": "2026-06-08T14:08:34.696257Z",
@@ -170,7 +170,7 @@
       "timezone": "America/New_York"
     },
     "source": {
-      "attemptedAt": "2026-06-09T00:18:26.977178Z",
+      "attemptedAt": "2026-06-09T17:37:15.783623Z",
       "hash": "sha256:be333bed8d420e25c7bd6a2b911f429248b8d5aa9238cffbfd5ce790c1b56e58",
       "provider": "boston-ballet-school",
       "scrapedAt": "2026-06-08T14:08:34.697722Z",
@@ -264,7 +264,7 @@
       "timezone": "America/New_York"
     },
     "source": {
-      "attemptedAt": "2026-06-09T00:18:26.977178Z",
+      "attemptedAt": "2026-06-09T17:37:15.783623Z",
       "hash": "sha256:2c70d688c08943647c57f8abe9f485e295a194fca6be84c3804a99c5f30b2d46",
       "provider": "boston-ballet-school",
       "scrapedAt": "2026-06-08T14:08:34.697822Z",
@@ -358,7 +358,7 @@
       "timezone": "America/New_York"
     },
     "source": {
-      "attemptedAt": "2026-06-09T00:18:26.977178Z",
+      "attemptedAt": "2026-06-09T17:37:15.783623Z",
       "hash": "sha256:11c7a41579dca4953d7d686e8d23fa8d52aeaaabd947c211b26f9739762cd921",
       "provider": "boston-ballet-school",
       "scrapedAt": "2026-06-08T14:08:34.697843Z",

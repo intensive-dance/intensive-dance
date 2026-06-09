@@ -51,7 +51,7 @@
       "start": "2026-07-27"
     },
     "source": {
-      "attemptedAt": "2026-06-09T00:18:26.193005Z",
+      "attemptedAt": "2026-06-09T17:37:19.162788Z",
       "hash": "sha256:f7161a27a5924d99d851ab473c9eaa6335aaa2ceee581f07617a3c8c90c623f6",
       "provider": "ballet-ireland",
       "scrapedAt": "2026-06-08T14:08:39.080817Z",
@@ -141,7 +141,7 @@
       "start": "2026-08-04"
     },
     "source": {
-      "attemptedAt": "2026-06-09T00:18:26.193005Z",
+      "attemptedAt": "2026-06-09T17:37:19.162788Z",
       "hash": "sha256:7dbba986acac37b3700c08db6ae85ef67b64d9b0997a63a91b2353a023cd592e",
       "provider": "ballet-ireland",
       "scrapedAt": "2026-06-08T14:08:39.080860Z",
