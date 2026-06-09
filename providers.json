@@ -322,7 +322,7 @@
       "city": "Budapest",
       "url": "https://balletsummercoursebudapest.com/",
       "tier": "secondary",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "royal-danish-ballet-summer-school",
@@ -367,7 +367,7 @@
       "city": "Helsinki",
       "url": "https://finsummerdance.com/",
       "tier": "secondary",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "ballet-ruso-barcelona",
@@ -1069,7 +1069,7 @@
       "city": "Las Vegas",
       "url": "https://vaganovainternationalprogram.com/",
       "tier": "secondary",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "conservatorio-annarella",

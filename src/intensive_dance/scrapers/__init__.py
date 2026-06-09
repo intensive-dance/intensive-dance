@@ -26,6 +26,7 @@ from . import (
     australian_ballet_school,
     ballet_ireland,
     ballet_ruso_barcelona,
+    ballet_summer_course_budapest,
     ballet_workshops_bucharest,
     balletstage,
     balletto_di_roma,
@@ -44,6 +45,7 @@ from . import (
     ecole_danse_opera_paris,
     english_national_ballet_school,
     escola_bolshoi_brasil,
+    finland_international_summer_ballet_school,
     finnish_national_ballet,
     fondazione_monreart,
     fouette,
@@ -92,6 +94,7 @@ from . import (
     temps_lie_ballet_workshop_japan,
     tokyo_ballet_school,
     tokyo_city_ballet,
+    vaganova_international_program,
     yorkshire_ballet_seminars,
     young_stars_ballet,
 )
@@ -178,6 +181,9 @@ SCRAPERS: dict[str, Scraper] = {
     "art-ballet-gdynia": art_ballet_gdynia.scrape,
     "centrum-sztuki-tanca": centrum_sztuki_tanca.scrape,
     "les-ballets-de-pologne": les_ballets_de_pologne.scrape,
+    "vaganova-international-program": vaganova_international_program.scrape,
+    "finland-international-summer-ballet-school": finland_international_summer_ballet_school.scrape,
+    "ballet-summer-course-budapest": ballet_summer_course_budapest.scrape,
     "munich-ballet-intensive": munich_ballet_intensive.scrape,
     "temps-lie-ballet-workshop-japan": temps_lie_ballet_workshop_japan.scrape,
 }
