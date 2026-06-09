@@ -5,7 +5,6 @@
       "min": 9
     },
     "application": {
-      "notes": "Registration is closed; new applicants join a waiting list. Admission is by video audition (submit a YouTube/Vimeo audition video link).",
       "requirements": [
         {
           "description": "Admission is by video audition: submit a YouTube or Vimeo audition video link via the program's audition form.",
@@ -13,7 +12,6 @@
           "type": "video"
         }
       ],
-      "status": "closed",
       "url": "https://vaganovainternationalprogram.com/"
     },
     "genres": [
@@ -85,9 +83,10 @@
       "timezone": "America/Los_Angeles"
     },
     "source": {
-      "hash": "sha256:014212073a9cce0aa41576ce0af61029cbf160ee98e81a29a65b03ef0b1d744d",
+      "attemptedAt": "2026-06-09T11:59:24.328809Z",
+      "hash": "sha256:1871bffa5d5a69b00a60bc7278e8ecf99d0582cf5d2b3d5b8683f589079d7a91",
       "provider": "vaganova-international-program",
-      "scrapedAt": "2026-06-09T00:29:13.778918Z",
+      "scrapedAt": "2026-06-09T11:59:25.572625Z",
       "url": "https://vaganovainternationalprogram.com/"
     },
     "teachers": [
