@@ -1,0 +1,91 @@
+[
+  {
+    "ageRange": {
+      "max": null,
+      "min": 13
+    },
+    "application": {
+      "notes": "During the Intensive, participants will have the opportunity to audition for the Mosa Ballet School's Summer Intensive. This high-level Summer Intensive will be held at the end of August 2026 in Liège, Belgium.",
+      "requirements": [],
+      "status": "closed",
+      "url": "https://www.jbi-japanballetintensives.com/registration"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "contemporary"
+    ],
+    "id": "japan-ballet-intensives/spring-intensive-osaka-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Osaka",
+      "country": "JP",
+      "venue": "Garage Art Space"
+    },
+    "organization": {
+      "city": "Osaka",
+      "country": "JP",
+      "name": "Japan Ballet Intensives",
+      "slug": "japan-ballet-intensives"
+    },
+    "prices": [
+      {
+        "amount": 25000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "2-Day Workshop (4 classes, tax incl.)",
+        "notes": "50% reduction on the regular price starting from the second participant of the same family."
+      },
+      {
+        "amount": 15000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "One day (2 classes, tax incl.)",
+        "notes": "50% reduction on the regular price starting from the second participant of the same family."
+      }
+    ],
+    "schedule": {
+      "end": "2026-03-22",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-03-21",
+      "timezone": "Asia/Tokyo"
+    },
+    "source": {
+      "hash": "sha256:ed9462d0471a25e561cb13b5466c74f58876d21d4ed23f0cddf1a0d43f450310",
+      "provider": "japan-ballet-intensives",
+      "scrapedAt": "2026-06-09T03:35:37.525639Z",
+      "url": "https://www.jbi-japanballetintensives.com/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Mosa Ballet School",
+            "role": "Head of Faculty",
+            "slug": "mosa-ballet-school"
+          }
+        ],
+        "name": "Wilfried Jacobs",
+        "role": "Classical Ballet"
+      },
+      {
+        "affiliations": [],
+        "name": "Minoru Harata",
+        "role": "Contemporary Dance (local)"
+      },
+      {
+        "affiliations": [],
+        "name": "Noriko Yamamoto",
+        "role": "Pianist"
+      }
+    ],
+    "title": "Spring Ballet Intensive in Osaka 2026"
+  }
+]

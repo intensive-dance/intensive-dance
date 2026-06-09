@@ -432,15 +432,28 @@ when a second provider genuinely needs the identical thing.
   the dedicated workshop page there, but anchor on its structured 開催概要/受講料
   blocks: such pages keep **stale prior-edition prose** (commented-out 中止 lines,
   past-year admin dates) that loose-text parsing would catch (see
-  `tokyo_city_ballet`). A provider whose *main* site is an **agency/association**
-  doing only 登録サポート (registration support) for *foreign* schools' auditions/
-  summer schools (Paris Opéra, Cannes, CNSMD Lyon …) can still run **its own**
-  dated student workshop on a **sister microsite** — scrape that, ignore the
-  agency-mediated listings (those are other schools' programs, not this org's
-  intensive). The own-workshop year is usually explicit in the title (no stamp
-  inference), and a hyphen-joined day run "25日-26日-27日" needs a `(?:\d+日[-、…]*)+`
-  capture (a non-greedy `[\d-]+日` stops at the first 日); see
-  `temps_lie_ballet_workshop_japan`.
+  `tokyo_city_ballet`). An **open-class studio with rotating guests** is mostly
+  out of scope (drop-in classes aren't a dated edition), but its recurring,
+  *dated* **guest-school workshop-audition** (a visiting school screening dancers
+  for 短期留学 short-term study) IS in scope — one Offering per edition. Discover
+  these via the WP REST `posts?search=ワークショップ・オーディション`, but **filter
+  hard**: keep only the post that IS the workshop (require the structured
+  per-school audition band "<school>：N歳-M歳"), and skip (a) pure pro-company
+  auditions and (b) the studio's own ¥-cheap **drop-in promo posts that merely
+  cross-reference** the workshop (事前のお申込み不要 / pay-at-door, no audition band).
+  Also cut the 【学校情報】 school-profile blurb before genre-matching — it lists the
+  *school's* curriculum ("クラシックバレエとコンテンポラリーダンス") and would leak a
+  contemporary genre the workshop doesn't teach. Day tokens carry weekday markers
+  with their own 月/日 ("5日（火）"), so anchor dates on year+month then read N日（曜）
+  tokens, don't negate-class on 月 (see `studio_architanz`). A provider whose
+  *main* site is an **agency/association** doing only 登録サポート (registration
+  support) for *foreign* schools' auditions/summer schools (Paris Opéra, Cannes,
+  CNSMD Lyon …) can still run **its own** dated student workshop on a **sister
+  microsite** — scrape that, ignore the agency-mediated listings (those are other
+  schools' programs, not this org's intensive). The own-workshop year is usually
+  explicit in the title (no stamp inference), and a hyphen-joined day run
+  "25日-26日-27日" needs a `(?:\d+日[-、…]*)+` capture (a non-greedy `[\d-]+日` stops at
+  the first 日); see `temps_lie_ballet_workshop_japan`.
 - **One org, several city editions = one scraper, many Offerings.** A provider
   can run the same course as separate per-city subdomains (ART of's
   `zurich.`/`madrid.art-of.net`, same director). Build **one** scraper filed

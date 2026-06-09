@@ -502,7 +502,7 @@
       "city": "Osaka",
       "url": "https://www.jbi-japanballetintensives.com/",
       "tier": "secondary",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "ibsi-incheon",
@@ -644,9 +644,9 @@
       "name": "Studio Architanz (ATP)",
       "country": "JP",
       "city": "Tokyo",
-      "url": "https://atp.a-tanz.com/",
+      "url": "https://a-tanz.com/",
       "tier": "secondary",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "temps-lie-ballet-workshop-japan",

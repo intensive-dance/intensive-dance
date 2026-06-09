@@ -1,0 +1,102 @@
+[
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 14
+    },
+    "application": {
+      "deadline": "2025-08-01",
+      "notes": "ワークショップ・オーディションはハンブルク・バレエ学校・イングリッシュ・ナショナル・バレエスクールへの短期留学（および年間留学の最終審査）を兼ねる対面審査。合格者は最終審査への参加資格を得る。ワークショップのみの参加も可。お申し込みはGoogleフォームより、定員になり次第締め切り。",
+      "requirements": [],
+      "url": "https://forms.gle/ryut5F8wUJQTtz3VA"
+    },
+    "genres": [
+      "classical",
+      "repertoire",
+      "pointe"
+    ],
+    "id": "studio-architanz/school-workshop-2025",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Tokyo",
+      "country": "JP",
+      "venue": "スタジオアーキタンツ 01スタジオ"
+    },
+    "organization": {
+      "city": "Tokyo",
+      "country": "JP",
+      "name": "Studio ARCHITANZ",
+      "slug": "studio-architanz"
+    },
+    "prices": [
+      {
+        "amount": 28000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "2日間通し（全4クラス）（税込）"
+      },
+      {
+        "amount": 7000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "オーディション審査料（希望者のみ・税込）"
+      }
+    ],
+    "schedule": {
+      "end": "2025-08-05",
+      "season": "2025",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 18,
+            "min": 15
+          },
+          "label": "オーディション審査（ハンブルク・バレエ学校）",
+          "notes": "短期留学オーディション審査：ハンブルク・バレエ学校 15歳-18歳"
+        },
+        {
+          "ageRange": {
+            "max": 18,
+            "min": 15
+          },
+          "label": "オーディション審査（イングリッシュ・ナショナル・バレエスクール）",
+          "notes": "短期留学オーディション審査：イングリッシュ・ナショナル・バレエスクール 15歳-18歳"
+        },
+        {
+          "ageRange": {
+            "max": 18,
+            "min": 14
+          },
+          "label": "ワークショップのみ",
+          "notes": "ワークショップとしての参加（審査なし）：14-18歳"
+        }
+      ],
+      "start": "2025-08-04",
+      "timezone": "Asia/Tokyo"
+    },
+    "source": {
+      "hash": "sha256:6f410be876e863b9a7bd481cfb0092635a13a264851f8cd45e3916cd0a08a836",
+      "provider": "studio-architanz",
+      "scrapedAt": "2026-06-09T03:35:36.056928Z",
+      "url": "https://a-tanz.com/ballet/2025/06/15151738"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "ハンブルク・バレエ団"
+          }
+        ],
+        "name": "Damiano Pettenella",
+        "role": "ハンブルク・バレエ団 主任バレエマスター"
+      }
+    ],
+    "title": "ハンブルク・バレエ学校・イングリッシュ・ナショナル・バレエスクール ワークショップ・オーディション 2025"
+  }
+]
