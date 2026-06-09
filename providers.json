@@ -169,7 +169,7 @@
       "city": "Munich",
       "url": "https://danceartsacademy.de/",
       "tier": "secondary",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "summer-sensation-intensive",
@@ -655,7 +655,7 @@
       "city": "Tokyo",
       "url": "https://www.le-temps-lie.org/",
       "tier": "secondary",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "julia-ballet-academy",

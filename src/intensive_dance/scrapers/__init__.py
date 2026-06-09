@@ -66,6 +66,7 @@ from . import (
     masters_of_ballet_academy,
     mlody_balet_polski,
     mosa_ballet_school,
+    munich_ballet_intensive,
     nacho_duato_academy,
     nationaltheater_mannheim,
     ndt_summer_intensive,
@@ -90,6 +91,7 @@ from . import (
     stage_charles_jude,
     summer_sensation_intensive,
     teatro_san_carlo_scuola_ballo,
+    temps_lie_ballet_workshop_japan,
     tokyo_ballet_school,
     tokyo_city_ballet,
     vaganova_international_program,
@@ -182,4 +184,6 @@ SCRAPERS: dict[str, Scraper] = {
     "vaganova-international-program": vaganova_international_program.scrape,
     "finland-international-summer-ballet-school": finland_international_summer_ballet_school.scrape,
     "ballet-summer-course-budapest": ballet_summer_course_budapest.scrape,
+    "munich-ballet-intensive": munich_ballet_intensive.scrape,
+    "temps-lie-ballet-workshop-japan": temps_lie_ballet_workshop_japan.scrape,
 }
