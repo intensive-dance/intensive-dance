@@ -38,7 +38,7 @@
       "start": "2026-10-27"
     },
     "source": {
-      "attemptedAt": "2026-06-08T20:42:06.306810Z",
+      "attemptedAt": "2026-06-09T06:20:40.296888Z",
       "hash": "sha256:f2240b2a29a16449b23aaba8f3dd2d450347abb8cf759c8b86c24b4c78dcf3aa",
       "provider": "central-school-of-ballet",
       "scrapedAt": "2026-06-06T16:30:39.338016Z",
@@ -98,7 +98,7 @@
       "sessions": []
     },
     "source": {
-      "attemptedAt": "2026-06-08T20:42:06.306810Z",
+      "attemptedAt": "2026-06-09T06:20:40.296888Z",
       "hash": "sha256:3b45ae700623169ed17956dbabf5791083dc1ffd1a62451481d22849d5edd5c9",
       "provider": "central-school-of-ballet",
       "scrapedAt": "2026-06-06T16:30:39.338210Z",
@@ -180,7 +180,7 @@
       "start": "2026-07-27"
     },
     "source": {
-      "attemptedAt": "2026-06-08T20:42:06.306810Z",
+      "attemptedAt": "2026-06-09T06:20:40.296888Z",
       "hash": "sha256:1da5fbf373cee7321e492d633e86dea5e90ec9b5997a9bc9cf9d23443b327648",
       "provider": "central-school-of-ballet",
       "scrapedAt": "2026-06-07T07:39:33.887700Z",
@@ -253,7 +253,7 @@
       "start": "2026-07-27"
     },
     "source": {
-      "attemptedAt": "2026-06-08T20:42:06.306810Z",
+      "attemptedAt": "2026-06-09T06:20:40.296888Z",
       "hash": "sha256:0eca37c13cefc2337ac59f0b5234bfe766952927b0197a80d23b050bb4d2bf1f",
       "provider": "central-school-of-ballet",
       "scrapedAt": "2026-06-06T16:30:39.337521Z",
@@ -326,7 +326,7 @@
       "start": "2026-08-03"
     },
     "source": {
-      "attemptedAt": "2026-06-08T20:42:06.306810Z",
+      "attemptedAt": "2026-06-09T06:20:40.296888Z",
       "hash": "sha256:5e852b91444437fa8a2d165ececedb348b62e33c03b649e95339bf6502b63293",
       "provider": "central-school-of-ballet",
       "scrapedAt": "2026-06-06T16:30:39.337731Z",
