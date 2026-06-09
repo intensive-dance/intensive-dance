@@ -1088,6 +1088,60 @@
       "url": "https://casadebalet.ro/",
       "tier": "secondary",
       "status": "seed"
+    },
+    {
+      "slug": "art-in-motion-munich",
+      "name": "Art in Motion Munich",
+      "country": "DE",
+      "city": "Munich",
+      "url": "https://www.artinmotionmunich.com/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "tanzquartier-koeln",
+      "name": "Tanzquartier Köln",
+      "country": "DE",
+      "city": "Cologne",
+      "url": "https://tanzquartier.koeln/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "hamburger-ballett-tanztage",
+      "name": "Hamburger Ballett-Tanztage (GinaWorkshops)",
+      "country": "DE",
+      "city": "Hamburg",
+      "url": "https://ginaworkshops.com/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "staatsballett-berlin-feriencamp",
+      "name": "Staatsballett Berlin — Feriencamp",
+      "country": "DE",
+      "city": "Berlin",
+      "url": "https://www.staatsballett-berlin.de/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "benedict-manniegel",
+      "name": "Benedict Manniegel Ballet School & Academy",
+      "country": "DE",
+      "city": "Munich",
+      "url": "https://www.benedictmanniegel.de/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "tanzschule-anastasia-frankfurt",
+      "name": "Ballett- und Tanzschule Anastasia",
+      "country": "DE",
+      "city": "Frankfurt am Main",
+      "url": "https://www.ballett-und-tanzschule-anastasia.com/",
+      "tier": "secondary",
+      "status": "seed"
     }
   ]
 }
