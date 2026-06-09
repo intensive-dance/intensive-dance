@@ -1,0 +1,452 @@
+[
+  {
+    "application": {
+      "deadline": "2026-06-15",
+      "requirements": [],
+      "status": "open",
+      "url": "https://forms.gle/H9d2zfHPYTrTcxE46"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "character",
+      "contemporary"
+    ],
+    "id": "finland-international-summer-ballet-school/summer-2026-06-22",
+    "level": [
+      "intermediate",
+      "advanced",
+      "open"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Helsinki",
+      "country": "FI",
+      "venue": "Leipätehdas (Helsingin Tanssiopisto), Kaikukatu 4 A"
+    },
+    "organization": {
+      "city": "Helsinki",
+      "country": "FI",
+      "name": "Finland International Summer Ballet School",
+      "slug": "finland-international-summer-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 150.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "From (per week)",
+        "notes": "Per-week tuition; spans level (adult open level to advanced). Accommodation and meals not included."
+      },
+      {
+        "amount": 475.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "To (per week)",
+        "notes": "Per-week tuition; spans level (adult open level to advanced). Accommodation and meals not included."
+      }
+    ],
+    "schedule": {
+      "end": "2026-06-27",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 12,
+            "min": 9
+          },
+          "label": "Intermediate / Youth",
+          "notes": "Intermediate / Youth"
+        },
+        {
+          "ageRange": {
+            "max": 15,
+            "min": 12
+          },
+          "label": "Intermediate / Young students",
+          "notes": "Intermediate / Young students"
+        },
+        {
+          "ageRange": {
+            "max": 25,
+            "min": 16
+          },
+          "label": "Advanced / Professional / Semi-professional",
+          "notes": "Advanced / Professional / Semi-professional"
+        },
+        {
+          "label": "Adult ballet classes — open level",
+          "notes": "Adult ballet classes — open level"
+        }
+      ],
+      "start": "2026-06-22",
+      "timezone": "Europe/Helsinki"
+    },
+    "source": {
+      "hash": "sha256:3841c2f9cb8cf7c6ef5dd1d366c3dba0faa3316bf5450832c7b1e1b280ed91a3",
+      "provider": "finland-international-summer-ballet-school",
+      "scrapedAt": "2026-06-09T00:29:15.418998Z",
+      "url": "https://www.finsummerdance.com/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "organization": "Les Ballets de Monte-Carlo",
+            "role": "ex-Principal Dancer"
+          }
+        ],
+        "name": "Ekaterina Petina"
+      }
+    ],
+    "title": "Finland International Summer Ballet School — week of 22–27 June 2026"
+  },
+  {
+    "application": {
+      "deadline": "2026-06-15",
+      "requirements": [],
+      "status": "open",
+      "url": "https://forms.gle/H9d2zfHPYTrTcxE46"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "character",
+      "contemporary"
+    ],
+    "id": "finland-international-summer-ballet-school/summer-2026-06-29",
+    "level": [
+      "intermediate",
+      "advanced",
+      "open"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Helsinki",
+      "country": "FI",
+      "venue": "Leipätehdas (Helsingin Tanssiopisto), Kaikukatu 4 A"
+    },
+    "organization": {
+      "city": "Helsinki",
+      "country": "FI",
+      "name": "Finland International Summer Ballet School",
+      "slug": "finland-international-summer-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 150.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "From (per week)",
+        "notes": "Per-week tuition; spans level (adult open level to advanced). Accommodation and meals not included."
+      },
+      {
+        "amount": 475.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "To (per week)",
+        "notes": "Per-week tuition; spans level (adult open level to advanced). Accommodation and meals not included."
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-04",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 12,
+            "min": 9
+          },
+          "label": "Intermediate / Youth",
+          "notes": "Intermediate / Youth"
+        },
+        {
+          "ageRange": {
+            "max": 15,
+            "min": 12
+          },
+          "label": "Intermediate / Young students",
+          "notes": "Intermediate / Young students"
+        },
+        {
+          "ageRange": {
+            "max": 25,
+            "min": 16
+          },
+          "label": "Advanced / Professional / Semi-professional",
+          "notes": "Advanced / Professional / Semi-professional"
+        },
+        {
+          "label": "Adult ballet classes — open level",
+          "notes": "Adult ballet classes — open level"
+        }
+      ],
+      "start": "2026-06-29",
+      "timezone": "Europe/Helsinki"
+    },
+    "source": {
+      "hash": "sha256:fa7475d00bebd1cd1fd9a2d53b79b1c69792e3422aa1d802df4683962edddd01",
+      "provider": "finland-international-summer-ballet-school",
+      "scrapedAt": "2026-06-09T00:29:15.419048Z",
+      "url": "https://www.finsummerdance.com/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Alisa Gåsemyr"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Estonian National Ballet",
+            "role": "ex-Principal Dancer"
+          }
+        ],
+        "name": "Sergei Upkin"
+      }
+    ],
+    "title": "Finland International Summer Ballet School — week of 29 June – 4 July 2026"
+  },
+  {
+    "application": {
+      "deadline": "2026-06-15",
+      "requirements": [],
+      "status": "open",
+      "url": "https://forms.gle/H9d2zfHPYTrTcxE46"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "character",
+      "contemporary"
+    ],
+    "id": "finland-international-summer-ballet-school/summer-2026-07-06",
+    "level": [
+      "intermediate",
+      "advanced",
+      "open"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Helsinki",
+      "country": "FI",
+      "venue": "Leipätehdas (Helsingin Tanssiopisto), Kaikukatu 4 A"
+    },
+    "organization": {
+      "city": "Helsinki",
+      "country": "FI",
+      "name": "Finland International Summer Ballet School",
+      "slug": "finland-international-summer-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 150.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "From (per week)",
+        "notes": "Per-week tuition; spans level (adult open level to advanced). Accommodation and meals not included."
+      },
+      {
+        "amount": 475.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "To (per week)",
+        "notes": "Per-week tuition; spans level (adult open level to advanced). Accommodation and meals not included."
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-11",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 12,
+            "min": 9
+          },
+          "label": "Intermediate / Youth",
+          "notes": "Intermediate / Youth"
+        },
+        {
+          "ageRange": {
+            "max": 15,
+            "min": 12
+          },
+          "label": "Intermediate / Young students",
+          "notes": "Intermediate / Young students"
+        },
+        {
+          "ageRange": {
+            "max": 25,
+            "min": 16
+          },
+          "label": "Advanced / Professional / Semi-professional",
+          "notes": "Advanced / Professional / Semi-professional"
+        },
+        {
+          "label": "Adult ballet classes — open level",
+          "notes": "Adult ballet classes — open level"
+        }
+      ],
+      "start": "2026-07-06",
+      "timezone": "Europe/Helsinki"
+    },
+    "source": {
+      "hash": "sha256:fe6d69faa33a47b2434b8975571bf4ff9c28247ec507e0a5c53532e38f125b74",
+      "provider": "finland-international-summer-ballet-school",
+      "scrapedAt": "2026-06-09T00:29:15.419079Z",
+      "url": "https://www.finsummerdance.com/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "organization": "Teatr Wielki - Polish National Opera",
+            "role": "Principal Dancer"
+          }
+        ],
+        "name": "Chinara Alizade"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Estonian National Ballet",
+            "role": "Demi-soloist"
+          }
+        ],
+        "name": "Rasmus Ahlgren"
+      }
+    ],
+    "title": "Finland International Summer Ballet School — week of 6–11 July 2026"
+  },
+  {
+    "application": {
+      "deadline": "2026-06-15",
+      "requirements": [],
+      "status": "open",
+      "url": "https://forms.gle/H9d2zfHPYTrTcxE46"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "character",
+      "contemporary"
+    ],
+    "id": "finland-international-summer-ballet-school/summer-2026-07-13",
+    "level": [
+      "intermediate",
+      "advanced",
+      "open"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Helsinki",
+      "country": "FI",
+      "venue": "Leipätehdas (Helsingin Tanssiopisto), Kaikukatu 4 A"
+    },
+    "organization": {
+      "city": "Helsinki",
+      "country": "FI",
+      "name": "Finland International Summer Ballet School",
+      "slug": "finland-international-summer-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 150.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "From (per week)",
+        "notes": "Per-week tuition; spans level (adult open level to advanced). Accommodation and meals not included."
+      },
+      {
+        "amount": 475.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "To (per week)",
+        "notes": "Per-week tuition; spans level (adult open level to advanced). Accommodation and meals not included."
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-18",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 12,
+            "min": 9
+          },
+          "label": "Intermediate / Youth",
+          "notes": "Intermediate / Youth"
+        },
+        {
+          "ageRange": {
+            "max": 15,
+            "min": 12
+          },
+          "label": "Intermediate / Young students",
+          "notes": "Intermediate / Young students"
+        },
+        {
+          "ageRange": {
+            "max": 25,
+            "min": 16
+          },
+          "label": "Advanced / Professional / Semi-professional",
+          "notes": "Advanced / Professional / Semi-professional"
+        },
+        {
+          "label": "Adult ballet classes — open level",
+          "notes": "Adult ballet classes — open level"
+        }
+      ],
+      "start": "2026-07-13",
+      "timezone": "Europe/Helsinki"
+    },
+    "source": {
+      "hash": "sha256:ac559c3aa38a0db29e121393eae021a084142b048d81dce5a43268ff1a13bdde",
+      "provider": "finland-international-summer-ballet-school",
+      "scrapedAt": "2026-06-09T00:29:15.419092Z",
+      "url": "https://www.finsummerdance.com/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "organization": "Teatr Wielki - Polish National Opera",
+            "role": "Principal Dancer"
+          }
+        ],
+        "name": "Chinara Alizade"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Estonian National Ballet",
+            "role": "Demi-soloist"
+          }
+        ],
+        "name": "Rasmus Ahlgren"
+      }
+    ],
+    "title": "Finland International Summer Ballet School — week of 13–18 July 2026"
+  }
+]

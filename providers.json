@@ -169,7 +169,7 @@
       "city": "Munich",
       "url": "https://danceartsacademy.de/",
       "tier": "secondary",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "summer-sensation-intensive",
@@ -322,7 +322,7 @@
       "city": "Budapest",
       "url": "https://balletsummercoursebudapest.com/",
       "tier": "secondary",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "royal-danish-ballet-summer-school",
@@ -367,7 +367,7 @@
       "city": "Helsinki",
       "url": "https://finsummerdance.com/",
       "tier": "secondary",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "ballet-ruso-barcelona",
@@ -556,7 +556,7 @@
       "city": "Saitama",
       "url": "https://nbaballet.org/",
       "tier": "secondary",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "inoue-ballet",
@@ -655,7 +655,7 @@
       "city": "Tokyo",
       "url": "https://www.le-temps-lie.org/",
       "tier": "secondary",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "julia-ballet-academy",
@@ -1069,7 +1069,7 @@
       "city": "Las Vegas",
       "url": "https://vaganovainternationalprogram.com/",
       "tier": "secondary",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "conservatorio-annarella",
