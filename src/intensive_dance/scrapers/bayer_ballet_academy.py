@@ -83,7 +83,7 @@ _LOCATION = Location(
 
 _AUDITION_NOTE = (
     "Admission is by audition: in person at Bayer Ballet Studios (held most "
-    "Saturdays) or by video submission. A $40 audition fee applies."
+    "Saturdays) or by video submission."
 )
 
 # Edition headings split the page into two segments. Each tuple is (offering-slug,
