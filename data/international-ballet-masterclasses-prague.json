@@ -131,10 +131,10 @@
       "timezone": "Europe/Prague"
     },
     "source": {
-      "attemptedAt": "2026-06-09T02:59:35.008388Z",
-      "hash": "sha256:6e466ce474aa8adc1c0e5f69f6f46a3f07d535b72b312b11c7609f6cf96cd73e",
+      "attemptedAt": "2026-06-09T18:37:41.579533Z",
+      "hash": "sha256:c4eeed80f1539a534eb711bc4ed15246df1b8752b625b8935ed1a1a7e8856b70",
       "provider": "international-ballet-masterclasses-prague",
-      "scrapedAt": "2026-06-07T08:35:15.006424Z",
+      "scrapedAt": "2026-06-09T18:37:47.869209Z",
       "url": "https://www.balletmasterclass.com/pages/options-fees/"
     },
     "teachers": [
@@ -201,6 +201,11 @@
       {
         "affiliations": [],
         "name": "Tereza Podarilová",
+        "role": "Guest Teacher (Week Two)"
+      },
+      {
+        "affiliations": [],
+        "name": "Ayaka Fuji",
         "role": "Guest Teacher (Week Two)"
       },
       {
@@ -275,7 +280,7 @@
       "timezone": "Europe/Prague"
     },
     "source": {
-      "attemptedAt": "2026-06-09T02:59:35.008388Z",
+      "attemptedAt": "2026-06-09T18:37:41.579533Z",
       "hash": "sha256:e9be365afd7d507fb48c818cee7d0070a9b0e80e7b9cda9dc33ff6289c6f6f74",
       "provider": "international-ballet-masterclasses-prague",
       "scrapedAt": "2026-06-06T06:03:12.537552Z",
