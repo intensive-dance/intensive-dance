@@ -69,6 +69,7 @@ from . import (
     munich_ballet_intensive,
     nacho_duato_academy,
     nationaltheater_mannheim,
+    nba_ballet_company,
     ndt_summer_intensive,
     new_national_theatre_ballet_school,
     new_zealand_school_of_dance,
@@ -186,4 +187,5 @@ SCRAPERS: dict[str, Scraper] = {
     "ballet-summer-course-budapest": ballet_summer_course_budapest.scrape,
     "munich-ballet-intensive": munich_ballet_intensive.scrape,
     "temps-lie-ballet-workshop-japan": temps_lie_ballet_workshop_japan.scrape,
+    "nba-ballet-company": nba_ballet_company.scrape,
 }
