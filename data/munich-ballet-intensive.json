@@ -1,0 +1,105 @@
+[
+  {
+    "ageRange": {
+      "max": 17,
+      "min": 10
+    },
+    "application": {
+      "notes": "Held twice a year in Munich for advanced ballet students. Registration is open; the registration form is hosted on the Dance Arts Academy site.",
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "open",
+      "url": "https://www.danceartsacademy.de/anmeldungsformular"
+    },
+    "genres": [
+      "classical",
+      "repertoire",
+      "pointe"
+    ],
+    "id": "munich-ballet-intensive/summer-intensive-2026",
+    "level": [
+      "advanced"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Munich",
+      "country": "DE",
+      "venue": "Dance Arts Academy (Pater-Kolbe-Straße 7, 85716 Unterschleißheim)"
+    },
+    "organization": {
+      "city": "Munich",
+      "country": "DE",
+      "name": "Dance Arts Academy",
+      "slug": "munich-ballet-intensive"
+    },
+    "prices": [
+      {
+        "amount": 300.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Gruppe 1 (10-13 years)"
+      },
+      {
+        "amount": 350.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Gruppe 2 (13-17 years)"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-08",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-03",
+      "timezone": "Europe/Berlin"
+    },
+    "source": {
+      "hash": "sha256:fdb68cef25d1cb196a0bc9418ad6bcca4582e9e7339c09dd7af3b5ee5985e524",
+      "provider": "munich-ballet-intensive",
+      "scrapedAt": "2026-06-09T01:31:39.978554Z",
+      "url": "https://www.munichballetintensive.com/startseite"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Bavarian State Ballet",
+            "role": "Soloist"
+          },
+          {
+            "current": false,
+            "organization": "Semperoper Ballett (Sächsische Staatsoper Dresden)",
+            "role": "Principal"
+          }
+        ],
+        "name": "Katherina Markowskaja",
+        "role": "Director / teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Bavarian State Ballet",
+            "role": "Soloist"
+          },
+          {
+            "current": false,
+            "organization": "Mariinsky Ballet",
+            "role": "Corps de ballet"
+          }
+        ],
+        "name": "Maxim Chashchegorov",
+        "role": "Director / teacher"
+      }
+    ],
+    "title": "Summer Intensiv 2026"
+  }
+]

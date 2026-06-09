@@ -1,0 +1,167 @@
+[
+  {
+    "ageRange": {
+      "max": 19,
+      "min": 9
+    },
+    "application": {
+      "notes": "Registration is closed; new applicants join a waiting list. Admission is by video audition (submit a YouTube/Vimeo audition video link).",
+      "requirements": [
+        {
+          "description": "Admission is by video audition: submit a YouTube or Vimeo audition video link via the program's audition form.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "status": "closed",
+      "url": "https://vaganovainternationalprogram.com/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "contemporary"
+    ],
+    "id": "vaganova-international-program/summer-intensive-2026",
+    "level": [
+      "beginner",
+      "intermediate",
+      "pre-professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Las Vegas",
+      "country": "US",
+      "venue": "University of Nevada, Las Vegas (UNLV)"
+    },
+    "organization": {
+      "city": "Las Vegas",
+      "country": "US",
+      "name": "Vaganova International Program",
+      "slug": "vaganova-international-program"
+    },
+    "prices": [
+      {
+        "amount": 2000.0,
+        "currency": "USD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Program Tuition"
+      },
+      {
+        "amount": 150.0,
+        "currency": "USD",
+        "includes": [],
+        "label": "Registration Fee",
+        "notes": "Non-refundable."
+      },
+      {
+        "amount": 1600.0,
+        "currency": "USD",
+        "includes": [
+          "accommodation",
+          "meals"
+        ],
+        "label": "Private Room + Meals",
+        "notes": "Optional UNLV housing package (12 nights)."
+      },
+      {
+        "amount": 1150.0,
+        "currency": "USD",
+        "includes": [
+          "accommodation",
+          "meals"
+        ],
+        "label": "Shared Room + Meals",
+        "notes": "Optional UNLV housing package (12 nights)."
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-03",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-06-22",
+      "timezone": "America/Los_Angeles"
+    },
+    "source": {
+      "hash": "sha256:014212073a9cce0aa41576ce0af61029cbf160ee98e81a29a65b03ef0b1d744d",
+      "provider": "vaganova-international-program",
+      "scrapedAt": "2026-06-09T00:29:13.778918Z",
+      "url": "https://vaganovainternationalprogram.com/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "organization": "Bolshoi Ballet",
+            "role": "former dancer"
+          }
+        ],
+        "name": "Alexei Moskalenko",
+        "role": "Founder & Artistic Director"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Bolshoi Theatre",
+            "role": "former principal dancer"
+          }
+        ],
+        "name": "Natalia Bashkatova",
+        "role": "Founder & Artistic Director"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Colorado Ballet"
+          }
+        ],
+        "name": "Maria Mosina"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Bolshoi Ballet",
+            "role": "former dancer"
+          },
+          {
+            "current": true,
+            "organization": "University of North Carolina School of the Arts",
+            "role": "professor"
+          }
+        ],
+        "name": "Misha Tchoupakov"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Béjart Ballet Lausanne",
+            "role": "former dancer"
+          }
+        ],
+        "name": "Maxwell Simoes"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Odasz Dance Theatre",
+            "role": "assistant director & company choreographer"
+          }
+        ],
+        "name": "Andrea Astuto"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Mariinsky Ballet",
+            "role": "former dancer"
+          }
+        ],
+        "name": "Nadezhda Gonchar"
+      }
+    ],
+    "title": "Vaganova International Program — Summer 2026"
+  }
+]

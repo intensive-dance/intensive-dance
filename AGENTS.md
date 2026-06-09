@@ -432,7 +432,15 @@ when a second provider genuinely needs the identical thing.
   the dedicated workshop page there, but anchor on its structured 開催概要/受講料
   blocks: such pages keep **stale prior-edition prose** (commented-out 中止 lines,
   past-year admin dates) that loose-text parsing would catch (see
-  `tokyo_city_ballet`).
+  `tokyo_city_ballet`). A provider whose *main* site is an **agency/association**
+  doing only 登録サポート (registration support) for *foreign* schools' auditions/
+  summer schools (Paris Opéra, Cannes, CNSMD Lyon …) can still run **its own**
+  dated student workshop on a **sister microsite** — scrape that, ignore the
+  agency-mediated listings (those are other schools' programs, not this org's
+  intensive). The own-workshop year is usually explicit in the title (no stamp
+  inference), and a hyphen-joined day run "25日-26日-27日" needs a `(?:\d+日[-、…]*)+`
+  capture (a non-greedy `[\d-]+日` stops at the first 日); see
+  `temps_lie_ballet_workshop_japan`.
 - **One org, several city editions = one scraper, many Offerings.** A provider
   can run the same course as separate per-city subdomains (ART of's
   `zurich.`/`madrid.art-of.net`, same director). Build **one** scraper filed
