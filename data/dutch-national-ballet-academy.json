@@ -55,8 +55,8 @@
       "timezone": "Europe/Amsterdam"
     },
     "source": {
-      "attemptedAt": "2026-06-08T21:35:00.265379Z",
-      "hash": "sha256:d6a4f7dd7b7b1e685cfbf9a54080d54aa184e1a743d056d53eeab5881a6cdb74",
+      "attemptedAt": "2026-06-10T10:22:52.569431Z",
+      "hash": "sha256:df234d3549bba0193b8fef8c0320d5c9e04dcd69a5699661eaf245378e55355c",
       "provider": "dutch-national-ballet-academy",
       "scrapedAt": "2026-06-09T20:56:54.031372Z",
       "url": "https://www.atd.ahk.nl/en/dance-programmes/dutch-national-ballet-academy/summer-school/"
@@ -120,8 +120,8 @@
       "timezone": "Europe/Amsterdam"
     },
     "source": {
-      "attemptedAt": "2026-06-08T21:35:00.265379Z",
-      "hash": "sha256:b4657318b2e7ab3234e15706468f085aacb5099e0d8f71b38f3ffc4d219adb1b",
+      "attemptedAt": "2026-06-10T10:22:52.569431Z",
+      "hash": "sha256:0eafe8580119c8ce2d5ed9804d5d2c9b056bd371b5e51c8fa5294e742247617b",
       "provider": "dutch-national-ballet-academy",
       "scrapedAt": "2026-06-09T20:56:54.029518Z",
       "url": "https://www.atd.ahk.nl/en/dance-programmes/dutch-national-ballet-academy/summer-school/"
@@ -185,8 +185,8 @@
       "timezone": "Europe/Amsterdam"
     },
     "source": {
-      "attemptedAt": "2026-06-08T21:35:00.265379Z",
-      "hash": "sha256:b3cfff65e3bca06f105e2270c040663d4ac56506e1d0dfabeb1d6656ad7ba718",
+      "attemptedAt": "2026-06-10T10:22:52.569431Z",
+      "hash": "sha256:2f6d473e25d12631bdcb05ef20bcf5833500075e7fc87eb217ba88410b47e2d0",
       "provider": "dutch-national-ballet-academy",
       "scrapedAt": "2026-06-09T20:56:54.027794Z",
       "url": "https://www.atd.ahk.nl/en/dance-programmes/dutch-national-ballet-academy/summer-school/"

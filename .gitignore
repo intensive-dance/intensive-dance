@@ -5,3 +5,6 @@ __pycache__/
 .DS_Store
 .claude/worktrees/
 .claude/scheduled_tasks*
+
+# Local default output of `intensive_dance.audit` (CI writes to a temp path)
+scraper-audit-report.md

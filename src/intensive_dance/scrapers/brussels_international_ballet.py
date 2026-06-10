@@ -18,11 +18,12 @@ WHAT THE PAGE GIVES US (verified live 2026-06):
   - STATUS: the page states "Registration is now closed." That closes the
     *application*, not the course — the edition is still upcoming, so `lifecycle`
     stays `scheduled` (the IDR-24 distinction: closed ≠ cancelled).
-  - PRICES: not published here (costs live in the Online Application Form), so
-    none are emitted.
-  - REQUIREMENTS: the page notes an audition *fee* but never describes the
-    audition (video? in person?), so requirements stay `[]` ("not stated"), with
-    the audition-fee/deposit terms kept as an application note.
+  - PRICES: the registration page (`/registration-sp26`) states a non-refundable
+    €29 registration fee; it is emitted as a `Price` with `includes=[]` (fee only,
+    not tuition).
+  - REQUIREMENTS: `/registration-sp26` asks for a headshot and links guidelines.
+    We emit `headshot`; photo requirements are `defined-poses` only when the text
+    explicitly says positions, otherwise `freeform`.
 
 Faculty are listed as a legacy roll of guest artists ("names such as …"), not a
 confirmed 2026 roster, so teachers are left empty rather than over-claimed (the
@@ -46,11 +47,16 @@ from intensive_dance.models import (
     Organization,
     Schedule,
     Source,
+    Price,
+    HeadshotReq,
+    PhotosReq,
+    Requirement,
     now_utc,
 )
 
 BASE = "https://www.brusselsintballet.org"
 PAGE = f"{BASE}/summer-intensive-2026"
+REGISTRATION_PAGE = f"{BASE}/registration-sp26"
 
 ORG = Organization(
     name="Brussels International Ballet",
@@ -69,15 +75,22 @@ _APPLY_NOTE = (
 def scrape(client: httpx.Client) -> list[Offering]:
     resp = client.get(PAGE)
     resp.raise_for_status()
-    offering = _build_offering(resp.text)
+    reg_resp = client.get(REGISTRATION_PAGE)
+    reg_resp.raise_for_status()
+    offering = _build_offering(resp.text, reg_resp.text)
     return [offering] if offering is not None else []
 
 
-def _build_offering(html: str) -> Offering | None:
+def _build_offering(html: str, reg_html: str = "") -> Offering | None:
     tree = HTMLParser(html)
     for node in tree.css("script, style, noscript"):
         node.decompose()
     text = parse.clean(tree.body.text(separator=" ")) if tree.body else ""
+
+    reg_tree = HTMLParser(reg_html)
+    for node in reg_tree.css("script, style, noscript"):
+        node.decompose()
+    reg_text = parse.clean(reg_tree.body.text(separator=" ")) if reg_tree.body else ""
 
     start, end = _date_range(text)
     anchor = end or start
@@ -100,12 +113,44 @@ def _build_offering(html: str) -> Offering | None:
             timezone="Europe/Brussels",
             notes=_schedule_note(text),
         ),
+        prices=_prices(reg_text),
         application=Application(
             status=_status(text),
             url=PAGE,
+            requirements=_requirements(reg_text),
             notes=_APPLY_NOTE,
         ),
     )
+
+
+_APP_FEE = re.compile(r"(?:registration|audition)\s+fee\D{0,15}€\s*(\d+)", re.IGNORECASE)
+
+
+def _prices(reg_text: str) -> list[Price]:
+    prices: list[Price] = []
+    m = _APP_FEE.search(reg_text)
+    if m and (amount := parse.parse_amount(m.group(1))) is not None:
+        prices.append(Price(amount=amount, currency="EUR", label="Registration fee", includes=[]))
+    return prices
+
+
+def _requirements(reg_text: str) -> list[Requirement]:
+    reqs: list[Requirement] = []
+    low = reg_text.lower()
+    if "headshot" in low:
+        reqs.append(HeadshotReq())
+    if "guidelines for the positions" in low:
+        reqs.append(
+            PhotosReq(
+                specificity="defined-poses",
+                notes="Attire and positions must follow the guidelines PDF.",
+            )
+        )
+    elif "attire follows these guidelines" in low:
+        reqs.append(
+            PhotosReq(specificity="freeform", notes="Attire must follow the guidelines PDF.")
+        )
+    return reqs
 
 
 # --- parsing ------------------------------------------------------------------

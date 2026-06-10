@@ -1,0 +1,352 @@
+[
+  {
+    "ageRange": {
+      "max": null,
+      "min": 12
+    },
+    "application": {
+      "notes": "講習会の通常クラスは先着順で受付（募集人数になり次第締め切り）。プライベートレッスン（ヴァリエーション指導・希望者のみ）は先着順ではなく、申込後に動画を送付のうえ選考、申込締切は5月31日。お申込みはparis-tokyo-ballet.com のメールフォームより。",
+      "requirements": [],
+      "status": "open",
+      "url": "https://www.paris-tokyo-ballet.com/apply-summer-japan-2026/"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "pointe",
+      "repertoire"
+    ],
+    "id": "temps-lie-ballet-workshop-japan/summer-tokyo-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Tokyo",
+      "country": "JP",
+      "venue": "東京バレエ学校 新館内 スタジオ"
+    },
+    "organization": {
+      "country": "JP",
+      "name": "Association le-temps-lié (日仏舞踊協会 タンリエ)",
+      "slug": "temps-lie-ballet-workshop-japan"
+    },
+    "prices": [
+      {
+        "amount": 34500.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "バレエクラスレッスン 3回（税別）"
+      },
+      {
+        "amount": 25000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "バレエクラスレッスン 2回（税別）"
+      },
+      {
+        "amount": 13500.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "バレエクラスレッスン 1回（税別）"
+      },
+      {
+        "amount": 22500.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "コンテンポラリークラスレッスン 3回（税別）"
+      },
+      {
+        "amount": 16500.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "コンテンポラリークラスレッスン 2回（税別）"
+      },
+      {
+        "amount": 9000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "コンテンポラリークラスレッスン 1回（税別）"
+      },
+      {
+        "amount": 19500.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "プライベートレッスン（30分・希望者のみ・税別）"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-27",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": null,
+            "min": 16
+          },
+          "label": "上級/プロ クラス",
+          "notes": "上級/プロ クラス：16歳以上（目安）"
+        },
+        {
+          "ageRange": {
+            "max": 16,
+            "min": 14
+          },
+          "label": "高等クラス",
+          "notes": "高等クラス：14-16歳（目安）"
+        },
+        {
+          "ageRange": {
+            "max": 13,
+            "min": 12
+          },
+          "label": "中級クラス",
+          "notes": "中級クラス：12-13歳（目安）"
+        }
+      ],
+      "start": "2026-08-25",
+      "timezone": "Asia/Tokyo"
+    },
+    "source": {
+      "attemptedAt": "2026-06-10T12:04:25.975338Z",
+      "hash": "sha256:7db0b7872d593f281f4350ba0924f908fe4692cddb29d19ebab5cae5d9f714c4",
+      "provider": "temps-lie-ballet-workshop-japan",
+      "scrapedAt": "2026-06-09T01:31:40.702298Z",
+      "url": "https://www.paris-tokyo-ballet.com/summer-japan-2026/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Paris Opéra Ballet",
+            "role": "教師"
+          },
+          {
+            "current": true,
+            "organization": "Conservatoire national supérieur de musique et de danse de Paris (CNSMDP)",
+            "role": "教授"
+          }
+        ],
+        "name": "Gil Isoart",
+        "role": "バレエクラス講師（東京・大阪）"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "ダンサー・振付家"
+          }
+        ],
+        "name": "Kenta Kojiri",
+        "role": "コンテンポラリークラス講師（東京）"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "昭和音楽大学 講師 / バレエピアニスト"
+          }
+        ],
+        "name": "榎本真弓",
+        "role": "ピアニスト"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "新国立劇場バレエ団 バレエピアニスト"
+          }
+        ],
+        "name": "圓井晶子",
+        "role": "ピアニスト"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "パリオペラ座バレエ団・パリ国立高等コンセルバトワール 正バレエピアニスト"
+          }
+        ],
+        "name": "辻徳子",
+        "role": "ピアニスト"
+      }
+    ],
+    "title": "タンリエバレエワークショップ in Japan 2026（東京）"
+  },
+  {
+    "ageRange": {
+      "max": null,
+      "min": 12
+    },
+    "application": {
+      "notes": "講習会の通常クラスは先着順で受付（募集人数になり次第締め切り）。プライベートレッスン（ヴァリエーション指導・希望者のみ）は先着順ではなく、申込後に動画を送付のうえ選考、申込締切は5月31日。お申込みはparis-tokyo-ballet.com のメールフォームより。",
+      "requirements": [],
+      "status": "open",
+      "url": "https://www.paris-tokyo-ballet.com/apply-summer-japan-2026/"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "pointe",
+      "repertoire"
+    ],
+    "id": "temps-lie-ballet-workshop-japan/summer-osaka-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Osaka",
+      "country": "JP",
+      "venue": "K★バレエスタジオ"
+    },
+    "organization": {
+      "country": "JP",
+      "name": "Association le-temps-lié (日仏舞踊協会 タンリエ)",
+      "slug": "temps-lie-ballet-workshop-japan"
+    },
+    "prices": [
+      {
+        "amount": 23000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "バレエクラスレッスン 2回（税別）"
+      },
+      {
+        "amount": 13000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "バレエクラスレッスン 1回（税別）"
+      },
+      {
+        "amount": 10000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "コンテンポラリークラスレッスン 2回（税別）"
+      },
+      {
+        "amount": 5750.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "コンテンポラリークラスレッスン 1回（税別）"
+      },
+      {
+        "amount": 19500.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "プライベートレッスン（30分・希望者のみ・税別）"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-13",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": null,
+            "min": 16
+          },
+          "label": "上級/プロ クラス",
+          "notes": "上級/プロ クラス：16歳以上（目安）"
+        },
+        {
+          "ageRange": {
+            "max": 16,
+            "min": 14
+          },
+          "label": "高等クラス",
+          "notes": "高等クラス：14-16歳（目安）"
+        },
+        {
+          "ageRange": {
+            "max": 13,
+            "min": 12
+          },
+          "label": "中級クラス",
+          "notes": "中級クラス：12-13歳（目安）"
+        }
+      ],
+      "start": "2026-08-12",
+      "timezone": "Asia/Tokyo"
+    },
+    "source": {
+      "attemptedAt": "2026-06-10T12:04:25.975338Z",
+      "hash": "sha256:1cf0c108ae6a0aa20b81bc5d01b3707f454e6979eb83ba8ca43915ea8608e1c8",
+      "provider": "temps-lie-ballet-workshop-japan",
+      "scrapedAt": "2026-06-09T01:31:40.704205Z",
+      "url": "https://www.paris-tokyo-ballet.com/summer-japan-2026/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Paris Opéra Ballet",
+            "role": "教師"
+          },
+          {
+            "current": true,
+            "organization": "Conservatoire national supérieur de musique et de danse de Paris (CNSMDP)",
+            "role": "教授"
+          }
+        ],
+        "name": "Gil Isoart",
+        "role": "バレエクラス講師（東京・大阪）"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "元リヨン・オペラ座バレエ団／ジュネーヴ歌劇場バレエ"
+          }
+        ],
+        "name": "Yu Otagaki",
+        "role": "コンテンポラリークラス講師（大阪）"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "昭和音楽大学 講師 / バレエピアニスト"
+          }
+        ],
+        "name": "榎本真弓",
+        "role": "ピアニスト"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "新国立劇場バレエ団 バレエピアニスト"
+          }
+        ],
+        "name": "圓井晶子",
+        "role": "ピアニスト"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "パリオペラ座バレエ団・パリ国立高等コンセルバトワール 正バレエピアニスト"
+          }
+        ],
+        "name": "辻徳子",
+        "role": "ピアニスト"
+      }
+    ],
+    "title": "タンリエバレエワークショップ in Japan 2026（大阪）"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 10
+    },
+    "application": {
+      "notes": "先着順。お申込みはPeatixより。",
+      "requirements": [],
+      "url": "https://peatix.com/event/4409752/view"
+    },
+    "genres": [
+      "classical",
+      "repertoire",
+      "character",
+      "contemporary"
+    ],
+    "id": "nba-ballet-company/summer-school-2025",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Tokyo",
+      "country": "JP",
+      "venue": "芸能花伝舎 C1スタジオ"
+    },
+    "organization": {
+      "city": "Tokorozawa",
+      "country": "JP",
+      "name": "NBA Ballet Company",
+      "slug": "nba-ballet-company"
+    },
+    "prices": [
+      {
+        "amount": 80000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "受講料（全4日間 税込）"
+      }
+    ],
+    "schedule": {
+      "end": "2025-08-03",
+      "notes": "対象：小学5年生～高校生",
+      "season": "2025",
+      "sessions": [],
+      "start": "2025-07-31",
+      "timezone": "Asia/Tokyo"
+    },
+    "source": {
+      "attemptedAt": "2026-06-10T12:04:27.504970Z",
+      "hash": "sha256:ed15cbe45d3fcb63f151c8a301f89e22c568fefa25c797b454e53f4d05d2888c",
+      "provider": "nba-ballet-company",
+      "scrapedAt": "2026-06-09T02:35:49.956007Z",
+      "url": "https://nbaballet.org/news/news-9616/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "久保 紘一",
+        "role": "講師（NBAバレエ団 芸術監督）"
+      },
+      {
+        "affiliations": [],
+        "name": "峰岸 千晶",
+        "role": "講師（NBAバレエ団 バレエミストレス）"
+      },
+      {
+        "affiliations": [],
+        "name": "山田 佳歩",
+        "role": "講師（NBAバレエ団 プリンシパル）"
+      },
+      {
+        "affiliations": [],
+        "name": "砂原 伽音",
+        "role": "講師（舞踊家）"
+      },
+      {
+        "affiliations": [],
+        "name": "三崎 彩",
+        "role": "講師（演者・指導者・振付家）"
+      }
+    ],
+    "title": "NBA短期集中サマースクール2025"
+  }
+]
