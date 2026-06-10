@@ -34,8 +34,7 @@ WHAT THIS SCRAPER EXERCISES (verified live 2026-06-08):
     editions. (The body's "World-Renowned Faculty (to be announced)" marketing
     blurb is ignored in favour of the named roster section.)
   - REQUIREMENTS = VIDEO (unspecific): admission is by audition, in person every
-    Saturday or by video submission — an open audition-or-video brief; the $40
-    audition fee is kept as an application note.
+    Saturday or by video submission — an open audition-or-video brief.
 """
 
 from __future__ import annotations
