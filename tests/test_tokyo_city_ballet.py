@@ -103,11 +103,10 @@ def test_offering_age_range_bounded_when_all_classes_bounded():
     assert t._offering_age_range(bounded) == {"min": 8, "max": 15}
 
 
-def test_prices_per_class_jpy_tax_inclusive_deduped():
+def test_prices_per_class_jpy_tax_inclusive():
     prices = t._prices(PAGE)
     amounts = sorted(p.amount for p in prices)
-    # ¥5,000 (shared by classical/pilates/contemporary) + ¥6,000 (Special) — deduped.
-    assert amounts == [5000.0, 6000.0]
+    assert amounts == [5000.0, 5000.0, 5000.0, 6000.0]
     for p in prices:
         assert p.currency == "JPY"
         assert p.includes == ["tuition"]
