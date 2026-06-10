@@ -5,7 +5,17 @@
     },
     "application": {
       "notes": "Entry is by application via BIB's Online Application Form. Tuition excludes audition fees and optional extras; a 60% deposit is due within 14 days of acceptance to secure a place.",
-      "requirements": [],
+      "requirements": [
+        {
+          "type": "headshot"
+        },
+        {
+          "notes": "Attire and positions must follow the guidelines PDF.",
+          "poses": [],
+          "specificity": "defined-poses",
+          "type": "photos"
+        }
+      ],
       "status": "closed",
       "url": "https://www.brusselsintballet.org/summer-intensive-2026"
     },
@@ -28,7 +38,14 @@
       "name": "Brussels International Ballet",
       "slug": "brussels-international-ballet"
     },
-    "prices": [],
+    "prices": [
+      {
+        "amount": 29.0,
+        "currency": "EUR",
+        "includes": [],
+        "label": "Registration fee"
+      }
+    ],
     "schedule": {
       "end": "2026-08-01",
       "notes": "Residential package: Sunday 19 July – Sunday 02 August",
@@ -38,10 +55,10 @@
       "timezone": "Europe/Brussels"
     },
     "source": {
-      "attemptedAt": "2026-06-10T21:38:19.057840Z",
-      "hash": "sha256:33eb4d2195e73745fd5c91c6b897f57e42fa9b0fc768aedb87aebcee40abeeb7",
+      "attemptedAt": "2026-06-09T19:37:55.241639Z",
+      "hash": "sha256:df36b80a37b0761266e21d09cadf7722cf15fda58e1043d68e33f1537661b4f1",
       "provider": "brussels-international-ballet",
-      "scrapedAt": "2026-06-05T11:14:47.051686Z",
+      "scrapedAt": "2026-06-10T06:45:34.692680Z",
       "url": "https://www.brusselsintballet.org/summer-intensive-2026"
     },
     "teachers": [],

@@ -54,3 +54,26 @@ def test_status_none_when_unstated():
 def test_schedule_note_residential_window():
     text = "Package 1: Residential (Recommended) Dates: Sunday 19 July – Sunday 02 August Includes:"
     assert bib._schedule_note(text) == "Residential package: Sunday 19 July – Sunday 02 August"
+
+
+def test_prices_registration_fee():
+    text = "A non-refundable registration fee of €29 is required."
+    prices = bib._prices(text)
+    assert len(prices) == 1
+    assert prices[0].amount == 29.0
+    assert prices[0].currency == "EUR"
+    assert prices[0].label == "Registration fee"
+
+
+def test_requirements_headshot_and_photos_freeform():
+    text = "You must attach your proof of payment and a headshot. Attire follows these guidelines."
+    reqs = bib._requirements(text)
+    assert len(reqs) == 2
+    assert any(r.type == "headshot" for r in reqs)
+    assert any(r.type == "photos" and r.specificity == "freeform" for r in reqs)
+
+
+def test_requirements_defined_poses_when_positions_stated():
+    text = "Please upload a headshot and follow these guidelines for the positions."
+    reqs = bib._requirements(text)
+    assert any(r.type == "photos" and r.specificity == "defined-poses" for r in reqs)
