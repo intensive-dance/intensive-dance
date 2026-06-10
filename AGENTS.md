@@ -71,6 +71,18 @@ job (`if: always()`) collects their artifacts and commits — so one flaky site
 never blocks the rest, and a commit always lands (every picked provider's
 `attemptedAt` is bumped).
 
+**Self-healing → Copilot.** Two loops hand broken scrapers to the GitHub Copilot
+coding agent (one open issue per loop, reused so daily runs don't pile up dupes):
+a crashed `scrape.yml` leg uploads a `fail-<slug>` marker that the run's final
+`report` job (`intensive_dance.report_failure`) digests into a `scrape-failure`
+issue; and `scraper-audit.yml` (daily) flags any **live** provider whose
+committed store holds **zero** offerings (`intensive_dance.audit` →
+`assign_audit`, exempt via `audit_allowlist.json`) into a `scraper-audit` issue.
+Assignment goes through the REST agent-assignment body (`intensive_dance.copilot`)
+and needs a user PAT with Copilot enabled (`COPILOT_PAT`/`COPILOT_CLI_TOKEN`) —
+the default `GITHUB_TOKEN` can't assign the agent. These ops scripts are
+stdlib-only (run with `PYTHONPATH=src python3 -m …`, no `uv sync`).
+
 Always use `uv` (never bare `pip`/`python`). `ruff` line-length is **100**.
 
 ---
