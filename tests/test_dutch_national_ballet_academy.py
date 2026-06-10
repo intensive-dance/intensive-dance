@@ -68,3 +68,35 @@ def test_course_dates_none_when_label_absent():
 def test_genres():
     text = "Classical ballet, solo and pas de deux, repertoire, caracter, contemporary workshops"
     assert dnba._genres(text) == ["classical", "contemporary", "character", "repertoire"]
+
+
+def test_accommodation_fee():
+    # Pattern: €amount … (slug) where slug = label with " Week" stripped.
+    text = "€1.100 per week (Senior Course) €500 per week (Junior Course and Company Experience)"
+    assert dnba._accommodation_fee(text, "Senior Course") == 1100.0
+    assert dnba._accommodation_fee(text, "Junior Course") == 500.0
+    assert dnba._accommodation_fee(text, "Company Experience Week") == 500.0
+    # No match when label is absent
+    assert dnba._accommodation_fee(text, "Unknown Course") is None
+
+
+def test_build_prices_tuition_and_accommodation():
+    prices = dnba._build_prices("Senior Course", 1400.0, 1100.0)
+    assert len(prices) == 2
+    tuition = prices[0]
+    assert tuition.amount == 1400.0
+    assert tuition.includes == ["tuition"]
+    acc = prices[1]
+    assert acc.amount == 1100.0
+    assert acc.includes == ["accommodation"]
+    assert "meals" not in acc.includes
+
+
+def test_build_prices_no_accommodation():
+    prices = dnba._build_prices("Junior Course", 850.0, None)
+    assert len(prices) == 1
+    assert prices[0].includes == ["tuition"]
+
+
+def test_build_prices_no_fee():
+    assert dnba._build_prices("Senior Course", None, None) == []

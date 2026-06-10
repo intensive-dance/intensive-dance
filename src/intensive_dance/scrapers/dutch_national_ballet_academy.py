@@ -179,7 +179,7 @@ def _build_prices(label: str, fee: float | None, acc_fee: float | None) -> list[
                 amount=acc_fee,
                 currency="EUR",
                 label="Accommodation",
-                includes=["accommodation", "meals"],
+                includes=["accommodation"],
             )
         )
     return prices

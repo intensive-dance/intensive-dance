@@ -42,8 +42,7 @@
         "amount": 500.0,
         "currency": "EUR",
         "includes": [
-          "accommodation",
-          "meals"
+          "accommodation"
         ],
         "label": "Accommodation"
       }
@@ -57,7 +56,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-08T21:35:00.265379Z",
-      "hash": "sha256:2fe25d040452a2c183d6026277e7a9f1203532f785b55fb9c85ec58542a3d504",
+      "hash": "sha256:d6a4f7dd7b7b1e685cfbf9a54080d54aa184e1a743d056d53eeab5881a6cdb74",
       "provider": "dutch-national-ballet-academy",
       "scrapedAt": "2026-06-09T20:56:54.031372Z",
       "url": "https://www.atd.ahk.nl/en/dance-programmes/dutch-national-ballet-academy/summer-school/"
@@ -108,8 +107,7 @@
         "amount": 500.0,
         "currency": "EUR",
         "includes": [
-          "accommodation",
-          "meals"
+          "accommodation"
         ],
         "label": "Accommodation"
       }
@@ -123,7 +121,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-08T21:35:00.265379Z",
-      "hash": "sha256:106cb83658c1422b95db71fb899a12d27a97e3b7ef89bf9d7d5440d07f6132f5",
+      "hash": "sha256:b4657318b2e7ab3234e15706468f085aacb5099e0d8f71b38f3ffc4d219adb1b",
       "provider": "dutch-national-ballet-academy",
       "scrapedAt": "2026-06-09T20:56:54.029518Z",
       "url": "https://www.atd.ahk.nl/en/dance-programmes/dutch-national-ballet-academy/summer-school/"
@@ -174,8 +172,7 @@
         "amount": 1100.0,
         "currency": "EUR",
         "includes": [
-          "accommodation",
-          "meals"
+          "accommodation"
         ],
         "label": "Accommodation"
       }
@@ -189,7 +186,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-08T21:35:00.265379Z",
-      "hash": "sha256:1ac197771bb2f8fce5b02b5ea099df2d2a05ed5e5ce1ff88b9a569aef8fa8e97",
+      "hash": "sha256:b3cfff65e3bca06f105e2270c040663d4ac56506e1d0dfabeb1d6656ad7ba718",
       "provider": "dutch-national-ballet-academy",
       "scrapedAt": "2026-06-09T20:56:54.027794Z",
       "url": "https://www.atd.ahk.nl/en/dance-programmes/dutch-national-ballet-academy/summer-school/"
