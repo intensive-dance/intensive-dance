@@ -1,0 +1,40 @@
+name: scraper-audit
+
+on:
+  schedule:
+    - cron: "30 6 * * *" # daily 06:30 UTC — audits the latest committed store
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: scraper-audit
+  cancel-in-progress: false
+
+# Audits the committed data store for live providers delivering zero offerings
+# (stale markup / moved endpoint / over-eager filter) and — only when it finds
+# any — hands a single issue to the GitHub Copilot coding agent to fix.
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Audit scrapers
+        id: audit
+        env:
+          AUDIT_REPORT_PATH: ${{ runner.temp }}/scraper-audit-report.md
+        run: PYTHONPATH=src python3 -m intensive_dance.audit
+
+      - name: Hand findings to Copilot
+        if: steps.audit.outputs.suspects != '0'
+        env:
+          # A user PAT with Copilot enabled — the default GITHUB_TOKEN cannot
+          # assign the coding agent. Reuses the freed copilot-cli token; needs
+          # read metadata + read/write issues + pull requests + contents + actions.
+          GH_TOKEN: ${{ secrets.COPILOT_PAT || secrets.COPILOT_CLI_TOKEN || secrets.COPILOT_ASSIGN_TOKEN }}
+          AUDIT_REPORT_PATH: ${{ runner.temp }}/scraper-audit-report.md
+        run: PYTHONPATH=src python3 -m intensive_dance.assign_audit
