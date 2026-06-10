@@ -18,11 +18,12 @@ WHAT THE PAGE GIVES US (verified live 2026-06):
   - STATUS: the page states "Registration is now closed." That closes the
     *application*, not the course — the edition is still upcoming, so `lifecycle`
     stays `scheduled` (the IDR-24 distinction: closed ≠ cancelled).
-  - PRICES: not published here (costs live in the Online Application Form), so
-    none are emitted.
-  - REQUIREMENTS: the page notes an audition *fee* but never describes the
-    audition (video? in person?), so requirements stay `[]` ("not stated"), with
-    the audition-fee/deposit terms kept as an application note.
+  - PRICES: the registration page (`/registration-sp26`) states a non-refundable
+    €29 registration fee; it is emitted as a `Price` with `includes=[]` (fee only,
+    not tuition).
+  - REQUIREMENTS: `/registration-sp26` asks for a headshot and links guidelines.
+    We emit `headshot`; photo requirements are `defined-poses` only when the text
+    explicitly says positions, otherwise `freeform`.
 
 Faculty are listed as a legacy roll of guest artists ("names such as …"), not a
 confirmed 2026 roster, so teachers are left empty rather than over-claimed (the
@@ -135,17 +136,19 @@ def _prices(reg_text: str) -> list[Price]:
 
 def _requirements(reg_text: str) -> list[Requirement]:
     reqs: list[Requirement] = []
-    if "headshot" in reg_text.lower():
+    low = reg_text.lower()
+    if "headshot" in low:
         reqs.append(HeadshotReq())
-    if (
-        "guidelines for the positions" in reg_text.lower()
-        or "attire follows these guidelines" in reg_text.lower()
-    ):
+    if "guidelines for the positions" in low:
         reqs.append(
             PhotosReq(
                 specificity="defined-poses",
                 notes="Attire and positions must follow the guidelines PDF.",
             )
+        )
+    elif "attire follows these guidelines" in low:
+        reqs.append(
+            PhotosReq(specificity="freeform", notes="Attire must follow the guidelines PDF.")
         )
     return reqs
 

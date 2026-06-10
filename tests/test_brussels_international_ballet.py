@@ -65,9 +65,15 @@ def test_prices_registration_fee():
     assert prices[0].label == "Registration fee"
 
 
-def test_requirements_headshot_and_photos():
+def test_requirements_headshot_and_photos_freeform():
     text = "You must attach your proof of payment and a headshot. Attire follows these guidelines."
     reqs = bib._requirements(text)
     assert len(reqs) == 2
     assert any(r.type == "headshot" for r in reqs)
+    assert any(r.type == "photos" and r.specificity == "freeform" for r in reqs)
+
+
+def test_requirements_defined_poses_when_positions_stated():
+    text = "Please upload a headshot and follow these guidelines for the positions."
+    reqs = bib._requirements(text)
     assert any(r.type == "photos" and r.specificity == "defined-poses" for r in reqs)

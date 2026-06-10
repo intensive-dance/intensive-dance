@@ -1,0 +1,3 @@
+{
+  "_comment": "Provider slugs the daily audit should NOT flag when their committed store holds zero offerings. Add a slug here only after confirming the live source genuinely has no offerings (e.g. a provider between editions whose past cycles were never captured) — and leave a one-line reason. A broken scraper belongs in a fix PR, not here."
+}
