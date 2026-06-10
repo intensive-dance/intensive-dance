@@ -46,11 +46,16 @@ from intensive_dance.models import (
     Organization,
     Schedule,
     Source,
+    Price,
+    HeadshotReq,
+    PhotosReq,
+    Requirement,
     now_utc,
 )
 
 BASE = "https://www.brusselsintballet.org"
 PAGE = f"{BASE}/summer-intensive-2026"
+REGISTRATION_PAGE = f"{BASE}/registration-sp26"
 
 ORG = Organization(
     name="Brussels International Ballet",
@@ -69,15 +74,22 @@ _APPLY_NOTE = (
 def scrape(client: httpx.Client) -> list[Offering]:
     resp = client.get(PAGE)
     resp.raise_for_status()
-    offering = _build_offering(resp.text)
+    reg_resp = client.get(REGISTRATION_PAGE)
+    reg_resp.raise_for_status()
+    offering = _build_offering(resp.text, reg_resp.text)
     return [offering] if offering is not None else []
 
 
-def _build_offering(html: str) -> Offering | None:
+def _build_offering(html: str, reg_html: str = "") -> Offering | None:
     tree = HTMLParser(html)
     for node in tree.css("script, style, noscript"):
         node.decompose()
     text = parse.clean(tree.body.text(separator=" ")) if tree.body else ""
+
+    reg_tree = HTMLParser(reg_html)
+    for node in reg_tree.css("script, style, noscript"):
+        node.decompose()
+    reg_text = parse.clean(reg_tree.body.text(separator=" ")) if reg_tree.body else ""
 
     start, end = _date_range(text)
     anchor = end or start
@@ -100,12 +112,42 @@ def _build_offering(html: str) -> Offering | None:
             timezone="Europe/Brussels",
             notes=_schedule_note(text),
         ),
+        prices=_prices(reg_text),
         application=Application(
             status=_status(text),
             url=PAGE,
+            requirements=_requirements(reg_text),
             notes=_APPLY_NOTE,
         ),
     )
+
+
+_APP_FEE = re.compile(r"(?:registration|audition)\s+fee\D{0,15}€\s*(\d+)", re.IGNORECASE)
+
+
+def _prices(reg_text: str) -> list[Price]:
+    prices: list[Price] = []
+    m = _APP_FEE.search(reg_text)
+    if m and (amount := parse.parse_amount(m.group(1))) is not None:
+        prices.append(Price(amount=amount, currency="EUR", label="Registration fee", includes=[]))
+    return prices
+
+
+def _requirements(reg_text: str) -> list[Requirement]:
+    reqs: list[Requirement] = []
+    if "headshot" in reg_text.lower():
+        reqs.append(HeadshotReq())
+    if (
+        "guidelines for the positions" in reg_text.lower()
+        or "attire follows these guidelines" in reg_text.lower()
+    ):
+        reqs.append(
+            PhotosReq(
+                specificity="defined-poses",
+                notes="Attire and positions must follow the guidelines PDF.",
+            )
+        )
+    return reqs
 
 
 # --- parsing ------------------------------------------------------------------
