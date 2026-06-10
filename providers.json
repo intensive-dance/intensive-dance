@@ -1142,6 +1142,24 @@
       "url": "https://www.ballett-und-tanzschule-anastasia.com/",
       "tier": "secondary",
       "status": "seed"
+    },
+    {
+      "slug": "american-midwest-ballet",
+      "name": "American Midwest Ballet",
+      "country": "US",
+      "city": "Omaha",
+      "url": "https://amballet.org/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "master-ballet-academy",
+      "name": "Master Ballet Academy",
+      "country": "US",
+      "city": "Scottsdale",
+      "url": "https://www.masterballetacademy.com/",
+      "tier": "secondary",
+      "status": "seed"
     }
   ]
 }
