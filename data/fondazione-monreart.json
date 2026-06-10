@@ -42,7 +42,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "attemptedAt": "2026-06-09T19:37:57.925847Z",
+      "attemptedAt": "2026-06-10T21:38:16.752353Z",
       "hash": "sha256:091a0f4edbffa2b99385a56ef7e62f130d73c1ef0c60905ef21b0005567c0703",
       "provider": "fondazione-monreart",
       "scrapedAt": "2026-06-05T11:49:49.972566Z",
@@ -103,9 +103,8 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "attemptedAt": "2026-06-09T19:37:57.925847Z",
-      "hash": "sha256:2de478ff9b60a5e265b0642116087346fabee2f31aee59ed0f25128e0abab693",
-      "provider": "fondazione-monreart",
+      "attemptedAt": "2026-06-10T21:38:16.752353Z",
+      "hash": "sha256:2de478ff9b60a5e265b0642116087346fabee2f31aee59ed0f25128e0abab693",      "provider": "fondazione-monreart",
       "scrapedAt": "2026-06-10T06:43:51.289718Z",
       "url": "https://www.monreart.com/eventi/international-summer-school-budapest/"
     },
@@ -163,9 +162,8 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "attemptedAt": "2026-06-09T19:37:57.925847Z",
-      "hash": "sha256:16f97bb91f7f57d76f549da2d59783e54c67c5259f99368cedd173fbb11acc3c",
-      "provider": "fondazione-monreart",
+      "attemptedAt": "2026-06-10T21:38:16.752353Z",
+      "hash": "sha256:16f97bb91f7f57d76f549da2d59783e54c67c5259f99368cedd173fbb11acc3c",      "provider": "fondazione-monreart",
       "scrapedAt": "2026-06-10T06:43:49.503810Z",
       "url": "https://www.monreart.com/eventi/international-summer-school-cyprus/"
     },
@@ -224,9 +222,8 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "attemptedAt": "2026-06-09T19:37:57.925847Z",
-      "hash": "sha256:b701d08a0530fce5354abf80e3488dbc4b50e068ab1761d87f04d6e65c297969",
-      "provider": "fondazione-monreart",
+      "attemptedAt": "2026-06-10T21:38:16.752353Z",
+      "hash": "sha256:b701d08a0530fce5354abf80e3488dbc4b50e068ab1761d87f04d6e65c297969",      "provider": "fondazione-monreart",
       "scrapedAt": "2026-06-10T06:43:56.731675Z",
       "url": "https://www.monreart.com/eventi/international-summer-school-volta-mantovana/"
     },
@@ -279,7 +276,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "attemptedAt": "2026-06-09T19:37:57.925847Z",
+      "attemptedAt": "2026-06-10T21:38:16.752353Z",
       "hash": "sha256:d3c4c260010952253c95fda0f85e74f7b1b40ffe312924c89b3500086db0d9b4",
       "provider": "fondazione-monreart",
       "scrapedAt": "2026-06-07T08:35:08.780845Z",

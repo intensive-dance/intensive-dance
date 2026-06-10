@@ -56,6 +56,10 @@ The recommended next builds — discovered, in scope, with a confirmed dated 202
 | Valencia Endanza | ES · Valencia | ~13–25 Jul | valenciaendanza.com |
 | Art in Motion Munich | DE · Munich | 3–15 Aug (deadline 15 Jul) | artinmotionmunich.com |
 | Tanzquartier Köln | DE · Cologne | 31 Jul–4 Aug + 24–28 Aug | tanzquartier.koeln |
+| American Midwest Ballet — Summer Intensive | US · Omaha NE | 8–26 Jun | amballet.org/si |
+| Master Ballet Academy — Summer Intensive | US · Scottsdale AZ | 15 Jun–24 Jul | masterballetacademy.com |
+
+> **US own-school-site builds (seeded in `providers.json`):** *American Midwest Ballet* — WordPress (`/wp-content/` → try `/wp-json/`); ages 11–25 (+ Junior 10–13); online audition = teacher recommendation + 1st-arabesque & tendu-à-la-seconde photos (defined-poses). *Master Ballet Academy* (Vaganova, Scottsdale) — Wix (watch zero-width spaces); 6-week, min 3 wks; audition = headshot + 1st-arabesque photo (video/Zoom/in-person).
 
 ## 📡 Monitor — recurring, 2026 dates not yet posted (`parked`/`scored`)
 - Teatro dell'Opera di Roma — Stage Estivo (IT · Rome, Abbagnato) — 2026 page live, dates ~July TBA — operaroma.it

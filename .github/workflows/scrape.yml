@@ -48,6 +48,7 @@ jobs:
           enable-cache: true
 
       - name: Scrape ${{ matrix.slug }}
+        id: scrape
         continue-on-error: true
         env:
           FETCH_PROXY_URL: ${{ secrets.FETCH_PROXY_URL }}
@@ -62,6 +63,22 @@ jobs:
           name: data-${{ matrix.slug }}
           path: data/${{ matrix.slug }}.json
           if-no-files-found: ignore
+          retention-days: 1
+
+      # continue-on-error swallows a crashed scraper so it never blocks the others;
+      # a marker artifact lets the report job below hand the crash to Copilot.
+      - name: Mark scrape failure
+        if: steps.scrape.outcome == 'failure'
+        run: |
+          mkdir -p failures
+          echo "${{ matrix.slug }}" > "failures/${{ matrix.slug }}.txt"
+
+      - name: Upload failure marker
+        if: steps.scrape.outcome == 'failure'
+        uses: actions/upload-artifact@v7
+        with:
+          name: fail-${{ matrix.slug }}
+          path: failures/${{ matrix.slug }}.txt
           retention-days: 1
 
   commit:
@@ -94,3 +111,32 @@ jobs:
           else
             echo "no data changes"
           fi
+
+  # Self-healing: a crashed scraper leg (fail-* marker) or a hard infra failure
+  # gets distilled into a single open issue and handed to the Copilot coding agent.
+  # No markers and no failure → report_failure no-ops, so this is cheap on a clean run.
+  report:
+    needs: [select, scrape, commit]
+    if: always()
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Download failure markers
+        continue-on-error: true # no markers on a clean run is fine, not an error
+        uses: actions/download-artifact@v8
+        with:
+          pattern: fail-*
+          path: failures
+          merge-multiple: true
+
+      - name: Report failures to Copilot
+        env:
+          # A user PAT with Copilot enabled — the default GITHUB_TOKEN cannot assign
+          # the coding agent. Reuses the freed copilot-cli token; needs Actions read
+          # (to fetch logs) plus read/write issues + pull requests + contents.
+          GH_TOKEN: ${{ secrets.COPILOT_PAT || secrets.COPILOT_CLI_TOKEN || secrets.COPILOT_ASSIGN_TOKEN }}
+        run: PYTHONPATH=src python3 -m intensive_dance.report_failure
