@@ -14,6 +14,13 @@ Source-of-truth docs to keep open: [`docs/data-model.md`](./docs/data-model.md)
 > redundant**, update `AGENTS.md` in the same PR. Prefer correcting/condensing an
 > existing line over appending a new one — fight bloat. Treat it as part of the
 > change, not a follow-up.
+>
+> **Architecture / infra / ops / legal changes also live in the internal doc-set.**
+> If a change alters the architecture, infrastructure, operational workflow, data
+> model, or legal/compliance posture, mirror it into the **private companion repo's
+> `docs/` set** (and regenerate its `viewer.html`) in the **same PR** — same ethos,
+> broader than this file. That set (architecture · infra · operations · legal risk
+> register) is the PO/architect reference and must not drift.
 
 ---
 
@@ -70,6 +77,18 @@ independent, `continue-on-error` matrix job (`--touch`), then a single `commit`
 job (`if: always()`) collects their artifacts and commits — so one flaky site
 never blocks the rest, and a commit always lands (every picked provider's
 `attemptedAt` is bumped).
+
+**Self-healing → Copilot.** Two loops hand broken scrapers to the GitHub Copilot
+coding agent (one open issue per loop, reused so daily runs don't pile up dupes):
+a crashed `scrape.yml` leg uploads a `fail-<slug>` marker that the run's final
+`report` job (`intensive_dance.report_failure`) digests into a `scrape-failure`
+issue; and `scraper-audit.yml` (daily) flags any **live** provider whose
+committed store holds **zero** offerings (`intensive_dance.audit` →
+`assign_audit`, exempt via `audit_allowlist.json`) into a `scraper-audit` issue.
+Assignment goes through the REST agent-assignment body (`intensive_dance.copilot`)
+and needs a user PAT with Copilot enabled (`COPILOT_PAT`/`COPILOT_CLI_TOKEN`) —
+the default `GITHUB_TOKEN` can't assign the agent. These ops scripts are
+stdlib-only (run with `PYTHONPATH=src python3 -m …`, no `uv sync`).
 
 Always use `uv` (never bare `pip`/`python`). `ruff` line-length is **100**.
 
@@ -432,7 +451,28 @@ when a second provider genuinely needs the identical thing.
   the dedicated workshop page there, but anchor on its structured 開催概要/受講料
   blocks: such pages keep **stale prior-edition prose** (commented-out 中止 lines,
   past-year admin dates) that loose-text parsing would catch (see
-  `tokyo_city_ballet`).
+  `tokyo_city_ballet`). An **open-class studio with rotating guests** is mostly
+  out of scope (drop-in classes aren't a dated edition), but its recurring,
+  *dated* **guest-school workshop-audition** (a visiting school screening dancers
+  for 短期留学 short-term study) IS in scope — one Offering per edition. Discover
+  these via the WP REST `posts?search=ワークショップ・オーディション`, but **filter
+  hard**: keep only the post that IS the workshop (require the structured
+  per-school audition band "<school>：N歳-M歳"), and skip (a) pure pro-company
+  auditions and (b) the studio's own ¥-cheap **drop-in promo posts that merely
+  cross-reference** the workshop (事前のお申込み不要 / pay-at-door, no audition band).
+  Also cut the 【学校情報】 school-profile blurb before genre-matching — it lists the
+  *school's* curriculum ("クラシックバレエとコンテンポラリーダンス") and would leak a
+  contemporary genre the workshop doesn't teach. Day tokens carry weekday markers
+  with their own 月/日 ("5日（火）"), so anchor dates on year+month then read N日（曜）
+  tokens, don't negate-class on 月 (see `studio_architanz`). A provider whose
+  *main* site is an **agency/association** doing only 登録サポート (registration
+  support) for *foreign* schools' auditions/summer schools (Paris Opéra, Cannes,
+  CNSMD Lyon …) can still run **its own** dated student workshop on a **sister
+  microsite** — scrape that, ignore the agency-mediated listings (those are other
+  schools' programs, not this org's intensive). The own-workshop year is usually
+  explicit in the title (no stamp inference), and a hyphen-joined day run
+  "25日-26日-27日" needs a `(?:\d+日[-、…]*)+` capture (a non-greedy `[\d-]+日` stops at
+  the first 日); see `temps_lie_ballet_workshop_japan`.
 - **One org, several city editions = one scraper, many Offerings.** A provider
   can run the same course as separate per-city subdomains (ART of's
   `zurich.`/`madrid.art-of.net`, same director). Build **one** scraper filed
@@ -459,4 +499,5 @@ when a second provider genuinely needs the identical thing.
 - [ ] `ruff check .` · `ruff format .` · `ty check` · `pytest -q` · `schema` · `validate` all green
 - [ ] Module docstring: API-FIRST + DISCOVERY + WHAT IT EXERCISES (verified date)
 - [ ] `AGENTS.md` updated if you learned something / found something stale (see top)
+- [ ] Architecture / infra / ops / data-model / legal change? Mirror it in the internal doc-set (private companion `docs/`) + regenerate its `viewer.html` (see top)
 - [ ] Branch → push → PR

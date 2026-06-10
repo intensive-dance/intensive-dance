@@ -169,7 +169,7 @@
       "city": "Munich",
       "url": "https://danceartsacademy.de/",
       "tier": "secondary",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "summer-sensation-intensive",
@@ -322,7 +322,7 @@
       "city": "Budapest",
       "url": "https://balletsummercoursebudapest.com/",
       "tier": "secondary",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "royal-danish-ballet-summer-school",
@@ -367,7 +367,7 @@
       "city": "Helsinki",
       "url": "https://finsummerdance.com/",
       "tier": "secondary",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "ballet-ruso-barcelona",
@@ -502,7 +502,7 @@
       "city": "Osaka",
       "url": "https://www.jbi-japanballetintensives.com/",
       "tier": "secondary",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "ibsi-incheon",
@@ -556,7 +556,7 @@
       "city": "Saitama",
       "url": "https://nbaballet.org/",
       "tier": "secondary",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "inoue-ballet",
@@ -644,9 +644,9 @@
       "name": "Studio Architanz (ATP)",
       "country": "JP",
       "city": "Tokyo",
-      "url": "https://atp.a-tanz.com/",
+      "url": "https://a-tanz.com/",
       "tier": "secondary",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "temps-lie-ballet-workshop-japan",
@@ -655,7 +655,7 @@
       "city": "Tokyo",
       "url": "https://www.le-temps-lie.org/",
       "tier": "secondary",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "julia-ballet-academy",
@@ -1069,7 +1069,7 @@
       "city": "Las Vegas",
       "url": "https://vaganovainternationalprogram.com/",
       "tier": "secondary",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "conservatorio-annarella",
@@ -1086,6 +1086,78 @@
       "country": "RO",
       "city": "Bucharest",
       "url": "https://casadebalet.ro/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "art-in-motion-munich",
+      "name": "Art in Motion Munich",
+      "country": "DE",
+      "city": "Munich",
+      "url": "https://www.artinmotionmunich.com/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "tanzquartier-koeln",
+      "name": "Tanzquartier Köln",
+      "country": "DE",
+      "city": "Cologne",
+      "url": "https://tanzquartier.koeln/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "hamburger-ballett-tanztage",
+      "name": "Hamburger Ballett-Tanztage (GinaWorkshops)",
+      "country": "DE",
+      "city": "Hamburg",
+      "url": "https://ginaworkshops.com/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "staatsballett-berlin-feriencamp",
+      "name": "Staatsballett Berlin — Feriencamp",
+      "country": "DE",
+      "city": "Berlin",
+      "url": "https://www.staatsballett-berlin.de/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "benedict-manniegel",
+      "name": "Benedict Manniegel Ballet School & Academy",
+      "country": "DE",
+      "city": "Munich",
+      "url": "https://www.benedictmanniegel.de/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "tanzschule-anastasia-frankfurt",
+      "name": "Ballett- und Tanzschule Anastasia",
+      "country": "DE",
+      "city": "Frankfurt am Main",
+      "url": "https://www.ballett-und-tanzschule-anastasia.com/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "american-midwest-ballet",
+      "name": "American Midwest Ballet",
+      "country": "US",
+      "city": "Omaha",
+      "url": "https://amballet.org/",
+      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "master-ballet-academy",
+      "name": "Master Ballet Academy",
+      "country": "US",
+      "city": "Scottsdale",
+      "url": "https://www.masterballetacademy.com/",
       "tier": "secondary",
       "status": "seed"
     }

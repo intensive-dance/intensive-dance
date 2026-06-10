@@ -1,0 +1,1472 @@
+[
+  {
+    "application": {
+      "requirements": [],
+      "url": "https://balletsummercoursebudapest.com/about-our-groups/advanced-amateur-group-from-the-age-of-15/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "character",
+      "contemporary"
+    ],
+    "id": "ballet-summer-course-budapest/advanced-amateur-group-from-the-age-of-15-2026",
+    "level": [
+      "advanced",
+      "open"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Budapest",
+      "country": "HU"
+    },
+    "organization": {
+      "city": "Budapest",
+      "country": "HU",
+      "name": "Ballet Summer Course Budapest",
+      "slug": "ballet-summer-course-budapest"
+    },
+    "prices": [
+      {
+        "amount": 350.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "1 week",
+        "notes": "1 week: 350 €"
+      },
+      {
+        "amount": 600.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "2 weeks",
+        "notes": "2 weeks: 600 €"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-08",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-27",
+      "timezone": "Europe/Budapest"
+    },
+    "source": {
+      "attemptedAt": "2026-06-10T14:05:43.977106Z",
+      "hash": "sha256:6980fac4755bcaefb17caeefb7423cee71617f41feeb20adde4dffee73c3d22a",
+      "provider": "ballet-summer-course-budapest",
+      "scrapedAt": "2026-06-09T00:29:18.183399Z",
+      "url": "https://balletsummercoursebudapest.com/about-our-groups/advanced-amateur-group-from-the-age-of-15/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Mariinsky Theatre"
+          },
+          {
+            "current": true,
+            "organization": "Perm Ballet"
+          }
+        ],
+        "name": "Viktoriia Stavtseva"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian State Opera"
+          },
+          {
+            "current": true,
+            "organization": "Hungarian Dance Academy"
+          },
+          {
+            "current": true,
+            "organization": "Mariinsky Theatre"
+          },
+          {
+            "current": true,
+            "organization": "Perm Ballet"
+          }
+        ],
+        "name": "Vdovicheva Tatjana"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          },
+          {
+            "current": true,
+            "organization": "Imperial Russian Ballet"
+          }
+        ],
+        "name": "Golovina Yuliya"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Hungarian State Opera"
+          },
+          {
+            "organization": "Hungarian National Ballet Institute"
+          },
+          {
+            "organization": "Hungarian National Ballet"
+          }
+        ],
+        "name": "Chernakova Olga"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet Institute"
+          },
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          }
+        ],
+        "name": "Kirejko Dmitrij"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          },
+          {
+            "current": true,
+            "organization": "GITIS (Russian Institute of Theatre Arts)"
+          }
+        ],
+        "name": "Kosyreva Diana"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian State Opera"
+          },
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet Institute"
+          },
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          },
+          {
+            "current": true,
+            "organization": "National Opera of Ukraine"
+          }
+        ],
+        "name": "Yakushkina Nataliia"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian Dance Academy"
+          },
+          {
+            "current": true,
+            "organization": "Perm Ballet"
+          }
+        ],
+        "name": "Muruev Denis"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          }
+        ],
+        "name": "Pétery Melinda"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet Institute"
+          },
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          }
+        ],
+        "name": "Katalin Stáry"
+      }
+    ],
+    "title": "Ballet Summer Course Budapest — Amateur advanced level group 2026"
+  },
+  {
+    "application": {
+      "requirements": [],
+      "url": "https://balletsummercoursebudapest.com/amateur-beginning-group-no-age-limit/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "character",
+      "contemporary"
+    ],
+    "id": "ballet-summer-course-budapest/amateur-beginning-group-no-age-limit-2026",
+    "level": [
+      "beginner",
+      "open"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Budapest",
+      "country": "HU"
+    },
+    "organization": {
+      "city": "Budapest",
+      "country": "HU",
+      "name": "Ballet Summer Course Budapest",
+      "slug": "ballet-summer-course-budapest"
+    },
+    "prices": [
+      {
+        "amount": 230.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "1 week",
+        "notes": "1 week: 230 €"
+      },
+      {
+        "amount": 380.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "2 weeks",
+        "notes": "2 weeks: 380 €"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-08",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-27",
+      "timezone": "Europe/Budapest"
+    },
+    "source": {
+      "attemptedAt": "2026-06-10T14:05:43.977106Z",
+      "hash": "sha256:c420ec090c65e714b33d75aba103c946429f29a7e5ecacd71a7821595ec13cfe",
+      "provider": "ballet-summer-course-budapest",
+      "scrapedAt": "2026-06-09T00:29:18.185132Z",
+      "url": "https://balletsummercoursebudapest.com/amateur-beginning-group-no-age-limit/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Mariinsky Theatre"
+          },
+          {
+            "current": true,
+            "organization": "Perm Ballet"
+          }
+        ],
+        "name": "Viktoriia Stavtseva"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian State Opera"
+          },
+          {
+            "current": true,
+            "organization": "Hungarian Dance Academy"
+          },
+          {
+            "current": true,
+            "organization": "Mariinsky Theatre"
+          },
+          {
+            "current": true,
+            "organization": "Perm Ballet"
+          }
+        ],
+        "name": "Vdovicheva Tatjana"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          },
+          {
+            "current": true,
+            "organization": "Imperial Russian Ballet"
+          }
+        ],
+        "name": "Golovina Yuliya"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Hungarian State Opera"
+          },
+          {
+            "organization": "Hungarian National Ballet Institute"
+          },
+          {
+            "organization": "Hungarian National Ballet"
+          }
+        ],
+        "name": "Chernakova Olga"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet Institute"
+          },
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          }
+        ],
+        "name": "Kirejko Dmitrij"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          },
+          {
+            "current": true,
+            "organization": "GITIS (Russian Institute of Theatre Arts)"
+          }
+        ],
+        "name": "Kosyreva Diana"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian State Opera"
+          },
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet Institute"
+          },
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          },
+          {
+            "current": true,
+            "organization": "National Opera of Ukraine"
+          }
+        ],
+        "name": "Yakushkina Nataliia"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian Dance Academy"
+          },
+          {
+            "current": true,
+            "organization": "Perm Ballet"
+          }
+        ],
+        "name": "Muruev Denis"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          }
+        ],
+        "name": "Pétery Melinda"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet Institute"
+          },
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          }
+        ],
+        "name": "Katalin Stáry"
+      }
+    ],
+    "title": "Ballet Summer Course Budapest — Amateur beginning group 2026"
+  },
+  {
+    "ageRange": {
+      "max": 12,
+      "min": 10
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://balletsummercoursebudapest.com/about-our-groups/children-group-between-10-and-13-years-of-age/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "character",
+      "contemporary"
+    ],
+    "id": "ballet-summer-course-budapest/children-group-between-10-and-13-years-of-age-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Budapest",
+      "country": "HU"
+    },
+    "organization": {
+      "city": "Budapest",
+      "country": "HU",
+      "name": "Ballet Summer Course Budapest",
+      "slug": "ballet-summer-course-budapest"
+    },
+    "prices": [
+      {
+        "amount": 300.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "1 week",
+        "notes": "1 week: 300 €"
+      },
+      {
+        "amount": 450.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "2 week",
+        "notes": "2 week: 450 €"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-08",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-27",
+      "timezone": "Europe/Budapest"
+    },
+    "source": {
+      "attemptedAt": "2026-06-10T14:05:43.977106Z",
+      "hash": "sha256:b6e8125ea89eafe989bd653d63be8520ec0dc98fe8663bf3128f3e65f4fd1333",
+      "provider": "ballet-summer-course-budapest",
+      "scrapedAt": "2026-06-09T00:29:18.185995Z",
+      "url": "https://balletsummercoursebudapest.com/about-our-groups/children-group-between-10-and-13-years-of-age/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Mariinsky Theatre"
+          },
+          {
+            "current": true,
+            "organization": "Perm Ballet"
+          }
+        ],
+        "name": "Viktoriia Stavtseva"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian State Opera"
+          },
+          {
+            "current": true,
+            "organization": "Hungarian Dance Academy"
+          },
+          {
+            "current": true,
+            "organization": "Mariinsky Theatre"
+          },
+          {
+            "current": true,
+            "organization": "Perm Ballet"
+          }
+        ],
+        "name": "Vdovicheva Tatjana"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          },
+          {
+            "current": true,
+            "organization": "Imperial Russian Ballet"
+          }
+        ],
+        "name": "Golovina Yuliya"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Hungarian State Opera"
+          },
+          {
+            "organization": "Hungarian National Ballet Institute"
+          },
+          {
+            "organization": "Hungarian National Ballet"
+          }
+        ],
+        "name": "Chernakova Olga"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet Institute"
+          },
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          }
+        ],
+        "name": "Kirejko Dmitrij"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          },
+          {
+            "current": true,
+            "organization": "GITIS (Russian Institute of Theatre Arts)"
+          }
+        ],
+        "name": "Kosyreva Diana"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian State Opera"
+          },
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet Institute"
+          },
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          },
+          {
+            "current": true,
+            "organization": "National Opera of Ukraine"
+          }
+        ],
+        "name": "Yakushkina Nataliia"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian Dance Academy"
+          },
+          {
+            "current": true,
+            "organization": "Perm Ballet"
+          }
+        ],
+        "name": "Muruev Denis"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          }
+        ],
+        "name": "Pétery Melinda"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet Institute"
+          },
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          }
+        ],
+        "name": "Katalin Stáry"
+      }
+    ],
+    "title": "Ballet Summer Course Budapest — Junior group 2026"
+  },
+  {
+    "ageRange": {
+      "max": 10,
+      "min": 8
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://balletsummercoursebudapest.com/about-our-groups/group-6-childrens-sport-group/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "character",
+      "contemporary"
+    ],
+    "id": "ballet-summer-course-budapest/group-6-childrens-sport-group-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Budapest",
+      "country": "HU"
+    },
+    "organization": {
+      "city": "Budapest",
+      "country": "HU",
+      "name": "Ballet Summer Course Budapest",
+      "slug": "ballet-summer-course-budapest"
+    },
+    "prices": [
+      {
+        "amount": 150.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "1 week",
+        "notes": "1 week: 150 €"
+      },
+      {
+        "amount": 250.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "2 week",
+        "notes": "2 week: 250 €"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-08",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-27",
+      "timezone": "Europe/Budapest"
+    },
+    "source": {
+      "attemptedAt": "2026-06-10T14:05:43.977106Z",
+      "hash": "sha256:5a3078f57b1b9d0ac7299b0fe181b2f0c610ec8fe4268b3dd72e9979908e26b1",
+      "provider": "ballet-summer-course-budapest",
+      "scrapedAt": "2026-06-09T00:29:18.186763Z",
+      "url": "https://balletsummercoursebudapest.com/about-our-groups/group-6-childrens-sport-group/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Mariinsky Theatre"
+          },
+          {
+            "current": true,
+            "organization": "Perm Ballet"
+          }
+        ],
+        "name": "Viktoriia Stavtseva"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian State Opera"
+          },
+          {
+            "current": true,
+            "organization": "Hungarian Dance Academy"
+          },
+          {
+            "current": true,
+            "organization": "Mariinsky Theatre"
+          },
+          {
+            "current": true,
+            "organization": "Perm Ballet"
+          }
+        ],
+        "name": "Vdovicheva Tatjana"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          },
+          {
+            "current": true,
+            "organization": "Imperial Russian Ballet"
+          }
+        ],
+        "name": "Golovina Yuliya"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Hungarian State Opera"
+          },
+          {
+            "organization": "Hungarian National Ballet Institute"
+          },
+          {
+            "organization": "Hungarian National Ballet"
+          }
+        ],
+        "name": "Chernakova Olga"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet Institute"
+          },
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          }
+        ],
+        "name": "Kirejko Dmitrij"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          },
+          {
+            "current": true,
+            "organization": "GITIS (Russian Institute of Theatre Arts)"
+          }
+        ],
+        "name": "Kosyreva Diana"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian State Opera"
+          },
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet Institute"
+          },
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          },
+          {
+            "current": true,
+            "organization": "National Opera of Ukraine"
+          }
+        ],
+        "name": "Yakushkina Nataliia"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian Dance Academy"
+          },
+          {
+            "current": true,
+            "organization": "Perm Ballet"
+          }
+        ],
+        "name": "Muruev Denis"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          }
+        ],
+        "name": "Pétery Melinda"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet Institute"
+          },
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          }
+        ],
+        "name": "Katalin Stáry"
+      }
+    ],
+    "title": "Ballet Summer Course Budapest — Children group 2026"
+  },
+  {
+    "application": {
+      "requirements": [],
+      "url": "https://balletsummercoursebudapest.com/about-our-groups/intermediate-amateur-group-from-the-age-of-15/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "character",
+      "contemporary"
+    ],
+    "id": "ballet-summer-course-budapest/intermediate-amateur-group-from-the-age-of-15-2026",
+    "level": [
+      "intermediate",
+      "open"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Budapest",
+      "country": "HU"
+    },
+    "organization": {
+      "city": "Budapest",
+      "country": "HU",
+      "name": "Ballet Summer Course Budapest",
+      "slug": "ballet-summer-course-budapest"
+    },
+    "prices": [
+      {
+        "amount": 320.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "1 week",
+        "notes": "1 week: 320 €"
+      },
+      {
+        "amount": 500.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "2 weeks",
+        "notes": "2 weeks: 500 €"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-08",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-27",
+      "timezone": "Europe/Budapest"
+    },
+    "source": {
+      "attemptedAt": "2026-06-10T14:05:43.977106Z",
+      "hash": "sha256:d0ed275ee019142103a740bcf06c1617198b498b14a10d241a0f62832fca9634",
+      "provider": "ballet-summer-course-budapest",
+      "scrapedAt": "2026-06-09T00:29:18.184287Z",
+      "url": "https://balletsummercoursebudapest.com/about-our-groups/intermediate-amateur-group-from-the-age-of-15/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Mariinsky Theatre"
+          },
+          {
+            "current": true,
+            "organization": "Perm Ballet"
+          }
+        ],
+        "name": "Viktoriia Stavtseva"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian State Opera"
+          },
+          {
+            "current": true,
+            "organization": "Hungarian Dance Academy"
+          },
+          {
+            "current": true,
+            "organization": "Mariinsky Theatre"
+          },
+          {
+            "current": true,
+            "organization": "Perm Ballet"
+          }
+        ],
+        "name": "Vdovicheva Tatjana"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          },
+          {
+            "current": true,
+            "organization": "Imperial Russian Ballet"
+          }
+        ],
+        "name": "Golovina Yuliya"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Hungarian State Opera"
+          },
+          {
+            "organization": "Hungarian National Ballet Institute"
+          },
+          {
+            "organization": "Hungarian National Ballet"
+          }
+        ],
+        "name": "Chernakova Olga"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet Institute"
+          },
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          }
+        ],
+        "name": "Kirejko Dmitrij"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          },
+          {
+            "current": true,
+            "organization": "GITIS (Russian Institute of Theatre Arts)"
+          }
+        ],
+        "name": "Kosyreva Diana"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian State Opera"
+          },
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet Institute"
+          },
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          },
+          {
+            "current": true,
+            "organization": "National Opera of Ukraine"
+          }
+        ],
+        "name": "Yakushkina Nataliia"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian Dance Academy"
+          },
+          {
+            "current": true,
+            "organization": "Perm Ballet"
+          }
+        ],
+        "name": "Muruev Denis"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          }
+        ],
+        "name": "Pétery Melinda"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet Institute"
+          },
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          }
+        ],
+        "name": "Katalin Stáry"
+      }
+    ],
+    "title": "Ballet Summer Course Budapest — Amateur intermediate group 2026"
+  },
+  {
+    "ageRange": {
+      "min": 16
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://balletsummercoursebudapest.com/about-our-groups/professional-junior-group-between-13-and-15-years-of-age/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "character",
+      "contemporary"
+    ],
+    "id": "ballet-summer-course-budapest/professional-junior-group-between-13-and-15-years-of-age-2026",
+    "level": [
+      "professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Budapest",
+      "country": "HU"
+    },
+    "organization": {
+      "city": "Budapest",
+      "country": "HU",
+      "name": "Ballet Summer Course Budapest",
+      "slug": "ballet-summer-course-budapest"
+    },
+    "prices": [
+      {
+        "amount": 450.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "1 week",
+        "notes": "1 week: 450 €"
+      },
+      {
+        "amount": 750.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "2 weeks",
+        "notes": "2 weeks: 750 €"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-08",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-27",
+      "timezone": "Europe/Budapest"
+    },
+    "source": {
+      "attemptedAt": "2026-06-10T14:05:43.977106Z",
+      "hash": "sha256:5ec6c7610ed80668e42248aa910803467a5e7cb58c7d0d798e54d54bcc2d16c0",
+      "provider": "ballet-summer-course-budapest",
+      "scrapedAt": "2026-06-09T00:29:18.182383Z",
+      "url": "https://balletsummercoursebudapest.com/about-our-groups/professional-junior-group-between-13-and-15-years-of-age/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Mariinsky Theatre"
+          },
+          {
+            "current": true,
+            "organization": "Perm Ballet"
+          }
+        ],
+        "name": "Viktoriia Stavtseva"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian State Opera"
+          },
+          {
+            "current": true,
+            "organization": "Hungarian Dance Academy"
+          },
+          {
+            "current": true,
+            "organization": "Mariinsky Theatre"
+          },
+          {
+            "current": true,
+            "organization": "Perm Ballet"
+          }
+        ],
+        "name": "Vdovicheva Tatjana"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          },
+          {
+            "current": true,
+            "organization": "Imperial Russian Ballet"
+          }
+        ],
+        "name": "Golovina Yuliya"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Hungarian State Opera"
+          },
+          {
+            "organization": "Hungarian National Ballet Institute"
+          },
+          {
+            "organization": "Hungarian National Ballet"
+          }
+        ],
+        "name": "Chernakova Olga"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet Institute"
+          },
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          }
+        ],
+        "name": "Kirejko Dmitrij"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          },
+          {
+            "current": true,
+            "organization": "GITIS (Russian Institute of Theatre Arts)"
+          }
+        ],
+        "name": "Kosyreva Diana"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian State Opera"
+          },
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet Institute"
+          },
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          },
+          {
+            "current": true,
+            "organization": "National Opera of Ukraine"
+          }
+        ],
+        "name": "Yakushkina Nataliia"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian Dance Academy"
+          },
+          {
+            "current": true,
+            "organization": "Perm Ballet"
+          }
+        ],
+        "name": "Muruev Denis"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          }
+        ],
+        "name": "Pétery Melinda"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet Institute"
+          },
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          }
+        ],
+        "name": "Katalin Stáry"
+      }
+    ],
+    "title": "Ballet Summer Course Budapest — Professional group 2026"
+  },
+  {
+    "ageRange": {
+      "max": 15,
+      "min": 13
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://balletsummercoursebudapest.com/about-our-groups/professional-young-group/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "character",
+      "contemporary"
+    ],
+    "id": "ballet-summer-course-budapest/professional-young-group-2026",
+    "level": [
+      "professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Budapest",
+      "country": "HU"
+    },
+    "organization": {
+      "city": "Budapest",
+      "country": "HU",
+      "name": "Ballet Summer Course Budapest",
+      "slug": "ballet-summer-course-budapest"
+    },
+    "prices": [
+      {
+        "amount": 450.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "1 week",
+        "notes": "1 week: 450 €"
+      },
+      {
+        "amount": 750.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "2 weeks",
+        "notes": "2 weeks: 750 €"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-08",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-27",
+      "timezone": "Europe/Budapest"
+    },
+    "source": {
+      "attemptedAt": "2026-06-10T14:05:43.977106Z",
+      "hash": "sha256:9bd1aa401c5a71e135c8409e2e2ecb6037084707bea12acf3452445957552b57",
+      "provider": "ballet-summer-course-budapest",
+      "scrapedAt": "2026-06-09T00:29:18.181187Z",
+      "url": "https://balletsummercoursebudapest.com/about-our-groups/professional-young-group/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Mariinsky Theatre"
+          },
+          {
+            "current": true,
+            "organization": "Perm Ballet"
+          }
+        ],
+        "name": "Viktoriia Stavtseva"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian State Opera"
+          },
+          {
+            "current": true,
+            "organization": "Hungarian Dance Academy"
+          },
+          {
+            "current": true,
+            "organization": "Mariinsky Theatre"
+          },
+          {
+            "current": true,
+            "organization": "Perm Ballet"
+          }
+        ],
+        "name": "Vdovicheva Tatjana"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          },
+          {
+            "current": true,
+            "organization": "Imperial Russian Ballet"
+          }
+        ],
+        "name": "Golovina Yuliya"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Hungarian State Opera"
+          },
+          {
+            "organization": "Hungarian National Ballet Institute"
+          },
+          {
+            "organization": "Hungarian National Ballet"
+          }
+        ],
+        "name": "Chernakova Olga"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet Institute"
+          },
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          }
+        ],
+        "name": "Kirejko Dmitrij"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          },
+          {
+            "current": true,
+            "organization": "GITIS (Russian Institute of Theatre Arts)"
+          }
+        ],
+        "name": "Kosyreva Diana"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian State Opera"
+          },
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet Institute"
+          },
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          },
+          {
+            "current": true,
+            "organization": "National Opera of Ukraine"
+          }
+        ],
+        "name": "Yakushkina Nataliia"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian Dance Academy"
+          },
+          {
+            "current": true,
+            "organization": "Perm Ballet"
+          }
+        ],
+        "name": "Muruev Denis"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          }
+        ],
+        "name": "Pétery Melinda"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet Institute"
+          },
+          {
+            "current": true,
+            "organization": "Hungarian National Ballet"
+          }
+        ],
+        "name": "Katalin Stáry"
+      }
+    ],
+    "title": "Ballet Summer Course Budapest — Professional young group 2026"
+  }
+]

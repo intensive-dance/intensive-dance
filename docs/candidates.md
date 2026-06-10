@@ -54,6 +54,12 @@ The recommended next builds — discovered, in scope, with a confirmed dated 202
 | LETO BALETA (After Petipa) | BG · Kranevo | 26 Jul–8 Aug | afterpetipa.com |
 | Eszena Danza — Intensivos | ES · Madrid | Jun–Aug blocks | eszena.es |
 | Valencia Endanza | ES · Valencia | ~13–25 Jul | valenciaendanza.com |
+| Art in Motion Munich | DE · Munich | 3–15 Aug (deadline 15 Jul) | artinmotionmunich.com |
+| Tanzquartier Köln | DE · Cologne | 31 Jul–4 Aug + 24–28 Aug | tanzquartier.koeln |
+| American Midwest Ballet — Summer Intensive | US · Omaha NE | 8–26 Jun | amballet.org/si |
+| Master Ballet Academy — Summer Intensive | US · Scottsdale AZ | 15 Jun–24 Jul | masterballetacademy.com |
+
+> **US own-school-site builds (seeded in `providers.json`):** *American Midwest Ballet* — WordPress (`/wp-content/` → try `/wp-json/`); ages 11–25 (+ Junior 10–13); online audition = teacher recommendation + 1st-arabesque & tendu-à-la-seconde photos (defined-poses). *Master Ballet Academy* (Vaganova, Scottsdale) — Wix (watch zero-width spaces); 6-week, min 3 wks; audition = headshot + 1st-arabesque photo (video/Zoom/in-person).
 
 ## 📡 Monitor — recurring, 2026 dates not yet posted (`parked`/`scored`)
 - Teatro dell'Opera di Roma — Stage Estivo (IT · Rome, Abbagnato) — 2026 page live, dates ~July TBA — operaroma.it
@@ -72,6 +78,34 @@ The recommended next builds — discovered, in scope, with a confirmed dated 202
   - ⚠️ **Scope decision needed:** *Prix de Lausanne **Summer Intensive*** (CH, 6–11 Jul 2026) is the training feeder, **not** the competition — could be in-scope. Currently treated as out-of-scope pending your call.
 - **Adult-only:** Ballet Gothenburg Adult Ballet Retreat (SE) — high-calibre SAB/NYCB faculty, but adults only.
 - **Recreational/local:** Leipziger Ballettschule · Iwanson (contemp) · Grand Art Ballet (HU) · Paris Marais Dance School (amateur) · CPD Valencia / Eszena lower tracks.
+
+## 🇩🇪 DE Top-10-Städte-Sweep (2026-06-09)
+
+Multi-agent Phase-1 sweep of Germany's ten largest cities (Berlin · Hamburg · Munich ·
+Cologne · Frankfurt · Stuttgart · Düsseldorf · Leipzig · Dortmund · Essen). ~80 providers
+triaged; **6 promoted to `seed`** in `providers.json`, the rest recorded below. No tiers/scores
+(those live privately).
+
+**→ promoted to `seed`:**
+- **Art in Motion Munich** (Munich) — annual 2-wk summer intensive, **3–15 Aug 2026** (deadline 15 Jul), ages 10+, classical + pointe + repertoire + modern; faculty HMTM-affiliated (Gabriela Nicolescu) at Heinz-Bosl-Stiftung studios — artinmotionmunich.com *(Wix/static HTML)*
+- **Tanzquartier Köln** (Cologne) — Ballett + Contemporary Intensiv-Workshop, **two 2026 editions: 31 Jul–4 Aug & 24–28 Aug**, ages 10+/14+, Förderstufe pre-pro track — tanzquartier.koeln *(**WordPress** — try `/wp-json/`)*
+- **Hamburger Ballett-Tanztage / GinaWorkshops** (Hamburg) — recurring weekend ballet intensive (3 eds since 2023), company-calibre faculty (Bouchet, Riabko, Azzoni, Urban), ages ~16+; 4th ed TBA — ginaworkshops.com *(**WordPress**)*
+- **Staatsballett Berlin — Feriencamp** (Berlin) — recurring 5-day camp, ages 12–16 (5-yr prerequisite), state-company education arm ("Tanz ist KLASSE!"); Oct 2026 confirmed, summer TBA — staatsballett-berlin.de
+- **Benedict Manniegel Ballet School** (Munich) — Vaganova school, dir. ex-Hamburg Ballet/Het Nationale Ballet prima; Easter workshop 2026 confirmed, summer TBA — benedictmanniegel.de
+- **Ballett- und Tanzschule Anastasia** (Frankfurt am Main) — recurring annual "Sommer Intensive" (week 1 of summer holidays), Vaganova pre-pro track; 2026 dates TBA *(verify post-2022 continuity)* — ballett-und-tanzschule-anastasia.com *(**WordPress**)*
+
+**`scored` — monitor / verify before promoting:**
+- **ICZ Leipzig — Sommer-Akademie "Uwe Scholz"** (Leipzig) — annual 1-wk ballet intensive open to European students, dir. Montserrat León, on the Baumwollspinnerei campus; **recency uncertain** (nav says 6th ed, archive gaps post-2016) — icz-leipzig.de
+- **Dance Hub Munich** (Munich) — youth summer week **31 Aug–4 Sep 2026**, ballet-centric school but age 6+/mixed-genre — confirm pre-pro depth — dancehubmunich.de
+- **Sommer Tanz Camp — Intensive Ballet Days Berlin** (Berlin/Tempelhof) — recurring 4-day classical, ages 14+ intermediate–advanced; summer TBA, hosted at an urban-dance venue — sommertanzcamp.de
+- **Tanzhaus1141** (Cologne-Weiden) — Bezirksregierung-Köln career-prep accredited, ballet-focused; no dated 2026 intensive published yet — tanzhaus1141.de
+- **Star Ballet Mainz/Wiesbaden** (Rhein-Main) — pre-pro school w/ stated masterclass activity, but no dated open-enrollment intensive page — ballettschule-mainz.de
+
+**`parked` — real school, no current public dated intensive:** Marameo Berlin · Lola Rogge Sommertanztage (Hamburg) · Ballettakademie Kashcheeva (Munich) · Ballettschule International Bonn · laDanse Niederkassel (Düsseldorf) · Colette van Saarloos (Neuss) · Schule des Balletts Stuttgart · Ballettschule Étoile (Leipzig) · Ballettakademie am Opernhaus Halle · Grand Jeté Dortmund.
+
+**`deferred` → IDR-9 (full-time / Ausbildung only):** Int'l Dance Academy Berlin · CDSH Hamburg · Ballett-Akademie HMTM / Heinz-Bosl-Stiftung (Munich) · HfMT Köln · Dr. Hoch's Konservatorium + HfMDK Frankfurt + DAS Studio + Balzer + Akademie f. Ballett u. Tanz (Frankfurt) · Professional Dance Academy (Stuttgart) · Pergel-Ernst (Düsseldorf) · Ballettschule der Oper Leipzig · Folkwang Universität (Essen).
+
+**`out-of-scope`:** DanceWorld Stuttgart (ballet **competition** component) · Stuttgarter Ballett JUNG+ (contemporary creative-movement outreach) · Hessisches Staatsballett Ballettworkshop (single 90-min session) · Traumtänzer Dortmund (all-levels + crafts) · Aalto Ballett open classes (single session) · numerous recreational/term-only schools.
 
 ## ℹ️ Notes — overlaps with what we already have / scope
 - **Joffrey Switzerland** (Geneva, 10–15 Aug 2026) and **Joffrey Japan** are programs of **Joffrey Ballet School** — should be captured by the existing `joffrey-ballet-school` scraper. Verify coverage rather than adding a new provider.

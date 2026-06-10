@@ -74,7 +74,9 @@ uv run pre-commit install    # ruff format + ruff check + ty on every commit
 
 ## Status
 
-Nine providers live:
+The register is built out continuously — see [`providers.json`](./providers.json) for every provider and its `seed`/`live` status, and [`data/`](./data) for one JSON file per live provider (an hourly cron keeps them fresh).
+
+A few representative scrapers, each exercising a distinct part of the data model:
 
 - **The Royal Ballet School** ([#1](https://github.com/boredland/intensive-dance/issues/1)) — WordPress REST + WPBakery; exercises the `photos` requirement.
 - **Joffrey Ballet School** — WordPress custom post types (`summer-intensives`, `workshops`) + taxonomy resolution; exercises the `video` requirement. Fees/teachers aren't published in its API, so those stay empty (documented in the scraper).
