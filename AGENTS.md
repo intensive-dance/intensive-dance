@@ -14,6 +14,13 @@ Source-of-truth docs to keep open: [`docs/data-model.md`](./docs/data-model.md)
 > redundant**, update `AGENTS.md` in the same PR. Prefer correcting/condensing an
 > existing line over appending a new one — fight bloat. Treat it as part of the
 > change, not a follow-up.
+>
+> **Architecture / infra / ops / legal changes also live in the internal doc-set.**
+> If a change alters the architecture, infrastructure, operational workflow, data
+> model, or legal/compliance posture, mirror it into the **private companion repo's
+> `docs/` set** (and regenerate its `viewer.html`) in the **same PR** — same ethos,
+> broader than this file. That set (architecture · infra · operations · legal risk
+> register) is the PO/architect reference and must not drift.
 
 ---
 
@@ -70,6 +77,18 @@ independent, `continue-on-error` matrix job (`--touch`), then a single `commit`
 job (`if: always()`) collects their artifacts and commits — so one flaky site
 never blocks the rest, and a commit always lands (every picked provider's
 `attemptedAt` is bumped).
+
+**Self-healing → Copilot.** Two loops hand broken scrapers to the GitHub Copilot
+coding agent (one open issue per loop, reused so daily runs don't pile up dupes):
+a crashed `scrape.yml` leg uploads a `fail-<slug>` marker that the run's final
+`report` job (`intensive_dance.report_failure`) digests into a `scrape-failure`
+issue; and `scraper-audit.yml` (daily) flags any **live** provider whose
+committed store holds **zero** offerings (`intensive_dance.audit` →
+`assign_audit`, exempt via `audit_allowlist.json`) into a `scraper-audit` issue.
+Assignment goes through the REST agent-assignment body (`intensive_dance.copilot`)
+and needs a user PAT with Copilot enabled (`COPILOT_PAT`/`COPILOT_CLI_TOKEN`) —
+the default `GITHUB_TOKEN` can't assign the agent. These ops scripts are
+stdlib-only (run with `PYTHONPATH=src python3 -m …`, no `uv sync`).
 
 Always use `uv` (never bare `pip`/`python`). `ruff` line-length is **100**.
 
@@ -480,4 +499,5 @@ when a second provider genuinely needs the identical thing.
 - [ ] `ruff check .` · `ruff format .` · `ty check` · `pytest -q` · `schema` · `validate` all green
 - [ ] Module docstring: API-FIRST + DISCOVERY + WHAT IT EXERCISES (verified date)
 - [ ] `AGENTS.md` updated if you learned something / found something stale (see top)
+- [ ] Architecture / infra / ops / data-model / legal change? Mirror it in the internal doc-set (private companion `docs/`) + regenerate its `viewer.html` (see top)
 - [ ] Branch → push → PR

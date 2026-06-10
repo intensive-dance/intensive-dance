@@ -269,15 +269,13 @@ _PRICE = re.compile(r"([\d,]+)\s*円／1クラス（税込）")
 
 def _prices(text: str) -> list[Price]:
     prices: list[Price] = []
-    seen: set[float] = set()
     for ct in _CLASS_TYPES:
         m = re.search(re.escape(ct.name) + r"[：:]\s*([\d,]+)\s*円／1クラス（税込）", text)
         if not m:
             continue
         amount = parse.parse_amount(m.group(1))
-        if amount is None or amount in seen:
+        if amount is None:
             continue
-        seen.add(amount)
         prices.append(
             Price(
                 amount=amount,

@@ -46,6 +46,22 @@
           "tuition"
         ],
         "label": "スペシャル・クラス～スワニルダになりきろう～（1クラス・税込）"
+      },
+      {
+        "amount": 5000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "ピラティス＆クラシック・クラス（1クラス・税込）"
+      },
+      {
+        "amount": 5000.0,
+        "currency": "JPY",
+        "includes": [
+          "tuition"
+        ],
+        "label": "コンテンポラリー・クラス（1クラス・税込）"
       }
     ],
     "schedule": {
@@ -86,10 +102,10 @@
       "timezone": "Asia/Tokyo"
     },
     "source": {
-      "attemptedAt": "2026-06-09T18:37:37.337427Z",
-      "hash": "sha256:b823f31ad3e772a5bfaea1a77d344626b4707e7ef228e364d996053293051805",
+      "attemptedAt": "2026-06-10T19:06:55.622363Z",
+      "hash": "sha256:a61fc3dc3aec378f3e02d7639d517b36b645acf08219759203654c25f76c6367",
       "provider": "tokyo-city-ballet",
-      "scrapedAt": "2026-06-06T07:36:51.488781Z",
+      "scrapedAt": "2026-06-09T21:02:02.837034Z",
       "url": "https://tokyocityballetcompetition.com/workshop.html"
     },
     "teachers": [
