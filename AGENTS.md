@@ -14,6 +14,13 @@ Source-of-truth docs to keep open: [`docs/data-model.md`](./docs/data-model.md)
 > redundant**, update `AGENTS.md` in the same PR. Prefer correcting/condensing an
 > existing line over appending a new one — fight bloat. Treat it as part of the
 > change, not a follow-up.
+>
+> **Architecture / infra / ops / legal changes also live in the internal doc-set.**
+> If a change alters the architecture, infrastructure, operational workflow, data
+> model, or legal/compliance posture, mirror it into the **private companion repo's
+> `docs/` set** (and regenerate its `viewer.html`) in the **same PR** — same ethos,
+> broader than this file. That set (architecture · infra · operations · legal risk
+> register) is the PO/architect reference and must not drift.
 
 ---
 
@@ -492,4 +499,5 @@ when a second provider genuinely needs the identical thing.
 - [ ] `ruff check .` · `ruff format .` · `ty check` · `pytest -q` · `schema` · `validate` all green
 - [ ] Module docstring: API-FIRST + DISCOVERY + WHAT IT EXERCISES (verified date)
 - [ ] `AGENTS.md` updated if you learned something / found something stale (see top)
+- [ ] Architecture / infra / ops / data-model / legal change? Mirror it in the internal doc-set (private companion `docs/`) + regenerate its `viewer.html` (see top)
 - [ ] Branch → push → PR
