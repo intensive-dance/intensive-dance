@@ -110,6 +110,12 @@ def test_requirements_photos_req_for_attaching_photos():
     assert isinstance(req, PhotosReq)
     assert req.specificity == "freeform"
 
+    # Also test the Italian form with the optional article 'le'.
+    text_it = "Inviare la domanda tramite il modulo online allegando le foto."
+    (req_it,) = mon._requirements(text_it)
+    assert isinstance(req_it, PhotosReq)
+    assert req_it.specificity == "freeform"
+
 
 def test_requirements_empty_when_not_stated():
     assert mon._requirements("No information available about requirements.") == []

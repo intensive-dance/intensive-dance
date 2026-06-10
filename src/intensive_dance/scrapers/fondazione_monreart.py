@@ -264,7 +264,7 @@ _NO_SELECTION = re.compile(
     r"no photographic selection required|non.*?richiesta\s+selezi\w*\s+fotografic",
     re.IGNORECASE,
 )
-_PHOTOS_REQUIRED = re.compile(r"attaching photos|allegando\s+foto", re.IGNORECASE)
+_PHOTOS_REQUIRED = re.compile(r"attaching photos|allegando\s+(?:le\s+)?foto", re.IGNORECASE)
 
 
 def _requirements(text: str) -> list[Requirement]:
