@@ -1,0 +1,56 @@
+[
+  {
+    "ageRange": {
+      "max": 15,
+      "min": 13
+    },
+    "application": {
+      "deadline": "2026-06-15",
+      "requirements": [],
+      "url": "https://tally.so/r/xXdK6G"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "dbft-sommerakademie/sommerakademie-junior-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Dortmund",
+      "country": "DE",
+      "venue": "Ballettsaal im Theater Dortmund (oder Ballettzentrum Westfalen)"
+    },
+    "organization": {
+      "city": "Dortmund",
+      "country": "DE",
+      "name": "DBfT — Sommerakademie Junior",
+      "slug": "dbft-sommerakademie"
+    },
+    "prices": [
+      {
+        "amount": 360.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Kursgebühr"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-29",
+      "notes": "Mo, 24.08.2026 bis Sa, 29.08.2026 (letzte Ferienwoche in Nordrhein-Westfalen)",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-24",
+      "timezone": "Europe/Berlin"
+    },
+    "source": {
+      "hash": "sha256:eedede137ea357c1b760be8fa70452d50d7873e359e17e805867cde83104fa52",
+      "provider": "dbft-sommerakademie",
+      "scrapedAt": "2026-06-11T20:32:27.457706Z",
+      "url": "https://www.dbft.de/Fortbildungen-Weiterbildungen/Seminarangebot/Sommerakademie-Junior/index.html"
+    },
+    "teachers": [],
+    "title": "Sommerakademie Junior 2026"
+  }
+]
