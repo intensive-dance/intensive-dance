@@ -37,5 +37,8 @@ jobs:
       - name: Check ERD is in sync with models
         run: uv run python -m intensive_dance.erd
 
+      - name: Check buildable overview is in sync with providers.json
+        run: uv run python -m intensive_dance.overview
+
       - name: Validate committed data
         run: uv run python -m intensive_dance.validate

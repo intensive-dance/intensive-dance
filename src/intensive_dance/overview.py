@@ -1,0 +1,114 @@
+"""Buildable-seeds overview, derived from providers.json (the single source of truth).
+
+`status:"seed"` providers are build candidates. Competitions (icebox epic #80) and
+full-time vocational schools (defer to IDR-9, #12) are *not* buildable — they're listed
+here as excluded, so the buildable set stays honest without a second store to sync.
+
+Mirrors `schema.py`/`erd.py`: the committed `docs/buildable.md` is a *derived* artifact,
+drift-checked in CI, so it can never silently go stale — point a builder at that one file.
+
+    uv run python -m intensive_dance.overview            # check drift (CI)
+    uv run python -m intensive_dance.overview --write     # regenerate docs/buildable.md
+    uv run python -m intensive_dance.overview --print     # print to stdout
+"""
+
+from __future__ import annotations
+
+import json
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[2]
+PROVIDERS = ROOT / "providers.json"
+DOC = ROOT / "docs" / "buildable.md"
+
+# Seeds that are NOT build targets, kept out of the buildable list with a reason.
+# The register (providers.json) only carries seed/live; the scope call lives here,
+# in one place — add a line when a competition / full-time school gets seeded.
+NOT_BUILDABLE: dict[str, str] = {
+    # Competitions — icebox epic #80 (IDR-40): idea-collection only, no implementation.
+    "prix-de-lausanne": "competition — icebox #80",
+    "helsinki-international-ballet-competition": "competition — icebox #80",
+    "tanzolymp": "competition — icebox #80",
+    "youth-america-grand-prix": "competition — icebox #80",
+    # Full-time / long-term vocational only — defer to IDR-9 (#12) unless a public short course exists.
+    "universal-ballet-academy": "full-time school — defer IDR-9",
+    "teatro-opera-roma-scuola-danza": "full-time state school — defer IDR-9",
+    "royal-swedish-ballet-school": "full-time school — defer IDR-9",
+    "singapore-ballet": "company / full-time — defer IDR-9",
+    # No current online edition.
+    "neoclassica": "site offline — parked",
+}
+
+_CLAIM = (
+    "**To claim one (so nobody double-builds):** check `gh issue list` / `gh pr list` for the "
+    "slug; if free, open a `build:<slug>` issue and **self-assign first**, then build; close it "
+    "when the PR merges (provider → `live`). An open claim issue *or* PR = locked. "
+    "See `AGENTS.md` → Scope & coordination."
+)
+
+
+def _load() -> list[dict]:
+    return json.loads(PROVIDERS.read_text(encoding="utf-8"))["providers"]
+
+
+def render() -> str:
+    providers = _load()
+    seeds = [p for p in providers if p["status"] == "seed"]
+    buildable = [p for p in seeds if p["slug"] not in NOT_BUILDABLE]
+    excluded = [p for p in seeds if p["slug"] in NOT_BUILDABLE]
+    live = sum(1 for p in providers if p["status"] == "live")
+
+    by_country: dict[str, list[dict]] = {}
+    for p in buildable:
+        by_country.setdefault(p.get("country") or "??", []).append(p)
+
+    out: list[str] = [
+        "# Buildable seeds",
+        "",
+        "> **Generated — do not edit.** Refresh with "
+        "`uv run python -m intensive_dance.overview --write`; CI drift-checks it. "
+        "Source of truth: `providers.json`.",
+        "",
+        f"{len(buildable)} buildable · {len(excluded)} excluded · {live} live "
+        f"({len(providers)} providers total).",
+        "",
+        _CLAIM,
+        "",
+        "## Buildable (status: seed)",
+        "",
+        "_Some still need Phase-1 verification (a public dated edition / not full-time) before building._",
+    ]
+    for country in sorted(by_country):
+        out.append("")
+        out.append(f"### {country}")
+        for p in sorted(by_country[country], key=lambda x: x["slug"]):
+            out.append(f"- `{p['slug']}` — {p['name']} ({p.get('city') or '?'}) — {p['url']}")
+    out += ["", "## Excluded — do NOT build", ""]
+    for p in sorted(excluded, key=lambda x: x["slug"]):
+        out.append(f"- `{p['slug']}` — {p['name']} — _{NOT_BUILDABLE[p['slug']]}_")
+    return "\n".join(out) + "\n"
+
+
+def main(argv: list[str]) -> int:
+    content = render()
+    if "--write" in argv:
+        DOC.write_text(content, encoding="utf-8")
+        print(f"wrote {DOC}")
+        return 0
+    if "--print" in argv:
+        sys.stdout.write(content)
+        return 0
+    current = DOC.read_text(encoding="utf-8") if DOC.exists() else ""
+    if current != content:
+        print(
+            "docs/buildable.md is stale — run `uv run python -m intensive_dance.overview --write`",
+            file=sys.stderr,
+        )
+        return 1
+    print("ok: docs/buildable.md matches providers.json")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main(sys.argv[1:]))

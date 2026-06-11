@@ -22,44 +22,14 @@ start building** (the claim, to avoid colliding with parallel work) **or when we
 
 ---
 
-## 🔝 Build queue — immediately buildable (dated 2026, in-scope)
+## 🔝 Build queue
 
-The recommended next builds — discovered, in scope, with a confirmed dated 2026 edition.
+**The live buildable list is [`buildable.md`](./buildable.md)** — generated from `providers.json` (drift-checked in CI), grouped by country, with the claim convention. We no longer hand-maintain a build-queue *table* here (it drifted as providers went live); this file keeps only **build hints** not stored in the register.
 
-| Provider | Country · City | 2026 dates | URL |
-|---|---|---|---|
-| Stage Int. de Danse Charles Jude | FR · Marseille | 6–18 Jul | stagedansecj.com |
-| Académie Int. de Danse de Biarritz | FR · Biarritz | 2–7 Aug | biarritz-academie-danse.com |
-| Stage Int. de Danse d'Arcachon | FR · Arcachon | 6–18 Jul | stagedansearcachon.com |
-| Académie Theilaïa (Nini Theilade) | FR · Lyon | 13–17 Jul | academie-ballet.fr |
-| BalletStage Summer Intensive (Matvienko) | SI · Ljubljana | 13–25 Jul | balletstage.com |
-| Prague Ballet Intensive (≠ IBMC Prague) | CZ · Prague | 10–22 Aug | pragueballetintensive.com |
-| Académie Int. d'Été de Nice | FR · Nice | 27 Jul–1 Aug | academie-internationale-ete-nice.org |
-| Revolve Dance Festival | RO · Bucharest | 10–23 Aug | revolvedance.ro |
-| Ballet Workshops Bucharest | RO · Bucharest | 9–19 Jul | balletworkshops.com |
-| Balletto di Roma — Summer School | IT · Rome | 6 Jul–5 Sep (blocks) | store.ballettodiroma.com |
-| Nuovo Balletto Classico | IT · Reggio Emilia | 29 Jun–18 Jul | nuovoballettoclassico.it |
-| EDCN — Conservatório Nacional | PT · Lisbon | 13–18 Jul | edcn.pt |
-| ENDANSA'IT — Institut del Teatre | ES · Barcelona | 29 Jun–2 Jul | institutdelteatre.cat |
-| RCPD "Mariemma" Summer (Magistra Danza) | ES · Madrid | 29 Jun–3 Jul | rcpdmariemma.com |
-| Ballet Ireland Summer Intensive | IE · Dublin | 27–31 Jul + 4–8 Aug | balletireland.ie |
-| ArtéBallét Advanced Summer | NL · Amsterdam | 27 Jul–8 Aug | (own URL TBD) |
-| Cuban Ballet Program | BE · Antwerp | 10–15 Aug | cubanballetprogram.com |
-| SADA Phoenix Summer | AT · Salzburg | 13 Jul–1 Aug | sada.dance |
-| NDT Summer Intensive (contemp) | NL · The Hague | 27 Jul–8 Aug | ndt.nl |
-| Rambert School Performance & Technique (contemp) | GB · London | 13–25 Jul | rambertschool.org.uk |
-| Yorkshire Ballet Seminars | GB · Harrogate | 12 Jul–8 Aug | ybss.co.uk |
-| Tivoli Balletskole Summercamp | DK · Copenhagen | 29 Jun–4 Jul | tivoliballetskole.dk |
-| Professione Danza Pescara | IT · Pescara | 1–24 Jul | professionedanza.org |
-| LETO BALETA (After Petipa) | BG · Kranevo | 26 Jul–8 Aug | afterpetipa.com |
-| Eszena Danza — Intensivos | ES · Madrid | Jun–Aug blocks | eszena.es |
-| Valencia Endanza | ES · Valencia | ~13–25 Jul | valenciaendanza.com |
-| Art in Motion Munich | DE · Munich | 3–15 Aug (deadline 15 Jul) | artinmotionmunich.com |
-| Tanzquartier Köln | DE · Cologne | 31 Jul–4 Aug + 24–28 Aug | tanzquartier.koeln |
-| American Midwest Ballet — Summer Intensive | US · Omaha NE | 8–26 Jun | amballet.org/si |
-| Master Ballet Academy — Summer Intensive | US · Scottsdale AZ | 15 Jun–24 Jul | masterballetacademy.com |
-
-> **US own-school-site builds (seeded in `providers.json`):** *American Midwest Ballet* — WordPress (`/wp-content/` → try `/wp-json/`); ages 11–25 (+ Junior 10–13); online audition = teacher recommendation + 1st-arabesque & tendu-à-la-seconde photos (defined-poses). *Master Ballet Academy* (Vaganova, Scottsdale) — Wix (watch zero-width spaces); 6-week, min 3 wks; audition = headshot + 1st-arabesque photo (video/Zoom/in-person).
+**Build hints (source shape / audition):**
+- *American Midwest Ballet* (Omaha) — WordPress (`/wp-content/` → try `/wp-json/`); ages 11–25 (+ Junior 10–13); online audition = teacher recommendation + 1st-arabesque & tendu-à-la-seconde photos (defined-poses).
+- *Master Ballet Academy* (Scottsdale, Vaganova) — Wix (watch zero-width spaces); 6-week, min 3 wks; audition = headshot + 1st-arabesque photo (video/Zoom/in-person).
+- *Art in Motion Munich* — Wix static; 3–15 Aug 2026 (deadline 15 Jul). *Tanzquartier Köln* — WordPress (`/wp-json/`); 31 Jul–4 Aug + 24–28 Aug 2026.
 
 ## 📡 Monitor — recurring, 2026 dates not yet posted (`parked`/`scored`)
 - Teatro dell'Opera di Roma — Stage Estivo (IT · Rome, Abbagnato) — 2026 page live, dates ~July TBA — operaroma.it
