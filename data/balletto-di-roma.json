@@ -38,7 +38,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "attemptedAt": "2026-06-10T17:59:43.093413Z",
+      "attemptedAt": "2026-06-11T04:38:28.762004Z",
       "hash": "sha256:53873a0835de713bfb552fb714ccef3c987f7764d81b9a406ec30a6dd3d1c62f",
       "provider": "balletto-di-roma",
       "scrapedAt": "2026-06-08T14:08:42.133612Z",
@@ -84,7 +84,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "attemptedAt": "2026-06-10T17:59:43.093413Z",
+      "attemptedAt": "2026-06-11T04:38:28.762004Z",
       "hash": "sha256:cce3e0e82f43669da6a5517174952677594f11f25894736475efb0f6afe0be5c",
       "provider": "balletto-di-roma",
       "scrapedAt": "2026-06-08T14:08:42.132970Z",

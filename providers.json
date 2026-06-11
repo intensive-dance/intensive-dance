@@ -6,7 +6,6 @@
       "country": "GB",
       "city": "London",
       "url": "https://www.royalballetschool.org.uk/",
-      "tier": "marquee",
       "status": "live"
     },
     {
@@ -15,7 +14,6 @@
       "country": "DE",
       "city": "Stuttgart",
       "url": "https://www.john-cranko-schule.de/",
-      "tier": "marquee",
       "status": "live"
     },
     {
@@ -24,7 +22,6 @@
       "country": "US",
       "city": "New York",
       "url": "https://www.abt.org/training/jko-school/",
-      "tier": "marquee",
       "status": "live"
     },
     {
@@ -33,7 +30,6 @@
       "country": "US",
       "city": "New York",
       "url": "https://joffreyballetschool.com/",
-      "tier": "marquee",
       "status": "live"
     },
     {
@@ -42,7 +38,6 @@
       "country": "FR",
       "city": "Paris",
       "url": "https://www.operadeparis.fr/en/artists/ballet-school",
-      "tier": "marquee",
       "status": "live"
     },
     {
@@ -51,7 +46,6 @@
       "country": "GB",
       "city": "London",
       "url": "https://www.enbschool.org.uk/",
-      "tier": "marquee",
       "status": "live"
     },
     {
@@ -60,7 +54,6 @@
       "country": "BE",
       "city": "Brussels",
       "url": "https://www.brusselsintballet.org/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -69,7 +62,6 @@
       "country": "IT",
       "city": "Volta Mantovana",
       "url": "https://www.monreart.com/en/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -78,7 +70,6 @@
       "country": "MC",
       "city": "Monaco",
       "url": "https://www.balletsdemontecarlo.com/en/princess-grace-academy/training",
-      "tier": "marquee",
       "status": "live"
     },
     {
@@ -87,7 +78,6 @@
       "country": "RU",
       "city": "Moscow",
       "url": "https://en.balletacademy.ru/",
-      "tier": "marquee",
       "status": "seed"
     },
     {
@@ -96,7 +86,6 @@
       "country": "ES",
       "city": "Alicante",
       "url": "https://russianmastersballet.com/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -105,7 +94,6 @@
       "country": "BE",
       "city": "Liège",
       "url": "https://www.mosaballetschool.eu/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -114,7 +102,6 @@
       "country": "DE",
       "city": "Frankfurt am Main",
       "url": "https://masterclass.balletcompetition.net/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -123,7 +110,6 @@
       "country": "NL",
       "city": "Amsterdam",
       "url": "https://www.atd.ahk.nl/en/dance-programmes/dutch-national-ballet-academy/",
-      "tier": "marquee",
       "status": "live"
     },
     {
@@ -132,7 +118,6 @@
       "country": "DE",
       "city": "Berlin",
       "url": "https://idc-dance.com/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -141,7 +126,6 @@
       "country": "DE",
       "city": "Berlin",
       "url": "https://www.youngstarsballet.com/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -150,7 +134,6 @@
       "country": "DE",
       "city": "Düsseldorf",
       "url": "https://rosenthal-ballett.de/",
-      "tier": "secondary",
       "status": "seed"
     },
     {
@@ -159,7 +142,6 @@
       "country": "DE",
       "city": "Munich",
       "url": "https://mi-ballet-school.de/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -168,7 +150,6 @@
       "country": "DE",
       "city": "Munich",
       "url": "https://danceartsacademy.de/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -177,7 +158,6 @@
       "country": "DE",
       "city": "Berlin",
       "url": "https://dart.theater/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -186,7 +166,6 @@
       "country": "DE",
       "city": "Munich",
       "url": "https://www.jointadventures.net/en/tanzwerkstatt-europa",
-      "tier": "secondary",
       "status": "seed"
     },
     {
@@ -195,7 +174,6 @@
       "country": "DE",
       "city": "Dortmund",
       "url": "https://theaterdo.de/",
-      "tier": "secondary",
       "status": "seed"
     },
     {
@@ -204,7 +182,6 @@
       "country": "DE",
       "city": "Essen",
       "url": "https://gymnasium-essen-werden.de/",
-      "tier": "secondary",
       "status": "seed"
     },
     {
@@ -213,7 +190,6 @@
       "country": "DE",
       "city": "Sylt",
       "url": "https://palucca.eu/",
-      "tier": "secondary",
       "status": "seed"
     },
     {
@@ -222,7 +198,6 @@
       "country": "GB",
       "city": "London",
       "url": "https://centralschoolofballet.co.uk/",
-      "tier": "marquee",
       "status": "live"
     },
     {
@@ -231,7 +206,6 @@
       "country": "GB",
       "city": "London",
       "url": "https://mastersofballetacademy.com/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -240,7 +214,6 @@
       "country": "GB",
       "city": "Leeds",
       "url": "https://northernballet.com/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -249,7 +222,6 @@
       "country": "GB",
       "city": "Birmingham",
       "url": "https://elmhurstballetschool.org/",
-      "tier": "secondary",
       "status": "seed"
     },
     {
@@ -258,7 +230,6 @@
       "country": "CH",
       "city": "Zürich",
       "url": "https://zurich.art-of.net/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -267,7 +238,6 @@
       "country": "FR",
       "city": "Cannes",
       "url": "https://pnsd.fr/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -276,7 +246,6 @@
       "country": "IT",
       "city": "Milan",
       "url": "https://accademialascala.it/",
-      "tier": "marquee",
       "status": "live"
     },
     {
@@ -285,7 +254,6 @@
       "country": "IT",
       "city": "Rapallo",
       "url": "https://danceandfashioncic.com/",
-      "tier": "secondary",
       "status": "seed"
     },
     {
@@ -294,7 +262,6 @@
       "country": "AT",
       "city": "Vienna",
       "url": "https://attitudestudios.at/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -303,7 +270,6 @@
       "country": "CZ",
       "city": "Prague",
       "url": "https://balletmasterclass.com/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -312,7 +278,6 @@
       "country": "HU",
       "city": "Budapest",
       "url": "https://mte.eu/",
-      "tier": "secondary",
       "status": "seed"
     },
     {
@@ -321,7 +286,6 @@
       "country": "HU",
       "city": "Budapest",
       "url": "https://balletsummercoursebudapest.com/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -330,7 +294,6 @@
       "country": "DK",
       "city": "Copenhagen",
       "url": "https://kglteater.dk/",
-      "tier": "marquee",
       "status": "live"
     },
     {
@@ -339,7 +302,6 @@
       "country": "NO",
       "city": "Oslo",
       "url": "https://operaen.no/",
-      "tier": "marquee",
       "status": "live"
     },
     {
@@ -348,7 +310,6 @@
       "country": "SE",
       "city": "Stockholm",
       "url": "https://www.internationalballet.se/",
-      "tier": "secondary",
       "status": "seed"
     },
     {
@@ -357,7 +318,6 @@
       "country": "FI",
       "city": "Helsinki",
       "url": "https://oopperabaletti.fi/",
-      "tier": "marquee",
       "status": "live"
     },
     {
@@ -366,7 +326,6 @@
       "country": "FI",
       "city": "Helsinki",
       "url": "https://finsummerdance.com/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -375,7 +334,6 @@
       "country": "ES",
       "city": "Barcelona",
       "url": "https://balletrusobarcelona.com/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -384,7 +342,6 @@
       "country": "US",
       "city": "New York",
       "url": "https://sab.org/",
-      "tier": "marquee",
       "status": "live"
     },
     {
@@ -393,7 +350,6 @@
       "country": "CA",
       "city": "Calgary",
       "url": "https://albertaballetschool.com/",
-      "tier": "secondary",
       "status": "seed"
     },
     {
@@ -402,7 +358,6 @@
       "country": "HK",
       "city": "Hong Kong",
       "url": "https://hkballet.com/",
-      "tier": "marquee",
       "status": "live"
     },
     {
@@ -411,7 +366,6 @@
       "country": "JP",
       "city": "Tokyo",
       "url": "https://www.nntt.jac.go.jp/ballet/training/",
-      "tier": "marquee",
       "status": "live"
     },
     {
@@ -420,7 +374,6 @@
       "country": "CH",
       "city": "Lausanne",
       "url": "https://prixdelausanne.org/",
-      "tier": "marquee",
       "status": "seed"
     },
     {
@@ -429,7 +382,6 @@
       "country": "FI",
       "city": "Helsinki",
       "url": "https://ibchelsinki.fi/",
-      "tier": "marquee",
       "status": "seed"
     },
     {
@@ -438,7 +390,6 @@
       "country": "DE",
       "city": "Berlin",
       "url": "https://tanzolymp.com/",
-      "tier": "marquee",
       "status": "seed"
     },
     {
@@ -447,7 +398,6 @@
       "country": null,
       "city": null,
       "url": "https://yagp.org/",
-      "tier": "marquee",
       "status": "seed"
     },
     {
@@ -456,7 +406,6 @@
       "country": "JP",
       "city": "Tokyo",
       "url": "https://www.k-ballet.co.jp/school/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -465,7 +414,6 @@
       "country": "JP",
       "city": "Tokyo",
       "url": "https://www.thetokyoballetschool.com/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -474,7 +422,6 @@
       "country": "JP",
       "city": "Tokyo",
       "url": "https://www.radjapan.org/summerschool.html",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -483,7 +430,6 @@
       "country": "JP",
       "city": "Tokyo",
       "url": "https://www.tokyocityballet.org/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -492,7 +438,6 @@
       "country": "JP",
       "city": "Tokyo",
       "url": "https://www.dd-balletjapan.com/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -501,7 +446,6 @@
       "country": "JP",
       "city": "Osaka",
       "url": "https://www.jbi-japanballetintensives.com/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -510,7 +454,6 @@
       "country": "KR",
       "city": "Incheon",
       "url": "https://www.dance.utah.edu/ibsi-2019",
-      "tier": "secondary",
       "status": "seed"
     },
     {
@@ -519,7 +462,6 @@
       "country": "KR",
       "city": "Seoul",
       "url": "https://www.universalballet.com/",
-      "tier": "secondary",
       "status": "seed"
     },
     {
@@ -528,7 +470,6 @@
       "country": "JP",
       "city": "Tokyo",
       "url": "http://www.j-b-a.or.jp/classes/2026summercours/",
-      "tier": "marquee",
       "status": "live"
     },
     {
@@ -537,7 +478,6 @@
       "country": "JP",
       "city": "Tokyo",
       "url": "https://www.russianballetinternational.com/tokyo-program/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -546,7 +486,6 @@
       "country": "KR",
       "city": "Seoul",
       "url": "https://www.korean-national-ballet.kr/ko/academy/lecture",
-      "tier": "marquee",
       "status": "live"
     },
     {
@@ -555,7 +494,6 @@
       "country": "JP",
       "city": "Saitama",
       "url": "https://nbaballet.org/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -564,7 +502,6 @@
       "country": "JP",
       "city": "Tokyo",
       "url": "https://inoueballet.net/school/",
-      "tier": "secondary",
       "status": "seed"
     },
     {
@@ -573,7 +510,6 @@
       "country": "JP",
       "city": "Tokyo",
       "url": "https://www.sdballet.com/school/",
-      "tier": "secondary",
       "status": "seed"
     },
     {
@@ -582,7 +518,6 @@
       "country": "JP",
       "city": "Tokyo",
       "url": "https://www.tb-school.jp/",
-      "tier": "secondary",
       "status": "seed"
     },
     {
@@ -591,7 +526,6 @@
       "country": "JP",
       "city": "Tokyo",
       "url": "https://www.matsuyama-ballet.com/",
-      "tier": "secondary",
       "status": "seed"
     },
     {
@@ -600,7 +534,6 @@
       "country": "JP",
       "city": "Tokyo",
       "url": "https://www.tanimomoko-ballet.or.jp/academy/",
-      "tier": "secondary",
       "status": "seed"
     },
     {
@@ -609,7 +542,6 @@
       "country": "JP",
       "city": "Osaka",
       "url": "https://www.homuratomoi.com/",
-      "tier": "secondary",
       "status": "seed"
     },
     {
@@ -618,7 +550,6 @@
       "country": "JP",
       "city": "Kobe",
       "url": "https://sadamatsu-hamada.fem.jp/",
-      "tier": "secondary",
       "status": "seed"
     },
     {
@@ -627,7 +558,6 @@
       "country": "JP",
       "city": "Nagoya",
       "url": "http://www.ochiballet.com/",
-      "tier": "secondary",
       "status": "seed"
     },
     {
@@ -636,7 +566,6 @@
       "country": "JP",
       "city": "Tokyo",
       "url": "http://www.academia-ballet.jp/",
-      "tier": "secondary",
       "status": "seed"
     },
     {
@@ -645,7 +574,6 @@
       "country": "JP",
       "city": "Tokyo",
       "url": "https://a-tanz.com/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -654,7 +582,6 @@
       "country": "JP",
       "city": "Tokyo",
       "url": "https://www.le-temps-lie.org/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -663,7 +590,6 @@
       "country": "KR",
       "city": "Seoul",
       "url": "https://www.juliaballet.co.kr/",
-      "tier": "secondary",
       "status": "seed"
     },
     {
@@ -672,7 +598,6 @@
       "country": "KR",
       "city": "Seoul",
       "url": "https://www.ballet.or.kr/",
-      "tier": "secondary",
       "status": "seed"
     },
     {
@@ -681,7 +606,6 @@
       "country": "RO",
       "city": "Bucharest",
       "url": "https://www.balletworkshops.com/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -690,7 +614,6 @@
       "country": "CZ",
       "city": "Prague",
       "url": "https://www.pragueballetintensive.com/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -699,7 +622,6 @@
       "country": "FR",
       "city": "Marseille",
       "url": "https://www.stagedansecj.com/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -708,7 +630,6 @@
       "country": "CH",
       "city": "Lausanne",
       "url": "https://www.prixdelausanne.org/summer-intensive/",
-      "tier": "marquee",
       "status": "live"
     },
     {
@@ -717,7 +638,6 @@
       "country": "FR",
       "city": "Nice",
       "url": "https://academie-internationale-ete-nice.org/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -726,7 +646,6 @@
       "country": "SI",
       "city": "Ljubljana",
       "url": "https://www.balletstage.com/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -735,7 +654,6 @@
       "country": "FR",
       "city": "Lyon",
       "url": "https://www.academie-ballet.fr/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -744,7 +662,6 @@
       "country": "RO",
       "city": "Bucharest",
       "url": "https://revolvedance.ro/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -753,7 +670,6 @@
       "country": "FR",
       "city": "Biarritz",
       "url": "https://biarritz-academie-danse.com/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -762,7 +678,6 @@
       "country": "NL",
       "city": "The Hague",
       "url": "https://www.ndt.nl/en/ndt-summer-intensive/",
-      "tier": "marquee",
       "status": "live"
     },
     {
@@ -771,7 +686,6 @@
       "country": "NL",
       "city": "The Hague",
       "url": "https://www.koncon.nl/",
-      "tier": "marquee",
       "status": "live"
     },
     {
@@ -780,7 +694,6 @@
       "country": "ES",
       "city": "Madrid",
       "url": "https://nachoduatoacademy.com/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -789,7 +702,6 @@
       "country": "ES",
       "city": "Barcelona",
       "url": "https://www.corelladanceacademy.com/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -798,7 +710,6 @@
       "country": "CZ",
       "city": "Prague",
       "url": "https://bballetmasterclasses.com/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -807,7 +718,6 @@
       "country": "DE",
       "city": "Mannheim",
       "url": "https://www.nationaltheater-mannheim.de/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -816,7 +726,6 @@
       "country": "IT",
       "city": "Moncalvo",
       "url": "https://orsolina28.it/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -825,7 +734,6 @@
       "country": "CA",
       "city": "Toronto",
       "url": "https://www.nbs-enb.ca/",
-      "tier": "marquee",
       "status": "live"
     },
     {
@@ -834,7 +742,6 @@
       "country": "US",
       "city": "San Francisco",
       "url": "https://www.sfballet.org/the-school/san-francisco-ballet-school/",
-      "tier": "marquee",
       "status": "live"
     },
     {
@@ -843,7 +750,6 @@
       "country": "AU",
       "city": "Melbourne",
       "url": "https://www.australianballetschool.com.au/",
-      "tier": "marquee",
       "status": "live"
     },
     {
@@ -852,7 +758,6 @@
       "country": "BR",
       "city": "Joinville",
       "url": "https://escolabolshoi.com.br/cursos",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -861,7 +766,6 @@
       "country": "GB",
       "city": "Harrogate",
       "url": "https://www.ybss.co.uk/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -870,7 +774,6 @@
       "country": "IT",
       "city": "Rome",
       "url": "https://www.operaroma.it/opera-giovani/scuola-di-danza/",
-      "tier": "marquee",
       "status": "seed"
     },
     {
@@ -879,7 +782,6 @@
       "country": "US",
       "city": "Boston",
       "url": "https://www.bostonballet.org/education/summer-dance-program/",
-      "tier": "marquee",
       "status": "live"
     },
     {
@@ -888,7 +790,6 @@
       "country": "IE",
       "city": "Dublin",
       "url": "https://www.balletireland.ie/join-in/summer-intensive/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -897,7 +798,6 @@
       "country": "IT",
       "city": "Rome",
       "url": "https://www.ballettodiroma.com/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -906,7 +806,6 @@
       "country": "CA",
       "city": "Winnipeg",
       "url": "https://www.rwb.org/school/",
-      "tier": "marquee",
       "status": "live"
     },
     {
@@ -915,7 +814,6 @@
       "country": "SG",
       "city": "Singapore",
       "url": "https://singaporeballet.org/",
-      "tier": "secondary",
       "status": "seed"
     },
     {
@@ -924,7 +822,6 @@
       "country": "US",
       "city": "Houston",
       "url": "https://www.houstonballet.org/about/academy/summer-intensive-program/",
-      "tier": "marquee",
       "status": "live"
     },
     {
@@ -933,7 +830,6 @@
       "country": "US",
       "city": "Seattle",
       "url": "https://www.pnb.org/school/",
-      "tier": "marquee",
       "status": "live"
     },
     {
@@ -942,7 +838,6 @@
       "country": "GR",
       "city": "Athens",
       "url": "https://into-dance.com/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -951,7 +846,6 @@
       "country": "NZ",
       "city": "Wellington",
       "url": "https://www.nzschoolofdance.ac.nz/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -960,7 +854,6 @@
       "country": "IT",
       "city": "Naples",
       "url": "https://www.teatrosancarlo.it/scuola-di-ballo/",
-      "tier": "marquee",
       "status": "live"
     },
     {
@@ -969,7 +862,6 @@
       "country": "CA",
       "city": "Vancouver",
       "url": "https://www.gohballet.com/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -978,7 +870,6 @@
       "country": "SE",
       "city": "Stockholm",
       "url": "https://kungligasvenskabalettskolan.stockholm/en/",
-      "tier": "marquee",
       "status": "seed"
     },
     {
@@ -987,7 +878,6 @@
       "country": "US",
       "city": "Mountain View",
       "url": "https://www.bayerballet.com/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -996,7 +886,6 @@
       "country": "PL",
       "city": "Wrocław",
       "url": "https://cordsdance.com/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -1005,7 +894,6 @@
       "country": "PL",
       "city": "Sopot",
       "url": "https://asb-balet.pl/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -1014,7 +902,6 @@
       "country": "PL",
       "city": "Warszawa",
       "url": "https://balet.info.pl/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -1023,7 +910,6 @@
       "country": "PL",
       "city": "Warszawa",
       "url": "https://www.neoclassica.pl/",
-      "tier": "secondary",
       "status": "seed"
     },
     {
@@ -1032,7 +918,6 @@
       "country": "PL",
       "city": "Gdynia",
       "url": "https://www.artballet.pl/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -1041,7 +926,6 @@
       "country": "PL",
       "city": "Kraków",
       "url": "https://centrumsztukitanca.pl/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -1050,7 +934,6 @@
       "country": "PL",
       "city": "Warszawa",
       "url": "https://lesballets.pl/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -1059,7 +942,6 @@
       "country": "PL",
       "city": "Poznań",
       "url": "https://fouette.pl/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -1068,7 +950,6 @@
       "country": "US",
       "city": "Las Vegas",
       "url": "https://vaganovainternationalprogram.com/",
-      "tier": "secondary",
       "status": "live"
     },
     {
@@ -1077,7 +958,6 @@
       "country": "PT",
       "city": "Leiria",
       "url": "https://conservatorioannarella.com/",
-      "tier": "secondary",
       "status": "seed"
     },
     {
@@ -1086,7 +966,6 @@
       "country": "RO",
       "city": "Bucharest",
       "url": "https://casadebalet.ro/",
-      "tier": "secondary",
       "status": "seed"
     },
     {
@@ -1095,7 +974,6 @@
       "country": "DE",
       "city": "Munich",
       "url": "https://www.artinmotionmunich.com/",
-      "tier": "secondary",
       "status": "seed"
     },
     {
@@ -1104,7 +982,6 @@
       "country": "DE",
       "city": "Cologne",
       "url": "https://tanzquartier.koeln/",
-      "tier": "secondary",
       "status": "seed"
     },
     {
@@ -1113,7 +990,6 @@
       "country": "DE",
       "city": "Hamburg",
       "url": "https://ginaworkshops.com/",
-      "tier": "secondary",
       "status": "seed"
     },
     {
@@ -1122,7 +998,6 @@
       "country": "DE",
       "city": "Berlin",
       "url": "https://www.staatsballett-berlin.de/",
-      "tier": "secondary",
       "status": "seed"
     },
     {
@@ -1131,7 +1006,6 @@
       "country": "DE",
       "city": "Munich",
       "url": "https://www.benedictmanniegel.de/",
-      "tier": "secondary",
       "status": "seed"
     },
     {
@@ -1140,7 +1014,6 @@
       "country": "DE",
       "city": "Frankfurt am Main",
       "url": "https://www.ballett-und-tanzschule-anastasia.com/",
-      "tier": "secondary",
       "status": "seed"
     },
     {
@@ -1149,7 +1022,6 @@
       "country": "US",
       "city": "Omaha",
       "url": "https://amballet.org/",
-      "tier": "secondary",
       "status": "seed"
     },
     {
@@ -1158,7 +1030,14 @@
       "country": "US",
       "city": "Scottsdale",
       "url": "https://www.masterballetacademy.com/",
-      "tier": "secondary",
+      "status": "seed"
+    },
+    {
+      "slug": "umbria-ballet",
+      "name": "Umbria Ballet — Centro Professionale di Danza",
+      "country": "IT",
+      "city": "Bastia Umbra",
+      "url": "https://www.umbriaballet.com/",
       "status": "seed"
     }
   ]
