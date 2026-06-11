@@ -101,6 +101,7 @@ from . import (
     stage_charles_jude,
     studio_architanz,
     summer_sensation_intensive,
+    tanzquartier_koeln,
     teatro_san_carlo_scuola_ballo,
     temps_lie_ballet_workshop_japan,
     tokyo_ballet_school,
@@ -209,5 +210,6 @@ SCRAPERS: dict[str, Scraper] = {
     "dance-and-fashion-cic": dance_and_fashion_cic.scrape,
     "rosenthal-ballett": rosenthal_ballett.scrape,
     "staatsballett-berlin-feriencamp": staatsballett_berlin_feriencamp.scrape,
+    "tanzquartier-koeln": tanzquartier_koeln.scrape,
     "umbria-ballet": umbria_ballet.scrape,
 }

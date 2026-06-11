@@ -1,0 +1,79 @@
+[
+  {
+    "ageRange": {
+      "max": null,
+      "min": 15
+    },
+    "application": {
+      "notes": "Klassisches Ballett ist ausgebucht!",
+      "requirements": [],
+      "status": "open",
+      "url": "https://tanzquartier.koeln/workshops/intensiv-workshop-sommerferien-2026"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "tanzquartier-koeln/ballett-contemporary-intensiv-workshop-2026",
+    "level": [
+      "intermediate"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Cologne",
+      "country": "DE",
+      "venue": "Tanzquartier Köln – Studio Elsaßstraße"
+    },
+    "organization": {
+      "city": "Cologne",
+      "country": "DE",
+      "name": "Tanzquartier Köln",
+      "slug": "tanzquartier-koeln"
+    },
+    "prices": [
+      {
+        "amount": 185.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Beide Module (Ballett & Contemporary)",
+        "notes": "Mitglieder: 169 EUR"
+      },
+      {
+        "amount": 110.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Klassisches Ballett",
+        "notes": "Mitglieder: 99 EUR"
+      },
+      {
+        "amount": 89.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Contemporary",
+        "notes": "Mitglieder: 79 EUR"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-28",
+      "notes": "24.-28. August 2026",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-24",
+      "timezone": "Europe/Berlin"
+    },
+    "source": {
+      "hash": "sha256:adef0d9721ef2af303fc8cb90f88e52fcdea22b0989196a333fe812b76500e1e",
+      "provider": "tanzquartier-koeln",
+      "scrapedAt": "2026-06-11T20:55:45.344823Z",
+      "url": "https://tanzquartier.koeln/workshops/intensiv-workshop-sommerferien-2026"
+    },
+    "teachers": [],
+    "title": "Ballett & Contemporary Intensiv-Workshop"
+  }
+]
