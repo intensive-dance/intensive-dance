@@ -254,7 +254,7 @@
       "country": "IT",
       "city": "Rapallo",
       "url": "https://danceandfashioncic.com/",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "attitude-ballet-studios",
@@ -350,7 +350,7 @@
       "country": "CA",
       "city": "Calgary",
       "url": "https://albertaballetschool.com/",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "hong-kong-academy-of-ballet",
@@ -958,15 +958,7 @@
       "country": "PT",
       "city": "Leiria",
       "url": "https://conservatorioannarella.com/",
-      "status": "seed"
-    },
-    {
-      "slug": "casa-de-balet",
-      "name": "Casa de Balet",
-      "country": "RO",
-      "city": "Bucharest",
-      "url": "https://casadebalet.ro/",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "art-in-motion-munich",
@@ -974,7 +966,7 @@
       "country": "DE",
       "city": "Munich",
       "url": "https://www.artinmotionmunich.com/",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "tanzquartier-koeln",
@@ -1022,7 +1014,7 @@
       "country": "US",
       "city": "Omaha",
       "url": "https://amballet.org/",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "master-ballet-academy",
@@ -1038,7 +1030,7 @@
       "country": "IT",
       "city": "Bastia Umbra",
       "url": "https://www.umbriaballet.com/",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "dbft-sommerakademie",

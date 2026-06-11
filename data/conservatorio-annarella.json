@@ -1,0 +1,140 @@
+[
+  {
+    "ageRange": {
+      "max": null,
+      "min": 8
+    },
+    "application": {
+      "deadline": "2024-12-30",
+      "notes": "NOTA: os alunos com idade igual ou inferior a 12 anos não têm que enviar vídeo para inscrição.",
+      "requirements": [
+        {
+          "description": "1st arabesque a terre and en l’air A la seconde position tendu a terre and en l’air An adage combination to include a terre and en l’air A pirouette combination A Petite allegro combination A Grand allegro combination Só para meninas: Uma posição imóvel mostrando os pés en pointe a la seconde ou arabesque A pointe combination NÃO SÃO ACEITES EXERCÍCIOS NA BARRA",
+          "specificity": "specific",
+          "type": "video"
+        }
+      ],
+      "url": "https://conservatorioannarella.com/site/curso-intensivo-de-inverno/"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "character",
+      "repertoire",
+      "pointe"
+    ],
+    "id": "conservatorio-annarella/curso-intensivo-de-inverno-2025",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Leiria",
+      "country": "PT",
+      "venue": "Conservatório Internacional de Ballet e Dança Annarella Sanchez"
+    },
+    "organization": {
+      "city": "Leiria",
+      "country": "PT",
+      "name": "Conservatório Internacional de Ballet e Dança Annarella",
+      "slug": "conservatorio-annarella"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2025-01-11",
+      "notes": "6 – 11 de janeiro de 2025",
+      "season": "2025",
+      "sessions": [],
+      "start": "2025-01-06",
+      "timezone": "Europe/Lisbon"
+    },
+    "source": {
+      "hash": "sha256:b6211cb2c36cfce2c742eb313b87a748e80c2e454a9512c97475722759c8079b",
+      "provider": "conservatorio-annarella",
+      "scrapedAt": "2026-06-11T18:17:39.333478Z",
+      "url": "https://conservatorioannarella.com/site/curso-intensivo-de-inverno/"
+    },
+    "teachers": [],
+    "title": "Curso Intensivo de Inverno 2025"
+  },
+  {
+    "ageRange": {
+      "max": 20,
+      "min": 8
+    },
+    "application": {
+      "deadline": "2026-05-15",
+      "notes": "NOTA: os alunos com idade inferior a 11 anos e aqueles que já participaram no nosso Curso em anos anteriores, não têm que enviar vídeo para inscrição.",
+      "requirements": [
+        {
+          "description": "1st arabesque a terre and en l’air A la seconde position tendu a terre and en l’air An adage combination to include a terre and en l’air A pirouette combination A Petite allegro combination A Grand allegro combination Só para meninas: Uma posição imóvel mostrando os pés en pointe a la seconde ou arabesque A pointe combination NÃO SÃO ACEITES EXERCÍCIOS NA BARRA PARA MAIORES DE 13 ANOS.",
+          "specificity": "specific",
+          "type": "video"
+        }
+      ],
+      "url": "https://conservatorioannarella.com/site/curso-intensivo-de-verao/"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "character",
+      "repertoire",
+      "pointe"
+    ],
+    "id": "conservatorio-annarella/curso-intensivo-de-verao-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Leiria",
+      "country": "PT",
+      "venue": "Conservatório Internacional de Ballet e Dança Annarella Sanchez"
+    },
+    "organization": {
+      "city": "Leiria",
+      "country": "PT",
+      "name": "Conservatório Internacional de Ballet e Dança Annarella",
+      "slug": "conservatorio-annarella"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-07-31",
+      "notes": "29 junho – 3 julho 20 – 24 julho 6 – 10 julho 27 – 31 julho 13 – 17 julho",
+      "season": "2026",
+      "sessions": [
+        {
+          "end": "2026-07-03",
+          "label": "2026-06-29 – 2026-07-03",
+          "start": "2026-06-29"
+        },
+        {
+          "end": "2026-07-24",
+          "label": "2026-07-20 – 2026-07-24",
+          "start": "2026-07-20"
+        },
+        {
+          "end": "2026-07-10",
+          "label": "2026-07-06 – 2026-07-10",
+          "start": "2026-07-06"
+        },
+        {
+          "end": "2026-07-31",
+          "label": "2026-07-27 – 2026-07-31",
+          "start": "2026-07-27"
+        },
+        {
+          "end": "2026-07-17",
+          "label": "2026-07-13 – 2026-07-17",
+          "start": "2026-07-13"
+        }
+      ],
+      "start": "2026-06-29",
+      "timezone": "Europe/Lisbon"
+    },
+    "source": {
+      "hash": "sha256:3d9bd5f85d2e3a86722e17291a20b1362b1bbc3a9d2ca90ddebc54b91e792e62",
+      "provider": "conservatorio-annarella",
+      "scrapedAt": "2026-06-11T18:18:34.815839Z",
+      "url": "https://conservatorioannarella.com/site/curso-intensivo-de-verao/"
+    },
+    "teachers": [],
+    "title": "Curso Intensivo de Verão 2026"
+  }
+]

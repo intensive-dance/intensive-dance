@@ -2,7 +2,7 @@
 
 > **Generated — do not edit.** Refresh with `uv run python -m intensive_dance.overview --write`; CI drift-checks it. Source of truth: `providers.json`.
 
-33 buildable · 9 excluded · 89 live (131 providers total).
+26 buildable · 9 excluded · 95 live (130 providers total).
 
 **To claim one (so nobody double-builds):** check `gh issue list` / `gh pr list` for the slug; if free, open a `build:<slug>` issue and **self-assign first**, then build; close it when the PR merges (provider → `live`). An open claim issue *or* PR = locked. See `AGENTS.md` → Scope & coordination.
 
@@ -10,11 +10,7 @@
 
 _Some still need Phase-1 verification (a public dated edition / not full-time) before building._
 
-### CA
-- `alberta-ballet-school` — Alberta Ballet School (Calgary) — https://albertaballetschool.com/
-
 ### DE
-- `art-in-motion-munich` — Art in Motion Munich (Munich) — https://www.artinmotionmunich.com/
 - `ballett-dortmund` — Ballett Dortmund (Dortmund) — https://theaterdo.de/
 - `benedict-manniegel` — Benedict Manniegel Ballet School & Academy (Munich) — https://www.benedictmanniegel.de/
 - `dbft-sommerakademie` — DBfT — Sommerakademie Junior (Dortmund) — https://www.dbft.de/Berufsregister/Sommerakademie-Junior/index.html
@@ -32,10 +28,6 @@ _Some still need Phase-1 verification (a public dated edition / not full-time) b
 ### HU
 - `hungarian-dance-university` — Hungarian Dance University (Budapest) — https://mte.eu/
 
-### IT
-- `dance-and-fashion-cic` — Dance & Fashion CIC (Rapallo) — https://danceandfashioncic.com/
-- `umbria-ballet` — Umbria Ballet — Centro Professionale di Danza (Bastia Umbra) — https://www.umbriaballet.com/
-
 ### JP
 - `homura-tomoi-ballet-school` — Homura Tomoi Ballet School (Osaka) — https://www.homuratomoi.com/
 - `inoue-ballet` — Inoue Ballet Summer Seminar (Tokyo) — https://inoueballet.net/school/
@@ -52,20 +44,11 @@ _Some still need Phase-1 verification (a public dated edition / not full-time) b
 - `julia-ballet-academy` — Julia Ballet Academy (Seoul) — https://www.juliaballet.co.kr/
 - `seoul-ballet-theatre` — Seoul Ballet Theatre (Ballet Edu) (Seoul) — https://www.ballet.or.kr/
 
-### PT
-- `conservatorio-annarella` — Conservatório Internacional de Ballet e Dança Annarella (Leiria) — https://conservatorioannarella.com/
-
-### RO
-- `casa-de-balet` — Casa de Balet (Bucharest) — https://casadebalet.ro/
-
 ### RU
 - `bolshoi-ballet-academy` — Bolshoi Ballet Academy (Moscow) — https://en.balletacademy.ru/
 
 ### SE
 - `international-ballet-school-stockholm` — International Ballet School Stockholm (Stockholm) — https://www.internationalballet.se/
-
-### US
-- `american-midwest-ballet` — American Midwest Ballet (Omaha) — https://amballet.org/
 
 ## Excluded — do NOT build
 

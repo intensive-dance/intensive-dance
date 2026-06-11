@@ -1,0 +1,50 @@
+[
+  {
+    "ageRange": {
+      "max": null,
+      "min": 11
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.danceandfashioncic.com/summer-ballet-intensive-ttstage-italy"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "character"
+    ],
+    "id": "dance-and-fashion-cic/summer-ballet-intensive-2026",
+    "level": [
+      "professional",
+      "open"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Rapallo",
+      "country": "IT"
+    },
+    "organization": {
+      "city": "Rapallo",
+      "country": "IT",
+      "name": "Dance & Fashion CIC",
+      "slug": "dance-and-fashion-cic"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-08-01",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-20",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:5f4e0f05eb37eb7ef6e66258ab485b65d32c61ff345824b3c4fbaea6218e32a1",
+      "provider": "dance-and-fashion-cic",
+      "scrapedAt": "2026-06-11T14:43:31.530321Z",
+      "url": "https://www.danceandfashioncic.com/summer-ballet-intensive-ttstage-italy"
+    },
+    "teachers": [],
+    "title": "Summer Ballet Intensive TT Stage 2026"
+  }
+]

@@ -119,3 +119,108 @@ def test_build_offering_end_to_end():
 
 def test_build_offering_returns_none_without_dates():
     assert bw._build_offering("<html><body><p>coming soon</p></body></html>") is None
+
+
+# --- Winter Camp --------------------------------------------------------------
+
+WINTER_SAMPLE = """
+<html><body>
+<h2>BALLET WINTER CAMP</h2><h2>2-6 January 2026 ​Bucharest</h2>
+<div class="info-member info-element-title">Lynne Charles</div>
+<div class="info-member info-element-description">Artistic Director English National
+Ballet School Founder and Creator of 4 Pointe</div>
+<p>Organized by Casa de Balet, the workshop participants will have access to studies of
+classical ballet, duet, classical repertoire, contemporary dance and more.</p>
+<p>The workshop is for young students aged between 9 and 18 years. You can sign up for
+BWC by completing the online registration form.</p>
+<p>PARTICIPATION FEES ​ALL LEVELS €600 The registration deadline is DECEMBER 22 . Full
+payment or a 30% deposit ensures the reservation.</p>
+</body></html>
+"""
+
+
+def test_age_range_between_form():
+    assert bw._age_range("students aged between 9 and 18 years") == {"min": 9, "max": 18}
+
+
+def test_winter_genres_scoped_to_curriculum_not_teacher_bio():
+    # "4 Pointe" is in a teacher bio, not the winter curriculum — it must not leak.
+    text = bw._page_text(WINTER_SAMPLE)
+    assert bw._winter_genres(text) == ["classical", "repertoire", "contemporary"]
+
+
+def test_winter_price_band_before_figure():
+    prices = bw._prices("PARTICIPATION FEES ALL LEVELS €600 The registration deadline is")
+    assert len(prices) == 1
+    assert prices[0].amount == 600.0
+    assert prices[0].includes == ["tuition"]  # no gala/showcase → tuition only
+    assert prices[0].label == "All levels"
+
+
+def test_deadline_rolls_back_across_year_boundary():
+    # A December deadline for a January camp belongs to the prior calendar year.
+    assert bw._deadline_rollback(
+        "The registration deadline is DECEMBER 22.", date(2026, 1, 2)
+    ) == date(2025, 12, 22)
+    # A same-side deadline keeps the camp year.
+    assert bw._deadline_rollback(
+        "The registration deadline is June 9th.", date(2026, 7, 9)
+    ) == date(2026, 6, 9)
+
+
+def test_build_winter_end_to_end():
+    o = bw._build_winter(WINTER_SAMPLE)
+    assert o is not None
+    assert o.id == "ballet-workshops-bucharest/winter-camp-2026"
+    assert o.title == "Ballet Winter Camp 2026"
+    assert o.schedule.start == date(2026, 1, 2)
+    assert o.schedule.end == date(2026, 1, 6)
+    assert o.age_range == {"min": 9, "max": 18}
+    assert o.genres == ["classical", "repertoire", "contemporary"]
+    assert o.application.deadline == date(2025, 12, 22)
+    assert o.application.requirements == []
+    assert len(o.prices) == 1 and o.prices[0].amount == 600.0
+    assert [t.name for t in o.teachers] == ["Lynne Charles"]
+
+
+# --- Masterclasses ------------------------------------------------------------
+
+MASTERCLASS_SAMPLE = """
+<html><body>
+<p>MASTERS &amp; WORKSHOPS UPCOMING Marco Laudani Contemporary Dance Masterclass
+06-08 March 2026 Christopher Powney Ballet Masterclass 21-22 March 2026 Soon more
+guests TBA</p>
+<p>Past events: Old Guest Ballet Masterclass 01-02 February 2020</p>
+</body></html>
+"""
+
+
+def test_build_masterclasses_one_per_guest():
+    offerings = bw._build_masterclasses(MASTERCLASS_SAMPLE)
+    by_id = {o.id: o for o in offerings}
+    assert set(by_id) == {
+        "ballet-workshops-bucharest/masterclass-marco-laudani-2026",
+        "ballet-workshops-bucharest/masterclass-christopher-powney-2026",
+    }
+    marco = by_id["ballet-workshops-bucharest/masterclass-marco-laudani-2026"]
+    assert marco.title == "Marco Laudani — Contemporary Dance Masterclass"
+    assert marco.genres == ["contemporary"]
+    assert marco.schedule.start == date(2026, 3, 6)
+    assert marco.schedule.end == date(2026, 3, 8)
+    assert [t.name for t in marco.teachers] == ["Marco Laudani"]
+
+    powney = by_id["ballet-workshops-bucharest/masterclass-christopher-powney-2026"]
+    assert powney.genres == ["classical"]  # "Ballet Masterclass" → default classical
+    assert powney.schedule.start == date(2026, 3, 21)
+    assert powney.schedule.end == date(2026, 3, 22)
+
+
+def test_build_masterclasses_ignores_dates_outside_upcoming_block():
+    # The past-event "01-02 February 2020" sits after "Soon more guests / TBA",
+    # so it is outside the UPCOMING segment and must not become an Offering.
+    offerings = bw._build_masterclasses(MASTERCLASS_SAMPLE)
+    assert all("2020" not in o.id for o in offerings)
+
+
+def test_build_masterclasses_empty_without_upcoming_block():
+    assert bw._build_masterclasses("<html><body><p>no masterclasses listed</p></body></html>") == []
