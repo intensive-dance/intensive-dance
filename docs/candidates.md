@@ -64,6 +64,7 @@ triaged; **6 promoted to `seed`** in `providers.json`, the rest recorded below. 
 - **Staatsballett Berlin — Feriencamp** (Berlin) — recurring 5-day camp, ages 12–16 (5-yr prerequisite), state-company education arm ("Tanz ist KLASSE!"); Oct 2026 confirmed, summer TBA — staatsballett-berlin.de
 - **Benedict Manniegel Ballet School** (Munich) — Vaganova school, dir. ex-Hamburg Ballet/Het Nationale Ballet prima; Easter workshop 2026 confirmed, summer TBA — benedictmanniegel.de
 - **Ballett- und Tanzschule Anastasia** (Frankfurt am Main) — recurring annual "Sommer Intensive" (week 1 of summer holidays), Vaganova pre-pro track; 2026 dates TBA *(verify post-2022 continuity)* — ballett-und-tanzschule-anastasia.com *(**WordPress**)*
+- **DBfT — Sommerakademie Junior** (Dortmund) — intensive training week by the Deutscher Berufsverband für Tanzpädagogik in cooperation with the Internationale Sommerakademie des Ballett Dortmund; ages 13–15, classical, two levels, summer holidays (2026 edition confirmed), at the Opernhaus Dortmund / Ballettzentrum Westfalen — dbft.de. *Distinct from the separate `ballett-dortmund` seed (the company's own Int. Sommerakademie).* *(User-requested seed 2026-06-11.)*
 
 **`scored` — monitor / verify before promoting:**
 - **ICZ Leipzig — Sommer-Akademie "Uwe Scholz"** (Leipzig) — annual 1-wk ballet intensive open to European students, dir. Montserrat León, on the Baumwollspinnerei campus; **recency uncertain** (nav says 6th ed, archive gaps post-2016) — icz-leipzig.de
