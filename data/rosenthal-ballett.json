@@ -1,0 +1,102 @@
+[
+  {
+    "ageRange": {
+      "max": 19,
+      "min": 13
+    },
+    "application": {
+      "deadline": "2026-04-30",
+      "requirements": [
+        {
+          "description": "Barre - Plié - Tendu (one exercise) - Jeté (one exercise) - Rond de Jambe (finishing with balance in arabesque) - Fondue (including retiré, ending with balance in attitude) - Frappé - Adagio - Grand Battement Center (Girls on pointe from Adagio to Petit Allegro) - Adagio - Tendu - Pirouette from 5th - Pirouette variation - Petit Allegro - Jump combination with Assemblé, Jeté, Ballonné - Medium jumps - Grand Allegro (Boys: include tours)",
+          "specificity": "specific",
+          "type": "video"
+        }
+      ],
+      "url": "https://www.rosenthal-ballett.de/summer-intensive"
+    },
+    "genres": [
+      "classical",
+      "repertoire",
+      "contemporary"
+    ],
+    "id": "rosenthal-ballett/summer-intensive-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Düsseldorf",
+      "country": "DE",
+      "venue": "Rosenthal Ballett"
+    },
+    "organization": {
+      "city": "Düsseldorf",
+      "country": "DE",
+      "name": "Rosenthal Ballett",
+      "slug": "rosenthal-ballett"
+    },
+    "prices": [
+      {
+        "amount": 890.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-02",
+      "notes": "Dates: 21 July – 2 August 2026",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 15,
+            "min": 13
+          },
+          "label": "Group A",
+          "notes": "Group A: Younger dance students (min. 13 to 15 years) or those at a certain level (pre professional)"
+        },
+        {
+          "ageRange": {
+            "max": 19,
+            "min": 16
+          },
+          "label": "Group B",
+          "notes": "Group B: More experienced professional dance students and dancers (min 16 to 19 years)"
+        }
+      ],
+      "start": "2026-07-21",
+      "timezone": "Europe/Berlin"
+    },
+    "source": {
+      "hash": "sha256:b8cd8a47947c6fe90b7d9bec838eaadd23d732ccbce992be68171ed6bda6ba55",
+      "provider": "rosenthal-ballett",
+      "scrapedAt": "2026-06-11T18:42:45.934198Z",
+      "url": "https://www.rosenthal-ballett.de/summer-intensive"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Caroline Llorca"
+      },
+      {
+        "affiliations": [],
+        "name": "Csaba Kvasz"
+      },
+      {
+        "affiliations": [],
+        "name": "Stéphane Dalle"
+      },
+      {
+        "affiliations": [],
+        "name": "Kauan Soares"
+      },
+      {
+        "affiliations": [],
+        "name": "Sébastien Mari"
+      }
+    ],
+    "title": "Summer Intensive 2026"
+  }
+]

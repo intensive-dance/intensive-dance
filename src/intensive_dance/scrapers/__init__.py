@@ -89,6 +89,7 @@ from . import (
     prix_de_lausanne_summer_intensive,
     rad_japan_summer_school,
     revolve_dance_bucharest,
+    rosenthal_ballett,
     royal_ballet_school,
     royal_conservatoire_the_hague,
     royal_danish_ballet_summer_school,
@@ -205,5 +206,6 @@ SCRAPERS: dict[str, Scraper] = {
     "art-in-motion-munich": art_in_motion_munich.scrape,
     "conservatorio-annarella": conservatorio_annarella.scrape,
     "dance-and-fashion-cic": dance_and_fashion_cic.scrape,
+    "rosenthal-ballett": rosenthal_ballett.scrape,
     "umbria-ballet": umbria_ballet.scrape,
 }
