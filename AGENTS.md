@@ -143,6 +143,14 @@ module docstring so the next person doesn't re-investigate:
      `/wp-json/`). The fetch proxy clears it (server-side Chrome UA, **auto tier,
      no render**) — so the proxy is needed for a no-JS API scrape (see
      `san_francisco_ballet_school`).
+   - **Trap (Annarella):** a WP install can live in a **subfolder** — the REST
+     root is `{base}/site/wp-json/`, not `{base}/wp-json/` (the apex is a
+     marketing landing page). Pass `base="…/site"` to `wp.fetch_page`. Also: a
+     provider's course *index* can link several editions but only some have a
+     real **detail page** — a "Curso de Páscoa" whose page is a bare registration
+     form (no genres/ages/dates of its own) is a genre-less stub; **don't emit
+     it**, build only the editions whose own page carries the structured detail
+     (see `conservatorio_annarella`).
 2. **Embedded structured data** — `<script type="application/ld+json">`
    (schema.org `Event`/`Course`), or a state blob (`__NEXT_DATA__`).
 3. **Feeds** — iCal `.ics`, RSS/Atom.
