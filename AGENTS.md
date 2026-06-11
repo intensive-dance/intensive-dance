@@ -409,6 +409,14 @@ when a second provider genuinely needs the identical thing.
   to the next heading) and **letter-space** inline form labels ("a rabesque").
   Strip the zero-width chars and detect requirement *keywords* rather than scrape
   the garbled tokens (see `brussels_international_ballet`, `young_stars_ballet`).
+  **Trap — a press-round-up page:** some Wix event pages are mostly years of
+  stacked "KEEP READING" article excerpts (prior editions) around one
+  current-edition paragraph. Parse **only** that paragraph's date/program and the
+  `meta description` summary; the clippings carry stale year/date lines (a "15-27
+  luglio" excerpt next to the real "20 luglio 01 agosto 2026") that loose
+  whole-page date regexing would mis-pick. Italian spans can be separator-less
+  ("20 luglio 01 agosto 2026") — match day-month-day-month-year with a local
+  Italian month map (`parse.months_alt`) (see `dance_and_fashion_cic`).
 - **Webflow sites are static HTML** (`data-wf-domain`/`cdn.prod.webflow`; no
   `/wp-json/`, no `ld+json`). Course pages render the dated detail as a flat run
   of `Label:` lines ("Dates:", "Where:", "Cost:") — read those, and take the
@@ -431,6 +439,16 @@ when a second provider genuinely needs the identical thing.
   numeric dates (EN+IT month map), enum genres, numeric ages/prices, title from
   the API, and emit only canonical-English free text — verify EN==IT, never rely
   on one render (see `fondazione_monreart`).
+- **SEOmatic/Craft headless sites: server-rendered HTML, generic ld+json, grade
+  ages.** A site whose generator meta is **SEOmatic** (Craft CMS) has no `/wp-json/`
+  and its only `ld+json` is generic `WebPage`/`Organization` SEO data (no
+  `Event`/`Course`) — but the page is fully server-rendered, so it's a plain
+  `selectolax` text scrape. Western grade bands ("Grades 5-8 / 9-12") are the same
+  trap as the JP grades: map them to ages (Alberta/most Canada: Grade N ≈ age N+5)
+  and keep the raw band in `schedule.notes`. When the *same* intensive runs as two
+  **parallel dated sessions** (two 3-week blocks), emit **one Offering per session**
+  — a folded 6-week span would misrepresent two distinct 3-week courses (see
+  `alberta_ballet_school`).
 - **A "full-time school" can still sell public short courses.** The Brazilian
   Bolshoi branch is a free full-time vocational school, but it *also* sells dated,
   open-enrollment paid short courses (Cursos de Inverno / Vivências / Workshops) —
@@ -440,6 +458,17 @@ when a second provider genuinely needs the identical thing.
   (pop-up workshops run in other cities), and treat a `min–100` age as
   open-topped (100 = the form's "no max" sentinel). Skip the "para professores"
   teacher-training editions — not student intensives (see `escola_bolshoi_brasil`).
+- **A regional company's school summer page = many program-card Offerings, gate
+  each on a ballet class.** A pro company's affiliated school (American Midwest
+  Ballet) puts its whole summer on one WP page (`content.rendered` over
+  `/wp-json/wp/v2/pages?slug=…`, clean) as several program *cards* — a mix of
+  recreational and academy-track **short courses**. Emit **one Offering per dated
+  card that actually teaches ballet**, slicing the page text by card heading;
+  drop the cards with no ballet class (creative-movement-for-3-5, a free "Day of
+  Dance" open house) via the empty-genre rule. **Trap:** a card carries both its
+  class dates *and* a "Registration deadline: June 1" line, so scope the
+  list-of-single-dates extraction to the camp-list sub-segment ("Camps*: …Cost:")
+  or the deadline date becomes the start (see `american_midwest_ballet`).
 - **Japanese pages: year-less date lines + school-grade ages.** A JP listing
   often gives the course span with no year ("8月6日(木)、…、9日(日)") — read the year
   from the title stamp ("夏休み特別講習会2026") and apply it to the month/day span and
