@@ -42,6 +42,7 @@ from . import (
     centrum_sztuki_tanca,
     cords_dance,
     corella_dance_academy,
+    dance_and_fashion_cic,
     dd_masterclass_japan,
     dutch_national_ballet_academy,
     ecole_danse_opera_paris,
@@ -198,4 +199,5 @@ SCRAPERS: dict[str, Scraper] = {
     "japan-ballet-intensives": japan_ballet_intensives.scrape,
     "alberta-ballet-school": alberta_ballet_school.scrape,
     "american-midwest-ballet": american_midwest_ballet.scrape,
+    "dance-and-fashion-cic": dance_and_fashion_cic.scrape,
 }

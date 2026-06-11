@@ -2,7 +2,7 @@
 
 > **Generated — do not edit.** Refresh with `uv run python -m intensive_dance.overview --write`; CI drift-checks it. Source of truth: `providers.json`.
 
-32 buildable · 9 excluded · 90 live (131 providers total).
+31 buildable · 9 excluded · 91 live (131 providers total).
 
 **To claim one (so nobody double-builds):** check `gh issue list` / `gh pr list` for the slug; if free, open a `build:<slug>` issue and **self-assign first**, then build; close it when the PR merges (provider → `live`). An open claim issue *or* PR = locked. See `AGENTS.md` → Scope & coordination.
 
@@ -31,7 +31,6 @@ _Some still need Phase-1 verification (a public dated edition / not full-time) b
 - `hungarian-dance-university` — Hungarian Dance University (Budapest) — https://mte.eu/
 
 ### IT
-- `dance-and-fashion-cic` — Dance & Fashion CIC (Rapallo) — https://danceandfashioncic.com/
 - `umbria-ballet` — Umbria Ballet — Centro Professionale di Danza (Bastia Umbra) — https://www.umbriaballet.com/
 
 ### JP
