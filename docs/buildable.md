@@ -2,7 +2,7 @@
 
 > **Generated — do not edit.** Refresh with `uv run python -m intensive_dance.overview --write`; CI drift-checks it. Source of truth: `providers.json`.
 
-24 buildable · 9 excluded · 97 live (130 providers total).
+23 buildable · 9 excluded · 98 live (130 providers total).
 
 **To claim one (so nobody double-builds):** check `gh issue list` / `gh pr list` for the slug; if free, open a `build:<slug>` issue and **self-assign first**, then build; close it when the PR merges (provider → `live`). An open claim issue *or* PR = locked. See `AGENTS.md` → Scope & coordination.
 
@@ -22,9 +22,6 @@ _Some still need Phase-1 verification (a public dated edition / not full-time) b
 
 ### GB
 - `elmhurst-ballet-school` — Elmhurst Ballet School (Birmingham) — https://elmhurstballetschool.org/
-
-### HU
-- `hungarian-dance-university` — Hungarian Dance University (Budapest) — https://mte.eu/
 
 ### JP
 - `homura-tomoi-ballet-school` — Homura Tomoi Ballet School (Osaka) — https://www.homuratomoi.com/
