@@ -136,7 +136,7 @@ def test_requirements_audition_or_video():
     req = o.application.requirements[0]
     assert isinstance(req, VideoReq)
     assert req.specificity == "unspecific"
-    assert "$40 audition fee" in (o.application.notes or "")
+    assert "Admission is by audition" in (o.application.notes or "")
 
 
 def test_age_open_topped_plus():

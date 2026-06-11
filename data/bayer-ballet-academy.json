@@ -5,7 +5,7 @@
       "min": 8
     },
     "application": {
-      "notes": "Admission is by audition: in person at Bayer Ballet Studios (held most Saturdays) or by video submission. A $40 audition fee applies.",
+      "notes": "Admission is by audition: in person at Bayer Ballet Studios (held most Saturdays) or by video submission.",
       "requirements": [
         {
           "description": "Admission is by audition — attend an in-person audition (held most Saturdays) or submit a video: a short introduction, barre and centre exercises, optional variation, and a photo in first arabesque.",
@@ -61,9 +61,9 @@
     },
     "source": {
       "attemptedAt": "2026-06-11T00:26:53.126880Z",
-      "hash": "sha256:4908831121c259f3efccad654d369eeb7e0e36d094f61d8b56c2bccb8b9d94a7",
+      "hash": "sha256:77db1ad63a4587a6938c251b9f9a306b38ec175f16528de82041fcd7742a03cf",
       "provider": "bayer-ballet-academy",
-      "scrapedAt": "2026-06-08T21:21:47.496776Z",
+      "scrapedAt": "2026-06-11T07:29:35.547072Z",
       "url": "https://www.bayerballet.com/summer-intensive"
     },
     "teachers": [
@@ -120,7 +120,7 @@
       "min": 9
     },
     "application": {
-      "notes": "Admission is by audition: in person at Bayer Ballet Studios (held most Saturdays) or by video submission. A $40 audition fee applies.",
+      "notes": "Admission is by audition: in person at Bayer Ballet Studios (held most Saturdays) or by video submission.",
       "requirements": [
         {
           "description": "Admission is by audition — attend an in-person audition (held most Saturdays) or submit a video: a short introduction, barre and centre exercises, optional variation, and a photo in first arabesque.",
@@ -186,9 +186,9 @@
     },
     "source": {
       "attemptedAt": "2026-06-11T00:26:53.126880Z",
-      "hash": "sha256:567a292f270723e3da1d27b970d1c7c52f02f2510a2e6f0490c4afce3d5e5383",
+      "hash": "sha256:26c6ab9ae9288c2b9e000fca0a57a01db98ce61e441b8282654f48eafa347520",
       "provider": "bayer-ballet-academy",
-      "scrapedAt": "2026-06-08T21:21:47.496942Z",
+      "scrapedAt": "2026-06-11T07:29:35.547300Z",
       "url": "https://www.bayerballet.com/summer-intensive"
     },
     "teachers": [
