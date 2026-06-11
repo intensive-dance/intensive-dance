@@ -84,9 +84,7 @@ def scrape(client: httpx.Client) -> list[Offering]:
                 organization=ORG,
                 location=Location(city="Amsterdam", country="NL"),
                 schedule=Schedule(season=season, start=start, end=end, timezone="Europe/Amsterdam"),
-                prices=[Price(amount=fee, currency="EUR", label=label, includes=["tuition"])]
-                if fee
-                else [],
+                prices=_build_prices(label, fee, _accommodation_fee(fees, label)),
                 application=Application(
                     status="closed" if (deadline and deadline < today) else None,
                     deadline=deadline,
@@ -159,6 +157,32 @@ def _course_age(text: str, label: str) -> dict | None:
 def _course_fee(text: str, label: str) -> float | None:
     match = re.search(re.escape(label) + r":\s*€\s?([\d.,]+)", text, re.IGNORECASE)
     return parse.parse_amount(match.group(1)) if match else None
+
+
+def _accommodation_fee(text: str, label: str) -> float | None:
+    slug = label.replace(" Week", "")
+    match = re.search(
+        r"€\s?([\d.,]+)[^(]+\([^)]*" + re.escape(slug) + r"[^)]*\)", text, re.IGNORECASE
+    )
+    if match:
+        return parse.parse_amount(match.group(1))
+    return None
+
+
+def _build_prices(label: str, fee: float | None, acc_fee: float | None) -> list[Price]:
+    prices = []
+    if fee:
+        prices.append(Price(amount=fee, currency="EUR", label=label, includes=["tuition"]))
+    if acc_fee:
+        prices.append(
+            Price(
+                amount=acc_fee,
+                currency="EUR",
+                label="Accommodation",
+                includes=["accommodation"],
+            )
+        )
+    return prices
 
 
 _GENRE_KEYWORDS: list[tuple[Genre, tuple[str, ...]]] = [
