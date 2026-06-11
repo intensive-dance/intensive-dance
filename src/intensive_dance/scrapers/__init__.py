@@ -23,6 +23,7 @@ from . import (
     alberta_ballet_school,
     american_midwest_ballet,
     art_ballet_gdynia,
+    art_in_motion_munich,
     art_of_ballet_summer_course,
     attitude_ballet_studios,
     australian_ballet_school,
@@ -199,5 +200,6 @@ SCRAPERS: dict[str, Scraper] = {
     "japan-ballet-intensives": japan_ballet_intensives.scrape,
     "alberta-ballet-school": alberta_ballet_school.scrape,
     "american-midwest-ballet": american_midwest_ballet.scrape,
+    "art-in-motion-munich": art_in_motion_munich.scrape,
     "dance-and-fashion-cic": dance_and_fashion_cic.scrape,
 }
