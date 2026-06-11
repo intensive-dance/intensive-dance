@@ -1,0 +1,97 @@
+[
+  {
+    "ageRange": {
+      "max": null,
+      "min": 10
+    },
+    "application": {
+      "deadline": "2026-07-15",
+      "requirements": [],
+      "url": "https://www.artinmotionmunich.com/information"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire"
+    ],
+    "id": "art-in-motion-munich/summer-school-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Munich",
+      "country": "DE"
+    },
+    "organization": {
+      "city": "Munich",
+      "country": "DE",
+      "name": "Art in Motion Munich",
+      "slug": "art-in-motion-munich"
+    },
+    "prices": [
+      {
+        "amount": 790.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "1 week"
+      },
+      {
+        "amount": 1390.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "2 weeks"
+      },
+      {
+        "amount": 35.0,
+        "currency": "EUR",
+        "includes": [],
+        "label": "Personal coaching (20 minutes)",
+        "notes": "optional extra"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-15",
+      "notes": "Three classes a day (ages 10-12) / four classes a day (ages 12+).",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 12,
+            "min": 10
+          },
+          "label": "Ages 10-12",
+          "notes": "Girls: classical class, points, modern dance Boys: classical class, technic, modern dance"
+        },
+        {
+          "ageRange": {
+            "max": 15,
+            "min": 12
+          },
+          "label": "Ages 12-15",
+          "notes": "Girls: classical class, points, repertoire, modern dance Boys: classical class, mens technic, repertoire, modern dance"
+        },
+        {
+          "ageRange": {
+            "max": null,
+            "min": 15
+          },
+          "label": "Ages 15+",
+          "notes": "Girls: classical class, points, repertoire, modern dance Boys: classical class, mens technic, repertoire, modern dance"
+        }
+      ],
+      "start": "2026-08-03",
+      "timezone": "Europe/Berlin"
+    },
+    "source": {
+      "hash": "sha256:9407ac495a39763c4b10f90d60be7c478e9ce8e461b4528615ccef5f2256ab9e",
+      "provider": "art-in-motion-munich",
+      "scrapedAt": "2026-06-11T14:51:08.201410Z",
+      "url": "https://www.artinmotionmunich.com/"
+    },
+    "teachers": [],
+    "title": "Ballet Summer School 2026"
+  }
+]

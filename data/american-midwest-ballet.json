@@ -1,0 +1,211 @@
+[
+  {
+    "ageRange": {
+      "max": 9,
+      "min": 6
+    },
+    "application": {
+      "deadline": "2026-06-01",
+      "notes": "Registration deadline: June 1, 2026",
+      "requirements": [],
+      "url": "https://amballet.org/school/summer_dance/"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "american-midwest-ballet/june-childrens-dance-camps-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Council Bluffs",
+      "country": "US",
+      "venue": "American Midwest Ballet School"
+    },
+    "organization": {
+      "city": "Omaha",
+      "country": "US",
+      "name": "American Midwest Ballet",
+      "slug": "american-midwest-ballet"
+    },
+    "prices": [
+      {
+        "amount": 40.0,
+        "currency": "USD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Single camp"
+      },
+      {
+        "amount": 100.0,
+        "currency": "USD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "All three camps"
+      }
+    ],
+    "schedule": {
+      "end": "2026-06-27",
+      "notes": "Themed Saturday camps; 9:45-11:45 am. Enroll in one, two, or all three.",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-06-13",
+      "timezone": "America/Chicago"
+    },
+    "source": {
+      "hash": "sha256:41ae2180125a938a43d01917b886f16a18cfffc0757e769bac7b045240c2ac96",
+      "provider": "american-midwest-ballet",
+      "scrapedAt": "2026-06-11T14:23:05.053144Z",
+      "url": "https://amballet.org/school/summer_dance/"
+    },
+    "teachers": [],
+    "title": "June Children's Summer Dance Camps 2026"
+  },
+  {
+    "ageRange": {
+      "max": null,
+      "min": 11
+    },
+    "application": {
+      "deadline": "2026-06-01",
+      "notes": "Register by June 1",
+      "requirements": [],
+      "url": "https://amballet.org/school/summer_dance/"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "american-midwest-ballet/june-teen-adult-summer-series-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Council Bluffs",
+      "country": "US",
+      "venue": "American Midwest Ballet School"
+    },
+    "organization": {
+      "city": "Omaha",
+      "country": "US",
+      "name": "American Midwest Ballet",
+      "slug": "american-midwest-ballet"
+    },
+    "prices": [
+      {
+        "amount": 60.0,
+        "currency": "USD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Per class (4 total classes over 4 weeks)"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-01",
+      "notes": "Four-week series for beginning through advanced teen and adult students.",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-06-09",
+      "timezone": "America/Chicago"
+    },
+    "source": {
+      "hash": "sha256:ee20d86c146ef993ef119bac5c18d97cec5c37407276569dbf2a55c822bbdfc8",
+      "provider": "american-midwest-ballet",
+      "scrapedAt": "2026-06-11T14:22:40.474574Z",
+      "url": "https://amballet.org/school/summer_dance/"
+    },
+    "teachers": [],
+    "title": "June Teen/Adult Summer Series 2026"
+  },
+  {
+    "ageRange": {
+      "max": null,
+      "min": 3
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://amballet.org/school/summer_dance/"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "american-midwest-ballet/august-summer-series-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Council Bluffs",
+      "country": "US",
+      "venue": "American Midwest Ballet School"
+    },
+    "organization": {
+      "city": "Omaha",
+      "country": "US",
+      "name": "American Midwest Ballet",
+      "slug": "american-midwest-ballet"
+    },
+    "prices": [
+      {
+        "amount": 100.0,
+        "currency": "USD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Child 1-2 Series",
+        "notes": "8 classes total over 2 weeks"
+      },
+      {
+        "amount": 120.0,
+        "currency": "USD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Child 3/Academy 1 Series",
+        "notes": "8 classes total over 2 weeks"
+      },
+      {
+        "amount": 300.0,
+        "currency": "USD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Academy 2-3 Series",
+        "notes": "16 classes total over 2 weeks"
+      },
+      {
+        "amount": 300.0,
+        "currency": "USD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Academy 4-6 Series",
+        "notes": "16 classes total over 2 weeks"
+      },
+      {
+        "amount": 30.0,
+        "currency": "USD",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Adult class",
+        "notes": "per class"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-27",
+      "notes": "August 17-20, 2026; August 24-27, 2026",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-17",
+      "timezone": "America/Chicago"
+    },
+    "source": {
+      "hash": "sha256:eaaf14c8e88122fd4bfe98be27185e31933f3b874e83342cf457e3585b748b5c",
+      "provider": "american-midwest-ballet",
+      "scrapedAt": "2026-06-11T14:22:40.475411Z",
+      "url": "https://amballet.org/school/summer_dance/"
+    },
+    "teachers": [],
+    "title": "August Summer Series 2026"
+  }
+]
