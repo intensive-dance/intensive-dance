@@ -84,6 +84,7 @@ from . import (
     prix_de_lausanne_summer_intensive,
     rad_japan_summer_school,
     revolve_dance_bucharest,
+    rosenthal_ballett,
     royal_ballet_school,
     royal_conservatoire_the_hague,
     royal_danish_ballet_summer_school,
@@ -194,4 +195,5 @@ SCRAPERS: dict[str, Scraper] = {
     "nba-ballet-company": nba_ballet_company.scrape,
     "studio-architanz": studio_architanz.scrape,
     "japan-ballet-intensives": japan_ballet_intensives.scrape,
+    "rosenthal-ballett": rosenthal_ballett.scrape,
 }
