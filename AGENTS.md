@@ -401,6 +401,14 @@ when a second provider genuinely needs the identical thing.
   to the next heading) and **letter-space** inline form labels ("a rabesque").
   Strip the zero-width chars and detect requirement *keywords* rather than scrape
   the garbled tokens (see `brussels_international_ballet`, `young_stars_ballet`).
+  **Trap — a press-round-up page:** some Wix event pages are mostly years of
+  stacked "KEEP READING" article excerpts (prior editions) around one
+  current-edition paragraph. Parse **only** that paragraph's date/program and the
+  `meta description` summary; the clippings carry stale year/date lines (a "15-27
+  luglio" excerpt next to the real "20 luglio 01 agosto 2026") that loose
+  whole-page date regexing would mis-pick. Italian spans can be separator-less
+  ("20 luglio 01 agosto 2026") — match day-month-day-month-year with a local
+  Italian month map (`parse.months_alt`) (see `dance_and_fashion_cic`).
 - **Webflow sites are static HTML** (`data-wf-domain`/`cdn.prod.webflow`; no
   `/wp-json/`, no `ld+json`). Course pages render the dated detail as a flat run
   of `Label:` lines ("Dates:", "Where:", "Cost:") — read those, and take the
