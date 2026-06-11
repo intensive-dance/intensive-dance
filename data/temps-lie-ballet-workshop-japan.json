@@ -120,7 +120,7 @@
       "timezone": "Asia/Tokyo"
     },
     "source": {
-      "attemptedAt": "2026-06-10T23:28:37.519060Z",
+      "attemptedAt": "2026-06-11T12:20:00.673533Z",
       "hash": "sha256:7db0b7872d593f281f4350ba0924f908fe4692cddb29d19ebab5cae5d9f714c4",
       "provider": "temps-lie-ballet-workshop-japan",
       "scrapedAt": "2026-06-09T01:31:40.702298Z",
@@ -287,7 +287,7 @@
       "timezone": "Asia/Tokyo"
     },
     "source": {
-      "attemptedAt": "2026-06-10T23:28:37.519060Z",
+      "attemptedAt": "2026-06-11T12:20:00.673533Z",
       "hash": "sha256:1cf0c108ae6a0aa20b81bc5d01b3707f454e6979eb83ba8ca43915ea8608e1c8",
       "provider": "temps-lie-ballet-workshop-japan",
       "scrapedAt": "2026-06-09T01:31:40.704205Z",
