@@ -1031,6 +1031,14 @@
       "city": "Scottsdale",
       "url": "https://www.masterballetacademy.com/",
       "status": "seed"
+    },
+    {
+      "slug": "umbria-ballet",
+      "name": "Umbria Ballet — Centro Professionale di Danza",
+      "country": "IT",
+      "city": "Bastia Umbra",
+      "url": "https://www.umbriaballet.com/",
+      "status": "seed"
     }
   ]
 }
