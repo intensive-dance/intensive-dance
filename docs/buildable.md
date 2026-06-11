@@ -2,7 +2,7 @@
 
 > **Generated — do not edit.** Refresh with `uv run python -m intensive_dance.overview --write`; CI drift-checks it. Source of truth: `providers.json`.
 
-30 buildable · 9 excluded · 92 live (131 providers total).
+29 buildable · 9 excluded · 92 live (130 providers total).
 
 **To claim one (so nobody double-builds):** check `gh issue list` / `gh pr list` for the slug; if free, open a `build:<slug>` issue and **self-assign first**, then build; close it when the PR merges (provider → `live`). An open claim issue *or* PR = locked. See `AGENTS.md` → Scope & coordination.
 
@@ -50,9 +50,6 @@ _Some still need Phase-1 verification (a public dated edition / not full-time) b
 
 ### PT
 - `conservatorio-annarella` — Conservatório Internacional de Ballet e Dança Annarella (Leiria) — https://conservatorioannarella.com/
-
-### RO
-- `casa-de-balet` — Casa de Balet (Bucharest) — https://casadebalet.ro/
 
 ### RU
 - `bolshoi-ballet-academy` — Bolshoi Ballet Academy (Moscow) — https://en.balletacademy.ru/
