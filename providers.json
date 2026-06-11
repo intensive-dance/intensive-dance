@@ -278,7 +278,7 @@
       "country": "HU",
       "city": "Budapest",
       "url": "https://mte.eu/",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "ballet-summer-course-budapest",
@@ -1037,8 +1037,8 @@
       "name": "DBfT — Sommerakademie Junior",
       "country": "DE",
       "city": "Dortmund",
-      "url": "https://www.dbft.de/Berufsregister/Sommerakademie-Junior/index.html",
-      "status": "seed"
+      "url": "https://www.dbft.de/Fortbildungen-Weiterbildungen/Seminarangebot/Sommerakademie-Junior/index.html",
+      "status": "live"
     }
   ]
 }

@@ -2,7 +2,7 @@
 
 > **Generated — do not edit.** Refresh with `uv run python -m intensive_dance.overview --write`; CI drift-checks it. Source of truth: `providers.json`.
 
-24 buildable · 9 excluded · 97 live (130 providers total).
+22 buildable · 9 excluded · 99 live (130 providers total).
 
 **To claim one (so nobody double-builds):** check `gh issue list` / `gh pr list` for the slug; if free, open a `build:<slug>` issue and **self-assign first**, then build; close it when the PR merges (provider → `live`). An open claim issue *or* PR = locked. See `AGENTS.md` → Scope & coordination.
 
@@ -13,7 +13,6 @@ _Some still need Phase-1 verification (a public dated edition / not full-time) b
 ### DE
 - `ballett-dortmund` — Ballett Dortmund (Dortmund) — https://theaterdo.de/
 - `benedict-manniegel` — Benedict Manniegel Ballet School & Academy (Munich) — https://www.benedictmanniegel.de/
-- `dbft-sommerakademie` — DBfT — Sommerakademie Junior (Dortmund) — https://www.dbft.de/Berufsregister/Sommerakademie-Junior/index.html
 - `hamburger-ballett-tanztage` — Hamburger Ballett-Tanztage (GinaWorkshops) (Hamburg) — https://ginaworkshops.com/
 - `palucca-tanzwoche-sylt` — Palucca-Tanzwoche Sylt (Sylt) — https://palucca.eu/
 - `summer-intensive-gymnasium-essen` — Summer Intensive Gymnasium Essen-Werden (Essen) — https://gymnasium-essen-werden.de/
@@ -22,9 +21,6 @@ _Some still need Phase-1 verification (a public dated edition / not full-time) b
 
 ### GB
 - `elmhurst-ballet-school` — Elmhurst Ballet School (Birmingham) — https://elmhurstballetschool.org/
-
-### HU
-- `hungarian-dance-university` — Hungarian Dance University (Budapest) — https://mte.eu/
 
 ### JP
 - `homura-tomoi-ballet-school` — Homura Tomoi Ballet School (Osaka) — https://www.homuratomoi.com/
