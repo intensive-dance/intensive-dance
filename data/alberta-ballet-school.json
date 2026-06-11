@@ -1,0 +1,110 @@
+[
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 10
+    },
+    "application": {
+      "requirements": [
+        {
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "url": "https://www.albertaballetschool.com/auditions/information"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "contemporary",
+      "character"
+    ],
+    "id": "alberta-ballet-school/summer-intensive-2026-session-1",
+    "level": [
+      "pre-professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Calgary",
+      "country": "CA",
+      "venue": "Alberta Ballet School"
+    },
+    "organization": {
+      "city": "Calgary",
+      "country": "CA",
+      "name": "Alberta Ballet School",
+      "slug": "alberta-ballet-school"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-07-17",
+      "notes": "Junior: Grades 5-8; Senior: Grades 9-12; Students train 30 hours per week.",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-06-29"
+    },
+    "source": {
+      "hash": "sha256:384cce555905092ef174924d3db3892795da5092e2381905b313a993e3e982e6",
+      "provider": "alberta-ballet-school",
+      "scrapedAt": "2026-06-11T14:30:00.238304Z",
+      "url": "https://www.albertaballetschool.com/summer-intensive"
+    },
+    "teachers": [],
+    "title": "Summer Intensive 2026 (Session 1)"
+  },
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 10
+    },
+    "application": {
+      "requirements": [
+        {
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "url": "https://www.albertaballetschool.com/auditions/information"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "contemporary",
+      "character"
+    ],
+    "id": "alberta-ballet-school/summer-intensive-2026-session-2",
+    "level": [
+      "pre-professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Calgary",
+      "country": "CA",
+      "venue": "Alberta Ballet School"
+    },
+    "organization": {
+      "city": "Calgary",
+      "country": "CA",
+      "name": "Alberta Ballet School",
+      "slug": "alberta-ballet-school"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-08-07",
+      "notes": "Junior: Grades 5-8; Senior: Grades 9-12; Students train 30 hours per week.",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-20"
+    },
+    "source": {
+      "hash": "sha256:4ec03a3f8917f48a9cf287306c866d6d239d2eede63d2b7d87f7c42cadd3ab17",
+      "provider": "alberta-ballet-school",
+      "scrapedAt": "2026-06-11T14:30:00.238436Z",
+      "url": "https://www.albertaballetschool.com/summer-intensive"
+    },
+    "teachers": [],
+    "title": "Summer Intensive 2026 (Session 2)"
+  }
+]

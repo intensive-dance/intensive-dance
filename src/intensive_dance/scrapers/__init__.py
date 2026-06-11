@@ -20,6 +20,7 @@ from . import (
     academie_theilaia,
     accademia_teatro_alla_scala,
     akademia_sztuki_baletowej,
+    alberta_ballet_school,
     american_midwest_ballet,
     art_ballet_gdynia,
     art_of_ballet_summer_course,
@@ -195,5 +196,6 @@ SCRAPERS: dict[str, Scraper] = {
     "nba-ballet-company": nba_ballet_company.scrape,
     "studio-architanz": studio_architanz.scrape,
     "japan-ballet-intensives": japan_ballet_intensives.scrape,
+    "alberta-ballet-school": alberta_ballet_school.scrape,
     "american-midwest-ballet": american_midwest_ballet.scrape,
 }
