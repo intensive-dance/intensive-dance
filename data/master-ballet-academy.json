@@ -1,0 +1,61 @@
+[
+  {
+    "application": {
+      "notes": "By audition only. Auditions can be done via Video, Zoom or In Person. A headshot and first arabesque photo are required; the video-audition route also requires a video.",
+      "requirements": [
+        {
+          "type": "headshot"
+        },
+        {
+          "poses": [
+            "first arabesque"
+          ],
+          "specificity": "defined-poses",
+          "type": "photos"
+        },
+        {
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "url": "https://www.masterballetacademy.com/summerintensiveauditions"
+    },
+    "genres": [
+      "classical",
+      "repertoire",
+      "character",
+      "contemporary"
+    ],
+    "id": "master-ballet-academy/summer-intensive-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Scottsdale",
+      "country": "US",
+      "venue": "Master Ballet Academy studios"
+    },
+    "organization": {
+      "city": "Scottsdale",
+      "country": "US",
+      "name": "Master Ballet Academy",
+      "slug": "master-ballet-academy"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-07-24",
+      "notes": "6-week program; minimum of 3 weeks required; weeks 4-6 required to participate in the Summer Showcase",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-06-15",
+      "timezone": "America/Phoenix"
+    },
+    "source": {
+      "hash": "sha256:378cafb533be7df379a07a74900af8b99a9f33f56a8cc8108ea7648bbd190c5f",
+      "provider": "master-ballet-academy",
+      "scrapedAt": "2026-06-11T09:55:27.132160Z",
+      "url": "https://www.masterballetacademy.com/summerintensiveauditions"
+    },
+    "teachers": [],
+    "title": "Summer Intensive 2026"
+  }
+]
