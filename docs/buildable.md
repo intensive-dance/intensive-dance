@@ -2,7 +2,7 @@
 
 > **Generated — do not edit.** Refresh with `uv run python -m intensive_dance.overview --write`; CI drift-checks it. Source of truth: `providers.json`.
 
-32 buildable · 9 excluded · 89 live (130 providers total).
+32 buildable · 9 excluded · 90 live (131 providers total).
 
 **To claim one (so nobody double-builds):** check `gh issue list` / `gh pr list` for the slug; if free, open a `build:<slug>` issue and **self-assign first**, then build; close it when the PR merges (provider → `live`). An open claim issue *or* PR = locked. See `AGENTS.md` → Scope & coordination.
 
@@ -14,6 +14,7 @@ _Some still need Phase-1 verification (a public dated edition / not full-time) b
 - `art-in-motion-munich` — Art in Motion Munich (Munich) — https://www.artinmotionmunich.com/
 - `ballett-dortmund` — Ballett Dortmund (Dortmund) — https://theaterdo.de/
 - `benedict-manniegel` — Benedict Manniegel Ballet School & Academy (Munich) — https://www.benedictmanniegel.de/
+- `dbft-sommerakademie` — DBfT — Sommerakademie Junior (Dortmund) — https://www.dbft.de/Berufsregister/Sommerakademie-Junior/index.html
 - `hamburger-ballett-tanztage` — Hamburger Ballett-Tanztage (GinaWorkshops) (Hamburg) — https://ginaworkshops.com/
 - `palucca-tanzwoche-sylt` — Palucca-Tanzwoche Sylt (Sylt) — https://palucca.eu/
 - `rosenthal-ballett` — Rosenthal Ballett (Düsseldorf) — https://rosenthal-ballett.de/
@@ -60,9 +61,6 @@ _Some still need Phase-1 verification (a public dated edition / not full-time) b
 
 ### SE
 - `international-ballet-school-stockholm` — International Ballet School Stockholm (Stockholm) — https://www.internationalballet.se/
-
-### US
-- `american-midwest-ballet` — American Midwest Ballet (Omaha) — https://amballet.org/
 
 ## Excluded — do NOT build
 

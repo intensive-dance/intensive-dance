@@ -1022,7 +1022,7 @@
       "country": "US",
       "city": "Omaha",
       "url": "https://amballet.org/",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "master-ballet-academy",
@@ -1038,6 +1038,14 @@
       "country": "IT",
       "city": "Bastia Umbra",
       "url": "https://www.umbriaballet.com/",
+      "status": "seed"
+    },
+    {
+      "slug": "dbft-sommerakademie",
+      "name": "DBfT — Sommerakademie Junior",
+      "country": "DE",
+      "city": "Dortmund",
+      "url": "https://www.dbft.de/Berufsregister/Sommerakademie-Junior/index.html",
       "status": "seed"
     }
   ]

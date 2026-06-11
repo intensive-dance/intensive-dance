@@ -76,6 +76,23 @@ _TERMS_PAGE_TEXT = (
     "Places will be allocated to qualifying applicants on a first-come, first-served basis."
 )
 
+# The published class timetable: a real HTML table read by column header.
+# Group A (8–11) does Pre-Pointe; Group B (12–18) does Pointe — the per-group difference.
+_TIMETABLE_HTML = """
+<table>
+  <tr><th>GROUP</th><th>DAY</th><th>DATE</th><th>START</th><th>END</th><th>CLASS</th><th>TEACHER</th><th>ROOM</th></tr>
+  <tr><td>A</td><td>Day 1</td><td>22-Aug</td><td>09:45</td><td>11:15</td><td>Contemporary</td><td>Denis Untila</td><td>4010</td></tr>
+  <tr><td>A</td><td>Day 1</td><td>22-Aug</td><td>11:30</td><td>12:30</td><td>Stretching</td><td>Denis Untila</td><td>4010</td></tr>
+  <tr><td>A</td><td>Day 1</td><td>22-Aug</td><td>12:45</td><td>14:15</td><td>Classical Ballet</td><td>Olga Melnikova</td><td>4010</td></tr>
+  <tr><td>A</td><td>Day 1</td><td>22-Aug</td><td>14:30</td><td>15:30</td><td>Pre Pointe Class</td><td>Olga Melnikova</td><td>4010</td></tr>
+  <tr><td>A</td><td>Day 2</td><td>23-Aug</td><td>11:30</td><td>13:00</td><td>Classical Ballet</td><td>Olga Melnikova</td><td>4010</td></tr>
+  <tr><td>A</td><td>Day 2</td><td>23-Aug</td><td>13:15</td><td>14:45</td><td>Contemporary</td><td>Denis Untila</td><td>4010</td></tr>
+  <tr><td>B</td><td>Day 1</td><td>22-Aug</td><td>09:45</td><td>11:15</td><td>Classical Ballet</td><td>Olga Melnikova</td><td>4015</td></tr>
+  <tr><td>B</td><td>Day 1</td><td>22-Aug</td><td>11:30</td><td>12:30</td><td>Pointe Class</td><td>Olga Melnikova</td><td>4015</td></tr>
+  <tr><td>B</td><td>Day 2</td><td>23-Aug</td><td>11:30</td><td>13:00</td><td>Contemporary</td><td>Denis Untila</td><td>4015</td></tr>
+</table>
+"""
+
 
 def test_date_range_dash_and_slash():
     assert fbm._date_range("August 22 - 23, 2026 | Frankfurt") == (
@@ -171,10 +188,28 @@ def test_teachers_absent_section():
     assert fbm._teachers(HTMLParser("<div>no teachers section here</div>")) == []
 
 
-def test_build_offering_includes_teachers_deadline_and_photos():
-    # The page carries both the text content (dates/prices/FAQ) and the teacher markup.
+def test_sessions_per_age_group():
+    sessions = fbm._sessions(HTMLParser(_TIMETABLE_HTML), _MAIN_PAGE_TEXT)
+    assert [s.label for s in sessions] == ["Group A (ages 8–11)", "Group B (ages 12–18)"]
+    group_a, group_b = sessions
+    assert group_a.age_range == {"min": 8, "max": 11}
+    assert group_b.age_range == {"min": 12, "max": 18}
+    # the per-group difference: A trains Pre-Pointe, B trains Pointe
+    assert "Pre Pointe Class" in (group_a.notes or "")
+    assert "Pointe Class" in (group_b.notes or "") and "Pre Pointe" not in (group_b.notes or "")
+    # real hours/day read off the grid (Day 1 = 5 h, avg 4 h/day)
+    assert "Day 1: 5 h" in (group_a.notes or "")
+    assert "≈4 h/day" in (group_a.notes or "")
+
+
+def test_sessions_absent_when_no_timetable():
+    assert fbm._sessions(HTMLParser("<div>no schedule table here</div>"), _MAIN_PAGE_TEXT) == []
+
+
+def test_build_offering_includes_teachers_deadline_photos_and_sessions():
+    # The page carries text content (dates/prices/FAQ), teacher markup, and the timetable.
     offering = fbm._build_offering(
-        f"<html><body>{_MAIN_PAGE_TEXT}{_TEACHERS_HTML}</body></html>",
+        f"<html><body>{_MAIN_PAGE_TEXT}{_TEACHERS_HTML}{_TIMETABLE_HTML}</body></html>",
         _TERMS_PAGE_TEXT,
         date.today(),
     )
@@ -182,3 +217,7 @@ def test_build_offering_includes_teachers_deadline_and_photos():
     assert [t.name for t in offering.teachers] == ["Olga Melnikova", "Denis Untila"]
     assert offering.application.deadline == date(2026, 8, 15)
     assert all(isinstance(r, PhotosReq) for r in offering.application.requirements)
+    assert [s.label for s in offering.schedule.sessions] == [
+        "Group A (ages 8–11)",
+        "Group B (ages 12–18)",
+    ]

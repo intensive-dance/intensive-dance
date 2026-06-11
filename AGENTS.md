@@ -442,6 +442,17 @@ when a second provider genuinely needs the identical thing.
   (pop-up workshops run in other cities), and treat a `min–100` age as
   open-topped (100 = the form's "no max" sentinel). Skip the "para professores"
   teacher-training editions — not student intensives (see `escola_bolshoi_brasil`).
+- **A regional company's school summer page = many program-card Offerings, gate
+  each on a ballet class.** A pro company's affiliated school (American Midwest
+  Ballet) puts its whole summer on one WP page (`content.rendered` over
+  `/wp-json/wp/v2/pages?slug=…`, clean) as several program *cards* — a mix of
+  recreational and academy-track **short courses**. Emit **one Offering per dated
+  card that actually teaches ballet**, slicing the page text by card heading;
+  drop the cards with no ballet class (creative-movement-for-3-5, a free "Day of
+  Dance" open house) via the empty-genre rule. **Trap:** a card carries both its
+  class dates *and* a "Registration deadline: June 1" line, so scope the
+  list-of-single-dates extraction to the camp-list sub-segment ("Camps*: …Cost:")
+  or the deadline date becomes the start (see `american_midwest_ballet`).
 - **Japanese pages: year-less date lines + school-grade ages.** A JP listing
   often gives the course span with no year ("8月6日(木)、…、9日(日)") — read the year
   from the title stamp ("夏休み特別講習会2026") and apply it to the month/day span and
