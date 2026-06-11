@@ -68,15 +68,32 @@
     "schedule": {
       "end": "2026-08-23",
       "season": "2026",
-      "sessions": [],
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 11,
+            "min": 8
+          },
+          "label": "Group A (ages 8–11)",
+          "notes": "Contemporary · Stretching · Classical Ballet · Pre Pointe Class — Day 1: 5 h, Day 2: 3 h (≈4 h/day)"
+        },
+        {
+          "ageRange": {
+            "max": 18,
+            "min": 12
+          },
+          "label": "Group B (ages 12–18)",
+          "notes": "Classical Ballet · Pointe Class · Contemporary · Stretching — Day 1: 5 h, Day 2: 3 h (≈4 h/day)"
+        }
+      ],
       "start": "2026-08-22",
       "timezone": "Europe/Berlin"
     },
     "source": {
       "attemptedAt": "2026-06-11T18:01:41.639784Z",
-      "hash": "sha256:bdf77679def3754383bd7ffbbbc5aff7f6863a2dbcc21ebef734b119bf6f8eec",
+      "hash": "sha256:6fe7176566de48843f4d7b0c460cae224f289010852205f77ed6f6a7369649ac",
       "provider": "frankfurt-ballet-masterclasses",
-      "scrapedAt": "2026-06-08T12:05:44.327746Z",
+      "scrapedAt": "2026-06-11T18:06:00.100127Z",
       "url": "https://masterclass.balletcompetition.net/"
     },
     "teachers": [
