@@ -1,0 +1,164 @@
+[
+  {
+    "ageRange": {
+      "max": 16,
+      "min": 12
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.staatsballett-berlin.de/spielplan/stueck-detail/stid/feriencamp/161.html"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "staatsballett-berlin-feriencamp/feriencamp-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Berlin",
+      "country": "DE",
+      "venue": "Staatsoper Unter den Linden"
+    },
+    "organization": {
+      "city": "Berlin",
+      "country": "DE",
+      "name": "Staatsballett Berlin",
+      "slug": "staatsballett-berlin-feriencamp"
+    },
+    "prices": [
+      {
+        "amount": 200.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition"
+      }
+    ],
+    "schedule": {
+      "end": "2026-10-23",
+      "notes": "Der Kurs findet an allen Tagen von 9:30 - 16:00 Uhr in den Ballettsälen des Staatsballetts Berlin in der Staatsoper Unter den Linden statt",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-10-19",
+      "timezone": "Europe/Berlin"
+    },
+    "source": {
+      "hash": "sha256:65bdc792226cb2ee95ad4f64adfb5080bc10f1cdc31d8da7c004eadca57a62d9",
+      "provider": "staatsballett-berlin-feriencamp",
+      "scrapedAt": "2026-06-11T18:55:18.006813Z",
+      "url": "https://www.staatsballett-berlin.de/spielplan/stueck-detail/stid/feriencamp/161.html"
+    },
+    "teachers": [],
+    "title": "Feriencamp 2026"
+  },
+  {
+    "ageRange": {
+      "max": 16,
+      "min": 12
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.staatsballett-berlin.de/spielplan/stueck-detail/stid/feriencamp/161.html"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "staatsballett-berlin-feriencamp/feriencamp-2027",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Berlin",
+      "country": "DE",
+      "venue": "Staatsoper Unter den Linden"
+    },
+    "organization": {
+      "city": "Berlin",
+      "country": "DE",
+      "name": "Staatsballett Berlin",
+      "slug": "staatsballett-berlin-feriencamp"
+    },
+    "prices": [
+      {
+        "amount": 200.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition"
+      }
+    ],
+    "schedule": {
+      "end": "2027-04-03",
+      "notes": "Der Kurs findet an allen Tagen von 9:30 - 16:00 Uhr in den Ballettsälen des Staatsballetts Berlin in der Staatsoper Unter den Linden statt",
+      "season": "2027",
+      "sessions": [],
+      "start": "2027-03-30",
+      "timezone": "Europe/Berlin"
+    },
+    "source": {
+      "hash": "sha256:ff8e8ec7498c8dcc1d2669112c9743bcee4e5787dcaa7fab4abf03cd1c8fc8dd",
+      "provider": "staatsballett-berlin-feriencamp",
+      "scrapedAt": "2026-06-11T18:55:18.006868Z",
+      "url": "https://www.staatsballett-berlin.de/spielplan/stueck-detail/stid/feriencamp/161.html"
+    },
+    "teachers": [],
+    "title": "Feriencamp 2027"
+  },
+  {
+    "ageRange": {
+      "max": 20,
+      "min": 14
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.staatsballett-berlin.de/spielplan/stueck-detail/stid/ferienangebot/142.html"
+    },
+    "genres": [
+      "classical",
+      "pointe"
+    ],
+    "id": "staatsballett-berlin-feriencamp/spitze-auf-spitze-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Berlin",
+      "country": "DE",
+      "venue": "Deutsche Oper Berlin"
+    },
+    "organization": {
+      "city": "Berlin",
+      "country": "DE",
+      "name": "Staatsballett Berlin",
+      "slug": "staatsballett-berlin-feriencamp"
+    },
+    "prices": [
+      {
+        "amount": 100.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-14",
+      "notes": "Der Kurs findet am 9. und 10. Juli sowie am 13. und 14. Juli, jeweils von 10:00 – 13:45 Uhr in den Sälen des Staatsballetts Berlin in der Deutschen Oper statt",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-09",
+      "timezone": "Europe/Berlin"
+    },
+    "source": {
+      "hash": "sha256:426e0a4b0d1953b7e501772f2937d4ede508f04adfe6378f00e556665deddee4",
+      "provider": "staatsballett-berlin-feriencamp",
+      "scrapedAt": "2026-06-11T18:55:18.551416Z",
+      "url": "https://www.staatsballett-berlin.de/spielplan/stueck-detail/stid/ferienangebot/142.html"
+    },
+    "teachers": [],
+    "title": "Ferienkurs „Spitze auf Spitze“ 2026"
+  }
+]

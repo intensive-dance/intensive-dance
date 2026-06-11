@@ -97,6 +97,7 @@ from . import (
     russian_masters_ballet,
     san_francisco_ballet_school,
     school_of_american_ballet,
+    staatsballett_berlin_feriencamp,
     stage_charles_jude,
     studio_architanz,
     summer_sensation_intensive,
@@ -207,5 +208,6 @@ SCRAPERS: dict[str, Scraper] = {
     "conservatorio-annarella": conservatorio_annarella.scrape,
     "dance-and-fashion-cic": dance_and_fashion_cic.scrape,
     "rosenthal-ballett": rosenthal_ballett.scrape,
+    "staatsballett-berlin-feriencamp": staatsballett_berlin_feriencamp.scrape,
     "umbria-ballet": umbria_ballet.scrape,
 }
