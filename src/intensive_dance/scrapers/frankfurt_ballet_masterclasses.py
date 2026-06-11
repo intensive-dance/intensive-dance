@@ -15,6 +15,13 @@ each modal bio for the institutions in `_INSTITUTIONS` → `Teacher.affiliations
 Parsing the DOM (not hardcoding names) keeps A1 (faculty pedigree) correct when a
 future edition swaps its faculty — e.g. Olga Melnikova → Mariinsky/Semperoper/
 Palucca, Denis Untila → Aalto/Ballett Kiel/Vienna (verified live 2026-06-07).
+
+SESSIONS (per-age-group schedule, #222): FBM publishes its full class timetable as
+an HTML table keyed GROUP·DAY·DATE·START·END·CLASS. The course differs by age group
+(Group A 8–11 does Pre-Pointe, Group B 12–18 does Pointe), so we emit one `Session`
+per group with its distinct classes + the real hours/day read off the grid — the
+honest answer to "how much training, and what, per group". Parsed by column header;
+no grid published ⇒ no sessions (never fabricated).
 """
 
 from __future__ import annotations
@@ -38,6 +45,7 @@ from intensive_dance.models import (
     PhotosReq,
     Price,
     Schedule,
+    Session,
     Source,
     Teacher,
     VideoReq,
@@ -95,7 +103,13 @@ def _build_offering(html: str, terms_html: str, today: date) -> Offering | None:
         ageRange=_age_range(text),
         organization=ORG,
         location=Location(venue=VENUE, city="Frankfurt am Main", country="DE"),
-        schedule=Schedule(season=season, start=start, end=end, timezone="Europe/Berlin"),
+        schedule=Schedule(
+            season=season,
+            start=start,
+            end=end,
+            timezone="Europe/Berlin",
+            sessions=_sessions(tree, text),
+        ),
         teachers=_teachers(tree),
         prices=_prices(text),
         application=Application(
@@ -138,6 +152,86 @@ def _date_range(text: str) -> tuple[date | None, date | None]:
 
 def _age_range(text: str) -> dict | None:
     return parse.extract_age_range(text, _AGE)
+
+
+# --- class timetable → one Session per age group (#222) ------------------------
+#
+# FBM publishes its full schedule as an HTML table
+# (GROUP·DAY·DATE·START·END·CLASS·TEACHER·ROOM). The course is structured *per age
+# group* — Group A and B get different classes (Pre-Pointe vs Pointe) — which a
+# single per-Offering "intensity" can't express, so we emit one Session per group
+# with its classes + the real hours/day read off the timetable. No fabrication: if
+# the grid isn't published we emit no sessions.
+_TIME = re.compile(r"^\d{1,2}:\d{2}$")
+_GROUP_AGE = re.compile(r"GROUP\s+([AB])\s*\(\s*Ages?\s*(\d+)\s*[-–]\s*(\d+)\s*\)", re.IGNORECASE)
+
+
+def _minutes(t: str) -> int:
+    hour, minute = t.split(":")
+    return int(hour) * 60 + int(minute)
+
+
+def _group_ages(text: str) -> dict[str, dict]:
+    """{'A': {'min': 8, 'max': 11}, …} from the page's 'Group A (Ages 8-11)' note."""
+    out: dict[str, dict] = {}
+    for grp, lo, hi in _GROUP_AGE.findall(text):
+        out.setdefault(grp.upper(), {"min": int(lo), "max": int(hi)})
+    return out
+
+
+def _timetable(tree: HTMLParser) -> list[dict]:
+    """Rows of the published class timetable, read by column header (not position)."""
+    header: dict[str, int] | None = None
+    rows: list[dict] = []
+    for tr in tree.css("tr"):
+        cells = [parse.clean(td.text()) for td in tr.css("td, th")]
+        upper = [c.upper() for c in cells]
+        if {"GROUP", "CLASS", "START", "END"} <= set(upper):
+            header = {name: i for i, name in enumerate(upper)}
+            continue
+        if header is None or len(cells) < len(header):
+            continue
+        grp = cells[header["GROUP"]].upper()
+        start, end = cells[header["START"]], cells[header["END"]]
+        if grp not in {"A", "B"} or not (_TIME.match(start) and _TIME.match(end)):
+            continue
+        rows.append(
+            {
+                "group": grp,
+                "day": cells[header["DAY"]],
+                "start": start,
+                "end": end,
+                "class": cells[header["CLASS"]],
+            }
+        )
+    return rows
+
+
+def _sessions(tree: HTMLParser, text: str) -> list[Session]:
+    """One Session per age group: its distinct classes + hours/day from the timetable."""
+    rows = _timetable(tree)
+    if not rows:
+        return []
+    ages = _group_ages(text)
+    agg: dict[str, dict] = {}
+    for row in rows:
+        mins = _minutes(row["end"]) - _minutes(row["start"])
+        if mins <= 0:
+            continue
+        group = agg.setdefault(row["group"], {"days": {}, "classes": []})
+        group["days"][row["day"]] = group["days"].get(row["day"], 0) + mins
+        if row["class"] and row["class"] not in group["classes"]:
+            group["classes"].append(row["class"])
+    sessions: list[Session] = []
+    for grp in sorted(agg):
+        days = agg[grp]["days"]
+        avg = sum(days.values()) / len(days) / 60 if days else 0
+        spans = ", ".join(f"{day}: {mins / 60:g} h" for day, mins in days.items())
+        age = ages.get(grp)
+        label = f"Group {grp}" + (f" (ages {age['min']}–{age['max']})" if age else "")
+        notes = f"{' · '.join(agg[grp]['classes'])} — {spans} (≈{avg:g} h/day)"
+        sessions.append(Session(label=label, ageRange=age, notes=notes))
+    return sessions
 
 
 # "Participation Fee - EUR 265", "Registration Fee - EUR 25" (currency before amount).
