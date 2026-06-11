@@ -423,6 +423,16 @@ when a second provider genuinely needs the identical thing.
   numeric dates (EN+IT month map), enum genres, numeric ages/prices, title from
   the API, and emit only canonical-English free text — verify EN==IT, never rely
   on one render (see `fondazione_monreart`).
+- **SEOmatic/Craft headless sites: server-rendered HTML, generic ld+json, grade
+  ages.** A site whose generator meta is **SEOmatic** (Craft CMS) has no `/wp-json/`
+  and its only `ld+json` is generic `WebPage`/`Organization` SEO data (no
+  `Event`/`Course`) — but the page is fully server-rendered, so it's a plain
+  `selectolax` text scrape. Western grade bands ("Grades 5-8 / 9-12") are the same
+  trap as the JP grades: map them to ages (Alberta/most Canada: Grade N ≈ age N+5)
+  and keep the raw band in `schedule.notes`. When the *same* intensive runs as two
+  **parallel dated sessions** (two 3-week blocks), emit **one Offering per session**
+  — a folded 6-week span would misrepresent two distinct 3-week courses (see
+  `alberta_ballet_school`).
 - **A "full-time school" can still sell public short courses.** The Brazilian
   Bolshoi branch is a free full-time vocational school, but it *also* sells dated,
   open-enrollment paid short courses (Cursos de Inverno / Vivências / Workshops) —
