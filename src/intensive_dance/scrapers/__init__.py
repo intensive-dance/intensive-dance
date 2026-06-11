@@ -41,6 +41,7 @@ from . import (
     canadas_national_ballet_school,
     central_school_of_ballet,
     centrum_sztuki_tanca,
+    conservatorio_annarella,
     cords_dance,
     corella_dance_academy,
     dance_and_fashion_cic,
@@ -201,5 +202,6 @@ SCRAPERS: dict[str, Scraper] = {
     "alberta-ballet-school": alberta_ballet_school.scrape,
     "american-midwest-ballet": american_midwest_ballet.scrape,
     "art-in-motion-munich": art_in_motion_munich.scrape,
+    "conservatorio-annarella": conservatorio_annarella.scrape,
     "dance-and-fashion-cic": dance_and_fashion_cic.scrape,
 }
