@@ -1,0 +1,99 @@
+[
+  {
+    "ageRange": {
+      "max": 24,
+      "min": 14
+    },
+    "application": {
+      "deadline": "2026-06-10",
+      "requirements": [],
+      "url": "https://mte.eu/en/events/international-summer-intensive-ballet-course-2026/"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "repertoire"
+    ],
+    "id": "hungarian-dance-university/international-summer-intensive-ballet-course-2026",
+    "level": [
+      "pre-professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Budapest",
+      "country": "HU",
+      "venue": "Hungarian Dance University"
+    },
+    "organization": {
+      "city": "Budapest",
+      "country": "HU",
+      "name": "Hungarian Dance University",
+      "slug": "hungarian-dance-university"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-08-14",
+      "notes": "Dates: 5–14 August 2026",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-05",
+      "timezone": "Europe/Budapest"
+    },
+    "source": {
+      "hash": "sha256:ca969d70338d03baac09d32b7cb578c836401311adfd9188eb812e71e547b638",
+      "provider": "hungarian-dance-university",
+      "scrapedAt": "2026-06-11T20:47:55.792946Z",
+      "url": "https://mte.eu/en/events/international-summer-intensive-ballet-course-2026/"
+    },
+    "teachers": [],
+    "title": "International Summer Intensive Ballet Course 2026"
+  },
+  {
+    "ageRange": {
+      "max": 14,
+      "min": 11
+    },
+    "application": {
+      "deadline": "2026-06-10",
+      "requirements": [],
+      "status": "closed",
+      "url": "https://mte.eu/esemenyek/nyari-balettkurzus-2026/"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "repertoire"
+    ],
+    "id": "hungarian-dance-university/nyari-balett-studio-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Budapest",
+      "country": "HU",
+      "venue": "Hungarian Dance University"
+    },
+    "organization": {
+      "city": "Budapest",
+      "country": "HU",
+      "name": "Hungarian Dance University",
+      "slug": "hungarian-dance-university"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-08-02",
+      "notes": "Időpont: 2026. július 27. – augusztus 2",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-27",
+      "timezone": "Europe/Budapest"
+    },
+    "source": {
+      "hash": "sha256:3e3cea0610df68e205039195a077e97f0c6b9f436757ea70eca98ee4001ab789",
+      "provider": "hungarian-dance-university",
+      "scrapedAt": "2026-06-11T20:48:37.685183Z",
+      "url": "https://mte.eu/esemenyek/nyari-balettkurzus-2026/"
+    },
+    "teachers": [],
+    "title": "Nyári Balett Stúdió 2026"
+  }
+]
