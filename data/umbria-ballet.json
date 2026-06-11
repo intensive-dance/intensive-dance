@@ -1,0 +1,111 @@
+[
+  {
+    "application": {
+      "requirements": [
+        {
+          "poses": [],
+          "specificity": "freeform",
+          "type": "photos"
+        },
+        {
+          "description": "Selezione foto/video",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "url": "https://www.umbriaballet.com/iscrizione-lmb/"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "pointe"
+    ],
+    "id": "umbria-ballet/legacy-master-of-ballet-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Assisi",
+      "country": "IT",
+      "venue": "Resort Valle di Assisi"
+    },
+    "organization": {
+      "city": "Bastia Umbra",
+      "country": "IT",
+      "name": "Umbria Ballet — Centro Professionale di Danza",
+      "slug": "umbria-ballet"
+    },
+    "prices": [
+      {
+        "amount": 850.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition",
+        "notes": "Plus a €50 PayPal surcharge; accommodation at the Resort not included."
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-04",
+      "notes": "Dal 29 giugno al 4 luglio 2026",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-06-29",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:bfc3e2abfce263b935a07232cf304eb72db4b9ba2e07f9e91879ee2b8c5b03d4",
+      "provider": "umbria-ballet",
+      "scrapedAt": "2026-06-11T18:28:54.110786Z",
+      "url": "https://www.umbriaballet.com/iscrizione-lmb/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Luca MASALA",
+        "role": "Classico Tecnica Variazioni"
+      },
+      {
+        "affiliations": [],
+        "name": "Tadeusz MATACZ",
+        "role": "Classico Tecnica Variazioni"
+      },
+      {
+        "affiliations": [],
+        "name": "Eugenio BURATTI",
+        "role": "Repertorio contemporaneo Improvvisazione"
+      },
+      {
+        "affiliations": [],
+        "name": "Julieta MARTÍNEZ",
+        "role": "Repertorio contemporaneo Improvvisazione"
+      },
+      {
+        "affiliations": [],
+        "name": "Roland VOGEL",
+        "role": "Classico"
+      },
+      {
+        "affiliations": [],
+        "name": "Gioia MASALA",
+        "role": "Classico contemporaneo"
+      },
+      {
+        "affiliations": [],
+        "name": "Oliver LUCEA",
+        "role": "Classico contemporaneo"
+      },
+      {
+        "affiliations": [],
+        "name": "Diego GONCALVES",
+        "role": "Health & Performance coach"
+      },
+      {
+        "affiliations": [],
+        "name": "Martina VERBENI",
+        "role": "Yoga preparatorio per danzatori"
+      }
+    ],
+    "title": "Legacy Master of Ballet 2026"
+  }
+]

@@ -103,6 +103,7 @@ from . import (
     temps_lie_ballet_workshop_japan,
     tokyo_ballet_school,
     tokyo_city_ballet,
+    umbria_ballet,
     vaganova_international_program,
     yorkshire_ballet_seminars,
     young_stars_ballet,
@@ -204,4 +205,5 @@ SCRAPERS: dict[str, Scraper] = {
     "art-in-motion-munich": art_in_motion_munich.scrape,
     "conservatorio-annarella": conservatorio_annarella.scrape,
     "dance-and-fashion-cic": dance_and_fashion_cic.scrape,
+    "umbria-ballet": umbria_ballet.scrape,
 }
