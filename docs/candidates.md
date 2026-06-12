@@ -79,6 +79,72 @@ triaged; **6 promoted to `seed`** in `providers.json`, the rest recorded below. 
 
 **`out-of-scope`:** DanceWorld Stuttgart (ballet **competition** component) · Stuttgarter Ballett JUNG+ (contemporary creative-movement outreach) · Hessisches Staatsballett Ballettworkshop (single 90-min session) · Traumtänzer Dortmund (all-levels + crafts) · Aalto Ballett open classes (single session) · numerous recreational/term-only schools.
 
+## 🇦🇹 Austria / Vienna (2026-06-12)
+
+Phase-1 sweep of Austria — Vienna + Graz · Salzburg · Linz · Innsbruck · St. Pölten — by
+provider **and** program-type ("Sommerintensiv/Sommerakademie Ballett"), incl.
+Verbände/Konservatorien/Privatuniversitäten. **2 promoted to `seed`**; rest recorded below.
+
+**→ promoted to `seed`:**
+- **Europaballett St. Pölten — Danceflash** (St. Pölten) — the dated **Sommerworkshop** of the
+  state-funded **Europaballett Konservatorium** (Land NÖ); **4–11 Jul 2026** (8 days), ages 7–26
+  (split 5–12 / 13–26), classical ballet + **pointe** + repertoire + pas de deux, faculty incl.
+  former opera-house principals, closing gala at the Konservatorium (Oriongasse 4). Genuine
+  pre-pro-leaning student intensive. — en.europaballett.at/ausbildung/danceflash (also
+  danceflash.eu) *(site 403s a datacenter fetch → Phase-2 likely needs the proxy)*
+- **Ballettratten — Sommerintensivkurs** (Vienna) — youth ballet intensive at **Ballettinstitut
+  Döbling** (1190 Wien, Billrothstr. 16), ages **10–18**, grouped by age/level; **two 2026
+  editions: 6–10 Jul & 31 Aug–4 Sep**; classical + **Spitzentechnik (pointe)** + variations +
+  performance prep. (A separate 4–12 "Sommerballett" kids course and an adult intensive also run —
+  build only the 10–18 student edition.) — ballettratten.com *(Joomla — `/neu/index.php/...`)*
+
+**Already tracked elsewhere (do not re-seed):**
+- **SADA Phoenix — Summer Dance Intensive** (Salzburg, Salzburg Academy for Dance Arts) — company-
+  style 3-wk (13 Jul–1 Aug 2026) / 2-wk (20 Jul–1 Aug) residency, ages 13+ (≥3 yrs training),
+  classical (Vaganova/Cuban) + contemporary + repertoire (Paquita, Breuer's Bolero), two public
+  performances at Theatre Odeïon. **In scope, but already in the pipeline per the discovery brief** —
+  recorded here only to avoid a duplicate seed. — sada.dance/programme/phoenix
+
+**`scored` — real dated ballet course but recreational/amateur-leaning (verify pre-pro depth before promoting):**
+- **Internationale Sommerakademie für Theater Graz (somak.at)** (Graz) — Verein-run summer academy,
+  9–28 Aug 2026, 40+ workshops across acting/dance/singing; has **Ballett Basic** (Vaganova, "normal
+  everyday fitness sufficient") **and Ballett Fortgeschrittene** (advanced). All-ages amateur framing
+  (participants 6–80) — the *advanced* ballet track is the only possibly-in-scope piece; treated as
+  out-of-scope for now (recreational/adult-education). — somak.at/ballett/
+- **ballettferien.at — Oster-/Sommerkurse** (AT, location unconfirmed) — ballet-holiday format for
+  "amateurs of all ages, training students and professionals"; classical/pointe/repertoire/character/
+  musical, 1–6 h/day. No dated 2026 edition or clear city found; amateur-of-all-ages framing → verify
+  a real pre-pro student edition before seeding. — ballettferien.at
+
+**`parked` — school exists, no current public *dated pre-pro* intensive found:**
+- **Ballett Graz — Mariya Mizinskaya** (Graz) — runs "Sommer Intensivkurse" but short daily sessions
+  (1–1¼ h over 3 days), ages 5–7 / 8+, beginners+advanced incl. Ballettgymnastik/PBT → recreational
+  children's school. — ballett-graz.at
+- **Erste Linzer Ballettschule** (Linz) — recreational school, ages 4–60+; no dated 2026 summer
+  intensive published. — ballettschule-linz.at
+- **SIBA Ballettschule Salzburg** (Salzburg) — hobby + aspiring-pro, all ages; no dated summer
+  intensive found. — sibaballettschule.at
+- **Tanzacademy Innsbruck** (Innsbruck) — summer **camps** ages 5–14 ("latest styles & trends"),
+  3 h/day, recreational multi-style — not a pre-pro ballet intensive. — tanzacademy.at/sommerkurse
+
+**`deferred` → IDR-9 (full-time / degree only, no public short-term intensive):**
+- **MUK – Musik und Kunst Privatuniversität der Stadt Wien** (ex-Konservatorium Wien) — BA Classical &
+  Contemporary Dance + Pre-College Dance (14+, autumn start); its only "Sommerakademie" is the Vienna
+  Philharmonic *music* academy, not dance. — muk.ac.at
+- **Ballettakademie der Wiener Staatsoper** (Vienna) — already on the IDR-9 list (full-time
+  vocational). — wiener-staatsoper.at
+- **SADA — Dance Vision** (Salzburg) — full-year vocational program (the school's degree track;
+  distinct from the in-scope Phoenix summer intensive above). — sada.dance
+
+**`out-of-scope`:**
+- **Competitions → icebox #80:** VIBE – Vienna International Ballet Experience (Gregor Hatala;
+  30 Mar–1 Apr 2026, a dance challenge incl. dancers with disabilities) · Ballet Grand Prix Vienna.
+- **Recreational / adult / term-only:** Tanzausbildung Wien "Sommerakademie" (12–18 Jul 2026, "no
+  dance experience required", contemporary, berufsbegleitend) · Tanzstudio Manhardt (künstlerischer
+  Tanz) · Performing Center Austria · DanceWorld Wien · DANCEBASE-Vienna · dancefit-studio · beat1060 ·
+  Wiener VHS · USI Wien · Foundations Dance Collective Graz — recreational/hobby/adult studios with no
+  dated pre-pro student intensive.
+
 ## ℹ️ Notes — overlaps with what we already have / scope
 - **Joffrey Switzerland** (Geneva, 10–15 Aug 2026) and **Joffrey Japan** are programs of **Joffrey Ballet School** — should be captured by the existing `joffrey-ballet-school` scraper. Verify coverage rather than adding a new provider.
 - **Russian Masters Ballet — Burgas** (BG, 27 Jul–17 Aug 2026) is a *location* of the existing `russian-masters-ballet` provider → add as an offering, not a new provider.
