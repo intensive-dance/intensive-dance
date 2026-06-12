@@ -1095,6 +1095,30 @@
       "city": "Győr",
       "url": "https://gyoribalett.hu/",
       "status": "live"
+    },
+    {
+      "slug": "prague-ballet-workshop",
+      "name": "Prague Ballet Workshop — Classical Ballet Summer Workshop",
+      "country": "CZ",
+      "city": "Prague",
+      "url": "https://www.pragueballetworkshop.com/",
+      "status": "seed"
+    },
+    {
+      "slug": "baletni-akademie-pollertova",
+      "name": "Baletní akademie Adély Pollertové — letní soustředění",
+      "country": "CZ",
+      "city": "Prague",
+      "url": "https://www.baletniakademie.cz/",
+      "status": "seed"
+    },
+    {
+      "slug": "first-international-ballet-school-prague",
+      "name": "First International Ballet School in Prague — Summer Camp",
+      "country": "CZ",
+      "city": "Prague",
+      "url": "https://balletschoolprague.com/workshop/summer-camp/",
+      "status": "seed"
     }
   ]
 }
