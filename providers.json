@@ -1039,6 +1039,22 @@
       "city": "Dortmund",
       "url": "https://www.dbft.de/Fortbildungen-Weiterbildungen/Seminarangebot/Sommerakademie-Junior/index.html",
       "status": "live"
+    },
+    {
+      "slug": "europaballett-danceflash",
+      "name": "Europaballett St. Pölten — Danceflash",
+      "country": "AT",
+      "city": "St. Pölten",
+      "url": "https://en.europaballett.at/ausbildung/danceflash",
+      "status": "live"
+    },
+    {
+      "slug": "ballettratten",
+      "name": "Ballettratten — Sommerintensivkurs",
+      "country": "AT",
+      "city": "Vienna",
+      "url": "https://www.ballettratten.com/",
+      "status": "seed"
     }
   ]
 }
