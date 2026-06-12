@@ -1055,6 +1055,14 @@
       "city": "Vienna",
       "url": "https://www.ballettratten.com/",
       "status": "seed"
+    },
+    {
+      "slug": "pirueta-brno",
+      "name": "Baletní škola Pirueta — Letní baletní soustředění",
+      "country": "CZ",
+      "city": "Brno",
+      "url": "https://pirueta.cz/",
+      "status": "live"
     }
   ]
 }

@@ -1,0 +1,58 @@
+[
+  {
+    "ageRange": {
+      "max": 17,
+      "min": 6
+    },
+    "application": {
+      "deadline": "2026-03-31",
+      "requirements": [],
+      "url": "https://pirueta.cz/prihlasky/vyuka-pro-deti/objednavka-soustredeni/"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "pirueta-brno/letni-baletni-soustredeni-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Nadějkov",
+      "country": "CZ",
+      "venue": "ParkHOTEL MOZOLOV"
+    },
+    "organization": {
+      "city": "Brno",
+      "country": "CZ",
+      "name": "Baletní škola Pirueta",
+      "slug": "pirueta-brno"
+    },
+    "prices": [
+      {
+        "amount": 9580.0,
+        "currency": "CZK",
+        "includes": [
+          "tuition",
+          "accommodation",
+          "meals",
+          "materials"
+        ]
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-02",
+      "notes": "27.7. – 2.8.2026",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-27",
+      "timezone": "Europe/Prague"
+    },
+    "source": {
+      "hash": "sha256:3db494b534b68db50af57dd5bcdfad2abd02c556e752598aa501dc8214d3b027",
+      "provider": "pirueta-brno",
+      "scrapedAt": "2026-06-12T13:13:56.991627Z",
+      "url": "https://pirueta.cz/portfolio/soustredeni/"
+    },
+    "teachers": [],
+    "title": "Letní baletní soustředění"
+  }
+]
