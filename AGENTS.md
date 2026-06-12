@@ -449,6 +449,19 @@ when a second provider genuinely needs the identical thing.
   **parallel dated sessions** (two 3-week blocks), emit **one Offering per session**
   — a folded 6-week span would misrepresent two distinct 3-week courses (see
   `alberta_ballet_school`).
+- **TYPO3 sites: plain HTML, `<strong>`-labelled `<p>` fields, dedupe a shared
+  course across providers.** A TYPO3 site (no `/wp-json/`, only a generic
+  `BreadcrumbList` `ld+json`) is server-rendered — a plain `selectolax` scrape.
+  Each program sits in a `div.frame--type-text` whose `<h3>` names it and whose
+  `<p>` bodies carry `<strong>Label</strong> value` pairs split by `<br>` (read
+  them by splitting each `<p>`'s inner HTML on `<br>` then regexing the
+  `<strong>`); a German day span is month-named ("24-29. August 2026" → local
+  month map). **Trap — cross-provider duplicate:** when a page lists two parallel
+  editions and one is a **named cooperation already built under its own provider**
+  (Ballett Dortmund's "Sommerakademie Junior" *is* the `dbft-sommerakademie`
+  course on dbft.de), emit only the edition not covered elsewhere — don't ship the
+  same intensive twice under two slugs (see `ballett_dortmund`, emits only the
+  open Internationale Sommerakademie).
 - **A "full-time school" can still sell public short courses.** The Brazilian
   Bolshoi branch is a free full-time vocational school, but it *also* sells dated,
   open-enrollment paid short courses (Cursos de Inverno / Vivências / Workshops) —
