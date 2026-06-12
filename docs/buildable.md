@@ -2,7 +2,7 @@
 
 > **Generated — do not edit.** Refresh with `uv run python -m intensive_dance.overview --write`; CI drift-checks it. Source of truth: `providers.json`.
 
-24 buildable · 9 excluded · 99 live (132 providers total).
+29 buildable · 9 excluded · 99 live (137 providers total).
 
 **To claim one (so nobody double-builds):** check `gh issue list` / `gh pr list` for the slug; if free, open a `build:<slug>` issue and **self-assign first**, then build; close it when the PR merges (provider → `live`). An open claim issue *or* PR = locked. See `AGENTS.md` → Scope & coordination.
 
@@ -11,8 +11,13 @@
 _Some still need Phase-1 verification (a public dated edition / not full-time) before building._
 
 ### AT
+- `abc-dance` — abcDance — Academy of Ballet & Contemporary Dance (Wiener Neustadt) — https://www.abcdance.at/
 - `ballettratten` — Ballettratten — Sommerintensivkurs (Vienna) — https://www.ballettratten.com/
 - `europaballett-danceflash` — Europaballett St. Pölten — Danceflash (St. Pölten) — https://en.europaballett.at/ausbildung/danceflash
+- `wiener-ballettakademie` — Vienna Ballet Academy (Wiener Ballettakademie) (Vienna) — https://wienerballettakademie.com/
+
+### CZ
+- `pirueta-brno` — Baletní škola Pirueta — Letní baletní soustředění (Brno) — https://pirueta.cz/
 
 ### DE
 - `ballett-dortmund` — Ballett Dortmund (Dortmund) — https://theaterdo.de/
@@ -25,6 +30,9 @@ _Some still need Phase-1 verification (a public dated edition / not full-time) b
 
 ### GB
 - `elmhurst-ballet-school` — Elmhurst Ballet School (Birmingham) — https://elmhurstballetschool.org/
+
+### HU
+- `gyori-balett-dance-intensive` — Győri Balett — Dance Intensive (Győr) — https://gyoribalett.hu/
 
 ### JP
 - `homura-tomoi-ballet-school` — Homura Tomoi Ballet School (Osaka) — https://www.homuratomoi.com/
@@ -47,6 +55,9 @@ _Some still need Phase-1 verification (a public dated edition / not full-time) b
 
 ### SE
 - `international-ballet-school-stockholm` — International Ballet School Stockholm (Stockholm) — https://www.internationalballet.se/
+
+### SK
+- `staromestske-baletne-studio` — Staromestské baletné štúdio — Letná škola tanca (Bratislava) — https://staromestskecentrakultury.sk/
 
 ## Excluded — do NOT build
 

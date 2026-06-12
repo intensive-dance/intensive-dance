@@ -152,3 +152,27 @@ Verbände/Konservatorien/Privatuniversitäten. **2 promoted to `seed`**; rest re
 - **ART of Madrid** (13–25 Jul) is already covered under `art-of-zurich` (one org, two locations).
 - **BRB Summer Intensive (via GradPro)** (GB) — narrow entry (1st/2nd-yr vocational only); lower priority despite the BRB brand.
 - **High-yield discovery indexes for future passes:** `danseclassique.info/stages/saisons/ete/` (FR étoile-led stages), `balletchannel.jp` / `ballet-search.com` (JP dated workshops).
+
+## 🌍 Vienna region — broader + cross-border (live parallel sweep 2026-06-12)
+
+Live 4-agent Phase-1 sweep: Vienna + its surroundings + the important cities near Vienna across the border (Bratislava SK · Brno CZ · Győr HU). Searched by provider **and** program-type, incl. Vereine/Konservatorien/festivals. **5 promoted to `seed`**; rest below.
+
+**→ promoted to `seed`:**
+- **Vienna Ballet Academy (Wiener Ballettakademie)** (Vienna, AT) — private academy with a recurring **Summer Intensive** (classical + contemporary + jazz + character); `/SummerIntensive` page confirmed, **2026 dates not extractable (JS/SPA)** → Phase-2 needs a render. — wienerballettakademie.com
+- **abcDance — Academy of Ballet & Contemporary Dance** (Wiener Neustadt, AT — Vienna belt) — ballet + contemporary academy, dated **Sommer-Tanzcamps/-workshops 2026** (deadline 4 Jul; exact week dates live in schedule images) — abcdance.at
+- **Staromestské baletné štúdio — Letná škola tanca** (Bratislava, SK · ~60 km) — Old-Town cultural-centre ballet studio; youth 12–18 **17–21 Aug 2026** (prior experience required), ballet + contemporary + variations; companion 8–11 edition 6–10 Jul — staromestskecentrakultury.sk
+- **Baletní škola Pirueta — Letní baletní soustředění** (Brno, CZ · ~130 km) — 26th annual **residential** classical-ballet course, **27 Jul–2 Aug 2026**, ages 6–17, open to outside students — pirueta.cz
+- **Győri Balett — Dance Intensive** (Győr, HU · ~120 km) — public open-enrollment ballet + contemporary workshop by the **Győr Ballet company** within the Hungarian Dance Festival (festival **17–21 Jun 2026**; 2025 ran 18–22 Jun); 2026 page not yet published. — gyoribalett.hu
+
+**`scored` — dated public ballet course but recreational/kids-camp-leaning (verify depth first):**
+- **TUTU Škola baletu — Detský letný tábor** (Bratislava, SK) — ex-SND-soloist studio; **27–31 Jul & 3–7 Aug 2026**, ~2 h ballet/day + performance, ages 5–12, €220 — skolabaletu.sk *(kids day-camp)*
+- **Baletní škola Baláž — Top Ba-letní tábor** (Brno, CZ) — classical-ballet day-camp, **13–17 Jul & 3–7 Aug 2026**, ages 4–17 — balet-balaz.cz
+- **Baletná škola Pointe — letné workshopy 2026** (Bratislava, SK) — pointe/advanced-leaning; **2026 registration open**, dates behind a form → Phase-2 probe — baletnaskolapointe.sk
+- **ImPulsTanz – Vienna Int. Dance Festival** (Vienna, AT) — Europe's largest dance festival, **9 Jul–9 Aug 2026**, has a Ballet department + youth strand, but à-la-carte per-class booking (not a fixed cohort) — impulstanz.com
+- *(Graz "Internationale Sommerakademie für Theater — Ballett" already evaluated in the Austria section above as recreational/adult-education — not re-promoted.)*
+
+**`parked` / monitor — recurring, no current dated edition:** Tanzstudio Margit Manhardt (Vienna) · DanceFit Kids Ballet (Vienna, 17–21 Aug, ages 6–9) · RAUM für TANZ / Eva-Maria Kraft (Vienna, contemp.-ballet, 2026 TBA) · Baletné štúdio Terpsichoré & SIMART (Bratislava, dates TBA) · Konservatorij Maribor poletna baletna šola (SI, students-only) · Balet Filiánek (Brno, mostly own competition groups).
+
+**`deferred` → IDR-9 (full-time / no public short course):** Tanečné konzervatórium Evy Jaczovej (Bratislava) · I. V. Psota Ballet School / Národní divadlo Brno · Slovak National Theatre Ballet (SND) · Académie de Danse Vienne (PDF-gated summer workshop — verify) · SoAk Tanz (sommerakademie.wien — genre conflict: one agent found no ballet → verify before any seed).
+
+**`out-of-scope`:** Sopron Balett (HU, performing company only) · Szombathely schools (recreational) · adult/recreational summer courses (Pirueta adults · Vanda Skopalová Brno · Grand Art Ballet Budapest adult/teen · innstanz & Tanzacademy Innsbruck thin 1-class/day) · Ljubljana/Kamnik SI (far from the ring) · an Instagram-only "summer ballet academy" near Bratislava (unverifiable — not seeded).
