@@ -30,9 +30,6 @@ _Some still need Phase-1 verification (a public dated edition / not full-time) b
 ### GB
 - `elmhurst-ballet-school` — Elmhurst Ballet School (Birmingham) — https://elmhurstballetschool.org/
 
-### HU
-- `gyori-balett-dance-intensive` — Győri Balett — Dance Intensive (Győr) — https://gyoribalett.hu/
-
 ### JP
 - `homura-tomoi-ballet-school` — Homura Tomoi Ballet School (Osaka) — https://www.homuratomoi.com/
 - `inoue-ballet` — Inoue Ballet Summer Seminar (Tokyo) — https://inoueballet.net/school/
