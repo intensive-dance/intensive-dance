@@ -45,7 +45,7 @@
       "timezone": "Europe/Berlin"
     },
     "source": {
-      "attemptedAt": "2026-06-11T20:15:54.248900Z",
+      "attemptedAt": "2026-06-12T19:48:03.044624Z",
       "hash": "sha256:65bdc792226cb2ee95ad4f64adfb5080bc10f1cdc31d8da7c004eadca57a62d9",
       "provider": "staatsballett-berlin-feriencamp",
       "scrapedAt": "2026-06-11T18:55:18.006813Z",
@@ -100,7 +100,7 @@
       "timezone": "Europe/Berlin"
     },
     "source": {
-      "attemptedAt": "2026-06-11T20:15:54.248900Z",
+      "attemptedAt": "2026-06-12T19:48:03.044624Z",
       "hash": "sha256:ff8e8ec7498c8dcc1d2669112c9743bcee4e5787dcaa7fab4abf03cd1c8fc8dd",
       "provider": "staatsballett-berlin-feriencamp",
       "scrapedAt": "2026-06-11T18:55:18.006868Z",
@@ -155,7 +155,7 @@
       "timezone": "Europe/Berlin"
     },
     "source": {
-      "attemptedAt": "2026-06-11T20:15:54.248900Z",
+      "attemptedAt": "2026-06-12T19:48:03.044624Z",
       "hash": "sha256:426e0a4b0d1953b7e501772f2937d4ede508f04adfe6378f00e556665deddee4",
       "provider": "staatsballett-berlin-feriencamp",
       "scrapedAt": "2026-06-11T18:55:18.551416Z",
