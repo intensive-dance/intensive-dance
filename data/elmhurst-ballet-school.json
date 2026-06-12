@@ -1,0 +1,169 @@
+[
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 14
+    },
+    "application": {
+      "notes": "Applications are now closed, however please contact us to see if places are still available -",
+      "requirements": [],
+      "status": "closed",
+      "url": "https://elmhurstballetschool.org/en/dance/courses/"
+    },
+    "genres": [
+      "classical",
+      "repertoire",
+      "pointe",
+      "contemporary"
+    ],
+    "id": "elmhurst-ballet-school/senior-summer-school-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Birmingham",
+      "country": "GB",
+      "venue": "Elmhurst Ballet School"
+    },
+    "organization": {
+      "city": "Birmingham",
+      "country": "GB",
+      "name": "Elmhurst Ballet School",
+      "slug": "elmhurst-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 940.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition",
+          "meals",
+          "accommodation"
+        ],
+        "label": "One Week — Residential"
+      },
+      {
+        "amount": 670.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition",
+          "meals"
+        ],
+        "label": "One Week — Non-residential"
+      },
+      {
+        "amount": 1680.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition",
+          "meals",
+          "accommodation"
+        ],
+        "label": "Two Weeks — Residential"
+      },
+      {
+        "amount": 1150.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition",
+          "meals"
+        ],
+        "label": "Two Weeks — Non-residential"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-22",
+      "notes": "Week 1: Monday 10th – Saturday 15th August 2026 (Arrival: Sunday 9th August) | Week 2: Monday 17th – Saturday 22nd August 2026 (Arrival: Sunday 16th August) | Two-week course: Monday 10th – Saturday 22nd August 2026 (Arrival: Sunday 9th August; no training on Sunday 16th August)",
+      "season": "2026",
+      "sessions": [
+        {
+          "end": "2026-08-15",
+          "label": "Week 1",
+          "start": "2026-08-10"
+        },
+        {
+          "end": "2026-08-22",
+          "label": "Week 2",
+          "start": "2026-08-17"
+        }
+      ],
+      "start": "2026-08-10",
+      "timezone": "Europe/London"
+    },
+    "source": {
+      "hash": "sha256:3b61dc59fa6de745e5fe5bbe829ac046de76b4e9e4e1c20ff070648e4235fb64",
+      "provider": "elmhurst-ballet-school",
+      "scrapedAt": "2026-06-12T02:16:28.369985Z",
+      "url": "https://elmhurstballetschool.org/en/dance/courses/"
+    },
+    "teachers": [],
+    "title": "Summer School (Seniors) 2026"
+  },
+  {
+    "ageRange": {
+      "max": 13,
+      "min": 10
+    },
+    "application": {
+      "notes": "Applications are now closed, however please contact us to see if places are still available -",
+      "requirements": [],
+      "status": "closed",
+      "url": "https://elmhurstballetschool.org/en/dance/courses/"
+    },
+    "genres": [
+      "classical",
+      "repertoire",
+      "contemporary"
+    ],
+    "id": "elmhurst-ballet-school/junior-summer-school-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Birmingham",
+      "country": "GB",
+      "venue": "Elmhurst Ballet School"
+    },
+    "organization": {
+      "city": "Birmingham",
+      "country": "GB",
+      "name": "Elmhurst Ballet School",
+      "slug": "elmhurst-ballet-school"
+    },
+    "prices": [
+      {
+        "amount": 585.5,
+        "currency": "GBP",
+        "includes": [
+          "tuition",
+          "meals",
+          "accommodation"
+        ],
+        "label": "Residential"
+      },
+      {
+        "amount": 495.5,
+        "currency": "GBP",
+        "includes": [
+          "tuition",
+          "meals"
+        ],
+        "label": "Non-residential"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-27",
+      "notes": "Tuesday 25th – Thursday 27th August 2026 (Arrival: Monday 24th August)",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-25",
+      "timezone": "Europe/London"
+    },
+    "source": {
+      "hash": "sha256:af111770fd32d797102e9160d96f9e290aef97ff5733cc4acd02fcaa11c9beb1",
+      "provider": "elmhurst-ballet-school",
+      "scrapedAt": "2026-06-12T02:16:28.370374Z",
+      "url": "https://elmhurstballetschool.org/en/dance/courses/"
+    },
+    "teachers": [],
+    "title": "Summer School (Juniors) 2026"
+  }
+]

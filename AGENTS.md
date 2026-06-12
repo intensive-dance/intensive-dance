@@ -28,7 +28,7 @@ Source-of-truth docs to keep open: [`docs/data-model.md`](./docs/data-model.md)
 
 - **We say "scraper", not "crawler"** — these modules *extract* from known pages; they don't crawl/discover the open web.
 - **In scope:** short-term **student intensives** (summer schools, intensives, short courses, master classes) — one `Offering` per dated edition.
-- **Stub, don't fake:** if a provider is a **full-time vocational school / long-term _Ausbildung_ only** (no public short-term intensive), do NOT invent an offering — leave it `seed`, relabel its issue `phase-2`, defer to **IDR-9 (#12)** (e.g. Elmhurst #79).
+- **Stub, don't fake:** if a provider is a **full-time vocational school / long-term _Ausbildung_ only** (no public short-term intensive), do NOT invent an offering — leave it `seed`, relabel its issue `phase-2`, defer to **IDR-9 (#12)**. But **verify before deferring** — a full-time vocational school often *also* sells a public dated summer school (Elmhurst, once cited here as full-time-only #79, in fact runs open Senior/Junior Summer Schools — now `live`). Build the public short course, leave the full-time track out (cf. `escola_bolshoi_brasil`, `elmhurst_ballet_school`).
 - **Competitions are OUT OF SCOPE (icebox).** Prix de Lausanne, YAGP, Tanzolymp, HIBC, … are parked in epic **#80 (IDR-40)** — idea-collection OK, **no implementation**. About to build one? Stop — it's parked on purpose; reopen the discussion first.
 - **Coordinate — people work in parallel.** Always `git fetch` + check `gh pr list` / `gh issue list` first. **Claim before you build:** the buildable seeds are [`docs/buildable.md`](./docs/buildable.md) (generated from `providers.json` — `uv run python -m intensive_dance.overview`). To take one, open a `build:<slug>` issue and **self-assign first**, *then* build; close it when the PR merges (provider → `live`). **An open `build:` issue *or* PR for a slug = locked — don't build it.** `providers.json` stays the source of truth; the issue is just a transient lock.
 - **Two phases — decide cheaply, then build; the build *is* the evaluation.** Confidence is effectively binary (low until scraped, high after), so don't model this as three boxes (explore → score → build). **Phase 1 (cheap, interactive):** find the provider, write its User Story (issue `IDR-<n>`: source URL, API-first finding, discovery = one `Offering` per *what*?), self-assign it, apply **verify-or-defer**, and do a **light triage** — only enough to answer *"worth building?"*, from what web research alone gives (who runs it, accreditation, reputation, track record). The data-derived facts (the actual roster, real dates/duration, prices, application requirements) aren't available yet — so **don't over-score a lead**; scale effort to the decision's uncertainty (obvious-strong → build queue, obvious-weak → drop, only the marginal ones weighed). **Phase 2 (expensive, batchable):** the scraper is by far the most token-heavy step (parallel agents, live probes, the full gate) **and** the thing that yields the real data — so the genuine evaluation happens *here*, not before. Keep it a separate, deliberate batch (e.g. kicked off overnight); each session stays small. **Never discover→build in one pass for a fresh lead, and never treat a lead's preview numbers as final.**
@@ -449,6 +449,19 @@ when a second provider genuinely needs the identical thing.
   **parallel dated sessions** (two 3-week blocks), emit **one Offering per session**
   — a folded 6-week span would misrepresent two distinct 3-week courses (see
   `alberta_ballet_school`).
+- **StackProtect/Cloudflare-gated custom (non-WP) sites: proxy `auto=1`, slice the
+  accordion, watch nbsp.** A custom-PHP site (no `/wp-json/`, no `Event`/`Course`
+  `ld+json`) behind a StackProtect/Cloudflare challenge 403s a plain datacenter
+  fetch — the proxy's **`auto=1`** tier clears it and returns the server-rendered
+  HTML (no JS `render` needed; expect the odd transient `401` — a single retry
+  fixes it). Course detail lives in Bootstrap accordion panels (`#collapseN`)
+  whose sub-programmes split on `<h4>`s. **Trap:** those `<h4>`s carry a
+  **non-breaking space** ("Seniors -\xa0(Ages 14–18)"), so a `parse.clean`'d
+  heading won't `str.find` inside the raw `panel.text()` — normalize nbsp on
+  *both* the text and the heading (keeping newlines for per-line date/fee parsing)
+  before slicing (see `elmhurst_ballet_school`). Photograph/Video "requirements"
+  pages on such school sites usually belong to the *full-time audition* flow, not
+  the summer school — don't attribute them to the short course.
 - **A "full-time school" can still sell public short courses.** The Brazilian
   Bolshoi branch is a free full-time vocational school, but it *also* sells dated,
   open-enrollment paid short courses (Cursos de Inverno / Vivências / Workshops) —
