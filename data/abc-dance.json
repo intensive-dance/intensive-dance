@@ -1,0 +1,146 @@
+[
+  {
+    "ageRange": {
+      "max": 15,
+      "min": 5
+    },
+    "application": {
+      "deadline": "2026-07-04",
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "url": "https://www.abcdance.at/sommer-2026/anmeldung-sommer-tanzcamp-2026/"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "abc-dance/sommer-tanzcamp-1-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Wiener Neustadt",
+      "country": "AT"
+    },
+    "organization": {
+      "city": "Wiener Neustadt",
+      "country": "AT",
+      "name": "abcDance — Academy of Ballet & Contemporary Dance",
+      "slug": "abc-dance"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-07-24",
+      "notes": "20.-24. Juli 2026",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-20",
+      "timezone": "Europe/Vienna"
+    },
+    "source": {
+      "hash": "sha256:5f2304028b8b5dfcd2e7e7a04e64525d15686e546fa8ef595091cd633d48d15d",
+      "provider": "abc-dance",
+      "scrapedAt": "2026-06-12T13:24:13.676755Z",
+      "url": "https://www.abcdance.at/sommer-2026/anmeldung-sommer-tanzcamp-2026/"
+    },
+    "teachers": [],
+    "title": "Sommer-Tanzcamp 1 2026"
+  },
+  {
+    "ageRange": {
+      "max": 15,
+      "min": 5
+    },
+    "application": {
+      "deadline": "2026-07-04",
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "url": "https://www.abcdance.at/sommer-2026/anmeldung-sommer-tanzcamp-2026/"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "abc-dance/sommer-tanzcamp-2-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Wiener Neustadt",
+      "country": "AT"
+    },
+    "organization": {
+      "city": "Wiener Neustadt",
+      "country": "AT",
+      "name": "abcDance — Academy of Ballet & Contemporary Dance",
+      "slug": "abc-dance"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-07-31",
+      "notes": "27.-31. Juli 2026",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-27",
+      "timezone": "Europe/Vienna"
+    },
+    "source": {
+      "hash": "sha256:ea7d738ccb60a760864171325e124bf7729dbb9d1266945069c317e9d0961379",
+      "provider": "abc-dance",
+      "scrapedAt": "2026-06-12T13:24:13.677182Z",
+      "url": "https://www.abcdance.at/sommer-2026/anmeldung-sommer-tanzcamp-2026/"
+    },
+    "teachers": [],
+    "title": "Sommer-Tanzcamp 2 2026"
+  },
+  {
+    "ageRange": {
+      "max": 15,
+      "min": 5
+    },
+    "application": {
+      "deadline": "2026-07-04",
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "url": "https://www.abcdance.at/sommer-2026/anmeldung-sommer-tanzcamp-2026/"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "abc-dance/sommer-tanzcamp-3-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Wiener Neustadt",
+      "country": "AT"
+    },
+    "organization": {
+      "city": "Wiener Neustadt",
+      "country": "AT",
+      "name": "abcDance — Academy of Ballet & Contemporary Dance",
+      "slug": "abc-dance"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-09-05",
+      "notes": "30. August-5. September 2026",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-30",
+      "timezone": "Europe/Vienna"
+    },
+    "source": {
+      "hash": "sha256:30b37583bfe65ffed7ffd98e93da03b7a643a4a760e5f5a070d3e98df16a2347",
+      "provider": "abc-dance",
+      "scrapedAt": "2026-06-12T13:24:13.677212Z",
+      "url": "https://www.abcdance.at/sommer-2026/anmeldung-sommer-tanzcamp-2026/"
+    },
+    "teachers": [],
+    "title": "Sommer-Tanzcamp 3 2026"
+  }
+]
