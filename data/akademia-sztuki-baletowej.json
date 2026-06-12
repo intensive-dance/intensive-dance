@@ -46,7 +46,7 @@
       "timezone": "Europe/Warsaw"
     },
     "source": {
-      "attemptedAt": "2026-06-11T16:21:51.263662Z",
+      "attemptedAt": "2026-06-12T11:32:28.912016Z",
       "hash": "sha256:8fcfbac5f20059170a248972c81bfdbdebd9279a9a8692876e19a16a7bad8d79",
       "provider": "akademia-sztuki-baletowej",
       "scrapedAt": "2026-06-08T21:21:43.908707Z",
@@ -171,7 +171,7 @@
       "timezone": "Europe/Warsaw"
     },
     "source": {
-      "attemptedAt": "2026-06-11T16:21:51.263662Z",
+      "attemptedAt": "2026-06-12T11:32:28.912016Z",
       "hash": "sha256:0389a844a2d4d8ba5b3c70e3184b43fef3f89e08ca10f2df43ef684b7519442e",
       "provider": "akademia-sztuki-baletowej",
       "scrapedAt": "2026-06-08T21:21:43.908815Z",

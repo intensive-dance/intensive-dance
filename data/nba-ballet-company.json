@@ -48,7 +48,7 @@
       "timezone": "Asia/Tokyo"
     },
     "source": {
-      "attemptedAt": "2026-06-11T16:21:51.464774Z",
+      "attemptedAt": "2026-06-12T11:32:29.395036Z",
       "hash": "sha256:ed15cbe45d3fcb63f151c8a301f89e22c568fefa25c797b454e53f4d05d2888c",
       "provider": "nba-ballet-company",
       "scrapedAt": "2026-06-09T02:35:49.956007Z",
