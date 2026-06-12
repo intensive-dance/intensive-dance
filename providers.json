@@ -1055,6 +1055,46 @@
       "city": "Vienna",
       "url": "https://www.ballettratten.com/",
       "status": "seed"
+    },
+    {
+      "slug": "wiener-ballettakademie",
+      "name": "Vienna Ballet Academy (Wiener Ballettakademie)",
+      "country": "AT",
+      "city": "Vienna",
+      "url": "https://wienerballettakademie.com/",
+      "status": "seed"
+    },
+    {
+      "slug": "abc-dance",
+      "name": "abcDance — Academy of Ballet & Contemporary Dance",
+      "country": "AT",
+      "city": "Wiener Neustadt",
+      "url": "https://www.abcdance.at/",
+      "status": "seed"
+    },
+    {
+      "slug": "staromestske-baletne-studio",
+      "name": "Staromestské baletné štúdio — Letná škola tanca",
+      "country": "SK",
+      "city": "Bratislava",
+      "url": "https://staromestskecentrakultury.sk/",
+      "status": "seed"
+    },
+    {
+      "slug": "pirueta-brno",
+      "name": "Baletní škola Pirueta — Letní baletní soustředění",
+      "country": "CZ",
+      "city": "Brno",
+      "url": "https://pirueta.cz/",
+      "status": "seed"
+    },
+    {
+      "slug": "gyori-balett-dance-intensive",
+      "name": "Győri Balett — Dance Intensive",
+      "country": "HU",
+      "city": "Győr",
+      "url": "https://gyoribalett.hu/",
+      "status": "seed"
     }
   ]
 }
