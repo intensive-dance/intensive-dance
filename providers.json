@@ -1095,6 +1095,118 @@
       "city": "Győr",
       "url": "https://gyoribalett.hu/",
       "status": "live"
+    },
+    {
+      "slug": "nuova-officina-della-danza",
+      "name": "Nuova Officina della Danza — NOD Summer Intensive",
+      "country": "IT",
+      "city": "Turin",
+      "url": "https://www.nuovaofficinadelladanza.org/",
+      "status": "seed"
+    },
+    {
+      "slug": "dam-danza-torino",
+      "name": "DAM Danza Arte e Movimento — Torino Summer Dance",
+      "country": "IT",
+      "city": "Turin",
+      "url": "https://www.damdanzatorino.it/",
+      "status": "seed"
+    },
+    {
+      "slug": "verona-summer-dance-lab",
+      "name": "Verona Summer Dance Lab",
+      "country": "IT",
+      "city": "Verona",
+      "url": "https://www.veronadancelab.com/",
+      "status": "seed"
+    },
+    {
+      "slug": "centro-formazione-danza-verona",
+      "name": "Centro Formazione Danza Verona — Ballet Summer School",
+      "country": "IT",
+      "city": "Verona",
+      "url": "https://www.cfdanzaverona.it/",
+      "status": "seed"
+    },
+    {
+      "slug": "bobbio-summer-ballet-intensive",
+      "name": "Bobbio Summer Ballet Intensive",
+      "country": "IT",
+      "city": "Bobbio",
+      "url": "https://bobbiosummerballetintensive.com/",
+      "status": "seed"
+    },
+    {
+      "slug": "centro-formazione-aida",
+      "name": "Centro Formazione Aida — Ballet Summer Camp",
+      "country": "IT",
+      "city": "Milan",
+      "url": "https://www.centroformazioneaida.com/",
+      "status": "seed"
+    },
+    {
+      "slug": "ateneo-della-danza",
+      "name": "Ateneo della Danza — Intensive Summer School",
+      "country": "IT",
+      "city": "Siena",
+      "url": "https://www.ateneodelladanza.it/",
+      "status": "seed"
+    },
+    {
+      "slug": "accademia-internazionale-coreutica",
+      "name": "Accademia Internazionale Coreutica — International Summer Intensive Course",
+      "country": "IT",
+      "city": "Florence",
+      "url": "https://www.accademiainternazionalecoreutica.org/",
+      "status": "seed"
+    },
+    {
+      "slug": "associazione-europea-danza",
+      "name": "Associazione Europea Danza — Summer Dance School",
+      "country": "IT",
+      "city": "Livorno",
+      "url": "https://aed.dance/",
+      "status": "seed"
+    },
+    {
+      "slug": "art-studio-danza",
+      "name": "Art Studio Danza — Stage Internazionale del Lago di Garda",
+      "country": "IT",
+      "city": "Salò",
+      "url": "https://artstudiodanza.it/",
+      "status": "seed"
+    },
+    {
+      "slug": "progetto-danza-treviso",
+      "name": "Progetto Danza — Stage Internazionale di Danza",
+      "country": "IT",
+      "city": "Treviso",
+      "url": "https://www.progettodanza.org/",
+      "status": "seed"
+    },
+    {
+      "slug": "accademia-iacopini",
+      "name": "Accademia Iacopini — \"In Danza\"",
+      "country": "IT",
+      "city": "Chianciano Terme",
+      "url": "https://accademiaiacopini.it/",
+      "status": "seed"
+    },
+    {
+      "slug": "scuola-hamlyn",
+      "name": "Scuola di Danza Hamlyn — Summer Course",
+      "country": "IT",
+      "city": "Florence",
+      "url": "https://www.scuolahamlyn.com/",
+      "status": "seed"
+    },
+    {
+      "slug": "arteballetto",
+      "name": "Arteballetto — Summer Course in Sicily",
+      "country": "IT",
+      "city": "Catania",
+      "url": "https://www.arteballetto.net/",
+      "status": "seed"
     }
   ]
 }
