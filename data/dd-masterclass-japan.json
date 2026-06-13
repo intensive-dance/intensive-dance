@@ -95,7 +95,7 @@
       "timezone": "Asia/Tokyo"
     },
     "source": {
-      "attemptedAt": "2026-06-13T01:57:25.692990Z",
+      "attemptedAt": "2026-06-13T23:01:16.047335Z",
       "hash": "sha256:3bbf797b614ced05d22453be7cd38a0ece9e64c2f3a9f707698cbf7d8601ea74",
       "provider": "dd-masterclass-japan",
       "scrapedAt": "2026-06-06T07:35:24.256022Z",
@@ -216,7 +216,7 @@
       "timezone": "Asia/Tokyo"
     },
     "source": {
-      "attemptedAt": "2026-06-13T01:57:25.692990Z",
+      "attemptedAt": "2026-06-13T23:01:16.047335Z",
       "hash": "sha256:476695ea0284d6188f35f68d676843737e6c41e9ca610e0122a9bb7db86886d3",
       "provider": "dd-masterclass-japan",
       "scrapedAt": "2026-06-06T07:35:24.367414Z",
