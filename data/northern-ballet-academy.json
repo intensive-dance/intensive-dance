@@ -92,7 +92,7 @@
       "timezone": "Europe/London"
     },
     "source": {
-      "attemptedAt": "2026-06-14T02:06:44.147258Z",
+      "attemptedAt": "2026-06-15T02:56:39.759822Z",
       "hash": "sha256:a8f77654e65ad5076b52263e7af0473b7b4335e15fb5c2d87dcc356ef28c53c9",
       "provider": "northern-ballet-academy",
       "scrapedAt": "2026-06-07T12:10:48.990523Z",
@@ -218,7 +218,7 @@
       "timezone": "Europe/London"
     },
     "source": {
-      "attemptedAt": "2026-06-14T02:06:44.147258Z",
+      "attemptedAt": "2026-06-15T02:56:39.759822Z",
       "hash": "sha256:4374c047e289df5ea373d6fc099cbb885fe7c50896367c7e186411eb1cfd3f83",
       "provider": "northern-ballet-academy",
       "scrapedAt": "2026-06-07T12:10:49.138364Z",
