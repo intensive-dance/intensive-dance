@@ -1,0 +1,66 @@
+[
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 12
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://forms.cloud.microsoft/e/FcLx0FdfvU"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "repertoire"
+    ],
+    "id": "staromestske-baletne-studio/letna-skola-tanca-mladez-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Bratislava",
+      "country": "SK",
+      "venue": "Školská 14"
+    },
+    "organization": {
+      "city": "Bratislava",
+      "country": "SK",
+      "name": "Staromestské baletné štúdio",
+      "slug": "staromestske-baletne-studio"
+    },
+    "prices": [
+      {
+        "amount": 160.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition",
+          "meals"
+        ]
+      },
+      {
+        "amount": 144.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition",
+          "meals"
+        ],
+        "label": "Obyvatelia Starého Mesta"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-21",
+      "notes": "17. - 21. 8. 2026",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-17",
+      "timezone": "Europe/Bratislava"
+    },
+    "source": {
+      "hash": "sha256:339a91772494f9c38001589d1c39feec4f77a922064c8d8bb3946cceb990aa88",
+      "provider": "staromestske-baletne-studio",
+      "scrapedAt": "2026-06-12T13:20:10.385307Z",
+      "url": "https://staromestskecentrakultury.sk/novinka/132110/prihlaste-svoje-deti-do-nasich-letnych-taborov"
+    },
+    "teachers": [],
+    "title": "Letná škola tanca pre mládež"
+  }
+]
