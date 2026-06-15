@@ -105,10 +105,13 @@ src/intensive_dance/
   scrapers/        # one module per provider: scrape(client) -> list[Offering]
     __init__.py    # the SCRAPERS registry (slug -> scrape fn)
   run.py           # scrape -> hash -> write data/<slug>.json (deterministic)
-  validate.py      # offline: every data/*.json parses + source.hash matches
+  validate.py      # offline: every data/*.json parses + source.hash matches (+ gazetteer parses)
   schema.py        # derive/drift-check schema/offering.schema.json from models
   erd.py           # derive/drift-check docs/erd.md (Mermaid ERD) from models
+  geo.py           # PURE gazetteer half: model, (country,city)->coords load/save, haversine, coverage
+  geocode.py       # NETWORK half (hand-run): fill data/gazetteer.json via Nominatim — never in scrape/CI
 data/<slug>.json   # the store — committed, one file per provider
+data/gazetteer.json # committed (country,city)->coords for proximity search (IDR-73); NOT per-provider
 providers.json     # the register; each has status seed|live
 tests/             # pytest, inline HTML/JSON snippets, no network
 ```
@@ -348,6 +351,16 @@ that — it's how the next agent knows the source's shape without re-crawling.
 - If you change `models.py`, regenerate **both** derived artifacts (CI fails on drift):
   `uv run python -m intensive_dance.schema --write` and
   `uv run python -m intensive_dance.erd --write` (the Mermaid ERD in `docs/erd.md`).
+- **Coordinates live in the gazetteer, never in a scraper.** `Location` stays
+  `venue/city/country/online` only; the consumer's "intensives near me" join reads
+  `data/gazetteer.json` (`(country,city)→coords`). Geocoding is **enrichment** —
+  network-bound + non-deterministic, so it's the same rule as the LLM helpers:
+  `intensive_dance.geocode` (Nominatim, hand-run, reviewed) fills the gazetteer,
+  **never** `scrape()`/CI. `intensive_dance.geo` is the pure half (load/save,
+  haversine, coverage). `geo --check` (gap report) is **deliberately not in the
+  gate** — a scraper adding a provider in a new city must not block an unrelated
+  PR; the consumer falls back to a "location unknown" group and a later `geocode`
+  run tops it up. Design: `docs/solution-design-location-search.md` (IDR-73).
 
 ---
 
