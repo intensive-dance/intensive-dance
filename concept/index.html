@@ -159,6 +159,15 @@
   .pill.tbc{color:var(--gold);border-color:rgba(154,123,51,.4)}
   .row .arrow{position:absolute;right:12px;opacity:0;transform:translateX(-8px);transition:all .26s ease;font-size:18px;color:var(--red)}
   .row:hover .arrow{opacity:1;transform:none}
+  /* ----- proximity (IDR-73) ----- */
+  .nearin{font-family:var(--ui);font-size:12.5px;color:var(--ink);background:none;border:none;border-bottom:1px solid var(--line-2);padding:4px 2px;width:128px;outline:none}
+  .nearin:focus{border-color:var(--ink)}
+  .chip.near,.chip.clearnear{cursor:pointer}
+  .chip.clearnear{color:var(--red);border-color:var(--blush)}
+  .row .loc .dist{font-family:var(--mono);font-size:10px;letter-spacing:.05em;color:var(--red);border:1px solid var(--blush);padding:2px 7px;border-radius:100px;white-space:nowrap}
+  .grouphd{font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-faint);padding:24px 12px 8px;border-bottom:1px solid var(--line)}
+  .grouphd.none{color:var(--gold);text-transform:none;letter-spacing:.01em;font-size:13.5px;font-family:var(--ui)}
+  .widen{font-family:var(--ui);font-size:13px;color:var(--ink-soft);padding:14px 12px}
   @media(max-width:980px){
     .index-head{grid-template-columns:48px 1fr 120px;gap:14px}
     .index-head .h-org,.index-head .h-season,.index-head .h-stat{display:none}
@@ -305,7 +314,7 @@
 
 <script>
 const TODAY = new Date("2026-06-03T12:00:00Z");
-const DATA = [{"id":"royal-ballet-school/livorno-special-training-programme-2027","title":"Livorno Special Training Programme 2027","org":"The Royal Ballet School","orgSlug":"royal-ballet-school","kind":"intensive","genres":["classical"],"level":[],"age":{"max":15,"min":10},"city":"Livorno","country":"IT","venue":"AED, Associazione Europea Danza, via Masi 7, 57121 – Livorno, Italy","season":"2027","start":"2026-10-18","end":"2027-04-11","sessions":[{"label":"17-18 October 2026","start":"2026-10-17","end":"2026-10-18","gender":"both"},{"label":"12-13 December 2026","start":"2026-12-12","end":"2026-12-13","gender":"both"},{"label":"6-7 February 2027","start":"2027-02-06","end":"2027-02-07","gender":"both"},{"label":"10-11 April 2027","start":"2027-04-10","end":"2027-04-11","gender":"both"}],"status":"closed","deadline":null,"appUrl":null,"reqs":["photos"],"prices":[{"amount":50.0,"currency":"GBP","label":"Application fee"},{"amount":390.0,"currency":"EUR","label":"Course fee"}],"url":"https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/livorno-special-training-programme/"},{"id":"royal-ballet-school/los-angeles-intensive-2026","title":"Los Angeles Intensive 2026","org":"The Royal Ballet School","orgSlug":"royal-ballet-school","kind":"intensive","genres":["classical","contemporary","repertoire","pointe"],"level":[],"age":{"max":19,"min":10},"city":"Los Angeles","country":"US","venue":"The Music Center, 135 N. Grand Avenue, Los Angeles, CA 90012, United States","season":"2026","start":"2026-06-29","end":"2026-07-10","sessions":[{"label":"one-week course","start":"2026-06-29","end":"2026-07-03","gender":"both"},{"label":"one-week course","start":"2026-07-06","end":"2026-07-10","gender":"both"},{"label":"two-week course","start":"2026-06-29","end":"2026-07-10","gender":"both"}],"status":"closed","deadline":null,"appUrl":"https://eur.cvent.me/xqb2gm?RefId=Intensive+Courses+2025%2F26","reqs":["photos"],"prices":[{"amount":865.0,"currency":"GBP","label":"Course fee"},{"amount":48.0,"currency":"GBP","label":"Application fee"},{"amount":125.0,"currency":"GBP","label":"Additional coaching sessions"}],"url":"https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/los-angeles-intensive/"},{"id":"royal-ballet-school/uk-summer-intensive-2026","title":"UK Summer Intensive 2026","org":"The Royal Ballet School","orgSlug":"royal-ballet-school","kind":"intensive","genres":["classical","contemporary","character","repertoire","pointe"],"level":[],"age":{"max":19,"min":8},"city":"London","country":"GB","venue":"Upper School, 46 Floral Street, Covent Garden, London, WC2E 9DA · White Lodge, Richmond Park, Richmond, Surrey, TW10 5HR","season":"2026","start":"2026-07-21","end":"2026-08-21","sessions":[{"label":"White Lodge — Week one","start":"2026-07-21","end":"2026-07-25","gender":"both"},{"label":"White Lodge — Week two","start":"2026-07-27","end":"2026-07-31","gender":"both"},{"label":"White Lodge — Week three","start":"2026-08-03","end":"2026-08-07","gender":"both"},{"label":"White Lodge — Week three","start":"2026-08-03","end":"2026-08-07","gender":"male"},{"label":"White Lodge — Week four","start":"2026-08-10","end":"2026-08-14","gender":"female"},{"label":"White Lodge — Week five","start":"2026-08-17","end":"2026-08-21","gender":"female"},{"label":"White Lodge — Week one to two","start":"2026-07-21","end":"2026-07-31","gender":"female"},{"label":"White Lodge — Week one to two","start":"2026-07-21","end":"2026-07-31","gender":"both"},{"label":"White Lodge — Week three to four","start":"2026-08-03","end":"2026-08-14","gender":"female"},{"label":"White Lodge — Week four to five","start":"2026-08-10","end":"2026-08-21","gender":"female"},{"label":"Upper School — Week one to two","start":"2026-07-21","end":"2026-07-31","gender":"female"},{"label":"Upper School — Week one to two","start":"2026-07-21","end":"2026-07-31","gender":"male"},{"label":"Upper School — Week three to five","start":"2026-08-03","end":"2026-08-21","gender":"female"},{"label":"Upper School — Week three to five","start":"2026-08-03","end":"2026-08-21","gender":"male"},{"label":"Non-selective 4-6 August","start":"2026-08-04","end":"2026-08-06","gender":"both"},{"label":"Non-selective 11-13 August","start":"2026-08-11","end":"2026-08-13","gender":"both"},{"label":"Non-selective 18-20 August","start":"2026-08-18","end":"2026-08-20","gender":"both"}],"status":"closed","deadline":null,"appUrl":null,"reqs":["photos"],"prices":[{"amount":48.0,"currency":"GBP","label":"Application fee"},{"amount":485.0,"currency":"GBP","label":"Non-selective course (students aged 8-9 years)"},{"amount":1730.0,"currency":"GBP","label":"Ages 16-19 (non-residential) (2 weeks)"},{"amount":2970.0,"currency":"GBP","label":"Ages 16-19 (residential-catering) (2 weeks)"},{"amount":2595.0,"currency":"GBP","label":"Ages 16-19 (non-residential) (3 weeks)"},{"amount":4455.0,"currency":"GBP","label":"Ages 16-19 (residential-catering) (3 weeks)"},{"amount":4325.0,"currency":"GBP","label":"Ages 16-19 (non-residential) (5 weeks)"},{"amount":7425.0,"currency":"GBP","label":"Ages 16-19 (residential-catering) (5 weeks)"},{"amount":865.0,"currency":"GBP","label":"Ages 10-15 (non-residential) (1 week)"},{"amount":1485.0,"currency":"GBP","label":"Ages 10-15 (residential-catering) (1 week)"},{"amount":1730.0,"currency":"GBP","label":"Ages 13-15 (non-residential) (2 weeks)"},{"amount":2970.0,"currency":"GBP","label":"Ages 13-15 (residential-catering) (2 weeks)"}],"url":"https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/uk-summer-intensive/"},{"id":"joffrey-ballet-school/workshops-special-feature-workshop-2026-joffrey-japan-workshop","title":"2026 Joffrey Japan Ballet & Contemporary Workshop","org":"Joffrey Ballet School","orgSlug":"joffrey-ballet-school","kind":"workshop","genres":["contemporary","classical"],"level":[],"age":null,"city":"New York","country":"US","venue":null,"season":"2026","start":"2026-08-12","end":"2026-08-14","sessions":[],"status":null,"deadline":null,"appUrl":"https://www.joffreyballetschool.com/auditions-2/","reqs":["video"],"prices":[],"url":"https://www.joffreyballetschool.com/workshops/special-feature-workshop/2026-joffrey-japan-workshop/"},{"id":"joffrey-ballet-school/jbs-x-ubc-miami-ballet","title":"JBS x UBC Miami Ballet","org":"Joffrey Ballet School","orgSlug":"joffrey-ballet-school","kind":"intensive","genres":["classical"],"level":[],"age":null,"city":"New York","country":"US","venue":null,"season":"unknown","start":null,"end":null,"sessions":[],"status":null,"deadline":null,"appUrl":"https://www.joffreyballetschool.com/auditions-2/","reqs":["video"],"prices":[],"url":"https://www.joffreyballetschool.com/summer-intensives/jbs-x-ubc-miami-ballet/"},{"id":"joffrey-ballet-school/jbs-x-ubc-midwest-pre-professional-ballet","title":"JBS x UBC Midwest Pre-Professional Ballet","org":"Joffrey Ballet School","orgSlug":"joffrey-ballet-school","kind":"intensive","genres":["classical"],"level":[],"age":null,"city":"New York","country":"US","venue":null,"season":"2027","start":"2027-07-19","end":"2027-07-31","sessions":[],"status":null,"deadline":null,"appUrl":"https://www.joffreyballetschool.com/auditions-2/","reqs":["video"],"prices":[],"url":"https://www.joffreyballetschool.com/summer-intensives/jbs-x-ubc-midwest-pre-professional-ballet/"},{"id":"joffrey-ballet-school/joffrey-akron","title":"Joffrey Akron","org":"Joffrey Ballet School","orgSlug":"joffrey-ballet-school","kind":"intensive","genres":["classical","contemporary"],"level":[],"age":null,"city":"New York","country":"US","venue":null,"season":"unknown","start":null,"end":null,"sessions":[],"status":null,"deadline":null,"appUrl":"https://www.joffreyballetschool.com/auditions-2/","reqs":["video"],"prices":[],"url":"https://www.joffreyballetschool.com/summer-intensives/joffrey-akron/"},{"id":"joffrey-ballet-school/joffrey-colorado","title":"Joffrey Colorado","org":"Joffrey Ballet School","orgSlug":"joffrey-ballet-school","kind":"intensive","genres":["classical"],"level":[],"age":null,"city":"New York","country":"US","venue":null,"season":"unknown","start":null,"end":null,"sessions":[],"status":null,"deadline":null,"appUrl":"https://www.joffreyballetschool.com/auditions-2/","reqs":["video"],"prices":[],"url":"https://www.joffreyballetschool.com/summer-intensives/joffrey-colorado/"},{"id":"joffrey-ballet-school/joffrey-dallas","title":"Joffrey Dallas","org":"Joffrey Ballet School","orgSlug":"joffrey-ballet-school","kind":"intensive","genres":["classical","contemporary"],"level":[],"age":null,"city":"New York","country":"US","venue":null,"season":"unknown","start":null,"end":null,"sessions":[],"status":null,"deadline":null,"appUrl":"https://www.joffreyballetschool.com/auditions-2/","reqs":["video"],"prices":[],"url":"https://www.joffreyballetschool.com/summer-intensives/joffrey-dallas/"},{"id":"joffrey-ballet-school/joffrey-italy","title":"Joffrey Italy","org":"Joffrey Ballet School","orgSlug":"joffrey-ballet-school","kind":"intensive","genres":["classical","contemporary"],"level":[],"age":null,"city":"New York","country":"US","venue":null,"season":"unknown","start":null,"end":null,"sessions":[],"status":null,"deadline":null,"appUrl":"https://www.joffreyballetschool.com/auditions-2/","reqs":["video"],"prices":[],"url":"https://www.joffreyballetschool.com/summer-intensives/joffrey-italy/"},{"id":"joffrey-ballet-school/summer-intensives-joffrey-las-vegas-ballet","title":"Joffrey Las Vegas Ballet","org":"Joffrey Ballet School","orgSlug":"joffrey-ballet-school","kind":"intensive","genres":["classical"],"level":[],"age":null,"city":"New York","country":"US","venue":null,"season":"unknown","start":null,"end":null,"sessions":[],"status":null,"deadline":null,"appUrl":"https://www.joffreyballetschool.com/auditions-2/","reqs":["video"],"prices":[],"url":"https://www.joffreyballetschool.com/summer-intensives/joffrey-las-vegas-ballet/"},{"id":"joffrey-ballet-school/joffrey-las-vegas-jazz-and-contemporary","title":"Joffrey Las Vegas Jazz and Contemporary","org":"Joffrey Ballet School","orgSlug":"joffrey-ballet-school","kind":"intensive","genres":["contemporary"],"level":[],"age":null,"city":"New York","country":"US","venue":null,"season":"unknown","start":null,"end":null,"sessions":[],"status":null,"deadline":null,"appUrl":"https://www.joffreyballetschool.com/auditions-2/","reqs":["video"],"prices":[],"url":"https://www.joffreyballetschool.com/summer-intensives/joffrey-las-vegas-jazz-and-contemporary/"},{"id":"joffrey-ballet-school/joffrey-miami-ballet-intensive","title":"Joffrey Miami Ballet","org":"Joffrey Ballet School","orgSlug":"joffrey-ballet-school","kind":"intensive","genres":["classical"],"level":[],"age":null,"city":"New York","country":"US","venue":null,"season":"unknown","start":null,"end":null,"sessions":[],"status":null,"deadline":null,"appUrl":"https://www.joffreyballetschool.com/auditions-2/","reqs":["video"],"prices":[],"url":"https://www.joffreyballetschool.com/summer-intensives/joffrey-miami-ballet-intensive/"},{"id":"joffrey-ballet-school/joffrey-miami-ballet-contemporary-intensive","title":"Joffrey Miami Jazz & Contemporary","org":"Joffrey Ballet School","orgSlug":"joffrey-ballet-school","kind":"intensive","genres":["contemporary"],"level":[],"age":null,"city":"New York","country":"US","venue":null,"season":"unknown","start":null,"end":null,"sessions":[],"status":null,"deadline":null,"appUrl":"https://www.joffreyballetschool.com/auditions-2/","reqs":["video"],"prices":[],"url":"https://www.joffreyballetschool.com/summer-intensives/joffrey-miami-jazz-contemporary-intensive/"},{"id":"joffrey-ballet-school/joffrey-midwest","title":"Joffrey Midwest","org":"Joffrey Ballet School","orgSlug":"joffrey-ballet-school","kind":"intensive","genres":["contemporary"],"level":[],"age":null,"city":"New York","country":"US","venue":null,"season":"unknown","start":null,"end":null,"sessions":[],"status":null,"deadline":null,"appUrl":"https://www.joffreyballetschool.com/auditions-2/","reqs":["video"],"prices":[],"url":"https://www.joffreyballetschool.com/summer-intensives/joffrey-midwest/"},{"id":"joffrey-ballet-school/nyc-ballet-winter-workshop","title":"Joffrey NY Ballet Winter Workshop","org":"Joffrey Ballet School","orgSlug":"joffrey-ballet-school","kind":"workshop","genres":["classical"],"level":[],"age":null,"city":"New York","country":"US","venue":null,"season":"2027","start":"2027-01-02","end":"2027-01-04","sessions":[],"status":null,"deadline":null,"appUrl":"https://www.joffreyballetschool.com/auditions-2/","reqs":["video"],"prices":[],"url":"https://www.joffreyballetschool.com/workshops/summer-sampler/joffrey-ny-ballet-winter-workshop/"},{"id":"joffrey-ballet-school/26-27-joffrey-ny-contemporary-ballet-winter-workshop","title":"Joffrey NY Contemporary Ballet Winter Workshop","org":"Joffrey Ballet School","orgSlug":"joffrey-ballet-school","kind":"workshop","genres":["contemporary","classical"],"level":[],"age":null,"city":"New York","country":"US","venue":null,"season":"2026","start":"2026-12-28","end":"2026-12-30","sessions":[],"status":null,"deadline":null,"appUrl":"https://www.joffreyballetschool.com/auditions-2/","reqs":["video"],"prices":[],"url":"https://www.joffreyballetschool.com/workshops/summer-sampler/joffrey-ny-contemporary-ballet-winter-workshop/"},{"id":"joffrey-ballet-school/2024-nyc-jazz-contemporary-winter-workshop-spectrum","title":"Joffrey NY Jazz & Contemporary Winter Workshop","org":"Joffrey Ballet School","orgSlug":"joffrey-ballet-school","kind":"workshop","genres":["contemporary"],"level":[],"age":null,"city":"New York","country":"US","venue":null,"season":"2026","start":"2026-12-18","end":"2026-12-20","sessions":[],"status":null,"deadline":null,"appUrl":"https://www.joffreyballetschool.com/auditions-2/","reqs":["video"],"prices":[],"url":"https://www.joffreyballetschool.com/workshops/summer-sampler/joffrey-ny-jazz-contemporary-winter-workshop/"},{"id":"joffrey-ballet-school/joffrey-san-francisco","title":"Joffrey San Francisco","org":"Joffrey Ballet School","orgSlug":"joffrey-ballet-school","kind":"intensive","genres":["contemporary"],"level":[],"age":null,"city":"New York","country":"US","venue":null,"season":"unknown","start":null,"end":null,"sessions":[],"status":null,"deadline":null,"appUrl":"https://www.joffreyballetschool.com/auditions-2/","reqs":["video"],"prices":[],"url":"https://www.joffreyballetschool.com/summer-intensives/joffrey-san-francisco/"},{"id":"joffrey-ballet-school/joffrey-south-ballet-intensive","title":"Joffrey South Ballet","org":"Joffrey Ballet School","orgSlug":"joffrey-ballet-school","kind":"intensive","genres":["classical"],"level":[],"age":null,"city":"New York","country":"US","venue":null,"season":"unknown","start":null,"end":null,"sessions":[],"status":null,"deadline":null,"appUrl":"https://www.joffreyballetschool.com/auditions-2/","reqs":["video"],"prices":[],"url":"https://www.joffreyballetschool.com/summer-intensives/joffrey-south-ballet-intensive/"},{"id":"joffrey-ballet-school/joffrey-south-jazz-contemporary-intensive","title":"Joffrey South Jazz & Contemporary","org":"Joffrey Ballet School","orgSlug":"joffrey-ballet-school","kind":"intensive","genres":["contemporary"],"level":[],"age":null,"city":"New York","country":"US","venue":null,"season":"unknown","start":null,"end":null,"sessions":[],"status":null,"deadline":null,"appUrl":"https://www.joffreyballetschool.com/auditions-2/","reqs":["video"],"prices":[],"url":"https://www.joffreyballetschool.com/summer-intensives/joffrey-south-jazz-contemporary-intensive/"},{"id":"joffrey-ballet-school/summer-intensives-joffrey-switzerland","title":"Joffrey Switzerland","org":"Joffrey Ballet School","orgSlug":"joffrey-ballet-school","kind":"intensive","genres":["contemporary"],"level":[],"age":null,"city":"New York","country":"CH","venue":null,"season":"unknown","start":null,"end":null,"sessions":[],"status":null,"deadline":null,"appUrl":"https://www.joffreyballetschool.com/auditions-2/","reqs":["video"],"prices":[],"url":"https://www.joffreyballetschool.com/summer-intensives/joffrey-switzerland/"},{"id":"joffrey-ballet-school/joffrey-west","title":"Joffrey West","org":"Joffrey Ballet School","orgSlug":"joffrey-ballet-school","kind":"intensive","genres":["classical","contemporary"],"level":[],"age":null,"city":"New York","country":"US","venue":null,"season":"unknown","start":null,"end":null,"sessions":[],"status":null,"deadline":null,"appUrl":"https://www.joffreyballetschool.com/auditions-2/","reqs":["video"],"prices":[],"url":"https://www.joffreyballetschool.com/summer-intensives/joffrey-west/"},{"id":"joffrey-ballet-school/joffreyred-contemporary-ballet","title":"JoffreyRED Contemporary Ballet","org":"Joffrey Ballet School","orgSlug":"joffrey-ballet-school","kind":"intensive","genres":["contemporary"],"level":[],"age":null,"city":"New York","country":"US","venue":null,"season":"unknown","start":null,"end":null,"sessions":[],"status":null,"deadline":null,"appUrl":"https://www.joffreyballetschool.com/auditions-2/","reqs":["video"],"prices":[],"url":"https://www.joffreyballetschool.com/summer-intensives/joffreyred-contemporary-ballet/"},{"id":"joffrey-ballet-school/new-york-city-ballet-summer-intensive","title":"NYC Ballet","org":"Joffrey Ballet School","orgSlug":"joffrey-ballet-school","kind":"intensive","genres":["classical"],"level":[],"age":null,"city":"New York","country":"US","venue":null,"season":"2026","start":null,"end":null,"sessions":[],"status":null,"deadline":null,"appUrl":"https://www.joffreyballetschool.com/auditions-2/","reqs":["video"],"prices":[],"url":"https://www.joffreyballetschool.com/summer-intensives/new-york-city-ballet-summer-intensive/"},{"id":"joffrey-ballet-school/summer-intensives-new-york-city-jazz-and-contemporary","title":"New York City Jazz & Contemporary","org":"Joffrey Ballet School","orgSlug":"joffrey-ballet-school","kind":"intensive","genres":["contemporary"],"level":[],"age":null,"city":"New York","country":"US","venue":null,"season":"2026","start":"2026-07-27","end":"2026-08-07","sessions":[],"status":null,"deadline":null,"appUrl":"https://www.joffreyballetschool.com/auditions-2/","reqs":["video"],"prices":[],"url":"https://www.joffreyballetschool.com/summer-intensives/new-york-city-jazz-and-contemporary/"},{"id":"joffrey-ballet-school/summer-intensives-new-york-city-pre-professional-ballet","title":"New York City Pre-Professional Ballet","org":"Joffrey Ballet School","orgSlug":"joffrey-ballet-school","kind":"intensive","genres":["classical"],"level":[],"age":null,"city":"New York","country":"US","venue":null,"season":"unknown","start":null,"end":null,"sessions":[],"status":null,"deadline":null,"appUrl":"https://www.joffreyballetschool.com/auditions-2/","reqs":["video"],"prices":[],"url":"https://www.joffreyballetschool.com/summer-intensives/new-york-city-pre-professional-ballet/"},{"id":"joffrey-ballet-school/new-york-city-pre-professional-contemporary","title":"New York City Pre-Professional Contemporary","org":"Joffrey Ballet School","orgSlug":"joffrey-ballet-school","kind":"intensive","genres":["contemporary"],"level":[],"age":null,"city":"New York","country":"US","venue":null,"season":"unknown","start":null,"end":null,"sessions":[],"status":null,"deadline":null,"appUrl":"https://www.joffreyballetschool.com/auditions-2/","reqs":["video"],"prices":[],"url":"https://www.joffreyballetschool.com/new-york-city-pre-professional-contemporary/"},{"id":"joffrey-ballet-school/new-york-city-pre-professional-jazz-contemporary","title":"New York City Pre-Professional Jazz & Contemporary","org":"Joffrey Ballet School","orgSlug":"joffrey-ballet-school","kind":"intensive","genres":["contemporary"],"level":[],"age":null,"city":"New York","country":"US","venue":null,"season":"unknown","start":null,"end":null,"sessions":[],"status":null,"deadline":null,"appUrl":"https://www.joffreyballetschool.com/auditions-2/","reqs":["video"],"prices":[],"url":"https://www.joffreyballetschool.com/summer-intensives/new-york-city-pre-professional-jazz-contemporary/"}];
+fetch("data.json").then(function(r){if(!r.ok)throw new Error("http "+r.status);return r.json();}).then(function(DATA){
 const SEED = [
   {name:"John Cranko School", cc:"DE", city:"Stuttgart"},
   {name:"American Ballet Theatre — JKO School", cc:"US", city:"New York"},
@@ -359,18 +368,37 @@ document.getElementById("ticker").innerHTML = [...tline,...tline].map(t=>`<span>
 // ---- filters ----
 const FILTERS = {
   discipline:{label:"Discipline",key:"genres",vals:["classical","contemporary","neoclassical","jazz","repertoire","pointe"]},
-  format:{label:"Format",key:"kind",vals:["intensive","workshop","masterclass","summer-school"]},
   region:{label:"Region",key:"country",vals:[...countries].sort()},
   season:{label:"Season",key:"season",vals:[...new Set(DATA.map(o=>seasonText(o)))].sort()},
 };
-const active = {discipline:new Set(),format:new Set(),region:new Set(),season:new Set()};
+const active = {discipline:new Set(),region:new Set(),season:new Set()};
 let openOnly=false, q="", sort="az";
 
+// ---- proximity (IDR-73) ----
+let origin=null, radius=250;   // origin={lat,lon,label} once chosen; radius in km (0 = any)
+const RAD=Math.PI/180, ER=6371.0088;
+function distKm(a,b,c,d){const dla=(c-a)*RAD, dlo=(d-b)*RAD,
+  h=Math.sin(dla/2)**2+Math.cos(a*RAD)*Math.cos(c*RAD)*Math.sin(dlo/2)**2;
+  return 2*ER*Math.asin(Math.sqrt(h));}
+// reference places = the cities we hold coordinates for (powers the "near a place" picker)
+const PLACES=(()=>{const m=new Map();
+  DATA.forEach(o=>{if(o.lat!=null&&o.city){const k=`${o.city}, ${o.country}`;
+    if(!m.has(k))m.set(k,{lat:o.lat,lon:o.lon,label:k});}});
+  return [...m.values()].sort((x,y)=>x.label.localeCompare(y.label));})();
+
 const fc = document.getElementById("filters");
-let fhtml="";
+let fhtml=`<div class="fgroup nearctl"><span class="glab">Near</span>`+
+  `<button class="chip near" id="geoBtn">📍 Me</button>`+
+  `<input class="nearin" id="nearIn" list="placeList" placeholder="a city…" autocomplete="off">`+
+  `<datalist id="placeList">${PLACES.map(p=>`<option value="${p.label}"></option>`).join("")}</datalist>`+
+  `<select class="sortsel" id="radius">`+
+    [["100","100 km"],["250","250 km"],["500","500 km"],["1000","1000 km"],["0","any distance"]]
+      .map(([v,l])=>`<option value="${v}"${v===String(radius)?" selected":""}>${l}</option>`).join("")+
+  `</select>`+
+  `<button class="chip clearnear" id="clearNear" hidden>clear ✕</button></div>`;
 for(const [gk,g] of Object.entries(FILTERS)){
   fhtml+=`<div class="fgroup"><span class="glab">${g.label}</span>`;
-  fhtml+=g.vals.map(v=>`<button class="chip" data-g="${gk}" data-v="${v}">${gk==="region"?v:(KIND[v]||v)}</button>`).join("");
+  fhtml+=g.vals.map(v=>`<button class="chip" data-g="${gk}" data-v="${v}">${v}</button>`).join("");
   fhtml+=`</div>`;
 }
 fhtml+=`<div class="toggle">
@@ -391,15 +419,67 @@ document.getElementById("openToggle").addEventListener("click",function(){openOn
 document.getElementById("search").addEventListener("input",e=>{q=e.target.value.toLowerCase().trim();render();});
 document.getElementById("sort").addEventListener("change",e=>{sort=e.target.value;render();});
 
+// ---- proximity controls ----
+const nearIn=document.getElementById("nearIn"), geoBtn=document.getElementById("geoBtn"),
+      radiusSel=document.getElementById("radius"), clearNearBtn=document.getElementById("clearNear");
+function setOrigin(o){
+  origin=o;
+  nearIn.value = o && o.label!=="My location" ? o.label : "";
+  nearIn.placeholder = o && o.label==="My location" ? "My location" : "a city…";
+  clearNearBtn.hidden = !o;
+  render();
+}
+geoBtn.addEventListener("click",()=>{
+  if(!navigator.geolocation){alert("Geolocation isn't available here — pick a city instead.");return;}
+  geoBtn.textContent="…";
+  navigator.geolocation.getCurrentPosition(
+    p=>{geoBtn.textContent="📍 Me";setOrigin({lat:p.coords.latitude,lon:p.coords.longitude,label:"My location"});},
+    ()=>{geoBtn.textContent="📍 Me";alert("Couldn't read your location — pick a city instead.");});
+});
+nearIn.addEventListener("change",()=>{
+  const v=nearIn.value.trim();
+  if(!v){setOrigin(null);return;}
+  const hit=PLACES.find(p=>p.label.toLowerCase()===v.toLowerCase());
+  if(hit)setOrigin({lat:hit.lat,lon:hit.lon,label:hit.label});
+});
+radiusSel.addEventListener("change",e=>{radius=+e.target.value;render();});
+clearNearBtn.addEventListener("click",()=>setOrigin(null));
+
+// ---- shareable URL state (US-7) ----
+function syncURL(){
+  const p=new URLSearchParams();
+  if(q)p.set("q",q);
+  if(openOnly)p.set("open","1");
+  for(const g of ["discipline","region","season"]) if(active[g].size)p.set(g,[...active[g]].join(","));
+  if(origin){
+    p.set("near", origin.label==="My location"?`@${origin.lat.toFixed(4)},${origin.lon.toFixed(4)}`:origin.label);
+    p.set("r",String(radius));
+  }
+  const qs=p.toString();
+  history.replaceState(null,"",qs?`?${qs}`:location.pathname);
+}
+function restoreURL(){
+  const p=new URLSearchParams(location.search);
+  q=(p.get("q")||"").toLowerCase().trim(); if(q)document.getElementById("search").value=q;
+  openOnly=p.get("open")==="1"; if(openOnly)document.getElementById("openToggle").classList.add("on");
+  for(const g of ["discipline","region","season"]){const v=p.get(g); if(v)v.split(",").forEach(x=>active[g].add(x));}
+  fc.querySelectorAll(".chip[data-g]").forEach(c=>{const s=active[c.dataset.g]; if(s&&s.has(c.dataset.v))c.classList.add("on");});
+  const r=p.get("r"); if(r!=null){radius=+r; radiusSel.value=r;}
+  const near=p.get("near");
+  if(near&&near[0]==="@"){const[la,lo]=near.slice(1).split(",").map(Number);
+    if(isFinite(la)&&isFinite(lo)){origin={lat:la,lon:lo,label:"My location"};nearIn.placeholder="My location";clearNearBtn.hidden=false;}}
+  else if(near){const hit=PLACES.find(pp=>pp.label.toLowerCase()===near.toLowerCase());
+    if(hit){origin={lat:hit.lat,lon:hit.lon,label:hit.label};nearIn.value=hit.label;clearNearBtn.hidden=false;}}
+}
+
 // ---- filtering + render ----
 function matches(o){
   if(openOnly && o._status!=="open") return false;
   if(active.discipline.size && !o.genres.some(x=>active.discipline.has(x))) return false;
-  if(active.format.size && !active.format.has(o.kind)) return false;
   if(active.region.size && !active.region.has(o.country)) return false;
   if(active.season.size && !active.season.has(seasonText(o))) return false;
   if(q){
-    const hay=`${o.title} ${o.org} ${o.city||""} ${COUNTRY[o.country]||""} ${o.genres.join(" ")} ${o.kind}`.toLowerCase();
+    const hay=`${o.title} ${o.org} ${o.city||""} ${COUNTRY[o.country]||""} ${o.genres.join(" ")}`.toLowerCase();
     if(!hay.includes(q)) return false;
   }
   return true;
@@ -416,25 +496,61 @@ function sorted(rows){
 const list=document.getElementById("list");
 document.getElementById("ntotal").textContent=DATA.length;
 
+function rowHTML(o,i,extra){
+  return `
+    <div class="row" data-id="${o.id}" style="animation-delay:${Math.min(i*32,520)}ms">
+      <div class="no">${o._n}</div>
+      <div class="title">${o.title}</div>
+      <div class="org">${o.org}</div>
+      <div class="loc"><span class="cc">${o.country||"··"}</span>${o.city||COUNTRY[o.country]||"—"}${extra||""}</div>
+      <div class="season">${seasonText(o)}</div>
+      <div class="stat"><span class="pill ${o._status}"><span class="dot"></span>${statusText(o._status)}</span></div>
+      <span class="arrow">→</span>
+    </div>`;
+}
+function paint(html){
+  list.innerHTML=html;
+  requestAnimationFrame(()=>list.querySelectorAll(".row").forEach(r=>r.classList.add("in")));
+  list.querySelectorAll(".row").forEach(r=>r.addEventListener("click",()=>openSheet(r.dataset.id)));
+}
 function render(){
-  const rows=sorted(DATA.filter(matches));
+  syncURL();
+  const rows=DATA.filter(matches);
+  if(origin) renderNear(rows); else renderFlat(sorted(rows));
+}
+function renderFlat(rows){
   document.getElementById("n").textContent=rows.length;
   if(!rows.length){
     list.innerHTML=`<div class="empty"><div class="big">Nothing in the register matches.</div><p>Loosen a filter, or clear the search</p></div>`;
     return;
   }
-  list.innerHTML=rows.map((o,i)=>`
-    <div class="row" data-id="${o.id}" style="animation-delay:${Math.min(i*32,520)}ms">
-      <div class="no">${o._n}</div>
-      <div class="title">${o.title}<span class="kindtag">${KIND[o.kind]||o.kind}</span></div>
-      <div class="org">${o.org}</div>
-      <div class="loc"><span class="cc">${o.country||"··"}</span>${o.city||COUNTRY[o.country]||"—"}</div>
-      <div class="season">${seasonText(o)}</div>
-      <div class="stat"><span class="pill ${o._status}"><span class="dot"></span>${statusText(o._status)}</span></div>
-      <span class="arrow">→</span>
-    </div>`).join("");
-  requestAnimationFrame(()=>list.querySelectorAll(".row").forEach(r=>r.classList.add("in")));
-  list.querySelectorAll(".row").forEach(r=>r.addEventListener("click",()=>openSheet(r.dataset.id)));
+  paint(rows.map((o,i)=>rowHTML(o,i)).join(""));
+}
+const distChip=o=>` <span class="dist">${o._dist<1?"<1":Math.round(o._dist)} km</span>`;
+function renderNear(rows){
+  const located=[], online=[], unknown=[];
+  for(const o of rows){
+    if(o.lat!=null){o._dist=distKm(origin.lat,origin.lon,o.lat,o.lon);located.push(o);}
+    else if(o.online) online.push(o);
+    else unknown.push(o);
+  }
+  located.sort((a,b)=>a._dist-b._dist);
+  const within=radius?located.filter(o=>o._dist<=radius):located;
+  document.getElementById("n").textContent=within.length;
+  let i=0, html="";
+  if(within.length){
+    html+=within.map(o=>rowHTML(o,i++,distChip(o))).join("");
+  } else if(radius){
+    const near3=located.slice(0,3);
+    html+=`<div class="grouphd none">Nothing within ${radius} km of ${origin.label}.${near3.length?" Nearest:":""}</div>`+
+      near3.map(o=>rowHTML(o,i++,distChip(o))).join("")+
+      `<div class="widen">Widen the radius to see more ↑</div>`;
+  } else {
+    html+=`<div class="grouphd none">No located intensives match the current filters.</div>`;
+  }
+  if(online.length) html+=`<div class="grouphd">Online — attend from anywhere</div>`+online.map(o=>rowHTML(o,i++)).join("");
+  if(unknown.length) html+=`<div class="grouphd">Location not stated</div>`+unknown.map(o=>rowHTML(o,i++)).join("");
+  paint(html);
 }
 
 // ---- forthcoming ----
@@ -473,7 +589,7 @@ function openSheet(id){
       <span>Entry № ${o._n}</span>
       <button class="sheet-close" id="closeBtn">Close ✕</button>
     </div>
-    <div class="sheet-eyebrow"><span>${KIND[o.kind]||o.kind}</span>${genres?`<span>${genres}</span>`:""}</div>
+    <div class="sheet-eyebrow">${genres?`<span>${genres}</span>`:""}${o.online?`<span>Online</span>`:""}</div>
     <h2>${o.title}</h2>
     <div class="org-line"><b>${o.org}</b><br>${o.venue?o.venue+" · ":""}${o.city||""}${o.city?", ":""}${COUNTRY[o.country]||o.country||""}</div>
 
@@ -531,7 +647,9 @@ function tick(){
 }
 tick(); setInterval(tick,30000);
 
+restoreURL();
 render();
+}).catch(function(){document.getElementById("list").innerHTML='<div class=\'empty\'><div class=\'big\'>Could not load the register.</div><p>Open this page through a local web server (e.g. <code>python -m http.server</code> in the repo root, then visit <code>/concept/</code>) — <code>file://</code> cannot fetch <code>data.json</code>.</p></div>';});
 </script>
 </body>
 </html>

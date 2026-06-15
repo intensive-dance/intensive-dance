@@ -110,9 +110,12 @@ src/intensive_dance/
   erd.py           # derive/drift-check docs/erd.md (Mermaid ERD) from models
   geo.py           # PURE gazetteer half: model, (country,city)->coords load/save, haversine, coverage
   geocode.py       # NETWORK half (hand-run): fill data/gazetteer.json via Nominatim — never in scrape/CI
+  bundle.py        # build concept/data.json: live offerings + joined coords for the consumer page
 data/<slug>.json   # the store — committed, one file per provider
 data/gazetteer.json # committed (country,city)->coords for proximity search (IDR-73); NOT per-provider
 providers.json     # the register; each has status seed|live
+concept/index.html # the static consumer page (fetches concept/data.json; proximity search, IDR-73)
+concept/data.json  # derived consumer bundle (intensive_dance.bundle); regenerate on demand, not CI-gated
 tests/             # pytest, inline HTML/JSON snippets, no network
 ```
 

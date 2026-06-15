@@ -308,7 +308,10 @@ ethos), but it surfaces the exact intent the photography business serves; no in-
       coords source; coverage report is non-blocking.
 
 **PR 2 — consumer/frontend:**
-- [ ] Consumer page: location control, radius, distance column + sort, online/unknown groups,
-      empty-in-radius prompt, URL-encoded state.
-- [ ] UC1–UC7 demonstrably pass; gate green (`ruff` · `ty` · `pytest` · `schema` · `validate`).
+- [x] `intensive_dance.bundle` builds `concept/data.json` (live offerings + joined coords); the
+      page now fetches it instead of the stale inline snapshot (and drops the removed `kind`).
+- [x] Consumer page: location control (📍 near me / city picker), radius, distance chips,
+      online/unknown groups, empty-in-radius prompt with nearest-3 preview, URL-encoded state.
+- [x] UC1–UC7 exercised via a DOM harness (initial render + proximity paths run clean); gate
+      green (`ruff` · `ty` · `pytest` · `schema` · `validate`). Visual review pending.
 ```
