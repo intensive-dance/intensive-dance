@@ -33,7 +33,7 @@
       "timezone": "Europe/Warsaw"
     },
     "source": {
-      "attemptedAt": "2026-06-14T12:30:30.590999Z",
+      "attemptedAt": "2026-06-15T18:58:31.068784Z",
       "hash": "sha256:be7a89ad1557aaa4703558b7dfc587d73f88dea59da0ede79767614d00dbf540",
       "provider": "art-ballet-gdynia",
       "scrapedAt": "2026-06-08T21:36:01.938305Z",
@@ -76,7 +76,7 @@
       "timezone": "Europe/Warsaw"
     },
     "source": {
-      "attemptedAt": "2026-06-14T12:30:30.590999Z",
+      "attemptedAt": "2026-06-15T18:58:31.068784Z",
       "hash": "sha256:5de39235047c36c0f425d0ac9a45e302c7afc71ae09a9c2ebf9d01fbf861abf4",
       "provider": "art-ballet-gdynia",
       "scrapedAt": "2026-06-08T21:36:01.938368Z",
