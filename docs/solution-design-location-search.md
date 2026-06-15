@@ -3,10 +3,10 @@
 | | |
 |---|---|
 | **Key** | IDR-73 (proposed) |
-| **Status** | Draft for review |
-| **Type** | Consumer feature (frontend + a committed geocoding artifact) |
+| **Status** | Built — backend feed here; UI extracted to `ha1des/intensive-dance-ui` |
+| **Type** | Consumer feature (data backend publishes a feed; UI is a separate repo) |
 | **Author / PO** | T.-F. Pluto |
-| **Depends on** | the committed store (`data/*.json`), the consumer page concept (`concept/index.html`) |
+| **Depends on** | the committed store (`data/*.json`) + `data/gazetteer.json`; UI = separate repo `ha1des/intensive-dance-ui` |
 | **Touches data model** | yes — adds a *derived* gazetteer; canonical store stays scrape-pure |
 
 ---
@@ -232,7 +232,12 @@ sequenceDiagram
   P-->>U: nearest-first list + distance, online group, unknown group
 ```
 
-### 5.4 Frontend UX (fits the existing concept page)
+### 5.4 Frontend UX (in the UI repo `ha1des/intensive-dance-ui`)
+
+**Where it lives:** the UI is the **separate private repo `ha1des/intensive-dance-ui`** (static page,
+no backend). *This* repo (the data backend) publishes the feed via `intensive_dance.bundle`
+(`--out ../intensive-dance-ui/data.json`, or stdout); the page `fetch`es that `data.json`. Keeping
+the UI out of the backend keeps the latter a clean, API-first data product.
 
 - Add to the existing filter bar: a **location control** ("📍 Near me" | "Near a place ▾" with a
   datalist of known cities) and a **radius** slider/stepper (e.g. 50 / 100 / 250 / 500 / 1000 km /
@@ -307,8 +312,12 @@ ethos), but it surfaces the exact intent the photography business serves; no in-
 - [x] `AGENTS.md` note: geocoding is enrichment-only (never in `scrape()`); gazetteer is the
       coords source; coverage report is non-blocking.
 
-**PR 2 — consumer/frontend:**
-- [ ] Consumer page: location control, radius, distance column + sort, online/unknown groups,
-      empty-in-radius prompt, URL-encoded state.
-- [ ] UC1–UC7 demonstrably pass; gate green (`ruff` · `ty` · `pytest` · `schema` · `validate`).
+**PR 2 — feed + UI (extracted to `ha1des/intensive-dance-ui`):**
+- [x] `intensive_dance.bundle` produces the consumer feed (live offerings + joined coords) into
+      the UI repo's `data.json` (or stdout); `tests/test_bundle.py` covers the projection.
+- [x] UI repo: register page with location control (📍 near me / city picker), radius, distance
+      chips, online/unknown groups, empty-in-radius prompt with nearest-3 preview, URL state.
+      UC1–UC7 exercised via a DOM harness; **visual review pending**.
+- [x] `concept/` removed from this repo; `AGENTS.md` records that the UI lives in the separate
+      repo and the backend publishes the feed.
 ```
