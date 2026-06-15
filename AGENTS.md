@@ -110,6 +110,7 @@ src/intensive_dance/
   erd.py           # derive/drift-check docs/erd.md (Mermaid ERD) from models
   geo.py           # PURE gazetteer half: model, (country,city)->coords load/save, haversine, coverage
   geocode.py       # NETWORK half (hand-run): fill data/gazetteer.json via Nominatim — never in scrape/CI
+  bundle.py        # produce the consumer FEED (live offerings + joined coords) for the UI repo
 data/<slug>.json   # the store — committed, one file per provider
 data/gazetteer.json # committed (country,city)->coords for proximity search (IDR-73); NOT per-provider
 providers.json     # the register; each has status seed|live
@@ -361,6 +362,12 @@ that — it's how the next agent knows the source's shape without re-crawling.
   gate** — a scraper adding a provider in a new city must not block an unrelated
   PR; the consumer falls back to a "location unknown" group and a later `geocode`
   run tops it up. Design: `docs/solution-design-location-search.md` (IDR-73).
+- **This repo is the data backend — the customer UI lives elsewhere.** The
+  consumer-facing register (HTML/JS) is the **separate private repo
+  `ha1des/intensive-dance-ui`**; do NOT add UI here. This repo *publishes a feed*
+  it consumes: `intensive_dance.bundle` projects the live store + gazetteer coords
+  into one JSON (`bundle --out ../intensive-dance-ui/data.json`, or stdout). The
+  feed generator stays here (it owns the data); the page that renders it does not.
 
 ---
 
