@@ -150,3 +150,32 @@ def test_undated_week_fails_open():
     assert tba.schedule.start is None
     assert tba.schedule.end is None
     assert tba.schedule.season == "unknown"
+
+
+# --- the embedded registration form must not leak into the summary/notes -------
+
+_RENDERED_WITH_FORM = """
+[et_pb_text]
+Week 1: Monday 27 July to Friday 31 July 2026
+Week 2: Tuesday 4 August to Saturday 8 August 2026 PRICE: €300 per week
+<style>.gform_wrapper{--gf-color:#204ce5;font-size:14px}</style>
+FACULTY
+<form id="gform_1"><label>Student's Name *</label>
+<select><option>Ireland</option><option>France</option></select></form>
+2026 Summer Intensive Registration Form * indicates required fields
+[/et_pb_text]
+"""
+
+
+def test_registration_form_css_and_fields_do_not_leak_into_notes():
+    summary = bi._summary_text(_RENDERED_WITH_FORM)
+    # CSS, form field labels, country options, and the gform heading are all gone.
+    for junk in ("gform", "--gf-color", "Student's Name", "Ireland", "indicates required fields"):
+        assert junk not in summary, junk
+    # The real week info survives.
+    assert "Week 2: Tuesday 4 August" in summary
+    assert "€300 per week" in summary
+    # And the last week's notes stay clean (no FACULTY/form tail).
+    _, week2 = bi._build_offerings(_RENDERED_WITH_FORM, _TODAY)
+    assert "FACULTY" not in (week2.schedule.notes or "")
+    assert "Student's Name" not in (week2.schedule.notes or "")
