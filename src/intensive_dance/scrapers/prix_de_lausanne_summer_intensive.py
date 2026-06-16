@@ -24,10 +24,12 @@ WHAT THE PAGE GIVES US (verified live 2026-06):
     between 7 February 2008 and 6 February 2012." We keep that verbatim in the
     schedule note and derive the age band the dancers reach by the course
     (14–18 in July 2026) from the two birthdates.
-  - STATUS: registration ran 15 March – 15 April 2026 and has closed by the
-    scrape date, so `application.status` is derived from the window vs. today —
-    `open` while inside it, else `closed`. Closing the booking window does not
-    cancel the edition (the course still takes place), so `lifecycle` stays
+  - REGISTRATION WINDOW: registration ran 15 March – 15 April 2026. We keep the
+    dated bounds (`opensAt` / `deadline`) and leave `application.status` unset —
+    the page states a window, not a current status, and deriving open/closed from
+    `today` would invent a status and break the no-diff rule (status is hashed).
+    Consumers derive open/closed from those dates. Closing the booking window does
+    not cancel the edition (the course still takes place), so `lifecycle` stays
     `scheduled` (the IDR-24 closed ≠ cancelled distinction).
   - REQUIREMENTS: applicants "must upload their video by 15 April 2026" — a video
     submission, but the page never describes its content (variations? free?), so
@@ -52,7 +54,6 @@ from selectolax.parser import HTMLParser
 from intensive_dance import parse
 from intensive_dance.models import (
     Application,
-    ApplicationStatus,
     Genre,
     Location,
     Offering,
@@ -90,11 +91,11 @@ def scrape(client: httpx.Client) -> list[Offering]:
     # Pin EN: the site is bilingual (EN/FR); EN is the canonical brief.
     resp = client.get(PAGE, headers={"Accept-Language": "en"})
     resp.raise_for_status()
-    offering = _build_offering(resp.text, date.today())
+    offering = _build_offering(resp.text)
     return [offering] if offering is not None else []
 
 
-def _build_offering(html: str, today: date) -> Offering | None:
+def _build_offering(html: str) -> Offering | None:
     tree = HTMLParser(html)
     for node in tree.css("script, style, noscript"):
         node.decompose()
@@ -125,7 +126,11 @@ def _build_offering(html: str, today: date) -> Offering | None:
         ),
         prices=_prices(text),
         application=Application(
-            status=_status(reg_open, reg_close, today),
+            # The page states a registration window (opens/closes dates), not a
+            # current status — keep the dated bounds (opensAt/deadline) and leave
+            # `status` unset. Deriving open/upcoming/closed from `today` invents a
+            # status and is non-deterministic (status is hashed). Consumers derive
+            # it from opensAt/deadline vs today.
             opensAt=reg_open,
             deadline=_video_deadline(text) or reg_close,
             url=PAGE,
@@ -223,16 +228,6 @@ def _registration_window(text: str) -> tuple[date | None, date | None]:
         date(y, parse.MONTHS[m1.lower()], int(d1)),
         date(y, parse.MONTHS[m2.lower()], int(d2)),
     )
-
-
-def _status(reg_open: date | None, reg_close: date | None, today: date) -> ApplicationStatus | None:
-    if reg_open is None or reg_close is None:
-        return None
-    if today < reg_open:
-        return "upcoming"
-    if today > reg_close:
-        return "closed"
-    return "open"
 
 
 # --- video deadline: "upload their video by 15 April 2026" ---------------------

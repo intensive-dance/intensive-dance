@@ -47,8 +47,9 @@ WHAT THIS SCRAPER EXERCISES (verified live 2026-06-08):
     YSTP states no syllabus → classical only.
   - REQUIREMENTS = VIDEO (unspecific): admission is by audition with an open
     in-person *or* recorded-video route (audition page), the ABT/Boston shape.
-  - APPLICATION status/deadline (SIP): the video window "January 5 - February 15,
-    2026" → deadline that date; status="closed" once it has passed.
+  - APPLICATION deadline (SIP): the video window "January 5 - February 15, 2026"
+    → deadline = that date; `status` stays unset (the page states a deadline, not
+    a status — consumers derive closed-ness from deadline < today).
 """
 
 from __future__ import annotations
@@ -62,7 +63,6 @@ from selectolax.parser import HTMLParser
 from intensive_dance import parse
 from intensive_dance.models import (
     Application,
-    ApplicationStatus,
     Genre,
     Location,
     Offering,
@@ -105,7 +105,7 @@ def scrape(client: httpx.Client) -> list[Offering]:
     tuition = _fetch_text(client, TUITION_URL)
     audition = _fetch_text(client, AUDITION_URL)
     ystp = _fetch_text(client, YSTP_URL)
-    return _build_offerings(sip, curriculum, tuition, audition, ystp, date.today())
+    return _build_offerings(sip, curriculum, tuition, audition, ystp)
 
 
 def _fetch_text(client: httpx.Client, url: str) -> str:
@@ -123,13 +123,13 @@ def _page_text(html: str) -> str:
 
 
 def _build_offerings(
-    sip: str, curriculum: str, tuition: str, audition: str, ystp: str, today: date
+    sip: str, curriculum: str, tuition: str, audition: str, ystp: str
 ) -> list[Offering]:
     offerings: list[Offering] = []
-    sip_offering = _build_sip(sip, curriculum, tuition, audition, today)
+    sip_offering = _build_sip(sip, curriculum, tuition, audition)
     if sip_offering is not None:
         offerings.append(sip_offering)
-    offerings.extend(_build_ystp(ystp, tuition, today))
+    offerings.extend(_build_ystp(ystp, tuition))
     return offerings
 
 
@@ -181,9 +181,7 @@ def _age_open(text: str) -> dict | None:
 # --- Summer Intensive Program -------------------------------------------------
 
 
-def _build_sip(
-    sip: str, curriculum: str, tuition: str, audition: str, today: date
-) -> Offering | None:
+def _build_sip(sip: str, curriculum: str, tuition: str, audition: str) -> Offering | None:
     start, end = _range(sip)
     if start is None:
         return None
@@ -201,7 +199,10 @@ def _build_sip(
         schedule=Schedule(season=str(year), start=start, end=end, timezone=TZ),
         prices=_sip_prices(tuition),
         application=Application(
-            status=_status(deadline, today),
+            # The page states a video-audition deadline, not a current status —
+            # keep the deadline and leave `status` unset (deriving "closed" from
+            # today > deadline invents a status and breaks the no-diff rule, since
+            # status is hashed). Consumers derive closed-ness from deadline < today.
             deadline=deadline,
             url=AUDITION_URL,
             requirements=[VideoReq(specificity="unspecific", description=_AUDITION_NOTE)],
@@ -277,14 +278,10 @@ def _sip_deadline(audition: str, year: int) -> date | None:
     return date(int(m.group(3)), parse.MONTHS[m.group(1).lower()], int(m.group(2)))
 
 
-def _status(deadline: date | None, today: date) -> ApplicationStatus | None:
-    return "closed" if deadline is not None and today > deadline else None
-
-
 # --- Youth Summer Training Program --------------------------------------------
 
 
-def _build_ystp(ystp: str, tuition: str, today: date) -> list[Offering]:  # noqa: ARG001
+def _build_ystp(ystp: str, tuition: str) -> list[Offering]:
     age = _age_open(ystp)
     genres: list[Genre] = ["classical"]
     section = _YSTP_SECTION.search(tuition)

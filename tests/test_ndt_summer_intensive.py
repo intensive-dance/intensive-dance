@@ -78,11 +78,9 @@ _NO_DATE_HTML = """\
 </html>
 """
 
-_TODAY = date(2026, 6, 8)
-
 
 def test_happy_path_emits_one_offering():
-    offerings = _build_offerings(_INFO_HTML, _AUDITION_HTML, _TODAY)
+    offerings = _build_offerings(_INFO_HTML, _AUDITION_HTML)
     assert len(offerings) == 1
     o = offerings[0]
     assert o.id == "ndt-summer-intensive/2026"
@@ -90,7 +88,7 @@ def test_happy_path_emits_one_offering():
 
 
 def test_schedule():
-    offerings = _build_offerings(_INFO_HTML, _AUDITION_HTML, _TODAY)
+    offerings = _build_offerings(_INFO_HTML, _AUDITION_HTML)
     o = offerings[0]
     assert o.schedule.start == date(2026, 7, 27)
     assert o.schedule.end == date(2026, 8, 8)
@@ -99,7 +97,7 @@ def test_schedule():
 
 
 def test_age_range():
-    offerings = _build_offerings(_INFO_HTML, _AUDITION_HTML, _TODAY)
+    offerings = _build_offerings(_INFO_HTML, _AUDITION_HTML)
     o = offerings[0]
     assert o.age_range is not None
     assert o.age_range["min"] == 16
@@ -107,13 +105,13 @@ def test_age_range():
 
 
 def test_genres_contemporary():
-    offerings = _build_offerings(_INFO_HTML, _AUDITION_HTML, _TODAY)
+    offerings = _build_offerings(_INFO_HTML, _AUDITION_HTML)
     o = offerings[0]
     assert "contemporary" in o.genres
 
 
 def test_prices():
-    offerings = _build_offerings(_INFO_HTML, _AUDITION_HTML, _TODAY)
+    offerings = _build_offerings(_INFO_HTML, _AUDITION_HTML)
     o = offerings[0]
     assert len(o.prices) == 2  # noqa: PLR2004
     tuition = next(p for p in o.prices if "tuition" in p.includes)
@@ -124,21 +122,29 @@ def test_prices():
 
 
 def test_application_dates():
-    offerings = _build_offerings(_INFO_HTML, _AUDITION_HTML, _TODAY)
+    offerings = _build_offerings(_INFO_HTML, _AUDITION_HTML)
     o = offerings[0]
     assert o.application.opens_at == date(2026, 1, 12)
     assert o.application.deadline == date(2026, 2, 9)
 
 
-def test_application_status_closed_after_deadline():
-    # Scraping after deadline → status=closed
-    offerings = _build_offerings(_INFO_HTML, _AUDITION_HTML, date(2026, 3, 1))
-    o = offerings[0]
-    assert o.application.status == "closed"
+def test_application_status_from_explicit_phrase():
+    # Read the page's own statement ("no longer accepting … applications") → closed,
+    # not date math. The fixture carries that phrase.
+    offerings = _build_offerings(_INFO_HTML, _AUDITION_HTML)
+    assert offerings[0].application.status == "closed"
+
+
+def test_application_status_unset_when_not_stated():
+    info = _INFO_HTML.replace(
+        "We are no longer accepting audition applications for NDT Summer Intensive 2026", ""
+    )
+    offerings = _build_offerings(info, _AUDITION_HTML)
+    assert offerings[0].application.status is None
 
 
 def test_video_requirement():
-    offerings = _build_offerings(_INFO_HTML, _AUDITION_HTML, _TODAY)
+    offerings = _build_offerings(_INFO_HTML, _AUDITION_HTML)
     o = offerings[0]
     reqs = o.application.requirements
     assert len(reqs) == 1
@@ -151,12 +157,12 @@ def test_video_requirement():
 
 def test_no_date_emits_nothing():
     """If the info page has no dated edition, no Offering is emitted."""
-    offerings = _build_offerings(_NO_DATE_HTML, "", _TODAY)
+    offerings = _build_offerings(_NO_DATE_HTML, "")
     assert offerings == []
 
 
 def test_location():
-    offerings = _build_offerings(_INFO_HTML, _AUDITION_HTML, _TODAY)
+    offerings = _build_offerings(_INFO_HTML, _AUDITION_HTML)
     o = offerings[0]
     assert o.location is not None
     assert o.location.city == "The Hague"

@@ -15,7 +15,6 @@
           "type": "video"
         }
       ],
-      "status": "closed",
       "url": "https://www.prixdelausanne.org/summer-intensive/"
     },
     "genres": [
@@ -56,9 +55,9 @@
     },
     "source": {
       "attemptedAt": "2026-06-15T08:48:44.961182Z",
-      "hash": "sha256:87e952eb5deff687dd23e4fe98e00a8a9e65ce1029ef515659b2f402b8d936ee",
+      "hash": "sha256:e675d758189397618864bd7989d39ac6795c478d10863427e47c33c9f732795a",
       "provider": "prix-de-lausanne-summer-intensive",
-      "scrapedAt": "2026-06-06T19:42:44.217432Z",
+      "scrapedAt": "2026-06-16T09:21:03.153322Z",
       "url": "https://www.prixdelausanne.org/summer-intensive/"
     },
     "teachers": [],

@@ -141,7 +141,7 @@ def test_sip_prices_labeled_with_inclusions():
     ]
 
 
-# --- SIP deadline / status ----------------------------------------------------
+# --- SIP deadline -------------------------------------------------------------
 
 
 def test_sip_deadline_from_video_window():
@@ -151,13 +151,6 @@ def test_sip_deadline_from_video_window():
 def test_sip_deadline_rejected_when_year_mismatches_cycle():
     # The window names 2026; an SIP cycle for 2027 must not borrow it.
     assert hba._sip_deadline(_text(_AUDITION), 2027) is None
-
-
-def test_sip_status_closed_after_deadline():
-    deadline = date(2026, 2, 15)
-    assert hba._status(deadline, date(2026, 3, 1)) == "closed"
-    assert hba._status(deadline, date(2026, 1, 1)) is None
-    assert hba._status(None, date(2026, 3, 1)) is None
 
 
 # --- YSTP per-session prices --------------------------------------------------
@@ -189,7 +182,6 @@ def test_build_offerings_sip_and_two_ystp_sessions():
         _text(_TUITION),
         _text(_AUDITION),
         _text(_YSTP),
-        date(2026, 1, 1),
     )
     ids = [o.id for o in offerings]
     assert ids == [
@@ -231,16 +223,17 @@ def test_build_offerings_sip_and_two_ystp_sessions():
     assert [p.amount for p in s2.prices] == [750.0, 1500.0, 75.0]
 
 
-def test_status_closed_when_window_passed_end_to_end():
+def test_sip_keeps_deadline_without_inventing_status():
     offerings = hba._build_offerings(
         _text(_SIP),
         _text(_CURRICULUM),
         _text(_TUITION),
         _text(_AUDITION),
         _text(_YSTP),
-        date(2026, 3, 1),
     )
-    assert offerings[0].application.status == "closed"
+    sip = offerings[0]
+    assert sip.application.deadline == date(2026, 2, 15)
+    assert sip.application.status is None
 
 
 def test_parse_amount_used_for_thousands():

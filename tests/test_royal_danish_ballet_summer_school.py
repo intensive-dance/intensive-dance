@@ -25,13 +25,16 @@ The course is selective and all applicants must upload a link to an audition vid
 
 
 def test_build_offering_full():
-    o = rdb._build_offering(HTML, date(2026, 6, 5))
+    o = rdb._build_offering(HTML)
     assert o is not None
     assert o.id == "royal-danish-ballet-summer-school/summer-school-2026"
     assert o.lifecycle == "scheduled"
     assert o.schedule.start == date(2026, 7, 20)
     assert o.schedule.end == date(2026, 8, 1)
     assert o.age_range == {"min": 12, "max": 21}
+    # The page states a deadline, not a status — status stays unset.
+    assert o.application.deadline == date(2026, 3, 20)
+    assert o.application.status is None
 
 
 def test_date_range_shared_year():
@@ -57,12 +60,8 @@ def test_prices_three_tiers():
     ]
 
 
-def test_application_closed_after_deadline():
-    deadline = rdb._deadline(HTML)
-    assert deadline == date(2026, 3, 20)
-    assert rdb._status(deadline, date(2026, 6, 5)) == "closed"
-    assert rdb._status(deadline, date(2026, 1, 1)) is None
-    assert rdb._status(None, date(2026, 6, 5)) is None
+def test_deadline_parsed():
+    assert rdb._deadline(HTML) == date(2026, 3, 20)
 
 
 def test_requirements_video():

@@ -171,7 +171,6 @@ def _build_milan_offering(html: str) -> Offering | None:
         return None
     season = str(start.year)
     deadline = _milan_deadline(text)
-    today = date.today()
 
     return Offering(
         id=f"dart-dance-company/italy-summer-master-intensive-{season}",
@@ -190,7 +189,9 @@ def _build_milan_offering(html: str) -> Offering | None:
         teachers=_milan_teachers(text),
         prices=_milan_prices(text),
         application=Application(
-            status="closed" if (deadline and deadline < today) else None,
+            # The page states a deadline, not a current status — keep the deadline
+            # and leave `status` unset (deriving "closed" from deadline < today
+            # invents a status and breaks the no-diff rule, since status is hashed).
             deadline=deadline,
             requirements=_milan_requirements(text),
             notes=(

@@ -138,8 +138,7 @@
           "specificity": "unspecific",
           "type": "video"
         }
-      ],
-      "status": "closed"
+      ]
     },
     "genres": [
       "repertoire"
@@ -178,9 +177,9 @@
     },
     "source": {
       "attemptedAt": "2026-06-15T21:40:55.785936Z",
-      "hash": "sha256:611cea8d2310b84819be88ea2a818570ca42fbfb8408aff693cbd2b5cbee2a85",
+      "hash": "sha256:7234d2bde53df3035b03a7575bccf64f6960d63158ca471eed06c30d8d214e4e",
       "provider": "summer-sensation-intensive",
-      "scrapedAt": "2026-06-14T15:01:43.484403Z",
+      "scrapedAt": "2026-06-16T09:21:09.070444Z",
       "url": "https://www.dart.theater/summer-intensive-milan"
     },
     "teachers": [

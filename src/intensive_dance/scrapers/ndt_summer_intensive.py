@@ -37,6 +37,7 @@ from selectolax.parser import HTMLParser
 from intensive_dance import parse
 from intensive_dance.models import (
     Application,
+    ApplicationStatus,
     Genre,
     Location,
     Offering,
@@ -70,10 +71,10 @@ def scrape(client: httpx.Client) -> list[Offering]:
     aud_resp = client.get(_AUDITION_URL)
     aud_html = aud_resp.text if aud_resp.is_success else ""
 
-    return _build_offerings(html, aud_html, date.today())
+    return _build_offerings(html, aud_html)
 
 
-def _build_offerings(html: str, aud_html: str, today: date) -> list[Offering]:  # noqa: ARG001
+def _build_offerings(html: str, aud_html: str) -> list[Offering]:
     text = _extract_text(html)
     aud_text = _extract_text(aud_html)
 
@@ -110,9 +111,12 @@ def _build_offerings(html: str, aud_html: str, today: date) -> list[Offering]:  
             ),
             prices=_prices(text),
             application=Application(
-                # Application closes well before the course; by the time the scraper
-                # runs in summer the window is closed — but we don't hardcode status.
-                status="closed" if deadline and today > deadline else None,
+                # Status from the page's own explicit statement, not date math: the
+                # info page says "no longer accepting audition applications" when
+                # closed. Deriving "closed" from today > deadline would invent a
+                # status and break the no-diff rule (status is hashed); reading the
+                # stated phrase is faithful and deterministic.
+                status=_status(text),
                 opensAt=opens_at,
                 deadline=deadline,
                 url=_AUDITION_URL,
@@ -181,6 +185,14 @@ def _course_dates(text: str) -> tuple[date | None, date | None]:
         num = parse.MONTHS[mo.lower()]
         return date(y, num, int(d1)), date(y, num, int(d2))
     return None, None
+
+
+def _status(text: str) -> ApplicationStatus | None:
+    """Read the page's explicit application state — "(we are) no longer accepting
+    audition applications" → closed. Otherwise unset (faithful, fail open)."""
+    if re.search(r"no longer accepting", text, re.IGNORECASE):
+        return "closed"
+    return None
 
 
 def _date_note(text: str) -> str | None:
