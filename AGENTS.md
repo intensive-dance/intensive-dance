@@ -276,8 +276,12 @@ the **flash / flash-lite** models (`gemini-2.5-flash`, `gemini-flash-latest`,
 `gemini-flash-lite-latest`) — fast, cheap, grounding-capable. The response carries
 `candidates[0].groundingMetadata` (`webSearchQueries`, `groundingChunks` with
 source URLs) — use it to verify the answer is actually sourced, not hallucinated.
-Still a **dev/enrichment** tool, never the live `scrape()` path.
-(`workflow_dispatch`, prints the reply).
+**Trap:** the proxy is Cloudflare-fronted and 403s (`error code: 1010`, "browser
+banned") on a default urllib/httpx UA — send a normal Chrome `User-Agent` and it
+passes (the OpenAI SDK already does; a hand-rolled request must set it). Still a
+**dev/enrichment** tool, never the live `scrape()` path. A ready-made grounded-query
+helper + a data-correctness review playbook live in the **`data-review` skill**
+(`.claude/skills/data-review/`).
 
 ---
 
