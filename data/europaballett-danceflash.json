@@ -47,6 +47,7 @@
       "timezone": "Europe/Vienna"
     },
     "source": {
+      "attemptedAt": "2026-06-16T13:20:12.075033Z",
       "hash": "sha256:73f21b0fa541b21824f86b736db71a17d74c61edcc182d50f68c21416f2db0bc",
       "provider": "europaballett-danceflash",
       "scrapedAt": "2026-06-12T09:09:12.235493Z",
@@ -103,6 +104,7 @@
       "timezone": "Europe/Vienna"
     },
     "source": {
+      "attemptedAt": "2026-06-16T13:20:12.075033Z",
       "hash": "sha256:5226c544648f9c51d6d99b6fef061bc18fe414896714b43abb85ed2eda263e7e",
       "provider": "europaballett-danceflash",
       "scrapedAt": "2026-06-12T09:09:12.235620Z",

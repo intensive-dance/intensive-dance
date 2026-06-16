@@ -52,6 +52,7 @@
       "timezone": "Europe/Berlin"
     },
     "source": {
+      "attemptedAt": "2026-06-16T13:20:15.368888Z",
       "hash": "sha256:8ec638496a4305b6185abad1816bb533b9056ecda15d19bf863e8f9f69608147",
       "provider": "ballett-dortmund",
       "scrapedAt": "2026-06-12T01:11:00.370695Z",
