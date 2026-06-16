@@ -148,18 +148,17 @@ def test_requirements_differ_per_offering() -> None:
     assert [type(r) for r in bloom.application.requirements] == [HeadshotReq]
 
 
-def test_application_window_and_status() -> None:
-    # Before the window opens.
-    upcoming = fnb._build_offerings(_PAGE, date(2025, 1, 1))[0]
-    assert upcoming.application.opens_at == date(2025, 12, 15)
-    assert upcoming.application.deadline == date(2026, 4, 30)
-    assert upcoming.application.status == "upcoming"
-    # Within the window.
-    assert _offerings(date(2026, 2, 1))[0].application.status == "open"
-    # After the deadline but before the course ends → still emitted, status closed.
-    after = fnb._build_offerings(_PAGE, date(2026, 6, 5))
-    assert len(after) == 2
-    assert after[0].application.status == "closed"
+def test_application_window_kept_without_deriving_status() -> None:
+    # The page states an application window; we keep the dated bounds and leave
+    # status unset (no date-derived status — that would be invented and would
+    # change as `today` crosses the deadline, breaking the no-diff rule).
+    o = fnb._build_offerings(_PAGE, date(2026, 2, 1))[0]
+    assert o.application.opens_at == date(2025, 12, 15)
+    assert o.application.deadline == date(2026, 4, 30)
+    assert o.application.status is None
+    # Same regardless of when the scrape runs.
+    assert fnb._build_offerings(_PAGE, date(2025, 1, 1))[0].application.status is None
+    assert fnb._build_offerings(_PAGE, date(2026, 6, 5))[0].application.status is None
 
 
 def test_course_dropped_once_it_has_ended() -> None:

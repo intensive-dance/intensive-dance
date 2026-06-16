@@ -26,7 +26,6 @@
           "type": "cv"
         }
       ],
-      "status": "closed",
       "url": "https://www.lyyti.fi/reg/International_Summer_Intensive_2026_3322"
     },
     "genres": [
@@ -81,9 +80,9 @@
     },
     "source": {
       "attemptedAt": "2026-06-14T23:57:27.086759Z",
-      "hash": "sha256:b729f1b884843d3d2cac2311f353e1e263d209de2b42b96ac2953e4c1e8ad15a",
+      "hash": "sha256:37cd5e9ef22aa6f20b77e119ca351719bd3935fd4230076c1592888c9c7ca64b",
       "provider": "finnish-national-ballet",
-      "scrapedAt": "2026-06-07T07:10:09.898179Z",
+      "scrapedAt": "2026-06-16T10:11:00.506620Z",
       "url": "https://oopperabaletti.fi/en/international-summer-intensive/"
     },
     "teachers": [
@@ -140,7 +139,6 @@
           "type": "headshot"
         }
       ],
-      "status": "closed",
       "url": "https://www.lyyti.fi/reg/International_Summer_Intensive_2026_3322"
     },
     "genres": [
@@ -193,9 +191,9 @@
     },
     "source": {
       "attemptedAt": "2026-06-14T23:57:27.086759Z",
-      "hash": "sha256:0942c5886fcb89981d05451dd3582b5564f00d9ba9c35c37ad086d732c46f1c1",
+      "hash": "sha256:c6c3716e1e27776e25192f13581f54bcb4b65d823787a7e33f1d7c9af66b7a76",
       "provider": "finnish-national-ballet",
-      "scrapedAt": "2026-06-05T18:58:38.491970Z",
+      "scrapedAt": "2026-06-16T10:11:00.507686Z",
       "url": "https://oopperabaletti.fi/en/international-summer-intensive/"
     },
     "teachers": [
