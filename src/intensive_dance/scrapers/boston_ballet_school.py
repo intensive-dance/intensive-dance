@@ -40,8 +40,10 @@ WHAT THIS SCRAPER EXERCISES (verified live 2026-06-08):
     defined-pose photos + a headshot + a faculty recommendation letter →
     PhotosReq(defined-poses) + HeadshotReq + CVReq.
   - APPLICATION status/deadline: SDP — the in-person tour "has concluded" but
-    video auditions are accepted "through Sunday, March 15" → status="closed"
-    once the video window has passed (else open), deadline = that date.
+    video auditions are accepted "through Sunday, March 15" → deadline = that
+    date; `status` stays unset while a video window is stated (the page gives a
+    deadline, not a status — consumers derive closed-ness from deadline < today).
+    Only an explicit "has concluded" with no remaining window reads as closed.
 """
 
 from __future__ import annotations
@@ -95,7 +97,7 @@ def scrape(client: httpx.Client) -> list[Offering]:
     faq = _fetch_text(client, SDP_FAQ_URL)
     audition = _fetch_text(client, SDP_AUDITION_URL)
     jsi = _fetch_text(client, JSI_URL)
-    return _build_offerings(landing, faq, audition, jsi, date.today())
+    return _build_offerings(landing, faq, audition, jsi)
 
 
 def _fetch_text(client: httpx.Client, url: str) -> str:
@@ -112,14 +114,12 @@ def _page_text(html: str) -> str:
     return parse.clean(tree.body.text(separator=" ") if tree.body else "")
 
 
-def _build_offerings(
-    landing: str, faq: str, audition: str, jsi: str, today: date
-) -> list[Offering]:
+def _build_offerings(landing: str, faq: str, audition: str, jsi: str) -> list[Offering]:
     offerings: list[Offering] = []
-    sdp = _build_sdp(landing, faq, audition, today)
+    sdp = _build_sdp(landing, faq, audition)
     if sdp is not None:
         offerings.append(sdp)
-    offerings.extend(_build_jsi(jsi, today))
+    offerings.extend(_build_jsi(jsi))
     return offerings
 
 
@@ -142,7 +142,7 @@ _SDP_END = re.compile(
 _SDP_AGE = re.compile(r"ages of\s+(\d{1,2})\D*?and\s+(\d{1,2})", re.IGNORECASE)
 
 
-def _build_sdp(landing: str, faq: str, audition: str, today: date) -> Offering | None:
+def _build_sdp(landing: str, faq: str, audition: str) -> Offering | None:
     year = _sdp_year(faq) or _sdp_year(landing) or _sdp_year(audition)
     start = _stamped(_SDP_START, faq, year)
     end = _stamped(_SDP_END, faq, year)
@@ -161,7 +161,7 @@ def _build_sdp(landing: str, faq: str, audition: str, today: date) -> Offering |
         schedule=Schedule(season=str(year), start=start, end=end, timezone=TZ),
         prices=_sdp_prices(faq),
         application=Application(
-            status=_sdp_status(audition, deadline, today),
+            status=_sdp_status(audition, deadline),
             deadline=deadline,
             url=SDP_AUDITION_URL,
             requirements=[
@@ -235,12 +235,14 @@ def _sdp_deadline(text: str, year: int | None) -> date | None:
     return _stamped(_SDP_VIDEO_DEADLINE, text, year)
 
 
-def _sdp_status(text: str, deadline: date | None, today: date) -> ApplicationStatus | None:
-    """The in-person tour "has concluded"; video auditions remain the open route
-    until their window closes — so it's `closed` only once that deadline passes.
+def _sdp_status(text: str, deadline: date | None) -> ApplicationStatus | None:
+    """Faithful, source-stated status only. When the page says the audition tour
+    "has concluded" and offers no remaining video window, that's an explicit
+    closed signal. When a video deadline is still stated, we leave `status` unset
+    (the page states a deadline, not a status) — consumers derive closed-ness from
+    deadline < today, and deriving it here against today would break the no-diff
+    rule since status is part of content_hash.
     """
-    if deadline is not None and today > deadline:
-        return "closed"
     if "has concluded" in text.lower() and deadline is None:
         return "closed"
     return None
@@ -272,7 +274,7 @@ _JSI_SESSION = re.compile(
 )
 
 
-def _build_jsi(text: str, today: date) -> list[Offering]:  # noqa: ARG001
+def _build_jsi(text: str) -> list[Offering]:
     age_match = _JSI_AGE_YEAR.search(text)
     if age_match is None:
         return []
