@@ -2,7 +2,7 @@
 
 > **Generated — do not edit.** Refresh with `uv run python -m intensive_dance.overview --write`; CI drift-checks it. Source of truth: `providers.json`.
 
-38 buildable · 9 excluded · 109 live (156 providers total).
+37 buildable · 10 excluded · 109 live (156 providers total).
 
 **To claim one (so nobody double-builds):** check `gh issue list` / `gh pr list` for the slug; if free, open a `build:<slug>` issue and **self-assign first**, then build; close it when the PR merges (provider → `live`). An open claim issue *or* PR = locked. See `AGENTS.md` → Scope & coordination.
 
@@ -15,7 +15,6 @@ _Some still need Phase-1 verification (a public dated edition / not full-time) b
 
 ### CZ
 - `baletni-akademie-pollertova` — Baletní akademie Adély Pollertové — letní soustředění (Prague) — https://www.baletniakademie.cz/
-- `first-international-ballet-school-prague` — First International Ballet School in Prague — Summer Camp (Prague) — https://balletschoolprague.com/workshop/summer-camp/
 - `prague-ballet-workshop` — Prague Ballet Workshop — Classical Ballet Summer Workshop (Prague) — https://www.pragueballetworkshop.com/
 
 ### DE
@@ -68,6 +67,7 @@ _Some still need Phase-1 verification (a public dated edition / not full-time) b
 
 ## Excluded — do NOT build
 
+- `first-international-ballet-school-prague` — First International Ballet School in Prague — Summer Camp — _only a recreational children's camp in 2026 (FIBS Summer Intensive dormant since 2022)_
 - `helsinki-international-ballet-competition` — Helsinki International Ballet Competition (HIBC) — _competition — icebox #80_
 - `neoclassica` — Centrum Baletowe Neoclassica — _site offline — parked_
 - `prix-de-lausanne` — Prix de Lausanne — _competition — icebox #80_
