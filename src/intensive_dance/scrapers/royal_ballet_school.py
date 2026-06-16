@@ -439,7 +439,11 @@ _GENRE_KEYWORDS: list[tuple[Genre, tuple[str, ...]]] = [
 
 
 def _genres(blob: str) -> list[Genre]:
-    return parse.match_genres(blob, _GENRE_KEYWORDS)
+    # RBS teaches classical ballet exclusively, so a sparse page (e.g. an
+    # international masterclass announcement that names no style) still describes
+    # classical training — default to classical rather than emit a genre-less
+    # Offering. Other styles are only added when the page actually names them.
+    return parse.match_genres(blob, _GENRE_KEYWORDS, default=["classical"])
 
 
 # Level is only emitted when the page states it. RBS intensives are organized by
