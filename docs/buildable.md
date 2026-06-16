@@ -2,7 +2,7 @@
 
 > **Generated — do not edit.** Refresh with `uv run python -m intensive_dance.overview --write`; CI drift-checks it. Source of truth: `providers.json`.
 
-30 buildable · 9 excluded · 103 live (142 providers total).
+44 buildable · 9 excluded · 103 live (156 providers total).
 
 **To claim one (so nobody double-builds):** check `gh issue list` / `gh pr list` for the slug; if free, open a `build:<slug>` issue and **self-assign first**, then build; close it when the PR merges (provider → `live`). An open claim issue *or* PR = locked. See `AGENTS.md` → Scope & coordination.
 
@@ -31,6 +31,22 @@ _Some still need Phase-1 verification (a public dated edition / not full-time) b
 
 ### GB
 - `elmhurst-ballet-school` — Elmhurst Ballet School (Birmingham) — https://elmhurstballetschool.org/
+
+### IT
+- `accademia-iacopini` — Accademia Iacopini — "In Danza" (Chianciano Terme) — https://accademiaiacopini.it/
+- `accademia-internazionale-coreutica` — Accademia Internazionale Coreutica — International Summer Intensive Course (Florence) — https://www.accademiainternazionalecoreutica.org/
+- `art-studio-danza` — Art Studio Danza — Stage Internazionale del Lago di Garda (Salò) — https://artstudiodanza.it/
+- `arteballetto` — Arteballetto — Summer Course in Sicily (Catania) — https://www.arteballetto.net/
+- `associazione-europea-danza` — Associazione Europea Danza — Summer Dance School (Livorno) — https://aed.dance/
+- `ateneo-della-danza` — Ateneo della Danza — Intensive Summer School (Siena) — https://www.ateneodelladanza.it/
+- `bobbio-summer-ballet-intensive` — Bobbio Summer Ballet Intensive (Bobbio) — https://bobbiosummerballetintensive.com/
+- `centro-formazione-aida` — Centro Formazione Aida — Ballet Summer Camp (Milan) — https://www.centroformazioneaida.com/
+- `centro-formazione-danza-verona` — Centro Formazione Danza Verona — Ballet Summer School (Verona) — https://www.cfdanzaverona.it/
+- `dam-danza-torino` — DAM Danza Arte e Movimento — Torino Summer Dance (Turin) — https://www.damdanzatorino.it/
+- `nuova-officina-della-danza` — Nuova Officina della Danza — NOD Summer Intensive (Turin) — https://www.nuovaofficinadelladanza.org/
+- `progetto-danza-treviso` — Progetto Danza — Stage Internazionale di Danza (Treviso) — https://www.progettodanza.org/
+- `scuola-hamlyn` — Scuola di Danza Hamlyn — Summer Course (Florence) — https://www.scuolahamlyn.com/
+- `verona-summer-dance-lab` — Verona Summer Dance Lab (Verona) — https://www.veronadancelab.com/
 
 ### JP
 - `homura-tomoi-ballet-school` — Homura Tomoi Ballet School (Osaka) — https://www.homuratomoi.com/

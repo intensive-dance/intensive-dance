@@ -177,6 +177,57 @@ Live 4-agent Phase-1 sweep: Vienna + its surroundings + the important cities nea
 
 **`out-of-scope`:** Sopron Balett (HU, performing company only) · Szombathely schools (recreational) · adult/recreational summer courses (Pirueta adults · Vanda Skopalová Brno · Grand Art Ballet Budapest adult/teen · innstanz & Tanzacademy Innsbruck thin 1-class/day) · Ljubljana/Kamnik SI (far from the ring) · an Instagram-only "summer ballet academy" near Bratislava (unverifiable — not seeded).
 
+## 🇮🇹 Italy (2026-06-13)
+
+Multi-agent Phase-1 sweep of Italy by city (North / Centre / South + islands) **and** by
+program-type (`stage estivo di danza classica 2026`, `corso intensivo balletto estate`,
+`summer intensive Italy 2026`), incl. associazioni/fondazioni/accademie/conservatori and the
+national dance portals (danzapp, danzaeffebi, danzasi, dancingopportunities). Italy was already
+heavily covered, so dedupe was the main filter. **14 promoted to `seed`**; rest recorded below.
+**All dates below are quoted from aggregator/press snippets — nearly every provider site 403s a
+datacenter fetch, so a Phase-2 build must re-verify dates/fees/ages at source (proxy likely).**
+No specific dates are asserted in the register itself (seeds carry none).
+
+**Already in the register (verified, not re-added):** Balletto di Roma · Fondazione Monreart
+(Volta Mantovana) · Accademia Teatro alla Scala (Milan) · Scuola di Ballo del Teatro San Carlo
+(Naples) · Orsolina28 (Moncalvo) · Dance & Fashion CIC (Rapallo — its *TT Stage* Summer Ballet
+Intensive "20 Jul–1 Aug 2026" is the same operator → an offering of the live provider, not a new
+one) · Umbria Ballet (Bastia Umbra) · Teatro dell'Opera di Roma Scuola di Danza (seed). Monitored
+elsewhere: Nuovo Balletto Classico (Reggio Emilia — corsi estivi "29 Jun–18 Jul 2026") ·
+Professione Danza Pescara · Accademia Bozzolini / Balletto di Toscana · Balletto di Verona · Opus
+Ballet (Florence) · Teatro dell'Opera di Roma Stage Estivo.
+
+**→ promoted to `seed`:**
+- **Nuova Officina della Danza — NOD Summer Intensive** (Turin) — contemporary company/school ICD program; "**June 29 – July 17**" 2026, strong-contemporary-technique required. — nuovaofficinadelladanza.org
+- **DAM Danza Arte e Movimento — Torino Summer Dance** (Turin) — classical + contemporary intensive at Teatro Nuovo; "**June 15 – July 17, 2026**" (a separate Bardonecchia session "from 26 Aug"). — damdanzatorino.it
+- **Verona Summer Dance Lab** (Verona) — classical + contemporary (ballet, contemporary, both repertoires, choreographic lab), Juilliard/NDT/Ballet-BC faculty; "**August 3–8, 2026**", deadline 5 Jul. Distinct org from the monitored *Balletto di Verona*. — veronadancelab.com
+- **Centro Formazione Danza Verona ETS — Ballet Summer School** (Verona) — associazione (ETS); classical professional training, from age 8; "**29 June – 11 July 2026**", doubles as audition for its pro course. Distinct legal entity from *Balletto di Verona*. — cfdanzaverona.it
+- **Bobbio Summer Ballet Intensive** (Bobbio, Piacenza — Emilia-Romagna) — classical + contemporary (pointe, men's, variations, repertoire, partnering, conditioning), international faculty, final performance w/ live orchestra; "**July 14–24**" 2026, 3rd ed., residential. — bobbiosummerballetintensive.com
+- **Centro Formazione Aida — Ballet Summer Camp** (Milan) — Milan classical academy (two locations); "**June 15–26, 2026**", two full weeks Mon–Fri. *Verify pre-pro depth vs. young-kids camp at build.* — centroformazioneaida.com
+- **Ateneo della Danza — Intensive Summer School** (Siena — confirmed Siena, the "Official School" of Balletto di Siena; not Forlì) — classical + contemporary (pointe, men's, repertoire, character, floor barre), ABT NTC curriculum; "**July 4–13, 2026**" (15th ed.), deadline 15 Jun, video pre-selection, Grand Gala 12 Jul. — ateneodelladanza.it
+- **Accademia Internazionale Coreutica — International Summer Intensive Course** (Florence) — classical (technique, pointe, men's, pas de deux) + contemporary, from age 10; "**July 20–25, 2026**" (XXIV ed.), deadline 10 Jul, performance 25 Jul, €250–550. Also runs touring stages/auditions in Sardegna/Puglia. — accademiainternazionalecoreutica.org
+- **Associazione Europea Danza (AED) — Summer Dance School** (Livorno) — associazione; genre-split weeks, **Contemporary "July 20–25, 2026"** + **Classic "July 27 – Aug 1, 2026"**, RBS/Paris-Opéra/Codarts-linked faculty, ages 11+, €390/wk (likely one Offering per week). — aed.dance
+- **Art Studio Danza — Stage Internazionale del Lago di Garda** (Salò, Lake Garda) — classical-focused international stage since 1994 (dir. Antonella Mandanici), renowned faculty, final gala; "**July 18–26, 2026**" (29th ed.). — artstudiodanza.it
+- **Progetto Danza — Stage Internazionale di Danza** (Treviso, La Ghirada) — associazione; long-running multi-track international stage, on-site accommodation; "**June 28 – July 11, 2026**" (40th ed.), deadline 10 Jun. *Multi-discipline — confirm classical/contemporary core weight at build; its March Concorso Internazionale is competition/icebox, the stage is the in-scope piece.* — progettodanza.org
+- **Accademia Iacopini — "In Danza"** (Chianciano Terme, Siena prov.) — classical + contemporary high-level training (dir. Nicoletta Iacopini; guests e.g. Pino Alosa, Wiener Staatsballett); "**July 26 – Aug 1, 2026**" (5th ed.), main + Perfezionamento (16–22, video selection) tracks; an "INdanza Kids 8–10" track is recreational (scope out at build). — accademiaiacopini.it
+- **Scuola di Danza Hamlyn — Summer Course** (Florence) — ISTD pro-training school, classical/contemporary/modern; "**24–29 August 2026**". (Distinct from the Russian Ballet International program it merely *hosts* in July.) — scuolahamlyn.com
+- **Arteballetto — Summer Course in Sicily** (Catania) — Associazione Arteballetto Akademie; classical + contemporary, international faculty (PNSD Cannes / Iwanson Munich), scholarships to Cannes/London Studio Centre; "**July 6–11, 2026**" (19th ed.), reg. by 2 Jul, levels 9–11/12–14/15+. — arteballetto.net
+
+**`scored` / verify-before-promoting (real dated course but a scope flag):**
+- **Arte Danza Bologna — Summer Ballet Intensive Program (SBIP)** (Bologna, Via Castiglione 21) — classical + pointe + floor-barre, links to a Royal Ballet School Special Training Programme, **but** the page frames it "for dancers of every level *and non-dancers passionate about fitness*" → verify pre-pro/student-intensive character (not adult fitness) before seeding; a 2026 SBIP page exists, exact dates "for July" unconfirmed. — artedanzabologna.com
+- **Russian Ballet International — Florence Summer Intensive** (Florence, hosted at Scuola Hamlyn) — Bolshoi-academy-affiliated Vaganova faculty, "program July 6–24, 2026", video-audition deadline 1 Jun. **Check it isn't already covered by an existing Bolshoi/Russian-Masters scraper before seeding.** — russianballetinternational.com
+- **DanzaMareMito — Stage Internazionale di Danza** (Salerno) — classical + contemporary multi-level international stage (CID-affiliated), "**Aug 27–30, 2026**" (18th ed.); confirm a real student-cohort ballet syllabus (vs. gala/competition flavour) at build. — danzamaremito.it
+- **Montevarchi in Danza (M.I.D.)** (Montevarchi, Arezzo) — classical + repertoire + contemporary, Italian/intl masters; "**28 June – 1 July 2026**" — only ~4 days, marginal. — Studio Danza Caroline + D.A.C.
+- **Summer DanceXperience** (Bussero, Milano prov.) — classical + repertoire + modern, "**June 18–21, 2026**" at Teatro Spazio Sfera — small/multidisciplinary, thin sourcing. — danzapp.it listing
+- **OPES Italia — Classic Ballet Experience, Summer Intensive** (Cancello ed Arnone, CE) — classical, "**July 6–8, 2026**" + scholarship/prize; verify it's a fixed-location student intensive, not a roving federation event/competition. — opesitalia.it
+
+**`parked` — credible school/company, no confirmed current public dated student intensive:**
+- IIAD — Istituto Italiano Arte e Danza (Rome, multi-genre stage; page still shows 2024) · Opificio in Movimento (Rome, classical+contemporary stage, no 2026 date surfaced) · Balletto del Sud (Lecce, company; masterclasses/audition-stages but no published summer student intensive) · NAB Napoli Accademia Balletto · Napoli City Ballet · Movimento Danza (Naples) · Accademia Vincenzo Bellini (Catania) · Balletto di Sicilia – Accademia (Catania) · Palermo in Danza (recent traces are a gala, not a student stage) · a possible separate **Ateneo Danza Forlì** running an "English National Ballet School Experience Week" (identity vs. the Siena school unverified — confirm before any seed).
+
+**`deferred` → IDR-9 (full-time / no public short course):** Accademia Nazionale di Danza (Rome — state AFAM conservatory) · Milano City Ballet — International Training Program (year-round multi-year, no dated public short course).
+
+**`out-of-scope`:** Joffrey Italy (Catanzaro, "Aug 3–7 2026") — an edition of the existing **Joffrey Ballet School** scraper, not a new provider · Salerno Danza d'aMare (leisure multi-style beach camp) · Campus! Dance / IDA (Ravenna, multidisciplinary kids stage) · Teatro Golden Academy (Rome, children's musical-theatre day camp) · recreational kids day-camps (Experience/EuroCamp Cesenatico, Bandits, ON STAGE Brescia, DanzaSi/Camp Danza) · the far south (Calabria, Bari/Taranto, Basilicata, Sardinia) yielded **no** confirmed dated public 2026 ballet student intensive — a genuine coverage gap, worth a later-spring re-sweep.
+
 ## 🇷🇴 Romania (2026-06-13)
 
 Phase-1 sweep of Romania — focus Bucharest + Cluj-Napoca · Timișoara · Iași — by provider
