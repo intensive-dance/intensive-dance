@@ -1,0 +1,78 @@
+[
+  {
+    "application": {
+      "requirements": []
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "baletni-akademie-pollertova/younger-children-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Prague",
+      "country": "CZ",
+      "venue": "Na Poříčí 25, Praha 1"
+    },
+    "organization": {
+      "city": "Prague",
+      "country": "CZ",
+      "name": "Baletní akademie Adély Pollertové",
+      "slug": "baletni-akademie-pollertova"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-08-14",
+      "notes": "Letní soustředění pro mladší děti - 10.8.-14.8. 2026",
+      "season": "summer",
+      "sessions": [],
+      "start": "2026-08-10"
+    },
+    "source": {
+      "hash": "sha256:df8ad55d973f9075c9272fc03079289a98f0fd111efde7fdeb0cb052a846df1a",
+      "provider": "baletni-akademie-pollertova",
+      "scrapedAt": "2026-06-16T17:19:36.049742Z",
+      "url": "https://www.baletniakademie.cz/"
+    },
+    "teachers": [],
+    "title": "Summer Intensive for Younger Children 2026"
+  },
+  {
+    "application": {
+      "requirements": []
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "baletni-akademie-pollertova/older-children-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Prague",
+      "country": "CZ",
+      "venue": "Na Poříčí 25, Praha 1"
+    },
+    "organization": {
+      "city": "Prague",
+      "country": "CZ",
+      "name": "Baletní akademie Adély Pollertové",
+      "slug": "baletni-akademie-pollertova"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-08-21",
+      "notes": "Letní soustředění pro starší děti - 17.8.-21.8. 2026",
+      "season": "summer",
+      "sessions": [],
+      "start": "2026-08-17"
+    },
+    "source": {
+      "hash": "sha256:4b23f154e2cebb838f6adcbf61bab82c929949922d4cba960cab7cf7d829d85d",
+      "provider": "baletni-akademie-pollertova",
+      "scrapedAt": "2026-06-16T17:19:36.050030Z",
+      "url": "https://www.baletniakademie.cz/"
+    },
+    "teachers": [],
+    "title": "Summer Intensive for Older Children 2026"
+  }
+]
