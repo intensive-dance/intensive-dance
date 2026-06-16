@@ -7,7 +7,6 @@
     "application": {
       "deadline": "2026-03-01",
       "requirements": [],
-      "status": "closed",
       "url": "https://www.atd.ahk.nl/en/dance-programmes/dutch-national-ballet-academy/summer-school/"
     },
     "genres": [
@@ -56,9 +55,9 @@
     },
     "source": {
       "attemptedAt": "2026-06-15T18:58:33.308683Z",
-      "hash": "sha256:d6a4f7dd7b7b1e685cfbf9a54080d54aa184e1a743d056d53eeab5881a6cdb74",
+      "hash": "sha256:b7c9b7cf17c95b48d486cf334b36e94af1820059dafeb557eb4fc2b41667b4d1",
       "provider": "dutch-national-ballet-academy",
-      "scrapedAt": "2026-06-11T07:29:12.347599Z",
+      "scrapedAt": "2026-06-16T08:57:07.921418Z",
       "url": "https://www.atd.ahk.nl/en/dance-programmes/dutch-national-ballet-academy/summer-school/"
     },
     "teachers": [],
@@ -72,7 +71,6 @@
     "application": {
       "deadline": "2026-03-01",
       "requirements": [],
-      "status": "closed",
       "url": "https://www.atd.ahk.nl/en/dance-programmes/dutch-national-ballet-academy/summer-school/"
     },
     "genres": [
@@ -121,9 +119,9 @@
     },
     "source": {
       "attemptedAt": "2026-06-15T18:58:33.308683Z",
-      "hash": "sha256:b4657318b2e7ab3234e15706468f085aacb5099e0d8f71b38f3ffc4d219adb1b",
+      "hash": "sha256:fe2dd32f2d15d299aa3dd22d4cfaf6d989255aca79db7d65e571f694aa73dfde",
       "provider": "dutch-national-ballet-academy",
-      "scrapedAt": "2026-06-11T07:29:12.346955Z",
+      "scrapedAt": "2026-06-16T08:57:07.915830Z",
       "url": "https://www.atd.ahk.nl/en/dance-programmes/dutch-national-ballet-academy/summer-school/"
     },
     "teachers": [],
@@ -137,7 +135,6 @@
     "application": {
       "deadline": "2026-03-01",
       "requirements": [],
-      "status": "closed",
       "url": "https://www.atd.ahk.nl/en/dance-programmes/dutch-national-ballet-academy/summer-school/"
     },
     "genres": [
@@ -186,9 +183,9 @@
     },
     "source": {
       "attemptedAt": "2026-06-15T18:58:33.308683Z",
-      "hash": "sha256:b3cfff65e3bca06f105e2270c040663d4ac56506e1d0dfabeb1d6656ad7ba718",
+      "hash": "sha256:f7870162ce772abd8d0ed95463d48eb4016c0adb6c65635934e3a59d133c5d11",
       "provider": "dutch-national-ballet-academy",
-      "scrapedAt": "2026-06-11T07:29:12.346338Z",
+      "scrapedAt": "2026-06-16T08:57:07.914757Z",
       "url": "https://www.atd.ahk.nl/en/dance-programmes/dutch-national-ballet-academy/summer-school/"
     },
     "teachers": [],
