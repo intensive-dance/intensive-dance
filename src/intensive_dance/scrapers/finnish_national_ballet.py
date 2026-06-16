@@ -31,8 +31,10 @@ WHAT THIS SCRAPER EXERCISES (verified live 2026-06-06):
     (country · affiliation · teaching subject · CV link); the teaching subject is
     their role in this intensive.
   - DATES + APPLICATION window both stated explicitly ("20 to 25 July 2026",
-    "Application dates are 15 December 2025 – 30 April 2026"), so application
-    status is derived against today.
+    "Application dates are 15 December 2025 – 30 April 2026"). We keep the dated
+    bounds (`opensAt`/`deadline`) and leave `application.status` unset — the page
+    states a window, not a current status, and deriving open/closed from `today`
+    would invent a status and break the no-diff rule (status is hashed).
   - GENRES: matched against the "Five daily lessons comprising …" curriculum
     sentence only, not the full section body. Per-teacher bios name
     "neoclassical and contemporary repertoire" for Di Palma — that's a bio
@@ -51,7 +53,6 @@ import httpx
 from intensive_dance import parse, wp
 from intensive_dance.models import (
     Application,
-    ApplicationStatus,
     CVReq,
     Genre,
     HeadshotReq,
@@ -154,7 +155,6 @@ def _summer_intensive(
         teachers=_teachers(content),
         prices=_prices(content, "Summer Intensive", includes_lunch=True),
         application=Application(
-            status=_status(opens, deadline, today),
             opensAt=opens,
             deadline=deadline,
             url=apply_url,
@@ -186,10 +186,15 @@ def _ballet_in_bloom(
         organization=ORG,
         location=LOCATION,
         schedule=Schedule(season=str(start.year), start=start, end=end, timezone=TZ),
-        teachers=_teachers(content),
+        # The faculty block is the youth intensive's roster (8 named teachers incl.
+        # Street Dance and Body Conditioning). Ballet in Bloom only says it's
+        # "taught by our esteemed international faculty" with no roster of its own,
+        # and its curriculum (ballet / repertoire / character / acting) excludes
+        # those subjects — so attributing that roster here over-claims. Leave it
+        # empty rather than name teachers the page never assigns to this track.
+        teachers=[],
         prices=_prices(content, "Ballet in Bloom", includes_lunch=False),
         application=Application(
-            status=_status(opens, deadline, today),
             opensAt=opens,
             deadline=deadline,
             url=apply_url,
@@ -272,16 +277,6 @@ def _application_window(content: wp.Content) -> tuple[date | None, date | None]:
     opens = date(int(y1), parse.MONTHS[m1.lower()], int(d1))
     deadline = date(int(y2), parse.MONTHS[m2.lower()], int(d2))
     return opens, deadline
-
-
-def _status(opens: date | None, deadline: date | None, today: date) -> ApplicationStatus | None:
-    if opens is None or deadline is None:
-        return None
-    if today < opens:
-        return "upcoming"
-    if today > deadline:
-        return "closed"
-    return "open"
 
 
 # --- genres ------------------------------------------------------------------
