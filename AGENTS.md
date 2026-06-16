@@ -139,7 +139,16 @@ module docstring so the next person doesn't re-investigate:
    - **Trap (ABT):** WordPress can still be useless via REST — a custom
      module/ACF page builder may render *nothing* into `content.rendered` and
      expose only module *names*. Confirm the body is actually present before
-     committing to API-first; otherwise fall through to HTML.
+     committing to API-first; otherwise fall through to HTML. (**Elementor** is
+     the same — empty `content.rendered`, and The Events Calendar plugin can hold
+     *zero* events; scrape the server-rendered HTML. When only the **home** page
+     was updated for the new edition while detail pages (schedule/pricing) carry
+     **stale prior-year** content, read the dated edition off the home page and
+     **don't borrow** the stale-year course fees onto it — that's inventing data;
+     keep only fees the current pages state, e.g. a registration deposit. A
+     **single-purpose** intensive site's "Docenti"/faculty page *is* this
+     intensive's faculty — safe to attribute, unlike a multi-program school. See
+     `bobbio_summer_ballet_intensive`.)
    - **Trap (PBI):** a site the candidate notes call "Wix/JS" can actually be
      plain WordPress (check `/wp-json/`) with clean `content.rendered` bodies and
      **no JS/proxy needed**. But the *dated edition* may live only in the WP site
