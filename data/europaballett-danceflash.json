@@ -6,7 +6,6 @@
     },
     "application": {
       "requirements": [],
-      "status": "open",
       "url": "https://en.europaballett.at/ausbildung/danceflash"
     },
     "genres": [
@@ -48,7 +47,7 @@
       "timezone": "Europe/Vienna"
     },
     "source": {
-      "hash": "sha256:88e3c8fa61d250e3f1e24ca035e838038a347a02d411494429f93b1a7d1448d5",
+      "hash": "sha256:73f21b0fa541b21824f86b736db71a17d74c61edcc182d50f68c21416f2db0bc",
       "provider": "europaballett-danceflash",
       "scrapedAt": "2026-06-12T09:09:12.235493Z",
       "url": "https://en.europaballett.at/ausbildung/danceflash"
@@ -63,7 +62,6 @@
     },
     "application": {
       "requirements": [],
-      "status": "open",
       "url": "https://en.europaballett.at/ausbildung/danceflash"
     },
     "genres": [
@@ -105,7 +103,7 @@
       "timezone": "Europe/Vienna"
     },
     "source": {
-      "hash": "sha256:d39ed3190b51c07f1c94f7a4021ef14c2b874e4d0d49d75f847a8808a1ecc805",
+      "hash": "sha256:5226c544648f9c51d6d99b6fef061bc18fe414896714b43abb85ed2eda263e7e",
       "provider": "europaballett-danceflash",
       "scrapedAt": "2026-06-12T09:09:12.235620Z",
       "url": "https://en.europaballett.at/ausbildung/danceflash"

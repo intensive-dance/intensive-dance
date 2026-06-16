@@ -171,7 +171,7 @@ def _build_offering(
             notes="; ".join(schedule_bits) or None,
         ),
         prices=[price],
-        application=Application(status="open", url=PAGE),
+        application=Application(url=PAGE),
     )
 
 

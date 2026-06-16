@@ -56,7 +56,7 @@
       "timezone": "America/Winnipeg"
     },
     "source": {
-      "attemptedAt": "2026-06-11T21:26:43.296738Z",
+      "attemptedAt": "2026-06-14T23:57:27.250342Z",
       "hash": "sha256:4e1fb15a62245bd5a7c9e0986b23f81c7c4cad07d99e4f2bf77108d5f596e36f",
       "provider": "royal-winnipeg-ballet-school",
       "scrapedAt": "2026-06-08T14:08:43.022965Z",
@@ -105,7 +105,7 @@
       "timezone": "America/Winnipeg"
     },
     "source": {
-      "attemptedAt": "2026-06-11T21:26:43.296738Z",
+      "attemptedAt": "2026-06-14T23:57:27.250342Z",
       "hash": "sha256:2d9290fbcffbf0e9ac6e6cfda95b8390aaa67f93dfe5bd26a7118a2793847c20",
       "provider": "royal-winnipeg-ballet-school",
       "scrapedAt": "2026-06-08T14:08:43.023555Z",

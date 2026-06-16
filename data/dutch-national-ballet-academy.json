@@ -55,7 +55,7 @@
       "timezone": "Europe/Amsterdam"
     },
     "source": {
-      "attemptedAt": "2026-06-11T14:15:09.039139Z",
+      "attemptedAt": "2026-06-15T18:58:33.308683Z",
       "hash": "sha256:d6a4f7dd7b7b1e685cfbf9a54080d54aa184e1a743d056d53eeab5881a6cdb74",
       "provider": "dutch-national-ballet-academy",
       "scrapedAt": "2026-06-11T07:29:12.347599Z",
@@ -120,7 +120,7 @@
       "timezone": "Europe/Amsterdam"
     },
     "source": {
-      "attemptedAt": "2026-06-11T14:15:09.039139Z",
+      "attemptedAt": "2026-06-15T18:58:33.308683Z",
       "hash": "sha256:b4657318b2e7ab3234e15706468f085aacb5099e0d8f71b38f3ffc4d219adb1b",
       "provider": "dutch-national-ballet-academy",
       "scrapedAt": "2026-06-11T07:29:12.346955Z",
@@ -185,7 +185,7 @@
       "timezone": "Europe/Amsterdam"
     },
     "source": {
-      "attemptedAt": "2026-06-11T14:15:09.039139Z",
+      "attemptedAt": "2026-06-15T18:58:33.308683Z",
       "hash": "sha256:b3cfff65e3bca06f105e2270c040663d4ac56506e1d0dfabeb1d6656ad7ba718",
       "provider": "dutch-national-ballet-academy",
       "scrapedAt": "2026-06-11T07:29:12.346338Z",

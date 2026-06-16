@@ -1,0 +1,63 @@
+[
+  {
+    "ageRange": {
+      "max": null,
+      "min": 15
+    },
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "url": "https://www.theaterdo.de/ballett/startseite/mitmachen/sommerakademie/"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "repertoire",
+      "pointe"
+    ],
+    "id": "ballett-dortmund/internationale-sommerakademie-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Dortmund",
+      "country": "DE",
+      "venue": "Ballettzentrum Westfalen"
+    },
+    "organization": {
+      "city": "Dortmund",
+      "country": "DE",
+      "name": "Ballett Dortmund",
+      "slug": "ballett-dortmund"
+    },
+    "prices": [
+      {
+        "amount": 590.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition",
+          "meals"
+        ],
+        "label": "Kursgebühr"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-29",
+      "notes": "24-29. August 2026",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-24",
+      "timezone": "Europe/Berlin"
+    },
+    "source": {
+      "hash": "sha256:8ec638496a4305b6185abad1816bb533b9056ecda15d19bf863e8f9f69608147",
+      "provider": "ballett-dortmund",
+      "scrapedAt": "2026-06-12T01:11:00.370695Z",
+      "url": "https://www.theaterdo.de/ballett/startseite/mitmachen/sommerakademie/"
+    },
+    "teachers": [],
+    "title": "Internationale Sommerakademie 2026"
+  }
+]
