@@ -73,8 +73,8 @@ _PAGE = {
 }
 
 
-def _offerings(today: date = date(2026, 1, 1)):
-    return fnb._build_offerings(_PAGE, today)
+def _offerings():
+    return fnb._build_offerings(_PAGE)
 
 
 def test_emits_both_offerings() -> None:
@@ -155,17 +155,21 @@ def test_application_window_kept_without_deriving_status() -> None:
     # The page states an application window; we keep the dated bounds and leave
     # status unset (no date-derived status — that would be invented and would
     # change as `today` crosses the deadline, breaking the no-diff rule).
-    o = fnb._build_offerings(_PAGE, date(2026, 2, 1))[0]
+    o = fnb._build_offerings(_PAGE)[0]
     assert o.application.opens_at == date(2025, 12, 15)
     assert o.application.deadline == date(2026, 4, 30)
     assert o.application.status is None
-    # Same regardless of when the scrape runs.
-    assert fnb._build_offerings(_PAGE, date(2025, 1, 1))[0].application.status is None
-    assert fnb._build_offerings(_PAGE, date(2026, 6, 5))[0].application.status is None
 
 
-def test_course_dropped_once_it_has_ended() -> None:
-    assert fnb._build_offerings(_PAGE, date(2026, 8, 1)) == []
+def test_ended_cycles_are_kept() -> None:
+    # IDR-24: a cycle whose end date is past stays in the store; "past" is
+    # derived consumer-side, never filtered at scrape time. The build is
+    # date-independent, so both offerings are emitted regardless of `today`.
+    ids = {o.id for o in fnb._build_offerings(_PAGE)}
+    assert ids == {
+        "finnish-national-ballet/international-summer-intensive-2026",
+        "finnish-national-ballet/ballet-in-bloom-2026",
+    }
 
 
 def test_faculty_roles_from_teaching_subject() -> None:
