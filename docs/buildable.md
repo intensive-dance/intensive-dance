@@ -2,7 +2,7 @@
 
 > **Generated — do not edit.** Refresh with `uv run python -m intensive_dance.overview --write`; CI drift-checks it. Source of truth: `providers.json`.
 
-21 buildable · 9 excluded · 100 live (130 providers total).
+42 buildable · 9 excluded · 105 live (156 providers total).
 
 **To claim one (so nobody double-builds):** check `gh issue list` / `gh pr list` for the slug; if free, open a `build:<slug>` issue and **self-assign first**, then build; close it when the PR merges (provider → `live`). An open claim issue *or* PR = locked. See `AGENTS.md` → Scope & coordination.
 
@@ -10,14 +10,39 @@
 
 _Some still need Phase-1 verification (a public dated edition / not full-time) before building._
 
+### AT
+- `ballettratten` — Ballettratten — Sommerintensivkurs (Vienna) — https://www.ballettratten.com/
+- `europaballett-danceflash` — Europaballett St. Pölten — Danceflash (St. Pölten) — https://en.europaballett.at/ausbildung/danceflash
+- `wiener-ballettakademie` — Vienna Ballet Academy (Wiener Ballettakademie) (Vienna) — https://wienerballettakademie.com/
+
+### CZ
+- `baletni-akademie-pollertova` — Baletní akademie Adély Pollertové — letní soustředění (Prague) — https://www.baletniakademie.cz/
+- `first-international-ballet-school-prague` — First International Ballet School in Prague — Summer Camp (Prague) — https://balletschoolprague.com/workshop/summer-camp/
+- `pirueta-brno` — Baletní škola Pirueta — Letní baletní soustředění (Brno) — https://pirueta.cz/
+- `prague-ballet-workshop` — Prague Ballet Workshop — Classical Ballet Summer Workshop (Prague) — https://www.pragueballetworkshop.com/
+
 ### DE
-- `ballett-dortmund` — Ballett Dortmund (Dortmund) — https://theaterdo.de/
-- `benedict-manniegel` — Benedict Manniegel Ballet School & Academy (Munich) — https://www.benedictmanniegel.de/
 - `hamburger-ballett-tanztage` — Hamburger Ballett-Tanztage (GinaWorkshops) (Hamburg) — https://ginaworkshops.com/
 - `palucca-tanzwoche-sylt` — Palucca-Tanzwoche Sylt (Sylt) — https://palucca.eu/
 - `summer-intensive-gymnasium-essen` — Summer Intensive Gymnasium Essen-Werden (Essen) — https://gymnasium-essen-werden.de/
 - `tanzschule-anastasia-frankfurt` — Ballett- und Tanzschule Anastasia (Frankfurt am Main) — https://www.ballett-und-tanzschule-anastasia.com/
 - `tanzwerkstatt-europa` — Tanzwerkstatt Europa (Munich) — https://www.jointadventures.net/en/tanzwerkstatt-europa
+
+### IT
+- `accademia-iacopini` — Accademia Iacopini — "In Danza" (Chianciano Terme) — https://accademiaiacopini.it/
+- `accademia-internazionale-coreutica` — Accademia Internazionale Coreutica — International Summer Intensive Course (Florence) — https://www.accademiainternazionalecoreutica.org/
+- `art-studio-danza` — Art Studio Danza — Stage Internazionale del Lago di Garda (Salò) — https://artstudiodanza.it/
+- `arteballetto` — Arteballetto — Summer Course in Sicily (Catania) — https://www.arteballetto.net/
+- `associazione-europea-danza` — Associazione Europea Danza — Summer Dance School (Livorno) — https://aed.dance/
+- `ateneo-della-danza` — Ateneo della Danza — Intensive Summer School (Siena) — https://www.ateneodelladanza.it/
+- `bobbio-summer-ballet-intensive` — Bobbio Summer Ballet Intensive (Bobbio) — https://bobbiosummerballetintensive.com/
+- `centro-formazione-aida` — Centro Formazione Aida — Ballet Summer Camp (Milan) — https://www.centroformazioneaida.com/
+- `centro-formazione-danza-verona` — Centro Formazione Danza Verona — Ballet Summer School (Verona) — https://www.cfdanzaverona.it/
+- `dam-danza-torino` — DAM Danza Arte e Movimento — Torino Summer Dance (Turin) — https://www.damdanzatorino.it/
+- `nuova-officina-della-danza` — Nuova Officina della Danza — NOD Summer Intensive (Turin) — https://www.nuovaofficinadelladanza.org/
+- `progetto-danza-treviso` — Progetto Danza — Stage Internazionale di Danza (Treviso) — https://www.progettodanza.org/
+- `scuola-hamlyn` — Scuola di Danza Hamlyn — Summer Course (Florence) — https://www.scuolahamlyn.com/
+- `verona-summer-dance-lab` — Verona Summer Dance Lab (Verona) — https://www.veronadancelab.com/
 
 ### JP
 - `homura-tomoi-ballet-school` — Homura Tomoi Ballet School (Osaka) — https://www.homuratomoi.com/
@@ -34,6 +59,10 @@ _Some still need Phase-1 verification (a public dated edition / not full-time) b
 - `ibsi-incheon` — International Ballet Summer Intensive Incheon (IBSI) (Incheon) — https://www.dance.utah.edu/ibsi-2019
 - `julia-ballet-academy` — Julia Ballet Academy (Seoul) — https://www.juliaballet.co.kr/
 - `seoul-ballet-theatre` — Seoul Ballet Theatre (Ballet Edu) (Seoul) — https://www.ballet.or.kr/
+
+### RO
+- `ballet-studio-felicia-serbanescu` — Ballet Studio Felicia Șerbănescu (Cluj-Napoca) — https://balletstudiofeliciaserbanescu.ro/
+- `la-sylphide-ballet-academy` — La Sylphide Academic Ballet School (Bucharest) — https://baletcopii.com/
 
 ### RU
 - `bolshoi-ballet-academy` — Bolshoi Ballet Academy (Moscow) — https://en.balletacademy.ru/

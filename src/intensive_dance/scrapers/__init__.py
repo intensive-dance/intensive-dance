@@ -13,6 +13,7 @@ import httpx
 from intensive_dance.models import Offering
 
 from . import (
+    abc_dance,
     abt_jko_school,
     academie_danse_biarritz,
     academie_ete_nice,
@@ -31,9 +32,11 @@ from . import (
     ballet_ruso_barcelona,
     ballet_summer_course_budapest,
     ballet_workshops_bucharest,
+    ballett_dortmund,
     balletstage,
     balletto_di_roma,
     bayer_ballet_academy,
+    benedict_manniegel,
     bolshoi_summer_intensive_tokyo,
     boston_ballet_school,
     brussels_international_ballet,
@@ -58,6 +61,7 @@ from . import (
     fouette,
     frankfurt_ballet_masterclasses,
     goh_ballet_academy,
+    gyori_balett_dance_intensive,
     hong_kong_academy_of_ballet,
     houston_ballet_academy,
     hungarian_dance_university,
@@ -102,6 +106,7 @@ from . import (
     school_of_american_ballet,
     staatsballett_berlin_feriencamp,
     stage_charles_jude,
+    staromestske_baletne_studio,
     studio_architanz,
     summer_sensation_intensive,
     tanzquartier_koeln,
@@ -119,12 +124,14 @@ Scraper = Callable[[httpx.Client], list[Offering]]
 
 SCRAPERS: dict[str, Scraper] = {
     "royal-ballet-school": royal_ballet_school.scrape,
+    "abc-dance": abc_dance.scrape,
     "abt-jko-school": abt_jko_school.scrape,
     "joffrey-ballet-school": joffrey_ballet_school.scrape,
     "russian-masters-ballet": russian_masters_ballet.scrape,
     "mosa-ballet-school": mosa_ballet_school.scrape,
     "john-cranko-schule": john_cranko_school.scrape,
     "frankfurt-ballet-masterclasses": frankfurt_ballet_masterclasses.scrape,
+    "gyori-balett-dance-intensive": gyori_balett_dance_intensive.scrape,
     "hungarian-dance-university": hungarian_dance_university.scrape,
     "dutch-national-ballet-academy": dutch_national_ballet_academy.scrape,
     "ecole-danse-opera-paris": ecole_danse_opera_paris.scrape,
@@ -184,6 +191,7 @@ SCRAPERS: dict[str, Scraper] = {
     "boston-ballet-school": boston_ballet_school.scrape,
     "attitude-ballet-studios": attitude_ballet_studios.scrape,
     "ballet-ireland": ballet_ireland.scrape,
+    "ballett-dortmund": ballett_dortmund.scrape,
     "balletto-di-roma": balletto_di_roma.scrape,
     "royal-winnipeg-ballet-school": royal_winnipeg_ballet_school.scrape,
     "houston-ballet-academy": houston_ballet_academy.scrape,
@@ -196,6 +204,7 @@ SCRAPERS: dict[str, Scraper] = {
     "akademia-sztuki-baletowej": akademia_sztuki_baletowej.scrape,
     "fouette": fouette.scrape,
     "bayer-ballet-academy": bayer_ballet_academy.scrape,
+    "benedict-manniegel": benedict_manniegel.scrape,
     "mlody-balet-polski": mlody_balet_polski.scrape,
     "art-ballet-gdynia": art_ballet_gdynia.scrape,
     "centrum-sztuki-tanca": centrum_sztuki_tanca.scrape,
@@ -218,4 +227,5 @@ SCRAPERS: dict[str, Scraper] = {
     "staatsballett-berlin-feriencamp": staatsballett_berlin_feriencamp.scrape,
     "tanzquartier-koeln": tanzquartier_koeln.scrape,
     "umbria-ballet": umbria_ballet.scrape,
+    "staromestske-baletne-studio": staromestske_baletne_studio.scrape,
 }
