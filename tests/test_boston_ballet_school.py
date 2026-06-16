@@ -136,14 +136,17 @@ def test_sdp_deadline_from_video_window():
     assert bbs._sdp_deadline(_text(_AUDITION), 2026) == date(2026, 3, 15)
 
 
-def test_sdp_status_open_before_deadline():
+def test_sdp_status_unset_while_video_window_stated():
+    # A stated video deadline is a deadline, not a status — leave status unset
+    # (no date-derived "closed"; consumers derive closed-ness from deadline).
     deadline = date(2026, 3, 15)
-    assert bbs._sdp_status(_text(_AUDITION), deadline, date(2026, 1, 1)) is None
+    assert bbs._sdp_status(_text(_AUDITION), deadline) is None
 
 
-def test_sdp_status_closed_after_deadline():
-    deadline = date(2026, 3, 15)
-    assert bbs._sdp_status(_text(_AUDITION), deadline, date(2026, 4, 1)) == "closed"
+def test_sdp_status_closed_when_concluded_and_no_window():
+    # Explicit "has concluded" with no remaining video window → faithful closed.
+    assert bbs._sdp_status("The audition tour has concluded.", None) == "closed"
+    assert bbs._sdp_status("Auditions are ongoing.", None) is None
 
 
 # --- JSI sessions -------------------------------------------------------------
@@ -181,9 +184,7 @@ def test_jsi_requirements_photos_headshot_letter():
 
 
 def test_build_offerings_sdp_and_three_jsi_sessions():
-    offerings = bbs._build_offerings(
-        _text(_LANDING), _text(_FAQ), _text(_AUDITION), _text(_JSI), date(2026, 1, 1)
-    )
+    offerings = bbs._build_offerings(_text(_LANDING), _text(_FAQ), _text(_AUDITION), _text(_JSI))
     ids = [o.id for o in offerings]
     assert ids == [
         "boston-ballet-school/summer-dance-program-2026",
@@ -221,5 +222,5 @@ def test_build_offerings_sdp_and_three_jsi_sessions():
 
 
 def test_no_sdp_when_dates_absent():
-    offerings = bbs._build_offerings("", "<body><h1>BBS</h1></body>", "", "", date(2026, 1, 1))
+    offerings = bbs._build_offerings("", "<body><h1>BBS</h1></body>", "", "")
     assert offerings == []

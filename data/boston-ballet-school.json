@@ -13,7 +13,6 @@
           "type": "video"
         }
       ],
-      "status": "closed",
       "url": "https://www.bostonballet.org/education/summer-dance-program/audition-tour/"
     },
     "genres": [
@@ -77,9 +76,9 @@
     },
     "source": {
       "attemptedAt": "2026-06-14T20:55:48.160105Z",
-      "hash": "sha256:596668cb8fac60e04829307d67d1a4efa94d3d11225bfbda1fed4ac58ed13f12",
+      "hash": "sha256:75b2783cddb5ec0bbfe6a6d06cc38d7c7b3d97e6560ae0091598c90c0b4c548a",
       "provider": "boston-ballet-school",
-      "scrapedAt": "2026-06-08T14:08:34.696257Z",
+      "scrapedAt": "2026-06-16T09:05:13.113069Z",
       "url": "https://www.bostonballet.org/education/summer-dance-program/faq/"
     },
     "teachers": [],
