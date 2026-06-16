@@ -1,0 +1,75 @@
+[
+  {
+    "ageRange": {
+      "min": 5
+    },
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "url": "https://www.benedictmanniegel.de/academy/workshops-events/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "character"
+    ],
+    "id": "benedict-manniegel/osterworkshop-2026",
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Munich",
+      "country": "DE",
+      "venue": "Benedict Manniegel Ballet School & Academy"
+    },
+    "organization": {
+      "city": "Munich",
+      "country": "DE",
+      "name": "Benedict Manniegel Ballet School & Academy",
+      "slug": "benedict-manniegel"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-04-11",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-04-07",
+      "timezone": "Europe/Berlin"
+    },
+    "source": {
+      "hash": "sha256:f0e1a6378d96215fc555e780dea69545fa6103691afeda449b988c8638ff6ff0",
+      "provider": "benedict-manniegel",
+      "scrapedAt": "2026-06-12T14:15:00.842313Z",
+      "url": "https://www.benedictmanniegel.de/academy/workshops-events/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Cosima Borrer"
+      },
+      {
+        "affiliations": [],
+        "name": "Christine Becker"
+      },
+      {
+        "affiliations": [],
+        "name": "Laurel Benedict-Manniegel"
+      },
+      {
+        "affiliations": [],
+        "name": "Natalia Hoffmann-Sitnikova"
+      },
+      {
+        "affiliations": [],
+        "name": "Vladimir Stadnik"
+      }
+    ],
+    "title": "Osterworkshop 2026"
+  }
+]

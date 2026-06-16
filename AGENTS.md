@@ -458,6 +458,19 @@ when a second provider genuinely needs the identical thing.
   `bando`/announcement) fetches reliably through the proxy's plain `auto=1` tier
   (the challenge gates HTML, not the PDF). When the PDF carries the structured
   dates/fees/faculty, scrape *it* (see `teatro_san_carlo_scuola_ballo`).
+- **A WP page can be evergreen while the dated edition lives only as a media-library
+  PDF.** A WordPress "Workshops" page can have clean `content.rendered` that only
+  *describes* the recurring courses (no dates) — the dated editions are uploaded as
+  **timetable (Stundenplan) PDFs** in `/wp-json/wp/v2/media`. Query media
+  (`?search=<workshop>`), pick the **current edition** by parsing year+revision out
+  of the file slug (`Stdplan_Osterworkshop_<year>_<rev>` → latest wins; this is
+  discovery, not a date cut — old revisions are superseded artifacts), then PDF-scrape
+  it. Dates come from the "DD.MM." day-header row + the slug year (the timetable has
+  no year); ages from the "N-M J." / "ab N J." level legend; faculty from the
+  LEHRKRÄFTE legend (one `<initials> <Name>` per **raw** line — don't `parse.clean`
+  first or the names glue together). Sibling course types may *not* be parseable
+  (the SummerWorkshop schedule has no age legend), so scope to the structured one
+  (see `benedict_manniegel`).
 - **Multilingual sites can flip language by cache.** Monreart's `/en/` pages
   serve EN or IT depending on the Varnish cache (even `Accept-Language` doesn't
   pin it), so a naive parse is non-deterministic. Parse **language-agnostically**:
