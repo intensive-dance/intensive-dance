@@ -356,8 +356,10 @@ class _Class:
     @property
     def requirements(self) -> list[Requirement]:
         # D/E ask for photographs as part of the application; A–C state nothing.
+        # The page only asks for "photographs" without naming poses, so this is
+        # `freeform`, not `defined-poses` (which would carry a named-pose list).
         if "submit photograph" in self._body.lower() or "must submit photo" in self._body.lower():
-            return [PhotosReq(specificity="defined-poses", notes="Photo submission required")]
+            return [PhotosReq(specificity="freeform", notes="Photo submission required")]
         return []
 
     @property
