@@ -438,6 +438,12 @@ when a second provider genuinely needs the identical thing.
   to the next heading) and **letter-space** inline form labels ("a rabesque").
   Strip the zero-width chars and detect requirement *keywords* rather than scrape
   the garbled tokens (see `brussels_international_ballet`, `young_stars_ballet`).
+  **Trap — proxy needs `render=1`:** a Wix site can fetch fine *directly* yet
+  block the fetch proxy's datacenter egress — the proxy's plain *and* `auto=1`
+  tiers time out, only the stealth `render=1` tier returns the page. Since CI
+  fetches through the proxy, force `render=1` per-request via `PROXY_PARAMS_HEADER`
+  (inert on a direct dev fetch) or the live store silently goes empty (see
+  `young_stars_ballet`).
   **Trap — a press-round-up page:** some Wix event pages are mostly years of
   stacked "KEEP READING" article excerpts (prior editions) around one
   current-edition paragraph. Parse **only** that paragraph's date/program and the

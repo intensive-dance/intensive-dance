@@ -5,6 +5,12 @@ Brussels), so the content is in the static HTML — no JS. We read two pages: th
 Summer Intensive page (dates, price, ages, curriculum, location, guest
 masterclass) and the application form at `/apply-here` (the required uploads).
 
+FETCH: a *direct* fetch needs no proxy, but Wix blocks the fetch proxy's
+datacenter egress — its plain and `auto=1` tiers time out, and only the stealth
+`render=1` tier returns the page. CI fetches through the proxy, so every request
+forces `render=1` via `PROXY_PARAMS_HEADER`; the header is inert on a direct
+(dev) fetch (verified 2026-06-16).
+
 DISCOVERY: the homepage links the current Summer Intensive page; we follow that
 link (so the id rolls forward when the season advances) rather than hardcode the
 year. The page advertises two 10-day editions — "YSB 1" and "YSB 2" — that a
@@ -35,6 +41,7 @@ import httpx
 from selectolax.parser import HTMLParser
 
 from intensive_dance import parse
+from intensive_dance.fetch import PROXY_PARAMS_HEADER
 from intensive_dance.models import (
     Application,
     CVReq,
@@ -57,6 +64,10 @@ from intensive_dance.models import (
 BASE = "https://www.youngstarsballet.com"
 APPLY_URL = f"{BASE}/apply-here"
 
+# Wix blocks the proxy's plain/auto egress (timeouts); only the stealth render
+# tier gets through. Inert on a direct (dev) fetch — the transport strips it.
+_RENDER = {PROXY_PARAMS_HEADER: "render=1&wait=8000"}
+
 # Zero-width space / non-joiner / joiner / BOM — Wix scatters these through text.
 _ZERO_WIDTH = re.compile("[\u200b\u200c\u200d\ufeff]")
 
@@ -72,15 +83,15 @@ def scrape(client: httpx.Client) -> list[Offering]:
     summer_url = _summer_url(client)
     if summer_url is None:
         return []
-    summer = _text(client.get(summer_url))
-    apply_text = _text(client.get(APPLY_URL))
+    summer = _text(client.get(summer_url, headers=_RENDER))
+    apply_text = _text(client.get(APPLY_URL, headers=_RENDER))
     offering = _build_offering(summer, summer_url, apply_text)
     return [offering] if offering is not None else []
 
 
 def _summer_url(client: httpx.Client) -> str | None:
     """The current Summer Intensive page, discovered from the homepage nav."""
-    tree = HTMLParser(client.get(f"{BASE}/").text)
+    tree = HTMLParser(client.get(f"{BASE}/", headers=_RENDER).text)
     for a in tree.css("a"):
         href = a.attributes.get("href") or ""
         if re.search(r"summer-intensive", href, re.IGNORECASE):
@@ -122,7 +133,6 @@ def _build_offering(summer: str, summer_url: str, apply_text: str) -> Offering |
         prices=_prices(summer),
         teachers=_teachers(summer),
         application=Application(
-            status="open",
             url=APPLY_URL,
             requirements=_requirements(apply_text),
         ),
