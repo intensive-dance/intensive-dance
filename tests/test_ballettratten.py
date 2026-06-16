@@ -42,7 +42,8 @@ def test_teenager_offering():
     assert len(o.prices) == 1
     assert o.prices[0].amount == 320.0
     assert o.prices[0].currency == "EUR"
-    assert o.application.status == "open"
+    # source states no application status/deadline → left unset, not invented
+    assert o.application.status is None
     # email-only registration, no audition gate
     assert o.application.requirements == []
 

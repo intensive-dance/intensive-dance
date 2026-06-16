@@ -6,7 +6,6 @@
     },
     "application": {
       "requirements": [],
-      "status": "open",
       "url": "https://www.ballettratten.com/neu/index.php/de/sommerintensivkurs-2026-teenager"
     },
     "genres": [
@@ -46,9 +45,9 @@
       "timezone": "Europe/Vienna"
     },
     "source": {
-      "hash": "sha256:c8c1ecee888c7a8cf8394e05eeb0d3f9fd591000106f11cc767990308350cb97",
+      "hash": "sha256:d53446911c168d544d06dc0fe6482fa78d888c5117173a546092e197b0e62e7f",
       "provider": "ballettratten",
-      "scrapedAt": "2026-06-12T08:06:39.976092Z",
+      "scrapedAt": "2026-06-16T07:58:53.527924Z",
       "url": "https://www.ballettratten.com/neu/index.php/de/sommerintensivkurs-2026-teenager"
     },
     "teachers": [],

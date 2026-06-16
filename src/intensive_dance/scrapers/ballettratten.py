@@ -26,7 +26,8 @@ WHAT THIS SCRAPER EXERCISES (verified live 2026-06-12)
   ("(10 - 18 Jahre)" → min/max), German "€ 320" price.
 - Genres classical + pointe + repertoire keyed off the curriculum terms
   (Klassisches Training / Spitze / Variation).
-- Email-only registration with no audition → empty requirements, open status.
+- Email-only registration with no audition → empty requirements; the page states
+  no application status/deadline, so both stay unset (faithful, not invented).
 """
 
 from __future__ import annotations
@@ -148,6 +149,6 @@ def _build_offerings(html: str) -> list[Offering]:
                 season=season, start=start, end=end, timezone="Europe/Vienna", notes=notes
             ),
             prices=_prices(text),
-            application=Application(status="open", url=PAGE),
+            application=Application(url=PAGE),
         )
     ]
