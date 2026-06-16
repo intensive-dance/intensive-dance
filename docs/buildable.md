@@ -2,7 +2,7 @@
 
 > **Generated — do not edit.** Refresh with `uv run python -m intensive_dance.overview --write`; CI drift-checks it. Source of truth: `providers.json`.
 
-44 buildable · 9 excluded · 103 live (156 providers total).
+43 buildable · 9 excluded · 104 live (156 providers total).
 
 **To claim one (so nobody double-builds):** check `gh issue list` / `gh pr list` for the slug; if free, open a `build:<slug>` issue and **self-assign first**, then build; close it when the PR merges (provider → `live`). An open claim issue *or* PR = locked. See `AGENTS.md` → Scope & coordination.
 
@@ -22,7 +22,6 @@ _Some still need Phase-1 verification (a public dated edition / not full-time) b
 - `prague-ballet-workshop` — Prague Ballet Workshop — Classical Ballet Summer Workshop (Prague) — https://www.pragueballetworkshop.com/
 
 ### DE
-- `ballett-dortmund` — Ballett Dortmund (Dortmund) — https://theaterdo.de/
 - `hamburger-ballett-tanztage` — Hamburger Ballett-Tanztage (GinaWorkshops) (Hamburg) — https://ginaworkshops.com/
 - `palucca-tanzwoche-sylt` — Palucca-Tanzwoche Sylt (Sylt) — https://palucca.eu/
 - `summer-intensive-gymnasium-essen` — Summer Intensive Gymnasium Essen-Werden (Essen) — https://gymnasium-essen-werden.de/
