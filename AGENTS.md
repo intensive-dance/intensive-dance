@@ -85,10 +85,15 @@ a crashed `scrape.yml` leg uploads a `fail-<slug>` marker that the run's final
 issue; and `scraper-audit.yml` (daily) flags any **live** provider whose
 committed store holds **zero** offerings (`intensive_dance.audit` →
 `assign_audit`, exempt via `audit_allowlist.json`) into a `scraper-audit` issue.
-Assignment goes through the REST agent-assignment body (`intensive_dance.copilot`)
-and needs a user PAT with Copilot enabled (`COPILOT_PAT`/`COPILOT_CLI_TOKEN`) —
-the default `GITHUB_TOKEN` can't assign the agent. These ops scripts are
-stdlib-only (run with `PYTHONPATH=src python3 -m …`, no `uv sync`).
+**Token split (don't merge it back):** issue/label ops and the run-log read run
+on the job's default `GITHUB_TOKEN` (`issues: write` + `actions: read`); only the
+Copilot assignment uses a user PAT — `COPILOT_TOKEN` (← `COPILOT_PAT`/`COPILOT_CLI_TOKEN`),
+since the default token can't assign the agent. Assignment goes through the REST
+agent-assignment body (`intensive_dance.copilot`) and is **best-effort** — an
+absent/under-scoped PAT just skips it; the tracker issue still lands on the
+default token. (Funnelling everything through the lone `COPILOT_CLI_TOKEN`, which
+lacks Issues scope, used to crash the whole `report` job at `gh label create`.)
+These ops scripts are stdlib-only (run with `PYTHONPATH=src python3 -m …`, no `uv sync`).
 
 Always use `uv` (never bare `pip`/`python`). `ruff` line-length is **100**.
 
