@@ -153,7 +153,7 @@ def _build_offering(record: dict, fees: wp.Content | None, today: date) -> Offer
 
     application = _application(
         content.find_block("Application deadline", "Applications", "Bookings"),
-        url=_absolute(content.link("apply", "book")),
+        url=_apply_url(content),
         requirements=[photos],
     )
 
@@ -547,6 +547,31 @@ def _join(*parts: str | None) -> str | None:
 
 def _absolute(url: str | None) -> str | None:
     return f"{BASE}{url}" if url and url.startswith("/") else url
+
+
+# The intensive pages all live under this RBS path segment; a program's own
+# booking button is either external (a Cvent registration host) or an internal
+# link inside this section.
+_INTENSIVE_PATH = "/intensive-courses/"
+
+
+def _apply_url(content: wp.Content) -> str | None:
+    """The program's own apply/book link, or None.
+
+    `content.link("apply","book")` returns the first button whose title contains
+    "apply"/"book", which on some pages catches a cross-link into a *different*
+    RBS programme (e.g. the Thailand page links the INSPIRE teacher-training
+    series, not its own booking). A genuine booking link is external (an
+    off-site registration host) or sits inside the intensive-courses section —
+    so drop an internal RBS link that points outside it rather than mis-attribute
+    another programme's URL.
+    """
+    url = _absolute(content.link("apply", "book"))
+    if url is None:
+        return None
+    if url.startswith(BASE) and _INTENSIVE_PATH not in url:
+        return None
+    return url
 
 
 # --- sessions: per-block dates, age range, and gender ---

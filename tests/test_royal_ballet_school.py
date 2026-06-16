@@ -303,3 +303,42 @@ def test_is_long_term_keeps_undated_offering():
     # When start or end is absent we cannot classify by span → keep it.
     assert rbs._is_long_term(_stub_offering(None, None)) is False
     assert rbs._is_long_term(_stub_offering(date(2026, 1, 1), None)) is False
+
+
+# --- apply URL: reject cross-programme links -------------------------------
+
+
+def _content_with_link(title: str, url: str):
+    from intensive_dance import wp
+
+    return wp.Content(sections=[], links={title: url})
+
+
+def test_apply_url_drops_cross_programme_inspire_link():
+    # Thailand page: the only "apply" button cross-links the INSPIRE
+    # teacher-training series, not the intensive's own booking → null it
+    # rather than mis-attribute another programme's URL.
+    content = _content_with_link(
+        "Apply now", "/train/dancer-training/dance-teacher-training/inspire/series-1/"
+    )
+    assert rbs._apply_url(content) is None
+
+
+def test_apply_url_keeps_external_booking_link():
+    # Genuine booking links are external Cvent registration URLs.
+    cvent = "https://eur.cvent.me/NVgRMx?RefId=Intensive+Courses"
+    content = _content_with_link("Book your place", cvent)
+    assert rbs._apply_url(content) == cvent
+
+
+def test_apply_url_keeps_internal_intensive_courses_link():
+    # An internal RBS link inside the intensive-courses section is the
+    # program's own booking and is kept.
+    path = "/train/dancer-training/intensive-courses/uk-summer-intensive/apply/"
+    content = _content_with_link("Apply", path)
+    assert rbs._apply_url(content) == f"{rbs.BASE}{path}"
+
+
+def test_apply_url_none_when_no_link():
+    content = _content_with_link("Read more", "/somewhere/")
+    assert rbs._apply_url(content) is None
