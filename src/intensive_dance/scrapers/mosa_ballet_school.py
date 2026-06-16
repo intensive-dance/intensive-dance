@@ -112,6 +112,11 @@ _DROP = (
     "formation-en",
     "moovement",
     "dance-with-mosa-teachers",
+    # Professional-development courses FOR ballet pianists / teachers — not
+    # student dance intensives, so out of scope (they slip past _KEEP on
+    # "intensive"). Precise keys so no student offering is caught.
+    "ballet-pianists",
+    "ballet-teachers",
     "let-s-dance-for-life",
     "la-procure",
     "dance-for-pd",

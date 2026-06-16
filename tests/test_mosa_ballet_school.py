@@ -38,6 +38,10 @@ def test_in_scope_drops_non_training_events():
         "workshop-dance-and-parkinson-s-disease-82",
         "admission-test-mosa-preparation-program-9-12-12-june-2026-250",
         "open-doors-april-2026-by-registration-only-245",
+        # Professional-development courses FOR pianists/teachers, not student
+        # intensives — they pass _KEEP on "intensive" but are out of scope.
+        "ballet-pianists-summer-intensive-2024-from-18-yo-111",
+        "ballet-teachers-summer-intensive-2024-from-18-yo-112",
     ]:
         assert not mosa._in_scope(slug), slug
 
