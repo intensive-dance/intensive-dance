@@ -91,10 +91,10 @@ def scrape(client: httpx.Client) -> list[Offering]:
     page = wp.fetch_page(client, SLUG, base=BASE)
     if page is None:
         return []
-    return _build_offerings(page, date.today())
+    return _build_offerings(page)
 
 
-def _build_offerings(page: dict, today: date) -> list[Offering]:
+def _build_offerings(page: dict) -> list[Offering]:
     url = page["link"]
     rendered = page["content"]["rendered"]
     content = wp.parse(rendered)
@@ -102,8 +102,8 @@ def _build_offerings(page: dict, today: date) -> list[Offering]:
     opens, deadline = _application_window(content)
 
     offerings = [
-        _summer_intensive(content, url, apply_url, opens, deadline, today),
-        _ballet_in_bloom(content, url, apply_url, opens, deadline, today),
+        _summer_intensive(content, url, apply_url, opens, deadline),
+        _ballet_in_bloom(content, url, apply_url, opens, deadline),
     ]
     return [o for o in offerings if o is not None]
 
@@ -117,11 +117,13 @@ def _summer_intensive(
     apply_url: str | None,
     opens: date | None,
     deadline: date | None,
-    today: date,
 ) -> Offering | None:
     body = _section_text(content, "summer intensive")
     start, end = _dates(body)
-    if start is None or (end is not None and end < today):
+    # Keep ended cycles (IDR-24): "past" is derived consumer-side from
+    # schedule.end, never filtered at scrape time. Only an undated edition is
+    # dropped — it can't be placed in time.
+    if start is None:
         return None
 
     # Every applicant attaches the two photos; private-school applicants add a
@@ -169,11 +171,11 @@ def _ballet_in_bloom(
     apply_url: str | None,
     opens: date | None,
     deadline: date | None,
-    today: date,
 ) -> Offering | None:
     body = _section_text(content, "New in 2026", "More info about Ballet in Bloom")
     start, end = _dates(body)
-    if start is None or (end is not None and end < today):
+    # Keep ended cycles (IDR-24); only drop an undated edition.
+    if start is None:
         return None
 
     return Offering(
