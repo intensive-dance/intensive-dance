@@ -51,9 +51,6 @@ _Some still need Phase-1 verification (a public dated edition / not full-time) b
 ### SE
 - `international-ballet-school-stockholm` — International Ballet School Stockholm (Stockholm) — https://www.internationalballet.se/
 
-### SK
-- `staromestske-baletne-studio` — Staromestské baletné štúdio — Letná škola tanca (Bratislava) — https://staromestskecentrakultury.sk/
-
 ## Excluded — do NOT build
 
 - `helsinki-international-ballet-competition` — Helsinki International Ballet Competition (HIBC) — _competition — icebox #80_
