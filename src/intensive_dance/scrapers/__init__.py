@@ -91,6 +91,7 @@ from . import (
     norwegian_national_ballet,
     orsolina28,
     pacific_northwest_ballet_school,
+    pirueta_brno,
     pnsd_rosella_hightower,
     prague_ballet_intensive,
     prix_de_lausanne_summer_intensive,
@@ -227,5 +228,6 @@ SCRAPERS: dict[str, Scraper] = {
     "staatsballett-berlin-feriencamp": staatsballett_berlin_feriencamp.scrape,
     "tanzquartier-koeln": tanzquartier_koeln.scrape,
     "umbria-ballet": umbria_ballet.scrape,
+    "pirueta-brno": pirueta_brno.scrape,
     "staromestske-baletne-studio": staromestske_baletne_studio.scrape,
 }
