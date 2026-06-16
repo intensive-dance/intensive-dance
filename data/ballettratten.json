@@ -1,0 +1,56 @@
+[
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 10
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.ballettratten.com/neu/index.php/de/sommerintensivkurs-2026-teenager"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire"
+    ],
+    "id": "ballettratten/sommerintensivkurs-teenager-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Vienna",
+      "country": "AT",
+      "venue": "Ballettinstitut Döbling"
+    },
+    "organization": {
+      "city": "Vienna",
+      "country": "AT",
+      "name": "Ballettratten",
+      "slug": "ballettratten"
+    },
+    "prices": [
+      {
+        "amount": 320.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ]
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-17",
+      "notes": "13. - 17. Juli 2026",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-13",
+      "timezone": "Europe/Vienna"
+    },
+    "source": {
+      "hash": "sha256:d53446911c168d544d06dc0fe6482fa78d888c5117173a546092e197b0e62e7f",
+      "provider": "ballettratten",
+      "scrapedAt": "2026-06-16T07:58:53.527924Z",
+      "url": "https://www.ballettratten.com/neu/index.php/de/sommerintensivkurs-2026-teenager"
+    },
+    "teachers": [],
+    "title": "Sommerintensivkurs – Teenager"
+  }
+]
