@@ -3,7 +3,6 @@
     "application": {
       "deadline": "2026-06-15",
       "requirements": [],
-      "status": "open",
       "url": "https://forms.gle/H9d2zfHPYTrTcxE46"
     },
     "genres": [
@@ -89,9 +88,9 @@
     },
     "source": {
       "attemptedAt": "2026-06-15T21:40:58.867617Z",
-      "hash": "sha256:3841c2f9cb8cf7c6ef5dd1d366c3dba0faa3316bf5450832c7b1e1b280ed91a3",
+      "hash": "sha256:c6bbee2e2e9ef905446fffd2fcd1df8df17ecfdf2bfc4b28ccdd2ca67b7007e4",
       "provider": "finland-international-summer-ballet-school",
-      "scrapedAt": "2026-06-09T00:29:15.418998Z",
+      "scrapedAt": "2026-06-16T09:01:17.914810Z",
       "url": "https://www.finsummerdance.com/"
     },
     "teachers": [
@@ -111,7 +110,6 @@
     "application": {
       "deadline": "2026-06-15",
       "requirements": [],
-      "status": "open",
       "url": "https://forms.gle/H9d2zfHPYTrTcxE46"
     },
     "genres": [
@@ -197,9 +195,9 @@
     },
     "source": {
       "attemptedAt": "2026-06-15T21:40:58.867617Z",
-      "hash": "sha256:fa7475d00bebd1cd1fd9a2d53b79b1c69792e3422aa1d802df4683962edddd01",
+      "hash": "sha256:608409aa45353f05f3242ac131a9a60d63d2eba922364875fd2233a2c1dac791",
       "provider": "finland-international-summer-ballet-school",
-      "scrapedAt": "2026-06-09T00:29:15.419048Z",
+      "scrapedAt": "2026-06-16T09:01:17.914866Z",
       "url": "https://www.finsummerdance.com/"
     },
     "teachers": [
@@ -223,7 +221,6 @@
     "application": {
       "deadline": "2026-06-15",
       "requirements": [],
-      "status": "open",
       "url": "https://forms.gle/H9d2zfHPYTrTcxE46"
     },
     "genres": [
@@ -309,9 +306,9 @@
     },
     "source": {
       "attemptedAt": "2026-06-15T21:40:58.867617Z",
-      "hash": "sha256:fe6d69faa33a47b2434b8975571bf4ff9c28247ec507e0a5c53532e38f125b74",
+      "hash": "sha256:ec86a7a04605c77b33fa377e61df6aeeb391cf5eb22561455c7d674bd5a53a84",
       "provider": "finland-international-summer-ballet-school",
-      "scrapedAt": "2026-06-09T00:29:15.419079Z",
+      "scrapedAt": "2026-06-16T09:01:17.914883Z",
       "url": "https://www.finsummerdance.com/"
     },
     "teachers": [
@@ -340,7 +337,6 @@
     "application": {
       "deadline": "2026-06-15",
       "requirements": [],
-      "status": "open",
       "url": "https://forms.gle/H9d2zfHPYTrTcxE46"
     },
     "genres": [
@@ -426,9 +422,9 @@
     },
     "source": {
       "attemptedAt": "2026-06-15T21:40:58.867617Z",
-      "hash": "sha256:ac559c3aa38a0db29e121393eae021a084142b048d81dce5a43268ff1a13bdde",
+      "hash": "sha256:75d2a76bda20228d3e9dd43201c8602ad77faa31973228a4443d6a4759fd717c",
       "provider": "finland-international-summer-ballet-school",
-      "scrapedAt": "2026-06-09T00:29:15.419092Z",
+      "scrapedAt": "2026-06-16T09:01:17.914898Z",
       "url": "https://www.finsummerdance.com/"
     },
     "teachers": [

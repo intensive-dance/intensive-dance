@@ -35,9 +35,11 @@ WHAT THIS SCRAPER EXERCISES (verified live 2026-06-09):
     included.
   - GENRES matched against the structured curriculum list (Ballet / Pointe /
     Repertoire / Character / Contemporary-jazz), not loose prose.
-  - APPLICATION: a Google-Form URL + a stated "before June 15th" payment deadline
-    → status derived against today; requirements `[]` (the form's contents aren't
-    described on the public pages).
+  - APPLICATION: a Google-Form URL + a stated "before June 15th" payment deadline.
+    `status` is left unset — the page states a deadline, not an application status;
+    consumers derive closed-ness from deadline < today (deriving it here against
+    today would also break the no-diff rule). Requirements `[]` (the form's
+    contents aren't described on the public pages).
   - TEACHERS with `Affiliation` (company + role) parsed from the schedule doc.
 """
 
@@ -53,7 +55,6 @@ from intensive_dance import parse
 from intensive_dance.models import (
     Affiliation,
     Application,
-    ApplicationStatus,
     Genre,
     Level,
     Location,
@@ -103,7 +104,7 @@ def scrape(client: httpx.Client) -> list[Offering]:
     course = client.get(COURSE)
     course.raise_for_status()
     doc = _fetch_schedule_doc(client, home.text)
-    return _build_offerings(home.text, course.text, doc, date.today())
+    return _build_offerings(home.text, course.text, doc)
 
 
 def _fetch_schedule_doc(client: httpx.Client, home_html: str) -> str:
@@ -269,12 +270,6 @@ def _deadline(course_text: str, year: int) -> date | None:
     return date(year, 6, int(match.group(1))) if match else None
 
 
-def _status(deadline: date | None, today: date) -> ApplicationStatus | None:
-    if deadline is None:
-        return None
-    return "open" if today <= deadline else "closed"
-
-
 # --- teachers (per week, from the linked schedule doc) -----------------------
 #
 # The doc's "Tutors:" block groups tutors under week headers (a date span line),
@@ -384,9 +379,7 @@ def _affiliations(text: str) -> list[Affiliation]:
 # --- build -------------------------------------------------------------------
 
 
-def _build_offerings(
-    home_html: str, course_html: str, doc_text: str, today: date
-) -> list[Offering]:
+def _build_offerings(home_html: str, course_html: str, doc_text: str) -> list[Offering]:
     home_text = _text(home_html)
     course_text = _text(course_html)
 
@@ -403,7 +396,6 @@ def _build_offerings(
     prices = _prices(course_text)
     apply_url = _apply_url(home_html)
     deadline = _deadline(course_text, year)
-    status = _status(deadline, today)
     faculty = _doc_faculty(doc_text, year)
     sessions = _sessions()
 
@@ -428,7 +420,7 @@ def _build_offerings(
                 ),
                 teachers=faculty.get(start, []),
                 prices=list(prices),
-                application=Application(status=status, deadline=deadline, url=apply_url),
+                application=Application(deadline=deadline, url=apply_url),
             )
         )
     return offerings

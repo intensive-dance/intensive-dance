@@ -64,11 +64,9 @@ Adults ballet Mo-Fr-  Rasmus Ahlgren  (Demi-soloist with the Estonian National B
 SCHEDULE  22 - 27.6.2026
 """
 
-TODAY = date(2026, 6, 1)
 
-
-def _build(home=HOME_HTML, course=COURSE_HTML, doc=DOC_TEXT, today=TODAY):
-    return f._build_offerings(home, course, doc, today)
+def _build(home=HOME_HTML, course=COURSE_HTML, doc=DOC_TEXT):
+    return f._build_offerings(home, course, doc)
 
 
 def test_emits_one_offering_per_weekly_session():
@@ -136,13 +134,10 @@ def test_application_window_and_form():
     o = _build()[0]
     assert o.application.deadline == date(2026, 6, 15)
     assert o.application.url == "https://forms.gle/H9d2zfHPYTrTcxE46"
-    assert o.application.status == "open"  # today = 1 June, before the deadline
+    # The page states a payment deadline, not an application status — so status is
+    # left unset (consumers derive closed-ness from deadline < today).
+    assert o.application.status is None
     assert o.application.requirements == []  # not described publicly
-
-
-def test_application_closed_after_deadline():
-    o = _build(today=date(2026, 6, 20))[0]
-    assert o.application.status == "closed"
 
 
 def test_faculty_attributed_per_week():
