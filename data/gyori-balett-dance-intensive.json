@@ -1,0 +1,93 @@
+[
+  {
+    "application": {
+      "notes": "Open enrollment; questions to application@gyoribalett.hu",
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "url": "https://gyoribalett.hu/dance-intensive-gyor-2025-en/"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "gyori-balett-dance-intensive/2025",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Győr",
+      "country": "HU",
+      "venue": "Szabolcska Mihály Str. 5, Győr 9023 – Dance and Fine Arts Primary School, Vocational High School and College – Ballet Hall"
+    },
+    "organization": {
+      "city": "Győr",
+      "country": "HU",
+      "name": "Győri Balett",
+      "slug": "gyori-balett-dance-intensive"
+    },
+    "prices": [
+      {
+        "amount": 10000.0,
+        "currency": "HUF",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Per hour (single workshop)"
+      },
+      {
+        "amount": 40000.0,
+        "currency": "HUF",
+        "includes": [
+          "tuition"
+        ],
+        "label": "5-day pass (single workshop)"
+      },
+      {
+        "amount": 80000.0,
+        "currency": "HUF",
+        "includes": [
+          "tuition"
+        ],
+        "label": "5-day combined pass (classical + contemporary)"
+      }
+    ],
+    "schedule": {
+      "end": "2025-06-22",
+      "season": "2025",
+      "sessions": [
+        {
+          "label": "Classical ballet",
+          "notes": "Marcello Algeri — every day 14:00–15:30"
+        },
+        {
+          "label": "Contemporary dance",
+          "notes": "Jordan James Bridge — every day 16:00–17:30"
+        }
+      ],
+      "start": "2025-06-18",
+      "timezone": "Europe/Budapest"
+    },
+    "source": {
+      "attemptedAt": "2026-06-15T21:40:58.425453Z",
+      "hash": "sha256:0ac0583fe8ff5029a81b6faac3ebdeff42ede43a79b1cf1593a97e5bc69eda93",
+      "provider": "gyori-balett-dance-intensive",
+      "scrapedAt": "2026-06-12T13:23:29.208816Z",
+      "url": "https://gyoribalett.hu/dance-intensive-gyor-2025-en/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Marcello Algeri",
+        "role": "Classical ballet"
+      },
+      {
+        "affiliations": [],
+        "name": "Jordan James Bridge",
+        "role": "Contemporary dance"
+      }
+    ],
+    "title": "Dance Intensive Győr 2025"
+  }
+]

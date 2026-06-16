@@ -102,7 +102,7 @@
       "timezone": "Asia/Tokyo"
     },
     "source": {
-      "attemptedAt": "2026-06-11T21:26:43.629142Z",
+      "attemptedAt": "2026-06-14T22:01:21.764463Z",
       "hash": "sha256:a61fc3dc3aec378f3e02d7639d517b36b645acf08219759203654c25f76c6367",
       "provider": "tokyo-city-ballet",
       "scrapedAt": "2026-06-09T21:02:02.837034Z",

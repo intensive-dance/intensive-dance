@@ -998,7 +998,7 @@
       "country": "DE",
       "city": "Munich",
       "url": "https://www.benedictmanniegel.de/",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "tanzschule-anastasia-frankfurt",
@@ -1039,6 +1039,214 @@
       "city": "Dortmund",
       "url": "https://www.dbft.de/Fortbildungen-Weiterbildungen/Seminarangebot/Sommerakademie-Junior/index.html",
       "status": "live"
+    },
+    {
+      "slug": "europaballett-danceflash",
+      "name": "Europaballett St. Pölten — Danceflash",
+      "country": "AT",
+      "city": "St. Pölten",
+      "url": "https://en.europaballett.at/ausbildung/danceflash",
+      "status": "seed"
+    },
+    {
+      "slug": "ballettratten",
+      "name": "Ballettratten — Sommerintensivkurs",
+      "country": "AT",
+      "city": "Vienna",
+      "url": "https://www.ballettratten.com/",
+      "status": "seed"
+    },
+    {
+      "slug": "wiener-ballettakademie",
+      "name": "Vienna Ballet Academy (Wiener Ballettakademie)",
+      "country": "AT",
+      "city": "Vienna",
+      "url": "https://wienerballettakademie.com/",
+      "status": "seed"
+    },
+    {
+      "slug": "abc-dance",
+      "name": "abcDance — Academy of Ballet & Contemporary Dance",
+      "country": "AT",
+      "city": "Wiener Neustadt",
+      "url": "https://www.abcdance.at/",
+      "status": "live"
+    },
+    {
+      "slug": "staromestske-baletne-studio",
+      "name": "Staromestské baletné štúdio — Letná škola tanca",
+      "country": "SK",
+      "city": "Bratislava",
+      "url": "https://staromestskecentrakultury.sk/",
+      "status": "live"
+    },
+    {
+      "slug": "pirueta-brno",
+      "name": "Baletní škola Pirueta — Letní baletní soustředění",
+      "country": "CZ",
+      "city": "Brno",
+      "url": "https://pirueta.cz/",
+      "status": "seed"
+    },
+    {
+      "slug": "gyori-balett-dance-intensive",
+      "name": "Győri Balett — Dance Intensive",
+      "country": "HU",
+      "city": "Győr",
+      "url": "https://gyoribalett.hu/",
+      "status": "live"
+    },
+    {
+      "slug": "nuova-officina-della-danza",
+      "name": "Nuova Officina della Danza — NOD Summer Intensive",
+      "country": "IT",
+      "city": "Turin",
+      "url": "https://www.nuovaofficinadelladanza.org/",
+      "status": "seed"
+    },
+    {
+      "slug": "dam-danza-torino",
+      "name": "DAM Danza Arte e Movimento — Torino Summer Dance",
+      "country": "IT",
+      "city": "Turin",
+      "url": "https://www.damdanzatorino.it/",
+      "status": "seed"
+    },
+    {
+      "slug": "verona-summer-dance-lab",
+      "name": "Verona Summer Dance Lab",
+      "country": "IT",
+      "city": "Verona",
+      "url": "https://www.veronadancelab.com/",
+      "status": "seed"
+    },
+    {
+      "slug": "centro-formazione-danza-verona",
+      "name": "Centro Formazione Danza Verona — Ballet Summer School",
+      "country": "IT",
+      "city": "Verona",
+      "url": "https://www.cfdanzaverona.it/",
+      "status": "seed"
+    },
+    {
+      "slug": "bobbio-summer-ballet-intensive",
+      "name": "Bobbio Summer Ballet Intensive",
+      "country": "IT",
+      "city": "Bobbio",
+      "url": "https://bobbiosummerballetintensive.com/",
+      "status": "seed"
+    },
+    {
+      "slug": "centro-formazione-aida",
+      "name": "Centro Formazione Aida — Ballet Summer Camp",
+      "country": "IT",
+      "city": "Milan",
+      "url": "https://www.centroformazioneaida.com/",
+      "status": "seed"
+    },
+    {
+      "slug": "ateneo-della-danza",
+      "name": "Ateneo della Danza — Intensive Summer School",
+      "country": "IT",
+      "city": "Siena",
+      "url": "https://www.ateneodelladanza.it/",
+      "status": "seed"
+    },
+    {
+      "slug": "accademia-internazionale-coreutica",
+      "name": "Accademia Internazionale Coreutica — International Summer Intensive Course",
+      "country": "IT",
+      "city": "Florence",
+      "url": "https://www.accademiainternazionalecoreutica.org/",
+      "status": "seed"
+    },
+    {
+      "slug": "associazione-europea-danza",
+      "name": "Associazione Europea Danza — Summer Dance School",
+      "country": "IT",
+      "city": "Livorno",
+      "url": "https://aed.dance/",
+      "status": "seed"
+    },
+    {
+      "slug": "art-studio-danza",
+      "name": "Art Studio Danza — Stage Internazionale del Lago di Garda",
+      "country": "IT",
+      "city": "Salò",
+      "url": "https://artstudiodanza.it/",
+      "status": "seed"
+    },
+    {
+      "slug": "progetto-danza-treviso",
+      "name": "Progetto Danza — Stage Internazionale di Danza",
+      "country": "IT",
+      "city": "Treviso",
+      "url": "https://www.progettodanza.org/",
+      "status": "seed"
+    },
+    {
+      "slug": "accademia-iacopini",
+      "name": "Accademia Iacopini — \"In Danza\"",
+      "country": "IT",
+      "city": "Chianciano Terme",
+      "url": "https://accademiaiacopini.it/",
+      "status": "seed"
+    },
+    {
+      "slug": "scuola-hamlyn",
+      "name": "Scuola di Danza Hamlyn — Summer Course",
+      "country": "IT",
+      "city": "Florence",
+      "url": "https://www.scuolahamlyn.com/",
+      "status": "seed"
+    },
+    {
+      "slug": "arteballetto",
+      "name": "Arteballetto — Summer Course in Sicily",
+      "country": "IT",
+      "city": "Catania",
+      "url": "https://www.arteballetto.net/",
+      "status": "seed"
+    },
+    {
+      "slug": "la-sylphide-ballet-academy",
+      "name": "La Sylphide Academic Ballet School",
+      "country": "RO",
+      "city": "Bucharest",
+      "url": "https://baletcopii.com/",
+      "status": "seed"
+    },
+    {
+      "slug": "ballet-studio-felicia-serbanescu",
+      "name": "Ballet Studio Felicia Șerbănescu",
+      "country": "RO",
+      "city": "Cluj-Napoca",
+      "url": "https://balletstudiofeliciaserbanescu.ro/",
+      "status": "seed"
+    },
+    {
+      "slug": "prague-ballet-workshop",
+      "name": "Prague Ballet Workshop — Classical Ballet Summer Workshop",
+      "country": "CZ",
+      "city": "Prague",
+      "url": "https://www.pragueballetworkshop.com/",
+      "status": "seed"
+    },
+    {
+      "slug": "baletni-akademie-pollertova",
+      "name": "Baletní akademie Adély Pollertové — letní soustředění",
+      "country": "CZ",
+      "city": "Prague",
+      "url": "https://www.baletniakademie.cz/",
+      "status": "seed"
+    },
+    {
+      "slug": "first-international-ballet-school-prague",
+      "name": "First International Ballet School in Prague — Summer Camp",
+      "country": "CZ",
+      "city": "Prague",
+      "url": "https://balletschoolprague.com/workshop/summer-camp/",
+      "status": "seed"
     }
   ]
 }
