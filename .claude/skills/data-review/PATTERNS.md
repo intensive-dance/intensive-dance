@@ -186,3 +186,23 @@ Field keys below match the review UI / issue body (`application.requirements`,
   retrospective of past guests?
 - **Fix:** restrict parsing to the upcoming/current segment of the page.
   (Origin: fc1c7e6 ballet-workshops-bucharest `_upcoming_segment`.)
+
+## P14 — Empty `genres` on a single-discipline institution (under-match)
+
+- **Wrong:** an Offering from a school that teaches one discipline (e.g. a
+  *ballet* school) ships `genres: []` because its keyword matcher found no style
+  word in a **sparse page** (a thin masterclass/announcement page that lists
+  dates/venue but never says "classical"/"ballet"). The inverse of P3's *over*-
+  match: here the matcher *under*-matches and emits a genre-less Offering (which
+  the "don't emit empty-genre Offerings" rule says shouldn't exist).
+- **Spot it:** `genres == []` on a provider whose other offerings are all
+  classical (greppable across `data/<slug>.json`); a known ballet school with a
+  genre-less row. Distinguish from P7 (a genuine non-offering): here the row IS a
+  real dated edition, just thinly described.
+- **Confirm:** is the provider single-discipline (its whole catalogue is ballet)?
+  Does the sparse page describe a real edition (dates/venue) vs a placeholder?
+- **Fix:** give the discipline matcher a `default=[...]` (e.g. `["classical"]`)
+  so a no-keyword page falls back to the institution's base discipline rather
+  than emitting empty genres — only when the provider genuinely teaches nothing
+  else. Don't default a multi-discipline provider. (Origin: royal-ballet-school
+  Livorno/Spain masterclasses — sparse pages, `_genres` had no default.)

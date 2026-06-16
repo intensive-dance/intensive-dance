@@ -147,6 +147,12 @@ def test_genres_keywords():
     ]
 
 
+def test_genres_default_classical_for_sparse_page():
+    # RBS is classical-ballet only; a masterclass page that names no style still
+    # defaults to classical rather than emitting a genre-less Offering.
+    assert rbs._genres("International masterclasses in Livorno. Apply by …") == ["classical"]
+
+
 def test_levels_pre_professional_does_not_double_count_professional():
     assert rbs._levels("for advanced and pre-professional dancers") == [
         "advanced",

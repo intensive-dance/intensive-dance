@@ -306,7 +306,9 @@
         }
       ]
     },
-    "genres": [],
+    "genres": [
+      "classical"
+    ],
     "id": "royal-ballet-school/korea-intensive-cancelled-2022",
     "level": [],
     "lifecycle": "cancelled",
@@ -325,9 +327,9 @@
     },
     "source": {
       "attemptedAt": "2026-06-15T18:58:32.890250Z",
-      "hash": "sha256:c5f77cfd624eee1bd1dc75850e5d55c04cd37c5cce601f0deec016045d400a72",
+      "hash": "sha256:c1fca85d40ddab04f3f5855e623f04aeecfe330272a88c62a8c6f59a91fa6bc9",
       "provider": "royal-ballet-school",
-      "scrapedAt": "2026-06-05T10:04:59.249815Z",
+      "scrapedAt": "2026-06-16T09:32:02.702974Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/korea-intensive-cancelled/"
     },
     "teachers": [],
@@ -349,7 +351,9 @@
       ],
       "status": "closed"
     },
-    "genres": [],
+    "genres": [
+      "classical"
+    ],
     "id": "royal-ballet-school/livorno-masterclasses-2025",
     "level": [],
     "lifecycle": "scheduled",
@@ -385,9 +389,9 @@
     },
     "source": {
       "attemptedAt": "2026-06-15T18:58:32.890250Z",
-      "hash": "sha256:ce96b80b9c1bbbc0d854059adc6ef08562e35e867a746501de95529232d32ac6",
+      "hash": "sha256:818e27e5b2b1c5a75992339074e630071ab3821ea2fdb813234f6f6b487e23f0",
       "provider": "royal-ballet-school",
-      "scrapedAt": "2026-06-06T18:50:10.778885Z",
+      "scrapedAt": "2026-06-16T09:32:02.689180Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/livorno-masterclasses/"
     },
     "teachers": [],
@@ -724,7 +728,9 @@
         }
       ]
     },
-    "genres": [],
+    "genres": [
+      "classical"
+    ],
     "id": "royal-ballet-school/spain-masterclasses-2023",
     "level": [],
     "lifecycle": "scheduled",
@@ -760,9 +766,9 @@
     },
     "source": {
       "attemptedAt": "2026-06-15T18:58:32.890250Z",
-      "hash": "sha256:7030a3ed04a20a61adee56f15fe6f32a88216ba44062c976bf07766269022234",
+      "hash": "sha256:83acc806d55df3488a09af6a8b8a49fc03777ce86a18aede0b6471ec011ec771",
       "provider": "royal-ballet-school",
-      "scrapedAt": "2026-06-05T11:07:43.935577Z",
+      "scrapedAt": "2026-06-16T09:32:02.690429Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/spain-masterclasses/"
     },
     "teachers": [],
