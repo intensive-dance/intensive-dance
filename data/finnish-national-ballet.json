@@ -191,53 +191,12 @@
     },
     "source": {
       "attemptedAt": "2026-06-14T23:57:27.086759Z",
-      "hash": "sha256:c6c3716e1e27776e25192f13581f54bcb4b65d823787a7e33f1d7c9af66b7a76",
+      "hash": "sha256:fb8c82325a6b4d9180c1f0f050ff615f9a5180e6f8d36f0449028195ecac3614",
       "provider": "finnish-national-ballet",
-      "scrapedAt": "2026-06-16T10:11:00.507686Z",
+      "scrapedAt": "2026-06-16T10:30:08.984856Z",
       "url": "https://oopperabaletti.fi/en/international-summer-intensive/"
     },
-    "teachers": [
-      {
-        "affiliations": [],
-        "name": "Akim Bakhtaoui",
-        "role": "Street Dance"
-      },
-      {
-        "affiliations": [],
-        "name": "Henrik Burman",
-        "role": "Body Conditioning, Acting"
-      },
-      {
-        "affiliations": [],
-        "name": "Giovanni Di Palma",
-        "role": "Classical technique, Repertoire"
-      },
-      {
-        "affiliations": [],
-        "name": "Rebecca King",
-        "role": "Classical technique, Repertoire"
-      },
-      {
-        "affiliations": [],
-        "name": "Jutta Mustakallio Ruusunen",
-        "role": "Character dance"
-      },
-      {
-        "affiliations": [],
-        "name": "Juliette Rahon",
-        "role": "Contemporary, Choreographer’s workshop"
-      },
-      {
-        "affiliations": [],
-        "name": "Ophélie Rodighiero",
-        "role": "Classical ballet, Repertoire"
-      },
-      {
-        "affiliations": [],
-        "name": "Nicholas Ziegler",
-        "role": "Repertoire"
-      }
-    ],
+    "teachers": [],
     "title": "Ballet in Bloom — Finnish National Ballet Summer Intensive"
   }
 ]

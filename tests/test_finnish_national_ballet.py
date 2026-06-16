@@ -120,6 +120,9 @@ def test_ballet_in_bloom_dates_level_genres() -> None:
     assert bloom.age_range is None
     assert bloom.level == ["open"]
     assert bloom.genres == ["classical", "repertoire", "character"]
+    # The page states no Bloom-specific faculty (only "taught by our international
+    # faculty"); the youth roster must not be over-attributed to this track.
+    assert bloom.teachers == []
 
 
 def test_prices_and_meal_inclusion() -> None:

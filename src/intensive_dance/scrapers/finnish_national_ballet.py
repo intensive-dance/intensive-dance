@@ -186,7 +186,13 @@ def _ballet_in_bloom(
         organization=ORG,
         location=LOCATION,
         schedule=Schedule(season=str(start.year), start=start, end=end, timezone=TZ),
-        teachers=_teachers(content),
+        # The faculty block is the youth intensive's roster (8 named teachers incl.
+        # Street Dance and Body Conditioning). Ballet in Bloom only says it's
+        # "taught by our esteemed international faculty" with no roster of its own,
+        # and its curriculum (ballet / repertoire / character / acting) excludes
+        # those subjects — so attributing that roster here over-claims. Leave it
+        # empty rather than name teachers the page never assigns to this track.
+        teachers=[],
         prices=_prices(content, "Ballet in Bloom", includes_lunch=False),
         application=Application(
             opensAt=opens,
