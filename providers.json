@@ -1097,6 +1097,22 @@
       "status": "live"
     },
     {
+      "slug": "la-sylphide-ballet-academy",
+      "name": "La Sylphide Academic Ballet School",
+      "country": "RO",
+      "city": "Bucharest",
+      "url": "https://baletcopii.com/",
+      "status": "seed"
+    },
+    {
+      "slug": "ballet-studio-felicia-serbanescu",
+      "name": "Ballet Studio Felicia Șerbănescu",
+      "country": "RO",
+      "city": "Cluj-Napoca",
+      "url": "https://balletstudiofeliciaserbanescu.ro/",
+      "status": "seed"
+    },
+    {
       "slug": "prague-ballet-workshop",
       "name": "Prague Ballet Workshop — Classical Ballet Summer Workshop",
       "country": "CZ",
