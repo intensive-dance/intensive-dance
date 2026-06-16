@@ -264,8 +264,30 @@ def _video_req(low: str) -> VideoReq | None:
 
 
 _AUDITION = re.compile(r"(Possible audition for season[^.]*\.?)", re.IGNORECASE)
+_COURSE_AUDITION = re.compile(r"may\s+request\s+to\s+be\s+auditioned\s+during", re.IGNORECASE)
 
 
 def _audition_note(text: str) -> str | None:
-    m = _AUDITION.search(text)
-    return parse.clean(m.group(1)) if m else None
+    """A short, faithful summary of how the short course relates to auditions.
+
+    The page lists *two* auditions: the short course itself (applicants may ask
+    to be auditioned during it) and a separate season-entry audition open only to
+    a narrower age band. The flat note used to carry only the season line, which
+    read as the offering's own audition (data-review P1, #258). We lead with the
+    course-as-audition fact, keep the season possibility as the secondary clause,
+    and link to the source for the full supporting-documentation list — the hard
+    facts themselves are captured structurally in `_requirements`.
+    """
+    parts: list[str] = []
+    if _COURSE_AUDITION.search(text):
+        parts.append(
+            "The short course doubles as an audition: applicants may request to be "
+            "auditioned during the course."
+        )
+    season = _AUDITION.search(text)
+    if season:
+        parts.append(parse.clean(season.group(1)))
+    if not parts:
+        return None
+    parts.append(f"Full application requirements: {PAGE}")
+    return " ".join(parts)

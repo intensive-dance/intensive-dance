@@ -148,3 +148,23 @@ def test_requirements_video_only_classical():
     video = next(r for r in reqs if isinstance(r, VideoReq))
     assert "classical" in (video.description or "")
     assert "contemporary" not in (video.description or "")
+
+
+def test_audition_note_leads_with_course_as_audition_and_links_source():
+    """The note must frame the short course itself as the audition, not just the
+    secondary season-entry audition (data-review P1, #258)."""
+    text = (
+        "The applicants may request to be auditioned during these courses. "
+        "►SUMMER COURSES: For students between 11 and 19 years old. "
+        "Possible audition for season 2026-2027 (only for students aged 13 to 17, "
+        "born between 2013 and 2009)."
+    )
+    note = pg._audition_note(text)
+    assert note is not None
+    assert note.startswith("The short course doubles as an audition")
+    assert "season 2026-2027" in note
+    assert pg.PAGE in note
+
+
+def test_audition_note_absent_when_no_audition_language():
+    assert pg._audition_note("Curriculum: Classical, Contemporary.") is None
