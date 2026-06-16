@@ -120,6 +120,8 @@ def test_class_d_level_pointe_photo_and_week_tagged_faculty():
     assert d.level == ["pre-professional"]
     reqs = d.application.requirements
     assert len(reqs) == 1 and reqs[0].type == "photos"
+    # The page asks for photos without naming poses → freeform (not defined-poses).
+    assert reqs[0].specificity == "freeform"
     assert [(t.name, t.role) for t in d.teachers] == [
         ("Sarah Lamb", "Guest Teacher (Week 1) — Principal Dancer of The Royal Ballet"),
         (
