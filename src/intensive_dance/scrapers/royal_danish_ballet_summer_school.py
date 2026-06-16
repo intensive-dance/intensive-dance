@@ -23,8 +23,9 @@ WHAT THIS SCRAPER EXERCISES (verified live 2026-06-05):
     repertoire, contemporary, pas de deux → none of the enum, Pilates → none).
   - PRICES in DKK: tuition (incl. VAT), optional lunch (meals), optional
     accommodation (15+ only), each a separate `Price`.
-  - APPLICATION `closed` (deadline 20 Mar 2026 already past today); the offering
-    itself still takes place, so `lifecycle` stays `scheduled`.
+  - APPLICATION deadline (20 Mar 2026); `status` stays unset (the page states a
+    deadline, not a status — consumers derive closed-ness from deadline < today).
+    The offering itself still takes place, so `lifecycle` stays `scheduled`.
   - REQUIREMENTS: a video audition is required for all applicants (`video`,
     `unspecific` — the brief is just "a link to an audition video").
   - TEACHERS empty — the page repeats "Teachers will be announced soon".
@@ -71,11 +72,11 @@ def scrape(client: httpx.Client) -> list[Offering]:
     if resp.status_code == 404:
         return []
     resp.raise_for_status()
-    offering = _build_offering(resp.text, date.today())
+    offering = _build_offering(resp.text)
     return [offering] if offering is not None else []
 
 
-def _build_offering(html: str, today: date) -> Offering | None:
+def _build_offering(html: str) -> Offering | None:
     text = _text(html)
 
     start, end = _date_range(text)
@@ -104,7 +105,10 @@ def _build_offering(html: str, today: date) -> Offering | None:
         ),
         prices=_prices(text),
         application=Application(
-            status=_status(deadline, today),
+            # The page states an application deadline, not a current status — keep
+            # the deadline and leave `status` unset (deriving "closed" from
+            # today > deadline invents a status and breaks the no-diff rule, since
+            # status is hashed). Consumers derive closed-ness from deadline < today.
             deadline=deadline,
             url=PAGE,
             requirements=_requirements(text),
@@ -224,12 +228,6 @@ def _deadline(text: str) -> date | None:
         return None
     day, month, year = m.groups()
     return date(int(year), parse.MONTHS[month.lower()], int(day))
-
-
-def _status(deadline: date | None, today: date):
-    if deadline and deadline < today:
-        return "closed"
-    return None
 
 
 def _requirements(text: str) -> list[Requirement]:

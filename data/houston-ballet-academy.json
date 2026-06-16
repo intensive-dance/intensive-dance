@@ -13,7 +13,6 @@
           "type": "video"
         }
       ],
-      "status": "closed",
       "url": "https://www.houstonballet.org/about/academy/summer-intensive-program/sip-audition-tour2/"
     },
     "genres": [
@@ -86,9 +85,9 @@
     },
     "source": {
       "attemptedAt": "2026-06-14T20:55:49.550380Z",
-      "hash": "sha256:f6b08ae90fc542ed9a5aa027e5320e2d705eba61bda9d9df92919bfbfc92ef9c",
+      "hash": "sha256:7ad27f5c5f4cbbdad9545a9cd09986f064852c782d5486a044aa1c06132761c9",
       "provider": "houston-ballet-academy",
-      "scrapedAt": "2026-06-08T14:34:51.236232Z",
+      "scrapedAt": "2026-06-16T09:21:02.601443Z",
       "url": "https://www.houstonballet.org/about/academy/summer-intensive-program/five-week-summer-intensive/"
     },
     "teachers": [],

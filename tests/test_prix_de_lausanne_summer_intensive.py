@@ -63,23 +63,6 @@ def test_registration_window():
     assert pdl._registration_window(text) == (date(2026, 3, 15), date(2026, 4, 15))
 
 
-def test_status_closed_after_window():
-    # Today after the close → closed (but the edition still takes place).
-    assert pdl._status(date(2026, 3, 15), date(2026, 4, 15), date(2026, 6, 6)) == "closed"
-
-
-def test_status_open_during_window():
-    assert pdl._status(date(2026, 3, 15), date(2026, 4, 15), date(2026, 4, 1)) == "open"
-
-
-def test_status_upcoming_before_window():
-    assert pdl._status(date(2026, 3, 15), date(2026, 4, 15), date(2026, 2, 1)) == "upcoming"
-
-
-def test_status_none_when_window_unknown():
-    assert pdl._status(None, None, date(2026, 6, 6)) is None
-
-
 def test_video_deadline():
     assert pdl._video_deadline("must upload their video by 15 April 2026.") == date(2026, 4, 15)
 
@@ -113,7 +96,7 @@ def test_genres():
 
 
 def test_build_offering_full():
-    o = pdl._build_offering(HTML, today=date(2026, 6, 6))
+    o = pdl._build_offering(HTML)
     assert o is not None
     assert o.id == "prix-de-lausanne-summer-intensive/summer-intensive-2026"
     assert o.title == "Summer Intensive 2026"
@@ -127,7 +110,8 @@ def test_build_offering_full():
     assert o.location.venue == "Beaulieu Theatre"
     assert o.location.city == "Lausanne"
     assert o.location.country == "CH"
-    assert o.application.status == "closed"
+    # The page states a registration window (dates), not a status — status unset.
+    assert o.application.status is None
     assert o.application.opens_at == date(2026, 3, 15)
     assert o.application.deadline == date(2026, 4, 15)
     assert [r.type for r in o.application.requirements] == ["video"]
@@ -136,16 +120,15 @@ def test_build_offering_full():
     assert "classical" in o.genres
 
 
-def test_build_offering_open_window():
-    # Mid-window scrape → status open; lifecycle still scheduled.
-    o = pdl._build_offering(HTML, today=date(2026, 4, 1))
+def test_build_offering_keeps_window_dates_not_status():
+    # The window dates are kept (opensAt/deadline); status stays unset regardless
+    # of when the scrape runs. lifecycle still scheduled.
+    o = pdl._build_offering(HTML)
     assert o is not None
-    assert o.application.status == "open"
+    assert o.application.status is None
+    assert o.application.opens_at == date(2026, 3, 15)
     assert o.lifecycle == "scheduled"
 
 
 def test_build_offering_none_without_dates():
-    assert (
-        pdl._build_offering("<html><body><p>coming soon</p></body></html>", date(2026, 6, 6))
-        is None
-    )
+    assert pdl._build_offering("<html><body><p>coming soon</p></body></html>") is None
