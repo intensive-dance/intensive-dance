@@ -5,9 +5,11 @@ Opens (or, if one is already open, refreshes) a single issue labelled
 investigate and open a fix PR. Reusing the open issue keeps a daily run from
 piling up duplicates.
 
-Requires a user token in `GH_TOKEN` (the default `GITHUB_TOKEN` cannot assign
-Copilot, and the token's user must have Copilot enabled). Reads the report
-written by `intensive_dance.audit`.
+Issue ops run on the ambient `GH_TOKEN`/`GITHUB_TOKEN` (the job grants it
+`issues: write`); Copilot assignment alone uses the user PAT in `COPILOT_TOKEN`
+(the default token cannot assign Copilot, and that PAT's user must have Copilot
+enabled) — see `intensive_dance.copilot`. Reads the report written by
+`intensive_dance.audit`.
 """
 
 from __future__ import annotations

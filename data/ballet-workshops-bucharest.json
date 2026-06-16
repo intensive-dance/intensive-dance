@@ -74,7 +74,7 @@
       "timezone": "Europe/Bucharest"
     },
     "source": {
-      "attemptedAt": "2026-06-14T15:01:48.510078Z",
+      "attemptedAt": "2026-06-15T23:27:25.544400Z",
       "hash": "sha256:7ca1d4a43544f0b7cb02cd71bb4a1a2003e935701626c09c3b7cb8e879cfebc7",
       "provider": "ballet-workshops-bucharest",
       "scrapedAt": "2026-06-06T19:41:56.064815Z",
@@ -178,7 +178,7 @@
       "timezone": "Europe/Bucharest"
     },
     "source": {
-      "attemptedAt": "2026-06-14T15:01:48.510078Z",
+      "attemptedAt": "2026-06-15T23:27:25.544400Z",
       "hash": "sha256:3ef38d5a37061188723b435ef7366a038c6c2f05343be58cac441ef9f329f643",
       "provider": "ballet-workshops-bucharest",
       "scrapedAt": "2026-06-11T16:53:58.880384Z",
@@ -258,7 +258,7 @@
       "timezone": "Europe/Bucharest"
     },
     "source": {
-      "attemptedAt": "2026-06-14T15:01:48.510078Z",
+      "attemptedAt": "2026-06-15T23:27:25.544400Z",
       "hash": "sha256:66342bd9be950ce98f164f1b44e8547cef5ecac853d50b321ec6539df3753522",
       "provider": "ballet-workshops-bucharest",
       "scrapedAt": "2026-06-11T16:52:37.717526Z",
@@ -303,7 +303,7 @@
       "timezone": "Europe/Bucharest"
     },
     "source": {
-      "attemptedAt": "2026-06-14T15:01:48.510078Z",
+      "attemptedAt": "2026-06-15T23:27:25.544400Z",
       "hash": "sha256:476838e6889d09115aeb970158d93af25c38f833789b55fb95c2e1af0aab78a9",
       "provider": "ballet-workshops-bucharest",
       "scrapedAt": "2026-06-11T16:52:37.717618Z",
