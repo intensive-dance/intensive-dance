@@ -85,10 +85,15 @@ a crashed `scrape.yml` leg uploads a `fail-<slug>` marker that the run's final
 issue; and `scraper-audit.yml` (daily) flags any **live** provider whose
 committed store holds **zero** offerings (`intensive_dance.audit` →
 `assign_audit`, exempt via `audit_allowlist.json`) into a `scraper-audit` issue.
-Assignment goes through the REST agent-assignment body (`intensive_dance.copilot`)
-and needs a user PAT with Copilot enabled (`COPILOT_PAT`/`COPILOT_CLI_TOKEN`) —
-the default `GITHUB_TOKEN` can't assign the agent. These ops scripts are
-stdlib-only (run with `PYTHONPATH=src python3 -m …`, no `uv sync`).
+**Token split (don't merge it back):** issue/label ops and the run-log read run
+on the job's default `GITHUB_TOKEN` (`issues: write` + `actions: read`); only the
+Copilot assignment uses a user PAT — `COPILOT_TOKEN` (← `COPILOT_PAT`/`COPILOT_CLI_TOKEN`),
+since the default token can't assign the agent. Assignment goes through the REST
+agent-assignment body (`intensive_dance.copilot`) and is **best-effort** — an
+absent/under-scoped PAT just skips it; the tracker issue still lands on the
+default token. (Funnelling everything through the lone `COPILOT_CLI_TOKEN`, which
+lacks Issues scope, used to crash the whole `report` job at `gh label create`.)
+These ops scripts are stdlib-only (run with `PYTHONPATH=src python3 -m …`, no `uv sync`).
 
 Always use `uv` (never bare `pip`/`python`). `ruff` line-length is **100**.
 
@@ -105,10 +110,14 @@ src/intensive_dance/
   scrapers/        # one module per provider: scrape(client) -> list[Offering]
     __init__.py    # the SCRAPERS registry (slug -> scrape fn)
   run.py           # scrape -> hash -> write data/<slug>.json (deterministic)
-  validate.py      # offline: every data/*.json parses + source.hash matches
+  validate.py      # offline: every data/*.json parses + source.hash matches (+ gazetteer parses)
   schema.py        # derive/drift-check schema/offering.schema.json from models
   erd.py           # derive/drift-check docs/erd.md (Mermaid ERD) from models
+  geo.py           # PURE gazetteer half: model, (country,city)->coords load/save, haversine, coverage
+  geocode.py       # NETWORK half (hand-run): fill data/gazetteer.json via Nominatim — never in scrape/CI
+  bundle.py        # produce the consumer FEED (live offerings + joined coords) for the UI repo
 data/<slug>.json   # the store — committed, one file per provider
+data/gazetteer.json # committed (country,city)->coords for proximity search (IDR-73); NOT per-provider
 providers.json     # the register; each has status seed|live
 tests/             # pytest, inline HTML/JSON snippets, no network
 ```
@@ -348,6 +357,22 @@ that — it's how the next agent knows the source's shape without re-crawling.
 - If you change `models.py`, regenerate **both** derived artifacts (CI fails on drift):
   `uv run python -m intensive_dance.schema --write` and
   `uv run python -m intensive_dance.erd --write` (the Mermaid ERD in `docs/erd.md`).
+- **Coordinates live in the gazetteer, never in a scraper.** `Location` stays
+  `venue/city/country/online` only; the consumer's "intensives near me" join reads
+  `data/gazetteer.json` (`(country,city)→coords`). Geocoding is **enrichment** —
+  network-bound + non-deterministic, so it's the same rule as the LLM helpers:
+  `intensive_dance.geocode` (Nominatim, hand-run, reviewed) fills the gazetteer,
+  **never** `scrape()`/CI. `intensive_dance.geo` is the pure half (load/save,
+  haversine, coverage). `geo --check` (gap report) is **deliberately not in the
+  gate** — a scraper adding a provider in a new city must not block an unrelated
+  PR; the consumer falls back to a "location unknown" group and a later `geocode`
+  run tops it up. Design: `docs/solution-design-location-search.md` (IDR-73).
+- **This repo is the data backend — the customer UI lives elsewhere.** The
+  consumer-facing register (HTML/JS) is the **separate private repo
+  `ha1des/intensive-dance-ui`**; do NOT add UI here. This repo *publishes a feed*
+  it consumes: `intensive_dance.bundle` projects the live store + gazetteer coords
+  into one JSON (`bundle --out ../intensive-dance-ui/data.json`, or stdout). The
+  feed generator stays here (it owns the data); the page that renders it does not.
 
 ---
 
@@ -433,6 +458,19 @@ when a second provider genuinely needs the identical thing.
   `bando`/announcement) fetches reliably through the proxy's plain `auto=1` tier
   (the challenge gates HTML, not the PDF). When the PDF carries the structured
   dates/fees/faculty, scrape *it* (see `teatro_san_carlo_scuola_ballo`).
+- **A WP page can be evergreen while the dated edition lives only as a media-library
+  PDF.** A WordPress "Workshops" page can have clean `content.rendered` that only
+  *describes* the recurring courses (no dates) — the dated editions are uploaded as
+  **timetable (Stundenplan) PDFs** in `/wp-json/wp/v2/media`. Query media
+  (`?search=<workshop>`), pick the **current edition** by parsing year+revision out
+  of the file slug (`Stdplan_Osterworkshop_<year>_<rev>` → latest wins; this is
+  discovery, not a date cut — old revisions are superseded artifacts), then PDF-scrape
+  it. Dates come from the "DD.MM." day-header row + the slug year (the timetable has
+  no year); ages from the "N-M J." / "ab N J." level legend; faculty from the
+  LEHRKRÄFTE legend (one `<initials> <Name>` per **raw** line — don't `parse.clean`
+  first or the names glue together). Sibling course types may *not* be parseable
+  (the SummerWorkshop schedule has no age legend), so scope to the structured one
+  (see `benedict_manniegel`).
 - **Multilingual sites can flip language by cache.** Monreart's `/en/` pages
   serve EN or IT depending on the Varnish cache (even `Accept-Language` doesn't
   pin it), so a naive parse is non-deterministic. Parse **language-agnostically**:

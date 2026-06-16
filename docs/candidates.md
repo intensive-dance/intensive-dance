@@ -234,3 +234,51 @@ arms (company training, no public open-enrollment student intensive surfaced) ·
   Bucharest summer-school listings (GOKID etc.).
 - **`deferred` → IDR-9 (full-time / no public short course):** Liceul de Coregrafie *Floria Capsali*
   (Bucharest, vocational choreography high school — already on the IDR-9 list) · UNATC (degree).
+
+## 🇨🇿 Czechia / Slovakia (2026-06-12)
+
+Phase-1 sweep of CZ + SK, focus **Prague · Brno** (CZ) + **Bratislava** (SK), by provider
+**and** program-type (`letní baletní/intenzivní kurz` CZ, `letný baletný kurz` SK), incl.
+academies/conservatories/studios. Brno + Bratislava were largely covered by the prior
+*Vienna region — cross-border* sweep above (Pirueta-Brno + Staromestské-Bratislava already
+`seed`; TUTU / Baletná škola Pointe / Baláž `scored`; Terpsichoré / Filiánek `parked`; the
+Brno/Bratislava conservatories `deferred`) — **do not re-seed those**. Net-new this pass = **3
+Prague `seed`s**. Already `live` (do not touch): Prague Ballet Intensive · International Ballet
+Masterclasses Prague · Jiří Bubeníček Ballet Masterclasses.
+
+**→ promoted to `seed`:**
+- **Prague Ballet Workshop — Classical Ballet Summer Workshop** (Prague, CZ) — recurring
+  classical-ballet workshop in a central-Prague studio for **students of ballet schools /
+  conservatories aged 13–21** (also runs an Easter edition). Distinct org from the live *Prague
+  Ballet Intensive* (different domain). Classical (technique + repertoire); pre-pro-leaning. Home
+  `<title>` still reads "…Easter Workshop 2025"; a **dated 2026 summer edition is not yet
+  confirmed** (recurring annual) — verify dates in Phase-2 (don't assert). — pragueballetworkshop.com
+  *(site 403s a datacenter fetch → Phase-2 likely needs the proxy; Wix-style multi-page site)*
+- **Baletní akademie Adély Pollertové — letní soustředění** (Prague, CZ) — ballet school led by
+  **Adéla Pollertová** (former first soloist, National Theatre Ballet Prague). Runs a dated summer
+  intensive (`letní soustředění`) for older children, **17–21 Aug 2026**, classical. The school
+  also teaches all-ages/recreational classes, so Phase-2 must scope to the dated student
+  *soustředění*, not the term-time/adult offering. — baletniakademie.cz
+- **First International Ballet School in Prague — Summer Camp** (Prague, CZ) — pre-pro classical
+  school (English-medium; Creative Movement → Classical Ballet I–IV, ages 4–20, competition prep)
+  that **also runs a public Summer Camp** (dedicated `/workshop/summer-camp/` page) — the
+  "full-time school can still sell a public short course" case (verify-before-deferring). **2026
+  camp dates / pre-pro depth not yet confirmed** — Phase-2 to verify it's a student intensive (not
+  a young-children recreational camp) before building. — balletschoolprague.com
+
+**`scored` / already-tracked — do not re-seed (see Vienna cross-border sweep above):**
+- **Baletní akademie / DancePerfect / studio adult courses (Prague)** — `baletniakademie.cz` also
+  sells adult ballet; `danceperfect.cz` summer Open-Class seminars are recreational multi-style →
+  out of scope (the in-scope piece is the Pollertová youth *soustředění*, seeded above).
+- **Baletná škola Pointe (Bratislava)** · **TUTU (Bratislava)** · **Baláž (Brno)** — already
+  `scored`/kids-camp in the Vienna sweep; unchanged.
+
+**`deferred` → IDR-9 (full-time / no public short course):** Taneční konzervatoř hl. m. Prahy ·
+Taneční centrum Praha – konzervatoř · Duncan Centre konzervatoř (Prague, contemporary, full-time) ·
+(Brno/Bratislava conservatories already listed in the Vienna sweep above).
+
+**`out-of-scope`:** Košice recreational kids day-camps (Tanečné štúdio Hviezdička 6–10 Jul ages
+5–12 · OUTBREAK summer camp ages 5+ · City Dance / NEXUM children's ballet) · La Tropical Prague
+(adult-only intensive) · Pirueta adult residential course (Jul/Aug, adults) · SND "Soboty v divadle"
+single-session TUTU taster workshops · BalletStage Summer Intensive (Ljubljana, SI — outside CZ/SK
+scope, tracked in the SI/icebox notes).

@@ -1,11 +1,22 @@
 """Shared helpers for handing a GitHub issue to the Copilot coding agent.
 
+Two distinct token roles, because no single repo token cleanly covers both:
+
+- **Issue ops** (label/issue create, comment, run-log read) run on the job's
+  default `GITHUB_TOKEN` — the workflow grants it `issues: write` (+ `actions:
+  read` for logs), which is all these need.
+- **Copilot assignment** needs a *user* PAT with Contents + Pull requests +
+  Actions write (it creates a branch/PR, so an Issues-only token gets 403) and a
+  Copilot-enabled user — the default `GITHUB_TOKEN` can't assign the agent at
+  all. `assign_copilot` reads that PAT from `COPILOT_TOKEN` and uses it for just
+  that call, leaving everything else on the default token. If `COPILOT_TOKEN` is
+  unset it falls through to the ambient token (assignment then likely 403s, but
+  it's best-effort — the tracker issue still lands on the default token).
+
 Assignment goes through the documented REST agent-assignment body rather than
 the GraphQL `suggestedActors` query, which unreliably omits the bot for
 fine-grained PATs even when assignment works (the lesson museumsufer's
-self-healing setup learned the hard way). Requires a user token in `GH_TOKEN`
-with Contents + Pull requests + Actions write (not just Issues) — assigning the
-agent creates a branch/PR, so an Issues-only token gets 403.
+self-healing setup learned the hard way).
 
 This is an ops helper, invoked only from the audit / failure-report scripts in
 CI; it shells out to `gh` and never touches the deterministic scrape path.
@@ -14,6 +25,7 @@ CI; it shells out to `gh` and never touches the deterministic scrape path.
 from __future__ import annotations
 
 import json
+import os
 import subprocess
 import tempfile
 from typing import Any
@@ -21,14 +33,23 @@ from typing import Any
 COPILOT_ASSIGNEE = "copilot-swe-agent[bot]"
 
 
-def gh(args: list[str]) -> str:
-    """Run a `gh` subcommand and return its trimmed stdout, raising on failure."""
+def gh(args: list[str], token: str | None = None) -> str:
+    """Run a `gh` subcommand and return its trimmed stdout, raising on failure.
+
+    `token`, when given, overrides `GH_TOKEN` for this call only (used to run the
+    Copilot assignment on a user PAT while issue ops stay on the default token).
+    """
+    env = {**os.environ, "GH_TOKEN": token} if token else None
     result = subprocess.run(
         ["gh", *args],
         capture_output=True,
         text=True,
-        check=True,
+        env=env,
     )
+    if result.returncode != 0:
+        raise subprocess.CalledProcessError(
+            result.returncode, result.args, result.stdout, result.stderr
+        )
     return result.stdout.strip()
 
 
@@ -106,7 +127,8 @@ def assign_copilot(owner: str, repo: str, issue_number: int, base_branch: str = 
                 f"/repos/{owner}/{repo}/issues/{issue_number}/assignees",
                 "--input",
                 payload_file,
-            ]
+            ],
+            token=os.environ.get("COPILOT_TOKEN"),
         )
     )
     assignees = response.get("assignees") or []

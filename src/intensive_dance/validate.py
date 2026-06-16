@@ -14,19 +14,26 @@ import json
 import sys
 from pathlib import Path
 
+from intensive_dance.geo import GAZETTEER_PATH, load_gazetteer
 from intensive_dance.models import Offering
 
 DATA_DIR = Path(__file__).resolve().parents[2] / "data"
 
 
 def main() -> int:
-    files = sorted(DATA_DIR.glob("*.json"))
+    # The gazetteer is a dict of Places, not a list of Offerings — check it apart.
+    files = sorted(p for p in DATA_DIR.glob("*.json") if p.name != GAZETTEER_PATH.name)
     if not files:
         print("no data files under data/", file=sys.stderr)
         return 1
 
     errors: list[str] = []
     total = 0
+    if GAZETTEER_PATH.exists():
+        try:
+            load_gazetteer()
+        except Exception as exc:  # noqa: BLE001 — report, don't abort
+            errors.append(f"{GAZETTEER_PATH.name}: failed to parse — {exc}")
     for path in files:
         try:
             records = json.loads(path.read_text())

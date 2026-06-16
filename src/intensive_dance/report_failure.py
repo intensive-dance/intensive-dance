@@ -11,8 +11,9 @@ back-to-back failures comment rather than pile up new issues.
 If nothing failed (no markers, run not failed) it exits 0 without opening an
 issue — so it's a cheap no-op on the common clean hourly run.
 
-Requires a user token in `GH_TOKEN` with Actions read (to fetch logs) plus the
-Contents/Pull-requests/Actions write that Copilot assignment needs.
+Issue ops and log-fetch run on the ambient `GH_TOKEN`/`GITHUB_TOKEN` (the job
+grants it `issues: write` + `actions: read`); Copilot assignment alone uses the
+user PAT in `COPILOT_TOKEN` — see `intensive_dance.copilot`.
 """
 
 from __future__ import annotations
