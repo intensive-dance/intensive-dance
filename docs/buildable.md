@@ -2,7 +2,7 @@
 
 > **Generated — do not edit.** Refresh with `uv run python -m intensive_dance.overview --write`; CI drift-checks it. Source of truth: `providers.json`.
 
-41 buildable · 9 excluded · 101 live (151 providers total).
+44 buildable · 9 excluded · 103 live (156 providers total).
 
 **To claim one (so nobody double-builds):** check `gh issue list` / `gh pr list` for the slug; if free, open a `build:<slug>` issue and **self-assign first**, then build; close it when the PR merges (provider → `live`). An open claim issue *or* PR = locked. See `AGENTS.md` → Scope & coordination.
 
@@ -16,11 +16,13 @@ _Some still need Phase-1 verification (a public dated edition / not full-time) b
 - `wiener-ballettakademie` — Vienna Ballet Academy (Wiener Ballettakademie) (Vienna) — https://wienerballettakademie.com/
 
 ### CZ
+- `baletni-akademie-pollertova` — Baletní akademie Adély Pollertové — letní soustředění (Prague) — https://www.baletniakademie.cz/
+- `first-international-ballet-school-prague` — First International Ballet School in Prague — Summer Camp (Prague) — https://balletschoolprague.com/workshop/summer-camp/
 - `pirueta-brno` — Baletní škola Pirueta — Letní baletní soustředění (Brno) — https://pirueta.cz/
+- `prague-ballet-workshop` — Prague Ballet Workshop — Classical Ballet Summer Workshop (Prague) — https://www.pragueballetworkshop.com/
 
 ### DE
 - `ballett-dortmund` — Ballett Dortmund (Dortmund) — https://theaterdo.de/
-- `benedict-manniegel` — Benedict Manniegel Ballet School & Academy (Munich) — https://www.benedictmanniegel.de/
 - `hamburger-ballett-tanztage` — Hamburger Ballett-Tanztage (GinaWorkshops) (Hamburg) — https://ginaworkshops.com/
 - `palucca-tanzwoche-sylt` — Palucca-Tanzwoche Sylt (Sylt) — https://palucca.eu/
 - `summer-intensive-gymnasium-essen` — Summer Intensive Gymnasium Essen-Werden (Essen) — https://gymnasium-essen-werden.de/
@@ -62,14 +64,15 @@ _Some still need Phase-1 verification (a public dated edition / not full-time) b
 - `julia-ballet-academy` — Julia Ballet Academy (Seoul) — https://www.juliaballet.co.kr/
 - `seoul-ballet-theatre` — Seoul Ballet Theatre (Ballet Edu) (Seoul) — https://www.ballet.or.kr/
 
+### RO
+- `ballet-studio-felicia-serbanescu` — Ballet Studio Felicia Șerbănescu (Cluj-Napoca) — https://balletstudiofeliciaserbanescu.ro/
+- `la-sylphide-ballet-academy` — La Sylphide Academic Ballet School (Bucharest) — https://baletcopii.com/
+
 ### RU
 - `bolshoi-ballet-academy` — Bolshoi Ballet Academy (Moscow) — https://en.balletacademy.ru/
 
 ### SE
 - `international-ballet-school-stockholm` — International Ballet School Stockholm (Stockholm) — https://www.internationalballet.se/
-
-### SK
-- `staromestske-baletne-studio` — Staromestské baletné štúdio — Letná škola tanca (Bratislava) — https://staromestskecentrakultury.sk/
 
 ## Excluded — do NOT build
 

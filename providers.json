@@ -998,7 +998,7 @@
       "country": "DE",
       "city": "Munich",
       "url": "https://www.benedictmanniegel.de/",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "tanzschule-anastasia-frankfurt",
@@ -1078,7 +1078,7 @@
       "country": "SK",
       "city": "Bratislava",
       "url": "https://staromestskecentrakultury.sk/",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "pirueta-brno",
@@ -1206,6 +1206,46 @@
       "country": "IT",
       "city": "Catania",
       "url": "https://www.arteballetto.net/",
+      "status": "seed"
+    },
+    {
+      "slug": "la-sylphide-ballet-academy",
+      "name": "La Sylphide Academic Ballet School",
+      "country": "RO",
+      "city": "Bucharest",
+      "url": "https://baletcopii.com/",
+      "status": "seed"
+    },
+    {
+      "slug": "ballet-studio-felicia-serbanescu",
+      "name": "Ballet Studio Felicia Șerbănescu",
+      "country": "RO",
+      "city": "Cluj-Napoca",
+      "url": "https://balletstudiofeliciaserbanescu.ro/",
+      "status": "seed"
+    },
+    {
+      "slug": "prague-ballet-workshop",
+      "name": "Prague Ballet Workshop — Classical Ballet Summer Workshop",
+      "country": "CZ",
+      "city": "Prague",
+      "url": "https://www.pragueballetworkshop.com/",
+      "status": "seed"
+    },
+    {
+      "slug": "baletni-akademie-pollertova",
+      "name": "Baletní akademie Adély Pollertové — letní soustředění",
+      "country": "CZ",
+      "city": "Prague",
+      "url": "https://www.baletniakademie.cz/",
+      "status": "seed"
+    },
+    {
+      "slug": "first-international-ballet-school-prague",
+      "name": "First International Ballet School in Prague — Summer Camp",
+      "country": "CZ",
+      "city": "Prague",
+      "url": "https://balletschoolprague.com/workshop/summer-camp/",
       "status": "seed"
     }
   ]

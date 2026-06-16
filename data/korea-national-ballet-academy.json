@@ -31,7 +31,7 @@
       "timezone": "Asia/Seoul"
     },
     "source": {
-      "attemptedAt": "2026-06-12T17:29:20.951520Z",
+      "attemptedAt": "2026-06-15T23:27:27.631652Z",
       "hash": "sha256:9b386a48cdc42d8594620a31f3b5e366766c7dd44c5faa75e8360bd7c5da42a3",
       "provider": "korea-national-ballet-academy",
       "scrapedAt": "2026-06-06T07:32:34.111003Z",
@@ -72,7 +72,7 @@
       "timezone": "Asia/Seoul"
     },
     "source": {
-      "attemptedAt": "2026-06-12T17:29:20.951520Z",
+      "attemptedAt": "2026-06-15T23:27:27.631652Z",
       "hash": "sha256:c53a6d237e3005afb0791bc6fd938b4a0cf72131ca9e547e9ce4ea3c6ec402a3",
       "provider": "korea-national-ballet-academy",
       "scrapedAt": "2026-06-06T07:32:34.111238Z",
