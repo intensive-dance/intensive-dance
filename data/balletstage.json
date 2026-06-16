@@ -181,10 +181,10 @@
       "timezone": "Europe/Ljubljana"
     },
     "source": {
-      "attemptedAt": "2026-06-11T23:12:51.875727Z",
+      "attemptedAt": "2026-06-15T14:52:30.021373Z",
       "hash": "sha256:c2b407b1819ff272d0df930f30e9a4b295b2be618fc624e95c3f3ea766417abe",
       "provider": "balletstage",
-      "scrapedAt": "2026-06-07T12:10:56.584132Z",
+      "scrapedAt": "2026-06-13T11:44:44.885531Z",
       "url": "https://www.balletstage.com/summerintensive2026"
     },
     "teachers": [

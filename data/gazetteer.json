@@ -1,0 +1,709 @@
+{
+  "AT|Vienna": {
+    "lat": 48.2084,
+    "lon": 16.3725,
+    "name": "Wien, Österreich",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "AT|Wiener Neustadt": {
+    "lat": 47.8132,
+    "lon": 16.2441,
+    "name": "Wiener Neustadt, Niederösterreich, 2700, Österreich",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "AU|Brisbane": {
+    "lat": -27.469,
+    "lon": 153.0235,
+    "name": "Brisbane, Queensland, Australia",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "AU|Melbourne": {
+    "lat": -37.8142,
+    "lon": 144.9632,
+    "name": "Melbourne, Victoria, 3000, Australia",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "AU|Perth": {
+    "lat": -31.9559,
+    "lon": 115.8606,
+    "name": "Perth, Western Australia, 6000, Australia",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "BE|Brussels": {
+    "lat": 50.8467,
+    "lon": 4.3525,
+    "name": "Bruxelles - Brussel, Brussel-Hoofdstad - Bruxelles-Capitale, Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest, België / Belgique / Belgien",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "BE|Liège": {
+    "lat": 50.6451,
+    "lon": 5.5736,
+    "name": "Liège, Wallonie, 4000, België / Belgique / Belgien",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "BG|Burgas": {
+    "lat": 42.4937,
+    "lon": 27.4721,
+    "name": "Бургас, България",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "BR|Belém": {
+    "lat": -1.4506,
+    "lon": -48.4682,
+    "name": "Belém, Pará, Região Norte, Brasil",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "BR|Joinville": {
+    "lat": -26.3045,
+    "lon": -48.8487,
+    "name": "Joinville, Santa Catarina, Região Sul, Brasil",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "CA|Calgary": {
+    "lat": 51.0456,
+    "lon": -114.0575,
+    "name": "Calgary, Alberta, Canada",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "CA|Toronto": {
+    "lat": 43.6535,
+    "lon": -79.3839,
+    "name": "Toronto, Golden Horseshoe, Ontario, Canada",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "CA|Vancouver": {
+    "lat": 49.2609,
+    "lon": -123.114,
+    "name": "Vancouver, Metro Vancouver Regional District, British Columbia, Canada",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "CA|Winnipeg": {
+    "lat": 49.8955,
+    "lon": -97.1385,
+    "name": "Winnipeg, Manitoba, Canada",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "CH|Geneva": {
+    "lat": 46.2018,
+    "lon": 6.1466,
+    "name": "Genève, Schweiz/Suisse/Svizzera/Svizra",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "CH|Lausanne": {
+    "lat": 46.5218,
+    "lon": 6.6327,
+    "name": "Lausanne, District de Lausanne, Vaud, Schweiz/Suisse/Svizzera/Svizra",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "CH|Zürich": {
+    "lat": 47.3744,
+    "lon": 8.541,
+    "name": "Zürich, Bezirk Zürich, Zürich, Schweiz/Suisse/Svizzera/Svizra",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "CN|Shanghai": {
+    "lat": 31.2323,
+    "lon": 121.4691,
+    "name": "上海市, 黄浦区, 上海市, 200001, 中国",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "CY|Limassol": {
+    "lat": 34.6853,
+    "lon": 33.0333,
+    "name": "Λεμεσός, Δήμος Λεμεσού, Επαρχία Λεμεσού, Κύπρος, 3085, Κύπρος - Kıbrıs",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "CZ|Prague": {
+    "lat": 50.0875,
+    "lon": 14.4213,
+    "name": "Praha, Česko",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "DE|Berlin": {
+    "lat": 52.5174,
+    "lon": 13.3951,
+    "name": "Berlin, Deutschland",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "DE|Cologne": {
+    "lat": 50.9384,
+    "lon": 6.96,
+    "name": "Köln, Nordrhein-Westfalen, Deutschland",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "DE|Dortmund": {
+    "lat": 51.5142,
+    "lon": 7.4653,
+    "name": "Dortmund, Nordrhein-Westfalen, Deutschland",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "DE|Düsseldorf": {
+    "lat": 51.2254,
+    "lon": 6.7763,
+    "name": "Düsseldorf, Nordrhein-Westfalen, Deutschland",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "DE|Frankfurt am Main": {
+    "lat": 50.1106,
+    "lon": 8.6821,
+    "name": "Frankfurt am Main, Hessen, Deutschland",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "DE|Mannheim": {
+    "lat": 49.4893,
+    "lon": 8.4673,
+    "name": "Mannheim, Baden-Württemberg, Deutschland",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "DE|Munich": {
+    "lat": 48.1371,
+    "lon": 11.5754,
+    "name": "München, Bayern, Deutschland",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "DE|Stuttgart": {
+    "lat": 48.7784,
+    "lon": 9.18,
+    "name": "Stuttgart, Baden-Württemberg, Deutschland",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "DK|Copenhagen": {
+    "lat": 55.6867,
+    "lon": 12.5701,
+    "name": "København, Københavns Kommune, Region Hovedstaden, 1357, Danmark",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "ES|Alicante": {
+    "lat": 38.3436,
+    "lon": -0.4882,
+    "name": "Alacant / Alicante, l'Alacantí, Alacant / Alicante, Comunitat Valenciana, España",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "ES|Barcelona": {
+    "lat": 41.3826,
+    "lon": 2.1771,
+    "name": "Barcelona, Barcelonès, Barcelona, Catalunya, España",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "ES|Madrid": {
+    "lat": 40.4168,
+    "lon": -3.7035,
+    "name": "Madrid, Comunidad de Madrid, España",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "FI|Helsinki": {
+    "lat": 60.1666,
+    "lon": 24.9435,
+    "name": "Helsinki, Helsingin seutukunta, Uusimaa, Manner-Suomi, Suomi / Finland",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "FR|Biarritz": {
+    "lat": 43.4833,
+    "lon": -1.5593,
+    "name": "Biarritz, Bayonne, Pyrénées-Atlantiques, Nouvelle-Aquitaine, France métropolitaine, 64200, France",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "FR|Lyon": {
+    "lat": 45.7578,
+    "lon": 4.832,
+    "name": "Lyon, Métropole de Lyon, Rhône, Auvergne-Rhône-Alpes, France métropolitaine, France",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "FR|Marseille": {
+    "lat": 43.2964,
+    "lon": 5.3778,
+    "name": "Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, France",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "FR|Mougins": {
+    "lat": 43.6009,
+    "lon": 6.9964,
+    "name": "Mougins, Grasse, Alpes-Maritimes, Provence-Alpes-Côte d'Azur, France métropolitaine, 06250, France",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "FR|Nanterre": {
+    "lat": 48.8924,
+    "lon": 2.2071,
+    "name": "Nanterre, Hauts-de-Seine, Île-de-France, France métropolitaine, 92000, France",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "FR|Nice": {
+    "lat": 43.7009,
+    "lon": 7.2684,
+    "name": "Nice, Alpes-Maritimes, Provence-Alpes-Côte d'Azur, France métropolitaine, France",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "GB|Harrogate": {
+    "lat": 53.9921,
+    "lon": -1.5391,
+    "name": "Harrogate, North Yorkshire, York and North Yorkshire, England, HG1 1QS, United Kingdom",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "GB|Leeds": {
+    "lat": 53.7974,
+    "lon": -1.5438,
+    "name": "Leeds, West Yorkshire, England, LS1 6AL, United Kingdom",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "GB|London": {
+    "lat": 51.5074,
+    "lon": -0.1278,
+    "name": "Greater London, England, United Kingdom",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "GE|Tbilisi": {
+    "lat": 41.6935,
+    "lon": 44.8014,
+    "name": "თბილისი, საქართველო",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "GR|Athens": {
+    "lat": 37.9756,
+    "lon": 23.7348,
+    "name": "Αθήνα, Δήμος Αθηναίων, Περιφερειακή Ενότητα Κεντρικού Τομέα Αθηνών, Περιφέρεια Αττικής, Αποκεντρωμένη Διοίκηση Αττικής, 105 57, Ελλάς",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "HK|Hong Kong": {
+    "lat": 22.2818,
+    "lon": 114.1583,
+    "name": "香港 Hong Kong, 中国",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "HU|Budapest": {
+    "lat": 47.4979,
+    "lon": 19.0402,
+    "name": "Budapest, Közép-Magyarország, Magyarország",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "HU|Győr": {
+    "lat": 47.6835,
+    "lon": 17.6343,
+    "name": "Győr, Győri járás, Győr-Moson-Sopron vármegye, Nyugat-Dunántúl, Dunántúl, Magyarország",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "IE|Dublin": {
+    "lat": 53.3494,
+    "lon": -6.2606,
+    "name": "Dublin, County Dublin, Leinster, Éire / Ireland",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "IT|Assisi": {
+    "lat": 43.0712,
+    "lon": 12.6147,
+    "name": "Assisi, Perugia, Umbria, 06081, Italia",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "IT|Catanzaro": {
+    "lat": 38.9076,
+    "lon": 16.596,
+    "name": "Catanzaro, Calabria, 88100, Italia",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "IT|Livorno": {
+    "lat": 43.5507,
+    "lon": 10.3091,
+    "name": "Livorno, Toscana, Italia",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "IT|Milan": {
+    "lat": 45.4642,
+    "lon": 9.1896,
+    "name": "Milano, Rodano, Milano, Lombardia, Italia",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "IT|Moncalvo": {
+    "lat": 45.0502,
+    "lon": 8.265,
+    "name": "Moncalvo, Asti, Piemonte, 14036, Italia",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "IT|Monterotondo": {
+    "lat": 42.0518,
+    "lon": 12.6184,
+    "name": "Monterotondo, Roma Capitale, Lazio, 00015, Italia",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "IT|Naples": {
+    "lat": 40.8359,
+    "lon": 14.2488,
+    "name": "Napoli, Campania, Italia",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "IT|Rapallo": {
+    "lat": 44.3492,
+    "lon": 9.2316,
+    "name": "Rapallo, Genova, Liguria, 16035, Italia",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "IT|Rome": {
+    "lat": 41.8933,
+    "lon": 12.4829,
+    "name": "Roma, Roma Capitale, Lazio, Italia",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "IT|Verona": {
+    "lat": 45.4385,
+    "lon": 10.9924,
+    "name": "Verona, Veneto, 37121-37142, Italia",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "IT|Volta Mantovana": {
+    "lat": 45.3213,
+    "lon": 10.6592,
+    "name": "Volta Mantovana, Mantova, Lombardia, 46049, Italia",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "JP|Osaka": {
+    "lat": 34.6938,
+    "lon": 135.5015,
+    "name": "大阪市, 大阪府, 日本",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "JP|Tokyo": {
+    "lat": 35.6769,
+    "lon": 139.7639,
+    "name": "東京都, 日本",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "JP|山ノ内町": {
+    "lat": 36.7446,
+    "lon": 138.4127,
+    "name": "山ノ内町, 下高井郡, 長野県, 日本",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "KR|Seoul": {
+    "lat": 37.5667,
+    "lon": 126.9783,
+    "name": "서울특별시, 대한민국",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "MC|Monaco": {
+    "lat": 43.731,
+    "lon": 7.4248,
+    "name": "Monaco",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "NL|Amsterdam": {
+    "lat": 52.3731,
+    "lon": 4.8925,
+    "name": "Amsterdam, Noord-Holland, Nederland",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "NL|The Hague": {
+    "lat": 52.08,
+    "lon": 4.3113,
+    "name": "Den Haag, Zuid-Holland, Nederland",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "NO|Oslo": {
+    "lat": 59.9133,
+    "lon": 10.739,
+    "name": "Oslo, Norge",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "NZ|Wellington": {
+    "lat": -41.2888,
+    "lon": 174.7772,
+    "name": "Wellington, Wellington City, Wellington, 6011, New Zealand / Aotearoa",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "PL|Małe Ciche": {
+    "lat": 49.3031,
+    "lon": 20.0729,
+    "name": "Małe Ciche, gmina Poronin, powiat tatrzański, województwo małopolskie, Polska",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "PL|Suche": {
+    "lat": 53.0024,
+    "lon": 21.0598,
+    "name": "Suche, gmina Płoniawy-Bramura, powiat makowski, województwo mazowieckie, Polska",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "PL|Warszawa": {
+    "lat": 52.232,
+    "lon": 21.0067,
+    "name": "Warszawa, województwo mazowieckie, Polska",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "PL|Wdzydze": {
+    "lat": 54.0125,
+    "lon": 17.9354,
+    "name": "Wdzydze, gmina Kościerzyna, powiat kościerski, województwo pomorskie, 83-406, Polska",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "PL|Wdzydze Tucholskie": {
+    "lat": 53.9758,
+    "lon": 17.9285,
+    "name": "Wdzydze Tucholskie, gmina Karsin, powiat kościerski, województwo pomorskie, Polska",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "PL|Wrocław": {
+    "lat": 51.109,
+    "lon": 17.0327,
+    "name": "Wrocław, województwo dolnośląskie, Polska",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "PT|Leiria": {
+    "lat": 39.7438,
+    "lon": -8.8071,
+    "name": "Leiria, Portugal",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "RO|Bucharest": {
+    "lat": 44.4361,
+    "lon": 26.1027,
+    "name": "București, România",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "RU|St. Petersburg": {
+    "lat": 59.9387,
+    "lon": 30.3162,
+    "name": "Санкт-Петербург, Северо-Западный федеральный округ, Россия",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "SG|Singapore": {
+    "lat": 1.2899,
+    "lon": 103.8519,
+    "name": "Singapore",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "SI|Ljubljana": {
+    "lat": 46.05,
+    "lon": 14.5069,
+    "name": "Ljubljana, Upravna Enota Ljubljana, 1000, Slovenija",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "TH|Bangkok": {
+    "lat": 13.7525,
+    "lon": 100.4935,
+    "name": "กรุงเทพมหานคร, ประเทศไทย",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "US|Akron": {
+    "lat": 41.0831,
+    "lon": -81.5185,
+    "name": "Akron, Summit County, Ohio, United States",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "US|Boston": {
+    "lat": 42.3588,
+    "lon": -71.0578,
+    "name": "Boston, Suffolk County, Massachusetts, United States",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "US|Boulder": {
+    "lat": 40.015,
+    "lon": -105.2705,
+    "name": "Boulder, Boulder County, Colorado, United States",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "US|Council Bluffs": {
+    "lat": 41.2588,
+    "lon": -95.8519,
+    "name": "Council Bluffs, Kane Township, Pottawattamie County, Iowa, United States",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "US|Dallas": {
+    "lat": 32.7763,
+    "lon": -96.7969,
+    "name": "Dallas, Dallas County, Texas, United States",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "US|Detroit": {
+    "lat": 42.3316,
+    "lon": -83.0466,
+    "name": "Detroit, Wayne County, Michigan, United States",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "US|Houston": {
+    "lat": 29.7589,
+    "lon": -95.3677,
+    "name": "Houston, Harris County, Texas, United States",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "US|Iowa City": {
+    "lat": 41.6613,
+    "lon": -91.5299,
+    "name": "Iowa City, Johnson County, Iowa, United States",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "US|Kennesaw": {
+    "lat": 34.0234,
+    "lon": -84.6155,
+    "name": "Kennesaw, Cobb County, Georgia, United States",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "US|Las Vegas": {
+    "lat": 36.1674,
+    "lon": -115.1484,
+    "name": "Las Vegas, Clark County, Nevada, United States",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "US|Long Beach": {
+    "lat": 33.769,
+    "lon": -118.1916,
+    "name": "Long Beach, Los Angeles County, California, United States",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "US|Los Angeles": {
+    "lat": 34.0537,
+    "lon": -118.2428,
+    "name": "Los Angeles, Los Angeles County, California, United States",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "US|Manhattan": {
+    "lat": 40.758,
+    "lon": -73.9855,
+    "name": "Manhattan, New York County, New York, United States",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "US|Miami": {
+    "lat": 25.7742,
+    "lon": -80.1936,
+    "name": "Miami, Miami-Dade County, Florida, United States",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "US|Mountain View": {
+    "lat": 37.3894,
+    "lon": -122.0832,
+    "name": "Mountain View, Santa Clara County, California, United States",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "US|Natick": {
+    "lat": 42.2836,
+    "lon": -71.347,
+    "name": "Natick, Middlesex County, Massachusetts, United States",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "US|New York": {
+    "lat": 40.7127,
+    "lon": -74.006,
+    "name": "New York, United States",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "US|San Francisco": {
+    "lat": 37.7879,
+    "lon": -122.4075,
+    "name": "San Francisco, California, United States",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "US|Scottsdale": {
+    "lat": 33.4942,
+    "lon": -111.926,
+    "name": "Scottsdale, Maricopa County, Arizona, United States",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "US|Seattle": {
+    "lat": 47.6038,
+    "lon": -122.3301,
+    "name": "Seattle, King County, Washington, United States",
+    "precision": "city",
+    "source": "nominatim"
+  },
+  "US|Tampa": {
+    "lat": 27.9495,
+    "lon": -82.4577,
+    "name": "Tampa, Hillsborough County, Florida, United States",
+    "precision": "city",
+    "source": "nominatim"
+  }
+}
