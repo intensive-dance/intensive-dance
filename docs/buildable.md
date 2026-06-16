@@ -2,7 +2,7 @@
 
 > **Generated — do not edit.** Refresh with `uv run python -m intensive_dance.overview --write`; CI drift-checks it. Source of truth: `providers.json`.
 
-43 buildable · 9 excluded · 104 live (156 providers total).
+42 buildable · 9 excluded · 105 live (156 providers total).
 
 **To claim one (so nobody double-builds):** check `gh issue list` / `gh pr list` for the slug; if free, open a `build:<slug>` issue and **self-assign first**, then build; close it when the PR merges (provider → `live`). An open claim issue *or* PR = locked. See `AGENTS.md` → Scope & coordination.
 
@@ -27,9 +27,6 @@ _Some still need Phase-1 verification (a public dated edition / not full-time) b
 - `summer-intensive-gymnasium-essen` — Summer Intensive Gymnasium Essen-Werden (Essen) — https://gymnasium-essen-werden.de/
 - `tanzschule-anastasia-frankfurt` — Ballett- und Tanzschule Anastasia (Frankfurt am Main) — https://www.ballett-und-tanzschule-anastasia.com/
 - `tanzwerkstatt-europa` — Tanzwerkstatt Europa (Munich) — https://www.jointadventures.net/en/tanzwerkstatt-europa
-
-### GB
-- `elmhurst-ballet-school` — Elmhurst Ballet School (Birmingham) — https://elmhurstballetschool.org/
 
 ### IT
 - `accademia-iacopini` — Accademia Iacopini — "In Danza" (Chianciano Terme) — https://accademiaiacopini.it/
