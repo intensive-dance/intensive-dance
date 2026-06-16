@@ -43,9 +43,12 @@ WHAT THIS SCRAPER EXERCISES (verified live 2026-06-06):
   - `classical` + `pointe` genres (a ★ポワント強化 / pointe-reinforced classical
     class) + `repertoire` (the Swanilda variation) + `contemporary`; a Pilates
     class is noted but maps to no ballet genre and is not invented as one.
-  - `application.status` = open with `opensAt` (受付開始 2026/4/24); NO deadline
-    is stated — each class "fills then closes" (定員になり次第締め切り), a rolling
-    cap, not a dated cut — so `deadline` stays None (not invented).
+  - `application.opensAt` = the stated registration-opening date (受付開始
+    2026/4/24); `status` stays unset (the page states an opening date + rolling
+    per-class caps, not a current open/closed status — inferring "open" would
+    also read true before the opening date). NO deadline is stated — each class
+    "fills then closes" (定員になり次第締め切り), a rolling cap — so `deadline`
+    stays None (not invented).
   - No audition/photo brief is stated (a sewn-on レオタード nametag is a dress
     rule, not an application requirement), so requirements stay `[]`.
 """
@@ -138,7 +141,11 @@ def _build_offering(html: str) -> Offering | None:
         teachers=_teachers(text),
         prices=_prices(text),
         application=Application(
-            status="open" if "受付開始" in text or "お申し込み" in text else None,
+            # The page states an opening date (受付開始 4/24) and rolling per-class
+            # capacity closing — not a current open/closed status. We keep that
+            # dated fact in `opensAt` and leave `status` unset rather than infer
+            # "open" from keyword presence (which fired even before 4/24, and
+            # "お申し込み" is merely the section header). Faithful, fail open.
             opensAt=_opens_at(text),
             url=PAGE,
             notes=_APPLY_NOTE,

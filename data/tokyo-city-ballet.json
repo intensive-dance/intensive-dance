@@ -7,7 +7,6 @@
       "notes": "受講お申し込みフォームよりお申し込み（各クラス定員になり次第締め切り）。受講料はクラスごと・税込で、お申し込みより1週間以内に銀行振込。お問い合わせはworkshop@tokyocityballet.org。",
       "opensAt": "2026-04-24",
       "requirements": [],
-      "status": "open",
       "url": "https://tokyocityballetcompetition.com/workshop.html"
     },
     "genres": [
@@ -103,9 +102,9 @@
     },
     "source": {
       "attemptedAt": "2026-06-14T22:01:21.764463Z",
-      "hash": "sha256:a61fc3dc3aec378f3e02d7639d517b36b645acf08219759203654c25f76c6367",
+      "hash": "sha256:8ae08b76aa76273a9c699a83e746c68461d4e2d3ef6e4b2f6c952da57643c85a",
       "provider": "tokyo-city-ballet",
-      "scrapedAt": "2026-06-09T21:02:02.837034Z",
+      "scrapedAt": "2026-06-16T09:09:46.834686Z",
       "url": "https://tokyocityballetcompetition.com/workshop.html"
     },
     "teachers": [

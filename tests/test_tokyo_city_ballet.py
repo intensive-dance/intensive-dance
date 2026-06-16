@@ -138,8 +138,9 @@ def test_build_offering_full():
     assert offering.location is not None
     assert offering.location.venue == "東京シティ・バレエ団スタジオ"
     assert offering.location.country == "JP"
-    # Registration opened; no dated deadline (classes fill then close).
-    assert offering.application.status == "open"
+    # The page states an opening date + rolling per-class caps, not a current
+    # open/closed status — so opensAt is kept and status is left unset.
+    assert offering.application.status is None
     assert offering.application.opens_at == date(2026, 4, 24)
     assert offering.application.deadline is None
     # No audition/photo brief is stated → requirements unknown, not invented.
