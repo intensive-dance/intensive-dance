@@ -23,8 +23,9 @@ WHAT THIS SCRAPER EXERCISES (verified live 2026-06-11)
   → null max), Mittelstufe → intermediate level.
 - Several labelled Prices (both modules / ballet only / contemporary only) each
   with the member discount kept in `notes`.
-- A still-open booking with a partial sell-out note ("Klassisches Ballett ist
-  ausgebucht!") preserved in `application.notes`.
+- A partial sell-out note ("Klassisches Ballett ist ausgebucht!") preserved in
+  `application.notes`; `application.status` stays unset (the page states
+  availability, never an open/closed application status).
 """
 
 from __future__ import annotations
@@ -161,8 +162,11 @@ _SOLD_OUT = re.compile(
 
 
 def _application(text: str) -> Application:
+    # The page states availability ("… ausgebucht! … nur noch einige wenige Plätze …"),
+    # never an application status — so we keep that note but leave `status` unset
+    # rather than invent "open" (faithful, fail open).
     m = _SOLD_OUT.search(text)
-    return Application(status="open", url=PAGE, notes=parse.clean(m.group(0)) if m else None)
+    return Application(url=PAGE, notes=parse.clean(m.group(0)) if m else None)
 
 
 def _build_offerings(html: str) -> list[Offering]:
