@@ -130,8 +130,22 @@ _SHORTCODE = re.compile(r"\[/?[a-z][^\]]*\]", re.IGNORECASE)
 def _summary_text(rendered: str) -> str:
     text = html.unescape(rendered).replace("“", '"').replace("”", '"')
     text = _SHORTCODE.sub(" ", text)
+    # Drop <style>/<script>/<form> blocks whole — their body sits *between* the
+    # tags, so the generic tag strip below would leave the raw CSS/JS/field-label
+    # text as content (the embedded Gravity Forms registration form leaked ~11k
+    # chars of CSS + every form field label and country-dropdown option into a
+    # week's notes).
+    text = re.sub(
+        r"<(style|script|form)\b[^>]*>.*?</\1>", " ", text, flags=re.IGNORECASE | re.DOTALL
+    )
     text = re.sub(r"<[^>]+>", " ", text)
-    return re.sub(r"\s+", " ", text).strip()
+    text = re.sub(r"\s+", " ", text).strip()
+    # The page ends with a faculty section + the embedded registration form's
+    # heading/field labels (the form body is stripped above, but its surrounding
+    # gform heading text survives). None of it is per-week info and it has no
+    # closing "Week N:" terminator, so it lands in the last week's notes — cut it.
+    # Teachers come from `_teachers(rendered)`, so dropping this tail is safe.
+    return re.split(r"\bFACULTY\b", text, maxsplit=1)[0].strip()
 
 
 # --- weeks / dates ------------------------------------------------------------
