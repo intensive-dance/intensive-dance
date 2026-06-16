@@ -57,7 +57,6 @@ def scrape(client: httpx.Client) -> list[Offering]:
     if not summary:
         return []
 
-    today = date.today()
     season = _season(summary)
 
     deadline = _deadline(summary)
@@ -86,7 +85,11 @@ def scrape(client: httpx.Client) -> list[Offering]:
                 schedule=Schedule(season=season, start=start, end=end, timezone="Europe/Amsterdam"),
                 prices=_build_prices(label, fee, _accommodation_fee(fees, label)),
                 application=Application(
-                    status="closed" if (deadline and deadline < today) else None,
+                    # The page states a deadline ("open until 1 March 2026"), never a
+                    # current closed status — so we keep the deadline and leave `status`
+                    # unset (consumers derive closed-ness from deadline < today, like
+                    # "past" from end < today). Deriving it here from today would also
+                    # break the no-diff rule once the deadline passes.
                     deadline=deadline,
                     url=SUMMER,
                 ),
