@@ -272,3 +272,23 @@ def test_teacher_training_course_skipped() -> None:
         PAGE_TEACHER_TRAINING, "https://escolabolshoi.com.br/curso/798/metodo-vaganova"
     )
     assert o is None
+
+
+# A physical-conditioning workshop teaches no dance genre → out of scope.
+PAGE_PHYSICAL_PREP = """
+<html><body>
+  <h1>Workshop de Preparação Física para Bailarinos</h1>
+  <div class="audicao-inscricao-meta">
+    <span class="audicao-inscricao-meta__label"><i></i> Período do curso</span>
+    <span class="audicao-inscricao-meta__val">20/07/2026 a 20/07/2026</span>
+  </div>
+</body></html>
+"""
+
+
+def test_physical_prep_workshop_skipped() -> None:
+    # Not a dance class — must not be emitted with a default "classical" genre.
+    o = _build_offering(
+        PAGE_PHYSICAL_PREP, "https://escolabolshoi.com.br/curso/999/workshop-preparacao-fisica"
+    )
+    assert o is None

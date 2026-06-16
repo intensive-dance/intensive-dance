@@ -97,6 +97,10 @@ _CARD_RE = re.compile(r'href="(/curso/(\d+)/([a-z0-9][a-z0-9-]*))"')
 # Teacher-training courses we skip (continuing-ed for teachers, not students).
 _TEACHER_COURSE = re.compile(r"para\s+professores", re.IGNORECASE)
 
+# Physical-conditioning workshops teach no dance genre — out of scope (and the
+# `_genres` default would mislabel them "classical"); skip like teacher-training.
+_NON_DANCE_COURSE = re.compile(r"prepara[çc][ãa]o\s+f[íi]sica", re.IGNORECASE)
+
 # Sentinel upper age the booking form uses for "open-ended" — not a real cap.
 _OPEN_AGE_MAX = 100
 
@@ -305,8 +309,8 @@ def _build_offering(html: str, url: str) -> Offering | None:
 
     h1 = tree.css_first("h1")
     title = parse.clean(h1.text()) if h1 else ""
-    if not title or _TEACHER_COURSE.search(title):
-        return None  # teacher-training course → out of student scope
+    if not title or _TEACHER_COURSE.search(title) or _NON_DANCE_COURSE.search(title):
+        return None  # teacher-training or non-dance (physical prep) → out of scope
 
     start, end = _date_range(_meta(tree, "Período do curso"))
     if start is None:
