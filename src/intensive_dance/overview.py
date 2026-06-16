@@ -38,6 +38,9 @@ NOT_BUILDABLE: dict[str, str] = {
     "singapore-ballet": "company / full-time — defer IDR-9",
     # No current online edition.
     "neoclassica": "site offline — parked",
+    # Pre-launch base44 template: every "edition" is dateless ("TBC", "applications
+    # opening soon") with no fees/faculty — nothing bookable to scrape yet.
+    "wiener-ballettakademie": "pre-launch — no dated edition yet (all TBC)",
 }
 
 _CLAIM = (
