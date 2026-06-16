@@ -105,6 +105,10 @@ _APPLY_NOTE = (
     "paris-tokyo-ballet.com のメールフォームより。"
 )
 
+# The explicit "now accepting applications" phrase; the optional み matches both
+# the live spelling (お申込み受付中) and the compact お申込受付中.
+_ACCEPTING = re.compile(r"お申込み?受付中")
+
 
 class _City:
     def __init__(self, key: str, label_ja: str, city: str) -> None:
@@ -169,7 +173,12 @@ def _build_offerings(html: str) -> list[Offering]:
                 teachers=_city_teachers(teachers, city),
                 prices=_prices(text, city),
                 application=Application(
-                    status="open" if "お申込受付中" in text or "お申込み" in text else None,
+                    # "open" only from the explicit "now accepting" phrase
+                    # (お申込[み]受付中) — the optional み matches both the live
+                    # spelling (お申込み受付中) and the compact form. The bare
+                    # "お申込み" (the apply-here button label) is NOT a status
+                    # signal — it stays present after a close, so it's not used.
+                    status="open" if _ACCEPTING.search(text) else None,
                     url=f"{BASE}/apply-summer-japan-2026/",
                     notes=_APPLY_NOTE,
                 ),

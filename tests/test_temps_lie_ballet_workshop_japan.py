@@ -183,6 +183,14 @@ def test_build_offerings_two_cities():
     assert tokyo.application.notes is not None and "先着順" in tokyo.application.notes
 
 
+def test_accepting_phrase_drives_status_not_the_apply_button():
+    # The live page spells it お申込み受付中 (with み); the compact form also matches.
+    assert t._ACCEPTING.search("タンリエ講習会 (お申込み受付中 コチラから)")
+    assert t._ACCEPTING.search("お申込受付中")
+    # The bare apply-here label is NOT an open signal (it persists after a close).
+    assert t._ACCEPTING.search("お申込みはコチラから") is None
+
+
 def test_build_offerings_no_dated_edition():
     # No title-stamp year anywhere → no resolvable edition → nothing emitted.
     assert t._build_offerings(_wrap_html("バレエワークショップ 開催地 東京")) == []
