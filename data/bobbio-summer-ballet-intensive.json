@@ -1,0 +1,121 @@
+[
+  {
+    "application": {
+      "deadline": "2026-06-30",
+      "notes": "A non-refundable €150 registration fee completes enrolment. Cancelling before the programme starts refunds 50% of the amount paid, excluding the registration fee.",
+      "requirements": [
+        {
+          "type": "headshot"
+        },
+        {
+          "notes": "Pointe shoes are not required for the photos.",
+          "poses": [
+            "fourth position croisé en relevé",
+            "first arabesque"
+          ],
+          "specificity": "defined-poses",
+          "type": "photos"
+        }
+      ],
+      "status": "open",
+      "url": "https://bobbiosummerballetintensive.com/registrazione/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "contemporary",
+      "repertoire"
+    ],
+    "id": "bobbio-summer-ballet-intensive/2026",
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Bobbio",
+      "country": "IT"
+    },
+    "organization": {
+      "city": "Bobbio",
+      "country": "IT",
+      "name": "Bobbio Summer Ballet Intensive",
+      "slug": "bobbio-summer-ballet-intensive"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-07-24",
+      "notes": "dal 14 al 24 Luglio",
+      "season": "summer",
+      "sessions": [],
+      "start": "2026-07-14"
+    },
+    "source": {
+      "hash": "sha256:c22062cd09a65fd9986a18414c4ceda3d8ab6ce2582855cbf21f15c46251e3b8",
+      "provider": "bobbio-summer-ballet-intensive",
+      "scrapedAt": "2026-06-16T14:44:05.700372Z",
+      "url": "https://bobbiosummerballetintensive.com/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Dora Ciacca",
+        "role": "Artistic director"
+      },
+      {
+        "affiliations": [],
+        "name": "Christopher Vazquez"
+      },
+      {
+        "affiliations": [],
+        "name": "Rebecca Storani"
+      },
+      {
+        "affiliations": [],
+        "name": "Nadege Hottier"
+      },
+      {
+        "affiliations": [],
+        "name": "Ilenia Montagnoli"
+      },
+      {
+        "affiliations": [],
+        "name": "Gregory Lau"
+      },
+      {
+        "affiliations": [],
+        "name": "Iratxe Ansa"
+      },
+      {
+        "affiliations": [],
+        "name": "Igor Bacovich"
+      },
+      {
+        "affiliations": [],
+        "name": "Cristina Amodio"
+      },
+      {
+        "affiliations": [],
+        "name": "Monique Pepi"
+      },
+      {
+        "affiliations": [],
+        "name": "Annamaria Bufano"
+      },
+      {
+        "affiliations": [],
+        "name": "Elias Garcias Herrera"
+      },
+      {
+        "affiliations": [],
+        "name": "Selina Shida Hack"
+      },
+      {
+        "affiliations": [],
+        "name": "Camillo Cardenas Herrera"
+      }
+    ],
+    "title": "Bobbio Summer Ballet Intensive 2026"
+  }
+]
