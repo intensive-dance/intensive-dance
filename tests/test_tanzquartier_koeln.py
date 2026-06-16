@@ -46,9 +46,9 @@ def test_prices_with_member_notes():
     assert by_label["Contemporary"].notes == "Mitglieder: 79 EUR"
 
 
-def test_application_open_with_soldout_note():
+def test_application_keeps_soldout_note_without_inventing_status():
     o = tq._build_offerings(_HTML)[0]
-    assert o.application.status == "open"
+    assert o.application.status is None  # page states availability, not a status
     assert o.application.requirements == []  # prerequisite, not an audition gate
     assert o.application.notes is not None
     assert "ausgebucht" in o.application.notes

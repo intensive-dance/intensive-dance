@@ -7,7 +7,6 @@
     "application": {
       "notes": "Klassisches Ballett ist ausgebucht!",
       "requirements": [],
-      "status": "open",
       "url": "https://tanzquartier.koeln/workshops/intensiv-workshop-sommerferien-2026"
     },
     "genres": [
@@ -69,9 +68,9 @@
     },
     "source": {
       "attemptedAt": "2026-06-14T22:01:16.528498Z",
-      "hash": "sha256:adef0d9721ef2af303fc8cb90f88e52fcdea22b0989196a333fe812b76500e1e",
+      "hash": "sha256:00e962c4cc8075da230dd9d3daf224ada1b47ef924c62f031218706124203f31",
       "provider": "tanzquartier-koeln",
-      "scrapedAt": "2026-06-11T20:55:45.344823Z",
+      "scrapedAt": "2026-06-16T08:50:03.176563Z",
       "url": "https://tanzquartier.koeln/workshops/intensiv-workshop-sommerferien-2026"
     },
     "teachers": [],
