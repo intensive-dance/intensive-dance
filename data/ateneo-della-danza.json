@@ -1,0 +1,230 @@
+[
+  {
+    "application": {
+      "notes": "Entry requires a video pre-selection; up to 50 scholarships of €200 (off the full tuition) may be awarded.",
+      "requirements": [
+        {
+          "description": "Video pre-selection.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "url": "https://www.ateneodelladanza.it/intensive-summer-school/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "contemporary",
+      "repertoire",
+      "character"
+    ],
+    "id": "ateneo-della-danza/2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Siena",
+      "country": "IT",
+      "venue": "Ateneo della Danza"
+    },
+    "organization": {
+      "city": "Siena",
+      "country": "IT",
+      "name": "Ateneo della Danza",
+      "slug": "ateneo-della-danza"
+    },
+    "prices": [
+      {
+        "amount": 700.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition (full)"
+      },
+      {
+        "amount": 600.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition (early-bird, by 15 May)"
+      },
+      {
+        "amount": 540.0,
+        "currency": "EUR",
+        "includes": [
+          "accommodation"
+        ],
+        "label": "Accommodation (double/triple room, breakfast)"
+      },
+      {
+        "amount": 295.0,
+        "currency": "EUR",
+        "includes": [
+          "meals"
+        ],
+        "label": "Meals (lunch + dinner, full course)"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-13",
+      "season": "summer",
+      "sessions": [],
+      "start": "2026-07-04",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:06f7b01192c466caacc3200a0542f3b893c011dd5b36fe41df5bbc4ef6043bab",
+      "provider": "ateneo-della-danza",
+      "scrapedAt": "2026-06-17T12:34:17.902456Z",
+      "url": "https://www.ateneodelladanza.it/intensive-summer-school/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "organization": "Ateneo della Danza"
+          }
+        ],
+        "name": "Laura Ricci",
+        "role": "Danza Classica, Tecnica di Punte, Flamenco"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "ABT NTC©"
+          }
+        ],
+        "name": "Marco Batti",
+        "role": "Danza classica, Repertorio, Passo a due"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "American Repertory Ballet"
+          }
+        ],
+        "name": "Davide Internullo",
+        "role": "Danza Classica, Repertorio, Tecnica di Punte e Maschile"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Balletto di Siena"
+          }
+        ],
+        "name": "Filippo Del Sal",
+        "role": "Danza Classica, Repertorio, Danze di Carattere"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Balletto di Siena"
+          }
+        ],
+        "name": "Giuseppe Giacalone",
+        "role": "Danza Classica, Repertorio, Tecnica Maschile"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Balletto di Siena"
+          }
+        ],
+        "name": "Eleonora Satta",
+        "role": "Danza Classica, Tecnica di Punte, Sbarra a terra"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Ballet Hagen"
+          }
+        ],
+        "name": "Ricardo Fernando Do Santos",
+        "role": "Danza Classica"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Royal Ballet School Antwerp"
+          }
+        ],
+        "name": "Linda Baclaine",
+        "role": "Danza Classica"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "PRIDANSP"
+          }
+        ],
+        "name": "Andrè Malosa",
+        "role": "Danza Classica"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Freelance"
+          }
+        ],
+        "name": "Enrico Alunni",
+        "role": "Danza Contemporanea"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Ocram Dance Movement"
+          }
+        ],
+        "name": "Claudio Scalia",
+        "role": "Danza Contemporanea, Laboratorio coreografico"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Ocram Dance Movement"
+          }
+        ],
+        "name": "Rachele Pascale",
+        "role": "Danza Contemporanea, Laboratorio coreografico"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Ateneo della Danza"
+          }
+        ],
+        "name": "Gianluca Formica",
+        "role": "Danza Contemporanea"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Freelance"
+          }
+        ],
+        "name": "Sara Buratti",
+        "role": "Danza Contemporanea"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Royal Ballet School Antwerp"
+          }
+        ],
+        "name": "Rachael Mossom",
+        "role": "Danza Contemporanea"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Assistente Wayne McGregor, Sasha Waltz, Maitre Teatro dell'Opera di Roma"
+          }
+        ],
+        "name": "Davide Di Pretoro",
+        "role": "Danza Contemporanea"
+      }
+    ],
+    "title": "Intensive Summer School 2026"
+  }
+]
