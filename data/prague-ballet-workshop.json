@@ -1,0 +1,96 @@
+[
+  {
+    "ageRange": {
+      "max": 21,
+      "min": 13
+    },
+    "application": {
+      "notes": "Apply via the downloadable form plus the online form, with a short dance video. Full payment by bank transfer confirms the place.",
+      "requirements": [
+        {
+          "description": "A short dance video showing dance level.",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "status": "open",
+      "url": "https://www.pragueballetworkshop.com/kopie-applications-2"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "contemporary"
+    ],
+    "id": "prague-ballet-workshop/2026",
+    "level": [
+      "pre-professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Prague",
+      "country": "CZ",
+      "venue": "Budečská 35, Praha 2 - Vinohrady"
+    },
+    "organization": {
+      "city": "Prague",
+      "country": "CZ",
+      "name": "Prague Ballet Workshop",
+      "slug": "prague-ballet-workshop"
+    },
+    "prices": [
+      {
+        "amount": 850.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "1 week"
+      },
+      {
+        "amount": 1400.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "2 weeks"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-24",
+      "notes": "July 13th - 24th 2026",
+      "season": "summer",
+      "sessions": [],
+      "start": "2026-07-13"
+    },
+    "source": {
+      "hash": "sha256:5ad0e349735b50f21195fd15982c6cd055e0375f5a50205349fb4be710d138f1",
+      "provider": "prague-ballet-workshop",
+      "scrapedAt": "2026-06-16T16:08:57.945513Z",
+      "url": "https://www.pragueballetworkshop.com"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Richard D'Alton"
+      },
+      {
+        "affiliations": [],
+        "name": "Mariana Torres"
+      },
+      {
+        "affiliations": [],
+        "name": "Gianvito Attimonelli"
+      },
+      {
+        "affiliations": [],
+        "name": "Luisa María Arias"
+      },
+      {
+        "affiliations": [],
+        "name": "Jarek Cemerek"
+      }
+    ],
+    "title": "Prague Summer Ballet Workshop 2026"
+  }
+]
