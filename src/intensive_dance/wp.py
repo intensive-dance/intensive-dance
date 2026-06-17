@@ -13,9 +13,11 @@ its `content.rendered` into ordered, heading-keyed sections.
 from __future__ import annotations
 
 import html
+import json
 import re
 import urllib.parse
 from dataclasses import dataclass
+from typing import Any
 
 import httpx
 from selectolax.parser import HTMLParser, Node
@@ -29,6 +31,33 @@ _BTN_TITLE = re.compile(r'title=["“”]?([^|"“”\]]+)')
 
 _BLOCK_TAGS = {"h1", "h2", "h3", "h4", "h5", "h6", "p", "ul", "ol", "table"}
 _HEADING_TAGS = {"h1", "h2", "h3", "h4", "h5", "h6"}
+
+
+def unwrap_json_viewer(body: str) -> Any:
+    """Recover JSON the fetch proxy returned inside Chromium's JSON viewer.
+
+    A Cloudflare-gated WordPress whose `/wp-json/` only comes back through the
+    proxy's render / FlareSolverr tier arrives as the *rendered DOM*: the JSON
+    sits HTML-escaped inside `<pre>`, and Cloudflare's email-protection script may
+    have injected **real** `<a class="__cf_email__">` tags into displayed emails
+    (their unescaped `"` break `json.loads`). Since every legitimate angle-bracket
+    in the JSON is escaped (`&lt;`/`&gt;`), the only real `<…>` tags left are those
+    injections — strip them, convert the structural entities back (`&amp;` last so
+    a `&amp;amp;` collapses to one `&amp;`, not `&`), then parse. `wp.fetch_*` rely
+    on `resp.json()` and can't help, so a scraper on such a host fetches the raw
+    text and calls this (see `associazione_europea_danza`, `accademia_iacopini`).
+    """
+    match = re.search(r"<pre[^>]*>(.*)</pre>", body, re.DOTALL)
+    inner = match.group(1) if match else body
+    inner = re.sub(r"<[^>]*>", "", inner)
+    inner = (
+        inner.replace("&lt;", "<")
+        .replace("&gt;", ">")
+        .replace("&#160;", " ")
+        .replace("&nbsp;", " ")
+        .replace("&amp;", "&")
+    )
+    return json.loads(inner)
 
 
 def fetch_page(client: httpx.Client, slug: str, *, base: str) -> dict | None:

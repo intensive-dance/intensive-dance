@@ -1,0 +1,299 @@
+[
+  {
+    "ageRange": {
+      "max": 10,
+      "min": 8
+    },
+    "application": {
+      "notes": "Iscrizione tramite modulo di iscrizione e certificato medico sportivo; le iscrizioni chiudono al raggiungimento della capienza.",
+      "requirements": [],
+      "url": "https://accademiaiacopini.it/in_danza_5_edizione/"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "accademia-iacopini/2026-kids",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Chianciano Terme",
+      "country": "IT"
+    },
+    "organization": {
+      "city": "Chianciano Terme",
+      "country": "IT",
+      "name": "Accademia Iacopini",
+      "slug": "accademia-iacopini"
+    },
+    "prices": [
+      {
+        "amount": 300.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Quota totale",
+        "notes": "€150 acconto + €150 saldo."
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-01",
+      "season": "summer",
+      "sessions": [],
+      "start": "2026-07-26",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:a98e6ba2791c998f081de0d276b53cd6b6e3e002a801ea1d0f23ccf5a345b988",
+      "provider": "accademia-iacopini",
+      "scrapedAt": "2026-06-17T13:49:05.718252Z",
+      "url": "https://accademiaiacopini.it/in_danza_5_edizione/"
+    },
+    "teachers": [],
+    "title": "IN DANZA 5° Edizione — Kids"
+  },
+  {
+    "ageRange": {
+      "max": 22,
+      "min": 16
+    },
+    "application": {
+      "notes": "Iscrizione tramite modulo di iscrizione e certificato medico sportivo; le iscrizioni chiudono al raggiungimento della capienza.",
+      "requirements": [],
+      "url": "https://accademiaiacopini.it/in_danza_5_edizione/"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "accademia-iacopini/2026-perfezionamento",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Chianciano Terme",
+      "country": "IT"
+    },
+    "organization": {
+      "city": "Chianciano Terme",
+      "country": "IT",
+      "name": "Accademia Iacopini",
+      "slug": "accademia-iacopini"
+    },
+    "prices": [
+      {
+        "amount": 450.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Percorso unico",
+        "notes": "Pagamento dovuto solo a seguito di ammissione."
+      },
+      {
+        "amount": 250.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Quota integrativa (in aggiunta a INdanza)"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-01",
+      "notes": "Percorso intensivo per allievi selezionati, con ore di studio aggiuntive, affiancato allo Stage.",
+      "season": "summer",
+      "sessions": [],
+      "start": "2026-07-26",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:adb1bf34a065791994af7fc483b197f71e3471d60137bc60c0023dce60bc7e75",
+      "provider": "accademia-iacopini",
+      "scrapedAt": "2026-06-17T13:49:05.718008Z",
+      "url": "https://accademiaiacopini.it/in_danza_5_edizione/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Pino Alosa",
+        "role": "Ballet Master presso il Wiener Staatsballett"
+      },
+      {
+        "affiliations": [],
+        "name": "Fabrizio Bartoli",
+        "role": "Maitre de Ballet Internazionale"
+      },
+      {
+        "affiliations": [],
+        "name": "Toni Candeloro",
+        "role": "Primo ballerino etoile e coreografo"
+      },
+      {
+        "affiliations": [],
+        "name": "Christian Fara",
+        "role": "Direttore della PangPar Dance Project, coreografo e formatore"
+      },
+      {
+        "affiliations": [],
+        "name": "Linda Gelinas",
+        "role": "Metropolitan Opera Dance Director"
+      },
+      {
+        "affiliations": [],
+        "name": "Francesco Italiani",
+        "role": "Danzatore, coreografo e docente di tecnica modern e musical"
+      },
+      {
+        "affiliations": [],
+        "name": "Fabrizio Mainini",
+        "role": "Ballerino e coreografo televisivo Rai – Mediaset"
+      },
+      {
+        "affiliations": [],
+        "name": "Fethon Miozzi",
+        "role": "Docente presso l’Accademia Vaganova di San Pietroburgo"
+      },
+      {
+        "affiliations": [],
+        "name": "Francesco Porcelluzzi",
+        "role": "Primo Ballerino per produzioni italiane ed estere – Coreografo del programma “Amici”"
+      },
+      {
+        "affiliations": [],
+        "name": "Mirko Sabatini",
+        "role": "Docente di fisiotecnica e tecnica classica"
+      },
+      {
+        "affiliations": [],
+        "name": "Badley Shelver",
+        "role": "Artistic Director Joffrey Concert Group e Joffrey jazz e contemporary trainee program, Docente presso la Joffrey Ballet School"
+      },
+      {
+        "affiliations": [],
+        "name": "Alexei Baranovskii",
+        "role": "Pianista accompagnatore"
+      }
+    ],
+    "title": "IN DANZA 5° Edizione — Percorso di Perfezionamento"
+  },
+  {
+    "ageRange": {
+      "max": 22,
+      "min": 11
+    },
+    "application": {
+      "notes": "Iscrizione tramite modulo di iscrizione e certificato medico sportivo; le iscrizioni chiudono al raggiungimento della capienza.",
+      "requirements": [],
+      "url": "https://accademiaiacopini.it/in_danza_5_edizione/"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "accademia-iacopini/2026-stage",
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Chianciano Terme",
+      "country": "IT"
+    },
+    "organization": {
+      "city": "Chianciano Terme",
+      "country": "IT",
+      "name": "Accademia Iacopini",
+      "slug": "accademia-iacopini"
+    },
+    "prices": [
+      {
+        "amount": 750.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Quota totale",
+        "notes": "€350 acconto + €400 saldo. Early booking €650 entro il 30 aprile 2026."
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-01",
+      "notes": "Masterclass | Private Coaching | Mentoring | Selection | Gala",
+      "season": "summer",
+      "sessions": [],
+      "start": "2026-07-26",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:feeffd33c9bd80e2b332d11e7d01059739dbde251e0d1243ac8918395f1f814e",
+      "provider": "accademia-iacopini",
+      "scrapedAt": "2026-06-17T13:49:05.717747Z",
+      "url": "https://accademiaiacopini.it/in_danza_5_edizione/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Pino Alosa",
+        "role": "Ballet Master presso il Wiener Staatsballett"
+      },
+      {
+        "affiliations": [],
+        "name": "Fabrizio Bartoli",
+        "role": "Maitre de Ballet Internazionale"
+      },
+      {
+        "affiliations": [],
+        "name": "Toni Candeloro",
+        "role": "Primo ballerino etoile e coreografo"
+      },
+      {
+        "affiliations": [],
+        "name": "Christian Fara",
+        "role": "Direttore della PangPar Dance Project, coreografo e formatore"
+      },
+      {
+        "affiliations": [],
+        "name": "Linda Gelinas",
+        "role": "Metropolitan Opera Dance Director"
+      },
+      {
+        "affiliations": [],
+        "name": "Francesco Italiani",
+        "role": "Danzatore, coreografo e docente di tecnica modern e musical"
+      },
+      {
+        "affiliations": [],
+        "name": "Fabrizio Mainini",
+        "role": "Ballerino e coreografo televisivo Rai – Mediaset"
+      },
+      {
+        "affiliations": [],
+        "name": "Fethon Miozzi",
+        "role": "Docente presso l’Accademia Vaganova di San Pietroburgo"
+      },
+      {
+        "affiliations": [],
+        "name": "Francesco Porcelluzzi",
+        "role": "Primo Ballerino per produzioni italiane ed estere – Coreografo del programma “Amici”"
+      },
+      {
+        "affiliations": [],
+        "name": "Mirko Sabatini",
+        "role": "Docente di fisiotecnica e tecnica classica"
+      },
+      {
+        "affiliations": [],
+        "name": "Badley Shelver",
+        "role": "Artistic Director Joffrey Concert Group e Joffrey jazz e contemporary trainee program, Docente presso la Joffrey Ballet School"
+      },
+      {
+        "affiliations": [],
+        "name": "Alexei Baranovskii",
+        "role": "Pianista accompagnatore"
+      }
+    ],
+    "title": "IN DANZA 5° Edizione — Stage"
+  }
+]

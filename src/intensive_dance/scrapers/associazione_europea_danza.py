@@ -50,7 +50,6 @@ WHAT THIS SCRAPER EXERCISES (verified live 2026-06-17):
 from __future__ import annotations
 
 import html
-import json
 import re
 from datetime import date
 
@@ -151,26 +150,8 @@ def _fetch_json(client: httpx.Client, url: str, *, params: dict | None = None) -
 
 
 def _unwrap(body: str) -> list[dict]:
-    """Recover the JSON the proxy returned inside Chromium's JSON viewer.
-
-    The `solve=1` (FlareSolverr) tier renders the response, so the JSON sits
-    HTML-escaped inside `<pre>` and Cloudflare's email-protection script has
-    injected *real* `<a class="__cf_email__">` tags into displayed emails. Since
-    every legitimate angle-bracket in the JSON is escaped (`&lt;`/`&gt;`), the
-    only real `<…>` tags left are those injections — strip them, then convert the
-    structural entities back and parse.
-    """
-    match = re.search(r"<pre[^>]*>(.*)</pre>", body, re.DOTALL)
-    inner = match.group(1) if match else body
-    inner = re.sub(r"<[^>]*>", "", inner)
-    inner = (
-        inner.replace("&lt;", "<")
-        .replace("&gt;", ">")
-        .replace("&#160;", " ")
-        .replace("&nbsp;", " ")
-        .replace("&amp;", "&")
-    )
-    data = json.loads(inner)
+    """The search endpoint returns a list; `wp.unwrap_json_viewer` does the work."""
+    data = wp.unwrap_json_viewer(body)
     return data if isinstance(data, list) else [data]
 
 
