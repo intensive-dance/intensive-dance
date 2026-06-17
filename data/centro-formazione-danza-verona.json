@@ -1,0 +1,72 @@
+[
+  {
+    "application": {
+      "notes": "An audition for the school's year-round programmes is held on 10 July 2026, during the Summer School (not required to attend).",
+      "requirements": [],
+      "url": "https://cfdanzaverona.it/iscrizione-summer-school/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "contemporary",
+      "repertoire"
+    ],
+    "id": "centro-formazione-danza-verona/2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Verona",
+      "country": "IT",
+      "venue": "Centro Formazione Danza Verona, Via Berbera 19/b"
+    },
+    "organization": {
+      "city": "Verona",
+      "country": "IT",
+      "name": "Centro Formazione Danza Verona",
+      "slug": "centro-formazione-danza-verona"
+    },
+    "prices": [
+      {
+        "amount": 450.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Per week",
+        "notes": "Both weeks: 30% off the course fee (registration fee unchanged)."
+      },
+      {
+        "amount": 25.0,
+        "currency": "EUR",
+        "includes": [],
+        "label": "Registration fee"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-11",
+      "season": "summer",
+      "sessions": [
+        {
+          "end": "2026-07-04",
+          "label": "Session 1",
+          "start": "2026-06-29"
+        },
+        {
+          "end": "2026-07-11",
+          "label": "Session 2",
+          "start": "2026-07-06"
+        }
+      ],
+      "start": "2026-06-29",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:b3db21f505e609fe689d66a15b629a994e65013930b8d59d7282a510445cf2cd",
+      "provider": "centro-formazione-danza-verona",
+      "scrapedAt": "2026-06-17T12:39:20.700777Z",
+      "url": "https://cfdanzaverona.it/summer-school/"
+    },
+    "teachers": [],
+    "title": "Ballet Summer School 2026"
+  }
+]
