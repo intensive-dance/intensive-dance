@@ -75,7 +75,7 @@
       "timezone": "Europe/Madrid"
     },
     "source": {
-      "attemptedAt": "2026-06-15T08:48:45.210165Z",
+      "attemptedAt": "2026-06-17T15:14:18.044658Z",
       "hash": "sha256:e24005161fc38aa6a439e1ae271f0dce26e92a6859db0a134ceb35a7c8cd7231",
       "provider": "art-of-zurich",
       "scrapedAt": "2026-06-07T07:38:27.801043Z",
@@ -211,27 +211,27 @@
       "timezone": "Europe/Zurich"
     },
     "source": {
-      "attemptedAt": "2026-06-15T08:48:45.210165Z",
-      "hash": "sha256:aa39204708db255fe927cbd991d784a997f5b5c3f035c2ba1df10d3ad407bbb4",
+      "attemptedAt": "2026-06-17T15:14:18.044658Z",
+      "hash": "sha256:d73662ff2c0cc239a7ca55002e27782494d1bf099734d3deacbb50b6a89745b1",
       "provider": "art-of-zurich",
-      "scrapedAt": "2026-06-07T07:38:27.232701Z",
+      "scrapedAt": "2026-06-17T15:14:19.277670Z",
       "url": "https://zurich.art-of.net/"
     },
     "teachers": [
       {
         "affiliations": [],
-        "name": "Leanne Benjamin",
-        "role": "Former Artistic Director of Queensland Ballet & Former Principal Dancer of the Royal Ballet"
+        "name": "Nina Polakova",
+        "role": "Director of the Ballet of the Slovak National Theatre"
       },
       {
         "affiliations": [],
-        "name": "Anna Urban",
-        "role": "Former Principal Dancer & Ballet Teacher at School of Hamburg Ballet"
+        "name": "Inna Bilash",
+        "role": "Soloist at Ballett Zürich"
       },
       {
         "affiliations": [],
-        "name": "Allison Brown",
-        "role": "Teacher & Coach for William Forsythe ballets"
+        "name": "Jone San Martin Astigarraga",
+        "role": "Coach for William Forsythe ballets"
       },
       {
         "affiliations": [],
@@ -240,23 +240,18 @@
       },
       {
         "affiliations": [],
-        "name": "Ana Presta",
-        "role": "Guest Ballet Teacher"
+        "name": "Elena Vostrotina",
+        "role": "Former Principal Dancer of Zurich Ballet"
       },
       {
         "affiliations": [],
-        "name": "Daniel Mulligan",
-        "role": "Ballet Dancer & Ballet Teacher"
+        "name": "Sean Kulashe-Bates",
+        "role": "Ballet Dancer with Ballett Zurich"
       },
       {
         "affiliations": [],
         "name": "Jeannette Chandrika Füzesi",
         "role": "Ballet Teacher, Yoga Nidra and Yoga PMA Instructor"
-      },
-      {
-        "affiliations": [],
-        "name": "Sean Kulashe-Bates",
-        "role": "Ballet Dancer with Ballett Zurich and Guest Teacher"
       },
       {
         "affiliations": [],
