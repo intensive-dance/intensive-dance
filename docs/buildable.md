@@ -2,7 +2,7 @@
 
 > **Generated — do not edit.** Refresh with `uv run python -m intensive_dance.overview --write`; CI drift-checks it. Source of truth: `providers.json`.
 
-23 buildable · 11 excluded · 122 live (156 providers total).
+22 buildable · 11 excluded · 123 live (156 providers total).
 
 **To claim one (so nobody double-builds):** check `gh issue list` / `gh pr list` for the slug; if free, open a `build:<slug>` issue and **self-assign first**, then build; close it when the PR merges (provider → `live`). An open claim issue *or* PR = locked. See `AGENTS.md` → Scope & coordination.
 
@@ -18,7 +18,6 @@ _Some still need Phase-1 verification (a public dated edition / not full-time) b
 - `tanzwerkstatt-europa` — Tanzwerkstatt Europa (Munich) — https://www.jointadventures.net/en/tanzwerkstatt-europa
 
 ### IT
-- `progetto-danza-treviso` — Progetto Danza — Stage Internazionale di Danza (Treviso) — https://www.progettodanza.org/
 - `verona-summer-dance-lab` — Verona Summer Dance Lab (Verona) — https://www.veronadancelab.com/
 
 ### JP
