@@ -2,7 +2,7 @@
 
 > **Generated — do not edit.** Refresh with `uv run python -m intensive_dance.overview --write`; CI drift-checks it. Source of truth: `providers.json`.
 
-31 buildable · 11 excluded · 114 live (156 providers total).
+30 buildable · 11 excluded · 115 live (156 providers total).
 
 **To claim one (so nobody double-builds):** check `gh issue list` / `gh pr list` for the slug; if free, open a `build:<slug>` issue and **self-assign first**, then build; close it when the PR merges (provider → `live`). An open claim issue *or* PR = locked. See `AGENTS.md` → Scope & coordination.
 
@@ -20,7 +20,6 @@ _Some still need Phase-1 verification (a public dated edition / not full-time) b
 ### IT
 - `accademia-iacopini` — Accademia Iacopini — "In Danza" (Chianciano Terme) — https://accademiaiacopini.it/
 - `art-studio-danza` — Art Studio Danza — Stage Internazionale del Lago di Garda (Salò) — https://artstudiodanza.it/
-- `arteballetto` — Arteballetto — Summer Course in Sicily (Catania) — https://www.arteballetto.net/
 - `associazione-europea-danza` — Associazione Europea Danza — Summer Dance School (Livorno) — https://aed.dance/
 - `ateneo-della-danza` — Ateneo della Danza — Intensive Summer School (Siena) — https://www.ateneodelladanza.it/
 - `centro-formazione-aida` — Centro Formazione Aida — Ballet Summer Camp (Milan) — https://www.centroformazioneaida.com/
