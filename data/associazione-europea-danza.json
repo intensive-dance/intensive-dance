@@ -1,0 +1,159 @@
+[
+  {
+    "ageRange": {
+      "max": null,
+      "min": 11
+    },
+    "application": {
+      "notes": "Open to students who regularly study dance (no beginners). A.E.D. membership (€15/year) mandatory. Applications accepted until all available places are filled.",
+      "requirements": [],
+      "status": "open",
+      "url": "https://aed.dance/en/workshop/summer-dance-school-livorno-italy/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire"
+    ],
+    "id": "associazione-europea-danza/2026-classic",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Livorno",
+      "country": "IT",
+      "venue": "Via Masi 7"
+    },
+    "organization": {
+      "city": "Livorno",
+      "country": "IT",
+      "name": "Associazione Europea Danza",
+      "slug": "associazione-europea-danza"
+    },
+    "prices": [
+      {
+        "amount": 390.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Three classes, one week",
+        "notes": "€150 deposit at booking; €240 balance on the first day. A.E.D. membership (€15/year) is mandatory."
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-01",
+      "season": "summer",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 13,
+            "min": 11
+          },
+          "end": "2026-08-01",
+          "label": "Group 1",
+          "notes": "10:00–11:30 — Classical Ballet Technique; 11:45–12:45 — Pointe Work; 13:00–14:00 — Repertoire",
+          "start": "2026-07-27"
+        },
+        {
+          "ageRange": {
+            "max": null,
+            "min": 14
+          },
+          "end": "2026-08-01",
+          "label": "Group 2",
+          "notes": "14:00–15:30 — Classical Ballet Technique; 15:30–16:30 — Pointe Work; 16:45–18:15 — Repertoire",
+          "start": "2026-07-27"
+        }
+      ],
+      "start": "2026-07-27",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:86f0df02059f27cca8d736104efd8c79d706cd0a04db61efc2cff54aeb55ede9",
+      "provider": "associazione-europea-danza",
+      "scrapedAt": "2026-06-17T13:29:50.195046Z",
+      "url": "https://aed.dance/en/workshop/summer-dance-school-livorno-italy/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Liane McRae",
+        "role": "Artistic Manager Foundation Programme The Royal Ballet School"
+      },
+      {
+        "affiliations": [],
+        "name": "Nicola Tranah",
+        "role": "Royal Ballet, international teacher"
+      }
+    ],
+    "title": "Summer Dance School Livorno — Classic Week 2026"
+  },
+  {
+    "ageRange": {
+      "max": null,
+      "min": 14
+    },
+    "application": {
+      "notes": "Open to students who regularly study dance (no beginners). A.E.D. membership (€15/year) mandatory. Applications accepted until all available places are filled.",
+      "requirements": [],
+      "status": "open",
+      "url": "https://aed.dance/en/workshop/summer-dance-school-livorno-italy/"
+    },
+    "genres": [
+      "contemporary",
+      "repertoire"
+    ],
+    "id": "associazione-europea-danza/2026-contemporary",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Livorno",
+      "country": "IT",
+      "venue": "Via Masi 7"
+    },
+    "organization": {
+      "city": "Livorno",
+      "country": "IT",
+      "name": "Associazione Europea Danza",
+      "slug": "associazione-europea-danza"
+    },
+    "prices": [
+      {
+        "amount": 390.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Three classes, one week",
+        "notes": "€150 deposit at booking; €240 balance on the first day. A.E.D. membership (€15/year) is mandatory."
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-25",
+      "notes": "14,30-16,00 Contemporary technique; 16,15-17,45 workshop; 18,00-19,30 Improvisation and repertory",
+      "season": "summer",
+      "sessions": [],
+      "start": "2026-07-20",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:910efab6833475075d4a2ce587f195240fa7d8e47c144b14f8a299e3d13cd4f7",
+      "provider": "associazione-europea-danza",
+      "scrapedAt": "2026-06-17T13:29:50.194650Z",
+      "url": "https://aed.dance/en/workshop/summer-dance-school-livorno-italy/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Sanja Maier Hasagic",
+        "role": "Coordinator, teacher and ripetiteur CODARTS Rotterdam"
+      },
+      {
+        "affiliations": [],
+        "name": "Neel Verdoorn",
+        "role": "Coreographer, teacher CODARTS Rotterdam"
+      }
+    ],
+    "title": "Summer Dance School Livorno — Contemporary Week 2026"
+  }
+]
