@@ -1,0 +1,137 @@
+[
+  {
+    "application": {
+      "notes": "Apply via the online form (CV + two video links); selection may include a Zoom interview with the artistic director. A €500 deposit reserves a place after confirmation.",
+      "requirements": [
+        {
+          "type": "cv"
+        },
+        {
+          "description": "Two video links (Vimeo/YouTube).",
+          "specificity": "unspecific",
+          "type": "video"
+        }
+      ],
+      "url": "https://www.nuovaofficinadelladanza.org/nodsummerintensiveprogram26"
+    },
+    "genres": [
+      "contemporary",
+      "classical"
+    ],
+    "id": "nuova-officina-della-danza/2026",
+    "level": [
+      "pre-professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Turin",
+      "country": "IT"
+    },
+    "organization": {
+      "city": "Turin",
+      "country": "IT",
+      "name": "Nuova Officina della Danza",
+      "slug": "nuova-officina-della-danza"
+    },
+    "prices": [
+      {
+        "amount": 1900.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Full 3-week program — early bird (by Dec 31), 7 artists",
+        "notes": "One-week blocks (€680–840) and single workshops (€280–340) are also offered; ballet classes are included in full weeks, €40 extra otherwise."
+      },
+      {
+        "amount": 2040.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Full 3-week program — early bird (by Dec 31), 8 artists incl. Emilie Leriche",
+        "notes": "One-week blocks (€680–840) and single workshops (€280–340) are also offered; ballet classes are included in full weeks, €40 extra otherwise."
+      },
+      {
+        "amount": 2300.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Full 3-week program — regular (registration fee included)",
+        "notes": "One-week blocks (€680–840) and single workshops (€280–340) are also offered; ballet classes are included in full weeks, €40 extra otherwise."
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-17",
+      "season": "summer",
+      "sessions": [
+        {
+          "end": "2026-07-03",
+          "label": "Week 1",
+          "start": "2026-06-29"
+        },
+        {
+          "end": "2026-07-10",
+          "label": "Week 2",
+          "start": "2026-07-06"
+        },
+        {
+          "end": "2026-07-17",
+          "label": "Week 3",
+          "start": "2026-07-13"
+        }
+      ],
+      "start": "2026-06-29"
+    },
+    "source": {
+      "hash": "sha256:080df5a1bde036d3214b01fd1172b25e47d0623d9307cbc3f8ccb33450edb12e",
+      "provider": "nuova-officina-della-danza",
+      "scrapedAt": "2026-06-17T11:30:01.890574Z",
+      "url": "https://www.nuovaofficinadelladanza.org/nodsummerintensiveprogram26"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Ben Behrends",
+        "role": "Guest artist"
+      },
+      {
+        "affiliations": [],
+        "name": "Ella Rothschild",
+        "role": "Guest artist"
+      },
+      {
+        "affiliations": [],
+        "name": "Ethan Colangelo",
+        "role": "Guest artist"
+      },
+      {
+        "affiliations": [],
+        "name": "Anamaria Lucaciu",
+        "role": "Guest artist"
+      },
+      {
+        "affiliations": [],
+        "name": "Greg Lau",
+        "role": "Guest artist"
+      },
+      {
+        "affiliations": [],
+        "name": "Noa Zuk",
+        "role": "Guest artist"
+      },
+      {
+        "affiliations": [],
+        "name": "Bruno Guillore",
+        "role": "Guest artist"
+      },
+      {
+        "affiliations": [],
+        "name": "Emilie Leriche",
+        "role": "Guest artist"
+      }
+    ],
+    "title": "NOD Summer Intensive Program 2026"
+  }
+]

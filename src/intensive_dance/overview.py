@@ -41,6 +41,10 @@ NOT_BUILDABLE: dict[str, str] = {
     # Pre-launch base44 template: every "edition" is dateless ("TBC", "applications
     # opening soon") with no fees/faculty — nothing bookable to scrape yet.
     "wiener-ballettakademie": "pre-launch — no dated edition yet (all TBC)",
+    # In-scope summer intensive dormant — only a recreational kids camp runs now.
+    "first-international-ballet-school-prague": (
+        "only a recreational children's camp in 2026 (FIBS Summer Intensive dormant since 2022)"
+    ),
 }
 
 _CLAIM = (
