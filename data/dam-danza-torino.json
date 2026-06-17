@@ -1,0 +1,732 @@
+[
+  {
+    "ageRange": {
+      "max": 18,
+      "min": 6
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.damdanzatorino.it/teatro-nuovo/summer-dance-intensive-bardonecchia-2019/"
+    },
+    "genres": [
+      "neoclassical",
+      "classical",
+      "pointe",
+      "contemporary",
+      "repertoire",
+      "character"
+    ],
+    "id": "dam-danza-torino/bardonecchia-2019",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Bardonecchia",
+      "country": "IT"
+    },
+    "organization": {
+      "city": "Turin",
+      "country": "IT",
+      "name": "DAM Danza Arte e Movimento",
+      "slug": "dam-danza-torino"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2019-08-31",
+      "season": "summer",
+      "sessions": [],
+      "start": "2019-08-24",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:5d3b8e7393788623cb3b16d692333a5b85237aea98e49e6fdc501f315fa6d149",
+      "provider": "dam-danza-torino",
+      "scrapedAt": "2026-06-17T12:47:38.996483Z",
+      "url": "https://www.damdanzatorino.it/teatro-nuovo/summer-dance-intensive-bardonecchia-2019/"
+    },
+    "teachers": [],
+    "title": "Summer Dance Intensive Bardonecchia 2019"
+  },
+  {
+    "ageRange": {
+      "max": 23,
+      "min": 7
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.damdanzatorino.it/teatro-nuovo/summer-dance-intensive-bardonecchia-2020/"
+    },
+    "genres": [
+      "neoclassical",
+      "classical",
+      "pointe",
+      "contemporary",
+      "repertoire",
+      "character"
+    ],
+    "id": "dam-danza-torino/bardonecchia-2020",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Bardonecchia",
+      "country": "IT"
+    },
+    "organization": {
+      "city": "Turin",
+      "country": "IT",
+      "name": "DAM Danza Arte e Movimento",
+      "slug": "dam-danza-torino"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2020-08-29",
+      "season": "summer",
+      "sessions": [],
+      "start": "2020-08-22",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:f57ee0310341fd8f598a809c36e5e68b5081901ff372ac42f76de7892ff2674d",
+      "provider": "dam-danza-torino",
+      "scrapedAt": "2026-06-17T12:47:38.996076Z",
+      "url": "https://www.damdanzatorino.it/teatro-nuovo/summer-dance-intensive-bardonecchia-2020/"
+    },
+    "teachers": [],
+    "title": "Summer Dance Intensive Bardonecchia 2020"
+  },
+  {
+    "ageRange": {
+      "max": 23,
+      "min": 7
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.damdanzatorino.it/teatro-nuovo/summer-dance-intensive-bardonecchia-2021/"
+    },
+    "genres": [
+      "neoclassical",
+      "classical",
+      "pointe",
+      "contemporary",
+      "repertoire",
+      "character"
+    ],
+    "id": "dam-danza-torino/bardonecchia-2021",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Bardonecchia",
+      "country": "IT"
+    },
+    "organization": {
+      "city": "Turin",
+      "country": "IT",
+      "name": "DAM Danza Arte e Movimento",
+      "slug": "dam-danza-torino"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2021-09-04",
+      "season": "summer",
+      "sessions": [],
+      "start": "2021-08-28",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:d328953c3b4cd72012b89c78e795d8df17fc4854182d03f38f5830146f1eebd1",
+      "provider": "dam-danza-torino",
+      "scrapedAt": "2026-06-17T12:47:38.995622Z",
+      "url": "https://www.damdanzatorino.it/teatro-nuovo/summer-dance-intensive-bardonecchia-2021/"
+    },
+    "teachers": [],
+    "title": "Summer Dance Intensive Bardonecchia 2021"
+  },
+  {
+    "ageRange": {
+      "max": 23,
+      "min": 7
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.damdanzatorino.it/teatro-nuovo/summer-dance-intensive-bardonecchia-2022/"
+    },
+    "genres": [
+      "neoclassical",
+      "classical",
+      "pointe",
+      "contemporary",
+      "repertoire",
+      "character"
+    ],
+    "id": "dam-danza-torino/bardonecchia-2022",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Bardonecchia",
+      "country": "IT"
+    },
+    "organization": {
+      "city": "Turin",
+      "country": "IT",
+      "name": "DAM Danza Arte e Movimento",
+      "slug": "dam-danza-torino"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2022-09-03",
+      "season": "summer",
+      "sessions": [],
+      "start": "2022-08-27",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:63c6f4bce1f80200ed301fbb66a0c9d5f359eafbee994cfd43a4732b35d208bf",
+      "provider": "dam-danza-torino",
+      "scrapedAt": "2026-06-17T12:47:38.995059Z",
+      "url": "https://www.damdanzatorino.it/teatro-nuovo/summer-dance-intensive-bardonecchia-2022/"
+    },
+    "teachers": [],
+    "title": "Summer Dance Intensive Bardonecchia 2022"
+  },
+  {
+    "ageRange": {
+      "max": 23,
+      "min": 7
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.damdanzatorino.it/teatro-nuovo/summer-dance-intensive-bardonecchia-2023/"
+    },
+    "genres": [
+      "neoclassical",
+      "classical",
+      "pointe",
+      "contemporary",
+      "repertoire",
+      "character"
+    ],
+    "id": "dam-danza-torino/bardonecchia-2023",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Bardonecchia",
+      "country": "IT"
+    },
+    "organization": {
+      "city": "Turin",
+      "country": "IT",
+      "name": "DAM Danza Arte e Movimento",
+      "slug": "dam-danza-torino"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2023-09-02",
+      "season": "summer",
+      "sessions": [],
+      "start": "2023-08-26",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:dfd4264d92b16828917b2d653618463511ebb81559257c24a7f7e13d7b0de936",
+      "provider": "dam-danza-torino",
+      "scrapedAt": "2026-06-17T12:47:38.994523Z",
+      "url": "https://www.damdanzatorino.it/teatro-nuovo/summer-dance-intensive-bardonecchia-2023/"
+    },
+    "teachers": [],
+    "title": "Summer Dance Intensive Bardonecchia 2023"
+  },
+  {
+    "ageRange": {
+      "max": 23,
+      "min": 7
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.damdanzatorino.it/teatro-nuovo/summer-dance-intensive-bardonecchia-2024/"
+    },
+    "genres": [
+      "neoclassical",
+      "classical",
+      "pointe",
+      "contemporary",
+      "repertoire",
+      "character"
+    ],
+    "id": "dam-danza-torino/bardonecchia-2024",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Bardonecchia",
+      "country": "IT"
+    },
+    "organization": {
+      "city": "Turin",
+      "country": "IT",
+      "name": "DAM Danza Arte e Movimento",
+      "slug": "dam-danza-torino"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2024-08-31",
+      "season": "summer",
+      "sessions": [],
+      "start": "2024-08-24",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:bf4842093c7446379c26c9ab6887b2de96a248f72c3ea004814d90593b524257",
+      "provider": "dam-danza-torino",
+      "scrapedAt": "2026-06-17T12:47:38.993522Z",
+      "url": "https://www.damdanzatorino.it/teatro-nuovo/summer-dance-intensive-bardonecchia-2024/"
+    },
+    "teachers": [],
+    "title": "Summer Dance Intensive Bardonecchia 2024"
+  },
+  {
+    "ageRange": {
+      "max": 23,
+      "min": 7
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.damdanzatorino.it/teatro-nuovo/summer-dance-intensive-bardonecchia-2025/"
+    },
+    "genres": [
+      "neoclassical",
+      "classical",
+      "pointe",
+      "contemporary",
+      "repertoire",
+      "character"
+    ],
+    "id": "dam-danza-torino/bardonecchia-2025",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Bardonecchia",
+      "country": "IT"
+    },
+    "organization": {
+      "city": "Turin",
+      "country": "IT",
+      "name": "DAM Danza Arte e Movimento",
+      "slug": "dam-danza-torino"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2025-08-30",
+      "season": "summer",
+      "sessions": [],
+      "start": "2025-08-24",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:2050a4275fdaeea925caf0115aaa37fc91418d3469bf4c3788464e5e3c04eee3",
+      "provider": "dam-danza-torino",
+      "scrapedAt": "2026-06-17T12:47:38.992568Z",
+      "url": "https://www.damdanzatorino.it/teatro-nuovo/summer-dance-intensive-bardonecchia-2025/"
+    },
+    "teachers": [],
+    "title": "Summer Dance Intensive Bardonecchia 2025"
+  },
+  {
+    "ageRange": {
+      "max": 23,
+      "min": 7
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.damdanzatorino.it/teatro-nuovo/summer-dance-intensive-bardonecchia-2026/"
+    },
+    "genres": [
+      "neoclassical",
+      "classical",
+      "pointe",
+      "contemporary",
+      "repertoire",
+      "character"
+    ],
+    "id": "dam-danza-torino/bardonecchia-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Bardonecchia",
+      "country": "IT"
+    },
+    "organization": {
+      "city": "Turin",
+      "country": "IT",
+      "name": "DAM Danza Arte e Movimento",
+      "slug": "dam-danza-torino"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-08-29",
+      "season": "summer",
+      "sessions": [],
+      "start": "2026-08-23",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:62ac9876a55054c975f574cbcd73870dd0e5947c0382cb30f19f235d7bc5455e",
+      "provider": "dam-danza-torino",
+      "scrapedAt": "2026-06-17T12:47:38.991647Z",
+      "url": "https://www.damdanzatorino.it/teatro-nuovo/summer-dance-intensive-bardonecchia-2026/"
+    },
+    "teachers": [],
+    "title": "Summer Dance Intensive Bardonecchia 2026"
+  },
+  {
+    "ageRange": {
+      "min": 6
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.damdanzatorino.it/teatro-nuovo/newsdam-torino-danza-estate-stage-intensivo-2021/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "contemporary",
+      "repertoire",
+      "character"
+    ],
+    "id": "dam-danza-torino/torino-estate-2021",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Turin",
+      "country": "IT",
+      "venue": "DAM — Teatro Nuovo"
+    },
+    "organization": {
+      "city": "Turin",
+      "country": "IT",
+      "name": "DAM Danza Arte e Movimento",
+      "slug": "dam-danza-torino"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2021-07-10",
+      "season": "summer",
+      "sessions": [],
+      "start": "2021-06-16",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:c2d39450b10c5e068db5d155fa94156f64719d0a0939d770fe08011cfe725148",
+      "provider": "dam-danza-torino",
+      "scrapedAt": "2026-06-17T12:46:34.579408Z",
+      "url": "https://www.damdanzatorino.it/teatro-nuovo/newsdam-torino-danza-estate-stage-intensivo-2021/"
+    },
+    "teachers": [],
+    "title": "Torino Danza Estate — Stage Intensivo 2021"
+  },
+  {
+    "ageRange": {
+      "min": 6
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.damdanzatorino.it/teatro-nuovo/news-dam-torino-danza-estate-stage-intensivo-2022/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "contemporary",
+      "repertoire",
+      "character"
+    ],
+    "id": "dam-danza-torino/torino-estate-2022",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Turin",
+      "country": "IT",
+      "venue": "DAM — Teatro Nuovo"
+    },
+    "organization": {
+      "city": "Turin",
+      "country": "IT",
+      "name": "DAM Danza Arte e Movimento",
+      "slug": "dam-danza-torino"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2022-07-08",
+      "season": "summer",
+      "sessions": [],
+      "start": "2022-06-13",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:a579983ab3a6298f4c0a7fb78949e1a43b3f3204732df7b95030bfdddb249331",
+      "provider": "dam-danza-torino",
+      "scrapedAt": "2026-06-17T12:46:34.578892Z",
+      "url": "https://www.damdanzatorino.it/teatro-nuovo/news-dam-torino-danza-estate-stage-intensivo-2022/"
+    },
+    "teachers": [],
+    "title": "Torino Danza Estate — Stage Intensivo 2022"
+  },
+  {
+    "ageRange": {
+      "min": 6
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.damdanzatorino.it/teatro-nuovo/news-dam-torino-danza-estate-stage-intensivo-2023/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "contemporary",
+      "repertoire",
+      "character"
+    ],
+    "id": "dam-danza-torino/torino-estate-2023",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Turin",
+      "country": "IT",
+      "venue": "DAM — Teatro Nuovo"
+    },
+    "organization": {
+      "city": "Turin",
+      "country": "IT",
+      "name": "DAM Danza Arte e Movimento",
+      "slug": "dam-danza-torino"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2023-07-07",
+      "season": "summer",
+      "sessions": [],
+      "start": "2023-06-13",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:3b850f1b59fe133d84487cd7b78624a498627c2a46bd5eb3e8339166c0d5f0df",
+      "provider": "dam-danza-torino",
+      "scrapedAt": "2026-06-17T12:46:34.577612Z",
+      "url": "https://www.damdanzatorino.it/teatro-nuovo/news-dam-torino-danza-estate-stage-intensivo-2023/"
+    },
+    "teachers": [],
+    "title": "Torino Danza Estate — Stage Intensivo 2023"
+  },
+  {
+    "ageRange": {
+      "min": 6
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.damdanzatorino.it/teatro-nuovo/dam-torino-danza-estate-stage-intensivo-2024/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "contemporary",
+      "repertoire",
+      "character"
+    ],
+    "id": "dam-danza-torino/torino-estate-2024",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Turin",
+      "country": "IT",
+      "venue": "DAM — Teatro Nuovo"
+    },
+    "organization": {
+      "city": "Turin",
+      "country": "IT",
+      "name": "DAM Danza Arte e Movimento",
+      "slug": "dam-danza-torino"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2024-07-20",
+      "season": "summer",
+      "sessions": [
+        {
+          "end": "2024-06-21",
+          "label": "Week 1",
+          "start": "2024-06-17"
+        },
+        {
+          "end": "2024-06-28",
+          "label": "Week 2",
+          "start": "2024-06-25"
+        },
+        {
+          "end": "2024-07-05",
+          "label": "Week 3",
+          "start": "2024-07-01"
+        },
+        {
+          "end": "2024-07-12",
+          "label": "Week 4",
+          "start": "2024-07-08"
+        },
+        {
+          "end": "2024-07-19",
+          "label": "Week 5",
+          "start": "2024-07-15"
+        }
+      ],
+      "start": "2024-06-17",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:b3d0df91b03d9ff856dadb5fc2868c2ef30d4c303034c24050979638ea3d30f8",
+      "provider": "dam-danza-torino",
+      "scrapedAt": "2026-06-17T12:46:34.577439Z",
+      "url": "https://www.damdanzatorino.it/teatro-nuovo/dam-torino-danza-estate-stage-intensivo-2024/"
+    },
+    "teachers": [],
+    "title": "Torino Danza Estate — Stage Intensivo 2024"
+  },
+  {
+    "ageRange": {
+      "min": 6
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.damdanzatorino.it/teatro-nuovo/dam-torino-danza-estate-stage-intensivo-2025/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "contemporary",
+      "repertoire",
+      "character"
+    ],
+    "id": "dam-danza-torino/torino-estate-2025",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Turin",
+      "country": "IT",
+      "venue": "DAM — Teatro Nuovo"
+    },
+    "organization": {
+      "city": "Turin",
+      "country": "IT",
+      "name": "DAM Danza Arte e Movimento",
+      "slug": "dam-danza-torino"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2025-07-18",
+      "season": "summer",
+      "sessions": [
+        {
+          "end": "2025-06-20",
+          "label": "Week 1",
+          "start": "2025-06-16"
+        },
+        {
+          "end": "2025-06-27",
+          "label": "Week 2",
+          "start": "2025-06-23"
+        },
+        {
+          "end": "2025-07-04",
+          "label": "Week 3",
+          "start": "2025-06-30"
+        },
+        {
+          "end": "2025-07-11",
+          "label": "Week 4",
+          "start": "2025-07-07"
+        },
+        {
+          "end": "2025-07-18",
+          "label": "Week 5",
+          "start": "2025-07-14"
+        }
+      ],
+      "start": "2025-06-16",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:e71c08f035c9368e5f816e1bb4b39a3d76b97352b0deb8c15df4af224e1e4b0a",
+      "provider": "dam-danza-torino",
+      "scrapedAt": "2026-06-17T12:46:34.576346Z",
+      "url": "https://www.damdanzatorino.it/teatro-nuovo/dam-torino-danza-estate-stage-intensivo-2025/"
+    },
+    "teachers": [],
+    "title": "Torino Danza Estate — Stage Intensivo 2025"
+  },
+  {
+    "ageRange": {
+      "min": 6
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.damdanzatorino.it/teatro-nuovo/dam-torino-summer-dance-danza-estate-stage-intensivo-2026/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "contemporary",
+      "repertoire",
+      "character"
+    ],
+    "id": "dam-danza-torino/torino-estate-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Turin",
+      "country": "IT",
+      "venue": "DAM — Teatro Nuovo"
+    },
+    "organization": {
+      "city": "Turin",
+      "country": "IT",
+      "name": "DAM Danza Arte e Movimento",
+      "slug": "dam-danza-torino"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-07-17",
+      "season": "summer",
+      "sessions": [
+        {
+          "end": "2026-06-19",
+          "label": "Week 1",
+          "start": "2026-06-15"
+        },
+        {
+          "end": "2026-06-26",
+          "label": "Week 2",
+          "start": "2026-06-22"
+        },
+        {
+          "end": "2026-07-03",
+          "label": "Week 3",
+          "start": "2026-06-29"
+        },
+        {
+          "end": "2026-07-10",
+          "label": "Week 4",
+          "start": "2026-07-06"
+        },
+        {
+          "end": "2026-07-17",
+          "label": "Week 5",
+          "start": "2026-07-13"
+        }
+      ],
+      "start": "2026-06-15",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:992b2ef639fa123046e3f70aaa4e295e360c346ccbce7d0ba7b3cca080301e03",
+      "provider": "dam-danza-torino",
+      "scrapedAt": "2026-06-17T12:46:34.574749Z",
+      "url": "https://www.damdanzatorino.it/teatro-nuovo/dam-torino-summer-dance-danza-estate-stage-intensivo-2026/"
+    },
+    "teachers": [],
+    "title": "Torino Danza Estate — Stage Intensivo 2026"
+  }
+]
