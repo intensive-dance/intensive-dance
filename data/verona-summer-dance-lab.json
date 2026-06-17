@@ -1,0 +1,70 @@
+[
+  {
+    "ageRange": {
+      "max": 30,
+      "min": 14
+    },
+    "application": {
+      "deadline": "2026-07-05",
+      "notes": "Open enrolment — no selection process; for dancers who regularly study dance (no beginners). Groups A/B (Advanced/Intermediate) assigned after registration; spots limited. Registrations close at capacity, or by the stated deadline. Scholarships may be awarded; a certificate of participation is issued.",
+      "requirements": [],
+      "status": "open",
+      "url": "https://www.veronadancelab.com"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "repertoire"
+    ],
+    "id": "verona-summer-dance-lab/2026",
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Verona",
+      "country": "IT",
+      "venue": "Educandato Statale agli Angeli"
+    },
+    "organization": {
+      "city": "Verona",
+      "country": "IT",
+      "name": "Verona Summer Dance Lab",
+      "slug": "verona-summer-dance-lab"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-08-08",
+      "season": "summer",
+      "sessions": [],
+      "start": "2026-08-03",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:77031ab32edb9a1588f1dedaf28dfd166500df34ae58abfe06995164f9f00a94",
+      "provider": "verona-summer-dance-lab",
+      "scrapedAt": "2026-06-17T14:12:45.979503Z",
+      "url": "https://www.veronadancelab.com"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Linda Gelinas"
+      },
+      {
+        "affiliations": [],
+        "name": "Barry Gans"
+      },
+      {
+        "affiliations": [],
+        "name": "Mario Manara"
+      },
+      {
+        "affiliations": [],
+        "name": "Sarah Pippin"
+      }
+    ],
+    "title": "Verona Summer Dance Lab 2026"
+  }
+]
