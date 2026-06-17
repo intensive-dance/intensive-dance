@@ -45,6 +45,9 @@ NOT_BUILDABLE: dict[str, str] = {
     "first-international-ballet-school-prague": (
         "only a recreational children's camp in 2026 (FIBS Summer Intensive dormant since 2022)"
     ),
+    # Bournonville Summer Seminar dormant (last public editions ~2012/2019); today only a
+    # year-round neighborhood school (3歳～大人) + company, no current dated public intensive.
+    "inoue-ballet": "summer seminar dormant since ~2019 — no current dated edition",
 }
 
 _CLAIM = (

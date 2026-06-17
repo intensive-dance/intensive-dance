@@ -2,7 +2,7 @@
 
 > **Generated — do not edit.** Refresh with `uv run python -m intensive_dance.overview --write`; CI drift-checks it. Source of truth: `providers.json`.
 
-21 buildable · 11 excluded · 124 live (156 providers total).
+20 buildable · 12 excluded · 124 live (156 providers total).
 
 **To claim one (so nobody double-builds):** check `gh issue list` / `gh pr list` for the slug; if free, open a `build:<slug>` issue and **self-assign first**, then build; close it when the PR merges (provider → `live`). An open claim issue *or* PR = locked. See `AGENTS.md` → Scope & coordination.
 
@@ -19,7 +19,6 @@ _Some still need Phase-1 verification (a public dated edition / not full-time) b
 
 ### JP
 - `homura-tomoi-ballet-school` — Homura Tomoi Ballet School (Osaka) — https://www.homuratomoi.com/
-- `inoue-ballet` — Inoue Ballet Summer Seminar (Tokyo) — https://inoueballet.net/school/
 - `international-ballet-academia` — International Ballet Academia (Tokyo) — http://www.academia-ballet.jp/
 - `matsuyama-ballet-school` — Matsuyama Ballet School (Tokyo) — https://www.matsuyama-ballet.com/
 - `ochi-international-ballet` — Ochi International Ballet (Nagoya) — http://www.ochiballet.com/
@@ -47,6 +46,7 @@ _Some still need Phase-1 verification (a public dated edition / not full-time) b
 
 - `first-international-ballet-school-prague` — First International Ballet School in Prague — Summer Camp — _only a recreational children's camp in 2026 (FIBS Summer Intensive dormant since 2022)_
 - `helsinki-international-ballet-competition` — Helsinki International Ballet Competition (HIBC) — _competition — icebox #80_
+- `inoue-ballet` — Inoue Ballet Summer Seminar — _summer seminar dormant since ~2019 — no current dated edition_
 - `neoclassica` — Centrum Baletowe Neoclassica — _site offline — parked_
 - `prix-de-lausanne` — Prix de Lausanne — _competition — icebox #80_
 - `royal-swedish-ballet-school` — Royal Swedish Ballet School (Kungliga Svenska balettskolan) — _full-time school — defer IDR-9_
