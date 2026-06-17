@@ -1,0 +1,94 @@
+[
+  {
+    "application": {
+      "requirements": [],
+      "url": "https://artstudiodanza.it/29-stage-internazionale-del-lago-di-garda/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "contemporary",
+      "repertoire"
+    ],
+    "id": "art-studio-danza/2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Salò",
+      "country": "IT",
+      "venue": "Art Studio Danza"
+    },
+    "organization": {
+      "city": "Salò",
+      "country": "IT",
+      "name": "Art Studio Danza",
+      "slug": "art-studio-danza"
+    },
+    "prices": [
+      {
+        "amount": 650.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Stage enrollment"
+      },
+      {
+        "amount": 65.0,
+        "currency": "EUR",
+        "includes": [
+          "accommodation",
+          "meals"
+        ],
+        "label": "Accommodation (per person/day)",
+        "notes": "Hotel convention, half board; booked through the organisation."
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-26",
+      "season": "summer",
+      "sessions": [],
+      "start": "2026-07-18",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:996323d4ebc29fdc2bc3bcc2d54308dda8823ead97d1655fd1af1aaac523fcb0",
+      "provider": "art-studio-danza",
+      "scrapedAt": "2026-06-17T12:55:55.673138Z",
+      "url": "https://artstudiodanza.it/29-stage-internazionale-del-lago-di-garda/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Jaroslav Slavický",
+        "role": "Former Artistic Director Conservatory of Prague — Tecnica Bournonville e composizione coreografica"
+      },
+      {
+        "affiliations": [],
+        "name": "Kateřina Slavicka",
+        "role": "Former Principal Ballerina — Tecnica Bournonville e composizione coreografica"
+      },
+      {
+        "affiliations": [],
+        "name": "Fethon Miozzi",
+        "role": "Docente Accademia Vaganova San Pietroburgo — Tecnica classica accademica Intermedio-avanzato Lezione virtuosismi"
+      },
+      {
+        "affiliations": [],
+        "name": "Antonella Mandanici",
+        "role": "Docente di Art Studio Danza — Seminario insegnanti Tecnica classica accademica Principianti-intermedio Tutor Composizione coreografica"
+      },
+      {
+        "affiliations": [],
+        "name": "Donatella Poggio",
+        "role": "Coreografa — Modern Contemporaneo Principianti-intermedio-avanzato"
+      },
+      {
+        "affiliations": [],
+        "name": "Stefania Pigato",
+        "role": "Direttore The Bridge Contemporary School — Modern Contemporaneo Principianti-intermedio-avanzato"
+      }
+    ],
+    "title": "29° Stage Internazionale del Lago di Garda"
+  }
+]
