@@ -85,7 +85,7 @@
       "timezone": "Asia/Hong_Kong"
     },
     "source": {
-      "attemptedAt": "2026-06-15T21:41:01.994022Z",
+      "attemptedAt": "2026-06-17T23:12:55.858543Z",
       "hash": "sha256:b29806ea99a04801a169d05c60b54057e4ccce6549c58ba434d7d941d851e152",
       "provider": "hong-kong-academy-of-ballet",
       "scrapedAt": "2026-06-07T08:53:58.895732Z",
@@ -178,7 +178,7 @@
       "timezone": "Asia/Hong_Kong"
     },
     "source": {
-      "attemptedAt": "2026-06-15T21:41:01.994022Z",
+      "attemptedAt": "2026-06-17T23:12:55.858543Z",
       "hash": "sha256:0d1037045fdaddeae30d49c8c487c7fba698b01080665645c01f89156d3019d8",
       "provider": "hong-kong-academy-of-ballet",
       "scrapedAt": "2026-06-05T18:57:23.073294Z",
@@ -272,7 +272,7 @@
       "timezone": "Asia/Hong_Kong"
     },
     "source": {
-      "attemptedAt": "2026-06-15T21:41:01.994022Z",
+      "attemptedAt": "2026-06-17T23:12:55.858543Z",
       "hash": "sha256:05aeff0841250d2d2ec6a28f5429bd858d4acaadc6010d8fec4940aaabb2c702",
       "provider": "hong-kong-academy-of-ballet",
       "scrapedAt": "2026-06-05T18:57:23.073562Z",
@@ -293,7 +293,7 @@
         {
           "notes": "Photo submission required",
           "poses": [],
-          "specificity": "defined-poses",
+          "specificity": "freeform",
           "type": "photos"
         }
       ],
@@ -376,10 +376,10 @@
       "timezone": "Asia/Hong_Kong"
     },
     "source": {
-      "attemptedAt": "2026-06-15T21:41:01.994022Z",
-      "hash": "sha256:3d8ca525a76ac78ae227767efc03f942b977596c9556ea2b7c3329f61a3ace32",
+      "attemptedAt": "2026-06-17T23:12:55.858543Z",
+      "hash": "sha256:b85c0434f416c7013bcf01cfac483f31328d223680b2fa28dc593ff0708c15f0",
       "provider": "hong-kong-academy-of-ballet",
-      "scrapedAt": "2026-06-05T18:57:23.073843Z",
+      "scrapedAt": "2026-06-17T23:12:58.024711Z",
       "url": "https://www.hkballet.com/en/explore-and-engage/workshops-classes-programme/summerintensive2026"
     },
     "teachers": [
@@ -407,7 +407,7 @@
         {
           "notes": "Photo submission required",
           "poses": [],
-          "specificity": "defined-poses",
+          "specificity": "freeform",
           "type": "photos"
         }
       ],
@@ -490,10 +490,10 @@
       "timezone": "Asia/Hong_Kong"
     },
     "source": {
-      "attemptedAt": "2026-06-15T21:41:01.994022Z",
-      "hash": "sha256:6c839b12309758ce6f3480d8b13173638b8733876a2c7fb4c8c829c251f0faa4",
+      "attemptedAt": "2026-06-17T23:12:55.858543Z",
+      "hash": "sha256:e99160931b47adc508912d04b736f105613840fca308b0ee33e311dfd94cb6fc",
       "provider": "hong-kong-academy-of-ballet",
-      "scrapedAt": "2026-06-05T18:57:23.074365Z",
+      "scrapedAt": "2026-06-17T23:12:58.025169Z",
       "url": "https://www.hkballet.com/en/explore-and-engage/workshops-classes-programme/summerintensive2026"
     },
     "teachers": [
