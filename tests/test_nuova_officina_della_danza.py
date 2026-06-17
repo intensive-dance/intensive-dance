@@ -73,7 +73,7 @@ def test_three_week_price_tiers():
 
 def test_application_cv_and_video():
     app = nod._build_offerings(PAGE)[0].application
-    assert app.status == "open"
+    assert app.status is None  # source never states open/closed (Week 2 is "fully booked")
     types = [r.type for r in app.requirements]
     assert types == ["cv", "video"]
     video = app.requirements[1]

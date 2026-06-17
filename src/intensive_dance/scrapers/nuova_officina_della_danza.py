@@ -193,7 +193,6 @@ def _build_offerings(text: str) -> list[Offering]:
         teachers=teachers,
         prices=_prices(text),
         application=Application(
-            status="open",
             url=PROGRAM,
             requirements=requirements,
             notes=(
