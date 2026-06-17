@@ -64,6 +64,7 @@
       "start": "2026-07-13"
     },
     "source": {
+      "attemptedAt": "2026-06-17T12:42:50.745511Z",
       "hash": "sha256:5ad0e349735b50f21195fd15982c6cd055e0375f5a50205349fb4be710d138f1",
       "provider": "prague-ballet-workshop",
       "scrapedAt": "2026-06-16T16:08:57.945513Z",
