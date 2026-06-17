@@ -56,6 +56,13 @@ NOT_BUILDABLE: dict[str, str] = {
     "tani-momoko-ballet-academy": "recurring drop-in special classes (same-day signup) — not a dated edition",
     "ballet-studio-felicia-serbanescu": "children's ballet studio — no summer-course page",
     "international-ballet-school-stockholm": "year-round school + adult ballet — no summer/intensive page",
+    # German seeds — festival / internal / dormant / no current dated edition
+    # (Phase-1 verify-or-defer sweep, grounded search + site probe).
+    "palucca-tanzwoche-sylt": "amateur VHS dance week — no current dated edition findable (Hochschule = IDR-10 #13)",
+    "tanzwerkstatt-europa": "professional contemporary-dance festival — not a student intensive",
+    "summer-intensive-gymnasium-essen": "internal Gymnasium program for own pupils — not public",
+    "tanzschule-anastasia-frankfurt": "local recreational school — Sommer Intensive one-off 2022, no current edition",
+    "hamburger-ballett-tanztage": "teacher-training organizer — student Ballett-Tanztage last ran Jun 2024",
 }
 
 _CLAIM = (
