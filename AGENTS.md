@@ -229,6 +229,18 @@ doesn't clear a block: a **Cloudflare challenge** can 403 the plain *and* the
 > URLs survive verbatim either way, so regex them out of the text rather than
 > XML-parsing (robust to raw XML *and* the wrapper; see
 > `mosa_ballet_school._parse_event_urls`).
+>
+> **Trap (CF-gated WP REST via `solve=1`):** a Cloudflare-gated WordPress whose
+> `/wp-json/` only returns through the FlareSolverr `solve=1` tier comes back the
+> same way — the **JSON** wrapped in Chromium's JSON viewer (`<pre>`, HTML-escaped)
+> — *and* Cloudflare's email-protection script injects **real** `<a
+> class="__cf_email__">` tags into displayed emails, whose unescaped `"` break
+> `json.loads`. `wp.fetch_*` (which call `resp.json()`) can't help. Unwrap by hand:
+> legit JSON brackets are escaped (`&lt;`/`&gt;`), so the only *real* `<…>` tags
+> are CF's injections — `re.sub(r"<[^>]*>","")` them, convert the structural
+> entities back (`&lt;`→`<`, `&gt;`→`>`, `&amp;`→`&`, last), then `json.loads`.
+> Force the tier with `headers={PROXY_PARAMS_HEADER: "solve=1"}` (see
+> `associazione_europea_danza._unwrap`).
 
 **One endpoint** (`/`, GET — or POST to forward the request body + Content-Type
 upstream for form POSTs). The base does a plain Chrome-UA fetch with TLS
