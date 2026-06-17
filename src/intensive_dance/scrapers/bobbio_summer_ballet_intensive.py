@@ -39,6 +39,11 @@ WHAT THIS SCRAPER EXERCISES (verified live 2026-06-16):
   - AGE: not numerically stated for the main intensive ("ogni livello", "tutte le
     età") — left null rather than guessed (the 5-12 children's mini-track lives
     only on the stale 2025 pricing page, so it is not emitted).
+
+ROBUSTNESS: a missing "Summer Camp YYYY" marker on this always-current site means
+a degraded fetch, so `_build_offerings` *raises* (run.py then keeps the prior
+store) rather than returning [] and wiping the committed edition — one such silent
+wipe tripped the zero-offering audit (#316).
 """
 
 from __future__ import annotations
@@ -212,7 +217,16 @@ def _build_offerings(
 ) -> list[Offering]:
     start, end, year, raw = _dates(home)
     if year is None:
-        return []
+        # This single-purpose site always advertises a "Summer Camp YYYY" edition,
+        # so a missing year marker means a degraded fetch (a challenge/partial
+        # render returned 200), not a genuinely empty source. Raise rather than
+        # return [] so run.py treats it as a failed attempt and KEEPS the prior
+        # store — otherwise one bad fetch silently wipes the committed edition
+        # (IDR-24 keeps past cycles) and trips the zero-offering audit.
+        raise ValueError(
+            "Bobbio home page lacks the 'Summer Camp YYYY' edition marker — "
+            "likely a degraded fetch; refusing to emit an empty store."
+        )
     genres = parse.match_genres(home, _GENRES)
     levels = [level for level, keys in _LEVELS if any(k in home.lower() for k in keys)]
 
