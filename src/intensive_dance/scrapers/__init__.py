@@ -135,6 +135,7 @@ from . import (
     umbria_ballet,
     vaganova_international_program,
     yorkshire_ballet_seminars,
+    verona_summer_dance_lab,
     young_stars_ballet,
 )
 
@@ -160,6 +161,7 @@ SCRAPERS: dict[str, Scraper] = {
     "fondazione-monreart": fondazione_monreart.scrape,
     "academie-princesse-grace": academie_princesse_grace.scrape,
     "school-of-american-ballet": school_of_american_ballet.scrape,
+    "verona-summer-dance-lab": verona_summer_dance_lab.scrape,
     "young-stars-ballet": young_stars_ballet.scrape,
     "idc-berlin": idc_berlin.scrape,
     "international-ballet-masterclasses-prague": international_ballet_masterclasses_prague.scrape,
