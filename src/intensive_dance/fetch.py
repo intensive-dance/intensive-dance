@@ -14,11 +14,22 @@ the usual httpx surface with a small transport so scrapers keep calling
 from __future__ import annotations
 
 import os
+import time
+from collections.abc import Callable
 from urllib.parse import parse_qsl
 
 import httpx
 
 USER_AGENT = "intensive.dance scraper (+https://github.com/boredland/intensive-dance)"
+
+# Transient gateway/timeout statuses worth retrying. The fetch proxy is
+# Cloudflare-fronted and, under load, intermittently returns 524 (origin
+# timeout) / 502 / 503 — a single blip otherwise fails the whole scraper, and the
+# hourly rotation then spams the scrape-failure tracker with a different random
+# set of (correct) scrapers each run. 500/501 are left out: a real server error
+# isn't cleared by retrying.
+_RETRY_STATUS = frozenset({429, 502, 503, 504, 520, 522, 524})
+_MAX_ATTEMPTS = 3
 
 # A scraper sets this request header (e.g. "solve=1") to force a proxy escalation
 # tier per-request — the transport strips it and merges it into the proxy query
@@ -66,6 +77,43 @@ class _RestProxyTransport(httpx.BaseTransport):
         return self._inner.handle_request(proxied)
 
 
+class _RetryTransport(httpx.BaseTransport):
+    """Retry transient gateway failures (proxy 524/502/… and transport timeouts).
+
+    Wraps any inner transport. Read-only GETs (and the odd form POST) are safe to
+    re-send, so we retry up to `attempts` times with linear backoff before giving
+    up and surfacing the last response/exception. `sleep` is injectable for tests.
+    """
+
+    def __init__(
+        self,
+        inner: httpx.BaseTransport,
+        *,
+        attempts: int = _MAX_ATTEMPTS,
+        sleep: Callable[[float], None] = time.sleep,
+    ) -> None:
+        self._inner = inner
+        self._attempts = attempts
+        self._sleep = sleep
+
+    def handle_request(self, request: httpx.Request) -> httpx.Response:
+        for attempt in range(1, self._attempts + 1):
+            last = attempt == self._attempts
+            try:
+                response = self._inner.handle_request(request)
+            except httpx.TransportError:
+                if last:
+                    raise
+            else:
+                if last or response.status_code not in _RETRY_STATUS:
+                    return response
+                response.close()
+            self._sleep(attempt)  # linear backoff: 1s, 2s, …
+        raise RuntimeError(
+            "unreachable: retry loop exhausted without returning"
+        )  # pragma: no cover
+
+
 def make_client(*, verify: bool = True, use_proxy: bool = True) -> httpx.Client:
     """An httpx client with our UA and optional fetch-proxy.
 
@@ -84,9 +132,10 @@ def make_client(*, verify: bool = True, use_proxy: bool = True) -> httpx.Client:
     proxy_url = os.environ.get("FETCH_PROXY_URL") if use_proxy else None
     if proxy_url:
         token = os.environ.get("FETCH_PROXY_TOKEN")
-        transport = _RestProxyTransport(proxy_url, token)
+        transport: httpx.BaseTransport = _RetryTransport(_RestProxyTransport(proxy_url, token))
         return httpx.Client(
             headers=headers, transport=transport, timeout=30.0, follow_redirects=True
         )
 
-    return httpx.Client(headers=headers, timeout=30.0, follow_redirects=True, verify=verify)
+    transport = _RetryTransport(httpx.HTTPTransport(verify=verify))
+    return httpx.Client(headers=headers, transport=transport, timeout=30.0, follow_redirects=True)
