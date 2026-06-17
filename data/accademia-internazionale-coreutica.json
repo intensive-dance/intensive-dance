@@ -1,0 +1,229 @@
+[
+  {
+    "ageRange": {
+      "max": 20,
+      "min": 10
+    },
+    "application": {
+      "deadline": "2024-07-12",
+      "notes": "Lo stage è valido come audizione per l’anno accademico 2024/2025 corsi Pre-accademico, Accademico e Mentoring Year/AIC Performing Project",
+      "requirements": [],
+      "url": "https://www.accademiainternazionalecoreutica.org/concorso-internazionale-estivo-xxiii-edizione/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "contemporary",
+      "repertoire",
+      "character"
+    ],
+    "id": "accademia-internazionale-coreutica/2024",
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Florence",
+      "country": "IT",
+      "venue": "Accademia Internazionale Coreutica Via delle Ghiacciaie 1/3R Firenze"
+    },
+    "organization": {
+      "city": "Florence",
+      "country": "IT",
+      "name": "Accademia Internazionale Coreutica",
+      "slug": "accademia-internazionale-coreutica"
+    },
+    "prices": [
+      {
+        "amount": 500.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "5 lessons/day"
+      },
+      {
+        "amount": 420.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "4 lessons/day"
+      },
+      {
+        "amount": 330.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "3 lessons/day"
+      },
+      {
+        "amount": 250.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "2 lessons/day"
+      }
+    ],
+    "schedule": {
+      "end": "2024-07-27",
+      "season": "summer",
+      "sessions": [],
+      "start": "2024-07-22",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:a82b25951ea01c7c4975c38a0cc3116f6734ad2b5cdcf080e9d4c77d42ec3479",
+      "provider": "accademia-internazionale-coreutica",
+      "scrapedAt": "2026-06-17T12:04:33.105667Z",
+      "url": "https://www.accademiainternazionalecoreutica.org/concorso-internazionale-estivo-xxiii-edizione/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Mireille Nina Buisson",
+        "role": "Danza Contemporanea tecnica"
+      },
+      {
+        "affiliations": [],
+        "name": "Angelo Egarese",
+        "role": "Danza contemporanea tecnica, Laboratorio Contemporaneo finalizzato allo spettacolo"
+      },
+      {
+        "affiliations": [],
+        "name": "Elisabetta Hertel",
+        "role": "Punta e Tecnica maschile livello elementare, Coaching repertorio femminile livello intermedio e avanzato"
+      },
+      {
+        "affiliations": [],
+        "name": "Eliane Mazzotti",
+        "role": "Danza di carattere"
+      },
+      {
+        "affiliations": [],
+        "name": "Chiara Prina",
+        "role": "Danza Classica livelli elementare e intermedio"
+      },
+      {
+        "affiliations": [],
+        "name": "Ivan Cavallari",
+        "role": "Danza Classica tecnica Avanzato, Coaching repertorio maschile livello Intermedio e Avanzato"
+      }
+    ],
+    "title": "Corso Internazionale Estivo XXIII Edizione"
+  },
+  {
+    "ageRange": {
+      "max": 20,
+      "min": 10
+    },
+    "application": {
+      "deadline": "2025-07-12",
+      "notes": "Lo stage è valido come audizione per l’anno accademico 2025/2026 corsi Pre-accademico, Accademico e Mentoring Year/AIC Performing Project",
+      "requirements": [],
+      "url": "https://www.accademiainternazionalecoreutica.org/corso-internazionale-estivo-xxiv-edizione/"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "character"
+    ],
+    "id": "accademia-internazionale-coreutica/2025",
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Florence",
+      "country": "IT",
+      "venue": "Accademia Internazionale Coreutica Via delle Ghiacciaie 1/3R Firenze"
+    },
+    "organization": {
+      "city": "Florence",
+      "country": "IT",
+      "name": "Accademia Internazionale Coreutica",
+      "slug": "accademia-internazionale-coreutica"
+    },
+    "prices": [
+      {
+        "amount": 500.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "5 lessons/day"
+      },
+      {
+        "amount": 420.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "4 lessons/day"
+      },
+      {
+        "amount": 330.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "3 lessons/day"
+      },
+      {
+        "amount": 250.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "2 lessons/day"
+      }
+    ],
+    "schedule": {
+      "end": "2025-07-26",
+      "season": "summer",
+      "sessions": [],
+      "start": "2025-07-21",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:0dac4d8e5cc7b50e0f022632e08ed4c13da0c0e19bd85a05fc29311a5c2e0639",
+      "provider": "accademia-internazionale-coreutica",
+      "scrapedAt": "2026-06-17T12:04:33.104658Z",
+      "url": "https://www.accademiainternazionalecoreutica.org/corso-internazionale-estivo-xxiv-edizione/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Irene Cioni",
+        "role": "Danza Contemporanea tecnica Flying Low"
+      },
+      {
+        "affiliations": [],
+        "name": "Angelo Egarese",
+        "role": "Laboratorio Contemporaneo finalizzato allo spettacolo"
+      },
+      {
+        "affiliations": [],
+        "name": "Elisabetta Hertel",
+        "role": "Danza Classica"
+      },
+      {
+        "affiliations": [],
+        "name": "Eliane Mazzotti",
+        "role": "Danza di carattere"
+      },
+      {
+        "affiliations": [],
+        "name": "Chiara Prina",
+        "role": "Danza Classica, PBT®"
+      }
+    ],
+    "title": "Corso Internazionale Estivo XXIV Edizione"
+  }
+]

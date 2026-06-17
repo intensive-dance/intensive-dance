@@ -169,6 +169,18 @@ module docstring so the next person doesn't re-investigate:
      form (no genres/ages/dates of its own) is a genre-less stub; **don't emit
      it**, build only the editions whose own page carries the structured detail
      (see `conservatorio_annarella`).
+   - **Trap (Coreutica):** an evergreen "Summer Course" *page* can carry only a
+     blurb and embed the **dated edition via a WPBakery `vc_basic_grid`** that
+     pulls **posts in a category** — read that category's posts directly
+     (`wp.fetch_all("posts", params={"categories": <id>})`), one Offering per
+     edition. The category name may be generic ("Corso"), so scope by title
+     ("estiv" = summer). Those post bodies arrive as **raw, un-rendered WPBakery
+     shortcodes** (no `<h*>` headings → `wp.parse` finds nothing): slice the flat
+     `[vc_column_text]` blocks and key on the Italian `Label:`/value run. The
+     summer course "*doubles as the audition*" for the academy's year-round
+     tracks — P1: keep that only as a note, don't import academy-entry rules. And
+     `" ".join(some_string)` letter-spaces every character — concatenate strings,
+     don't `join` them (see `accademia_internazionale_coreutica`).
 2. **Embedded structured data** — `<script type="application/ld+json">`
    (schema.org `Event`/`Course`), or a state blob (`__NEXT_DATA__`).
 3. **Feeds** — iCal `.ics`, RSS/Atom.
