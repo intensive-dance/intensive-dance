@@ -1,5 +1,7 @@
 from datetime import date
 
+import pytest
+
 from intensive_dance.scrapers import bobbio_summer_ballet_intensive as bobbio
 
 HOME = """
@@ -94,9 +96,12 @@ def test_teachers_include_director_role_and_split_duo():
     assert director.role == "Artistic director"
 
 
-def test_no_year_yields_no_offering():
+def test_missing_year_marker_raises_rather_than_emptying_store():
+    # A degraded fetch (no "Summer Camp YYYY" marker) must raise so run.py keeps
+    # the prior store instead of committing an empty one (#316), not return [].
     home_no_year = HOME.replace("Summer Camp 2026", "Summer Camp")
-    assert bobbio._build_offerings(bobbio._page_text(home_no_year), "", DOCENTI, TODAY) == []
+    with pytest.raises(ValueError, match="edition marker"):
+        bobbio._build_offerings(bobbio._page_text(home_no_year), "", DOCENTI, TODAY)
 
 
 def test_location_is_bobbio_italy():

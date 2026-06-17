@@ -379,6 +379,17 @@ that — it's how the next agent knows the source's shape without re-crawling.
   already-ended cycles."** Cancelled cycles are likewise kept, tagged
   `lifecycle="cancelled"`, not dropped. (Out-of-scope *genres* and rows the source
   itself removed are still dropped — that's discovery, not a date cut.)
+- **Raise on a degraded fetch; don't return `[]`.** `run.py` writes whatever
+  `scrape()` returns — so an empty list **overwrites** a good store with zero
+  offerings (and trips the zero-offering audit), whereas an **exception** is
+  caught per-provider and the prior store is *kept* (only `attemptedAt` bumps).
+  For a single-edition / always-current site, a fetch that returns 200 but lacks
+  the expected edition marker (challenge page, partial render) parses to nothing
+  — **raise** there rather than emit `[]`, so one transient blip can't wipe the
+  committed edition. This pairs with IDR-24 (a removed edition is also better kept
+  than emptied). See `bobbio_summer_ballet_intensive` (the "Summer Camp YYYY"
+  marker guard, audit #316). Multi-edition discovery scrapers that legitimately
+  vary in count are the exception — there `[]` can be real.
 - **Prices** carry a `currency` (ISO 4217) in the **local** currency and an
   `includes` list (`tuition`/`accommodation`/`meals`/…). A provider can have
   several `Price`s per Offering (e.g. tuition + room & board).
