@@ -48,6 +48,14 @@ NOT_BUILDABLE: dict[str, str] = {
     # Bournonville Summer Seminar dormant (last public editions ~2012/2019); today only a
     # year-round neighborhood school (3歳～大人) + company, no current dated public intensive.
     "inoue-ballet": "summer seminar dormant since ~2019 — no current dated edition",
+    # Year-round schools / closed / drop-in only — no current public dated intensive
+    # (Phase-1 verify-or-defer sweep, grounded search + site probe).
+    "homura-tomoi-ballet-school": "pro open-classes + company auditions only — no public intensive",
+    "star-dancers-ballet-school": "children's school closed 2024-03 — only Saturday open classes",
+    "international-ballet-academia": "year-round school + Komaki Ballet company — no intensive",
+    "tani-momoko-ballet-academy": "recurring drop-in special classes (same-day signup) — not a dated edition",
+    "ballet-studio-felicia-serbanescu": "children's ballet studio — no summer-course page",
+    "international-ballet-school-stockholm": "year-round school + adult ballet — no summer/intensive page",
 }
 
 _CLAIM = (
