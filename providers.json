@@ -1102,7 +1102,7 @@
       "country": "IT",
       "city": "Turin",
       "url": "https://www.nuovaofficinadelladanza.org/",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "dam-danza-torino",
@@ -1198,7 +1198,7 @@
       "country": "IT",
       "city": "Florence",
       "url": "https://www.scuolahamlyn.com/",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "arteballetto",
@@ -1230,7 +1230,7 @@
       "country": "CZ",
       "city": "Prague",
       "url": "https://www.pragueballetworkshop.com/",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "baletni-akademie-pollertova",
@@ -1238,7 +1238,7 @@
       "country": "CZ",
       "city": "Prague",
       "url": "https://www.baletniakademie.cz/",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "first-international-ballet-school-prague",

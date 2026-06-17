@@ -191,7 +191,12 @@ One service, reached through its **REST `?url=` interface**. `make_client()`
 transport when `FETCH_PROXY_URL`/`FETCH_PROXY_TOKEN` are set — you still call
 `client.get(real_url)`; the transport rewrites it to `{base}?url=<real>` with
 `Authorization: Bearer` and the proxy fetches it server-side (auto-escalating a
-block to a stealth Chromium render). It forwards `Accept-Language`, so a scraper
+block to a stealth Chromium render). The transport also **retries transient
+gateway blips** (the proxy is Cloudflare-fronted and under load returns 524 /
+502 / 503, or times out — `_RetryTransport`, 3 attempts, linear backoff): one
+such blip used to fail a whole scraper and spam the scrape-failure tracker with a
+fresh random rotation set each hour, so don't read a lone 524 as a scraper bug.
+It forwards `Accept-Language`, so a scraper
 can **pin the render locale** by passing `headers={"Accept-Language": "en"}` —
 needed when a localized site serves a translated `og:title`/text under the
 proxy's default `de-DE` render (see `mosa_ballet_school`). The query params below
@@ -452,7 +457,13 @@ when a second provider genuinely needs the identical thing.
   tiers time out, only the stealth `render=1` tier returns the page. Since CI
   fetches through the proxy, force `render=1` per-request via `PROXY_PARAMS_HEADER`
   (inert on a direct dev fetch) or the live store silently goes empty (see
-  `young_stars_ballet`).
+  `young_stars_ballet`, `prague_ballet_workshop`).
+  **Trap — "copy-page" edition slugs:** a Wix org rolls a new edition by
+  *duplicating* last year's pages, so the current detail lives on `kopie-…`
+  ("copy") slugs the home menu links to — pin those slugs and re-confirm on
+  rollover. Instructor rosters there split each name and its credential across
+  separate nodes, so attributing bios/affiliations is unreliable — capture names
+  only (filter credential/section lines by keyword; see `prague_ballet_workshop`).
   **Trap — a press-round-up page:** some Wix event pages are mostly years of
   stacked "KEEP READING" article excerpts (prior editions) around one
   current-edition paragraph. Parse **only** that paragraph's date/program and the
