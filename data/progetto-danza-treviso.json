@@ -1,0 +1,166 @@
+[
+  {
+    "ageRange": {
+      "max": null,
+      "min": 9
+    },
+    "application": {
+      "deadline": "2026-06-10",
+      "notes": "Iscrizioni a numero chiuso fino a esaurimento posti (acconto €100). Documenti: scheda di iscrizione, certificato medico per attività non agonistica, fotografia formato tessera.",
+      "requirements": [],
+      "url": "https://www.progettodanza.org/iniziative/40-stage-internazionale-di-danza-2026/"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "neoclassical",
+      "repertoire",
+      "pointe"
+    ],
+    "id": "progetto-danza-treviso/2026",
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Treviso",
+      "country": "IT",
+      "venue": "La Ghirada – Città dello Sport"
+    },
+    "organization": {
+      "city": "Treviso",
+      "country": "IT",
+      "name": "Progetto Danza",
+      "slug": "progetto-danza-treviso"
+    },
+    "prices": [
+      {
+        "amount": 650.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Open Card 1 Settimana"
+      },
+      {
+        "amount": 1050.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Open Card 2 Settimane"
+      },
+      {
+        "amount": 400.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Open Card Bambini Settimana dal 5/7 al 11/7"
+      },
+      {
+        "amount": 500.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Open Card Bambini dal 28/6 al 11/7"
+      },
+      {
+        "amount": 210.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Pacchetto 7 Lezioni (da 90 Minuti)"
+      },
+      {
+        "amount": 160.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Pacchetto 7 Lezioni (da 60 Minuti)"
+      },
+      {
+        "amount": 50.0,
+        "currency": "EUR",
+        "includes": [],
+        "label": "Quota di Iscrizione"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-11",
+      "season": "summer",
+      "sessions": [],
+      "start": "2026-06-28",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:c33959e25e5ab55aa0ef04e2b515f0e81cc3a02bdaae93e1dff72c2ef6de4f39",
+      "provider": "progetto-danza-treviso",
+      "scrapedAt": "2026-06-17T14:00:43.990353Z",
+      "url": "https://www.progettodanza.org/iniziative/40-stage-internazionale-di-danza-2026/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Margarita Smirnova"
+      },
+      {
+        "affiliations": [],
+        "name": "Lucia Geppi"
+      },
+      {
+        "affiliations": [],
+        "name": "Damiano Artale"
+      },
+      {
+        "affiliations": [],
+        "name": "Marco Laudani"
+      },
+      {
+        "affiliations": [],
+        "name": "Claudio Scalia"
+      },
+      {
+        "affiliations": [],
+        "name": "Mario Glez"
+      },
+      {
+        "affiliations": [],
+        "name": "Frédéric Olivieri"
+      },
+      {
+        "affiliations": [],
+        "name": "Paola Vismara"
+      },
+      {
+        "affiliations": [],
+        "name": "Claudia Rossi"
+      },
+      {
+        "affiliations": [],
+        "name": "Carl Portal"
+      },
+      {
+        "affiliations": [],
+        "name": "Giorgio Camandona"
+      },
+      {
+        "affiliations": [],
+        "name": "Francesco Fasano"
+      },
+      {
+        "affiliations": [],
+        "name": "Vincent Chaillet"
+      },
+      {
+        "affiliations": [],
+        "name": "Martina Forioso"
+      }
+    ],
+    "title": "40° Stage Internazionale di Danza 2026"
+  }
+]
