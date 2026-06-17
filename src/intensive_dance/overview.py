@@ -38,6 +38,10 @@ NOT_BUILDABLE: dict[str, str] = {
     "singapore-ballet": "company / full-time — defer IDR-9",
     # No current online edition.
     "neoclassica": "site offline — parked",
+    # In-scope summer intensive dormant — only a recreational kids camp runs now.
+    "first-international-ballet-school-prague": (
+        "only a recreational children's camp in 2026 (FIBS Summer Intensive dormant since 2022)"
+    ),
 }
 
 _CLAIM = (
