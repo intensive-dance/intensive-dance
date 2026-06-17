@@ -14,7 +14,6 @@ _Some still need Phase-1 verification (a public dated edition / not full-time) b
 - `wiener-ballettakademie` — Vienna Ballet Academy (Wiener Ballettakademie) (Vienna) — https://wienerballettakademie.com/
 
 ### CZ
-- `baletni-akademie-pollertova` — Baletní akademie Adély Pollertové — letní soustředění (Prague) — https://www.baletniakademie.cz/
 - `first-international-ballet-school-prague` — First International Ballet School in Prague — Summer Camp (Prague) — https://balletschoolprague.com/workshop/summer-camp/
 - `prague-ballet-workshop` — Prague Ballet Workshop — Classical Ballet Summer Workshop (Prague) — https://www.pragueballetworkshop.com/
 
