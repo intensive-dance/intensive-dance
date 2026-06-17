@@ -441,6 +441,14 @@ when a second provider genuinely needs the identical thing.
 - **Parse structurally.** Match table cells by **header text**, not column index;
   read venue/city from address `<p>` lines, not a collapsed string (collapsing
   glued a street number onto the city in the first ABT pass).
+- **Anchor stop-cue / keyword regexes on word boundaries.** A bare substring cue
+  matches *inside* a word: the boilerplate stop `le classi` fired inside "Va**lle
+  classi**co" (Della Valle classico), truncating the faculty region to nothing.
+  Use `\b…` (and match Italian discipline words like `contemporaneo`, not English
+  "Contemporary", so an affiliation name like "London **Contemporary** Dance
+  School" can't leak a genre) — see `arteballetto`, a per-year intensive announced
+  as plain WP posts (no category): discover by `search` + a title-number filter,
+  and keep faculty **names-only** when the prose shape drifts year to year.
 - **Match genre keywords against the curriculum list, not loose prose.** A blurb
   can mention "contemporary works" without a Contemporary *class* — keyword-match
   the syllabus headings (SAB's `<h3>` curriculum list) so the description doesn't

@@ -1,0 +1,249 @@
+[
+  {
+    "application": {
+      "requirements": [],
+      "url": "https://www.arteballetto.net/2021/06/02/14-summer-course-in-sicily-26-31-luglio-2021/"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "arteballetto/2021",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Catania",
+      "country": "IT",
+      "venue": "Arteballetto"
+    },
+    "organization": {
+      "city": "Catania",
+      "country": "IT",
+      "name": "Arteballetto",
+      "slug": "arteballetto"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2021-07-31",
+      "season": "summer",
+      "sessions": [],
+      "start": "2021-07-26",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:8ce0c2f99b3e1bfe19b24bcf742fd8cb3cf9dba8ccf3f46cac3b87f84468f5b7",
+      "provider": "arteballetto",
+      "scrapedAt": "2026-06-17T12:23:06.055333Z",
+      "url": "https://www.arteballetto.net/2021/06/02/14-summer-course-in-sicily-26-31-luglio-2021/"
+    },
+    "teachers": [],
+    "title": "14° Summer Course in Sicily"
+  },
+  {
+    "application": {
+      "requirements": [],
+      "url": "https://www.arteballetto.net/2022/06/30/15-summer-course-11-luglio-16-luglio/"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "arteballetto/2022",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Catania",
+      "country": "IT",
+      "venue": "Arteballetto"
+    },
+    "organization": {
+      "city": "Catania",
+      "country": "IT",
+      "name": "Arteballetto",
+      "slug": "arteballetto"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2022-07-16",
+      "season": "summer",
+      "sessions": [],
+      "start": "2022-07-11",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:ac0bb996f8204030ae9f515adf8f71b62dfda52305bc9a5ee0bd84aaa774f68f",
+      "provider": "arteballetto",
+      "scrapedAt": "2026-06-17T12:23:06.055290Z",
+      "url": "https://www.arteballetto.net/2022/06/30/15-summer-course-11-luglio-16-luglio/"
+    },
+    "teachers": [],
+    "title": "15° Summer Course in Sicily"
+  },
+  {
+    "application": {
+      "requirements": [],
+      "url": "https://www.arteballetto.net/2023/05/18/16-summer-course/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "contemporary",
+      "repertoire"
+    ],
+    "id": "arteballetto/2023",
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Catania",
+      "country": "IT",
+      "venue": "Arteballetto"
+    },
+    "organization": {
+      "city": "Catania",
+      "country": "IT",
+      "name": "Arteballetto",
+      "slug": "arteballetto"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2023-07-22",
+      "season": "summer",
+      "sessions": [],
+      "start": "2023-07-17",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:2972535661a14bafc7563ba5577985a71bc63251c1e1ad146f252d559e27d476",
+      "provider": "arteballetto",
+      "scrapedAt": "2026-06-17T12:23:06.055162Z",
+      "url": "https://www.arteballetto.net/2023/05/18/16-summer-course/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Michael Berkin"
+      },
+      {
+        "affiliations": [],
+        "name": "Grant Martin Scruggs"
+      },
+      {
+        "affiliations": [],
+        "name": "Marie Heiß"
+      }
+    ],
+    "title": "16° Summer Course in Sicily"
+  },
+  {
+    "application": {
+      "requirements": [],
+      "url": "https://www.arteballetto.net/2025/06/12/3509/"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "arteballetto/2025",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Catania",
+      "country": "IT",
+      "venue": "Arteballetto"
+    },
+    "organization": {
+      "city": "Catania",
+      "country": "IT",
+      "name": "Arteballetto",
+      "slug": "arteballetto"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2025-07-12",
+      "season": "summer",
+      "sessions": [],
+      "start": "2025-07-07",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:7cd5bece8694c59565d31522896049849db1c4922611f9f4e63ee9223b5cfe98",
+      "provider": "arteballetto",
+      "scrapedAt": "2026-06-17T12:23:06.054939Z",
+      "url": "https://www.arteballetto.net/2025/06/12/3509/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Patrick Armand"
+      },
+      {
+        "affiliations": [],
+        "name": "Sandra Asensi"
+      },
+      {
+        "affiliations": [],
+        "name": "Baptiste Bourgougnon"
+      }
+    ],
+    "title": "18° Summer Course in Sicily"
+  },
+  {
+    "application": {
+      "requirements": [],
+      "url": "https://www.arteballetto.net/2026/05/17/19-summer-course-in-sicily/"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "repertoire"
+    ],
+    "id": "arteballetto/2026",
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Catania",
+      "country": "IT",
+      "venue": "Arteballetto"
+    },
+    "organization": {
+      "city": "Catania",
+      "country": "IT",
+      "name": "Arteballetto",
+      "slug": "arteballetto"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-07-11",
+      "season": "summer",
+      "sessions": [],
+      "start": "2026-07-06",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:96e31d0ed4173c83d0ff3a619a3da3516a8e39e6272f39f7ae68d88110b1c690",
+      "provider": "arteballetto",
+      "scrapedAt": "2026-06-17T12:24:14.906196Z",
+      "url": "https://www.arteballetto.net/2026/05/17/19-summer-course-in-sicily/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Tania Fairbairn-Della Valle"
+      },
+      {
+        "affiliations": [],
+        "name": "Mikhail Soloviev"
+      },
+      {
+        "affiliations": [],
+        "name": "Katharina Furst"
+      }
+    ],
+    "title": "19° Summer Course in Sicily"
+  }
+]
