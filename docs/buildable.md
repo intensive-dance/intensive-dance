@@ -2,7 +2,7 @@
 
 > **Generated — do not edit.** Refresh with `uv run python -m intensive_dance.overview --write`; CI drift-checks it. Source of truth: `providers.json`.
 
-25 buildable · 11 excluded · 120 live (156 providers total).
+24 buildable · 11 excluded · 121 live (156 providers total).
 
 **To claim one (so nobody double-builds):** check `gh issue list` / `gh pr list` for the slug; if free, open a `build:<slug>` issue and **self-assign first**, then build; close it when the PR merges (provider → `live`). An open claim issue *or* PR = locked. See `AGENTS.md` → Scope & coordination.
 
@@ -19,7 +19,6 @@ _Some still need Phase-1 verification (a public dated edition / not full-time) b
 
 ### IT
 - `accademia-iacopini` — Accademia Iacopini — "In Danza" (Chianciano Terme) — https://accademiaiacopini.it/
-- `associazione-europea-danza` — Associazione Europea Danza — Summer Dance School (Livorno) — https://aed.dance/
 - `progetto-danza-treviso` — Progetto Danza — Stage Internazionale di Danza (Treviso) — https://www.progettodanza.org/
 - `verona-summer-dance-lab` — Verona Summer Dance Lab (Verona) — https://www.veronadancelab.com/
 
