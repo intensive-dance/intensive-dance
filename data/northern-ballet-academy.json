@@ -13,8 +13,7 @@
           "poses": [
             "Facing the camera – Demi plié in first position, arms in bras bas",
             "Facing the camera – Tendu á la seconde, arms in second position (either leg)",
-            "Facing the camera - Á la seconde en l’air, straight supporting leg, arms in second position",
-            "Profile to the camera – 1st Arabesque on a straight supporting leg"
+            "Facing the camera - Á la seconde en l’air, straight supporting leg, arms in second position"
           ],
           "specificity": "defined-poses",
           "type": "photos"
@@ -25,7 +24,7 @@
           "type": "video"
         }
       ],
-      "url": "https://northernballet.wufoo.com/forms/w1bbr10y0axntgm/"
+      "url": "https://northernballet.com/academy/workshops-events/international-summer-intensives/seniors"
     },
     "genres": [
       "classical",
@@ -92,10 +91,10 @@
       "timezone": "Europe/London"
     },
     "source": {
-      "attemptedAt": "2026-06-17T02:10:31.227929Z",
-      "hash": "sha256:a8f77654e65ad5076b52263e7af0473b7b4335e15fb5c2d87dcc356ef28c53c9",
+      "attemptedAt": "2026-06-18T20:03:10.030613Z",
+      "hash": "sha256:90dd3f5806f037a5b80c2dcfcabaed523890b4ae31a38df296a95c71ec42ad0d",
       "provider": "northern-ballet-academy",
-      "scrapedAt": "2026-06-07T12:10:48.990523Z",
+      "scrapedAt": "2026-06-18T20:03:11.030914Z",
       "url": "https://northernballet.com/academy/workshops-events/international-summer-intensives/seniors"
     },
     "teachers": [
@@ -158,8 +157,7 @@
           "notes": "Photos uploaded with the application form; a studio is not required (a small space at home, camera or smartphone, is fine).",
           "poses": [
             "Facing the camera – Demi plié in first position, arms in bras bas",
-            "Facing the camera – Tendu á la seconde, arms in second position (either leg)",
-            "Profile to the camera – 1st Arabesque on a straight supporting leg"
+            "Facing the camera – Tendu á la seconde, arms in second position (either leg)"
           ],
           "specificity": "defined-poses",
           "type": "photos"
@@ -170,7 +168,7 @@
           "type": "video"
         }
       ],
-      "url": "https://northernballet.wufoo.com/forms/w1pmtqdi0nkfhj8/"
+      "url": "https://northernballet.com/academy/workshops-events/international-summer-intensives/intermediates"
     },
     "genres": [
       "classical",
@@ -218,10 +216,10 @@
       "timezone": "Europe/London"
     },
     "source": {
-      "attemptedAt": "2026-06-17T02:10:31.227929Z",
-      "hash": "sha256:4374c047e289df5ea373d6fc099cbb885fe7c50896367c7e186411eb1cfd3f83",
+      "attemptedAt": "2026-06-18T20:03:10.030613Z",
+      "hash": "sha256:0e1a21d002dff9d838fa12cba82d8ad4c3bbd295d15b409856f2c4bf33f04af6",
       "provider": "northern-ballet-academy",
-      "scrapedAt": "2026-06-07T12:10:49.138364Z",
+      "scrapedAt": "2026-06-18T20:03:11.309126Z",
       "url": "https://northernballet.com/academy/workshops-events/international-summer-intensives/intermediates"
     },
     "teachers": [],
