@@ -47,7 +47,7 @@
       "timezone": "Europe/Madrid"
     },
     "source": {
-      "attemptedAt": "2026-06-16T21:37:45.199322Z",
+      "attemptedAt": "2026-06-18T14:36:58.086231Z",
       "hash": "sha256:dbd1e77aeb939d436c0777e20b2520e03211859226d87582a97e6d1eb7906504",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-07T07:11:05.653354Z",
@@ -310,7 +310,7 @@
       "timezone": "Europe/Madrid"
     },
     "source": {
-      "attemptedAt": "2026-06-16T21:37:45.199322Z",
+      "attemptedAt": "2026-06-18T14:36:58.086231Z",
       "hash": "sha256:06a5f0817432416f24ed99a90bb7df8312a4f7bc22cdf1d338b479706470af8d",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-05T10:05:05.886497Z",
@@ -483,7 +483,7 @@
       "timezone": "Europe/Madrid"
     },
     "source": {
-      "attemptedAt": "2026-06-16T21:37:45.199322Z",
+      "attemptedAt": "2026-06-18T14:36:58.086231Z",
       "hash": "sha256:e9d9ab1b1b1179d40a446526ac6f6d672a8d1155a867fef245c0f5a60c0c66dd",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-05T10:05:05.885275Z",
@@ -683,7 +683,7 @@
       "timezone": "Europe/Sofia"
     },
     "source": {
-      "attemptedAt": "2026-06-16T21:37:45.199322Z",
+      "attemptedAt": "2026-06-18T14:36:58.086231Z",
       "hash": "sha256:d9cd82bf3ef5bd879bcd54863b980657475c394bc71cc4dae89f29b95032fcf5",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-07T07:11:06.255289Z",
@@ -856,7 +856,7 @@
       "timezone": "Europe/Sofia"
     },
     "source": {
-      "attemptedAt": "2026-06-16T21:37:45.199322Z",
+      "attemptedAt": "2026-06-18T14:36:58.086231Z",
       "hash": "sha256:df0daba48d5d6c002404f79b342befb29eaa099a2cf4334a97ba2da9c12cebe6",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-05T10:05:06.336612Z",
@@ -1041,7 +1041,7 @@
       "timezone": "Europe/Sofia"
     },
     "source": {
-      "attemptedAt": "2026-06-16T21:37:45.199322Z",
+      "attemptedAt": "2026-06-18T14:36:58.086231Z",
       "hash": "sha256:cb0a4ee373e4856fff365cf67f8a3166433061ee07c9b06a11e6a80f352c4d5c",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-05T10:05:06.335961Z",
@@ -1213,7 +1213,7 @@
       "timezone": "Europe/Madrid"
     },
     "source": {
-      "attemptedAt": "2026-06-16T21:37:45.199322Z",
+      "attemptedAt": "2026-06-18T14:36:58.086231Z",
       "hash": "sha256:c2382bc9ddba5b9dbc6388de5ad8a9b8a0d49e56dd04ae4e94cd1cf9d442b05e",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-05T10:05:08.161487Z",
@@ -1335,7 +1335,7 @@
       "timezone": "Australia/Perth"
     },
     "source": {
-      "attemptedAt": "2026-06-16T21:37:45.199322Z",
+      "attemptedAt": "2026-06-18T14:36:58.086231Z",
       "hash": "sha256:ca1d9ac70d4028fc6098334355b074f5cbb002a2dfda7db488176afd18127acd",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-05T10:05:09.099375Z",
@@ -1391,7 +1391,7 @@
       "timezone": "Australia/Perth"
     },
     "source": {
-      "attemptedAt": "2026-06-16T21:37:45.199322Z",
+      "attemptedAt": "2026-06-18T14:36:58.086231Z",
       "hash": "sha256:777690e29183dbe99a7e90ee5de99dbedb84dca0881de259658eadbe0caae116",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-05T10:05:09.099139Z",
@@ -1467,7 +1467,7 @@
       "timezone": "Asia/Shanghai"
     },
     "source": {
-      "attemptedAt": "2026-06-16T21:37:45.199322Z",
+      "attemptedAt": "2026-06-18T14:36:58.086231Z",
       "hash": "sha256:d8472f631ad18cf18dfb4027cd73d499a6805c0399c37b17e381916c923eff86",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-05T10:05:09.808058Z",
@@ -1582,19 +1582,17 @@
       "timezone": "Europe/Moscow"
     },
     "source": {
-      "attemptedAt": "2026-06-16T21:37:45.199322Z",
-      "hash": "sha256:5df96c6566877fed45542eb22eff89d9e2ecc00e24fdd6bc9c6f7027b13a41dc",
+      "attemptedAt": "2026-06-18T14:36:58.086231Z",
+      "hash": "sha256:ef9cabf61e69ada6c43a8dfae76aeee2af7293f2fa9c9eabfd57e4cc76a623e4",
       "provider": "russian-masters-ballet",
-      "scrapedAt": "2026-06-07T07:11:06.794216Z",
+      "scrapedAt": "2026-06-18T14:37:03.922610Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/st-petersburg/#observation"
     },
     "teachers": [
       {
         "affiliations": [
           {
-            "current": true,
             "organization": "Vaganova Ballet Academy",
-            "role": "teacher",
             "slug": "vaganova-ballet-academy"
           }
         ],
@@ -1604,7 +1602,6 @@
       {
         "affiliations": [
           {
-            "current": true,
             "organization": "Vaganova Ballet Academy",
             "role": "teacher",
             "slug": "vaganova-ballet-academy"
@@ -1628,7 +1625,6 @@
       {
         "affiliations": [
           {
-            "current": true,
             "organization": "Vaganova Ballet Academy",
             "role": "teacher",
             "slug": "vaganova-ballet-academy"
@@ -1640,7 +1636,6 @@
       {
         "affiliations": [
           {
-            "current": false,
             "organization": "Vaganova Ballet Academy",
             "role": "teacher",
             "slug": "vaganova-ballet-academy"
@@ -1652,7 +1647,6 @@
       {
         "affiliations": [
           {
-            "current": false,
             "organization": "Vaganova Ballet Academy",
             "role": "teacher",
             "slug": "vaganova-ballet-academy"
@@ -1664,7 +1658,6 @@
       {
         "affiliations": [
           {
-            "current": false,
             "organization": "Vaganova Ballet Academy",
             "role": "teacher",
             "slug": "vaganova-ballet-academy"
@@ -1674,21 +1667,13 @@
         "role": "teacher"
       },
       {
-        "affiliations": [
-          {
-            "current": false,
-            "organization": "Vaganova Ballet Academy",
-            "role": "teacher",
-            "slug": "vaganova-ballet-academy"
-          }
-        ],
+        "affiliations": [],
         "name": "Kirill Radev",
         "role": "teacher"
       },
       {
         "affiliations": [
           {
-            "current": false,
             "organization": "Vaganova Ballet Academy",
             "role": "teacher",
             "slug": "vaganova-ballet-academy"
@@ -1700,9 +1685,9 @@
       {
         "affiliations": [
           {
-            "current": true,
-            "organization": "Boris Eifman Dance Academy",
-            "role": "teacher"
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
           }
         ],
         "name": "Roman Petukhov",
@@ -1711,7 +1696,6 @@
       {
         "affiliations": [
           {
-            "current": true,
             "organization": "Vaganova Ballet Academy",
             "role": "teacher",
             "slug": "vaganova-ballet-academy"
@@ -1733,7 +1717,13 @@
         "role": "teacher"
       },
       {
-        "affiliations": [],
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
         "name": "Evgeniia Chetverikova",
         "role": "teacher"
       },
@@ -1741,8 +1731,10 @@
         "affiliations": [
           {
             "organization": "Vaganova Ballet Academy",
-            "role": "choreographer",
             "slug": "vaganova-ballet-academy"
+          },
+          {
+            "organization": "Mikhailovsky Theatre"
           }
         ],
         "name": "Kristina Chernova",
@@ -1751,7 +1743,6 @@
       {
         "affiliations": [
           {
-            "current": true,
             "organization": "Vaganova Ballet Academy",
             "role": "teacher",
             "slug": "vaganova-ballet-academy"
@@ -1822,17 +1813,16 @@
       "timezone": "Europe/Moscow"
     },
     "source": {
-      "attemptedAt": "2026-06-16T21:37:45.199322Z",
-      "hash": "sha256:b49ea330140b0b777c85f1431bc3780cfd3571a0c39ba7860898e8261444dd26",
+      "attemptedAt": "2026-06-18T14:36:58.086231Z",
+      "hash": "sha256:d127427de47af618a70cc1b368d8c1273226591d4b0454e6e16a73bd42c45ade",
       "provider": "russian-masters-ballet",
-      "scrapedAt": "2026-06-05T10:05:06.827947Z",
+      "scrapedAt": "2026-06-18T14:37:03.921468Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/st-petersburg/#professional-2-weeks"
     },
     "teachers": [
       {
         "affiliations": [
           {
-            "current": true,
             "organization": "Vaganova Ballet Academy",
             "role": "teacher",
             "slug": "vaganova-ballet-academy"
@@ -1856,7 +1846,6 @@
       {
         "affiliations": [
           {
-            "current": true,
             "organization": "Vaganova Ballet Academy",
             "role": "teacher",
             "slug": "vaganova-ballet-academy"
@@ -1868,7 +1857,6 @@
       {
         "affiliations": [
           {
-            "current": true,
             "organization": "Vaganova Ballet Academy",
             "role": "teacher",
             "slug": "vaganova-ballet-academy"
@@ -1880,7 +1868,6 @@
       {
         "affiliations": [
           {
-            "current": false,
             "organization": "Vaganova Ballet Academy",
             "role": "teacher",
             "slug": "vaganova-ballet-academy"
@@ -1892,7 +1879,6 @@
       {
         "affiliations": [
           {
-            "current": false,
             "organization": "Vaganova Ballet Academy",
             "role": "teacher",
             "slug": "vaganova-ballet-academy"
@@ -1904,7 +1890,6 @@
       {
         "affiliations": [
           {
-            "current": false,
             "organization": "Vaganova Ballet Academy",
             "role": "teacher",
             "slug": "vaganova-ballet-academy"
@@ -1916,23 +1901,28 @@
       {
         "affiliations": [
           {
-            "current": true,
-            "organization": "Boris Eifman Dance Academy",
-            "role": "teacher"
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
           }
         ],
         "name": "Roman Petukhov",
         "role": "teacher"
       },
       {
-        "affiliations": [],
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
         "name": "Evgeniia Chetverikova",
         "role": "teacher"
       },
       {
         "affiliations": [
           {
-            "current": false,
             "organization": "Vaganova Ballet Academy",
             "role": "teacher",
             "slug": "vaganova-ballet-academy"
@@ -1945,8 +1935,10 @@
         "affiliations": [
           {
             "organization": "Vaganova Ballet Academy",
-            "role": "choreographer",
             "slug": "vaganova-ballet-academy"
+          },
+          {
+            "organization": "Mikhailovsky Theatre"
           }
         ],
         "name": "Kristina Chernova",
@@ -1955,7 +1947,6 @@
       {
         "affiliations": [
           {
-            "current": true,
             "organization": "Vaganova Ballet Academy",
             "role": "teacher",
             "slug": "vaganova-ballet-academy"
@@ -2057,19 +2048,17 @@
       "timezone": "Europe/Moscow"
     },
     "source": {
-      "attemptedAt": "2026-06-16T21:37:45.199322Z",
-      "hash": "sha256:98d8694f7ec6a2d9cac246981cad96a4f369e9d15baca760df971861a28a0ea1",
+      "attemptedAt": "2026-06-18T14:36:58.086231Z",
+      "hash": "sha256:fc031e4cbbcfada1b0e94e4e7f665facd0235e515d788c0f1bd4683b9b3a8793",
       "provider": "russian-masters-ballet",
-      "scrapedAt": "2026-06-05T10:05:06.826820Z",
+      "scrapedAt": "2026-06-18T14:37:03.919979Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/st-petersburg/#professional"
     },
     "teachers": [
       {
         "affiliations": [
           {
-            "current": true,
             "organization": "Vaganova Ballet Academy",
-            "role": "teacher",
             "slug": "vaganova-ballet-academy"
           }
         ],
@@ -2079,7 +2068,6 @@
       {
         "affiliations": [
           {
-            "current": true,
             "organization": "Vaganova Ballet Academy",
             "role": "teacher",
             "slug": "vaganova-ballet-academy"
@@ -2091,7 +2079,6 @@
       {
         "affiliations": [
           {
-            "current": true,
             "organization": "Vaganova Ballet Academy",
             "role": "teacher",
             "slug": "vaganova-ballet-academy"
@@ -2115,7 +2102,6 @@
       {
         "affiliations": [
           {
-            "current": false,
             "organization": "Vaganova Ballet Academy",
             "role": "teacher",
             "slug": "vaganova-ballet-academy"
@@ -2127,7 +2113,6 @@
       {
         "affiliations": [
           {
-            "current": false,
             "organization": "Vaganova Ballet Academy",
             "role": "teacher",
             "slug": "vaganova-ballet-academy"
@@ -2137,21 +2122,13 @@
         "role": "teacher"
       },
       {
-        "affiliations": [
-          {
-            "current": false,
-            "organization": "Vaganova Ballet Academy",
-            "role": "teacher",
-            "slug": "vaganova-ballet-academy"
-          }
-        ],
+        "affiliations": [],
         "name": "Kirill Radev",
         "role": "teacher"
       },
       {
         "affiliations": [
           {
-            "current": false,
             "organization": "Vaganova Ballet Academy",
             "role": "teacher",
             "slug": "vaganova-ballet-academy"
@@ -2163,9 +2140,9 @@
       {
         "affiliations": [
           {
-            "current": true,
-            "organization": "Boris Eifman Dance Academy",
-            "role": "teacher"
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
           }
         ],
         "name": "Roman Petukhov",
@@ -2174,7 +2151,6 @@
       {
         "affiliations": [
           {
-            "current": true,
             "organization": "Vaganova Ballet Academy",
             "role": "teacher",
             "slug": "vaganova-ballet-academy"
@@ -2186,13 +2162,23 @@
       {
         "affiliations": [
           {
-            "current": true,
             "organization": "Vaganova Ballet Academy",
             "role": "teacher",
             "slug": "vaganova-ballet-academy"
           }
         ],
         "name": "Natalia Permyakova",
+        "role": "teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Vaganova Ballet Academy",
+            "role": "teacher",
+            "slug": "vaganova-ballet-academy"
+          }
+        ],
+        "name": "Evgeniia Chetverikova",
         "role": "teacher"
       },
       {
