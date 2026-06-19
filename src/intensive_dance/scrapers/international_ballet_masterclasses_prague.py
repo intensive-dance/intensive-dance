@@ -5,6 +5,11 @@ API FIRST: yes. The site is **WordPress** (Avada/Fusion theme) under
 usable `content.rendered` body (plain HTML — the relevant pages aren't built with
 a Fusion module that empties the REST body, unlike `faculty-2026`). So we read the
 content pages via REST and parse their HTML — no front-end scrape, no JS render.
+The host has since fallen behind a **Cloudflare challenge** that 403s the proxy's
+plain *and* `auto`/`render` tiers — only the FlareSolverr `solve=1` tier returns
+the REST JSON, wrapped in Chromium's JSON viewer (`wp.unwrap_json_viewer` recovers
+it; same shape as `associazione_europea_danza`). So we force `solve=1` via
+`PROXY_PARAMS_HEADER` and unwrap by hand rather than calling `resp.json()`.
 
 DISCOVERY: the founder (Daria Klimentová, ex-ENB prima) runs two distinct
 student programmes in Prague each summer, held at the Czech National Ballet
@@ -51,7 +56,8 @@ from datetime import date
 import httpx
 from selectolax.parser import HTMLParser
 
-from intensive_dance import parse
+from intensive_dance import parse, wp
+from intensive_dance.fetch import PROXY_PARAMS_HEADER
 from intensive_dance.models import (
     Application,
     CVReq,
@@ -101,9 +107,16 @@ def scrape(client: httpx.Client) -> list[Offering]:
 
 
 def _fetch_content(client: httpx.Client, slug: str) -> str:
-    resp = client.get(API, params={"slug": slug, "_fields": "content"})
+    # The host fell behind a Cloudflare challenge that 403s the proxy's plain and
+    # `auto`/`render` tiers; only the FlareSolverr `solve=1` tier returns the REST
+    # JSON, wrapped in Chromium's JSON viewer (`wp.unwrap_json_viewer` recovers it).
+    resp = client.get(
+        API,
+        params={"slug": slug, "_fields": "content"},
+        headers={PROXY_PARAMS_HEADER: "solve=1"},
+    )
     resp.raise_for_status()
-    data = resp.json()
+    data = wp.unwrap_json_viewer(resp.text)
     return data[0]["content"]["rendered"] if data else ""
 
 
