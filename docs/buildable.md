@@ -2,7 +2,7 @@
 
 > **Generated — do not edit.** Refresh with `uv run python -m intensive_dance.overview --write`; CI drift-checks it. Source of truth: `providers.json`.
 
-9 buildable · 23 excluded · 124 live (156 providers total).
+8 buildable · 23 excluded · 125 live (156 providers total).
 
 **To claim one (so nobody double-builds):** check `gh issue list` / `gh pr list` for the slug; if free, open a `build:<slug>` issue and **self-assign first**, then build; close it when the PR merges (provider → `live`). An open claim issue *or* PR = locked. See `AGENTS.md` → Scope & coordination.
 
@@ -20,9 +20,6 @@ _Some still need Phase-1 verification (a public dated edition / not full-time) b
 - `ibsi-incheon` — International Ballet Summer Intensive Incheon (IBSI) (Incheon) — https://www.dance.utah.edu/ibsi-2019
 - `julia-ballet-academy` — Julia Ballet Academy (Seoul) — https://www.juliaballet.co.kr/
 - `seoul-ballet-theatre` — Seoul Ballet Theatre (Ballet Edu) (Seoul) — https://www.ballet.or.kr/
-
-### RO
-- `la-sylphide-ballet-academy` — La Sylphide Academic Ballet School (Bucharest) — https://baletcopii.com/
 
 ### RU
 - `bolshoi-ballet-academy` — Bolshoi Ballet Academy (Moscow) — https://en.balletacademy.ru/

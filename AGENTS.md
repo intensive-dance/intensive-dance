@@ -181,6 +181,16 @@ module docstring so the next person doesn't re-investigate:
      tracks — P1: keep that only as a note, don't import academy-entry rules. And
      `" ".join(some_string)` letter-spaces every character — concatenate strings,
      don't `join` them (see `accademia_internazionale_coreutica`).
+   - **Trap (Avada/Fusion):** an Avada/Fusion-themed WP renders **clean
+     `content.rendered`** but as plain *HTML* (not WPBakery shortcodes), so
+     `wp.parse` (which keys off heading-shortcode structure) buys little — just
+     strip tags to flat prose and regex it. Each yearly edition can be its own
+     **page** under a stable slug family (`summer-school`, `summer-school-YYYY`):
+     discover by `search=` + a `slug.startswith(...)` filter to drop look-alikes
+     (a gala, an evergreen overview page). **The page title can lag the body** —
+     the current edition's page was titled "Summer School 2023" while its body
+     announced the *2024* intensive — so read the year/dates from the body header,
+     never the title (see `la_sylphide_ballet_academy`).
 2. **Embedded structured data** — `<script type="application/ld+json">`
    (schema.org `Event`/`Course`), or a state blob (`__NEXT_DATA__`).
 3. **Feeds** — iCal `.ics`, RSS/Atom.
