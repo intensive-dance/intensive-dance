@@ -5,7 +5,10 @@ Plain static HTML (no WordPress REST / `/wp-json/`, not Joomla, no `ld+json`,
 no `__NEXT_DATA__`) — a structural `selectolax` text scrape of the single
 Danceflash detail page (`/ausbildung/danceflash`). The host 403s a datacenter
 fetch, so the scrape runs through the fetch proxy (`make_client` routes it
-automatically when the proxy env is set). German/English mixed copy.
+automatically when the proxy env is set). German/English mixed copy — and the
+`en.` subdomain flips the PARTICIPATION-FEE block between German ("5-12 Jährige
+täglich von …") and English ("5-12 year olds daily from …") by cache, so the
+fee regex matches both wordings (cf. the Monreart language-by-cache trap).
 
 DISCOVERY — one age-group track = one Offering.
 Danceflash is the dated 8-day summer workshop of the state-funded Europaballett
@@ -84,11 +87,14 @@ _DATES = re.compile(
     re.IGNORECASE,
 )
 
-# One PARTICIPATION-FEE row per age group:
-# "5-12 Jährige täglich von 09:30 - 14:30 Uhr € 300,- (Early bird … € 280,-)".
+# One PARTICIPATION-FEE row per age group. The `en.` subdomain flips this block
+# between German and English by cache, so match both wordings:
+#   "5-12 Jährige täglich von 09:30 - 14:30 Uhr € 300,- (Early bird … € 280,-)"
+#   "5-12 year olds daily from 09:30 - 14:30 € 300,-"
+# "Uhr" and the early-bird parenthetical are both optional.
 _FEE = re.compile(
-    r"(\d{1,2})\s*[-–]\s*(\d{1,2})\s*Jährige\s+täglich\s+von\s+"
-    r"([\d:]+)\s*[-–]\s*([\d:]+)\s*Uhr\s*€\s*([\d.,]+)"
+    r"(\d{1,2})\s*[-–]\s*(\d{1,2})\s*(?:Jährige|year olds)\s+(?:täglich\s+von|daily\s+from)\s+"
+    r"([\d:]+)\s*[-–]\s*([\d:]+)\s*(?:Uhr\s*)?€\s*([\d.,]+)"
     r"[,\-]*\s*/?\s*(?:\(\s*Early bird[^€]*€\s*([\d.,]+))?",
     re.IGNORECASE,
 )
