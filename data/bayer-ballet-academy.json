@@ -60,7 +60,7 @@
       "timezone": "America/Los_Angeles"
     },
     "source": {
-      "attemptedAt": "2026-06-17T19:15:50.040736Z",
+      "attemptedAt": "2026-06-19T17:07:31.914618Z",
       "hash": "sha256:77db1ad63a4587a6938c251b9f9a306b38ec175f16528de82041fcd7742a03cf",
       "provider": "bayer-ballet-academy",
       "scrapedAt": "2026-06-11T07:29:35.547072Z",
@@ -185,7 +185,7 @@
       "timezone": "America/Los_Angeles"
     },
     "source": {
-      "attemptedAt": "2026-06-17T19:15:50.040736Z",
+      "attemptedAt": "2026-06-19T17:07:31.914618Z",
       "hash": "sha256:26c6ab9ae9288c2b9e000fca0a57a01db98ce61e441b8282654f48eafa347520",
       "provider": "bayer-ballet-academy",
       "scrapedAt": "2026-06-11T07:29:35.547300Z",
