@@ -132,9 +132,9 @@
     },
     "source": {
       "attemptedAt": "2026-06-18T17:51:16.580123Z",
-      "hash": "sha256:c4eeed80f1539a534eb711bc4ed15246df1b8752b625b8935ed1a1a7e8856b70",
+      "hash": "sha256:de3928d9cb086ba4566a311c4c551b983c83dc3fdf1e635a237f1abb322f5900",
       "provider": "international-ballet-masterclasses-prague",
-      "scrapedAt": "2026-06-09T18:37:47.869209Z",
+      "scrapedAt": "2026-06-19T06:53:02.821856Z",
       "url": "https://www.balletmasterclass.com/pages/options-fees/"
     },
     "teachers": [
@@ -196,6 +196,11 @@
       {
         "affiliations": [],
         "name": "Christopher Hampson",
+        "role": "Guest Teacher (Week Two)"
+      },
+      {
+        "affiliations": [],
+        "name": "Ernst Meisner",
         "role": "Guest Teacher (Week Two)"
       },
       {
