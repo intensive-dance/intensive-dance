@@ -82,6 +82,28 @@ def test_fee_row_without_early_bird() -> None:
     assert offerings[0].prices[0].notes is None
 
 
+def test_english_fee_wording() -> None:
+    # The `en.` subdomain serves the fee block in English ("year olds daily
+    # from", no "Uhr", no early-bird parenthetical) — the regex must match it too.
+    html = (
+        "<html><body>"
+        "<p>SUMMER INTENSIVE 04. Juli - 11. Juli 2026</p>"
+        "<p>5-12 year olds daily from 09:30 - 14:30 € 300,-</p>"
+        "<p>13-26 year olds daily from 09:30 - 16:00 € 400,-</p>"
+        "<p>Classical Training, Balanchine, Repertoire, Point, contemporary.</p>"
+        "</body></html>"
+    )
+    offerings = eb._build_offerings(html)
+    assert len(offerings) == 2
+    juniors, seniors = offerings
+    assert juniors.age_range == {"min": 5, "max": 12}
+    assert juniors.prices[0].amount == 300.0
+    assert juniors.prices[0].notes is None
+    assert seniors.age_range == {"min": 13, "max": 26}
+    assert seniors.prices[0].amount == 400.0
+    assert juniors.schedule.start == date(2026, 7, 4)
+
+
 def test_missing_dates_fails_open() -> None:
     html = "<html><body><p>5-12 Jährige täglich von 09:30 - 14:30 Uhr € 300,-</p></body></html>"
     offerings = eb._build_offerings(html)

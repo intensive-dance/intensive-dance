@@ -1,1 +1,112 @@
-[]
+[
+  {
+    "ageRange": {
+      "max": 12,
+      "min": 5
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://en.europaballett.at/ausbildung/danceflash"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "neoclassical",
+      "repertoire",
+      "pointe"
+    ],
+    "id": "europaballett-danceflash/summer-intensive-2026-ages-5-12",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "St. Pölten",
+      "country": "AT"
+    },
+    "organization": {
+      "city": "St. Pölten",
+      "country": "AT",
+      "name": "Europaballett St. Pölten",
+      "slug": "europaballett-danceflash"
+    },
+    "prices": [
+      {
+        "amount": 300.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ]
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-11",
+      "notes": "04. JuLi - 11. Juli 2026; täglich 09:30–14:30 Uhr",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-04",
+      "timezone": "Europe/Vienna"
+    },
+    "source": {
+      "hash": "sha256:28f9f77c8379b5702e76989d6e37938f42f73ac89fe0f6063436fea6c6fdf78b",
+      "provider": "europaballett-danceflash",
+      "scrapedAt": "2026-06-19T07:13:27.559648Z",
+      "url": "https://en.europaballett.at/ausbildung/danceflash"
+    },
+    "teachers": [],
+    "title": "Danceflash Summer Intensive (ages 5–12)"
+  },
+  {
+    "ageRange": {
+      "max": 26,
+      "min": 13
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://en.europaballett.at/ausbildung/danceflash"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "neoclassical",
+      "repertoire",
+      "pointe"
+    ],
+    "id": "europaballett-danceflash/summer-intensive-2026-ages-13-26",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "St. Pölten",
+      "country": "AT"
+    },
+    "organization": {
+      "city": "St. Pölten",
+      "country": "AT",
+      "name": "Europaballett St. Pölten",
+      "slug": "europaballett-danceflash"
+    },
+    "prices": [
+      {
+        "amount": 400.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ]
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-11",
+      "notes": "04. JuLi - 11. Juli 2026; täglich 09:30–16:00 Uhr",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-04",
+      "timezone": "Europe/Vienna"
+    },
+    "source": {
+      "hash": "sha256:12708b629b0454cb630514bbd847b83f401fa63544f44fef540e2c9f024b7773",
+      "provider": "europaballett-danceflash",
+      "scrapedAt": "2026-06-19T07:13:27.559724Z",
+      "url": "https://en.europaballett.at/ausbildung/danceflash"
+    },
+    "teachers": [],
+    "title": "Danceflash Summer Intensive (ages 13–26)"
+  }
+]
