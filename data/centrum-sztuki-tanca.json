@@ -46,7 +46,7 @@
       "timezone": "Europe/Warsaw"
     },
     "source": {
-      "attemptedAt": "2026-06-19T06:03:20.928260Z",
+      "attemptedAt": "2026-06-20T12:21:54.340908Z",
       "hash": "sha256:3648ea6f6e617e635efa07dd59a76a357fefd49d264ec990e0c7c1d660298dd3",
       "provider": "centrum-sztuki-tanca",
       "scrapedAt": "2026-06-08T21:36:05.405822Z",
@@ -111,7 +111,7 @@
       "timezone": "Europe/Warsaw"
     },
     "source": {
-      "attemptedAt": "2026-06-19T06:03:20.928260Z",
+      "attemptedAt": "2026-06-20T12:21:54.340908Z",
       "hash": "sha256:fa9c08eb86cf22df654a9b9e3df6d49b3dcafa7a4ca64783fb08864dd6af94a6",
       "provider": "centrum-sztuki-tanca",
       "scrapedAt": "2026-06-08T21:36:05.405733Z",
@@ -164,7 +164,7 @@
       "timezone": "Europe/Warsaw"
     },
     "source": {
-      "attemptedAt": "2026-06-19T06:03:20.928260Z",
+      "attemptedAt": "2026-06-20T12:21:54.340908Z",
       "hash": "sha256:c2100e1a31631c0ccf94d231f0ffad57a49ca92a24eeb7971ee0e72c8709658a",
       "provider": "centrum-sztuki-tanca",
       "scrapedAt": "2026-06-08T21:36:05.405780Z",
