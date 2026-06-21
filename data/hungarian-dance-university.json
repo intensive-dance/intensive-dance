@@ -40,7 +40,7 @@
       "timezone": "Europe/Budapest"
     },
     "source": {
-      "attemptedAt": "2026-06-20T07:40:02.446617Z",
+      "attemptedAt": "2026-06-21T15:42:26.380430Z",
       "hash": "sha256:ca969d70338d03baac09d32b7cb578c836401311adfd9188eb812e71e547b638",
       "provider": "hungarian-dance-university",
       "scrapedAt": "2026-06-11T20:47:55.792946Z",
@@ -89,7 +89,7 @@
       "timezone": "Europe/Budapest"
     },
     "source": {
-      "attemptedAt": "2026-06-20T07:40:02.446617Z",
+      "attemptedAt": "2026-06-21T15:42:26.380430Z",
       "hash": "sha256:3e3cea0610df68e205039195a077e97f0c6b9f436757ea70eca98ee4001ab789",
       "provider": "hungarian-dance-university",
       "scrapedAt": "2026-06-11T20:48:37.685183Z",
