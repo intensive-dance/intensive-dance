@@ -15,7 +15,7 @@
 
 The register already answers *"what intensives exist?"* but not *"which ones can I
 realistically get to?"*. Today a family can only read a worldwide list and eyeball the
-`city · country-code` on each row (`concept/index.html`). For the real decision — *"can my
+`city · country-code` on each row. For the real decision — *"can my
 child attend this without an unreasonable journey, and can we combine it with where we already
 need to be?"* — the user has to know geography by heart and scan 300+ rows by hand.
 
