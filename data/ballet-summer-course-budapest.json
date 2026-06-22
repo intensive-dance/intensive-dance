@@ -55,25 +55,16 @@
       "timezone": "Europe/Budapest"
     },
     "source": {
-      "attemptedAt": "2026-06-20T21:57:52.636643Z",
-      "hash": "sha256:6980fac4755bcaefb17caeefb7423cee71617f41feeb20adde4dffee73c3d22a",
+      "attemptedAt": "2026-06-22T12:39:22.878389Z",
+      "hash": "sha256:e2d2036da25e23fe72a5a57f4c4e2e956396b78bea58fc76f78c1a35624547a9",
       "provider": "ballet-summer-course-budapest",
-      "scrapedAt": "2026-06-09T00:29:18.183399Z",
+      "scrapedAt": "2026-06-22T12:39:26.199322Z",
       "url": "https://balletsummercoursebudapest.com/about-our-groups/advanced-amateur-group-from-the-age-of-15/"
     },
     "teachers": [
       {
-        "affiliations": [
-          {
-            "current": true,
-            "organization": "Mariinsky Theatre"
-          },
-          {
-            "current": true,
-            "organization": "Perm Ballet"
-          }
-        ],
-        "name": "Viktoriia Stavtseva"
+        "affiliations": [],
+        "name": "Ludmila Taran"
       },
       {
         "affiliations": [
@@ -84,10 +75,6 @@
           {
             "current": true,
             "organization": "Hungarian Dance Academy"
-          },
-          {
-            "current": true,
-            "organization": "Mariinsky Theatre"
           },
           {
             "current": true,
@@ -264,25 +251,16 @@
       "timezone": "Europe/Budapest"
     },
     "source": {
-      "attemptedAt": "2026-06-20T21:57:52.636643Z",
-      "hash": "sha256:c420ec090c65e714b33d75aba103c946429f29a7e5ecacd71a7821595ec13cfe",
+      "attemptedAt": "2026-06-22T12:39:22.878389Z",
+      "hash": "sha256:d4890b3f080f9eb57131197560f41e0882436a7dc4b32d6f4d29819c119d8e14",
       "provider": "ballet-summer-course-budapest",
-      "scrapedAt": "2026-06-09T00:29:18.185132Z",
+      "scrapedAt": "2026-06-22T12:39:26.201042Z",
       "url": "https://balletsummercoursebudapest.com/amateur-beginning-group-no-age-limit/"
     },
     "teachers": [
       {
-        "affiliations": [
-          {
-            "current": true,
-            "organization": "Mariinsky Theatre"
-          },
-          {
-            "current": true,
-            "organization": "Perm Ballet"
-          }
-        ],
-        "name": "Viktoriia Stavtseva"
+        "affiliations": [],
+        "name": "Ludmila Taran"
       },
       {
         "affiliations": [
@@ -293,10 +271,6 @@
           {
             "current": true,
             "organization": "Hungarian Dance Academy"
-          },
-          {
-            "current": true,
-            "organization": "Mariinsky Theatre"
           },
           {
             "current": true,
@@ -474,25 +448,16 @@
       "timezone": "Europe/Budapest"
     },
     "source": {
-      "attemptedAt": "2026-06-20T21:57:52.636643Z",
-      "hash": "sha256:b6e8125ea89eafe989bd653d63be8520ec0dc98fe8663bf3128f3e65f4fd1333",
+      "attemptedAt": "2026-06-22T12:39:22.878389Z",
+      "hash": "sha256:4b370266a168f410a51c940f230e5a101913320f22d7d52854f7c20af14007ad",
       "provider": "ballet-summer-course-budapest",
-      "scrapedAt": "2026-06-09T00:29:18.185995Z",
+      "scrapedAt": "2026-06-22T12:39:26.201950Z",
       "url": "https://balletsummercoursebudapest.com/about-our-groups/children-group-between-10-and-13-years-of-age/"
     },
     "teachers": [
       {
-        "affiliations": [
-          {
-            "current": true,
-            "organization": "Mariinsky Theatre"
-          },
-          {
-            "current": true,
-            "organization": "Perm Ballet"
-          }
-        ],
-        "name": "Viktoriia Stavtseva"
+        "affiliations": [],
+        "name": "Ludmila Taran"
       },
       {
         "affiliations": [
@@ -503,10 +468,6 @@
           {
             "current": true,
             "organization": "Hungarian Dance Academy"
-          },
-          {
-            "current": true,
-            "organization": "Mariinsky Theatre"
           },
           {
             "current": true,
@@ -684,25 +645,16 @@
       "timezone": "Europe/Budapest"
     },
     "source": {
-      "attemptedAt": "2026-06-20T21:57:52.636643Z",
-      "hash": "sha256:5a3078f57b1b9d0ac7299b0fe181b2f0c610ec8fe4268b3dd72e9979908e26b1",
+      "attemptedAt": "2026-06-22T12:39:22.878389Z",
+      "hash": "sha256:2c0c507d542b01e0d6fac4c74f29f7e62c05a91a99eed336109eae0efcbce8d8",
       "provider": "ballet-summer-course-budapest",
-      "scrapedAt": "2026-06-09T00:29:18.186763Z",
+      "scrapedAt": "2026-06-22T12:39:26.202749Z",
       "url": "https://balletsummercoursebudapest.com/about-our-groups/group-6-childrens-sport-group/"
     },
     "teachers": [
       {
-        "affiliations": [
-          {
-            "current": true,
-            "organization": "Mariinsky Theatre"
-          },
-          {
-            "current": true,
-            "organization": "Perm Ballet"
-          }
-        ],
-        "name": "Viktoriia Stavtseva"
+        "affiliations": [],
+        "name": "Ludmila Taran"
       },
       {
         "affiliations": [
@@ -713,10 +665,6 @@
           {
             "current": true,
             "organization": "Hungarian Dance Academy"
-          },
-          {
-            "current": true,
-            "organization": "Mariinsky Theatre"
           },
           {
             "current": true,
@@ -893,25 +841,16 @@
       "timezone": "Europe/Budapest"
     },
     "source": {
-      "attemptedAt": "2026-06-20T21:57:52.636643Z",
-      "hash": "sha256:d0ed275ee019142103a740bcf06c1617198b498b14a10d241a0f62832fca9634",
+      "attemptedAt": "2026-06-22T12:39:22.878389Z",
+      "hash": "sha256:6ea4c444fa5ad8b20b0b9356b7fe80055319ae072af2e671ab883c131e599e54",
       "provider": "ballet-summer-course-budapest",
-      "scrapedAt": "2026-06-09T00:29:18.184287Z",
+      "scrapedAt": "2026-06-22T12:39:26.200177Z",
       "url": "https://balletsummercoursebudapest.com/about-our-groups/intermediate-amateur-group-from-the-age-of-15/"
     },
     "teachers": [
       {
-        "affiliations": [
-          {
-            "current": true,
-            "organization": "Mariinsky Theatre"
-          },
-          {
-            "current": true,
-            "organization": "Perm Ballet"
-          }
-        ],
-        "name": "Viktoriia Stavtseva"
+        "affiliations": [],
+        "name": "Ludmila Taran"
       },
       {
         "affiliations": [
@@ -922,10 +861,6 @@
           {
             "current": true,
             "organization": "Hungarian Dance Academy"
-          },
-          {
-            "current": true,
-            "organization": "Mariinsky Theatre"
           },
           {
             "current": true,
@@ -1104,25 +1039,16 @@
       "timezone": "Europe/Budapest"
     },
     "source": {
-      "attemptedAt": "2026-06-20T21:57:52.636643Z",
-      "hash": "sha256:5ec6c7610ed80668e42248aa910803467a5e7cb58c7d0d798e54d54bcc2d16c0",
+      "attemptedAt": "2026-06-22T12:39:22.878389Z",
+      "hash": "sha256:ee3d05851386cd790c7a36d28067780b4944b6c57e8c6b106b20b58920cb3dd6",
       "provider": "ballet-summer-course-budapest",
-      "scrapedAt": "2026-06-09T00:29:18.182383Z",
+      "scrapedAt": "2026-06-22T12:39:26.198424Z",
       "url": "https://balletsummercoursebudapest.com/about-our-groups/professional-junior-group-between-13-and-15-years-of-age/"
     },
     "teachers": [
       {
-        "affiliations": [
-          {
-            "current": true,
-            "organization": "Mariinsky Theatre"
-          },
-          {
-            "current": true,
-            "organization": "Perm Ballet"
-          }
-        ],
-        "name": "Viktoriia Stavtseva"
+        "affiliations": [],
+        "name": "Ludmila Taran"
       },
       {
         "affiliations": [
@@ -1133,10 +1059,6 @@
           {
             "current": true,
             "organization": "Hungarian Dance Academy"
-          },
-          {
-            "current": true,
-            "organization": "Mariinsky Theatre"
           },
           {
             "current": true,
@@ -1316,25 +1238,16 @@
       "timezone": "Europe/Budapest"
     },
     "source": {
-      "attemptedAt": "2026-06-20T21:57:52.636643Z",
-      "hash": "sha256:9bd1aa401c5a71e135c8409e2e2ecb6037084707bea12acf3452445957552b57",
+      "attemptedAt": "2026-06-22T12:39:22.878389Z",
+      "hash": "sha256:6e43be7f1c12a9dcdd35a8518d7691f21fe77970f280dcb340ee4b24ff8c96b0",
       "provider": "ballet-summer-course-budapest",
-      "scrapedAt": "2026-06-09T00:29:18.181187Z",
+      "scrapedAt": "2026-06-22T12:39:26.197369Z",
       "url": "https://balletsummercoursebudapest.com/about-our-groups/professional-young-group/"
     },
     "teachers": [
       {
-        "affiliations": [
-          {
-            "current": true,
-            "organization": "Mariinsky Theatre"
-          },
-          {
-            "current": true,
-            "organization": "Perm Ballet"
-          }
-        ],
-        "name": "Viktoriia Stavtseva"
+        "affiliations": [],
+        "name": "Ludmila Taran"
       },
       {
         "affiliations": [
@@ -1345,10 +1258,6 @@
           {
             "current": true,
             "organization": "Hungarian Dance Academy"
-          },
-          {
-            "current": true,
-            "organization": "Mariinsky Theatre"
           },
           {
             "current": true,
