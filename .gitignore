@@ -6,5 +6,6 @@ __pycache__/
 .claude/worktrees/
 .claude/scheduled_tasks*
 
-# Local default output of `intensive_dance.audit` (CI writes to a temp path)
+# Local default output of `intensive_dance.audit` / `.doc_audit` (CI writes to a temp path)
 scraper-audit-report.md
+doc-audit-report.md

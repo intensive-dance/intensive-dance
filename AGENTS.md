@@ -95,6 +95,18 @@ default token. (Funnelling everything through the lone `COPILOT_CLI_TOKEN`, whic
 lacks Issues scope, used to crash the whole `report` job at `gh label create`.)
 These ops scripts are stdlib-only (run with `PYTHONPATH=src python3 -m …`, no `uv sync`).
 
+**Doc-currency → tracker (not Copilot).** A third loop, `doc-audit.yml` (weekly),
+guards the *prose* the way CI already guards the derived docs. `intensive_dance.doc_audit`
+scans the committed docs for deterministic drift smells — stale `boredland/…`
+(pre-org-transfer) repo refs, prose counts that disagree with
+`providers.json`/the store by >15% (dated "snapshot"/"as of" lines exempt), and
+dead relative Markdown links — and `report_doc_audit` opens/refreshes one reusable
+`doc-audit` issue. It is **not** handed to Copilot (doc fixes need editorial
+judgement and often span sibling repos); it's a reminder for the PO, needing only
+`issues: write` (no Copilot PAT). Per-provider *status* is deliberately **not**
+audited — `candidates.md` is a historical discovery record; `providers.json` is the
+truth (so don't restate status in prose; link it).
+
 Always use `uv` (never bare `pip`/`python`). `ruff` line-length is **100**.
 
 ---

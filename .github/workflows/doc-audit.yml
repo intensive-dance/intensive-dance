@@ -1,0 +1,38 @@
+name: doc-audit
+
+on:
+  schedule:
+    - cron: "30 6 * * 1" # weekly, Monday 06:30 UTC — doc drift accumulates slowly
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: doc-audit
+  cancel-in-progress: false
+
+# Scans the committed docs for deterministic drift smells (stale repo refs,
+# count drift, candidates that are now live, dead doc links) and — only when it
+# finds any — opens/refreshes a single `doc-audit` tracker issue for the PO.
+# Stdlib-only, no `uv sync`; not handed to Copilot (doc fixes need judgement).
+jobs:
+  doc-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Audit docs
+        id: audit
+        env:
+          DOC_AUDIT_REPORT_PATH: ${{ runner.temp }}/doc-audit-report.md
+        run: PYTHONPATH=src python3 -m intensive_dance.doc_audit
+
+      - name: Open / refresh the tracker issue
+        if: steps.audit.outputs.findings != '0'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DOC_AUDIT_REPORT_PATH: ${{ runner.temp }}/doc-audit-report.md
+        run: PYTHONPATH=src python3 -m intensive_dance.report_doc_audit
