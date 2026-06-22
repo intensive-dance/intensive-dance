@@ -1,8 +1,12 @@
 """Royal Winnipeg Ballet School — Summer programs — Winnipeg, Canada.
 
-API FIRST — clean WordPress REST, no HTML scrape and no proxy. rwb.org runs
-WordPress (`/wp-json/` is 200, reachable on a direct fetch). The school's
-programs are a `lesson` custom post type, each record carrying the structured
+API FIRST — WordPress REST via the proxy's FlareSolverr `solve=1` tier. rwb.org
+runs WordPress, but its `/wp-json/` now sits behind a Cloudflare **managed**
+challenge (verified live 2026-06-20: `cf-mitigated: challenge`, `cType: managed`)
+that 403s a direct fetch and the proxy's plain/`auto` tiers alike — only `solve=1`
+clears it, returning the REST JSON wrapped in Chromium's JSON viewer (recovered
+with `wp.unwrap_json_viewer`; same shape as `international_ballet_masterclasses_prague`).
+The school's programs are a `lesson` custom post type, each record carrying the structured
 detail in **ACF fields** (`event_start_date`/`event_end_date`/`event_age_range`/
 `event_price`/`event_registration_deadline`/`event_location`/`event_available`)
 plus a `content.rendered` prose body that lists the class disciplines. We pull
@@ -42,12 +46,14 @@ WHAT THIS SCRAPER EXERCISES (verified live 2026-06-08):
 
 from __future__ import annotations
 
+import html
 import re
 from datetime import date
 
 import httpx
 
 from intensive_dance import parse, wp
+from intensive_dance.fetch import PROXY_PARAMS_HEADER
 from intensive_dance.models import (
     Application,
     ApplicationStatus,
@@ -89,7 +95,7 @@ def scrape(client: httpx.Client) -> list[Offering]:
     }
     if term_id is not None:
         params[SESSION_TYPE] = term_id
-    records = wp.fetch_all(client, "lesson", base=BASE, params=params)
+    records = _fetch(client, "lesson", params)
 
     today = date.today()
     offerings: list[Offering] = []
@@ -105,10 +111,30 @@ def scrape(client: httpx.Client) -> list[Offering]:
 
 def _summer_term_id(client: httpx.Client) -> int | None:
     """The `session-type` term id whose name is "summer", or None if not found."""
-    for term_id, name in wp.fetch_terms(client, SESSION_TYPE, base=BASE).items():
-        if name.strip().lower() == "summer":
-            return term_id
+    for term in _fetch(client, SESSION_TYPE, {"_fields": "id,name"}):
+        if html.unescape(term["name"]).strip().lower() == "summer":
+            return term["id"]
     return None
+
+
+def _fetch(client: httpx.Client, rest_base: str, params: dict) -> list[dict]:
+    """A WP REST collection, fetched through the proxy's FlareSolverr `solve=1` tier.
+
+    rwb.org's `/wp-json/` is behind a Cloudflare *managed* challenge that 403s a
+    direct fetch and the proxy's plain/`auto` tiers (see the module docstring), so
+    we force `solve=1` and recover the JSON from Chromium's JSON viewer rather than
+    calling `resp.json()` — which is why this can't go through `wp.fetch_all`. The
+    summer collections are a handful of records, so a single `per_page=100` page is
+    complete; there is no paginated `X-WP-TotalPages` header to follow through the
+    viewer anyway (the proxy's own response headers replace the origin's).
+    """
+    resp = client.get(
+        f"{BASE}/wp-json/wp/v2/{rest_base}",
+        params={"per_page": 100, **params},
+        headers={PROXY_PARAMS_HEADER: "solve=1"},
+    )
+    resp.raise_for_status()
+    return wp.unwrap_json_viewer(resp.text)
 
 
 def _build_offering(record: dict, today: date) -> Offering | None:  # noqa: ARG001
