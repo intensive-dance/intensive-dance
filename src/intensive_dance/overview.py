@@ -34,7 +34,10 @@ NOT_BUILDABLE: dict[str, str] = {
     "tanzolymp": "competition — icebox #80",
     "youth-america-grand-prix": "competition — icebox #80",
     # Full-time / long-term vocational only — defer to IDR-9 (#12) unless a public short course exists.
-    "universal-ballet-academy": "full-time school — defer IDR-9",
+    # Universal Ballet *does* run a public "Summer Ballet School" (Elmhurst precedent → in scope),
+    # but its only dated detail is an image poster on a tangled SPA (the EN page is an empty shell,
+    # the KO page mixes the whole company's tour/audition feed) — nothing text-scrapable yet.
+    "universal-ballet-academy": "full-time school; Summer Ballet School detail is image-only — defer",
     "teatro-opera-roma-scuola-danza": "full-time state school — defer IDR-9",
     "royal-swedish-ballet-school": "full-time school — defer IDR-9",
     "singapore-ballet": "company / full-time — defer IDR-9",
@@ -65,6 +68,20 @@ NOT_BUILDABLE: dict[str, str] = {
     "summer-intensive-gymnasium-essen": "internal Gymnasium program for own pupils — not public",
     "tanzschule-anastasia-frankfurt": "local recreational school — Sommer Intensive one-off 2022, no current edition",
     "hamburger-ballett-tanztage": "teacher-training organizer — student Ballett-Tanztage last ran Jun 2024",
+    # JP/KR/RU seeds — Phase-1 verify-or-defer sweep (site probe via fetch proxy + grounded search).
+    # All year-round schools / dormant / competition-or-company feeds / bot-walled — no current
+    # public dated student intensive that is faithfully scrapable.
+    "bolshoi-ballet-academy": (
+        "full-time state academy (Moscow State Academy of Choreography) — only online teacher "
+        "master-classes, no public dated student intensive — defer IDR-9"
+    ),
+    "matsuyama-ballet-school": "company + year-round school (ages 0–70s) — no current 夏期講習/summer course",
+    "ochi-international-ballet": "year-round school + studios + academy festival — no public summer intensive",
+    "sadamatsu-hamada-ballet": "year-round school + company — no summer intensive (WP REST search empty)",
+    "tachibana-ballet-school": "year-round school — no summer/夏期/講習 page anywhere on site",
+    "ibsi-incheon": "dormant — only the 2019 Utah-hosted edition exists, no current dated edition",
+    "seoul-ballet-theatre": "Cloudflare-walled imweb site (unreachable); Ballet Edu is year-round, no dated intensive",
+    "julia-ballet-academy": "Universal Ballet group year-round academy — site bot-walls (406), no public dated intensive",
 }
 
 _CLAIM = (
