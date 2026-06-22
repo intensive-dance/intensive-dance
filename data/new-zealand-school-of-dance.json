@@ -65,7 +65,7 @@
       "timezone": "Pacific/Auckland"
     },
     "source": {
-      "attemptedAt": "2026-06-21T10:56:58.274447Z",
+      "attemptedAt": "2026-06-22T22:28:33.055565Z",
       "hash": "sha256:38637b27ddf67eb0d6a790866a7147149d8295dfd25fd45eae411ba3cffc6468",
       "provider": "new-zealand-school-of-dance",
       "scrapedAt": "2026-06-08T14:35:11.464714Z",
@@ -118,7 +118,7 @@
       "timezone": "Pacific/Auckland"
     },
     "source": {
-      "attemptedAt": "2026-06-21T10:56:58.274447Z",
+      "attemptedAt": "2026-06-22T22:28:33.055565Z",
       "hash": "sha256:be342b2078b20a9359dbedd144ca1d92407579a7d73179d257663d83486e75ea",
       "provider": "new-zealand-school-of-dance",
       "scrapedAt": "2026-06-08T14:35:11.469011Z",
