@@ -30,7 +30,7 @@
       "timezone": "Europe/Warsaw"
     },
     "source": {
-      "attemptedAt": "2026-06-19T20:57:55.459523Z",
+      "attemptedAt": "2026-06-20T23:01:01.354238Z",
       "hash": "sha256:765cf234b4283bb6743d4f84bedbc927406ed2cbe31003e25fd0127dde0b7c38",
       "provider": "les-ballets-de-pologne",
       "scrapedAt": "2026-06-08T21:36:07.268632Z",
@@ -70,7 +70,7 @@
       "timezone": "Europe/Warsaw"
     },
     "source": {
-      "attemptedAt": "2026-06-19T20:57:55.459523Z",
+      "attemptedAt": "2026-06-20T23:01:01.354238Z",
       "hash": "sha256:4837f4b4681cc7197724c71cce7dfd2b309c0815d4eb58113422ae53dd3ac6cb",
       "provider": "les-ballets-de-pologne",
       "scrapedAt": "2026-06-08T21:36:07.268706Z",

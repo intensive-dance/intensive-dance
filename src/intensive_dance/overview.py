@@ -26,7 +26,9 @@ DOC = ROOT / "docs" / "buildable.md"
 # The register (providers.json) only carries seed/live; the scope call lives here,
 # in one place — add a line when a competition / full-time school gets seeded.
 NOT_BUILDABLE: dict[str, str] = {
-    # Competitions — icebox epic #80 (IDR-40): idea-collection only, no implementation.
+    # Competitions (the *event*) — icebox epic #80 (IDR-40): no implementation.
+    # A competition's dated *intensive* is a SEPARATE, in-scope provider with its own
+    # slug (e.g. `prix-de-lausanne-summer-intensive`, live) — don't list that one here.
     "prix-de-lausanne": "competition — icebox #80",
     "helsinki-international-ballet-competition": "competition — icebox #80",
     "tanzolymp": "competition — icebox #80",

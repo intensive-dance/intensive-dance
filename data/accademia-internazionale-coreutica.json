@@ -77,7 +77,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "attemptedAt": "2026-06-19T00:17:22.965441Z",
+      "attemptedAt": "2026-06-21T19:08:16.738654Z",
       "hash": "sha256:a82b25951ea01c7c4975c38a0cc3116f6734ad2b5cdcf080e9d4c77d42ec3479",
       "provider": "accademia-internazionale-coreutica",
       "scrapedAt": "2026-06-17T12:04:33.105667Z",
@@ -193,7 +193,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "attemptedAt": "2026-06-19T00:17:22.965441Z",
+      "attemptedAt": "2026-06-21T19:08:16.738654Z",
       "hash": "sha256:0dac4d8e5cc7b50e0f022632e08ed4c13da0c0e19bd85a05fc29311a5c2e0639",
       "provider": "accademia-internazionale-coreutica",
       "scrapedAt": "2026-06-17T12:04:33.104658Z",

@@ -71,6 +71,16 @@ def test_retries_transient_524_then_succeeds():
     assert calls["n"] == 2
 
 
+def test_retries_challenge_403_then_succeeds():
+    # A Cloudflare/StackProtect managed-challenge 403 clears non-deterministically,
+    # so a re-send of the same request usually gets through (the scrape-failure spam
+    # this guards against; see _RETRY_STATUS).
+    transport, calls = _retry_transport([403, 200])
+    response = transport.handle_request(httpx.Request("GET", "https://site.example/"))
+    assert response.status_code == 200
+    assert calls["n"] == 2
+
+
 def test_retries_transport_timeout_then_succeeds():
     transport, calls = _retry_transport([httpx.ReadTimeout("slow proxy"), 200])
     response = transport.handle_request(httpx.Request("GET", "https://site.example/"))

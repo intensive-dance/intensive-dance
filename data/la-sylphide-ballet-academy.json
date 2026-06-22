@@ -1,0 +1,333 @@
+[
+  {
+    "ageRange": {
+      "max": 15,
+      "min": 8
+    },
+    "application": {
+      "deadline": "2020-06-20",
+      "notes": "înscriere Summer school Înscrierea pentru Summer School se face online până pe data de 20",
+      "requirements": [],
+      "url": "https://baletcopii.com/summer-school-2020/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "character",
+      "contemporary"
+    ],
+    "id": "la-sylphide-ballet-academy/2020",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Bucharest",
+      "country": "RO"
+    },
+    "organization": {
+      "city": "Bucharest",
+      "country": "RO",
+      "name": "La Sylphide Academic Ballet School",
+      "slug": "la-sylphide-ballet-academy"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2020-07-24",
+      "notes": "Summer School Intensive 2020 6 – 24 Iulie",
+      "season": "2020",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 10,
+            "min": 8
+          },
+          "end": "2020-07-24",
+          "gender": "both",
+          "label": "Age group 1",
+          "notes": "Age 1: 8–10 ani",
+          "start": "2020-07-06"
+        },
+        {
+          "ageRange": {
+            "max": 12,
+            "min": 11
+          },
+          "end": "2020-07-24",
+          "gender": "both",
+          "label": "Age group 2",
+          "notes": "Age 2: 11–12 ani",
+          "start": "2020-07-06"
+        },
+        {
+          "ageRange": {
+            "max": 15,
+            "min": 13
+          },
+          "end": "2020-07-24",
+          "gender": "both",
+          "label": "Age group 3",
+          "notes": "Age 3: 13–15 ani",
+          "start": "2020-07-06"
+        }
+      ],
+      "start": "2020-07-06",
+      "timezone": "Europe/Bucharest"
+    },
+    "source": {
+      "hash": "sha256:2d2e01dee8b8ddc4c37d4f0c3f3278556d2029630c56cbb7ca567ff78dd9557e",
+      "provider": "la-sylphide-ballet-academy",
+      "scrapedAt": "2026-06-19T22:23:25.995284Z",
+      "url": "https://baletcopii.com/summer-school-2020/"
+    },
+    "teachers": [],
+    "title": "La Sylphide Summer Intensive 2020"
+  },
+  {
+    "ageRange": {
+      "max": 17,
+      "min": 8
+    },
+    "application": {
+      "deadline": "2021-06-01",
+      "notes": "înscriere Summer school Înscrierea pentru Summer School se face online până pe data de 01",
+      "requirements": [],
+      "url": "https://baletcopii.com/summer-school-2021/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "character",
+      "contemporary"
+    ],
+    "id": "la-sylphide-ballet-academy/2021",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Bucharest",
+      "country": "RO"
+    },
+    "organization": {
+      "city": "Bucharest",
+      "country": "RO",
+      "name": "La Sylphide Academic Ballet School",
+      "slug": "la-sylphide-ballet-academy"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2021-07-24",
+      "notes": "Summer School Intensive 2021 5 – 24 Iulie",
+      "season": "2021",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 11,
+            "min": 8
+          },
+          "end": "2021-07-24",
+          "gender": "both",
+          "label": "Age group 1",
+          "notes": "Age 1: 8–11 ani",
+          "start": "2021-07-05"
+        },
+        {
+          "ageRange": {
+            "max": 13,
+            "min": 12
+          },
+          "end": "2021-07-24",
+          "gender": "both",
+          "label": "Age group 2",
+          "notes": "Age 2: 12–13 ani",
+          "start": "2021-07-05"
+        },
+        {
+          "ageRange": {
+            "max": 17,
+            "min": 14
+          },
+          "end": "2021-07-24",
+          "gender": "both",
+          "label": "Age group 3",
+          "notes": "Age 3: 14–17 ani",
+          "start": "2021-07-05"
+        }
+      ],
+      "start": "2021-07-05",
+      "timezone": "Europe/Bucharest"
+    },
+    "source": {
+      "hash": "sha256:f13fb1636f6fbd089318220f9f675db7be086476e6f047f4e30daf053a58a67e",
+      "provider": "la-sylphide-ballet-academy",
+      "scrapedAt": "2026-06-19T22:23:25.993327Z",
+      "url": "https://baletcopii.com/summer-school-2021/"
+    },
+    "teachers": [],
+    "title": "La Sylphide Summer Intensive 2021"
+  },
+  {
+    "ageRange": {
+      "max": 16,
+      "min": 8
+    },
+    "application": {
+      "notes": "ÎNSCRIERE SUMMER SCHOOL Perioada de înscriere pentru Summer School s-a încheiat",
+      "requirements": [],
+      "url": "https://baletcopii.com/summer-school-2022/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "character",
+      "contemporary"
+    ],
+    "id": "la-sylphide-ballet-academy/2022",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Bucharest",
+      "country": "RO"
+    },
+    "organization": {
+      "city": "Bucharest",
+      "country": "RO",
+      "name": "La Sylphide Academic Ballet School",
+      "slug": "la-sylphide-ballet-academy"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2022-07-23",
+      "notes": "LA SYLPHIDE SUMMER INTENSIVE 4 – 23 Iulie 2022",
+      "season": "2022",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 11,
+            "min": 8
+          },
+          "end": "2022-07-23",
+          "gender": "both",
+          "label": "Age group 1",
+          "notes": "Age 1: 8–11 ani",
+          "start": "2022-07-04"
+        },
+        {
+          "ageRange": {
+            "max": 13,
+            "min": 12
+          },
+          "end": "2022-07-23",
+          "gender": "both",
+          "label": "Age group 2",
+          "notes": "Age 2: 12–13 ani",
+          "start": "2022-07-04"
+        },
+        {
+          "ageRange": {
+            "max": 16,
+            "min": 14
+          },
+          "end": "2022-07-23",
+          "gender": "both",
+          "label": "Age group 3",
+          "notes": "Age 3: 14–16 ani",
+          "start": "2022-07-04"
+        }
+      ],
+      "start": "2022-07-04",
+      "timezone": "Europe/Bucharest"
+    },
+    "source": {
+      "hash": "sha256:27682020e626f8eeb7e20419e9b2a0cfd72b64c11fb00ed98aac319b1364c2f7",
+      "provider": "la-sylphide-ballet-academy",
+      "scrapedAt": "2026-06-19T22:23:25.990964Z",
+      "url": "https://baletcopii.com/summer-school-2022/"
+    },
+    "teachers": [],
+    "title": "La Sylphide Summer Intensive 2022"
+  },
+  {
+    "ageRange": {
+      "max": 16,
+      "min": 8
+    },
+    "application": {
+      "deadline": "2024-06-25",
+      "notes": "ÎNSCRIERE SUMMER SCHOOL Înscrierea pentru Summer School se face online până pe data de 25",
+      "requirements": [],
+      "url": "https://baletcopii.com/summer-school/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "character",
+      "contemporary"
+    ],
+    "id": "la-sylphide-ballet-academy/2024",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Bucharest",
+      "country": "RO"
+    },
+    "organization": {
+      "city": "Bucharest",
+      "country": "RO",
+      "name": "La Sylphide Academic Ballet School",
+      "slug": "la-sylphide-ballet-academy"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2024-07-29",
+      "notes": "LA SYLPHIDE SUMMER INTENSIVE 10-29 Iulie 2024",
+      "season": "2024",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 10,
+            "min": 8
+          },
+          "end": "2024-07-29",
+          "gender": "both",
+          "label": "Age group 1",
+          "notes": "Age 1: 8–10 ani",
+          "start": "2024-07-10"
+        },
+        {
+          "ageRange": {
+            "max": 12,
+            "min": 11
+          },
+          "end": "2024-07-29",
+          "gender": "both",
+          "label": "Age group 2",
+          "notes": "Age 2: 11–12 ani",
+          "start": "2024-07-10"
+        },
+        {
+          "ageRange": {
+            "max": 16,
+            "min": 13
+          },
+          "end": "2024-07-29",
+          "gender": "both",
+          "label": "Age group 3",
+          "notes": "Age 3: 13–16 ani",
+          "start": "2024-07-10"
+        }
+      ],
+      "start": "2024-07-10",
+      "timezone": "Europe/Bucharest"
+    },
+    "source": {
+      "hash": "sha256:ed4a6fd6fb9e577008350b6233d1078e3607c839fc9b2123be8742b98803f79e",
+      "provider": "la-sylphide-ballet-academy",
+      "scrapedAt": "2026-06-19T22:23:25.986785Z",
+      "url": "https://baletcopii.com/summer-school/"
+    },
+    "teachers": [],
+    "title": "La Sylphide Summer Intensive 2024"
+  }
+]

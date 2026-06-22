@@ -71,7 +71,7 @@
       "timezone": "Europe/Madrid"
     },
     "source": {
-      "attemptedAt": "2026-06-19T19:20:14.274102Z",
+      "attemptedAt": "2026-06-22T06:15:14.943437Z",
       "hash": "sha256:7d99f958f6c627953319fc50d69a4e8bb1883fb882193aa7852440a5d1bdd85f",
       "provider": "nacho-duato-academy",
       "scrapedAt": "2026-06-08T10:56:58.988609Z",
@@ -220,7 +220,7 @@
       "timezone": "Europe/Madrid"
     },
     "source": {
-      "attemptedAt": "2026-06-19T19:20:14.274102Z",
+      "attemptedAt": "2026-06-22T06:15:14.943437Z",
       "hash": "sha256:d1a5392ff41725d4429428ced6b6da51686f0e383a23596ffa31a60f53a285ea",
       "provider": "nacho-duato-academy",
       "scrapedAt": "2026-06-08T10:56:58.989299Z",

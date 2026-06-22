@@ -45,7 +45,7 @@
       "start": "2026-06-29"
     },
     "source": {
-      "attemptedAt": "2026-06-19T20:57:51.361365Z",
+      "attemptedAt": "2026-06-20T21:57:53.114595Z",
       "hash": "sha256:384cce555905092ef174924d3db3892795da5092e2381905b313a993e3e982e6",
       "provider": "alberta-ballet-school",
       "scrapedAt": "2026-06-11T14:30:00.238304Z",
@@ -100,7 +100,7 @@
       "start": "2026-07-20"
     },
     "source": {
-      "attemptedAt": "2026-06-19T20:57:51.361365Z",
+      "attemptedAt": "2026-06-20T21:57:53.114595Z",
       "hash": "sha256:4ec03a3f8917f48a9cf287306c866d6d239d2eede63d2b7d87f7c42cadd3ab17",
       "provider": "alberta-ballet-school",
       "scrapedAt": "2026-06-11T14:30:00.238436Z",

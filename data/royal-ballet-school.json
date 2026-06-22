@@ -69,7 +69,7 @@
       "start": "2025-10-16"
     },
     "source": {
-      "attemptedAt": "2026-06-19T14:33:57.436935Z",
+      "attemptedAt": "2026-06-21T21:00:36.784514Z",
       "hash": "sha256:7c1af8c0a63c76725f36fa2946772d7841ecd63ba622ea0827c4e9e0ed909dfd",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-07T07:37:39.032660Z",
@@ -180,7 +180,7 @@
       "timezone": "Asia/Hong_Kong"
     },
     "source": {
-      "attemptedAt": "2026-06-19T14:33:57.436935Z",
+      "attemptedAt": "2026-06-21T21:00:36.784514Z",
       "hash": "sha256:5814711f26eee8d4f29deb605c15cb96d16f7bd05bbe764f2d55678b7459400b",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-06T18:50:10.783004Z",
@@ -287,7 +287,7 @@
       "timezone": "Asia/Tokyo"
     },
     "source": {
-      "attemptedAt": "2026-06-19T14:33:57.436935Z",
+      "attemptedAt": "2026-06-21T21:00:36.784514Z",
       "hash": "sha256:147f6511899f3df4c348211f7f9160ed7a80ec36a0300c60e97f864f427f0f8d",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-06T18:50:10.793263Z",
@@ -326,7 +326,7 @@
       "sessions": []
     },
     "source": {
-      "attemptedAt": "2026-06-19T14:33:57.436935Z",
+      "attemptedAt": "2026-06-21T21:00:36.784514Z",
       "hash": "sha256:c1fca85d40ddab04f3f5855e623f04aeecfe330272a88c62a8c6f59a91fa6bc9",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-16T09:32:02.702974Z",
@@ -388,7 +388,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "attemptedAt": "2026-06-19T14:33:57.436935Z",
+      "attemptedAt": "2026-06-21T21:00:36.784514Z",
       "hash": "sha256:818e27e5b2b1c5a75992339074e630071ab3821ea2fdb813234f6f6b487e23f0",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-16T09:32:02.689180Z",
@@ -503,7 +503,7 @@
       "timezone": "America/Los_Angeles"
     },
     "source": {
-      "attemptedAt": "2026-06-19T14:33:57.436935Z",
+      "attemptedAt": "2026-06-21T21:00:36.784514Z",
       "hash": "sha256:5e415032c40a493c3bec861861136cb07853d4c587e2f4129e0a12774b297eca",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-05T10:04:59.238599Z",
@@ -627,7 +627,7 @@
       "start": "2022-04-04"
     },
     "source": {
-      "attemptedAt": "2026-06-19T14:33:57.436935Z",
+      "attemptedAt": "2026-06-21T21:00:36.784514Z",
       "hash": "sha256:0dc3283eb577ede24ce40cd3adb4e2334d900df9aa89c19390ea6b26bdfc5757",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-07T07:37:39.037527Z",
@@ -705,7 +705,7 @@
       "timezone": "Asia/Singapore"
     },
     "source": {
-      "attemptedAt": "2026-06-19T14:33:57.436935Z",
+      "attemptedAt": "2026-06-21T21:00:36.784514Z",
       "hash": "sha256:fa72f9afb79de8786c74da2e543f8673e81f133deb911f3b7fa0ba4b5dd4bee7",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-06T18:50:10.785612Z",
@@ -765,7 +765,7 @@
       "timezone": "Europe/Madrid"
     },
     "source": {
-      "attemptedAt": "2026-06-19T14:33:57.436935Z",
+      "attemptedAt": "2026-06-21T21:00:36.784514Z",
       "hash": "sha256:83acc806d55df3488a09af6a8b8a49fc03777ce86a18aede0b6471ec011ec771",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-16T09:32:02.690429Z",
@@ -837,7 +837,7 @@
       "timezone": "Asia/Bangkok"
     },
     "source": {
-      "attemptedAt": "2026-06-19T14:33:57.436935Z",
+      "attemptedAt": "2026-06-21T21:00:36.784514Z",
       "hash": "sha256:75616eb108486261aed9651a03aa292a54caf6275173521dd681365f7e04e056",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-17T19:15:52.114637Z",
@@ -930,7 +930,7 @@
       "timezone": "Europe/London"
     },
     "source": {
-      "attemptedAt": "2026-06-19T14:33:57.436935Z",
+      "attemptedAt": "2026-06-21T21:00:36.784514Z",
       "hash": "sha256:bba7fbe9038c58f4bef27fb2814d5d1b85388c96428ef5b9449af4e05f857d60",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-07T07:37:39.039413Z",
@@ -1292,7 +1292,7 @@
       "timezone": "Europe/London"
     },
     "source": {
-      "attemptedAt": "2026-06-19T14:33:57.436935Z",
+      "attemptedAt": "2026-06-21T21:00:36.784514Z",
       "hash": "sha256:3439643ad3b7e0700cf1ec52bbfebd08ed31d27e34c2e603784bf105b0ff29b0",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-05T10:04:59.247313Z",
@@ -1358,7 +1358,7 @@
       "timezone": "Europe/London"
     },
     "source": {
-      "attemptedAt": "2026-06-19T14:33:57.436935Z",
+      "attemptedAt": "2026-06-21T21:00:36.784514Z",
       "hash": "sha256:e607b6cc4d02c3d16f3057ffe1c66a82aec49451e42badac3c4dcf6213533e9a",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-06T18:50:10.781641Z",

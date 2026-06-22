@@ -2,7 +2,7 @@
 
 A worldwide register of **intensive courses and master classes** for **classical** and **contemporary ballet**, scraped from the schools and companies that run them.
 
-> Working name. First milestone: scrape intensives into our DB. Nothing user-facing yet.
+> Working name. This repo is the **data backend** — scrapers → a committed JSON store → a consumer **feed** (`intensive_dance.bundle`). The customer-facing UI lives in a **separate** repo that consumes the feed; location-aware discovery (*intensives near a place*) shipped as IDR-73.
 
 ## What we collect
 
@@ -33,12 +33,17 @@ Python, mirroring museumsufer's ethos (pure-function scrapers, a deterministic d
 ```
 src/intensive_dance/
   models.py                 # Pydantic models == docs/data-model.md (source of truth)
+  parse.py · wp.py          # shared text/date/money helpers + WordPress REST helpers
   fetch.py                  # httpx client (UA + optional proxy)
   scrapers/                 # one pure fn per provider: scrape(client) -> list[Offering]
   run.py                    # scrape -> hash -> write data/<slug>.json
   validate.py               # offline check: committed data parses + hashes match
-  schema.py                 # derive/verify schema/offering.schema.json from the models
+  schema.py · erd.py        # derive/verify schema + ERD from the models (CI guards drift)
+  rotation.py · overview.py # hourly-scrape cursor; buildable.md generator
+  geo.py · geocode.py       # gazetteer model + haversine (pure); Nominatim enrichment (hand-run)
+  bundle.py                 # project live store + coords into the consumer feed (for the UI repo)
 data/<slug>.json            # the store: committed JSON, one file per provider
+data/gazetteer.json         # (country,city) -> coords for location-aware discovery (enrichment)
 schema/offering.schema.json # published JSON Schema for one Offering (CI guards drift)
 tests/                      # pytest: pins the regex-heavy parsing, no network
 ```
@@ -76,9 +81,11 @@ uv run pre-commit install    # ruff format + ruff check + ty on every commit
 
 The register is built out continuously — see [`providers.json`](./providers.json) for every provider and its `seed`/`live` status, and [`data/`](./data) for one JSON file per live provider (an hourly cron keeps them fresh).
 
+The live store is projected into a consumer **feed** by `intensive_dance.bundle` (live offerings joined to gazetteer coordinates). The customer-facing UI — location-aware discovery (*intensives near a place*, IDR-73) — consumes that feed from a **separate** repo, so this backend stays a clean, API-first data product.
+
 A few representative scrapers, each exercising a distinct part of the data model:
 
-- **The Royal Ballet School** ([#1](https://github.com/boredland/intensive-dance/issues/1)) — WordPress REST + WPBakery; exercises the `photos` requirement.
+- **The Royal Ballet School** ([#1](https://github.com/intensive-dance/intensive-dance/issues/1)) — WordPress REST + WPBakery; exercises the `photos` requirement.
 - **Joffrey Ballet School** — WordPress custom post types (`summer-intensives`, `workshops`) + taxonomy resolution; exercises the `video` requirement. Fees/teachers aren't published in its API, so those stay empty (documented in the scraper).
 - **Russian Masters Ballet** — the first **pure-HTML** scrape (a Bitrix site, no API/feed/JSON-LD). Discovers its summer (Alicante, Burgas, St. Petersburg) and winter (Madrid, Perth, Shanghai) locations from the two course indexes and emits one offering per program track. First to exercise **teachers with affiliations** (a named per-track roster linked to Vaganova / Bolshoi / Mariinsky / …) and the `video`/`specific` + `cv` requirement branches.
 - **MOSA Ballet School** (Liège, BE) — first European provider; a Squarespace site scraped **sitemap-first** (the sitemap indexes every event; we keep only real intensives/masterclasses and drop past cycles). Exercises EUR course-fee parsing.
@@ -86,4 +93,4 @@ A few representative scrapers, each exercising a distinct part of the data model
 - **Frankfurt Ballet Masterclasses** (Frankfurt, DE) — single-page masterclass listing; fetched over a `verify=False` client because the host serves an incomplete TLS certificate chain.
 - **Dutch National Ballet Academy** (Amsterdam, NL) — its Amsterdam International Summer School (Senior + Junior courses), from the AHK TYPO3 site; one offering per course with its own age band and fee.
 - **École de Danse de l'Opéra national de Paris** (Paris, FR) — its Summer School ("Stage d'été"), read off the large operadeparis.fr site; exercises a non-refundable application-fee note (graduated course fees left out rather than guessed).
-- **English National Ballet School** (London, GB) ([#19](https://github.com/boredland/intensive-dance/issues/19)) — its Summer Intensives, from a WordPress REST page whose WPBakery layout groups the course titles apart from their details, so the three courses are split out of the page text (one offering each, past cycles dropped); exercises a shared course fee + non-refundable application fee across sibling offerings.
+- **English National Ballet School** (London, GB) ([#19](https://github.com/intensive-dance/intensive-dance/issues/19)) — its Summer Intensives, from a WordPress REST page whose WPBakery layout groups the course titles apart from their details, so the three courses are split out of the page text (one offering each, past cycles dropped); exercises a shared course fee + non-refundable application fee across sibling offerings.
