@@ -24,12 +24,9 @@ start building** (the claim, to avoid colliding with parallel work) **or when we
 
 ## 🔝 Build queue
 
-**The live buildable list is [`buildable.md`](./buildable.md)** — generated from `providers.json` (drift-checked in CI), grouped by country, with the claim convention. We no longer hand-maintain a build-queue *table* here (it drifted as providers went live); this file keeps only **build hints** not stored in the register.
+**The live buildable list is [`buildable.md`](./buildable.md)** — generated from `providers.json` (drift-checked in CI), grouped by country, with the claim convention. We no longer hand-maintain a build-queue *table* here (it drifted as providers went live).
 
-**Build hints (source shape / audition):**
-- *American Midwest Ballet* (Omaha) — WordPress (`/wp-content/` → try `/wp-json/`); ages 11–25 (+ Junior 10–13); online audition = teacher recommendation + 1st-arabesque & tendu-à-la-seconde photos (defined-poses).
-- *Master Ballet Academy* (Scottsdale, Vaganova) — Wix (watch zero-width spaces); 6-week, min 3 wks; audition = headshot + 1st-arabesque photo (video/Zoom/in-person).
-- *Art in Motion Munich* — Wix static; 3–15 Aug 2026 (deadline 15 Jul). *Tanzquartier Köln* — WordPress (`/wp-json/`); 31 Jul–4 Aug + 24–28 Aug 2026.
+> ⚠️ **The regional-sweep sections below are dated _discovery records_, not a live status board.** Many entries marked "→ promoted to `seed`" have since gone **`live`** — including the four former build-hint leads (American Midwest Ballet, Master Ballet Academy, Art in Motion Munich, Tanzquartier Köln), whose source-shape/audition notes now live in their scrapers. The authoritative status is always [`providers.json`](../providers.json) (and [`buildable.md`](./buildable.md) for what's still buildable) — trust those, not the prose here.
 
 ## 📡 Monitor — recurring, 2026 dates not yet posted (`parked`/`scored`)
 - Teatro dell'Opera di Roma — Stage Estivo (IT · Rome, Abbagnato) — 2026 page live, dates ~July TBA — operaroma.it
@@ -37,16 +34,14 @@ start building** (the claim, to avoid colliding with parallel work) **or when we
 - Accademia Bozzolini / Balletto di Toscana SI (IT · Florence) — 2025 ran 7–19 Jul; 2026 TBA
 - Tallinn Summer Ballet (EE) · Ballet Summer Workshop Estonia (EE) · Balletto di Verona (IT) · Opus Ballet (IT · Florence) — annual, 2026 dates pending
 - GB verify-before-build: Moorland Int'l Ballet · Ballet Boost · The Hammond · Ballet West — exist annually, no live 2026 dates found (don't assert)
-- cordsdance — Intensive Ballet Workshops (PL · Wrocław, AST-Halle) — 5th ed., classical + contemporary; **20–25 Jun + 20–25 Jul 2026 announced on Instagram (@cordsdance)**, but the site's 2026 page isn't up yet (only 2023–25 exist) — cordsdance.com. Local studio, faculty unnamed. *(Instagram-sourced.)*
-- **Umbria Ballet — PBS Summer Studio** (IT · Bastia Umbra, prov. Perugia) — **already a `seed`** in providers.json; Centro Professionale di Danza founded 2005 by dir. Marina Tofi, runs a recurring week-long **P.B.S. Summer Studio** intensive with dir. Luca Masala + faculty from the **Académie Princesse Grace de Monte-Carlo** (classical + contemporary, men's/women's technique, repertoire, music). Last concretely-dated edition found = 2020 (29 Jun–4 Jul); **2026 dates not yet verified** (site bot-gated). Source = **WordPress/WooCommerce** (`/prodotto/p-b-s-summer-studio/`, `/negozio/`, `?lang=en` → likely WPML/Polylang) — direct fetch **403s, proxy needed**. — umbriaballet.com
 - Summer Intensive Gymnasium Essen-Werden (DE · Essen) — **already a `seed`** in providers.json; school-based summer intensive, faculty incl. Paula Archangelo-Cakir (ex-Aalto Ballett Theater Essen / dance medicine). *(Instagram-sourced @gymnasium_essen_werden_tanz; recorded here for tracking.)*
 
 ## ⏸️ Defer → IDR-9 (`deferred`) — full-time / long-term only, no short course
 - School of the Hamburg Ballet (DE) · Ballettakademie der Wiener Staatsoper (AT) · Royal Swedish Ballet School (SE) · Greek National Opera Dance School (GR) · Teatro di San Carlo Ballet School (IT · Naples) · Ginasiano (PT) · Čiurlionis School (LT) · Floria Capsali (RO) · CPD Sevilla (ES)
 
 ## 🚫 Out of scope (`out-of-scope`)
-- **Competitions:** Prix de Lausanne, YAGP, Varna IBC + its competition-linked summer academy, Dance World Cup.
-  - ⚠️ **Scope decision needed:** *Prix de Lausanne **Summer Intensive*** (CH, 6–11 Jul 2026) is the training feeder, **not** the competition — could be in-scope. Currently treated as out-of-scope pending your call.
+- **Competitions (the event itself):** Prix de Lausanne, YAGP, Varna IBC, Dance World Cup — icebox #80.
+  - ✅ **A competition's *intensive* is in scope**, built as a normal provider under its own slug (only the competition *event* is parked). Precedent: the *Prix de Lausanne **Summer Intensive*** (CH, 6–11 Jul 2026) is **live** (`prix-de-lausanne-summer-intensive`, IDR-72 #156); a Varna IBC summer academy or a YAGP-hosted intensive would qualify the same way.
 - **Adult-only:** Ballet Gothenburg Adult Ballet Retreat (SE) — high-calibre SAB/NYCB faculty, but adults only.
 - **Recreational/local:** Leipziger Ballettschule · Iwanson (contemp) · Grand Art Ballet (HU) · Paris Marais Dance School (amateur) · CPD Valencia / Eszena lower tracks.
 

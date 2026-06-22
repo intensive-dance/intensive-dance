@@ -75,7 +75,7 @@ See [`erd.md`](./erd.md) for the entity-relationship diagram (auto-generated fro
       "amount": 2500,                                   // integer minor-unit-free; use decimals only if the source does
       "currency": "GBP",                                // ISO 4217
       "label": "Tuition",
-      "includes": ["tuition", "studio"],                // enum-ish: tuition | accommodation | meals | materials | performance
+      "includes": ["tuition", "studio"],                // enum-ish: tuition | accommodation | meals | materials | performance | studio
       "notes": "Excludes accommodation."
     }
   ],
