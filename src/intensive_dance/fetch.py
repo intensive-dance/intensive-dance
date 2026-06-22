@@ -20,7 +20,7 @@ from urllib.parse import parse_qsl
 
 import httpx
 
-USER_AGENT = "intensive.dance scraper (+https://github.com/boredland/intensive-dance)"
+USER_AGENT = "intensive.dance scraper (+https://github.com/intensive-dance/intensive-dance)"
 
 # Transient gateway/timeout statuses worth retrying. The fetch proxy is
 # Cloudflare-fronted and, under load, intermittently returns 524 (origin
