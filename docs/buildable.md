@@ -2,7 +2,7 @@
 
 > **Generated — do not edit.** Refresh with `uv run python -m intensive_dance.overview --write`; CI drift-checks it. Source of truth: `providers.json`.
 
-0 buildable · 31 excluded · 125 live (156 providers total).
+0 buildable · 30 excluded · 126 live (156 providers total).
 
 **To claim one (so nobody double-builds):** check `gh issue list` / `gh pr list` for the slug; if free, open a `build:<slug>` issue and **self-assign first**, then build; close it when the PR merges (provider → `live`). An open claim issue *or* PR = locked. See `AGENTS.md` → Scope & coordination.
 
@@ -41,5 +41,4 @@ _Some still need Phase-1 verification (a public dated edition / not full-time) b
 - `tanzwerkstatt-europa` — Tanzwerkstatt Europa — _professional contemporary-dance festival — not a student intensive_
 - `teatro-opera-roma-scuola-danza` — Scuola di Danza del Teatro dell'Opera di Roma — _full-time state school — defer IDR-9_
 - `universal-ballet-academy` — Universal Ballet Academy — _full-time school; Summer Ballet School detail is image-only — defer_
-- `wiener-ballettakademie` — Vienna Ballet Academy (Wiener Ballettakademie) — _pre-launch — no dated edition yet (all TBC)_
 - `youth-america-grand-prix` — Youth America Grand Prix (YAGP) – Europa-Semifinals — _competition — icebox #80_
