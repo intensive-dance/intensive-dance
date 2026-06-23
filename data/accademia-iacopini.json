@@ -45,7 +45,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "attemptedAt": "2026-06-21T19:08:18.336291Z",
+      "attemptedAt": "2026-06-23T13:33:04.945702Z",
       "hash": "sha256:a98e6ba2791c998f081de0d276b53cd6b6e3e002a801ea1d0f23ccf5a345b988",
       "provider": "accademia-iacopini",
       "scrapedAt": "2026-06-17T13:49:05.718252Z",
@@ -109,7 +109,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "attemptedAt": "2026-06-21T19:08:18.336291Z",
+      "attemptedAt": "2026-06-23T13:33:04.945702Z",
       "hash": "sha256:adb1bf34a065791994af7fc483b197f71e3471d60137bc60c0023dce60bc7e75",
       "provider": "accademia-iacopini",
       "scrapedAt": "2026-06-17T13:49:05.718008Z",
@@ -229,7 +229,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "attemptedAt": "2026-06-21T19:08:18.336291Z",
+      "attemptedAt": "2026-06-23T13:33:04.945702Z",
       "hash": "sha256:feeffd33c9bd80e2b332d11e7d01059739dbde251e0d1243ac8918395f1f814e",
       "provider": "accademia-iacopini",
       "scrapedAt": "2026-06-17T13:49:05.717747Z",
