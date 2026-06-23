@@ -4,8 +4,9 @@ API FIRST
 The DBfT site is plain server-rendered HTML (latin-1 encoded), no WordPress REST
 and no `ld+json` on the course page — a direct fetch returns the full content, so
 this is a structural `selectolax` text scrape. The provider's registered URL
-(`/Berufsregister/Sommerakademie-Junior/`) 404s; the live page lives under
-`/Fortbildungen-Weiterbildungen/Seminarangebot/Sommerakademie-Junior/index.html`.
+:The provider's registered URL (`/Berufsregister/Sommerakademie-Junior/`) 404s; the
+:live content is embedded in the parent `/Fortbildungen-Weiterbildungen/Seminarangebot/`
+:page (the dedicated detail page was removed and its content merged upstream).
 
 DISCOVERY — one dated edition = one Offering.
 The page documents the current "Aktuelles Programm <year>": a single five/six-day
@@ -22,8 +23,7 @@ form URL are recorded.
 The stated "sehr gute Vorkenntnisse im Klassischen Tanz" is a participation
 prerequisite, not an audition/photo/video gate, so it does not become a
 `requirement` (same call as staatsballett_berlin_feriencamp).
-
-WHAT THIS SCRAPER EXERCISES (verified live 2026-06-11)
+WHAT THIS SCRAPER EXERCISES (verified live 2026-06-23)
 - Numeric German date span ("Mo, 24.08.2026 bis Sa, 29.08.2026"), scoped to the
   "Zeitraum:" sentence so the same-format application deadline ("15.06.2026")
   isn't mis-read as a course date.
@@ -53,10 +53,7 @@ from intensive_dance.models import (
     now_utc,
 )
 
-PAGE = (
-    "https://www.dbft.de/Fortbildungen-Weiterbildungen/"
-    "Seminarangebot/Sommerakademie-Junior/index.html"
-)
+PAGE = "https://www.dbft.de/Fortbildungen-Weiterbildungen/Seminarangebot/"
 SLUG = "dbft-sommerakademie"
 
 ORG = Organization(name="DBfT — Sommerakademie Junior", slug=SLUG, country="DE", city="Dortmund")
