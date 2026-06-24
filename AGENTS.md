@@ -547,6 +547,23 @@ when a second provider genuinely needs the identical thing.
   *undated* edition still renders ("No items found", a future-year "contact us") —
   emit nothing for it rather than borrow a date from the site calendar (see
   `new_zealand_school_of_dance`).
+- **base44 React SPAs render nothing without JS — force `render=1`.** A
+  base44-built site (image/asset URLs under `base44.app/api/apps/<id>/…`) has no
+  `/wp-json/`, no `Event`/`Course` `ld+json` (only generic SEO meta), and **no
+  inline state blob** — the program data is fetched client-side, so the static
+  HTML is an empty shell (a sea of `"… manages N data types including inquiries"`
+  SEO boilerplate plus a nav listing *every* page incl. builder scaffolds like
+  "Business Plan Content"/"Faculty Admin", a tell-tale of an un-launched template).
+  Read the stealth-rendered DOM: force `render=1` per-request via
+  `PROXY_PARAMS_HEADER`, then parse the rendered text by **stable content strings**
+  (React class names are hashed/useless). The real React-Helmet `og:title` carries
+  `data-rh="true"` — the bare template default sits alongside it, so pick the
+  `data-rh` one. Pricing cards render as `label / "€ amount" / "Deposit to secure:
+  € amount"` line triples; faculty as `Name` + a `Title · Company` credential line
+  (parse current-vs-former from a `(YYYY–YYYY)` tenure). **Re-verify stale
+  deferrals in season:** this provider was excluded "pre-launch — all TBC" months
+  ago and by June 2026 had a concrete dated edition — a peak-season re-check
+  flipped it back to buildable (see `wiener_ballettakademie`, #362).
 - **A bot-gated HTML site can still expose a PDF source.** A provider's HTML and
   `/wp-json/` can sit behind an aggressive bot challenge the proxy's stealth/CF
   tiers clear only intermittently, while a **PDF in its file store** (e.g. the

@@ -1,0 +1,144 @@
+[
+  {
+    "ageRange": {
+      "max": null,
+      "min": 15
+    },
+    "application": {
+      "notes": "Open enrolment for advanced students & professionals; secure a place by paying a deposit, with the balance due 30 days before the start date.",
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "open",
+      "url": "https://wienerballettakademie.com/Contact?type=enrollment&program=summer_intensive_2026"
+    },
+    "genres": [
+      "classical",
+      "repertoire",
+      "pointe",
+      "contemporary"
+    ],
+    "id": "wiener-ballettakademie/intensive-ballet-masterclass-2026",
+    "level": [
+      "advanced",
+      "professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Vienna",
+      "country": "AT",
+      "venue": "Wiener Ballettakademie"
+    },
+    "organization": {
+      "city": "Vienna",
+      "country": "AT",
+      "name": "Wiener Ballettakademie",
+      "slug": "wiener-ballettakademie"
+    },
+    "prices": [
+      {
+        "amount": 890.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Full Masterclass",
+        "notes": "Deposit to secure: €200."
+      },
+      {
+        "amount": 1290.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Full Masterclass + Individual Lessons",
+        "notes": "Deposit to secure: €300."
+      },
+      {
+        "amount": 150.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Individual Lessons Only",
+        "notes": "From €150 per lesson. Deposit to secure: €150."
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-30",
+      "notes": "24 – 30 August 2026",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-24",
+      "timezone": "Europe/Vienna"
+    },
+    "source": {
+      "hash": "sha256:f18d0c250355a7106845615f6e3ef21d7547486dc903677b051b2a10b1dc79c7",
+      "provider": "wiener-ballettakademie",
+      "scrapedAt": "2026-06-23T16:15:40.913882Z",
+      "url": "https://wienerballettakademie.com/SummerIntensive"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Galina Skuratova",
+        "role": "faculty"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Wiener Staatsballett",
+            "role": "First Soloist",
+            "slug": "wiener-staatsballett"
+          }
+        ],
+        "name": "Maria Yakovleva",
+        "role": "faculty"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Wiener Staatsballett",
+            "role": "Soloist",
+            "slug": "wiener-staatsballett"
+          }
+        ],
+        "name": "Mihail Sosnovschi",
+        "role": "faculty"
+      },
+      {
+        "affiliations": [
+          {
+            "current": false,
+            "organization": "Vienna State Opera",
+            "role": "Principal Dancer"
+          }
+        ],
+        "name": "Iryna Tsymbal",
+        "role": "faculty"
+      },
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Wiener Staatsballett",
+            "role": "Soloist",
+            "slug": "wiener-staatsballett"
+          }
+        ],
+        "name": "Eno Peçi",
+        "role": "faculty"
+      },
+      {
+        "affiliations": [],
+        "name": "Alexandru Frunza",
+        "role": "faculty"
+      }
+    ],
+    "title": "Intensive Ballet Masterclass 2026"
+  }
+]
