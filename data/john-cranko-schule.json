@@ -1,11 +1,6 @@
 [
   {
-    "ageRange": {
-      "max": 19,
-      "min": 12
-    },
     "application": {
-      "deadline": "2026-05-08",
       "notes": "Apply by video (~15–20 min) showing excerpts from barre, centre and jumps (plus a variation if available).",
       "requirements": [
         {
@@ -20,17 +15,12 @@
           "type": "photos"
         }
       ],
-      "status": "closed",
       "url": "https://www.john-cranko-schule.de/summer_school/"
     },
     "genres": [
-      "classical",
-      "contemporary",
-      "repertoire",
-      "character",
-      "pointe"
+      "classical"
     ],
-    "id": "john-cranko-schule/summer-school-2026",
+    "id": "john-cranko-schule/summer-school-2027",
     "level": [],
     "lifecycle": "scheduled",
     "location": {
@@ -43,34 +33,20 @@
       "name": "John Cranko School",
       "slug": "john-cranko-schule"
     },
-    "prices": [
-      {
-        "amount": 650.0,
-        "currency": "EUR",
-        "includes": [
-          "tuition",
-          "performance"
-        ],
-        "label": "Tuition (6 days incl. performance)",
-        "type": "tuition"
-      }
-    ],
+    "prices": [],
     "schedule": {
-      "end": "2026-06-06",
-      "notes": "1. Juni 2026 bis Samstag, 6. Juni 2026",
-      "season": "2026",
+      "season": "2027",
       "sessions": [],
-      "start": "2026-06-01",
       "timezone": "Europe/Berlin"
     },
     "source": {
-      "attemptedAt": "2026-06-23T20:58:48.949000Z",
-      "hash": "sha256:8a6b02f3c3d30577ef08557eb6f2d46191200dd39eda40970035e76f5be843bf",
+      "attemptedAt": "2026-06-24T23:54:50.450146Z",
+      "hash": "sha256:25d0f67ed17115abccc5207645867f2bd0c3b5d332addb4cd0361a3333f5601d",
       "provider": "john-cranko-schule",
-      "scrapedAt": "2026-06-06T16:10:04.411524Z",
+      "scrapedAt": "2026-06-24T23:54:51.418258Z",
       "url": "https://www.john-cranko-schule.de/summer_school/"
     },
     "teachers": [],
-    "title": "John Cranko School Summer School 2026"
+    "title": "John Cranko School Summer School 2027"
   }
 ]
