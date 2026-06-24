@@ -36,7 +36,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "One Intensive — Violet"
+        "label": "One Intensive — Violet",
+        "type": "tuition"
       },
       {
         "amount": 485.0,
@@ -44,7 +45,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "One Intensive — Indigo/ Aqua"
+        "label": "One Intensive — Indigo/ Aqua",
+        "type": "tuition"
       },
       {
         "amount": 650.0,
@@ -52,7 +54,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Both Intensives — Violet"
+        "label": "Both Intensives — Violet",
+        "type": "tuition"
       },
       {
         "amount": 890.0,
@@ -60,7 +63,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Both Intensives — Indigo/ Aqua"
+        "label": "Both Intensives — Indigo/ Aqua",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -85,7 +89,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T20:58:48.679170Z",
-      "hash": "sha256:bf44a3943d9179c6b39d02454c3f7351460dd2d81da289aab12a8663497f8f7d",
+      "hash": "sha256:22ab1256e37af2f926d1d349cefc9c2743f83b1fa616e0c43586ae7357a7b38d",
       "provider": "idc-berlin",
       "scrapedAt": "2026-06-05T18:21:12.142686Z",
       "url": "https://www.idc-dance.com/summer"

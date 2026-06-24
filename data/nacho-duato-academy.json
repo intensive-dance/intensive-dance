@@ -41,7 +41,8 @@
           "meals"
         ],
         "label": "All-inclusive Senior (2 weeks)",
-        "notes": "Includes all classes, 14 nights lodging, breakfast and dinner."
+        "notes": "Includes all classes, 14 nights lodging, breakfast and dinner.",
+        "type": "tuition"
       },
       {
         "amount": 750.0,
@@ -50,7 +51,8 @@
           "tuition"
         ],
         "label": "Senior — 1 week (all classes)",
-        "notes": "Includes Sonia Dawkins special guest workshop."
+        "notes": "Includes Sonia Dawkins special guest workshop.",
+        "type": "tuition"
       },
       {
         "amount": 1400.0,
@@ -59,7 +61,8 @@
           "tuition"
         ],
         "label": "Senior — 2 weeks (all classes)",
-        "notes": "Includes Sonia Dawkins special guest workshop."
+        "notes": "Includes Sonia Dawkins special guest workshop.",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -72,7 +75,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T20:58:48.953386Z",
-      "hash": "sha256:7d99f958f6c627953319fc50d69a4e8bb1883fb882193aa7852440a5d1bdd85f",
+      "hash": "sha256:f15841cd2f736fb391ec678983f312c1da4d2e60b63b00d872b3233b852799a1",
       "provider": "nacho-duato-academy",
       "scrapedAt": "2026-06-08T10:56:58.988609Z",
       "url": "https://nachoduatoacademy.com/en/summer-intensive-ballet-course-2/"
@@ -200,7 +203,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Junior — 1 week"
+        "label": "Junior — 1 week",
+        "type": "tuition"
       },
       {
         "amount": 800.0,
@@ -208,7 +212,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Junior — 2 weeks"
+        "label": "Junior — 2 weeks",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -221,7 +226,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T20:58:48.953386Z",
-      "hash": "sha256:d1a5392ff41725d4429428ced6b6da51686f0e383a23596ffa31a60f53a285ea",
+      "hash": "sha256:5274c0b4a2908f2492b573bd01fa7d845aa97a0eaa2972e5b1d8c851798e0893",
       "provider": "nacho-duato-academy",
       "scrapedAt": "2026-06-08T10:56:58.989299Z",
       "url": "https://nachoduatoacademy.com/en/summer-intensive-ballet-course-2/"

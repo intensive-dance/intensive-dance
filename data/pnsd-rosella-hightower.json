@@ -35,13 +35,15 @@
           "tuition"
         ],
         "label": "Forfait stage (tarif normal)",
-        "notes": "Moins de 13 ans : 446 €"
+        "notes": "Moins de 13 ans : 446 €",
+        "type": "tuition"
       },
       {
         "amount": 35.0,
         "currency": "EUR",
         "includes": [],
-        "label": "Adhésion annuelle obligatoire"
+        "label": "Adhésion annuelle obligatoire",
+        "type": "other"
       }
     ],
     "schedule": {
@@ -53,7 +55,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T16:16:57.253720Z",
-      "hash": "sha256:bc784305ad64c3999715dc524f5891efd454f12a7081bda49c2174cebe1781f6",
+      "hash": "sha256:79d446665d5d6a185008b13d0bf8e11306e3ce98be96030b799d7fcdb9a33d8b",
       "provider": "pnsd-rosella-hightower",
       "scrapedAt": "2026-06-07T08:35:40.830637Z",
       "url": "https://www.pnsd.fr/stages"
@@ -128,13 +130,15 @@
           "tuition"
         ],
         "label": "Forfait stage (tarif normal)",
-        "notes": "Moins de 13 ans : 491 €"
+        "notes": "Moins de 13 ans : 491 €",
+        "type": "tuition"
       },
       {
         "amount": 35.0,
         "currency": "EUR",
         "includes": [],
-        "label": "Adhésion annuelle obligatoire"
+        "label": "Adhésion annuelle obligatoire",
+        "type": "other"
       }
     ],
     "schedule": {
@@ -147,7 +151,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T16:16:57.253720Z",
-      "hash": "sha256:9c05642cfcb3585324860ce795636cbe6aeab281d734849bfcd8b9bbb3344442",
+      "hash": "sha256:85ddc60194f9ae664c6ec2b6b2082c61c9225d8e461525ae5dbca86683bdf9c2",
       "provider": "pnsd-rosella-hightower",
       "scrapedAt": "2026-06-07T08:35:40.830876Z",
       "url": "https://www.pnsd.fr/stages"
@@ -217,13 +221,15 @@
           "tuition"
         ],
         "label": "Forfait stage (tarif normal)",
-        "notes": "Moins de 13 ans : 491 €"
+        "notes": "Moins de 13 ans : 491 €",
+        "type": "tuition"
       },
       {
         "amount": 35.0,
         "currency": "EUR",
         "includes": [],
-        "label": "Adhésion annuelle obligatoire"
+        "label": "Adhésion annuelle obligatoire",
+        "type": "other"
       }
     ],
     "schedule": {
@@ -236,7 +242,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T16:16:57.253720Z",
-      "hash": "sha256:bc4077100f523f1735d54162ea3e81f3295badddcb8a4d5a5dbc207cbe557e21",
+      "hash": "sha256:8bd50afbfa8dd63cbc8639981e1b26ea20d25aaa0eb593d81c33c17d960c913a",
       "provider": "pnsd-rosella-hightower",
       "scrapedAt": "2026-06-07T08:35:40.830979Z",
       "url": "https://www.pnsd.fr/stages"
@@ -306,13 +312,15 @@
           "tuition"
         ],
         "label": "Forfait stage (tarif normal)",
-        "notes": "Moins de 13 ans : 491 €"
+        "notes": "Moins de 13 ans : 491 €",
+        "type": "tuition"
       },
       {
         "amount": 35.0,
         "currency": "EUR",
         "includes": [],
-        "label": "Adhésion annuelle obligatoire"
+        "label": "Adhésion annuelle obligatoire",
+        "type": "other"
       }
     ],
     "schedule": {
@@ -325,7 +333,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T16:16:57.253720Z",
-      "hash": "sha256:b76b1b7ba6f6f75a1d4c3d845ce6eef73695e30ec49a6a53a934999bd4b6a9b4",
+      "hash": "sha256:5f7a257fe5aab94406cd057bef9b959fff90686cf69d167da431cf20f3ccb211",
       "provider": "pnsd-rosella-hightower",
       "scrapedAt": "2026-06-07T08:35:40.831062Z",
       "url": "https://www.pnsd.fr/stages"

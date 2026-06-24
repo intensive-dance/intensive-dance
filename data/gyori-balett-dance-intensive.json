@@ -34,7 +34,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Per hour (single workshop)"
+        "label": "Per hour (single workshop)",
+        "type": "tuition"
       },
       {
         "amount": 40000.0,
@@ -42,7 +43,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "5-day pass (single workshop)"
+        "label": "5-day pass (single workshop)",
+        "type": "tuition"
       },
       {
         "amount": 80000.0,
@@ -50,7 +52,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "5-day combined pass (classical + contemporary)"
+        "label": "5-day combined pass (classical + contemporary)",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -71,7 +74,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T20:58:48.973957Z",
-      "hash": "sha256:0ac0583fe8ff5029a81b6faac3ebdeff42ede43a79b1cf1593a97e5bc69eda93",
+      "hash": "sha256:10b812e844e420fc1fd0bbdc730f5228413b0b82bcec53d733475202afed3018",
       "provider": "gyori-balett-dance-intensive",
       "scrapedAt": "2026-06-12T13:23:29.208816Z",
       "url": "https://gyoribalett.hu/dance-intensive-gyor-2025-en/"

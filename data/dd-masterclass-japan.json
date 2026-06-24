@@ -35,7 +35,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "早割料金（全日程・税込）"
+        "label": "早割料金（全日程・税込）",
+        "type": "tuition"
       },
       {
         "amount": 97000.0,
@@ -43,7 +44,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "通常料金（全日程・税込）"
+        "label": "通常料金（全日程・税込）",
+        "type": "tuition"
       },
       {
         "amount": 30000.0,
@@ -51,7 +53,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "1日受講（税込）"
+        "label": "1日受講（税込）",
+        "type": "tuition"
       },
       {
         "amount": 15000.0,
@@ -59,7 +62,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "プライベートレッスン（15分・税込）"
+        "label": "プライベートレッスン（15分・税込）",
+        "type": "tuition"
       },
       {
         "amount": 87000.0,
@@ -67,7 +71,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "第16・17回受講者割引（全日程・税込）"
+        "label": "第16・17回受講者割引（全日程・税込）",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -96,7 +101,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T11:35:17.453120Z",
-      "hash": "sha256:3bbf797b614ced05d22453be7cd38a0ece9e64c2f3a9f707698cbf7d8601ea74",
+      "hash": "sha256:cb5be585d0aca538a735ec15897c18f00acbd7d1fbadb39b190e2a33a32d1b3b",
       "provider": "dd-masterclass-japan",
       "scrapedAt": "2026-06-06T07:35:24.256022Z",
       "url": "https://www.dd-balletjapan.com/18th-tokyo"
@@ -156,7 +161,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "早割料金（全日程・税込）"
+        "label": "早割料金（全日程・税込）",
+        "type": "tuition"
       },
       {
         "amount": 72000.0,
@@ -164,7 +170,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "通常料金（全日程・税込）"
+        "label": "通常料金（全日程・税込）",
+        "type": "tuition"
       },
       {
         "amount": 30000.0,
@@ -172,7 +179,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "1日受講（税込）"
+        "label": "1日受講（税込）",
+        "type": "tuition"
       },
       {
         "amount": 15000.0,
@@ -180,7 +188,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "プライベートレッスン（15分・税込）"
+        "label": "プライベートレッスン（15分・税込）",
+        "type": "tuition"
       },
       {
         "amount": 62000.0,
@@ -188,7 +197,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "第16・17回受講者割引（全日程・税込）"
+        "label": "第16・17回受講者割引（全日程・税込）",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -217,7 +227,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T11:35:17.453120Z",
-      "hash": "sha256:476695ea0284d6188f35f68d676843737e6c41e9ca610e0122a9bb7db86886d3",
+      "hash": "sha256:2cff7095e85fc7e3b375210bc15e4fdce170bb8ad9195256735c0901a43f170f",
       "provider": "dd-masterclass-japan",
       "scrapedAt": "2026-06-06T07:35:24.367414Z",
       "url": "https://www.dd-balletjapan.com/18th-osaka"

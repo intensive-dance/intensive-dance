@@ -42,7 +42,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Standard fee"
+        "label": "Standard fee",
+        "type": "tuition"
       },
       {
         "amount": 700.0,
@@ -51,7 +52,8 @@
           "tuition"
         ],
         "label": "Early Bird fee",
-        "notes": "Early Bird pricing ends before the stated cut-off date."
+        "notes": "Early Bird pricing ends before the stated cut-off date.",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -75,7 +77,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T01:50:35.807825Z",
-      "hash": "sha256:ed6bdb2158405c4331c493837896309df08add0aaf9e8c3998937d2b63e0961f",
+      "hash": "sha256:6b7cf9761caca564570f92933185a1128b16e0c22f4fd6f96021274cdd912e1d",
       "provider": "australian-ballet-school",
       "scrapedAt": "2026-06-08T13:39:52.925085Z",
       "url": "https://www.australianballetschool.com.au/products/summer-school-2026-boys-program"
@@ -126,7 +128,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Standard fee"
+        "label": "Standard fee",
+        "type": "tuition"
       },
       {
         "amount": 700.0,
@@ -135,7 +138,8 @@
           "tuition"
         ],
         "label": "Early Bird fee",
-        "notes": "Early Bird pricing ends before the stated cut-off date."
+        "notes": "Early Bird pricing ends before the stated cut-off date.",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -159,7 +163,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T01:50:35.807825Z",
-      "hash": "sha256:3198d797bb8d93b0bdab464fb93b79580f70080fb45f44b30398d939ccb2c86b",
+      "hash": "sha256:792480705336f274bdeaf1253faa0e36375d7289a762dde43ef5ab219387f2dc",
       "provider": "australian-ballet-school",
       "scrapedAt": "2026-06-08T13:39:52.925869Z",
       "url": "https://www.australianballetschool.com.au/products/summer-school-2026-open-program"
@@ -209,7 +213,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Standard fee"
+        "label": "Standard fee",
+        "type": "tuition"
       },
       {
         "amount": 700.0,
@@ -218,7 +223,8 @@
           "tuition"
         ],
         "label": "Early Bird fee",
-        "notes": "Early Bird pricing ends before the stated cut-off date."
+        "notes": "Early Bird pricing ends before the stated cut-off date.",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -242,7 +248,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T01:50:35.807825Z",
-      "hash": "sha256:f858407942910f8250347bdea00482d31fb6c55226a2f33a58158ad21a99f187",
+      "hash": "sha256:5a9be900b8b2dddf4c8c33d912cc4ae7eac0054599c88587849566b976e13bac",
       "provider": "australian-ballet-school",
       "scrapedAt": "2026-06-08T13:39:52.926173Z",
       "url": "https://www.australianballetschool.com.au/products/summer-school-2026-pre-professional-program"
@@ -292,7 +298,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Standard fee"
+        "label": "Standard fee",
+        "type": "tuition"
       },
       {
         "amount": 700.0,
@@ -301,7 +308,8 @@
           "tuition"
         ],
         "label": "Early Bird fee",
-        "notes": "Early Bird pricing ends before the stated cut-off date."
+        "notes": "Early Bird pricing ends before the stated cut-off date.",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -325,7 +333,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T01:50:35.807825Z",
-      "hash": "sha256:534ed941b58f0982cdbd7344b00729866639f9aa19f3e99094357bda6d392574",
+      "hash": "sha256:ecf4ec88b5c1b1276215fb7c38a54928a1d830001a62aceb21239fb8a9b9e637",
       "provider": "australian-ballet-school",
       "scrapedAt": "2026-06-08T13:39:52.925535Z",
       "url": "https://www.australianballetschool.com.au/products/summer-school-2026-creative-program"
@@ -376,7 +384,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Standard fee"
+        "label": "Standard fee",
+        "type": "tuition"
       },
       {
         "amount": 700.0,
@@ -385,7 +394,8 @@
           "tuition"
         ],
         "label": "Early Bird fee",
-        "notes": "Early Bird pricing ends before the stated cut-off date."
+        "notes": "Early Bird pricing ends before the stated cut-off date.",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -409,7 +419,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T01:50:35.807825Z",
-      "hash": "sha256:fde75fcfa9c400e89bf2d8938d3001309611484530446f598ff80750e80a0f7f",
+      "hash": "sha256:7b459972be147de637af9ef1c3451ab157787fb1b1a343bb90b8a7428f077997",
       "provider": "australian-ballet-school",
       "scrapedAt": "2026-06-08T13:39:52.925889Z",
       "url": "https://www.australianballetschool.com.au/products/summer-school-2026-open-program"
@@ -459,7 +469,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Standard fee"
+        "label": "Standard fee",
+        "type": "tuition"
       },
       {
         "amount": 700.0,
@@ -468,7 +479,8 @@
           "tuition"
         ],
         "label": "Early Bird fee",
-        "notes": "Early Bird pricing ends before the stated cut-off date."
+        "notes": "Early Bird pricing ends before the stated cut-off date.",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -492,7 +504,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T01:50:35.807825Z",
-      "hash": "sha256:fa06696e325fca4813a4fca32843f12b2c51d1e451a66674c678c57cbaac8a56",
+      "hash": "sha256:7d7c7ed944cffcea589db139913a955778feebab8416fd89800c9cd760528624",
       "provider": "australian-ballet-school",
       "scrapedAt": "2026-06-08T13:39:52.926190Z",
       "url": "https://www.australianballetschool.com.au/products/summer-school-2026-pre-professional-program"

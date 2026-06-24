@@ -41,7 +41,8 @@
           "tuition"
         ],
         "label": "Full 3-week program — early bird (by Dec 31), 7 artists",
-        "notes": "One-week blocks (€680–840) and single workshops (€280–340) are also offered; ballet classes are included in full weeks, €40 extra otherwise."
+        "notes": "One-week blocks (€680–840) and single workshops (€280–340) are also offered; ballet classes are included in full weeks, €40 extra otherwise.",
+        "type": "tuition"
       },
       {
         "amount": 2040.0,
@@ -50,7 +51,8 @@
           "tuition"
         ],
         "label": "Full 3-week program — early bird (by Dec 31), 8 artists incl. Emilie Leriche",
-        "notes": "One-week blocks (€680–840) and single workshops (€280–340) are also offered; ballet classes are included in full weeks, €40 extra otherwise."
+        "notes": "One-week blocks (€680–840) and single workshops (€280–340) are also offered; ballet classes are included in full weeks, €40 extra otherwise.",
+        "type": "tuition"
       },
       {
         "amount": 2300.0,
@@ -59,7 +61,8 @@
           "tuition"
         ],
         "label": "Full 3-week program — regular (registration fee included)",
-        "notes": "One-week blocks (€680–840) and single workshops (€280–340) are also offered; ballet classes are included in full weeks, €40 extra otherwise."
+        "notes": "One-week blocks (€680–840) and single workshops (€280–340) are also offered; ballet classes are included in full weeks, €40 extra otherwise.",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -86,7 +89,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T10:25:10.326031Z",
-      "hash": "sha256:080df5a1bde036d3214b01fd1172b25e47d0623d9307cbc3f8ccb33450edb12e",
+      "hash": "sha256:596f17e1be3d90efc823f72c71370cbabc95b4f1362c743481f4823c9dca2992",
       "provider": "nuova-officina-della-danza",
       "scrapedAt": "2026-06-17T11:30:01.890574Z",
       "url": "https://www.nuovaofficinadelladanza.org/nodsummerintensiveprogram26"

@@ -58,7 +58,8 @@
           "tuition",
           "accommodation"
         ],
-        "label": "Per week (tuition + accommodation)"
+        "label": "Per week (tuition + accommodation)",
+        "type": "tuition"
       },
       {
         "amount": 700.0,
@@ -67,7 +68,8 @@
           "tuition"
         ],
         "label": "Per week (accommodation not included)",
-        "notes": "Optional meals available."
+        "notes": "Optional meals available.",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -79,7 +81,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T23:44:39.901380Z",
-      "hash": "sha256:a476154a8241ed694f0adea7d42d3962b80332df776a0f061f099edd03a01c70",
+      "hash": "sha256:3406c81952bcf9d98c1b9f5f874ebcf2b021d8ff0d46b05cb4d15136fa3455f4",
       "provider": "academie-princesse-grace",
       "scrapedAt": "2026-06-16T08:41:46.962072Z",
       "url": "https://www.balletsdemontecarlo.com/en/princess-grace-academy/admission-short-courses"
@@ -146,7 +148,8 @@
           "tuition",
           "accommodation"
         ],
-        "label": "Per week (tuition + accommodation)"
+        "label": "Per week (tuition + accommodation)",
+        "type": "tuition"
       },
       {
         "amount": 700.0,
@@ -155,7 +158,8 @@
           "tuition"
         ],
         "label": "Per week (accommodation not included)",
-        "notes": "Optional meals available."
+        "notes": "Optional meals available.",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -167,7 +171,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T23:44:39.901380Z",
-      "hash": "sha256:2149669255af6d0fb65e35d537fd5cdcf41c17b000c22f1bff74b1083bc87903",
+      "hash": "sha256:db041380daa7601583394def0d451c1fb68c472685661ba2addb737815afa07f",
       "provider": "academie-princesse-grace",
       "scrapedAt": "2026-06-16T08:41:46.962072Z",
       "url": "https://www.balletsdemontecarlo.com/en/princess-grace-academy/admission-short-courses"
@@ -234,7 +238,8 @@
           "tuition",
           "accommodation"
         ],
-        "label": "Per week (tuition + accommodation)"
+        "label": "Per week (tuition + accommodation)",
+        "type": "tuition"
       },
       {
         "amount": 700.0,
@@ -243,7 +248,8 @@
           "tuition"
         ],
         "label": "Per week (accommodation not included)",
-        "notes": "Optional meals available."
+        "notes": "Optional meals available.",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -255,7 +261,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T23:44:39.901380Z",
-      "hash": "sha256:d0fc92784375f68812177f8d4cf7a26742061af98a8f028560f8218c8076b3d4",
+      "hash": "sha256:4636236a071f7de6264dc80ddaec293de08f9d3f2197fa1727d6f16d288e55be",
       "provider": "academie-princesse-grace",
       "scrapedAt": "2026-06-16T08:41:46.962072Z",
       "url": "https://www.balletsdemontecarlo.com/en/princess-grace-academy/admission-short-courses"
@@ -322,7 +328,8 @@
           "tuition",
           "accommodation"
         ],
-        "label": "Per week (tuition + accommodation)"
+        "label": "Per week (tuition + accommodation)",
+        "type": "tuition"
       },
       {
         "amount": 700.0,
@@ -331,7 +338,8 @@
           "tuition"
         ],
         "label": "Per week (accommodation not included)",
-        "notes": "Optional meals available."
+        "notes": "Optional meals available.",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -343,7 +351,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T23:44:39.901380Z",
-      "hash": "sha256:b42b854bc293148b13e8380a43e42507ffbfe6dd17ca2c96553e9f48cf5ec8be",
+      "hash": "sha256:6b3ae12e438a4999090b34863e82545f1d8d9836fa6e0abbc0f4fcc87b2e2b03",
       "provider": "academie-princesse-grace",
       "scrapedAt": "2026-06-16T08:41:46.962072Z",
       "url": "https://www.balletsdemontecarlo.com/en/princess-grace-academy/admission-short-courses"

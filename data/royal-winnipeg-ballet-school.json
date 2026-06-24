@@ -45,7 +45,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition"
+        "label": "Tuition",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -57,7 +58,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T11:35:19.069173Z",
-      "hash": "sha256:4e1fb15a62245bd5a7c9e0986b23f81c7c4cad07d99e4f2bf77108d5f596e36f",
+      "hash": "sha256:f2d7fd4196805154566c2f116b21c2d5a547ad59f5b41834906df31e7f156e63",
       "provider": "royal-winnipeg-ballet-school",
       "scrapedAt": "2026-06-08T14:08:43.022965Z",
       "url": "https://www.rwb.org/school/programs-classes/dance-intensive/"

@@ -35,7 +35,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Company Experience Week"
+        "label": "Company Experience Week",
+        "type": "tuition"
       },
       {
         "amount": 500.0,
@@ -43,7 +44,8 @@
         "includes": [
           "accommodation"
         ],
-        "label": "Accommodation"
+        "label": "Accommodation",
+        "type": "accommodation"
       }
     ],
     "schedule": {
@@ -55,7 +57,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T16:16:55.169016Z",
-      "hash": "sha256:b7c9b7cf17c95b48d486cf334b36e94af1820059dafeb557eb4fc2b41667b4d1",
+      "hash": "sha256:05e3953809b64e95095f2f32ed33a650780e9ae6e2f515c5a908258fa66b71ad",
       "provider": "dutch-national-ballet-academy",
       "scrapedAt": "2026-06-16T08:57:07.921418Z",
       "url": "https://www.atd.ahk.nl/en/dance-programmes/dutch-national-ballet-academy/summer-school/"
@@ -99,7 +101,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Junior Course"
+        "label": "Junior Course",
+        "type": "tuition"
       },
       {
         "amount": 500.0,
@@ -107,7 +110,8 @@
         "includes": [
           "accommodation"
         ],
-        "label": "Accommodation"
+        "label": "Accommodation",
+        "type": "accommodation"
       }
     ],
     "schedule": {
@@ -119,7 +123,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T16:16:55.169016Z",
-      "hash": "sha256:fe2dd32f2d15d299aa3dd22d4cfaf6d989255aca79db7d65e571f694aa73dfde",
+      "hash": "sha256:69ef06b9997db143cc586fd23d15f5af6adcf0c024c924740bd620ef6b8b06bb",
       "provider": "dutch-national-ballet-academy",
       "scrapedAt": "2026-06-16T08:57:07.915830Z",
       "url": "https://www.atd.ahk.nl/en/dance-programmes/dutch-national-ballet-academy/summer-school/"
@@ -163,7 +167,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Senior Course"
+        "label": "Senior Course",
+        "type": "tuition"
       },
       {
         "amount": 1100.0,
@@ -171,7 +176,8 @@
         "includes": [
           "accommodation"
         ],
-        "label": "Accommodation"
+        "label": "Accommodation",
+        "type": "accommodation"
       }
     ],
     "schedule": {
@@ -183,7 +189,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T16:16:55.169016Z",
-      "hash": "sha256:f7870162ce772abd8d0ed95463d48eb4016c0adb6c65635934e3a59d133c5d11",
+      "hash": "sha256:fe98ce96a1d57de93aaeccc1b2265ecda30008b86b926ac7c7b2817ccae62322",
       "provider": "dutch-national-ballet-academy",
       "scrapedAt": "2026-06-16T08:57:07.914757Z",
       "url": "https://www.atd.ahk.nl/en/dance-programmes/dutch-national-ballet-academy/summer-school/"

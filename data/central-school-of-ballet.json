@@ -160,7 +160,8 @@
           "tuition"
         ],
         "label": "Two week course (11-16 years)",
-        "notes": "Accommodation and meals are not provided."
+        "notes": "Accommodation and meals are not provided.",
+        "type": "tuition"
       },
       {
         "amount": 190.0,
@@ -169,7 +170,8 @@
           "tuition"
         ],
         "label": "Additional English Classes",
-        "notes": "Optional; available for dancers on the two-week course."
+        "notes": "Optional; available for dancers on the two-week course.",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -181,7 +183,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T13:33:03.158110Z",
-      "hash": "sha256:b11950c344e73077c23ef26d8b7ac2435f36a999c784c73013ceb6f2c0a99e8f",
+      "hash": "sha256:946ed2640e9a27cac297b46137f983d52c4cc8784fc90a667252f5ba26ba5e32",
       "provider": "central-school-of-ballet",
       "scrapedAt": "2026-06-19T14:33:58.597001Z",
       "url": "https://www.centralschoolofballet.co.uk/dance-classes-courses/short-courses/ballet-intensives/"
@@ -242,7 +244,8 @@
           "tuition"
         ],
         "label": "One week course (14-16 years)",
-        "notes": "Accommodation and meals are not provided."
+        "notes": "Accommodation and meals are not provided.",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -254,7 +257,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T13:33:03.158110Z",
-      "hash": "sha256:43097bb8ee90bfd62f4b3031ac3ce5448edb4cfcb61b5828871e122db702eb9f",
+      "hash": "sha256:e8f9beecc035521227611cce3e6d5c4dfb3acc26d4d24618602d916a23786754",
       "provider": "central-school-of-ballet",
       "scrapedAt": "2026-06-19T14:33:58.596541Z",
       "url": "https://www.centralschoolofballet.co.uk/dance-classes-courses/short-courses/ballet-intensives/"
@@ -315,7 +318,8 @@
           "tuition"
         ],
         "label": "One week course (11-13 years)",
-        "notes": "Accommodation and meals are not provided."
+        "notes": "Accommodation and meals are not provided.",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -327,7 +331,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T13:33:03.158110Z",
-      "hash": "sha256:3d47c0eeb1fef5fd8b4966073135f73b4443caf581dcf3a37b43e6fba909b5f4",
+      "hash": "sha256:2182f8cfbb29680062c2b72221f7da313ec3e151aefcbdca756766526e429a1f",
       "provider": "central-school-of-ballet",
       "scrapedAt": "2026-06-19T14:33:58.596903Z",
       "url": "https://www.centralschoolofballet.co.uk/dance-classes-courses/short-courses/ballet-intensives/"

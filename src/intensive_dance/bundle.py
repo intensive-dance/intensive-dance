@@ -28,15 +28,21 @@ DATA_DIR = ROOT / "data"
 PROVIDERS = ROOT / "providers.json"
 
 
+def _price_type(p: dict) -> str:
+    """A price's category, preferring the stored `type`; falls back to the legacy
+    tuition `includes` tag for any pre-migration record in the feed."""
+    return p.get("type") or ("tuition" if "tuition" in (p.get("includes") or []) else "other")
+
+
 def _headline_price(prices: list[dict]) -> dict | None:
-    """The single price worth showing. Prefer a `tuition`-tagged charge (the
-    actual course price); else fall back to the first price but flag it as a
-    `fee`, so the page can say "application fee: X" instead of mislabelling a
+    """The single price worth showing. Prefer the `tuition` charge (the actual
+    course price); else fall back to the first price but flag it as a `fee`, so
+    the page can say "application fee: X" instead of mislabelling a
     registration/deposit charge as the course price. `None` if none is published.
     """
     if not prices:
         return None
-    tuition = next((p for p in prices if "tuition" in (p.get("includes") or [])), None)
+    tuition = next((p for p in prices if _price_type(p) == "tuition"), None)
     chosen = tuition or prices[0]
     return {
         "amount": chosen.get("amount"),
@@ -89,8 +95,7 @@ def _project(offering: dict, coords: dict[str, tuple[float, float]]) -> dict:
                 "amount": p.get("amount"),
                 "currency": p.get("currency"),
                 "label": p.get("label"),
-                # a charge is a fee unless it's tagged as (part of) tuition
-                "fee": "tuition" not in (p.get("includes") or []),
+                "fee": _price_type(p) != "tuition",
             }
             for p in offering.get("prices", [])
         ],

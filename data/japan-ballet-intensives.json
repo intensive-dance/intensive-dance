@@ -37,7 +37,8 @@
           "tuition"
         ],
         "label": "2-Day Workshop (4 classes, tax incl.)",
-        "notes": "50% reduction on the regular price starting from the second participant of the same family."
+        "notes": "50% reduction on the regular price starting from the second participant of the same family.",
+        "type": "tuition"
       },
       {
         "amount": 15000.0,
@@ -46,7 +47,8 @@
           "tuition"
         ],
         "label": "One day (2 classes, tax incl.)",
-        "notes": "50% reduction on the regular price starting from the second participant of the same family."
+        "notes": "50% reduction on the regular price starting from the second participant of the same family.",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -58,7 +60,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T16:16:56.812818Z",
-      "hash": "sha256:ed9462d0471a25e561cb13b5466c74f58876d21d4ed23f0cddf1a0d43f450310",
+      "hash": "sha256:8e088c72cb2b4a174f3c6febb2d4ec6f218ba2d6eb0139b85edf0f627d0c0828",
       "provider": "japan-ballet-intensives",
       "scrapedAt": "2026-06-09T03:35:37.525639Z",
       "url": "https://www.jbi-japanballetintensives.com/"

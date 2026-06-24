@@ -37,7 +37,8 @@
           "tuition"
         ],
         "label": "Beide Module (Ballett & Contemporary)",
-        "notes": "Mitglieder: 169 EUR"
+        "notes": "Mitglieder: 169 EUR",
+        "type": "tuition"
       },
       {
         "amount": 110.0,
@@ -46,7 +47,8 @@
           "tuition"
         ],
         "label": "Klassisches Ballett",
-        "notes": "Mitglieder: 99 EUR"
+        "notes": "Mitglieder: 99 EUR",
+        "type": "tuition"
       },
       {
         "amount": 89.0,
@@ -55,7 +57,8 @@
           "tuition"
         ],
         "label": "Contemporary",
-        "notes": "Mitglieder: 79 EUR"
+        "notes": "Mitglieder: 79 EUR",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -68,7 +71,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T08:47:46.749340Z",
-      "hash": "sha256:00e962c4cc8075da230dd9d3daf224ada1b47ef924c62f031218706124203f31",
+      "hash": "sha256:c46d129b0d4268454fe66f0074a098805529c2d474dc9a72ce7f80e198c3cb04",
       "provider": "tanzquartier-koeln",
       "scrapedAt": "2026-06-16T08:50:03.176563Z",
       "url": "https://tanzquartier.koeln/workshops/intensiv-workshop-sommerferien-2026"

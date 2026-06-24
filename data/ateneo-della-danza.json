@@ -39,7 +39,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition (full)"
+        "label": "Tuition (full)",
+        "type": "tuition"
       },
       {
         "amount": 600.0,
@@ -47,7 +48,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition (early-bird, by 15 May)"
+        "label": "Tuition (early-bird, by 15 May)",
+        "type": "tuition"
       },
       {
         "amount": 540.0,
@@ -55,7 +57,8 @@
         "includes": [
           "accommodation"
         ],
-        "label": "Accommodation (double/triple room, breakfast)"
+        "label": "Accommodation (double/triple room, breakfast)",
+        "type": "accommodation"
       },
       {
         "amount": 295.0,
@@ -63,7 +66,8 @@
         "includes": [
           "meals"
         ],
-        "label": "Meals (lunch + dinner, full course)"
+        "label": "Meals (lunch + dinner, full course)",
+        "type": "meals"
       }
     ],
     "schedule": {
@@ -75,7 +79,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:09.028636Z",
-      "hash": "sha256:06f7b01192c466caacc3200a0542f3b893c011dd5b36fe41df5bbc4ef6043bab",
+      "hash": "sha256:0602d24a3d76858372d8e968883e8d8b95282a33bbd85843677eb708628a8b45",
       "provider": "ateneo-della-danza",
       "scrapedAt": "2026-06-17T12:34:17.902456Z",
       "url": "https://www.ateneodelladanza.it/intensive-summer-school/"

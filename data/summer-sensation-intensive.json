@@ -40,7 +40,8 @@
           "tuition"
         ],
         "label": "1 week",
-        "notes": "Includes the registration cost."
+        "notes": "Includes the registration cost.",
+        "type": "tuition"
       },
       {
         "amount": 995.0,
@@ -49,7 +50,8 @@
           "tuition"
         ],
         "label": "2 weeks",
-        "notes": "Includes the registration cost."
+        "notes": "Includes the registration cost.",
+        "type": "tuition"
       },
       {
         "amount": 1395.0,
@@ -58,7 +60,8 @@
           "tuition"
         ],
         "label": "3 weeks",
-        "notes": "Includes the registration cost."
+        "notes": "Includes the registration cost.",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -87,7 +90,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T16:16:54.718406Z",
-      "hash": "sha256:1f00d46da013310ac080beff19d27179eea247cb7939f77605fbad5b0d76265c",
+      "hash": "sha256:b559106e52c9ccdc2c7621825f6904311482ccb08380563b3699d4a2a5ee915a",
       "provider": "summer-sensation-intensive",
       "scrapedAt": "2026-06-10T00:24:17.596393Z",
       "url": "https://www.dart.theater/summer-intensive-berlin"
@@ -164,7 +167,8 @@
           "tuition"
         ],
         "label": "Workshop price",
-        "notes": "Includes the cost of registration."
+        "notes": "Includes the cost of registration.",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -177,7 +181,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T16:16:54.718406Z",
-      "hash": "sha256:7234d2bde53df3035b03a7575bccf64f6960d63158ca471eed06c30d8d214e4e",
+      "hash": "sha256:75cb4331ea131d2f0a37db8b61130523ac29c81e0b6b1ad4208761565ef23cc0",
       "provider": "summer-sensation-intensive",
       "scrapedAt": "2026-06-16T09:21:09.070444Z",
       "url": "https://www.dart.theater/summer-intensive-milan"

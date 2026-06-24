@@ -54,7 +54,8 @@
           "tuition"
         ],
         "label": "Full course tuition (two weeks)",
-        "notes": "Payable in two installments; the second is due by July 31st."
+        "notes": "Payable in two installments; the second is due by July 31st.",
+        "type": "tuition"
       },
       {
         "amount": 860.0,
@@ -62,7 +63,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "One week tuition"
+        "label": "One week tuition",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -74,7 +76,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T05:54:45.651600Z",
-      "hash": "sha256:98706ba2ab1f139519d498a49e321f7895831e2b5abc1460e01e287ad00f8845",
+      "hash": "sha256:72ed8ddff92d2a9c7d254717f1d7360d28af5d93f40873f6f3cec61174028692",
       "provider": "prague-ballet-intensive",
       "scrapedAt": "2026-06-06T19:42:35.188110Z",
       "url": "https://www.pragueballetintensive.com/"

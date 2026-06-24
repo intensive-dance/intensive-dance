@@ -31,7 +31,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Total cost"
+        "label": "Total cost",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -43,7 +44,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:09.636756Z",
-      "hash": "sha256:091a0f4edbffa2b99385a56ef7e62f130d73c1ef0c60905ef21b0005567c0703",
+      "hash": "sha256:1cd0ee14127b1cff4307b41b17f3954278fb6346e4626e08c3e636c47d2ee20c",
       "provider": "fondazione-monreart",
       "scrapedAt": "2026-06-05T11:49:49.972566Z",
       "url": "https://www.monreart.com/eventi/international-spring-school-italia/"
@@ -92,7 +93,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Total cost"
+        "label": "Total cost",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -104,7 +106,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:09.636756Z",
-      "hash": "sha256:2de478ff9b60a5e265b0642116087346fabee2f31aee59ed0f25128e0abab693",
+      "hash": "sha256:2e43e9e49358c2891c993a60bb7fc868b219dce16f63083750119707654f3e06",
       "provider": "fondazione-monreart",
       "scrapedAt": "2026-06-10T06:43:51.289718Z",
       "url": "https://www.monreart.com/eventi/international-summer-school-budapest/"
@@ -152,7 +154,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Total cost"
+        "label": "Total cost",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -164,7 +167,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:09.636756Z",
-      "hash": "sha256:16f97bb91f7f57d76f549da2d59783e54c67c5259f99368cedd173fbb11acc3c",
+      "hash": "sha256:5c6692af947a8b01894b847a14210f13516f9cffdc89893765c496023864dc50",
       "provider": "fondazione-monreart",
       "scrapedAt": "2026-06-10T06:43:49.503810Z",
       "url": "https://www.monreart.com/eventi/international-summer-school-cyprus/"
@@ -213,7 +216,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Total cost"
+        "label": "Total cost",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -225,7 +229,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:09.636756Z",
-      "hash": "sha256:b701d08a0530fce5354abf80e3488dbc4b50e068ab1761d87f04d6e65c297969",
+      "hash": "sha256:82f672bfd1e18670689300c2e59b7acd4af4405e18ac72136672a1362b1f9015",
       "provider": "fondazione-monreart",
       "scrapedAt": "2026-06-10T06:43:56.731675Z",
       "url": "https://www.monreart.com/eventi/international-summer-school-volta-mantovana/"
@@ -264,7 +268,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Total cost"
+        "label": "Total cost",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -276,7 +281,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:09.636756Z",
-      "hash": "sha256:aee3e88c345075809a7cab01b594ccda73d1fdf8932f0b2d64c298788a170708",
+      "hash": "sha256:889e28f73de919c8afa30e6d95efb06046cc2aca4cb8de3e980fd312f472ccc7",
       "provider": "fondazione-monreart",
       "scrapedAt": "2026-06-21T15:42:39.677127Z",
       "url": "https://www.monreart.com/eventi/international-winter-school-verona/"

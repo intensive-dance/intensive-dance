@@ -44,7 +44,8 @@
           "tuition",
           "meals"
         ],
-        "label": "Per week"
+        "label": "Per week",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -67,7 +68,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T01:50:37.574630Z",
-      "hash": "sha256:d051a8fd2b3ad2225ff026494878b5ef2294e34e5b8187f1b80b0bea6e93cb80",
+      "hash": "sha256:f9432e2c6a076af1ed8b641564d04f4776798cf70cd574b2d2edd8a2525f6587",
       "provider": "accademia-teatro-alla-scala",
       "scrapedAt": "2026-06-05T18:57:45.297370Z",
       "url": "https://www.accademialascala.it/danza/stage-estivi-di-danza"

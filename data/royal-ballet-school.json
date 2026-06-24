@@ -37,7 +37,8 @@
           "tuition"
         ],
         "label": "Course fee",
-        "notes": "Course fee: £160 Want to hear more about our Intensives?"
+        "notes": "Course fee: £160 Want to hear more about our Intensives?",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -70,7 +71,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T13:33:05.696464Z",
-      "hash": "sha256:7c1af8c0a63c76725f36fa2946772d7841ecd63ba622ea0827c4e9e0ed909dfd",
+      "hash": "sha256:df193dd3a711ee33bbb5f33747713a29956be7077f96f4f49554c00442c701cd",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-07T07:37:39.032660Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/autumn-intensives/"
@@ -123,7 +124,8 @@
           "tuition"
         ],
         "label": "Three half-days, non-selective (7-8 years)",
-        "notes": "Three half-days, non-selective (7-8 years): £396"
+        "notes": "Three half-days, non-selective (7-8 years): £396",
+        "type": "tuition"
       },
       {
         "amount": 1220.0,
@@ -132,21 +134,24 @@
           "tuition"
         ],
         "label": "Five full-days, selective (9-18 years)",
-        "notes": "Five full-days, selective (9-18 years): £1220"
+        "notes": "Five full-days, selective (9-18 years): £1220",
+        "type": "tuition"
       },
       {
         "amount": 48.0,
         "currency": "GBP",
         "includes": [],
         "label": "Application fee: ",
-        "notes": "Application fee: £48 (only required for selective course, 9-18 years)"
+        "notes": "Application fee: £48 (only required for selective course, 9-18 years)",
+        "type": "registration"
       },
       {
         "amount": 125.0,
         "currency": "GBP",
         "includes": [],
         "label": "Additional coaching sessions",
-        "notes": "Additional coaching sessions: £125 per session (1.25 hours)"
+        "notes": "Additional coaching sessions: £125 per session (1.25 hours)",
+        "type": "other"
       }
     ],
     "schedule": {
@@ -181,7 +186,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T13:33:05.696464Z",
-      "hash": "sha256:5814711f26eee8d4f29deb605c15cb96d16f7bd05bbe764f2d55678b7459400b",
+      "hash": "sha256:20c211d90d76c5056e5fd7f900acd68718c47d2e5c08078618ed662c6724df1c",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-06T18:50:10.783004Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/hong-kong-intensive/"
@@ -235,7 +240,8 @@
           "tuition"
         ],
         "label": "9-18 years (three full-days, selective)",
-        "notes": "9-18 years (three full-days, selective): £660"
+        "notes": "9-18 years (three full-days, selective): £660",
+        "type": "tuition"
       },
       {
         "amount": 125.0,
@@ -244,7 +250,8 @@
           "tuition"
         ],
         "label": "18+ adult classes (non-selective)",
-        "notes": "18+ adult classes (non-selective): £125 per class OR £225 two class bundle"
+        "notes": "18+ adult classes (non-selective): £125 per class OR £225 two class bundle",
+        "type": "tuition"
       },
       {
         "amount": 225.0,
@@ -253,21 +260,24 @@
           "tuition"
         ],
         "label": "per class OR",
-        "notes": "18+ adult classes (non-selective): £125 per class OR £225 two class bundle"
+        "notes": "18+ adult classes (non-selective): £125 per class OR £225 two class bundle",
+        "type": "tuition"
       },
       {
         "amount": 48.0,
         "currency": "GBP",
         "includes": [],
         "label": "Application fee",
-        "notes": "Application fee: £48 (only required for selective course, 9-18 years)"
+        "notes": "Application fee: £48 (only required for selective course, 9-18 years)",
+        "type": "registration"
       },
       {
         "amount": 125.0,
         "currency": "GBP",
         "includes": [],
         "label": "Additional coaching (11-18 years, non-selective)",
-        "notes": "Additional coaching (11-18 years, non-selective): £125 per session (1.25 hours) – you do not have to attend the Intensive to sign up to these coaching sessions"
+        "notes": "Additional coaching (11-18 years, non-selective): £125 per session (1.25 hours) – you do not have to attend the Intensive to sign up to these coaching sessions",
+        "type": "other"
       }
     ],
     "schedule": {
@@ -288,7 +298,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T13:33:05.696464Z",
-      "hash": "sha256:147f6511899f3df4c348211f7f9160ed7a80ec36a0300c60e97f864f427f0f8d",
+      "hash": "sha256:1762b3a881d2186cb8b2749f74297f66269275b51197a5f19fd72bab26521b05",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-06T18:50:10.793263Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/japan-intensive/"
@@ -376,7 +386,8 @@
           "tuition"
         ],
         "label": "Fee",
-        "notes": "£75 for the two-day masterclass – no application fee"
+        "notes": "£75 for the two-day masterclass – no application fee",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -389,7 +400,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T13:33:05.696464Z",
-      "hash": "sha256:818e27e5b2b1c5a75992339074e630071ab3821ea2fdb813234f6f6b487e23f0",
+      "hash": "sha256:d9b4d2c8b726fbd730181183e17810366300a4baf3af8965f6619b62cd05b8c9",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-16T09:32:02.689180Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/livorno-masterclasses/"
@@ -443,21 +454,24 @@
           "tuition"
         ],
         "label": "Course fee",
-        "notes": "Course fee: £865 per week"
+        "notes": "Course fee: £865 per week",
+        "type": "tuition"
       },
       {
         "amount": 48.0,
         "currency": "GBP",
         "includes": [],
         "label": "Application fee",
-        "notes": "Application fee: £48"
+        "notes": "Application fee: £48",
+        "type": "registration"
       },
       {
         "amount": 125.0,
         "currency": "GBP",
         "includes": [],
         "label": "Additional coaching sessions",
-        "notes": "Additional coaching sessions: £125 per session (1 hour)"
+        "notes": "Additional coaching sessions: £125 per session (1 hour)",
+        "type": "other"
       }
     ],
     "schedule": {
@@ -504,7 +518,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T13:33:05.696464Z",
-      "hash": "sha256:5e415032c40a493c3bec861861136cb07853d4c587e2f4129e0a12774b297eca",
+      "hash": "sha256:140d3020f263e474f899c00e6e02d294cb73000882c5912fb4b499df8f649f62",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-05T10:04:59.238599Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/los-angeles-intensive/"
@@ -554,7 +568,8 @@
           "tuition"
         ],
         "label": "Age 10- 12 years",
-        "notes": "Age 10- 12 years: £60  Age 13- 15 years: £60"
+        "notes": "Age 10- 12 years: £60  Age 13- 15 years: £60",
+        "type": "tuition"
       },
       {
         "amount": 60.0,
@@ -563,7 +578,8 @@
           "tuition"
         ],
         "label": "Age 13- 15 years",
-        "notes": "Age 10- 12 years: £60  Age 13- 15 years: £60"
+        "notes": "Age 10- 12 years: £60  Age 13- 15 years: £60",
+        "type": "tuition"
       },
       {
         "amount": 14.0,
@@ -572,7 +588,8 @@
           "tuition"
         ],
         "label": "Focus/Pilates class (45 minutes)",
-        "notes": "Focus/Pilates class (45 minutes): £14  Contemporary (1 hour): £16  Ballet class/Adult Ballet class (1 hour 15 minutes): £18  Private group class: £40 (limited to 20 registrants per class)  Q&As and Pre-Recorded Video’s: £5"
+        "notes": "Focus/Pilates class (45 minutes): £14  Contemporary (1 hour): £16  Ballet class/Adult Ballet class (1 hour 15 minutes): £18  Private group class: £40 (limited to 20 registrants per class)  Q&As and Pre-Recorded Video’s: £5",
+        "type": "tuition"
       },
       {
         "amount": 16.0,
@@ -581,7 +598,8 @@
           "tuition"
         ],
         "label": "Contemporary (1 hour)",
-        "notes": "Focus/Pilates class (45 minutes): £14  Contemporary (1 hour): £16  Ballet class/Adult Ballet class (1 hour 15 minutes): £18  Private group class: £40 (limited to 20 registrants per class)  Q&As and Pre-Recorded Video’s: £5"
+        "notes": "Focus/Pilates class (45 minutes): £14  Contemporary (1 hour): £16  Ballet class/Adult Ballet class (1 hour 15 minutes): £18  Private group class: £40 (limited to 20 registrants per class)  Q&As and Pre-Recorded Video’s: £5",
+        "type": "tuition"
       },
       {
         "amount": 18.0,
@@ -590,7 +608,8 @@
           "tuition"
         ],
         "label": "Ballet class/Adult Ballet class (1 hour 15 minutes)",
-        "notes": "Focus/Pilates class (45 minutes): £14  Contemporary (1 hour): £16  Ballet class/Adult Ballet class (1 hour 15 minutes): £18  Private group class: £40 (limited to 20 registrants per class)  Q&As and Pre-Recorded Video’s: £5"
+        "notes": "Focus/Pilates class (45 minutes): £14  Contemporary (1 hour): £16  Ballet class/Adult Ballet class (1 hour 15 minutes): £18  Private group class: £40 (limited to 20 registrants per class)  Q&As and Pre-Recorded Video’s: £5",
+        "type": "tuition"
       },
       {
         "amount": 40.0,
@@ -599,7 +618,8 @@
           "tuition"
         ],
         "label": "Private group class",
-        "notes": "Focus/Pilates class (45 minutes): £14  Contemporary (1 hour): £16  Ballet class/Adult Ballet class (1 hour 15 minutes): £18  Private group class: £40 (limited to 20 registrants per class)  Q&As and Pre-Recorded Video’s: £5"
+        "notes": "Focus/Pilates class (45 minutes): £14  Contemporary (1 hour): £16  Ballet class/Adult Ballet class (1 hour 15 minutes): £18  Private group class: £40 (limited to 20 registrants per class)  Q&As and Pre-Recorded Video’s: £5",
+        "type": "tuition"
       },
       {
         "amount": 5.0,
@@ -608,7 +628,8 @@
           "tuition"
         ],
         "label": "(limited to 20 registrants per class)  Q&As and Pre-Recorded Video’s",
-        "notes": "Focus/Pilates class (45 minutes): £14  Contemporary (1 hour): £16  Ballet class/Adult Ballet class (1 hour 15 minutes): £18  Private group class: £40 (limited to 20 registrants per class)  Q&As and Pre-Recorded Video’s: £5"
+        "notes": "Focus/Pilates class (45 minutes): £14  Contemporary (1 hour): £16  Ballet class/Adult Ballet class (1 hour 15 minutes): £18  Private group class: £40 (limited to 20 registrants per class)  Q&As and Pre-Recorded Video’s: £5",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -628,7 +649,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T13:33:05.696464Z",
-      "hash": "sha256:0dc3283eb577ede24ce40cd3adb4e2334d900df9aa89c19390ea6b26bdfc5757",
+      "hash": "sha256:116b6c5f4c3ebb4020737ea53a0b257e131829edbe365dcf5f1229dbf51a2155",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-07T07:37:39.037527Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/online-spring-intensive/"
@@ -678,14 +699,16 @@
           "tuition"
         ],
         "label": "Course",
-        "notes": "Course: £396"
+        "notes": "Course: £396",
+        "type": "tuition"
       },
       {
         "amount": 100.0,
         "currency": "GBP",
         "includes": [],
         "label": "Additional coaching",
-        "notes": "Additional coaching: £100 per session (1 hour)"
+        "notes": "Additional coaching: £100 per session (1 hour)",
+        "type": "other"
       }
     ],
     "schedule": {
@@ -706,7 +729,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T13:33:05.696464Z",
-      "hash": "sha256:fa72f9afb79de8786c74da2e543f8673e81f133deb911f3b7fa0ba4b5dd4bee7",
+      "hash": "sha256:eb5c3ebc894d69971705433c16f4f3090476cdda4ec210c88c1e43b32472a436",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-06T18:50:10.785612Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/singapore-intensive/"
@@ -753,7 +776,8 @@
           "tuition"
         ],
         "label": "Fee",
-        "notes": "£55"
+        "notes": "£55",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -766,7 +790,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T13:33:05.696464Z",
-      "hash": "sha256:83acc806d55df3488a09af6a8b8a49fc03777ce86a18aede0b6471ec011ec771",
+      "hash": "sha256:628fd4e9b744e84b0ab03e2d2ded51a9e7aa39afd59218f936853d1b60fb4310",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-16T09:32:02.690429Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/spain-masterclasses/"
@@ -817,7 +841,8 @@
           "tuition"
         ],
         "label": "Fee",
-        "notes": "£438"
+        "notes": "£438",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -838,7 +863,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T13:33:05.696464Z",
-      "hash": "sha256:75616eb108486261aed9651a03aa292a54caf6275173521dd681365f7e04e056",
+      "hash": "sha256:14b82b6c8a96514117d46e24a07f22bed699d513eaf9e7c61e943ac5117f8af1",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-17T19:15:52.114637Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/thailand-intensive/"
@@ -889,7 +914,8 @@
         "currency": "GBP",
         "includes": [],
         "label": "Application fee",
-        "notes": "Application fee: £48"
+        "notes": "Application fee: £48",
+        "type": "registration"
       },
       {
         "amount": 865.0,
@@ -898,7 +924,8 @@
           "tuition"
         ],
         "label": "Five days, non-residential",
-        "notes": "Five days, non-residential: £865"
+        "notes": "Five days, non-residential: £865",
+        "type": "tuition"
       },
       {
         "amount": 1485.0,
@@ -909,7 +936,8 @@
           "meals"
         ],
         "label": "Five days, residential (catering included)",
-        "notes": "Five days, residential (catering included): £1,485 Upper School"
+        "notes": "Five days, residential (catering included): £1,485 Upper School",
+        "type": "tuition"
       },
       {
         "amount": 485.0,
@@ -918,7 +946,8 @@
           "tuition"
         ],
         "label": "Three days, non-residential",
-        "notes": "Three days, non-residential: £485"
+        "notes": "Three days, non-residential: £485",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -931,7 +960,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T13:33:05.696464Z",
-      "hash": "sha256:bba7fbe9038c58f4bef27fb2814d5d1b85388c96428ef5b9449af4e05f857d60",
+      "hash": "sha256:e85dde2526938a177899f17aa32feeaed0dbc9ca9dd8ea7217b04b1e6a9d2b0b",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-07T07:37:39.039413Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/uk-spring-intensive/"
@@ -983,7 +1012,8 @@
         "currency": "GBP",
         "includes": [],
         "label": "Application fee",
-        "notes": "Application fee: £48 Non-selective course (students aged 8-9 years)"
+        "notes": "Application fee: £48 Non-selective course (students aged 8-9 years)",
+        "type": "registration"
       },
       {
         "amount": 485.0,
@@ -992,7 +1022,8 @@
           "tuition"
         ],
         "label": "Non-selective course (students aged 8-9 years)",
-        "notes": "£485 per 3 day week. You can book as many weeks as you wish."
+        "notes": "£485 per 3 day week. You can book as many weeks as you wish.",
+        "type": "tuition"
       },
       {
         "amount": 1730.0,
@@ -1001,7 +1032,8 @@
           "tuition"
         ],
         "label": "Ages 16-19 (non-residential) (2 weeks)",
-        "notes": "Ages 16-19 (non-residential) | Upper School, Covent Garden | 2 weeks | £1,730"
+        "notes": "Ages 16-19 (non-residential) | Upper School, Covent Garden | 2 weeks | £1,730",
+        "type": "tuition"
       },
       {
         "amount": 2970.0,
@@ -1012,7 +1044,8 @@
           "meals"
         ],
         "label": "Ages 16-19 (residential-catering) (2 weeks)",
-        "notes": "Ages 16-19 (residential-catering) | Upper School, Covent Garden | 2 weeks | £2,970"
+        "notes": "Ages 16-19 (residential-catering) | Upper School, Covent Garden | 2 weeks | £2,970",
+        "type": "tuition"
       },
       {
         "amount": 2595.0,
@@ -1021,7 +1054,8 @@
           "tuition"
         ],
         "label": "Ages 16-19 (non-residential) (3 weeks)",
-        "notes": "Ages 16-19 (non-residential) | Upper School, Covent Garden | 3 weeks | £2,595"
+        "notes": "Ages 16-19 (non-residential) | Upper School, Covent Garden | 3 weeks | £2,595",
+        "type": "tuition"
       },
       {
         "amount": 4455.0,
@@ -1032,7 +1066,8 @@
           "meals"
         ],
         "label": "Ages 16-19 (residential-catering) (3 weeks)",
-        "notes": "Ages 16-19 (residential-catering) | Upper School, Covent Garden | 3 weeks | £4,455"
+        "notes": "Ages 16-19 (residential-catering) | Upper School, Covent Garden | 3 weeks | £4,455",
+        "type": "tuition"
       },
       {
         "amount": 4325.0,
@@ -1041,7 +1076,8 @@
           "tuition"
         ],
         "label": "Ages 16-19 (non-residential) (5 weeks)",
-        "notes": "Ages 16-19 (non-residential) | Upper School, Covent Garden | 5 weeks | £4,325"
+        "notes": "Ages 16-19 (non-residential) | Upper School, Covent Garden | 5 weeks | £4,325",
+        "type": "tuition"
       },
       {
         "amount": 7425.0,
@@ -1052,7 +1088,8 @@
           "meals"
         ],
         "label": "Ages 16-19 (residential-catering) (5 weeks)",
-        "notes": "Ages 16-19 (residential-catering) | Upper School, Covent Garden | 5 weeks | £7,425"
+        "notes": "Ages 16-19 (residential-catering) | Upper School, Covent Garden | 5 weeks | £7,425",
+        "type": "tuition"
       },
       {
         "amount": 865.0,
@@ -1061,7 +1098,8 @@
           "tuition"
         ],
         "label": "Ages 10-15 (non-residential) (1 week)",
-        "notes": "Ages 10-15 (non-residential) | White Lodge, Richmond | 1 week | £865"
+        "notes": "Ages 10-15 (non-residential) | White Lodge, Richmond | 1 week | £865",
+        "type": "tuition"
       },
       {
         "amount": 1485.0,
@@ -1072,7 +1110,8 @@
           "meals"
         ],
         "label": "Ages 10-15 (residential-catering) (1 week)",
-        "notes": "Ages 10-15 (residential-catering) | White Lodge, Richmond | 1 week | £1,485"
+        "notes": "Ages 10-15 (residential-catering) | White Lodge, Richmond | 1 week | £1,485",
+        "type": "tuition"
       },
       {
         "amount": 1730.0,
@@ -1081,7 +1120,8 @@
           "tuition"
         ],
         "label": "Ages 13-15 (non-residential) (2 weeks)",
-        "notes": "Ages 13-15 (non-residential) | White Lodge, Richmond | 2 weeks | £1,730"
+        "notes": "Ages 13-15 (non-residential) | White Lodge, Richmond | 2 weeks | £1,730",
+        "type": "tuition"
       },
       {
         "amount": 2970.0,
@@ -1092,7 +1132,8 @@
           "meals"
         ],
         "label": "Ages 13-15 (residential-catering) (2 weeks)",
-        "notes": "Ages 13-15 (residential-catering) | White Lodge, Richmond | 2 weeks | £2,970"
+        "notes": "Ages 13-15 (residential-catering) | White Lodge, Richmond | 2 weeks | £2,970",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -1293,7 +1334,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T13:33:05.696464Z",
-      "hash": "sha256:3439643ad3b7e0700cf1ec52bbfebd08ed31d27e34c2e603784bf105b0ff29b0",
+      "hash": "sha256:89052110dbbdbba6d3006f884b06b53d8078cb517a6f7c72295fb9c1258263a2",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-05T10:04:59.247313Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/uk-summer-intensive/"
@@ -1346,7 +1387,8 @@
           "tuition"
         ],
         "label": "Course fee",
-        "notes": "Course fee: £160"
+        "notes": "Course fee: £160",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -1359,7 +1401,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T13:33:05.696464Z",
-      "hash": "sha256:e607b6cc4d02c3d16f3057ffe1c66a82aec49451e42badac3c4dcf6213533e9a",
+      "hash": "sha256:17dcc0a8e5d1924d4252f75d778a6d6be184b85c4e6fbaaf87775d33f26636dc",
       "provider": "royal-ballet-school",
       "scrapedAt": "2026-06-06T18:50:10.781641Z",
       "url": "https://www.royalballetschool.org.uk/train/dancer-training/intensive-courses/winter-intensive/"

@@ -39,13 +39,15 @@
         "includes": [
           "tuition"
         ],
-        "label": "Course fee"
+        "label": "Course fee",
+        "type": "tuition"
       },
       {
         "amount": 25.0,
         "currency": "NZD",
         "includes": [],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -66,7 +68,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T08:47:46.958874Z",
-      "hash": "sha256:38637b27ddf67eb0d6a790866a7147149d8295dfd25fd45eae411ba3cffc6468",
+      "hash": "sha256:b6a9bde19fb90e7e22a16789fa3944ec9d6332bb4033cf5835a0e24e0aefd855",
       "provider": "new-zealand-school-of-dance",
       "scrapedAt": "2026-06-08T14:35:11.464714Z",
       "url": "https://www.nzschoolofdance.ac.nz/courses/contemporary-intensive-programme"

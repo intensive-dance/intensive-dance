@@ -40,7 +40,8 @@
         "currency": "USD",
         "includes": [],
         "label": "Registration fee",
-        "notes": "Non-refundable; due upon registration, before the audition form."
+        "notes": "Non-refundable; due upon registration, before the audition form.",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -69,7 +70,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:10.289288Z",
-      "hash": "sha256:c73126c5a6f8940c7ae22859dbd7566eea27a3781eb519b23f489800931ea227",
+      "hash": "sha256:359b5ef3b4e58afc63bca07d5e6ec43d02a1a865a0372571500827ba6cc792ec",
       "provider": "bolshoi-summer-intensive-tokyo",
       "scrapedAt": "2026-06-07T08:41:01.579611Z",
       "url": "https://www.russianballetinternational.com/tokyo-program/"

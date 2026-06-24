@@ -40,7 +40,8 @@
           "tuition"
         ],
         "label": "Tuition per week",
-        "notes": "Per week; a student may book either week or both."
+        "notes": "Per week; a student may book either week or both.",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -52,7 +53,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T01:50:38.289834Z",
-      "hash": "sha256:f7161a27a5924d99d851ab473c9eaa6335aaa2ceee581f07617a3c8c90c623f6",
+      "hash": "sha256:5cebe0f5f72f017c51b8c273a2fa79b8904e83abc2a9f5269d1ca66c8bf12375",
       "provider": "ballet-ireland",
       "scrapedAt": "2026-06-08T14:08:39.080817Z",
       "url": "https://www.balletireland.ie/join-in/summer-intensive/"
@@ -130,7 +131,8 @@
           "tuition"
         ],
         "label": "Tuition per week",
-        "notes": "Per week; a student may book either week or both."
+        "notes": "Per week; a student may book either week or both.",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -142,7 +144,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T01:50:38.289834Z",
-      "hash": "sha256:08ab2e3e1841b22dac2c675de118c455152a19f0cc6baf8d582dc9f098ebbc37",
+      "hash": "sha256:62f473caeafd0380e102a6345cace575f7cee668d429826618c00caf56aac3c4",
       "provider": "ballet-ireland",
       "scrapedAt": "2026-06-16T09:46:58.942654Z",
       "url": "https://www.balletireland.ie/join-in/summer-intensive/"

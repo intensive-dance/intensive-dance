@@ -44,7 +44,8 @@
           "meals"
         ],
         "label": "Course fee",
-        "notes": "Excludes accommodation and travel."
+        "notes": "Excludes accommodation and travel.",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -57,7 +58,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T20:58:49.305543Z",
-      "hash": "sha256:a23fed8e3f4bd7772f24294fef89d8068bde053149f148c9dbc95c5b25df77dc",
+      "hash": "sha256:4950b722e42ce0c266cccd03789837b358eeef8ba6af2057b5011145a65d3462",
       "provider": "norwegian-national-ballet",
       "scrapedAt": "2026-06-05T18:57:50.399179Z",
       "url": "https://www.operaen.no/en/articles/norwegian-national-ballets-summer-course-2026/"

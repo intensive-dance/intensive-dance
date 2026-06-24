@@ -198,7 +198,8 @@
           "tuition",
           "meals"
         ],
-        "label": "6-DAY PROGRAM August Signature 2026 - Lunch Included (10/08-15/08)"
+        "label": "6-DAY PROGRAM August Signature 2026 - Lunch Included (10/08-15/08)",
+        "type": "tuition"
       },
       {
         "amount": 749.0,
@@ -207,7 +208,8 @@
           "tuition",
           "meals"
         ],
-        "label": "6-DAY PROGRAM August Signature 2026 - Lunch Included (17/08-22/08)"
+        "label": "6-DAY PROGRAM August Signature 2026 - Lunch Included (17/08-22/08)",
+        "type": "tuition"
       },
       {
         "amount": 1299.0,
@@ -216,7 +218,8 @@
           "tuition",
           "meals"
         ],
-        "label": "12-DAY PROGRAM August Signature 2026 - Lunch Included (10/08-22/08)"
+        "label": "12-DAY PROGRAM August Signature 2026 - Lunch Included (10/08-22/08)",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -228,7 +231,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:11.217433Z",
-      "hash": "sha256:eeac70439b0ef90d5a84399fa851c3fecb95e04241d680a301f4bc197d27531a",
+      "hash": "sha256:54a09342310945fcaed975802087c0c0227caebd83a05fc78d6c5caa8afc3fa5",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T21:24:01.160988Z",
       "url": "https://www.mosaballetschool.eu/event/august-signature-intensive-course-2026-age-12-29-231"
@@ -627,7 +630,8 @@
           "tuition",
           "meals"
         ],
-        "label": "6-DAY PROGRAM Exploring Ballet August 2026 - Lunch Included (10/08-15/08)"
+        "label": "6-DAY PROGRAM Exploring Ballet August 2026 - Lunch Included (10/08-15/08)",
+        "type": "tuition"
       },
       {
         "amount": 460.0,
@@ -636,7 +640,8 @@
           "tuition",
           "meals"
         ],
-        "label": "6-DAY PROGRAM Exploring Ballet August 2026 - Lunch Included (17/08-22/08)"
+        "label": "6-DAY PROGRAM Exploring Ballet August 2026 - Lunch Included (17/08-22/08)",
+        "type": "tuition"
       },
       {
         "amount": 780.0,
@@ -645,7 +650,8 @@
           "tuition",
           "meals"
         ],
-        "label": "12-DAY PROGRAM Exploring Ballet August 2026 - Lunch Included (10/08-22/08)"
+        "label": "12-DAY PROGRAM Exploring Ballet August 2026 - Lunch Included (10/08-22/08)",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -657,7 +663,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:11.217433Z",
-      "hash": "sha256:ce8ebac927698b4e22831f2e281dc7520275af566fdf770c5eb5d41b6f48e904",
+      "hash": "sha256:353ad9d850880b6a23b830e7e0f2753d0d0d4cb4fb098b91bd412f1281ba9a0a",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-05T21:25:26.619167Z",
       "url": "https://www.mosaballetschool.eu/event/exploring-ballet-other-dances-age-8-12-august-2026-232"
@@ -1100,7 +1106,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "July Mosa Intensive 2026"
+        "label": "July Mosa Intensive 2026",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -1112,7 +1119,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:11.217433Z",
-      "hash": "sha256:f3cb5e1ee463689e2610933e3d809156e2d8a6b89b6018e739070c566f9f10f2",
+      "hash": "sha256:3f7812cf2992058bd162dc3e736b5ab10ea6f8f8cc17f63a371fb5695635cfe0",
       "provider": "mosa-ballet-school",
       "scrapedAt": "2026-06-07T07:10:55.676534Z",
       "url": "https://www.mosaballetschool.eu/event/july-mosa-intensive-2026-230"

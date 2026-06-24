@@ -38,7 +38,8 @@
           "tuition"
         ],
         "label": "From (per week)",
-        "notes": "Per-week tuition; spans level (adult open level to advanced). Accommodation and meals not included."
+        "notes": "Per-week tuition; spans level (adult open level to advanced). Accommodation and meals not included.",
+        "type": "tuition"
       },
       {
         "amount": 475.0,
@@ -47,7 +48,8 @@
           "tuition"
         ],
         "label": "To (per week)",
-        "notes": "Per-week tuition; spans level (adult open level to advanced). Accommodation and meals not included."
+        "notes": "Per-week tuition; spans level (adult open level to advanced). Accommodation and meals not included.",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -88,7 +90,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T23:44:39.746457Z",
-      "hash": "sha256:c6bbee2e2e9ef905446fffd2fcd1df8df17ecfdf2bfc4b28ccdd2ca67b7007e4",
+      "hash": "sha256:ad2ba378b177403099a0e211fc3f4b172b07a99956a0dd3ccc7913fa6c83ba0a",
       "provider": "finland-international-summer-ballet-school",
       "scrapedAt": "2026-06-16T09:01:17.914810Z",
       "url": "https://www.finsummerdance.com/"
@@ -145,7 +147,8 @@
           "tuition"
         ],
         "label": "From (per week)",
-        "notes": "Per-week tuition; spans level (adult open level to advanced). Accommodation and meals not included."
+        "notes": "Per-week tuition; spans level (adult open level to advanced). Accommodation and meals not included.",
+        "type": "tuition"
       },
       {
         "amount": 475.0,
@@ -154,7 +157,8 @@
           "tuition"
         ],
         "label": "To (per week)",
-        "notes": "Per-week tuition; spans level (adult open level to advanced). Accommodation and meals not included."
+        "notes": "Per-week tuition; spans level (adult open level to advanced). Accommodation and meals not included.",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -195,7 +199,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T23:44:39.746457Z",
-      "hash": "sha256:608409aa45353f05f3242ac131a9a60d63d2eba922364875fd2233a2c1dac791",
+      "hash": "sha256:1a1da468e1d5a288a681c505a2aa586be1d769eb6e027f4c5e290044a4ca572a",
       "provider": "finland-international-summer-ballet-school",
       "scrapedAt": "2026-06-16T09:01:17.914866Z",
       "url": "https://www.finsummerdance.com/"
@@ -256,7 +260,8 @@
           "tuition"
         ],
         "label": "From (per week)",
-        "notes": "Per-week tuition; spans level (adult open level to advanced). Accommodation and meals not included."
+        "notes": "Per-week tuition; spans level (adult open level to advanced). Accommodation and meals not included.",
+        "type": "tuition"
       },
       {
         "amount": 475.0,
@@ -265,7 +270,8 @@
           "tuition"
         ],
         "label": "To (per week)",
-        "notes": "Per-week tuition; spans level (adult open level to advanced). Accommodation and meals not included."
+        "notes": "Per-week tuition; spans level (adult open level to advanced). Accommodation and meals not included.",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -306,7 +312,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T23:44:39.746457Z",
-      "hash": "sha256:ec86a7a04605c77b33fa377e61df6aeeb391cf5eb22561455c7d674bd5a53a84",
+      "hash": "sha256:35b7a4b5fa7ceefde61b1eb701a31a5f3b501d150e60bc12bdac237d10fdb85b",
       "provider": "finland-international-summer-ballet-school",
       "scrapedAt": "2026-06-16T09:01:17.914883Z",
       "url": "https://www.finsummerdance.com/"
@@ -372,7 +378,8 @@
           "tuition"
         ],
         "label": "From (per week)",
-        "notes": "Per-week tuition; spans level (adult open level to advanced). Accommodation and meals not included."
+        "notes": "Per-week tuition; spans level (adult open level to advanced). Accommodation and meals not included.",
+        "type": "tuition"
       },
       {
         "amount": 475.0,
@@ -381,7 +388,8 @@
           "tuition"
         ],
         "label": "To (per week)",
-        "notes": "Per-week tuition; spans level (adult open level to advanced). Accommodation and meals not included."
+        "notes": "Per-week tuition; spans level (adult open level to advanced). Accommodation and meals not included.",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -422,7 +430,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T23:44:39.746457Z",
-      "hash": "sha256:75d2a76bda20228d3e9dd43201c8602ad77faa31973228a4443d6a4759fd717c",
+      "hash": "sha256:66d7cee9becf3eb0cb152e9bf1880a711b15abe1af0345cb210b6174c9002b0c",
       "provider": "finland-international-summer-ballet-school",
       "scrapedAt": "2026-06-16T09:01:17.914898Z",
       "url": "https://www.finsummerdance.com/"

@@ -41,7 +41,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition"
+        "label": "Tuition",
+        "type": "tuition"
       },
       {
         "amount": 1800.0,
@@ -49,7 +50,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition (early bird, paid within 5 days of audition)"
+        "label": "Tuition (early bird, paid within 5 days of audition)",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -61,7 +63,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T22:09:22.419835Z",
-      "hash": "sha256:77db1ad63a4587a6938c251b9f9a306b38ec175f16528de82041fcd7742a03cf",
+      "hash": "sha256:13061cf4d40f493a810f09dfc18c60ced41ee56c00c8a46577ec3310e49773f7",
       "provider": "bayer-ballet-academy",
       "scrapedAt": "2026-06-11T07:29:35.547072Z",
       "url": "https://www.bayerballet.com/summer-intensive"
@@ -158,7 +160,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition"
+        "label": "Tuition",
+        "type": "tuition"
       },
       {
         "amount": 4950.0,
@@ -166,7 +169,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition (early bird, paid within 5 days of audition)"
+        "label": "Tuition (early bird, paid within 5 days of audition)",
+        "type": "tuition"
       },
       {
         "amount": 250.0,
@@ -174,7 +178,8 @@
         "includes": [
           "performance"
         ],
-        "label": "Performance fee"
+        "label": "Performance fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -186,7 +191,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T22:09:22.419835Z",
-      "hash": "sha256:26c6ab9ae9288c2b9e000fca0a57a01db98ce61e441b8282654f48eafa347520",
+      "hash": "sha256:9301a31026cfb29d4219a861340a5d8e51e7dff8837bf4126832126d41a8f9ac",
       "provider": "bayer-ballet-academy",
       "scrapedAt": "2026-06-11T07:29:35.547300Z",
       "url": "https://www.bayerballet.com/summer-intensive"

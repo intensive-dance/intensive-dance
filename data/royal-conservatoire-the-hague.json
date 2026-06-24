@@ -46,7 +46,8 @@
           "tuition"
         ],
         "label": "Advanced & Pre-professional Dance Intensive course fee",
-        "notes": "Includes all dance classes, workshops, and coaching. Accommodation and meals not included."
+        "notes": "Includes all dance classes, workshops, and coaching. Accommodation and meals not included.",
+        "type": "tuition"
       },
       {
         "amount": 350.0,
@@ -55,7 +56,8 @@
           "tuition"
         ],
         "label": "Royal Conservatoire student fee",
-        "notes": "Includes all dance classes, workshops, and coaching. Accommodation and meals not included."
+        "notes": "Includes all dance classes, workshops, and coaching. Accommodation and meals not included.",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -68,7 +70,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T18:58:20.096842Z",
-      "hash": "sha256:78d5ba63ba91ed9b902d5a10fcf5d7d94323dcfc98aab474d182084d6b1a6bbe",
+      "hash": "sha256:5195c70f792222bb7d8e59e2cdebb146dae068daddb04c9a53896cd627ad8333",
       "provider": "royal-conservatoire-the-hague",
       "scrapedAt": "2026-06-08T10:58:43.204219Z",
       "url": "https://www.koncon.nl/en/dance-intensive"

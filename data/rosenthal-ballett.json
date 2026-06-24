@@ -41,7 +41,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition"
+        "label": "Tuition",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -71,7 +72,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T01:50:36.247167Z",
-      "hash": "sha256:b8cd8a47947c6fe90b7d9bec838eaadd23d732ccbce992be68171ed6bda6ba55",
+      "hash": "sha256:73d1671d59a9e882210364d7185246ad9613d9514d909f9838e5e15964679316",
       "provider": "rosenthal-ballett",
       "scrapedAt": "2026-06-11T18:42:45.934198Z",
       "url": "https://www.rosenthal-ballett.de/summer-intensive"

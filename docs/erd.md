@@ -49,6 +49,7 @@ erDiagram
         float amount
         string currency
         string label
+        PriceType type "tuition | registration | deposit | accommodation | meals | other"
         PriceInclude[] includes "tuition | accommodation | meals | materials | performance | studio"
         string notes
     }

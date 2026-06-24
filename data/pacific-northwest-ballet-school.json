@@ -44,7 +44,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition (Levels IV & V)"
+        "label": "Tuition (Levels IV & V)",
+        "type": "tuition"
       },
       {
         "amount": 2990.0,
@@ -52,7 +53,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition (Levels VI–VIII & Advanced C)"
+        "label": "Tuition (Levels VI–VIII & Advanced C)",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -64,7 +66,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T08:47:48.014660Z",
-      "hash": "sha256:c0e5b52b5b82f90c10e544fa2bcbf0cbfa30e90c252b5836f6c93ad34129beb8",
+      "hash": "sha256:77e21711b2f7e987a48f8f73b03d36a933fe8f78a2f112fd20baec35cfd14481",
       "provider": "pacific-northwest-ballet-school",
       "scrapedAt": "2026-06-08T14:35:04.529862Z",
       "url": "https://www.pnb.org/school/summer/summer-intensive/"

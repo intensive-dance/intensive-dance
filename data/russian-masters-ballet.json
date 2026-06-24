@@ -35,7 +35,8 @@
           "tuition"
         ],
         "label": "6 days’ assistance",
-        "notes": "6 days’ assistance: 200 €"
+        "notes": "6 days’ assistance: 200 €",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -48,7 +49,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T08:47:47.148021Z",
-      "hash": "sha256:dbd1e77aeb939d436c0777e20b2520e03211859226d87582a97e6d1eb7906504",
+      "hash": "sha256:9b3aba83db95bd23d18e3e45a73763a7711d4bdc4a3620b099a969ce213cdd62",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-07T07:11:05.653354Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/alicante/#observation"
@@ -280,7 +281,8 @@
           "tuition"
         ],
         "label": "1 week: 5 - 12 July",
-        "notes": "1 week: 5 - 12 July - 550 €"
+        "notes": "1 week: 5 - 12 July - 550 €",
+        "type": "tuition"
       },
       {
         "amount": 950.0,
@@ -289,7 +291,8 @@
           "tuition"
         ],
         "label": "2 weeks: 12 - 26 July",
-        "notes": "2 weeks: 12 - 26 July - 950 €"
+        "notes": "2 weeks: 12 - 26 July - 950 €",
+        "type": "tuition"
       },
       {
         "amount": 1250.0,
@@ -298,7 +301,8 @@
           "tuition"
         ],
         "label": "1+2 weeks: 5 - 26 July",
-        "notes": "1+2 weeks: 5 - 26 July - 1250 € - our special price! - please, note that those will be two separate programs, so a group and a teacher may be different."
+        "notes": "1+2 weeks: 5 - 26 July - 1250 € - our special price! - please, note that those will be two separate programs, so a group and a teacher may be different.",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -311,7 +315,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T08:47:47.148021Z",
-      "hash": "sha256:06a5f0817432416f24ed99a90bb7df8312a4f7bc22cdf1d338b479706470af8d",
+      "hash": "sha256:3457237e808a15e3e0e6d9b69b8c568bf8e1bcce0d37a1868b64b3f3a04631ab",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-05T10:05:05.886497Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/alicante/#open-professional"
@@ -471,7 +475,8 @@
           "tuition"
         ],
         "label": "3 weeks from 5 to 26 of July",
-        "notes": "3 weeks from 5 to 26 of July - 2050 €"
+        "notes": "3 weeks from 5 to 26 of July - 2050 €",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -484,7 +489,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T08:47:47.148021Z",
-      "hash": "sha256:e9d9ab1b1b1179d40a446526ac6f6d672a8d1155a867fef245c0f5a60c0c66dd",
+      "hash": "sha256:87c81be8068d5197767c1146749d906173eaa3fbcee48f360db2b24ed8c12014",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-05T10:05:05.885275Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/alicante/#professional"
@@ -671,7 +676,8 @@
           "tuition"
         ],
         "label": "6 days’ assistance",
-        "notes": "6 days’ assistance: 200 €"
+        "notes": "6 days’ assistance: 200 €",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -684,7 +690,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T08:47:47.148021Z",
-      "hash": "sha256:d9cd82bf3ef5bd879bcd54863b980657475c394bc71cc4dae89f29b95032fcf5",
+      "hash": "sha256:eedfdf4e1d89a8d571955383471b08c25a57bc768f0ede41b6806024fb066a2a",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-07T07:11:06.255289Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/burgas/#observation"
@@ -844,7 +850,8 @@
           "tuition"
         ],
         "label": "3 weeks from 27 July to 17 of August",
-        "notes": "3 weeks from 27 July to 17 of August: 1150 €"
+        "notes": "3 weeks from 27 July to 17 of August: 1150 €",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -857,7 +864,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T08:47:47.148021Z",
-      "hash": "sha256:df0daba48d5d6c002404f79b342befb29eaa099a2cf4334a97ba2da9c12cebe6",
+      "hash": "sha256:ca8128753a6763d343e0850280dddfdf377ea0a885d858c0e04d9a09fa65b260",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-05T10:05:06.336612Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/burgas/#pre-professional"
@@ -1029,7 +1036,8 @@
           "tuition"
         ],
         "label": "3 weeks from 27 July to 17 of August",
-        "notes": "3 weeks from 27 July to 17 of August: 1950 €"
+        "notes": "3 weeks from 27 July to 17 of August: 1950 €",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -1042,7 +1050,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T08:47:47.148021Z",
-      "hash": "sha256:cb0a4ee373e4856fff365cf67f8a3166433061ee07c9b06a11e6a80f352c4d5c",
+      "hash": "sha256:285868a1da59b2e153e04ac193e981c53175b6ae76775df3f980e94ba1db86aa",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-05T10:05:06.335961Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/burgas/#professional"
@@ -1446,7 +1454,8 @@
           "tuition"
         ],
         "label": "Early Bird price",
-        "notes": "Early Bird price - 12,800 CNY (only until 1 January 2026)"
+        "notes": "Early Bird price - 12,800 CNY (only until 1 January 2026)",
+        "type": "tuition"
       },
       {
         "amount": 15800.0,
@@ -1455,7 +1464,8 @@
           "tuition"
         ],
         "label": "Regular price",
-        "notes": "Regular price - 15,800 CNY"
+        "notes": "Regular price - 15,800 CNY",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -1468,7 +1478,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T08:47:47.148021Z",
-      "hash": "sha256:d8472f631ad18cf18dfb4027cd73d499a6805c0399c37b17e381916c923eff86",
+      "hash": "sha256:e733b42fd7731562f77d799c83aa834e06b524e0ad74cf27e79c068352e5682d",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-05T10:05:09.808058Z",
       "url": "https://russianmastersballet.com/courses/ballet-experience/shanghai-china/#professional"
@@ -1570,7 +1580,8 @@
           "tuition"
         ],
         "label": "1-week program assistance",
-        "notes": "1-week program assistance: 200 €"
+        "notes": "1-week program assistance: 200 €",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -1583,7 +1594,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T08:47:47.148021Z",
-      "hash": "sha256:ef9cabf61e69ada6c43a8dfae76aeee2af7293f2fa9c9eabfd57e4cc76a623e4",
+      "hash": "sha256:00fa2a8e609a68531cb7aa2709f5833c949010ed76fd85695bbb02c905cd4646",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-18T14:37:03.922610Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/st-petersburg/#observation"
@@ -1801,7 +1812,8 @@
           "tuition"
         ],
         "label": "2 weeks: July 20 - August 03",
-        "notes": "2 weeks: July 20 - August 03 - 1450 €"
+        "notes": "2 weeks: July 20 - August 03 - 1450 €",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -1814,7 +1826,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T08:47:47.148021Z",
-      "hash": "sha256:d127427de47af618a70cc1b368d8c1273226591d4b0454e6e16a73bd42c45ade",
+      "hash": "sha256:ac4505d19920ce8744d2baae30d815c41c1d9b94ecbf68da9d6da1d0b2e2d2a5",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-18T14:37:03.921468Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/st-petersburg/#professional-2-weeks"
@@ -2036,7 +2048,8 @@
           "tuition"
         ],
         "label": "3 weeks: June 28 - July 19",
-        "notes": "3 weeks: June 28 - July 19 - 1950 €"
+        "notes": "3 weeks: June 28 - July 19 - 1950 €",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -2049,7 +2062,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T08:47:47.148021Z",
-      "hash": "sha256:fc031e4cbbcfada1b0e94e4e7f665facd0235e515d788c0f1bd4683b9b3a8793",
+      "hash": "sha256:1cadcefbe974f4ddad71b8e3ee30277c7a2a18d268e86398d7c0f27840512740",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-18T14:37:03.919979Z",
       "url": "https://russianmastersballet.com/courses/summer-intensives/st-petersburg/#professional"

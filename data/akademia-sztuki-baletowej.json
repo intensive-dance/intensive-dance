@@ -35,7 +35,8 @@
           "meals"
         ],
         "label": "Residential fee",
-        "notes": "Full board (four meals a day)."
+        "notes": "Full board (four meals a day).",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -47,7 +48,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T18:58:21.914771Z",
-      "hash": "sha256:8fcfbac5f20059170a248972c81bfdbdebd9279a9a8692876e19a16a7bad8d79",
+      "hash": "sha256:f7ce89ca1a28ce0a93684ba092197a6f6260124ff81d421582ad4be3cbeba13d",
       "provider": "akademia-sztuki-baletowej",
       "scrapedAt": "2026-06-08T21:21:43.908707Z",
       "url": "https://asb-balet.pl/warsztaty/"
@@ -160,7 +161,8 @@
           "meals"
         ],
         "label": "Residential fee",
-        "notes": "Full board (four meals a day)."
+        "notes": "Full board (four meals a day).",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -172,7 +174,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T18:58:21.914771Z",
-      "hash": "sha256:0389a844a2d4d8ba5b3c70e3184b43fef3f89e08ca10f2df43ef684b7519442e",
+      "hash": "sha256:400b6ad7dd36953d4291a56a0b4aaa2ed1549630c5a5e2dbbf158a4ecba4e94a",
       "provider": "akademia-sztuki-baletowej",
       "scrapedAt": "2026-06-08T21:21:43.908815Z",
       "url": "https://asb-balet.pl/warsztaty/"

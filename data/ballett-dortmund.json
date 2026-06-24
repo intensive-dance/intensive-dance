@@ -40,7 +40,8 @@
           "tuition",
           "meals"
         ],
-        "label": "Kursgebühr"
+        "label": "Kursgebühr",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -53,7 +54,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T23:44:42.806032Z",
-      "hash": "sha256:8ec638496a4305b6185abad1816bb533b9056ecda15d19bf863e8f9f69608147",
+      "hash": "sha256:4371c96a5da05e2598601603b960a6b8b973a5648f1e1db23d8be4aebaa4429a",
       "provider": "ballett-dortmund",
       "scrapedAt": "2026-06-12T01:11:00.370695Z",
       "url": "https://www.theaterdo.de/ballett/startseite/mitmachen/sommerakademie/"

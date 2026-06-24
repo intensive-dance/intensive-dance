@@ -50,7 +50,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Complete Course — one week"
+        "label": "Complete Course — one week",
+        "type": "tuition"
       },
       {
         "amount": 1200.0,
@@ -58,13 +59,15 @@
         "includes": [
           "tuition"
         ],
-        "label": "Complete Course — two weeks"
+        "label": "Complete Course — two weeks",
+        "type": "tuition"
       },
       {
         "amount": 40.0,
         "currency": "EUR",
         "includes": [],
-        "label": "Application fee"
+        "label": "Application fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -76,7 +79,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T10:25:07.903797Z",
-      "hash": "sha256:e24005161fc38aa6a439e1ae271f0dce26e92a6859db0a134ceb35a7c8cd7231",
+      "hash": "sha256:418ead75d67f38e6138a76cb0fe058ba4d7ffc78c66e49e32dea3d43f3f43cc0",
       "provider": "art-of-zurich",
       "scrapedAt": "2026-06-07T07:38:27.801043Z",
       "url": "https://madrid.art-of.net/"
@@ -186,7 +189,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Complete Course — one week"
+        "label": "Complete Course — one week",
+        "type": "tuition"
       },
       {
         "amount": 1200.0,
@@ -194,13 +198,15 @@
         "includes": [
           "tuition"
         ],
-        "label": "Complete Course — two weeks"
+        "label": "Complete Course — two weeks",
+        "type": "tuition"
       },
       {
         "amount": 40.0,
         "currency": "CHF",
         "includes": [],
-        "label": "Application fee"
+        "label": "Application fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -212,7 +218,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T10:25:07.903797Z",
-      "hash": "sha256:d73662ff2c0cc239a7ca55002e27782494d1bf099734d3deacbb50b6a89745b1",
+      "hash": "sha256:b8e51a0fe957cf887e9ac795e51c50179098b1d88d88f607a93f38bb50b25423",
       "provider": "art-of-zurich",
       "scrapedAt": "2026-06-17T15:14:19.277670Z",
       "url": "https://zurich.art-of.net/"

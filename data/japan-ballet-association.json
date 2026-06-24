@@ -34,7 +34,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "受講料（税込）"
+        "label": "受講料（税込）",
+        "type": "tuition"
       },
       {
         "amount": 40000.0,
@@ -44,7 +45,8 @@
           "meals"
         ],
         "label": "宿泊料（税込）",
-        "notes": "宿泊費には1日3食の食事代が含まれます。"
+        "notes": "宿泊費には1日3食の食事代が含まれます。",
+        "type": "accommodation"
       }
     ],
     "schedule": {
@@ -57,7 +59,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:08.398258Z",
-      "hash": "sha256:f5758ae5146850e53b44b7547fe519364da47570d2267298b83aac1e64cd85cb",
+      "hash": "sha256:4e32febe5a2154a9b92b44724dd3383ed90f762f2a15eddf1e7ab04149c07e54",
       "provider": "japan-ballet-association",
       "scrapedAt": "2026-06-06T07:33:42.128883Z",
       "url": "http://www.j-b-a.or.jp/classes/2026summercours/"

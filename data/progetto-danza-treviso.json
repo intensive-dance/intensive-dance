@@ -41,7 +41,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Open Card 1 Settimana"
+        "label": "Open Card 1 Settimana",
+        "type": "tuition"
       },
       {
         "amount": 1050.0,
@@ -49,7 +50,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Open Card 2 Settimane"
+        "label": "Open Card 2 Settimane",
+        "type": "tuition"
       },
       {
         "amount": 400.0,
@@ -57,7 +59,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Open Card Bambini Settimana dal 5/7 al 11/7"
+        "label": "Open Card Bambini Settimana dal 5/7 al 11/7",
+        "type": "tuition"
       },
       {
         "amount": 500.0,
@@ -65,7 +68,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Open Card Bambini dal 28/6 al 11/7"
+        "label": "Open Card Bambini dal 28/6 al 11/7",
+        "type": "tuition"
       },
       {
         "amount": 210.0,
@@ -73,7 +77,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Pacchetto 7 Lezioni (da 90 Minuti)"
+        "label": "Pacchetto 7 Lezioni (da 90 Minuti)",
+        "type": "tuition"
       },
       {
         "amount": 160.0,
@@ -81,13 +86,15 @@
         "includes": [
           "tuition"
         ],
-        "label": "Pacchetto 7 Lezioni (da 60 Minuti)"
+        "label": "Pacchetto 7 Lezioni (da 60 Minuti)",
+        "type": "tuition"
       },
       {
         "amount": 50.0,
         "currency": "EUR",
         "includes": [],
-        "label": "Quota di Iscrizione"
+        "label": "Quota di Iscrizione",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -99,7 +106,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T06:36:01.921825Z",
-      "hash": "sha256:c33959e25e5ab55aa0ef04e2b515f0e81cc3a02bdaae93e1dff72c2ef6de4f39",
+      "hash": "sha256:d07f16167b657f7b3cbec35e65011631b77236e066d2c28ca0812256b09a6279",
       "provider": "progetto-danza-treviso",
       "scrapedAt": "2026-06-17T14:00:43.990353Z",
       "url": "https://www.progettodanza.org/iniziative/40-stage-internazionale-di-danza-2026/"
