@@ -586,8 +586,12 @@ when a second provider genuinely needs the identical thing.
   accordion, watch nbsp.** A custom-PHP site (no `/wp-json/`, no `Event`/`Course`
   `ld+json`) behind a StackProtect/Cloudflare challenge 403s a plain datacenter
   fetch — the proxy's **`auto=1`** tier clears it and returns the server-rendered
-  HTML (no JS `render` needed; expect the odd transient `401` — a single retry
-  fixes it). Course detail lives in Bootstrap accordion panels (`#collapseN`)
+  HTML (no JS `render` needed). The gate clears non-deterministically and
+  surfaces a transient **401/403** through the proxy (the surfaced status drifts
+  per host/over time — elmhurst moved 403→401, repeatedly tripping the
+  scrape-failure tracker: #347/#351/#359/#364); both are in `fetch._RETRY_STATUS`,
+  so the shared transport **auto-re-sends** them — the scraper needs no manual
+  retry. Course detail lives in Bootstrap accordion panels (`#collapseN`)
   whose sub-programmes split on `<h4>`s. **Trap:** those `<h4>`s carry a
   **non-breaking space** ("Seniors -\xa0(Ages 14–18)"), so a `parse.clean`'d
   heading won't `str.find` inside the raw `panel.text()` — normalize nbsp on

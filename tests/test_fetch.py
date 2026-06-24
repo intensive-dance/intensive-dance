@@ -81,6 +81,16 @@ def test_retries_challenge_403_then_succeeds():
     assert calls["n"] == 2
 
 
+def test_retries_challenge_401_then_succeeds():
+    # Same managed-challenge as the 403 case, but the proxy hands back the
+    # upstream gate's 401 (elmhurst's StackProtect now surfaces this way). It
+    # clears on a re-send just like the 403, so 401 is in _RETRY_STATUS too.
+    transport, calls = _retry_transport([401, 200])
+    response = transport.handle_request(httpx.Request("GET", "https://site.example/"))
+    assert response.status_code == 200
+    assert calls["n"] == 2
+
+
 def test_retries_transport_timeout_then_succeeds():
     transport, calls = _retry_transport([httpx.ReadTimeout("slow proxy"), 200])
     response = transport.handle_request(httpx.Request("GET", "https://site.example/"))
