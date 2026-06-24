@@ -29,14 +29,17 @@ USER_AGENT = "intensive.dance scraper (+https://github.com/intensive-dance/inten
 # set of (correct) scrapers each run. 500/501 are left out: a real server error
 # isn't cleared by retrying.
 #
-# 403 is included for the same anti-spam reason: a Cloudflare/StackProtect
+# 401/403 are included for the same anti-spam reason: a Cloudflare/StackProtect
 # managed-challenge in front of a target origin clears non-deterministically, so
-# the proxy's auto tier intermittently hands back the challenge's 403 under load
-# (elmhurst / royal-winnipeg / hungarian-dance-university each fail this way on a
-# different random run, then pass on the next). Re-sending the same request
-# usually clears it. A genuinely-forbidden 403 just costs a few extra seconds of
+# the proxy's auto tier intermittently hands back the challenge's status under
+# load (elmhurst / royal-winnipeg / hungarian-dance-university each fail this way
+# on a different random run, then pass on the next). The status the challenge
+# surfaces through the proxy varies by host and over time — elmhurst's
+# StackProtect gate now returns 401 where it used to return 403 — so both are
+# retried. Re-sending the same request usually clears it. A genuine 401/403
+# (wrong proxy bearer, truly forbidden origin) just costs a few extra seconds of
 # backoff before failing the same way it would have anyway.
-_RETRY_STATUS = frozenset({403, 429, 502, 503, 504, 520, 522, 524})
+_RETRY_STATUS = frozenset({401, 403, 429, 502, 503, 504, 520, 522, 524})
 _MAX_ATTEMPTS = 3
 
 # A scraper sets this request header (e.g. "solve=1") to force a proxy escalation

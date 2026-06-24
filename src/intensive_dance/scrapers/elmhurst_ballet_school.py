@@ -31,7 +31,10 @@ School), so `application.status = "closed"` with that note and `requirements = [
 
 WHAT THIS SCRAPER EXERCISES (verified live 2026-06-12)
 - Proxy `auto=1` tier to clear a Cloudflare/StackProtect challenge on a non-WP,
-  no-ld+json custom site.
+  no-ld+json custom site. The gate clears non-deterministically and intermittently
+  surfaces a transient 401 (formerly 403) through the proxy; `fetch._RETRY_STATUS`
+  re-sends those, so a single blip no longer fails the scraper (issues #347/#351/
+  #359/#364).
 - Accordion-panel slicing by `<h4>` sub-headings into two programmes.
 - English ordinal day span ("Monday 10th – Saturday 15th August 2026") with the
   month/year stated once for both days; arrival lines (no year) ignored.
