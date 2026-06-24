@@ -28,6 +28,24 @@ DATA_DIR = ROOT / "data"
 PROVIDERS = ROOT / "providers.json"
 
 
+def _headline_price(prices: list[dict]) -> dict | None:
+    """The single price worth showing. Prefer a `tuition`-tagged charge (the
+    actual course price); else fall back to the first price but flag it as a
+    `fee`, so the page can say "application fee: X" instead of mislabelling a
+    registration/deposit charge as the course price. `None` if none is published.
+    """
+    if not prices:
+        return None
+    tuition = next((p for p in prices if "tuition" in (p.get("includes") or [])), None)
+    chosen = tuition or prices[0]
+    return {
+        "amount": chosen.get("amount"),
+        "currency": chosen.get("currency"),
+        "label": chosen.get("label"),
+        "fee": tuition is None,
+    }
+
+
 def _project(offering: dict, coords: dict[str, tuple[float, float]]) -> dict:
     """One store offering → the flat record the page renders (+ joined coords)."""
     location = offering.get("location") or {}
@@ -67,9 +85,16 @@ def _project(offering: dict, coords: dict[str, tuple[float, float]]) -> dict:
         "appUrl": application.get("url"),
         "reqs": [r.get("type") for r in application.get("requirements", [])],
         "prices": [
-            {"amount": p.get("amount"), "currency": p.get("currency"), "label": p.get("label")}
+            {
+                "amount": p.get("amount"),
+                "currency": p.get("currency"),
+                "label": p.get("label"),
+                # a charge is a fee unless it's tagged as (part of) tuition
+                "fee": "tuition" not in (p.get("includes") or []),
+            }
             for p in offering.get("prices", [])
         ],
+        "price": _headline_price(offering.get("prices") or []),
         "url": (offering.get("source") or {}).get("url"),
     }
     # Coordinates are the only enrichment — null when the city isn't in the gazetteer

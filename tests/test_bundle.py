@@ -49,7 +49,8 @@ def test_project_flattens_and_joins_coords():
     ]
     assert r["deadline"] == "2026-05-01" and r["appUrl"] == "https://x/apply"
     assert r["reqs"] == ["photos", "video"]
-    assert r["prices"] == [{"amount": 500.0, "currency": "EUR", "label": "Tuition"}]
+    assert r["prices"] == [{"amount": 500.0, "currency": "EUR", "label": "Tuition", "fee": False}]
+    assert r["price"] == {"amount": 500.0, "currency": "EUR", "label": "Tuition", "fee": False}
     assert r["url"] == "https://x/intensive"
     # coordinates joined from the gazetteer
     assert r["lat"] == 48.2084 and r["lon"] == 16.3725
@@ -67,3 +68,34 @@ def test_project_no_coords_when_city_absent_or_unlisted():
 def test_project_online_offering():
     r = _project(_offering(location={"online": True}), {})
     assert r["online"] is True and r["lat"] is None
+
+
+def test_headline_price_prefers_tuition_over_a_fee():
+    o = _offering(
+        prices=[
+            {"amount": 29.0, "currency": "EUR", "label": "Registration fee", "includes": []},
+            {"amount": 800.0, "currency": "EUR", "label": "Tuition", "includes": ["tuition"]},
+        ]
+    )
+    r = _project(o, {})
+    assert r["price"] == {"amount": 800.0, "currency": "EUR", "label": "Tuition", "fee": False}
+    # per-price fee flag derives from the tuition tag, regardless of order
+    assert [p["fee"] for p in r["prices"]] == [True, False]
+
+
+def test_headline_price_marks_a_fee_only_offering():
+    o = _offering(
+        prices=[{"amount": 29.0, "currency": "EUR", "label": "Registration fee", "includes": []}]
+    )
+    r = _project(o, {})
+    assert r["price"] == {
+        "amount": 29.0,
+        "currency": "EUR",
+        "label": "Registration fee",
+        "fee": True,
+    }
+
+
+def test_headline_price_none_without_prices():
+    r = _project(_offering(prices=[]), {})
+    assert r["price"] is None and r["prices"] == []
