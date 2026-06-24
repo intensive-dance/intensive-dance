@@ -28,7 +28,13 @@ def _offering(**over: object) -> dict:
             "requirements": [{"type": "photos"}, {"type": "video"}],
         },
         "prices": [
-            {"amount": 500.0, "currency": "EUR", "label": "Tuition", "includes": ["tuition"]}
+            {
+                "amount": 500.0,
+                "currency": "EUR",
+                "label": "Tuition",
+                "type": "tuition",
+                "includes": ["tuition"],
+            }
         ],
         "source": {"url": "https://x/intensive"},
     }
@@ -49,7 +55,9 @@ def test_project_flattens_and_joins_coords():
     ]
     assert r["deadline"] == "2026-05-01" and r["appUrl"] == "https://x/apply"
     assert r["reqs"] == ["photos", "video"]
-    assert r["prices"] == [{"amount": 500.0, "currency": "EUR", "label": "Tuition", "fee": False}]
+    assert r["prices"] == [
+        {"amount": 500.0, "currency": "EUR", "label": "Tuition", "type": "tuition", "fee": False}
+    ]
     assert r["price"] == {"amount": 500.0, "currency": "EUR", "label": "Tuition", "fee": False}
     assert r["url"] == "https://x/intensive"
     # coordinates joined from the gazetteer
@@ -73,13 +81,19 @@ def test_project_online_offering():
 def test_headline_price_prefers_tuition_over_a_fee():
     o = _offering(
         prices=[
-            {"amount": 29.0, "currency": "EUR", "label": "Registration fee", "includes": []},
-            {"amount": 800.0, "currency": "EUR", "label": "Tuition", "includes": ["tuition"]},
+            {
+                "amount": 29.0,
+                "currency": "EUR",
+                "label": "Registration fee",
+                "type": "registration",
+            },
+            {"amount": 800.0, "currency": "EUR", "label": "Tuition", "type": "tuition"},
         ]
     )
     r = _project(o, {})
     assert r["price"] == {"amount": 800.0, "currency": "EUR", "label": "Tuition", "fee": False}
-    # per-price fee flag derives from the tuition tag, regardless of order
+    # the category passes through to the feed; fee derives from it, regardless of order
+    assert [p["type"] for p in r["prices"]] == ["registration", "tuition"]
     assert [p["fee"] for p in r["prices"]] == [True, False]
 
 
