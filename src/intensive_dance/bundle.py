@@ -95,6 +95,7 @@ def _project(offering: dict, coords: dict[str, tuple[float, float]]) -> dict:
                 "amount": p.get("amount"),
                 "currency": p.get("currency"),
                 "label": p.get("label"),
+                "type": _price_type(p),
                 "fee": _price_type(p) != "tuition",
             }
             for p in offering.get("prices", [])
