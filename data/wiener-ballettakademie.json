@@ -75,6 +75,7 @@
       "timezone": "Europe/Vienna"
     },
     "source": {
+      "attemptedAt": "2026-06-24T11:35:18.639226Z",
       "hash": "sha256:f18d0c250355a7106845615f6e3ef21d7547486dc903677b051b2a10b1dc79c7",
       "provider": "wiener-ballettakademie",
       "scrapedAt": "2026-06-23T16:15:40.913882Z",

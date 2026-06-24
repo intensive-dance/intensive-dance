@@ -5,7 +5,7 @@
       "min": 14
     },
     "application": {
-      "deadline": "2026-06-10",
+      "deadline": "2026-06-30",
       "requirements": [],
       "url": "https://mte.eu/en/events/international-summer-intensive-ballet-course-2026/"
     },
@@ -40,10 +40,10 @@
       "timezone": "Europe/Budapest"
     },
     "source": {
-      "attemptedAt": "2026-06-23T02:32:27.036283Z",
-      "hash": "sha256:ca969d70338d03baac09d32b7cb578c836401311adfd9188eb812e71e547b638",
+      "attemptedAt": "2026-06-24T11:35:17.596372Z",
+      "hash": "sha256:8b15bee0307353fdb68ac52603a6fcc89fec3ffd2a4d2dc7d5703bf9127f217e",
       "provider": "hungarian-dance-university",
-      "scrapedAt": "2026-06-11T20:47:55.792946Z",
+      "scrapedAt": "2026-06-24T11:35:26.176923Z",
       "url": "https://mte.eu/en/events/international-summer-intensive-ballet-course-2026/"
     },
     "teachers": [],
@@ -89,7 +89,7 @@
       "timezone": "Europe/Budapest"
     },
     "source": {
-      "attemptedAt": "2026-06-23T02:32:27.036283Z",
+      "attemptedAt": "2026-06-24T11:35:17.596372Z",
       "hash": "sha256:3e3cea0610df68e205039195a077e97f0c6b9f436757ea70eca98ee4001ab789",
       "provider": "hungarian-dance-university",
       "scrapedAt": "2026-06-11T20:48:37.685183Z",
