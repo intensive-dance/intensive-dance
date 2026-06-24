@@ -33,7 +33,8 @@
         "currency": "EUR",
         "includes": [
           "tuition"
-        ]
+        ],
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -46,7 +47,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T23:44:40.469969Z",
-      "hash": "sha256:d53446911c168d544d06dc0fe6482fa78d888c5117173a546092e197b0e62e7f",
+      "hash": "sha256:a498cc28cbcf3563fa0a072d669c9afa691b709da87b66d511a21c2dac94d151",
       "provider": "ballettratten",
       "scrapedAt": "2026-06-16T07:58:53.527924Z",
       "url": "https://www.ballettratten.com/neu/index.php/de/sommerintensivkurs-2026-teenager"

@@ -39,7 +39,8 @@
           "meals",
           "accommodation"
         ],
-        "label": "One Week — Residential"
+        "label": "One Week — Residential",
+        "type": "tuition"
       },
       {
         "amount": 670.0,
@@ -48,7 +49,8 @@
           "tuition",
           "meals"
         ],
-        "label": "One Week — Non-residential"
+        "label": "One Week — Non-residential",
+        "type": "tuition"
       },
       {
         "amount": 1680.0,
@@ -58,7 +60,8 @@
           "meals",
           "accommodation"
         ],
-        "label": "Two Weeks — Residential"
+        "label": "Two Weeks — Residential",
+        "type": "tuition"
       },
       {
         "amount": 1150.0,
@@ -67,7 +70,8 @@
           "tuition",
           "meals"
         ],
-        "label": "Two Weeks — Non-residential"
+        "label": "Two Weeks — Non-residential",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -91,7 +95,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T01:50:35.738669Z",
-      "hash": "sha256:3b61dc59fa6de745e5fe5bbe829ac046de76b4e9e4e1c20ff070648e4235fb64",
+      "hash": "sha256:2646cf04a1e4a5c3e9159dde56678a1e51e67e21362258cd3966c6913b78a217",
       "provider": "elmhurst-ballet-school",
       "scrapedAt": "2026-06-12T02:16:28.369985Z",
       "url": "https://elmhurstballetschool.org/en/dance/courses/"
@@ -138,7 +142,8 @@
           "meals",
           "accommodation"
         ],
-        "label": "Residential"
+        "label": "Residential",
+        "type": "tuition"
       },
       {
         "amount": 495.5,
@@ -147,7 +152,8 @@
           "tuition",
           "meals"
         ],
-        "label": "Non-residential"
+        "label": "Non-residential",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -160,7 +166,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T01:50:35.738669Z",
-      "hash": "sha256:af111770fd32d797102e9160d96f9e290aef97ff5733cc4acd02fcaa11c9beb1",
+      "hash": "sha256:abce3df55f03ac7a9063475680c8c5c43990d44277b89211818206c9360ae040",
       "provider": "elmhurst-ballet-school",
       "scrapedAt": "2026-06-12T02:16:28.370374Z",
       "url": "https://elmhurstballetschool.org/en/dance/courses/"

@@ -41,7 +41,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition"
+        "label": "Tuition",
+        "type": "tuition"
       },
       {
         "amount": 3495.0,
@@ -50,7 +51,8 @@
           "accommodation",
           "meals"
         ],
-        "label": "Supervised housing"
+        "label": "Supervised housing",
+        "type": "accommodation"
       }
     ],
     "schedule": {
@@ -62,7 +64,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T01:50:35.973574Z",
-      "hash": "sha256:9ad2795e8f0d54a9ce485f1294628b072faa6a1b9b7cb06882d731f8986ff0ef",
+      "hash": "sha256:cfb1cc067429d0528986b70b364d7a855832994ee28ca66bed72c58c19f87c2f",
       "provider": "san-francisco-ballet-school",
       "scrapedAt": "2026-06-08T13:39:52.225179Z",
       "url": "https://www.sfballet.org/the-school/summer-programs/summer-auditions-audition-tour/"
@@ -116,7 +118,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition"
+        "label": "Tuition",
+        "type": "tuition"
       },
       {
         "amount": 3500.0,
@@ -125,7 +128,8 @@
           "accommodation",
           "meals"
         ],
-        "label": "Supervised housing"
+        "label": "Supervised housing",
+        "type": "accommodation"
       }
     ],
     "schedule": {
@@ -137,7 +141,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T01:50:35.973574Z",
-      "hash": "sha256:e26c58b13ed8099eaedea04a081f4101678ac88041ac9f1d0649d6c2e63e9757",
+      "hash": "sha256:4810dddf21dfee8540c6360325a8aa518109566c7d407b856987c707fedd62fd",
       "provider": "san-francisco-ballet-school",
       "scrapedAt": "2026-06-08T13:39:52.225564Z",
       "url": "https://www.sfballet.org/the-school/summer-programs/summer-auditions-audition-tour/"

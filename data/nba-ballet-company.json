@@ -36,7 +36,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "受講料（全4日間 税込）"
+        "label": "受講料（全4日間 税込）",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -49,7 +50,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T18:58:22.868873Z",
-      "hash": "sha256:ed15cbe45d3fcb63f151c8a301f89e22c568fefa25c797b454e53f4d05d2888c",
+      "hash": "sha256:1fd695c38136b793bc390fdae7dcf80bad7f887b9c6e816b1bf8d9b2a1d9b311",
       "provider": "nba-ballet-company",
       "scrapedAt": "2026-06-09T02:35:49.956007Z",
       "url": "https://nbaballet.org/news/news-9616/"

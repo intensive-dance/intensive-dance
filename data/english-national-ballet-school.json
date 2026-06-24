@@ -43,14 +43,16 @@
         "includes": [
           "tuition"
         ],
-        "label": "Course fee"
+        "label": "Course fee",
+        "type": "tuition"
       },
       {
         "amount": 30.0,
         "currency": "GBP",
         "includes": [],
         "label": "Application fee (non-refundable)",
-        "notes": "Non-refundable; payable on every Summer Intensive application."
+        "notes": "Non-refundable; payable on every Summer Intensive application.",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -63,7 +65,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T11:35:15.312857Z",
-      "hash": "sha256:d99b846f0c7540a7e4fb5db69a39408d1a57c7ead02790d1f6754c642331a23f",
+      "hash": "sha256:2cc5215bb2d9b3c262a3a3a21989043967f1e513f56b072185d6705d6f7e8b18",
       "provider": "english-national-ballet-school",
       "scrapedAt": "2026-06-07T12:10:47.358629Z",
       "url": "https://www.enbschool.org.uk/intensives/summer/"
@@ -175,14 +177,16 @@
         "includes": [
           "tuition"
         ],
-        "label": "Course fee"
+        "label": "Course fee",
+        "type": "tuition"
       },
       {
         "amount": 30.0,
         "currency": "GBP",
         "includes": [],
         "label": "Application fee (non-refundable)",
-        "notes": "Non-refundable; payable on every Summer Intensive application."
+        "notes": "Non-refundable; payable on every Summer Intensive application.",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -195,7 +199,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T11:35:15.312857Z",
-      "hash": "sha256:5d7be2d8d29284ba8db4caf4210e077f8a57d48b527894f9171101b84fff7789",
+      "hash": "sha256:608f5fc1063580ca204e42bee00ae82f7e1a590286edb4b0de791af0f2012cc7",
       "provider": "english-national-ballet-school",
       "scrapedAt": "2026-06-07T12:10:47.359340Z",
       "url": "https://www.enbschool.org.uk/intensives/summer/"
@@ -269,14 +273,16 @@
         "includes": [
           "tuition"
         ],
-        "label": "Course fee"
+        "label": "Course fee",
+        "type": "tuition"
       },
       {
         "amount": 30.0,
         "currency": "GBP",
         "includes": [],
         "label": "Application fee (non-refundable)",
-        "notes": "Non-refundable; payable on every Summer Intensive application."
+        "notes": "Non-refundable; payable on every Summer Intensive application.",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -289,7 +295,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T11:35:15.312857Z",
-      "hash": "sha256:e08d684ca3a23adeb3730d964cd924fc0e03ea26a5e4b0a1c2f68ed7a879466e",
+      "hash": "sha256:73d57e50aa1d0b3327bf1ee92f8af1feba31f5855275980d9e1e3511b23a8a62",
       "provider": "english-national-ballet-school",
       "scrapedAt": "2026-06-07T12:10:47.359673Z",
       "url": "https://www.enbschool.org.uk/intensives/summer/"

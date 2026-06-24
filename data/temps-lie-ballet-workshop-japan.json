@@ -36,7 +36,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "バレエクラスレッスン 3回（税別）"
+        "label": "バレエクラスレッスン 3回（税別）",
+        "type": "tuition"
       },
       {
         "amount": 25000.0,
@@ -44,7 +45,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "バレエクラスレッスン 2回（税別）"
+        "label": "バレエクラスレッスン 2回（税別）",
+        "type": "tuition"
       },
       {
         "amount": 13500.0,
@@ -52,7 +54,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "バレエクラスレッスン 1回（税別）"
+        "label": "バレエクラスレッスン 1回（税別）",
+        "type": "tuition"
       },
       {
         "amount": 22500.0,
@@ -60,7 +63,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "コンテンポラリークラスレッスン 3回（税別）"
+        "label": "コンテンポラリークラスレッスン 3回（税別）",
+        "type": "tuition"
       },
       {
         "amount": 16500.0,
@@ -68,7 +72,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "コンテンポラリークラスレッスン 2回（税別）"
+        "label": "コンテンポラリークラスレッスン 2回（税別）",
+        "type": "tuition"
       },
       {
         "amount": 9000.0,
@@ -76,7 +81,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "コンテンポラリークラスレッスン 1回（税別）"
+        "label": "コンテンポラリークラスレッスン 1回（税別）",
+        "type": "tuition"
       },
       {
         "amount": 19500.0,
@@ -84,7 +90,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "プライベートレッスン（30分・希望者のみ・税別）"
+        "label": "プライベートレッスン（30分・希望者のみ・税別）",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -121,7 +128,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T10:25:09.194692Z",
-      "hash": "sha256:7db0b7872d593f281f4350ba0924f908fe4692cddb29d19ebab5cae5d9f714c4",
+      "hash": "sha256:b44fa25b87e4df30676c20ebb0b402e755cfe438eff2404c410ea0ee97a9766c",
       "provider": "temps-lie-ballet-workshop-japan",
       "scrapedAt": "2026-06-09T01:31:40.702298Z",
       "url": "https://www.paris-tokyo-ballet.com/summer-japan-2026/"
@@ -219,7 +226,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "バレエクラスレッスン 2回（税別）"
+        "label": "バレエクラスレッスン 2回（税別）",
+        "type": "tuition"
       },
       {
         "amount": 13000.0,
@@ -227,7 +235,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "バレエクラスレッスン 1回（税別）"
+        "label": "バレエクラスレッスン 1回（税別）",
+        "type": "tuition"
       },
       {
         "amount": 10000.0,
@@ -235,7 +244,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "コンテンポラリークラスレッスン 2回（税別）"
+        "label": "コンテンポラリークラスレッスン 2回（税別）",
+        "type": "tuition"
       },
       {
         "amount": 5750.0,
@@ -243,7 +253,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "コンテンポラリークラスレッスン 1回（税別）"
+        "label": "コンテンポラリークラスレッスン 1回（税別）",
+        "type": "tuition"
       },
       {
         "amount": 19500.0,
@@ -251,7 +262,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "プライベートレッスン（30分・希望者のみ・税別）"
+        "label": "プライベートレッスン（30分・希望者のみ・税別）",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -288,7 +300,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T10:25:09.194692Z",
-      "hash": "sha256:1cf0c108ae6a0aa20b81bc5d01b3707f454e6979eb83ba8ca43915ea8608e1c8",
+      "hash": "sha256:a5f7f181158c75f555cdbee936d60ff0b338f3cd6d7c6ccc46e03afe4b066e31",
       "provider": "temps-lie-ballet-workshop-japan",
       "scrapedAt": "2026-06-09T01:31:40.704205Z",
       "url": "https://www.paris-tokyo-ballet.com/summer-japan-2026/"

@@ -39,7 +39,8 @@
           "accommodation",
           "meals"
         ],
-        "label": "Residential — 1 week"
+        "label": "Residential — 1 week",
+        "type": "tuition"
       },
       {
         "amount": 876.0,
@@ -47,7 +48,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Non-residential — 1 week"
+        "label": "Non-residential — 1 week",
+        "type": "tuition"
       },
       {
         "amount": 2208.0,
@@ -57,7 +59,8 @@
           "accommodation",
           "meals"
         ],
-        "label": "Residential — 2 weeks"
+        "label": "Residential — 2 weeks",
+        "type": "tuition"
       },
       {
         "amount": 1560.0,
@@ -65,7 +68,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Non-residential — 2 weeks"
+        "label": "Non-residential — 2 weeks",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -77,7 +81,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T10:25:09.175910Z",
-      "hash": "sha256:f2ae2d67a7bdf2d299220eaec76d65393a9a62eb7059a08bbb55757e95054ae8",
+      "hash": "sha256:cb5aec7ec3500008b2f26ff3883bd4009387f9121764772858782aa3dfd0044a",
       "provider": "ecole-danse-opera-paris",
       "scrapedAt": "2026-06-07T07:37:58.895036Z",
       "url": "https://www.operadeparis.fr/en/artists/ballet-school/summer-internship"

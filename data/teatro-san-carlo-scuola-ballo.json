@@ -43,7 +43,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "2 lezioni al giorno per un totale di 8 lezioni"
+        "label": "2 lezioni al giorno per un totale di 8 lezioni",
+        "type": "tuition"
       },
       {
         "amount": 250.0,
@@ -51,7 +52,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "3 lezioni al giorno per un totale di 6 lezioni"
+        "label": "3 lezioni al giorno per un totale di 6 lezioni",
+        "type": "tuition"
       },
       {
         "amount": 390.0,
@@ -59,7 +61,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "2 lezioni al giorno per un totale di 8 lezioni"
+        "label": "2 lezioni al giorno per un totale di 8 lezioni",
+        "type": "tuition"
       },
       {
         "amount": 130.0,
@@ -67,7 +70,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "1 lezione al giorno per 2 giorni"
+        "label": "1 lezione al giorno per 2 giorni",
+        "type": "tuition"
       },
       {
         "amount": 490.0,
@@ -75,7 +79,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Totale di 12 lezioni"
+        "label": "Totale di 12 lezioni",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -87,7 +92,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T11:35:19.026187Z",
-      "hash": "sha256:2931e7ada6bde6cee1248f1bf5f2a58125dacd9d625eda6f09c399e0d418586b",
+      "hash": "sha256:e73a24d6aa4344d4f9c86310254f7179e637aaf3c5b463781468f64a5deb1ec2",
       "provider": "teatro-san-carlo-scuola-ballo",
       "scrapedAt": "2026-06-08T14:35:12.187646Z",
       "url": "https://www.teatrosancarlo.it/news/workshop-passi-destate-2024/"

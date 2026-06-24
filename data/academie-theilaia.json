@@ -44,7 +44,8 @@
           "tuition"
         ],
         "label": "Forfait (4 à 6 cours par jour) — tarif réduit",
-        "notes": "Tarif réduit pour toute inscription avant le 30 mars 2026."
+        "notes": "Tarif réduit pour toute inscription avant le 30 mars 2026.",
+        "type": "tuition"
       },
       {
         "amount": 150.0,
@@ -52,7 +53,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Carte de 4 cours adulte en soirée"
+        "label": "Carte de 4 cours adulte en soirée",
+        "type": "tuition"
       },
       {
         "amount": 525.0,
@@ -61,7 +63,8 @@
           "accommodation",
           "meals"
         ],
-        "label": "Hébergement en internat surveillé (pension complète)"
+        "label": "Hébergement en internat surveillé (pension complète)",
+        "type": "accommodation"
       }
     ],
     "schedule": {
@@ -73,7 +76,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T13:33:05.277248Z",
-      "hash": "sha256:f3433366463ead3a726d38230eec55affaa18420d85c2d9b0bae2bf41156cdb8",
+      "hash": "sha256:33e25e4de564de7b1afc5bd61d6baf6a858fd244d13cad2e381313f64680fc27",
       "provider": "academie-theilaia",
       "scrapedAt": "2026-06-06T19:44:28.716891Z",
       "url": "https://www.academie-ballet.fr/theilaia-24e-stage-international-du-13-au-17-juillet-2026/"

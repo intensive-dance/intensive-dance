@@ -36,7 +36,8 @@
           "tuition"
         ],
         "label": "受講料（4日間・税込）",
-        "notes": "東京バレエ団「はじめてのバレエ 白鳥の湖」鑑賞チケット費用を含む。"
+        "notes": "東京バレエ団「はじめてのバレエ 白鳥の湖」鑑賞チケット費用を含む。",
+        "type": "tuition"
       },
       {
         "amount": 6000.0,
@@ -44,7 +45,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "プライベートレッスン（30分・希望者のみ・税込）"
+        "label": "プライベートレッスン（30分・希望者のみ・税込）",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -85,7 +87,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T11:35:18.489738Z",
-      "hash": "sha256:6dc17483dfdfc723f04a8c50c9b3664249c7c068a814dd5104e874e5e18b09d3",
+      "hash": "sha256:48de38e8d966438806779d5853b3f77152b618a826af5b1177087f6b3a7f0d86",
       "provider": "tokyo-ballet-school",
       "scrapedAt": "2026-06-06T06:50:03.676258Z",
       "url": "https://www.thetokyoballetschool.com/kodomo/-2025-1.html"

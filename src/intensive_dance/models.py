@@ -9,10 +9,11 @@ their structure instead of collapsing to free text.
 from __future__ import annotations
 
 import hashlib
+import re
 from datetime import date, datetime, timezone
-from typing import Annotated, Literal
+from typing import Annotated, Any, Literal
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, model_validator
 
 Genre = Literal["classical", "contemporary", "neoclassical", "character", "repertoire", "pointe"]
 # Whether the offering itself takes place — separate from `application.status`
@@ -22,6 +23,12 @@ Genre = Literal["classical", "contemporary", "neoclassical", "character", "reper
 Lifecycle = Literal["scheduled", "cancelled", "postponed"]
 Level = Literal["beginner", "intermediate", "advanced", "pre-professional", "professional", "open"]
 PriceInclude = Literal["tuition", "accommodation", "meals", "materials", "performance", "studio"]
+# Category of a single Price line: the course charge (`tuition`) vs the gate fee
+# paid just to apply (`registration`), a `deposit`, a standalone `accommodation`
+# or `meals` charge, or `other`. Distinct from `includes`, which lists what a
+# *tuition* charge bundles. Auto-derived from `includes`+`label` when a scraper
+# doesn't set it (see `_classify_price_type`), so it stays stable across re-scrapes.
+PriceType = Literal["tuition", "registration", "deposit", "accommodation", "meals", "other"]
 # Application cycle state. `closed` covers a cycle still listed but no longer
 # accepting applications; `upcoming` = announced but not yet open.
 ApplicationStatus = Literal["open", "closed", "upcoming"]
@@ -128,12 +135,53 @@ class Teacher(BaseModel):
     affiliations: list[Affiliation] = Field(default_factory=list)
 
 
+_FEE_RX = re.compile(
+    r"appl|regist|enrol|inscri|iscriz|matric|anmeld|einschreib|\bfee\b", re.IGNORECASE
+)
+_DEPOSIT_RX = re.compile(r"deposit|anzahl|acconto|caparra|down.?payment", re.IGNORECASE)
+_ACCOM_RX = re.compile(
+    r"accommod|housing|lodging|\broom\b|residen|unterkunft|alloggi", re.IGNORECASE
+)
+_MEAL_RX = re.compile(r"\bmeal|\bboard\b|verpfleg|catering|\bfood\b", re.IGNORECASE)
+
+
+def _classify_price_type(includes: list[str], label: str | None) -> PriceType:
+    """Category of a price from the signals a scraper already produces. A
+    `tuition`-tagged charge is the course price; otherwise classify by label
+    (registration/deposit) or a standalone accommodation/meals `includes` tag.
+    Deterministic, so re-scrapes re-derive the same value (no churn)."""
+    if "tuition" in (includes or []):
+        return "tuition"
+    inc = set(includes or [])
+    lab = label or ""
+    if _DEPOSIT_RX.search(lab):
+        return "deposit"
+    if _FEE_RX.search(lab):
+        return "registration"
+    if "accommodation" in inc or _ACCOM_RX.search(lab):
+        return "accommodation"
+    if "meals" in inc or _MEAL_RX.search(lab):
+        return "meals"
+    return "other"
+
+
 class Price(BaseModel):
     amount: float
     currency: str  # ISO 4217
     label: str | None = None
+    type: PriceType = "tuition"  # category; auto-derived from includes/label when unset
     includes: list[PriceInclude] = Field(default_factory=list)
     notes: str | None = None
+
+    @model_validator(mode="before")
+    @classmethod
+    def _derive_type(cls, data: Any) -> Any:
+        if isinstance(data, dict) and not data.get("type"):
+            return {
+                **data,
+                "type": _classify_price_type(data.get("includes") or [], data.get("label")),
+            }
+        return data
 
 
 class Application(BaseModel):

@@ -42,7 +42,8 @@
         "currency": "CHF",
         "includes": [],
         "label": "1st registration fee",
-        "notes": "Non-refundable. Tuition fees apply but are not published on this page."
+        "notes": "Non-refundable. Tuition fees apply but are not published on this page.",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -55,7 +56,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:10.449488Z",
-      "hash": "sha256:e675d758189397618864bd7989d39ac6795c478d10863427e47c33c9f732795a",
+      "hash": "sha256:54cc7b404dd05238b00fbc04e3efb58d6fb4fbfce1fe7716a4f52ec06ea22915",
       "provider": "prix-de-lausanne-summer-intensive",
       "scrapedAt": "2026-06-16T09:21:03.153322Z",
       "url": "https://www.prixdelausanne.org/summer-intensive/"

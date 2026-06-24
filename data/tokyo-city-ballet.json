@@ -36,7 +36,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "クラシック・クラス（1クラス・税込）"
+        "label": "クラシック・クラス（1クラス・税込）",
+        "type": "tuition"
       },
       {
         "amount": 6000.0,
@@ -44,7 +45,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "スペシャル・クラス～スワニルダになりきろう～（1クラス・税込）"
+        "label": "スペシャル・クラス～スワニルダになりきろう～（1クラス・税込）",
+        "type": "tuition"
       },
       {
         "amount": 5000.0,
@@ -52,7 +54,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "ピラティス＆クラシック・クラス（1クラス・税込）"
+        "label": "ピラティス＆クラシック・クラス（1クラス・税込）",
+        "type": "tuition"
       },
       {
         "amount": 5000.0,
@@ -60,7 +63,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "コンテンポラリー・クラス（1クラス・税込）"
+        "label": "コンテンポラリー・クラス（1クラス・税込）",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -102,7 +106,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T01:50:35.772954Z",
-      "hash": "sha256:8ae08b76aa76273a9c699a83e746c68461d4e2d3ef6e4b2f6c952da57643c85a",
+      "hash": "sha256:6b3a2624d35f7cb9ae76b8d26fc1ff22c1db14b8e1964241b9f150ed2ae2aff8",
       "provider": "tokyo-city-ballet",
       "scrapedAt": "2026-06-16T09:09:46.834686Z",
       "url": "https://tokyocityballetcompetition.com/workshop.html"

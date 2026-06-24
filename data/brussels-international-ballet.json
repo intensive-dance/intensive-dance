@@ -43,7 +43,8 @@
         "amount": 29.0,
         "currency": "EUR",
         "includes": [],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -56,7 +57,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T18:58:21.789078Z",
-      "hash": "sha256:df36b80a37b0761266e21d09cadf7722cf15fda58e1043d68e33f1537661b4f1",
+      "hash": "sha256:34c20c0a5052a1933eb6b324514562d8dc313718a4d90451611d7865fefd5354",
       "provider": "brussels-international-ballet",
       "scrapedAt": "2026-06-10T06:45:34.692680Z",
       "url": "https://www.brusselsintballet.org/summer-intensive-2026"

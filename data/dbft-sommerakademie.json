@@ -33,7 +33,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Kursgebühr"
+        "label": "Kursgebühr",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -46,7 +47,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:10.428315Z",
-      "hash": "sha256:eedede137ea357c1b760be8fa70452d50d7873e359e17e805867cde83104fa52",
+      "hash": "sha256:744adaf3dc3128a57829a1d68297da2709e4870eaeb8aa8111eaf63f6314c1e6",
       "provider": "dbft-sommerakademie",
       "scrapedAt": "2026-06-11T20:32:27.457706Z",
       "url": "https://www.dbft.de/Fortbildungen-Weiterbildungen/Seminarangebot/"

@@ -50,7 +50,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Juniors"
+        "label": "Juniors",
+        "type": "tuition"
       },
       {
         "amount": 750.0,
@@ -58,7 +59,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Seniors / Pre-Professionals"
+        "label": "Seniors / Pre-Professionals",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -70,7 +72,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T05:54:44.341628Z",
-      "hash": "sha256:7d05c5c499854e0c06e8a8acee7409b40e93b12628eb12ffc8f7f591a655cdf7",
+      "hash": "sha256:d9271dac691316d00f528dda7d1d8a6f24288392b49f8387a585178fcd9ef053",
       "provider": "masters-of-ballet-academy",
       "scrapedAt": "2026-06-07T07:17:54.417377Z",
       "url": "https://mastersofballetacademy.com/courses.php?course=11"
@@ -129,7 +131,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Course fee"
+        "label": "Course fee",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -141,7 +144,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T05:54:44.341628Z",
-      "hash": "sha256:2e1565ff0f753e4ef5d1f6e5a472f87a4caee92c29148fd4ec9c19ebf434d45a",
+      "hash": "sha256:e9caaf1670c789123c8a05fee75497ac047d66731d92bae68d408ce64436f108",
       "provider": "masters-of-ballet-academy",
       "scrapedAt": "2026-06-07T07:19:41.296009Z",
       "url": "https://mastersofballetacademy.com/courses.php?course=10"

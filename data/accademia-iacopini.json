@@ -34,7 +34,8 @@
           "tuition"
         ],
         "label": "Quota totale",
-        "notes": "€150 acconto + €150 saldo."
+        "notes": "€150 acconto + €150 saldo.",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -46,7 +47,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T13:33:04.945702Z",
-      "hash": "sha256:a98e6ba2791c998f081de0d276b53cd6b6e3e002a801ea1d0f23ccf5a345b988",
+      "hash": "sha256:a895ad960e7d92ee9c4639e4d738a3d88a1a35d37298f9fb3ea5c4d94cbd842f",
       "provider": "accademia-iacopini",
       "scrapedAt": "2026-06-17T13:49:05.718252Z",
       "url": "https://accademiaiacopini.it/in_danza_5_edizione/"
@@ -89,7 +90,8 @@
           "tuition"
         ],
         "label": "Percorso unico",
-        "notes": "Pagamento dovuto solo a seguito di ammissione."
+        "notes": "Pagamento dovuto solo a seguito di ammissione.",
+        "type": "tuition"
       },
       {
         "amount": 250.0,
@@ -97,7 +99,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Quota integrativa (in aggiunta a INdanza)"
+        "label": "Quota integrativa (in aggiunta a INdanza)",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -110,7 +113,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T13:33:04.945702Z",
-      "hash": "sha256:adb1bf34a065791994af7fc483b197f71e3471d60137bc60c0023dce60bc7e75",
+      "hash": "sha256:7fffec92e4bb75be360d333766119731059993c2433e6b9976e8845e96175dda",
       "provider": "accademia-iacopini",
       "scrapedAt": "2026-06-17T13:49:05.718008Z",
       "url": "https://accademiaiacopini.it/in_danza_5_edizione/"
@@ -217,7 +220,8 @@
           "tuition"
         ],
         "label": "Quota totale",
-        "notes": "€350 acconto + €400 saldo. Early booking €650 entro il 30 aprile 2026."
+        "notes": "€350 acconto + €400 saldo. Early booking €650 entro il 30 aprile 2026.",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -230,7 +234,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T13:33:04.945702Z",
-      "hash": "sha256:feeffd33c9bd80e2b332d11e7d01059739dbde251e0d1243ac8918395f1f814e",
+      "hash": "sha256:4bf55792207ad29c5d4b0181797dabe65a66e3ce5a8d05fae59de49a9094c869",
       "provider": "accademia-iacopini",
       "scrapedAt": "2026-06-17T13:49:05.717747Z",
       "url": "https://accademiaiacopini.it/in_danza_5_edizione/"

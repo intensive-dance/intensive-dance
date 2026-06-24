@@ -58,7 +58,8 @@
           "meals"
         ],
         "label": "Tuition",
-        "notes": "VAT included"
+        "notes": "VAT included",
+        "type": "tuition"
       },
       {
         "amount": 800.0,
@@ -68,7 +69,8 @@
           "meals"
         ],
         "label": "Early bird",
-        "notes": "VAT included"
+        "notes": "VAT included",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -80,7 +82,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T05:54:42.913516Z",
-      "hash": "sha256:37cd5e9ef22aa6f20b77e119ca351719bd3935fd4230076c1592888c9c7ca64b",
+      "hash": "sha256:14326e001a396e8c9aa6a61313f436da553780589cd68407e1687ff22ac6b0aa",
       "provider": "finnish-national-ballet",
       "scrapedAt": "2026-06-16T10:11:00.506620Z",
       "url": "https://oopperabaletti.fi/en/international-summer-intensive/"
@@ -170,7 +172,8 @@
           "tuition"
         ],
         "label": "Tuition",
-        "notes": "VAT included"
+        "notes": "VAT included",
+        "type": "tuition"
       },
       {
         "amount": 375.0,
@@ -179,7 +182,8 @@
           "tuition"
         ],
         "label": "Early bird",
-        "notes": "VAT included"
+        "notes": "VAT included",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -191,7 +195,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T05:54:42.913516Z",
-      "hash": "sha256:fb8c82325a6b4d9180c1f0f050ff615f9a5180e6f8d36f0449028195ecac3614",
+      "hash": "sha256:4f139cc505e0ae8e553e61e0ef09a8d5937410b0726ff2560a4f54b0acd34310",
       "provider": "finnish-national-ballet",
       "scrapedAt": "2026-06-16T10:30:08.984856Z",
       "url": "https://oopperabaletti.fi/en/international-summer-intensive/"

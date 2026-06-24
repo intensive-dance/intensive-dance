@@ -371,6 +371,19 @@
           ],
           "default": null,
           "title": "Notes"
+        },
+        "type": {
+          "default": "tuition",
+          "enum": [
+            "tuition",
+            "registration",
+            "deposit",
+            "accommodation",
+            "meals",
+            "other"
+          ],
+          "title": "Type",
+          "type": "string"
         }
       },
       "required": [

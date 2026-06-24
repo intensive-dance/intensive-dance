@@ -43,7 +43,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition (both weeks, incl. VAT)"
+        "label": "Tuition (both weeks, incl. VAT)",
+        "type": "tuition"
       },
       {
         "amount": 500.0,
@@ -51,7 +52,8 @@
         "includes": [
           "meals"
         ],
-        "label": "Lunch (per week, optional)"
+        "label": "Lunch (per week, optional)",
+        "type": "meals"
       },
       {
         "amount": 5995.0,
@@ -59,7 +61,8 @@
         "includes": [
           "accommodation"
         ],
-        "label": "Accommodation at Suhrs Højskole (per week, ages 15+, optional)"
+        "label": "Accommodation at Suhrs Højskole (per week, ages 15+, optional)",
+        "type": "accommodation"
       }
     ],
     "schedule": {
@@ -72,7 +75,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T13:33:03.574962Z",
-      "hash": "sha256:990936e3383c573d48f8dc2a3ad04ff290e839dc054b510ff381297a198b2ad8",
+      "hash": "sha256:2155bda082fe4e1695eac11af6ff92d03344831fb0b0eeed6f6a3f2856f2debb",
       "provider": "royal-danish-ballet-summer-school",
       "scrapedAt": "2026-06-16T09:21:03.639548Z",
       "url": "https://www.kglteater.dk/en/about-the-royal-danish-theatre/summerschool/"

@@ -47,13 +47,15 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition (All Levels)"
+        "label": "Tuition (All Levels)",
+        "type": "tuition"
       },
       {
         "amount": 135.0,
         "currency": "USD",
         "includes": [],
-        "label": "Registration Fee"
+        "label": "Registration Fee",
+        "type": "registration"
       },
       {
         "amount": 4170.0,
@@ -62,25 +64,29 @@
           "accommodation",
           "meals"
         ],
-        "label": "Room and Board"
+        "label": "Room and Board",
+        "type": "accommodation"
       },
       {
         "amount": 625.0,
         "currency": "USD",
         "includes": [],
-        "label": "Single Room Surcharge"
+        "label": "Single Room Surcharge",
+        "type": "accommodation"
       },
       {
         "amount": 170.0,
         "currency": "USD",
         "includes": [],
-        "label": "Activity Fee"
+        "label": "Activity Fee",
+        "type": "registration"
       },
       {
         "amount": 20.0,
         "currency": "USD",
         "includes": [],
-        "label": "Laundry Fee"
+        "label": "Laundry Fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -92,7 +98,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T13:33:04.950151Z",
-      "hash": "sha256:61c3993e0483b28e9ee0a4dbee2777a76f9bef649b20d2610d4c84c9c4e21f7d",
+      "hash": "sha256:4ff75893e3613dc89be16b9d87644985d9eeb02d7bd1b3f78311caf5fbb7aebb",
       "provider": "school-of-american-ballet",
       "scrapedAt": "2026-06-07T08:34:21.061473Z",
       "url": "https://sab.org/enrollment/summer-course/"
@@ -146,13 +152,15 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition"
+        "label": "Tuition",
+        "type": "tuition"
       },
       {
         "amount": 110.0,
         "currency": "USD",
         "includes": [],
-        "label": "Registration Fee"
+        "label": "Registration Fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -164,7 +172,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T13:33:04.950151Z",
-      "hash": "sha256:b1e7fc0c5799436a54fb88d839d1ba50846ed05f41444e6c987eaef27422f66f",
+      "hash": "sha256:7331f90dc9079a70b217eee26828253b3f72b36d878d21f59efa67cbf6cbeb44",
       "provider": "school-of-american-ballet",
       "scrapedAt": "2026-06-07T08:34:21.686296Z",
       "url": "https://sab.org/enrollment/new-york-junior-session/"

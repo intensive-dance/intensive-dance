@@ -35,7 +35,8 @@
           "tuition"
         ],
         "label": "1 week",
-        "notes": "1 week: 350 €"
+        "notes": "1 week: 350 €",
+        "type": "tuition"
       },
       {
         "amount": 600.0,
@@ -44,7 +45,8 @@
           "tuition"
         ],
         "label": "2 weeks",
-        "notes": "2 weeks: 600 €"
+        "notes": "2 weeks: 600 €",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -56,7 +58,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T23:44:43.159343Z",
-      "hash": "sha256:a089e56456f20ec0981e63c2574e2cbc1eb4cfb1caea303945bc2b6cf6150fe2",
+      "hash": "sha256:a50fcb1289e7912333b7580c3c1c342591e6e65d861179bfb8a5fac9366c39d7",
       "provider": "ballet-summer-course-budapest",
       "scrapedAt": "2026-06-23T23:44:47.032541Z",
       "url": "https://balletsummercoursebudapest.com/about-our-groups/advanced-amateur-group-from-the-age-of-15/"
@@ -231,7 +233,8 @@
           "tuition"
         ],
         "label": "1 week",
-        "notes": "1 week: 230 €"
+        "notes": "1 week: 230 €",
+        "type": "tuition"
       },
       {
         "amount": 380.0,
@@ -240,7 +243,8 @@
           "tuition"
         ],
         "label": "2 weeks",
-        "notes": "2 weeks: 380 €"
+        "notes": "2 weeks: 380 €",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -252,7 +256,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T23:44:43.159343Z",
-      "hash": "sha256:8bb2c01877ac68b8f1bc6a4afe1a76a1cb66d0a891c26d70d6830f7646bdba9e",
+      "hash": "sha256:29b6ea0cea97f25851ff82ef63702ed77d72f3833de0a0fd86f2bdd438e8034d",
       "provider": "ballet-summer-course-budapest",
       "scrapedAt": "2026-06-23T23:44:47.033393Z",
       "url": "https://balletsummercoursebudapest.com/amateur-beginning-group-no-age-limit/"
@@ -428,7 +432,8 @@
           "tuition"
         ],
         "label": "1 week",
-        "notes": "1 week: 300 €"
+        "notes": "1 week: 300 €",
+        "type": "tuition"
       },
       {
         "amount": 450.0,
@@ -437,7 +442,8 @@
           "tuition"
         ],
         "label": "2 week",
-        "notes": "2 week: 450 €"
+        "notes": "2 week: 450 €",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -449,7 +455,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T23:44:43.159343Z",
-      "hash": "sha256:35cb1f2d4ecced8ff4f342c53363cd49fb1108a7af8f4c5546c7570c2cae50f4",
+      "hash": "sha256:e3f70a6c8dedd6a76d063e385f14bce7f1d50106d686a713d0f9828f66bcc55d",
       "provider": "ballet-summer-course-budapest",
       "scrapedAt": "2026-06-23T23:44:47.033837Z",
       "url": "https://balletsummercoursebudapest.com/about-our-groups/children-group-between-10-and-13-years-of-age/"
@@ -625,7 +631,8 @@
           "tuition"
         ],
         "label": "1 week",
-        "notes": "1 week: 150 €"
+        "notes": "1 week: 150 €",
+        "type": "tuition"
       },
       {
         "amount": 250.0,
@@ -634,7 +641,8 @@
           "tuition"
         ],
         "label": "2 week",
-        "notes": "2 week: 250 €"
+        "notes": "2 week: 250 €",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -646,7 +654,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T23:44:43.159343Z",
-      "hash": "sha256:c0b54b610fc73206714369840ee5aad9cc74e652e2edbc73d35658661f8c5b63",
+      "hash": "sha256:cd8f4e3dc27f99ff119e66646179b880cb6afec23b6dd97e3be8b8f2a44b824f",
       "provider": "ballet-summer-course-budapest",
       "scrapedAt": "2026-06-23T23:44:47.034216Z",
       "url": "https://balletsummercoursebudapest.com/about-our-groups/group-6-childrens-sport-group/"
@@ -821,7 +829,8 @@
           "tuition"
         ],
         "label": "1 week",
-        "notes": "1 week: 320 €"
+        "notes": "1 week: 320 €",
+        "type": "tuition"
       },
       {
         "amount": 500.0,
@@ -830,7 +839,8 @@
           "tuition"
         ],
         "label": "2 weeks",
-        "notes": "2 weeks: 500 €"
+        "notes": "2 weeks: 500 €",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -842,7 +852,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T23:44:43.159343Z",
-      "hash": "sha256:2640444d149d95e86fc4758cdaa323714f87bbe0680872a17d0b7cfa3cd6bba7",
+      "hash": "sha256:1ad275b367e7c31ba545b11613a17be552da1b85a1e69205b6ba75a3733d5499",
       "provider": "ballet-summer-course-budapest",
       "scrapedAt": "2026-06-23T23:44:47.032977Z",
       "url": "https://balletsummercoursebudapest.com/about-our-groups/intermediate-amateur-group-from-the-age-of-15/"
@@ -1019,7 +1029,8 @@
           "tuition"
         ],
         "label": "1 week",
-        "notes": "1 week: 450 €"
+        "notes": "1 week: 450 €",
+        "type": "tuition"
       },
       {
         "amount": 750.0,
@@ -1028,7 +1039,8 @@
           "tuition"
         ],
         "label": "2 weeks",
-        "notes": "2 weeks: 750 €"
+        "notes": "2 weeks: 750 €",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -1040,7 +1052,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T23:44:43.159343Z",
-      "hash": "sha256:53ae8c2426c23e1bd13febfa40d5bb3b1b058f81bd401112555e39dd85855d11",
+      "hash": "sha256:64fbb4c0d7ec26dfc183628242794f36c1460cf62450566545b84eddbd7c8e70",
       "provider": "ballet-summer-course-budapest",
       "scrapedAt": "2026-06-23T23:44:47.032102Z",
       "url": "https://balletsummercoursebudapest.com/about-our-groups/professional-junior-group-between-13-and-15-years-of-age/"
@@ -1218,7 +1230,8 @@
           "tuition"
         ],
         "label": "1 week",
-        "notes": "1 week: 450 €"
+        "notes": "1 week: 450 €",
+        "type": "tuition"
       },
       {
         "amount": 750.0,
@@ -1227,7 +1240,8 @@
           "tuition"
         ],
         "label": "2 weeks",
-        "notes": "2 weeks: 750 €"
+        "notes": "2 weeks: 750 €",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -1239,7 +1253,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T23:44:43.159343Z",
-      "hash": "sha256:71087011bdbc47f8338a543e3b38966ddf86f9424bf19bfada1fc83c80cc44d0",
+      "hash": "sha256:a3be98dfd873d4a7f22124acea5272cb691ef22d5febf37ad2a37e1832b9904a",
       "provider": "ballet-summer-course-budapest",
       "scrapedAt": "2026-06-23T23:44:47.031526Z",
       "url": "https://balletsummercoursebudapest.com/about-our-groups/professional-young-group/"

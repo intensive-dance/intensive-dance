@@ -42,7 +42,8 @@
           "tuition"
         ],
         "label": "Carte « 6 cours (1 cours/jour) » (tarif plein)",
-        "notes": "Reduced: grandes écoles/eurocités 220 €."
+        "notes": "Reduced: grandes écoles/eurocités 220 €.",
+        "type": "tuition"
       },
       {
         "amount": 380.0,
@@ -51,7 +52,8 @@
           "tuition"
         ],
         "label": "Carte « 12 cours (2 cours/jour) » (tarif plein)",
-        "notes": "Reduced: grandes écoles/eurocités 340 €."
+        "notes": "Reduced: grandes écoles/eurocités 340 €.",
+        "type": "tuition"
       },
       {
         "amount": 480.0,
@@ -60,7 +62,8 @@
           "tuition"
         ],
         "label": "Carte « 18 cours (3 cours/jour) » (tarif plein)",
-        "notes": "Reduced: grandes écoles/eurocités 430 €."
+        "notes": "Reduced: grandes écoles/eurocités 430 €.",
+        "type": "tuition"
       },
       {
         "amount": 520.0,
@@ -69,7 +72,8 @@
           "tuition"
         ],
         "label": "Carte « cours illimités » (tarif plein)",
-        "notes": "Reduced: grandes écoles/eurocités 480 €; professionnels 300 €."
+        "notes": "Reduced: grandes écoles/eurocités 480 €; professionnels 300 €.",
+        "type": "tuition"
       },
       {
         "amount": 430.0,
@@ -79,7 +83,8 @@
           "meals"
         ],
         "label": "Forfait hébergement (7 nuits pension complète)",
-        "notes": "+50 € supplement for a private room."
+        "notes": "+50 € supplement for a private room.",
+        "type": "accommodation"
       }
     ],
     "schedule": {
@@ -92,7 +97,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T06:36:03.435897Z",
-      "hash": "sha256:985aeebc81dd9c9475b5390f94699da77801fb467c224cf72c62c8526bef1afb",
+      "hash": "sha256:250720eb0e83cb3aec1402692d59f377ff6524c4a79d304e2f93d0adb143347a",
       "provider": "academie-danse-biarritz",
       "scrapedAt": "2026-06-07T07:38:57.446549Z",
       "url": "https://biarritz-academie-danse.com/"

@@ -33,13 +33,15 @@
           "tuition"
         ],
         "label": "Per week",
-        "notes": "Both weeks: 30% off the course fee (registration fee unchanged)."
+        "notes": "Both weeks: 30% off the course fee (registration fee unchanged).",
+        "type": "tuition"
       },
       {
         "amount": 25.0,
         "currency": "EUR",
         "includes": [],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -62,7 +64,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:07.665889Z",
-      "hash": "sha256:b3db21f505e609fe689d66a15b629a994e65013930b8d59d7282a510445cf2cd",
+      "hash": "sha256:0693b9547c639889d25becf7698623d9b7384b6d7517db2a16f6a2d403256a57",
       "provider": "centro-formazione-danza-verona",
       "scrapedAt": "2026-06-17T12:39:20.700777Z",
       "url": "https://cfdanzaverona.it/summer-school/"

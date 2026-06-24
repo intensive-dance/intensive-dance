@@ -45,14 +45,16 @@
         "includes": [
           "tuition"
         ],
-        "label": "Program Tuition"
+        "label": "Program Tuition",
+        "type": "tuition"
       },
       {
         "amount": 150.0,
         "currency": "USD",
         "includes": [],
         "label": "Registration Fee",
-        "notes": "Non-refundable."
+        "notes": "Non-refundable.",
+        "type": "registration"
       },
       {
         "amount": 1600.0,
@@ -62,7 +64,8 @@
           "meals"
         ],
         "label": "Private Room + Meals",
-        "notes": "Optional UNLV housing package (12 nights)."
+        "notes": "Optional UNLV housing package (12 nights).",
+        "type": "accommodation"
       },
       {
         "amount": 1150.0,
@@ -72,7 +75,8 @@
           "meals"
         ],
         "label": "Shared Room + Meals",
-        "notes": "Optional UNLV housing package (12 nights)."
+        "notes": "Optional UNLV housing package (12 nights).",
+        "type": "accommodation"
       }
     ],
     "schedule": {
@@ -84,7 +88,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T13:33:05.096333Z",
-      "hash": "sha256:1871bffa5d5a69b00a60bc7278e8ecf99d0582cf5d2b3d5b8683f589079d7a91",
+      "hash": "sha256:5441b2cbb9f88c60b8d1042f2b8451ce93c182b6f5f7d7b3930de2886470a757",
       "provider": "vaganova-international-program",
       "scrapedAt": "2026-06-09T11:59:25.572625Z",
       "url": "https://vaganovainternationalprogram.com/"

@@ -35,7 +35,8 @@
           "meals"
         ],
         "label": "Residential fee",
-        "notes": "Full board plus coach transfer from Kraków."
+        "notes": "Full board plus coach transfer from Kraków.",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -47,7 +48,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T10:25:06.751640Z",
-      "hash": "sha256:3648ea6f6e617e635efa07dd59a76a357fefd49d264ec990e0c7c1d660298dd3",
+      "hash": "sha256:23dcf88a8b51ac255190f7bdbd2239af6369a3c24b73dd46e4d84faf036f0ab0",
       "provider": "centrum-sztuki-tanca",
       "scrapedAt": "2026-06-08T21:36:05.405822Z",
       "url": "https://centrumsztukitanca.pl/danceit-2026/"
@@ -100,7 +101,8 @@
           "meals"
         ],
         "label": "Residential fee",
-        "notes": "Full board plus coach transfer from Kraków."
+        "notes": "Full board plus coach transfer from Kraków.",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -112,7 +114,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T10:25:06.751640Z",
-      "hash": "sha256:fa9c08eb86cf22df654a9b9e3df6d49b3dcafa7a4ca64783fb08864dd6af94a6",
+      "hash": "sha256:e3c097f37dd2073828ab37561f438685361a5fd4783f3595bf65a8d8b453e1c7",
       "provider": "centrum-sztuki-tanca",
       "scrapedAt": "2026-06-08T21:36:05.405733Z",
       "url": "https://centrumsztukitanca.pl/letnie-obozy-baletowe-2026/"
@@ -153,7 +155,8 @@
           "meals"
         ],
         "label": "Residential fee",
-        "notes": "Full board plus coach transfer from Kraków."
+        "notes": "Full board plus coach transfer from Kraków.",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -165,7 +168,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T10:25:06.751640Z",
-      "hash": "sha256:c2100e1a31631c0ccf94d231f0ffad57a49ca92a24eeb7971ee0e72c8709658a",
+      "hash": "sha256:e2eae66d9c179b6dde24f93fbc8b41e1b434170b73892505271d640d698c56cf",
       "provider": "centrum-sztuki-tanca",
       "scrapedAt": "2026-06-08T21:36:05.405780Z",
       "url": "https://centrumsztukitanca.pl/letnie-obozy-baletowe-2026/"

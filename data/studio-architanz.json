@@ -36,7 +36,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "2日間通し（全4クラス）（税込）"
+        "label": "2日間通し（全4クラス）（税込）",
+        "type": "tuition"
       },
       {
         "amount": 7000.0,
@@ -44,7 +45,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "オーディション審査料（希望者のみ・税込）"
+        "label": "オーディション審査料（希望者のみ・税込）",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -81,7 +83,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T20:58:49.028698Z",
-      "hash": "sha256:6f410be876e863b9a7bd481cfb0092635a13a264851f8cd45e3916cd0a08a836",
+      "hash": "sha256:e9b58cb18775830006bf159f50d13be22e58da56f4defdbbc742bff9e60ef3cc",
       "provider": "studio-architanz",
       "scrapedAt": "2026-06-09T03:35:36.056928Z",
       "url": "https://a-tanz.com/ballet/2025/06/15151738"

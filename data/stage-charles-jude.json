@@ -39,7 +39,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "1 semaine — 1 cours/jour"
+        "label": "1 semaine — 1 cours/jour",
+        "type": "tuition"
       },
       {
         "amount": 350.0,
@@ -47,7 +48,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "1 semaine — 2 cours/jour"
+        "label": "1 semaine — 2 cours/jour",
+        "type": "tuition"
       },
       {
         "amount": 490.0,
@@ -55,7 +57,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "1 semaine — 3 cours/jour"
+        "label": "1 semaine — 3 cours/jour",
+        "type": "tuition"
       },
       {
         "amount": 700.0,
@@ -63,7 +66,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "1 semaine — cours illimités"
+        "label": "1 semaine — cours illimités",
+        "type": "tuition"
       },
       {
         "amount": 40.0,
@@ -71,7 +75,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "1 semaine — cours à l’unité"
+        "label": "1 semaine — cours à l’unité",
+        "type": "tuition"
       },
       {
         "amount": 400.0,
@@ -79,7 +84,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "2 semaines — 1 cours/jour"
+        "label": "2 semaines — 1 cours/jour",
+        "type": "tuition"
       },
       {
         "amount": 680.0,
@@ -87,7 +93,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "2 semaines — 2 cours/jour"
+        "label": "2 semaines — 2 cours/jour",
+        "type": "tuition"
       },
       {
         "amount": 950.0,
@@ -95,7 +102,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "2 semaines — 3 cours/jour"
+        "label": "2 semaines — 3 cours/jour",
+        "type": "tuition"
       },
       {
         "amount": 1350.0,
@@ -103,7 +111,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "2 semaines — cours illimités"
+        "label": "2 semaines — cours illimités",
+        "type": "tuition"
       },
       {
         "amount": 40.0,
@@ -111,14 +120,16 @@
         "includes": [
           "tuition"
         ],
-        "label": "2 semaines — cours à l’unité"
+        "label": "2 semaines — cours à l’unité",
+        "type": "tuition"
       },
       {
         "amount": 15.0,
         "currency": "EUR",
         "includes": [],
         "label": "Adhésion",
-        "notes": "Adhésion à ajouter à chaque tarif."
+        "notes": "Adhésion à ajouter à chaque tarif.",
+        "type": "other"
       }
     ],
     "schedule": {
@@ -140,7 +151,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T20:58:48.979038Z",
-      "hash": "sha256:056e31a57a6e4393e3a65df3ef53a5471dbc0d4d5dc0a49bcbd8c32e69bc1134",
+      "hash": "sha256:6826efd2100422725abb4f2b9e1669b8ba6214771096d85a976464283825af93",
       "provider": "stage-charles-jude",
       "scrapedAt": "2026-06-07T07:17:56.172768Z",
       "url": "https://stagedansecj.com/"

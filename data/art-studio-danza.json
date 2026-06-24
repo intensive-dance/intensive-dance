@@ -31,7 +31,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Stage enrollment"
+        "label": "Stage enrollment",
+        "type": "tuition"
       },
       {
         "amount": 65.0,
@@ -41,7 +42,8 @@
           "meals"
         ],
         "label": "Accommodation (per person/day)",
-        "notes": "Hotel convention, half board; booked through the organisation."
+        "notes": "Hotel convention, half board; booked through the organisation.",
+        "type": "accommodation"
       }
     ],
     "schedule": {
@@ -53,7 +55,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T10:25:08.499286Z",
-      "hash": "sha256:996323d4ebc29fdc2bc3bcc2d54308dda8823ead97d1655fd1af1aaac523fcb0",
+      "hash": "sha256:69ce44aa91943a4c5796caecfe87852148da3e11d4ce6299ff3411d35a839845",
       "provider": "art-studio-danza",
       "scrapedAt": "2026-06-17T12:55:55.673138Z",
       "url": "https://artstudiodanza.it/29-stage-internazionale-del-lago-di-garda/"

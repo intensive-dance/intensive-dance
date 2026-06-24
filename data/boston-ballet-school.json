@@ -41,13 +41,15 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition"
+        "label": "Tuition",
+        "type": "tuition"
       },
       {
         "amount": 100.0,
         "currency": "USD",
         "includes": [],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "registration"
       },
       {
         "amount": 3570.0,
@@ -56,7 +58,8 @@
           "accommodation",
           "meals"
         ],
-        "label": "Food/Housing"
+        "label": "Food/Housing",
+        "type": "accommodation"
       },
       {
         "amount": 320.0,
@@ -64,7 +67,8 @@
         "includes": [
           "meals"
         ],
-        "label": "Lunch Plan"
+        "label": "Lunch Plan",
+        "type": "meals"
       }
     ],
     "schedule": {
@@ -76,7 +80,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T23:44:42.243593Z",
-      "hash": "sha256:75b2783cddb5ec0bbfe6a6d06cc38d7c7b3d97e6560ae0091598c90c0b4c548a",
+      "hash": "sha256:99c46207a5805666fb2d0662e95ee4e0fae744524993bed172641ce138b4c641",
       "provider": "boston-ballet-school",
       "scrapedAt": "2026-06-16T09:05:13.113069Z",
       "url": "https://www.bostonballet.org/education/summer-dance-program/faq/"
@@ -137,13 +141,15 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition"
+        "label": "Tuition",
+        "type": "tuition"
       },
       {
         "amount": 70.0,
         "currency": "USD",
         "includes": [],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "registration"
       },
       {
         "amount": 2500.0,
@@ -152,13 +158,15 @@
           "accommodation",
           "meals"
         ],
-        "label": "Residential Fees"
+        "label": "Residential Fees",
+        "type": "accommodation"
       },
       {
         "amount": 200.0,
         "currency": "USD",
         "includes": [],
-        "label": "Activity fee"
+        "label": "Activity fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -170,7 +178,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T23:44:42.243593Z",
-      "hash": "sha256:be333bed8d420e25c7bd6a2b911f429248b8d5aa9238cffbfd5ce790c1b56e58",
+      "hash": "sha256:034dc786f911967b38a2adafe6f0a256e12e05917ae88a2e7f19a4261ed53dba",
       "provider": "boston-ballet-school",
       "scrapedAt": "2026-06-08T14:08:34.697722Z",
       "url": "https://www.bostonballet.org/education/junior-summer-intensive/"
@@ -231,13 +239,15 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition"
+        "label": "Tuition",
+        "type": "tuition"
       },
       {
         "amount": 70.0,
         "currency": "USD",
         "includes": [],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "registration"
       },
       {
         "amount": 2500.0,
@@ -246,13 +256,15 @@
           "accommodation",
           "meals"
         ],
-        "label": "Residential Fees"
+        "label": "Residential Fees",
+        "type": "accommodation"
       },
       {
         "amount": 200.0,
         "currency": "USD",
         "includes": [],
-        "label": "Activity fee"
+        "label": "Activity fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -264,7 +276,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T23:44:42.243593Z",
-      "hash": "sha256:2c70d688c08943647c57f8abe9f485e295a194fca6be84c3804a99c5f30b2d46",
+      "hash": "sha256:074392dd6b527eaa94419c596f659a2e4839b01a50b98072a464f815e88593dd",
       "provider": "boston-ballet-school",
       "scrapedAt": "2026-06-08T14:08:34.697822Z",
       "url": "https://www.bostonballet.org/education/junior-summer-intensive/"
@@ -325,13 +337,15 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition"
+        "label": "Tuition",
+        "type": "tuition"
       },
       {
         "amount": 70.0,
         "currency": "USD",
         "includes": [],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "registration"
       },
       {
         "amount": 2500.0,
@@ -340,13 +354,15 @@
           "accommodation",
           "meals"
         ],
-        "label": "Residential Fees"
+        "label": "Residential Fees",
+        "type": "accommodation"
       },
       {
         "amount": 200.0,
         "currency": "USD",
         "includes": [],
-        "label": "Activity fee"
+        "label": "Activity fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -358,7 +374,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T23:44:42.243593Z",
-      "hash": "sha256:11c7a41579dca4953d7d686e8d23fa8d52aeaaabd947c211b26f9739762cd921",
+      "hash": "sha256:2e032d1beb5247d52e6e4d6258ec43e7e53aa38d32351c647b53eae142cb4636",
       "provider": "boston-ballet-school",
       "scrapedAt": "2026-06-08T14:08:34.697843Z",
       "url": "https://www.bostonballet.org/education/junior-summer-intensive/"

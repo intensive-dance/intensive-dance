@@ -75,7 +75,8 @@ See [`erd.md`](./erd.md) for the entity-relationship diagram (auto-generated fro
       "amount": 2500,                                   // integer minor-unit-free; use decimals only if the source does
       "currency": "GBP",                                // ISO 4217
       "label": "Tuition",
-      "includes": ["tuition", "studio"],                // enum-ish: tuition | accommodation | meals | materials | performance | studio
+      "type": "tuition",                                // category: tuition | registration | deposit | accommodation | meals | other — auto-derived from includes+label if unset
+      "includes": ["tuition", "studio"],                // what a TUITION charge bundles: tuition | accommodation | meals | materials | performance | studio
       "notes": "Excludes accommodation."
     }
   ],
@@ -117,5 +118,5 @@ Keep raw source text in `notes` whenever we have to interpret/normalize, so we c
 
 - **One offering per record** keeps year-over-year and per-session changes diffable via `source.hash`.
 - **`teachers[].affiliations`** is the explicit answer to "where they actually teach and dance" — separate from their role *in the intensive*.
-- **`prices` is a list** because schools quote tuition / accommodation / early-bird separately.
+- **`prices` is a list** because schools quote tuition / accommodation / early-bird separately. Each carries a **`type`** (the charge category — `tuition` is the course price, `registration` the gate fee paid just to apply, etc.) so a consumer never mistakes an application fee for the course price. `includes` is a different axis: what a *tuition* charge bundles. `type` is auto-derived from `includes`+`label` when a scraper doesn't set it.
 - **Requirements as a union** preserves the structure the platform will eventually filter on (e.g. "no video required").

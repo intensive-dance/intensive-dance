@@ -42,7 +42,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Gruppe 1 (10-13 years)"
+        "label": "Gruppe 1 (10-13 years)",
+        "type": "tuition"
       },
       {
         "amount": 350.0,
@@ -50,7 +51,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Gruppe 2 (13-17 years)"
+        "label": "Gruppe 2 (13-17 years)",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -62,7 +64,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T18:58:24.633608Z",
-      "hash": "sha256:fdb68cef25d1cb196a0bc9418ad6bcca4582e9e7339c09dd7af3b5ee5985e524",
+      "hash": "sha256:d8c92a20a38add6ace9255f5727adf1785813357165025adfb901ea989e7766d",
       "provider": "munich-ballet-intensive",
       "scrapedAt": "2026-06-09T01:31:39.978554Z",
       "url": "https://www.munichballetintensive.com/startseite"

@@ -56,13 +56,15 @@
         "includes": [
           "tuition"
         ],
-        "label": "Participation fee"
+        "label": "Participation fee",
+        "type": "tuition"
       },
       {
         "amount": 25.0,
         "currency": "EUR",
         "includes": [],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -91,7 +93,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T22:09:24.173198Z",
-      "hash": "sha256:6fe7176566de48843f4d7b0c460cae224f289010852205f77ed6f6a7369649ac",
+      "hash": "sha256:e88715dfd11f182358adcbd1eddfff61953f1115de8dc1942ea6e3054e4fb240",
       "provider": "frankfurt-ballet-masterclasses",
       "scrapedAt": "2026-06-11T18:06:00.100127Z",
       "url": "https://masterclass.balletcompetition.net/"

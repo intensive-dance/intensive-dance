@@ -34,7 +34,8 @@
         "includes": [
           "tuition",
           "meals"
-        ]
+        ],
+        "type": "tuition"
       },
       {
         "amount": 144.0,
@@ -43,7 +44,8 @@
           "tuition",
           "meals"
         ],
-        "label": "Obyvatelia Starého Mesta"
+        "label": "Obyvatelia Starého Mesta",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -56,7 +58,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T05:54:42.991747Z",
-      "hash": "sha256:339a91772494f9c38001589d1c39feec4f77a922064c8d8bb3946cceb990aa88",
+      "hash": "sha256:3e977bf10aed5976846bbbd24dc1ab364b273ddcc94165c7ba3601f1caaeaca7",
       "provider": "staromestske-baletne-studio",
       "scrapedAt": "2026-06-12T13:20:10.385307Z",
       "url": "https://staromestskecentrakultury.sk/novinka/132110/prihlaste-svoje-deti-do-nasich-letnych-taborov"

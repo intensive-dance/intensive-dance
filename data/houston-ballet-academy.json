@@ -47,25 +47,29 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition"
+        "label": "Tuition",
+        "type": "tuition"
       },
       {
         "amount": 275.0,
         "currency": "USD",
         "includes": [],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "registration"
       },
       {
         "amount": 125.0,
         "currency": "USD",
         "includes": [],
-        "label": "Health & Wellness fee"
+        "label": "Health & Wellness fee",
+        "type": "registration"
       },
       {
         "amount": 200.0,
         "currency": "USD",
         "includes": [],
-        "label": "Housing registration fee"
+        "label": "Housing registration fee",
+        "type": "registration"
       },
       {
         "amount": 3400.0,
@@ -73,7 +77,8 @@
         "includes": [
           "accommodation"
         ],
-        "label": "University of St. Thomas housing (optional)"
+        "label": "University of St. Thomas housing (optional)",
+        "type": "accommodation"
       }
     ],
     "schedule": {
@@ -85,7 +90,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T05:54:44.901424Z",
-      "hash": "sha256:7ad27f5c5f4cbbdad9545a9cd09986f064852c782d5486a044aa1c06132761c9",
+      "hash": "sha256:61b03d3b96724be74ea50978fec16f261343ff026100b8fefc59e57cf16c83c6",
       "provider": "houston-ballet-academy",
       "scrapedAt": "2026-06-16T09:21:02.601443Z",
       "url": "https://www.houstonballet.org/about/academy/summer-intensive-program/five-week-summer-intensive/"
@@ -132,7 +137,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition — Level 1/Level 2"
+        "label": "Tuition — Level 1/Level 2",
+        "type": "tuition"
       },
       {
         "amount": 1350.0,
@@ -140,13 +146,15 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition — Level 3/Level 4/Intermediate/Advanced"
+        "label": "Tuition — Level 3/Level 4/Intermediate/Advanced",
+        "type": "tuition"
       },
       {
         "amount": 75.0,
         "currency": "USD",
         "includes": [],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -158,7 +166,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T05:54:44.901424Z",
-      "hash": "sha256:81badc3350f35b5dcf74d06fb28c141aad37a02b37c11a27ea2b2b236378560c",
+      "hash": "sha256:5261971056580fcfe448c60853a1a82e092496044a9a50fd14219ea5d5a44962",
       "provider": "houston-ballet-academy",
       "scrapedAt": "2026-06-08T14:34:51.238876Z",
       "url": "https://www.houstonballet.org/about/academy/summer-intensive-program/youth-summer-training-program/"
@@ -205,7 +213,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition — Level 1/Level 2"
+        "label": "Tuition — Level 1/Level 2",
+        "type": "tuition"
       },
       {
         "amount": 1500.0,
@@ -213,13 +222,15 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition — Level 3/Level 4/Intermediate/Advanced"
+        "label": "Tuition — Level 3/Level 4/Intermediate/Advanced",
+        "type": "tuition"
       },
       {
         "amount": 75.0,
         "currency": "USD",
         "includes": [],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -231,7 +242,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T05:54:44.901424Z",
-      "hash": "sha256:ec539d13b322489b43813a4a74fcabd363a78a0ac3c4f32f3b17c28b1aa66f89",
+      "hash": "sha256:1293afe9ebc66b503e4f576b0fd67e78b987412d6e4aef78c4b1bb4afd622326",
       "provider": "houston-ballet-academy",
       "scrapedAt": "2026-06-08T14:34:51.238921Z",
       "url": "https://www.houstonballet.org/about/academy/summer-intensive-program/youth-summer-training-program/"

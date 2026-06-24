@@ -52,7 +52,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "One week"
+        "label": "One week",
+        "type": "tuition"
       },
       {
         "amount": 745.0,
@@ -60,7 +61,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Two weeks"
+        "label": "Two weeks",
+        "type": "tuition"
       },
       {
         "amount": 48.0,
@@ -69,7 +71,8 @@
           "accommodation"
         ],
         "label": "Accommodation (per person per night)",
-        "notes": "Optional — the course is non-residential."
+        "notes": "Optional — the course is non-residential.",
+        "type": "accommodation"
       }
     ],
     "schedule": {
@@ -92,7 +95,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T08:47:49.125399Z",
-      "hash": "sha256:90dd3f5806f037a5b80c2dcfcabaed523890b4ae31a38df296a95c71ec42ad0d",
+      "hash": "sha256:a2c13130558e82a02c513fd9a08439ff1eb8934eac7d2765edc2cc8d4a7d3a6c",
       "provider": "northern-ballet-academy",
       "scrapedAt": "2026-06-18T20:03:11.030914Z",
       "url": "https://northernballet.com/academy/workshops-events/international-summer-intensives/seniors"
@@ -196,7 +199,8 @@
         "currency": "GBP",
         "includes": [
           "tuition"
-        ]
+        ],
+        "type": "tuition"
       },
       {
         "amount": 48.0,
@@ -205,7 +209,8 @@
           "accommodation"
         ],
         "label": "Accommodation (per person per night)",
-        "notes": "Optional — the course is non-residential."
+        "notes": "Optional — the course is non-residential.",
+        "type": "accommodation"
       }
     ],
     "schedule": {
@@ -217,7 +222,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T08:47:49.125399Z",
-      "hash": "sha256:0e1a21d002dff9d838fa12cba82d8ad4c3bbd295d15b409856f2c4bf33f04af6",
+      "hash": "sha256:e43cba1beed393e6819fbb7f730dc4489f2fde5f744ecec325ff663250bafabc",
       "provider": "northern-ballet-academy",
       "scrapedAt": "2026-06-18T20:03:11.309126Z",
       "url": "https://northernballet.com/academy/workshops-events/international-summer-intensives/intermediates"

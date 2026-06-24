@@ -59,7 +59,8 @@
           "meals"
         ],
         "label": "1 Week MasterClass Admission Includes Daily Lunches",
-        "notes": "Includes applicable taxes."
+        "notes": "Includes applicable taxes.",
+        "type": "tuition"
       },
       {
         "amount": 2370.0,
@@ -69,7 +70,8 @@
           "meals"
         ],
         "label": "2 Weeks MasterClass Admission Includes Daily Lunches",
-        "notes": "Includes applicable taxes."
+        "notes": "Includes applicable taxes.",
+        "type": "tuition"
       },
       {
         "amount": 1960.0,
@@ -80,7 +82,8 @@
           "meals"
         ],
         "label": "1 Week Camp and MasterClass Admission Includes Accommodation & Meals",
-        "notes": "Includes applicable taxes."
+        "notes": "Includes applicable taxes.",
+        "type": "tuition"
       },
       {
         "amount": 3460.0,
@@ -91,7 +94,8 @@
           "meals"
         ],
         "label": "2 Weeks Camp and MasterClass Admission Includes Accommodation & Meals",
-        "notes": "Includes applicable taxes."
+        "notes": "Includes applicable taxes.",
+        "type": "tuition"
       },
       {
         "amount": 270.0,
@@ -100,7 +104,8 @@
           "tuition"
         ],
         "label": "1 Week Contemporary Admission (For 2nd Week Only)",
-        "notes": "Includes applicable taxes."
+        "notes": "Includes applicable taxes.",
+        "type": "tuition"
       },
       {
         "amount": 860.0,
@@ -110,7 +115,8 @@
           "meals"
         ],
         "label": "1 Week \"Camp Only\" Add-on Option Includes Accommodation & Meals Does not include Masterclass admission",
-        "notes": "Includes applicable taxes."
+        "notes": "Includes applicable taxes.",
+        "type": "accommodation"
       },
       {
         "amount": 1580.0,
@@ -120,7 +126,8 @@
           "meals"
         ],
         "label": "2 Weeks \"Camp Only\" Add-on Option Includes Accommodation & Meals Does not include Masterclass admission",
-        "notes": "Includes applicable taxes."
+        "notes": "Includes applicable taxes.",
+        "type": "accommodation"
       },
       {
         "amount": 200.0,
@@ -129,7 +136,8 @@
           "tuition"
         ],
         "label": "Olga Smirnova class (per day)",
-        "notes": "For participants without general masterclass admission (21–24 July)."
+        "notes": "For participants without general masterclass admission (21–24 July).",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -182,7 +190,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T13:33:05.460191Z",
-      "hash": "sha256:c2b407b1819ff272d0df930f30e9a4b295b2be618fc624e95c3f3ea766417abe",
+      "hash": "sha256:153e12d505a60300c155928314e197fda9a107fc3ce494fade9ea7dfff3b7d0f",
       "provider": "balletstage",
       "scrapedAt": "2026-06-13T11:44:44.885531Z",
       "url": "https://www.balletstage.com/summerintensive2026"

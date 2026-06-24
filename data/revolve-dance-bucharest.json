@@ -47,7 +47,8 @@
         "currency": "EUR",
         "includes": [
           "tuition"
-        ]
+        ],
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -60,7 +61,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T05:54:42.266648Z",
-      "hash": "sha256:b7b703f15aa362469faba2b73aaae3bb3affff559b11df5716cd1fdbdb115733",
+      "hash": "sha256:992b2aa04224a8b0d8888b880e3fc2cb9ba7f05a8f5bb320bed3b315c6c8cc27",
       "provider": "revolve-dance-bucharest",
       "scrapedAt": "2026-06-07T08:34:27.628578Z",
       "url": "https://revolvedance.ro/en/schedule/summer-intensive-2026/"
@@ -172,7 +173,8 @@
         "currency": "EUR",
         "includes": [
           "tuition"
-        ]
+        ],
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -185,7 +187,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T05:54:42.266648Z",
-      "hash": "sha256:8dfa33e3f5e44de80e6600c666f7583c440c1a71ddacb8bfd0ca75c7f420fd9b",
+      "hash": "sha256:2b34b41b37bdd1df9867416155fa226385fb04244bb4cb1e7c1ba227dd6473a0",
       "provider": "revolve-dance-bucharest",
       "scrapedAt": "2026-06-07T08:34:27.628923Z",
       "url": "https://revolvedance.ro/en/schedule/summer-intensive-2026/"
@@ -300,7 +302,8 @@
         "currency": "EUR",
         "includes": [
           "tuition"
-        ]
+        ],
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -313,7 +316,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T05:54:42.266648Z",
-      "hash": "sha256:62980f8c4a3b3dbb7eb696d8ec585961332cc757c5f391e20c7d0a77147cb4e5",
+      "hash": "sha256:38ded8060c3954daeb70a0a6a2c18ae3e21027299edadd6ce08ed6953695a671",
       "provider": "revolve-dance-bucharest",
       "scrapedAt": "2026-06-07T08:34:27.629012Z",
       "url": "https://revolvedance.ro/en/schedule/summer-intensive-2026/"
@@ -425,7 +428,8 @@
         "currency": "EUR",
         "includes": [
           "tuition"
-        ]
+        ],
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -438,7 +442,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T05:54:42.266648Z",
-      "hash": "sha256:c451da7ab02c01a9f9256cdded7d0e90988eb0ac8ca5117aa1d2bf95a6dfa53e",
+      "hash": "sha256:67527666d4c6338c61a76a9bc4fb50de0b5f146b570ce4afe5ed7d79d47a5b2c",
       "provider": "revolve-dance-bucharest",
       "scrapedAt": "2026-06-07T08:34:27.629112Z",
       "url": "https://revolvedance.ro/en/schedule/summer-intensive-2026/"
@@ -552,7 +556,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Week 1"
+        "label": "Week 1",
+        "type": "tuition"
       },
       {
         "amount": 800.0,
@@ -560,7 +565,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Week 2"
+        "label": "Week 2",
+        "type": "tuition"
       },
       {
         "amount": 1300.0,
@@ -568,7 +574,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Both weeks (package)"
+        "label": "Both weeks (package)",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -592,7 +599,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T05:54:42.266648Z",
-      "hash": "sha256:2f63b1278077a75bb324ec9161881b29b8f97d2ee748356dccbc1d81d1f39f45",
+      "hash": "sha256:5db31c77d271406441253dad0df35287af3a1699aab44567c17a89e74c3554dc",
       "provider": "revolve-dance-bucharest",
       "scrapedAt": "2026-06-07T08:34:27.629221Z",
       "url": "https://revolvedance.ro/en/schedule/summer-intensive-2026/"
@@ -703,7 +710,8 @@
         "currency": "EUR",
         "includes": [
           "tuition"
-        ]
+        ],
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -716,7 +724,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T05:54:42.266648Z",
-      "hash": "sha256:fb6edabacd8563e4be412a363bdfc1c0479a165fee5eb878c832a17fb4c0eb43",
+      "hash": "sha256:2effcd0cd29e5d996e75cbc80a825033eda1fe87842131680452f04b5f10fd9e",
       "provider": "revolve-dance-bucharest",
       "scrapedAt": "2026-06-07T08:34:27.629370Z",
       "url": "https://revolvedance.ro/en/schedule/summer-intensive-2026/"
@@ -827,7 +835,8 @@
         "currency": "EUR",
         "includes": [
           "tuition"
-        ]
+        ],
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -840,7 +849,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T05:54:42.266648Z",
-      "hash": "sha256:3825d9f4f328e9d7f04b15ca525404847b2b52f711c3d9b55af0c985efe09ddc",
+      "hash": "sha256:730f056ea6abe0734605397fef0e84257efe5ac138b19fb23e6a79bf303845df",
       "provider": "revolve-dance-bucharest",
       "scrapedAt": "2026-06-07T08:34:27.629470Z",
       "url": "https://revolvedance.ro/en/schedule/summer-intensive-2026/"

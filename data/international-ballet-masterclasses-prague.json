@@ -50,7 +50,8 @@
           "tuition",
           "accommodation"
         ],
-        "label": "One-week course — package, incl. accommodation"
+        "label": "One-week course — package, incl. accommodation",
+        "type": "tuition"
       },
       {
         "amount": 1720.0,
@@ -59,7 +60,8 @@
           "tuition",
           "accommodation"
         ],
-        "label": "One-week course — package, incl. accommodation"
+        "label": "One-week course — package, incl. accommodation",
+        "type": "tuition"
       },
       {
         "amount": 1300.0,
@@ -67,7 +69,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "One-week course — course only"
+        "label": "One-week course — course only",
+        "type": "tuition"
       },
       {
         "amount": 1100.0,
@@ -75,7 +78,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "One-week course — course only"
+        "label": "One-week course — course only",
+        "type": "tuition"
       },
       {
         "amount": 3220.0,
@@ -84,7 +88,8 @@
           "tuition",
           "accommodation"
         ],
-        "label": "Two-week course — package, incl. accommodation"
+        "label": "Two-week course — package, incl. accommodation",
+        "type": "tuition"
       },
       {
         "amount": 2750.0,
@@ -93,7 +98,8 @@
           "tuition",
           "accommodation"
         ],
-        "label": "Two-week course — package, incl. accommodation"
+        "label": "Two-week course — package, incl. accommodation",
+        "type": "tuition"
       },
       {
         "amount": 2300.0,
@@ -101,7 +107,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Two-week course — course only"
+        "label": "Two-week course — course only",
+        "type": "tuition"
       },
       {
         "amount": 1950.0,
@@ -109,7 +116,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Two-week course — course only"
+        "label": "Two-week course — course only",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -132,7 +140,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T08:47:47.173492Z",
-      "hash": "sha256:de3928d9cb086ba4566a311c4c551b983c83dc3fdf1e635a237f1abb322f5900",
+      "hash": "sha256:3aa027b7159edeffe1f2b2130cf85b6fafc1b455021189004c29f8405a52474d",
       "provider": "international-ballet-masterclasses-prague",
       "scrapedAt": "2026-06-19T06:53:02.821856Z",
       "url": "https://www.balletmasterclass.com/pages/options-fees/"
@@ -266,7 +274,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Course fee"
+        "label": "Course fee",
+        "type": "tuition"
       },
       {
         "amount": 750.0,
@@ -274,7 +283,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Course fee"
+        "label": "Course fee",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -286,7 +296,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T08:47:47.173492Z",
-      "hash": "sha256:e9be365afd7d507fb48c818cee7d0070a9b0e80e7b9cda9dc33ff6289c6f6f74",
+      "hash": "sha256:00079363e8f4cd122b9d3af515a069d9f706b873d2c06adf25f363451f244bce",
       "provider": "international-ballet-masterclasses-prague",
       "scrapedAt": "2026-06-06T06:03:12.537552Z",
       "url": "https://www.balletmasterclass.com/pages/new-junior-masterclasses/"

@@ -38,7 +38,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -63,7 +64,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T18:58:21.021861Z",
-      "hash": "sha256:64a9ae4e52bed1ca3582f17c37d9eca41b41c57638792c1d97b30b97d41cbdfc",
+      "hash": "sha256:c5328db478724f2c27528410c6e4a0ca7d829f058654c3be5bcab2431bf431e3",
       "provider": "escola-bolshoi-brasil",
       "scrapedAt": "2026-06-10T17:59:58.474871Z",
       "url": "https://escolabolshoi.com.br/curso/806/workshop-coaching-de-variacao-paquita"
@@ -118,7 +119,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -143,7 +145,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T18:58:21.021861Z",
-      "hash": "sha256:f49076dd9975b7672c9630221cda69dce6f3e34dd24340d546d1fc515d5ea4ae",
+      "hash": "sha256:63e872bfb9ccab4cef03d1eee893f95723ca04fd26fe0c2aa1064c8abede04ee",
       "provider": "escola-bolshoi-brasil",
       "scrapedAt": "2026-06-08T13:40:04.801917Z",
       "url": "https://escolabolshoi.com.br/curso/781/ballet-classico-bolshoi-brasil-adulto-iniciante-fm"
@@ -198,7 +200,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -223,7 +226,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T18:58:21.021861Z",
-      "hash": "sha256:4079c4611d3378e426ccc336526d2d03d1fa6128c9abd2bf00a2cda77a4c3593",
+      "hash": "sha256:ef93d7ad256a2b003f0bb8564aaad134b0a920801b7ade90bd660e3ecdcfa36a",
       "provider": "escola-bolshoi-brasil",
       "scrapedAt": "2026-06-10T17:59:54.981305Z",
       "url": "https://escolabolshoi.com.br/curso/780/ballet-classico-bolshoi-brasil-intermediarioavancado-fm"
@@ -277,7 +280,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -302,7 +306,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T18:58:21.021861Z",
-      "hash": "sha256:f8044643d3850f607de605060f2167ddd264ddcbaa02a02786b8862c86b11aa0",
+      "hash": "sha256:e8d5b80e0b7a6faa2e1eafed1ba746b517d3fd35d47d7aa1d59f82ec1efe7b32",
       "provider": "escola-bolshoi-brasil",
       "scrapedAt": "2026-06-08T13:40:03.571841Z",
       "url": "https://escolabolshoi.com.br/curso/778/danca-contemporanea-bolshoi-brasil-intermediario-avancado-fm"
@@ -357,7 +361,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -382,7 +387,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T18:58:21.021861Z",
-      "hash": "sha256:6dbcedbb5c48fe93a0fe3bb851120967d858559b0a0c35d9ec61a7ddbd66c725",
+      "hash": "sha256:daf5a3f805987b2a858c4c617022ecb23e261d55cc05574b88bf731686e55117",
       "provider": "escola-bolshoi-brasil",
       "scrapedAt": "2026-06-08T13:40:02.794706Z",
       "url": "https://escolabolshoi.com.br/curso/776/ensaios-gala-bolshoi-brasil-iniciante-intermediario-fm"
@@ -437,7 +442,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -462,7 +468,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T18:58:21.021861Z",
-      "hash": "sha256:f5d22d7fcbe4e93cd75f2b5f7697378588855398a5272a0f9b7f62b1118b4a2c",
+      "hash": "sha256:089649a23c78b6a3ab0f8ac1c1cb524765608e41201550048446d1ba645d2c5b",
       "provider": "escola-bolshoi-brasil",
       "scrapedAt": "2026-06-08T13:40:05.601652Z",
       "url": "https://escolabolshoi.com.br/curso/783/ensaios-gala-bolshoi-brasil-intermediario-avancado-fm"
@@ -516,7 +522,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -541,7 +548,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T18:58:21.021861Z",
-      "hash": "sha256:d8ea1c355dc5360395adeefb9f29e884cf5aceebba56fb9c219a60ff7506f889",
+      "hash": "sha256:3df930bed6db2555f9add7218afb8a06687fd469e1ee8d6214af8d7483be9b46",
       "provider": "escola-bolshoi-brasil",
       "scrapedAt": "2026-06-08T13:40:05.210691Z",
       "url": "https://escolabolshoi.com.br/curso/782/variacoes-de-repertorio-bolshoi-brasil-adulto-f"
@@ -597,7 +604,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -622,7 +630,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T18:58:21.021861Z",
-      "hash": "sha256:0fe86c63d99e6c687aadf86a01b4569c4deb2b97e895570bb0777fd1c5fdc530",
+      "hash": "sha256:672540edeba1863d7ca6fb66a2ffbc5fd5e909f08b69deb554d3a30e9802fcec",
       "provider": "escola-bolshoi-brasil",
       "scrapedAt": "2026-06-11T03:00:36.882385Z",
       "url": "https://escolabolshoi.com.br/curso/777/variacoes-de-repertorio-bolshoi-brasil-iniciante-intermediario-f"
@@ -677,7 +685,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -702,7 +711,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T18:58:21.021861Z",
-      "hash": "sha256:a685219e8e6994f4952de691cc8ffc80d20ba42d89cedeb10478025ea4b89779",
+      "hash": "sha256:88101c824424880d0769cfcb8c5c564d3a966b9787823e1da44c1a6ea5ff3461",
       "provider": "escola-bolshoi-brasil",
       "scrapedAt": "2026-06-08T13:40:03.982757Z",
       "url": "https://escolabolshoi.com.br/curso/779/variacoes-de-repertorio-bolshoi-brasil-intermediarioavancado-f"
@@ -755,7 +764,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -780,7 +790,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T18:58:21.021861Z",
-      "hash": "sha256:6d5fcf3c5d2da76ce44e18cc1c79de670ca793f22c8ab5e2ab78e54e3ac58c5a",
+      "hash": "sha256:c307c92e9bd23b4ad29f67ca350b78fa2399e79fbefe5185173f478416a8ee46",
       "provider": "escola-bolshoi-brasil",
       "scrapedAt": "2026-06-08T13:39:57.842624Z",
       "url": "https://escolabolshoi.com.br/curso/758/1-vivencia-iniciante-setembro"
@@ -828,7 +838,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -853,7 +864,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T18:58:21.021861Z",
-      "hash": "sha256:d12361e9ec118c2a9e354e4664fdcb4e244f8d4b15aafd958e9074880815d02e",
+      "hash": "sha256:26b07cf429a0090049f29bc9b3471766fe6a99a970bf3ce4dca5709917666b34",
       "provider": "escola-bolshoi-brasil",
       "scrapedAt": "2026-06-08T13:39:58.254638Z",
       "url": "https://escolabolshoi.com.br/curso/759/2-vivencia-intermediario-i-setembro"
@@ -901,7 +912,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -926,7 +938,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T18:58:21.021861Z",
-      "hash": "sha256:1a03fbdb3beecf49a3de6f05565bdad8c467484af0b59936d4f4dc0d54cb372b",
+      "hash": "sha256:f5f357ae523ac70ea028b67243eff9f914314d5dc2882258ca26569ce55dfb30",
       "provider": "escola-bolshoi-brasil",
       "scrapedAt": "2026-06-08T13:39:58.665238Z",
       "url": "https://escolabolshoi.com.br/curso/760/3-vivencia-intermediario-ii-setembro"
@@ -974,7 +986,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -999,7 +1012,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T18:58:21.021861Z",
-      "hash": "sha256:7fe59657ad14427193b30c58be2b65fddf71122674cd5f3d7aaef585be433cb9",
+      "hash": "sha256:e3666e73b5afdb4d47b2561d81df1264b29705d89cd3fca54eafb27324513a55",
       "provider": "escola-bolshoi-brasil",
       "scrapedAt": "2026-06-08T13:39:59.166055Z",
       "url": "https://escolabolshoi.com.br/curso/761/4-vivencia-avancado-setembro"

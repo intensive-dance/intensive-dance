@@ -38,7 +38,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Per week — 1 cours par jour (incl. 20€ membership)"
+        "label": "Per week — 1 cours par jour (incl. 20€ membership)",
+        "type": "tuition"
       },
       {
         "amount": 391.0,
@@ -46,7 +47,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Per week — 2 cours par jour (incl. 20€ membership)"
+        "label": "Per week — 2 cours par jour (incl. 20€ membership)",
+        "type": "tuition"
       },
       {
         "amount": 570.0,
@@ -54,7 +56,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Per week — 3 cours par jour (incl. 20€ membership)"
+        "label": "Per week — 3 cours par jour (incl. 20€ membership)",
+        "type": "tuition"
       },
       {
         "amount": 655.0,
@@ -62,7 +65,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Per week — Cours illimités (incl. 20€ membership)"
+        "label": "Per week — Cours illimités (incl. 20€ membership)",
+        "type": "tuition"
       },
       {
         "amount": 120.0,
@@ -70,7 +74,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Day pass — 1 day(s), unlimited classes (incl. 20€ membership)"
+        "label": "Day pass — 1 day(s), unlimited classes (incl. 20€ membership)",
+        "type": "tuition"
       },
       {
         "amount": 220.0,
@@ -78,7 +83,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Day pass — 2 day(s), unlimited classes (incl. 20€ membership)"
+        "label": "Day pass — 2 day(s), unlimited classes (incl. 20€ membership)",
+        "type": "tuition"
       },
       {
         "amount": 320.0,
@@ -86,7 +92,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Day pass — 3 day(s), unlimited classes (incl. 20€ membership)"
+        "label": "Day pass — 3 day(s), unlimited classes (incl. 20€ membership)",
+        "type": "tuition"
       },
       {
         "amount": 420.0,
@@ -94,7 +101,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Day pass — 4 day(s), unlimited classes (incl. 20€ membership)"
+        "label": "Day pass — 4 day(s), unlimited classes (incl. 20€ membership)",
+        "type": "tuition"
       },
       {
         "amount": 520.0,
@@ -102,7 +110,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Day pass — 5 day(s), unlimited classes (incl. 20€ membership)"
+        "label": "Day pass — 5 day(s), unlimited classes (incl. 20€ membership)",
+        "type": "tuition"
       },
       {
         "amount": 79.0,
@@ -110,7 +119,8 @@
         "includes": [
           "meals"
         ],
-        "label": "Canteen lunch (per week)"
+        "label": "Canteen lunch (per week)",
+        "type": "meals"
       },
       {
         "amount": 370.0,
@@ -120,7 +130,8 @@
           "meals"
         ],
         "label": "Residence Clairvallon (per week, half-board)",
-        "notes": "Recommended for minors; Sunday-to-Sunday."
+        "notes": "Recommended for minors; Sunday-to-Sunday.",
+        "type": "accommodation"
       }
     ],
     "schedule": {
@@ -132,7 +143,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T06:36:08.673924Z",
-      "hash": "sha256:83a7c63faf733e8621f3ca4e246b877701b34bc85191af67f505dd00855cd511",
+      "hash": "sha256:e9e7d6b13a649793ee71a4a9fa0131bca89a21cf9a1570c6da114757608f0081",
       "provider": "academie-ete-nice",
       "scrapedAt": "2026-06-07T07:39:15.501290Z",
       "url": "https://danse.academie-internationale-ete-nice.org/"

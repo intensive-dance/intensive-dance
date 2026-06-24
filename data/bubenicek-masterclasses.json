@@ -63,7 +63,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition fee (13 days)"
+        "label": "Tuition fee (13 days)",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -76,7 +77,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T23:44:39.453049Z",
-      "hash": "sha256:2727752b5780d2628070932dded9e4839fa18c6292a78429ac17fd78ed84ce96",
+      "hash": "sha256:fa2df22bf538ed15b5b8b3a9ffeaa8266053f590c1463430d4ed994b724f1326",
       "provider": "bubenicek-masterclasses",
       "scrapedAt": "2026-06-08T10:59:12.665491Z",
       "url": "https://bballetmasterclasses.com/"

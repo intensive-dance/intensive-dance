@@ -33,7 +33,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "1 day"
+        "label": "1 day",
+        "type": "tuition"
       },
       {
         "amount": 680.0,
@@ -41,7 +42,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "6 days in a row"
+        "label": "6 days in a row",
+        "type": "tuition"
       },
       {
         "amount": 1290.0,
@@ -49,7 +51,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "12 days in a row"
+        "label": "12 days in a row",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -82,7 +85,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T16:16:58.132962Z",
-      "hash": "sha256:db9b7fb060bb4a23b53b4bea9a614201e53a65d284be9c63f80ec0c7ff3ca7f9",
+      "hash": "sha256:e7f6595675e8e80063903d2ab068fa65081d2608c11f580d20ebb81b741c1ad8",
       "provider": "m-i-ballet-school",
       "scrapedAt": "2026-06-07T07:10:15.450111Z",
       "url": "https://mi-ballet-school.net/"

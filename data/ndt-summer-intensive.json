@@ -45,7 +45,8 @@
           "tuition"
         ],
         "label": "Course tuition",
-        "notes": "Including VAT, excluding accommodation."
+        "notes": "Including VAT, excluding accommodation.",
+        "type": "tuition"
       },
       {
         "amount": 1150.0,
@@ -54,7 +55,8 @@
           "accommodation"
         ],
         "label": "Optional accommodation (The Social Hub)",
-        "notes": "Including VAT and city taxes. The Social Hub, The Hague."
+        "notes": "Including VAT and city taxes. The Social Hub, The Hague.",
+        "type": "accommodation"
       }
     ],
     "schedule": {
@@ -67,7 +69,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T22:09:22.255928Z",
-      "hash": "sha256:a457fd9065b9adbc5cc8fc86af7eb1bc14a4d0f860641c7e0a299dd6987b0db5",
+      "hash": "sha256:31aac2a03850cdfbd920d1de6da0cc9a8468a0a203a0c1b16ced1f670bbf2983",
       "provider": "ndt-summer-intensive",
       "scrapedAt": "2026-06-16T09:23:08.433091Z",
       "url": "https://www.ndt.nl/en/ndt-summer-intensive/"

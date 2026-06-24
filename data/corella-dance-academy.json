@@ -44,7 +44,8 @@
           "tuition"
         ],
         "label": "Training",
-        "notes": "IVA included."
+        "notes": "IVA included.",
+        "type": "tuition"
       },
       {
         "amount": 770.0,
@@ -54,7 +55,8 @@
           "meals"
         ],
         "label": "Housing",
-        "notes": "IVA included."
+        "notes": "IVA included.",
+        "type": "accommodation"
       }
     ],
     "schedule": {
@@ -67,7 +69,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T01:50:36.179352Z",
-      "hash": "sha256:eb2d29633b4299ba385f0953954ab8b5d8ef201f7ddefd2b96d14c973dba829e",
+      "hash": "sha256:24e706d2af43d7843493c67838157fcd2358459905acace21d4999297038915a",
       "provider": "corella-dance-academy",
       "scrapedAt": "2026-06-08T10:57:04.710545Z",
       "url": "https://corellabarcelona.com/company-workshop-con-angel-corella/"

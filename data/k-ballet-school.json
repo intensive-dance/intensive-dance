@@ -33,7 +33,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "受講料（税込）"
+        "label": "受講料（税込）",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -46,7 +47,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T08:47:49.050430Z",
-      "hash": "sha256:38b1d8451a4626314245b1bc4161b87e8db3a0bf6700bb39eae6d094fe7984d8",
+      "hash": "sha256:3a0981e1e9e52f33c3640f58753b9276ce658b6fa2f327fbeebc972335aa1088",
       "provider": "k-ballet-school",
       "scrapedAt": "2026-06-06T16:48:36.488087Z",
       "url": "https://www.k-ballet.co.jp/school/event/2026summerintensive.html"
@@ -88,7 +89,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "受講料 Aコース（税込）"
+        "label": "受講料 Aコース（税込）",
+        "type": "tuition"
       },
       {
         "amount": 62000.0,
@@ -96,7 +98,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "受講料 Bコース（税込）"
+        "label": "受講料 Bコース（税込）",
+        "type": "tuition"
       },
       {
         "amount": 102000.0,
@@ -104,7 +107,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "受講料 Cコース（税込）"
+        "label": "受講料 Cコース（税込）",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -117,7 +121,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T08:47:49.050430Z",
-      "hash": "sha256:376f193844c40ff37950166d6923dea7e999800e7f42c56346b4550aa3adb124",
+      "hash": "sha256:1eada47db5a48604d8d99b8ba8cc42c327950b2e433bd8698922f6a54b9fb22e",
       "provider": "k-ballet-school",
       "scrapedAt": "2026-06-06T16:48:36.488600Z",
       "url": "https://www.k-ballet.co.jp/school/event/2026summerintensive.html"
@@ -160,7 +164,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "受講料 Aコースのみ（税込）"
+        "label": "受講料 Aコースのみ（税込）",
+        "type": "tuition"
       },
       {
         "amount": 186000.0,
@@ -169,7 +174,8 @@
           "tuition",
           "performance"
         ],
-        "label": "受講料 Aコース＋ソロアッセンブリー参加（税込）"
+        "label": "受講料 Aコース＋ソロアッセンブリー参加（税込）",
+        "type": "tuition"
       },
       {
         "amount": 141000.0,
@@ -178,7 +184,8 @@
           "tuition",
           "performance"
         ],
-        "label": "受講料 Bコース＋ソロアッセンブリー参加（税込）"
+        "label": "受講料 Bコース＋ソロアッセンブリー参加（税込）",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -191,7 +198,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T08:47:49.050430Z",
-      "hash": "sha256:56fa3ea3a5bff58c6d301324644f74cb8abacd4bbcbab52dba276ca53bf439b0",
+      "hash": "sha256:4cc673b0c65350011c1fca842ed0d0f610e74006d21d1bced627f84e7f49a2bb",
       "provider": "k-ballet-school",
       "scrapedAt": "2026-06-06T16:48:36.488729Z",
       "url": "https://www.k-ballet.co.jp/school/event/2026summerintensive.html"
@@ -235,7 +242,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "受講料 Aコースのみ（税込）"
+        "label": "受講料 Aコースのみ（税込）",
+        "type": "tuition"
       },
       {
         "amount": 200000.0,
@@ -244,7 +252,8 @@
           "tuition",
           "performance"
         ],
-        "label": "受講料 Aコース＋ソロアッセンブリー参加（税込）"
+        "label": "受講料 Aコース＋ソロアッセンブリー参加（税込）",
+        "type": "tuition"
       },
       {
         "amount": 145000.0,
@@ -253,7 +262,8 @@
           "tuition",
           "performance"
         ],
-        "label": "受講料 Bコース＋ソロアッセンブリー参加（税込）"
+        "label": "受講料 Bコース＋ソロアッセンブリー参加（税込）",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -266,7 +276,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T08:47:49.050430Z",
-      "hash": "sha256:3d5694c107bb2aaf0849f6f956d3ea342702569d4ebf7feaed7260cb2cecc81a",
+      "hash": "sha256:3b5c312c2dc36ed9b69c6984f8951b24e99f0803ef9fcbbe240c2fb345fffef6",
       "provider": "k-ballet-school",
       "scrapedAt": "2026-06-06T16:48:36.488831Z",
       "url": "https://www.k-ballet.co.jp/school/event/2026summerintensive.html"
@@ -308,7 +318,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "受講料（税込）"
+        "label": "受講料（税込）",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -320,7 +331,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T08:47:49.050430Z",
-      "hash": "sha256:2672bc1786e672f5318f88e50cfda5df598b00bcbfb12054e7bf97c5675a0bf3",
+      "hash": "sha256:9c278ce8ab5d854fa439c6b6249820a3138583f57239bcec450b661f966d0e0c",
       "provider": "k-ballet-school",
       "scrapedAt": "2026-06-07T11:44:31.896940Z",
       "url": "https://www.k-ballet.co.jp/school/event/2025winterassembly.html"
@@ -361,7 +372,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "受講料（税込）"
+        "label": "受講料（税込）",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -373,7 +385,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T08:47:49.050430Z",
-      "hash": "sha256:2500dc29f90431e865495c4491fccc567826c9a647ad86e69a2d8341d44cd92c",
+      "hash": "sha256:89388f16be15e249ac74d3b671d15678cd177a716c7cd6eb72c871de9f6dc492",
       "provider": "k-ballet-school",
       "scrapedAt": "2026-06-07T11:44:31.897264Z",
       "url": "https://www.k-ballet.co.jp/school/event/2025winterassembly.html"
@@ -414,7 +426,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "受講料（税込）"
+        "label": "受講料（税込）",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -426,7 +439,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T08:47:49.050430Z",
-      "hash": "sha256:255373bbb1d6626d3472c7876997100916b48bcc55971ebb48d4d41a5fb4f2b5",
+      "hash": "sha256:752b48b10c9ff47b33789b45e34761cb3d44f7a53b36dfe6a0c352d4c7b0f52d",
       "provider": "k-ballet-school",
       "scrapedAt": "2026-06-07T11:44:31.897401Z",
       "url": "https://www.k-ballet.co.jp/school/event/2025winterassembly.html"
@@ -469,7 +482,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "受講料（税込）"
+        "label": "受講料（税込）",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -481,7 +495,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T08:47:49.050430Z",
-      "hash": "sha256:5781b467ed0a54a2b5a841dda3ab6968a63e9f5b8827c965325f2503e68538bf",
+      "hash": "sha256:12785f58c8c9dff25d3d0dee7fd510a1ede0adaea9e04d0c210418e5cfbde247",
       "provider": "k-ballet-school",
       "scrapedAt": "2026-06-07T11:44:31.897524Z",
       "url": "https://www.k-ballet.co.jp/school/event/2025winterassembly.html"

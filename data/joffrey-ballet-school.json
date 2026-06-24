@@ -37,7 +37,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Workshop fee"
+        "label": "Workshop fee",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -48,7 +49,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:08.794075Z",
-      "hash": "sha256:ba530d960992c4e782d16454c80c012940b142293874f28bbc6aa91429a1ac19",
+      "hash": "sha256:d12030fbe4921b8b501c218ee6d3ec19bf3cb3978372c5ca5f35ac9f251986c8",
       "provider": "joffrey-ballet-school",
       "scrapedAt": "2026-06-07T06:39:50.081843Z",
       "url": "https://www.joffreyballetschool.com/workshops/summer-sampler/joffrey-ny-jazz-contemporary-winter-workshop/"
@@ -97,7 +98,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Workshop fee"
+        "label": "Workshop fee",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -108,7 +110,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:08.794075Z",
-      "hash": "sha256:f8596637a3dba86a2ea70d0a9189e47efd53deb32a170d1fafc01a1b9234a7fe",
+      "hash": "sha256:2114143d8260847ac2541063305c7292a3f4012c502d7049720c8e01d6fcadf3",
       "provider": "joffrey-ballet-school",
       "scrapedAt": "2026-06-07T06:38:42.936965Z",
       "url": "https://www.joffreyballetschool.com/workshops/summer-sampler/joffrey-ny-contemporary-ballet-winter-workshop/"
@@ -154,7 +156,8 @@
         "amount": 125.0,
         "currency": "USD",
         "includes": [],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -165,7 +168,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:08.794075Z",
-      "hash": "sha256:cfc9ac372dfd80b9c64b649d4b1eb68e345943423e43c85cd29e680ba12fa2f7",
+      "hash": "sha256:5118792dcf64458e0f2d5a421487a3d2ea47a158e3aa9682c292695ad78979b9",
       "provider": "joffrey-ballet-school",
       "scrapedAt": "2026-06-07T06:33:45.125475Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/jbs-x-ubc-miami-ballet/"
@@ -211,7 +214,8 @@
         "amount": 125.0,
         "currency": "USD",
         "includes": [],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -222,7 +226,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:08.794075Z",
-      "hash": "sha256:fd7c0acb898f5e2d85c1d8248dffe11a78438280f90655277904cf72403eadde",
+      "hash": "sha256:c97cf280dded4ff81f9d52639b64f1d6c804cc232d19cc07532efba8c199d2cd",
       "provider": "joffrey-ballet-school",
       "scrapedAt": "2026-06-07T06:33:55.470065Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/jbs-x-ubc-midwest-pre-professional-ballet/"
@@ -271,7 +275,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition (per week)"
+        "label": "Tuition (per week)",
+        "type": "tuition"
       },
       {
         "amount": 775.0,
@@ -279,7 +284,8 @@
         "includes": [
           "accommodation"
         ],
-        "label": "Housing (per week)"
+        "label": "Housing (per week)",
+        "type": "accommodation"
       },
       {
         "amount": 299.0,
@@ -287,13 +293,15 @@
         "includes": [
           "meals"
         ],
-        "label": "Meal Plans (per week)"
+        "label": "Meal Plans (per week)",
+        "type": "meals"
       },
       {
         "amount": 125.0,
         "currency": "USD",
         "includes": [],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -304,7 +312,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:08.794075Z",
-      "hash": "sha256:bf9ea5adc96a5790fbb3b11462251d64c1f510882cbc36c500cc7356fb6c4f6a",
+      "hash": "sha256:98dbb3ca6dd12e7dde4dbcc822cb5f492ab236650a1aae069cb4d2250fe2b948",
       "provider": "joffrey-ballet-school",
       "scrapedAt": "2026-06-07T06:34:16.211023Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/joffrey-akron/"
@@ -350,7 +358,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Workshop fee"
+        "label": "Workshop fee",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -361,7 +370,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:08.794075Z",
-      "hash": "sha256:d1d3fc23af8f73e1808c9d157e087fe388f339e0403d0a999491775fc33708b1",
+      "hash": "sha256:1104a4221c5602f631bca251062a849b2f16dc0c86b939cea003e7385151639a",
       "provider": "joffrey-ballet-school",
       "scrapedAt": "2026-06-07T06:40:25.486228Z",
       "url": "https://www.joffreyballetschool.com/workshops/special-feature-workshop/joffrey-australia-workshop/"
@@ -410,7 +419,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Workshop fee"
+        "label": "Workshop fee",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -421,7 +431,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:08.794075Z",
-      "hash": "sha256:147f203d5c014e71ba7c238ed75e4d82ad4e1c61e7f28180c692c932c199918c",
+      "hash": "sha256:166e5dd8da252b309ca087a6189c18c9c0a57695caf8852b01538ee9a116f10a",
       "provider": "joffrey-ballet-school",
       "scrapedAt": "2026-06-07T06:40:01.900883Z",
       "url": "https://www.joffreyballetschool.com/workshops/special-feature-workshop/joffrey-canada-workshop/"
@@ -469,7 +479,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition (per week)"
+        "label": "Tuition (per week)",
+        "type": "tuition"
       },
       {
         "amount": 825.0,
@@ -477,7 +488,8 @@
         "includes": [
           "accommodation"
         ],
-        "label": "Housing (per week)"
+        "label": "Housing (per week)",
+        "type": "accommodation"
       },
       {
         "amount": 299.0,
@@ -485,13 +497,15 @@
         "includes": [
           "meals"
         ],
-        "label": "Meal Plans (per week)"
+        "label": "Meal Plans (per week)",
+        "type": "meals"
       },
       {
         "amount": 125.0,
         "currency": "USD",
         "includes": [],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -502,7 +516,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:08.794075Z",
-      "hash": "sha256:72b77f49e8989e473abe3474340c0f1e5cef236880ea8ff76ba3dc24d297785d",
+      "hash": "sha256:5a64f11375048f3ca6e57482add68ffbf7e3e5cf500e48765f9f0cd3a1914206",
       "provider": "joffrey-ballet-school",
       "scrapedAt": "2026-06-07T06:36:58.057776Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/joffrey-colorado/"
@@ -551,7 +565,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition (per week)"
+        "label": "Tuition (per week)",
+        "type": "tuition"
       },
       {
         "amount": 775.0,
@@ -559,7 +574,8 @@
         "includes": [
           "accommodation"
         ],
-        "label": "Housing (per week)"
+        "label": "Housing (per week)",
+        "type": "accommodation"
       },
       {
         "amount": 299.0,
@@ -567,13 +583,15 @@
         "includes": [
           "meals"
         ],
-        "label": "Meal Plans (per week)"
+        "label": "Meal Plans (per week)",
+        "type": "meals"
       },
       {
         "amount": 125.0,
         "currency": "USD",
         "includes": [],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -584,7 +602,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:08.794075Z",
-      "hash": "sha256:b6723a84ec1624e3bb181b8c3c837d7b16ce008e4ee59fbaa62eb0487914262c",
+      "hash": "sha256:ff1676ef621761e53b6ce0a464d9e6bfa0379e60621f49b36af8e4c0da38b9a2",
       "provider": "joffrey-ballet-school",
       "scrapedAt": "2026-06-07T06:35:36.896064Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/joffrey-dallas/"
@@ -630,7 +648,8 @@
         "amount": 125.0,
         "currency": "USD",
         "includes": [],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -641,7 +660,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:08.794075Z",
-      "hash": "sha256:008f483d3437955f0c9042a42ebfaca6e6d7a2894097a05342631fbef907fd4d",
+      "hash": "sha256:b4f3ee0392fa6b5b5042fe441c09e32782fc067e30be8a772fd6701816feca00",
       "provider": "joffrey-ballet-school",
       "scrapedAt": "2026-06-07T06:35:26.331546Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/joffrey-italy/"
@@ -689,7 +708,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition (per week)"
+        "label": "Tuition (per week)",
+        "type": "tuition"
       },
       {
         "amount": 775.0,
@@ -697,7 +717,8 @@
         "includes": [
           "accommodation"
         ],
-        "label": "Housing (per week)"
+        "label": "Housing (per week)",
+        "type": "accommodation"
       },
       {
         "amount": 299.0,
@@ -705,13 +726,15 @@
         "includes": [
           "meals"
         ],
-        "label": "Meal Plans (per week)"
+        "label": "Meal Plans (per week)",
+        "type": "meals"
       },
       {
         "amount": 125.0,
         "currency": "USD",
         "includes": [],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -722,7 +745,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:08.794075Z",
-      "hash": "sha256:85948068d635039e53646392a5dcac1c79513023771e7b41a8a395f1ec49b339",
+      "hash": "sha256:637861d9df9b844d7c7f982c65db1e70083f1793f1db39832b85355a5fa81886",
       "provider": "joffrey-ballet-school",
       "scrapedAt": "2026-06-07T06:35:59.205831Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/joffrey-las-vegas-jazz-and-contemporary/"
@@ -770,7 +793,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition (per week)"
+        "label": "Tuition (per week)",
+        "type": "tuition"
       },
       {
         "amount": 775.0,
@@ -778,7 +802,8 @@
         "includes": [
           "accommodation"
         ],
-        "label": "Housing (per week)"
+        "label": "Housing (per week)",
+        "type": "accommodation"
       },
       {
         "amount": 299.0,
@@ -786,13 +811,15 @@
         "includes": [
           "meals"
         ],
-        "label": "Meal Plans (per week)"
+        "label": "Meal Plans (per week)",
+        "type": "meals"
       },
       {
         "amount": 125.0,
         "currency": "USD",
         "includes": [],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -803,7 +830,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:08.794075Z",
-      "hash": "sha256:17f9227ce913a65b67eced9f548548706f2f13e1a7146d2f611ae51010d782e5",
+      "hash": "sha256:f34373540b942494e1e80fe19443439d53fa80ce2d6f13328c8c31ff0e027552",
       "provider": "joffrey-ballet-school",
       "scrapedAt": "2026-06-07T06:35:48.749032Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/joffrey-miami-jazz-contemporary-intensive/"
@@ -851,7 +878,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition (per week)"
+        "label": "Tuition (per week)",
+        "type": "tuition"
       },
       {
         "amount": 775.0,
@@ -859,7 +887,8 @@
         "includes": [
           "accommodation"
         ],
-        "label": "Housing (per week)"
+        "label": "Housing (per week)",
+        "type": "accommodation"
       },
       {
         "amount": 299.0,
@@ -867,13 +896,15 @@
         "includes": [
           "meals"
         ],
-        "label": "Meal Plans (per week)"
+        "label": "Meal Plans (per week)",
+        "type": "meals"
       },
       {
         "amount": 125.0,
         "currency": "USD",
         "includes": [],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -884,7 +915,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:08.794075Z",
-      "hash": "sha256:8e24a889b7dcb70323bec0d4d6d0aacb4b046901117aa9c39b3eb7374e37a1fb",
+      "hash": "sha256:107e8f85b3a307c4ab9079b6eeab167aac2c1b0ec9c1e9983b4c7245555ce0d2",
       "provider": "joffrey-ballet-school",
       "scrapedAt": "2026-06-07T06:37:10.186912Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/joffrey-miami-ballet-intensive/"
@@ -932,7 +963,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition (per week)"
+        "label": "Tuition (per week)",
+        "type": "tuition"
       },
       {
         "amount": 775.0,
@@ -940,7 +972,8 @@
         "includes": [
           "accommodation"
         ],
-        "label": "Housing (per week)"
+        "label": "Housing (per week)",
+        "type": "accommodation"
       },
       {
         "amount": 299.0,
@@ -948,13 +981,15 @@
         "includes": [
           "meals"
         ],
-        "label": "Meal Plans (per week)"
+        "label": "Meal Plans (per week)",
+        "type": "meals"
       },
       {
         "amount": 125.0,
         "currency": "USD",
         "includes": [],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -965,7 +1000,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:08.794075Z",
-      "hash": "sha256:e21616317b8fa37c65c9a03fd6c569aa76285971a09fa20d801378367e2e732e",
+      "hash": "sha256:1cfde8f0afdd275f5ef62b2945375fc597f5ed6c5db4087a4716176d7358bb1b",
       "provider": "joffrey-ballet-school",
       "scrapedAt": "2026-06-07T06:34:26.779163Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/joffrey-midwest/"
@@ -1013,7 +1048,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition (per week)"
+        "label": "Tuition (per week)",
+        "type": "tuition"
       },
       {
         "amount": 825.0,
@@ -1021,7 +1057,8 @@
         "includes": [
           "accommodation"
         ],
-        "label": "Housing (per week)"
+        "label": "Housing (per week)",
+        "type": "accommodation"
       },
       {
         "amount": 299.0,
@@ -1029,13 +1066,15 @@
         "includes": [
           "meals"
         ],
-        "label": "Meal Plans (per week)"
+        "label": "Meal Plans (per week)",
+        "type": "meals"
       },
       {
         "amount": 125.0,
         "currency": "USD",
         "includes": [],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -1046,7 +1085,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:08.794075Z",
-      "hash": "sha256:cb75871ca231b31e488b5ecc0a25a33926139c0f48d6293002c3cfb746430095",
+      "hash": "sha256:c68f1b429bb4bdcf59282008b732961ca0ef04e10cf6250c902fed915847e3f5",
       "provider": "joffrey-ballet-school",
       "scrapedAt": "2026-06-07T06:35:02.775829Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/joffrey-san-francisco/"
@@ -1094,7 +1133,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition (per week)"
+        "label": "Tuition (per week)",
+        "type": "tuition"
       },
       {
         "amount": 775.0,
@@ -1102,7 +1142,8 @@
         "includes": [
           "accommodation"
         ],
-        "label": "Housing (per week)"
+        "label": "Housing (per week)",
+        "type": "accommodation"
       },
       {
         "amount": 299.0,
@@ -1110,13 +1151,15 @@
         "includes": [
           "meals"
         ],
-        "label": "Meal Plans (per week)"
+        "label": "Meal Plans (per week)",
+        "type": "meals"
       },
       {
         "amount": 125.0,
         "currency": "USD",
         "includes": [],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -1127,7 +1170,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:08.794075Z",
-      "hash": "sha256:26e4815f461be69484b34beda50a31699a97589b33cbe5c28155ed8682e5749b",
+      "hash": "sha256:505c006d5bc50ce5ee7ad2f8a17a7a9f7a057b8da2bf70d85c5aef12410552da",
       "provider": "joffrey-ballet-school",
       "scrapedAt": "2026-06-07T06:36:45.037464Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/joffrey-south-ballet-intensive/"
@@ -1175,7 +1218,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition (per week)"
+        "label": "Tuition (per week)",
+        "type": "tuition"
       },
       {
         "amount": 775.0,
@@ -1183,7 +1227,8 @@
         "includes": [
           "accommodation"
         ],
-        "label": "Housing (per week)"
+        "label": "Housing (per week)",
+        "type": "accommodation"
       },
       {
         "amount": 299.0,
@@ -1191,13 +1236,15 @@
         "includes": [
           "meals"
         ],
-        "label": "Meal Plans (per week)"
+        "label": "Meal Plans (per week)",
+        "type": "meals"
       },
       {
         "amount": 125.0,
         "currency": "USD",
         "includes": [],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -1208,7 +1255,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:08.794075Z",
-      "hash": "sha256:3c783139803fd37f990b648d33718d6fe593bbad43b6d9b1ce3265ccfa8153c7",
+      "hash": "sha256:f8d18fedd3b8977b86510dda9c27fd3a10ce889a16f5c1c80861b046b9deeb90",
       "provider": "joffrey-ballet-school",
       "scrapedAt": "2026-06-07T06:35:14.428416Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/joffrey-south-jazz-contemporary-intensive/"
@@ -1257,7 +1304,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition (per week)"
+        "label": "Tuition (per week)",
+        "type": "tuition"
       },
       {
         "amount": 825.0,
@@ -1265,7 +1313,8 @@
         "includes": [
           "accommodation"
         ],
-        "label": "Housing (per week)"
+        "label": "Housing (per week)",
+        "type": "accommodation"
       },
       {
         "amount": 299.0,
@@ -1273,13 +1322,15 @@
         "includes": [
           "meals"
         ],
-        "label": "Meal Plans (per week)"
+        "label": "Meal Plans (per week)",
+        "type": "meals"
       },
       {
         "amount": 125.0,
         "currency": "USD",
         "includes": [],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -1290,7 +1341,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:08.794075Z",
-      "hash": "sha256:a885624c57f5e05cdfa2df31affd10a176c43a135ce60ff9fdc7234460fe7645",
+      "hash": "sha256:d39dffa0e7f7a6cd926b2e19a663d0a7df7e2eb9f9987e9f8980bb90b0b9ea1a",
       "provider": "joffrey-ballet-school",
       "scrapedAt": "2026-06-07T06:37:33.825914Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/joffrey-west/"
@@ -1338,7 +1389,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition (per week)"
+        "label": "Tuition (per week)",
+        "type": "tuition"
       },
       {
         "amount": 825.0,
@@ -1346,7 +1398,8 @@
         "includes": [
           "accommodation"
         ],
-        "label": "Housing (per week)"
+        "label": "Housing (per week)",
+        "type": "accommodation"
       },
       {
         "amount": 299.0,
@@ -1354,13 +1407,15 @@
         "includes": [
           "meals"
         ],
-        "label": "Meal Plans (per week)"
+        "label": "Meal Plans (per week)",
+        "type": "meals"
       },
       {
         "amount": 125.0,
         "currency": "USD",
         "includes": [],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -1371,7 +1426,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:08.794075Z",
-      "hash": "sha256:44c5a945e8366173473c175da37877b1a5fccd08134af20c46e0d791fa0cfa89",
+      "hash": "sha256:6be8415038ab03c121aefba6c5660e6b0ac45fc74de58b0a4b94f2ba6e644d55",
       "provider": "joffrey-ballet-school",
       "scrapedAt": "2026-06-07T06:37:46.282519Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/joffreyred-contemporary-ballet/"
@@ -1419,7 +1474,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition (per week)"
+        "label": "Tuition (per week)",
+        "type": "tuition"
       },
       {
         "amount": 825.0,
@@ -1427,7 +1483,8 @@
         "includes": [
           "accommodation"
         ],
-        "label": "Housing (per week)"
+        "label": "Housing (per week)",
+        "type": "accommodation"
       },
       {
         "amount": 299.0,
@@ -1435,13 +1492,15 @@
         "includes": [
           "meals"
         ],
-        "label": "Meal Plans (per week)"
+        "label": "Meal Plans (per week)",
+        "type": "meals"
       },
       {
         "amount": 125.0,
         "currency": "USD",
         "includes": [],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -1452,7 +1511,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:08.794075Z",
-      "hash": "sha256:4be31694338566e17cd879331250a8b0af95a555e4726f6c570c6d7b7d635ad9",
+      "hash": "sha256:e0082061aec944e5ba6e02c88a1c7847a590dacd2da2df6bfed2ff1a9a5d6c5c",
       "provider": "joffrey-ballet-school",
       "scrapedAt": "2026-06-07T06:38:29.845228Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/new-york-city-ballet-summer-intensive/"
@@ -1500,7 +1559,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition (per week)"
+        "label": "Tuition (per week)",
+        "type": "tuition"
       },
       {
         "amount": 825.0,
@@ -1508,7 +1568,8 @@
         "includes": [
           "accommodation"
         ],
-        "label": "Housing (per week)"
+        "label": "Housing (per week)",
+        "type": "accommodation"
       },
       {
         "amount": 299.0,
@@ -1516,13 +1577,15 @@
         "includes": [
           "meals"
         ],
-        "label": "Meal Plans (per week)"
+        "label": "Meal Plans (per week)",
+        "type": "meals"
       },
       {
         "amount": 125.0,
         "currency": "USD",
         "includes": [],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -1533,7 +1596,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:08.794075Z",
-      "hash": "sha256:7bb45d2e53d5427a3e3686bf98a4af317fb010947211f7fe08cc54e18bc1eb38",
+      "hash": "sha256:0fa307e962640bb1862f7e441e5e2a3f7d32c450c5f6d4f7470a9e465f01699a",
       "provider": "joffrey-ballet-school",
       "scrapedAt": "2026-06-07T06:34:50.725600Z",
       "url": "https://www.joffreyballetschool.com/new-york-city-pre-professional-contemporary/"
@@ -1581,7 +1644,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition (per week)"
+        "label": "Tuition (per week)",
+        "type": "tuition"
       },
       {
         "amount": 825.0,
@@ -1589,7 +1653,8 @@
         "includes": [
           "accommodation"
         ],
-        "label": "Housing (per week)"
+        "label": "Housing (per week)",
+        "type": "accommodation"
       },
       {
         "amount": 299.0,
@@ -1597,13 +1662,15 @@
         "includes": [
           "meals"
         ],
-        "label": "Meal Plans (per week)"
+        "label": "Meal Plans (per week)",
+        "type": "meals"
       },
       {
         "amount": 125.0,
         "currency": "USD",
         "includes": [],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -1614,7 +1681,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:08.794075Z",
-      "hash": "sha256:d2154a93938c28800ea32b3bb4442d171915bc3b29678002f5b1228b32355633",
+      "hash": "sha256:83fe7876d563ae8320d8df5dea8764a1d4bc4c920e4f5c354fd3a942363e5e2a",
       "provider": "joffrey-ballet-school",
       "scrapedAt": "2026-06-07T06:37:56.936717Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/new-york-city-pre-professional-jazz-contemporary/"
@@ -1660,7 +1727,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Workshop fee"
+        "label": "Workshop fee",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -1671,7 +1739,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:08.794075Z",
-      "hash": "sha256:a8da38a05cdbf3ffdb141440c643d0aa4a7efb19515d4f22a517dfc6b4ac534e",
+      "hash": "sha256:ef380d04e09d8851739511ead240c0b9d4bc608f438947bc9ad060ce3af45039",
       "provider": "joffrey-ballet-school",
       "scrapedAt": "2026-06-07T06:39:06.962657Z",
       "url": "https://www.joffreyballetschool.com/workshops/summer-sampler/joffrey-ny-ballet-winter-workshop/"
@@ -1719,7 +1787,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition (per week)"
+        "label": "Tuition (per week)",
+        "type": "tuition"
       },
       {
         "amount": 775.0,
@@ -1727,7 +1796,8 @@
         "includes": [
           "accommodation"
         ],
-        "label": "Housing (per week)"
+        "label": "Housing (per week)",
+        "type": "accommodation"
       },
       {
         "amount": 299.0,
@@ -1735,13 +1805,15 @@
         "includes": [
           "meals"
         ],
-        "label": "Meal Plans (per week)"
+        "label": "Meal Plans (per week)",
+        "type": "meals"
       },
       {
         "amount": 125.0,
         "currency": "USD",
         "includes": [],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -1752,7 +1824,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:08.794075Z",
-      "hash": "sha256:691dba10fd4f0c7a991f94f21196bc305087824f05b6a4447dce64dabec548df",
+      "hash": "sha256:6088d39175bfb226ea9343389e333958e446c10216617d9a2ae9ff0e75fd6446",
       "provider": "joffrey-ballet-school",
       "scrapedAt": "2026-06-07T06:34:38.622167Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/joffrey-las-vegas-ballet/"
@@ -1797,7 +1869,8 @@
         "amount": 125.0,
         "currency": "USD",
         "includes": [],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -1808,7 +1881,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:08.794075Z",
-      "hash": "sha256:06b283bb019d81ddaa5d551830e4f6a4284be197d3685a4e0f82c13236590211",
+      "hash": "sha256:b6ce0766fe2322d26ea7d3316da9cefc61b9e448311508276dcd1cf76642f1e9",
       "provider": "joffrey-ballet-school",
       "scrapedAt": "2026-06-07T06:34:05.830452Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/joffrey-switzerland/"
@@ -1856,7 +1929,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition (per week)"
+        "label": "Tuition (per week)",
+        "type": "tuition"
       },
       {
         "amount": 825.0,
@@ -1864,7 +1938,8 @@
         "includes": [
           "accommodation"
         ],
-        "label": "Housing (per week)"
+        "label": "Housing (per week)",
+        "type": "accommodation"
       },
       {
         "amount": 299.0,
@@ -1872,13 +1947,15 @@
         "includes": [
           "meals"
         ],
-        "label": "Meal Plans (per week)"
+        "label": "Meal Plans (per week)",
+        "type": "meals"
       },
       {
         "amount": 125.0,
         "currency": "USD",
         "includes": [],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -1889,7 +1966,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:08.794075Z",
-      "hash": "sha256:89584d3ae4fda0111c773aa48008c0a0ab8d30d41a7f5e11d0712279aa92af29",
+      "hash": "sha256:47c6be5a0acc0c39d52184394d927479c50186118719f0bc71070a6bc33d1b12",
       "provider": "joffrey-ballet-school",
       "scrapedAt": "2026-06-07T06:38:18.629017Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/new-york-city-jazz-and-contemporary/"
@@ -1937,7 +2014,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Tuition (per week)"
+        "label": "Tuition (per week)",
+        "type": "tuition"
       },
       {
         "amount": 825.0,
@@ -1945,7 +2023,8 @@
         "includes": [
           "accommodation"
         ],
-        "label": "Housing (per week)"
+        "label": "Housing (per week)",
+        "type": "accommodation"
       },
       {
         "amount": 299.0,
@@ -1953,13 +2032,15 @@
         "includes": [
           "meals"
         ],
-        "label": "Meal Plans (per week)"
+        "label": "Meal Plans (per week)",
+        "type": "meals"
       },
       {
         "amount": 125.0,
         "currency": "USD",
         "includes": [],
-        "label": "Registration fee"
+        "label": "Registration fee",
+        "type": "registration"
       }
     ],
     "schedule": {
@@ -1970,7 +2051,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:08.794075Z",
-      "hash": "sha256:33cbc13a9e9097678a9a4112f3f6435e035f59392fae581e7ade43416d3ea4b0",
+      "hash": "sha256:28cb874670b8f82171f01acda3d8feab37c538e0878eec70a5bff66ee947d94c",
       "provider": "joffrey-ballet-school",
       "scrapedAt": "2026-06-07T06:38:07.469849Z",
       "url": "https://www.joffreyballetschool.com/summer-intensives/new-york-city-pre-professional-ballet/"
@@ -2012,7 +2093,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "Workshop fee"
+        "label": "Workshop fee",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -2023,7 +2105,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-24T13:57:08.794075Z",
-      "hash": "sha256:302a264f0181379bca8263c5b6045cbb0dae41a66dfe858eca3e9af13986f2be",
+      "hash": "sha256:00363a4b4ee90d3914110967b31189422a3dd08cff42028dbea82e069ce2a4ee",
       "provider": "joffrey-ballet-school",
       "scrapedAt": "2026-06-07T06:38:55.047172Z",
       "url": "https://www.joffreyballetschool.com/workshops/special-feature-workshop/2026-joffrey-japan-workshop/"

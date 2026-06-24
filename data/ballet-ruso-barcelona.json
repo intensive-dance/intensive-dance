@@ -44,7 +44,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "1 week"
+        "label": "1 week",
+        "type": "tuition"
       },
       {
         "amount": 975.0,
@@ -52,7 +53,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "2 weeks"
+        "label": "2 weeks",
+        "type": "tuition"
       },
       {
         "amount": 1296.0,
@@ -60,7 +62,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "3 weeks"
+        "label": "3 weeks",
+        "type": "tuition"
       },
       {
         "amount": 1495.0,
@@ -68,7 +71,8 @@
         "includes": [
           "tuition"
         ],
-        "label": "4 weeks"
+        "label": "4 weeks",
+        "type": "tuition"
       }
     ],
     "schedule": {
@@ -101,7 +105,7 @@
     },
     "source": {
       "attemptedAt": "2026-06-23T06:36:03.606631Z",
-      "hash": "sha256:6ba6d5f9c2ecbf2284ed6db71cde38895522369ac3b1d1104ac619cd347fc8c3",
+      "hash": "sha256:9257c3a48740c566a96b08773a3ba0658d8dfb19e6a94d4bc1d6a9722736e487",
       "provider": "ballet-ruso-barcelona",
       "scrapedAt": "2026-06-07T08:35:26.135783Z",
       "url": "https://balletrusobarcelona.com/summerprogram"
