@@ -63,7 +63,7 @@
       "timezone": "America/Los_Angeles"
     },
     "source": {
-      "attemptedAt": "2026-06-24T01:50:35.973574Z",
+      "attemptedAt": "2026-06-25T08:42:47.100178Z",
       "hash": "sha256:cfb1cc067429d0528986b70b364d7a855832994ee28ca66bed72c58c19f87c2f",
       "provider": "san-francisco-ballet-school",
       "scrapedAt": "2026-06-08T13:39:52.225179Z",
@@ -140,7 +140,7 @@
       "timezone": "America/Los_Angeles"
     },
     "source": {
-      "attemptedAt": "2026-06-24T01:50:35.973574Z",
+      "attemptedAt": "2026-06-25T08:42:47.100178Z",
       "hash": "sha256:4810dddf21dfee8540c6360325a8aa518109566c7d407b856987c707fedd62fd",
       "provider": "san-francisco-ballet-school",
       "scrapedAt": "2026-06-08T13:39:52.225564Z",
