@@ -1295,6 +1295,14 @@
       "city": "Berlin",
       "url": "https://www.sommertanzcamp.de/",
       "status": "seed"
+    },
+    {
+      "slug": "gradpro-summer-intensive",
+      "name": "GradPro Summer Intensive",
+      "country": "GB",
+      "city": "Birmingham",
+      "url": "https://www.gradpro.co.uk/",
+      "status": "seed"
     }
   ]
 }

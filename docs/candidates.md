@@ -52,7 +52,7 @@ Late-June re-check of leads parked **only** because 2026 dates weren't posted ye
 
 **`out-of-scope`:** Arte Danza Bologna — SBIP — explicitly "for every level **and non-dancers passionate about fitness**" → recreational/fitness, not pre-pro.
 
-**New lead (incidental — surfaced during the re-check, not yet acted on):** GradPro — Summer Intensive (BRB Dance Hub, Birmingham, GB) — "Week 1: 20–24 July", "Week 2: 27–31 July 2026"; vocational-graduate intensive (1st/2nd-yr only) — gradpro.co.uk. *Narrow; pending your call.*
+**New lead (incidental — surfaced during the re-check) → now `seed`:** GradPro — Summer Intensive (BRB Dance Hub, Birmingham, GB) — "Week 1: 20–24 July", "Week 2: 27–31 July 2026"; vocational-graduate intensive (1st/2nd-yr only) — gradpro.co.uk. Seeded as `gradpro-summer-intensive`; **narrow level, build at lower priority.**
 
 ## ⏸️ Defer → IDR-9 (`deferred`) — full-time / long-term only, no short course
 - School of the Hamburg Ballet (DE) · Ballettakademie der Wiener Staatsoper (AT) · Royal Swedish Ballet School (SE) · Greek National Opera Dance School (GR) · Teatro di San Carlo Ballet School (IT · Naples) · Ginasiano (PT) · Čiurlionis School (LT) · Floria Capsali (RO) · CPD Sevilla (ES)
