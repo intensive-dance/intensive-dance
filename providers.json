@@ -1247,6 +1247,62 @@
       "city": "Prague",
       "url": "https://balletschoolprague.com/workshop/summer-camp/",
       "status": "seed"
+    },
+    {
+      "slug": "php-ballet-intensive",
+      "name": "PHP Ballet Intensive",
+      "country": "CH",
+      "city": "Morges",
+      "url": "https://www.phpballetintensive.ch/",
+      "status": "seed"
+    },
+    {
+      "slug": "nuovo-balletto-classico",
+      "name": "Nuovo Balletto Classico",
+      "country": "IT",
+      "city": "Reggio Emilia",
+      "url": "https://www.nuovoballettoclassico.it/",
+      "status": "seed"
+    },
+    {
+      "slug": "professione-danza-pescara",
+      "name": "Professione Danza Pescara",
+      "country": "IT",
+      "city": "Pescara",
+      "url": "https://www.professionedanza.org/",
+      "status": "seed"
+    },
+    {
+      "slug": "opus-ballet",
+      "name": "Opus Ballet",
+      "country": "IT",
+      "city": "Florence",
+      "url": "https://opusballet.it/",
+      "status": "seed"
+    },
+    {
+      "slug": "the-hammond",
+      "name": "The Hammond",
+      "country": "GB",
+      "city": "Chester",
+      "url": "https://www.thehammond.co.uk/",
+      "status": "seed"
+    },
+    {
+      "slug": "sommer-tanz-camp-berlin",
+      "name": "Sommer Tanz Camp — Intensive Ballet Days Berlin",
+      "country": "DE",
+      "city": "Berlin",
+      "url": "https://www.sommertanzcamp.de/",
+      "status": "seed"
+    },
+    {
+      "slug": "gradpro-summer-intensive",
+      "name": "GradPro Summer Intensive",
+      "country": "GB",
+      "city": "Birmingham",
+      "url": "https://www.gradpro.co.uk/",
+      "status": "seed"
     }
   ]
 }

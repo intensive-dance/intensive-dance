@@ -36,6 +36,24 @@ start building** (the claim, to avoid colliding with parallel work) **or when we
 - GB verify-before-build: Moorland Int'l Ballet · Ballet Boost · The Hammond · Ballet West — exist annually, no live 2026 dates found (don't assert)
 - Summer Intensive Gymnasium Essen-Werden (DE · Essen) — **already a `seed`** in providers.json; school-based summer intensive, faculty incl. Paula Archangelo-Cakir (ex-Aalto Ballett Theater Essen / dance medicine). *(Instagram-sourced @gymnasium_essen_werden_tanz; recorded here for tracking.)*
 
+## 🔁 Stufe-1 Re-Check (2026-06-25) — parked "dates-TBA" leads, re-verified
+
+Late-June re-check of leads parked **only** because 2026 dates weren't posted yet (no new crawl — known leads re-verified at source). **6 → `seed`** (dated edition now live), 1 dropped, the rest stay parked for another pass in ~3 weeks. Dates quoted from source; seeds carry none (verified at build).
+
+**→ promoted to `seed`:**
+- **PHP Ballet Intensive** (Morges, CH) — two dated 1-wk sessions "29.06–3.07" + "10.08–14.08 2026", ages 7–15, Béjart-principal faculty — phpballetintensive.ch
+- **Nuovo Balletto Classico** (Reggio Emilia, IT) — "29 giugno–18 luglio 2026", open enrollment, ages 10+, classical/character/contemporary — nuovoballettoclassico.it
+- **Professione Danza Pescara** (IT) — "29 Giugno–24 Luglio 2026", pre-pro summer school, classical + pointe + contemporary — professionedanza.org
+- **Opus Ballet** (Florence, IT) — "29 giugno–11 luglio 2026" (26th ed.), Summer Campus — opusballet.it
+- **The Hammond** (Chester, GB) — annual public Summer Dance Intensive (ballet track, ages 10–16); live 2026 page, exact dates to confirm at build (~22–26 / 24–28 July) — thehammond.co.uk
+- **Sommer Tanz Camp — Intensive Ballet Days** (Berlin, DE) — build **only** the dated *Ballet Days* ballet editions (e.g. 30.03–02.04.2026, ages 14+ int.–adv.); the Kids/Teens/Adults summer weeks are recreational — sommertanzcamp.de
+
+**Still `parked` — in-scope shape, no 2026 dates posted yet (re-check ~mid-July):** Accademia Bozzolini / Balletto di Toscana · Tallinn Summer Ballet · Ballet Summer Workshop Estonia · Moorland Int'l Ballet · Ballet West · ICZ Leipzig. *(Ballet Boost — no current edition found, possibly dormant.)*
+
+**`out-of-scope`:** Arte Danza Bologna — SBIP — explicitly "for every level **and non-dancers passionate about fitness**" → recreational/fitness, not pre-pro.
+
+**New lead (incidental — surfaced during the re-check) → now `seed`:** GradPro — Summer Intensive (BRB Dance Hub, Birmingham, GB) — "Week 1: 20–24 July", "Week 2: 27–31 July 2026"; vocational-graduate intensive (1st/2nd-yr only) — gradpro.co.uk. Seeded as `gradpro-summer-intensive`; **narrow level, build at lower priority.**
+
 ## ⏸️ Defer → IDR-9 (`deferred`) — full-time / long-term only, no short course
 - School of the Hamburg Ballet (DE) · Ballettakademie der Wiener Staatsoper (AT) · Royal Swedish Ballet School (SE) · Greek National Opera Dance School (GR) · Teatro di San Carlo Ballet School (IT · Naples) · Ginasiano (PT) · Čiurlionis School (LT) · Floria Capsali (RO) · CPD Sevilla (ES)
 
