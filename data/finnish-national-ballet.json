@@ -81,7 +81,7 @@
       "timezone": "Europe/Helsinki"
     },
     "source": {
-      "attemptedAt": "2026-06-24T05:54:42.913516Z",
+      "attemptedAt": "2026-06-25T11:30:04.168769Z",
       "hash": "sha256:14326e001a396e8c9aa6a61313f436da553780589cd68407e1687ff22ac6b0aa",
       "provider": "finnish-national-ballet",
       "scrapedAt": "2026-06-16T10:11:00.506620Z",
@@ -194,7 +194,7 @@
       "timezone": "Europe/Helsinki"
     },
     "source": {
-      "attemptedAt": "2026-06-24T05:54:42.913516Z",
+      "attemptedAt": "2026-06-25T11:30:04.168769Z",
       "hash": "sha256:4f139cc505e0ae8e553e61e0ef09a8d5937410b0726ff2560a4f54b0acd34310",
       "provider": "finnish-national-ballet",
       "scrapedAt": "2026-06-16T10:30:08.984856Z",

@@ -52,10 +52,10 @@
       "start": "2026-07-27"
     },
     "source": {
-      "attemptedAt": "2026-06-24T01:50:38.289834Z",
-      "hash": "sha256:5cebe0f5f72f017c51b8c273a2fa79b8904e83abc2a9f5269d1ca66c8bf12375",
+      "attemptedAt": "2026-06-25T11:30:04.879742Z",
+      "hash": "sha256:b7001fb0db58bc2fdc931d74b43eae5fd2ae7daeaf217df2cd571fece055fd1f",
       "provider": "ballet-ireland",
-      "scrapedAt": "2026-06-08T14:08:39.080817Z",
+      "scrapedAt": "2026-06-25T11:30:08.671410Z",
       "url": "https://www.balletireland.ie/join-in/summer-intensive/"
     },
     "teachers": [
@@ -71,7 +71,7 @@
       },
       {
         "affiliations": [],
-        "name": "Fiona Brockway",
+        "name": "Serena Cundari",
         "role": "Ballet & Repertoire"
       },
       {
@@ -143,10 +143,10 @@
       "start": "2026-08-04"
     },
     "source": {
-      "attemptedAt": "2026-06-24T01:50:38.289834Z",
-      "hash": "sha256:62f473caeafd0380e102a6345cace575f7cee668d429826618c00caf56aac3c4",
+      "attemptedAt": "2026-06-25T11:30:04.879742Z",
+      "hash": "sha256:dd0cff8f258d9434f5c38361125de47b19ad0d46ac127e4e2b06a1a1ca2366db",
       "provider": "ballet-ireland",
-      "scrapedAt": "2026-06-16T09:46:58.942654Z",
+      "scrapedAt": "2026-06-25T11:30:08.671457Z",
       "url": "https://www.balletireland.ie/join-in/summer-intensive/"
     },
     "teachers": [
@@ -162,7 +162,7 @@
       },
       {
         "affiliations": [],
-        "name": "Fiona Brockway",
+        "name": "Serena Cundari",
         "role": "Ballet & Repertoire"
       },
       {
