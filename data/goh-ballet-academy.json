@@ -62,7 +62,7 @@
       "timezone": "America/Vancouver"
     },
     "source": {
-      "attemptedAt": "2026-06-24T05:54:45.955521Z",
+      "attemptedAt": "2026-06-25T13:53:50.689667Z",
       "hash": "sha256:80002946c943257e8a7aad153b4dc772474298c9a72afa314f2db4aedcd17fb2",
       "provider": "goh-ballet-academy",
       "scrapedAt": "2026-06-08T14:35:14.926621Z",
@@ -126,7 +126,7 @@
       "timezone": "America/Vancouver"
     },
     "source": {
-      "attemptedAt": "2026-06-24T05:54:45.955521Z",
+      "attemptedAt": "2026-06-25T13:53:50.689667Z",
       "hash": "sha256:c1e449bbcd02924239ce7423d205d09d1c9e8d25c5d67a324d1438ad61e08622",
       "provider": "goh-ballet-academy",
       "scrapedAt": "2026-06-08T14:35:14.927288Z",
