@@ -54,6 +54,78 @@ Late-June re-check of leads parked **only** because 2026 dates weren't posted ye
 
 **New lead (incidental — surfaced during the re-check) → now `seed`:** GradPro — Summer Intensive (BRB Dance Hub, Birmingham, GB) — "Week 1: 20–24 July", "Week 2: 27–31 July 2026"; vocational-graduate intensive (1st/2nd-yr only) — gradpro.co.uk. Seeded as `gradpro-summer-intensive`; **narrow level, build at lower priority.**
 
+## 🇩🇪 DE Re-Sweep (2026-06-25)
+
+Re-sweep of Germany with the **current** (program-type + entity-type) discovery method.
+The earlier DE sweep (2026-06-09) predated it and under-found **association-run academies**
+(the DBfT/`dbft-sommerakademie` blind spot). Searched grounded by program-type
+("Sommerintensiv/Sommerakademie/Sommerkurs/Ferienkurs Ballett <Stadt> 2026", "summer intensive
+ballet Germany 2026") **and** explicitly across non-school entities (Vereine · Stiftungen ·
+Konservatorien · (Privat-)Hochschulen · Opernhaus-Bildungsprogramme · Tanzfestivals), across
+Berlin · Hamburg · Munich · Cologne · Frankfurt · Stuttgart · Düsseldorf · Leipzig · Dortmund ·
+Essen (+ Dresden · Hannover · Nürnberg + Rhein-Main/NRW secondaries). **Germany was already
+substantially covered** — the overwhelming majority of hits were existing `live`/`seed` providers,
+so dedupe was the main filter. **Net-new: 2 → `seed`.** Dates quoted from source; seeds carry none
+(verified at build). Tier-free, no scores.
+
+**→ promoted to `seed` (net-new, in scope):**
+- **Dresden Summer Dance** (Dresden) — run by **Dance-Workshop e.V.** (registered Verein, Amtsgericht
+  Dresden VR 131717; dir. Elena Gruß, Prof. Fernando Coelho, Dr. Frank Schneider) — exactly the
+  association-run-academy shape the upgrade targets. Dated **"August 3–15, 2026"** at Bärensteiner
+  Str. 16, 01277 Dresden. Alongside children/youth and adult recreational groups it runs a distinct
+  **vocational/professional pre-pro track** (Junior–Intermediate–Senior, ages ~12–20+) with *daily
+  ballet class, variation, contemporary, étude and repertoire* + choreography — the in-scope piece
+  (build that track; the kids/adult classes are recreational). Independent of Palucca. Seeded as
+  `dresden-summer-dance`. — dance-workshop.de/dresden-summer-dance
+- **Nordsee Akademie — Sommertanztage** (Leck, Schleswig-Holstein) — summer dance week at the **Nordsee
+  Akademie** (a recognised Bildungsstätte), künstlerische Leitung **Maike Jürgensen**, international
+  guest faculty (DBfT-adjacent; e.g. Philip Johnson/BULIPP teaches wk 1). **5th edition**; two dated
+  2026 weeks — **"05.07.2026 bis 11.07.2026"** (I) + **"12.07.2026 bis 18.07.2026"** (II), ages
+  **11–19**, residential, €740/week. Core is **classical ballet ("für die Älteren ggf. auch mit
+  Spitzentanz")** + Contemporary + Musical Jazz, ending in a performance. Seeded as
+  `nordsee-akademie-sommertanztage`. **Marginal depth flag:** student-leaning ages + classical/pointe
+  core (press: "Hier können Ballerina-Träume wahr werden"), but a multi-style/performance framing — a
+  Phase-2 build must confirm a real pre-pro *ballet* cohort (one Offering per dated week) vs. an
+  all-comers hobby week before going live. Distinct from the parked *Lola Rogge Sommertanztage* (HH).
+  — nordsee-akademie.de/programm
+
+**`parked` / monitor — net-new, real but no confirmed *current dated* edition:**
+- **International Ballet Summer School Dresden** (Dresden) — recurring 2-week pre-pro classical school
+  (ballet, pointe, variation, pas de deux, modern, **Forsythe**; ages 14→young-pro), founded/led by
+  **Marina Antonova & Guy Albouy** at Palucca Hochschule, doubling as a Palucca audition. **But** the
+  org (now `ballettalentevolution.com`; Antonova also teaches at our live `mosa-ballet-school`)
+  **cancelled the 2024 edition** and its site shows **no confirmed 2026 dated edition** ("preparing
+  for the 2025 Summer School") → not seeded (never invent a date). Re-check at source in season. —
+  ballettalentevolution.com / balletsummerschool.de
+
+**`out-of-scope` (net-new):**
+- **Tanzwerk Leipzig / Leipziger Ballettschule — "Tanzwerk Summer School 2026"** (Leipzig) — confirmed
+  dated "06.07.2026 bis 13.08.2026", **but** it's a 5-week **drop-in summer-class window** priced per
+  single class / class-cards (€10 single, 5-class card €45) across children's ballet, adult ballet,
+  modern, musical-jazz and *rope skipping* — a rolling open-class program, not a fixed dated student
+  cohort (same shape as Casa de Balet's *Școală de vară*). Confirms the 2026-06-09 "recreational/local"
+  read of Leipziger Ballettschule. — leipziger-ballettschule.de/summer-school
+- **TanzFaktur SommerAkademie 2026** (Cologne, Deutzer Hafen — *TanzFaktur / Verein für Darstellende
+  Künste Köln e.V.*) — a Verein, but a **contemporary-dance** workshop campus (Gaga/performance, à-la-carte
+  per-class booking for advanced/professional *adult* dancers, e.g. Billy Barry, Niv Sheinfeld & Oren
+  Laor; summer "01.07–31.08", workshops early–mid July) — not classical ballet and not a fixed student
+  cohort (same shape as the out-of-scope `tanzwerkstatt-europa` Munich contemporary festival). —
+  tanzfaktur.eu/festival/1/sommerakademie
+- **Ballett Workshop Mannheim 2026 (Alexander Teutscher)** — a single touring-teacher **2-day** guest
+  workshop ("May 9–10, 2026") hosted at the recreational *Ballettschule The Park*, not an organised
+  student intensive provider. — alexanderteutscher.com
+- **International Masterclasses Berlin (IMB)** — surfaced in searches but is a **music/orchestra**
+  masterclass organiser (Lior Shambadal, "PURELY BEETHOVEN!", Orchestra Days), not dance. —
+  international-masterclasses-berlin.de
+
+**Confirmed no net-new (re-verified this pass, unchanged):** the German Hochschulen/Konservatorien on
+the IDR-9 list (HfMT Köln, Folkwang Essen, Palucca Dresden, HMTM/Heinz-Bosl Munich) still run **no**
+open public short summer course for external students; opera houses & state companies (Semperoper,
+Bayerisches/Hessisches Staatsballett, Theater Leipzig, Aalto Essen, Deutsche Oper am Rhein, Staatsoper
+HH) offer only season previews / single open classes / the existing `staatsballett-berlin-feriencamp`;
+and the bulk of program-type hits were already-known providers (Cranko · FBM · Rosenthal · Ballett
+Dortmund · DBfT · Tanzquartier Köln · MIBS · Young Stars · NTM Mannheim · Gymnasium Essen-Werden).
+
 ## ⏸️ Defer → IDR-9 (`deferred`) — full-time / long-term only, no short course
 - School of the Hamburg Ballet (DE) · Ballettakademie der Wiener Staatsoper (AT) · Royal Swedish Ballet School (SE) · Greek National Opera Dance School (GR) · Teatro di San Carlo Ballet School (IT · Naples) · Ginasiano (PT) · Čiurlionis School (LT) · Floria Capsali (RO) · CPD Sevilla (ES)
 
