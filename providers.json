@@ -1319,6 +1319,14 @@
       "city": "Leck",
       "url": "https://www.nordsee-akademie.de/programm",
       "status": "seed"
+    },
+    {
+      "slug": "yagp-nervi-summer-workshop",
+      "name": "YGP International Summer Workshop at the Nervi Festival",
+      "country": "IT",
+      "city": "Genoa",
+      "url": "https://yagp.org/",
+      "status": "seed"
     }
   ]
 }

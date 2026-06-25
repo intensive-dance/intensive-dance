@@ -126,6 +126,17 @@ HH) offer only season previews / single open classes / the existing `staatsballe
 and the bulk of program-type hits were already-known providers (Cranko · FBM · Rosenthal · Ballett
 Dortmund · DBfT · Tanzquartier Köln · MIBS · Young Stars · NTM Mannheim · Gymnasium Essen-Werden).
 
+## 🔁 Stufe-2 Scope Re-Triage (2026-06-25) — past deferrals/exclusions, re-checked under the loosened rules
+
+Re-checked two scope rules that loosened *after* the regional sweeps (no new crawl). **1 → `seed`**; the rest confirmed correctly excluded.
+
+**A — "verify before deferring" (a full-time school may *also* sell a public dated summer course):** all seven IDR-9 deferred full-time schools genuinely lack a public dated short course — the deferrals **stand** (School of the Hamburg Ballet · Greek National Opera Dance School · Ginasiano · Čiurlionis · Floria Capsali · CPD Sevilla; Royal Swedish already `seed`; Teatro di San Carlo already `live`). The Elmhurst/escola-bolshoi pattern does **not** repeat here → IDR-9 list confirmed clean.
+
+**B — "a competition's own intensive is in scope" (the contest stays icebox, its dated intensive doesn't):**
+- **→ `seed`:** **YGP International Summer Workshop at the Nervi Festival** (Genoa, IT) — YAGP's *own* annual one-week student workshop (classes at Teatro Carlo Felice + galas at Nervi Park), distinct from the competition; recurring 2022–25 (2025 galas "July 26–27"), 2026 dates not yet posted. Seeded as `yagp-nervi-summer-workshop` (separate from the parked `youth-america-grand-prix` contest).
+- **Monitor:** Varna IBC — its "International Summer Ballet Academy" is real but tied to the contest, **dormant since 2020** (last edition "15–30 July 2020") — re-check if a 2026 revival posts.
+- **Keep icebox** (no own standalone dated intensive): Tanzolymp · Helsinki IBC · Dance World Cup.
+
 ## ⏸️ Defer → IDR-9 (`deferred`) — full-time / long-term only, no short course
 - School of the Hamburg Ballet (DE) · Ballettakademie der Wiener Staatsoper (AT) · Royal Swedish Ballet School (SE) · Greek National Opera Dance School (GR) · Teatro di San Carlo Ballet School (IT · Naples) · Ginasiano (PT) · Čiurlionis School (LT) · Floria Capsali (RO) · CPD Sevilla (ES)
 
