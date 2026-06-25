@@ -1303,6 +1303,22 @@
       "city": "Birmingham",
       "url": "https://www.gradpro.co.uk/",
       "status": "seed"
+    },
+    {
+      "slug": "dresden-summer-dance",
+      "name": "Dresden Summer Dance (Dance-Workshop e.V.)",
+      "country": "DE",
+      "city": "Dresden",
+      "url": "https://www.dance-workshop.de/dresden-summer-dance",
+      "status": "seed"
+    },
+    {
+      "slug": "nordsee-akademie-sommertanztage",
+      "name": "Nordsee Akademie — Sommertanztage",
+      "country": "DE",
+      "city": "Leck",
+      "url": "https://www.nordsee-akademie.de/programm",
+      "status": "seed"
     }
   ]
 }
