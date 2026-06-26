@@ -74,6 +74,7 @@ from . import (
     fouette,
     frankfurt_ballet_masterclasses,
     goh_ballet_academy,
+    gradpro_summer_intensive,
     gyori_balett_dance_intensive,
     hong_kong_academy_of_ballet,
     houston_ballet_academy,
@@ -270,4 +271,5 @@ SCRAPERS: dict[str, Scraper] = {
     "pirueta-brno": pirueta_brno.scrape,
     "staromestske-baletne-studio": staromestske_baletne_studio.scrape,
     "la-sylphide-ballet-academy": la_sylphide_ballet_academy.scrape,
+    "gradpro-summer-intensive": gradpro_summer_intensive.scrape,
 }
