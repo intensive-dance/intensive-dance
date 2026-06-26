@@ -1,0 +1,55 @@
+[
+  {
+    "ageRange": {
+      "min": 7
+    },
+    "application": {
+      "notes": "Open-enrollment via the registration form + bank transfer; €20 registration fee. Early payment by 31 May (Soluzione A), standard after.",
+      "requirements": [],
+      "url": "https://opusballet.it/campus/summer-campus/"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "opus-ballet/summer-campus-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Florence",
+      "country": "IT",
+      "venue": "Via Ugo Foscolo, 6"
+    },
+    "organization": {
+      "city": "Florence",
+      "country": "IT",
+      "name": "Opus Ballet",
+      "slug": "opus-ballet"
+    },
+    "prices": [
+      {
+        "amount": 20.0,
+        "currency": "EUR",
+        "includes": [],
+        "label": "Quota di iscrizione",
+        "type": "registration"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-11",
+      "notes": "XXVI edizione — DanzaFirenze Summer Campus, Florence.",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-06-29",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:ed0ae66b207d0100c59711994e467bf8b0f7d586f6f0f651bbd41527b5d90f19",
+      "provider": "opus-ballet",
+      "scrapedAt": "2026-06-26T06:29:09.839300Z",
+      "url": "https://opusballet.it/campus/summer-campus/"
+    },
+    "teachers": [],
+    "title": "Summer Campus 2026"
+  }
+]
