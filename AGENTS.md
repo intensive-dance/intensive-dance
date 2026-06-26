@@ -547,6 +547,19 @@ when a second provider genuinely needs the identical thing.
   *undated* edition still renders ("No items found", a future-year "contact us") —
   emit nothing for it rather than borrow a date from the site calendar (see
   `new_zealand_school_of_dance`).
+- **Duda/checkdomain site-builder sites: plain SSR HTML, service-list items.** A
+  site built on the checkdomain/Duda builder (`dmRoot`/`dmRespRow`/`u_<id>` class
+  names) has no `/wp-json/` (403) and no `Event`/`Course` `ld+json`, but is fully
+  server-rendered — a plain fetch (no proxy tier) returns the program text. Courses
+  render as builder **service-list items**: `div.listText` → `span.itemName` (the
+  course name) + `div.itemText` (the body), so iterate those rather than headings.
+  The per-course detail (ages/tuition/schedule) can live on a separate subpage with
+  an auto-generated slug (`/newpageb561dade`) while the **edition year** sits only
+  on the home page ("SUMMER 2026") — fetch both. Tracks that differ only by age
+  (Junior/Intermediate/Senior, same dates/fee) fold into one Offering with one
+  age-`Session` each (Rosenthal precedent); drop the teacher-training "Pedagogic
+  tutorial", observation-only, and drop-in "Day Ticket" items (see
+  `dresden_summer_dance`).
 - **base44 React SPAs render nothing without JS — force `render=1`.** A
   base44-built site (image/asset URLs under `base44.app/api/apps/<id>/…`) has no
   `/wp-json/`, no `Event`/`Course` `ld+json` (only generic SEO meta), and **no

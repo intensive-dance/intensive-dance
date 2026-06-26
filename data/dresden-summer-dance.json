@@ -1,0 +1,227 @@
+[
+  {
+    "ageRange": {
+      "max": null,
+      "min": 13
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.dance-workshop.de/kopie-contact"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "repertoire",
+      "pointe"
+    ],
+    "id": "dresden-summer-dance/vocational-2026",
+    "level": [
+      "pre-professional",
+      "professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Dresden",
+      "country": "DE",
+      "venue": "Pegasus Theaterschule"
+    },
+    "organization": {
+      "city": "Dresden",
+      "country": "DE",
+      "name": "Dance-Workshop e.V.",
+      "slug": "dresden-summer-dance"
+    },
+    "prices": [
+      {
+        "amount": 30.0,
+        "currency": "EUR",
+        "includes": [],
+        "label": "Membership fee",
+        "notes": "(Non-Refundable) from January 1st",
+        "type": "registration"
+      },
+      {
+        "amount": 780.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition",
+        "type": "tuition"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-15",
+      "notes": "august 3rd - 15th:",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "max": 16,
+            "min": 13
+          },
+          "gender": "both",
+          "label": "Junior",
+          "notes": "Junior Students of vocational training from 12-15 years old with no less than 2 years of dance classes. They will be offered daily ballet, contemporary, variations, etude and repertoire. This workshop is created for local, national and international dancers from the ages of 13-16 years old. Membership fee: 30 Euros (Non-Refundable) from January 1st Tuition: 780 Euros Schedule - august 3rd - 15th: • Ballet 10:30 – 12:00 • Variation/pointe work 12:15 – 13:15 Lunch Break for jumps • Variation/jumps 13:30 – 14:30 Lunch break for Pointe work • Contemporary 14:45 – 16:15 • Etude / Choreographic Lab 16:30 – 17:30 • Repertoire by announcement 17:45 – 18:45"
+        },
+        {
+          "ageRange": {
+            "max": 17,
+            "min": 14
+          },
+          "gender": "both",
+          "label": "Intermediate",
+          "notes": "Intermediate Students of vocational training from 13-16 years old with no less than 4 years of dance classes. They will be offered daily ballet, contemporary, variations, etude and repertoire. This workshop is created for local, national and international dancers from the ages of 14-17 years old. Membership fee: 30 Euros (Non-Refundable) from January 1st Tuition: 780 Euros Schedule - august 3rd - 15th: • Ballet 10:30 – 12:00 • Variation/pointe work 12:15 – 13:15 Lunch Break for jumps • Variation/jumps 13:30 – 14:30 Lunch break for Pointe work • Contemporary 14:45 – 16:15 • Etude / Choreographic Lab 16:30 – 17:30 • Repertoire by announcement 17:45 – 18:45"
+        },
+        {
+          "ageRange": {
+            "max": null,
+            "min": 15
+          },
+          "gender": "both",
+          "label": "Senior",
+          "notes": "Senior Professional dancers & Students in professional education from 14 + years old with no less than 6 years of dance classes. They will be offered daily ballet, contemporary, variations, etude and repertoire. This workshop is created for local, national and international dancers from the ages of 15+ years old. Membership fee: 30 Euros (Non-Refundable) from January 1st Tuition: 780 Euros Schedule - august 3rd - 15th: • Ballet 10:30 – 12:00 • Variation/pointe work 12:15 – 13:15 Lunch Break for jumps • Variation/jumps 13:30 – 14:30 Lunch break for Pointe work • Contemporary 14:45 – 16:15 • Etude / Choreographic Lab 16:30 – 17:30 • Repertoire by announcement 17:45 – 18:45"
+        }
+      ],
+      "start": "2026-08-03",
+      "timezone": "Europe/Berlin"
+    },
+    "source": {
+      "hash": "sha256:7bf0819535b04680e04b0721e03062a2c3450a81464949bc84b046a810c37cc8",
+      "provider": "dresden-summer-dance",
+      "scrapedAt": "2026-06-26T19:12:02.303812Z",
+      "url": "https://www.dance-workshop.de/dresden-summer-dance"
+    },
+    "teachers": [],
+    "title": "Dresden Summer Dance 2026 — Vocational / Professional"
+  },
+  {
+    "ageRange": {
+      "max": 17,
+      "min": 8
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.dance-workshop.de/kopie-contact"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "dresden-summer-dance/children-youth-2026",
+    "level": [
+      "open"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Dresden",
+      "country": "DE",
+      "venue": "Pegasus Theaterschule"
+    },
+    "organization": {
+      "city": "Dresden",
+      "country": "DE",
+      "name": "Dance-Workshop e.V.",
+      "slug": "dresden-summer-dance"
+    },
+    "prices": [
+      {
+        "amount": 30.0,
+        "currency": "EUR",
+        "includes": [],
+        "label": "Membership fee",
+        "notes": "(Non-Refundable) from January 1st",
+        "type": "registration"
+      },
+      {
+        "amount": 340.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition",
+        "type": "tuition"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-15",
+      "notes": "10th - 15th: August",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-10",
+      "timezone": "Europe/Berlin"
+    },
+    "source": {
+      "hash": "sha256:3594f57a1e19891a17fd746edc8eb214defe99a45e8f694c253a7443da085a7e",
+      "provider": "dresden-summer-dance",
+      "scrapedAt": "2026-06-26T19:12:02.304164Z",
+      "url": "https://www.dance-workshop.de/dresden-summer-dance"
+    },
+    "teachers": [],
+    "title": "Dresden Summer Dance 2026 — Children & Youth Dance"
+  },
+  {
+    "ageRange": {
+      "max": null,
+      "min": 16
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.dance-workshop.de/kopie-contact"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "dresden-summer-dance/adults-2026",
+    "level": [
+      "open"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Dresden",
+      "country": "DE",
+      "venue": "Pegasus Theaterschule"
+    },
+    "organization": {
+      "city": "Dresden",
+      "country": "DE",
+      "name": "Dance-Workshop e.V.",
+      "slug": "dresden-summer-dance"
+    },
+    "prices": [
+      {
+        "amount": 30.0,
+        "currency": "EUR",
+        "includes": [],
+        "label": "Membership fee",
+        "notes": "(Non-Refundable) from January 1st",
+        "type": "registration"
+      },
+      {
+        "amount": 90.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition",
+        "type": "tuition"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-13",
+      "notes": "10 - 13: August",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-10",
+      "timezone": "Europe/Berlin"
+    },
+    "source": {
+      "hash": "sha256:3461188d53680b7f0fce2066671181723f2f8dbcdee8afe07ff88020c2eb6527",
+      "provider": "dresden-summer-dance",
+      "scrapedAt": "2026-06-26T19:12:02.304373Z",
+      "url": "https://www.dance-workshop.de/dresden-summer-dance"
+    },
+    "teachers": [],
+    "title": "Dresden Summer Dance 2026 — Adults"
+  }
+]
