@@ -2,16 +2,13 @@
 
 > **Generated — do not edit.** Refresh with `uv run python -m intensive_dance.overview --write`; CI drift-checks it. Source of truth: `providers.json`.
 
-10 buildable · 30 excluded · 126 live (166 providers total).
+9 buildable · 30 excluded · 127 live (166 providers total).
 
 **To claim one (so nobody double-builds):** check `gh issue list` / `gh pr list` for the slug; if free, open a `build:<slug>` issue and **self-assign first**, then build; close it when the PR merges (provider → `live`). An open claim issue *or* PR = locked. See `AGENTS.md` → Scope & coordination.
 
 ## Buildable (status: seed)
 
 _Some still need Phase-1 verification (a public dated edition / not full-time) before building._
-
-### CH
-- `php-ballet-intensive` — PHP Ballet Intensive (Morges) — https://www.phpballetintensive.ch/
 
 ### DE
 - `dresden-summer-dance` — Dresden Summer Dance (Dance-Workshop e.V.) (Dresden) — https://www.dance-workshop.de/dresden-summer-dance
