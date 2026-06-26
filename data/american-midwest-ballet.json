@@ -56,7 +56,7 @@
       "timezone": "America/Chicago"
     },
     "source": {
-      "attemptedAt": "2026-06-25T05:54:16.094271Z",
+      "attemptedAt": "2026-06-26T13:52:35.526207Z",
       "hash": "sha256:09d63a31adaa2db69eec235a0a10961486530b7b637b96a7ad2aa0784b22e198",
       "provider": "american-midwest-ballet",
       "scrapedAt": "2026-06-11T14:23:05.053144Z",
@@ -113,7 +113,7 @@
       "timezone": "America/Chicago"
     },
     "source": {
-      "attemptedAt": "2026-06-25T05:54:16.094271Z",
+      "attemptedAt": "2026-06-26T13:52:35.526207Z",
       "hash": "sha256:d9e7b326c59f3ec3f3de85616317b1fa00a9b83ca198271770e64cbb1c23f151",
       "provider": "american-midwest-ballet",
       "scrapedAt": "2026-06-11T14:22:40.474574Z",
@@ -210,7 +210,7 @@
       "timezone": "America/Chicago"
     },
     "source": {
-      "attemptedAt": "2026-06-25T05:54:16.094271Z",
+      "attemptedAt": "2026-06-26T13:52:35.526207Z",
       "hash": "sha256:9e792ce86fa03bc11df47fa66ecb70ae695bd22de1b5e0d0fd86339846f5e89f",
       "provider": "american-midwest-ballet",
       "scrapedAt": "2026-06-11T14:22:40.475411Z",
