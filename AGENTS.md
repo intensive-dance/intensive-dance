@@ -628,7 +628,16 @@ when a second provider genuinely needs the identical thing.
   (Ballett Dortmund's "Sommerakademie Junior" *is* the `dbft-sommerakademie`
   course on dbft.de), emit only the edition not covered elsewhere — don't ship the
   same intensive twice under two slugs (see `ballett_dortmund`, emits only the
-  open Internationale Sommerakademie).
+  open Internationale Sommerakademie). **Variant — event-detail TYPO3 + index
+  discovery:** an academy's TYPO3 can instead expose one *event detail* page per
+  dated edition off a `/programm` index — discover the editions by filtering the
+  index anchors (`/programm/<slug>-…`), one Offering per page, and read the date
+  range off a structured `span.teaser__date` (the "–" is aria-hidden and the
+  German "bis" visually-hidden, so the text glues to "–bis"; re-space it). Take
+  the **first** `teaser__date` — the page's slider repeats other events' dates
+  lower down. A multi-genre "Tanztage" week is in scope when it teaches ballet:
+  keep classical/pointe/contemporary/character/repertoire, drop the jazz/musical
+  classes (see `nordsee_akademie_sommertanztage`).
 - **A "full-time school" can still sell public short courses.** The Brazilian
   Bolshoi branch is a free full-time vocational school, but it *also* sells dated,
   open-enrollment paid short courses (Cursos de Inverno / Vivências / Workshops) —
