@@ -53,7 +53,7 @@
       "timezone": "Asia/Tokyo"
     },
     "source": {
-      "attemptedAt": "2026-06-25T16:12:31.530705Z",
+      "attemptedAt": "2026-06-26T23:02:20.189444Z",
       "hash": "sha256:a4daf6b4b46c96c6e3964ffa2e52990058f5f18a6914aa2eb0551eaf00941b63",
       "provider": "new-national-theatre-ballet-school",
       "scrapedAt": "2026-06-07T08:51:57.853139Z",
@@ -143,7 +143,7 @@
       "timezone": "Asia/Tokyo"
     },
     "source": {
-      "attemptedAt": "2026-06-25T16:12:31.530705Z",
+      "attemptedAt": "2026-06-26T23:02:20.189444Z",
       "hash": "sha256:a3c13493fc9b2888d89d99bc7b672d8157ed822349fe9504eac33f0b36ec18ca",
       "provider": "new-national-theatre-ballet-school",
       "scrapedAt": "2026-06-05T22:19:04.367039Z",
