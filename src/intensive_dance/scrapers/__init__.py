@@ -131,6 +131,7 @@ from . import (
     tanzquartier_koeln,
     teatro_san_carlo_scuola_ballo,
     temps_lie_ballet_workshop_japan,
+    the_hammond,
     tokyo_ballet_school,
     tokyo_city_ballet,
     umbria_ballet,
@@ -270,4 +271,5 @@ SCRAPERS: dict[str, Scraper] = {
     "pirueta-brno": pirueta_brno.scrape,
     "staromestske-baletne-studio": staromestske_baletne_studio.scrape,
     "la-sylphide-ballet-academy": la_sylphide_ballet_academy.scrape,
+    "the-hammond": the_hammond.scrape,
 }

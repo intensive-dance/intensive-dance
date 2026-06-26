@@ -1,0 +1,138 @@
+[
+  {
+    "ageRange": {
+      "max": 17,
+      "min": 7
+    },
+    "application": {
+      "notes": "Open-enrollment summer school; apply via The Hammond's online form.",
+      "requirements": [],
+      "status": "open",
+      "url": "https://www.thehammond.co.uk/apply"
+    },
+    "genres": [
+      "classical",
+      "repertoire"
+    ],
+    "id": "the-hammond/summer-school-2026-week-1",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Chester",
+      "country": "GB",
+      "venue": "The Hammond"
+    },
+    "organization": {
+      "city": "Chester",
+      "country": "GB",
+      "name": "The Hammond",
+      "slug": "the-hammond"
+    },
+    "prices": [
+      {
+        "amount": 385.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Non-residential",
+        "type": "tuition"
+      },
+      {
+        "amount": 625.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition",
+          "accommodation"
+        ],
+        "label": "Residential",
+        "notes": "Includes boarding accommodation.",
+        "type": "tuition"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-31",
+      "notes": "09:00–16:00 daily; residential or non-residential.",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-27",
+      "timezone": "Europe/London"
+    },
+    "source": {
+      "hash": "sha256:0dacd850c55c74e1aece17fbc4d95077714addb852bed822caec8c7f7c18e288",
+      "provider": "the-hammond",
+      "scrapedAt": "2026-06-26T06:13:04.766462Z",
+      "url": "https://www.thehammond.co.uk/summer-school-2026"
+    },
+    "teachers": [],
+    "title": "Summer School 2026 — Week One"
+  },
+  {
+    "ageRange": {
+      "max": 17,
+      "min": 7
+    },
+    "application": {
+      "notes": "Open-enrollment summer school; apply via The Hammond's online form.",
+      "requirements": [],
+      "status": "open",
+      "url": "https://www.thehammond.co.uk/apply"
+    },
+    "genres": [
+      "classical",
+      "repertoire"
+    ],
+    "id": "the-hammond/summer-school-2026-week-2",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Chester",
+      "country": "GB",
+      "venue": "The Hammond"
+    },
+    "organization": {
+      "city": "Chester",
+      "country": "GB",
+      "name": "The Hammond",
+      "slug": "the-hammond"
+    },
+    "prices": [
+      {
+        "amount": 385.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Non-residential",
+        "type": "tuition"
+      },
+      {
+        "amount": 625.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition",
+          "accommodation"
+        ],
+        "label": "Residential",
+        "notes": "Includes boarding accommodation.",
+        "type": "tuition"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-07",
+      "notes": "09:00–16:00 daily; residential or non-residential.",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-03",
+      "timezone": "Europe/London"
+    },
+    "source": {
+      "hash": "sha256:e2515c0bb8f40b3653f851761fd810dc5e8b6296f7edd70c00cf44d51d9fc58a",
+      "provider": "the-hammond",
+      "scrapedAt": "2026-06-26T06:13:04.766572Z",
+      "url": "https://www.thehammond.co.uk/summer-school-2026"
+    },
+    "teachers": [],
+    "title": "Summer School 2026 — Week Two"
+  }
+]
