@@ -108,6 +108,7 @@ from . import (
     pacific_northwest_ballet_school,
     pirueta_brno,
     pnsd_rosella_hightower,
+    professione_danza_pescara,
     progetto_danza_treviso,
     prague_ballet_intensive,
     prague_ballet_workshop,
@@ -270,4 +271,5 @@ SCRAPERS: dict[str, Scraper] = {
     "pirueta-brno": pirueta_brno.scrape,
     "staromestske-baletne-studio": staromestske_baletne_studio.scrape,
     "la-sylphide-ballet-academy": la_sylphide_ballet_academy.scrape,
+    "professione-danza-pescara": professione_danza_pescara.scrape,
 }

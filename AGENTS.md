@@ -203,6 +203,18 @@ module docstring so the next person doesn't re-investigate:
      the current edition's page was titled "Summer School 2023" while its body
      announced the *2024* intensive — so read the year/dates from the body header,
      never the title (see `la_sylphide_ballet_academy`).
+   - **Trap (SiteOrigin):** a WordPress page can return a near-empty
+     `content.rendered` (just a FooGallery/`[gallery]` shortcode) while the real
+     body — dated weeks, faculty, fees — is rendered server-side from
+     **SiteOrigin Page Builder** panels stored in postmeta. Confirm REST has the
+     text before trusting it; otherwise scrape the **rendered HTML** instead. The
+     panel renderer can also split a single fee onto separate lines
+     ("Euro\n100,00\n(senza stage)"), so collapse whitespace and read
+     `label: Euro <amt> (qual)` across it rather than line-pairing. One
+     two-track edition (children 7–13 / youth 14–25, distinct ages/curricula/fees)
+     → one Offering per track; match genres against the per-track curriculum
+     sentence so a faculty "Repertorio Forsythe" bio can't leak a genre (see
+     `professione_danza_pescara`).
 2. **Embedded structured data** — `<script type="application/ld+json">`
    (schema.org `Event`/`Course`), or a state blob (`__NEXT_DATA__`).
 3. **Feeds** — iCal `.ics`, RSS/Atom.
