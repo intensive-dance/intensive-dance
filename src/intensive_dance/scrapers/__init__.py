@@ -135,6 +135,7 @@ from . import (
     tokyo_city_ballet,
     umbria_ballet,
     vaganova_international_program,
+    yagp_nervi_summer_workshop,
     yorkshire_ballet_seminars,
     verona_summer_dance_lab,
     wiener_ballettakademie,
@@ -270,4 +271,5 @@ SCRAPERS: dict[str, Scraper] = {
     "pirueta-brno": pirueta_brno.scrape,
     "staromestske-baletne-studio": staromestske_baletne_studio.scrape,
     "la-sylphide-ballet-academy": la_sylphide_ballet_academy.scrape,
+    "yagp-nervi-summer-workshop": yagp_nervi_summer_workshop.scrape,
 }
