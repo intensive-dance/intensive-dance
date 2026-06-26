@@ -547,6 +547,19 @@ when a second provider genuinely needs the identical thing.
   *undated* edition still renders ("No items found", a future-year "contact us") —
   emit nothing for it rather than borrow a date from the site calendar (see
   `new_zealand_school_of_dance`).
+- **`/wp-json/` 200 ≠ WordPress-served — check the generator.** A flowweb.de-CMS
+  site (`<meta name="generator" content="flowweb.de">`) answers `/wp-json/` 200 yet
+  serves no `content.rendered`; the program lives in flat hand-built HTML
+  (`<div align="center">` blocks, `>>>start-end<<<` date markers with a stray
+  double dot "02.04..2026"). Plain `selectolax` scrape, no proxy. **Scope trap:** a
+  "Tanz Camp" brand can be mostly **urban** dance (`ld+json` description "urbane
+  Tanzstile"; KIDS/TEENS/ADULTS weeks, BREAKING days) with only its **Ballett Days**
+  editions in scope — filter each edition segment on "Ballett" present & "Breaking"
+  absent. Editions can be **split across pages** (calendar carries the past Oster
+  with ages/levels; registration page carries the upcoming Herbst with the price) —
+  union them by date range, and gate the program page's genres/faculty on a
+  date-match so they only enrich the edition that page describes (see
+  `sommer_tanz_camp_berlin`).
 - **base44 React SPAs render nothing without JS — force `render=1`.** A
   base44-built site (image/asset URLs under `base44.app/api/apps/<id>/…`) has no
   `/wp-json/`, no `Event`/`Course` `ld+json` (only generic SEO meta), and **no
