@@ -46,7 +46,7 @@
       "timezone": "Asia/Tokyo"
     },
     "source": {
-      "attemptedAt": "2026-06-26T21:58:43.402435Z",
+      "attemptedAt": "2026-06-27T21:49:40.670312Z",
       "hash": "sha256:3a0981e1e9e52f33c3640f58753b9276ce658b6fa2f327fbeebc972335aa1088",
       "provider": "k-ballet-school",
       "scrapedAt": "2026-06-06T16:48:36.488087Z",
@@ -120,7 +120,7 @@
       "timezone": "Asia/Tokyo"
     },
     "source": {
-      "attemptedAt": "2026-06-26T21:58:43.402435Z",
+      "attemptedAt": "2026-06-27T21:49:40.670312Z",
       "hash": "sha256:1eada47db5a48604d8d99b8ba8cc42c327950b2e433bd8698922f6a54b9fb22e",
       "provider": "k-ballet-school",
       "scrapedAt": "2026-06-06T16:48:36.488600Z",
@@ -197,7 +197,7 @@
       "timezone": "Asia/Tokyo"
     },
     "source": {
-      "attemptedAt": "2026-06-26T21:58:43.402435Z",
+      "attemptedAt": "2026-06-27T21:49:40.670312Z",
       "hash": "sha256:4cc673b0c65350011c1fca842ed0d0f610e74006d21d1bced627f84e7f49a2bb",
       "provider": "k-ballet-school",
       "scrapedAt": "2026-06-06T16:48:36.488729Z",
@@ -275,7 +275,7 @@
       "timezone": "Asia/Tokyo"
     },
     "source": {
-      "attemptedAt": "2026-06-26T21:58:43.402435Z",
+      "attemptedAt": "2026-06-27T21:49:40.670312Z",
       "hash": "sha256:3b5c312c2dc36ed9b69c6984f8951b24e99f0803ef9fcbbe240c2fb345fffef6",
       "provider": "k-ballet-school",
       "scrapedAt": "2026-06-06T16:48:36.488831Z",
@@ -330,7 +330,7 @@
       "timezone": "Asia/Tokyo"
     },
     "source": {
-      "attemptedAt": "2026-06-26T21:58:43.402435Z",
+      "attemptedAt": "2026-06-27T21:49:40.670312Z",
       "hash": "sha256:9c278ce8ab5d854fa439c6b6249820a3138583f57239bcec450b661f966d0e0c",
       "provider": "k-ballet-school",
       "scrapedAt": "2026-06-07T11:44:31.896940Z",
@@ -384,7 +384,7 @@
       "timezone": "Asia/Tokyo"
     },
     "source": {
-      "attemptedAt": "2026-06-26T21:58:43.402435Z",
+      "attemptedAt": "2026-06-27T21:49:40.670312Z",
       "hash": "sha256:89388f16be15e249ac74d3b671d15678cd177a716c7cd6eb72c871de9f6dc492",
       "provider": "k-ballet-school",
       "scrapedAt": "2026-06-07T11:44:31.897264Z",
@@ -438,7 +438,7 @@
       "timezone": "Asia/Tokyo"
     },
     "source": {
-      "attemptedAt": "2026-06-26T21:58:43.402435Z",
+      "attemptedAt": "2026-06-27T21:49:40.670312Z",
       "hash": "sha256:752b48b10c9ff47b33789b45e34761cb3d44f7a53b36dfe6a0c352d4c7b0f52d",
       "provider": "k-ballet-school",
       "scrapedAt": "2026-06-07T11:44:31.897401Z",
@@ -494,7 +494,7 @@
       "timezone": "Asia/Tokyo"
     },
     "source": {
-      "attemptedAt": "2026-06-26T21:58:43.402435Z",
+      "attemptedAt": "2026-06-27T21:49:40.670312Z",
       "hash": "sha256:12785f58c8c9dff25d3d0dee7fd510a1ede0adaea9e04d0c210418e5cfbde247",
       "provider": "k-ballet-school",
       "scrapedAt": "2026-06-07T11:44:31.897524Z",
