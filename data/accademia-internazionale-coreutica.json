@@ -81,7 +81,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "attemptedAt": "2026-06-26T00:01:19.667870Z",
+      "attemptedAt": "2026-06-27T10:50:15.882393Z",
       "hash": "sha256:2b062dfd8ca70b92130425bf631a63d59ee956ee446cc14f7af1d7ba19418c33",
       "provider": "accademia-internazionale-coreutica",
       "scrapedAt": "2026-06-17T12:04:33.105667Z",
@@ -201,7 +201,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "attemptedAt": "2026-06-26T00:01:19.667870Z",
+      "attemptedAt": "2026-06-27T10:50:15.882393Z",
       "hash": "sha256:2d4c01448552804fcb2145bec6c272dacf1e1133ad5de47a029c126be6647fb4",
       "provider": "accademia-internazionale-coreutica",
       "scrapedAt": "2026-06-17T12:04:33.104658Z",
