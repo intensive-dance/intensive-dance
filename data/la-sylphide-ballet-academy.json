@@ -74,7 +74,7 @@
       "timezone": "Europe/Bucharest"
     },
     "source": {
-      "attemptedAt": "2026-06-26T13:52:35.649823Z",
+      "attemptedAt": "2026-06-27T16:55:49.032430Z",
       "hash": "sha256:2d2e01dee8b8ddc4c37d4f0c3f3278556d2029630c56cbb7ca567ff78dd9557e",
       "provider": "la-sylphide-ballet-academy",
       "scrapedAt": "2026-06-19T22:23:25.995284Z",
@@ -158,7 +158,7 @@
       "timezone": "Europe/Bucharest"
     },
     "source": {
-      "attemptedAt": "2026-06-26T13:52:35.649823Z",
+      "attemptedAt": "2026-06-27T16:55:49.032430Z",
       "hash": "sha256:f13fb1636f6fbd089318220f9f675db7be086476e6f047f4e30daf053a58a67e",
       "provider": "la-sylphide-ballet-academy",
       "scrapedAt": "2026-06-19T22:23:25.993327Z",
@@ -241,7 +241,7 @@
       "timezone": "Europe/Bucharest"
     },
     "source": {
-      "attemptedAt": "2026-06-26T13:52:35.649823Z",
+      "attemptedAt": "2026-06-27T16:55:49.032430Z",
       "hash": "sha256:27682020e626f8eeb7e20419e9b2a0cfd72b64c11fb00ed98aac319b1364c2f7",
       "provider": "la-sylphide-ballet-academy",
       "scrapedAt": "2026-06-19T22:23:25.990964Z",
@@ -325,7 +325,7 @@
       "timezone": "Europe/Bucharest"
     },
     "source": {
-      "attemptedAt": "2026-06-26T13:52:35.649823Z",
+      "attemptedAt": "2026-06-27T16:55:49.032430Z",
       "hash": "sha256:ed4a6fd6fb9e577008350b6233d1078e3607c839fc9b2123be8742b98803f79e",
       "provider": "la-sylphide-ballet-academy",
       "scrapedAt": "2026-06-19T22:23:25.986785Z",
