@@ -54,7 +54,7 @@
       "timezone": "Europe/Paris"
     },
     "source": {
-      "attemptedAt": "2026-06-26T08:29:24.055546Z",
+      "attemptedAt": "2026-06-27T12:03:27.387197Z",
       "hash": "sha256:79d446665d5d6a185008b13d0bf8e11306e3ce98be96030b799d7fcdb9a33d8b",
       "provider": "pnsd-rosella-hightower",
       "scrapedAt": "2026-06-07T08:35:40.830637Z",
@@ -150,7 +150,7 @@
       "timezone": "Europe/Paris"
     },
     "source": {
-      "attemptedAt": "2026-06-26T08:29:24.055546Z",
+      "attemptedAt": "2026-06-27T12:03:27.387197Z",
       "hash": "sha256:85ddc60194f9ae664c6ec2b6b2082c61c9225d8e461525ae5dbca86683bdf9c2",
       "provider": "pnsd-rosella-hightower",
       "scrapedAt": "2026-06-07T08:35:40.830876Z",
@@ -241,7 +241,7 @@
       "timezone": "Europe/Paris"
     },
     "source": {
-      "attemptedAt": "2026-06-26T08:29:24.055546Z",
+      "attemptedAt": "2026-06-27T12:03:27.387197Z",
       "hash": "sha256:8bd50afbfa8dd63cbc8639981e1b26ea20d25aaa0eb593d81c33c17d960c913a",
       "provider": "pnsd-rosella-hightower",
       "scrapedAt": "2026-06-07T08:35:40.830979Z",
@@ -332,7 +332,7 @@
       "timezone": "Europe/Paris"
     },
     "source": {
-      "attemptedAt": "2026-06-26T08:29:24.055546Z",
+      "attemptedAt": "2026-06-27T12:03:27.387197Z",
       "hash": "sha256:5f7a257fe5aab94406cd057bef9b959fff90686cf69d167da431cf20f3ccb211",
       "provider": "pnsd-rosella-hightower",
       "scrapedAt": "2026-06-07T08:35:40.831062Z",
