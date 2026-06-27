@@ -5,8 +5,7 @@
       "min": 12
     },
     "application": {
-      "deadline": "2026-06-20",
-      "notes": "ヨーロッパ名門バレエ学校への短期スカラシップ留学権、国際コンクール参加権、 就職活動を目指す方にはバレエ団合同オーディションである グランドオーディション参加権 などの様々なチャンスを皆さんにお届けいたします。",
+      "deadline": "2026-07-05",
       "requirements": [],
       "url": "https://www.dd-balletjapan.com/18th-tokyo"
     },
@@ -100,10 +99,10 @@
       "timezone": "Asia/Tokyo"
     },
     "source": {
-      "attemptedAt": "2026-06-26T23:02:19.959255Z",
-      "hash": "sha256:cb5be585d0aca538a735ec15897c18f00acbd7d1fbadb39b190e2a33a32d1b3b",
+      "attemptedAt": "2026-06-27T22:48:42.280542Z",
+      "hash": "sha256:0ff474228799593569e0df0e4e50ae024f66bcf862126447e1eac09bab8445bf",
       "provider": "dd-masterclass-japan",
-      "scrapedAt": "2026-06-06T07:35:24.256022Z",
+      "scrapedAt": "2026-06-27T22:48:43.956167Z",
       "url": "https://www.dd-balletjapan.com/18th-tokyo"
     },
     "teachers": [
@@ -131,8 +130,7 @@
       "min": 12
     },
     "application": {
-      "deadline": "2026-06-20",
-      "notes": "ヨーロッパ名門バレエ学校への短期スカラシップ留学権、国際コンクール参加権、 就職活動を目指す方にはバレエ団合同オーディションである グランドオーディション参加権 などの様々なチャンスを皆さんにお届けいたします。",
+      "deadline": "2026-07-05",
       "requirements": [],
       "url": "https://www.dd-balletjapan.com/18th-osaka"
     },
@@ -226,10 +224,10 @@
       "timezone": "Asia/Tokyo"
     },
     "source": {
-      "attemptedAt": "2026-06-26T23:02:19.959255Z",
-      "hash": "sha256:2cff7095e85fc7e3b375210bc15e4fdce170bb8ad9195256735c0901a43f170f",
+      "attemptedAt": "2026-06-27T22:48:42.280542Z",
+      "hash": "sha256:f25d392c1f7fd707d3e84c78f55468901055909513c59493626380e7206bbf4c",
       "provider": "dd-masterclass-japan",
-      "scrapedAt": "2026-06-06T07:35:24.367414Z",
+      "scrapedAt": "2026-06-27T22:48:45.186992Z",
       "url": "https://www.dd-balletjapan.com/18th-osaka"
     },
     "teachers": [
