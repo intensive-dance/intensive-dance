@@ -28,7 +28,7 @@
       "start": "2026-08-24"
     },
     "source": {
-      "attemptedAt": "2026-06-27T08:21:09.084997Z",
+      "attemptedAt": "2026-06-28T01:59:45.727287Z",
       "hash": "sha256:5554f1a58842e8f43b91d9fd5796ba4cfedb7f7afa64c5af752011d6ac5c6944",
       "provider": "scuola-hamlyn",
       "scrapedAt": "2026-06-17T07:20:36.293001Z",
@@ -83,7 +83,7 @@
       "start": "2025-08-25"
     },
     "source": {
-      "attemptedAt": "2026-06-27T08:21:09.084997Z",
+      "attemptedAt": "2026-06-28T01:59:45.727287Z",
       "hash": "sha256:65e3f5118886a41ac354236aafb13ae517aed42e22bf7bd3ef5d29c12d239173",
       "provider": "scuola-hamlyn",
       "scrapedAt": "2026-06-17T07:20:36.293528Z",
@@ -121,7 +121,7 @@
       "start": "2024-08-26"
     },
     "source": {
-      "attemptedAt": "2026-06-27T08:21:09.084997Z",
+      "attemptedAt": "2026-06-28T01:59:45.727287Z",
       "hash": "sha256:a7af1e3171b07b90ba8af4776d6b6189adeb33f8e6b0cbebfa27ca46a6f2e92e",
       "provider": "scuola-hamlyn",
       "scrapedAt": "2026-06-17T07:20:36.293657Z",
@@ -159,7 +159,7 @@
       "start": "2023-08-21"
     },
     "source": {
-      "attemptedAt": "2026-06-27T08:21:09.084997Z",
+      "attemptedAt": "2026-06-28T01:59:45.727287Z",
       "hash": "sha256:b1c98e9aa89654b9feffa821259590ea5877a0722d3317966ef253ed71479782",
       "provider": "scuola-hamlyn",
       "scrapedAt": "2026-06-17T07:20:36.293871Z",
@@ -197,7 +197,7 @@
       "start": "2022-08-22"
     },
     "source": {
-      "attemptedAt": "2026-06-27T08:21:09.084997Z",
+      "attemptedAt": "2026-06-28T01:59:45.727287Z",
       "hash": "sha256:3248d5c10eb26f0d59003ea62c84fb91281708e22854aa2b2aade1099380cd25",
       "provider": "scuola-hamlyn",
       "scrapedAt": "2026-06-17T07:20:36.293950Z",
