@@ -48,7 +48,7 @@
       "timezone": "Europe/Madrid"
     },
     "source": {
-      "attemptedAt": "2026-06-27T21:49:39.120905Z",
+      "attemptedAt": "2026-06-28T20:13:33.869343Z",
       "hash": "sha256:9b3aba83db95bd23d18e3e45a73763a7711d4bdc4a3620b099a969ce213cdd62",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-07T07:11:05.653354Z",
@@ -314,7 +314,7 @@
       "timezone": "Europe/Madrid"
     },
     "source": {
-      "attemptedAt": "2026-06-27T21:49:39.120905Z",
+      "attemptedAt": "2026-06-28T20:13:33.869343Z",
       "hash": "sha256:3457237e808a15e3e0e6d9b69b8c568bf8e1bcce0d37a1868b64b3f3a04631ab",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-05T10:05:05.886497Z",
@@ -488,7 +488,7 @@
       "timezone": "Europe/Madrid"
     },
     "source": {
-      "attemptedAt": "2026-06-27T21:49:39.120905Z",
+      "attemptedAt": "2026-06-28T20:13:33.869343Z",
       "hash": "sha256:87c81be8068d5197767c1146749d906173eaa3fbcee48f360db2b24ed8c12014",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-05T10:05:05.885275Z",
@@ -689,7 +689,7 @@
       "timezone": "Europe/Sofia"
     },
     "source": {
-      "attemptedAt": "2026-06-27T21:49:39.120905Z",
+      "attemptedAt": "2026-06-28T20:13:33.869343Z",
       "hash": "sha256:eedfdf4e1d89a8d571955383471b08c25a57bc768f0ede41b6806024fb066a2a",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-07T07:11:06.255289Z",
@@ -863,7 +863,7 @@
       "timezone": "Europe/Sofia"
     },
     "source": {
-      "attemptedAt": "2026-06-27T21:49:39.120905Z",
+      "attemptedAt": "2026-06-28T20:13:33.869343Z",
       "hash": "sha256:ca8128753a6763d343e0850280dddfdf377ea0a885d858c0e04d9a09fa65b260",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-05T10:05:06.336612Z",
@@ -1049,7 +1049,7 @@
       "timezone": "Europe/Sofia"
     },
     "source": {
-      "attemptedAt": "2026-06-27T21:49:39.120905Z",
+      "attemptedAt": "2026-06-28T20:13:33.869343Z",
       "hash": "sha256:285868a1da59b2e153e04ac193e981c53175b6ae76775df3f980e94ba1db86aa",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-05T10:05:06.335961Z",
@@ -1221,7 +1221,7 @@
       "timezone": "Europe/Madrid"
     },
     "source": {
-      "attemptedAt": "2026-06-27T21:49:39.120905Z",
+      "attemptedAt": "2026-06-28T20:13:33.869343Z",
       "hash": "sha256:c2382bc9ddba5b9dbc6388de5ad8a9b8a0d49e56dd04ae4e94cd1cf9d442b05e",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-05T10:05:08.161487Z",
@@ -1343,7 +1343,7 @@
       "timezone": "Australia/Perth"
     },
     "source": {
-      "attemptedAt": "2026-06-27T21:49:39.120905Z",
+      "attemptedAt": "2026-06-28T20:13:33.869343Z",
       "hash": "sha256:ca1d9ac70d4028fc6098334355b074f5cbb002a2dfda7db488176afd18127acd",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-05T10:05:09.099375Z",
@@ -1399,7 +1399,7 @@
       "timezone": "Australia/Perth"
     },
     "source": {
-      "attemptedAt": "2026-06-27T21:49:39.120905Z",
+      "attemptedAt": "2026-06-28T20:13:33.869343Z",
       "hash": "sha256:777690e29183dbe99a7e90ee5de99dbedb84dca0881de259658eadbe0caae116",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-05T10:05:09.099139Z",
@@ -1477,7 +1477,7 @@
       "timezone": "Asia/Shanghai"
     },
     "source": {
-      "attemptedAt": "2026-06-27T21:49:39.120905Z",
+      "attemptedAt": "2026-06-28T20:13:33.869343Z",
       "hash": "sha256:e733b42fd7731562f77d799c83aa834e06b524e0ad74cf27e79c068352e5682d",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-05T10:05:09.808058Z",
@@ -1593,7 +1593,7 @@
       "timezone": "Europe/Moscow"
     },
     "source": {
-      "attemptedAt": "2026-06-27T21:49:39.120905Z",
+      "attemptedAt": "2026-06-28T20:13:33.869343Z",
       "hash": "sha256:00fa2a8e609a68531cb7aa2709f5833c949010ed76fd85695bbb02c905cd4646",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-18T14:37:03.922610Z",
@@ -1825,7 +1825,7 @@
       "timezone": "Europe/Moscow"
     },
     "source": {
-      "attemptedAt": "2026-06-27T21:49:39.120905Z",
+      "attemptedAt": "2026-06-28T20:13:33.869343Z",
       "hash": "sha256:ac4505d19920ce8744d2baae30d815c41c1d9b94ecbf68da9d6da1d0b2e2d2a5",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-18T14:37:03.921468Z",
@@ -2061,7 +2061,7 @@
       "timezone": "Europe/Moscow"
     },
     "source": {
-      "attemptedAt": "2026-06-27T21:49:39.120905Z",
+      "attemptedAt": "2026-06-28T20:13:33.869343Z",
       "hash": "sha256:1cadcefbe974f4ddad71b8e3ee30277c7a2a18d268e86398d7c0f27840512740",
       "provider": "russian-masters-ballet",
       "scrapedAt": "2026-06-18T14:37:03.919979Z",
