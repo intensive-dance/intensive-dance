@@ -38,7 +38,7 @@
       "timezone": "America/Toronto"
     },
     "source": {
-      "attemptedAt": "2026-06-27T22:48:39.672196Z",
+      "attemptedAt": "2026-06-28T21:50:22.229971Z",
       "hash": "sha256:71c7a1dff4c40cb5eabc1cdb8c35761433963321a8d45617968de397df903b29",
       "provider": "canadas-national-ballet-school",
       "scrapedAt": "2026-06-08T13:39:49.807868Z",
@@ -95,7 +95,7 @@
       "timezone": "America/Toronto"
     },
     "source": {
-      "attemptedAt": "2026-06-27T22:48:39.672196Z",
+      "attemptedAt": "2026-06-28T21:50:22.229971Z",
       "hash": "sha256:f856e52c3167f347c67a7d6efb86efb0d6e40e899f4b284a8885a1725e28d1dd",
       "provider": "canadas-national-ballet-school",
       "scrapedAt": "2026-06-08T13:39:48.111328Z",
@@ -152,7 +152,7 @@
       "timezone": "America/Toronto"
     },
     "source": {
-      "attemptedAt": "2026-06-27T22:48:39.672196Z",
+      "attemptedAt": "2026-06-28T21:50:22.229971Z",
       "hash": "sha256:d4a23b0d9ecbab699ce1d1f373f278dd0ee147aca933f7864a44089b73af4c1d",
       "provider": "canadas-national-ballet-school",
       "scrapedAt": "2026-06-08T13:39:48.108258Z",
@@ -200,7 +200,7 @@
       "timezone": "America/Toronto"
     },
     "source": {
-      "attemptedAt": "2026-06-27T22:48:39.672196Z",
+      "attemptedAt": "2026-06-28T21:50:22.229971Z",
       "hash": "sha256:7b631e8f402d9922a74c496c8b9d3dc5081213ef34a398f80174a4f9e1340723",
       "provider": "canadas-national-ballet-school",
       "scrapedAt": "2026-06-08T13:39:49.812002Z",

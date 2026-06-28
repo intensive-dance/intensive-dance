@@ -43,7 +43,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "attemptedAt": "2026-06-27T22:48:39.723433Z",
+      "attemptedAt": "2026-06-28T21:50:19.929554Z",
       "hash": "sha256:1cd0ee14127b1cff4307b41b17f3954278fb6346e4626e08c3e636c47d2ee20c",
       "provider": "fondazione-monreart",
       "scrapedAt": "2026-06-05T11:49:49.972566Z",
@@ -105,7 +105,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "attemptedAt": "2026-06-27T22:48:39.723433Z",
+      "attemptedAt": "2026-06-28T21:50:19.929554Z",
       "hash": "sha256:2e43e9e49358c2891c993a60bb7fc868b219dce16f63083750119707654f3e06",
       "provider": "fondazione-monreart",
       "scrapedAt": "2026-06-10T06:43:51.289718Z",
@@ -166,7 +166,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "attemptedAt": "2026-06-27T22:48:39.723433Z",
+      "attemptedAt": "2026-06-28T21:50:19.929554Z",
       "hash": "sha256:5c6692af947a8b01894b847a14210f13516f9cffdc89893765c496023864dc50",
       "provider": "fondazione-monreart",
       "scrapedAt": "2026-06-10T06:43:49.503810Z",
@@ -228,7 +228,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "attemptedAt": "2026-06-27T22:48:39.723433Z",
+      "attemptedAt": "2026-06-28T21:50:19.929554Z",
       "hash": "sha256:82f672bfd1e18670689300c2e59b7acd4af4405e18ac72136672a1362b1f9015",
       "provider": "fondazione-monreart",
       "scrapedAt": "2026-06-10T06:43:56.731675Z",
@@ -280,7 +280,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "attemptedAt": "2026-06-27T22:48:39.723433Z",
+      "attemptedAt": "2026-06-28T21:50:19.929554Z",
       "hash": "sha256:889e28f73de919c8afa30e6d95efb06046cc2aca4cb8de3e980fd312f472ccc7",
       "provider": "fondazione-monreart",
       "scrapedAt": "2026-06-21T15:42:39.677127Z",
