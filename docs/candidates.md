@@ -137,6 +137,11 @@ Re-checked two scope rules that loosened *after* the regional sweeps (no new cra
 - **Monitor:** Varna IBC — its "International Summer Ballet Academy" is real but tied to the contest, **dormant since 2020** (last edition "15–30 July 2020") — re-check if a 2026 revival posts.
 - **Keep icebox** (no own standalone dated intensive): Tanzolymp · Helsinki IBC · Dance World Cup.
 
+## 📥 User-flagged seed (2026-06-29)
+
+- **Dance Academy Wiesbaden** (Wiesbaden, DE) → `seed`. RAD-Ballettausbildung + Leistungsgruppe / Hochbegabtenförderung; runs a dated **Summer Intensive Dance Workshop** with international guest teachers, **2–7 Aug 2026**, intermediate–advanced. Seeded as `dance-academy-wiesbaden`. *(Flagged from Instagram @danceacademywiesbaden; distinct from the parked `Star Ballet Mainz/Wiesbaden` on ballettschule-mainz.de.)* — danceacademy-wiesbaden.de
+- *Also checked, already covered:* **Legacy Master of Ballet** (umbriaballet.com/iscrizione-lmb, 29 Jun–4 Jul 2026) is **already `live`** via `umbria-ballet` (the store already holds the LMb-2026 edition).
+
 ## ⏸️ Defer → IDR-9 (`deferred`) — full-time / long-term only, no short course
 - School of the Hamburg Ballet (DE) · Ballettakademie der Wiener Staatsoper (AT) · Royal Swedish Ballet School (SE) · Greek National Opera Dance School (GR) · Teatro di San Carlo Ballet School (IT · Naples) · Ginasiano (PT) · Čiurlionis School (LT) · Floria Capsali (RO) · CPD Sevilla (ES)
 
