@@ -21,7 +21,7 @@ need to be?"* — the user has to know geography by heart and scan 300+ rows by 
 
 Grounding facts (store snapshot 2026-06-15):
 
-- **311 offerings**, 310 with a `location`, 1 `online`, 1 with no location.
+- **311 offerings** (as of 2026-06-15), 310 with a `location`, 1 `online`, 1 with no location.
 - **101 distinct `(city, country)`**, **122 distinct venues**, **36 countries**.
 - `Location = { venue?, city?, country?, online? }` — **no coordinates today** (`models.py`).
 - The store is **deterministic and scrape-pure**: a no-op re-scrape must yield no git diff,
@@ -260,7 +260,7 @@ the UI out of the backend keeps the latter a clean, API-first data product.
   disclosed, because it sends the typed place to a third party.
 - **Determinism preserved.** Scrape path and hashing untouched; gazetteer is committed static
   data; CI stays offline (coverage check is a pure set comparison).
-- **Performance.** 311 offerings × haversine is trivial in JS; no index needed at this scale.
+- **Performance.** A few hundred offerings × haversine is trivial in JS; no index needed at this scale.
   Two small JSON loads. Recompute on control change is instant.
 - **Accessibility / i18n.** Distances in km (metric; the audience is EU-centric) with a possible
   mi toggle later; controls keyboard-navigable; the location control degrades gracefully when
