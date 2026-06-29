@@ -7,7 +7,6 @@
     "application": {
       "notes": "Open-enrollment summer school; apply via The Hammond's online form.",
       "requirements": [],
-      "status": "open",
       "url": "https://www.thehammond.co.uk/apply"
     },
     "genres": [
@@ -59,9 +58,10 @@
       "timezone": "Europe/London"
     },
     "source": {
-      "hash": "sha256:0dacd850c55c74e1aece17fbc4d95077714addb852bed822caec8c7f7c18e288",
+      "attemptedAt": "2026-06-29T12:19:25.827825Z",
+      "hash": "sha256:50d6ef7b70bedb96216fab5bb813df8c234b2d4bd84e5adeddcc9cb59d9fb417",
       "provider": "the-hammond",
-      "scrapedAt": "2026-06-26T06:13:04.766462Z",
+      "scrapedAt": "2026-06-29T12:19:27.347173Z",
       "url": "https://www.thehammond.co.uk/summer-school-2026"
     },
     "teachers": [],
@@ -75,7 +75,6 @@
     "application": {
       "notes": "Open-enrollment summer school; apply via The Hammond's online form.",
       "requirements": [],
-      "status": "open",
       "url": "https://www.thehammond.co.uk/apply"
     },
     "genres": [
@@ -127,9 +126,10 @@
       "timezone": "Europe/London"
     },
     "source": {
-      "hash": "sha256:e2515c0bb8f40b3653f851761fd810dc5e8b6296f7edd70c00cf44d51d9fc58a",
+      "attemptedAt": "2026-06-29T12:19:25.827825Z",
+      "hash": "sha256:762b085d41e6b4535c47195e02141f0c8d90abedca58a8e37fb0bac8e8fcffdb",
       "provider": "the-hammond",
-      "scrapedAt": "2026-06-26T06:13:04.766572Z",
+      "scrapedAt": "2026-06-29T12:19:27.347237Z",
       "url": "https://www.thehammond.co.uk/summer-school-2026"
     },
     "teachers": [],

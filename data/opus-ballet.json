@@ -44,6 +44,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
+      "attemptedAt": "2026-06-29T12:19:24.158216Z",
       "hash": "sha256:ed0ae66b207d0100c59711994e467bf8b0f7d586f6f0f651bbd41527b5d90f19",
       "provider": "opus-ballet",
       "scrapedAt": "2026-06-26T06:29:09.839300Z",

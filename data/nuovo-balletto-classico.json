@@ -112,6 +112,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
+      "attemptedAt": "2026-06-29T12:19:25.167385Z",
       "hash": "sha256:08f271896e63bd2923f25ca34cd37071c43b95d73030ce5d9b78c0788dc43433",
       "provider": "nuovo-balletto-classico",
       "scrapedAt": "2026-06-26T11:01:09.940264Z",
