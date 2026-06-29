@@ -94,7 +94,7 @@
       "timezone": "Europe/London"
     },
     "source": {
-      "attemptedAt": "2026-06-28T16:53:42.931906Z",
+      "attemptedAt": "2026-06-29T23:47:37.990628Z",
       "hash": "sha256:2646cf04a1e4a5c3e9159dde56678a1e51e67e21362258cd3966c6913b78a217",
       "provider": "elmhurst-ballet-school",
       "scrapedAt": "2026-06-12T02:16:28.369985Z",
@@ -165,7 +165,7 @@
       "timezone": "Europe/London"
     },
     "source": {
-      "attemptedAt": "2026-06-28T16:53:42.931906Z",
+      "attemptedAt": "2026-06-29T23:47:37.990628Z",
       "hash": "sha256:abce3df55f03ac7a9063475680c8c5c43990d44277b89211818206c9360ae040",
       "provider": "elmhurst-ballet-school",
       "scrapedAt": "2026-06-12T02:16:28.370374Z",
