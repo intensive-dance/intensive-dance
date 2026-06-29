@@ -1,0 +1,123 @@
+[
+  {
+    "ageRange": {
+      "min": 10
+    },
+    "application": {
+      "notes": "Open enrollment; request a free personalized quote. No audition material stated.",
+      "requirements": [],
+      "status": "open",
+      "url": "https://www.nuovoballettoclassico.it/corsi-estivi-2026/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire",
+      "character",
+      "contemporary"
+    ],
+    "id": "nuovo-balletto-classico/corsi-estivi-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Reggio Emilia",
+      "country": "IT",
+      "venue": "Nuovo Balletto Classico"
+    },
+    "organization": {
+      "city": "Reggio Emilia",
+      "country": "IT",
+      "name": "Nuovo Balletto Classico",
+      "slug": "nuovo-balletto-classico"
+    },
+    "prices": [
+      {
+        "amount": 140.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Percorso Base (1 lessons/day)",
+        "notes": "Per week.",
+        "type": "tuition"
+      },
+      {
+        "amount": 210.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Percorso Standard (2 lessons/day)",
+        "notes": "Per week.",
+        "type": "tuition"
+      },
+      {
+        "amount": 270.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Percorso Approfondito (3 lessons/day)",
+        "notes": "Per week.",
+        "type": "tuition"
+      },
+      {
+        "amount": 320.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Percorso Intensivo (4 lessons/day)",
+        "notes": "Per week.",
+        "type": "tuition"
+      },
+      {
+        "amount": 370.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Percorso Avanzato (5 lessons/day)",
+        "notes": "Per week.",
+        "type": "tuition"
+      },
+      {
+        "amount": 390.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Percorso Full Immersion (6 lessons/day)",
+        "notes": "Per week.",
+        "type": "tuition"
+      },
+      {
+        "amount": 330.0,
+        "currency": "EUR",
+        "includes": [
+          "accommodation",
+          "meals"
+        ],
+        "label": "Residential package",
+        "notes": "Per week; Sunday dinner to Saturday lunch, meals and transport included.",
+        "type": "accommodation"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-18",
+      "notes": "Perfezionamento courses, personalizable 1–3 weeks, 1–6 lessons/day. Age bands 10–12, 13–15, 16+.",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-06-29",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:08f271896e63bd2923f25ca34cd37071c43b95d73030ce5d9b78c0788dc43433",
+      "provider": "nuovo-balletto-classico",
+      "scrapedAt": "2026-06-26T11:01:09.940264Z",
+      "url": "https://www.nuovoballettoclassico.it/corsi-estivi-2026/"
+    },
+    "teachers": [],
+    "title": "Corsi Estivi 2026"
+  }
+]
