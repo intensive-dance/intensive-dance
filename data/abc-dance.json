@@ -39,7 +39,7 @@
       "timezone": "Europe/Vienna"
     },
     "source": {
-      "attemptedAt": "2026-06-28T11:28:44.170488Z",
+      "attemptedAt": "2026-06-29T18:55:15.797599Z",
       "hash": "sha256:5f2304028b8b5dfcd2e7e7a04e64525d15686e546fa8ef595091cd633d48d15d",
       "provider": "abc-dance",
       "scrapedAt": "2026-06-12T13:24:13.676755Z",
@@ -88,7 +88,7 @@
       "timezone": "Europe/Vienna"
     },
     "source": {
-      "attemptedAt": "2026-06-28T11:28:44.170488Z",
+      "attemptedAt": "2026-06-29T18:55:15.797599Z",
       "hash": "sha256:ea7d738ccb60a760864171325e124bf7729dbb9d1266945069c317e9d0961379",
       "provider": "abc-dance",
       "scrapedAt": "2026-06-12T13:24:13.677182Z",
@@ -137,7 +137,7 @@
       "timezone": "Europe/Vienna"
     },
     "source": {
-      "attemptedAt": "2026-06-28T11:28:44.170488Z",
+      "attemptedAt": "2026-06-29T18:55:15.797599Z",
       "hash": "sha256:30b37583bfe65ffed7ffd98e93da03b7a643a4a760e5f5a070d3e98df16a2347",
       "provider": "abc-dance",
       "scrapedAt": "2026-06-12T13:24:13.677212Z",
