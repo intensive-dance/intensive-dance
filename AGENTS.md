@@ -35,6 +35,51 @@ Source-of-truth docs to keep open: [`docs/data-model.md`](./docs/data-model.md)
 
 ---
 
+## Discovery playbook (Phase 1 — region sweeps)
+
+How to run a region sweep when someone says *"find providers in `<region>`"*. This is
+**Phase 1** (cheap, web-research only — the real evaluation is the Phase-2 build), so
+scale effort to the *"worth building?"* call and **never invent data**.
+
+**Run it** as one or more discovery agents (`WebSearch` + `WebFetch`) — parallel for
+breadth, or a scheduled/background agent for a big batch. First, always: `git fetch` +
+check `gh pr list`/`gh issue list`, then read this file (scope), `providers.json` and
+`docs/candidates.md` to **dedupe** (skip anything already `live`/`seed`/recorded).
+
+**Search two axes — provider *and* program-type.** School-by-school alone misses
+association-run academies (the DBfT / Dresden-`e.V.` blind spot), so **always also**
+query by program-type, **across the whole year and multilingual**:
+- **edition types:** summer · **winter** · **Easter / spring** · **autumn** intensives;
+  **workshops · masterclasses · short / holiday courses · summer schools / academies**.
+- **locale variants**, e.g. Sommerintensiv · Sommerakademie · Sommerkurs · Ferienkurs ·
+  Oster- / Winter- / Herbstkurs · Osterworkshop (DE) · stage (estivo) di danza · corso
+  intensivo · soustředění (IT / CZ) · stage d'été / stage international (FR) · curso de
+  verano (ES) · letní / letný baletní kurz · curs intensiv / școală de vară / stagiu (RO) ·
+  夏期 / 冬期講習会 · ワークショップ (JP) — generally `"<edition-type> ballet <city/country> <year>"`.
+
+**Cast wide on who runs it** — not only ballet schools / companies but also **Verbände ·
+Vereine · Stiftungen · Konservatorien · (Privat-)Hochschulen · Opernhaus- / Staatstheater-
+Bildungsprogramme · Tanzfestivals** (these are exactly what a school-name search drops).
+
+**High-yield indexes** (comb these per pass; add new ones you find): danzapp · danzaeffebi ·
+danzasi · dancingopportunities (IT) · danseclassique.info (FR) · balletchannel.jp ·
+ballet-search.com (JP).
+
+**Triage each find (light):** who runs it · classical / contemporary · is there a **dated,
+public, short-term student** edition? Apply the scope rules above (in-scope → `seed`;
+competition *event* → icebox but its own intensive is in; full-time → defer, **verify
+first**; recreational / adult-only → skip). **Faithful:** quote dates from the source,
+never invent — if the next edition isn't dated yet, **park** it in `candidates.md` for a
+later re-check (don't guess a date).
+
+**Output:** in-scope dated → `providers.json` `status:"seed"` (tier-free, no scores) + a
+**dated** section in `docs/candidates.md` (promoted / parked / deferred / out-of-scope,
+each with a reason); regenerate `buildable.md`; run the gate; **one PR**. The date-stamp
+records which method version the region was swept at. From there the seed is claimable —
+see the build flow below (the `build:<slug>` claim convention).
+
+---
+
 ## TL;DR — adding a provider
 
 1. Pick a provider that's `"status": "seed"` in [`providers.json`](./providers.json).
