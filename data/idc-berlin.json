@@ -1,8 +1,5 @@
 [
   {
-    "ageRange": {
-      "min": 7
-    },
     "application": {
       "notes": "Both 2026 parts are full; the registration form is a waitlist sign-up. Registration is not an audition and does not affect acceptance — a video may be sent optionally for group placement only. Boys may apply for a scholarship.",
       "requirements": [],
@@ -15,9 +12,7 @@
       "contemporary"
     ],
     "id": "idc-berlin/summer-intensive-2026",
-    "level": [
-      "open"
-    ],
+    "level": [],
     "lifecycle": "scheduled",
     "location": {
       "city": "Berlin",
@@ -74,13 +69,13 @@
         {
           "end": "2026-07-18",
           "label": "Part 1",
-          "notes": "Studios of the Staatsballett Berlin in the Deutsche Oper (Richard Wagner St. 10 10585 Berlin); Showcase 18 July at 4pm",
+          "notes": "Studios of the Staatsballett Berlin in the Deutsche Oper (Staatsballett Berlin Richard Wagner St. 10 10585 Berlin)",
           "start": "2026-07-13"
         },
         {
           "end": "2026-08-15",
           "label": "Part 2",
-          "notes": "Berlin Dance Institute (Egelingzeile 6 12103 Berlin); Showcase 15 August at 4pm",
+          "notes": "Berlin Dance Institute (Berlin Dance Institute Egelingzeile 6 12103 Berlin)",
           "start": "2026-08-10"
         }
       ],
@@ -88,10 +83,10 @@
       "timezone": "Europe/Berlin"
     },
     "source": {
-      "attemptedAt": "2026-06-28T13:06:15.105176Z",
-      "hash": "sha256:22ab1256e37af2f926d1d349cefc9c2743f83b1fa616e0c43586ae7357a7b38d",
+      "attemptedAt": "2026-06-29T20:45:10.570630Z",
+      "hash": "sha256:aea3ec85be071f122c3b05299806b89d5236087cfddee19b64e5c2a4c173035f",
       "provider": "idc-berlin",
-      "scrapedAt": "2026-06-05T18:21:12.142686Z",
+      "scrapedAt": "2026-06-29T20:45:11.799518Z",
       "url": "https://www.idc-dance.com/summer"
     },
     "teachers": [],
