@@ -1327,6 +1327,14 @@
       "city": "Genoa",
       "url": "https://yagp.org/",
       "status": "live"
+    },
+    {
+      "slug": "dance-academy-wiesbaden",
+      "name": "Dance Academy Wiesbaden",
+      "country": "DE",
+      "city": "Wiesbaden",
+      "url": "https://www.danceacademy-wiesbaden.de/",
+      "status": "seed"
     }
   ]
 }
