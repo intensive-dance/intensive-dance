@@ -142,6 +142,125 @@ Re-checked two scope rules that loosened *after* the regional sweeps (no new cra
 - **Dance Academy Wiesbaden** (Wiesbaden, DE) → `seed`. RAD-Ballettausbildung + Leistungsgruppe / Hochbegabtenförderung; runs a dated **Summer Intensive Dance Workshop** with international guest teachers, **2–7 Aug 2026**, intermediate–advanced. Seeded as `dance-academy-wiesbaden`. *(Flagged from Instagram @danceacademywiesbaden; distinct from the parked `Star Ballet Mainz/Wiesbaden` on ballettschule-mainz.de.)* — danceacademy-wiesbaden.de
 - *Also checked, already covered:* **Legacy Master of Ballet** (umbriaballet.com/iscrizione-lmb, 29 Jun–4 Jul 2026) is **already `live`** via `umbria-ballet` (the store already holds the LMb-2026 edition).
 
+## 🇪🇺 Europe Top-50 city sweep (2026-06-30)
+
+Multi-agent Phase-1 sweep of the 50 largest European cities, **under-swept countries first**
+(GB · FR · ES · PT · NL · BE · CH · Nordics · PL · Balkans/CEE · GR · Baltics/UA), with a light
+dedupe-only re-check of the already-deep DE/AT/IT hubs (Berlin · Munich · Vienna · Rome · Milan).
+Two-axis search (provider + program-type), year-round and multilingual (summer/winter/Easter/autumn
+intensives · workshops · masterclasses · short courses · summer schools/academies), casting wide on
+who runs it (schools, companies, conservatoires/Hochschulen, associations/foundations, opera-house
+education arms, festivals). **All 50+ cities reached — nothing left to resume.**
+
+**Net-new → `seed`: 46.** Dates below are quoted from each provider's own page (verbatim where a
+dated edition was found). **Faithfulness caveat:** the discovery agents had no fetch-proxy creds, so
+most provider pages 403'd a direct fetch and dates came from search-surfaced page text — seeds carry
+**no** stored dates (verified at Phase-2 build), and every date here must be re-confirmed on-page
+(via the fetch proxy) before a scraper emits it. Tier-free, no scores.
+
+### → promoted to `seed` (net-new, in scope)
+
+**🇬🇧 GB (15):**
+- **Royal Academy of Dance — UK Summer Schools** (London) — Junior "Wk1 27 Jul–1 Aug, Wk2 3–8 Aug 2026" + Intensive Syllabus Course "22–27 Aug"; the RAD exam body's London arm (RAD **Japan** is a separate live provider). `rad-uk-summer-school`
+- **London Studio Centre — Summer Programme** (London) — "3–7 Aug 2026"; CDMT conservatoire, 14+, ballet/pointe/contemp. `london-studio-centre`
+- **English National Ballet — Youth Dance Summer Intensive** (London) — "Inter 29–31 Jul; Adv 3–7 Aug 2026"; the ENB **company** (ballet.org.uk), distinct from ENB **School** (already live). `english-national-ballet-youth-intensive`
+- **Rambert School — Performance & Technique Summer School** (Twickenham) — "Wk1 13–18 Jul, Wk2 20–25 Jul, Junior wk 27 Jul–1 Aug 2026"; ballet+contemp conservatoire. `rambert-school-summer-school`
+- **London Children's Ballet — Summer School** (London) — "Girls Wk1 20–24 Jul, Wk2 27–31 Jul; Boys 29–30 Aug 2026"; charity, classical by age/gender. `london-childrens-ballet-summer-school`
+- **Chelsea Ballet — Summer School** (London) — "10–15 Aug 2026" at ArtsEd Chiswick; ballet/pointe/repertoire. `chelsea-ballet-summer-school`
+- **Russian Ballet Studios — Summer Camp** (London) — "23 Jul–4 Aug" (year unconfirmed in snippet → **verify at build**); ballet/contemp/character, children. `russian-ballet-studios`
+- **Tring Park School — Summer Dance Course** (Tring) — "26–30 Jul 2026" residential; ballet/repertoire/contemp/jazz. `tring-park-summer-dance`
+- **Acosta Dance Foundation — Summer Intensives** (London, Woolwich) — "3–14 Aug 2026", ages 14–16 & 17–21; Carlos Acosta foundation, ballet + Cuban-contemporary. `acosta-dance-foundation`
+- **Northern Ballet School (Manchester) — Summer Workshop** (Manchester) — "27–31 Jul 2026"; private vocational college (Performers College group), **distinct from** the Leeds `northern-ballet-academy`. `northern-ballet-school-manchester`
+- **Ballet Britain** (Leeds, multi-city) — "Birmingham 27–29 Jul, Manchester 11–13 Aug, Leeds 25–27 Aug 2026" + Birmingham Feb half-term; UK-wide youth ballet+contemp org, one Offering per city. `ballet-britain`
+- **Royal Conservatoire of Scotland — Modern Ballet Summer Schools** (Glasgow) — "Wk1 27–31 Jul, Wk2 3–7 Aug 2026"; conservatoire, age bands 7–11/12–14/14+. `royal-conservatoire-scotland-summer-school`
+- **Bristol Russian Ballet School — Summer Intensive** (Bristol) — "4–8 Aug 2026"; Vaganova, Pre-Junior + Junior tracks. `bristol-russian-ballet-school`
+- **Oxford School of Dance — Summer Ballet Intensive** (Oxford) — "11–15 Aug 2026", Grade 2–Advanced 2; build only the advanced ballet intensive (drop the multi-style recreational camps). `oxford-school-of-dance-ballet-intensive`
+- **Ballet Cymru — Wales Summer Dance** (Newport) — "22–26 Jul 2026"; company week course, ballet/rep/new choreo + final perf (sibling **WIBSS** parked below). `ballet-cymru-wales-summer-dance`
+
+**🇪🇸 ES (8):**
+- **Ballet de Catalunya — Summer Intensive** (Barcelona) — "arrival 12 & 20 Jul, departure 18 & 26 Jul 2026", ages 5–20; classical+pointe/contemp/rep (Garcia/Moncho, IBStage founders). `ballet-de-catalunya-summer-intensive`
+- **Advanced Dance Institute Barcelona** (Barcelona) — "29 Jun–17 Jul 2026" (3 wks), ages 17–25; ballet/contemp/Horton/rep. `advanced-dance-institute-barcelona`
+- **Escola de Ballet Carles Ibáñez** (Barcelona) — "29 Jun–17 Jul 2026"; 3-wk July, ballet base + pointe/contemp. `escola-ballet-carles-ibanez`
+- **Sa Nau Dansa** (Barcelona) — "29 Jun–10 Jul 2026"; contemp+ballet (verify ages at build). `sa-nau-dansa`
+- **Magistra Danza — Curso de Verano** (Madrid) — "29 Jun–3 Jul 2026" classical/Spanish/contemp, hosted at RCPD Mariemma (the conservatory itself defers; this public short course is the in-scope piece). `magistra-danza-curso-verano`
+- **JAC Ballet Madrid — Curso de Verano** (Madrid) — "29 Jun–10 Jul 2026" youth July intensive. `jac-ballet-madrid-curso-verano`
+- **Ecole Française de Danse Madrid** (Madrid) — "29 Jun–17 Jul 2026" 3-wk pro classical-formation; build the pro/student track, drop the adult track. `ecole-francaise-de-danse-madrid`
+- **Institut del Teatre — ENDANSA'IT** (Barcelona) — "29 Jun–2 Jul 2026"; dated public short course (classical/contemp/Spanish), skewed to the conservatory's own students but open to the public. `institut-del-teatre-endansa-it`
+
+**🇵🇹 PT (5):**
+- **Mostra Dança Portugal** (Porto) — "12–16 Julho 2026"; intl 5-day classical-core holiday intensive, age 8+. `mostra-danca-portugal`
+- **Coimbra Dance Stage (Codança)** (Coimbra) — latest "1–6 Set 2025" (recurring; 2026 TBA), Codança × Conservatório de Coimbra, 3 levels classical+character. `coimbra-dance-stage`
+- **Escola de Ballet do Porto** (Porto) — latest "30 Jun–4 Jul 2025" summer + winter intensives, age 8+. `escola-de-ballet-do-porto`
+- **EDCN — Summer/Spring Dance Intensive** (Lisbon) — latest "28–31 Jul 2025"; the national conservatory's **public** dated short course (verified not IDR-9-deferrable per verify-before-defer), classical+contemp, 3 levels. `edcn-dance-intensive`
+- **Summer Intensive Portugal** (Santa Cruz) — "3–23 Aug 2026", 1/2/3-wk blocks; intl **contemporary** coastal intensive. `summer-intensive-portugal`
+
+**🇧🇪 BE (4):**
+- **Brussels Summer Dance Intensive** (Brussels) — "6–10 Jul 2026"; Stage de Danse operator, classical, age 12+ (distinct from Brussels Int'l Ballet). `brussels-summer-dance-intensive`
+- **Liège Summer Dance Intensive** (Liège) — "26–31 Jul 2026 (perf 2 Aug)", 22nd ed; same Stage de Danse operator, classical+contemp (distinct from MOSA). `liege-summer-dance-intensive`
+- **Conservatoire de la Danse de Bruxelles** (Brussels) — "6–10 Jul 2026" & "17–21 Aug 2026"; private conservatory, dated classical holiday stages, intermediate/advanced children. `conservatoire-de-la-danse-de-bruxelles`
+- **Blommaert Ballet School — Summer School** (Antwerp) — "10–13 Aug 2026", ages 12–15; RB-faculty, PBT/pointe/repertoire. `blommaert-ballet-school`
+
+**🇫🇷 FR (2):**
+- **James Carlès — Stage International d'Été** (Toulouse) — "6–10 & 13–17 juillet 2026"; choreographic centre, classical taught (Quilleré/Solano) alongside contemp (gate out the hip-hop strands). `james-carles-stage-ete`
+- **Ballet Danse International — Stage International d'Été** (Gaillard) — "5–11 juillet 2026"; intl classical stage, 3 levels incl. advanced/pre-pro, min age 7. `ballet-danse-international-gaillard`
+
+**Nordics (5):**
+- **BASE23 Stockholm Dance Academy — Summer Ballet** (SE · Stockholm) — "v.32 (≈3–9 Aug) 2026, exact span TBC"; dedicated classical intensive week, int/adv, intl guest faculty. `base23-stockholm-summer-ballet`
+- **Balletkompagniet — Summer Schools** (DK · Copenhagen) — multiple dated 2026 editions (kids wks 27/31/32 + teen intensives "3–5 Aug" & "5–7 Aug"); classical. `balletkompagniet-copenhagen`
+- **Tivoli Ballet School — Summer Camp** (DK · Copenhagen) — "29 Jun–4 Jul 2026", ages 8–14, classical, perf at the Tivoli Pantomime stage. `tivoli-ballet-school-summer-camp`
+- **Valdres Sommerballett** (NO · Oslo) — "22–27 Jun 2026" (10th ed, deadline 1 Feb); classical intensive for young talents (Den Norske Ballettskole & Akademi). `valdres-sommerballett`
+- **Turku Dance Camp** (FI · Turku) — "26–31 Jul 2026"; intl ballet camp, classical core, Gala at Turku Castle. `turku-dance-camp`
+
+**🇨🇭 CH (1):**
+- **Russian Ballet International — Lugano Summer Intensive** (Lugano) — "27–31 Jul 2026" (video-audition deadline 15 Jun); RBI × Bolshoi Academy master teachers, ages 10–13/14–19+. Org also runs Florence (parked) / Milano — one-org-many-cities; verify not folded into a Bolshoi scraper at build. `russian-ballet-international-lugano`
+
+**🇸🇮 SI (1):**
+- **Baletna šola Ana — Poletna baletna šola** (Kamnik) — "25–29 Aug 2026" (final perf 29 Aug); dated public open-enrollment classical SS, PBT/ballet/pointe/rep, 2 age groups. `baletna-sola-ana-poletna-baletna-sola`
+
+**🇷🇸 RS (1):**
+- **In Dance Intense — Belgrade Intensive** (Belgrade) — "Feb 14–22, 2026" winter (summer 2025 was 13–23 Jun); dated public classical intensive at Belgrade Dance Institute (Kozlov/Kozlova), open to students/pros/teachers. `in-dance-intense-belgrade`
+
+**🇭🇺 HU (1):**
+- **Magyar Nemzeti Balettintézet — Summer Intensive** (Budapest) — recurring, 2026 not yet dated (2024 ~1–6 Jul); the Hungarian State Opera's education institute (founded 2016, **distinct from** the Hungarian Dance University), public dated children's intensive at the Opera House, ages 6–17. `magyar-nemzeti-balettintezet`
+
+**🇨🇿 CZ (1):**
+- **420PEOPLE — Summer Dance Intensive** (Lipnice nad Sázavou) — "6–11 July 2026"; dated public **contemporary** intensive by the pro company 420PEOPLE (Václav Kuneš) at Lipnice Castle, repertoire-based, amateur→pro. Distinct from the Taneční Lipnice festival. `420people-summer-dance-intensive`
+
+**🇳🇱 NL (1):**
+- **ArtéBallét Intensive** (Amsterdam) — "27 Jul–8 Aug 2026"; boutique classical+contemp+pas-de-deux intensive, faculty ex-DNB/NDT/RBS/Vaganova (distinct from the multi-city "ART of" provider). `arteballet-intensive-amsterdam`
+
+**🇮🇹 IT (1, light re-check):**
+- **Associazione MAB — Classical Ballet Intensive** (Lainate, Milan metro) — "5–7 June 2026"; MAB's **own** dated 3-day classical intensive (curated by Caridad Martínez), distinct from the icebox Premio MAB competition. `associazione-mab-ballet-intensive`
+
+### `parked` — real, in-scope shape, but no current dated edition confirmed (re-check in season)
+- **GB:** Ballet Cymru WIBSS (Newport, 2024 ran 29 Jul–2 Aug, no 2026 date) · The Dance Summer School (Lathallan, Scotland; 2025 was 3–9 Aug) · DanceEast 12–16s (Ipswich; contemp, ballet unconfirmed) · The Place/LCDS youth (London) · The London Ballet Company (London, "August") · Cecchetti Society Summer School · Dance City (Newcastle) · Phoenix Dance Theatre (Leeds, contemp) · The Nottingham Ballet School. *(Ballet Del'Art Antwerp → see BE.)*
+- **FR:** ISBI Lyon — Int'l Summer Ballet Intensive (5th ed 2026, undated) · Chevalier Ballet × SLK — Saint-Raphaël Summer Intensive (2025 ran 23 Jun–4 Jul; high-priority re-check) · Jude·Mikhalev Ballet Academy (Pessac/Bordeaux; spring wkshp 14–15 Mar 2026, summer undated) · Académie Internationale de la Danse (Paris, Lauriston).
+- **ES:** Valencia Endanza (gala 25 Jul 2026, start TBC — arguably seedable once dated) · Factory Ballet · Escuela Ballet África Guzmán · Escuela Ballet David Campos (BCN) · YBA (BCN) · Barcelona Ballet Project · La Tramolla (BCN) · Scaena Carmen Roche (Madrid) · Marina Arnal (Madrid) · Inst. Sup. Danza "Alicia Alonso" (Madrid) · Dansa Marisa Yudes (Badalona) · Estudio María de Ávila (Zaragoza) · Estudio Ballet Saioa Ibáñez (Bilbao) · Mari Cruz Alcalá (Valencia) · Escuela de Danza Sevilla (Mirko Vullo) · La Danse Professional (Málaga) · Francisca Tomás (Palma).
+- **NL:** Henny Jurriëns Studio (Amsterdam; "6–24 Jul 2026", 18+ pro/academy contemporary — borderline) · Summerschool Den Haag (Royal City ballet track — recreational-leaning, à-la-carte).
+- **CH:** BTB Ballettschule Basel — Summer Intensive (10-day pre-pro 13–18, undated) · Danse Suisse summerdance (Zurich; association young-talent, 2025 was 10–16 Aug).
+- **Nordics:** Bergen Dansesenter (mixed-genre) · Bårdar (Oslo, mixed-genre) · Ballet Akademiet (Aarhus, undated) · Folkuniversitetet "Funktionell Balett" (Malmö, adult) · Kulturama (Stockholm; beginner-youth evening course — recreational-leaning).
+- **HR:** Ballet Masterclass Croatia (Zagreb; Ukrainian-masters intensive, last 10–22 Jul 2023) · Baldovin Ballet — Master Ballet Education (Zagreb, last 1–9 Jul 2022). *(Both 403'd; need a proxy re-fetch to pin a 2026 date.)*
+- **Baltics:** Riga Summer Ballet School (LV) · Pro Baletas (Vilnius) · LTBA Intensive (Vilnius) · Open World (Riga) · Centro Picasso (Riga). Estonian leads re-checked, **still parked**: Tallinn Summer Ballet (still "2024") · Ballet Summer Workshop Estonia (only "2025").
+- **PL:** KCC Dance Intensive (Kraków, contemp — strongest) · Krakowska Akademia Tańca · Akademia Baletu Masterclass (Warsaw) · Wrocławska Akademia Baletu · Szkoła Baletowa Anny Niedźwiedź (Poznań) · Krakowska Królewska Fundacja.
+- **RS:** Summer Dance Camp Vranje (10-day, recurring) · Dance Plus seminars (Belgrade, only stale dates).
+- **GR:** Χορός & Τέχνη "Summer Dance School" (Heraklion; 5th ed 7–12 Jul 2025 — strongest) · Greek Northern Ballet (Thessaloniki; 2025 edition ran in London) · Só Dança Athens (only an IG reel).
+- **CZ:** Baletní studio Moravské divadlo Olomouc (recurring camp, undated) · PONEC teens intensive (Prague, only 2024).
+- **BG:** Ballet Tiara (Sofia, recreational children's "Summer Ballet Academy") · Ballet on Pointe (Plovdiv).
+- **DE/AT/IT/PL re-check:** no new parks beyond the above — the prior deep sweeps already captured everything dated.
+
+### `deferred` → IDR-9 (full-time / vocational only, no public short course — verified)
+- **BG:** НУТИ — National School of Dance Art (Sofia). **GR:** KSOT — National School of Dance (Athens; workshops page stale, no public short course — distinct from the already-deferred Greek National Opera school). **HR:** Škola za klasični balet (Zagreb) · Škola Ane Maletić (Zagreb). **RS:** National Foundation for Dance ballet school · Lujo Davičo · Novi Sad ballet school. **ES:** CPD "Pepa Flores" (Málaga) · CSD "Ángel Pericet" (Málaga) · CPMD Mallorca (Palma). **GB:** KS Dance / Kate Simmons Dance (Warrington). *(Verify-before-defer applied — none sells an Elmhurst-style public short course.)*
+
+### `out-of-scope`
+- **Competitions / festivals (event itself → icebox #80):** Slavenska Prix (Zagreb) · IBBC (Riga) · GranDance (Bucharest) · Belgrade Dance Festival · One Dance Festival (Plovdiv) · Ballet Fest Plovdiv · BCCFest (Thessaloniki) · CracoviaDanza (Kraków) · DANÇARTE (Faro) · World Ballet Grand Prix Norway · Fair Play Dance Camp (Kraków, urban/contemp). *(A competition's **own** dated student intensive stays in scope — none surfaced here with a standalone dated edition.)*
+- **Pro/graduate-only:** Scottish Dance Theatre Summer Intensive (Dundee, "explicitly not open to students"). **Company auditions (not intensives):** HNK Zagreb/Split master auditions · Sibiu Ballet GCDANCE · Grand Kyiv Ballet & BalletStage (diaspora/touring, run abroad).
+- **Recreational / adult-only / multi-style / non-ballet:** Urdang Intensives (London, Musical Theatre) · City Academy (London, adult) · English Youth Ballet (performance project) · Studio Flay (Geneva) · summer-dance.de & addvienne (DE/AT, hip-hop/mixed) · eda Wien (MT kids) · Masterclass Festival Amsterdam · Studio Simoncini / Balletschool Utrecht / Talvandansen (NL) · Moma Studios (Milan, urban) · Opera Comică Școala de Vară (Bucharest, multi-activity kids) · Opernhaus / Ωδείον Αθηνών camp (Athens, recreational) · Studio DAG (Prague, age 3–100) · PlesPlus (Ljubljana daycare) · Vilnius Modern Ballet camp (ages 6–10) · numerous year-round/adult studios across every city.
+- **Dropped (defunct):** Ballet Summer School Gdynia (PL, dormant since 2018) · ballet-intensive.com (Budapest, dead domain).
+- **Not net-new (already covered):** ART of Marseille stage 17–23 Aug 2026 = existing `art-of-zurich` org (add an Offering, not a new slug) · RMB Burgas (BG) = existing `russian-masters-ballet` · BalletStage Ljubljana = already live · MTE/ISIBC & Ballet Summer Course Budapest = already live · Northern Ballet Leeds intensive = `northern-ballet-academy` · BRB summer = `gradpro-summer-intensive`.
+
+### ⏸️ Not yet swept — resume next night
+**None — the full Top-50 list (under-swept countries + DE/AT/IT re-check) was reached this pass.** Highest-value in-season re-checks (dated edition pending): GB (Ballet Cymru WIBSS, The Dance Summer School), FR (Chevalier/SLK Saint-Raphaël, ISBI Lyon), ES (Valencia Endanza), HR (Ballet Masterclass Croatia, Baldovin — need proxy), Baltics (Riga Summer Ballet School, Pro Baletas, LTBA — need proxy), GR (Heraklion Summer Dance School), PL (KCC Kraków), EE (Tallinn pair). A proxy-enabled re-fetch is the main unlock for the bot-gated parks.
+
 ## ⏸️ Defer → IDR-9 (`deferred`) — full-time / long-term only, no short course
 - School of the Hamburg Ballet (DE) · Ballettakademie der Wiener Staatsoper (AT) · Royal Swedish Ballet School (SE) · Greek National Opera Dance School (GR) · Teatro di San Carlo Ballet School (IT · Naples) · Ginasiano (PT) · Čiurlionis School (LT) · Floria Capsali (RO) · CPD Sevilla (ES)
 

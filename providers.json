@@ -1335,6 +1335,374 @@
       "city": "Wiesbaden",
       "url": "https://www.danceacademy-wiesbaden.de/",
       "status": "seed"
+    },
+    {
+      "slug": "brussels-summer-dance-intensive",
+      "name": "Brussels Summer Dance Intensive",
+      "country": "BE",
+      "city": "Brussels",
+      "url": "https://www.stagededanse.be/stages-de-danse/brussels-summer-dance-intensive-2026/",
+      "status": "seed"
+    },
+    {
+      "slug": "liege-summer-dance-intensive",
+      "name": "Liège Summer Dance Intensive",
+      "country": "BE",
+      "city": "Liège",
+      "url": "https://www.stagededanse.be/stages-de-danse/liege-summer-danse-intensive-2026/",
+      "status": "seed"
+    },
+    {
+      "slug": "conservatoire-de-la-danse-de-bruxelles",
+      "name": "Conservatoire de la Danse de Bruxelles",
+      "country": "BE",
+      "city": "Brussels",
+      "url": "https://www.conservatoiredeladanse.com/stages.html",
+      "status": "seed"
+    },
+    {
+      "slug": "blommaert-ballet-school",
+      "name": "Blommaert Ballet School",
+      "country": "BE",
+      "city": "Antwerp",
+      "url": "https://www.blommaertballetschool.com/what-we-offer/summer-school",
+      "status": "seed"
+    },
+    {
+      "slug": "arteballet-intensive-amsterdam",
+      "name": "ArtéBallét Intensive",
+      "country": "NL",
+      "city": "Amsterdam",
+      "url": "https://www.arteballetintensive.com/",
+      "status": "seed"
+    },
+    {
+      "slug": "james-carles-stage-ete",
+      "name": "James Carlès — Stage International d'Été",
+      "country": "FR",
+      "city": "Toulouse",
+      "url": "https://jamescarles.com/stages-internationaux/stage-ete-2026/",
+      "status": "seed"
+    },
+    {
+      "slug": "ballet-danse-international-gaillard",
+      "name": "Ballet Danse International — Stage International d'Été",
+      "country": "FR",
+      "city": "Gaillard",
+      "url": "https://www.balletdanse.com/stage-international-de-danse-dete-en-france.html",
+      "status": "seed"
+    },
+    {
+      "slug": "associazione-mab-ballet-intensive",
+      "name": "Associazione MAB — Classical Ballet Intensive",
+      "country": "IT",
+      "city": "Lainate",
+      "url": "https://www.premiomab.it/en/in-june-a-classical-ballet-intensive-with-mme-caridad-martinez/",
+      "status": "seed"
+    },
+    {
+      "slug": "rad-uk-summer-school",
+      "name": "Royal Academy of Dance — UK Summer Schools",
+      "country": "GB",
+      "city": "London",
+      "url": "https://www.royalacademyofdance.org/event/junior-summer-school-2026/",
+      "status": "seed"
+    },
+    {
+      "slug": "london-studio-centre",
+      "name": "London Studio Centre — Summer Programme",
+      "country": "GB",
+      "city": "London",
+      "url": "https://www.londonstudiocentre.org/course/summer-programme/",
+      "status": "seed"
+    },
+    {
+      "slug": "english-national-ballet-youth-intensive",
+      "name": "English National Ballet — Youth Dance Summer Intensive",
+      "country": "GB",
+      "city": "London",
+      "url": "https://www.ballet.org.uk/class/youth-dance-summer-intensive-advanced/",
+      "status": "seed"
+    },
+    {
+      "slug": "rambert-school-summer-school",
+      "name": "Rambert School — Performance and Technique Summer School",
+      "country": "GB",
+      "city": "Twickenham",
+      "url": "https://www.rambertschool.org.uk/our-courses/young-people-courses/performance-and-technique-summer-school/",
+      "status": "seed"
+    },
+    {
+      "slug": "london-childrens-ballet-summer-school",
+      "name": "London Children's Ballet — Summer School",
+      "country": "GB",
+      "city": "London",
+      "url": "https://www.londonchildrensballet.com/summer-school",
+      "status": "seed"
+    },
+    {
+      "slug": "chelsea-ballet-summer-school",
+      "name": "Chelsea Ballet — Summer School",
+      "country": "GB",
+      "city": "London",
+      "url": "https://chelsea-ballet.com/summerschool/",
+      "status": "seed"
+    },
+    {
+      "slug": "russian-ballet-studios",
+      "name": "Russian Ballet Studios — Summer Camp",
+      "country": "GB",
+      "city": "London",
+      "url": "http://www.russian-ballet-studios.com/index.html",
+      "status": "seed"
+    },
+    {
+      "slug": "tring-park-summer-dance",
+      "name": "Tring Park School — Summer Dance Course",
+      "country": "GB",
+      "city": "Tring",
+      "url": "https://www.tringpark.com/holiday-courses/summer-residential-dance-course-2/",
+      "status": "seed"
+    },
+    {
+      "slug": "acosta-dance-foundation",
+      "name": "Acosta Dance Foundation — Summer Intensives",
+      "country": "GB",
+      "city": "London",
+      "url": "https://acostadancefoundation.org.uk/summer-intensives/",
+      "status": "seed"
+    },
+    {
+      "slug": "northern-ballet-school-manchester",
+      "name": "Northern Ballet School (Manchester) — Summer Workshop",
+      "country": "GB",
+      "city": "Manchester",
+      "url": "https://performerscollege.ac.uk/courses/northern-ballet-school-summer-workshop/",
+      "status": "seed"
+    },
+    {
+      "slug": "ballet-britain",
+      "name": "Ballet Britain — Holiday Courses",
+      "country": "GB",
+      "city": "Leeds",
+      "url": "https://balletbritain.com/",
+      "status": "seed"
+    },
+    {
+      "slug": "royal-conservatoire-scotland-summer-school",
+      "name": "Royal Conservatoire of Scotland — Modern Ballet Summer Schools",
+      "country": "GB",
+      "city": "Glasgow",
+      "url": "https://www.rcs.ac.uk/study/summer-schools/",
+      "status": "seed"
+    },
+    {
+      "slug": "bristol-russian-ballet-school",
+      "name": "Bristol Russian Ballet School — Summer Intensive",
+      "country": "GB",
+      "city": "Bristol",
+      "url": "https://bristolrussianballet.com/easter-summer-intensive/",
+      "status": "seed"
+    },
+    {
+      "slug": "oxford-school-of-dance-ballet-intensive",
+      "name": "Oxford School of Dance — Summer Ballet Intensive",
+      "country": "GB",
+      "city": "Oxford",
+      "url": "https://www.oxfordschoolofdance.com/summer-dance",
+      "status": "seed"
+    },
+    {
+      "slug": "ballet-cymru-wales-summer-dance",
+      "name": "Ballet Cymru — Wales Summer Dance",
+      "country": "GB",
+      "city": "Newport",
+      "url": "https://ballet.cymru/wales-summer-dance/",
+      "status": "seed"
+    },
+    {
+      "slug": "mostra-danca-portugal",
+      "name": "Mostra Dança Portugal",
+      "country": "PT",
+      "city": "Porto",
+      "url": "https://www.mostradanca.com/portugal",
+      "status": "seed"
+    },
+    {
+      "slug": "coimbra-dance-stage",
+      "name": "Coimbra Dance Stage (Codança)",
+      "country": "PT",
+      "city": "Coimbra",
+      "url": "https://codanca.com/cd-stage-2025/",
+      "status": "seed"
+    },
+    {
+      "slug": "escola-de-ballet-do-porto",
+      "name": "Escola de Ballet do Porto",
+      "country": "PT",
+      "city": "Porto",
+      "url": "https://www.escoladeballetdoporto.pt/cursos-2025/",
+      "status": "seed"
+    },
+    {
+      "slug": "edcn-dance-intensive",
+      "name": "EDCN — Summer/Spring Dance Intensive",
+      "country": "PT",
+      "city": "Lisbon",
+      "url": "https://edcn.pt/en/summer-di/",
+      "status": "seed"
+    },
+    {
+      "slug": "summer-intensive-portugal",
+      "name": "Summer Intensive Portugal",
+      "country": "PT",
+      "city": "Santa Cruz",
+      "url": "https://www.summerintensivept.com/",
+      "status": "seed"
+    },
+    {
+      "slug": "base23-stockholm-summer-ballet",
+      "name": "BASE23 Stockholm Dance Academy — Summer Ballet",
+      "country": "SE",
+      "city": "Stockholm",
+      "url": "https://www.base23.se/kurser-lager-lov/sommarkursbalett-augusti/",
+      "status": "seed"
+    },
+    {
+      "slug": "balletkompagniet-copenhagen",
+      "name": "Balletkompagniet — Summer Schools",
+      "country": "DK",
+      "city": "Copenhagen",
+      "url": "https://balletkompagniet.dk/balletkompagniets-sommerskoler-2026/",
+      "status": "seed"
+    },
+    {
+      "slug": "tivoli-ballet-school-summer-camp",
+      "name": "Tivoli Ballet School — Summer Camp",
+      "country": "DK",
+      "city": "Copenhagen",
+      "url": "https://www.tivoliballetskole.dk/summercamp/",
+      "status": "seed"
+    },
+    {
+      "slug": "valdres-sommerballett",
+      "name": "Valdres Sommerballett",
+      "country": "NO",
+      "city": "Oslo",
+      "url": "https://www.sommerballett.no/en/",
+      "status": "seed"
+    },
+    {
+      "slug": "turku-dance-camp",
+      "name": "Turku Dance Camp",
+      "country": "FI",
+      "city": "Turku",
+      "url": "https://ruusuillatanssijat.fi/turkudancecamp/",
+      "status": "seed"
+    },
+    {
+      "slug": "russian-ballet-international-lugano",
+      "name": "Russian Ballet International — Lugano Summer Intensive",
+      "country": "CH",
+      "city": "Lugano",
+      "url": "https://www.russianballetinternational.com/lugano-program/",
+      "status": "seed"
+    },
+    {
+      "slug": "baletna-sola-ana-poletna-baletna-sola",
+      "name": "Baletna šola Ana — Poletna baletna šola",
+      "country": "SI",
+      "city": "Kamnik",
+      "url": "https://baletnasola-ana.si/poletna-baletna-sola-2026/",
+      "status": "seed"
+    },
+    {
+      "slug": "in-dance-intense-belgrade",
+      "name": "In Dance Intense — Belgrade Intensive",
+      "country": "RS",
+      "city": "Belgrade",
+      "url": "https://www.indanceintense.com/belgradeintensive",
+      "status": "seed"
+    },
+    {
+      "slug": "magyar-nemzeti-balettintezet",
+      "name": "Magyar Nemzeti Balettintézet — Summer Intensive",
+      "country": "HU",
+      "city": "Budapest",
+      "url": "https://www.mnbi.hu/en/application/summer-intense-ballet-courses-in-the-opera/",
+      "status": "seed"
+    },
+    {
+      "slug": "420people-summer-dance-intensive",
+      "name": "420PEOPLE — Summer Dance Intensive",
+      "country": "CZ",
+      "city": "Lipnice nad Sázavou",
+      "url": "https://www.420people.org/en/",
+      "status": "seed"
+    },
+    {
+      "slug": "ballet-de-catalunya-summer-intensive",
+      "name": "Ballet de Catalunya — Summer Intensive",
+      "country": "ES",
+      "city": "Barcelona",
+      "url": "https://catballet.com/school/intensive/",
+      "status": "seed"
+    },
+    {
+      "slug": "advanced-dance-institute-barcelona",
+      "name": "Advanced Dance Institute Barcelona",
+      "country": "ES",
+      "city": "Barcelona",
+      "url": "https://advanceddanceinstitute.com/summer-intensive/",
+      "status": "seed"
+    },
+    {
+      "slug": "escola-ballet-carles-ibanez",
+      "name": "Escola de Ballet Carles Ibáñez",
+      "country": "ES",
+      "city": "Barcelona",
+      "url": "https://balletibanez.com/",
+      "status": "seed"
+    },
+    {
+      "slug": "sa-nau-dansa",
+      "name": "Sa Nau Dansa",
+      "country": "ES",
+      "city": "Barcelona",
+      "url": "https://www.sanaudansa.tk/intensivos",
+      "status": "seed"
+    },
+    {
+      "slug": "magistra-danza-curso-verano",
+      "name": "Magistra Danza — Curso de Verano",
+      "country": "ES",
+      "city": "Madrid",
+      "url": "https://rcpdmariemma.com/cursos-de-verano-2026/",
+      "status": "seed"
+    },
+    {
+      "slug": "jac-ballet-madrid-curso-verano",
+      "name": "JAC Ballet Madrid — Curso de Verano",
+      "country": "ES",
+      "city": "Madrid",
+      "url": "https://www.jacballet.com/",
+      "status": "seed"
+    },
+    {
+      "slug": "ecole-francaise-de-danse-madrid",
+      "name": "Ecole Française de Danse Madrid",
+      "country": "ES",
+      "city": "Madrid",
+      "url": "https://ecolefrancaisededanse.com/cursos-intensivos-verano-ballet-clasico-formacion-profesional/",
+      "status": "seed"
+    },
+    {
+      "slug": "institut-del-teatre-endansa-it",
+      "name": "Institut del Teatre — ENDANSA'IT",
+      "country": "ES",
+      "city": "Barcelona",
+      "url": "https://www.institutdelteatre.cat/",
+      "status": "seed"
     }
   ]
 }
