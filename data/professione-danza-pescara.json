@@ -1,0 +1,323 @@
+[
+  {
+    "ageRange": {
+      "max": 13,
+      "min": 7
+    },
+    "application": {
+      "notes": "Open-enrollment summer school; registration via the school's MODULO ISCRIZIONE form. Merit scholarships are awarded to selected students during the course.",
+      "requirements": [],
+      "url": "https://www.professionedanza.org/summer-intensive-school-2026/"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "professione-danza-pescara/summer-intensive-2026-bambini",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Pescara",
+      "country": "IT",
+      "venue": "Professione Danza Pescara"
+    },
+    "organization": {
+      "city": "Pescara",
+      "country": "IT",
+      "name": "Professione Danza Pescara",
+      "slug": "professione-danza-pescara"
+    },
+    "prices": [
+      {
+        "amount": 60.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "1° Settimana",
+        "type": "tuition"
+      },
+      {
+        "amount": 60.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "2° Settimana",
+        "type": "tuition"
+      },
+      {
+        "amount": 200.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "3° Settimana",
+        "notes": "con stage",
+        "type": "tuition"
+      },
+      {
+        "amount": 100.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "3° Settimana dal 15 al 18 Luglio",
+        "notes": "senza stage",
+        "type": "tuition"
+      },
+      {
+        "amount": 100.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "4° Settimana",
+        "type": "tuition"
+      },
+      {
+        "amount": 350.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Costo di quattro settimane",
+        "type": "tuition"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-24",
+      "season": "2026",
+      "sessions": [
+        {
+          "end": "2026-07-03",
+          "label": "1ª settimana",
+          "start": "2026-06-29"
+        },
+        {
+          "end": "2026-07-10",
+          "label": "2ª settimana",
+          "start": "2026-07-06"
+        },
+        {
+          "end": "2026-07-17",
+          "label": "3ª settimana",
+          "start": "2026-07-13"
+        },
+        {
+          "end": "2026-07-24",
+          "label": "4ª settimana",
+          "start": "2026-07-20"
+        }
+      ],
+      "start": "2026-06-29",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:df7b0aea8431f76795db8bedc43cac723b621df98c08c6bb9971c387b57245c7",
+      "provider": "professione-danza-pescara",
+      "scrapedAt": "2026-06-26T11:13:54.709101Z",
+      "url": "https://www.professionedanza.org/summer-intensive-school-2026/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Michela Sartorelli"
+      },
+      {
+        "affiliations": [],
+        "name": "Alessandra Iannone"
+      },
+      {
+        "affiliations": [],
+        "name": "Francesca Virgilio"
+      },
+      {
+        "affiliations": [],
+        "name": "Roberta Ferrara"
+      },
+      {
+        "affiliations": [],
+        "name": "Giulia Rossitto"
+      },
+      {
+        "affiliations": [],
+        "name": "Lucia Geppi"
+      },
+      {
+        "affiliations": [],
+        "name": "Simona Ferrazza"
+      }
+    ],
+    "title": "Summer Intensive School 2026 — Bambini (7–13)"
+  },
+  {
+    "ageRange": {
+      "max": 25,
+      "min": 14
+    },
+    "application": {
+      "notes": "Open-enrollment summer school; registration via the school's MODULO ISCRIZIONE form. Merit scholarships are awarded to selected students during the course.",
+      "requirements": [],
+      "url": "https://www.professionedanza.org/summer-intensive-school-2026/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "contemporary"
+    ],
+    "id": "professione-danza-pescara/summer-intensive-2026-ragazzi",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Pescara",
+      "country": "IT",
+      "venue": "Professione Danza Pescara"
+    },
+    "organization": {
+      "city": "Pescara",
+      "country": "IT",
+      "name": "Professione Danza Pescara",
+      "slug": "professione-danza-pescara"
+    },
+    "prices": [
+      {
+        "amount": 80.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "1° Settimana",
+        "type": "tuition"
+      },
+      {
+        "amount": 100.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "2° Settimana",
+        "type": "tuition"
+      },
+      {
+        "amount": 120.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "3° Settimana",
+        "notes": "con stage",
+        "type": "tuition"
+      },
+      {
+        "amount": 120.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "3° Settimana dal 15 al 18 Luglio",
+        "notes": "senza stage",
+        "type": "tuition"
+      },
+      {
+        "amount": 200.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "4° Settimana",
+        "type": "tuition"
+      },
+      {
+        "amount": 500.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Costo di quattro settimane",
+        "type": "tuition"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-31",
+      "season": "2026",
+      "sessions": [
+        {
+          "end": "2026-07-03",
+          "label": "1ª settimana",
+          "start": "2026-06-29"
+        },
+        {
+          "end": "2026-07-10",
+          "label": "2ª settimana",
+          "start": "2026-07-06"
+        },
+        {
+          "end": "2026-07-17",
+          "label": "3ª settimana",
+          "start": "2026-07-13"
+        },
+        {
+          "end": "2026-07-31",
+          "label": "4ª settimana",
+          "start": "2026-07-20"
+        }
+      ],
+      "start": "2026-06-29",
+      "timezone": "Europe/Rome"
+    },
+    "source": {
+      "hash": "sha256:7a9d050663756cac14a80de384b7cae7c90c30fe3a9c1cedef9acd41a522964c",
+      "provider": "professione-danza-pescara",
+      "scrapedAt": "2026-06-26T11:12:45.683382Z",
+      "url": "https://www.professionedanza.org/summer-intensive-school-2026/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Michela Sartorelli"
+      },
+      {
+        "affiliations": [],
+        "name": "Giovanni La Rocca"
+      },
+      {
+        "affiliations": [],
+        "name": "Davide Sichetti"
+      },
+      {
+        "affiliations": [],
+        "name": "Alessandra Iannone"
+      },
+      {
+        "affiliations": [],
+        "name": "Francesco Vecchione"
+      },
+      {
+        "affiliations": [],
+        "name": "Roberta Ferrara"
+      },
+      {
+        "affiliations": [],
+        "name": "Giulia Rossitto"
+      },
+      {
+        "affiliations": [],
+        "name": "Lucia Geppi"
+      },
+      {
+        "affiliations": [],
+        "name": "Ana Presta"
+      },
+      {
+        "affiliations": [],
+        "name": "Simona Ferrazza"
+      },
+      {
+        "affiliations": [],
+        "name": "Francesco Gammino"
+      }
+    ],
+    "title": "Summer Intensive School 2026 — Ragazzi e Ragazze (14–25)"
+  }
+]

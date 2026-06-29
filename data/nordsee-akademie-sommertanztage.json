@@ -1,0 +1,150 @@
+[
+  {
+    "ageRange": {
+      "max": 19,
+      "min": 11
+    },
+    "application": {
+      "requirements": [],
+      "status": "open",
+      "url": "https://www.nordsee-akademie.de/programm/sommertanztage-i-2026"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "contemporary",
+      "character",
+      "repertoire"
+    ],
+    "id": "nordsee-akademie-sommertanztage/sommertanztage-i-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Leck",
+      "country": "DE",
+      "venue": "Nordsee Akademie"
+    },
+    "organization": {
+      "city": "Leck",
+      "country": "DE",
+      "name": "Nordsee Akademie",
+      "slug": "nordsee-akademie-sommertanztage"
+    },
+    "prices": [
+      {
+        "amount": 740.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition",
+          "accommodation",
+          "meals"
+        ],
+        "label": "Seminarpreis (pro Person)",
+        "notes": "Geschwisterrabatt: 50 € pro Familie.",
+        "type": "tuition"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-11",
+      "notes": "05.07.2026 – bis 11.07.2026",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-05",
+      "timezone": "Europe/Berlin"
+    },
+    "source": {
+      "hash": "sha256:3b95d2d43cef3e9bfdc9484791fa317bc6e804bd03c82098432d23e1b5488900",
+      "provider": "nordsee-akademie-sommertanztage",
+      "scrapedAt": "2026-06-26T19:21:03.125306Z",
+      "url": "https://www.nordsee-akademie.de/programm/sommertanztage-i-2026"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Tanzakademie Hannover-Neustadt",
+            "role": "Inhaberin"
+          }
+        ],
+        "name": "Maike Jürgensen",
+        "role": "Künstlerische Leitung"
+      }
+    ],
+    "title": "Sommertanztage I 2026"
+  },
+  {
+    "ageRange": {
+      "max": 19,
+      "min": 11
+    },
+    "application": {
+      "requirements": [],
+      "status": "open",
+      "url": "https://www.nordsee-akademie.de/programm/sommertanztage-ii-2026"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "contemporary",
+      "character",
+      "repertoire"
+    ],
+    "id": "nordsee-akademie-sommertanztage/sommertanztage-ii-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Leck",
+      "country": "DE",
+      "venue": "Nordsee Akademie"
+    },
+    "organization": {
+      "city": "Leck",
+      "country": "DE",
+      "name": "Nordsee Akademie",
+      "slug": "nordsee-akademie-sommertanztage"
+    },
+    "prices": [
+      {
+        "amount": 740.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition",
+          "accommodation",
+          "meals"
+        ],
+        "label": "Seminarpreis (pro Person)",
+        "notes": "Geschwisterrabatt: 50 € pro Familie.",
+        "type": "tuition"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-18",
+      "notes": "12.07.2026 – bis 18.07.2026",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-12",
+      "timezone": "Europe/Berlin"
+    },
+    "source": {
+      "hash": "sha256:48858ddb8560d1f4ee1328739c81e07bd09dbb47ba839fc79867f751b19661b0",
+      "provider": "nordsee-akademie-sommertanztage",
+      "scrapedAt": "2026-06-26T19:21:04.450485Z",
+      "url": "https://www.nordsee-akademie.de/programm/sommertanztage-ii-2026"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Tanzakademie Hannover-Neustadt",
+            "role": "Inhaberin"
+          }
+        ],
+        "name": "Maike Jürgensen",
+        "role": "Künstlerische Leitung"
+      }
+    ],
+    "title": "Sommertanztage II 2026"
+  }
+]

@@ -1,0 +1,130 @@
+[
+  {
+    "ageRange": {
+      "max": null,
+      "min": 14
+    },
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "url": "https://www.sommertanzcamp.de/de/anmeldung"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "sommer-tanz-camp-berlin/ballett-2026-spring",
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Berlin",
+      "country": "DE",
+      "venue": "Samuel's Dance Hall, Berlin-Tempelhof"
+    },
+    "organization": {
+      "city": "Berlin",
+      "country": "DE",
+      "name": "Summer Dance Camp",
+      "slug": "sommer-tanz-camp-berlin"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-04-02",
+      "notes": "OSTER INTENSIVE BALLETT TAGE BERLIN (ab 14 Jahre Mittelstufe bis Fortgeschritten) 30.03.2026-02.04..2026",
+      "season": "Oster 2026",
+      "sessions": [],
+      "start": "2026-03-30",
+      "timezone": "Europe/Berlin"
+    },
+    "source": {
+      "hash": "sha256:c7c8c077c162c1eac57b3bb5854d0405b0e01baf4cfbf1e7173bf7eaa2232b90",
+      "provider": "sommer-tanz-camp-berlin",
+      "scrapedAt": "2026-06-26T16:14:44.394522Z",
+      "url": "https://www.sommertanzcamp.de"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "current": true,
+            "organization": "Samuel's Dance Hall"
+          }
+        ],
+        "name": "Sandra"
+      },
+      {
+        "affiliations": [],
+        "name": "Cindy"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Palucca Hochschule für Tanz Dresden"
+          }
+        ],
+        "name": "Laura"
+      }
+    ],
+    "title": "Oster Intensive Ballett Tage Berlin"
+  },
+  {
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "url": "https://www.sommertanzcamp.de/de/anmeldung"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "sommer-tanz-camp-berlin/ballett-2026-autumn",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Berlin",
+      "country": "DE",
+      "venue": "Samuel's Dance Hall, Berlin-Tempelhof"
+    },
+    "organization": {
+      "city": "Berlin",
+      "country": "DE",
+      "name": "Summer Dance Camp",
+      "slug": "sommer-tanz-camp-berlin"
+    },
+    "prices": [
+      {
+        "amount": 180.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Tuition",
+        "type": "tuition"
+      }
+    ],
+    "schedule": {
+      "end": "2026-10-29",
+      "notes": "26.10.2026-29.10.2026 täglich 10.00-14.00 Uhr mit Berliner Topcoaches der Samuels Dance Hall",
+      "season": "Herbst 2026",
+      "sessions": [],
+      "start": "2026-10-26",
+      "timezone": "Europe/Berlin"
+    },
+    "source": {
+      "hash": "sha256:c8be793d18c6ad520300a36991b1a10d2425790b5359a2aa235e99ff5db3c0b7",
+      "provider": "sommer-tanz-camp-berlin",
+      "scrapedAt": "2026-06-26T16:13:47.315462Z",
+      "url": "https://www.sommertanzcamp.de"
+    },
+    "teachers": [],
+    "title": "Herbst Ballett Intensive Days in Berlin"
+  }
+]

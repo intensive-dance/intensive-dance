@@ -2,31 +2,13 @@
 
 > **Generated — do not edit.** Refresh with `uv run python -m intensive_dance.overview --write`; CI drift-checks it. Source of truth: `providers.json`.
 
-10 buildable · 30 excluded · 126 live (166 providers total).
+0 buildable · 30 excluded · 136 live (166 providers total).
 
 **To claim one (so nobody double-builds):** check `gh issue list` / `gh pr list` for the slug; if free, open a `build:<slug>` issue and **self-assign first**, then build; close it when the PR merges (provider → `live`). An open claim issue *or* PR = locked. See `AGENTS.md` → Scope & coordination.
 
 ## Buildable (status: seed)
 
 _Some still need Phase-1 verification (a public dated edition / not full-time) before building._
-
-### CH
-- `php-ballet-intensive` — PHP Ballet Intensive (Morges) — https://www.phpballetintensive.ch/
-
-### DE
-- `dresden-summer-dance` — Dresden Summer Dance (Dance-Workshop e.V.) (Dresden) — https://www.dance-workshop.de/dresden-summer-dance
-- `nordsee-akademie-sommertanztage` — Nordsee Akademie — Sommertanztage (Leck) — https://www.nordsee-akademie.de/programm
-- `sommer-tanz-camp-berlin` — Sommer Tanz Camp — Intensive Ballet Days Berlin (Berlin) — https://www.sommertanzcamp.de/
-
-### GB
-- `gradpro-summer-intensive` — GradPro Summer Intensive (Birmingham) — https://www.gradpro.co.uk/
-- `the-hammond` — The Hammond (Chester) — https://www.thehammond.co.uk/
-
-### IT
-- `nuovo-balletto-classico` — Nuovo Balletto Classico (Reggio Emilia) — https://www.nuovoballettoclassico.it/
-- `opus-ballet` — Opus Ballet (Florence) — https://opusballet.it/
-- `professione-danza-pescara` — Professione Danza Pescara (Pescara) — https://www.professionedanza.org/
-- `yagp-nervi-summer-workshop` — YGP International Summer Workshop at the Nervi Festival (Genoa) — https://yagp.org/
 
 ## Excluded — do NOT build
 

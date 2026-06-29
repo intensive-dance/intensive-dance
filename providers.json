@@ -1254,7 +1254,7 @@
       "country": "CH",
       "city": "Morges",
       "url": "https://www.phpballetintensive.ch/",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "nuovo-balletto-classico",
@@ -1262,7 +1262,7 @@
       "country": "IT",
       "city": "Reggio Emilia",
       "url": "https://www.nuovoballettoclassico.it/",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "professione-danza-pescara",
@@ -1270,7 +1270,7 @@
       "country": "IT",
       "city": "Pescara",
       "url": "https://www.professionedanza.org/",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "opus-ballet",
@@ -1278,7 +1278,7 @@
       "country": "IT",
       "city": "Florence",
       "url": "https://opusballet.it/",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "the-hammond",
@@ -1286,7 +1286,7 @@
       "country": "GB",
       "city": "Chester",
       "url": "https://www.thehammond.co.uk/",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "sommer-tanz-camp-berlin",
@@ -1294,7 +1294,7 @@
       "country": "DE",
       "city": "Berlin",
       "url": "https://www.sommertanzcamp.de/",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "gradpro-summer-intensive",
@@ -1302,7 +1302,7 @@
       "country": "GB",
       "city": "Birmingham",
       "url": "https://www.gradpro.co.uk/",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "dresden-summer-dance",
@@ -1310,7 +1310,7 @@
       "country": "DE",
       "city": "Dresden",
       "url": "https://www.dance-workshop.de/dresden-summer-dance",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "nordsee-akademie-sommertanztage",
@@ -1318,7 +1318,7 @@
       "country": "DE",
       "city": "Leck",
       "url": "https://www.nordsee-akademie.de/programm",
-      "status": "seed"
+      "status": "live"
     },
     {
       "slug": "yagp-nervi-summer-workshop",
@@ -1326,7 +1326,7 @@
       "country": "IT",
       "city": "Genoa",
       "url": "https://yagp.org/",
-      "status": "seed"
+      "status": "live"
     }
   ]
 }

@@ -1,0 +1,142 @@
+[
+  {
+    "ageRange": {
+      "max": 15,
+      "min": 7
+    },
+    "application": {
+      "notes": "Register via the on-page form; no audition material stated.",
+      "requirements": [],
+      "url": "https://www.phpballetintensive.ch/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire"
+    ],
+    "id": "php-ballet-intensive/intensive-2026-06-29",
+    "level": [
+      "pre-professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Morges",
+      "country": "CH",
+      "venue": "École BeauBallet"
+    },
+    "organization": {
+      "city": "Morges",
+      "country": "CH",
+      "name": "PHP Ballet Intensive",
+      "slug": "php-ballet-intensive"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-07-03",
+      "notes": "One-week intensive, 09:30–16:30.",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-06-29",
+      "timezone": "Europe/Zurich"
+    },
+    "source": {
+      "hash": "sha256:f7ac0ad5e4373dfa594a0d9a97f264d8a12d2f04d1591b535aa9fb65b35db0fe",
+      "provider": "php-ballet-intensive",
+      "scrapedAt": "2026-06-26T06:18:23.534454Z",
+      "url": "https://www.phpballetintensive.ch/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "organization": "Béjart Ballet Lausanne",
+            "role": "principal dancer"
+          }
+        ],
+        "name": "Kateryna Shalkina",
+        "role": "founding teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Béjart Ballet Lausanne",
+            "role": "principal dancer"
+          }
+        ],
+        "name": "Oscar Chacon",
+        "role": "founding teacher"
+      }
+    ],
+    "title": "PHP Ballet Intensive — 29 June to 3 July 2026"
+  },
+  {
+    "ageRange": {
+      "max": 15,
+      "min": 7
+    },
+    "application": {
+      "notes": "Register via the on-page form; no audition material stated.",
+      "requirements": [],
+      "url": "https://www.phpballetintensive.ch/"
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire"
+    ],
+    "id": "php-ballet-intensive/intensive-2026-08-10",
+    "level": [
+      "pre-professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Morges",
+      "country": "CH",
+      "venue": "École BeauBallet"
+    },
+    "organization": {
+      "city": "Morges",
+      "country": "CH",
+      "name": "PHP Ballet Intensive",
+      "slug": "php-ballet-intensive"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-08-14",
+      "notes": "One-week intensive, 09:30–16:30.",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-10",
+      "timezone": "Europe/Zurich"
+    },
+    "source": {
+      "hash": "sha256:f9644c1c0f42e06d9683660976dbd107f3998ffdef874841920d2d4d2262f0a2",
+      "provider": "php-ballet-intensive",
+      "scrapedAt": "2026-06-26T06:18:23.534669Z",
+      "url": "https://www.phpballetintensive.ch/"
+    },
+    "teachers": [
+      {
+        "affiliations": [
+          {
+            "organization": "Béjart Ballet Lausanne",
+            "role": "principal dancer"
+          }
+        ],
+        "name": "Kateryna Shalkina",
+        "role": "founding teacher"
+      },
+      {
+        "affiliations": [
+          {
+            "organization": "Béjart Ballet Lausanne",
+            "role": "principal dancer"
+          }
+        ],
+        "name": "Oscar Chacon",
+        "role": "founding teacher"
+      }
+    ],
+    "title": "PHP Ballet Intensive — 10 August to 14 August 2026"
+  }
+]

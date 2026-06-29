@@ -1,0 +1,92 @@
+[
+  {
+    "application": {
+      "notes": "Apply via GradPro's online form; questions to julie@gradpro.co.uk.",
+      "requirements": [],
+      "url": "https://www.gradpro.co.uk/apply-now"
+    },
+    "genres": [
+      "classical",
+      "repertoire",
+      "pointe"
+    ],
+    "id": "gradpro-summer-intensive/summer-intensive-week-1-2026",
+    "level": [
+      "pre-professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Birmingham",
+      "country": "GB",
+      "venue": "The Dance Hub (Birmingham Royal Ballet)"
+    },
+    "organization": {
+      "city": "Birmingham",
+      "country": "GB",
+      "name": "GradPro",
+      "slug": "gradpro-summer-intensive"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-07-24",
+      "notes": "Week 1 focuses on students at the end of their first year of vocational training.",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-20",
+      "timezone": "Europe/London"
+    },
+    "source": {
+      "hash": "sha256:3ffea9a7e557f4d608561a5d19ff8f540a18c2eaa8f7de7d4076b3aa18c4f52a",
+      "provider": "gradpro-summer-intensive",
+      "scrapedAt": "2026-06-26T06:06:53.084135Z",
+      "url": "https://www.gradpro.co.uk/summer-intensive-2026"
+    },
+    "teachers": [],
+    "title": "Summer Intensive 2026 — Week 1"
+  },
+  {
+    "application": {
+      "notes": "Apply via GradPro's online form; questions to julie@gradpro.co.uk.",
+      "requirements": [],
+      "url": "https://www.gradpro.co.uk/apply-now"
+    },
+    "genres": [
+      "classical",
+      "repertoire",
+      "pointe"
+    ],
+    "id": "gradpro-summer-intensive/summer-intensive-week-2-2026",
+    "level": [
+      "pre-professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Birmingham",
+      "country": "GB",
+      "venue": "The Dance Hub (Birmingham Royal Ballet)"
+    },
+    "organization": {
+      "city": "Birmingham",
+      "country": "GB",
+      "name": "GradPro",
+      "slug": "gradpro-summer-intensive"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-07-31",
+      "notes": "Week 2 focuses on students at the end of their second year of vocational training or graduating in July 2026.",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-27",
+      "timezone": "Europe/London"
+    },
+    "source": {
+      "hash": "sha256:9058ec67be5641e008280c5c8302d71a27413540b4862972f4c07940c06eefbb",
+      "provider": "gradpro-summer-intensive",
+      "scrapedAt": "2026-06-26T06:06:53.084342Z",
+      "url": "https://www.gradpro.co.uk/summer-intensive-2026"
+    },
+    "teachers": [],
+    "title": "Summer Intensive 2026 — Week 2"
+  }
+]
