@@ -55,7 +55,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "attemptedAt": "2026-06-28T17:56:11.193564Z",
+      "attemptedAt": "2026-06-30T01:55:15.336321Z",
       "hash": "sha256:fc9f84607c10e330ee24a0ddbdc4813d28313ee5555b3ee782f75498fcf4004f",
       "provider": "umbria-ballet",
       "scrapedAt": "2026-06-22T17:21:37.285740Z",

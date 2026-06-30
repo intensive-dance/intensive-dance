@@ -60,7 +60,7 @@
       "timezone": "Europe/Bucharest"
     },
     "source": {
-      "attemptedAt": "2026-06-28T17:56:12.566447Z",
+      "attemptedAt": "2026-06-30T01:55:16.521514Z",
       "hash": "sha256:992b2aa04224a8b0d8888b880e3fc2cb9ba7f05a8f5bb320bed3b315c6c8cc27",
       "provider": "revolve-dance-bucharest",
       "scrapedAt": "2026-06-07T08:34:27.628578Z",
@@ -186,7 +186,7 @@
       "timezone": "Europe/Bucharest"
     },
     "source": {
-      "attemptedAt": "2026-06-28T17:56:12.566447Z",
+      "attemptedAt": "2026-06-30T01:55:16.521514Z",
       "hash": "sha256:2b34b41b37bdd1df9867416155fa226385fb04244bb4cb1e7c1ba227dd6473a0",
       "provider": "revolve-dance-bucharest",
       "scrapedAt": "2026-06-07T08:34:27.628923Z",
@@ -315,7 +315,7 @@
       "timezone": "Europe/Bucharest"
     },
     "source": {
-      "attemptedAt": "2026-06-28T17:56:12.566447Z",
+      "attemptedAt": "2026-06-30T01:55:16.521514Z",
       "hash": "sha256:38ded8060c3954daeb70a0a6a2c18ae3e21027299edadd6ce08ed6953695a671",
       "provider": "revolve-dance-bucharest",
       "scrapedAt": "2026-06-07T08:34:27.629012Z",
@@ -441,7 +441,7 @@
       "timezone": "Europe/Bucharest"
     },
     "source": {
-      "attemptedAt": "2026-06-28T17:56:12.566447Z",
+      "attemptedAt": "2026-06-30T01:55:16.521514Z",
       "hash": "sha256:67527666d4c6338c61a76a9bc4fb50de0b5f146b570ce4afe5ed7d79d47a5b2c",
       "provider": "revolve-dance-bucharest",
       "scrapedAt": "2026-06-07T08:34:27.629112Z",
@@ -598,7 +598,7 @@
       "timezone": "Europe/Bucharest"
     },
     "source": {
-      "attemptedAt": "2026-06-28T17:56:12.566447Z",
+      "attemptedAt": "2026-06-30T01:55:16.521514Z",
       "hash": "sha256:5db31c77d271406441253dad0df35287af3a1699aab44567c17a89e74c3554dc",
       "provider": "revolve-dance-bucharest",
       "scrapedAt": "2026-06-07T08:34:27.629221Z",
@@ -723,7 +723,7 @@
       "timezone": "Europe/Bucharest"
     },
     "source": {
-      "attemptedAt": "2026-06-28T17:56:12.566447Z",
+      "attemptedAt": "2026-06-30T01:55:16.521514Z",
       "hash": "sha256:2effcd0cd29e5d996e75cbc80a825033eda1fe87842131680452f04b5f10fd9e",
       "provider": "revolve-dance-bucharest",
       "scrapedAt": "2026-06-07T08:34:27.629370Z",
@@ -848,7 +848,7 @@
       "timezone": "Europe/Bucharest"
     },
     "source": {
-      "attemptedAt": "2026-06-28T17:56:12.566447Z",
+      "attemptedAt": "2026-06-30T01:55:16.521514Z",
       "hash": "sha256:730f056ea6abe0734605397fef0e84257efe5ac138b19fb23e6a79bf303845df",
       "provider": "revolve-dance-bucharest",
       "scrapedAt": "2026-06-07T08:34:27.629470Z",
