@@ -43,7 +43,7 @@
       "timezone": "Europe/London"
     },
     "source": {
-      "attemptedAt": "2026-06-28T22:49:13.477119Z",
+      "attemptedAt": "2026-06-30T15:22:09.977826Z",
       "hash": "sha256:f697204aea0e5f36476b7116b165542a40695af99582bd7f7798f608216351a9",
       "provider": "yorkshire-ballet-seminars",
       "scrapedAt": "2026-06-08T13:40:08.599539Z",
@@ -109,7 +109,7 @@
       "timezone": "Europe/London"
     },
     "source": {
-      "attemptedAt": "2026-06-28T22:49:13.477119Z",
+      "attemptedAt": "2026-06-30T15:22:09.977826Z",
       "hash": "sha256:e5e8f7150065ce2b1f53b7b7b66b4e885c22cb20a3bf84288d3f79f0bf216921",
       "provider": "yorkshire-ballet-seminars",
       "scrapedAt": "2026-06-08T13:40:08.599575Z",
@@ -175,7 +175,7 @@
       "timezone": "Europe/London"
     },
     "source": {
-      "attemptedAt": "2026-06-28T22:49:13.477119Z",
+      "attemptedAt": "2026-06-30T15:22:09.977826Z",
       "hash": "sha256:08ebb7a015ab5cc2d4f921a36429fb23e38f726d5d4545d9f0235a307733126a",
       "provider": "yorkshire-ballet-seminars",
       "scrapedAt": "2026-06-08T13:40:08.599590Z",
@@ -241,7 +241,7 @@
       "timezone": "Europe/London"
     },
     "source": {
-      "attemptedAt": "2026-06-28T22:49:13.477119Z",
+      "attemptedAt": "2026-06-30T15:22:09.977826Z",
       "hash": "sha256:a95798a7a8152ccd3cb2f9a8c26a58876d9b12dc1a4d7c6369c8410d73967b52",
       "provider": "yorkshire-ballet-seminars",
       "scrapedAt": "2026-06-08T13:40:08.599600Z",
