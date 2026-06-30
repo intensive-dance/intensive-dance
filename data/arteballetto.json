@@ -30,7 +30,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "attemptedAt": "2026-06-29T02:33:48.395316Z",
+      "attemptedAt": "2026-06-30T17:44:31.680616Z",
       "hash": "sha256:8ce0c2f99b3e1bfe19b24bcf742fd8cb3cf9dba8ccf3f46cac3b87f84468f5b7",
       "provider": "arteballetto",
       "scrapedAt": "2026-06-17T12:23:06.055333Z",
@@ -70,7 +70,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "attemptedAt": "2026-06-29T02:33:48.395316Z",
+      "attemptedAt": "2026-06-30T17:44:31.680616Z",
       "hash": "sha256:ac0bb996f8204030ae9f515adf8f71b62dfda52305bc9a5ee0bd84aaa774f68f",
       "provider": "arteballetto",
       "scrapedAt": "2026-06-17T12:23:06.055290Z",
@@ -117,7 +117,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "attemptedAt": "2026-06-29T02:33:48.395316Z",
+      "attemptedAt": "2026-06-30T17:44:31.680616Z",
       "hash": "sha256:2972535661a14bafc7563ba5577985a71bc63251c1e1ad146f252d559e27d476",
       "provider": "arteballetto",
       "scrapedAt": "2026-06-17T12:23:06.055162Z",
@@ -170,7 +170,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "attemptedAt": "2026-06-29T02:33:48.395316Z",
+      "attemptedAt": "2026-06-30T17:44:31.680616Z",
       "hash": "sha256:7cd5bece8694c59565d31522896049849db1c4922611f9f4e63ee9223b5cfe98",
       "provider": "arteballetto",
       "scrapedAt": "2026-06-17T12:23:06.054939Z",
@@ -229,7 +229,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "attemptedAt": "2026-06-29T02:33:48.395316Z",
+      "attemptedAt": "2026-06-30T17:44:31.680616Z",
       "hash": "sha256:96e31d0ed4173c83d0ff3a619a3da3516a8e39e6272f39f7ae68d88110b1c690",
       "provider": "arteballetto",
       "scrapedAt": "2026-06-17T12:24:14.906196Z",
