@@ -87,7 +87,7 @@
       "timezone": "Europe/Berlin"
     },
     "source": {
-      "attemptedAt": "2026-06-29T12:19:24.807033Z",
+      "attemptedAt": "2026-06-30T23:00:46.930895Z",
       "hash": "sha256:7bf0819535b04680e04b0721e03062a2c3450a81464949bc84b046a810c37cc8",
       "provider": "dresden-summer-dance",
       "scrapedAt": "2026-06-26T19:12:02.303812Z",
@@ -152,7 +152,7 @@
       "timezone": "Europe/Berlin"
     },
     "source": {
-      "attemptedAt": "2026-06-29T12:19:24.807033Z",
+      "attemptedAt": "2026-06-30T23:00:46.930895Z",
       "hash": "sha256:3594f57a1e19891a17fd746edc8eb214defe99a45e8f694c253a7443da085a7e",
       "provider": "dresden-summer-dance",
       "scrapedAt": "2026-06-26T19:12:02.304164Z",
@@ -218,7 +218,7 @@
       "timezone": "Europe/Berlin"
     },
     "source": {
-      "attemptedAt": "2026-06-29T12:19:24.807033Z",
+      "attemptedAt": "2026-06-30T23:00:46.930895Z",
       "hash": "sha256:3461188d53680b7f0fce2066671181723f2f8dbcdee8afe07ff88020c2eb6527",
       "provider": "dresden-summer-dance",
       "scrapedAt": "2026-06-26T19:12:02.304373Z",

@@ -40,7 +40,7 @@
       "timezone": "Europe/Zurich"
     },
     "source": {
-      "attemptedAt": "2026-06-29T12:19:26.513209Z",
+      "attemptedAt": "2026-06-30T23:00:44.898346Z",
       "hash": "sha256:f7ac0ad5e4373dfa594a0d9a97f264d8a12d2f04d1591b535aa9fb65b35db0fe",
       "provider": "php-ballet-intensive",
       "scrapedAt": "2026-06-26T06:18:23.534454Z",
@@ -111,7 +111,7 @@
       "timezone": "Europe/Zurich"
     },
     "source": {
-      "attemptedAt": "2026-06-29T12:19:26.513209Z",
+      "attemptedAt": "2026-06-30T23:00:44.898346Z",
       "hash": "sha256:f9644c1c0f42e06d9683660976dbd107f3998ffdef874841920d2d4d2262f0a2",
       "provider": "php-ballet-intensive",
       "scrapedAt": "2026-06-26T06:18:23.534669Z",
