@@ -43,7 +43,7 @@
       "timezone": "Europe/Berlin"
     },
     "source": {
-      "attemptedAt": "2026-06-29T12:19:23.350283Z",
+      "attemptedAt": "2026-06-30T21:20:37.058607Z",
       "hash": "sha256:c7c8c077c162c1eac57b3bb5854d0405b0e01baf4cfbf1e7173bf7eaa2232b90",
       "provider": "sommer-tanz-camp-berlin",
       "scrapedAt": "2026-06-26T16:14:44.394522Z",
@@ -120,7 +120,7 @@
       "timezone": "Europe/Berlin"
     },
     "source": {
-      "attemptedAt": "2026-06-29T12:19:23.350283Z",
+      "attemptedAt": "2026-06-30T21:20:37.058607Z",
       "hash": "sha256:c8be793d18c6ad520300a36991b1a10d2425790b5359a2aa235e99ff5db3c0b7",
       "provider": "sommer-tanz-camp-berlin",
       "scrapedAt": "2026-06-26T16:13:47.315462Z",

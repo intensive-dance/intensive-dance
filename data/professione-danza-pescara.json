@@ -114,7 +114,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "attemptedAt": "2026-06-29T12:19:23.302400Z",
+      "attemptedAt": "2026-06-30T21:20:38.073672Z",
       "hash": "sha256:df7b0aea8431f76795db8bedc43cac723b621df98c08c6bb9971c387b57245c7",
       "provider": "professione-danza-pescara",
       "scrapedAt": "2026-06-26T11:13:54.709101Z",
@@ -268,7 +268,7 @@
       "timezone": "Europe/Rome"
     },
     "source": {
-      "attemptedAt": "2026-06-29T12:19:23.302400Z",
+      "attemptedAt": "2026-06-30T21:20:38.073672Z",
       "hash": "sha256:7a9d050663756cac14a80de384b7cae7c90c30fe3a9c1cedef9acd41a522964c",
       "provider": "professione-danza-pescara",
       "scrapedAt": "2026-06-26T11:12:45.683382Z",

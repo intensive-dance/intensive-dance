@@ -53,7 +53,7 @@
       "timezone": "Europe/Berlin"
     },
     "source": {
-      "attemptedAt": "2026-06-29T12:19:23.524957Z",
+      "attemptedAt": "2026-06-30T21:20:38.317999Z",
       "hash": "sha256:3b95d2d43cef3e9bfdc9484791fa317bc6e804bd03c82098432d23e1b5488900",
       "provider": "nordsee-akademie-sommertanztage",
       "scrapedAt": "2026-06-26T19:21:03.125306Z",
@@ -128,7 +128,7 @@
       "timezone": "Europe/Berlin"
     },
     "source": {
-      "attemptedAt": "2026-06-29T12:19:23.524957Z",
+      "attemptedAt": "2026-06-30T21:20:38.317999Z",
       "hash": "sha256:48858ddb8560d1f4ee1328739c81e07bd09dbb47ba839fc79867f751b19661b0",
       "provider": "nordsee-akademie-sommertanztage",
       "scrapedAt": "2026-06-26T19:21:04.450485Z",
