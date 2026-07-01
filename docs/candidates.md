@@ -261,6 +261,15 @@ most provider pages 403'd a direct fetch and dates came from search-surfaced pag
 ### ⏸️ Not yet swept — resume next night
 **None — the full Top-50 list (under-swept countries + DE/AT/IT re-check) was reached this pass.** Highest-value in-season re-checks (dated edition pending): GB (Ballet Cymru WIBSS, The Dance Summer School), FR (Chevalier/SLK Saint-Raphaël, ISBI Lyon), ES (Valencia Endanza), HR (Ballet Masterclass Croatia, Baldovin — need proxy), Baltics (Riga Summer Ballet School, Pro Baletas, LTBA — need proxy), GR (Heraklion Summer Dance School), PL (KCC Kraków), EE (Tallinn pair). A proxy-enabled re-fetch is the main unlock for the bot-gated parks.
 
+## 🔌 Proxy re-check (2026-07-01) — the Europe-sweep bot-gated parks, re-fetched via the fetch proxy
+
+The overnight Europe sweep had no fetch-proxy creds, so it parked a handful of bot-gated / SPA sites as "unverifiable". Re-fetched them through the proxy (render tier). **3 → `seed`**:
+- **Valencia Endanza** (Valencia, ES) — 18th ed., two intensive weeks in **July 2026** (closing gala **25 Jul 2026**), classical + contemporary + Spanish + character + jazz + choreography. Confirmed via proxy + registration site. `valencia-endanza` — valenciaendanza.com
+- **Ballet Masterclass Croatia** (Zagreb, HR) — recurring international summer ballet masterclass (professional 15–22, intermediate 12–14; ZPC Ilica 10). Site rendered **live with 2026 content** (was 403 to a plain fetch); exact dates to confirm at Phase-2 build (proxy). `ballet-masterclass-croatia` — ballet-masterclass.com
+- **Baldovin Ballet — Master Ballet Education** (Zagreb, HR) — recurring intensive + competition, ages 13–18, classical/neoclassical/modern/contemporary (ZPC + ADU). "2nd Edition" page live w/ 2026 content; exact dates to confirm at build. `baldovin-master-ballet-education` — baldovinballet.com
+
+Still parked / not seeded (faithful): **Riga Summer Ballet School** (LV — proxy 502, domain unconfirmed) · **GR Heraklion "Χορός & Τέχνη" Summer Dance School** (no clean URL resolved) · Baltics Pro Baletas/LTBA/Open World/Centro Picasso (re-check in season). **Out-of-scope:** **KCC Dance Intensive** (Kraków) — Gaga / physical-dance / Countertechnique, i.e. contemporary *dance*, not ballet.
+
 ## ⏸️ Defer → IDR-9 (`deferred`) — full-time / long-term only, no short course
 - School of the Hamburg Ballet (DE) · Ballettakademie der Wiener Staatsoper (AT) · Royal Swedish Ballet School (SE) · Greek National Opera Dance School (GR) · Teatro di San Carlo Ballet School (IT · Naples) · Ginasiano (PT) · Čiurlionis School (LT) · Floria Capsali (RO) · CPD Sevilla (ES)
 

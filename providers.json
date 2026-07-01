@@ -1703,6 +1703,30 @@
       "city": "Barcelona",
       "url": "https://www.institutdelteatre.cat/",
       "status": "seed"
+    },
+    {
+      "slug": "valencia-endanza",
+      "name": "Valencia Endanza",
+      "country": "ES",
+      "city": "Valencia",
+      "url": "https://valenciaendanza.com/",
+      "status": "seed"
+    },
+    {
+      "slug": "ballet-masterclass-croatia",
+      "name": "Ballet Masterclass Croatia",
+      "country": "HR",
+      "city": "Zagreb",
+      "url": "https://www.ballet-masterclass.com/",
+      "status": "seed"
+    },
+    {
+      "slug": "baldovin-master-ballet-education",
+      "name": "Baldovin Ballet — Master Ballet Education",
+      "country": "HR",
+      "city": "Zagreb",
+      "url": "https://www.baldovinballet.com/",
+      "status": "seed"
     }
   ]
 }
