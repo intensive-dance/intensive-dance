@@ -661,6 +661,19 @@ when a second provider genuinely needs the identical thing.
   before slicing (see `elmhurst_ballet_school`). Photograph/Video "requirements"
   pages on such school sites usually belong to the *full-time audition* flow, not
   the summer school — don't attribute them to the short course.
+- **WordPress block theme: native `<details>`/`<summary>` accordions, one camp =
+  one Offering.** A Gutenberg/block-theme WP page can render each participation
+  group as a native HTML `<details>` with the group name in its `<summary>` — no
+  Bootstrap `#collapseN` or WPBakery, just `tree.css("details")` and read each
+  panel's text. When those groups are tiers of the *same* dated camp (shared
+  week, venue, gala), emit **one Offering** with a `Session` per group and a
+  labelled `Price` per group/sub-tier — not one Offering per group. A "top-up"
+  extra (e.g. a choreography add-on) is a `Price`, not a `Session`. A group's
+  multi-price line ("240€ all classes OR 180€ ballet only OR 150€ contemporary")
+  needs the qualifier read from *after* each amount, bounded by the next amount
+  (a fixed look-ahead window catches the following price's qualifier). The camp's
+  own date span is open-topped where adults are welcomed (min age from the
+  youngest group, no max). See `turku_dance_camp`.
 - **TYPO3 sites: plain HTML, `<strong>`-labelled `<p>` fields, dedupe a shared
   course across providers.** A TYPO3 site (no `/wp-json/`, only a generic
   `BreadcrumbList` `ld+json`) is server-rendered — a plain `selectolax` scrape.
