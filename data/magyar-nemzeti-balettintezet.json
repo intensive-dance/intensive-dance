@@ -1,0 +1,57 @@
+[
+  {
+    "ageRange": {
+      "max": 17,
+      "min": 6
+    },
+    "application": {
+      "deadline": "2026-06-15",
+      "requirements": [],
+      "url": "https://www.mnbi.hu/en/application/summer-intense-ballet-courses-in-the-opera/"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "magyar-nemzeti-balettintezet/summer-course-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Budapest",
+      "country": "HU",
+      "venue": "Opera House, 1061 Budapest, Andrássy út 22"
+    },
+    "organization": {
+      "city": "Budapest",
+      "country": "HU",
+      "name": "Magyar Nemzeti Balettintézet",
+      "slug": "magyar-nemzeti-balettintezet"
+    },
+    "prices": [
+      {
+        "amount": 98000.0,
+        "currency": "HUF",
+        "includes": [
+          "tuition",
+          "meals"
+        ],
+        "type": "tuition"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-04",
+      "notes": "Classes Monday–Saturday, 9:00–16:30.",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-06-29",
+      "timezone": "Europe/Budapest"
+    },
+    "source": {
+      "hash": "sha256:51a756b469b0fef6dee5d0940339b251c8d47b2c8fa857582c71de2ba8fd4967",
+      "provider": "magyar-nemzeti-balettintezet",
+      "scrapedAt": "2026-07-01T08:55:30.399089Z",
+      "url": "https://www.mnbi.hu/en/application/summer-intense-ballet-courses-in-the-opera/"
+    },
+    "teachers": [],
+    "title": "Summer Ballet Course 2026"
+  }
+]

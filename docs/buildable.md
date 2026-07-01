@@ -2,7 +2,7 @@
 
 > **Generated — do not edit.** Refresh with `uv run python -m intensive_dance.overview --write`; CI drift-checks it. Source of truth: `providers.json`.
 
-47 buildable · 30 excluded · 136 live (213 providers total).
+46 buildable · 30 excluded · 137 live (213 providers total).
 
 **To claim one (so nobody double-builds):** check `gh issue list` / `gh pr list` for the slug; if free, open a `build:<slug>` issue and **self-assign first**, then build; close it when the PR merges (provider → `live`). An open claim issue *or* PR = locked. See `AGENTS.md` → Scope & coordination.
 
@@ -62,9 +62,6 @@ _Some still need Phase-1 verification (a public dated edition / not full-time) b
 - `royal-conservatoire-scotland-summer-school` — Royal Conservatoire of Scotland — Modern Ballet Summer Schools (Glasgow) — https://www.rcs.ac.uk/study/summer-schools/
 - `russian-ballet-studios` — Russian Ballet Studios — Summer Camp (London) — http://www.russian-ballet-studios.com/index.html
 - `tring-park-summer-dance` — Tring Park School — Summer Dance Course (Tring) — https://www.tringpark.com/holiday-courses/summer-residential-dance-course-2/
-
-### HU
-- `magyar-nemzeti-balettintezet` — Magyar Nemzeti Balettintézet — Summer Intensive (Budapest) — https://www.mnbi.hu/en/application/summer-intense-ballet-courses-in-the-opera/
 
 ### IT
 - `associazione-mab-ballet-intensive` — Associazione MAB — Classical Ballet Intensive (Lainate) — https://www.premiomab.it/en/in-june-a-classical-ballet-intensive-with-mme-caridad-martinez/
