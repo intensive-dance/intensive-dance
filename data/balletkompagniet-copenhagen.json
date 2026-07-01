@@ -1,0 +1,382 @@
+[
+  {
+    "ageRange": {
+      "max": 6,
+      "min": 4
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://balletkompagniet.dk/balletkompagniets-sommerskoler-2026/"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "balletkompagniet-copenhagen/sommerskole-for-spirekompagniet-med-amalie-peronard-i-fields-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Fields, uge 27",
+      "country": "DK",
+      "venue": "Fields, uge 27"
+    },
+    "organization": {
+      "city": "Copenhagen",
+      "country": "DK",
+      "name": "Balletkompagniet",
+      "slug": "balletkompagniet-copenhagen"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-07-01",
+      "notes": "Mandag-onsdag d. 29. juni-1. juli 2026",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-06-29",
+      "timezone": "Europe/Copenhagen"
+    },
+    "source": {
+      "hash": "sha256:b748112c841b99bba6265d9d0bab85a5f33abce5f54710462f35a9cc20aefbf4",
+      "provider": "balletkompagniet-copenhagen",
+      "scrapedAt": "2026-07-01T10:07:20.548068Z",
+      "url": "https://balletkompagniet.dk/balletkompagniets-sommerskoler-2026/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Amalie Peronard"
+      }
+    ],
+    "title": "Sommerskole for Spirekompagniet med Amalie Peronard i Fields, uge 27"
+  },
+  {
+    "ageRange": {
+      "max": 12,
+      "min": 9
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://balletkompagniet.dk/balletkompagniets-sommerskoler-2026/"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "balletkompagniet-copenhagen/sommerskole-for-9-12-rige-med-henriette-h-lange-i-hrsholm-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Hørsholm",
+      "country": "DK",
+      "venue": "Hørsholm"
+    },
+    "organization": {
+      "city": "Copenhagen",
+      "country": "DK",
+      "name": "Balletkompagniet",
+      "slug": "balletkompagniet-copenhagen"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-07-02",
+      "notes": "Tirsdag-torsdag d. 30. juni-2. juli 2026, uge 27",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-06-30",
+      "timezone": "Europe/Copenhagen"
+    },
+    "source": {
+      "hash": "sha256:b87e18da76d8c2e3049529f7626493dffa2ccd40ce71f19e2b2aab1baf2bcfbe",
+      "provider": "balletkompagniet-copenhagen",
+      "scrapedAt": "2026-07-01T10:07:20.548330Z",
+      "url": "https://balletkompagniet.dk/balletkompagniets-sommerskoler-2026/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Henriette H. Lange"
+      }
+    ],
+    "title": "Sommerskole for 9-12-årige med Henriette H. Lange i Hørsholm"
+  },
+  {
+    "ageRange": {
+      "max": 12,
+      "min": 9
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://balletkompagniet.dk/balletkompagniets-sommerskoler-2026/"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "balletkompagniet-copenhagen/sommerskole-for-9-12-rige-med-emma-amtoft-p-frederiksberg-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Frederiksberg",
+      "country": "DK",
+      "venue": "Frederiksberg"
+    },
+    "organization": {
+      "city": "Copenhagen",
+      "country": "DK",
+      "name": "Balletkompagniet",
+      "slug": "balletkompagniet-copenhagen"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-07-09",
+      "notes": "Tirsdag-torsdag d. 7.-9. juli 2026, uge 28",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-07",
+      "timezone": "Europe/Copenhagen"
+    },
+    "source": {
+      "hash": "sha256:4877781f9d1be37f71bd48a79edf2da43cf9dcb63dc9ebba1563671167f69d38",
+      "provider": "balletkompagniet-copenhagen",
+      "scrapedAt": "2026-07-01T10:05:21.078048Z",
+      "url": "https://balletkompagniet.dk/balletkompagniets-sommerskoler-2026/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Emma Amtoft"
+      }
+    ],
+    "title": "Sommerskole for 9-12-årige med Emma Amtoft på Frederiksberg"
+  },
+  {
+    "application": {
+      "requirements": [],
+      "url": "https://balletkompagniet.dk/balletkompagniets-sommerskoler-2026/"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "balletkompagniet-copenhagen/sommerskole-for-teens-med-emma-amtoft-i-fields-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Fields",
+      "country": "DK",
+      "venue": "Fields"
+    },
+    "organization": {
+      "city": "Copenhagen",
+      "country": "DK",
+      "name": "Balletkompagniet",
+      "slug": "balletkompagniet-copenhagen"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-07-30",
+      "notes": "Tirsdag-torsdag d. 28.-30. juli 2026, uge 31",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-28",
+      "timezone": "Europe/Copenhagen"
+    },
+    "source": {
+      "hash": "sha256:d3a67998de2b71c0f4fdbb1ac3b0d10f513f4c41f043cf7ca852a5182669fb7d",
+      "provider": "balletkompagniet-copenhagen",
+      "scrapedAt": "2026-07-01T10:04:22.174548Z",
+      "url": "https://balletkompagniet.dk/balletkompagniets-sommerskoler-2026/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Emma Amtoft"
+      }
+    ],
+    "title": "Sommerskole for teens med Emma Amtoft i Fields"
+  },
+  {
+    "ageRange": {
+      "max": 8,
+      "min": 6
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://balletkompagniet.dk/balletkompagniets-sommerskoler-2026/"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "balletkompagniet-copenhagen/sommerskole-for-6-8-rige-med-silje-bjerre-i-city2-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "City2",
+      "country": "DK",
+      "venue": "City2"
+    },
+    "organization": {
+      "city": "Copenhagen",
+      "country": "DK",
+      "name": "Balletkompagniet",
+      "slug": "balletkompagniet-copenhagen"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-07-29",
+      "notes": "Mandag-onsdag d. 27.-29. juli 2026, uge 31",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-27",
+      "timezone": "Europe/Copenhagen"
+    },
+    "source": {
+      "hash": "sha256:0f212c40f288d87fa23394a96e249b0d2f7f2925c48863d44f64ddc3fa537347",
+      "provider": "balletkompagniet-copenhagen",
+      "scrapedAt": "2026-07-01T10:07:20.548677Z",
+      "url": "https://balletkompagniet.dk/balletkompagniets-sommerskoler-2026/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Silje Bjerre"
+      }
+    ],
+    "title": "Sommerskole for 6-8-årige med Silje Bjerre i City2"
+  },
+  {
+    "ageRange": {
+      "max": 12,
+      "min": 9
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://balletkompagniet.dk/balletkompagniets-sommerskoler-2026/"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "balletkompagniet-copenhagen/sommerskole-for-9-12-rige-med-laura-sofie-worm-i-skovshoved-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Skovshoved",
+      "country": "DK",
+      "venue": "Skovshoved"
+    },
+    "organization": {
+      "city": "Copenhagen",
+      "country": "DK",
+      "name": "Balletkompagniet",
+      "slug": "balletkompagniet-copenhagen"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-08-07",
+      "notes": "Onsdag-fredag d. 5.-7. august 2026, uge 32",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-05",
+      "timezone": "Europe/Copenhagen"
+    },
+    "source": {
+      "hash": "sha256:cf0c38e3ad763d5065e582152660578d8b6a8df042868d4b8c9ff13cc4c5ba5c",
+      "provider": "balletkompagniet-copenhagen",
+      "scrapedAt": "2026-07-01T10:07:20.548780Z",
+      "url": "https://balletkompagniet.dk/balletkompagniets-sommerskoler-2026/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Laura Sofie Worm"
+      }
+    ],
+    "title": "Sommerskole for 9-12-årige med Laura Sofie Worm i Skovshoved"
+  },
+  {
+    "application": {
+      "requirements": [],
+      "url": "https://balletkompagniet.dk/balletkompagniets-sommerskoler-2026/"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "balletkompagniet-copenhagen/tre-dages-intensive-pre-season-sommerklasser-med-victor-wins-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Fields",
+      "country": "DK",
+      "venue": "Fields"
+    },
+    "organization": {
+      "city": "Copenhagen",
+      "country": "DK",
+      "name": "Balletkompagniet",
+      "slug": "balletkompagniet-copenhagen"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-08-05",
+      "notes": "Mandag-onsdag d. 3.-5. august 2026, uge 32 — pre-season intensive",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-03",
+      "timezone": "Europe/Copenhagen"
+    },
+    "source": {
+      "hash": "sha256:e3313e294707a74aa13aab5167b0f0928e4251eb2aff709106ce79c8c51f3116",
+      "provider": "balletkompagniet-copenhagen",
+      "scrapedAt": "2026-07-01T10:07:20.548903Z",
+      "url": "https://balletkompagniet.dk/balletkompagniets-sommerskoler-2026/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Victor Winsløw"
+      }
+    ],
+    "title": "Tre dages intensive pre-season sommerklasser med Victor Winsløw i Fields"
+  },
+  {
+    "application": {
+      "requirements": [],
+      "url": "https://balletkompagniet.dk/balletkompagniets-sommerskoler-2026/"
+    },
+    "genres": [
+      "classical"
+    ],
+    "id": "balletkompagniet-copenhagen/tre-dages-intensive-pre-season-sommerklasser-med-juliette-sc-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Frederiksberg",
+      "country": "DK",
+      "venue": "Frederiksberg"
+    },
+    "organization": {
+      "city": "Copenhagen",
+      "country": "DK",
+      "name": "Balletkompagniet",
+      "slug": "balletkompagniet-copenhagen"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-08-07",
+      "notes": "Onsdag-fredag d. 5.-7. august 2026, uge 32 — pre-season intensive",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-05",
+      "timezone": "Europe/Copenhagen"
+    },
+    "source": {
+      "hash": "sha256:f835a19b308499c397943d92fcc1d6fea342d7c6d3c451f6d3ca99bdcc415129",
+      "provider": "balletkompagniet-copenhagen",
+      "scrapedAt": "2026-07-01T10:07:20.549026Z",
+      "url": "https://balletkompagniet.dk/balletkompagniets-sommerskoler-2026/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Juliette Schaufuss"
+      }
+    ],
+    "title": "Tre dages intensive pre-season sommerklasser med Juliette Schaufuss på Frederiksberg"
+  }
+]
