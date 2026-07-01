@@ -206,6 +206,19 @@ module docstring so the next person doesn't re-investigate:
      **single-purpose** intensive site's "Docenti"/faculty page *is* this
      intensive's faculty — safe to attribute, unlike a multi-program school. See
      `bobbio_summer_ballet_intensive`.)
+   - **Trap (ENB):** a clean `/wp-json/` doesn't mean your target is *in* it. A
+     WordPress site can serve the intensive at a **theme route** (English
+     National Ballet's `/class/<slug>/`) that is NOT a REST-exposed post type —
+     `/wp-json/wp/v2/types` simply won't list it, and `pages?search=` misses it
+     too. Don't chase the API for a route it doesn't expose: the page is fully
+     server-rendered, so scrape its stable theme classes
+     (`span.introduction-date`, `div.introduction-details__fee`) + the overview
+     prose directly. The intensive ran two age/level tiers as sibling `/class/`
+     pages (advanced, intermediate) → one Offering each; a related-events rail
+     linked a *separate* audition program — parse only the tier pages you fetch.
+     Genres come from what's *taught* ("ballet and contemporary technique"), not
+     the company's "diverse repertoire" the dancers merely experience (see
+     `english_national_ballet_youth_intensive`).
    - **Trap (PBI):** a site the candidate notes call "Wix/JS" can actually be
      plain WordPress (check `/wp-json/`) with clean `content.rendered` bodies and
      **no JS/proxy needed**. But the *dated edition* may live only in the WP site

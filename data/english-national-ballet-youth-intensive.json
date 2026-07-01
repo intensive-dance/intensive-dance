@@ -1,0 +1,115 @@
+[
+  {
+    "ageRange": {
+      "max": 19,
+      "min": 14
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.ballet.org.uk/class/youth-dance-summer-intensive-advanced/"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "english-national-ballet-youth-intensive/advanced-2026",
+    "level": [
+      "advanced",
+      "pre-professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "London",
+      "country": "GB",
+      "venue": "Mulryan Centre for Dance"
+    },
+    "organization": {
+      "city": "London",
+      "country": "GB",
+      "name": "English National Ballet",
+      "slug": "english-national-ballet-youth-intensive"
+    },
+    "prices": [
+      {
+        "amount": 330.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "type": "tuition"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-07",
+      "notes": "Mon 3 - Fri 7 Aug 2026",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-03",
+      "timezone": "Europe/London"
+    },
+    "source": {
+      "hash": "sha256:62237b976cae3d167e3aa85555011e440a95ed16f2a03b09623bfc478aecf788",
+      "provider": "english-national-ballet-youth-intensive",
+      "scrapedAt": "2026-07-01T08:55:25.820862Z",
+      "url": "https://www.ballet.org.uk/class/youth-dance-summer-intensive-advanced/"
+    },
+    "teachers": [],
+    "title": "Youth Dance Summer Intensive — Advanced"
+  },
+  {
+    "ageRange": {
+      "max": 16,
+      "min": 12
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.ballet.org.uk/class/youth-dance-summer-intensive-intermediate/"
+    },
+    "genres": [
+      "classical",
+      "contemporary"
+    ],
+    "id": "english-national-ballet-youth-intensive/intermediate-2026",
+    "level": [
+      "intermediate"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "London",
+      "country": "GB",
+      "venue": "Mulryan Centre for Dance"
+    },
+    "organization": {
+      "city": "London",
+      "country": "GB",
+      "name": "English National Ballet",
+      "slug": "english-national-ballet-youth-intensive"
+    },
+    "prices": [
+      {
+        "amount": 180.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition"
+        ],
+        "type": "tuition"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-31",
+      "notes": "Wed 29 - Fri 31 Jul 2026",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-29",
+      "timezone": "Europe/London"
+    },
+    "source": {
+      "hash": "sha256:edf42f338d90cb88e5f022460f8aead1f8930afecfd9f5b8fc34ec9506d5bf58",
+      "provider": "english-national-ballet-youth-intensive",
+      "scrapedAt": "2026-07-01T08:55:26.195654Z",
+      "url": "https://www.ballet.org.uk/class/youth-dance-summer-intensive-intermediate/"
+    },
+    "teachers": [],
+    "title": "Youth Dance Summer Intensive — Intermediate"
+  }
+]
