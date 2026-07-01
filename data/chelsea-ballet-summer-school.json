@@ -1,0 +1,66 @@
+[
+  {
+    "ageRange": {
+      "min": 18
+    },
+    "application": {
+      "requirements": []
+    },
+    "genres": [
+      "classical",
+      "pointe",
+      "repertoire"
+    ],
+    "id": "chelsea-ballet-summer-school/2026",
+    "level": [
+      "intermediate",
+      "open"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "London",
+      "country": "GB",
+      "venue": "ArtsEd, Chiswick"
+    },
+    "organization": {
+      "city": "London",
+      "country": "GB",
+      "name": "Chelsea Ballet",
+      "slug": "chelsea-ballet-summer-school"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-08-15",
+      "notes": "Design-your-own programme: day or full week. Not for beginners.",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-10",
+      "timezone": "Europe/London"
+    },
+    "source": {
+      "hash": "sha256:1b007f57861825489f36a46e5c00482dbd18ffb95b4064c7ea871ac94b19fb2f",
+      "provider": "chelsea-ballet-summer-school",
+      "scrapedAt": "2026-07-01T09:52:00.709326Z",
+      "url": "https://chelsea-ballet.com/summerschool/"
+    },
+    "teachers": [
+      {
+        "affiliations": [],
+        "name": "Nina Thilas-Mohs"
+      },
+      {
+        "affiliations": [],
+        "name": "Richard Ramsey"
+      },
+      {
+        "affiliations": [],
+        "name": "Bethany Ramsey"
+      },
+      {
+        "affiliations": [],
+        "name": "Naomi Smart"
+      }
+    ],
+    "title": "Summer School 2026"
+  }
+]
