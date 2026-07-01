@@ -1,0 +1,72 @@
+[
+  {
+    "ageRange": {
+      "max": 16,
+      "min": 10
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://www.tringpark.com/holiday-courses/summer-residential-dance-course-2/"
+    },
+    "genres": [
+      "classical",
+      "repertoire",
+      "contemporary"
+    ],
+    "id": "tring-park-summer-dance/summer-dance-course-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Tring",
+      "country": "GB",
+      "venue": "Park Studios, Tring Park School"
+    },
+    "organization": {
+      "city": "Tring",
+      "country": "GB",
+      "name": "Tring Park School",
+      "slug": "tring-park-summer-dance"
+    },
+    "prices": [
+      {
+        "amount": 457.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition",
+          "meals"
+        ],
+        "label": "Day Pupils",
+        "notes": "VAT-inclusive.",
+        "type": "tuition"
+      },
+      {
+        "amount": 630.0,
+        "currency": "GBP",
+        "includes": [
+          "tuition",
+          "accommodation",
+          "meals"
+        ],
+        "label": "Boarders",
+        "notes": "VAT-inclusive.",
+        "type": "tuition"
+      }
+    ],
+    "schedule": {
+      "end": "2026-08-13",
+      "notes": "9th August 2026 - 13th August 2026",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-09",
+      "timezone": "Europe/London"
+    },
+    "source": {
+      "hash": "sha256:1cdc2b1ff87590a90b86359af436ff66e3260b643ac19095351f62eb715ebe91",
+      "provider": "tring-park-summer-dance",
+      "scrapedAt": "2026-07-01T08:55:27.972086Z",
+      "url": "https://www.tringpark.com/holiday-courses/summer-residential-dance-course-2/"
+    },
+    "teachers": [],
+    "title": "Summer Dance Course 2026"
+  }
+]
