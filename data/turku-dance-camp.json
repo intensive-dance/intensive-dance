@@ -1,0 +1,136 @@
+[
+  {
+    "ageRange": {
+      "min": 10
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://ruusuillatanssijat.fi/turkudancecamp/"
+    },
+    "genres": [
+      "classical",
+      "contemporary",
+      "repertoire"
+    ],
+    "id": "turku-dance-camp/2026",
+    "level": [
+      "open",
+      "pre-professional"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Turku",
+      "country": "FI"
+    },
+    "organization": {
+      "city": "Turku",
+      "country": "FI",
+      "name": "Turku Dance Camp",
+      "slug": "turku-dance-camp"
+    },
+    "prices": [
+      {
+        "amount": 400.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Standard",
+        "type": "tuition"
+      },
+      {
+        "amount": 400.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Intensive",
+        "type": "tuition"
+      },
+      {
+        "amount": 240.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Lite — all classes",
+        "type": "tuition"
+      },
+      {
+        "amount": 180.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Lite — ballet only",
+        "type": "tuition"
+      },
+      {
+        "amount": 150.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Lite — contemporary only",
+        "type": "tuition"
+      },
+      {
+        "amount": 220.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Children’s course",
+        "type": "tuition"
+      },
+      {
+        "amount": 100.0,
+        "currency": "EUR",
+        "includes": [
+          "tuition"
+        ],
+        "label": "Choreography workshop (add-on)",
+        "type": "tuition"
+      }
+    ],
+    "schedule": {
+      "end": "2026-07-31",
+      "notes": "Six-day camp; finale Gala at Sigyn Hall and dinner at Turku Castle.",
+      "season": "2026",
+      "sessions": [
+        {
+          "ageRange": {
+            "min": 13
+          },
+          "label": "Standard"
+        },
+        {
+          "ageRange": {
+            "min": 15
+          },
+          "label": "Intensive"
+        },
+        {
+          "label": "Lite"
+        },
+        {
+          "ageRange": {
+            "max": 12,
+            "min": 10
+          },
+          "label": "Children’s course"
+        }
+      ],
+      "start": "2026-07-26",
+      "timezone": "Europe/Helsinki"
+    },
+    "source": {
+      "hash": "sha256:fb68043fbe85bff622c662419e921ef7fc07a6506cc9d9147e255b7c812fbfe4",
+      "provider": "turku-dance-camp",
+      "scrapedAt": "2026-07-01T08:55:32.892753Z",
+      "url": "https://ruusuillatanssijat.fi/turkudancecamp/"
+    },
+    "teachers": [],
+    "title": "Turku Dance Camp 2026"
+  }
+]
