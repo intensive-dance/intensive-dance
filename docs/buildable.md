@@ -2,7 +2,7 @@
 
 > **Generated — do not edit.** Refresh with `uv run python -m intensive_dance.overview --write`; CI drift-checks it. Source of truth: `providers.json`.
 
-47 buildable · 30 excluded · 136 live (213 providers total).
+46 buildable · 30 excluded · 137 live (213 providers total).
 
 **To claim one (so nobody double-builds):** check `gh issue list` / `gh pr list` for the slug; if free, open a `build:<slug>` issue and **self-assign first**, then build; close it when the PR merges (provider → `live`). An open claim issue *or* PR = locked. See `AGENTS.md` → Scope & coordination.
 
@@ -32,7 +32,6 @@ _Some still need Phase-1 verification (a public dated edition / not full-time) b
 ### ES
 - `advanced-dance-institute-barcelona` — Advanced Dance Institute Barcelona (Barcelona) — https://advanceddanceinstitute.com/summer-intensive/
 - `ballet-de-catalunya-summer-intensive` — Ballet de Catalunya — Summer Intensive (Barcelona) — https://catballet.com/school/intensive/
-- `ecole-francaise-de-danse-madrid` — Ecole Française de Danse Madrid (Madrid) — https://ecolefrancaisededanse.com/cursos-intensivos-verano-ballet-clasico-formacion-profesional/
 - `escola-ballet-carles-ibanez` — Escola de Ballet Carles Ibáñez (Barcelona) — https://balletibanez.com/
 - `institut-del-teatre-endansa-it` — Institut del Teatre — ENDANSA'IT (Barcelona) — https://www.institutdelteatre.cat/
 - `jac-ballet-madrid-curso-verano` — JAC Ballet Madrid — Curso de Verano (Madrid) — https://www.jacballet.com/
