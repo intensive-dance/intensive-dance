@@ -2,7 +2,7 @@
 
 > **Generated — do not edit.** Refresh with `uv run python -m intensive_dance.overview --write`; CI drift-checks it. Source of truth: `providers.json`.
 
-47 buildable · 30 excluded · 136 live (213 providers total).
+46 buildable · 30 excluded · 137 live (213 providers total).
 
 **To claim one (so nobody double-builds):** check `gh issue list` / `gh pr list` for the slug; if free, open a `build:<slug>` issue and **self-assign first**, then build; close it when the PR merges (provider → `live`). An open claim issue *or* PR = locked. See `AGENTS.md` → Scope & coordination.
 
@@ -51,7 +51,6 @@ _Some still need Phase-1 verification (a public dated edition / not full-time) b
 - `ballet-britain` — Ballet Britain — Holiday Courses (Leeds) — https://balletbritain.com/
 - `ballet-cymru-wales-summer-dance` — Ballet Cymru — Wales Summer Dance (Newport) — https://ballet.cymru/wales-summer-dance/
 - `bristol-russian-ballet-school` — Bristol Russian Ballet School — Summer Intensive (Bristol) — https://bristolrussianballet.com/easter-summer-intensive/
-- `chelsea-ballet-summer-school` — Chelsea Ballet — Summer School (London) — https://chelsea-ballet.com/summerschool/
 - `english-national-ballet-youth-intensive` — English National Ballet — Youth Dance Summer Intensive (London) — https://www.ballet.org.uk/class/youth-dance-summer-intensive-advanced/
 - `london-childrens-ballet-summer-school` — London Children's Ballet — Summer School (London) — https://www.londonchildrensballet.com/summer-school
 - `london-studio-centre` — London Studio Centre — Summer Programme (London) — https://www.londonstudiocentre.org/course/summer-programme/
