@@ -2,7 +2,7 @@
 
 > **Generated — do not edit.** Refresh with `uv run python -m intensive_dance.overview --write`; CI drift-checks it. Source of truth: `providers.json`.
 
-50 buildable · 30 excluded · 136 live (216 providers total).
+51 buildable · 30 excluded · 136 live (217 providers total).
 
 **To claim one (so nobody double-builds):** check `gh issue list` / `gh pr list` for the slug; if free, open a `build:<slug>` issue and **self-assign first**, then build; close it when the PR merges (provider → `live`). An open claim issue *or* PR = locked. See `AGENTS.md` → Scope & coordination.
 
@@ -24,6 +24,7 @@ _Some still need Phase-1 verification (a public dated edition / not full-time) b
 
 ### DE
 - `dance-academy-wiesbaden` — Dance Academy Wiesbaden (Wiesbaden) — https://www.danceacademy-wiesbaden.de/
+- `glazshneyder-ballet-school` — Glazshneyder Ballet School (Mainz) — https://balletschool.glazshneyder.com/
 
 ### DK
 - `balletkompagniet-copenhagen` — Balletkompagniet — Summer Schools (Copenhagen) — https://balletkompagniet.dk/balletkompagniets-sommerskoler-2026/

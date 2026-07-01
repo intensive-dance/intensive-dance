@@ -142,6 +142,10 @@ Re-checked two scope rules that loosened *after* the regional sweeps (no new cra
 - **Dance Academy Wiesbaden** (Wiesbaden, DE) → `seed`. RAD-Ballettausbildung + Leistungsgruppe / Hochbegabtenförderung; runs a dated **Summer Intensive Dance Workshop** with international guest teachers, **2–7 Aug 2026**, intermediate–advanced. Seeded as `dance-academy-wiesbaden`. *(Flagged from Instagram @danceacademywiesbaden; distinct from the parked `Star Ballet Mainz/Wiesbaden` on ballettschule-mainz.de.)* — danceacademy-wiesbaden.de
 - *Also checked, already covered:* **Legacy Master of Ballet** (umbriaballet.com/iscrizione-lmb, 29 Jun–4 Jul 2026) is **already `live`** via `umbria-ballet` (the store already holds the LMb-2026 edition).
 
+## 📥 User-flagged seed (2026-07-01)
+
+- **Glazshneyder Ballet School** (Mainz, DE) → `seed`. Vaganova-method school (Andrey Glazshneyder), classical **and** contemporary, welcoming all levels + professional dancers. Runs dated, public **Sommerintensivprogramme** (summer intensives). A 2026 edition is signalled on the home page (**"4.–8. August 2026"**) but **unconfirmed** — the `/courses/` page lists the summer-intensive *program* without dates — so the exact edition is left to Phase-2 extraction (don't assert the date). Seeded as `glazshneyder-ballet-school`. *(Rhein-Main; distinct from the already-seeded `dance-academy-wiesbaden` and the parked `Star Ballet Mainz/Wiesbaden` on ballettschule-mainz.de.)* — balletschool.glazshneyder.com
+
 ## 🇪🇺 Europe Top-50 city sweep (2026-06-30)
 
 Multi-agent Phase-1 sweep of the 50 largest European cities, **under-swept countries first**

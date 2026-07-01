@@ -1727,6 +1727,14 @@
       "city": "Zagreb",
       "url": "https://www.baldovinballet.com/",
       "status": "seed"
+    },
+    {
+      "slug": "glazshneyder-ballet-school",
+      "name": "Glazshneyder Ballet School",
+      "country": "DE",
+      "city": "Mainz",
+      "url": "https://balletschool.glazshneyder.com/",
+      "status": "seed"
     }
   ]
 }
