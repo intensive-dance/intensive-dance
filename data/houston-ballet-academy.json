@@ -89,7 +89,7 @@
       "timezone": "America/Chicago"
     },
     "source": {
-      "attemptedAt": "2026-06-29T23:47:38.915685Z",
+      "attemptedAt": "2026-07-01T16:12:51.978871Z",
       "hash": "sha256:61b03d3b96724be74ea50978fec16f261343ff026100b8fefc59e57cf16c83c6",
       "provider": "houston-ballet-academy",
       "scrapedAt": "2026-06-16T09:21:02.601443Z",
@@ -165,7 +165,7 @@
       "timezone": "America/Chicago"
     },
     "source": {
-      "attemptedAt": "2026-06-29T23:47:38.915685Z",
+      "attemptedAt": "2026-07-01T16:12:51.978871Z",
       "hash": "sha256:5261971056580fcfe448c60853a1a82e092496044a9a50fd14219ea5d5a44962",
       "provider": "houston-ballet-academy",
       "scrapedAt": "2026-06-08T14:34:51.238876Z",
@@ -241,7 +241,7 @@
       "timezone": "America/Chicago"
     },
     "source": {
-      "attemptedAt": "2026-06-29T23:47:38.915685Z",
+      "attemptedAt": "2026-07-01T16:12:51.978871Z",
       "hash": "sha256:1293afe9ebc66b503e4f576b0fd67e78b987412d6e4aef78c4b1bb4afd622326",
       "provider": "houston-ballet-academy",
       "scrapedAt": "2026-06-08T14:34:51.238921Z",
