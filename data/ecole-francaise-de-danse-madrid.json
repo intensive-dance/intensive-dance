@@ -1,0 +1,172 @@
+[
+  {
+    "ageRange": {
+      "min": 18
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://ecolefrancaisededanse.com/cursos-intensivos-verano-ballet-clasico-formacion-profesional/"
+    },
+    "genres": [
+      "classical",
+      "repertoire",
+      "contemporary"
+    ],
+    "id": "ecole-francaise-de-danse-madrid/adult-2026",
+    "level": [
+      "open"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Madrid",
+      "country": "ES"
+    },
+    "organization": {
+      "city": "Madrid",
+      "country": "ES",
+      "name": "École Française de Danse Madrid",
+      "slug": "ecole-francaise-de-danse-madrid"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-07-17",
+      "season": "2026",
+      "sessions": [
+        {
+          "end": "2026-07-03",
+          "label": "INTENSIVOS DE VERANO PARA ADULTOS",
+          "start": "2026-06-29"
+        },
+        {
+          "end": "2026-07-10",
+          "label": "INTENSIVOS DE VERANO PARA ADULTOS",
+          "start": "2026-07-06"
+        },
+        {
+          "end": "2026-07-17",
+          "label": "INTENSIVOS DE VERANO PARA ADULTOS",
+          "start": "2026-07-13"
+        }
+      ],
+      "start": "2026-06-29",
+      "timezone": "Europe/Madrid"
+    },
+    "source": {
+      "hash": "sha256:8e4f5aa5b5580199ca23ca2b79c9b5a348ed3c72daa629cc515b3e377c350763",
+      "provider": "ecole-francaise-de-danse-madrid",
+      "scrapedAt": "2026-07-01T09:57:08.412167Z",
+      "url": "https://ecolefrancaisededanse.com/cursos-intensivos-verano-ballet-clasico-formacion-profesional/"
+    },
+    "teachers": [],
+    "title": "Intensivos de Verano para Adultos 2026"
+  },
+  {
+    "ageRange": {
+      "min": 8
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://ecolefrancaisededanse.com/cursos-intensivos-verano-ballet-clasico-formacion-profesional/"
+    },
+    "genres": [
+      "classical",
+      "repertoire",
+      "contemporary"
+    ],
+    "id": "ecole-francaise-de-danse-madrid/student-2026",
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Madrid",
+      "country": "ES"
+    },
+    "organization": {
+      "city": "Madrid",
+      "country": "ES",
+      "name": "École Française de Danse Madrid",
+      "slug": "ecole-francaise-de-danse-madrid"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-07-17",
+      "season": "2026",
+      "sessions": [
+        {
+          "end": "2026-07-03",
+          "label": "INTENSIVOS DE VERANO",
+          "start": "2026-06-29"
+        },
+        {
+          "end": "2026-07-17",
+          "label": "INTENSIVOS DE VERANO",
+          "start": "2026-07-13"
+        }
+      ],
+      "start": "2026-06-29",
+      "timezone": "Europe/Madrid"
+    },
+    "source": {
+      "hash": "sha256:b392ffefa6c27dcc3df313b5baf3403685f8f344d3aef0cee84eb8c1049559c1",
+      "provider": "ecole-francaise-de-danse-madrid",
+      "scrapedAt": "2026-07-01T09:57:08.413202Z",
+      "url": "https://ecolefrancaisededanse.com/cursos-intensivos-verano-ballet-clasico-formacion-profesional/"
+    },
+    "teachers": [],
+    "title": "Intensivos de Verano 2026"
+  },
+  {
+    "ageRange": {
+      "min": 8
+    },
+    "application": {
+      "requirements": [],
+      "url": "https://ecolefrancaisededanse.com/evento/curso-intensivo-con-stephane-phavorin-ballet-master/"
+    },
+    "genres": [
+      "classical",
+      "repertoire",
+      "contemporary"
+    ],
+    "id": "ecole-francaise-de-danse-madrid/phavorin-masterclass-2026",
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "Madrid",
+      "country": "ES"
+    },
+    "organization": {
+      "city": "Madrid",
+      "country": "ES",
+      "name": "École Française de Danse Madrid",
+      "slug": "ecole-francaise-de-danse-madrid"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-07-10",
+      "season": "2026",
+      "sessions": [
+        {
+          "end": "2026-07-10",
+          "label": "Curso intensivo con Stéphane Phavorin, ballet master",
+          "start": "2026-07-06"
+        }
+      ],
+      "start": "2026-07-06",
+      "timezone": "Europe/Madrid"
+    },
+    "source": {
+      "hash": "sha256:4eb8a98b195b002b6e0cc18b19da74fbc646353afdc89e0d6ca3a986cf0746c7",
+      "provider": "ecole-francaise-de-danse-madrid",
+      "scrapedAt": "2026-07-01T09:57:08.413258Z",
+      "url": "https://ecolefrancaisededanse.com/cursos-intensivos-verano-ballet-clasico-formacion-profesional/"
+    },
+    "teachers": [],
+    "title": "Curso Intensivo con Stéphane Phavorin 2026"
+  }
+]
