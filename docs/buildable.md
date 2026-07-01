@@ -2,7 +2,7 @@
 
 > **Generated — do not edit.** Refresh with `uv run python -m intensive_dance.overview --write`; CI drift-checks it. Source of truth: `providers.json`.
 
-47 buildable · 30 excluded · 136 live (213 providers total).
+50 buildable · 30 excluded · 136 live (216 providers total).
 
 **To claim one (so nobody double-builds):** check `gh issue list` / `gh pr list` for the slug; if free, open a `build:<slug>` issue and **self-assign first**, then build; close it when the PR merges (provider → `live`). An open claim issue *or* PR = locked. See `AGENTS.md` → Scope & coordination.
 
@@ -38,6 +38,7 @@ _Some still need Phase-1 verification (a public dated edition / not full-time) b
 - `jac-ballet-madrid-curso-verano` — JAC Ballet Madrid — Curso de Verano (Madrid) — https://www.jacballet.com/
 - `magistra-danza-curso-verano` — Magistra Danza — Curso de Verano (Madrid) — https://rcpdmariemma.com/cursos-de-verano-2026/
 - `sa-nau-dansa` — Sa Nau Dansa (Barcelona) — https://www.sanaudansa.tk/intensivos
+- `valencia-endanza` — Valencia Endanza (Valencia) — https://valenciaendanza.com/
 
 ### FI
 - `turku-dance-camp` — Turku Dance Camp (Turku) — https://ruusuillatanssijat.fi/turkudancecamp/
@@ -62,6 +63,10 @@ _Some still need Phase-1 verification (a public dated edition / not full-time) b
 - `royal-conservatoire-scotland-summer-school` — Royal Conservatoire of Scotland — Modern Ballet Summer Schools (Glasgow) — https://www.rcs.ac.uk/study/summer-schools/
 - `russian-ballet-studios` — Russian Ballet Studios — Summer Camp (London) — http://www.russian-ballet-studios.com/index.html
 - `tring-park-summer-dance` — Tring Park School — Summer Dance Course (Tring) — https://www.tringpark.com/holiday-courses/summer-residential-dance-course-2/
+
+### HR
+- `baldovin-master-ballet-education` — Baldovin Ballet — Master Ballet Education (Zagreb) — https://www.baldovinballet.com/
+- `ballet-masterclass-croatia` — Ballet Masterclass Croatia (Zagreb) — https://www.ballet-masterclass.com/
 
 ### HU
 - `magyar-nemzeti-balettintezet` — Magyar Nemzeti Balettintézet — Summer Intensive (Budapest) — https://www.mnbi.hu/en/application/summer-intense-ballet-courses-in-the-opera/
