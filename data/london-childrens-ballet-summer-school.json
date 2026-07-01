@@ -1,0 +1,159 @@
+[
+  {
+    "ageRange": {
+      "max": 14,
+      "min": 12
+    },
+    "application": {
+      "notes": "Sold out.",
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.londonchildrensballet.com/summer-school"
+    },
+    "genres": [
+      "classical",
+      "repertoire",
+      "contemporary",
+      "pointe"
+    ],
+    "id": "london-childrens-ballet-summer-school/girls-week-1-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "London",
+      "country": "GB",
+      "venue": "London Children's Ballet Studios, 3 Holman Road, Battersea, SW11 3RL"
+    },
+    "organization": {
+      "city": "London",
+      "country": "GB",
+      "name": "London Children's Ballet",
+      "slug": "london-childrens-ballet-summer-school"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-07-24",
+      "notes": "SOLD OUT Girls Week 1: Monday 20 July - Friday 24 July (12-14yrs)",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-20",
+      "timezone": "Europe/London"
+    },
+    "source": {
+      "hash": "sha256:ed16c0d8acfaba13c644949e383fd532c4d919d54ff63d727f564d18e6fd952a",
+      "provider": "london-childrens-ballet-summer-school",
+      "scrapedAt": "2026-07-01T09:49:36.069522Z",
+      "url": "https://www.londonchildrensballet.com/summer-school"
+    },
+    "teachers": [],
+    "title": "Girls Week 1 2026"
+  },
+  {
+    "ageRange": {
+      "max": 11,
+      "min": 9
+    },
+    "application": {
+      "notes": "Sold out.",
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "status": "closed",
+      "url": "https://www.londonchildrensballet.com/summer-school"
+    },
+    "genres": [
+      "classical",
+      "repertoire",
+      "contemporary",
+      "pointe"
+    ],
+    "id": "london-childrens-ballet-summer-school/girls-week-2-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "London",
+      "country": "GB",
+      "venue": "London Children's Ballet Studios, 3 Holman Road, Battersea, SW11 3RL"
+    },
+    "organization": {
+      "city": "London",
+      "country": "GB",
+      "name": "London Children's Ballet",
+      "slug": "london-childrens-ballet-summer-school"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-07-31",
+      "notes": "SOLD OUT Girls Week 2: Monday 27 July - Friday 31 July (9-11yrs)",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-07-27",
+      "timezone": "Europe/London"
+    },
+    "source": {
+      "hash": "sha256:8a1394de18a8ae420b1998bd9c52ac058c0bfb77aabb23105a85c86ac31c269c",
+      "provider": "london-childrens-ballet-summer-school",
+      "scrapedAt": "2026-07-01T09:49:36.070032Z",
+      "url": "https://www.londonchildrensballet.com/summer-school"
+    },
+    "teachers": [],
+    "title": "Girls Week 2 2026"
+  },
+  {
+    "ageRange": {
+      "max": 12,
+      "min": 9
+    },
+    "application": {
+      "requirements": [
+        {
+          "type": "none"
+        }
+      ],
+      "url": "https://www.londonchildrensballet.com/summer-school"
+    },
+    "genres": [
+      "classical",
+      "repertoire",
+      "contemporary",
+      "pointe"
+    ],
+    "id": "london-childrens-ballet-summer-school/boys-summer-intensive-2026",
+    "level": [],
+    "lifecycle": "scheduled",
+    "location": {
+      "city": "London",
+      "country": "GB",
+      "venue": "London Children's Ballet Studios, 3 Holman Road, Battersea, SW11 3RL"
+    },
+    "organization": {
+      "city": "London",
+      "country": "GB",
+      "name": "London Children's Ballet",
+      "slug": "london-childrens-ballet-summer-school"
+    },
+    "prices": [],
+    "schedule": {
+      "end": "2026-08-30",
+      "notes": "Boys Summer Intensive: Saturday 29 - Sunday 30 August (9-12yrs)",
+      "season": "2026",
+      "sessions": [],
+      "start": "2026-08-29",
+      "timezone": "Europe/London"
+    },
+    "source": {
+      "hash": "sha256:f424ae6df1d12d1269af6cc995c42b3a8161abf855cfa7fe08eb72d1a2f8a0e2",
+      "provider": "london-childrens-ballet-summer-school",
+      "scrapedAt": "2026-07-01T09:49:36.070143Z",
+      "url": "https://www.londonchildrensballet.com/summer-school"
+    },
+    "teachers": [],
+    "title": "Boys Summer Intensive 2026"
+  }
+]
