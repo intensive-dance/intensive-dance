@@ -47,7 +47,7 @@
       "timezone": "Europe/Lisbon"
     },
     "source": {
-      "attemptedAt": "2026-06-29T20:45:10.598079Z",
+      "attemptedAt": "2026-07-01T06:59:37.379035Z",
       "hash": "sha256:b6211cb2c36cfce2c742eb313b87a748e80c2e454a9512c97475722759c8079b",
       "provider": "conservatorio-annarella",
       "scrapedAt": "2026-06-11T18:17:39.333478Z",
@@ -130,7 +130,7 @@
       "timezone": "Europe/Lisbon"
     },
     "source": {
-      "attemptedAt": "2026-06-29T20:45:10.598079Z",
+      "attemptedAt": "2026-07-01T06:59:37.379035Z",
       "hash": "sha256:3d9bd5f85d2e3a86722e17291a20b1362b1bbc3a9d2ca90ddebc54b91e792e62",
       "provider": "conservatorio-annarella",
       "scrapedAt": "2026-06-11T18:18:34.815839Z",
