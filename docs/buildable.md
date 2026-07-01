@@ -2,7 +2,7 @@
 
 > **Generated — do not edit.** Refresh with `uv run python -m intensive_dance.overview --write`; CI drift-checks it. Source of truth: `providers.json`.
 
-1 buildable · 30 excluded · 136 live (167 providers total).
+47 buildable · 30 excluded · 136 live (213 providers total).
 
 **To claim one (so nobody double-builds):** check `gh issue list` / `gh pr list` for the slug; if free, open a `build:<slug>` issue and **self-assign first**, then build; close it when the PR merges (provider → `live`). An open claim issue *or* PR = locked. See `AGENTS.md` → Scope & coordination.
 
@@ -10,8 +10,86 @@
 
 _Some still need Phase-1 verification (a public dated edition / not full-time) before building._
 
+### BE
+- `blommaert-ballet-school` — Blommaert Ballet School (Antwerp) — https://www.blommaertballetschool.com/what-we-offer/summer-school
+- `brussels-summer-dance-intensive` — Brussels Summer Dance Intensive (Brussels) — https://www.stagededanse.be/stages-de-danse/brussels-summer-dance-intensive-2026/
+- `conservatoire-de-la-danse-de-bruxelles` — Conservatoire de la Danse de Bruxelles (Brussels) — https://www.conservatoiredeladanse.com/stages.html
+- `liege-summer-dance-intensive` — Liège Summer Dance Intensive (Liège) — https://www.stagededanse.be/stages-de-danse/liege-summer-danse-intensive-2026/
+
+### CH
+- `russian-ballet-international-lugano` — Russian Ballet International — Lugano Summer Intensive (Lugano) — https://www.russianballetinternational.com/lugano-program/
+
+### CZ
+- `420people-summer-dance-intensive` — 420PEOPLE — Summer Dance Intensive (Lipnice nad Sázavou) — https://www.420people.org/en/
+
 ### DE
 - `dance-academy-wiesbaden` — Dance Academy Wiesbaden (Wiesbaden) — https://www.danceacademy-wiesbaden.de/
+
+### DK
+- `balletkompagniet-copenhagen` — Balletkompagniet — Summer Schools (Copenhagen) — https://balletkompagniet.dk/balletkompagniets-sommerskoler-2026/
+- `tivoli-ballet-school-summer-camp` — Tivoli Ballet School — Summer Camp (Copenhagen) — https://www.tivoliballetskole.dk/summercamp/
+
+### ES
+- `advanced-dance-institute-barcelona` — Advanced Dance Institute Barcelona (Barcelona) — https://advanceddanceinstitute.com/summer-intensive/
+- `ballet-de-catalunya-summer-intensive` — Ballet de Catalunya — Summer Intensive (Barcelona) — https://catballet.com/school/intensive/
+- `ecole-francaise-de-danse-madrid` — Ecole Française de Danse Madrid (Madrid) — https://ecolefrancaisededanse.com/cursos-intensivos-verano-ballet-clasico-formacion-profesional/
+- `escola-ballet-carles-ibanez` — Escola de Ballet Carles Ibáñez (Barcelona) — https://balletibanez.com/
+- `institut-del-teatre-endansa-it` — Institut del Teatre — ENDANSA'IT (Barcelona) — https://www.institutdelteatre.cat/
+- `jac-ballet-madrid-curso-verano` — JAC Ballet Madrid — Curso de Verano (Madrid) — https://www.jacballet.com/
+- `magistra-danza-curso-verano` — Magistra Danza — Curso de Verano (Madrid) — https://rcpdmariemma.com/cursos-de-verano-2026/
+- `sa-nau-dansa` — Sa Nau Dansa (Barcelona) — https://www.sanaudansa.tk/intensivos
+
+### FI
+- `turku-dance-camp` — Turku Dance Camp (Turku) — https://ruusuillatanssijat.fi/turkudancecamp/
+
+### FR
+- `ballet-danse-international-gaillard` — Ballet Danse International — Stage International d'Été (Gaillard) — https://www.balletdanse.com/stage-international-de-danse-dete-en-france.html
+- `james-carles-stage-ete` — James Carlès — Stage International d'Été (Toulouse) — https://jamescarles.com/stages-internationaux/stage-ete-2026/
+
+### GB
+- `acosta-dance-foundation` — Acosta Dance Foundation — Summer Intensives (London) — https://acostadancefoundation.org.uk/summer-intensives/
+- `ballet-britain` — Ballet Britain — Holiday Courses (Leeds) — https://balletbritain.com/
+- `ballet-cymru-wales-summer-dance` — Ballet Cymru — Wales Summer Dance (Newport) — https://ballet.cymru/wales-summer-dance/
+- `bristol-russian-ballet-school` — Bristol Russian Ballet School — Summer Intensive (Bristol) — https://bristolrussianballet.com/easter-summer-intensive/
+- `chelsea-ballet-summer-school` — Chelsea Ballet — Summer School (London) — https://chelsea-ballet.com/summerschool/
+- `english-national-ballet-youth-intensive` — English National Ballet — Youth Dance Summer Intensive (London) — https://www.ballet.org.uk/class/youth-dance-summer-intensive-advanced/
+- `london-childrens-ballet-summer-school` — London Children's Ballet — Summer School (London) — https://www.londonchildrensballet.com/summer-school
+- `london-studio-centre` — London Studio Centre — Summer Programme (London) — https://www.londonstudiocentre.org/course/summer-programme/
+- `northern-ballet-school-manchester` — Northern Ballet School (Manchester) — Summer Workshop (Manchester) — https://performerscollege.ac.uk/courses/northern-ballet-school-summer-workshop/
+- `oxford-school-of-dance-ballet-intensive` — Oxford School of Dance — Summer Ballet Intensive (Oxford) — https://www.oxfordschoolofdance.com/summer-dance
+- `rad-uk-summer-school` — Royal Academy of Dance — UK Summer Schools (London) — https://www.royalacademyofdance.org/event/junior-summer-school-2026/
+- `rambert-school-summer-school` — Rambert School — Performance and Technique Summer School (Twickenham) — https://www.rambertschool.org.uk/our-courses/young-people-courses/performance-and-technique-summer-school/
+- `royal-conservatoire-scotland-summer-school` — Royal Conservatoire of Scotland — Modern Ballet Summer Schools (Glasgow) — https://www.rcs.ac.uk/study/summer-schools/
+- `russian-ballet-studios` — Russian Ballet Studios — Summer Camp (London) — http://www.russian-ballet-studios.com/index.html
+- `tring-park-summer-dance` — Tring Park School — Summer Dance Course (Tring) — https://www.tringpark.com/holiday-courses/summer-residential-dance-course-2/
+
+### HU
+- `magyar-nemzeti-balettintezet` — Magyar Nemzeti Balettintézet — Summer Intensive (Budapest) — https://www.mnbi.hu/en/application/summer-intense-ballet-courses-in-the-opera/
+
+### IT
+- `associazione-mab-ballet-intensive` — Associazione MAB — Classical Ballet Intensive (Lainate) — https://www.premiomab.it/en/in-june-a-classical-ballet-intensive-with-mme-caridad-martinez/
+
+### NL
+- `arteballet-intensive-amsterdam` — ArtéBallét Intensive (Amsterdam) — https://www.arteballetintensive.com/
+
+### NO
+- `valdres-sommerballett` — Valdres Sommerballett (Oslo) — https://www.sommerballett.no/en/
+
+### PT
+- `coimbra-dance-stage` — Coimbra Dance Stage (Codança) (Coimbra) — https://codanca.com/cd-stage-2025/
+- `edcn-dance-intensive` — EDCN — Summer/Spring Dance Intensive (Lisbon) — https://edcn.pt/en/summer-di/
+- `escola-de-ballet-do-porto` — Escola de Ballet do Porto (Porto) — https://www.escoladeballetdoporto.pt/cursos-2025/
+- `mostra-danca-portugal` — Mostra Dança Portugal (Porto) — https://www.mostradanca.com/portugal
+- `summer-intensive-portugal` — Summer Intensive Portugal (Santa Cruz) — https://www.summerintensivept.com/
+
+### RS
+- `in-dance-intense-belgrade` — In Dance Intense — Belgrade Intensive (Belgrade) — https://www.indanceintense.com/belgradeintensive
+
+### SE
+- `base23-stockholm-summer-ballet` — BASE23 Stockholm Dance Academy — Summer Ballet (Stockholm) — https://www.base23.se/kurser-lager-lov/sommarkursbalett-augusti/
+
+### SI
+- `baletna-sola-ana-poletna-baletna-sola` — Baletna šola Ana — Poletna baletna šola (Kamnik) — https://baletnasola-ana.si/poletna-baletna-sola-2026/
 
 ## Excluded — do NOT build
 
