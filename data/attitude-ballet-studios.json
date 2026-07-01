@@ -82,10 +82,10 @@
       "timezone": "Europe/Vienna"
     },
     "source": {
-      "attemptedAt": "2026-06-30T05:58:56.550643Z",
-      "hash": "sha256:acb22f798dd1bee7ff19271d1881ba911193ce0b62e3fefa106a315885277f18",
+      "attemptedAt": "2026-07-01T18:52:31.432215Z",
+      "hash": "sha256:4292cd9898c736a599ca47e6827e15408a6ce109eac8b8a305abdec09a59aadf",
       "provider": "attitude-ballet-studios",
-      "scrapedAt": "2026-06-08T14:08:38.420667Z",
+      "scrapedAt": "2026-07-01T18:52:35.082162Z",
       "url": "https://www.attitudestudios.at/vienna-ballet-intensive/"
     },
     "teachers": [
@@ -146,17 +146,6 @@
       {
         "affiliations": [
           {
-            "current": true,
-            "organization": "Wiener Staatsoper",
-            "role": "Demi Soloist"
-          }
-        ],
-        "name": "Alexandra Inculet",
-        "role": "Special Guest Teacher"
-      },
-      {
-        "affiliations": [
-          {
             "current": false,
             "organization": "Wiener Staatsoper",
             "role": "Principal Dancer"
@@ -168,17 +157,6 @@
           }
         ],
         "name": "Robert Gabdullin",
-        "role": "Special Guest Teacher"
-      },
-      {
-        "affiliations": [
-          {
-            "current": false,
-            "organization": "Bolshoi Ballet Academy",
-            "role": "graduate"
-          }
-        ],
-        "name": "Máire Elizabeth New",
         "role": "Special Guest Teacher"
       }
     ],
