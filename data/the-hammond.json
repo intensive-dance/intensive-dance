@@ -58,7 +58,7 @@
       "timezone": "Europe/London"
     },
     "source": {
-      "attemptedAt": "2026-06-30T23:00:44.839700Z",
+      "attemptedAt": "2026-07-02T11:59:30.383660Z",
       "hash": "sha256:50d6ef7b70bedb96216fab5bb813df8c234b2d4bd84e5adeddcc9cb59d9fb417",
       "provider": "the-hammond",
       "scrapedAt": "2026-06-29T12:19:27.347173Z",
@@ -126,7 +126,7 @@
       "timezone": "Europe/London"
     },
     "source": {
-      "attemptedAt": "2026-06-30T23:00:44.839700Z",
+      "attemptedAt": "2026-07-02T11:59:30.383660Z",
       "hash": "sha256:762b085d41e6b4535c47195e02141f0c8d90abedca58a8e37fb0bac8e8fcffdb",
       "provider": "the-hammond",
       "scrapedAt": "2026-06-29T12:19:27.347237Z",

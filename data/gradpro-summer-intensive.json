@@ -36,7 +36,7 @@
       "timezone": "Europe/London"
     },
     "source": {
-      "attemptedAt": "2026-06-30T23:00:46.061889Z",
+      "attemptedAt": "2026-07-02T11:59:28.436965Z",
       "hash": "sha256:3ffea9a7e557f4d608561a5d19ff8f540a18c2eaa8f7de7d4076b3aa18c4f52a",
       "provider": "gradpro-summer-intensive",
       "scrapedAt": "2026-06-26T06:06:53.084135Z",
@@ -82,7 +82,7 @@
       "timezone": "Europe/London"
     },
     "source": {
-      "attemptedAt": "2026-06-30T23:00:46.061889Z",
+      "attemptedAt": "2026-07-02T11:59:28.436965Z",
       "hash": "sha256:9058ec67be5641e008280c5c8302d71a27413540b4862972f4c07940c06eefbb",
       "provider": "gradpro-summer-intensive",
       "scrapedAt": "2026-06-26T06:06:53.084342Z",
