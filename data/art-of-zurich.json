@@ -78,7 +78,7 @@
       "timezone": "Europe/Madrid"
     },
     "source": {
-      "attemptedAt": "2026-06-30T19:26:30.623309Z",
+      "attemptedAt": "2026-07-02T09:49:54.209931Z",
       "hash": "sha256:418ead75d67f38e6138a76cb0fe058ba4d7ffc78c66e49e32dea3d43f3f43cc0",
       "provider": "art-of-zurich",
       "scrapedAt": "2026-06-07T07:38:27.801043Z",
@@ -217,7 +217,7 @@
       "timezone": "Europe/Zurich"
     },
     "source": {
-      "attemptedAt": "2026-06-30T19:26:30.623309Z",
+      "attemptedAt": "2026-07-02T09:49:54.209931Z",
       "hash": "sha256:ddcf35dcdb1b662f36cdced658813637b0176fba4cbe4e43d21aaec4448ade7b",
       "provider": "art-of-zurich",
       "scrapedAt": "2026-06-29T02:33:52.626100Z",
