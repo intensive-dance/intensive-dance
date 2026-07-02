@@ -86,7 +86,7 @@
       "timezone": "Asia/Tokyo"
     },
     "source": {
-      "attemptedAt": "2026-06-30T15:22:10.727928Z",
+      "attemptedAt": "2026-07-01T23:59:18.699855Z",
       "hash": "sha256:48de38e8d966438806779d5853b3f77152b618a826af5b1177087f6b3a7f0d86",
       "provider": "tokyo-ballet-school",
       "scrapedAt": "2026-06-06T06:50:03.676258Z",
